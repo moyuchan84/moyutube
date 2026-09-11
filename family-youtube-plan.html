@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>우리 가족 유튜브 채널 기획</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<style>
+:root{
+  --paper:#E9EDE8;
+  --surface:#F6F8F4;
+  --surface-2:#DFE6DE;
+  --ink:#1B2A26;
+  --pencil:#66756E;
+  --rule:#C4D0C6;
+  --red:#B8352A;
+  --red-soft:#E8CFCB;
+  --maxw:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,system-ui,'Malgun Gothic',sans-serif;
+  font-size:16px; line-height:1.75; letter-spacing:-0.01em;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:'Gowun Batang',serif; font-weight:700; letter-spacing:-0.02em; line-height:1.35; margin:0}
+p{margin:0 0 0.9em}
+a{color:var(--red)}
+
+/* ---------- notebook page frame ---------- */
+.page{max-width:var(--maxw); margin:0 auto; padding:0 20px 96px}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative; padding:72px 0 56px;
+  background-image:repeating-linear-gradient(to bottom,transparent 0 37px,var(--rule) 37px 38px);
+  background-position:0 8px;
+}
+.hero-inner{max-width:720px}
+.eyebrow{font-size:13px; color:var(--pencil); margin:0 0 26px}
+.q-mark{font-family:'Nanum Pen Script',cursive; font-size:clamp(30px,5vw,44px); color:var(--red); line-height:1; display:block; margin-bottom:6px}
+.q-text{font-family:'Nanum Pen Script',cursive; font-size:clamp(32px,6vw,54px); line-height:1.45; margin:0 0 26px; color:var(--ink)}
+.answer{position:relative; display:inline-block; font-size:clamp(17px,2.6vw,21px); color:var(--pencil); margin-bottom:34px}
+.answer::after{
+  content:""; position:absolute; left:-4px; right:-4px; top:52%; height:3px;
+  background:var(--red); border-radius:2px; transform:scaleX(0); transform-origin:left center;
+  animation:strike .7s cubic-bezier(.6,.1,.2,1) 1.1s forwards;
+}
+@keyframes strike{to{transform:scaleX(1)}}
+@media (prefers-reduced-motion:reduce){.answer::after{animation:none; transform:scaleX(1)}}
+.thesis{font-family:'Gowun Batang',serif; font-size:clamp(21px,3.4vw,30px); line-height:1.6; max-width:620px; margin:0 0 20px}
+.thesis b{color:var(--red); font-weight:700}
+.hero-sub{font-size:15px; color:var(--pencil); max-width:560px}
+
+/* ---------- nav ---------- */
+.nav{
+  position:sticky; top:0; z-index:40; background:rgba(233,237,232,.94);
+  backdrop-filter:blur(8px); border-bottom:1px solid var(--rule); margin-bottom:44px;
+}
+.nav-scroll{max-width:var(--maxw); margin:0 auto; padding:0 20px; display:flex; gap:2px; overflow-x:auto; scrollbar-width:none}
+.nav-scroll::-webkit-scrollbar{display:none}
+.nav button{
+  flex:0 0 auto; background:none; border:none; border-bottom:2px solid transparent;
+  padding:14px 14px 12px; font:inherit; font-size:14.5px; color:var(--pencil);
+  cursor:pointer; white-space:nowrap;
+}
+.nav button:hover{color:var(--ink)}
+.nav button[aria-selected="true"]{color:var(--ink); border-bottom-color:var(--red); font-weight:600}
+.nav button:focus-visible{outline:2px solid var(--red); outline-offset:-2px}
+
+/* ---------- panels ---------- */
+.panel{display:none; animation:fade .25s ease}
+.panel.on{display:block}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){.panel.on{animation:none}}
+.panel > h2{font-size:clamp(24px,3.6vw,32px); margin-bottom:10px}
+.lede{color:var(--pencil); max-width:660px; margin-bottom:36px; font-size:15.5px}
+
+section.block{margin-bottom:52px; max-width:860px}
+section.block h3{font-size:19px; margin-bottom:14px; padding-left:13px; border-left:3px solid var(--red)}
+.body{max-width:700px; font-size:15.5px}
+.body ul{padding-left:19px; margin:0 0 1em}
+.body li{margin-bottom:.45em}
+
+/* ---------- beat sheet ---------- */
+.beats{border-top:1px solid var(--rule)}
+.beat{display:grid; grid-template-columns:76px 1fr; gap:20px; padding:16px 0; border-bottom:1px solid var(--rule); align-items:start}
+.beat-time{font-size:13px; color:var(--pencil); padding-top:3px; font-variant-numeric:tabular-nums}
+.beat-name{font-family:'Gowun Batang',serif; font-weight:700; font-size:16.5px; margin-bottom:3px}
+.beat-desc{font-size:14.5px; color:var(--pencil)}
+.beat.key .beat-name{color:var(--red)}
+.beat.key .beat-name::after{content:"  채널의 정체성"; font-family:'Pretendard Variable',Pretendard,sans-serif; font-size:11.5px; font-weight:400; color:var(--red); border:1px solid var(--red-soft); border-radius:2px; padding:1px 6px; margin-left:8px; white-space:nowrap}
+
+/* ---------- compare table ---------- */
+.tbl{width:100%; border-collapse:collapse; font-size:14.5px; margin-bottom:14px}
+.tbl th,.tbl td{text-align:left; padding:11px 12px; border-bottom:1px solid var(--rule); vertical-align:top}
+.tbl th{font-weight:600; font-size:13px; color:var(--pencil); border-bottom:1.5px solid var(--ink)}
+.tbl tr.pick td{background:var(--surface)}
+.tbl tr.pick td:first-child{box-shadow:inset 3px 0 0 var(--red); font-weight:600}
+.wrap-x{overflow-x:auto}
+
+/* ---------- callout ---------- */
+.note{background:var(--surface); border-left:3px solid var(--red); padding:16px 20px; font-size:14.5px; margin:20px 0}
+.note b{color:var(--red)}
+.note p:last-child{margin-bottom:0}
+
+/* ---------- topic filters + grid ---------- */
+.filters{display:flex; flex-wrap:wrap; gap:7px; margin-bottom:12px}
+.chip{background:none; border:1px solid var(--rule); border-radius:100px; padding:6px 15px; font:inherit; font-size:13.5px; color:var(--pencil); cursor:pointer}
+.chip:hover{border-color:var(--pencil); color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink); border-color:var(--ink); color:var(--paper)}
+.chip:focus-visible{outline:2px solid var(--red); outline-offset:2px}
+.counter{font-size:13.5px; color:var(--pencil); margin-bottom:22px}
+.counter strong{color:var(--red); font-variant-numeric:tabular-nums}
+
+.topics{display:grid; grid-template-columns:repeat(auto-fill,minmax(268px,1fr)); gap:10px}
+.topic{
+  position:relative; text-align:left; background:var(--surface); border:1px solid var(--rule);
+  padding:15px 17px 15px 40px; font:inherit; cursor:pointer; color:inherit; border-radius:2px;
+}
+.topic:hover{border-color:var(--pencil)}
+.topic:focus-visible{outline:2px solid var(--red); outline-offset:1px}
+.topic .box{position:absolute; left:15px; top:17px; width:14px; height:14px; border:1.5px solid var(--pencil)}
+.topic[aria-pressed="true"]{border-color:var(--red); background:#fff}
+.topic[aria-pressed="true"] .box{border-color:var(--red)}
+.topic[aria-pressed="true"] .box::after{
+  content:"✓"; position:absolute; left:-4px; top:-13px; font-family:'Nanum Pen Script',cursive;
+  font-size:30px; color:var(--red); line-height:1;
+}
+.t-name{font-weight:600; font-size:15px; margin-bottom:4px}
+.t-line{font-size:13.5px; color:var(--pencil); line-height:1.6}
+.t-tag{display:inline-block; margin-top:9px; font-size:11.5px; padding:1px 7px; border:1px solid var(--rule); border-radius:2px; color:var(--pencil)}
+.t-tag.first{border-color:var(--red); color:var(--red)}
+.t-tag.later{border-style:dashed}
+
+/* ---------- decisions ---------- */
+.decision{padding:20px 0; border-bottom:1px solid var(--rule)}
+.d-q{font-family:'Gowun Batang',serif; font-weight:700; font-size:16.5px; margin-bottom:4px}
+.d-why{font-size:13.5px; color:var(--pencil); margin-bottom:12px}
+.opts{display:flex; flex-wrap:wrap; gap:7px}
+.opt{background:none; border:1px solid var(--rule); padding:7px 15px; font:inherit; font-size:14px; cursor:pointer; color:var(--pencil); border-radius:2px}
+.opt:hover{border-color:var(--pencil); color:var(--ink)}
+.opt[aria-pressed="true"]{background:var(--red); border-color:var(--red); color:#fff}
+.opt:focus-visible{outline:2px solid var(--ink); outline-offset:2px}
+.d-rec{font-size:13px; color:var(--pencil); margin-top:9px}
+.d-rec b{color:var(--ink); font-weight:600}
+
+/* ---------- summary ---------- */
+.summary{background:var(--surface); border:1px solid var(--rule); padding:26px 28px; margin-top:36px; border-radius:2px}
+.summary h3{border:none; padding:0; margin-bottom:16px}
+.sum-row{display:grid; grid-template-columns:150px 1fr; gap:14px; padding:9px 0; border-bottom:1px dotted var(--rule); font-size:14.5px}
+.sum-row span:first-child{color:var(--pencil); font-size:13.5px}
+.sum-empty{color:var(--pencil); font-size:14.5px}
+.btn{margin-top:20px; background:var(--ink); color:var(--paper); border:none; padding:11px 22px; font:inherit; font-size:14px; cursor:pointer; border-radius:2px}
+.btn:hover{background:var(--red)}
+.btn:focus-visible{outline:2px solid var(--red); outline-offset:2px}
+
+/* ---------- roadmap ---------- */
+.week{display:grid; grid-template-columns:92px 1fr; gap:20px; padding:18px 0; border-bottom:1px solid var(--rule)}
+.week-n{font-family:'Gowun Batang',serif; font-weight:700; font-size:15px}
+.week-n small{display:block; font-family:'Pretendard Variable',Pretendard,sans-serif; font-weight:400; font-size:12.5px; color:var(--pencil); margin-top:2px}
+.week-body{font-size:14.5px}
+.week-body ul{margin:6px 0 0; padding-left:18px; color:var(--pencil)}
+
+footer{border-top:1px solid var(--rule); padding-top:22px; font-size:13px; color:var(--pencil); max-width:860px}
+
+@media(max-width:640px){
+  .beat,.week{grid-template-columns:1fr; gap:4px}
+  .beat-time{padding-top:0}
+  .sum-row{grid-template-columns:1fr; gap:2px}
+  .hero{padding:48px 0 40px}
+  .beat.key .beat-name::after{display:block; margin:6px 0 0; width:fit-content}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="page hero-inner">
+    <p class="eyebrow">우리 가족 유튜브 채널 · 방향 논의용 · 2026.09</p>
+    <span class="q-mark">2학년 아이</span>
+    <p class="q-text">“선생님, 호텔이랑 모텔이랑<br>유스호스텔은 뭐가 달라요?”</p>
+    <p class="answer">“어… 그게, 가격이 다른 거야.”</p>
+    <p class="thesis">부모가 <b>대충은 아는데 제대로 설명은 못 하는 것들</b>을,<br>교사가 아이 눈높이까지 번역해주는 채널.</p>
+    <p class="hero-sub">주제를 정한 게 아니라 <em>거르는 기준</em>을 정했습니다. 그래서 소재가 마르지 않습니다. 아래 여섯 장을 같이 보고, 마지막 장에서 정할 것들을 정해요.</p>
+  </div>
+</header>
+
+<nav class="nav">
+  <div class="nav-scroll" role="tablist" aria-label="기획서 목차">
+    <button role="tab" aria-selected="true" data-tab="concept">1. 컨셉</button>
+    <button role="tab" aria-selected="false" data-tab="plot">2. 영상 플롯</button>
+    <button role="tab" aria-selected="false" data-tab="visual">3. 그림과 화면</button>
+    <button role="tab" aria-selected="false" data-tab="sound">4. 소리</button>
+    <button role="tab" aria-selected="false" data-tab="edit">5. 편집 · 도구</button>
+    <button role="tab" aria-selected="false" data-tab="topics">6. 주제 30</button>
+    <button role="tab" aria-selected="false" data-tab="decide">7. 정할 것</button>
+  </div>
+</nav>
+
+<main class="page">
+
+<!-- ============ 1. 컨셉 ============ -->
+<div class="panel on" id="concept" role="tabpanel">
+  <h2>주제가 아니라 필터입니다</h2>
+  <p class="lede">“무슨 주제로 할까”는 3개월이면 고갈됩니다. “어떤 걸 고를까”는 안 그렇습니다.</p>
+
+  <section class="block">
+    <h3>세 가지 조건을 다 통과하는 것만</h3>
+    <div class="body">
+      <ul>
+        <li><b>어른이 대충은 안다.</b> 완전히 모르면 궁금하지도 않습니다. “알긴 아는데”가 있어야 누릅니다.</li>
+        <li><b>한 문장으로 정리되는 답이 있다.</b> 정리가 안 되면 영상이 산으로 갑니다.</li>
+        <li><b>뒤에 사람 이야기나 역사가 있다.</b> 없으면 그냥 사전입니다.</li>
+      </ul>
+      <p>셋 중 하나라도 빠지면 만들지 않습니다. 이 기준만 지키면 기획 회의가 필요 없어집니다.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <h3>보는 사람은 아이가 아니라 어른입니다</h3>
+    <div class="body">
+      <p>소재는 아이 질문이지만, 말은 어른에게 겁니다. 이게 실무적으로 아주 중요합니다.</p>
+      <div class="wrap-x">
+      <table class="tbl">
+        <tr><th>　</th><th>아이에게 말하는 채널</th><th>어른에게 말하는 채널</th></tr>
+        <tr><td>제목</td><td>하늘은 왜 파랄까?</td><td>“하늘은 왜 파래요?” 여덟 살한테 이걸 어떻게 설명하죠</td></tr>
+        <tr><td>시청자</td><td>초등 저학년</td><td>부모 · 교사 · 지식 좋아하는 어른</td></tr>
+        <tr><td>아동용 지정</td><td>필요</td><td>불필요</td></tr>
+        <tr><td>댓글 · 커뮤니티</td><td>제한됨</td><td>정상</td></tr>
+        <tr><td>광고 단가</td><td>낮음</td><td>정상</td></tr>
+      </table>
+      </div>
+      <p>유튜브에서 ‘아동용’으로 설정하면 개인 맞춤 광고가 나가지 않고 댓글·알림 같은 기능이 막힙니다. 초기 채널에 댓글이 막히는 건 치명적입니다. 소재는 그대로 두고 말 거는 상대만 한 칸 옮기면 이 문제가 통째로 사라집니다.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <h3>다른 채널이 못 가진 것</h3>
+    <div class="body">
+      <ul>
+        <li><b>질문이 매일 공급됩니다.</b> 교실이 곧 기획 회의실입니다. 소재 고갈이 구조적으로 안 일어납니다.</li>
+        <li><b>“오늘 우리 반 아이가 물었는데”</b>는 아무도 못 씁니다. 검색하면 나오는 정보와 이걸 가르는 유일한 선입니다.</li>
+        <li><b>검증 데이터가 있습니다.</b> 실제로 아이에게 해보고 통했는지 안 통했는지 말할 수 있습니다.</li>
+      </ul>
+      <div class="note">
+        <p><b>주의.</b> 이 카테고리는 AI로 대량 생산된 저품질 콘텐츠가 가장 많이 쏟아지는 곳이기도 합니다. 유튜브는 도구 사용 자체가 아니라 사람의 기획이 안 보이는 걸 걸러냅니다. 그래서 <b>실제 교실 이야기와 직접 그린 그림</b>이 이 채널의 방패입니다. AI는 자료 조사와 구조 잡기에만 씁니다.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============ 2. 플롯 ============ -->
+<div class="panel" id="plot" role="tabpanel">
+  <h2>모든 영상이 같은 일곱 박자로</h2>
+  <p class="lede">매번 구성을 새로 고민하면 주 1편도 못 합니다. 틀을 고정하고 내용만 갈아 끼웁니다. 7~8분 기준.</p>
+
+  <section class="block">
+    <div class="beats">
+      <div class="beat"><div class="beat-time">0:00–0:20</div><div><div class="beat-name">그 질문</div><div class="beat-desc">교실에서 나온 말 그대로. 각색하지 않습니다. 날것이 훅입니다.</div></div></div>
+      <div class="beat"><div class="beat-time">0:20–0:50</div><div><div class="beat-name">얼버무린 순간</div><div class="beat-desc">“저는 이렇게 대답했습니다. 지금 생각하면 틀린 답이었어요.” 시청자가 자기 얘기라고 느끼는 지점.</div></div></div>
+      <div class="beat"><div class="beat-time">0:50–1:30</div><div><div class="beat-name">왜 다들 헷갈리나</div><div class="beat-desc">헷갈리는 게 당연한 이유를 먼저 말해줍니다. 시청자를 안심시키고 영상의 주제 문장을 던집니다.</div></div></div>
+      <div class="beat"><div class="beat-time">1:30–4:30</div><div><div class="beat-name">갈라진 지점</div><div class="beat-desc">본론. 정의가 아니라 <em>언제 왜 갈라졌는가</em>로 풉니다. 사람 이름과 연도가 나오면 이야기가 됩니다.</div></div></div>
+      <div class="beat"><div class="beat-time">4:30–5:20</div><div><div class="beat-name">한 문장 정리</div><div class="beat-desc">“호텔은 귀족을 위해, 모텔은 자동차를 위해, 유스호스텔은 아이들을 위해.” 이 한 줄이 썸네일 문구가 됩니다.</div></div></div>
+      <div class="beat key"><div class="beat-time">5:20–6:40</div><div><div class="beat-name">아이 눈높이로 번역</div><div class="beat-desc">“그래서 다음 날 아이한테 이렇게 말했습니다.” 여기가 다른 채널이 절대 못 하는 파트입니다. 절대 빼지 않습니다.</div></div></div>
+      <div class="beat"><div class="beat-time">6:40–7:30</div><div><div class="beat-name">남는 이야기</div><div class="beat-desc">여운 한 조각과 다음 질문 예고. 시리즈로 묶이는 지점.</div></div></div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h3>대본 쓰는 순서</h3>
+    <div class="body">
+      <ul>
+        <li><b>AI에게 쓰라고 하지 말고 물어보라고 합니다.</b> “이 주제로 영상 만들 건데, 내 경험에서 뭘 끌어내야 할지 질문 10개만 해줘.” 그 답을 말로 떠들어서 받아적은 걸 재료로 씁니다. 결과물의 질이 완전히 달라집니다.</li>
+        <li><b>AI 문장의 지문을 지웁니다.</b> “~에 대해 알아보겠습니다”, “결론적으로”, “~라고 할 수 있습니다”는 금지어. 문장 길이를 일부러 불균등하게. 짧게, 길게, 다시 아주 짧게.</li>
+        <li><b>6번 박자는 반드시 직접 씁니다.</b> AI에 맡기는 순간 채널이 죽습니다.</li>
+        <li><b>정치·종교 소재에선 찬반을 말하지 않습니다.</b> “이 부분은 의견이 갈립니다” 한 줄로 넘기고 양쪽 논거를 한 줄씩. 설명 채널의 생명줄입니다.</li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+<!-- ============ 3. 비주얼 ============ -->
+<div class="panel" id="visual" role="tabpanel">
+  <h2>그림이 이 채널의 얼굴입니다</h2>
+  <p class="lede">얼굴을 안 내밀 거라면, 화면의 개성이 곧 채널의 개성입니다. 여기서 승부가 납니다.</p>
+
+  <section class="block">
+    <h3>네 가지 방법 비교</h3>
+    <div class="wrap-x">
+    <table class="tbl">
+      <tr><th>방법</th><th>속도</th><th>차별성</th><th>쓸 곳</th></tr>
+      <tr class="pick"><td>손그림 스캔</td><td>느림</td><td>매우 높음</td><td>핵심 개념, 인물, 비유 그림 — 채널 시그니처</td></tr>
+      <tr class="pick"><td>디지털 드로잉</td><td>보통</td><td>높음</td><td>손그림과 같은 역할 + 수정과 색칠이 자유로움</td></tr>
+      <tr><td>AI 이미지</td><td>매우 빠름</td><td>낮음</td><td>배경, 분위기 컷, 자료화면 보조 <em>만</em></td></tr>
+      <tr><td>모션 그래픽</td><td>느림(초기)</td><td>높음</td><td>다이어그램, 비교표, 지도 — 템플릿화하면 빨라짐</td></tr>
+    </table>
+    </div>
+    <div class="note">
+      <p><b>추천 조합.</b> 손그림 또는 디지털 드로잉을 기본으로 하고, 애프터이펙트로 움직임을 주고, AI는 배경에만. 손그림은 채널의 개성이자 동시에 “사람이 만들었다”는 가장 확실한 증거입니다. 그림 실력은 중요하지 않습니다. <b>일관된 스타일</b>이 중요합니다.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <h3>일관성을 만드는 규칙 (한 번만 정하면 끝)</h3>
+    <div class="body">
+      <ul>
+        <li><b>색은 네 개까지.</b> 종이색 · 잉크색 · 강조색 하나 · 회색. 매 영상 동일하게.</li>
+        <li><b>선은 한 종류.</b> 굵기와 질감을 고정합니다. 브러시 하나만 씁니다.</li>
+        <li><b>사람은 얼굴 없이.</b> 그리기 쉽고, 특정 인물로 보이지 않고, 아이 이야기를 다룰 때 안전합니다.</li>
+        <li><b>영상 한 편에 그림 8~12장.</b> 그 이상은 주 1편 페이스가 무너집니다.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block">
+    <h3>제작 속도를 올리는 장치</h3>
+    <div class="body">
+      <ul>
+        <li><b>배경·프레임·자막 바는 파이썬으로 자동 생성.</b> 이미 카드뉴스에 쓰던 방식 그대로 재활용하면 됩니다. 매번 그리지 않습니다.</li>
+        <li><b>썸네일은 템플릿 한 개.</b> 문구와 그림 한 장만 갈아 끼웁니다. 3안 만들어서 테스트.</li>
+        <li><b>그림은 몰아서.</b> 한 번 앉았을 때 두 편치를 그립니다. 전환 비용이 큰 작업이라 나눠 하면 손해입니다.</li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+<!-- ============ 4. 소리 ============ -->
+<div class="panel" id="sound" role="tabpanel">
+  <h2>목소리는 직접 하시는 걸 권합니다</h2>
+  <p class="lede">TTS가 금지된 건 아닙니다. 다만 이 채널에선 목소리가 그림보다 더 강한 서명입니다.</p>
+
+  <section class="block">
+    <h3>왜 직접인가</h3>
+    <div class="body">
+      <ul>
+        <li>아이에게 설명하는 톤은 이미 몸에 배어 있습니다. 이건 훈련으로 못 얻는 자산입니다.</li>
+        <li>7번 박자의 “다음 날 아이한테 이렇게 말했습니다”가 TTS로 나오면 그 순간 진정성이 무너집니다.</li>
+        <li>AI 대량 생산 콘텐츠와 구분되는 가장 저렴한 방법입니다. 장비값 말고는 비용이 없습니다.</li>
+      </ul>
+      <p>TTS를 쓰더라도 <b>인트로와 6번 박자만은 직접</b> 녹음하세요. 체감이 완전히 달라집니다.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <h3>녹음 최소 세팅</h3>
+    <div class="body">
+      <ul>
+        <li><b>마이크</b> — USB 콘덴서 하나면 충분합니다. 10만 원대에서 시작.</li>
+        <li><b>공간이 마이크보다 중요합니다.</b> 옷장 앞이나 이불 근처, 커튼 친 방. 빈 벽 앞은 최악입니다.</li>
+        <li><b>입에서 한 뼘.</b> 그리고 매번 같은 거리. 편집에서 톤을 맞추기 쉬워집니다.</li>
+        <li><b>대본을 읽지 말고 말하세요.</b> 대본은 옆에 두고 눈으로만. 읽으면 티가 납니다.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block">
+    <h3>배경음과 효과음</h3>
+    <div class="body">
+      <ul>
+        <li><b>유튜브 오디오 보관함</b>이 1차 선택지입니다. 무료, 저작권 안전, 스튜디오 안에서 바로 받습니다.</li>
+        <li>부족하면 Artlist, Epidemic Sound 같은 구독형. 월 비용이 나가니 채널이 굴러가는 걸 확인하고 결제하세요.</li>
+        <li><b>효과음은 아껴 씁니다.</b> 정보 채널에서 효과음이 잦으면 가벼워 보입니다. 장면 전환과 한 문장 정리 순간에만.</li>
+        <li><b>배경음은 나레이션보다 20dB 아래.</b> 그리고 6번 박자에서는 아예 빼거나 확 줄이세요. 조용해지면 사람이 집중합니다.</li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+<!-- ============ 5. 편집 ============ -->
+<div class="panel" id="edit" role="tabpanel">
+  <h2>프리미어와 애프터이펙트가 있다는 게 큰 이점입니다</h2>
+  <p class="lede">대부분의 신규 채널은 여기서 막힙니다. 이미 도구와 사용 경험이 있으니, 남은 건 반복 작업을 템플릿으로 바꾸는 일뿐입니다.</p>
+
+  <section class="block">
+    <h3>역할을 나눕니다</h3>
+    <div class="wrap-x">
+    <table class="tbl">
+      <tr><th>도구</th><th>맡을 일</th><th>맡기지 말 것</th></tr>
+      <tr><td>프리미어 프로</td><td>컷 편집, 오디오 정리, 자막, 그림 배치, 최종 출력</td><td>복잡한 애니메이션</td></tr>
+      <tr><td>애프터이펙트</td><td>다이어그램 움직임, 타이틀, 지도·비교표 애니메이션</td><td>영상 전체 편집</td></tr>
+      <tr><td>Vrew 등 자동 편집</td><td>안 써도 됩니다</td><td>—</td></tr>
+    </table>
+    </div>
+  </section>
+
+  <section class="block">
+    <h3>1편 만들 때 딱 한 번 해둘 것</h3>
+    <div class="body">
+      <ul>
+        <li><b>프리미어 시퀀스 프리셋과 프로젝트 템플릿</b> — 트랙 구성, 자막 스타일, 오디오 이펙트 체인까지 저장. 2편부터는 열자마자 시작합니다.</li>
+        <li><b>애프터이펙트 에센셜 그래픽(.mogrt)으로 타이틀과 비교표를 만들어 프리미어로 내보내기.</b> 이게 핵심입니다. 한 번 만들면 매 영상 텍스트만 바꿔 끼우면 됩니다. 애프터이펙트를 다시 열 일이 거의 없어집니다.</li>
+        <li><b>자막 스타일 하나 고정.</b> 프리미어 음성 텍스트 변환으로 자동 생성 → 손으로 다듬기. 편당 15분이면 끝납니다.</li>
+        <li><b>오디오 프리셋</b> — 하이패스 · 컴프레서 · 라우드니스 정규화(-14 LUFS)를 묶어서 저장.</li>
+      </ul>
+      <div class="note">
+        <p><b>1편은 8시간 걸립니다.</b> 정상입니다. 그 8시간의 절반이 템플릿 만드는 시간이고, 그 덕에 2편부터 3~4시간으로 떨어집니다. 처음부터 빠르게 하려고 하면 오히려 매번 느립니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h3>주간 루틴</h3>
+    <div class="wrap-x">
+    <table class="tbl">
+      <tr><th>요일</th><th>작업</th><th>시간</th></tr>
+      <tr><td>일</td><td>다음 4편 기획 — 질문 고르기, 제목, 한 문장 정리까지</td><td>30분</td></tr>
+      <tr><td>월 · 화</td><td>대본 (AI 인터뷰 → 말로 풀기 → 구조 잡기)</td><td>40분×2</td></tr>
+      <tr><td>수</td><td>그림 그리기 (두 편치 몰아서)</td><td>60분</td></tr>
+      <tr><td>목</td><td>녹음 + 프리미어 편집</td><td>90분</td></tr>
+      <tr><td>금</td><td>썸네일 3안, 업로드, 예약</td><td>30분</td></tr>
+    </table>
+    </div>
+    <p class="body">편당 3~4시간. 주 1편이면 여유롭고, 주 2편이면 빡빡합니다. <b>처음 10편은 주 1편으로 시작하시길 권합니다.</b></p>
+  </section>
+</div>
+
+<!-- ============ 6. 주제 30 ============ -->
+<div class="panel" id="topics" role="tabpanel">
+  <h2>주제 30개</h2>
+  <p class="lede">모두 세 가지 조건을 통과한 것들입니다. 카드를 눌러 둘이서 고르세요. 고른 목록은 마지막 장에 모입니다.</p>
+
+  <div class="filters" id="filters"></div>
+  <p class="counter">고른 주제 <strong id="cnt">0</strong>개 <span id="cntNote"></span></p>
+  <div class="topics" id="grid"></div>
+</div>
+
+<!-- ============ 7. 정할 것 ============ -->
+<div class="panel" id="decide" role="tabpanel">
+  <h2>오늘 둘이서 정할 것</h2>
+  <p class="lede">여기만 정하면 다음 주에 촬영을 시작할 수 있습니다. 각 항목마다 제 추천을 적어뒀지만, 정하는 건 두 분입니다.</p>
+
+  <section class="block" id="decisions"></section>
+
+  <section class="block">
+    <h3>4주 로드맵</h3>
+    <div class="week"><div class="week-n">1주차<small>준비</small></div><div class="week-body">채널 개설, 그림 스타일 정하기, 프리미어·AE 템플릿 만들기<ul><li>학교 겸직 규정 확인하기 — 시작 전에 반드시</li><li>아이 이야기 익명화 원칙 문서로 한 장 정해두기</li></ul></div></div>
+    <div class="week"><div class="week-n">2주차<small>1편</small></div><div class="week-body">완성도는 신경 쓰지 말고 끝까지 만들어보기<ul><li>목적은 좋은 영상이 아니라 병목 찾기</li><li>각 단계에 걸린 시간을 기록해두기</li></ul></div></div>
+    <div class="week"><div class="week-n">3–4주차<small>2·3편</small></div><div class="week-body">주 1편 페이스 유지. 1편에서 찾은 병목을 템플릿으로 해결<ul><li>이 시점에 편당 소요 시간이 절반이 되어야 정상</li></ul></div></div>
+    <div class="week"><div class="week-n">10편 시점<small>점검</small></div><div class="week-body">조회수 말고 <b>평균 시청 지속률</b>만 봅니다<ul><li>40%를 넘긴 영상들의 공통점을 찾아 그쪽으로 좁히기</li><li>구독자는 20~30편까지 거의 안 늘어납니다. 정상입니다</li></ul></div></div>
+  </section>
+
+  <div class="summary">
+    <h3>오늘 정한 것</h3>
+    <div id="sumBox"><p class="sum-empty">아직 아무것도 정하지 않았습니다. 위에서 선택하면 여기에 모입니다.</p></div>
+    <button class="btn" id="copyBtn">전체 복사하기</button>
+  </div>
+
+  <footer>
+    <p>이 문서는 논의용 초안입니다. 정해진 내용은 언제든 바꾸면 됩니다. 다만 한 번 정한 <b>그림 스타일과 플롯 구조</b>는 최소 10편까지 바꾸지 않는 편이 좋습니다. 채널의 인상은 반복에서 만들어집니다.</p>
+  </footer>
+</div>
+
+</main>
+
+<script>
+(function(){
+"use strict";
+
+/* ---------- tabs ---------- */
+var tabs = document.querySelectorAll('.nav button');
+tabs.forEach(function(btn){
+  btn.addEventListener('click', function(){
+    tabs.forEach(function(b){ b.setAttribute('aria-selected','false'); });
+    btn.setAttribute('aria-selected','true');
+    document.querySelectorAll('.panel').forEach(function(p){ p.classList.remove('on'); });
+    document.getElementById(btn.dataset.tab).classList.add('on');
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+});
+
+/* ---------- topics ---------- */
+var TOPICS = [
+  {c:'사회·제도', n:'검찰과 경찰', l:'찾는 사람과 재판에 세우는 사람. 10월 2일에 제도가 통째로 바뀝니다', t:'first'},
+  {c:'사회·제도', n:'판사 · 검사 · 변호사', l:'한 재판정 안의 세 자리'},
+  {c:'사회·제도', n:'시 · 군 · 구', l:'인구와 도농 구분으로 갈린 행정 단위'},
+  {c:'사회·제도', n:'국회의원과 시의원', l:'만드는 규칙의 크기가 다릅니다'},
+  {c:'사회·제도', n:'헌법 · 법률 · 조례', l:'누가 만드느냐에 따른 계단'},
+  {c:'사회·제도', n:'소방관과 구급대원', l:'같은 차에서 내리는 다른 직업'},
+  {c:'사회·제도', n:'국립 · 공립 · 사립', l:'누가 돈을 대는가의 문제'},
+
+  {c:'과학·자연', n:'태풍 · 허리케인 · 사이클론', l:'같은 것인데 태어난 바다가 다릅니다'},
+  {c:'과학·자연', n:'백신과 항생제', l:'미리 훈련시키는 것과 이미 들어온 걸 죽이는 것'},
+  {c:'과학·자연', n:'지진 · 해일 · 화산', l:'하나의 원인에서 나온 세 가지 결과'},
+  {c:'과학·자연', n:'별 · 행성 · 위성', l:'스스로 빛나는가, 무엇을 도는가'},
+  {c:'과학·자연', n:'감기와 독감', l:'이름이 비슷해서 생긴 가장 흔한 오해'},
+  {c:'과학·자연', n:'바이러스와 세균', l:'살아 있는 것과 살아 있다고 보기 애매한 것'},
+  {c:'과학·자연', n:'안개 · 구름 · 미세먼지', l:'같은 하늘의 흰 것들, 정체는 전부 다름'},
+
+  {c:'역사·문화', n:'천주교 · 개신교 · 유대교', l:'같은 뿌리에서 언제 왜 갈라졌는가로만 설명합니다', t:'later'},
+  {c:'역사·문화', n:'왕과 황제', l:'위에 아무도 없느냐의 차이'},
+  {c:'역사·문화', n:'설날과 구정, 양력과 음력', l:'달력이 두 개인 나라에 사는 일'},
+  {c:'역사·문화', n:'올림픽과 월드컵', l:'하나는 도시가, 하나는 나라가 엽니다'},
+  {c:'역사·문화', n:'한자 · 한글 · 훈민정음', l:'글자의 이름과 문서의 이름이 섞여버린 사연'},
+  {c:'역사·문화', n:'성과 본관', l:'같은 김씨인데 왜 결혼을 따졌을까'},
+
+  {c:'말·이름', n:'호텔 · 모텔 · 유스호스텔', l:'귀족을 위해, 자동차를 위해, 아이들을 위해', t:'first'},
+  {c:'말·이름', n:'아파트 · 빌라 · 오피스텔', l:'법이 정한 이름과 부동산이 부르는 이름이 다릅니다'},
+  {c:'말·이름', n:'마트 · 시장 · 백화점', l:'물건을 누가 소유한 채로 파는가'},
+  {c:'말·이름', n:'학사 · 석사 · 박사', l:'배우는 사람과 만들어내는 사람의 경계'},
+  {c:'말·이름', n:'의사 · 약사 · 간호사', l:'판단하고, 조제하고, 지켜보는 일'},
+
+  {c:'생활·경제', n:'은행과 증권사', l:'맡아주는 곳과 이어주는 곳'},
+  {c:'생활·경제', n:'세금은 어디로 가나', l:'우리 반 교실 형광등까지 오는 경로'},
+  {c:'생활·경제', n:'보험이란 무엇인가', l:'모르는 사람들끼리 미리 나눠 갖는 불운'},
+  {c:'생활·경제', n:'택배는 어떻게 오나', l:'허브 하나를 반드시 거치는 이유'},
+  {c:'생활·경제', n:'전기는 어디서 오나', l:'스위치에서 발전소까지 거꾸로 따라가기'}
+];
+
+var chosen = {};
+var activeCat = '전체';
+var cats = ['전체'].concat(TOPICS.map(function(t){return t.c;}).filter(function(v,i,a){return a.indexOf(v)===i;}));
+
+var filters = document.getElementById('filters');
+cats.forEach(function(c){
+  var b = document.createElement('button');
+  b.className='chip'; b.textContent=c; b.setAttribute('aria-pressed', c===activeCat);
+  b.addEventListener('click', function(){
+    activeCat=c;
+    filters.querySelectorAll('.chip').forEach(function(x){ x.setAttribute('aria-pressed', x.textContent===c); });
+    render();
+  });
+  filters.appendChild(b);
+});
+
+var grid = document.getElementById('grid');
+function render(){
+  grid.innerHTML='';
+  TOPICS.forEach(function(t, i){
+    if(activeCat!=='전체' && t.c!==activeCat) return;
+    var b=document.createElement('button');
+    b.className='topic'; b.type='button';
+    b.setAttribute('aria-pressed', !!chosen[i]);
+    var tag = t.t==='first' ? '<span class="t-tag first">1편 후보</span>'
+            : t.t==='later' ? '<span class="t-tag later">10편 이후에</span>' : '';
+    b.innerHTML = '<span class="box"></span><span class="t-name">'+t.n+'</span>'+
+                  '<span class="t-line">'+t.l+'</span>'+tag;
+    b.addEventListener('click', function(){
+      chosen[i] = !chosen[i];
+      b.setAttribute('aria-pressed', !!chosen[i]);
+      updateCount(); updateSummary();
+    });
+    grid.appendChild(b);
+  });
+}
+function updateCount(){
+  var n = Object.keys(chosen).filter(function(k){return chosen[k];}).length;
+  document.getElementById('cnt').textContent = n;
+  document.getElementById('cntNote').textContent = n>=4 ? '— 첫 달 분량이 나왔습니다' : n>0 ? '' : '';
+}
+render(); updateCount();
+
+/* ---------- decisions ---------- */
+var DECISIONS = [
+  {k:'채널 이름', q:'채널 이름을 뭐라고 할까', why:'“질문”과 “설명”이 둘 다 들어가면 뭐 하는 채널인지 바로 읽힙니다.',
+   o:['여덟 살의 질문','아빠는 모른다','대충 아는 것들','오늘 배운 질문','더 이야기해보고 정하기'],
+   rec:'“여덟 살의 질문” — 소재의 출처와 톤이 한 번에 들어옵니다.'},
+  {k:'얼굴 공개', q:'얼굴을 내밀까', why:'교사라는 신분과 학교 규정 때문에 신중해야 할 부분입니다.',
+   o:['공개 안 함 (그림만)','손과 목소리만','전면 공개'],
+   rec:'공개 안 함 — 제작 부담이 크게 줄고, 그림에 개성을 몰아줄 수 있습니다.'},
+  {k:'목소리', q:'나레이션은 누가',  why:'이 채널에서 목소리는 그림보다 강한 서명입니다.',
+   o:['가다 직접','배우자 직접','둘이 번갈아','TTS'],
+   rec:'직접 — 아이에게 설명하는 톤은 훈련으로 못 얻습니다.'},
+  {k:'그림 스타일', q:'그림은 어떻게', why:'한 번 정하면 최소 10편까지 바꾸지 않습니다.',
+   o:['종이에 손그림 + 스캔','태블릿 디지털 드로잉','AI 이미지 위주','섞어서'],
+   rec:'디지털 드로잉 — 손맛은 남기고 수정은 자유롭습니다.'},
+  {k:'업로드', q:'얼마나 자주 올릴까', why:'못 지킬 약속은 처음부터 안 하는 게 낫습니다.',
+   o:['주 1편','주 2편','격주 1편'],
+   rec:'주 1편 — 10편까지는 이 페이스. 여유가 남으면 그때 늘립니다.'},
+  {k:'역할 분담', q:'둘이 어떻게 나눌까', why:'혼자 다 하면 3개월을 못 넘깁니다.',
+   o:['한 명이 기획·대본, 다른 한 명이 편집','한 명이 전부, 다른 한 명은 피드백','편을 나눠서 각자 완결','아직 못 정하겠음'],
+   rec:'기획·대본과 편집을 나누는 쪽 — 서로의 병목이 겹치지 않습니다.'},
+  {k:'아이 이야기 원칙', q:'교실 이야기를 어디까지 쓸까', why:'가장 중요한 결정입니다. 시작 전에 문서로 남겨두세요.',
+   o:['익명화해서 인용만 (이름·특징 전부 제외)','상황만 각색해서','실명·사진 절대 불가 + 학부모 사전 동의','더 알아보고 정하기'],
+   rec:'익명화 인용만 — “한 아이가”, “우리 반에서” 수준. 얼굴과 목소리는 아예 넣지 않습니다.'},
+  {k:'학교 규정 확인', q:'겸직 규정은 누가 언제 확인할까', why:'수익이 발생하기 전에 확인해야 합니다. 시작하고 나서 알면 늦습니다.',
+   o:['이번 주에 가다가 확인','시작 전까지 확인하고 공유','수익화 신청 직전에'],
+   rec:'이번 주 — 결과에 따라 채널 운영 명의 자체가 달라질 수 있습니다.'}
+];
+
+var picks = {};
+var dWrap = document.getElementById('decisions');
+DECISIONS.forEach(function(d, i){
+  var el = document.createElement('div');
+  el.className='decision';
+  var opts = d.o.map(function(o){ return '<button class="opt" type="button" data-d="'+i+'" data-v="'+o+'" aria-pressed="false">'+o+'</button>'; }).join('');
+  el.innerHTML = '<div class="d-q">'+d.q+'</div><div class="d-why">'+d.why+'</div>'+
+                 '<div class="opts">'+opts+'</div><div class="d-rec">추천 — <b>'+d.rec+'</b></div>';
+  dWrap.appendChild(el);
+});
+dWrap.addEventListener('click', function(e){
+  var b = e.target.closest('.opt'); if(!b) return;
+  var d = b.dataset.d;
+  dWrap.querySelectorAll('.opt[data-d="'+d+'"]').forEach(function(x){ x.setAttribute('aria-pressed','false'); });
+  if(picks[d] === b.dataset.v){ delete picks[d]; }
+  else { picks[d] = b.dataset.v; b.setAttribute('aria-pressed','true'); }
+  updateSummary();
+});
+
+/* ---------- summary ---------- */
+var sumBox = document.getElementById('sumBox');
+function updateSummary(){
+  var rows = [];
+  DECISIONS.forEach(function(d,i){ if(picks[i]) rows.push([d.k, picks[i]]); });
+  var chosenNames = TOPICS.filter(function(t,i){return chosen[i];}).map(function(t){return t.n;});
+  if(chosenNames.length) rows.push(['고른 주제 ('+chosenNames.length+')', chosenNames.join(' · ')]);
+
+  if(!rows.length){
+    sumBox.innerHTML = '<p class="sum-empty">아직 아무것도 정하지 않았습니다. 위에서 선택하면 여기에 모입니다.</p>';
+    return;
+  }
+  sumBox.innerHTML = rows.map(function(r){
+    return '<div class="sum-row"><span>'+r[0]+'</span><span>'+r[1]+'</span></div>';
+  }).join('');
+}
+
+document.getElementById('copyBtn').addEventListener('click', function(){
+  var lines = ['우리 가족 유튜브 채널 — 오늘 정한 것',''];
+  DECISIONS.forEach(function(d,i){ if(picks[i]) lines.push('· '+d.k+': '+picks[i]); });
+  var names = TOPICS.filter(function(t,i){return chosen[i];}).map(function(t){return t.n;});
+  if(names.length){ lines.push('', '고른 주제 ('+names.length+'개)'); names.forEach(function(n){ lines.push('  - '+n); }); }
+  var text = lines.join('\n');
+  var btn = this;
+  function done(){ btn.textContent='복사했습니다'; setTimeout(function(){ btn.textContent='전체 복사하기'; }, 1800); }
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(done, function(){ fallback(text, done); });
+  } else { fallback(text, done); }
+});
+function fallback(text, cb){
+  var ta=document.createElement('textarea'); ta.value=text; ta.style.position='fixed'; ta.style.opacity='0';
+  document.body.appendChild(ta); ta.select();
+  try{ document.execCommand('copy'); cb(); }catch(err){ alert('복사에 실패했습니다. 직접 선택해서 복사해 주세요.'); }
+  document.body.removeChild(ta);
+}
+})();
+</script>
+</body>
+</html>

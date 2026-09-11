@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>호텔 · 모텔 · 유스호스텔, 뭐가 달라요?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<style>
+:root{
+  --paper:#E9EDE8; --surface:#F6F8F4; --surface-2:#DFE6DE;
+  --ink:#1B2A26; --pencil:#66756E; --rule:#C4D0C6;
+  --red:#B8352A; --red-soft:#E8CFCB; --maxw:860px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif;
+  font-size:16px;line-height:1.75;letter-spacing:-0.01em}
+h1,h2,h3{font-family:'Gowun Batang',serif;font-weight:700;line-height:1.35;margin:0}
+p{margin:0 0 0.9em}
+.page{max-width:var(--maxw);margin:0 auto;padding:0 20px 80px}
+.hero{padding:64px 0 40px;
+  background-image:repeating-linear-gradient(to bottom,transparent 0 37px,var(--rule) 37px 38px);
+  background-position:0 8px}
+.eyebrow{font-size:13px;color:var(--pencil);margin:0 0 22px}
+.q-mark{font-family:'Nanum Pen Script',cursive;font-size:clamp(28px,5vw,40px);color:var(--red);display:block;margin-bottom:6px}
+.q-text{font-family:'Nanum Pen Script',cursive;font-size:clamp(30px,5.5vw,48px);line-height:1.45;margin:0 0 22px}
+.thesis{font-family:'Gowun Batang',serif;font-size:clamp(19px,3vw,26px);line-height:1.6;margin:0 0 8px}
+.thesis b{color:var(--red)}
+section.block{margin:44px 0;max-width:800px}
+section.block h3{font-size:18px;margin-bottom:14px;padding-left:13px;border-left:3px solid var(--red)}
+.body{font-size:15.5px}
+.body ul{padding-left:19px;margin:0 0 1em}
+.body li{margin-bottom:.45em}
+.beats{border-top:1px solid var(--rule)}
+.beat{display:grid;grid-template-columns:100px 1fr;gap:20px;padding:16px 0;border-bottom:1px solid var(--rule)}
+.beat-time{font-size:13px;color:var(--pencil);padding-top:3px;font-variant-numeric:tabular-nums}
+.beat-name{font-family:'Gowun Batang',serif;font-weight:700;font-size:16.5px;margin-bottom:5px}
+.beat-desc{font-size:14.5px;color:var(--pencil);white-space:pre-line}
+.beat.key .beat-name{color:var(--red)}
+.tbl{width:100%;border-collapse:collapse;font-size:14.5px;margin-bottom:14px}
+.tbl th,.tbl td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--rule);vertical-align:top}
+.tbl th{font-weight:600;font-size:13px;color:var(--pencil);border-bottom:1.5px solid var(--ink)}
+.note{background:var(--surface);border-left:3px solid var(--red);padding:16px 20px;font-size:14.5px;margin:20px 0}
+.note b{color:var(--red)}
+.storyboard-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-bottom:14px}
+.cut-card{background:var(--surface);border:1px solid var(--rule);border-radius:2px;padding:12px 14px}
+.cut-num{font-family:'Gowun Batang',serif;font-weight:700;font-size:13.5px;color:var(--red);margin-bottom:6px}
+.cut-angle{display:inline-block;font-size:11px;color:var(--pencil);border:1px solid var(--rule);border-radius:2px;padding:1px 6px;margin-bottom:8px}
+.cut-desc{font-size:13.5px;margin-bottom:8px}
+.cut-caption{font-size:13px;color:var(--pencil);font-style:italic}
+.thumb-list{display:flex;flex-direction:column;gap:8px;font-size:15px;padding-left:0;list-style:none}
+.thumb-list li{background:var(--surface);border:1px solid var(--rule);padding:10px 14px;border-radius:2px}
+.summary-line{font-family:'Gowun Batang',serif;font-size:clamp(18px,2.6vw,22px);
+  background:var(--surface);border:1px solid var(--rule);padding:18px 22px;border-radius:2px}
+footer{border-top:1px solid var(--rule);margin-top:50px;padding-top:20px;font-size:13px;color:var(--pencil)}
+@media(max-width:640px){.beat{grid-template-columns:1fr;gap:4px}.beat-time{padding-top:0}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="page">
+  <p class="eyebrow">여덟 살의 질문 · 1편 후보 · 부모·자녀 관계 버전</p>
+  <span class="q-mark">여덟 살 아이</span>
+  <p class="q-text">“아빠, 호텔이랑 모텔이랑<br>유스호스텔은 뭐가 달라요?”</p>
+  <p class="thesis">“호텔은 <b>귀족</b>을 위해, 모텔은 <b>자동차</b>를 위해,<br>유스호스텔은 <b>아이들</b>을 위해.”</p>
+</div></header>
+
+<main class="page">
+
+<section class="block">
+  <h3>자료조사 메모</h3>
+  <div class="body">
+    <ul>
+      <li><b>호텔</b>: 19세기 유럽 상류층의 장기 체류용 숙박에서 출발. 프랑스어 hôtel(귀족 저택)이 어원.</li>
+      <li><b>모텔</b>: motor + hotel의 합성어. 1920년대 미국에서 자동차 여행객이 차를 세워두고 바로 잘 수 있게 만든 저층 숙박시설.</li>
+      <li><b>유스호스텔</b>: 1912년 독일 교사 리하르트 시르만이 도보 여행 중인 학생들을 위해 시작. 지금도 청소년·배낭여행객 중심.</li>
+      <li><b>한국 맥락 메모</b>: 한국에서 '모텔'은 1990년대 이후 자동차 여행보다 단시간·연인용 숙박이라는 이미지가 강하게 붙었다 — 미국 원래 어원과는 다른 방향으로 변형된 사례.</li>
+      <li>오늘날 오해: "모텔=저급, 호텔=고급"은 정확한 구분이 아님. 원래는 누구를 위한 숙소인가의 차이였지 등급 차이가 아니었음.</li>
+      <li>정설은 아니지만: 국내 최초 유스호스텔은 1960년대 도입, 청소년 수련 목적의 정부 지원 시설로 출발.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="block">
+  <h3>콘티</h3>
+  <div class="beats">
+    <div class="beat"><div class="beat-time">0:00–0:20</div><div><div class="beat-name">1. 그 질문</div><div class="beat-desc">"아빠, 호텔이랑 모텔이랑 유스호스텔은 뭐가 달라요?"</div></div></div>
+    <div class="beat"><div class="beat-time">0:20–0:50</div><div><div class="beat-name">2. 얼버무린 순간</div><div class="beat-desc">말끝 흐리고 화제 돌림 → "가격이 다른 거야" 얼버무림</div></div></div>
+    <div class="beat"><div class="beat-time">0:50–1:30</div><div><div class="beat-name">3. 왜 다들 헷갈리나</div><div class="beat-desc">셋 다 '자는 곳'이라 뭉뚱그려 부르지만 원래 만들어진 이유가 완전히 다름</div></div></div>
+    <div class="beat"><div class="beat-time">1:30–4:30</div><div><div class="beat-name">4. 갈라진 지점</div><div class="beat-desc">호텔(귀족 저택 유래) → 모텔(자동차 여행객, 1920s 미국) → 유스호스텔(1912년 시르만, 청소년 도보여행)</div></div></div>
+    <div class="beat"><div class="beat-time">4:30–5:20</div><div><div class="beat-name">5. 한 문장 정리</div><div class="beat-desc">"호텔은 귀족을 위해, 모텔은 자동차를 위해, 유스호스텔은 아이들을 위해."</div></div></div>
+    <div class="beat key"><div class="beat-time">5:20–6:40</div><div><div class="beat-name">6. 아이 눈높이로 번역</div><div class="beat-desc">다음 날 아이에게 실제로 해준 설명</div></div></div>
+    <div class="beat"><div class="beat-time">6:40–7:30</div><div><div class="beat-name">7. 남는 이야기</div><div class="beat-desc">다음 편 예고: "아파트·빌라·오피스텔은 또 왜 이름이 다를까?"</div></div></div>
+  </div>
+</section>
+
+<section class="block">
+  <h3>그림 콘티 (컷 11장)</h3>
+  <div class="storyboard-grid">
+    <div class="cut-card"><div class="cut-num">#1 · 1. 그 질문</div><div class="cut-angle">와이드</div><div class="cut-desc">거실, 아이 실루엣이 부모 쪽을 올려다봄</div><div class="cut-caption">"아빠, 호텔이랑 모텔이랑 유스호스텔은 뭐가 달라요?"</div></div>
+    <div class="cut-card"><div class="cut-num">#2 · 2. 얼버무린 순간</div><div class="cut-angle">미디엄</div><div class="cut-desc">부모 실루엣이 시선을 돌리고 뒷목을 만짐</div><div class="cut-caption">"어... 그게..."</div></div>
+    <div class="cut-card"><div class="cut-num">#3 · 2. 얼버무린 순간</div><div class="cut-angle">클로즈업</div><div class="cut-desc">딴 곳을 보는 고개 각도만</div><div class="cut-caption">"음, 가격이 좀 다른 거야"</div></div>
+    <div class="cut-card" style="border-style:dashed;"><div class="cut-num">#3-플래시백 · 2. 얼버무린 순간(회상)</div><div class="cut-angle">미디엄, 점선 테두리</div><div class="cut-desc">몇 년 전 모텔 카운터, 실루엣이 뻣뻣하게 굳고 식은땀 효과선</div><div class="cut-caption">"저... 어... 네..."</div></div>
+    <div class="cut-card"><div class="cut-num">#4 · 3. 왜 다들 헷갈리나</div><div class="cut-angle">자막컷</div><div class="cut-desc">세 단어가 겹쳐 흐릿하게 표시</div><div class="cut-caption">"다 그냥 '자는 곳' 아니야?"</div></div>
+    <div class="cut-card"><div class="cut-num">#5 · 4. 갈라진 지점</div><div class="cut-angle">와이드</div><div class="cut-desc">유럽풍 저택 실루엣, 귀족 손님이 문 앞에</div><div class="cut-caption">"귀족의 저택에서 시작된 호텔"</div></div>
+    <div class="cut-card"><div class="cut-num">#6 · 4. 갈라진 지점</div><div class="cut-angle">와이드</div><div class="cut-desc">1920년대 자동차와 나란히 붙은 낮은 건물</div><div class="cut-caption">"자동차 여행객을 위한 모텔"</div></div>
+    <div class="cut-card"><div class="cut-num">#7 · 4. 갈라진 지점</div><div class="cut-angle">미디엄</div><div class="cut-desc">배낭 멘 아이들이 줄지어 건물로 들어감</div><div class="cut-caption">"1912년, 한 교사가 만든 유스호스텔"</div></div>
+    <div class="cut-card"><div class="cut-num">#8 · 5. 한 문장 정리</div><div class="cut-angle">자막컷</div><div class="cut-desc">세 건물 실루엣이 나란히, 문구가 가운데</div><div class="cut-caption">"귀족을 위해, 자동차를 위해, 아이들을 위해"</div></div>
+    <div class="cut-card"><div class="cut-num">#9 · 6. 아이 눈높이로 번역</div><div class="cut-angle">미디엄</div><div class="cut-desc">부모와 아이가 나란히 앉아 있음</div><div class="cut-caption">"그래서 다음 날 이렇게 말해줬습니다"</div></div>
+    <div class="cut-card"><div class="cut-num">#10 · 7. 남는 이야기</div><div class="cut-angle">와이드</div><div class="cut-desc">다음 편 예고 — 아파트·빌라 실루엣 흐릿하게</div><div class="cut-caption">"다음 편: 아파트, 빌라, 오피스텔은?"</div></div>
+  </div>
+</section>
+
+<section class="block">
+  <h3>전체 대본</h3>
+  <div class="body">
+    <p><b>[1. 그 질문 — 0:00]</b><br>지난주에 저희 집 여덟 살 아이가 갑자기 이렇게 물었습니다.<br>"아빠, 호텔이랑 모텔이랑 유스호스텔은 뭐가 달라요?"</p>
+    <p><b>[2. 얼버무린 순간 — 0:20]</b><br>저는 이 질문에 이렇게 답했습니다.<br>"어... 그게... 음, 가격이 좀 다른 거야."<br>(살짝 헛기침하고 다른 이야기로 넘어감)</p><p><i>(화면 살짝 빛바랜 톤으로 전환 — 플래시백)</i><br>사실 그 순간, 머릿속에는 다른 장면이 스쳐 지나갔습니다. 몇 년 전, 연애하던 시절 모텔 카운터 앞에서 괜히 쭈뼛거리며 카드를 꺼내다 떨어뜨리고, 목소리가 한 톤 올라간 채로 "저... 어... 네..."만 반복했던 그 순간이요.<br><i>(다큐멘터리 나레이션 톤으로 진지하게)</i> "이때부터 어른의 사정이라는 게 시작된다."<br><i>(바로 셀프 태클)</i> …라고 하기엔 그냥 많이 쭈뼛거렸습니다.<br><i>(효과음: 뚜둥 — 화면 다시 현재로)</i><br>…그건 나중 얘기고. 아무튼 저는 아이한테 가격 얘기로 얼버무렸고, 지금 생각하면 진짜 이유는 하나도 말 안 한 거였어요.</p>
+    <p><b>[3. 왜 다들 헷갈리나 — 0:50]</b><br>우리는 이 세 개를 그냥 '자는 곳'으로 뭉뚱그려 씁니다. 그런데 이 셋은 태어난 이유부터가 완전히 다릅니다. 오늘은 이 세 단어가 각각 누구를 위해 만들어졌는지부터 따라가 보겠습니다.</p>
+    <p><b>[4. 갈라진 지점 — 1:30]</b><br>호텔이라는 단어는 프랑스어 '오텔(hôtel)'에서 왔습니다. 원래는 귀족들의 저택을 부르는 말이었어요. 그 저택에 손님방을 두고 여행하는 귀족을 재워주던 게 지금 호텔의 시작입니다.<br><br>모텔은 다릅니다. 1920년대 미국에서 자동차가 갑자기 흔해졌습니다. 그런데 자동차로 먼 길을 가다 보면, 밤에 차를 세우고 바로 옆에서 잘 곳이 필요했어요. 그래서 'motor'와 'hotel'을 합쳐서 '모텔'이라는 새 단어를 만들었습니다. 자동차 여행객을 위한 숙소였던 거죠.<br><br>유스호스텔은 1912년, 독일의 한 교사에게서 시작됩니다. 리하르트 시르만이라는 선생님이 학생들을 데리고 도보 여행을 다니다가, 아이들이 싸고 안전하게 묵을 곳이 마땅치 않다는 걸 알게 됐어요. 그래서 학교 건물을 빌려 청소년 전용 숙소를 만들었고, 그게 지금의 유스호스텔이 됐습니다. (참고로 이 교사님은 그 흔한 '대실'과는 1도 상관없는 삶을 사셨습니다.)</p>
+    <p><b>[5. 한 문장 정리 — 4:30]</b><br>정리하면 이렇습니다.<br>"호텔은 귀족을 위해, 모텔은 자동차를 위해, 유스호스텔은 아이들을 위해."</p>
+    <p><b>[6. 아이 눈높이로 번역 — 5:20]</b><br>다음 날, 저는 아이한테 다시 이렇게 말해줬습니다.<br>"어제 아빠가 대답을 대충 했지? 사실 이 세 개는 원래 다른 사람들을 위해서 생긴 거야. 호텔은 옛날에 귀한 손님이 묵던 큰 집에서 시작했고, 모텔은 자동차 타고 멀리 가는 사람들이 차 바로 옆에서 잘 수 있게 만든 거고, 유스호스텔은 너처럼 여행 가는 어린이들을 위해서 어떤 선생님이 만든 거야."<br>그러자 아이가 물었습니다. "그럼 저희도 유스호스텔 가면 되겠네요?"<br>"응, 딱 너 같은 어린이를 위해서 만들어진 곳이야."</p>
+    <p><b>[7. 남는 이야기 — 6:40]</b><br>이름 하나에도 누구를 위해 만들어졌는지가 숨어 있습니다. 다음 편에서는 아파트, 빌라, 오피스텔이 왜 이렇게 이름이 갈렸는지 따라가 보겠습니다.</p>
+  </div>
+</section>
+
+<section class="block">
+  <h3>배경음악 · 효과음</h3>
+  <table class="tbl">
+    <tr><th>박자</th><th>추천</th></tr>
+    <tr><td>1. 그 질문</td><td>유튜브 오디오 보관함 — 가벼운 우쿨렐레/피치카토 루프, 낮은 볼륨</td></tr>
+    <tr><td>2. 얼버무린 순간</td><td>같은 곡 유지 + 헛기침 타이밍에 짧은 코믹 효과음 1회</td></tr>
+    <tr><td>3. 왜 다들 헷갈리나</td><td>로파이 피아노 계열로 전환, 잔잔하게</td></tr>
+    <tr><td>4. 갈라진 지점</td><td>3번과 동일 톤 유지, 연도·인물 등장 시 효과음 살짝</td></tr>
+    <tr><td>5. 한 문장 정리</td><td>짧은 스팅어 한 방</td></tr>
+    <tr><td>6. 아이 눈높이로 번역</td><td>배경음 -20dB 이하 또는 완전 제거</td></tr>
+    <tr><td>7. 남는 이야기</td><td>잔잔하게 페이드아웃</td></tr>
+  </table>
+  <p class="body">나레이션 대비 배경음 −20dB 기준, 라우드니스 정규화 −14 LUFS.</p>
+</section>
+
+<section class="block">
+  <h3>썸네일 문구 · 제목 후보</h3>
+  <ul class="thumb-list">
+    <li>호텔 / 모텔 / 유스호스텔, 뭐가 다른 거예요?</li>
+    <li>"가격 차이야" — 이거 사실 틀린 답이었습니다</li>
+    <li>귀족을 위해, 자동차를 위해, 아이들을 위해</li>
+    <li>여덟 살한테 "모텔이 뭐예요?" 라는 질문을 받으면</li>
+    <li>호텔·모텔·유스호스텔, 이름부터가 다른 이유</li>
+  </ul>
+</section>
+
+<section class="block">
+  <h3>한 문장 정리</h3>
+  <p class="summary-line">"호텔은 귀족을 위해, 모텔은 자동차를 위해, 유스호스텔은 아이들을 위해."</p>
+</section>
+
+<footer><p>eight-year-olds-question 스킬로 생성한 에피소드 문서입니다.</p></footer>
+</main>
+</body>
+</html>
