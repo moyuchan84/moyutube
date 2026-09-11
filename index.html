@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>여덟 살의 질문</title>
+<meta name="description" content="부모가 대충은 아는데 제대로 설명은 못 하는 것들을, 아이 눈높이까지 번역하는 유튜브 채널의 기획서 · 에피소드 · 제작 가이드 모음.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="여덟 살의 질문">
+<meta property="og:description" content="대충은 아는데 제대로 설명은 못 하는 것들을, 아이 눈높이까지.">
+<meta property="og:image" content="https://moyuchan84.github.io/moyutube/episodes/01-hotel-motel-hostel/storyboard.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✏️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<style>
+:root{
+  --paper:#E9EDE8; --surface:#F6F8F4; --surface-2:#DFE6DE;
+  --ink:#1B2A26; --pencil:#66756E; --rule:#C4D0C6;
+  --red:#B8352A; --red-soft:#E8CFCB; --maxw:960px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,system-ui,'Malgun Gothic',sans-serif;
+  font-size:16px;line-height:1.75;letter-spacing:-0.01em;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:'Gowun Batang',serif;font-weight:700;letter-spacing:-0.02em;line-height:1.35;margin:0}
+p{margin:0 0 0.9em}
+a{color:inherit}
+.page{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+
+/* ---------- hero ---------- */
+.hero{padding:76px 0 60px;
+  background-image:repeating-linear-gradient(to bottom,transparent 0 37px,var(--rule) 37px 38px);
+  background-position:0 8px}
+.eyebrow{font-size:13px;color:var(--pencil);margin:0 0 28px}
+.q-mark{font-family:'Nanum Pen Script',cursive;font-size:clamp(28px,4.6vw,40px);color:var(--red);line-height:1;display:block;margin-bottom:4px}
+.hero h1{font-size:clamp(40px,8vw,68px);line-height:1.2;margin-bottom:26px}
+.hero h1 .ul{background:linear-gradient(transparent 72%,var(--red-soft) 72%)}
+.thesis{font-family:'Gowun Batang',serif;font-size:clamp(19px,3vw,25px);line-height:1.65;max-width:640px;margin:0 0 18px}
+.thesis b{color:var(--red)}
+.hero-sub{font-size:15px;color:var(--pencil);max-width:560px;margin:0}
+
+/* ---------- sections ---------- */
+main{padding-top:56px;padding-bottom:96px}
+.sec{margin-bottom:60px}
+.sec-head{display:flex;align-items:baseline;gap:14px;border-bottom:1.5px solid var(--ink);padding-bottom:10px;margin-bottom:18px}
+.sec-head h2{font-size:clamp(21px,3vw,26px)}
+.sec-head .no{font-family:'Nanum Pen Script',cursive;font-size:30px;color:var(--red);line-height:1}
+.sec-head .aside{margin-left:auto;font-size:13px;color:var(--pencil)}
+
+/* ---------- document rows ---------- */
+.doc{display:grid;grid-template-columns:1fr auto;gap:8px 24px;align-items:center;
+  padding:22px 24px;background:var(--surface);border:1px solid var(--rule);border-radius:2px;
+  text-decoration:none;color:inherit;transition:border-color .15s ease}
+.doc:hover{border-color:var(--ink)}
+.doc:hover .go{color:var(--red);transform:translateX(3px)}
+.doc:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.doc h3{font-size:19px;margin-bottom:6px}
+.doc p{font-size:14.5px;color:var(--pencil);margin:0}
+.go{font-size:22px;color:var(--pencil);transition:transform .15s ease,color .15s ease}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tag{font-size:11.5px;padding:1px 8px;border:1px solid var(--rule);border-radius:2px;color:var(--pencil);background:var(--paper)}
+.tag.red{border-color:var(--red);color:var(--red);background:none}
+.stack{display:grid;gap:10px}
+
+/* ---------- episodes ---------- */
+.eps{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.ep{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--rule);border-radius:2px;
+  text-decoration:none;color:inherit;overflow:hidden;transition:border-color .15s ease}
+a.ep:hover{border-color:var(--ink)}
+a.ep:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+.ep-img{aspect-ratio:720/393;background:var(--surface-2);border-bottom:1px solid var(--rule)}
+.ep-img img{width:100%;height:100%;object-fit:cover;display:block}
+.ep-body{padding:16px 18px 18px;flex:1;display:flex;flex-direction:column}
+.ep-no{font-family:'Nanum Pen Script',cursive;font-size:26px;color:var(--red);line-height:1;margin-bottom:4px}
+.ep h3{font-size:17.5px;margin-bottom:6px}
+.ep .line{font-size:14px;color:var(--pencil);margin:0}
+.ep .tags{margin-top:auto;padding-top:14px}
+.ep.soon{border-style:dashed;background:none}
+.ep.soon .ep-img{display:flex;align-items:center;justify-content:center;background:none;border-bottom-style:dashed}
+.ep.soon .ep-img span{font-family:'Nanum Pen Script',cursive;font-size:34px;color:var(--pencil)}
+.ep.soon .ep-no{color:var(--pencil)}
+
+/* ---------- small links ---------- */
+.files{list-style:none;padding:0;margin:0;border-top:1px solid var(--rule)}
+.files li{display:grid;grid-template-columns:1fr auto;gap:4px 18px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--rule)}
+.files a{color:var(--ink);font-weight:600;text-decoration:none;border-bottom:1px solid var(--rule)}
+.files a:hover{color:var(--red);border-color:var(--red)}
+.files .desc{grid-column:1/-1;font-size:14px;color:var(--pencil)}
+.files .kind{font-size:12.5px;color:var(--pencil);font-variant-numeric:tabular-nums}
+
+footer{border-top:1px solid var(--rule);padding-top:22px;font-size:13px;color:var(--pencil)}
+
+@media(max-width:640px){
+  .hero{padding:52px 0 44px}
+  .doc{grid-template-columns:1fr;padding:18px}
+  .go{display:none}
+  .sec-head .aside{display:none}
+}
+@media (prefers-reduced-motion:reduce){.doc,.go,.ep{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="page">
+    <p class="eyebrow">우리 가족 유튜브 채널 · 작업 노트 · 2026.09</p>
+    <span class="q-mark">“아빠, 이건 뭐가 달라요?”</span>
+    <h1><span class="ul">여덟 살의 질문</span></h1>
+    <p class="thesis">부모가 <b>대충은 아는데 제대로 설명은 못 하는 것들</b>을,<br>아이 눈높이까지 번역하는 채널.</p>
+    <p class="hero-sub">채널 기획서, 에피소드 원고, 제작 가이드를 한곳에 모았습니다. 새 에피소드가 나오면 아래 목록에 한 줄씩 늘어납니다.</p>
+  </div>
+</header>
+
+<main class="page">
+
+  <section class="sec" aria-labelledby="s-plan">
+    <div class="sec-head"><span class="no">1</span><h2 id="s-plan">채널 기획</h2><span class="aside">여기서부터 읽으세요</span></div>
+    <a class="doc" href="plan/">
+      <div>
+        <h3>우리 가족 유튜브 채널 기획</h3>
+        <p>주제가 아니라 필터를 정했습니다. 컨셉, 일곱 박자 영상 플롯, 그림과 소리, 편집 도구, 주제 30개, 그리고 둘이서 정할 것까지.</p>
+        <div class="tags"><span class="tag">7장</span><span class="tag">주제 고르기</span><span class="tag">결정 체크리스트</span><span class="tag">4주 로드맵</span></div>
+      </div>
+      <span class="go" aria-hidden="true">→</span>
+    </a>
+  </section>
+
+  <section class="sec" aria-labelledby="s-ep">
+    <div class="sec-head"><span class="no">2</span><h2 id="s-ep">에피소드</h2><span class="aside">자료조사 · 콘티 · 대본 · 썸네일</span></div>
+    <div class="eps">
+      <a class="ep" href="episodes/01-hotel-motel-hostel/">
+        <div class="ep-img"><img src="episodes/01-hotel-motel-hostel/storyboard-thumb.jpg" width="720" height="393" alt="호텔·모텔·유스호스텔 편 그림 콘티 시안"></div>
+        <div class="ep-body">
+          <div class="ep-no">#01</div>
+          <h3>호텔 · 모텔 · 유스호스텔, 뭐가 달라요?</h3>
+          <p class="line">호텔은 귀족을 위해, 모텔은 자동차를 위해, 유스호스텔은 아이들을 위해.</p>
+          <div class="tags"><span class="tag red">1편 후보</span><span class="tag">대본 완성</span><span class="tag">콘티 11컷</span></div>
+        </div>
+      </a>
+      <div class="ep soon" aria-label="다음 에피소드 준비 중">
+        <div class="ep-img"><span>준비 중…</span></div>
+        <div class="ep-body">
+          <div class="ep-no">#02</div>
+          <h3>아파트 · 빌라 · 오피스텔</h3>
+          <p class="line">법이 정한 이름과 부동산이 부르는 이름이 다릅니다.</p>
+          <div class="tags"><span class="tag">다음 편 예고</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="s-guide">
+    <div class="sec-head"><span class="no">3</span><h2 id="s-guide">제작 가이드</h2></div>
+    <a class="doc" href="guide/">
+      <div>
+        <h3>도구는 있는데 안 써봐서 막막할 때</h3>
+        <p>프리미어 단축키와 한 번만 해둘 세팅, 애프터이펙트 .mogrt 템플릿, AI로 콘티 → 러프컷 MVP → 다듬기, PC와 모바일 제작 방식 비교.</p>
+        <div class="tags"><span class="tag">프리미어</span><span class="tag">애프터이펙트</span><span class="tag">AI 빌드업</span><span class="tag">CapCut · Flow</span></div>
+      </div>
+      <span class="go" aria-hidden="true">→</span>
+    </a>
+  </section>
+
+  <section class="sec" aria-labelledby="s-files">
+    <div class="sec-head"><span class="no">4</span><h2 id="s-files">자료</h2></div>
+    <ul class="files">
+      <li>
+        <a href="skill/eight-year-olds-question.skill" download>eight-year-olds-question 스킬</a>
+        <span class="kind">.skill · 15KB</span>
+        <span class="desc">주제 하나를 넣으면 자료조사 · 콘티표 · 그림 콘티 · 대본 · BGM · 썸네일 문구까지 뽑아주는 Claude 스킬 패키지.</span>
+      </li>
+      <li>
+        <a href="episodes/01-hotel-motel-hostel/hotel-motel-hostel.md">#01 호텔 · 모텔 · 유스호스텔 원고</a>
+        <span class="kind">.md</span>
+        <span class="desc">에피소드 페이지의 마크다운 원본. 색 포인트가 포함된 그림 콘티 표가 들어 있습니다.</span>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>논의용 작업 노트입니다. 정해진 내용은 언제든 바뀔 수 있습니다. · 마지막 업데이트 2026.09.11</p>
+  </footer>
+</main>
+
+</body>
+</html>

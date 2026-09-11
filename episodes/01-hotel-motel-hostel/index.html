@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>호텔 · 모텔 · 유스호스텔, 뭐가 달라요?</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✏️</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
@@ -25,6 +26,13 @@ p{margin:0 0 0.9em}
   background-image:repeating-linear-gradient(to bottom,transparent 0 37px,var(--rule) 37px 38px);
   background-position:0 8px}
 .eyebrow{font-size:13px;color:var(--pencil);margin:0 0 22px}
+.home{display:inline-block;font-size:13px;color:var(--pencil);text-decoration:none;border-bottom:1px solid var(--rule);margin-bottom:20px}
+.home:hover{color:var(--red);border-color:var(--red)}
+.board{margin:0 0 18px}
+.board a{display:block;border:1px solid var(--rule);border-radius:2px;background:var(--surface);line-height:0}
+.board img{width:100%;height:auto;display:block}
+.board figcaption{font-size:13px;color:var(--pencil);margin-top:8px;line-height:1.6}
+.board figcaption a{display:inline;border:none;background:none;line-height:inherit;color:var(--red)}
 .q-mark{font-family:'Nanum Pen Script',cursive;font-size:clamp(28px,5vw,40px);color:var(--red);display:block;margin-bottom:6px}
 .q-text{font-family:'Nanum Pen Script',cursive;font-size:clamp(30px,5.5vw,48px);line-height:1.45;margin:0 0 22px}
 .thesis{font-family:'Gowun Batang',serif;font-size:clamp(19px,3vw,26px);line-height:1.6;margin:0 0 8px}
@@ -61,6 +69,7 @@ footer{border-top:1px solid var(--rule);margin-top:50px;padding-top:20px;font-si
 </head>
 <body>
 <header class="hero"><div class="page">
+  <a class="home" href="../../">← 여덟 살의 질문 홈</a>
   <p class="eyebrow">여덟 살의 질문 · 1편 후보 · 부모·자녀 관계 버전</p>
   <span class="q-mark">여덟 살 아이</span>
   <p class="q-text">“아빠, 호텔이랑 모텔이랑<br>유스호스텔은 뭐가 달라요?”</p>
@@ -98,6 +107,10 @@ footer{border-top:1px solid var(--rule);margin-top:50px;padding-top:20px;font-si
 
 <section class="block">
   <h3>그림 콘티 (컷 11장)</h3>
+  <figure class="board">
+    <a href="storyboard.jpg"><img src="storyboard.jpg" width="1600" height="873" loading="lazy" alt="호텔·모텔·유스호스텔 편 그림 콘티 시안 — 거실의 아이와 부모, 뒷목을 만지는 부모, 모텔 카운터 회상, 귀족 저택, 1920년대 자동차와 모텔, 배낭 멘 아이들, 소파에 나란히 앉은 가족 등 실루엣 컷 12장"></a>
+    <figcaption>제미나이로 뽑은 콘티 시안입니다. 컷 번호는 아래 카드와 조금 다릅니다. <a href="storyboard-original.png">원본 PNG(7MB)</a></figcaption>
+  </figure>
   <div class="storyboard-grid">
     <div class="cut-card"><div class="cut-num">#1 · 1. 그 질문</div><div class="cut-angle">와이드</div><div class="cut-desc">거실, 아이 실루엣이 부모 쪽을 올려다봄</div><div class="cut-caption">"아빠, 호텔이랑 모텔이랑 유스호스텔은 뭐가 달라요?"</div></div>
     <div class="cut-card"><div class="cut-num">#2 · 2. 얼버무린 순간</div><div class="cut-angle">미디엄</div><div class="cut-desc">부모 실루엣이 시선을 돌리고 뒷목을 만짐</div><div class="cut-caption">"어... 그게..."</div></div>
@@ -157,7 +170,7 @@ footer{border-top:1px solid var(--rule);margin-top:50px;padding-top:20px;font-si
   <p class="summary-line">"호텔은 귀족을 위해, 모텔은 자동차를 위해, 유스호스텔은 아이들을 위해."</p>
 </section>
 
-<footer><p>eight-year-olds-question 스킬로 생성한 에피소드 문서입니다.</p></footer>
+<footer><p>eight-year-olds-question 스킬로 생성한 에피소드 문서입니다. · <a href="hotel-motel-hostel.md" style="color:var(--red)">마크다운 원고</a> · <a href="../../" style="color:var(--red)">홈으로</a></p></footer>
 </main>
 </body>
 </html>
