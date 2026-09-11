@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 22 364 199" width="728" height="398">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4"/>
+<path d="M16 172H348" stroke="#C4D0C6" stroke-width="3"/>
+<rect x="48" y="40" width="64" height="132" fill="#1B2A26"/>
+<path d="M56 62H104M56 84H104M56 106H104M56 128H104M56 150H104" stroke="#F6F8F4" stroke-width="6" stroke-dasharray="8 6"/>
+<rect x="150" y="98" width="64" height="74" fill="#1B2A26"/>
+<path d="M158 118H206M158 142H206" stroke="#F6F8F4" stroke-width="6" stroke-dasharray="8 6"/>
+<rect x="144" y="76" width="76" height="22" fill="#B8352A"/>
+<text x="182" y="92" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="14" font-weight="700" fill="#F6F8F4">VILLA</text>
+<rect x="252" y="64" width="64" height="108" fill="#1B2A26"/>
+<path d="M262 82H306M262 96H306M262 110H306M262 124H306M262 138H306M262 152H306" stroke="#66756E" stroke-width="2"/>
+<text x="80" y="204" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="20" font-weight="700" fill="#B8352A">층수</text>
+<text x="182" y="204" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="20" font-weight="700" fill="#B8352A">광고</text>
+<text x="284" y="204" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="20" font-weight="700" fill="#B8352A">사무실</text>
+</svg>
