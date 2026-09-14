@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 26 364 199" width="728" height="398">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4"/>
+<text x="182" y="48" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="22" font-weight="700" fill="#1B2A26">사라진 게 아니라</text>
+<path d="M74 82q-16 38 0 76" stroke="#66756E" stroke-width="2" fill="none" stroke-linecap="round"/>
+<text x="74" y="190" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="23" font-weight="700" fill="#B8352A">가늘어졌고</text>
+<path d="M148 128h50M190 120l10 8l-10 8" stroke="#B8352A" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M274 78q-18 42 0 82" stroke="#1B2A26" stroke-width="11" fill="none" stroke-linecap="round"/>
+<text x="274" y="190" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="23" font-weight="700" fill="#B8352A">다시 굵어집니다</text>
+<text x="182" y="216" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="13" font-weight="700" fill="#66756E">솜털 → 굵은 털</text>
+</svg>

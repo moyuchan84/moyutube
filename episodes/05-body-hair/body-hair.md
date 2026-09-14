@@ -1,0 +1,384 @@
+# 5편 — "아빠는 왜 온몸에 털이 났어요?"
+*(스킬 eight-year-olds-question 실행 결과 — 부모·자녀 관계 버전)*
+
+## 1. 자료조사 메모
+- **털은 사라진 게 아니라 가늘어졌다.** 사람 몸의 털집(모낭)은 흔히 500만 개 안팎으로 이야기되고, 그중 두피에 10만 개 정도가 있다. 단위 면적당 털집 수는 침팬지 같은 유인원과 크게 다르지 않다는 것이 일반적인 설명이다. 사람은 '털이 없는 원숭이'가 아니라 '털을 아주 가늘게 바꾼 원숭이'에 가깝다.
+- **털은 세 종류.** 배냇솜털(태아 때 온몸을 덮고 태어날 무렵 빠진다) → 솜털(가늘고 짧고 색이 옅어 눈에 잘 안 띈다. 손바닥·발바닥·입술을 빼면 거의 온몸에 있다) → 굵은털(머리카락·눈썹·속눈썹처럼 처음부터 굵은 것과, 나중에 굵어지는 것). 어른이 되며 '없던 털이 새로 나는' 게 아니라, 원래 그 자리에 있던 솜털이 굵은털로 바뀌는 것이다.
+- **왜 머리카락만 길어지나 — 굵기가 아니라 '자라는 기간'.** 털은 자라는 기간(성장기) → 멈추는 기간 → 쉬는 기간을 돌고 빠진다. 두피 머리카락은 성장기가 2~7년이라 계속 길어지고(한 달에 1cm 남짓), 눈썹·팔다리 털은 성장기가 몇 주~몇 달이라 어느 길이에서 멈춘다. 머리카락이 하루 50~100개 빠지는 것은 정상. "눈썹이 머리카락처럼 길면 앞이 안 보인다"가 아이 설명에 그대로 쓰인다.
+- **사춘기 스위치는 호르몬.** 부신에서 안드로겐 계열 호르몬이 늘기 시작하면(대개 만 6~8세부터 아주 서서히) 특정 자리의 솜털이 굵은털로 바뀐다. 눈에 보이는 변화는 보통 만 8~13세 사이에 시작되고 개인차가 크다. 영국 소아과 의사 제임스 태너가 1969~1970년 논문에서 정리한 5단계(태너 단계)가 지금도 성장 진료에 쓰인다. 아이에게 전할 핵심은 "빠른 게 잘난 것도, 느린 게 이상한 것도 아니다".
+- **같은 호르몬이 위아래에서 반대로 작용한다.** 몸의 어떤 모낭은 안드로겐에 반응해 굵어지고, 두피의 모낭은 같은 계열 호르몬(DHT)에 반응해 오히려 가늘고 짧아진다 — 남성형 탈모. 한 몸 안에서 같은 신호가 정반대 일을 한다.
+- **왜 사람은 몸털을 잃었나 — 이것도 가설 단계.** 가장 자주 인용되는 것은 땀 가설: 사람은 에크린 땀샘이 유난히 많고(200만~400만 개), 털이 적어야 땀이 증발하며 체온이 내려가 한낮에도 오래 걷고 달릴 수 있다. 몸에 붙어사는 기생충을 줄이려 했다는 가설도 있다(마크 페이글 등, 2003). 머릿니와 몸니가 갈라진 시점을 유전자로 따져 옷을 입기 시작한 시기를 추정한 연구들이 있는데, 결과는 약 7만 년 전부터 17만 년 전까지 폭이 크다 — 숫자를 단정하지 말 것.
+- **왜 하필 그 자리인가 ① — 땀샘이 먼저 있고, 털이 그 짝이다.** 사람의 땀샘은 두 종류다. 에크린 땀샘은 온몸에 퍼져 물 같은 땀을 피부 표면으로 바로 내보내 체온을 낮춘다(200만~400만 개). 아포크린 땀샘은 겨드랑이·사타구니·유륜·외이도 같은 몇 군데에만 모여 있고, 단백질과 지질이 섞인 끈끈한 분비물을 낸다. 결정적인 차이는 출구다 — 아포크린은 피부 표면이 아니라 **털집(모낭)에 연결되어 그 안으로 분비된다**. 이 샘이 일하려면 털집이 필요하다는 뜻이고, 아포크린이 몰려 있는 자리와 사춘기에 굵은 털이 나는 자리가 거의 겹치는 이유가 여기 있다. 털이 나서 무언가를 하는 게 아니라, 그 자리에 특별한 샘이 있고 털이 그 짝이다.
+- **왜 하필 그 자리인가 ② — 털은 냄새를 퍼뜨리는 심지다.** 아포크린 분비물 자체는 거의 냄새가 없다. 냄새를 만드는 것은 피부에 사는 세균(코리네박테리움, 스타필로코쿠스 호미니스 등)으로, 분비물을 분해하면서 냄새 물질이 생긴다. 털은 표면적을 크게 늘려 분비물을 붙잡아 두고 천천히 증발시키는 심지(wick) 역할을 한다 — 다른 포유류에서도 냄새를 퍼뜨리는 털을 따로 부르는 이름이 있을 만큼 흔한 구조다. 다만 **사람에게 페로몬이 있느냐는 아직 논쟁 중**이므로 "냄새를 퍼뜨리는 구조"까지만 말하고 단정하지 않는다.
+- **왜 하필 그 자리인가 ③ — 마찰설·보온설은 흔히 인용되지만 근거가 약하다.** 팔과 몸통, 다리 사이처럼 피부가 서로 쓸리는 자리를 털이 완충한다는 설명이 가장 자주 나오지만 실험적 근거는 약하다(제모해도 별문제가 없다는 점이 반례로 자주 거론된다). 큰 혈관이 지나는 자리를 단열한다는 보온설도 마찬가지. 셋 중 하나로 못 박지 말고 "구조적으로 가장 잘 설명되는 건 땀샘과의 짝, 나머지는 가설"로 정리한다.
+- **타이밍이 가장 강한 단서다.** 머리카락·눈썹·속눈썹은 태어날 때부터 굵은털인데, 이 자리 털만 사춘기에 굵어진다. 그리고 아포크린 땀샘도 정확히 그때 작동을 시작한다. 둘은 같은 호르몬 신호로 동시에 켜지는 한 세트다. 침팬지·고릴라는 아포크린 땀샘이 온몸에 흩어져 있는데, 사람은 그것을 몇 군데로 몰아 놓았다.
+- **그래서 사람 몸에 남은 털은 세 갈래의 일을 한다.** ① 지키는 털 — 머리카락(정수리로 내리쬐는 햇볕 차단), 눈썹(땀·빗물을 눈 옆으로), 속눈썹(먼지·바람 센서), 코털(필터). ② 알리는 털 — 겨드랑이·사타구니처럼 아포크린 땀샘과 짝을 이루는 자리. ③ 흔적만 남은 털 — 팔다리의 가는 솜털과, 그것을 세우려다 닭살만 만드는 기모근.
+- **소름은 털을 세우던 장치의 흔적.** 털집마다 작은 근육(기모근)이 붙어 추위·놀람에 털을 세운다. 고양이는 그렇게 두 배로 커 보이지만, 사람은 털이 짧아 피부만 도돌도돌해진다.
+- **오늘날 남은 오해 두 가지.** (1) 면도하면 털이 굵어진다 — 아니다. 잘린 끝이 뭉툭해 굵고 뻣뻣하게 느껴질 뿐 모낭은 그대로다(1928년 실험 이후 여러 번 확인됐다). (2) 털은 지저분하다 — 눈에 보이는 털은 손톱과 같은 단백질(케라틴)로 된 죽은 세포다. 그래서 자를 때 아프지 않다. 살아 있는 것은 피부 속 모낭뿐.
+- **한국 맥락 메모**: 아이와 같이 목욕탕에 가는 문화 때문에, 이 질문은 한국 부모에게 유난히 자주, 그리고 유난히 공개된 자리에서 온다. 게다가 우리는 몸의 털을 정보가 아니라 감정으로 배웠다 — 밀어야 하는 것, 민망한 것, 말하면 안 되는 것. 그래서 답 대신 "쉿"이 먼저 나온다. 2번 박자의 당황 포인트는 털 자체가 아니라 **장소**다.
+
+## 2. 콘티표
+
+| 박자 | 시간 | 이번 화 내용 |
+|---|---|---|
+| 1. 그 질문 | 0:00–0:20 | 일요일 아침 동네 목욕탕 탕 안. 여덟 살 아이가 아주 또렷한 목소리로 "아빠는 왜 온몸에 털이 났어요? 나는 왜 없어요?" 그리고 한 마디 더 — "왜 하필 거기에 나요?" |
+| 2. 얼버무린 순간 | 0:20–0:50 | 탕이 조용해짐 → "어… 그게… 어른 되면 나." → "왜요?" → "어… 그냥… 나." → 이태리타월을 집으며 "등 밀자! 등!" → 그날 아이 등을 두 번 밀었다 |
+| 3. 왜 다들 헷갈리나 | 0:50–1:30 | 우리는 털을 있다/없다로만 본다 · 학교에서 배운 적이 없다 · 정보가 아니라 감정으로 배웠다 → 오늘은 '쉿'을 빼고 "몸은 왜 하필 이렇게 만들었나"만 본다 |
+| 4. 갈라진 지점 | 1:30–4:30 | 첫 갈라짐(털집 약 500만 개, 털을 버리고 땀샘 200만~400만 개를 얻었다 · 정설 아님) → 두 번째 갈라짐(솜털과 굵은털, 자라는 기간 2~7년 vs 몇 주~몇 달) → 세 번째 갈라짐(만 8~13세 호르몬 스위치, 태너 1969~1970) → **왜 하필 그 자리인가**: 아포크린 땀샘은 피부가 아니라 털집 안으로 분비된다 · 털은 냄새를 퍼뜨리는 심지 · 냄새는 세균이 만든다 · 페로몬 여부는 논쟁 중 · 마찰설은 근거 약함 · 샘과 털이 같은 시기에 함께 켜진다 → 남은 털의 세 갈래(지키는 털 · 알리는 털 · 흔적) → 같은 호르몬이 머리 위에서는 반대로 → 소름 + 면도 오해 정정 |
+| 5. 한 문장 정리 | 4:30–5:20 | "우리는 털을 잃은 게 아니라 가늘게 바꿨고, 때가 되면 필요한 자리에서 다시 굵어집니다." |
+| 6. 아이 눈높이로 번역 | 5:20–6:40 | 그날 밤 스탠드 불빛에 아이 팔을 비춰 솜털을 직접 보여줌 → 자리마다 자라는 기간이 다르다 → 몸이 자랄 때가 되면 굵어진다, 시기는 사람마다 다르고 빠른 것도 느린 것도 정상 → "몸이 궁금하면 언제든 물어봐. 대신 남의 몸 얘기는 크게 하지 않는 거야" → "그럼 나는 언제 굵어져요?" "그건 네 몸이 알아." |
+| 7. 남는 이야기 | 6:40–7:30 | 아이의 마지막 한 방("아빠 머리는 언제 다시 굵어져요?") + 지난 편에 예고해 놓고 미뤘던 다음 편 예고: "감기랑 독감은 뭐가 달라요?" |
+
+## 3. 그림 콘티 (컷 12장)
+
+| 컷 | 박자 | 앵글 | 구성 | 자막 | 색 포인트 |
+|---|---|---|---|---|---|
+| #1 | 1. 그 질문 | 와이드 | 목욕탕 타일 배경, 탕에 어깨까지 잠긴 아빠 실루엣, 옆에서 아이 실루엣이 아빠 쪽을 가리키며 올려다봄, 뒤쪽 어르신 실루엣 둘이 이쪽으로 고개를 돌림 | “아빠는 왜 온몸에 털이 났어요? 나는 왜 없어요?” | 잉크색 위주, 물음표만 빨강 |
+| #2 | 2. 얼버무린 순간 | 미디엄 | 머리에 수건을 얹은 아빠 실루엣이 고개를 돌리고 손으로 뒷목을 만짐, 식은땀 한 방울, 오른쪽 뒤로 어르신 실루엣 둘 | “어… 그게… 어른 되면 나.” | 회색 타일, 식은땀과 “어… 그게…”만 빨강 |
+| #3 | 2. 얼버무린 순간 | 클로즈업 | 이태리타월을 쥔 손 클로즈업, 오른쪽에 급하게 휘두르는 효과선 | “등 밀자! 등!” | 강조색(빨강) 타월 |
+| #4 | 3. 왜 다들 헷갈리나 | 자막컷 | 같은 팔뚝 두 개를 나란히. 왼쪽은 매끈해 보이는 팔, 오른쪽은 불빛에 비춰 가는 솜털이 보이는 팔, 가운데 빨간 화살표 | “없는 게 아니라, 안 보이는 것” | 연회색 팔, 화살표와 아래 한 줄만 빨강 |
+| #5 | 4. 갈라진 지점 | 자막컷 | 왼쪽에 털이 뻗친 유인원 실루엣, 오른쪽에 매끈한 사람 실루엣과 땀방울, 위쪽에 약 500만 개 표기 | “털집 수는 비슷, 굵기가 다를 뿐” | 잉크색 실루엣, 숫자와 땀방울만 빨강 |
+| #6 | 4. 갈라진 지점 | 자막컷 | 가로 막대 두 개. 머리카락 2~7년(긴 빨강 막대), 눈썹·팔다리 털 몇 주~몇 달(짧은 회색 막대) | “머리카락만 긴 건 오래 자라서” | 긴 막대만 빨강, 짧은 막대는 회색 |
+| #7 | 4. 갈라진 지점 | 자막컷 | 가운데 빨간 토글 스위치, 왼쪽 화살표 끝에 머리 실루엣과 −, 오른쪽 화살표 끝에 몸 실루엣과 ＋, 아래에 만 8~13세 표기 | “같은 호르몬, 반대 결과” | 스위치·부호·화살표만 빨강 |
+| #8 | 4. 갈라진 지점 | 자막컷 | 왼쪽은 피부 단면도 — 보통 땀샘은 관이 곧장 피부 밖으로, 아포크린 땀샘(빨강)은 관이 털집으로 연결됨. 오른쪽은 몸 실루엣에 그 샘이 모인 자리를 빨간 점으로만 표시 | “아포크린 땀샘은 털집 안으로 나온다” | 단면도의 아포크린 관·샘과 점만 빨강 |
+| #9 | 4. 갈라진 지점 | 클로즈업 | 왼쪽은 소름 돋은 팔뚝 클로즈업에 빨간 돋보기, 오른쪽은 등을 세우고 털이 부푼 고양이 실루엣 | “털을 세우던 근육만 남았다” | 회색 고양이, 돋보기만 빨강 |
+| #10 | 5. 한 문장 정리 | 자막컷 | 왼쪽에 아주 가는 털 한 올, 가운데 빨간 화살표, 오른쪽에 굵은 털 한 올. 위에 사라진 게 아니라 | “가늘어졌고, 다시 굵어집니다” | 강조색(빨강), 썸네일 재사용 컷 |
+| #11 | 6. 아이 눈높이로 번역 | 미디엄 | 밤, 스탠드 불빛 삼각형 안으로 아이 실루엣이 팔을 들어 비춰 봄, 옆에 앉은 아빠 실루엣 | “어, 진짜 있다!” | 잉크색, 불빛과 반짝임만 빨강 |
+| #12 | 7. 남는 이야기 | 와이드 | 흐릿한 휴지 상자와 감기? 독감? 글자 | “다음 편: 감기랑 독감은 뭐가 달라요?” | 회색, 페이드아웃 톤 |
+
+**러프 스케치 시트** (마크다운 뷰어가 SVG를 지원하면 아래에 렌더링됩니다 — 2단 배치. 파일로는 [storyboard.svg](storyboard.svg))
+
+<svg width="100%" viewBox="0 0 832 2024" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>사람 몸의 털 편 그림 콘티 전체 시트</title>
+<desc>12개 컷을 2단으로 배치한 러프 스토리보드 시트. 인물은 얼굴 없는 실루엣.</desc>
+<rect x="0" y="0" width="832" height="2024" fill="#E9EDE8"/>
+<g transform="translate(40,40)">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2"/>
+<path d="M0 44H364M0 86H364M0 128H364" stroke="#C4D0C6" stroke-width="2"/>
+<path d="M62 16V150M124 16V150M186 16V150M248 16V150M310 16V150" stroke="#C4D0C6" stroke-width="2"/>
+<path d="M36 40q9-13 18 0t18 0" stroke="#C4D0C6" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M286 30q9-13 18 0t18 0" stroke="#C4D0C6" stroke-width="3" fill="none" stroke-linecap="round"/>
+<rect x="14" y="150" width="336" height="58" fill="#DFE6DE" stroke="#66756E" stroke-width="3"/>
+<path d="M24 172q13-9 26 0t26 0 26 0 26 0 26 0 26 0 26 0 26 0 26 0 26 0 26 0 26 0" stroke="#66756E" stroke-width="3" fill="none"/>
+<circle cx="244" cy="128" r="15" fill="#66756E"/>
+<path d="M224 158v-14q0-16 20-16t20 16v14z" fill="#66756E"/>
+<circle cx="300" cy="132" r="14" fill="#66756E"/>
+<path d="M282 158v-12q0-14 18-14t18 14v12z" fill="#66756E"/>
+<circle cx="112" cy="108" r="22" fill="#1B2A26"/>
+<path d="M76 158v-20q0-22 36-22t36 22v20z" fill="#1B2A26"/>
+<circle cx="180" cy="130" r="15" fill="#1B2A26"/>
+<path d="M156 158v-10q0-16 24-16t24 16v10z" fill="#1B2A26"/>
+<path d="M162 144L138 134" stroke="#1B2A26" stroke-width="7" stroke-linecap="round"/>
+<text x="206" y="124" font-family="'Gowun Batang', serif" font-size="40" font-weight="700" fill="#B8352A">?</text>
+<text x="16" y="34" font-family="'Pretendard Variable', sans-serif" font-size="15" font-weight="700" fill="#66756E">목욕탕</text>
+<text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#1 · 1. 그 질문</text>
+<text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">“아빠는 왜 온몸에 털이 났어요?”</text>
+</g>
+<g transform="translate(428,40)">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2"/>
+<path d="M0 44H364M0 86H364" stroke="#C4D0C6" stroke-width="2"/>
+<path d="M70 16V204M150 16V204M230 16V204M310 16V204" stroke="#C4D0C6" stroke-width="2"/>
+<circle cx="112" cy="102" r="32" fill="#1B2A26"/>
+<rect x="76" y="70" width="72" height="20" rx="10" fill="#DFE6DE" stroke="#66756E" stroke-width="3"/>
+<path d="M54 204v-42q0-36 58-36t58 36v42z" fill="#1B2A26"/>
+<path d="M160 180Q200 150 150 112" stroke="#1B2A26" stroke-width="14" fill="none" stroke-linecap="round"/>
+<circle cx="148" cy="110" r="10" fill="#1B2A26"/>
+<path d="M172 58q7 11 0 16q-7-5 0-16z" fill="#B8352A"/>
+<text x="198" y="92" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">어… 그게…</text>
+<text x="198" y="122" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#1B2A26">어른 되면 나.</text>
+<circle cx="250" cy="156" r="13" fill="#66756E"/>
+<path d="M232 204v-32q0-14 18-14t18 14v32z" fill="#66756E"/>
+<circle cx="306" cy="160" r="12" fill="#66756E"/>
+<path d="M290 204v-28q0-12 16-12t16 12v28z" fill="#66756E"/>
+<text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#2 · 2. 얼버무린 순간</text>
+<text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">“어… 그게… 어른 되면 나.”</text>
+</g>
+<g transform="translate(40,371)">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2"/>
+<path d="M16 196H348" stroke="#C4D0C6" stroke-width="3"/>
+<path d="M20 152q40-30 96-26" stroke="#1B2A26" stroke-width="26" fill="none" stroke-linecap="round"/>
+<circle cx="130" cy="124" r="26" fill="#1B2A26"/>
+<g transform="rotate(-12 214 114)">
+<rect x="150" y="86" width="128" height="58" rx="4" fill="#B8352A"/>
+<path d="M162 100H266M162 116H266M162 132H266" stroke="#F6F8F4" stroke-width="3"/>
+</g>
+<path d="M296 74l24-12M304 108h30M296 146l24 14" stroke="#66756E" stroke-width="5" stroke-linecap="round"/>
+<text x="22" y="52" font-family="'Gowun Batang', serif" font-size="26" font-weight="700" fill="#B8352A">등 밀자! 등!</text>
+<text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#3 · 2. 얼버무린 순간</text>
+<text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">“등 밀자! 등!”</text>
+</g>
+<g transform="translate(428,371)">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2"/>
+<text x="182" y="38" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="20" font-weight="700" fill="#1B2A26">없는 게 아니라, 안 보이는 것</text>
+<rect x="26" y="76" width="120" height="76" rx="38" fill="#DFE6DE" stroke="#1B2A26" stroke-width="3"/>
+<text x="86" y="180" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="14" fill="#66756E">없다고 생각한 팔</text>
+<path d="M166 114h32M190 106l10 8l-10 8" stroke="#B8352A" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="218" y="76" width="120" height="76" rx="38" fill="#DFE6DE" stroke="#1B2A26" stroke-width="3"/>
+<path d="M234 76l-6-14M250 74l-4-16M266 73l0-17M282 73l4-17M298 74l6-16M314 76l8-14" stroke="#66756E" stroke-width="2" stroke-linecap="round"/>
+<path d="M234 152l-6 14M252 154l-4 14M270 155l0 15M288 154l4 14M306 152l6 14" stroke="#66756E" stroke-width="2" stroke-linecap="round"/>
+<text x="278" y="180" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="14" fill="#66756E">불빛에 비춘 같은 팔</text>
+<text x="182" y="210" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="15" font-weight="700" fill="#B8352A">솜털 — 가늘고 색이 옅어서 안 보일 뿐</text>
+<text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#4 · 3. 왜 다들 헷갈리나</text>
+<text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">“없는 게 아니라, 안 보이는 것”</text>
+</g>
+<g transform="translate(40,702)">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2"/>
+<text x="182" y="30" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="18" font-weight="700" fill="#1B2A26">털집 수는 비슷합니다. 굵기가 다를 뿐.</text>
+<text x="182" y="62" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="19" font-weight="700" fill="#B8352A">약 500만 개</text>
+<circle cx="86" cy="86" r="22" fill="#1B2A26"/>
+<path d="M52 188v-50q0-32 34-32t34 32v50z" fill="#1B2A26"/>
+<path d="M52 132q-18 30-4 56M120 132q18 30 4 56" stroke="#1B2A26" stroke-width="13" fill="none" stroke-linecap="round"/>
+<path d="M40 124l-12-8M38 142l-14-4M40 160l-12 4M132 124l12-8M134 142l14-4M132 160l12 4M66 64l-8-14M86 58l0-16M106 64l8-14" stroke="#66756E" stroke-width="4" stroke-linecap="round"/>
+<text x="86" y="212" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="14" fill="#66756E">굵은 털</text>
+<circle cx="272" cy="86" r="22" fill="#1B2A26"/>
+<path d="M240 188v-48q0-32 32-32t32 32v48z" fill="#1B2A26"/>
+<path d="M244 140q-8 26-2 48M300 140q8 26 2 48" stroke="#1B2A26" stroke-width="11" fill="none" stroke-linecap="round"/>
+<path d="M226 126l-8-6M224 146l-10-2M226 164l-8 4M318 126l8-6M320 146l10-2M318 164l8 4" stroke="#C4D0C6" stroke-width="2" stroke-linecap="round"/>
+<path d="M250 152q5 8 0 11q-5-3 0-11zM290 168q5 8 0 11q-5-3 0-11z" fill="#B8352A"/>
+<text x="272" y="212" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="14" fill="#66756E">가는 털 + 땀샘</text>
+<text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#5 · 4. 갈라진 지점</text>
+<text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">“털집 수는 비슷, 굵기가 다를 뿐”</text>
+</g>
+<g transform="translate(428,702)">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2"/>
+<text x="24" y="42" font-family="'Gowun Batang', serif" font-size="20" font-weight="700" fill="#1B2A26">왜 머리카락만 길어질까</text>
+<text x="24" y="78" font-family="'Pretendard Variable', sans-serif" font-size="15" font-weight="700" fill="#1B2A26">머리카락</text>
+<rect x="24" y="88" width="300" height="32" fill="#B8352A"/>
+<text x="38" y="110" font-family="'Pretendard Variable', sans-serif" font-size="15" font-weight="700" fill="#F6F8F4">자라는 기간 2~7년</text>
+<text x="24" y="152" font-family="'Pretendard Variable', sans-serif" font-size="15" font-weight="700" fill="#1B2A26">눈썹 · 팔다리 털</text>
+<rect x="24" y="162" width="58" height="32" fill="#66756E"/>
+<text x="94" y="184" font-family="'Pretendard Variable', sans-serif" font-size="15" fill="#66756E">몇 주 ~ 몇 달이면 멈춤</text>
+<text x="24" y="218" font-family="'Pretendard Variable', sans-serif" font-size="14" fill="#66756E">길이를 정하는 건 굵기가 아니라 ‘자라는 기간’</text>
+<text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#6 · 4. 갈라진 지점</text>
+<text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">“머리카락만 긴 건 오래 자라서”</text>
+</g>
+<g transform="translate(40,1033)">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2"/>
+<text x="182" y="34" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="20" font-weight="700" fill="#1B2A26">같은 호르몬, 반대 결과</text>
+<rect x="146" y="98" width="72" height="36" rx="18" fill="#B8352A"/>
+<circle cx="200" cy="116" r="13" fill="#F6F8F4"/>
+<text x="182" y="156" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="13" font-weight="700" fill="#B8352A">사춘기 스위치</text>
+<path d="M140 116H92M100 108l-10 8l10 8" stroke="#B8352A" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M224 116h48M264 108l10 8l-10 8" stroke="#B8352A" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="52" cy="92" r="24" fill="#1B2A26"/>
+<path d="M30 88q22-28 44 0" stroke="#C4D0C6" stroke-width="3" fill="none"/>
+<text x="52" y="152" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="26" font-weight="700" fill="#B8352A">−</text>
+<text x="52" y="180" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="13" fill="#66756E">머리는 가늘어지고</text>
+<circle cx="310" cy="70" r="16" fill="#1B2A26"/>
+<path d="M288 134v-42q0-22 22-22t22 22v42z" fill="#1B2A26"/>
+<text x="310" y="164" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="26" font-weight="700" fill="#B8352A">＋</text>
+<text x="310" y="188" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="13" fill="#66756E">몸은 굵어지고</text>
+<text x="182" y="214" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="14" fill="#66756E">보통 만 8~13세, 시작 시기는 사람마다 다름</text>
+<text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#7 · 4. 갈라진 지점</text>
+<text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">“같은 호르몬, 반대 결과”</text>
+</g>
+<g transform="translate(428,1033)">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2"/>
+<text x="182" y="28" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="19" font-weight="700" fill="#1B2A26">왜 하필 그 자리일까</text>
+<rect x="16" y="92" width="180" height="88" fill="#DFE6DE"/>
+<path d="M16 92H196" stroke="#1B2A26" stroke-width="3"/>
+<path d="M104 92L118 46" stroke="#1B2A26" stroke-width="5" stroke-linecap="round"/>
+<path d="M104 92L86 166" stroke="#66756E" stroke-width="16" stroke-linecap="round"/>
+<path d="M102 96L88 158" stroke="#1B2A26" stroke-width="5" stroke-linecap="round"/>
+<path d="M146 144L98 120" stroke="#B8352A" stroke-width="5" stroke-linecap="round"/>
+<circle cx="160" cy="150" r="15" fill="#B8352A"/>
+<path d="M44 140V92" stroke="#66756E" stroke-width="5" stroke-linecap="round"/>
+<circle cx="44" cy="152" r="12" fill="#66756E"/>
+<circle cx="44" cy="80" r="5" fill="#66756E"/>
+<text x="16" y="202" font-family="'Pretendard Variable', sans-serif" font-size="13" fill="#66756E">보통 땀샘 → 피부 밖으로</text>
+<text x="16" y="220" font-family="'Pretendard Variable', sans-serif" font-size="13" font-weight="700" fill="#B8352A">아포크린 땀샘 → 털집 안으로</text>
+<circle cx="284" cy="66" r="15" fill="#1B2A26"/>
+<path d="M264 172v-56q0-20 20-20t20 20v56z" fill="#1B2A26"/>
+<path d="M268 110q-10 24-6 46M300 110q10 24 6 46" stroke="#1B2A26" stroke-width="9" fill="none" stroke-linecap="round"/>
+<circle cx="270" cy="112" r="5" fill="#B8352A"/>
+<circle cx="298" cy="112" r="5" fill="#B8352A"/>
+<circle cx="284" cy="158" r="5" fill="#B8352A"/>
+<text x="284" y="202" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="13" fill="#66756E">샘이 모인 자리에만</text>
+<text x="284" y="220" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="13" font-weight="700" fill="#B8352A">굵은 털이 난다</text>
+<text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#8 · 4. 갈라진 지점</text>
+<text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">“털집 안으로 나오는 땀샘이 있다”</text>
+</g>
+<g transform="translate(40,1364)">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2"/>
+<text x="182" y="34" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="19" font-weight="700" fill="#1B2A26">털을 세우던 근육만 남았습니다</text>
+<rect x="22" y="74" width="144" height="86" rx="43" fill="#DFE6DE" stroke="#1B2A26" stroke-width="3"/>
+<circle cx="50" cy="98" r="4" fill="#66756E"/>
+<circle cx="72" cy="92" r="4" fill="#66756E"/>
+<circle cx="94" cy="100" r="4" fill="#66756E"/>
+<circle cx="116" cy="92" r="4" fill="#66756E"/>
+<circle cx="138" cy="100" r="4" fill="#66756E"/>
+<circle cx="60" cy="122" r="4" fill="#66756E"/>
+<circle cx="84" cy="128" r="4" fill="#66756E"/>
+<circle cx="106" cy="122" r="4" fill="#66756E"/>
+<circle cx="128" cy="128" r="4" fill="#66756E"/>
+<circle cx="50" cy="142" r="4" fill="#66756E"/>
+<circle cx="96" cy="144" r="4" fill="#66756E"/>
+<circle cx="140" cy="140" r="4" fill="#66756E"/>
+<circle cx="96" cy="118" r="32" fill="none" stroke="#B8352A" stroke-width="3"/>
+<path d="M119 141l16 16" stroke="#B8352A" stroke-width="5" stroke-linecap="round"/>
+<path d="M226 188Q222 134 262 126Q302 132 306 188Z" fill="#66756E"/>
+<rect x="232" y="178" width="12" height="14" fill="#66756E"/>
+<rect x="290" y="178" width="12" height="14" fill="#66756E"/>
+<circle cx="222" cy="142" r="18" fill="#66756E"/>
+<path d="M208 130l-4-18 15 9zM233 126l7-15 6 17z" fill="#66756E"/>
+<path d="M306 182q28-8 20-46" stroke="#66756E" stroke-width="9" fill="none" stroke-linecap="round"/>
+<path d="M224 126l-10-10M238 116l-6-14M256 110l-2-16M276 110l4-16M294 120l10-12M304 136l14-8" stroke="#66756E" stroke-width="4" stroke-linecap="round"/>
+<text x="94" y="204" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="14" fill="#66756E">사람 — 닭살만 돋는다</text>
+<text x="266" y="204" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="14" fill="#66756E">고양이 — 두 배로 커 보인다</text>
+<text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#9 · 4. 갈라진 지점</text>
+<text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">“털을 세우던 근육만 남았다”</text>
+</g>
+<g transform="translate(428,1364)">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2"/>
+<text x="182" y="48" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="22" font-weight="700" fill="#1B2A26">사라진 게 아니라</text>
+<path d="M74 82q-16 38 0 76" stroke="#66756E" stroke-width="2" fill="none" stroke-linecap="round"/>
+<text x="74" y="190" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="23" font-weight="700" fill="#B8352A">가늘어졌고</text>
+<path d="M148 128h50M190 120l10 8l-10 8" stroke="#B8352A" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M274 78q-18 42 0 82" stroke="#1B2A26" stroke-width="11" fill="none" stroke-linecap="round"/>
+<text x="274" y="190" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="23" font-weight="700" fill="#B8352A">다시 굵어집니다</text>
+<text x="182" y="216" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="13" font-weight="700" fill="#66756E">솜털 → 굵은 털</text>
+<text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#10 · 5. 한 문장 정리</text>
+<text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">“가늘어졌고, 다시 굵어집니다”</text>
+</g>
+<g transform="translate(40,1695)">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2"/>
+<path d="M16 200H348" stroke="#C4D0C6" stroke-width="3"/>
+<path d="M40 72L200 200H8Z" fill="#B8352A" opacity="0.13"/>
+<path d="M40 200V70" stroke="#1B2A26" stroke-width="6"/>
+<path d="M16 70h48l-10-24h-28z" fill="#1B2A26"/>
+<path d="M22 200h36" stroke="#1B2A26" stroke-width="6" stroke-linecap="round"/>
+<circle cx="176" cy="106" r="18" fill="#1B2A26"/>
+<path d="M148 200v-54q0-28 28-28t28 28v54z" fill="#1B2A26"/>
+<path d="M152 150L100 126" stroke="#1B2A26" stroke-width="12" fill="none" stroke-linecap="round"/>
+<path d="M86 108l-10-8M90 100l-2-14M102 102l6-12" stroke="#B8352A" stroke-width="3" stroke-linecap="round"/>
+<circle cx="276" cy="120" r="22" fill="#1B2A26"/>
+<path d="M244 200v-42q0-30 32-30t32 30v42z" fill="#1B2A26"/>
+<text x="196" y="60" font-family="'Gowun Batang', serif" font-size="23" font-weight="700" fill="#B8352A">어, 진짜 있다!</text>
+<text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#11 · 6. 아이 눈높이로 번역</text>
+<text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">“어, 진짜 있다!”</text>
+</g>
+<g transform="translate(428,1695)">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2"/>
+<rect x="112" y="98" width="140" height="86" rx="6" fill="#DFE6DE" stroke="#C4D0C6" stroke-width="3"/>
+<path d="M156 98q26-40 52 0" fill="none" stroke="#C4D0C6" stroke-width="3"/>
+<text x="182" y="150" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="24" font-weight="700" fill="#66756E">감기? 독감?</text>
+<text x="24" y="50" font-family="'Gowun Batang', serif" font-size="20" font-weight="700" fill="#B8352A">다음 편</text>
+<text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#12 · 7. 남는 이야기</text>
+<text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">“다음 편: 감기랑 독감은?”</text>
+</g>
+</svg>
+
+## 4. 전체 대본
+
+**[1. 그 질문 — 0:00]**
+지난 편 끝에 다음은 감기와 독감이라고 예고했는데, 그 사이에 목욕탕에서 일이 하나 터졌습니다. 순서를 바꿉니다.
+일요일 아침, 아이랑 동네 목욕탕에 갔어요. 탕에 나란히 앉아 있는데, 여덟 살 아이가 저를 빤히 보더니 아주 또렷한 목소리로 물었습니다.
+“아빠는 왜 온몸에 털이 났어요? 나는 왜 없어요?”
+그리고 한 마디 더 했습니다.
+“왜 하필 거기에 나요?”
+
+**[2. 얼버무린 순간 — 0:20]**
+탕이 조용해졌습니다.
+“어… 그게… 어른 되면 나.”
+“왜요?”
+“어… 그냥… 나.”
+저는 곧바로 이태리타월을 집었습니다. “등 밀자! 등!”
+그날 저는 아이 등을 아주 열심히, 두 번 밀었습니다.
+“어른 되면 난다”는 반은 맞는 말입니다. 그런데 아이가 물어본 건 언제가 아니라 왜였어요. 저는 그 왜를 하나도 대답하지 못했습니다.
+
+**[3. 왜 다들 헷갈리나 — 0:50]**
+헷갈릴 만합니다. 우리는 털을 있다, 없다로만 보니까요. 팔에 털 없으시죠? 있습니다. 지금 불빛에 팔을 한번 비춰 보세요.
+게다가 이건 배운 적이 없어요. 학교에서 뼈가 몇 개인지는 배웠는데, 털이 왜 나는지는 안 배웠습니다.
+그리고 솔직히 말하면, 우리는 털을 정보가 아니라 감정으로 배웠습니다. 밀어야 하는 것, 민망한 것, 크게 말하면 안 되는 것. 그래서 아이가 물어보면 답 대신 “쉿”이 먼저 나옵니다.
+오늘은 그 쉿을 빼고 딱 하나만 봅니다. 몸은 왜 하필 이렇게 만들었을까.
+
+**[4. 갈라진 지점 — 1:30]**
+첫 번째 갈라짐은 아주 오래전입니다.
+사람 몸에서 털이 자라는 구멍을 털집이라고 하는데, 대략 오백만 개예요. 놀라운 건 이 숫자가 침팬지랑 크게 다르지 않다는 겁니다. 사람은 털이 없는 게 아니라, 털을 아주 가늘게 바꾼 거예요.
+왜 그랬을까요. 가장 많이 나오는 설명은 땀입니다. 사람은 땀구멍이 유난히 많아서, 털이 가늘어야 땀으로 몸을 식힐 수 있거든요. 그래서 한낮에도 오래 걷고 달릴 수 있게 됐다는 이야기인데, 정설로 못 박긴 어렵습니다.
+인류는 털을 버리고 땀샘을 얻었습니다. 저는 그 능력으로 주로 버스를 잡습니다.
+
+두 번째 갈라짐은 한 사람 몸 안에서 일어납니다.
+왜 머리카락만 계속 길어지고 눈썹은 안 길어질까요. 굵기가 아니라 자라는 기간이 달라서예요. 머리카락은 자라는 기간이 이 년에서 칠 년이라 계속 길어지고, 눈썹이나 팔다리 털은 몇 주에서 몇 달이면 딱 멈춥니다.
+눈썹이 머리카락처럼 자랐으면, 우리는 아무것도 못 봤을 거예요.
+
+세 번째 갈라짐이 아이가 물어본 그 지점입니다.
+어느 나이가 되면 호르몬이 나오기 시작하고, 원래 그 자리에 있던 가는 솜털이 굵은털로 바뀝니다. 없던 털이 새로 나는 게 아니라 있던 털이 굵어지는 거예요. 보통 만 여덟 살에서 열세 살 사이인데 사람마다 차이가 큽니다. 빠른 아이도 느린 아이도 둘 다 정상이에요.
+
+그런데 아이가 진짜로 궁금해한 건 그게 아니었죠. 왜 하필 거기냐.
+찾아보면서 제일 놀란 게 이 부분입니다.
+사람 몸에는 땀샘이 두 종류 있어요. 하나는 아까 그 땀샘. 온몸에 깔려 있고, 물 같은 땀을 내고, 피부 표면으로 바로 나옵니다.
+다른 하나는 온몸에 없습니다. 겨드랑이, 사타구니, 귓속 같은 몇 군데에만 모여 있고, 단백질하고 기름이 섞인 끈끈한 분비물을 내요.
+그리고 여기가 핵심입니다. 이 샘은 피부 표면으로 안 나옵니다. 털집 안으로 나옵니다.
+이 샘이 일을 하려면 털집이 필요하다는 뜻이에요. 그래서 이 샘이 모인 자리와, 사춘기에 털이 굵어지는 자리가 거의 정확히 겹칩니다.
+순서가 제 생각이랑 반대였어요. 털이 거기 나서 무슨 일을 하는 게 아니라, 거기에 특별한 샘이 있고 털이 그 짝인 겁니다.
+털은 거기서 양초 심지 같은 일을 해요. 분비물을 붙잡아 뒀다가 천천히 퍼뜨립니다. 참고로 이 분비물 자체는 거의 냄새가 없어요. 냄새를 만드는 건 피부에 사는 세균입니다. 땀이 냄새나는 게 아니라, 땀을 먹은 세균이 냄새를 만드는 거죠.
+다만 여기서 한 발 더 나가면 안 됩니다. 사람한테 페로몬이 있느냐는 아직 논쟁 중이에요. 오늘은 냄새를 퍼뜨리는 구조다, 여기까지만 하겠습니다. 팔이랑 몸통이 쓸리니까 완충해 준다는 설명도 흔한데, 근거는 생각보다 약합니다.
+제일 강한 단서는 타이밍이에요. 그 자리 털만 사춘기에 굵어지는데, 방금 말한 그 땀샘도 정확히 그때 켜집니다. 둘이 한 세트인 거죠. 침팬지나 고릴라는 이 샘이 온몸에 흩어져 있는데, 사람은 그걸 몇 군데로 몰아 놨습니다.
+
+그래서 사람 몸에 남은 털은 하는 일로 보면 세 가지입니다.
+지키는 털. 머리카락은 정수리 햇볕을 막고, 눈썹은 땀을 눈 옆으로 흘려보내고, 코털은 걸러냅니다.
+알리는 털. 방금 말한 그 자리들이고요.
+흔적만 남은 털. 팔다리 솜털이랑, 추울 때 돋는 소름이 여기 들어갑니다. 털집마다 붙은 근육이 털을 세우는 장치인데, 고양이는 그걸로 두 배로 커 보이고 사람은 피부만 도돌도돌해져요.
+그리고 같은 호르몬인데, 아래에는 털을 주고 머리 위에서는 거둬갑니다. 남성형 탈모가 그거예요.
+아, 면도하면 털이 굵어진다는 말은 사실이 아닙니다. 잘린 끝이 뭉툭해서 굵게 느껴지는 것뿐이에요.
+
+**[5. 한 문장 정리 — 4:30]**
+정리하면 이렇습니다.
+“우리는 털을 잃은 게 아니라 가늘게 바꿨고, 때가 되면 필요한 자리에서 다시 굵어집니다.”
+새로 나는 게 아니라, 원래 있던 게 굵어지는 겁니다.
+
+**[6. 아이 눈높이로 번역 — 5:20]**
+그날 밤, 아이 방 스탠드를 켜고 옆에 앉았습니다. 낮에 목욕탕에서 못 한 대답을 하려고요.
+“아까 아빠가 그냥 난다고 했지. 그거 대답이 아니었어. 팔 한번 들어봐. 불빛에 대고, 이렇게.”
+아이가 팔을 불빛에 비췄습니다.
+“보여? 털 있지. 너도 온몸에 털이 있어. 아주 가늘고 색이 옅어서 안 보일 뿐이야. 사람은 털이 없어진 게 아니라 아주 가늘게 바꾼 거야. 그래야 땀이 잘 마르거든.
+자리마다 자라는 기간도 정해져 있어. 머리카락은 몇 년씩 자라니까 길어지고, 눈썹은 금방 멈추니까 짧아. 눈썹이 머리카락처럼 길면 앞이 안 보이겠지?
+아빠 몸에 있는 털은, 지금 네 몸에도 있는 그 가는 털이야. 몸이 자랄 때가 되면 몇 군데가 굵어져. 이제 어른 몸으로 자랄 준비를 한다는 신호야.
+왜 하필 몇 군데냐면, 거기에 특별한 땀샘이 모여 있거든. 보통 땀은 피부 밖으로 바로 나오는데, 그 땀샘은 털이 나는 구멍 안으로 나와. 그래서 그 자리에 털이 같이 나는 거야. 털이 그 짝인 셈이지. 털은 양초 심지처럼 그걸 붙잡아 뒀다가 천천히 퍼뜨려. 그 자리에서 냄새가 나는 것도 그래서야. 더러워서가 아니라, 원래 그렇게 만들어진 자리야.
+언제 시작되는지는 사람마다 달라. 빠르다고 좋은 것도, 느리다고 잘못된 것도 아니야. 네 몸이 정하는 거야.
+하나만 약속하자. 몸에 대해 궁금한 건 언제든지 아빠한테 물어봐. 부끄러운 질문 아니야. 대신 다른 사람 몸 얘기는 큰 소리로 하지 않는 거야. 그건 그 사람 거니까.”
+아이가 팔을 한 번 더 불빛에 비춰 보더니 말했습니다.
+“어, 진짜 있다.”
+그리고 물었어요.
+“그럼 나는 언제 굵어져요?”
+“그건 아빠도 몰라. 네 몸이 알아.”
+“몸이 알아요?”
+“응. 몸이 알아.”
+
+**[7. 남는 이야기 — 6:40]**
+같은 호르몬이 아래에서는 털을 내주고 위에서는 가져간다고 했잖아요. 저는 요즘 그 위쪽 이야기를 매일 아침 거울에서 확인하고 있습니다.
+다음 날 아침, 아이가 제 정수리를 내려다보더니 물었습니다.
+“아빠, 그럼 아빠 머리는 언제 다시 굵어져요?”
+그날은 목욕탕보다 더 조용해졌습니다.
+그리고 지난 편에 예고해 놓고 미뤄둔 질문, 다음 편에는 진짜로 합니다.
+“감기랑 독감은 뭐가 달라요? 독감은 독한 감기예요?”
+
+## 5. 배경음악 · 효과음
+
+| 박자 | 추천 |
+|---|---|
+| 1. 그 질문 | 유튜브 오디오 보관함 — 가볍고 통통 튀는 우쿨렐레/피치카토 루프. 목욕탕 물소리·울림 앰비언스를 아주 작게 |
+| 2. 얼버무린 순간 | “왜 하필 거기에 나요?” 직후 음악 뚝 멈춤 + 1.5초 정적(물방울 소리만) → “등 밀자!”에서 과장된 ‘뿅’ 효과음 → 음악 복귀 |
+| 3. 왜 다들 헷갈리나 | 로파이 피아노 계열로 전환, 잔잔하게 |
+| 4. 갈라진 지점 | 3번과 같은 톤 유지. 500만 · 2~7년 · 만 8~13세 숫자 자막에 페이지 넘김 효과음 아주 살짝. “털집 안으로 나옵니다”에서 음악 살짝 줄이고 한 박 쉬기. “버스를 잡습니다” 뒤에만 짧은 정적 |
+| 5. 한 문장 정리 | 짧은 스팅어 한 방 |
+| 6. 아이 눈높이로 번역 | 배경음 −20dB 이하 또는 완전 제거. 스탠드 켜지는 ‘딸깍’ 소리 하나만 |
+| 7. 남는 이야기 | 잔잔하게 페이드아웃, 다음 편 예고 자막과 함께 |
+
+나레이션 대비 배경음 −20dB 기준, 라우드니스 정규화 −14 LUFS.
+
+## 6. 썸네일 문구 3안 + 제목 후보
+
+**썸네일 문구**
+1. “아빠는 왜 온몸에 털이 났어요?”
+2. 목욕탕에서, 아주 큰 소리로 물었습니다
+3. 털은 사라진 게 아니라 가늘어졌습니다
+
+**제목 후보**
+1. 목욕탕에서 여덟 살이 크게 물었습니다 — “아빠는 왜 온몸에 털이 났어요?”
+2. 사람은 털이 없는 동물이 아니라, 털을 가늘게 바꾼 동물입니다
+3. 머리카락만 길어지는 이유, 그리고 겨드랑이에 털이 나는 자리가 하필 거기인 이유
+
+## 7. 한 문장 정리
+“우리는 털을 잃은 게 아니라 가늘게 바꿨고, 때가 되면 필요한 자리에서 다시 굵어집니다.”
