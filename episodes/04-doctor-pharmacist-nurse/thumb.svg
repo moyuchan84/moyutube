@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 30 364 199" width="728" height="398">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4"/>
+<path d="M16 172H348" stroke="#C4D0C6" stroke-width="3"/>
+<path d="M50 62V94Q50 122 70 122Q90 122 90 94V62" stroke="#1B2A26" stroke-width="6" fill="none" stroke-linecap="round"/>
+<circle cx="50" cy="58" r="5" fill="#1B2A26"/>
+<circle cx="90" cy="58" r="5" fill="#1B2A26"/>
+<path d="M70 122V138Q70 154 88 154" stroke="#1B2A26" stroke-width="6" fill="none"/>
+<circle cx="98" cy="154" r="11" fill="#1B2A26"/>
+<rect x="146" y="64" width="72" height="96" fill="#1B2A26"/>
+<path d="M146 80H218" stroke="#F6F8F4" stroke-width="3"/>
+<rect x="162" y="98" width="40" height="40" fill="#B8352A"/>
+<text x="182" y="126" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="22" font-weight="700" fill="#F6F8F4">약</text>
+<rect x="286" y="54" width="16" height="92" rx="8" fill="#F6F8F4" stroke="#1B2A26" stroke-width="5"/>
+<rect x="291" y="92" width="6" height="56" fill="#B8352A"/>
+<circle cx="294" cy="152" r="14" fill="#B8352A"/>
+<text x="70" y="200" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="20" font-weight="700" fill="#B8352A">정하고</text>
+<text x="70" y="221" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="13" font-weight="700" fill="#66756E">의사</text>
+<text x="182" y="200" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="20" font-weight="700" fill="#B8352A">짓고</text>
+<text x="182" y="221" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="13" font-weight="700" fill="#66756E">약사</text>
+<text x="294" y="200" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="20" font-weight="700" fill="#B8352A">지킵니다</text>
+<text x="294" y="221" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="13" font-weight="700" fill="#66756E">간호사</text>
+</svg>

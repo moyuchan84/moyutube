@@ -1,0 +1,224 @@
+<svg width="100%" viewBox="0 0 832 2024" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>의사·약사·간호사 편 그림 콘티 전체 시트</title>
+<desc>11개 컷을 2단으로 배치한 러프 스토리보드 시트. 인물은 얼굴 없는 실루엣.</desc>
+<rect x="0" y="0" width="832" height="2024" fill="#E9EDE8"/>
+<g transform="translate(40,40)">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2"/>
+<path d="M16 204H348" stroke="#C4D0C6" stroke-width="3"/>
+<path d="M196 48H348M196 84H348M196 120H348" stroke="#66756E" stroke-width="3"/>
+<path d="M206 30h16v18h-16zM230 34h14v14h-14zM252 28h18v20h-18zM318 32h16v16h-16zM206 66h18v18h-18zM234 70h14v14h-14zM320 64h18v20h-18zM210 104h14v16h-14zM326 102h16v18h-16z" fill="#66756E"/>
+<circle cx="290" cy="96" r="14" fill="#1B2A26"/>
+<path d="M270 142V126Q270 112 290 112Q310 112 310 126V142Z" fill="#1B2A26"/>
+<rect x="180" y="140" width="170" height="64" fill="#DFE6DE" stroke="#66756E" stroke-width="3"/>
+<rect x="24" y="24" width="64" height="32" fill="#B8352A"/>
+<text x="56" y="46" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="16" font-weight="700" fill="#F6F8F4">약국</text>
+<circle cx="82" cy="80" r="18" fill="#1B2A26"/>
+<path d="M48 204V132Q48 102 82 102Q116 102 116 132V204Z" fill="#1B2A26"/>
+<path d="M112 164L136 172" stroke="#1B2A26" stroke-width="6" stroke-linecap="round"/>
+<circle cx="148" cy="134" r="12" fill="#1B2A26"/>
+<path d="M134 204V174Q134 154 148 154Q162 154 162 174V204Z" fill="#1B2A26"/>
+<text x="150" y="116" font-family="'Gowun Batang', serif" font-size="30" font-weight="700" fill="#B8352A">?</text>
+<text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#1 · 1. 그 질문</text>
+<text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">“의사·약사·간호사는 뭐가 달라요?”</text>
+</g>
+<g transform="translate(428,40)">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2"/>
+<circle cx="88" cy="92" r="32" fill="#1B2A26"/>
+<path d="M22 229V186Q22 142 88 142Q154 142 154 186V229Z" fill="#1B2A26"/>
+<path d="M144 188Q180 162 176 118" stroke="#1B2A26" stroke-width="15" stroke-linecap="round" fill="none"/>
+<path d="M176 112V88" stroke="#1B2A26" stroke-width="7" stroke-linecap="round"/>
+<rect x="198" y="34" width="134" height="38" fill="#F6F8F4" stroke="#B8352A" stroke-width="3"/>
+<text x="210" y="59" font-family="'Pretendard Variable', sans-serif" font-size="15" font-weight="700" fill="#1B2A26">의사: 대장</text>
+<rect x="210" y="94" width="134" height="38" fill="#F6F8F4" stroke="#B8352A" stroke-width="3"/>
+<text x="222" y="119" font-family="'Pretendard Variable', sans-serif" font-size="15" font-weight="700" fill="#1B2A26">간호사: 도우미</text>
+<rect x="222" y="154" width="134" height="38" fill="#F6F8F4" stroke="#B8352A" stroke-width="3"/>
+<text x="234" y="179" font-family="'Pretendard Variable', sans-serif" font-size="15" font-weight="700" fill="#1B2A26">약사: 약 파는…?</text>
+<text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#2 · 2. 얼버무린 순간</text>
+<text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">“대장, 도우미, 약 파는… 사람?”</text>
+</g>
+<g transform="translate(40,371)">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2"/>
+<path d="M16 204H348" stroke="#C4D0C6" stroke-width="3"/>
+<circle cx="96" cy="100" r="16" fill="#1B2A26"/>
+<path d="M72 152V134Q72 118 96 118Q120 118 120 134V152Z" fill="#1B2A26"/>
+<path d="M114 136L128 132" stroke="#1B2A26" stroke-width="7" stroke-linecap="round"/>
+<rect x="126" y="112" width="30" height="38" fill="#F6F8F4" stroke="#1B2A26" stroke-width="2.5"/>
+<rect x="126" y="124" width="30" height="7" fill="#B8352A"/>
+<rect x="16" y="150" width="170" height="54" fill="#DFE6DE" stroke="#66756E" stroke-width="3"/>
+<path d="M70 76L62 68M96 72V60M122 76L130 68" stroke="#66756E" stroke-width="3" stroke-linecap="round"/>
+<circle cx="276" cy="80" r="22" fill="#1B2A26"/>
+<path d="M230 204V138Q230 106 276 106Q322 106 322 138V204Z" fill="#1B2A26"/>
+<path d="M238 150Q222 120 240 98" stroke="#1B2A26" stroke-width="13" stroke-linecap="round" fill="none"/>
+<circle cx="242" cy="94" r="9" fill="#1B2A26"/>
+<path d="M226 84L212 78M226 96L210 100" stroke="#B8352A" stroke-width="3" stroke-linecap="round"/>
+<text x="204" y="66" text-anchor="end" font-family="'Pretendard Variable', sans-serif" font-size="20" font-weight="700" fill="#B8352A">콜록</text>
+<path d="M312 48Q320 60 312 64Q304 60 312 48Z" fill="#66756E"/>
+<text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#3 · 2. 얼버무린 순간</text>
+<text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">“(콜록) 기침은 제가 했습니다”</text>
+</g>
+<g transform="translate(428,371)">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2"/>
+<path d="M16 36H348" stroke="#66756E" stroke-width="3"/>
+<path d="M70 58V36" stroke="#66756E" stroke-width="3"/>
+<path d="M30 72L70 56L110 72L114 176H26Z" fill="#F6F8F4" stroke="#1B2A26" stroke-width="3" stroke-linejoin="round"/>
+<path d="M58 62L70 104L82 62" stroke="#1B2A26" stroke-width="3" fill="none" stroke-linejoin="round"/>
+<path d="M70 104V176" stroke="#1B2A26" stroke-width="3"/>
+<rect x="82" y="120" width="20" height="16" fill="none" stroke="#66756E" stroke-width="2.5"/>
+<text x="70" y="206" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="19" font-weight="700" fill="#B8352A">선생님</text>
+<path d="M182 58V36" stroke="#66756E" stroke-width="3"/>
+<path d="M142 72L182 56L222 72L226 176H138Z" fill="#F6F8F4" stroke="#1B2A26" stroke-width="3" stroke-linejoin="round"/>
+<path d="M170 62L182 104L194 62" stroke="#1B2A26" stroke-width="3" fill="none" stroke-linejoin="round"/>
+<path d="M182 104V176" stroke="#1B2A26" stroke-width="3"/>
+<rect x="194" y="120" width="20" height="16" fill="none" stroke="#66756E" stroke-width="2.5"/>
+<text x="182" y="206" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="19" font-weight="700" fill="#B8352A">선생님</text>
+<path d="M294 58V36" stroke="#66756E" stroke-width="3"/>
+<path d="M254 72L294 56L334 72L338 176H250Z" fill="#F6F8F4" stroke="#1B2A26" stroke-width="3" stroke-linejoin="round"/>
+<path d="M282 62L294 104L306 62" stroke="#1B2A26" stroke-width="3" fill="none" stroke-linejoin="round"/>
+<path d="M294 104V176" stroke="#1B2A26" stroke-width="3"/>
+<rect x="306" y="120" width="20" height="16" fill="none" stroke="#66756E" stroke-width="2.5"/>
+<text x="294" y="206" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="19" font-weight="700" fill="#B8352A">선생님</text>
+<text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#4 · 3. 왜 다들 헷갈리나</text>
+<text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">“흰 옷, 그리고 다 ‘선생님’”</text>
+</g>
+<g transform="translate(40,702)">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2"/>
+<path d="M16 204H348" stroke="#C4D0C6" stroke-width="3"/>
+<circle cx="84" cy="78" r="18" fill="#1B2A26"/>
+<path d="M50 176V126Q50 98 84 98Q118 98 118 126V176Z" fill="#1B2A26"/>
+<path d="M58 176H112M64 176L58 204M106 176L112 204" stroke="#1B2A26" stroke-width="5" stroke-linecap="round"/>
+<path d="M72 104Q70 134 84 138Q98 134 96 104" stroke="#C4D0C6" stroke-width="3" fill="none"/>
+<path d="M114 132L166 138" stroke="#1B2A26" stroke-width="7" stroke-linecap="round"/>
+<circle cx="172" cy="138" r="7" fill="#66756E"/>
+<circle cx="200" cy="112" r="12" fill="#1B2A26"/>
+<path d="M186 162V144Q186 128 200 128Q214 128 214 144V162Z" fill="#1B2A26"/>
+<path d="M184 162H216M190 162L186 204M210 162L214 204" stroke="#1B2A26" stroke-width="4" stroke-linecap="round"/>
+<rect x="252" y="42" width="92" height="124" fill="#F6F8F4" stroke="#B8352A" stroke-width="3"/>
+<text x="298" y="70" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="15" font-weight="700" fill="#B8352A">처방전</text>
+<path d="M264 90H332M264 108H332M264 126H318M264 144H300" stroke="#66756E" stroke-width="3"/>
+<text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#5 · 4. 갈라진 지점</text>
+<text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">“의사: 무슨 병인지 정한다”</text>
+</g>
+<g transform="translate(428,702)">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2"/>
+<text x="92" y="62" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="24" font-weight="700" fill="#1B2A26">진단</text>
+<text x="272" y="62" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="24" font-weight="700" fill="#1B2A26">조제</text>
+<path d="M182 30V190" stroke="#B8352A" stroke-width="4" stroke-dasharray="10 8"/>
+<rect x="42" y="92" width="100" height="92" fill="#1B2A26"/>
+<path d="M84 104h16v16h16v16h-16v16h-16v-16h-16v-16h16z" fill="#F6F8F4"/>
+<rect x="82" y="166" width="20" height="18" fill="#F6F8F4"/>
+<rect x="222" y="92" width="100" height="92" fill="#1B2A26"/>
+<rect x="232" y="100" width="80" height="24" fill="#B8352A"/>
+<text x="272" y="118" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="15" font-weight="700" fill="#F6F8F4">약</text>
+<rect x="250" y="138" width="44" height="18" rx="9" fill="#F6F8F4"/>
+<path d="M272 138V156" stroke="#1B2A26" stroke-width="2.5"/>
+<text x="182" y="216" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="13" font-weight="700" fill="#66756E">1240년경 황제의 칙령 → 2000년 의약분업</text>
+<text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#6 · 4. 갈라진 지점</text>
+<text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">“1240 칙령, 2000 의약분업”</text>
+</g>
+<g transform="translate(40,1033)">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2"/>
+<g transform="rotate(-6 96 116)">
+<rect x="36" y="40" width="120" height="152" fill="#F6F8F4" stroke="#1B2A26" stroke-width="3"/>
+<text x="96" y="66" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="14" font-weight="700" fill="#1B2A26">처방전</text>
+<path d="M50 86H142M50 104H142M50 122H126" stroke="#66756E" stroke-width="3"/>
+</g>
+<path d="M58 156L76 174L114 132" stroke="#B8352A" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<circle cx="146" cy="96" r="30" fill="none" stroke="#1B2A26" stroke-width="6"/>
+<path d="M168 118L198 148" stroke="#1B2A26" stroke-width="11" stroke-linecap="round"/>
+<rect x="220" y="40" width="126" height="36" fill="#F6F8F4" stroke="#1B2A26" stroke-width="2.5"/>
+<text x="283" y="64" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="15" font-weight="700" fill="#1B2A26">몸무게는?</text>
+<rect x="220" y="96" width="126" height="36" fill="#F6F8F4" stroke="#1B2A26" stroke-width="2.5"/>
+<text x="283" y="120" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="15" font-weight="700" fill="#1B2A26">다른 약은?</text>
+<rect x="220" y="152" width="126" height="36" fill="#F6F8F4" stroke="#1B2A26" stroke-width="2.5"/>
+<text x="283" y="176" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="15" font-weight="700" fill="#1B2A26">먹는 법 설명</text>
+<text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#7 · 4. 갈라진 지점</text>
+<text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">“약사: 한 번 더 확인하고 짓는다”</text>
+</g>
+<g transform="translate(428,1033)">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2"/>
+<path d="M16 204H348" stroke="#C4D0C6" stroke-width="3"/>
+<text x="24" y="46" font-family="'Gowun Batang', serif" font-size="24" font-weight="700" fill="#B8352A">1854</text>
+<text x="24" y="68" font-family="'Gowun Batang', serif" font-size="15" font-weight="700" fill="#66756E">크림전쟁</text>
+<path d="M316 56L316 24A32 32 0 0 1 348 56Z" fill="#B8352A"/>
+<path d="M316 56L334 56A18 18 0 0 1 316 74Z" fill="#66756E"/>
+<path d="M316 56L316 82A26 26 0 0 1 290 56Z" fill="#B8352A"/>
+<path d="M316 56L300 56A16 16 0 0 1 316 40Z" fill="#66756E"/>
+<rect x="24" y="164" width="80" height="12" fill="#66756E"/>
+<path d="M28 176V204M100 176V204" stroke="#66756E" stroke-width="4"/>
+<rect x="24" y="146" width="6" height="30" fill="#66756E"/>
+<circle cx="42" cy="156" r="8" fill="#66756E"/>
+<path d="M52 164Q76 146 104 164Z" fill="#66756E"/>
+<rect x="120" y="164" width="80" height="12" fill="#66756E"/>
+<path d="M124 176V204M196 176V204" stroke="#66756E" stroke-width="4"/>
+<rect x="120" y="146" width="6" height="30" fill="#66756E"/>
+<circle cx="138" cy="156" r="8" fill="#66756E"/>
+<path d="M148 164Q172 146 200 164Z" fill="#66756E"/>
+<circle cx="232" cy="124" r="32" fill="#B8352A" opacity="0.15"/>
+<circle cx="272" cy="96" r="14" fill="#1B2A26"/>
+<path d="M254 204L260 140Q260 114 272 114Q284 114 284 140L290 204Z" fill="#1B2A26"/>
+<path d="M262 142L238 134" stroke="#1B2A26" stroke-width="6" stroke-linecap="round"/>
+<path d="M234 126V118" stroke="#1B2A26" stroke-width="2.5"/>
+<path d="M224 126h20l-3 18h-14z" fill="#B8352A"/>
+<text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#8 · 4. 갈라진 지점</text>
+<text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">“나이팅게일: 밤새 지켜보고 적었다”</text>
+</g>
+<g transform="translate(40,1364)">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2"/>
+<path d="M16 172H348" stroke="#C4D0C6" stroke-width="3"/>
+<path d="M50 62V94Q50 122 70 122Q90 122 90 94V62" stroke="#1B2A26" stroke-width="6" fill="none" stroke-linecap="round"/>
+<circle cx="50" cy="58" r="5" fill="#1B2A26"/>
+<circle cx="90" cy="58" r="5" fill="#1B2A26"/>
+<path d="M70 122V138Q70 154 88 154" stroke="#1B2A26" stroke-width="6" fill="none"/>
+<circle cx="98" cy="154" r="11" fill="#1B2A26"/>
+<rect x="146" y="64" width="72" height="96" fill="#1B2A26"/>
+<path d="M146 80H218" stroke="#F6F8F4" stroke-width="3"/>
+<rect x="162" y="98" width="40" height="40" fill="#B8352A"/>
+<text x="182" y="126" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="22" font-weight="700" fill="#F6F8F4">약</text>
+<rect x="286" y="54" width="16" height="92" rx="8" fill="#F6F8F4" stroke="#1B2A26" stroke-width="5"/>
+<rect x="291" y="92" width="6" height="56" fill="#B8352A"/>
+<circle cx="294" cy="152" r="14" fill="#B8352A"/>
+<text x="70" y="200" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="20" font-weight="700" fill="#B8352A">정하고</text>
+<text x="70" y="221" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="13" font-weight="700" fill="#66756E">의사</text>
+<text x="182" y="200" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="20" font-weight="700" fill="#B8352A">짓고</text>
+<text x="182" y="221" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="13" font-weight="700" fill="#66756E">약사</text>
+<text x="294" y="200" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="20" font-weight="700" fill="#B8352A">지킵니다</text>
+<text x="294" y="221" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="13" font-weight="700" fill="#66756E">간호사</text>
+<text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#9 · 5. 한 문장 정리</text>
+<text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">“정하고 · 짓고 · 지킵니다”</text>
+</g>
+<g transform="translate(428,1364)">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2"/>
+<path d="M16 204H348" stroke="#C4D0C6" stroke-width="3"/>
+<rect x="262" y="24" width="78" height="62" fill="#DFE6DE" stroke="#66756E" stroke-width="3"/>
+<path d="M301 24V86M262 55H340" stroke="#66756E" stroke-width="3"/>
+<circle cx="282" cy="40" r="8" fill="#66756E"/>
+<rect x="150" y="150" width="198" height="24" fill="#66756E"/>
+<path d="M156 174V204M342 174V204" stroke="#66756E" stroke-width="5"/>
+<rect x="300" y="132" width="42" height="18" rx="6" fill="#DFE6DE" stroke="#66756E" stroke-width="2"/>
+<circle cx="316" cy="128" r="13" fill="#1B2A26"/>
+<path d="M176 150Q236 120 302 146V150Z" fill="#1B2A26"/>
+<circle cx="84" cy="74" r="18" fill="#1B2A26"/>
+<path d="M50 170V122Q50 94 84 94Q118 94 118 122V170Z" fill="#1B2A26"/>
+<rect x="54" y="170" width="60" height="8" fill="#1B2A26"/>
+<path d="M60 178V204M108 178V204" stroke="#1B2A26" stroke-width="4"/>
+<path d="M112 130L140 120" stroke="#1B2A26" stroke-width="7" stroke-linecap="round"/>
+<rect x="138" y="92" width="60" height="40" fill="#F6F8F4" stroke="#1B2A26" stroke-width="2.5"/>
+<text x="168" y="118" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="16" font-weight="700" fill="#B8352A">38.1</text>
+<text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#10 · 6. 아이 눈높이로 번역</text>
+<text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">“오늘 밤은 아빠가 간호사 선생님”</text>
+</g>
+<g transform="translate(40,1695)">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2"/>
+<g opacity="0.5">
+<rect x="48" y="128" width="112" height="76" fill="#66756E"/>
+<path d="M84 128Q92 96 106 116Q118 92 128 128Z" fill="#F6F8F4" stroke="#66756E" stroke-width="3"/>
+<rect x="78" y="150" width="52" height="10" rx="5" fill="#F6F8F4"/>
+<text x="248" y="112" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="34" font-weight="700" fill="#66756E">감기?</text>
+<text x="292" y="178" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="34" font-weight="700" fill="#66756E">독감?</text>
+</g>
+<path d="M16 204H348" stroke="#C4D0C6" stroke-width="3"/>
+<text x="24" y="48" font-family="'Gowun Batang', serif" font-size="20" font-weight="700" fill="#B8352A">다음 편</text>
+<text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#11 · 7. 남는 이야기</text>
+<text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">“다음 편: 감기랑 독감은?”</text>
+</g>
+</svg>
