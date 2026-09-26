@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="가족이 함께 여덟 살의 질문 영상을 만드는 순서, 역할, 파일 규칙, 클립 스튜디오·애프터 이펙트·프리미어 필수 기능과 단축키.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✏️</text></svg>">
+<title>여덟 살의 질문 제작 노트</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Nanum+Pen+Script&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#E9EDE8; --surface:#F6F8F4; --surface-2:#DFE6DE;
+  --ink:#1B2A26; --pencil:#5F6E67; --rule:#C4D0C6;
+  --red:#B8352A; --red-soft:#E8CFCB;
+  --clip:#2F6B8A; --clip-soft:#D3E3EA;
+  --ae:#6A4C93; --ae-soft:#E2DAEE;
+  --pr:#7A5A12; --pr-soft:#EFE3C6;
+  --claude:#3D6B4F; --claude-soft:#D5E6DA;
+  --key-bg:#FFFFFF; --key-edge:#B7C3BA;
+  --maxw:1040px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#141B19; --surface:#1B2421; --surface-2:#232E2A;
+    --ink:#E3EAE5; --pencil:#9AA9A2; --rule:#33413C;
+    --red:#E5705F; --red-soft:#4A2622;
+    --clip:#7FB6D3; --clip-soft:#1E3440;
+    --ae:#B79BDE; --ae-soft:#2F2640;
+    --pr:#D9B25C; --pr-soft:#3A301A;
+    --claude:#8CC4A0; --claude-soft:#1F3328;
+    --key-bg:#26312D; --key-edge:#44544E;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#141B19; --surface:#1B2421; --surface-2:#232E2A;
+  --ink:#E3EAE5; --pencil:#9AA9A2; --rule:#33413C;
+  --red:#E5705F; --red-soft:#4A2622;
+  --clip:#7FB6D3; --clip-soft:#1E3440;
+  --ae:#B79BDE; --ae-soft:#2F2640;
+  --pr:#D9B25C; --pr-soft:#3A301A;
+  --claude:#8CC4A0; --claude-soft:#1F3328;
+  --key-bg:#26312D; --key-edge:#44544E;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:'IBM Plex Sans KR',-apple-system,BlinkMacSystemFont,system-ui,'Malgun Gothic',sans-serif;
+  font-size:16px; line-height:1.75; letter-spacing:-0.01em; -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:'Gowun Batang',serif; font-weight:700; letter-spacing:-0.02em; line-height:1.35; margin:0; text-wrap:balance}
+p{margin:0}
+a{color:var(--red)}
+code,.mono{font-family:'IBM Plex Mono',ui-monospace,Consolas,monospace; font-size:.88em}
+.wrap{max-width:var(--maxw); margin:0 auto; padding-inline:20px}
+
+/* hero */
+.hero{
+  padding-block:60px 44px;
+  background-image:repeating-linear-gradient(to bottom,transparent 0 37px,var(--rule) 37px 38px);
+  background-position:0 10px;
+}
+.eyebrow{font-size:13px; color:var(--pencil); margin-bottom:22px}
+.home{display:inline-block; font-size:13px; color:var(--pencil); text-decoration:none; border-bottom:1px solid var(--rule); margin-bottom:22px}
+.home:hover{color:var(--red); border-color:var(--red)}
+.hand{font-family:'Nanum Pen Script',cursive; color:var(--red); font-size:clamp(28px,4.5vw,38px); line-height:1.1; display:block; margin-bottom:6px}
+.hero h1{font-size:clamp(34px,6.4vw,56px); margin-bottom:20px}
+.hero h1 .ul{background:linear-gradient(transparent 70%,var(--red-soft) 70%)}
+.lead{font-family:'Gowun Batang',serif; font-size:clamp(18px,2.6vw,22px); line-height:1.7; max-width:660px; margin-bottom:26px}
+.status{display:flex; flex-wrap:wrap; gap:8px 18px; font-size:14px; color:var(--pencil); background:var(--surface); border:1px solid var(--rule); border-radius:10px; padding:12px 16px; max-width:720px}
+.status b{color:var(--ink); font-weight:600}
+.dot{display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:6px; vertical-align:1px}
+.dot.done{background:var(--claude)} .dot.part{background:var(--pr)} .dot.todo{background:var(--rule)}
+
+/* nav */
+.nav{position:sticky; top:env(safe-area-inset-top,0px); z-index:30; background:color-mix(in srgb,var(--paper) 93%,transparent); backdrop-filter:blur(8px); border-bottom:1px solid var(--rule)}
+.nav-in{max-width:var(--maxw); margin:0 auto; padding-inline:20px; display:flex; gap:2px; overflow-x:auto; scrollbar-width:none}
+.nav-in::-webkit-scrollbar{display:none}
+.nav a{flex:0 0 auto; padding:13px 12px 11px; font-size:14.5px; color:var(--pencil); text-decoration:none; border-bottom:2px solid transparent; white-space:nowrap}
+.nav a:hover{color:var(--ink)}
+.nav a.on{color:var(--ink); border-bottom-color:var(--red); font-weight:600}
+.nav a:focus-visible{outline:2px solid var(--red); outline-offset:-2px}
+
+/* sections */
+section.part{padding-block:56px 8px; scroll-margin-top:52px}
+.part > .wrap > h2{font-size:clamp(26px,4vw,34px); margin-bottom:8px}
+.sub{color:var(--pencil); max-width:680px; margin-bottom:30px; font-size:15.5px}
+h3.blk{font-size:20px; margin:40px 0 14px; padding-left:12px; border-left:3px solid var(--red)}
+.prose{max-width:700px; display:grid; gap:12px; font-size:15.5px}
+.prose ul,.prose ol{margin:0; padding-left:20px; display:grid; gap:6px}
+
+/* tool chips */
+.chip{display:inline-flex; align-items:center; gap:6px; font-size:12.5px; font-weight:600; padding:2px 9px; border-radius:99px; white-space:nowrap}
+.chip.claude{background:var(--claude-soft); color:var(--claude)}
+.chip.clip{background:var(--clip-soft); color:var(--clip)}
+.chip.ae{background:var(--ae-soft); color:var(--ae)}
+.chip.pr{background:var(--pr-soft); color:var(--pr)}
+.chip.phone{background:var(--red-soft); color:var(--red)}
+.chip.yt{background:var(--surface-2); color:var(--ink)}
+
+/* flow */
+.flow{list-style:none; margin:0; padding:0; display:grid; gap:0; border-top:1px solid var(--rule)}
+.step{display:grid; grid-template-columns:64px 1fr; gap:6px 20px; padding:22px 0; border-bottom:1px solid var(--rule)}
+.step-n{font-family:'Nanum Pen Script',cursive; font-size:44px; line-height:1; color:var(--red)}
+.step-head{display:flex; flex-wrap:wrap; align-items:center; gap:8px 12px; margin-bottom:6px}
+.step-head h4{font-size:19px}
+.step-body{display:grid; gap:10px; font-size:15px; max-width:760px}
+.meta{display:grid; grid-template-columns:auto 1fr; gap:4px 14px; font-size:14px; color:var(--pencil)}
+.meta dt{font-weight:600; color:var(--ink)}
+.meta dd{margin:0}
+.meta code{color:var(--ink)}
+
+/* roles */
+.roles{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:14px}
+.role{background:var(--surface); border:1px solid var(--rule); border-radius:12px; padding:18px 18px 16px; display:grid; gap:8px; align-content:start}
+.role h4{font-size:18px}
+.role .who{font-family:'Nanum Pen Script',cursive; font-size:26px; line-height:1; color:var(--red)}
+.role ul{margin:0; padding-left:18px; font-size:14.5px; display:grid; gap:4px}
+.note{font-size:14px; color:var(--pencil); margin-top:14px; max-width:720px}
+
+/* code / tree */
+.tree{background:var(--surface); border:1px solid var(--rule); border-radius:10px; padding:16px 18px; overflow-x:auto; font-family:'IBM Plex Mono',ui-monospace,Consolas,monospace; font-size:13.5px; line-height:1.75; white-space:pre; color:var(--ink); margin:0}
+.tree .c{color:var(--pencil)}
+
+/* tool header */
+.tool-top{display:flex; flex-wrap:wrap; align-items:baseline; gap:10px 16px; margin-bottom:8px}
+.tool-job{font-size:15.5px; max-width:700px; margin-bottom:6px}
+
+/* setup list */
+.setup{display:grid; gap:0; border-top:1px solid var(--rule); max-width:820px}
+.setup div{display:grid; grid-template-columns:170px 1fr; gap:4px 18px; padding:11px 0; border-bottom:1px solid var(--rule); font-size:15px}
+.setup dt{font-weight:600}
+.setup dd{margin:0; color:var(--ink)}
+
+/* feature cards */
+.feats{display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:12px}
+.feat{background:var(--surface); border:1px solid var(--rule); border-radius:10px; padding:15px 16px; display:grid; gap:6px; align-content:start}
+.feat h4{font-family:'IBM Plex Sans KR',sans-serif; font-size:15.5px; font-weight:600; letter-spacing:-0.01em}
+.feat p{font-size:14.5px; color:var(--ink)}
+.feat .where{font-size:13px; color:var(--pencil)}
+.feat.must{border-color:var(--red)}
+.must-tag{font-size:11.5px; font-weight:600; color:var(--red); letter-spacing:.04em}
+
+/* shortcuts */
+.keysearch{display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin:0 0 6px}
+.keysearch label{font-size:14px; color:var(--pencil)}
+.keysearch input{font:inherit; font-size:15px; padding:8px 12px; border-radius:8px; border:1px solid var(--key-edge); background:var(--surface); color:var(--ink); width:min(320px,100%)}
+.keysearch input:focus-visible{outline:2px solid var(--red); outline-offset:1px}
+.keys-scroll{overflow-x:auto}
+table.keys{border-collapse:collapse; width:100%; min-width:460px; font-size:14.5px}
+table.keys caption{text-align:left; font-weight:600; font-size:14px; color:var(--pencil); padding:14px 0 6px}
+table.keys td{padding:8px 10px 8px 0; border-bottom:1px solid var(--rule); vertical-align:top}
+table.keys td:first-child{width:210px; white-space:nowrap}
+table.keys tr.hide{display:none}
+table.keys .empty td{color:var(--pencil); font-size:13.5px}
+kbd{display:inline-block; min-width:24px; text-align:center; font-family:'IBM Plex Mono',ui-monospace,Consolas,monospace; font-size:12.5px; line-height:1; padding:5px 7px 4px; border-radius:5px; background:var(--key-bg); border:1px solid var(--key-edge); border-bottom-width:2px; color:var(--ink); margin-right:2px}
+.plus{color:var(--pencil); font-size:12px; margin:0 2px}
+
+/* recipe steps */
+ol.recipe{list-style:none; counter-reset:r; margin:0; padding:0; display:grid; gap:0; max-width:800px; border-top:1px solid var(--rule)}
+ol.recipe > li{counter-increment:r; display:grid; grid-template-columns:34px 1fr; gap:14px; padding:13px 0; border-bottom:1px solid var(--rule); font-size:15px}
+ol.recipe > li::before{content:counter(r); font-family:'Nanum Pen Script',cursive; font-size:28px; line-height:.9; color:var(--red)}
+ol.recipe b{font-weight:600}
+.recipe .hint{display:block; font-size:13.5px; color:var(--pencil); margin-top:3px}
+
+/* troubleshooting */
+.faq{display:grid; gap:8px; max-width:800px}
+.faq details{background:var(--surface); border:1px solid var(--rule); border-radius:10px; padding:0 16px}
+.faq summary{cursor:pointer; padding:12px 0; font-weight:600; font-size:15px}
+.faq summary:focus-visible{outline:2px solid var(--red); outline-offset:2px; border-radius:4px}
+.faq details p{padding:0 0 14px; font-size:14.5px}
+
+pre.expr{background:var(--surface-2); border-radius:8px; padding:12px 14px; overflow-x:auto; font-family:'IBM Plex Mono',ui-monospace,Consolas,monospace; font-size:13px; line-height:1.6; margin:4px 0 0; color:var(--ink)}
+
+/* practice */
+.weeks{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px}
+.week{border-top:3px solid var(--ink); padding-top:12px; display:grid; gap:8px; align-content:start}
+.week .wk{font-family:'Nanum Pen Script',cursive; font-size:28px; line-height:1; color:var(--red)}
+.week h4{font-size:17px}
+.week ul{margin:0; padding-left:18px; font-size:14.5px; display:grid; gap:4px}
+.week .goal{font-size:13.5px; color:var(--pencil)}
+
+/* checklist */
+.check{list-style:none; margin:0; padding:0; display:grid; gap:0; max-width:760px; border-top:1px solid var(--rule)}
+.check li{display:grid; grid-template-columns:28px 1fr; gap:10px; padding:11px 0; border-bottom:1px solid var(--rule); font-size:15px}
+.check input{width:18px; height:18px; margin-top:4px; accent-color:var(--red)}
+.check label{cursor:pointer}
+.check small{display:block; color:var(--pencil); font-size:13.5px}
+
+footer{padding-block:60px 70px; color:var(--pencil); font-size:14px}
+
+@media (max-width:640px){
+  .step{grid-template-columns:1fr; gap:4px}
+  .step-n{font-size:36px}
+  .setup div{grid-template-columns:1fr; gap:2px}
+  table.keys td:first-child{width:auto}
+  .meta{grid-template-columns:1fr; gap:0 0}
+  .meta dd{margin-bottom:6px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <a class="home" href="../">← 여덟 살의 질문 홈</a>
+    <p class="eyebrow">여덟 살의 질문 · 가족 제작 노트 · 2026년 9월판</p>
+    <span class="hand">우리 가족이 같이 만드는 법</span>
+    <h1>질문 하나가 <span class="ul">영상 한 편</span>이 되기까지</h1>
+    <p class="lead">Claude가 원고와 초안 영상을 만들면, 가족이 그림을 그리고 목소리를 입히고 움직임을 더해 완성합니다. 이 페이지 하나에 순서, 역할, 파일 규칙, 그리고 클립 스튜디오·애프터 이펙트·프리미어에서 꼭 알아야 할 것만 모았습니다.</p>
+    <div class="status" aria-label="지금까지 진행 상황">
+      <span><span class="dot done"></span><b>1~5편</b> 원고·콘티 완성</span>
+      <span><span class="dot part"></span><b>1편</b> 초안 영상(가이드용) 완성</span>
+      <span><span class="dot todo"></span><b>그림·녹음·움직임·편집</b> 이제 시작</span>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" aria-label="목차">
+  <div class="nav-in">
+    <a href="#flow">제작 순서</a>
+    <a href="#roles">역할 나누기</a>
+    <a href="#files">파일 규칙</a>
+    <a href="#clip">클립 스튜디오</a>
+    <a href="#ae">애프터 이펙트</a>
+    <a href="#pr">프리미어</a>
+    <a href="#animate">애니메이트</a>
+    <a href="#practice">4주 연습</a>
+    <a href="#check">올리기 전 점검</a>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============ FLOW ============ -->
+<section class="part" id="flow">
+  <div class="wrap">
+    <h2>제작 순서</h2>
+    <p class="sub">한 편은 일곱 단계를 거칩니다. 앞 단계의 결과물이 다음 단계의 재료라서, 순서를 건너뛰면 나중에 다시 하게 됩니다. 특히 2단계 초안 영상으로 길이를 먼저 정해 두면, 그림을 그렸다가 버리는 일이 없습니다.</p>
+
+    <ol class="flow">
+      <li class="step">
+        <span class="step-n">1</span>
+        <div>
+          <div class="step-head"><h4>질문 고르기 · 원고</h4><span class="chip claude">Claude</span></div>
+          <div class="step-body">
+            <p>아이가 실제로 던진 질문 중 하나를 고릅니다. Claude에게 "○○와 △△ 차이로 6편 만들어줘"라고 하면 자료조사, 7박자 콘티, 컷별 그림 콘티, 나레이션 대본, 썸네일 문구까지 한 번에 나옵니다.</p>
+            <dl class="meta">
+              <dt>결과물</dt><dd><code>episodes/06-주제/주제.md</code>, 스토리보드 그림</dd>
+              <dt>가족이 할 일</dt><dd>원고를 소리 내어 읽어 보고, 우리 집 말투와 다른 부분에 표시하기</dd>
+            </dl>
+          </div>
+        </div>
+      </li>
+      <li class="step">
+        <span class="step-n">2</span>
+        <div>
+          <div class="step-head"><h4>초안 영상 · 가족 시사회</h4><span class="chip claude">Claude · 자동 생성</span></div>
+          <div class="step-body">
+            <p>컴퓨터 목소리와 임시 그림으로 된 가이드 영상을 먼저 뽑습니다. 다 같이 보면서 "여기 너무 길다", "이 대사 빼자"를 정합니다. 고친 내용은 Claude에게 말하면 원고와 초안이 같이 바뀝니다.</p>
+            <dl class="meta">
+              <dt>결과물</dt><dd><code>video/out/ep06/ep06.mp4</code>, <code>subtitles.srt</code>, 컷별 이미지 <code>cuts/01-c01.png</code>…</dd>
+              <dt>여기서 확정</dt><dd>컷 개수, 컷 번호(c01, c02…), 대사, 전체 길이. 이후 단계는 모두 이 컷 번호를 씁니다.</dd>
+            </dl>
+          </div>
+        </div>
+      </li>
+      <li class="step">
+        <span class="step-n">3</span>
+        <div>
+          <div class="step-head"><h4>그림 그리기</h4><span class="chip clip">클립 스튜디오 EX</span></div>
+          <div class="step-body">
+            <p>초안의 컷 이미지를 보면서 컷마다 한 장씩 그립니다. 움직일 부분(입, 눈, 팔, 땀방울)은 반드시 레이어를 따로 나눠야 4단계에서 움직일 수 있습니다.</p>
+            <dl class="meta">
+              <dt>결과물</dt><dd><code>art/c01.psd</code>, <code>art/c02.psd</code>… (레이어가 살아 있는 PSD)</dd>
+              <dt>크기</dt><dd>3840×2160 픽셀 (영상의 두 배라서 확대해도 깨지지 않음)</dd>
+            </dl>
+          </div>
+        </div>
+      </li>
+      <li class="step">
+        <span class="step-n">4</span>
+        <div>
+          <div class="step-head"><h4>목소리 녹음</h4><span class="chip phone">휴대폰 · 마이크</span><span class="chip pr">프리미어</span></div>
+          <div class="step-body">
+            <p>컴퓨터 목소리를 우리 목소리로 바꾸는 단계입니다. 가족 채널에서 품질 차이가 가장 크게 나는 곳입니다. 대사 한 줄에 파일 하나씩, 조용한 방에서 녹음합니다. 그림과 동시에 진행해도 됩니다.</p>
+            <dl class="meta">
+              <dt>결과물</dt><dd><code>voice/c01-0.wav</code>, <code>voice/c01-1.wav</code>… (컷번호-대사순서)</dd>
+              <dt>팁</dt><dd>옷이 많이 걸린 옷장 앞이나 이불을 두른 곳이 소리가 덜 울립니다. 입과 마이크는 한 뼘 거리.</dd>
+            </dl>
+          </div>
+        </div>
+      </li>
+      <li class="step">
+        <span class="step-n">5</span>
+        <div>
+          <div class="step-head"><h4>움직임 넣기</h4><span class="chip ae">애프터 이펙트</span></div>
+          <div class="step-body">
+            <p>PSD를 불러와 컷마다 살짝 확대, 입 뻐끔, 눈 깜빡, "뚜둥" 흔들림을 넣습니다. 우리 채널은 모션 코믹 형식이라, 많이 움직일 필요가 없습니다. 자막 상자와 질문 카드는 템플릿으로 한 번 만들어 두고 계속 씁니다.</p>
+            <dl class="meta">
+              <dt>결과물</dt><dd><code>ae/ep06.aep</code> (컷별 컴포지션 c01, c02…)</dd>
+            </dl>
+          </div>
+        </div>
+      </li>
+      <li class="step">
+        <span class="step-n">6</span>
+        <div>
+          <div class="step-head"><h4>편집 · 소리 · 자막 · 내보내기</h4><span class="chip pr">프리미어</span></div>
+          <div class="step-body">
+            <p>초안 영상을 맨 위에 깔아 두고, 컷을 하나씩 애프터 이펙트 결과물로 바꿔 끼웁니다. 배경음악과 효과음을 넣고, 자막을 얹고, 소리 크기를 맞춰 내보냅니다.</p>
+            <dl class="meta">
+              <dt>결과물</dt><dd><code>out/ep06-final.mp4</code>, <code>out/ep06.srt</code>, 썸네일 <code>out/thumb.png</code></dd>
+            </dl>
+          </div>
+        </div>
+      </li>
+      <li class="step">
+        <span class="step-n">7</span>
+        <div>
+          <div class="step-head"><h4>올리기</h4><span class="chip yt">유튜브 스튜디오</span></div>
+          <div class="step-body">
+            <p>맨 아래 <a href="#check">올리기 전 점검</a>을 다 같이 확인하고 업로드합니다. 자막 파일도 따로 올리면 검색에 잘 걸립니다.</p>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ ROLES ============ -->
+<section class="part" id="roles">
+  <div class="wrap">
+    <h2>역할 나누기</h2>
+    <p class="sub">처음부터 모두가 모든 툴을 배울 필요는 없습니다. 한 사람이 한 툴을 맡고, 나머지는 이 페이지의 해당 부분만 읽으면 됩니다. 아래는 제안이니 가족끼리 정해서 이름을 적어 두세요.</p>
+    <div class="roles">
+      <div class="role">
+        <span class="who">그림 담당</span>
+        <h4>클립 스튜디오</h4>
+        <ul><li>캐릭터 표정 세트 관리</li><li>컷 그림, 배경</li><li>썸네일 그림</li></ul>
+      </div>
+      <div class="role">
+        <span class="who">움직임 담당</span>
+        <h4>애프터 이펙트</h4>
+        <ul><li>컷별 움직임</li><li>자막·카드 템플릿 관리</li><li>입 모양 맞추기</li></ul>
+      </div>
+      <div class="role">
+        <span class="who">편집 담당</span>
+        <h4>프리미어 · Claude</h4>
+        <ul><li>Claude에게 원고·초안 요청</li><li>최종 편집, 음악, 자막</li><li>업로드와 댓글 확인</li></ul>
+      </div>
+      <div class="role">
+        <span class="who">질문 대장</span>
+        <h4>아이</h4>
+        <ul><li>궁금한 것 모으기 (질문 공책)</li><li>아이 대사 녹음</li><li>썸네일 손글씨, 시사회 심사위원</li></ul>
+      </div>
+    </div>
+    <p class="note">목소리는 역할과 상관없이 모두 참여합니다. 엄마 대사는 엄마, 아빠 대사는 아빠, 아이 대사는 아이가 녹음합니다.</p>
+  </div>
+</section>
+
+<!-- ============ FILES ============ -->
+<section class="part" id="files">
+  <div class="wrap">
+    <h2>파일 규칙</h2>
+    <p class="sub">여러 사람이 같은 편을 나눠 만들 때 가장 많이 생기는 문제는 "그 파일 어디 있어?"입니다. 이름만 맞춰 두면 서로 묻지 않아도 됩니다.</p>
+
+    <h3 class="blk">폴더는 두 군데</h3>
+    <div class="prose">
+      <p>원고와 초안은 지금처럼 <code>D:\youtube</code>에 둡니다. PSD, 녹음, 프로젝트 파일은 용량이 커서 따로 둡니다. 가족이 각자 컴퓨터를 쓴다면 구글 드라이브 같은 공유 폴더를, 한 대를 같이 쓴다면 <code>D:\youtube-work</code>를 씁니다.</p>
+    </div>
+    <pre class="tree" style="margin-top:14px">youtube-work/
+  ep06-검찰-경찰/
+    art/     c01.psd  c02.psd  c03.psd …      <span class="c">← 클립 스튜디오 원본 (컷 번호 그대로)</span>
+    voice/   c01-0.wav  c01-1.wav  c02-0.wav …  <span class="c">← 컷번호-대사순서 (0부터)</span>
+    music/   bgm.mp3  <span class="c">← 유튜브 오디오 보관함에서 받은 곡</span>
+    ae/      ep06.aep  <span class="c">← 애프터 이펙트 프로젝트</span>
+    pr/      ep06.prproj  <span class="c">← 프리미어 프로젝트</span>
+    out/     ep06-final.mp4  ep06.srt  thumb.png
+  _공통/
+    캐릭터/  아빠.psd  엄마.psd  아이.psd   <span class="c">← 표정 세트, 매 편 재사용</span>
+    템플릿/  자막.mogrt  질문카드.mogrt  뚜둥.mogrt  ae-template.aep</pre>
+
+    <h3 class="blk">PSD 레이어 이름</h3>
+    <div class="prose">
+      <p>애프터 이펙트는 레이어 이름을 그대로 가져갑니다. 이름이 매번 같으면 템플릿에 그림만 바꿔 끼울 수 있습니다.</p>
+    </div>
+    <pre class="tree" style="margin-top:14px"><span class="c">(위가 앞쪽)</span>
+효과선        <span class="c">← 집중선, 땀방울, 물음표</span>
+글씨          <span class="c">← 그림 속 글씨가 있을 때만</span>
+아빠_입_열림
+아빠_입_반
+아빠_입_닫힘  <span class="c">← 입 3장은 같은 위치에 겹쳐 그리기</span>
+아빠_눈_감음
+아빠_눈_뜸
+아빠_얼굴
+아빠_몸
+소품
+배경</pre>
+    <p class="note">규칙은 세 가지뿐입니다. 움직일 부분은 따로, 같은 부위는 같은 위치에 겹쳐서, 이름은 <code>누구_부위_상태</code>.</p>
+  </div>
+</section>
+
+<!-- ============ SHORTCUT SEARCH (shared) ============ -->
+<div class="wrap" style="padding-top:44px">
+  <div class="keysearch">
+    <label for="keyq">단축키 찾기</label>
+    <input id="keyq" type="search" placeholder="예: 되돌리기, 확대, 자르기" autocomplete="off">
+  </div>
+  <p class="note" style="margin-top:0">아래 세 툴의 단축키 표를 한꺼번에 걸러 줍니다. 모든 단축키는 Windows 기준입니다.</p>
+</div>
+
+<!-- ============ CLIP STUDIO ============ -->
+<section class="part" id="clip">
+  <div class="wrap">
+    <div class="tool-top"><h2>클립 스튜디오 EX</h2><span class="chip clip">그림 담당</span></div>
+    <p class="tool-job">컷 그림, 캐릭터 표정 세트, 배경, 썸네일 그림을 맡습니다. EX 버전에는 사진이나 3D를 선화로 바꿔 주는 기능이 있어서 아파트, 마트, 병원 같은 배경을 그릴 때 시간이 많이 줄어듭니다.</p>
+    <p class="note" style="margin-top:0">1.x 버전은 세부 버전마다 메뉴 이름이 조금씩 다릅니다. 메뉴를 못 찾으면 비슷한 이름을 찾아보세요.</p>
+
+    <h3 class="blk">처음 한 번 설정</h3>
+    <dl class="setup">
+      <div><dt>새 캔버스</dt><dd>파일 → 신규 → 폭 3840, 높이 2160 픽셀, 해상도 150, 기본 표현색 컬러. 이걸 <b>템플릿으로 저장</b>해 두면 매번 설정하지 않아도 됩니다.</dd></div>
+      <div><dt>캐릭터 시트</dt><dd>아빠·엄마·아이를 각각 한 파일에 정면 기본, 당황, 땀 흘림, 깨달음, 뿌듯함 표정과 입 3장(닫힘/반/열림)으로 그려 둡니다. 채널 톤이 "당황하다가 명쾌하게 설명"이라서 표정 세트를 가장 많이 재사용합니다.</dd></div>
+      <div><dt>색 팔레트</dt><dd>캐릭터 피부·머리·옷 색을 컬러 세트에 저장해 둡니다. 편마다 색이 달라지는 것을 막아 줍니다.</dd></div>
+    </dl>
+
+    <h3 class="blk">꼭 알아야 할 기능</h3>
+    <div class="feats">
+      <div class="feat must"><span class="must-tag">필수</span><h4>레이어와 레이어 폴더</h4><p>움직일 부분마다 레이어를 따로 만들고, 인물별로 폴더에 묶습니다. 애프터 이펙트에서 그대로 따로 움직일 수 있습니다.</p><span class="where">레이어 창 아래 버튼 · 새 래스터 레이어 Ctrl+Shift+N</span></div>
+      <div class="feat must"><span class="must-tag">필수</span><h4>복제 저장 → PSD</h4><p>작업은 .clip으로 저장하고, 애프터 이펙트로 넘길 때 레이어가 살아 있는 PSD로 한 부 더 저장합니다.</p><span class="where">파일 → 복제 저장 → .psd (Photoshop 도큐먼트)</span></div>
+      <div class="feat must"><span class="must-tag">필수</span><h4>벡터 레이어로 선 그리기</h4><p>선을 벡터 레이어에 그리면 나중에 굵기를 바꾸거나 삐져나온 선만 지우개(벡터 지우개 "교점까지")로 깔끔하게 지울 수 있습니다.</p><span class="where">레이어 → 신규 레이어 → 벡터 레이어</span></div>
+      <div class="feat must"><span class="must-tag">필수</span><h4>참조 레이어로 채색</h4><p>선화 레이어를 참조 레이어로 지정하면, 채우기 도구가 선을 기준으로 다른 레이어에 색을 칠합니다. 선과 색이 분리되어 수정이 쉽습니다.</p><span class="where">레이어 창 참조 레이어 아이콘 → 채우기 도구 "다른 레이어 참조"</span></div>
+      <div class="feat"><span class="must-tag">EX 전용</span><h4>레이어 LT 변환</h4><p>사진이나 3D 소재를 선화와 톤으로 바꿔 줍니다. 마트 진열대, 아파트 외관 같은 배경을 직접 찍은 사진으로 만들 수 있습니다.</p><span class="where">레이어 → 레이어 LT 변환</span></div>
+      <div class="feat"><h4>3D 데생 인형</h4><p>팔을 드는 자세, 고개를 갸우뚱하는 자세처럼 그리기 어려운 포즈의 참고용으로 씁니다.</p><span class="where">소재 창 → 3D → 포즈 / 체형</span></div>
+      <div class="feat"><h4>퍼스자</h4><p>방 안, 복도, 가게 안처럼 원근이 있는 배경을 그릴 때 선이 소실점을 향해 자동으로 맞춰집니다.</p><span class="where">자 도구 → 퍼스자</span></div>
+      <div class="feat"><h4>애니메이션 타임라인</h4><p>눈 깜빡임, 땀방울 떨어짐처럼 3~6장짜리 짧은 반복 동작만 여기서 그립니다. 이미지 시퀀스로 내보내 애프터 이펙트에 넣습니다.</p><span class="where">애니메이션 → 신규 애니메이션 셀 · 파일 → 애니메이션 내보내기</span></div>
+    </div>
+
+    <h3 class="blk">단축키</h3>
+    <div class="keys-scroll">
+      <table class="keys">
+        <caption>매일 쓰는 것</caption>
+        <tbody>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>Z</kbd> / <kbd>Ctrl</kbd><span class="plus">+</span><kbd>Y</kbd></td><td>되돌리기 / 다시 실행</td></tr>
+          <tr><td><kbd>P</kbd></td><td>펜 · 연필 도구</td></tr>
+          <tr><td><kbd>B</kbd></td><td>붓 도구</td></tr>
+          <tr><td><kbd>E</kbd></td><td>지우개</td></tr>
+          <tr><td><kbd>G</kbd></td><td>채우기 (페인트 통)</td></tr>
+          <tr><td><kbd>[</kbd> / <kbd>]</kbd></td><td>브러시 크기 줄이기 / 키우기</td></tr>
+          <tr><td><kbd>Alt</kbd> 누르고 클릭</td><td>스포이트 (그림에서 색 가져오기)</td></tr>
+          <tr><td><kbd>X</kbd></td><td>주 색 ↔ 보조 색 바꾸기</td></tr>
+          <tr><td><kbd>Space</kbd> 누르고 드래그</td><td>화면 이동 (손 도구)</td></tr>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>+</kbd> / <kbd>Ctrl</kbd><span class="plus">+</span><kbd>-</kbd></td><td>화면 확대 / 축소</td></tr>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>S</kbd></td><td>저장 (자주 누르기)</td></tr>
+        </tbody>
+      </table>
+      <table class="keys">
+        <caption>레이어 · 선택</caption>
+        <tbody>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>Shift</kbd><span class="plus">+</span><kbd>N</kbd></td><td>새 래스터 레이어</td></tr>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>E</kbd></td><td>아래 레이어와 합치기 (움직일 레이어는 합치지 않기)</td></tr>
+          <tr><td><kbd>M</kbd></td><td>선택 범위 도구 (사각형 · 올가미)</td></tr>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>A</kbd> / <kbd>Ctrl</kbd><span class="plus">+</span><kbd>D</kbd></td><td>전체 선택 / 선택 해제</td></tr>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>T</kbd></td><td>확대 · 축소 · 회전 (자유 변형)</td></tr>
+          <tr><td><kbd>K</kbd></td><td>레이어 이동</td></tr>
+          <tr><td><kbd>O</kbd></td><td>오브젝트 도구 (벡터 선 · 자 · 3D 조작)</td></tr>
+          <tr><td><kbd>T</kbd></td><td>텍스트</td></tr>
+          <tr><td><kbd>R</kbd></td><td>캔버스 회전 (선 긋기 편한 각도로)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="blk">한 컷을 그리는 순서</h3>
+    <ol class="recipe">
+      <li><div><b>초안 컷 이미지를 참고 레이어로 깔기.</b> <code>video/out/ep06/cuts/03-c03.png</code>를 캔버스에 끌어다 놓고 불투명도 30%. 구도와 인물 위치를 맞춥니다.<span class="hint">다 그린 뒤 이 레이어는 지우거나 숨깁니다.</span></div></li>
+      <li><div><b>러프 → 선화.</b> 러프는 아무 레이어에, 선화는 벡터 레이어에. 인물·소품·배경 선화를 각각 다른 레이어로.</div></li>
+      <li><div><b>캐릭터 시트에서 얼굴 가져오기.</b> 표정 세트에서 필요한 얼굴과 입 3장을 복사해 붙이고 <kbd>Ctrl</kbd><span class="plus">+</span><kbd>T</kbd>로 크기를 맞춥니다.</div></li>
+      <li><div><b>채색.</b> 선화를 참조 레이어로 두고 채우기. 인물별로 폴더를 만들어 정리.</div></li>
+      <li><div><b>레이어 이름 정리.</b> <a href="#files">파일 규칙</a>의 <code>누구_부위_상태</code> 규칙대로.</div></li>
+      <li><div><b>저장 두 번.</b> <code>c03.clip</code>으로 저장하고, 파일 → 복제 저장 → <code>art/c03.psd</code>.</div></li>
+    </ol>
+
+    <h3 class="blk">자주 막히는 곳</h3>
+    <div class="faq">
+      <details><summary>채우기를 했는데 빈틈으로 색이 새요</summary><p>선이 완전히 닫혀 있지 않아서입니다. 채우기 도구 설정에서 "틈 닫기"를 켜거나, 새는 곳 선을 이어 주세요. 참조 레이어가 선화 레이어로 지정되어 있는지도 확인하세요.</p></details>
+      <details><summary>PSD를 애프터 이펙트에서 열면 레이어가 하나로 합쳐져 있어요</summary><p>"화상을 통합하여 내보내기"로 저장하면 합쳐집니다. 반드시 파일 → 복제 저장 → .psd로 저장하세요. 레이어 폴더와 벡터 레이어는 PSD로 저장할 때 래스터 레이어로 바뀌지만, 나뉘어 있는 것은 그대로 유지됩니다.</p></details>
+      <details><summary>그리다 보니 어느 레이어에 그렸는지 모르겠어요</summary><p>레이어 창에서 "편집 레이어 잠금"을 켜 두거나, 도구 속성의 "레이어 자동 선택"으로 그림을 클릭하면 그 레이어로 이동합니다. 처음부터 레이어를 만들고 이름부터 붙이는 습관이 가장 확실합니다.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AFTER EFFECTS ============ -->
+<section class="part" id="ae">
+  <div class="wrap">
+    <div class="tool-top"><h2>애프터 이펙트</h2><span class="chip ae">움직임 담당</span></div>
+    <p class="tool-job">정지 그림에 움직임을 넣습니다. 우리가 쓰는 움직임은 다섯 가지뿐입니다. 천천히 확대, 튀어나오기, 흔들림(뚜둥), 입 뻐끔, 눈 깜빡. 이 다섯 개만 익히면 한 편을 만들 수 있습니다.</p>
+
+    <h3 class="blk">처음 한 번 설정</h3>
+    <dl class="setup">
+      <div><dt>컴포지션 규격</dt><dd>1920×1080, 30프레임(fps). 초안 영상과 같은 규격이라 타이밍이 그대로 맞습니다.</dd></div>
+      <div><dt>템플릿 프로젝트</dt><dd>첫 편을 만들고 나면 그림과 녹음만 뺀 상태로 <code>_공통/템플릿/ae-template.aep</code>에 저장합니다. 다음 편부터는 이걸 복사해서 시작합니다.</dd></div>
+      <div><dt>자동 저장</dt><dd>편집 → 환경 설정 → 자동 저장 → 5분마다. 애프터 이펙트는 가끔 멈춥니다.</dd></div>
+      <div><dt>Duik (선택)</dt><dd>무료 플러그인. 팔·고개를 뼈대로 움직이고 싶어질 때 설치합니다. 처음엔 없어도 됩니다.</dd></div>
+    </dl>
+
+    <h3 class="blk">꼭 알아야 할 기능</h3>
+    <div class="feats">
+      <div class="feat must"><span class="must-tag">필수</span><h4>PSD를 컴포지션으로 가져오기</h4><p>PSD의 레이어가 애프터 이펙트 레이어로 하나씩 들어옵니다. 가져오기 종류를 꼭 "컴포지션 - 레이어 크기 유지"로 고르세요.</p><span class="where">파일 → 가져오기 → 파일 (Ctrl+I)</span></div>
+      <div class="feat must"><span class="must-tag">필수</span><h4>키프레임 다섯 속성</h4><p>위치(P), 크기(S), 회전(R), 불투명도(T), 기준점(A). 시간 표시를 옮기고 값을 바꾸면 그 사이가 자동으로 채워집니다. 이것이 애프터 이펙트의 전부라고 해도 됩니다.</p><span class="where">레이어 선택 후 P · S · R · T · A</span></div>
+      <div class="feat must"><span class="must-tag">필수</span><h4>이지 이즈</h4><p>키프레임을 선택하고 F9를 누르면 움직임이 부드럽게 출발하고 멈춥니다. 딱딱한 움직임의 대부분은 이것으로 해결됩니다.</p><span class="where">키프레임 선택 → F9</span></div>
+      <div class="feat must"><span class="must-tag">필수</span><h4>부모 연결</h4><p>입·눈 레이어를 얼굴 레이어에, 얼굴을 몸에 연결하면 몸을 움직일 때 얼굴과 입이 같이 따라옵니다.</p><span class="where">타임라인 "부모 및 링크" 열의 소용돌이 아이콘을 부모 레이어로 끌기</span></div>
+      <div class="feat"><h4>오디오를 키프레임으로 변환</h4><p>녹음 파일의 소리 크기를 숫자로 바꿔 줍니다. 이 숫자로 입 모양 3장을 자동으로 바꾸면 립싱크가 됩니다. 아래 "입 뻐끔" 순서를 보세요.</p><span class="where">애니메이션 → 키프레임 도우미 → 오디오를 키프레임으로 변환</span></div>
+      <div class="feat"><h4>퍼펫 위치 핀</h4><p>그림에 핀을 몇 개 꽂고 하나를 끌면 고무처럼 휘어집니다. 손 흔들기, 고개 끄덕임에 씁니다.</p><span class="where">퍼펫 위치 핀 도구 (Ctrl+P)</span></div>
+      <div class="feat"><h4>표현식 wiggle</h4><p>"뚜둥" 순간의 화면 흔들림. 위치 속성에 한 줄만 넣으면 됩니다.</p><span class="where">위치 속성 스톱워치를 Alt+클릭 → 식 입력</span></div>
+      <div class="feat"><h4>모션 그래픽 템플릿 내보내기</h4><p>자막 상자, 질문 카드, 한 문장 정리 카드를 템플릿(.mogrt)으로 만들면, 프리미어에서 글자만 바꿔 계속 쓸 수 있습니다. 편마다 디자인이 흔들리지 않습니다.</p><span class="where">창 → 기본 그래픽 → 모션 그래픽 템플릿 내보내기</span></div>
+    </div>
+
+    <h3 class="blk">단축키</h3>
+    <div class="keys-scroll">
+      <table class="keys">
+        <caption>매일 쓰는 것</caption>
+        <tbody>
+          <tr><td><kbd>Space</kbd></td><td>재생 / 멈춤 (미리보기)</td></tr>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>Z</kbd></td><td>되돌리기</td></tr>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>I</kbd></td><td>파일 가져오기</td></tr>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>N</kbd></td><td>새 컴포지션</td></tr>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>K</kbd></td><td>컴포지션 설정 (길이·크기 바꾸기)</td></tr>
+          <tr><td><kbd>P</kbd> <kbd>S</kbd> <kbd>R</kbd> <kbd>T</kbd> <kbd>A</kbd></td><td>위치 · 크기 · 회전 · 불투명도 · 기준점 속성 열기</td></tr>
+          <tr><td><kbd>U</kbd></td><td>키프레임이 있는 속성만 보기</td></tr>
+          <tr><td><kbd>Alt</kbd><span class="plus">+</span><kbd>Shift</kbd><span class="plus">+</span><kbd>P</kbd></td><td>위치 키프레임 바로 추가 (S·R·T도 같은 방식)</td></tr>
+          <tr><td><kbd>J</kbd> / <kbd>K</kbd></td><td>이전 / 다음 키프레임으로 이동</td></tr>
+          <tr><td><kbd>Page Up</kbd> / <kbd>Page Down</kbd></td><td>한 프레임 앞 / 뒤</td></tr>
+          <tr><td><kbd>F9</kbd></td><td>이지 이즈 (부드럽게)</td></tr>
+        </tbody>
+      </table>
+      <table class="keys">
+        <caption>레이어 · 정리 · 출력</caption>
+        <tbody>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>D</kbd></td><td>레이어 복제</td></tr>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>Shift</kbd><span class="plus">+</span><kbd>D</kbd></td><td>현재 시간에서 레이어 자르기</td></tr>
+          <tr><td><kbd>[</kbd> / <kbd>]</kbd></td><td>레이어 시작 / 끝을 현재 시간으로 옮기기</td></tr>
+          <tr><td><kbd>Alt</kbd><span class="plus">+</span><kbd>[</kbd> / <kbd>Alt</kbd><span class="plus">+</span><kbd>]</kbd></td><td>레이어 앞 / 뒤를 현재 시간에서 잘라내기</td></tr>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>Shift</kbd><span class="plus">+</span><kbd>C</kbd></td><td>선택한 레이어를 묶기 (사전 구성)</td></tr>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>Alt</kbd><span class="plus">+</span><kbd>Shift</kbd><span class="plus">+</span><kbd>Y</kbd></td><td>널 오브젝트 (보이지 않는 손잡이)</td></tr>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>P</kbd></td><td>퍼펫 위치 핀 도구</td></tr>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>Alt</kbd><span class="plus">+</span><kbd>F</kbd></td><td>레이어를 화면 크기에 맞추기</td></tr>
+          <tr><td><kbd>B</kbd> / <kbd>N</kbd></td><td>작업 영역 시작 / 끝 지정</td></tr>
+          <tr><td><kbd>~</kbd></td><td>마우스 아래 패널 크게 보기</td></tr>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>Alt</kbd><span class="plus">+</span><kbd>M</kbd></td><td>Media Encoder로 보내 영상 파일로 출력</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="blk">한 편을 만드는 순서</h3>
+    <ol class="recipe">
+      <li><div><b>템플릿 복사.</b> <code>ae-template.aep</code>를 <code>ep06/ae/ep06.aep</code>로 복사해서 엽니다. 첫 편이라면 새 프로젝트로 시작합니다.</div></li>
+      <li><div><b>컷마다 PSD 가져오기.</b> <kbd>Ctrl</kbd><span class="plus">+</span><kbd>I</kbd> → <code>c01.psd</code> → "컴포지션 - 레이어 크기 유지". 컴포지션 이름이 <code>c01</code>이 되게 합니다. <kbd>Ctrl</kbd><span class="plus">+</span><kbd>K</kbd>로 1920×1080, 30fps로 맞추고, 그림 전체를 50%로 줄입니다(3840으로 그렸으니까).</div></li>
+      <li><div><b>녹음 넣기.</b> 그 컷의 <code>voice/c01-*.wav</code>를 끌어 넣고, 초안 영상과 같은 위치에 놓습니다. 컷 길이는 초안 영상의 컷 길이에 맞춥니다.</div></li>
+      <li><div><b>천천히 확대.</b> 컷 전체를 묶은 레이어(또는 널)의 크기를 처음 100% → 끝 105%. 초안 영상과 같은 느낌입니다.</div></li>
+      <li><div><b>입 뻐끔.</b> 녹음 레이어를 선택하고 "오디오를 키프레임으로 변환" → "오디오 진폭" 레이어가 생깁니다. 입 3장 레이어의 불투명도에 각각 아래 식을 넣습니다. <code>v =</code> 뒤에는 소용돌이 아이콘을 오디오 진폭 레이어의 "두 채널 → 슬라이더"로 끌어서 채웁니다.
+        <pre class="expr">// 입_닫힘
+v = (여기로 두 채널 슬라이더 끌어오기);
+v &lt; 4 ? 100 : 0
+
+// 입_반
+v = (여기로 두 채널 슬라이더 끌어오기);
+(v &gt;= 4 &amp;&amp; v &lt; 12) ? 100 : 0
+
+// 입_열림
+v = (여기로 두 채널 슬라이더 끌어오기);
+v &gt;= 12 ? 100 : 0</pre>
+        <span class="hint">4와 12는 출발점입니다. 입이 너무 자주 열리면 숫자를 올리고, 안 열리면 내리세요.</span></div></li>
+      <li><div><b>눈 깜빡.</b> <code>눈_감음</code> 레이어를 2~3초마다 3프레임씩만 보이게 합니다. 불투명도 키프레임 0 → 100 → 0, 또는 레이어를 잘라서 짧게 놓습니다.</div></li>
+      <li><div><b>뚜둥 흔들림.</b> 뚜둥 효과음 위치에서 컷 전체 레이어의 위치 속성에 식을 넣고, 0.5초 뒤에 잘라냅니다.
+        <pre class="expr">wiggle(20, 15)   // 1초에 20번, 15픽셀만큼 흔들기</pre></div></li>
+      <li><div><b>프리미어로 넘기기.</b> 프로젝트를 저장하면 끝입니다. 프리미어에서 이 컴포지션을 바로 가져옵니다(다이나믹 링크). 따로 영상으로 뽑지 않아도 됩니다.</div></li>
+    </ol>
+
+    <h3 class="blk">자주 막히는 곳</h3>
+    <div class="faq">
+      <details><summary>재생이 너무 느리고 뚝뚝 끊겨요</summary><p>미리보기 화질을 "1/2" 또는 "1/4"로 낮추세요(컴포지션 창 아래). 3840 그림을 여러 장 쓰면 무거워집니다. 최종 출력 화질에는 영향이 없습니다.</p></details>
+      <details><summary>레이어를 돌렸더니 엉뚱한 곳을 중심으로 돌아요</summary><p>기준점이 레이어 가운데에 있어서입니다. 기준점 이동 도구(Y)로 기준점을 목이나 어깨처럼 실제로 돌아야 할 곳으로 옮기세요.</p></details>
+      <details><summary>식을 넣었더니 빨간 경고가 떠요</summary><p>대부분 이름이 달라서입니다. 식 안의 레이어 이름을 직접 쓰지 말고, 소용돌이 아이콘으로 끌어서 연결하세요. 한글판과 영문판의 효과 이름이 달라도 끌어서 연결하면 맞게 들어갑니다.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PREMIERE ============ -->
+<section class="part" id="pr">
+  <div class="wrap">
+    <div class="tool-top"><h2>프리미어 프로</h2><span class="chip pr">편집 담당</span></div>
+    <p class="tool-job">모든 조각을 한 줄로 이어 붙이고, 소리를 정리하고, 자막을 얹어 최종 영상을 만듭니다. 초안 영상을 기준선으로 깔고 시작하면 길이를 고민할 일이 거의 없습니다.</p>
+
+    <h3 class="blk">처음 한 번 설정</h3>
+    <dl class="setup">
+      <div><dt>시퀀스 규격</dt><dd>1920×1080, 30fps. 초안 영상 파일을 새 항목 아이콘으로 끌어다 놓으면 같은 규격의 시퀀스가 자동으로 만들어집니다.</dd></div>
+      <div><dt>작업 공간</dt><dd>창 → 작업 영역 → 편집. 자막 작업할 때는 "캡션 및 그래픽".</dd></div>
+      <div><dt>자동 저장</dt><dd>편집 → 환경 설정 → 자동 저장 → 5분마다.</dd></div>
+      <div><dt>녹음 입력</dt><dd>편집 → 환경 설정 → 오디오 하드웨어 → 기본 입력을 쓰는 마이크로.</dd></div>
+    </dl>
+
+    <h3 class="blk">꼭 알아야 할 기능</h3>
+    <div class="feats">
+      <div class="feat must"><span class="must-tag">필수</span><h4>자르기와 빈틈 없애기</h4><p>자르기 도구(C)로 자르고, 필요 없는 조각을 Shift+Delete로 지우면 뒤 클립이 자동으로 당겨집니다. 편집의 80%가 이것입니다.</p><span class="where">C · Shift+Delete · Q / W</span></div>
+      <div class="feat must"><span class="must-tag">필수</span><h4>애프터 이펙트 컴포지션 가져오기</h4><p>렌더 없이 AE 컴포지션을 클립처럼 씁니다. AE에서 고치면 프리미어에도 바로 반영됩니다.</p><span class="where">파일 → 가져오기 → ep06.aep → 컴포지션 선택</span></div>
+      <div class="feat must"><span class="must-tag">필수</span><h4>음성 향상</h4><p>집에서 녹음한 목소리의 울림과 잡음을 한 번에 줄여 줍니다. 전부 켜면 어색할 수 있으니 "혼합량"을 70% 정도로.</p><span class="where">기본 사운드 → 대화 → 음성 향상 (최신 버전)</span></div>
+      <div class="feat must"><span class="must-tag">필수</span><h4>배경음악 자동 더킹</h4><p>대사가 나오면 배경음악이 저절로 작아집니다. 음악 클립을 "음악", 목소리 클립을 "대화"로 지정해야 동작합니다.</p><span class="where">기본 사운드 → 음악 → 더킹 → 대화 기준 → 키프레임 생성</span></div>
+      <div class="feat"><h4>자막 만들기</h4><p>초안의 <code>subtitles.srt</code>를 가져오거나, 실제 녹음으로 음성을 텍스트로 바꿔 자막을 만듭니다(한국어 지원). 어느 쪽이든 원고와 한 번 대조하세요.</p><span class="where">텍스트 패널 → 기록 → 캡션 만들기 / 파일 → 가져오기 → .srt</span></div>
+      <div class="feat"><h4>모션 그래픽 템플릿</h4><p>AE에서 만든 자막 상자·질문 카드를 끌어다 놓고 글자만 바꿉니다.</p><span class="where">창 → 기본 그래픽 → 찾아보기 → .mogrt 설치</span></div>
+      <div class="feat"><h4>보이스오버 녹음</h4><p>오디오 트랙 머리의 마이크 버튼을 누르면 영상을 보면서 바로 녹음됩니다. 대사 타이밍을 맞추기 쉽습니다.</p><span class="where">오디오 트랙 헤더 → 마이크 아이콘</span></div>
+      <div class="feat"><h4>자동 리프레임</h4><p>가로 영상을 세로 쇼츠(1080×1920)로 자동으로 바꿔 줍니다. 한 편에서 쇼츠 1~2개를 뽑을 때 씁니다.</p><span class="where">시퀀스 → 자동 리프레임 시퀀스</span></div>
+    </div>
+
+    <h3 class="blk">단축키</h3>
+    <div class="keys-scroll">
+      <table class="keys">
+        <caption>매일 쓰는 것</caption>
+        <tbody>
+          <tr><td><kbd>Space</kbd></td><td>재생 / 멈춤</td></tr>
+          <tr><td><kbd>J</kbd> <kbd>K</kbd> <kbd>L</kbd></td><td>뒤로 재생 · 멈춤 · 앞으로 재생 (여러 번 누르면 빨라짐)</td></tr>
+          <tr><td><kbd>V</kbd></td><td>선택 도구</td></tr>
+          <tr><td><kbd>C</kbd></td><td>자르기 도구</td></tr>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>K</kbd></td><td>재생 헤드 위치에서 선택 트랙 자르기</td></tr>
+          <tr><td><kbd>Shift</kbd><span class="plus">+</span><kbd>Delete</kbd></td><td>지우고 빈틈 당기기 (잔물결 삭제)</td></tr>
+          <tr><td><kbd>Q</kbd> / <kbd>W</kbd></td><td>재생 헤드 앞 / 뒤를 잘라내고 당기기</td></tr>
+          <tr><td><kbd>↑</kbd> / <kbd>↓</kbd></td><td>이전 / 다음 자른 지점으로 이동</td></tr>
+          <tr><td><kbd>←</kbd> / <kbd>→</kbd></td><td>한 프레임 앞 / 뒤</td></tr>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>Z</kbd></td><td>되돌리기</td></tr>
+          <tr><td><kbd>\</kbd></td><td>타임라인 전체를 화면에 맞추기</td></tr>
+          <tr><td><kbd>=</kbd> / <kbd>-</kbd></td><td>타임라인 확대 / 축소</td></tr>
+        </tbody>
+      </table>
+      <table class="keys">
+        <caption>정리 · 출력</caption>
+        <tbody>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>I</kbd></td><td>파일 가져오기</td></tr>
+          <tr><td><kbd>M</kbd></td><td>마커 찍기 (나중에 고칠 곳 표시)</td></tr>
+          <tr><td><kbd>I</kbd> / <kbd>O</kbd></td><td>시작 지점 / 끝 지점 표시</td></tr>
+          <tr><td><kbd>S</kbd></td><td>스냅 켜기 / 끄기 (클립이 딱 붙게)</td></tr>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>L</kbd></td><td>영상과 소리 연결 / 연결 해제</td></tr>
+          <tr><td><kbd>Alt</kbd> 누르고 클릭</td><td>연결된 영상 · 소리 중 하나만 선택</td></tr>
+          <tr><td><kbd>Alt</kbd> 누르고 드래그</td><td>클립 복제</td></tr>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>D</kbd></td><td>영상 기본 전환 효과 (디졸브)</td></tr>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>Shift</kbd><span class="plus">+</span><kbd>D</kbd></td><td>소리 기본 전환 (크로스페이드)</td></tr>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>R</kbd></td><td>속도 · 지속 시간</td></tr>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>M</kbd></td><td>내보내기</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="blk">한 편을 만드는 순서</h3>
+    <ol class="recipe">
+      <li><div><b>초안 깔기.</b> <code>ep06.mp4</code>로 시퀀스를 만들고, 초안은 맨 위 트랙(V3)에 둡니다. 불투명도를 30%로 낮추거나 눈 아이콘으로 껐다 켜며 비교합니다.<span class="hint">초안의 컷 경계마다 <kbd>M</kbd>으로 마커를 찍어 두면 편합니다.</span></div></li>
+      <li><div><b>AE 컷 바꿔 끼우기.</b> <code>ep06.aep</code>를 가져와서 c01, c02… 컴포지션을 V1 트랙의 마커 위치에 놓습니다. 다 끼우면 초안 트랙을 끕니다.</div></li>
+      <li><div><b>소리 정리.</b> 목소리 클립 전부 선택 → 기본 사운드 → 대화 → 음성 향상. 효과음을 넣고, 배경음악을 A3 트랙에 깔고 더킹을 겁니다.</div></li>
+      <li><div><b>자막.</b> <code>subtitles.srt</code>를 가져오거나 텍스트 패널에서 새로 만들고, 원고와 대조해 틀린 글자를 고칩니다. 질문 카드·정리 카드는 템플릿으로.</div></li>
+      <li><div><b>가족 시사회 2차.</b> 처음부터 끝까지 같이 봅니다. 고칠 곳에 <kbd>M</kbd> 마커를 찍고 마커 이름에 메모를 적습니다.</div></li>
+      <li><div><b>내보내기.</b> <kbd>Ctrl</kbd><span class="plus">+</span><kbd>M</kbd> → 형식 H.264, 사전 설정 "고품질 1080p HD". 효과 항목에서 음량 정규화를 켜고 ITU BS.1770-3, 목표 −14 LUFS로 맞춥니다(유튜브 기준 음량).<span class="hint">자막은 영상에 굽지 말고 .srt로 따로 내보내 유튜브에 올리는 쪽이 검색과 번역에 유리합니다. 캡션 트랙은 내보내기 → 캡션 → 사이드카 파일 만들기.</span></div></li>
+    </ol>
+
+    <h3 class="blk">자주 막히는 곳</h3>
+    <div class="faq">
+      <details><summary>AE 컴포지션을 넣었더니 재생이 끊겨요</summary><p>재생 화질을 1/2로 낮추고, 시퀀스 → 작업 영역에서 효과 렌더링(Enter)을 한 번 해 두면 부드러워집니다. 그래도 느리면 AE에서 컷을 영상 파일로 뽑아 넣으세요.</p></details>
+      <details><summary>배경음악이 대사를 덮어요</summary><p>더킹의 "감소량"을 −15dB 이상으로 올리거나, 음악 클립 전체 볼륨을 −20dB 근처로 낮추세요. 대화 클립이 "대화"로 지정되어 있는지도 확인하세요.</p></details>
+      <details><summary>미디어 오프라인이라고 빨간 화면이 떠요</summary><p>파일을 옮기거나 이름을 바꿨을 때 생깁니다. 클립을 마우스 오른쪽 → 미디어 연결 → 파일 위치를 알려 주면 됩니다. 폴더 규칙을 지키면 거의 생기지 않습니다.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ANIMATE ============ -->
+<section class="part" id="animate">
+  <div class="wrap">
+    <div class="tool-top"><h2>어도비 애니메이트</h2><span class="chip yt">지금은 안 써도 됨</span></div>
+    <div class="prose">
+      <p>지금 우리 채널은 정지 그림에 가벼운 움직임을 얹는 형식이라, 애프터 이펙트 하나로 충분합니다. 툴이 하나 줄면 배울 것도 하나 줄어듭니다.</p>
+      <p>나중에 캐릭터가 걸어 다니고 손짓하며 말하는 장면이 많아지면 그때 애니메이트를 꺼내면 됩니다. 캐릭터를 "심볼"로 만들어 두면 편마다 재사용할 수 있고, 입 모양을 녹음에 자동으로 맞추는 립싱크 기능이 있습니다.</p>
+    </div>
+    <div class="keys-scroll">
+      <table class="keys">
+        <caption>그때를 위한 기본 단축키</caption>
+        <tbody>
+          <tr><td><kbd>F5</kbd></td><td>프레임 늘리기</td></tr>
+          <tr><td><kbd>F6</kbd></td><td>키프레임 만들기</td></tr>
+          <tr><td><kbd>F7</kbd></td><td>빈 키프레임 만들기</td></tr>
+          <tr><td><kbd>F8</kbd></td><td>심볼로 변환</td></tr>
+          <tr><td><kbd>Q</kbd></td><td>자유 변형 도구</td></tr>
+          <tr><td><kbd>Ctrl</kbd><span class="plus">+</span><kbd>Enter</kbd></td><td>테스트 재생</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRACTICE ============ -->
+<section class="part" id="practice">
+  <div class="wrap">
+    <h2>4주 연습 계획</h2>
+    <p class="sub">툴을 다 배운 뒤에 시작하면 늦습니다. 이미 원고가 있는 1편 「호텔·모텔·유스호스텔」로 연습하면서 배우세요. 연습이 끝나면 1편이 완성되어 있습니다.</p>
+    <div class="weeks">
+      <div class="week">
+        <span class="wk">1주차</span>
+        <h4>캐릭터 시트</h4>
+        <ul><li>클립 스튜디오 기본 단축키 익히기</li><li>아빠·엄마·아이 표정 5개씩</li><li>입 3장, 눈 2장</li></ul>
+        <p class="goal">목표: 캐릭터 시트 PSD 3개</p>
+      </div>
+      <div class="week">
+        <span class="wk">2주차</span>
+        <h4>1편 그림 + 녹음</h4>
+        <ul><li>1편 컷 11장 그리기 (배경은 단순하게)</li><li>1편 대사 녹음, 파일 이름 규칙대로</li><li>AE: PSD 가져오기와 키프레임</li></ul>
+        <p class="goal">목표: art/ 와 voice/ 폴더 채우기</p>
+      </div>
+      <div class="week">
+        <span class="wk">3주차</span>
+        <h4>1편 움직임</h4>
+        <ul><li>컷마다 천천히 확대 + 입 뻐끔</li><li>뚜둥 흔들림, 눈 깜빡</li><li>자막 상자 템플릿 하나 만들기</li></ul>
+        <p class="goal">목표: ep01.aep 완성, 템플릿 저장</p>
+      </div>
+      <div class="week">
+        <span class="wk">4주차</span>
+        <h4>1편 완성 · 업로드</h4>
+        <ul><li>프리미어로 조립, 음악, 자막</li><li>가족 시사회 두 번</li><li>점검표 확인 후 업로드</li></ul>
+        <p class="goal">목표: 첫 영상 공개</p>
+      </div>
+    </div>
+    <p class="note">두 번째 편부터는 캐릭터 시트와 템플릿을 재사용하므로 훨씬 빨라집니다. 막히는 곳이 생기면 Claude에게 화면을 설명하거나 캡처를 보여 주고 물어보세요.</p>
+  </div>
+</section>
+
+<!-- ============ CHECKLIST ============ -->
+<section class="part" id="check">
+  <div class="wrap">
+    <h2>올리기 전 점검</h2>
+    <p class="sub">업로드 버튼을 누르기 전에 다 같이 한 번 확인합니다. 여기 체크한 표시는 이 기기에만 남습니다.</p>
+    <ul class="check" id="checklist">
+      <li><input type="checkbox" id="ck1"><label for="ck1">처음부터 끝까지 소리를 켜고 한 번 봤다<small>이어폰과 휴대폰 스피커 둘 다로</small></label></li>
+      <li><input type="checkbox" id="ck2"><label for="ck2">자막 오타가 없다<small>원고와 대조, 특히 숫자와 이름</small></label></li>
+      <li><input type="checkbox" id="ck3"><label for="ck3">사실 확인이 된 내용만 단정적으로 말한다<small>원고 자료조사에 "가설"이라고 적힌 부분은 영상에서도 가설이라고 말하기</small></label></li>
+      <li><input type="checkbox" id="ck4"><label for="ck4">배경음악 · 효과음의 사용 허락을 확인했다<small>유튜브 오디오 보관함 곡이면 저작자 표시 필요 여부 확인</small></label></li>
+      <li><input type="checkbox" id="ck5"><label for="ck5">아이의 얼굴, 실명, 학교, 사는 동네가 나오지 않는다<small>그림 속 간판, 창밖 풍경, 목소리로 말한 이름까지</small></label></li>
+      <li><input type="checkbox" id="ck6"><label for="ck6">음량이 −14 LUFS 근처다<small>프리미어 내보내기의 음량 정규화</small></label></li>
+      <li><input type="checkbox" id="ck7"><label for="ck7">썸네일 문구가 휴대폰 크기에서도 읽힌다<small>썸네일을 작게 줄여서 확인</small></label></li>
+      <li><input type="checkbox" id="ck8"><label for="ck8">시청자층(아동용 여부)을 정확하게 골랐다<small>아동용으로 설정하면 댓글과 맞춤 광고가 꺼집니다</small></label></li>
+      <li><input type="checkbox" id="ck9"><label for="ck9">.srt 자막 파일을 따로 올렸다</label></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>여덟 살의 질문 · 가족 제작 노트. 툴 메뉴 이름은 한국어판 기준이며, 버전에 따라 조금 다를 수 있습니다.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // 단축키 표 검색
+  var q = document.getElementById('keyq');
+  var tables = Array.prototype.slice.call(document.querySelectorAll('table.keys'));
+  function filter(){
+    var term = (q.value || '').trim().toLowerCase();
+    tables.forEach(function(t){
+      var rows = t.querySelectorAll('tbody tr:not(.empty)');
+      var shown = 0;
+      rows.forEach(function(r){
+        var hit = !term || r.textContent.toLowerCase().indexOf(term) !== -1;
+        r.classList.toggle('hide', !hit);
+        if (hit) shown++;
+      });
+      var empty = t.querySelector('tr.empty');
+      if (!shown && !empty){
+        empty = document.createElement('tr'); empty.className = 'empty';
+        empty.innerHTML = '<td colspan="2">이 표에는 맞는 단축키가 없어요</td>';
+        t.querySelector('tbody').appendChild(empty);
+      }
+      if (empty) empty.hidden = shown > 0;
+    });
+  }
+  q.addEventListener('input', filter);
+
+  // 목차 현재 위치 표시
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+  var map = {};
+  links.forEach(function(a){ map[a.getAttribute('href').slice(1)] = a; });
+  if ('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){
+          links.forEach(function(a){ a.classList.remove('on'); });
+          var a = map[e.target.id];
+          if (a){ a.classList.add('on'); a.scrollIntoView({block:'nearest', inline:'nearest'}); }
+        }
+      });
+    }, {rootMargin:'-45% 0px -50% 0px'});
+    document.querySelectorAll('section.part').forEach(function(s){ io.observe(s); });
+  }
+
+  // 점검표는 이 기기에만 기억
+  var KEY = 'eyq-checklist';
+  var saved = {};
+  try { saved = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch(e){ saved = {}; }
+  document.querySelectorAll('#checklist input').forEach(function(box){
+    box.checked = !!saved[box.id];
+    box.addEventListener('change', function(){
+      saved[box.id] = box.checked;
+      try { localStorage.setItem(KEY, JSON.stringify(saved)); } catch(e){}
+    });
+  });
+})();
+</script>
+</body>
+</html>
