@@ -1,0 +1,30 @@
+{
+  "title": "공통 — 가족 캐릭터 · 집 배경",
+  "cast": {
+    "dad": "the dad: a Korean father in his late 30s, slightly chubby with a round face, short black hair that is clearly thinning on top, thick eyebrows, faint stubble, wearing a mustard-yellow knit cardigan over a white t-shirt, gray sweatpants and house slippers; a kind but easily flustered look",
+    "kid": "the kid: an 8-year-old Korean child with a black bowl-cut, huge round curious eyes, one missing front tooth, wearing a red hoodie, navy shorts and white socks; small, fearless and very direct"
+  },
+  "items": [
+    { "id": "common/dad/normal", "kind": "char", "who": "dad", "title": "아빠 — 기본", "note": "아빠의 기준 그림. 이후 아빠 그림에 전부 ②로 첨부한다.", "desc": "3/4 view, body and face turned slightly to the LEFT. Standing relaxed, arms at his sides, a mild friendly smile." },
+    { "id": "common/dad/panic", "kind": "char", "who": "dad", "title": "아빠 — 당황", "desc": "3/4 view turned slightly to the LEFT. He has just been asked a question he cannot answer: eyes darting sideways, forced crooked smile showing teeth, one hand rubbing the back of his neck, cold sweat drops flying off his forehead, knees slightly bent." },
+    { "id": "common/dad/explain", "kind": "char", "who": "dad", "title": "아빠 — 설명", "desc": "3/4 view turned slightly to the LEFT. Explaining confidently: index finger raised high, chest puffed out, eyebrows up, mouth open mid-sentence, the other hand on his hip." },
+    { "id": "common/dad/think", "kind": "char", "who": "dad", "title": "아빠 — 생각", "desc": "3/4 view turned slightly to the LEFT. Deep in thought: one hand on his chin, eyes looking up, lips pursed, one eyebrow raised." },
+    { "id": "common/dad/proud", "kind": "char", "who": "dad", "title": "아빠 — 뿌듯", "desc": "3/4 view turned slightly to the LEFT. Warm proud smile with closed crescent eyes, both hands on his hips, a small sparkle near his head." },
+    { "id": "common/dad/shock", "kind": "char", "who": "dad", "title": "아빠 — 충격", "desc": "3/4 view turned slightly to the LEFT. Frozen in shock: eyes bulging out, jaw dropped showing teeth and tongue, hair standing on end, both hands up, shock lines close around his head." },
+
+    { "id": "common/kid/normal", "kind": "char", "who": "kid", "title": "아이 — 기본", "note": "아이의 기준 그림. 이후 아이 그림에 전부 ②로 첨부한다.", "desc": "3/4 view, body and face turned slightly to the RIGHT. Standing with hands behind the back, head tilted, a bright curious smile." },
+    { "id": "common/kid/ask", "kind": "char", "who": "kid", "title": "아이 — 질문", "desc": "3/4 view turned slightly to the RIGHT. Asking a question: looking far up at a tall adult, one arm stretched up pointing with the index finger, mouth wide open mid-question, eyebrows raised." },
+    { "id": "common/kid/wow", "kind": "char", "who": "kid", "title": "아이 — 우와", "desc": "3/4 view turned slightly to the RIGHT. Amazed: sparkling star-filled eyes, huge open-mouth grin, both fists clenched in front of the chest." },
+    { "id": "common/kid/doubt", "kind": "char", "who": "kid", "title": "아이 — 의심", "desc": "3/4 view turned slightly to the RIGHT. Not buying it: arms crossed, eyes narrowed to suspicious slits, mouth a flat line pulled to one side, looking up sideways." },
+    { "id": "common/kid/laugh", "kind": "char", "who": "kid", "title": "아이 — 웃음", "desc": "3/4 view turned slightly to the RIGHT. Laughing hard: eyes squeezed shut, mouth wide open showing the missing tooth, holding the belly with both hands." },
+
+    { "id": "common/cutin/dad-panic", "kind": "cutin", "who": "dad", "title": "컷인 — 아빠 당황", "desc": "Facing slightly to the LEFT. Total panic: eyes bulging and looking away, clenched-teeth fake smile, cold sweat pouring down the whole face, a vein on the temple, trembling." },
+    { "id": "common/cutin/dad-shock", "kind": "cutin", "who": "dad", "title": "컷인 — 아빠 충격", "desc": "Facing slightly to the LEFT. Jaw dropped to the chest showing every tooth, gums and tongue, eyes popping out of their sockets, hair standing straight up." },
+    { "id": "common/cutin/dad-proud", "kind": "cutin", "who": "dad", "title": "컷인 — 아빠 뿌듯", "desc": "Facing slightly to the LEFT. Smug proud face: chin raised, nostrils flared, closed crescent eyes, huge satisfied grin, sparkles." },
+    { "id": "common/cutin/kid-ask", "kind": "cutin", "who": "kid", "title": "컷인 — 아이 질문", "desc": "Facing slightly to the RIGHT. Innocent and relentless: enormous shining eyes staring straight up, mouth open in a big round 'why?', one finger raised next to the face." },
+    { "id": "common/cutin/kid-doubt", "kind": "cutin", "who": "kid", "title": "컷인 — 아이 의심", "desc": "Facing slightly to the RIGHT. Deeply suspicious: eyes narrowed to slits, one eyebrow raised very high, lips pressed and pulled to one side." },
+
+    { "id": "common/bg/living-room", "kind": "bg", "title": "배경 — 거실", "desc": "A cozy Korean apartment living room in the daytime: beige fabric sofa against the back wall, a low wooden table, a tall leafy plant, a window with light curtains, a few picture frames with blank contents, light wooden floor." },
+    { "id": "common/bg/kid-room-night", "kind": "bg", "title": "배경 — 밤의 아이 방", "desc": "A small Korean child's bedroom at night: a single bed with a star-pattern blanket against the back wall on the left, a bedside table with a warm glowing desk lamp, a window showing a crescent moon, dim blue room light with one warm pool of lamp light." }
+  ]
+}

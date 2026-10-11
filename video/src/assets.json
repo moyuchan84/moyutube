@@ -1,0 +1,110 @@
+{
+  "common/dad/normal": {
+    "w": 591,
+    "h": 1500
+  },
+  "common/dad/panic": {
+    "w": 755,
+    "h": 1500
+  },
+  "common/dad/explain": {
+    "w": 890,
+    "h": 1500
+  },
+  "common/dad/think": {
+    "w": 562,
+    "h": 1500
+  },
+  "common/dad/proud": {
+    "w": 710,
+    "h": 1500
+  },
+  "common/dad/shock": {
+    "w": 782,
+    "h": 1500
+  },
+  "common/kid/normal": {
+    "w": 609,
+    "h": 1500
+  },
+  "common/kid/ask": {
+    "w": 689,
+    "h": 1500
+  },
+  "common/kid/wow": {
+    "w": 707,
+    "h": 1500
+  },
+  "common/kid/doubt": {
+    "w": 642,
+    "h": 1500
+  },
+  "common/kid/laugh": {
+    "w": 851,
+    "h": 1500
+  },
+  "common/cutin/dad-panic": {
+    "w": 1218,
+    "h": 1300
+  },
+  "common/cutin/dad-shock": {
+    "w": 1214,
+    "h": 1300
+  },
+  "common/cutin/dad-proud": {
+    "w": 1252,
+    "h": 1300
+  },
+  "common/cutin/kid-ask": {
+    "w": 1192,
+    "h": 1300
+  },
+  "common/cutin/kid-doubt": {
+    "w": 1191,
+    "h": 1300
+  },
+  "common/bg/living-room": {
+    "w": 2560,
+    "h": 1440
+  },
+  "common/bg/kid-room-night": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep01/bg/motel-counter": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep01/char/dad-young": {
+    "w": 617,
+    "h": 1500
+  },
+  "ep01/full/hotel-mansion": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep01/full/motel-1920s": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep01/full/hostel-1912": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep01/prop/hotel": {
+    "w": 928,
+    "h": 1200
+  },
+  "ep01/prop/motel": {
+    "w": 1200,
+    "h": 1012
+  },
+  "ep01/prop/hostel": {
+    "w": 926,
+    "h": 1200
+  },
+  "ep01/full/next-teaser": {
+    "w": 2560,
+    "h": 1440
+  }
+}
