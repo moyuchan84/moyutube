@@ -22,7 +22,8 @@ npx remotion still src/index.ts Ep01-ThumbA out/ep01/thumbnail-A.png   # 썸네�
 - **그림**: `public/ep01/cuts/panelNN.png`를 직접 그린 그림으로 덮어쓰면 됩니다 (가로 620:434 비율 권장).
 - **내 목소리**: `public/ep01/voice/<컷id>-<번호>.wav`를 녹음 파일로 교체하고, `src/ep01/timing.json`의 길이(초)를 맞춰 주세요.
 - **AI Studio 음성**: `npm run voice -- ep01 studio` → `out/ep01/voice-studio.html` 을 열어 컷마다 복사 → AI Studio에서 생성 → `voice-studio/ep01/<컷id>.wav` 로 저장 → `npm run voice -- ep01 split` (줄마다 자르고 타이밍 갱신). 대사를 고친 뒤 `studio` 를 다시 돌리면 다시 만들 컷만 ⚠ 로 표시된다. `script.json` 맨 위에 `"rawVoice": true` 필요.
-- **배경음악**: 저작권 때문에 넣지 않았습니다. 유튜브 오디오 보관함 곡을 편집 단계에서 −20dB 정도로 깔아 주세요.
+- **배경음악**: `script.json` 맨 위의 `"bgm": "cheerful"` 이 `public/bgm/cheerful.wav` 를 대사 밑에 깝니다 (말하는 동안은 목소리보다 약 22dB 작게). 이 곡은 `node scripts/bgm.mjs` 가 코드로 합성한 것이라 저작권 문제가 없습니다. 다른 곡은 `public/bgm/<이름>.wav` 로 넣고 이름을 바꿔 적으세요. 줄을 지우면 배경음악이 빠집니다.
+- **영어 자막**: 대사 줄마다 `"en"` 번역을 적어 두면 `npm run srt -- ep01 en` (또는 `make`)이 같은 타이밍으로 `out/ep01/subtitles.en.srt` 를 만듭니다.
 
 ## 일러스트 영상 (Gemini 그림 → 움직이는 컷)
 
