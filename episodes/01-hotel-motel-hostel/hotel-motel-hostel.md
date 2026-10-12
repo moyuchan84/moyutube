@@ -21,14 +21,13 @@
 | 6. 아이 눈높이로 번역 | 5:20–6:40 | 다음 날 아이에게 실제로 해준 설명 |
 | 7. 남는 이야기 | 6:40–7:30 | 다음 편 예고: "아파트·빌라·오피스텔은 또 왜 이름이 다를까?" |
 
-## 3. 그림 콘티 (컷 11장)
+## 3. 그림 콘티 (컷 10장)
 
 | 컷 | 박자 | 앵글 | 구성 | 자막 | 색 포인트 |
 |---|---|---|---|---|---|
 | #1 | 1. 그 질문 | 와이드 | 거실, 아이 실루엣이 부모 쪽을 올려다봄 | "아빠, 호텔이랑 모텔이랑 유스호스텔은 뭐가 달라요?" | 잉크색 위주, 배경은 종이색 |
 | #2 | 2. 얼버무린 순간 | 미디엄 | 부모 실루엣이 시선을 돌리고 뒷목을 만짐 | "어... 그게..." | 강조색(빨강) 살짝 |
 | #3 | 2. 얼버무린 순간 | 클로즈업 | 딴 곳을 보는 눈동자 대신 고개 각도만 | "음, 가격이 좀 다른 거야" | 회색 |
-| #3-플래시백 | 2. 얼버무린 순간(회상) | 미디엄, 점선 테두리 | 몇 년 전 모텔 카운터, 실루엣이 뻣뻣하게 굳고 식은땀 효과선 | "저... 어... 네..." | 잉크색, 빛바랜 톤 |
 | #4 | 3. 왜 다들 헷갈리나 | 자막컷 | 호텔·모텔·유스호스텔 세 단어가 겹쳐 흐릿하게 표시 | "다 그냥 '자는 곳' 아니야?" | 잉크색 |
 | #5 | 4. 갈라진 지점 | 와이드 | 유럽풍 저택 실루엣, 귀족 손님 실루엣이 문 앞에 | "귀족의 저택에서 시작된 호텔" | 강조색(빨강) |
 | #6 | 4. 갈라진 지점 | 와이드 | 1920년대 자동차와 나란히 붙은 낮은 건물 실루엣 | "자동차 여행객을 위한 모텔" | 잉크색 |
@@ -40,10 +39,10 @@
 
 **러프 스케치 시트** (마크다운 뷰어가 SVG를 지원하면 아래에 렌더링됩니다 — 2단 배치로 가독성 개선):
 
-<svg width="100%" viewBox="0 0 832 2042" xmlns="http://www.w3.org/2000/svg" role="img">
+<svg width="100%" viewBox="0 0 832 1711" xmlns="http://www.w3.org/2000/svg" role="img">
 <title>호텔·모텔·유스호스텔 편 그림 콘티 전체 시트 (가독성 개선판)</title>
-<desc>11개 컷을 2단 배치, 큰 실루엣과 큰 캡션으로 표현한 러프 스토리보드 시트</desc>
-<rect x="0" y="0" width="832" height="2042" fill="#E9EDE8"/>
+<desc>10개 컷을 2단 배치, 큰 실루엣과 큰 캡션으로 표현한 러프 스토리보드 시트</desc>
+<rect x="0" y="0" width="832" height="1711" fill="#E9EDE8"/>
 
   <g transform="translate(40,40)">
     <rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2" />
@@ -80,20 +79,6 @@
     <text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">"음, 가격이..."</text>
   </g>
   <g transform="translate(428,371)">
-    <rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#B8352A" stroke-width="2" stroke-dasharray="6,4"/>
-    <g transform="translate(30.0,14) scale(1.9)">
-    <rect x="30" y="65" width="120" height="30" fill="#F6F8F4" stroke="#66756E" stroke-width="1"/>
-    <ellipse cx="80" cy="95" rx="20" ry="4" fill="#C4D0C6"/>
-    <path d="M65 95 L65 55 Q65 45 73 45 L87 45 Q95 45 95 55 L95 95 Z" fill="#1B2A26"/>
-    <circle cx="79" cy="38" r="10" fill="#1B2A26"/>
-    <circle cx="60" cy="55" r="2.5" fill="#66756E"/>
-    <circle cx="102" cy="60" r="2.5" fill="#66756E"/>
-    <circle cx="55" cy="65" r="2.5" fill="#66756E"/>
-    </g>
-    <text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#3f · 회상(플래시백)</text>
-    <text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">"저... 어... 네..."</text>
-  </g>
-  <g transform="translate(40,702)">
     <rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2" />
     <g transform="translate(30.0,14) scale(1.9)">
     <circle cx="55" cy="55" r="26" fill="none" stroke="#66756E" stroke-width="2" opacity="0.6"/>
@@ -104,7 +89,7 @@
     <text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#4 · 3. 왜 헷갈리나</text>
     <text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">"다 같은 거 아냐?"</text>
   </g>
-  <g transform="translate(428,702)">
+  <g transform="translate(40,702)">
     <rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2" />
     <g transform="translate(30.0,14) scale(1.9)">
     <rect x="50" y="55" width="90" height="45" fill="#1B2A26"/>
@@ -116,7 +101,7 @@
     <text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#5 · 4. 갈라진 지점</text>
     <text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">"귀족을 위한 호텔"</text>
   </g>
-  <g transform="translate(40,1033)">
+  <g transform="translate(428,702)">
     <rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2" />
     <g transform="translate(30.0,14) scale(1.9)">
     <rect x="90" y="55" width="55" height="35" fill="#1B2A26"/>
@@ -130,13 +115,13 @@
     <text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#6 · 4. 갈라진 지점</text>
     <text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">"자동차를 위한 모텔"</text>
   </g>
-  <g transform="translate(428,1033)">
+  <g transform="translate(40,1033)">
     <rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2" />
     <g transform="translate(30.0,14) scale(1.9)"><path d="M45 95 L45 70 Q45 62 51 62 L55 62 Q61 62 61 70 L61 95 Z" fill="#1B2A26"/><circle cx="53" cy="56" r="7" fill="#1B2A26"/><path d="M70 95 L70 70 Q70 62 76 62 L80 62 Q86 62 86 70 L86 95 Z" fill="#1B2A26"/><circle cx="78" cy="56" r="7" fill="#1B2A26"/><path d="M95 95 L95 70 Q95 62 101 62 L105 62 Q111 62 111 70 L111 95 Z" fill="#1B2A26"/><circle cx="103" cy="56" r="7" fill="#1B2A26"/><path d="M120 95 L120 70 Q120 62 126 62 L130 62 Q136 62 136 70 L136 95 Z" fill="#1B2A26"/><circle cx="128" cy="56" r="7" fill="#1B2A26"/><rect x="135" y="45" width="20" height="50" fill="#F6F8F4" stroke="#66756E"/></g>
     <text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#7 · 4. 갈라진 지점</text>
     <text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">"아이들을 위한 유스호스텔"</text>
   </g>
-  <g transform="translate(40,1364)">
+  <g transform="translate(428,1033)">
     <rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2" />
     <g transform="translate(30.0,14) scale(1.9)">
     <rect x="30" y="45" width="30" height="55" fill="#1B2A26"/>
@@ -147,7 +132,7 @@
     <text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#8 · 5. 한 문장 정리</text>
     <text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">"각자를 위해"</text>
   </g>
-  <g transform="translate(428,1364)">
+  <g transform="translate(40,1364)">
     <rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2" />
     <g transform="translate(30.0,14) scale(1.9)">
     <rect x="35" y="80" width="120" height="18" rx="4" fill="#F6F8F4" stroke="#66756E"/>
@@ -159,7 +144,7 @@
     <text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#9 · 6. 눈높이 번역</text>
     <text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">"다음날 이렇게"</text>
   </g>
-  <g transform="translate(40,1695)">
+  <g transform="translate(428,1364)">
     <rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2" />
     <g transform="translate(30.0,14) scale(1.9)">
     <rect x="30" y="55" width="30" height="45" fill="#66756E" opacity="0.35"/>
@@ -183,13 +168,7 @@
 "어... 그게... 음, 가격이 좀 다른 거야."
 (살짝 헛기침하고 다른 이야기로 넘어감)
 
-*(화면 살짝 빛바랜 톤으로 전환 — 플래시백)*
-사실 그 순간, 머릿속에는 다른 장면이 스쳐 지나갔습니다. 몇 년 전, 연애하던 시절 모텔 카운터 앞에서 괜히 쭈뼛거리며
-카드를 꺼내다 떨어뜨리고, 목소리가 한 톤 올라간 채로 "저... 어... 네..."만 반복했던 그 순간이요.
-*(다큐멘터리 나레이션 톤으로 진지하게)* "이때부터 어른의 사정이라는 게 시작된다."
-*(바로 셀프 태클)* …라고 하기엔 그냥 많이 쭈뼛거렸습니다.
-*(효과음: 뚜둥 — 화면 다시 현재로)*
-…그건 나중 얘기고. 아무튼 저는 아이한테 가격 얘기로 얼버무렸고, 지금 생각하면 진짜 이유는 하나도 말 안 한 거였어요.
+저는 아이한테 가격 얘기로 얼버무렸고, 지금 생각하면 진짜 이유는 하나도 말 안 한 거였어요.
 
 **[3. 왜 다들 헷갈리나 — 0:50]**
 우리는 이 세 개를 그냥 '자는 곳'으로 뭉뚱그려 씁니다. 그런데 이 셋은 태어난 이유부터가 완전히 다릅니다. 오늘은 이 세 단어가 각각 **누구를 위해** 만들어졌는지부터 따라가 보겠습니다.
@@ -199,7 +178,7 @@
 
 모텔은 다릅니다. 1920년대 미국에서 자동차가 갑자기 흔해졌습니다. 그런데 자동차로 먼 길을 가다 보면, 밤에 차를 세우고 바로 옆에서 잘 곳이 필요했어요. 그래서 'motor'와 'hotel'을 합쳐서 '모텔'이라는 새 단어를 만들었습니다. 자동차 여행객을 위한 숙소였던 거죠.
 
-유스호스텔은 1912년, 독일의 한 교사에게서 시작됩니다. 리하르트 시르만이라는 선생님이 학생들을 데리고 도보 여행을 다니다가, 아이들이 싸고 안전하게 묵을 곳이 마땅치 않다는 걸 알게 됐어요. 그래서 학교 건물을 빌려 청소년 전용 숙소를 만들었고, 그게 지금의 유스호스텔이 됐습니다. (참고로 이 교사님은 그 흔한 '대실'과는 1도 상관없는 삶을 사셨습니다.)
+유스호스텔은 1912년, 독일의 한 교사에게서 시작됩니다. 리하르트 시르만이라는 선생님이 학생들을 데리고 도보 여행을 다니다가, 아이들이 싸고 안전하게 묵을 곳이 마땅치 않다는 걸 알게 됐어요. 그래서 학교 건물을 빌려 청소년 전용 숙소를 만들었고, 그게 지금의 유스호스텔이 됐습니다.
 
 **[5. 한 문장 정리 — 4:30]**
 정리하면 이렇습니다.
