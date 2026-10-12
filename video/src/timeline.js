@@ -27,5 +27,6 @@ export const buildTimeline = (script, timing) => {
     return result;
   });
   // rawVoice: 직접 녹음했거나 자연스러운 TTS라서 렌더할 때 음높이를 건드리지 않는다
-  return { cuts, durationInFrames: cursor, rawVoice: Boolean(script.rawVoice) };
+  // bgm: public/bgm/<이름>.wav 를 대사 밑에 깐다 (없으면 배경음악 없음)
+  return { cuts, durationInFrames: cursor, rawVoice: Boolean(script.rawVoice), bgm: script.bgm ?? null };
 };

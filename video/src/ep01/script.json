@@ -1,6 +1,7 @@
 {
   "title": "호텔 · 모텔 · 유스호스텔, 뭐가 달라요?",
   "rawVoice": true,
+  "bgm": "cheerful",
   "cuts": [
     {
       "id": "c01", "beat": "1. 그 질문", "image": "panel01.png",
@@ -12,8 +13,8 @@
         ]
       },
       "lines": [
-        {"who":"narr","text":"지난주에 저희 집 여덟 살 아이가 갑자기 이렇게 물었습니다."},
-        {"who":"kid","text":"아빠, 호텔이랑 모텔이랑 유스호스텔은 뭐가 달라요?","pose":{"kid":"common/kid/ask"},"focus":"kid","cutin":"common/cutin/kid-ask"}
+        {"who":"narr","text":"지난주에 저희 집 여덟 살 아이가 갑자기 이렇게 물었습니다.","en":"Last week, out of nowhere, my eight-year-old asked me this."},
+        {"who":"kid","text":"아빠, 호텔이랑 모텔이랑 유스호스텔은 뭐가 달라요?","en":"Dad, what's the difference between a hotel, a motel and a youth hostel?","pose":{"kid":"common/kid/ask"},"focus":"kid","cutin":"common/cutin/kid-ask"}
       ]
     },
     {
@@ -26,8 +27,8 @@
         ]
       },
       "lines": [
-        {"who":"narr","text":"저는 이 질문에 이렇게 답했습니다."},
-        {"who":"dad","text":"어... 그게...","tts":"어, 그게.","sfx":"boing","pose":{"dad":"common/dad/panic"},"focus":"dad","cutin":"common/cutin/dad-panic"}
+        {"who":"narr","text":"저는 이 질문에 이렇게 답했습니다.","en":"And this is how I answered."},
+        {"who":"dad","text":"어... 그게...","en":"Uh... well...","tts":"어, 그게.","sfx":"boing","pose":{"dad":"common/dad/panic"},"focus":"dad","cutin":"common/cutin/dad-panic"}
       ]
     },
     {
@@ -40,7 +41,7 @@
         ]
       },
       "lines": [
-        {"who":"dad","text":"음, 가격이 좀 다른 거야.","pose":{"dad":"common/dad/explain","kid":"common/kid/doubt"}}
+        {"who":"dad","text":"음, 가격이 좀 다른 거야.","en":"Um, the prices are a bit different.","pose":{"dad":"common/dad/explain","kid":"common/kid/doubt"}}
       ]
     },
     {
@@ -53,8 +54,8 @@
         ]
       },
       "lines": [
-        {"who":"narr","text":"저는 아이한테 가격 얘기로 얼버무렸고,"},
-        {"who":"narr","text":"지금 생각하면 진짜 이유는 하나도 말 안 한 거였어요."}
+        {"who":"narr","text":"저는 아이한테 가격 얘기로 얼버무렸고,","en":"I dodged the question by talking about price,"},
+        {"who":"narr","text":"지금 생각하면 진짜 이유는 하나도 말 안 한 거였어요.","en":"and looking back, I never gave the real reason at all."}
       ]
     },
     {
@@ -67,9 +68,9 @@
         ]
       },
       "lines": [
-        {"who":"narr","text":"우리는 이 세 개를 그냥 '자는 곳'으로 뭉뚱그려 씁니다.","pop":"???"},
-        {"who":"narr","text":"그런데 이 셋은 태어난 이유부터가 완전히 다릅니다.","fx":"flash"},
-        {"who":"narr","text":"오늘은 이 세 단어가 각각 누구를 위해 만들어졌는지부터 따라가 보겠습니다."}
+        {"who":"narr","text":"우리는 이 세 개를 그냥 '자는 곳'으로 뭉뚱그려 씁니다.","en":"We lump all three together as just \"a place to sleep.\"","pop":"???"},
+        {"who":"narr","text":"그런데 이 셋은 태어난 이유부터가 완전히 다릅니다.","en":"But they were born for completely different reasons.","fx":"flash"},
+        {"who":"narr","text":"오늘은 이 세 단어가 각각 누구를 위해 만들어졌는지부터 따라가 보겠습니다.","en":"So today, let's trace who each of these three words was made for."}
       ]
     },
     {
@@ -78,9 +79,9 @@
         "bg": "full/hotel-mansion"
       },
       "lines": [
-        {"who":"narr","text":"호텔이라는 단어는 프랑스어 '오텔(hôtel)'에서 왔습니다.","tts":"호텔이라는 단어는 프랑스어 오텔에서 왔습니다.","sfx":"page","fx":"flash"},
-        {"who":"narr","text":"원래는 귀족들의 저택을 부르는 말이었어요."},
-        {"who":"narr","text":"그 저택에 손님방을 두고 여행하는 귀족을 재워주던 게 지금 호텔의 시작입니다."}
+        {"who":"narr","text":"호텔이라는 단어는 프랑스어 '오텔(hôtel)'에서 왔습니다.","en":"The word \"hotel\" comes from the French \"hôtel.\"","tts":"호텔이라는 단어는 프랑스어 오텔에서 왔습니다.","sfx":"page","fx":"flash"},
+        {"who":"narr","text":"원래는 귀족들의 저택을 부르는 말이었어요.","en":"It originally meant a nobleman's townhouse."},
+        {"who":"narr","text":"그 저택에 손님방을 두고 여행하는 귀족을 재워주던 게 지금 호텔의 시작입니다.","en":"Keeping guest rooms there for traveling nobles is how hotels began."}
       ]
     },
     {
@@ -89,10 +90,10 @@
         "bg": "full/motel-1920s"
       },
       "lines": [
-        {"who":"narr","text":"모텔은 다릅니다. 1920년대 미국에서 자동차가 갑자기 흔해졌습니다.","tts":"모텔은 다릅니다. 천구백이십년대 미국에서 자동차가 갑자기 흔해졌습니다.","sfx":"page","fx":"flash"},
-        {"who":"narr","text":"그런데 자동차로 먼 길을 가다 보면, 밤에 차를 세우고 바로 옆에서 잘 곳이 필요했어요."},
-        {"who":"narr","text":"그래서 'motor'와 'hotel'을 합쳐서 '모텔'이라는 새 단어를 만들었습니다.","tts":"그래서 모터와 호텔을 합쳐서 모텔이라는 새 단어를 만들었습니다."},
-        {"who":"narr","text":"자동차 여행객을 위한 숙소였던 거죠."}
+        {"who":"narr","text":"모텔은 다릅니다. 1920년대 미국에서 자동차가 갑자기 흔해졌습니다.","en":"The motel is different. In 1920s America, cars suddenly became common.","tts":"모텔은 다릅니다. 천구백이십년대 미국에서 자동차가 갑자기 흔해졌습니다.","sfx":"page","fx":"flash"},
+        {"who":"narr","text":"그런데 자동차로 먼 길을 가다 보면, 밤에 차를 세우고 바로 옆에서 잘 곳이 필요했어요.","en":"On a long drive, you needed somewhere to park at night and sleep right beside your car."},
+        {"who":"narr","text":"그래서 'motor'와 'hotel'을 합쳐서 '모텔'이라는 새 단어를 만들었습니다.","en":"So \"motor\" and \"hotel\" were combined into a new word: \"motel.\"","tts":"그래서 모터와 호텔을 합쳐서 모텔이라는 새 단어를 만들었습니다."},
+        {"who":"narr","text":"자동차 여행객을 위한 숙소였던 거죠.","en":"It was lodging built for people traveling by car."}
       ]
     },
     {
@@ -101,19 +102,19 @@
         "bg": "full/hostel-1912"
       },
       "lines": [
-        {"who":"narr","text":"유스호스텔은 1912년, 독일의 한 교사에게서 시작됩니다.","tts":"유스호스텔은 천구백십이년, 독일의 한 교사에게서 시작됩니다.","sfx":"page","fx":"flash"},
-        {"who":"narr","text":"리하르트 시르만이라는 선생님이 학생들을 데리고 도보 여행을 다니다가,"},
-        {"who":"narr","text":"아이들이 싸고 안전하게 묵을 곳이 마땅치 않다는 걸 알게 됐어요."},
-        {"who":"narr","text":"그래서 학교 건물을 빌려 청소년 전용 숙소를 만들었고, 그게 지금의 유스호스텔이 됐습니다."}
+        {"who":"narr","text":"유스호스텔은 1912년, 독일의 한 교사에게서 시작됩니다.","en":"The youth hostel begins in 1912, with a teacher in Germany.","tts":"유스호스텔은 천구백십이년, 독일의 한 교사에게서 시작됩니다.","sfx":"page","fx":"flash"},
+        {"who":"narr","text":"리하르트 시르만이라는 선생님이 학생들을 데리고 도보 여행을 다니다가,","en":"A teacher named Richard Schirrmann was taking his students on hiking trips"},
+        {"who":"narr","text":"아이들이 싸고 안전하게 묵을 곳이 마땅치 않다는 걸 알게 됐어요.","en":"when he realized there was nowhere cheap and safe for children to stay."},
+        {"who":"narr","text":"그래서 학교 건물을 빌려 청소년 전용 숙소를 만들었고, 그게 지금의 유스호스텔이 됐습니다.","en":"So he borrowed a school building and made lodging just for young people. That became today's youth hostel."}
       ]
     },
     {
       "id": "c08", "beat": "5. 한 문장 정리", "style": "triptych",
       "lines": [
-        {"who":"narr","text":"정리하면 이렇습니다."},
-        {"who":"narr","text":"호텔은 귀족을 위해,","sfx":"stinger"},
-        {"who":"narr","text":"모텔은 자동차를 위해,"},
-        {"who":"narr","text":"유스호스텔은 아이들을 위해."}
+        {"who":"narr","text":"정리하면 이렇습니다.","en":"So, to sum up:"},
+        {"who":"narr","text":"호텔은 귀족을 위해,","en":"Hotels, for nobles.","sfx":"stinger"},
+        {"who":"narr","text":"모텔은 자동차를 위해,","en":"Motels, for cars."},
+        {"who":"narr","text":"유스호스텔은 아이들을 위해.","en":"Youth hostels, for children."}
       ]
     },
     {
@@ -131,15 +132,15 @@
         ]
       },
       "lines": [
-        {"who":"narr","text":"다음 날, 저는 아이한테 다시 이렇게 말해줬습니다."},
-        {"who":"dad","text":"어제 아빠가 대답을 대충 했지?","pose":{"dad":"common/dad/panic"}},
-        {"who":"dad","text":"사실 이 세 개는 원래 다른 사람들을 위해서 생긴 거야.","pose":{"dad":"common/dad/explain"}},
-        {"who":"dad","text":"호텔은 옛날에 귀한 손님이 묵던 큰 집에서 시작했고,"},
-        {"who":"dad","text":"모텔은 자동차 타고 멀리 가는 사람들이 차 바로 옆에서 잘 수 있게 만든 거고,"},
-        {"who":"dad","text":"유스호스텔은 너처럼 여행 가는 어린이들을 위해서 어떤 선생님이 만든 거야."},
-        {"who":"narr","text":"그러자 아이가 물었습니다."},
-        {"who":"kid","text":"그럼 저희도 유스호스텔 가면 되겠네요?","pose":{"kid":"common/kid/wow"},"focus":"kid"},
-        {"who":"dad","text":"응, 딱 너 같은 어린이를 위해서 만들어진 곳이야.","pose":{"dad":"common/dad/proud"}}
+        {"who":"narr","text":"다음 날, 저는 아이한테 다시 이렇게 말해줬습니다.","en":"The next day, I explained it to my kid again."},
+        {"who":"dad","text":"어제 아빠가 대답을 대충 했지?","en":"Dad didn't really answer you yesterday, did he?","pose":{"dad":"common/dad/panic"}},
+        {"who":"dad","text":"사실 이 세 개는 원래 다른 사람들을 위해서 생긴 거야.","en":"The truth is, these three were made for different people.","pose":{"dad":"common/dad/explain"}},
+        {"who":"dad","text":"호텔은 옛날에 귀한 손님이 묵던 큰 집에서 시작했고,","en":"Hotels started in big houses where important guests used to stay,"},
+        {"who":"dad","text":"모텔은 자동차 타고 멀리 가는 사람들이 차 바로 옆에서 잘 수 있게 만든 거고,","en":"motels were made so people driving far could sleep right next to their cars,"},
+        {"who":"dad","text":"유스호스텔은 너처럼 여행 가는 어린이들을 위해서 어떤 선생님이 만든 거야.","en":"and youth hostels were made by a teacher, for kids like you who go traveling."},
+        {"who":"narr","text":"그러자 아이가 물었습니다.","en":"Then my kid asked:"},
+        {"who":"kid","text":"그럼 저희도 유스호스텔 가면 되겠네요?","en":"So we can go to a youth hostel too, right?","pose":{"kid":"common/kid/wow"},"focus":"kid"},
+        {"who":"dad","text":"응, 딱 너 같은 어린이를 위해서 만들어진 곳이야.","en":"Yep. It was made exactly for kids like you.","pose":{"dad":"common/dad/proud"}}
       ]
     },
     {
@@ -152,7 +153,7 @@
         ]
       },
       "lines": [
-        {"who":"narr","text":"이름 하나에도 누구를 위해 만들어졌는지가 숨어 있습니다."}
+        {"who":"narr","text":"이름 하나에도 누구를 위해 만들어졌는지가 숨어 있습니다.","en":"Even a single name hides who it was made for."}
       ]
     },
     {
@@ -161,7 +162,7 @@
         "bg": "full/next-teaser"
       },
       "lines": [
-        {"who":"narr","text":"다음 편에서는 아파트, 빌라, 오피스텔이 왜 이렇게 이름이 갈렸는지 따라가 보겠습니다."}
+        {"who":"narr","text":"다음 편에서는 아파트, 빌라, 오피스텔이 왜 이렇게 이름이 갈렸는지 따라가 보겠습니다.","en":"Next time: why apartments, villas and officetels ended up with different names."}
       ]
     },
     {

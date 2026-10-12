@@ -30,11 +30,15 @@ type Cut = {
   duration: number;
 };
 
-type Timeline = { cuts: Cut[]; durationInFrames: number; rawVoice?: boolean };
+type Timeline = { cuts: Cut[]; durationInFrames: number; rawVoice?: boolean; bgm?: string | null };
 
 // Heami는 SSML pitch를 거의 무시해서 렌더 단계에서 음높이를 바꾼다
 const TONE: Record<Who, number> = { narr: 1, dad: 0.88, kid: 1.35, docu: 0.8 };
 const SFX_VOLUME: Record<string, number> = { boing: 0.5, dudung: 0.8, page: 0.35, stinger: 0.45 };
+// 배경음악: 말하는 동안은 목소리보다 약 22dB 작게, 말이 없는 자리(컷 사이 · 엔딩)에서는 조금 키운다
+const BGM_UNDER_VOICE = 0.17;
+const BGM_OPEN = 0.34;
+const BGM_RAMP = 15;
 
 const PANEL_H = 800;
 const PANEL_W = Math.round((PANEL_H * 620) / 434);
@@ -51,8 +55,24 @@ export const Episode: React.FC<{ episode: string; timeline: Timeline }> = ({ epi
           <CutScene episode={episode} cut={cut} rawVoice={timeline.rawVoice} />
         </Sequence>
       ))}
+      {timeline.bgm ? <Bgm timeline={timeline} /> : null}
     </AbsoluteFill>
   );
+};
+
+const Bgm: React.FC<{ timeline: Timeline }> = ({ timeline }) => {
+  const speech = React.useMemo(
+    () => timeline.cuts.flatMap((cut) => cut.lines.map((line) => [cut.from + line.from, cut.from + line.from + line.duration])),
+    [timeline],
+  );
+  const volume = (f: number) => {
+    // 가장 가까운 대사까지의 거리(프레임). 대사 사이의 짧은 쉼에서는 음량이 출렁이지 않는다
+    const away = Math.min(...speech.map(([from, to]) => (f < from ? from - f : f > to ? f - to : 0)));
+    const level = interpolate(away, [4, 4 + BGM_RAMP], [BGM_UNDER_VOICE, BGM_OPEN], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+    const edge = interpolate(f, [0, 20, timeline.durationInFrames - 75, timeline.durationInFrames - 5], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+    return level * edge;
+  };
+  return <Audio src={staticFile(`bgm/${timeline.bgm}.wav`)} loop loopVolumeCurveBehavior="extend" volume={volume} />;
 };
 
 export const EpisodeCutStill: React.FC<{ episode: string; timeline: Timeline; cutId: string }> = ({
