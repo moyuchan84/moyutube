@@ -21,6 +21,7 @@ npx remotion still src/index.ts Ep01-ThumbA out/ep01/thumbnail-A.png   # 썸네�
 - **대사·컷 구성**: `src/ep01/script.json` — 수정 후 `tts`를 다시 돌리면 타이밍이 자동으로 맞춰집니다.
 - **그림**: `public/ep01/cuts/panelNN.png`를 직접 그린 그림으로 덮어쓰면 됩니다 (가로 620:434 비율 권장).
 - **내 목소리**: `public/ep01/voice/<컷id>-<번호>.wav`를 녹음 파일로 교체하고, `src/ep01/timing.json`의 길이(초)를 맞춰 주세요.
+- **AI Studio 음성**: `npm run voice -- ep01 studio` → `out/ep01/voice-studio.html` 을 열어 컷마다 복사 → AI Studio에서 생성 → `voice-studio/ep01/<컷id>.wav` 로 저장 → `npm run voice -- ep01 split` (줄마다 자르고 타이밍 갱신). 대사를 고친 뒤 `studio` 를 다시 돌리면 다시 만들 컷만 ⚠ 로 표시된다. `script.json` 맨 위에 `"rawVoice": true` 필요.
 - **배경음악**: 저작권 때문에 넣지 않았습니다. 유튜브 오디오 보관함 곡을 편집 단계에서 −20dB 정도로 깔아 주세요.
 
 ## 일러스트 영상 (Gemini 그림 → 움직이는 컷)
