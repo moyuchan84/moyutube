@@ -1,7 +1,7 @@
 # Gemini 프롬프트 — 4편 · 아빠는 왜 거기에 털이 나요?
 
 > `video/scripts/prompts.mjs` 가 만든 파일이다. 직접 고치지 말고 `video/src/ep04/art.json` 을 고친 뒤 `npm run prompts` 를 다시 실행한다.
-> 이 편에만 쓰는 그림 26장. 진행: 0 / 26
+> 이 편에만 쓰는 그림 26장. 진행: 26 / 26
 > 다 넣었으면 `video/` 에서 `npm run make -- ep04` → `video/out/ep04/ep04.mp4`
 
 ## 사용법
@@ -56,7 +56,7 @@
 
 ## 1. 이 편의 그림
 
-#### 1. 배경 — 동네 이발소 안
+#### 1. 배경 — 동네 이발소 안 ✅
 - 저장: `episodes/04-body-hair/art/bg/barbershop.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 배경 (사람 없음) · 16:9
@@ -77,7 +77,7 @@ The camera will slowly pan and zoom across this picture, so paint about 8% extra
 Keep the bottom third of the picture an open, uncluttered floor: characters will be placed there later. All signs, posters, screens and labels are blank shapes with no text. 16:9 landscape, highest resolution.
 ```
 
-#### 2. 배경 — 이발소 앞 (해 질 녘)
+#### 2. 배경 — 이발소 앞 (해 질 녘) ✅
 - 저장: `episodes/04-body-hair/art/bg/barbershop-front.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 배경 (사람 없음) · 16:9
@@ -98,7 +98,7 @@ The camera will slowly pan and zoom across this picture, so paint about 8% extra
 Keep the bottom third of the picture an open, uncluttered floor: characters will be placed there later. All signs, posters, screens and labels are blank shapes with no text. 16:9 landscape, highest resolution.
 ```
 
-#### 3. 장면 — 샤워 중인 욕실 문 (사람은 안 보인다)
+#### 3. 장면 — 샤워 중인 욕실 문 (사람은 안 보인다) ✅
 - 저장: `episodes/04-body-hair/art/full/bathroom-door.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 한 장짜리 장면 (16:9 완성 그림) · 16:9
@@ -119,7 +119,7 @@ The camera will slowly pan and zoom across this picture, so paint about 8% extra
 Keep the main subject in the middle and leave the top-left corner calm (a caption is added there later). All signs and labels are blank shapes with no text. 16:9 landscape, highest resolution.
 ```
 
-#### 4. 아빠 — 이발 의자 (보자기)
+#### 4. 아빠 — 이발 의자 (보자기) ✅
 - 저장: `episodes/04-body-hair/art/dad/cape.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
@@ -149,7 +149,7 @@ Full body, the entire character visible from head to toe with a small empty marg
 Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
 ```
 
-#### 5. 아빠 — 이발 의자에서 당황
+#### 5. 아빠 — 이발 의자에서 당황 ✅
 - 저장: `episodes/04-body-hair/art/dad/cape-panic.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `episodes/04-body-hair/art/dad/cape.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
@@ -178,7 +178,7 @@ Full body, the entire character visible from head to toe with a small empty marg
 Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
 ```
 
-#### 6. 아빠 — 보자기 속 몰래 검색
+#### 6. 아빠 — 보자기 속 몰래 검색 ✅
 - 저장: `episodes/04-body-hair/art/dad/cape-search.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `episodes/04-body-hair/art/dad/cape.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
@@ -208,7 +208,7 @@ Full body, the entire character visible from head to toe with a small empty marg
 Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
 ```
 
-#### 7. 이발사 할아버지 — 기본
+#### 7. 이발사 할아버지 — 기본 ✅
 - 저장: `episodes/04-body-hair/art/barber/normal.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
@@ -236,7 +236,7 @@ Full body, the entire character visible from head to toe with a small empty marg
 Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
 ```
 
-#### 8. 이발사 할아버지 — 한 수 가르치기
+#### 8. 이발사 할아버지 — 한 수 가르치기 ✅
 - 저장: `episodes/04-body-hair/art/barber/talk.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `episodes/04-body-hair/art/barber/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
@@ -265,7 +265,7 @@ Full body, the entire character visible from head to toe with a small empty marg
 Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
 ```
 
-#### 9. 이발사 할아버지 — 한 수 가르치기 (말하는 그림)
+#### 9. 이발사 할아버지 — 한 수 가르치기 (말하는 그림) ✅
 - 저장: `episodes/04-body-hair/art/barber/talk-b.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `episodes/04-body-hair/art/barber/talk.png` (첫 번째 프레임 — 이 그림을 그대로 다시 그린다)
 - 종류 · 비율: 말하는 그림 (두 번째 프레임, 초록 배경) · 기준 그림과 같게
@@ -291,7 +291,7 @@ Same aspect ratio, framing and margins as attached image 2.
 Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
 ```
 
-#### 10. 이발사 할아버지 — 껄껄 (자기 머리 쓰다듬기)
+#### 10. 이발사 할아버지 — 껄껄 (자기 머리 쓰다듬기) ✅
 - 저장: `episodes/04-body-hair/art/barber/laugh.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `episodes/04-body-hair/art/barber/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
@@ -320,7 +320,7 @@ Full body, the entire character visible from head to toe with a small empty marg
 Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
 ```
 
-#### 11. 이발사 할아버지 — 가슴털 자랑
+#### 11. 이발사 할아버지 — 가슴털 자랑 ✅
 - 저장: `episodes/04-body-hair/art/barber/chest.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `episodes/04-body-hair/art/barber/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
@@ -350,7 +350,7 @@ Full body, the entire character visible from head to toe with a small empty marg
 Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
 ```
 
-#### 12. 이발사 할아버지 — 정수리 보여 주기
+#### 12. 이발사 할아버지 — 정수리 보여 주기 ✅
 - 저장: `episodes/04-body-hair/art/barber/bald.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `episodes/04-body-hair/art/barber/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
@@ -379,7 +379,7 @@ Full body, the entire character visible from head to toe with a small empty marg
 Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
 ```
 
-#### 13. 컷인 — 할아버지의 일침
+#### 13. 컷인 — 할아버지의 일침 ✅
 - 저장: `episodes/04-body-hair/art/cutin/barber.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `episodes/04-body-hair/art/barber/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 리액션 컷인 (가슴 위, 초록 배경) · 1:1
@@ -406,7 +406,7 @@ Chest-up close-up, the face fills most of the frame, centered, not cropped. Squa
 Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
 ```
 
-#### 14. 소품 — 면도 솔
+#### 14. 소품 — 면도 솔 ✅
 - 저장: `episodes/04-body-hair/art/prop/shaving-brush.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 소품 (초록 배경) · 1:1
@@ -429,7 +429,7 @@ The whole subject visible with a small empty margin on every side, not cropped, 
 Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
 ```
 
-#### 15. 장면 — 햇빛에 비친 아이 팔의 솜털
+#### 15. 장면 — 햇빛에 비친 아이 팔의 솜털 ✅
 - 저장: `episodes/04-body-hair/art/full/fuzz-arm.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 한 장짜리 장면 (16:9 완성 그림) · 16:9
@@ -450,7 +450,7 @@ The camera will slowly pan and zoom across this picture, so paint about 8% extra
 Keep the main subject in the middle and leave the top-left corner calm (a caption is added there later). All signs and labels are blank shapes with no text. 16:9 landscape, highest resolution.
 ```
 
-#### 16. 장면 — 털을 가늘게 바꾼 사람
+#### 16. 장면 — 털을 가늘게 바꾼 사람 ✅
 - 저장: `episodes/04-body-hair/art/full/hairy-ancestor.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 한 장짜리 장면 (16:9 완성 그림) · 16:9
@@ -471,7 +471,7 @@ The camera will slowly pan and zoom across this picture, so paint about 8% extra
 Keep the main subject in the middle and leave the top-left corner calm (a caption is added there later). All signs and labels are blank shapes with no text. 16:9 landscape, highest resolution.
 ```
 
-#### 17. 장면 — 지키는 털 (눈썹 · 속눈썹 · 코털)
+#### 17. 장면 — 지키는 털 (눈썹 · 속눈썹 · 코털) ✅
 - 저장: `episodes/04-body-hair/art/full/guard-hair.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 한 장짜리 장면 (16:9 완성 그림) · 16:9
@@ -496,7 +496,7 @@ The camera will slowly pan and zoom across this picture, so paint about 8% extra
 Keep the main subject in the middle and leave the top-left corner calm (a caption is added there later). All signs and labels are blank shapes with no text. 16:9 landscape, highest resolution.
 ```
 
-#### 18. 장면 — 털마다 자라는 기간이 다르다
+#### 18. 장면 — 털마다 자라는 기간이 다르다 ✅
 - 저장: `episodes/04-body-hair/art/full/hair-timer.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 한 장짜리 장면 (16:9 완성 그림) · 16:9
@@ -517,7 +517,7 @@ The camera will slowly pan and zoom across this picture, so paint about 8% extra
 Keep the main subject in the middle and leave the top-left corner calm (a caption is added there later). All signs and labels are blank shapes with no text. 16:9 landscape, highest resolution.
 ```
 
-#### 19. 장면 — 털을 세우던 근육 (소름 vs 고양이)
+#### 19. 장면 — 털을 세우던 근육 (소름 vs 고양이) ✅
 - 저장: `episodes/04-body-hair/art/full/goosebump-cat.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 한 장짜리 장면 (16:9 완성 그림) · 16:9
@@ -538,7 +538,7 @@ The camera will slowly pan and zoom across this picture, so paint about 8% extra
 Keep the main subject in the middle and leave the top-left corner calm (a caption is added there later). All signs and labels are blank shapes with no text. 16:9 landscape, highest resolution.
 ```
 
-#### 20. 장면 — 거울에 면도 거품으로 그린 그림 (모자이크)
+#### 20. 장면 — 거울에 면도 거품으로 그린 그림 (모자이크) ✅
 - 저장: `episodes/04-body-hair/art/full/mirror-foam.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 한 장짜리 장면 (16:9 완성 그림) · 16:9
@@ -560,7 +560,7 @@ The camera will slowly pan and zoom across this picture, so paint about 8% extra
 Keep the main subject in the middle and leave the top-left corner calm (a caption is added there later). All signs and labels are blank shapes with no text. 16:9 landscape, highest resolution.
 ```
 
-#### 21. 장면 — 땀샘 두 종류 (털집 안으로 나오는 샘)
+#### 21. 장면 — 땀샘 두 종류 (털집 안으로 나오는 샘) ✅
 - 저장: `episodes/04-body-hair/art/full/two-glands.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 한 장짜리 장면 (16:9 완성 그림) · 16:9
@@ -581,7 +581,7 @@ The camera will slowly pan and zoom across this picture, so paint about 8% extra
 Keep the main subject in the middle and leave the top-left corner calm (a caption is added there later). All signs and labels are blank shapes with no text. 16:9 landscape, highest resolution.
 ```
 
-#### 22. 장면 — 정수리 지도 (사막과 숲, 모발이식 트럭)
+#### 22. 장면 — 정수리 지도 (사막과 숲, 모발이식 트럭) ✅
 - 저장: `episodes/04-body-hair/art/full/bald-map.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 한 장짜리 장면 (16:9 완성 그림) · 16:9
@@ -602,7 +602,7 @@ The camera will slowly pan and zoom across this picture, so paint about 8% extra
 Keep the main subject in the middle and leave the top-left corner calm (a caption is added there later). All signs and labels are blank shapes with no text. 16:9 landscape, highest resolution.
 ```
 
-#### 23. 소품 — 지키는 털 (한 문장 정리용)
+#### 23. 소품 — 지키는 털 (한 문장 정리용) ✅
 - 저장: `episodes/04-body-hair/art/prop/icon-guard.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 소품 (초록 배경) · 1:1
@@ -625,7 +625,7 @@ The whole subject visible with a small empty margin on every side, not cropped, 
 Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
 ```
 
-#### 24. 소품 — 알리는 털 (한 문장 정리용)
+#### 24. 소품 — 알리는 털 (한 문장 정리용) ✅
 - 저장: `episodes/04-body-hair/art/prop/icon-wick.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 소품 (초록 배경) · 1:1
@@ -648,7 +648,7 @@ The whole subject visible with a small empty margin on every side, not cropped, 
 Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
 ```
 
-#### 25. 소품 — 흔적만 남은 털 (한 문장 정리용)
+#### 25. 소품 — 흔적만 남은 털 (한 문장 정리용) ✅
 - 저장: `episodes/04-body-hair/art/prop/icon-trace.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 소품 (초록 배경) · 1:1
@@ -671,7 +671,7 @@ The whole subject visible with a small empty margin on every side, not cropped, 
 Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
 ```
 
-#### 26. 장면 — 다음 편 예고 (병원 · 약국)
+#### 26. 장면 — 다음 편 예고 (병원 · 약국) ✅
 - 저장: `episodes/04-body-hair/art/full/next-teaser.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 한 장짜리 장면 (16:9 완성 그림) · 16:9

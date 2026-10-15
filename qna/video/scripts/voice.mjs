@@ -10,6 +10,7 @@ import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { ROOT, VIDEO, episodeDir } from "./art-lib.mjs";
+import { NO_KEY, envValue } from "./env.mjs";
 
 const [episode = "ep01", mode] = process.argv.slice(2).filter((a) => !a.startsWith("--"));
 const scriptFile = join(VIDEO, "src", episode, "script.json");
@@ -335,12 +336,10 @@ function clearCut(cut) {
 // Gemini API 로 대사가 바뀐 컷의 음성을 받는다. 컷 하나를 한 번에 받아 voice-studio 에 두고(자르기는 split 이 한다),
 // 쉬는 곳을 못 찾는 컷은 줄마다 따로 받아 바로 public 에 넣는다. 그렇게 넣은 컷 id 를 돌려준다
 async function generate(lock) {
-  const envFile = join(VIDEO, ".env");
-  const fromFile = existsSync(envFile) ? readFileSync(envFile, "utf8").match(/^\s*(?:GEMINI_API_KEY|GOOGLE_API_KEY)\s*=\s*"?([^"\s]+)/m)?.[1] : null;
-  const key1 = process.env.GEMINI_API_KEY ?? process.env.GOOGLE_API_KEY ?? fromFile;
-  const key2 = existsSync(envFile) ? readFileSync(envFile, "utf8").match(/^\s*GEMINI_API_KEY2\s*=\s*"?([^"\s]+)/m)?.[1] : null;
+  const key1 = envValue("GEMINI_API_KEY") ?? envValue("GOOGLE_API_KEY");
+  const key2 = envValue("GEMINI_API_KEY2");
   const keys = [...new Set([key1, key2].filter(Boolean))];
-  if (!keys.length) throw new Error("GEMINI_API_KEY 가 없다. https://aistudio.google.com/apikey 에서 만들어 video/.env 에 GEMINI_API_KEY=... 로 적는다");
+  if (!keys.length) throw new Error(NO_KEY);
   let keyIndex = 0;
   const API = "https://generativelanguage.googleapis.com/v1beta";
   const call = async (path, body) => {

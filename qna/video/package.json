@@ -15,11 +15,13 @@
     "srt": "node scripts/srt.mjs",
     "stills": "node scripts/stills.mjs",
     "render": "remotion render src/index.ts",
-    "voice": "node scripts/voice.mjs"
+    "voice": "node scripts/voice.mjs",
+    "short": "node scripts/short.mjs"
   },
   "dependencies": {
     "@remotion/bundler": "4.0.525",
     "@remotion/cli": "4.0.525",
+    "@remotion/google-fonts": "^4.0.525",
     "@remotion/media": "4.0.525",
     "@remotion/renderer": "4.0.525",
     "react": "19.1.0",

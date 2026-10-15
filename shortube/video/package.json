@@ -5,7 +5,8 @@
   "scripts": {
     "studio": "remotion studio",
     "render": "remotion render RankingShort ../output/videos/2026-10-15_slot1.mp4",
-    "still": "remotion still RankingShort ../output/videos/preview.png"
+    "still": "remotion still RankingShort ../output/videos/preview.png",
+    "market": "node scripts/market-data.mjs && node scripts/bgm-tension.mjs && remotion render MarketShort ../output/videos/2026-10-15_slot2_market.mp4"
   },
   "dependencies": {
     "@remotion/cli": "4.0.529",
