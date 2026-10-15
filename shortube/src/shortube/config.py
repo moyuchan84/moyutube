@@ -107,6 +107,8 @@ def parse_auto_entities(data: dict[str, Any]) -> list[Entity]:
 
 def load_config(root: Path | None = None) -> Config:
     root = root or PROJECT_ROOT
+    # 저장소 루트 .env (D:\youtube\.env, 모든 프로젝트 공용 Gemini 키) 가 먼저, 그다음 이 프로젝트 .env 로 빈 값을 채운다
+    load_dotenv(root.parent / ".env")
     load_dotenv(root / ".env")
     config_dir = root / "config"
     settings = _read_yaml(config_dir / "settings.yaml")

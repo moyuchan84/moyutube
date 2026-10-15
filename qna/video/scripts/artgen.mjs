@@ -2,12 +2,13 @@
 // 사용: node scripts/artgen.mjs ep03              (없는 그림 전부)
 //       node scripts/artgen.mjs ep03 granny/yell  (그 그림만 다시)
 //       node scripts/artgen.mjs ep03 --list       (만들 목록만 보기)
-// 키: video/.env 의 GEMINI_API_KEY (음성과 같은 키). 모델: 환경변수 GEMINI_IMAGE_MODEL 이 없으면 계정에서 고른다.
+// 키: 저장소 루트 .env (D:\youtube\.env) 의 GEMINI_API_KEY (음성과 같은 키). 모델: 환경변수 GEMINI_IMAGE_MODEL 이 없으면 계정에서 고른다.
 // 결과는 손으로 만들 때와 같은 자리에 저장되고, 그다음은 평소처럼 npm run art → npm run make.
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, extname, join } from "node:path";
 import { execSync } from "node:child_process";
 import { ROOT, VIDEO, episodeDir } from "./art-lib.mjs";
+import { NO_KEY, envValue } from "./env.mjs";
 
 const args = process.argv.slice(2);
 const episode = args.find((a) => /^ep\d+$/.test(a)) ?? "ep01";
@@ -25,10 +26,8 @@ if (listOnly || !todo.length) {
   process.exit(0);
 }
 
-const envFile = join(VIDEO, ".env");
-const fromFile = existsSync(envFile) ? readFileSync(envFile, "utf8").match(/^\s*(?:GEMINI_API_KEY|GOOGLE_API_KEY)\s*=\s*"?([^"\s]+)/m)?.[1] : null;
-const key = process.env.GEMINI_API_KEY ?? process.env.GOOGLE_API_KEY ?? fromFile;
-if (!key) throw new Error("GEMINI_API_KEY 가 없다. https://aistudio.google.com/apikey 에서 만들어 video/.env 에 GEMINI_API_KEY=... 로 적는다");
+const key = envValue("GEMINI_API_KEY") ?? envValue("GOOGLE_API_KEY");
+if (!key) throw new Error(NO_KEY);
 
 const API = "https://generativelanguage.googleapis.com/v1beta";
 const call = async (path, body) => {
@@ -50,8 +49,7 @@ const call = async (path, body) => {
 };
 
 // 모델: 환경변수 또는 .env → 계정에서 쓸 수 있는 이미지 모델 중 Flash-Lite/Flash(토큰·비용 절약), 그다음 버전 순
-const modelFromFile = existsSync(envFile) ? readFileSync(envFile, "utf8").match(/^\s*GEMINI_IMAGE_MODEL\s*=\s*"?([^"\s]+)/m)?.[1] : null;
-let model = process.env.GEMINI_IMAGE_MODEL ?? modelFromFile;
+let model = envValue("GEMINI_IMAGE_MODEL");
 if (!model) {
   const { models = [] } = await call("models?pageSize=1000");
   const version = (name) => Number(name.match(/gemini-(\d+(?:\.\d+)?)/)?.[1] ?? 0);

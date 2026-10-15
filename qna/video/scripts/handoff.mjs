@@ -57,7 +57,7 @@ const md = `# ${images.title} — 그림 · 음성 작업 지시서
 - **글자 · 숫자 · 로고를 그리지 않는다.** 간판과 가격표는 빈 모양이다. 글자는 영상 코드가 얹는다.
 - 한 사람(할머니)의 그림은 한 대화에서 이어서 만든다. 대화가 길어지면 화풍이 흐려지니 배경 · 장면은 새 대화에서 시작한다.
 - 결과를 눈으로 확인한다: 몸이 잘리지 않았는지, 기준 그림과 같은 사람인지, 글자가 들어가지 않았는지. 틀리면 \`GEMINI_PROMPTS.md\` 의 "다시 뽑을 때 이어서 보내는 문장"을 쓴다.
-- Gemini API 키가 \`video/.env\` 에 있으면 명령 한 줄로도 된다: \`cd video && node scripts/artgen.mjs ${episode}\` (없는 그림만 만든다. \`--list\` 를 붙이면 목록만 본다).
+- Gemini API 키가 저장소 루트 \`.env\` 에 있으면 명령 한 줄로도 된다: \`cd video && node scripts/artgen.mjs ${episode}\` (없는 그림만 만든다. \`--list\` 를 붙이면 목록만 본다).
 
 | | 그림 | 종류 | 비율 | 저장 |
 |---|---|---|---|---|
@@ -77,7 +77,7 @@ ${images.jobs.map((j) => `| ${j.done ? "✅" : j.optional ? "➕" : "⬜"} | ${j
 - 화자 이름("Speaker 1")을 소리 내어 읽지 않게 한다.
 - 형식: ${voice.format}
 - 저장: \`save\` 경로 (예: \`video/voice-studio/${episode}/c00.wav\`).
-- Gemini API 키가 \`video/.env\` 에 있으면 명령 한 줄로도 된다: \`cd video && npm run voice -- ${episode} gen\` (대사가 바뀐 컷만 만든다).
+- Gemini API 키가 저장소 루트 \`.env\` 에 있으면 명령 한 줄로도 된다: \`cd video && npm run voice -- ${episode} gen\` (대사가 바뀐 컷만 만든다).
 
 | | 컷 | 줄 | 목소리 | 저장 |
 |---|---|---|---|---|

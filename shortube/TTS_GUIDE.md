@@ -1,7 +1,7 @@
 # shortube 내레이션 가이드 (Gemini TTS)
 
 > 대상: Remotion 모션그래픽 쇼츠(현재 차트형 템플릿 `video/`). 첫 적용: `output/briefs/2026-10-15_slot1.md`.
-> API 키: `.env`의 `GEMINI_API_KEY` (git 제외됨). 모델·파라미터는 바뀌므로 구현 전 [공식 문서](https://ai.google.dev/gemini-api/docs/speech-generation)를 다시 확인한다. (작성 기준 2026-10: `gemini-3.8-flash-tts`, 한국어 지원, 24kHz mono WAV)
+> API 키: 저장소 루트 `.env` (D:\youtube\.env, 모든 프로젝트 공용)의 `GEMINI_API_KEY` (git 제외됨). 모델·파라미터는 바뀌므로 구현 전 [공식 문서](https://ai.google.dev/gemini-api/docs/speech-generation)를 다시 확인한다. (작성 기준 2026-10: `gemini-3.8-flash-tts`, 한국어 지원, 24kHz mono WAV)
 
 ---
 

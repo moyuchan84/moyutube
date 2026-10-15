@@ -17,7 +17,7 @@ npx remotion still src/index.ts Ep01-ThumbA out/ep01/thumbnail-A.png   # 썸네�
 npx remotion still src/index.ts Ep03-ThumbD out/ep03/thumbnail.png     # 얼굴 썸네일. 글자와 가운데 주제 그림(topic)은 src/Root.tsx 의 face
 npm run handoff -- ep03    # 그림 · 음성 만들기를 다른 도구(Antigravity 등)에 넘길 지시서 → episodes/03-…/ANTIGRAVITY.md
 npm run storyboard -- ep04 # 콘티 시트 (컷별 배경 · 인물 위치 · 움직임 · 대사) → episodes/04-…/storyboard.html. 그림이 생기면 다시 돌린다
-npm run artgen -- ep03     # 없는 그림을 Gemini API 로 한 번에 (video/.env 의 GEMINI_API_KEY, 돈이 든다. --list 는 목록만)
+npm run artgen -- ep03     # 없는 그림을 Gemini API 로 한 번에 (저장소 루트 .env 의 GEMINI_API_KEY, 돈이 든다. --list 는 목록만)
 ```
 
 ## 바꿔 끼우기
@@ -25,7 +25,7 @@ npm run artgen -- ep03     # 없는 그림을 Gemini API 로 한 번에 (video/.
 - **대사·컷 구성**: `src/ep01/script.json` — 수정 후 `tts`를 다시 돌리면 타이밍이 자동으로 맞춰집니다.
 - **그림**: `public/ep01/cuts/panelNN.png`를 직접 그린 그림으로 덮어쓰면 됩니다 (가로 620:434 비율 권장).
 - **내 목소리**: `public/ep01/voice/<컷id>-<번호>.wav`를 녹음 파일로 교체하고, `src/ep01/timing.json`의 길이(초)를 맞춰 주세요.
-- **목소리는 항상 같은 음색**: 아빠 · 나레이션 = Algenib, 아이 = Leda. 설정은 `src/voice.json`, 설명은 [VOICE.md](VOICE.md). `video/.env` 에 `GEMINI_API_KEY` 를 적어 두면 `npm run voice -- ep02 gen` (또는 `npm run make -- ep02 --voice`) 한 번으로 생성 · 자르기 · 타이밍까지 끝난다.
+- **목소리는 항상 같은 음색**: 아빠 · 나레이션 = Algenib, 아이 = Leda. 설정은 `src/voice.json`, 설명은 [VOICE.md](VOICE.md). 저장소 루트 `.env` (D:\youtube\.env) 에 `GEMINI_API_KEY` 가 있으면 `npm run voice -- ep02 gen` (또는 `npm run make -- ep02 --voice`) 한 번으로 생성 · 자르기 · 타이밍까지 끝난다.
 - **AI Studio 음성 (손으로)**: `npm run voice -- ep01 studio` → `out/ep01/voice-studio.html` 을 열어 컷마다 복사 → AI Studio에서 생성 → `voice-studio/ep01/<컷id>.wav` 로 저장 → `npm run voice -- ep01 split` (줄마다 자르고 타이밍 갱신). 대사를 고친 뒤 `studio` 를 다시 돌리면 다시 만들 컷만 ⚠ 로 표시된다. `script.json` 맨 위에 `"rawVoice": true` 필요.
 - **배경음악**: `script.json` 맨 위의 `"bgm": "cheerful"` 이 `public/bgm/cheerful.wav` 를 대사 밑에 깝니다 (말하는 동안은 목소리보다 약 22dB 작게). 이 곡은 `node scripts/bgm.mjs` 가 코드로 합성한 것이라 저작권 문제가 없습니다. 다른 곡은 `public/bgm/<이름>.wav` 로 넣고 이름을 바꿔 적으세요. 줄을 지우면 배경음악이 빠집니다.
 - **배속**: `script.json` 맨 위에 `"speed": 1.2` 를 적으면 그 편 전체가 1.2배로 빨라집니다 (목소리 · 대사 사이 쉼 · 컷 전환 · 자막 타이밍 모두, 음높이는 그대로). 음성을 다시 만들 필요 없이 숫자만 바꿔 `npm run make` 하면 됩니다 (빠른 목소리는 `scripts/speed.mjs` 가 `public/<편>/voice-x<배속>/` 에 미리 만든다. 렌더 중 배속은 소리가 거칠어져서 쓰지 않는다). 줄을 지우면 1배속.

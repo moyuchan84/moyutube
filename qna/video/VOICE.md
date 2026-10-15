@@ -48,7 +48,7 @@ A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voi
 ### 1. 한 번에 (Gemini API)
 
 ```bash
-# 처음 한 번: https://aistudio.google.com/apikey 에서 키를 만들어 video/.env 에 적는다
+# 처음 한 번: https://aistudio.google.com/apikey 에서 키를 만들어 저장소 루트 .env (D:\youtube\.env) 에 적는다
 #   GEMINI_API_KEY=...
 npm run voice -- ep02 gen        # 대사가 바뀐 컷만 생성 → 줄마다 자르기 → 타이밍 갱신
 npm run voice -- ep02 gen --all  # 전부 다시

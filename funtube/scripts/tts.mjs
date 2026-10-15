@@ -1,5 +1,5 @@
 // Gemini TTS로 대사별 음성을 만들고, 효과음을 합성하고, 타이밍 파일을 생성한다.
-// 사용법: GEMINI_API_KEY=... node scripts/tts.mjs [에피소드ID...]
+// 사용법: node scripts/tts.mjs [에피소드ID...]
 // 키가 없으면 음성 없이 글자 수로 길이를 추정해 타이밍만 만든다.
 import fs from "node:fs";
 import path from "node:path";
@@ -8,7 +8,11 @@ import crypto from "node:crypto";
 const ROOT = path.resolve(import.meta.dirname, "..");
 const episodes = JSON.parse(fs.readFileSync(path.join(ROOT, "content/episodes.json"), "utf8"));
 const TIMINGS = path.join(ROOT, "src/generated/timings.json");
-const API_KEY = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY;
+// 키: 환경변수 → 저장소 루트 .env (D:\youtube\.env, 모든 프로젝트 공용)
+const ROOT_ENV = path.resolve(ROOT, "../.env");
+const fromRootEnv = (name) =>
+  fs.existsSync(ROOT_ENV) ? fs.readFileSync(ROOT_ENV, "utf8").match(new RegExp(`^\\s*${name}\\s*=\\s*"?([^"\\s]+)`, "m"))?.[1] : undefined;
+const API_KEY = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY || fromRootEnv("GEMINI_API_KEY");
 const MODEL = process.env.GEMINI_TTS_MODEL || "gemini-2.5-flash-preview-tts";
 const RATE = 24000; // Gemini TTS 출력: 24kHz 16bit mono PCM
 
