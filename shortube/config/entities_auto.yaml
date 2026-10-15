@@ -1,0 +1,27 @@
+# 자동 생성 파일: python -m shortube entities
+# use: false로 바꾸면 키워드 조합에서 빠집니다. 재실행해도 use 값은 유지됩니다.
+# name이 비어 있으면(한국어 제목 미확인) 직접 채우고 use: true로 바꾸세요.
+generated_at: '2026-10-15T07:40:33'
+window:
+  from: '2026-10-01'
+  to: '2026-10-15'
+sources:
+- title: 2026 in South Korean television
+  revid: 1379773272
+  url: https://en.wikipedia.org/wiki/2026_in_South_Korean_television
+works:
+- name: 메리 베리 러브
+  title_en: Merry Berry Love
+  platform: Hulu/Disney+
+  first_aired: '2026-10-07'
+  use: true
+- name: 나를 충전해줘
+  title_en: Take Charge of My Heart
+  platform: Netflix
+  first_aired: '2026-10-09'
+  use: true
+- name: 내가 떨릴 수 있게
+  title_en: Make Me Tingle
+  platform: TVING
+  first_aired: '2026-10-15'
+  use: true

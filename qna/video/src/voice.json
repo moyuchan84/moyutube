@@ -1,0 +1,47 @@
+{
+  "engine": "Google AI Studio · Gemini Flash TTS (여러 화자)",
+  "model": "gemini-3.8-flash-lite-tts",
+  "speakers": [
+    {
+      "label": "Speaker 1",
+      "voice": "Algenib",
+      "roles": [
+        "narr",
+        "dad",
+        "docu"
+      ],
+      "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+    },
+    {
+      "label": "Speaker 2",
+      "voice": "Leda",
+      "roles": [
+        "kid"
+      ],
+      "style": "His eight-year-old child: bright, curious, high-pitched"
+    },
+    {
+      "label": "Guest",
+      "name": "할머니",
+      "voice": "Gacrux",
+      "roles": [
+        "granny"
+      ],
+      "style": "A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry"
+    },
+    {
+      "label": "Guest",
+      "name": "이발사 할아버지",
+      "voice": "Charon",
+      "roles": [
+        "barber"
+      ],
+      "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+    }
+  ],
+  "direction": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud.",
+  "acting": {
+    "dad": "is the dad speaking inside the scene, acted out, not narration",
+    "docu": "is read in a very deep, slow, mock-serious nature-documentary narrator voice"
+  }
+}

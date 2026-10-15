@@ -1,0 +1,21 @@
+# 공통
+node_modules/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.claude/settings.local.json
+
+# 파이썬 (shortube)
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+
+# 영상 결과물 · 자동 생성 (다시 만들 수 있는 것)
+out/
+qna/video/public/art/
+shortube/data/
+shortube/output/

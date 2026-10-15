@@ -1,0 +1,56 @@
+{
+  "chat": {
+    "title": "아빠가 갑자기 사랑한다고 했다",
+    "room": "우리집 🏠",
+    "voices": { "아빠": "Charon", "엄마": "Kore", "나": "Puck", "시스템": "Zephyr" },
+    "lines": [
+      { "who": "아빠", "text": "여보 오늘 저녁 뭐야", "style": "casual, relaxed middle-aged Korean man" },
+      { "who": "엄마", "text": "몰라 알아서 먹어", "style": "flat, uninterested" },
+      { "who": "아빠", "text": "사랑해 ❤️", "say": "사랑해~", "style": "suspiciously sweet and sheepish" },
+      { "who": "엄마", "text": "?", "say": "...뭐?", "style": "cold and suspicious" },
+      { "who": "엄마", "text": "뭐 잘못했어?", "style": "cold and suspicious" },
+      { "who": "아빠", "text": "아니 그냥~", "style": "nervous, trying to sound casual" },
+      { "who": "엄마", "text": "30초 줄게", "style": "very calm but menacing" },
+      { "who": "아빠", "text": "차 긁었어", "style": "fast, panicked confession" },
+      { "who": "나", "text": "ㅋㅋㅋㅋㅋㅋㅋㅋ", "say": "푸하하하하하", "style": "bursting out laughing" },
+      { "who": "아빠", "text": "아 여기 가족 단톡방이었지", "style": "realizing a terrible mistake, defeated" },
+      { "who": "시스템", "text": "엄마님이 아빠님을 내보냈습니다.", "style": "deadpan announcer", "pauseAfter": 1.5 }
+    ]
+  },
+  "skit": {
+    "title": "7살 협상가 vs 엄마",
+    "voices": { "엄마": "Kore", "아이": "Leda" },
+    "lines": [
+      { "who": "아이", "text": "엄마, 나 사탕 하나만.", "style": "cute little child begging" },
+      { "who": "엄마", "text": "안 돼. 밥 먹기 전이야.", "style": "firm mom" },
+      { "who": "아이", "text": "그럼 반 개만.", "style": "cute little child negotiating" },
+      { "who": "엄마", "text": "안 돼.", "style": "firm mom" },
+      { "who": "아이", "text": "그럼… 냄새만 맡을게.", "say": "그럼... 냄새만 맡을게.", "style": "cute little child, sly and innocent" },
+      { "who": "엄마", "text": "…그건 돼.", "say": "...그건 돼.", "style": "tired mom giving in" },
+      { "who": "효과", "text": "바스락 바스락", "fx": "crinkle", "dur": 1.2 },
+      { "who": "엄마", "text": "야! 냄새만 맡는다며!", "style": "shocked, shouting", "fx": "shake" },
+      { "who": "아이", "text": "입 안에서 맡을 거야.", "style": "cute little child, completely serious and logical", "fx": "zoom", "pauseAfter": 1.5 }
+    ]
+  },
+  "facts": {
+    "title": "이거 알았어? 🤯",
+    "voices": { "나레이터": "Puck" },
+    "lines": [
+      { "who": "나레이터", "emoji": "🐘", "text": "코끼리는 점프를 못 한다.", "style": "energetic, fun fact narrator" },
+      { "who": "나레이터", "emoji": "🦥", "text": "나무늘보는 밥 한 끼 소화하는 데 최대 한 달이 걸린다.", "style": "energetic, fun fact narrator" },
+      { "who": "나레이터", "emoji": "🦦", "text": "해달은 자다가 떠내려가지 않으려고 서로 손을 잡고 잔다.", "style": "warm and amused" },
+      { "who": "나레이터", "emoji": "🫵", "text": "그리고 너는… 이거 보느라 할 일을 아직도 안 했다.", "say": "그리고 너는... 이거 보느라, 할 일을 아직도 안 했다.", "style": "slow, dramatic, then accusing", "fx": "twist" },
+      { "who": "나레이터", "emoji": "🏃", "text": "지금 하러 가. …아, 구독은 하고.", "say": "지금 하러 가. ...아, 구독은 하고.", "style": "quick and cheeky", "pauseAfter": 1.2 }
+    ]
+  },
+  "balance": {
+    "title": "평생 하나만 골라!",
+    "voices": { "나레이터": "Zephyr" },
+    "lines": [
+      { "who": "나레이터", "a": "🔥 평생 여름", "b": "❄️ 평생 겨울", "text": "평생 여름? 아니면 평생 겨울?", "style": "playful game show host", "pauseAfter": 3 },
+      { "who": "나레이터", "a": "👂 모든 사람의 속마음이 들린다", "b": "📢 내 속마음이 모두에게 들린다", "text": "모든 사람의 속마음이 들린다? 아니면 내 속마음이 모두에게 들린다?", "style": "playful game show host", "pauseAfter": 3 },
+      { "who": "나레이터", "a": "💰 월 천만 원 + 평생 와이파이 없음", "b": "📶 그냥 지금처럼 살기", "text": "월 천만 원 받고 평생 와이파이 없이 살기? 아니면 그냥 지금처럼 살기?", "style": "playful game show host, teasing", "pauseAfter": 3 },
+      { "who": "나레이터", "text": "너의 선택은? 댓글로 알려줘!", "style": "excited outro", "end": true, "pauseAfter": 1.2 }
+    ]
+  }
+}

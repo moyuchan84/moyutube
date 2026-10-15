@@ -1,0 +1,254 @@
+{
+  "common/dad/normal": {
+    "w": 591,
+    "h": 1500
+  },
+  "common/dad/panic": {
+    "w": 755,
+    "h": 1500
+  },
+  "common/dad/explain": {
+    "w": 890,
+    "h": 1500
+  },
+  "common/dad/think": {
+    "w": 562,
+    "h": 1500
+  },
+  "common/dad/proud": {
+    "w": 710,
+    "h": 1500
+  },
+  "common/dad/shock": {
+    "w": 782,
+    "h": 1500
+  },
+  "common/dad/search": {
+    "w": 527,
+    "h": 1109
+  },
+  "common/dad/explain-b": {
+    "w": 891,
+    "h": 1500
+  },
+  "common/kid/normal": {
+    "w": 609,
+    "h": 1500
+  },
+  "common/kid/ask": {
+    "w": 689,
+    "h": 1500
+  },
+  "common/kid/wow": {
+    "w": 707,
+    "h": 1500
+  },
+  "common/kid/doubt": {
+    "w": 642,
+    "h": 1500
+  },
+  "common/kid/laugh": {
+    "w": 851,
+    "h": 1500
+  },
+  "common/kid/ask-b": {
+    "w": 688,
+    "h": 1500
+  },
+  "common/cutin/dad-panic": {
+    "w": 1218,
+    "h": 1300
+  },
+  "common/cutin/dad-shock": {
+    "w": 1214,
+    "h": 1300
+  },
+  "common/cutin/dad-proud": {
+    "w": 1252,
+    "h": 1300
+  },
+  "common/cutin/kid-ask": {
+    "w": 1192,
+    "h": 1300
+  },
+  "common/cutin/kid-doubt": {
+    "w": 1191,
+    "h": 1300
+  },
+  "common/bg/living-room": {
+    "w": 2560,
+    "h": 1440
+  },
+  "common/bg/dining-room": {
+    "w": 2560,
+    "h": 1440
+  },
+  "common/bg/kid-room-night": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep01/bg/motel-counter": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep01/char/dad-young": {
+    "w": 617,
+    "h": 1500
+  },
+  "ep01/full/hotel-mansion": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep01/full/motel-1920s": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep01/full/hostel-1912": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep01/prop/hotel": {
+    "w": 928,
+    "h": 1200
+  },
+  "ep01/prop/motel": {
+    "w": 1200,
+    "h": 1012
+  },
+  "ep01/prop/hostel": {
+    "w": 926,
+    "h": 1200
+  },
+  "ep01/full/next-teaser": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep02/full/law-book": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep02/full/mapo-1962": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep02/full/piloti-villa": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep02/full/roman-villa": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep02/full/villa-ad-1980s": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep02/full/officetel-room": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep02/bg/window-view": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep02/prop/apartment": {
+    "w": 584,
+    "h": 892
+  },
+  "ep02/prop/villa": {
+    "w": 852,
+    "h": 963
+  },
+  "ep02/prop/officetel": {
+    "w": 452,
+    "h": 907
+  },
+  "ep02/full/next-teaser": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep03/bg/market-alley": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep03/prop/stall-front": {
+    "w": 1335,
+    "h": 513
+  },
+  "ep03/granny/normal": {
+    "w": 671,
+    "h": 1202
+  },
+  "ep03/granny/banter": {
+    "w": 936,
+    "h": 1500
+  },
+  "ep03/granny/banter-b": {
+    "w": 933,
+    "h": 1500
+  },
+  "ep03/granny/laugh": {
+    "w": 977,
+    "h": 1500
+  },
+  "ep03/granny/give": {
+    "w": 944,
+    "h": 1500
+  },
+  "ep03/cutin/granny-banter": {
+    "w": 1300,
+    "h": 1297
+  },
+  "ep03/prop/ppeongtwigi": {
+    "w": 912,
+    "h": 868
+  },
+  "ep03/prop/bean-sprouts": {
+    "w": 825,
+    "h": 879
+  },
+  "ep03/prop/price-tag": {
+    "w": 812,
+    "h": 968
+  },
+  "ep03/prop/boucicaut": {
+    "w": 740,
+    "h": 1200
+  },
+  "ep03/prop/peddler": {
+    "w": 775,
+    "h": 1200
+  },
+  "ep03/prop/cart": {
+    "w": 815,
+    "h": 1200
+  },
+  "ep03/prop/shopping-bag": {
+    "w": 1125,
+    "h": 1200
+  },
+  "ep03/prop/icon-market": {
+    "w": 656,
+    "h": 743
+  },
+  "ep03/full/five-day-market": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep03/full/bon-marche": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep03/full/dept-floors": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep03/full/mart-1993": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep03/full/next-teaser": {
+    "w": 2560,
+    "h": 1440
+  }
+}
