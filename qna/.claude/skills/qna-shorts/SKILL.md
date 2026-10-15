@@ -99,6 +99,9 @@ npm run short -- ep02           # mp4 + upload.md
 ## 채널 설정 (업로드할 때 확인된 것을 적는다)
 - 아동용: **아니요, 아동용이 아닙니다** (2026-10-15 사용자 확인). 묻지 않고 이대로 고른다.
 - 채널: 모라구 (`UCCIm8f5JE4b4PmSrPIJd7zQ`). 본편: 1편 `HBDKnxz3ubk`, 2편 `XbUNeg7ytBc`, 3편 `tOr0fU-9fgk`
-- 관련 동영상 연결: 채널 전화 인증 전에는 안 된다 (2026-10-15 기준 미인증)
-- 업로드한 쇼츠 (모두 비공개, 2026-10-15): 1편 https://youtube.com/shorts/RYCGizrpJLY · 2편 https://youtube.com/shorts/sCmFsefevdw · 3편 https://youtube.com/shorts/uDal1J4SIlE
+- 관련 동영상 연결: 채널 인증이 끝나야 된다 (2026-10-15 영상 인증 제출 · 검토 중, 약 24시간). 끝나면 1~4편 쇼츠를 각 본편에 연결한다
+- 본편: 4편 `8Xxrcsn9-zk`
+- 롱폼(수백 MB)은 Chrome 확장으로 못 올린다(10MB 한도) → 업로드 창만 열고 사람이 파일을 끌어다 놓은 뒤 이어서 세부정보 · 썸네일 · 자막(파일 업로드 → '타이밍 포함', '계속' 은 누르지 말고 file input 에 바로 넣기) · 영어 제목/설명(동영상 자막 페이지 → 언어 추가 '영어(미국)')을 채운다
+- 업로드한 쇼츠 (2026-10-15): 1편 https://youtube.com/shorts/RYCGizrpJLY · 2편 https://youtube.com/shorts/sCmFsefevdw · 3편 https://youtube.com/shorts/uDal1J4SIlE (1~3편은 사람이 공개로 바꿈) · 4편 https://youtube.com/shorts/8t9WAtbzI7I (비공개)
+- 몸 · 성 소재 편(4편)의 쇼츠는 민감한 단어가 들어간 대사를 아예 고르지 않는다 (쇼츠 자막은 큰 화면 글자다)
 - 업로드 창에서 `ref` 로 누르는 클릭은 창이 다시 그려지면 먹지 않을 때가 있다 → 스크린샷을 보고 **좌표로** 누르고, 누른 뒤 확대(zoom)로 선택됐는지 확인한다. 재생목록 창은 체크박스 (241,218) · 완료 (560,556) 근처 (창 1280폭 기준)
