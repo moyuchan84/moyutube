@@ -50,12 +50,13 @@ qna/
 | 2. 대본 · 그림 목록 | 기획서 대본을 영상용으로 옮긴다 (3편이 기준 예시) | `video/src/epNN/script.json`, `art.json` | 무료 |
 | 3. 콘티 확인 | `npm run storyboard -- epNN` → `storyboard.html` 을 열어 컷 구성 · 길이 확인. 여기서 대본을 고친다 | `storyboard.html` | 무료 |
 | 4. 그림 프롬프트 | `npm run prompts -- epNN` | `GEMINI_PROMPTS.md` | 무료 |
-| 5. 그림 | Gemini 에서 손으로 뽑아 `art/<id>.png` 에 저장, 또는 `npm run artgen -- epNN` | `episodes/NN-slug/art/` | **artgen 은 유료 — 사용자에게 물어보고** |
+| 5. 그림 | Gemini 에서 손으로 뽑아 `art/<id>.png` 에 저장, 또는 `npm run artgen -- epNN` (키는 저장소 루트 `.env`, ../CLAUDE.md) | `episodes/NN-slug/art/` | **artgen 은 유료 — 사용자에게 물어보고** |
 | 6. 그림 처리 | `npm run art -- epNN` (초록 배경 제거 · 크기 맞춤) → 다시 `npm run storyboard -- epNN` | `video/public/art/epNN/` | 무료 |
 | 7. 음성 | `npm run voice -- epNN studio` (손으로) 또는 `npm run voice -- epNN gen` | `video/voice-studio/epNN/`, `src/epNN/timing.json` | **gen 은 유료 — 물어보고** |
 | 8. 등록 · 미리보기 | `src/Root.tsx` 의 `EPISODES` 에 한 줄 추가 (timing.json 이 생긴 뒤) → `npm run studio` | | 무료 |
 | 9. 완성 | `npm run make -- epNN` → 썸네일 `Ep NN-ThumbD` | `video/out/epNN/` | 무료 |
 | 10. 사이트 · 저장 | 홈 `index.html` 카드 갱신, 브랜치에서 커밋 → PR | | |
+| 11. 쇼츠 | 스킬 `qna-shorts` (`.claude/skills/qna-shorts/SKILL.md`): 편집 계획 `video/src/shorts/epNN.json` → `npm run short -- epNN --check` → `npm run short -- epNN` → Chrome 으로 **비공개** 업로드 | `video/out/shorts/epNN-short.mp4` | 무료 (롱폼 음성 · 그림 재사용) |
 
 ### 고정 규칙
 - 시나리오는 집 밖에서, 제삼의 인물과. 한창 벌어지는 장면부터. 6번 박자(아이 눈높이)에는 농담 없음. 기준 예시는 3편.

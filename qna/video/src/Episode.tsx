@@ -32,11 +32,11 @@ type Cut = {
   duration: number;
 };
 
-type Timeline = { cuts: Cut[]; durationInFrames: number; rawVoice?: boolean; speed?: number; bgm?: string | null };
+export type Timeline = { cuts: Cut[]; durationInFrames: number; rawVoice?: boolean; speed?: number; bgm?: string | null };
 
 // Heami는 SSML pitch를 거의 무시해서 렌더 단계에서 음높이를 바꾼다
-const TONE: Record<Who, number> = { narr: 1, dad: 0.88, kid: 1.35, docu: 0.8, granny: 1.12 };
-const SFX_VOLUME: Record<string, number> = { boing: 0.5, dudung: 0.55, page: 0.35, stinger: 0.45, beep: 0.4, pang: 0.75, rewind: 0.5 };
+export const TONE: Record<Who, number> = { narr: 1, dad: 0.88, kid: 1.35, docu: 0.8, granny: 1.12 };
+export const SFX_VOLUME: Record<string, number> = { boing: 0.5, dudung: 0.55, page: 0.35, stinger: 0.45, beep: 0.4, pang: 0.75, rewind: 0.5, whoosh: 0.45, pop: 0.5, stamp: 0.7 };
 // 자막 앞에 붙는 이름표: 화면 안에서 말하는 사람만
 const SPEAKER: Record<string, { name: string; color: string }> = {
   dad: { name: "아빠", color: INK },

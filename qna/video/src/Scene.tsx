@@ -121,11 +121,13 @@ const BURST = Array.from({ length: 32 }, (_, i) => {
   return `${(50 + Math.cos(a) * 50 * r).toFixed(2)},${(50 + Math.sin(a) * 50 * r).toFixed(2)}`;
 }).join(" ");
 
-export const SceneVisual: React.FC<{ episode: string; cut: SceneCut; frame: number; still: boolean }> = ({
+// bare: 아래 자막 띠를 빼고 장면만 (세로 쇼츠가 자막을 따로 그릴 때)
+export const SceneVisual: React.FC<{ episode: string; cut: SceneCut; frame: number; still: boolean; bare?: boolean }> = ({
   episode,
   cut,
   frame,
   still,
+  bare,
 }) => {
   const { fps } = useVideoConfig();
   const scene = cut.scene ?? {};
@@ -392,7 +394,7 @@ export const SceneVisual: React.FC<{ episode: string; cut: SceneCut; frame: numb
       {flashLine ? <AbsoluteFill style={{ backgroundColor: "#fff", opacity: interpolate(f - flashLine.from, [0, 2, 10], [0, 0.85, 0], clamp) }} /> : null}
 
       {/* 자막이 놓이는 아래쪽 띠 */}
-      <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 260, background: `linear-gradient(rgba(246,238,223,0), ${PAPER} 36%)` }} />
+      {bare ? null : <div style={{ position: "absolute", left: 0, right: 0, bottom: 0, height: 260, background: `linear-gradient(rgba(246,238,223,0), ${PAPER} 36%)` }} />}
 
       {cut.beat ? (
         <div style={{ position: "absolute", left: 40, top: 30, fontSize: 26, fontWeight: 700, color: "#fff", backgroundColor: flashback ? RED : INK, padding: "6px 16px", borderRadius: 6 }}>

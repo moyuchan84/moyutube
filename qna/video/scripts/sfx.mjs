@@ -1,12 +1,15 @@
 // 가이드용 효과음을 코드로 합성한다 (저작권 걱정 없는 임시 소리 — 최종본에서는 교체 권장).
-// 사용: node scripts/sfx.mjs
-import { mkdirSync, writeFileSync } from "node:fs";
+// 사용: node scripts/sfx.mjs          (없는 소리만 만든다)
+//       node scripts/sfx.mjs --force  (전부 다시 — 노이즈가 섞인 소리는 매번 조금씩 달라진다)
+import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 
 const RATE = 44100;
 const outDir = new URL("../public/sfx/", import.meta.url);
 mkdirSync(outDir, { recursive: true });
 
+const force = process.argv.includes("--force");
 const writeWav = (name, samples) => {
+  if (!force && existsSync(new URL(name, outDir))) return;
   const data = Buffer.alloc(samples.length * 2);
   samples.forEach((s, i) => data.writeInt16LE(Math.round(Math.max(-1, Math.min(1, s)) * 32767), i * 2));
   const header = Buffer.alloc(44);
@@ -109,5 +112,40 @@ writeWav(
     amp: 0.3 * Math.sin(Math.PI * Math.min(t / 0.6, 1)),
   })),
 );
+
+// ── 쇼츠 편집용 (src/shorts/Short.tsx) ──
+
+// 휙: 장면이 넘어갈 때 (노이즈를 점점 밝게 쓸어 올린다)
+{
+  let lp = 0;
+  writeWav(
+    "whoosh.wav",
+    render(0.42, (t) => {
+      const u = t / 0.42;
+      const prev = lp;
+      lp += (0.04 + 0.5 * u * u) * ((Math.random() * 2 - 1) - lp);
+      return { extra: (lp - prev * 0.6) * 1.6 * Math.sin(Math.PI * Math.min(u, 1)) ** 1.5 };
+    }),
+  );
+}
+
+// 뽁: 글자가 튀어나올 때
+writeWav(
+  "pop.wav",
+  render(0.14, (t) => ({ freq: 1400 - 5000 * t, amp: 0.4 * Math.min(t / 0.003, 1) * Math.exp(-t * 28) })),
+);
+
+// 쾅: 도장 찍듯 큰 글자가 박힐 때
+{
+  let lp = 0;
+  writeWav(
+    "stamp.wav",
+    render(0.6, (t) => {
+      lp += 0.6 * ((Math.random() * 2 - 1) - lp);
+      const thump = Math.sin(2 * Math.PI * (55 + 220 * Math.exp(-t * 55)) * t) * Math.exp(-t * 11);
+      return { extra: thump * 0.95 + lp * Math.exp(-t * 25) * 0.7 };
+    }),
+  );
+}
 
 console.log("sfx written");
