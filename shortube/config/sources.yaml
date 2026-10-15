@@ -1,0 +1,18 @@
+# 출처 라이선스 등급 (COMPLIANCE_GUIDE.md 4-2)
+# A: 자유 이용 / B: 출처 표기 조건 / C: 사실만 참고 / D: 사용 금지
+license_tiers:
+  A: [go.kr, data.go.kr, kosis.kr, korea.kr]
+  B: [wikipedia.org]
+  C: [top10.netflix.com, melon.com, billboard.com, kobis.or.kr]
+
+# 출처로 세지 않고 수집하지 않는 도메인 (D등급)
+blocked_domains:
+  - namu.wiki
+  - dcinside.com
+  - theqoo.net
+  - instiz.net
+  - fmkorea.com
+  - youtube.com
+
+# 도메인당 최소 요청 간격(초)
+min_request_interval_seconds: 2

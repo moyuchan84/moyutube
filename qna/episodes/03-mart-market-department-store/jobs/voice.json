@@ -1,0 +1,813 @@
+{
+  "episode": "ep03",
+  "title": "마트 · 시장 · 백화점, 뭐가 달라요?",
+  "engine": "Google AI Studio · Gemini Flash TTS (여러 화자)",
+  "format": "WAV, 24 kHz, 16-bit, mono. One file per cut, all lines of the cut in order.",
+  "direction": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud.",
+  "jobs": [
+    {
+      "cut": "c00",
+      "save": "video/voice-studio/ep03/c00.wav",
+      "done": true,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Gacrux",
+          "who": "할머니",
+          "style": "A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "지금 저는 시장 한복판에서, 처음 뵙는 할머니한테 한 수 배우고 있습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "granny",
+          "text": "가격표? 여기서는 내가 가격표여!",
+          "style": "A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "콩나물 천 원어치 사러 왔다가, 이렇게 됐습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "삼 분 전으로 돌아가 보겠습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry.\n\nSpeaker 1: 지금 저는 시장 한복판에서, 처음 뵙는 할머니한테 한 수 배우고 있습니다.\nSpeaker 2: 가격표? 여기서는 내가 가격표여!\nSpeaker 1: 콩나물 천 원어치 사러 왔다가, 이렇게 됐습니다.\nSpeaker 1: 삼 분 전으로 돌아가 보겠습니다."
+    },
+    {
+      "cut": "c01",
+      "save": "video/voice-studio/ep03/c01.wav",
+      "done": true,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "일요일 오후, 아이 손을 잡고 동네 시장에 갔습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "아내의 심부름은 간단했어요. 콩나물 천 원어치.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "아빠, 마트랑 시장이랑 백화점은 뭐가 달라요?",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "다 물건 파는 데잖아요.",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: His eight-year-old child: bright, curious, high-pitched.\n\nSpeaker 1: 일요일 오후, 아이 손을 잡고 동네 시장에 갔습니다.\nSpeaker 1: 아내의 심부름은 간단했어요. 콩나물 천 원어치.\nSpeaker 2: 아빠, 마트랑 시장이랑 백화점은 뭐가 달라요?\nSpeaker 2: 다 물건 파는 데잖아요."
+    },
+    {
+      "cut": "c02",
+      "save": "video/voice-studio/ep03/c02.wav",
+      "done": true,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Gacrux",
+          "who": "할머니",
+          "style": "A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "음, 백화점은 비싼 데, 마트는 좀 싼 데, 시장은, 제일 싼 데?",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "하필 그 말을, 채소 가게 바로 앞에서 했습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "granny",
+          "text": "젊은 양반, 시장이 싼 데라고?",
+          "style": "A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "granny",
+          "text": "시장은 싸서 오는 데가 아니여. 믿고 오는 데지!",
+          "style": "A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "한 소리, 적립됐습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry.\nThe line \"음, 백화점은 비싼 데, 마트는 좀 싼 데, 시장은, 제일 싼 데?\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 음, 백화점은 비싼 데, 마트는 좀 싼 데, 시장은, 제일 싼 데?\nSpeaker 1: 하필 그 말을, 채소 가게 바로 앞에서 했습니다.\nSpeaker 2: 젊은 양반, 시장이 싼 데라고?\nSpeaker 2: 시장은 싸서 오는 데가 아니여. 믿고 오는 데지!\nSpeaker 1: 한 소리, 적립됐습니다."
+    },
+    {
+      "cut": "c03",
+      "save": "video/voice-studio/ep03/c03.wav",
+      "done": true,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Gacrux",
+          "who": "할머니",
+          "style": "A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "아, 아니요 할머니. 그게 아니라, 이 콩나물은 가격표가 어디 있어요?",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "granny",
+          "text": "가격표? 여기서는 내가 가격표여! 궁금하면 물어보면 되지.",
+          "style": "A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "맞는 말이라, 할 말이 없었습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "한 소리, 두 번째.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry.\nThe line \"아, 아니요 할머니. 그게 아니라, 이 콩나물은 가격표가 어디 있어요?\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 아, 아니요 할머니. 그게 아니라, 이 콩나물은 가격표가 어디 있어요?\nSpeaker 2: 가격표? 여기서는 내가 가격표여! 궁금하면 물어보면 되지.\nSpeaker 1: 맞는 말이라, 할 말이 없었습니다.\nSpeaker 1: 한 소리, 두 번째."
+    },
+    {
+      "cut": "c03b",
+      "save": "video/voice-studio/ep03/c03b.wav",
+      "done": true,
+      "speakers": [
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "voice": "Gacrux",
+          "who": "할머니",
+          "style": "A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "아빠, 모르면 할머니한테 물어봐요.",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "granny",
+          "text": "옳지! 애가 똑똑하네.",
+          "style": "A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 2: His eight-year-old child: bright, curious, high-pitched. Speaker 1: A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry.\n\nSpeaker 2: 아빠, 모르면 할머니한테 물어봐요.\nSpeaker 1: 옳지! 애가 똑똑하네."
+    },
+    {
+      "cut": "c04",
+      "save": "video/voice-studio/ep03/c04.wav",
+      "done": true,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "저는 뻥튀기 기계 뒤로 가서, 조용히 휴대폰을 켰습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "docu",
+          "text": "아빠라는 생물은, 궁지에 몰리면, 장소를 가리지 않고 검색을 한다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is read in a very deep, slow, mock-serious nature-documentary narrator voice"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "헷갈릴 만은 했습니다. 요즘은 다 섞였거든요.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "백화점 지하에는 마트 같은 식품관이 있고, 마트 안에는 옷 가게가 있고, 시장에서도 카드가 됩니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "저는 마트에 가면서도, 장 보러 간다고 합니다. 그 장이 원래 시장이라는 뜻인데요.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "그래서 가격 말고, 딱 하나만 보기로 했습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "계산하기 직전까지, 이 물건은 누구 거였을까.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "그때, 뻥튀기가 터졌습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\nThe line \"아빠라는 생물은, 궁지에 몰리면, 장소를 가리지 않고 검색을 한다.\" is read in a very deep, slow, mock-serious nature-documentary narrator voice.\n\nSpeaker 1: 저는 뻥튀기 기계 뒤로 가서, 조용히 휴대폰을 켰습니다.\nSpeaker 1: 아빠라는 생물은, 궁지에 몰리면, 장소를 가리지 않고 검색을 한다.\nSpeaker 1: 헷갈릴 만은 했습니다. 요즘은 다 섞였거든요.\nSpeaker 1: 백화점 지하에는 마트 같은 식품관이 있고, 마트 안에는 옷 가게가 있고, 시장에서도 카드가 됩니다.\nSpeaker 1: 저는 마트에 가면서도, 장 보러 간다고 합니다. 그 장이 원래 시장이라는 뜻인데요.\nSpeaker 1: 그래서 가격 말고, 딱 하나만 보기로 했습니다.\nSpeaker 1: 계산하기 직전까지, 이 물건은 누구 거였을까.\nSpeaker 1: 그때, 뻥튀기가 터졌습니다."
+    },
+    {
+      "cut": "c05",
+      "save": "video/voice-studio/ep03/c05.wav",
+      "done": true,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "먼저 시장. 조선 후기에는 닷새마다 한 번 서는 오일장이 전국에 퍼졌습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "천 곳이 넘었다고 해요.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "장날이면 상인들이 물건을 이고 지고 모였다가, 다음 장터로 옮겨 갔습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "매일 문을 여는 상설시장은, 천구백오년 서울 종로의 광장시장이 시작으로 꼽힙니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\n\nSpeaker 1: 먼저 시장. 조선 후기에는 닷새마다 한 번 서는 오일장이 전국에 퍼졌습니다.\nSpeaker 1: 천 곳이 넘었다고 해요.\nSpeaker 1: 장날이면 상인들이 물건을 이고 지고 모였다가, 다음 장터로 옮겨 갔습니다.\nSpeaker 1: 매일 문을 여는 상설시장은, 천구백오년 서울 종로의 광장시장이 시작으로 꼽힙니다."
+    },
+    {
+      "cut": "c06",
+      "save": "video/voice-studio/ep03/c06.wav",
+      "done": true,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Gacrux",
+          "who": "할머니",
+          "style": "A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "시장 물건은 대개 그 가게 사장님 겁니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "직접 사 오고, 직접 팔고, 남으면 사장님이 떠안죠.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "그래서 사장님 마음대로, 하나 더가 됩니다. 덤은 주인만 줄 수 있거든요.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "granny",
+          "text": "내 물건인디, 내 맘이지!",
+          "style": "A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "가격표가 없어도 되는 이유도 같습니다. 물어보면 대답해 줄 주인이, 그 자리에 서 있으니까요.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry.\n\nSpeaker 1: 시장 물건은 대개 그 가게 사장님 겁니다.\nSpeaker 1: 직접 사 오고, 직접 팔고, 남으면 사장님이 떠안죠.\nSpeaker 1: 그래서 사장님 마음대로, 하나 더가 됩니다. 덤은 주인만 줄 수 있거든요.\nSpeaker 2: 내 물건인디, 내 맘이지!\nSpeaker 1: 가격표가 없어도 되는 이유도 같습니다. 물어보면 대답해 줄 주인이, 그 자리에 서 있으니까요."
+    },
+    {
+      "cut": "c07",
+      "save": "video/voice-studio/ep03/c07.wav",
+      "done": true,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "다음은 백화점. 천팔백오십이년 파리의 봉 마르셰라는 가게에서,",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "아리스티드 부시코라는 사람이 이상한 장사를 시작합니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "물건마다 가격표를 붙여서 흥정을 없애고,",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "안 사고 구경만 해도 되게 하고, 마음에 안 들면 바꿔 주기까지.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "그러니까 가격표는, 퍼진 지 백칠십 년쯤밖에 안 된 신제품입니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "할머니 말씀이 맞았어요. 그 전에는, 사람이 가격표였습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\n\nSpeaker 1: 다음은 백화점. 천팔백오십이년 파리의 봉 마르셰라는 가게에서,\nSpeaker 1: 아리스티드 부시코라는 사람이 이상한 장사를 시작합니다.\nSpeaker 1: 물건마다 가격표를 붙여서 흥정을 없애고,\nSpeaker 1: 안 사고 구경만 해도 되게 하고, 마음에 안 들면 바꿔 주기까지.\nSpeaker 1: 그러니까 가격표는, 퍼진 지 백칠십 년쯤밖에 안 된 신제품입니다.\nSpeaker 1: 할머니 말씀이 맞았어요. 그 전에는, 사람이 가격표였습니다."
+    },
+    {
+      "cut": "c08",
+      "save": "video/voice-studio/ep03/c08.wav",
+      "done": true,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "우리나라에는 천구백삼십년대 서울에 백화점이 들어옵니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "그런데 백화점에서 파는 옷과 화장품은, 대부분 백화점 물건이 아닙니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "브랜드가 물건을 들고 들어와서 팔고, 팔린 만큼 백화점이 수수료를 받는 방식이 많아요.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "그러니까 백화점은, 아주 고급스러운 건물주에 가깝습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\n\nSpeaker 1: 우리나라에는 천구백삼십년대 서울에 백화점이 들어옵니다.\nSpeaker 1: 그런데 백화점에서 파는 옷과 화장품은, 대부분 백화점 물건이 아닙니다.\nSpeaker 1: 브랜드가 물건을 들고 들어와서 팔고, 팔린 만큼 백화점이 수수료를 받는 방식이 많아요.\nSpeaker 1: 그러니까 백화점은, 아주 고급스러운 건물주에 가깝습니다."
+    },
+    {
+      "cut": "c09",
+      "save": "video/voice-studio/ep03/c09.wav",
+      "done": true,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "마지막, 마트. 천구백구십삼년 서울 창동에 우리나라 첫 대형 할인점이 문을 엽니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "마트는 공장에서 물건을 한꺼번에 많이 사 옵니다. 사 온 순간부터 마트 물건이에요.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "그래서 가격도, 원 플러스 원도, 마트가 정합니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "참고로 마트는, 영어로 장터라는 뜻입니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "그러니까 아이의 질문은 사실, 장터랑 시장이랑 백화점은 뭐가 달라요, 였던 겁니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\n\nSpeaker 1: 마지막, 마트. 천구백구십삼년 서울 창동에 우리나라 첫 대형 할인점이 문을 엽니다.\nSpeaker 1: 마트는 공장에서 물건을 한꺼번에 많이 사 옵니다. 사 온 순간부터 마트 물건이에요.\nSpeaker 1: 그래서 가격도, 원 플러스 원도, 마트가 정합니다.\nSpeaker 1: 참고로 마트는, 영어로 장터라는 뜻입니다.\nSpeaker 1: 그러니까 아이의 질문은 사실, 장터랑 시장이랑 백화점은 뭐가 달라요, 였던 겁니다."
+    },
+    {
+      "cut": "c10",
+      "save": "video/voice-studio/ep03/c10.wav",
+      "done": true,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "정리하면 이렇습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "시장은 사장님 물건,",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "마트는 마트 물건,",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "백화점은 브랜드 물건입니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\n\nSpeaker 1: 정리하면 이렇습니다.\nSpeaker 1: 시장은 사장님 물건,\nSpeaker 1: 마트는 마트 물건,\nSpeaker 1: 백화점은 브랜드 물건입니다."
+    },
+    {
+      "cut": "c11",
+      "save": "video/voice-studio/ep03/c11.wav",
+      "done": true,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "저는 뻥튀기 기계 뒤에서 나와, 아이 옆에 섰습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "아까 아빠가 비싼 데, 싼 데로 나눴지? 그거 틀린 말이었어.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "진짜 다른 건, 물건 주인이 누구냐야.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "시장은 가게마다 사장님이 있어서, 여기 있는 건 전부 할머니 거야. 그래서 할머니가 하나 더 줄 수도 있어.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "마트는 마트가 물건을 엄청 많이 사 와서, 마트 물건으로 파는 곳이고.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "백화점은 여러 회사 가게들이 큰 건물에 모여 있는 곳이야. 물건은 각자 회사 거고.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "그러니까 어디가 더 좋은 데, 나쁜 데가 아니야. 주인이 다른 거야.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "아이가 할머니를 빤히 보더니, 다가가서 물었습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\nThe line \"아까 아빠가 비싼 데, 싼 데로 나눴지? 그거 틀린 말이었어.\" is the dad speaking inside the scene, acted out, not narration.\nThe line \"진짜 다른 건, 물건 주인이 누구냐야.\" is the dad speaking inside the scene, acted out, not narration.\nThe line \"시장은 가게마다 사장님이 있어서, 여기 있는 건 전부 할머니 거야. 그래서 할머니가 하나 더 줄 수도 있어.\" is the dad speaking inside the scene, acted out, not narration.\nThe line \"마트는 마트가 물건을 엄청 많이 사 와서, 마트 물건으로 파는 곳이고.\" is the dad speaking inside the scene, acted out, not narration.\nThe line \"백화점은 여러 회사 가게들이 큰 건물에 모여 있는 곳이야. 물건은 각자 회사 거고.\" is the dad speaking inside the scene, acted out, not narration.\nThe line \"그러니까 어디가 더 좋은 데, 나쁜 데가 아니야. 주인이 다른 거야.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 저는 뻥튀기 기계 뒤에서 나와, 아이 옆에 섰습니다.\nSpeaker 1: 아까 아빠가 비싼 데, 싼 데로 나눴지? 그거 틀린 말이었어.\nSpeaker 1: 진짜 다른 건, 물건 주인이 누구냐야.\nSpeaker 1: 시장은 가게마다 사장님이 있어서, 여기 있는 건 전부 할머니 거야. 그래서 할머니가 하나 더 줄 수도 있어.\nSpeaker 1: 마트는 마트가 물건을 엄청 많이 사 와서, 마트 물건으로 파는 곳이고.\nSpeaker 1: 백화점은 여러 회사 가게들이 큰 건물에 모여 있는 곳이야. 물건은 각자 회사 거고.\nSpeaker 1: 그러니까 어디가 더 좋은 데, 나쁜 데가 아니야. 주인이 다른 거야.\nSpeaker 1: 아이가 할머니를 빤히 보더니, 다가가서 물었습니다."
+    },
+    {
+      "cut": "c12",
+      "save": "video/voice-studio/ep03/c12.wav",
+      "done": true,
+      "speakers": [
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "voice": "Gacrux",
+          "who": "할머니",
+          "style": "A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "할머니, 이거 전부 할머니 거예요?",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "granny",
+          "text": "그럼. 새벽에 내가 다 떼 온 거지.",
+          "style": "A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "그럼 콩나물 천 원어치 주세요. 덤도 주세요!",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "granny",
+          "text": "이놈 봐라.",
+          "style": "A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 2: His eight-year-old child: bright, curious, high-pitched. Speaker 1: A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry.\n\nSpeaker 2: 할머니, 이거 전부 할머니 거예요?\nSpeaker 1: 그럼. 새벽에 내가 다 떼 온 거지.\nSpeaker 2: 그럼 콩나물 천 원어치 주세요. 덤도 주세요!\nSpeaker 1: 이놈 봐라."
+    },
+    {
+      "cut": "c12b",
+      "save": "video/voice-studio/ep03/c12b.wav",
+      "done": true,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "할머니는 콩나물을 한 줌 더 얹어 주셨습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "가격표에는 없는 한 줌이었습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\n\nSpeaker 1: 할머니는 콩나물을 한 줌 더 얹어 주셨습니다.\nSpeaker 1: 가격표에는 없는 한 줌이었습니다."
+    },
+    {
+      "cut": "c13",
+      "save": "video/voice-studio/ep03/c13.wav",
+      "done": true,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Gacrux",
+          "who": "할머니",
+          "style": "A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "장 보러 갈 때 아이랑 한번 맞혀 보세요. 이건 누구 물건일까.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "그리고 시장에 가면, 가격표를 찾지 말고 한번 물어보세요. 대답해 주는 사람이 있습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "granny",
+          "text": "아빠도 다음에 또 와. 그땐 내가 문제 낼 거여!",
+          "style": "A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "마지막 한 소리는, 덤으로 받았습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry.\n\nSpeaker 1: 장 보러 갈 때 아이랑 한번 맞혀 보세요. 이건 누구 물건일까.\nSpeaker 1: 그리고 시장에 가면, 가격표를 찾지 말고 한번 물어보세요. 대답해 주는 사람이 있습니다.\nSpeaker 2: 아빠도 다음에 또 와. 그땐 내가 문제 낼 거여!\nSpeaker 1: 마지막 한 소리는, 덤으로 받았습니다."
+    },
+    {
+      "cut": "c14",
+      "save": "video/voice-studio/ep03/c14.wav",
+      "done": true,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "아빠, 근데 아빠는 왜 온몸에 털이 났어요? 나는 없는데.",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "콩나물 시들겠다. 빨리 가자.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "아빠, 같이 가요!",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: His eight-year-old child: bright, curious, high-pitched.\nThe line \"콩나물 시들겠다. 빨리 가자.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 2: 아빠, 근데 아빠는 왜 온몸에 털이 났어요? 나는 없는데.\nSpeaker 1: 콩나물 시들겠다. 빨리 가자.\nSpeaker 2: 아빠, 같이 가요!"
+    },
+    {
+      "cut": "c15",
+      "save": "video/voice-studio/ep03/c15.wav",
+      "done": true,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "다음 편에서 뵙겠습니다. 저는 그 전에, 또 검색 좀 하고 오겠습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\n\nSpeaker 1: 다음 편에서 뵙겠습니다. 저는 그 전에, 또 검색 좀 하고 오겠습니다."
+    }
+  ]
+}

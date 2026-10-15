@@ -1,0 +1,344 @@
+{
+  "rawVoice": true,
+  "speed": 1.15,
+  "title": "마트 · 시장 · 백화점, 뭐가 달라요?",
+  "bgm": "cheerful",
+  "cuts": [
+    {
+      "id": "c00", "beat": "0. 지금 상황",
+      "scene": {
+        "bg": "bg/market-alley",
+        "props": [
+          {"art":"prop/stall-front","x":0.2,"y":0.74,"w":0.4,"front":true}
+        ],
+        "actors": [
+          {"id":"granny","art":"granny/banter","x":0.2,"idle":"sway"},
+          {"id":"kid","art":"common/kid/normal","x":0.5},
+          {"id":"dad","art":"common/dad/panic","x":0.76}
+        ]
+      },
+      "lines": [
+        {"who":"narr","text":"지금 저는 시장 한복판에서, 처음 뵙는 할머니한테 한 수 배우고 있습니다.","en":"Right now I'm in the middle of a market, getting a lesson from a grandmother I've never met."},
+        {"who":"granny","text":"가격표? 여기서는 내가 가격표여!","en":"A price tag? Around here, I'm the price tag!","focus":"granny","cutin":"cutin/granny-banter","fx":"zoom"},
+        {"who":"narr","text":"콩나물 천 원어치 사러 왔다가, 이렇게 됐습니다.","en":"I only came for a thousand won of bean sprouts. And here we are."},
+        {"who":"narr","text":"3분 전으로 돌아가 보겠습니다.","en":"Let's rewind three minutes.","tts":"삼 분 전으로 돌아가 보겠습니다.","pop":"3분 전","sfx":"rewind","fx":"flash"}
+      ]
+    },
+    {
+      "id": "c01", "beat": "1. 그 질문", "caption": "3분 전",
+      "scene": {
+        "bg": "bg/market-alley",
+        "props": [
+          {"art":"prop/stall-front","x":0.2,"y":0.74,"w":0.4,"front":true}
+        ],
+        "actors": [
+          {"id":"kid","art":"common/kid/normal","x":0.5,"enter":"right","idle":"bounce"},
+          {"id":"dad","art":"common/dad/normal","x":0.76,"enter":"right"}
+        ]
+      },
+      "lines": [
+        {"who":"narr","text":"일요일 오후, 아이 손을 잡고 동네 시장에 갔습니다.","en":"Sunday afternoon. I took my kid by the hand to the neighborhood market."},
+        {"who":"narr","text":"아내의 심부름은 간단했어요. 콩나물 천 원어치.","en":"My wife's errand was simple: a thousand won of bean sprouts."},
+        {"who":"kid","text":"아빠, 마트랑 시장이랑 백화점은 뭐가 달라요?","en":"Dad, what's the difference between a mart, a market and a department store?","pose":{"kid":"common/kid/ask"},"act":{"kid":"jump"}},
+        {"who":"kid","text":"다 물건 파는 데잖아요.","en":"They all just sell stuff.","focus":"kid","cutin":"common/cutin/kid-ask"}
+      ]
+    },
+    {
+      "id": "c02", "beat": "2. 얼버무린 순간",
+      "scene": {
+        "bg": "bg/market-alley",
+        "props": [
+          {"art":"prop/stall-front","x":0.2,"y":0.74,"w":0.4,"front":true}
+        ],
+        "actors": [
+          {"id":"granny","art":"granny/banter","x":0.2,"at":2,"enter":"rise"},
+          {"id":"kid","art":"common/kid/ask","x":0.5},
+          {"id":"dad","art":"common/dad/normal","x":0.76}
+        ]
+      },
+      "lines": [
+        {"who":"dad","text":"음... 백화점은 비싼 데, 마트는 좀 싼 데, 시장은... 제일 싼 데?","en":"Um... a department store is the pricey one, a mart is cheaper, and a market is... the cheapest?","tts":"음, 백화점은 비싼 데, 마트는 좀 싼 데, 시장은, 제일 싼 데?","sfx":"boing","pose":{"dad":"common/dad/panic"},"focus":"dad","cutin":"common/cutin/dad-panic"},
+        {"who":"narr","text":"하필 그 말을, 채소 가게 바로 앞에서 했습니다.","en":"Of all places, I said that right in front of a vegetable stall."},
+        {"who":"granny","text":"젊은 양반, 시장이 싼 데라고?","en":"Young man, did you just call the market the cheap place?","focus":"granny","fx":"zoom","sfx":"dudung","pose":{"dad":"common/dad/shock"},"act":{"dad":"shiver"}},
+        {"who":"granny","text":"시장은 싸서 오는 데가 아니여. 믿고 오는 데지!","en":"People don't come to the market because it's cheap. They come because they trust it!","cutin":"cutin/granny-banter"},
+        {"who":"narr","text":"한 소리, 적립됐습니다.","en":"One talking-to, earned.","pop":"한 소리 +1"}
+      ]
+    },
+    {
+      "id": "c03", "beat": "2. 얼버무린 순간",
+      "scene": {
+        "bg": "bg/market-alley",
+        "props": [
+          {"art":"prop/stall-front","x":0.2,"y":0.74,"w":0.4,"front":true}
+        ],
+        "actors": [
+          {"id":"granny","art":"granny/banter","x":0.2,"idle":"sway"},
+          {"id":"kid","art":"common/kid/normal","x":0.5},
+          {"id":"dad","art":"common/dad/panic","x":0.76}
+        ]
+      },
+      "lines": [
+        {"who":"dad","text":"아, 아니요 할머니. 그게 아니라... 이 콩나물은 가격표가 어디 있어요?","en":"N-no, ma'am, that's not what I... where's the price tag on these bean sprouts?","tts":"아, 아니요 할머니. 그게 아니라, 이 콩나물은 가격표가 어디 있어요?","sfx":"boing","act":{"dad":"nod"}},
+        {"who":"granny","text":"가격표? 여기서는 내가 가격표여! 궁금하면 물어보면 되지.","en":"A price tag? Around here, I'm the price tag! If you want to know, just ask.","focus":"granny","cutin":"cutin/granny-banter","fx":"zoom"},
+        {"who":"narr","text":"맞는 말이라, 할 말이 없었습니다.","en":"She was right, so I had nothing to say.","pose":{"dad":"common/dad/shock"}},
+        {"who":"narr","text":"한 소리, 두 번째.","en":"That's talking-to number two.","pop":"한 소리 +2","sfx":"dudung"}
+      ]
+    },
+    {
+      "id": "c03b", "beat": "2. 얼버무린 순간",
+      "scene": {
+        "bg": "bg/market-alley",
+        "props": [
+          {"art":"prop/stall-front","x":0.2,"y":0.74,"w":0.4,"front":true}
+        ],
+        "actors": [
+          {"id":"granny","art":"granny/banter","x":0.2},
+          {"id":"kid","art":"common/kid/normal","x":0.5},
+          {"id":"dad","art":"common/dad/panic","x":0.76}
+        ]
+      },
+      "lines": [
+        {"who":"kid","text":"아빠, 모르면 할머니한테 물어봐요.","en":"Dad, if you don't know, just ask the grandma.","pose":{"kid":"common/kid/doubt"},"focus":"kid","cutin":"common/cutin/kid-doubt"},
+        {"who":"granny","text":"옳지! 애가 똑똑하네.","en":"That's right! Smart kid.","pose":{"granny":"granny/laugh"},"focus":"granny"}
+      ]
+    },
+    {
+      "id": "c04", "beat": "3. 왜 다들 헷갈리나", "caption": "뻥튀기 기계 뒤",
+      "scene": {
+        "bg": "bg/market-alley",
+        "props": [
+          {"art":"prop/ppeongtwigi","x":0.5,"y":0.66,"w":0.3,"front":true}
+        ],
+        "actors": [
+          {"id":"dad","art":"common/dad/search","x":0.62,"enter":"right"}
+        ]
+      },
+      "lines": [
+        {"who":"narr","text":"저는 뻥튀기 기계 뒤로 가서, 조용히 휴대폰을 켰습니다.","en":"I slipped behind the puffed-rice machine and quietly took out my phone."},
+        {"who":"docu","text":"아빠라는 생물은, 궁지에 몰리면, 장소를 가리지 않고 검색을 한다.","en":"The creature known as Dad, when cornered, will search the internet anywhere.","focus":"dad"},
+        {"who":"narr","text":"헷갈릴 만은 했습니다. 요즘은 다 섞였거든요.","en":"To be fair, it is confusing. These days they've all blended together."},
+        {"who":"narr","text":"백화점 지하에는 마트 같은 식품관이 있고, 마트 안에는 옷 가게가 있고, 시장에서도 카드가 됩니다.","en":"Department stores have mart-like food halls in the basement, marts have clothing shops inside, and markets take cards now."},
+        {"who":"narr","text":"저는 마트에 가면서도 '장 보러 간다'고 합니다. 그 '장'이 원래 시장이라는 뜻인데요.","en":"Even when I go to the mart, I say I'm \"going to the jang.\" And jang originally means market.","tts":"저는 마트에 가면서도, 장 보러 간다고 합니다. 그 장이 원래 시장이라는 뜻인데요."},
+        {"who":"narr","text":"그래서 가격 말고, 딱 하나만 보기로 했습니다.","en":"So I decided to forget price and look at just one thing.","pose":{"dad":"common/dad/think"}},
+        {"who":"narr","text":"계산하기 직전까지, 이 물건은 누구 거였을까.","en":"Right up until you pay for it, whose was it?","pop":"누구 물건?","fx":"zoom"},
+        {"who":"narr","text":"그때, 뻥튀기가 터졌습니다.","en":"And right then, the puffed-rice machine went off.","pop":"뻥!","sfx":"pang","fx":"flash","pose":{"dad":"common/dad/shock"},"act":{"dad":"jump"}}
+      ]
+    },
+    {
+      "id": "c05", "beat": "4. 갈라진 지점", "caption": "시장 — 닷새마다 서던 장",
+      "scene": {
+        "bg": "full/five-day-market",
+        "pan": "right",
+        "props": [
+          {"art":"prop/peddler","x":-0.1,"y":0.64,"w":0.17,"motion":"walk","to":{"x":0.85}}
+        ]
+      },
+      "lines": [
+        {"who":"narr","text":"먼저 시장. 조선 후기에는 닷새마다 한 번 서는 오일장이 전국에 퍼졌습니다.","en":"First, the market. In late Joseon Korea, markets that opened once every five days spread across the country.","sfx":"page","fx":"flash"},
+        {"who":"narr","text":"천 곳이 넘었다고 해요.","en":"More than a thousand of them, it's said.","pop":"1,000곳+"},
+        {"who":"narr","text":"장날이면 상인들이 물건을 이고 지고 모였다가, 다음 장터로 옮겨 갔습니다.","en":"On market day, traders gathered with goods on their heads and backs, then moved on to the next market."},
+        {"who":"narr","text":"매일 문을 여는 상설시장은, 1905년 서울 종로의 광장시장이 시작으로 꼽힙니다.","en":"The first permanent, open-every-day market is usually said to be Gwangjang Market in Jongno, Seoul, in 1905.","tts":"매일 문을 여는 상설시장은, 천구백오년 서울 종로의 광장시장이 시작으로 꼽힙니다."}
+      ]
+    },
+    {
+      "id": "c06", "beat": "4. 갈라진 지점", "caption": "시장 = 사장님 물건",
+      "scene": {
+        "bg": "bg/market-alley",
+        "props": [
+          {"art":"prop/stall-front","x":0.3,"y":0.74,"w":0.44,"front":true},
+          {"art":"prop/bean-sprouts","x":0.62,"y":0.46,"w":0.13,"at":2,"enter":"pop","float":true}
+        ],
+        "actors": [
+          {"id":"granny","art":"granny/normal","x":0.3,"h":0.55}
+        ]
+      },
+      "lines": [
+        {"who":"narr","text":"시장 물건은 대개 그 가게 사장님 겁니다.","en":"At a market, the goods usually belong to the owner of that stall."},
+        {"who":"narr","text":"직접 사 오고, 직접 팔고, 남으면 사장님이 떠안죠.","en":"They buy it themselves, sell it themselves, and if it doesn't sell, it's their loss."},
+        {"who":"narr","text":"그래서 사장님 마음대로 '하나 더'가 됩니다. 덤은 주인만 줄 수 있거든요.","en":"That's why the owner can say \"here, have one more.\" Only the owner can give a freebie.","tts":"그래서 사장님 마음대로, 하나 더가 됩니다. 덤은 주인만 줄 수 있거든요.","pop":"덤 = 주인 마음","pose":{"granny":"granny/give"}},
+        {"who":"granny","text":"내 물건인디, 내 맘이지!","en":"It's my stuff, so it's up to me!","pose":{"granny":"granny/banter"},"focus":"granny"},
+        {"who":"narr","text":"가격표가 없어도 되는 이유도 같습니다. 물어보면 대답해 줄 주인이, 그 자리에 서 있으니까요.","en":"That's also why it doesn't need a price tag. The owner is standing right there to answer you.","pose":{"granny":"granny/normal"}}
+      ]
+    },
+    {
+      "id": "c07", "beat": "4. 갈라진 지점", "caption": "백화점 — 1852년, 파리",
+      "scene": {
+        "bg": "full/bon-marche",
+        "pan": "left",
+        "props": [
+          {"art":"prop/boucicaut","x":0.72,"y":0.58,"w":0.26,"enter":"right","motion":"sway"},
+          {"art":"prop/price-tag","x":0.36,"y":0.42,"w":0.2,"rot":-8,"at":2,"enter":"drop","motion":"pulse"}
+        ]
+      },
+      "lines": [
+        {"who":"narr","text":"다음은 백화점. 1852년 파리의 봉 마르셰라는 가게에서,","en":"Next, the department store. In 1852, at a Paris shop called Le Bon Marché,","tts":"다음은 백화점. 천팔백오십이년 파리의 봉 마르셰라는 가게에서,","sfx":"page","fx":"flash"},
+        {"who":"narr","text":"아리스티드 부시코라는 사람이 이상한 장사를 시작합니다.","en":"a man named Aristide Boucicaut started doing business in a strange new way."},
+        {"who":"narr","text":"물건마다 가격표를 붙여서 흥정을 없애고,","en":"He put a price tag on every item, so nobody had to haggle.","fx":"zoom"},
+        {"who":"narr","text":"안 사고 구경만 해도 되게 하고, 마음에 안 들면 바꿔 주기까지.","en":"He let people just look without buying. He even took things back if you didn't like them."},
+        {"who":"narr","text":"그러니까 가격표는, 퍼진 지 백칠십 년쯤밖에 안 된 신제품입니다.","en":"So the price tag is a fairly new product. It only caught on about 170 years ago.","pop":"가격표 = 신제품"},
+        {"who":"narr","text":"할머니 말씀이 맞았어요. 그 전에는, 사람이 가격표였습니다.","en":"The grandmother was right. Before that, a person was the price tag."}
+      ]
+    },
+    {
+      "id": "c08", "beat": "4. 갈라진 지점", "caption": "백화점 = 브랜드 물건",
+      "scene": {
+        "bg": "full/dept-floors",
+        "pan": "up",
+        "props": [
+          {"art":"prop/shopping-bag","x":0.8,"y":0.44,"w":0.16,"at":2,"enter":"pop","float":true}
+        ]
+      },
+      "lines": [
+        {"who":"narr","text":"우리나라에는 1930년대 서울에 백화점이 들어옵니다.","en":"Department stores arrived in Korea in 1930s Seoul.","tts":"우리나라에는 천구백삼십년대 서울에 백화점이 들어옵니다.","sfx":"page","fx":"flash"},
+        {"who":"narr","text":"그런데 백화점에서 파는 옷과 화장품은, 대부분 백화점 물건이 아닙니다.","en":"But most of the clothes and cosmetics sold in a Korean department store don't belong to the store."},
+        {"who":"narr","text":"브랜드가 물건을 들고 들어와서 팔고, 팔린 만큼 백화점이 수수료를 받는 방식이 많아요.","en":"Often the brands bring in their own goods and sell them, and the store takes a commission on what sells.","pop":"수수료"},
+        {"who":"narr","text":"그러니까 백화점은, 아주 고급스러운 건물주에 가깝습니다.","en":"So a department store is closer to a very fancy landlord.","pop":"건물주!","sfx":"dudung","fx":"shake"}
+      ]
+    },
+    {
+      "id": "c09", "beat": "4. 갈라진 지점", "caption": "마트 — 1993년, 창동",
+      "scene": {
+        "bg": "full/mart-1993",
+        "pan": "right",
+        "props": [
+          {"art":"prop/cart","x":-0.15,"y":0.68,"w":0.26,"motion":"walk","to":{"x":0.8}}
+        ]
+      },
+      "lines": [
+        {"who":"narr","text":"마지막, 마트. 1993년 서울 창동에 우리나라 첫 대형 할인점이 문을 엽니다.","en":"Last, the mart. In 1993, Korea's first big discount store opened in Chang-dong, Seoul.","tts":"마지막, 마트. 천구백구십삼년 서울 창동에 우리나라 첫 대형 할인점이 문을 엽니다.","sfx":"page","fx":"flash"},
+        {"who":"narr","text":"마트는 공장에서 물건을 한꺼번에 많이 사 옵니다. 사 온 순간부터 마트 물건이에요.","en":"A mart buys huge amounts straight from the makers. From that moment, the goods are the mart's."},
+        {"who":"narr","text":"그래서 가격도, 1+1도, 마트가 정합니다.","en":"So the mart sets the price, and the buy-one-get-one deals too.","tts":"그래서 가격도, 원 플러스 원도, 마트가 정합니다.","pop":"1+1"},
+        {"who":"narr","text":"참고로 마트는, 영어로 '장터'라는 뜻입니다.","en":"By the way, \"mart\" is just an English word for marketplace.","tts":"참고로 마트는, 영어로 장터라는 뜻입니다."},
+        {"who":"narr","text":"그러니까 아이의 질문은 사실, 장터랑 시장이랑 백화점은 뭐가 달라요, 였던 겁니다.","en":"So my kid's question was really: what's the difference between a marketplace, a market and a department store?","pop":"장터 vs 시장?"}
+      ]
+    },
+    {
+      "id": "c10", "beat": "5. 한 문장 정리", "style": "triptych",
+      "triptych": [
+        {"art":"prop/icon-market","name":"시장","label":"사장님 물건"},
+        {"art":"prop/cart","name":"마트","label":"마트 물건"},
+        {"art":"prop/shopping-bag","name":"백화점","label":"브랜드 물건"}
+      ],
+      "lines": [
+        {"who":"narr","text":"정리하면 이렇습니다.","en":"So, to sum up:"},
+        {"who":"narr","text":"시장은 사장님 물건,","en":"At a market, it's the owner's goods.","sfx":"stinger"},
+        {"who":"narr","text":"마트는 마트 물건,","en":"At a mart, it's the mart's goods."},
+        {"who":"narr","text":"백화점은 브랜드 물건입니다.","en":"At a department store, it's the brands' goods."}
+      ]
+    },
+    {
+      "id": "c11", "beat": "6. 아이 눈높이로 번역", "caption": "다시, 채소 가게 앞",
+      "scene": {
+        "bg": "bg/market-alley",
+        "props": [
+          {"art":"prop/stall-front","x":0.2,"y":0.74,"w":0.4,"front":true}
+        ],
+        "actors": [
+          {"id":"granny","art":"granny/normal","x":0.2},
+          {"id":"kid","art":"common/kid/normal","x":0.5},
+          {"id":"dad","art":"common/dad/normal","x":1.15}
+        ]
+      },
+      "lines": [
+        {"who":"narr","text":"저는 뻥튀기 기계 뒤에서 나와, 아이 옆에 섰습니다.","en":"I came out from behind the machine and stood next to my kid.","move":{"dad":0.74}},
+        {"who":"dad","text":"아까 아빠가 비싼 데, 싼 데로 나눴지? 그거 틀린 말이었어.","en":"Remember how Dad sorted them into pricey and cheap? That was wrong.","pose":{"dad":"common/dad/panic"}},
+        {"who":"dad","text":"진짜 다른 건, 물건 주인이 누구냐야.","en":"The real difference is who owns the stuff.","pose":{"dad":"common/dad/explain"}},
+        {"who":"dad","text":"시장은 가게마다 사장님이 있어서, 여기 있는 건 전부 할머니 거야. 그래서 할머니가 하나 더 줄 수도 있어.","en":"At a market every stall has its own boss, so everything here is the grandma's. That's why she can give you one extra."},
+        {"who":"dad","text":"마트는 마트가 물건을 엄청 많이 사 와서, 마트 물건으로 파는 곳이고.","en":"A mart buys a whole lot of stuff and sells it as the mart's own."},
+        {"who":"dad","text":"백화점은 여러 회사 가게들이 큰 건물에 모여 있는 곳이야. 물건은 각자 회사 거고.","en":"And a department store is lots of companies' shops gathered in one big building. The stuff belongs to each company."},
+        {"who":"dad","text":"그러니까 어디가 더 좋은 데, 나쁜 데가 아니야. 주인이 다른 거야.","en":"So it's not that one place is better or worse. They just have different owners.","pose":{"dad":"common/dad/normal"}},
+        {"who":"narr","text":"아이가 할머니를 빤히 보더니, 다가가서 물었습니다.","en":"My kid stared at the grandmother for a while, then walked up and asked:","move":{"kid":0.42}}
+      ]
+    },
+    {
+      "id": "c12", "beat": "6. 아이 눈높이로 번역",
+      "scene": {
+        "bg": "bg/market-alley",
+        "props": [
+          {"art":"prop/stall-front","x":0.2,"y":0.74,"w":0.4,"front":true}
+        ],
+        "actors": [
+          {"id":"granny","art":"granny/normal","x":0.2},
+          {"id":"kid","art":"common/kid/normal","x":0.42},
+          {"id":"dad","art":"common/dad/normal","x":0.74}
+        ]
+      },
+      "lines": [
+        {"who":"kid","text":"할머니, 이거 전부 할머니 거예요?","en":"Grandma, is all of this yours?","pose":{"kid":"common/kid/ask"},"focus":"kid"},
+        {"who":"granny","text":"그럼. 새벽에 내가 다 떼 온 거지.","en":"Of course. I went and got all of it myself at dawn.","focus":"granny"},
+        {"who":"kid","text":"그럼 콩나물 천 원어치 주세요. 덤도 주세요!","en":"Then a thousand won of bean sprouts, please. And a freebie!","pose":{"kid":"common/kid/wow"},"act":{"kid":"jump"}},
+        {"who":"granny","text":"이놈 봐라.","en":"Well, look at this one.","pose":{"granny":"granny/laugh"},"focus":"granny"}
+      ]
+    },
+    {
+      "id": "c12b", "beat": "6. 아이 눈높이로 번역",
+      "scene": {
+        "bg": "bg/market-alley",
+        "props": [
+          {"art":"prop/stall-front","x":0.2,"y":0.74,"w":0.4,"front":true},
+          {"art":"prop/bean-sprouts","x":0.33,"y":0.5,"w":0.11,"at":0,"enter":"pop","float":true}
+        ],
+        "actors": [
+          {"id":"granny","art":"granny/give","x":0.2},
+          {"id":"kid","art":"common/kid/wow","x":0.42},
+          {"id":"dad","art":"common/dad/normal","x":0.74}
+        ]
+      },
+      "lines": [
+        {"who":"narr","text":"할머니는 콩나물을 한 줌 더 얹어 주셨습니다.","en":"The grandmother added one more handful of bean sprouts."},
+        {"who":"narr","text":"가격표에는 없는 한 줌이었습니다.","en":"A handful that isn't on any price tag.","pose":{"dad":"common/dad/proud"}}
+      ]
+    },
+    {
+      "id": "c13", "beat": "7. 남는 이야기",
+      "scene": {
+        "bg": "bg/market-alley",
+        "props": [
+          {"art":"prop/stall-front","x":0.2,"y":0.74,"w":0.4,"front":true}
+        ],
+        "actors": [
+          {"id":"granny","art":"granny/laugh","x":0.2},
+          {"id":"kid","art":"common/kid/wow","x":0.42},
+          {"id":"dad","art":"common/dad/proud","x":0.74}
+        ]
+      },
+      "lines": [
+        {"who":"narr","text":"장 보러 갈 때 아이랑 한번 맞혀 보세요. 이건 누구 물건일까.","en":"Next time you go shopping, try guessing with your kid: whose goods are these?"},
+        {"who":"narr","text":"그리고 시장에 가면, 가격표를 찾지 말고 한번 물어보세요. 대답해 주는 사람이 있습니다.","en":"And at the market, don't look for a price tag. Just ask. There's someone there to answer."},
+        {"who":"granny","text":"아빠도 다음에 또 와. 그땐 내가 문제 낼 거여!","en":"You come back too, Dad. Next time I'm the one asking the questions!","pose":{"granny":"granny/banter","dad":"common/dad/panic"},"focus":"granny"},
+        {"who":"narr","text":"마지막 한 소리는, 덤으로 받았습니다.","en":"That last talking-to was my freebie.","pop":"한 소리 +1 (덤)","sfx":"dudung","pose":{"dad":"common/dad/proud"}}
+      ]
+    },
+    {
+      "id": "c14", "beat": "7. 남는 이야기", "caption": "집에 가는 길",
+      "scene": {
+        "bg": "bg/market-alley",
+        "pan": "right",
+        "actors": [
+          {"id":"kid","art":"common/kid/normal","x":0.3,"enter":"left"},
+          {"id":"dad","art":"common/dad/proud","x":0.62,"enter":"left"}
+        ]
+      },
+      "lines": [
+        {"who":"kid","text":"아빠, 근데 아빠는 왜 온몸에 털이 났어요? 나는 없는데.","en":"Dad, why do you have hair all over your body? I don't.","pose":{"kid":"common/kid/ask"},"focus":"kid","cutin":"common/cutin/kid-ask"},
+        {"who":"dad","text":"...콩나물 시들겠다. 빨리 가자.","en":"...The bean sprouts are wilting. Let's hurry.","tts":"콩나물 시들겠다. 빨리 가자.","sfx":"boing","pose":{"dad":"common/dad/panic"},"cutin":"common/cutin/dad-panic","move":{"dad":1.3}},
+        {"who":"kid","text":"아빠, 같이 가요!","en":"Dad, wait for me!","pose":{"kid":"common/kid/laugh"},"move":{"kid":1.2}}
+      ]
+    },
+    {
+      "id": "c15", "beat": "7. 남는 이야기", "caption": "다음 편: 아빠는 왜 털이 났어요?",
+      "scene": {
+        "bg": "full/next-teaser",
+        "pan": "left"
+      },
+      "lines": [
+        {"who":"narr","text":"다음 편에서 뵙겠습니다. 저는 그 전에, 또 검색 좀 하고 오겠습니다.","en":"See you next time. I've got some more searching to do before then."}
+      ]
+    },
+    {
+      "id": "end", "beat": "", "style": "end", "art": "full/next-teaser",
+      "end": {"series":"여덟 살의 질문 · 3편","title":"마트 · 시장 · 백화점","next":"다음 편 — 아빠는 왜 온몸에 털이 났어요?"},
+      "lines": []
+    }
+  ]
+}

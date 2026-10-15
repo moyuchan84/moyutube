@@ -1,0 +1,102 @@
+{
+  "title": "2편 · 아파트 · 빌라 · 오피스텔, 뭐가 달라요?",
+  "common": [
+    "common/dad/normal",
+    "common/dad/panic",
+    "common/dad/shock",
+    "common/dad/explain",
+    "common/dad/think",
+    "common/dad/proud",
+    "common/dad/search",
+    "common/kid/normal",
+    "common/kid/ask",
+    "common/kid/wow",
+    "common/kid/doubt",
+    "common/cutin/dad-panic",
+    "common/cutin/dad-shock",
+    "common/cutin/dad-proud",
+    "common/cutin/kid-ask",
+    "common/cutin/kid-doubt",
+    "common/bg/dining-room",
+    "common/bg/kid-room-night"
+  ],
+  "items": [
+    {
+      "id": "full/law-book",
+      "kind": "full",
+      "title": "장면 — 건축법을 뒤져도 '빌라'는 없다",
+      "cuts": "c05",
+      "desc": "A dim study desk at night lit by one desk lamp. A gigantic, absurdly thick old law book lies open in the middle, its pages filled with rows of blank gray lines instead of writing. A huge magnifying glass hovers over one page, and inside the lens there is only an empty white gap between the lines where something should be listed. Loose pages fly up into the air, a cold cup of coffee and a pile of crumpled sticky notes sit beside the book. No people."
+    },
+    {
+      "id": "full/mapo-1962",
+      "kind": "full",
+      "title": "장면 — 1962년, 마포아파트",
+      "cuts": "c06",
+      "desc": "Seoul, 1962. Several brand-new plain six-storey concrete apartment blocks stand in a row on bare dirt ground, with small identical windows and laundry hanging from a few of them, low tiled-roof houses and hills far behind. In the foreground a small crowd of Korean people in early-1960s clothes (a man in a fedora and baggy suit, a grandmother in hanbok carrying a bundle on her head, a boy in a school cap) stand with their heads tilted all the way back and their mouths hanging open, gawking up at the buildings; one man's hat is falling off. Bright daytime."
+    },
+    {
+      "id": "full/piloti-villa",
+      "kind": "full",
+      "title": "장면 — 다섯 층처럼 보이는 빌라 (1층은 주차장)",
+      "cuts": "c07",
+      "desc": "A narrow Korean residential alley in the daytime. In the middle stands a red-brick multi-household building: the ground level is an open pilotis car park with only bare concrete pillars and two small cars squeezed under it, and exactly four residential floors with windows and small balconies stacked above it, so the whole building is five levels tall. Next to it a confused Korean delivery man on a scooter has stopped and is counting the floors on his fingers with a deeply puzzled face, sweat drops flying. Overhead power lines, potted plants by the entrance."
+    },
+    {
+      "id": "full/roman-villa",
+      "kind": "full",
+      "title": "장면 — 고대 로마 부자의 별장",
+      "cuts": "c08",
+      "desc": "Ancient Rome, a sunny countryside hill. A luxurious Roman country villa with white columns, a red terracotta tile roof, a courtyard fountain and cypress trees, vineyards rolling away behind it. In front, an extremely smug, chubby Roman aristocrat in a white toga and a laurel wreath lounges sideways on a couch, dangling a bunch of grapes over his wide-open mouth, while a servant fans him with a giant feather fan. European people, warm golden light."
+    },
+    {
+      "id": "full/villa-ad-1980s",
+      "kind": "full",
+      "title": "장면 — 1980년대, 분양 광고에 붙은 새 이름",
+      "cuts": "c09",
+      "desc": "A Korean neighborhood street in the 1980s. A small, plain, brand-new four-storey red-brick multi-household building. In front of it a slick Korean real-estate salesman with permed hair, a wide-lapel checked suit and a huge toothy grin dramatically yanks a cloth off a big blank signboard with a flourish, confetti and sparkles bursting around it, as if revealing a glamorous new name. A young couple in 1980s clothes stare at the blank sign with dazzled star-filled eyes and clasped hands. A blank banner hangs across the building. Daytime."
+    },
+    {
+      "id": "full/officetel-room",
+      "kind": "full",
+      "title": "장면 — 반은 사무실, 반은 침실",
+      "cuts": "c10",
+      "desc": "A cutaway side view of one single small studio room, split exactly down the middle. The left half is an office: a desk with a computer monitor, stacks of paper, a desk phone, a swivel chair and a filing cabinet under cold white light. The right half is a bedroom: a single bed with a rumpled blanket, a bedside lamp, slippers and a tiny kitchenette under warm yellow light. Standing right on the dividing line is a tired Korean office worker who is also split in two: a neat shirt, tie and suit jacket on top, striped pajama trousers and bare feet below, holding a briefcase in one hand and a pillow in the other, yawning enormously."
+    },
+    {
+      "id": "bg/window-view",
+      "kind": "bg",
+      "title": "배경 — 창가 (건너편 빌라가 보이는 거실)",
+      "cuts": "c12, c12b, c13",
+      "desc": "The inside of a Korean apartment living room at dusk, looking straight at a very wide window that fills most of the back wall, with light curtains pulled to both sides. Through the window, across the street, stands a red-brick building with an open pilotis car park on the ground level and exactly four residential floors above it, clearly visible and centered; behind it, taller slab-shaped apartment towers with many lit windows against an orange evening sky. A low windowsill with two small potted plants."
+    },
+    {
+      "id": "prop/apartment",
+      "kind": "prop",
+      "title": "소품 — 아파트 건물",
+      "cuts": "c11, 썸네일",
+      "desc": "A tall slab-shaped Korean apartment block seen straight from the front: about twelve floors of identical balconies in neat rows, a flat roof with a water tank, pale gray and cream walls. Slightly chubby, toy-like proportions. No people."
+    },
+    {
+      "id": "prop/villa",
+      "kind": "prop",
+      "title": "소품 — 빌라 건물",
+      "cuts": "c11, 썸네일",
+      "desc": "A small Korean red-brick multi-household building seen straight from the front: an open pilotis car park with bare pillars and one small car on the ground level, exactly four floors of windows above it, a flat roof with a green waterproof coating, and a blank signboard above the entrance. Slightly chubby, toy-like proportions. No people."
+    },
+    {
+      "id": "prop/officetel",
+      "kind": "prop",
+      "title": "소품 — 오피스텔 건물",
+      "cuts": "c11, 썸네일",
+      "desc": "A slim modern glass-and-steel officetel tower seen straight from the front: about fifteen floors of blue glass curtain wall, a convenience-store-like shopfront with a blank sign on the ground floor, and one window on a middle floor where a tiny desk lamp and a tiny bed are both visible. Slightly chubby, toy-like proportions. No people."
+    },
+    {
+      "id": "full/next-teaser",
+      "kind": "full",
+      "title": "장면 — 다음 편 예고 (마트 · 시장 · 백화점)",
+      "cuts": "c14, 끝 화면",
+      "desc": "A Korean street at dusk with three very different places to shop standing side by side and filling the frame: on the left a huge boxy discount mart with a giant shopping cart parked in front of it, in the middle a lively traditional market alley under striped awnings with crates of vegetables and fish stalls, on the right an elegant department store with a grand glass entrance and a revolving door. A huge cartoon question mark shape floats in the sky above them. All signs are blank. No people."
+    }
+  ]
+}

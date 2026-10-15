@@ -1,0 +1,324 @@
+{
+  "rawVoice": true,
+  "speed": 1.15,
+  "title": "아빠는 왜 거기에 털이 나요?",
+  "bgm": "cheerful",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "0. 지금 상황",
+      "caption": "동네 이발소",
+      "scene": {"bg":"bg/barbershop","actors":[{"id":"kid","art":"common/kid/normal","x":0.2},{"id":"dad","art":"dad/cape","x":0.52},{"id":"barber","art":"barber/normal","x":0.8,"idle":"sway"}]},
+      "lines": [
+        {"who":"narr","text":"지금 저는 동네 이발소 의자에, 하얀 보자기를 두르고 앉아 있습니다.","en":"Right now I'm sitting in a neighborhood barber's chair, wrapped in a white cape."},
+        {"who":"barber","text":"가만있어 봐. 지금 고개 돌리면 앞머리 없어진다.","en":"Hold still. Turn your head now and your bangs are gone.","focus":"barber","cutin":"cutin/barber","fx":"zoom"},
+        {"who":"narr","text":"네. 앞머리는 원래도 별로 없습니다.","en":"Sure. Not that I have much in the way of bangs to begin with.","sfx":"boing","pose":{"dad":"dad/cape-panic"}},
+        {"who":"narr","text":"아들 질문 하나에 이렇게 됐습니다. 어젯밤으로 돌아가 보겠습니다.","en":"One question from my son, and here we are. Let's rewind to last night.","pop":"어젯밤","sfx":"rewind","fx":"flash"}
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "1. 그 질문",
+      "caption": "어젯밤 · 샤워 중",
+      "scene": {"bg":"full/bathroom-door"},
+      "lines": [
+        {"who":"narr","text":"지난번 시장에서 피해 갔던 그 질문이, 어젯밤 샤워할 때 더 구체적으로 돌아왔습니다.","en":"The question I dodged at the market came back last night in the shower, much more specific."},
+        {"who":"kid","text":"아빠, 왜 아빠는 고추에 털이 있어요?","en":"Dad, why do you have hair down there?","fx":"zoom"},
+        {"who":"kid","text":"나는 없는데.","en":"I don't."},
+        {"who":"narr","text":"샤워기 물소리만 들렸습니다.","en":"All I could hear was the shower running."}
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "2. 얼버무린 순간",
+      "scene": {"bg":"full/bathroom-door"},
+      "lines": [
+        {"who":"dad","text":"어... 그게... 어른 되면 나.","en":"Uh... well... it grows when you're a grown-up.","tts":"어, 그게, 어른 되면 나.","sfx":"boing"},
+        {"who":"kid","text":"왜요?","en":"Why?"},
+        {"who":"dad","text":"어... 비누! 비누 어디 갔지?","en":"Uh... soap! Where'd the soap go?","tts":"어, 비누! 비누 어디 갔지?","sfx":"boing"},
+        {"who":"narr","text":"그날 저는 비누를 세 번 찾았습니다. 비누는 계속 제 손에 있었고요.","en":"I looked for the soap three times that night. It was in my hand the whole time.","pop":"비누 찾기 ×3"},
+        {"who":"narr","text":"그리고 오늘, 그 질문이 이발소에서 다시 나왔습니다.","en":"And today, it came up again. At the barbershop."}
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "2. 얼버무린 순간",
+      "caption": "다시, 이발소",
+      "scene": {"bg":"bg/barbershop","actors":[{"id":"kid","art":"common/kid/normal","x":0.2,"idle":"bounce"},{"id":"dad","art":"dad/cape","x":0.52},{"id":"barber","art":"barber/normal","x":0.8}]},
+      "lines": [
+        {"who":"kid","text":"할아버지! 아빠는 왜 고추에 털이 있어요?","en":"Grandpa! Why does my dad have hair down there?","pose":{"kid":"common/kid/ask"},"act":{"kid":"jump"},"focus":"kid"},
+        {"who":"kid","text":"어제 물어봤는데, 아빠가 비누만 찾았어요.","en":"I asked him yesterday, but he just kept looking for the soap.","sfx":"dudung","pose":{"dad":"dad/cape-panic"},"act":{"dad":"shiver"}},
+        {"who":"barber","text":"허허. 비누를 찾았어?","en":"Ha. He looked for the soap?","focus":"barber","cutin":"cutin/barber","fx":"zoom"},
+        {"who":"barber","text":"털 얘기면 잘 왔다. 할아버지가 남의 털을 오십 년 깎았어.","en":"If it's about hair, you came to the right place. I've been cutting other people's hair for fifty years.","pose":{"barber":"barber/talk"}}
+      ]
+    },
+    {
+      "id": "c03b",
+      "beat": "2. 얼버무린 순간",
+      "scene": {"bg":"bg/barbershop","actors":[{"id":"kid","art":"common/kid/ask","x":0.2},{"id":"dad","art":"dad/cape-panic","x":0.52},{"id":"barber","art":"barber/talk","x":0.8}]},
+      "lines": [
+        {"who":"dad","text":"아, 할아버님. 애가 아직 뭘 몰라서...","en":"Oh, sir, he's just a kid, he doesn't know...","tts":"아, 할아버님. 애가 아직 뭘 몰라서.","act":{"dad":"nod"}},
+        {"who":"narr","text":"제가 말을 끝내기도 전에, 아이가 한 발 더 나갔습니다.","en":"Before I could finish, my kid went one step further."}
+      ]
+    },
+    {
+      "id": "c03c",
+      "beat": "2. 얼버무린 순간",
+      "scene": {"bg":"bg/barbershop","actors":[{"id":"kid","art":"common/kid/ask","x":0.2},{"id":"dad","art":"dad/cape-panic","x":0.52},{"id":"barber","art":"barber/talk","x":0.8}]},
+      "lines": [
+        {"who":"kid","text":"그럼 할아버지는 왜 머리에 털이 없어요?","en":"Then why don't you have any hair on your head, Grandpa?","focus":"kid","cutin":"common/cutin/kid-ask","sfx":"dudung","act":{"dad":"shiver"}},
+        {"who":"barber","text":"허허허! 이놈 봐라.","en":"Ha ha ha! Look at this one.","pose":{"barber":"barber/laugh"},"focus":"barber"},
+        {"who":"barber","text":"그건 맨 나중에 알려 주마. 제일 재미있는 거라.","en":"I'll tell you that one last. It's the best part."}
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "3. 왜 다들 헷갈리나",
+      "caption": "보자기 속",
+      "scene": {"bg":"bg/barbershop","actors":[{"id":"dad","art":"dad/cape-search","x":0.52,"idle":"shiver"}]},
+      "lines": [
+        {"who":"narr","text":"이발소가 두 번째로 조용해졌습니다.","en":"The barbershop went quiet for the second time.","pop":"정적 ×2"},
+        {"who":"narr","text":"할아버지가 수건을 데우러 간 사이, 저는 보자기를 머리끝까지 올리고 휴대폰을 켰습니다.","en":"While he went to warm up a towel, I pulled the cape over my head and turned on my phone."},
+        {"who":"docu","text":"아빠라는 생물은, 궁지에 몰리면, 보자기 속에서도 검색을 한다.","en":"The creature known as Dad, when cornered, will search the internet even from under a barber's cape.","focus":"dad"},
+        {"who":"narr","text":"헷갈릴 만합니다. 뼈가 몇 개인지는 배웠어도, 털이 왜 나는지는 안 배웠거든요.","en":"It's understandable. We learned how many bones we have, but never why hair grows."},
+        {"who":"narr","text":"오히려 감정으로 배웠죠. 밀어야 하는 것, 민망한 것. 그래서 아이가 물으면 대답보다 '쉿'이 먼저 나옵니다.","en":"If anything we learned it as a feeling: something to shave, something embarrassing. So when a kid asks, 'shh' comes before any answer.","tts":"오히려 감정으로 배웠죠. 밀어야 하는 것, 민망한 것. 그래서 아이가 물으면 대답보다 쉿이 먼저 나옵니다.","pop":"쉿!"},
+        {"who":"narr","text":"오늘은 쉿 대신 세 가지만 봅니다. 털은 왜 나는지, 왜 하필 거기인지, 왜 어떤 데선 빠지는지.","en":"Today, instead of shushing: three things. Why hair grows, why there of all places, and why it falls out in some places.","pop":"왜? · 왜 거기? · 왜 빠져?","fx":"zoom"}
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "4. 갈라진 지점",
+      "caption": "털은 원래 다 있다",
+      "scene": {"bg":"full/fuzz-arm","pan":"right"},
+      "lines": [
+        {"who":"barber","text":"얘야, 팔 좀 이리 줘 봐라. 창문 쪽으로.","en":"Come here, kiddo, give me your arm. Toward the window.","sfx":"page"},
+        {"who":"narr","text":"햇빛에 비추니까 보였습니다. 아이 팔에도, 털이 빽빽했어요.","en":"In the sunlight you could see it. My kid's arm was covered in hair too.","fx":"zoom"},
+        {"who":"narr","text":"사람 몸에는 털집이 오백만 개쯤 있습니다. 손바닥, 발바닥, 입술만 빼고 거의 온몸에요. 침팬지랑 크게 다르지 않은 수입니다.","en":"The human body has about five million hair follicles, almost everywhere except the palms, soles and lips. Not so different from a chimpanzee.","pop":"털집 약 500만 개"},
+        {"who":"barber","text":"그러니까 털이 없는 게 아니여. 가늘어서 안 보이는 거지.","en":"So it's not that you have no hair. It's just too fine to see."}
+      ]
+    },
+    {
+      "id": "c05b",
+      "beat": "4. 갈라진 지점",
+      "caption": "아주 오래전",
+      "scene": {"bg":"full/hairy-ancestor","pan":"right"},
+      "lines": [
+        {"who":"narr","text":"그럼 사람은 왜 털을 가늘게 바꿨을까요.","en":"So why did humans trade thick hair for fine hair?"},
+        {"who":"narr","text":"가장 많이 나오는 설명은 땀입니다. 털이 가늘어야 땀이 잘 말라서, 한낮에도 오래 걷고 뛸 수 있었다는 거죠. 정설은 아닙니다.","en":"The most common explanation is sweat: with fine hair, sweat dries fast, so we could walk and run for a long time even at midday. It's not settled."},
+        {"who":"narr","text":"어쨌든 인류는 털 대신 땀을 얻었습니다. 저는 그 능력으로, 주로 버스를 잡습니다.","en":"Either way, humanity traded fur for sweat. I mostly use that ability to catch buses.","pop":"진화의 결과 → 버스","sfx":"boing"}
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "4. 갈라진 지점",
+      "caption": "지키는 털",
+      "scene": {"bg":"full/guard-hair","pan":"down"},
+      "lines": [
+        {"who":"narr","text":"남은 털 중에는, 맡은 일이 분명한 털이 있습니다. 지키는 털이요.","en":"Some of the hair we kept has a clear job. Guard hair.","pop":"지키는 털","sfx":"page"},
+        {"who":"narr","text":"머리카락은 햇볕을 막고, 눈썹은 땀을 옆으로 흘려보내고, 속눈썹은 먼지 경보기, 코털은 필터입니다.","en":"Head hair blocks the sun, eyebrows steer sweat to the sides, eyelashes are a dust alarm, and nose hair is a filter."},
+        {"who":"barber","text":"그래서 코털은 다 뽑으면 안 돼. 삐져나온 것만 살짝 다듬는 거여.","en":"That's why you don't pluck all your nose hair. You just trim the ones poking out."}
+      ]
+    },
+    {
+      "id": "c06b",
+      "beat": "4. 갈라진 지점",
+      "scene": {"bg":"bg/barbershop","props":[{"art":"prop/shaving-brush","x":0.3,"y":0.5,"w":0.1,"at":1,"enter":"pop","motion":"sway"}],"actors":[{"id":"kid","art":"common/kid/normal","x":0.2},{"id":"dad","art":"dad/cape","x":0.52},{"id":"barber","art":"barber/normal","x":0.8}]},
+      "lines": [
+        {"who":"barber","text":"그리고 털은 더듬이다. 눈 감아 봐라.","en":"And hair is an antenna. Close your eyes.","move":{"barber":0.38}},
+        {"who":"kid","text":"으히히! 간지러워요!","en":"Hee hee! That tickles!","pose":{"kid":"common/kid/laugh"},"act":{"kid":"jump"}},
+        {"who":"barber","text":"털끝만 건드렸는데 알지? 털 뿌리마다 신경이 감겨 있어서 그렇다. 모기가 앉아도 아는 거여.","en":"I only touched the tips, and you felt it, right? Every hair root has a nerve wrapped around it. That's how you know when a mosquito lands.","pose":{"barber":"barber/talk"},"focus":"barber"}
+      ]
+    },
+    {
+      "id": "c07",
+      "beat": "4. 갈라진 지점",
+      "caption": "흔적만 남은 털",
+      "scene": {"bg":"full/goosebump-cat","pan":"left"},
+      "lines": [
+        {"who":"narr","text":"털 한 올 한 올이, 아주 작은 더듬이였던 겁니다.","en":"Every single hair is a tiny antenna."},
+        {"who":"narr","text":"반대로, 하는 일이 거의 없어 보이는 털도 있습니다. 흔적만 남은 털이요.","en":"On the other hand, some hair seems to do almost nothing. Leftover hair.","pop":"흔적만 남은 털","sfx":"page"},
+        {"who":"narr","text":"소름이 돋는 건 털집마다 털을 세우는 작은 근육이 있어서인데, 고양이는 그걸로 두 배로 커 보이고, 사람은 피부만 도돌도돌해집니다.","en":"Goosebumps happen because each follicle has a tiny muscle that raises the hair. A cat uses it to look twice its size. We just get bumpy skin."},
+        {"who":"narr","text":"털을 세우던 장치만, 남은 거예요.","en":"Only the machinery for raising fur is left."}
+      ]
+    },
+    {
+      "id": "c07b",
+      "beat": "4. 갈라진 지점",
+      "caption": "자라는 기간",
+      "scene": {"bg":"full/hair-timer","pan":"up"},
+      "lines": [
+        {"who":"narr","text":"그럼 왜 머리카락만 길게 자랄까요. 굵기가 아니라, 자라는 기간이 달라서입니다.","en":"Then why does only head hair grow long? Not because it's thicker, but because it grows for longer."},
+        {"who":"narr","text":"머리카락은 이 년에서 칠 년을 자라고, 눈썹은 몇 달이면 멈춥니다.","en":"Head hair grows for two to seven years. Eyebrows stop after a few months.","pop":"머리카락 2~7년 · 눈썹 몇 달"},
+        {"who":"barber","text":"눈썹이 머리처럼 자랐으면, 할아버지는 벌써 부자 됐다.","en":"If eyebrows grew like head hair, I'd be a rich man by now.","cutin":"cutin/barber","sfx":"boing"}
+      ]
+    },
+    {
+      "id": "c08",
+      "beat": "4. 갈라진 지점",
+      "caption": "왜 하필 거기?",
+      "scene": {"bg":"full/mirror-foam"},
+      "lines": [
+        {"who":"narr","text":"이제 아이가 진짜로 물어본 것. 어른이 되면, 왜 하필 거기에 털이 날까.","en":"Now, what my kid really asked. Why, when you grow up, does hair grow there of all places?","pop":"왜 하필 거기?","sfx":"page"},
+        {"who":"barber","text":"그 얘기는 그림으로 하자. 거울에다가.","en":"Let's do this one with a picture. On the mirror."},
+        {"who":"narr","text":"할아버지는 면도 거품으로 거울에 사람을 그리시더니, 거기는... 거품으로 덮으셨습니다.","en":"He drew a person on the mirror in shaving foam, and then covered that part... with more foam.","tts":"할아버지는 면도 거품으로 거울에 사람을 그리시더니, 거기는, 거품으로 덮으셨습니다.","pop":"거품 모자이크","fx":"zoom"},
+        {"who":"narr","text":"몸이 자랄 때가 되면 호르몬이 나오고, 그 자리에 원래 있던 솜털이 굵은 털로 바뀝니다. 새로 나는 게 아니라, 굵어지는 거예요.","en":"When the body is ready to grow up, hormones flow and the fine hair already there turns thick. It's not new hair. It's getting thicker.","pop":"새로 나는 것 ✕ · 굵어지는 것 ○"},
+        {"who":"narr","text":"보통 초등학교 고학년에서 중학생 무렵. 빠른 아이도, 늦은 아이도 다 정상입니다.","en":"Usually somewhere between late elementary school and middle school. Early or late, both are normal."}
+      ]
+    },
+    {
+      "id": "c08b",
+      "beat": "4. 갈라진 지점",
+      "caption": "땀샘은 두 종류",
+      "scene": {"bg":"full/two-glands","pan":"right"},
+      "lines": [
+        {"who":"narr","text":"그럼 왜 하필 겨드랑이고, 왜 하필 거기일까. 여기서 제일 놀랐습니다.","en":"So why the armpits, and why down there? This is what surprised me most."},
+        {"who":"narr","text":"땀샘은 두 종류입니다. 하나는 온몸에 깔려서, 물 같은 땀을 피부 밖으로 바로 내보내요.","en":"There are two kinds of sweat glands. One is all over the body and pushes watery sweat straight onto the skin."},
+        {"who":"narr","text":"다른 하나는 겨드랑이, 사타구니, 귓속 같은 몇 군데에만 모여 있습니다.","en":"The other kind is only in a few spots, like the armpits, the groin and the ear canal."},
+        {"who":"narr","text":"그리고 이 땀샘은, 피부 밖이 아니라 털집 안으로 나옵니다.","en":"And this kind doesn't open onto the skin. It opens into the hair follicle.","pop":"털집 안으로!","fx":"zoom"},
+        {"who":"narr","text":"털이 먼저가 아니었어요. 그 자리에 특별한 땀샘이 있고, 털은 그 짝입니다. 양초 심지처럼 땀을 붙잡았다가 천천히 퍼뜨려요. 그래서 알리는 털.","en":"The hair didn't come first. There's a special gland there and the hair is its partner, holding the sweat like a candle wick and slowly spreading it. Signal hair.","pop":"알리는 털"},
+        {"who":"narr","text":"이 땀은 원래 냄새가 거의 없고, 냄새는 그걸 먹은 피부 세균이 만듭니다. 정확히 무엇을 알리는 신호인지는, 과학자들도 아직 다투는 중이에요.","en":"This sweat barely smells on its own; the smell comes from skin bacteria that eat it. Exactly what it signals, scientists are still arguing about."},
+        {"who":"narr","text":"그리고 이 땀샘도 사춘기에 맞춰 켜집니다. 털과 샘이 한 세트예요.","en":"And these glands switch on at puberty too. Hair and gland are a set."}
+      ]
+    },
+    {
+      "id": "c09",
+      "beat": "4. 갈라진 지점",
+      "caption": "가슴털",
+      "scene": {"bg":"bg/barbershop","actors":[{"id":"kid","art":"common/kid/normal","x":0.2},{"id":"dad","art":"dad/cape","x":0.52},{"id":"barber","art":"barber/normal","x":0.8}]},
+      "lines": [
+        {"who":"kid","text":"할아버지는 가슴에도 털이 엄청 많아요!","en":"Grandpa, you have loads of hair on your chest!","pose":{"kid":"common/kid/wow"},"focus":"kid"},
+        {"who":"barber","text":"봤냐? 이게 할아버지 자랑이다.","en":"You noticed? That's my pride and joy.","pose":{"barber":"barber/chest"},"act":{"barber":"jump"},"focus":"barber"},
+        {"who":"kid","text":"아빠는 가슴에 털 별로 없는데.","en":"My dad doesn't have much chest hair.","pose":{"kid":"common/kid/doubt"}},
+        {"who":"barber","text":"그건 털집이 얼마나 예민하냐 차이여. 같은 호르몬이 와도, 확 반응하는 털집이 있고, 시큰둥한 털집이 있다.","en":"That's about how sensitive the follicles are. The same hormone comes along, and some follicles jump at it while others couldn't care less.","pose":{"barber":"barber/talk"}}
+      ]
+    },
+    {
+      "id": "c09b",
+      "beat": "4. 갈라진 지점",
+      "scene": {"bg":"bg/barbershop","actors":[{"id":"kid","art":"common/kid/normal","x":0.2},{"id":"dad","art":"dad/cape","x":0.52},{"id":"barber","art":"barber/talk","x":0.8}]},
+      "lines": [
+        {"who":"narr","text":"맞는 말씀입니다. 가슴털은 호르몬 양보다, 털집이 얼마나 민감한지와 타고난 유전자에 크게 달려 있어요. 그래서 가족끼리 닮고, 동아시아 사람은 평균적으로 몸털이 적은 편입니다.","en":"He's right. Chest hair depends less on hormone levels and more on how sensitive your follicles are and the genes you're born with. So it runs in families, and East Asians tend to have less body hair on average."},
+        {"who":"narr","text":"가슴털이 많다고 더 남자다운 것도, 없다고 덜한 것도 아닙니다.","en":"Having more chest hair doesn't make you more manly, and having less doesn't make you less.","pop":"털 많음 ≠ 남자다움"},
+        {"who":"dad","text":"...그렇죠, 할아버님?","en":"...Right, sir?","tts":"그렇죠, 할아버님?","pose":{"dad":"dad/cape-panic"}},
+        {"who":"barber","text":"그렇지. 근데 자랑은 할 수 있지.","en":"Right. But you can still show it off.","pose":{"barber":"barber/chest"},"sfx":"boing"}
+      ]
+    },
+    {
+      "id": "c10",
+      "beat": "4. 갈라진 지점",
+      "caption": "그리고, 대머리",
+      "scene": {"bg":"bg/barbershop","actors":[{"id":"kid","art":"common/kid/normal","x":0.2},{"id":"dad","art":"dad/cape","x":0.52},{"id":"barber","art":"barber/bald","x":0.8}]},
+      "lines": [
+        {"who":"barber","text":"자, 이제 아까 그 질문. 할아버지 머리는 왜 없냐.","en":"Now, that question from before. Why don't I have hair on my head?","focus":"barber","sfx":"page"},
+        {"who":"barber","text":"잘 봐라. 위는 없어도, 옆이랑 뒤는 멀쩡하지?","en":"Take a good look. Nothing on top, but the sides and back are fine, right?","cutin":"cutin/barber","fx":"zoom"},
+        {"who":"narr","text":"흔한 대머리는, 대부분 같은 호르몬 이야기입니다.","en":"The common kind of baldness is mostly the same hormone story."}
+      ]
+    },
+    {
+      "id": "c10b",
+      "beat": "4. 갈라진 지점",
+      "caption": "정수리 지도",
+      "scene": {"bg":"full/bald-map","pan":"down"},
+      "lines": [
+        {"who":"narr","text":"남성호르몬이 몸속에서 더 센 형태로 바뀌면, 턱과 가슴에서는 털을 굵게 만들고,","en":"When male hormone turns into a stronger form in the body, it makes hair thicker on the chin and chest,"},
+        {"who":"narr","text":"정수리와 앞머리에서는 거꾸로, 털을 점점 가늘고 짧게 만듭니다. 결국 솜털처럼 돼요.","en":"but on the crown and front of the scalp it does the opposite, making hair finer and shorter until it's like fuzz.","pop":"같은 호르몬, 반대 결과","fx":"zoom"},
+        {"who":"narr","text":"옆머리와 뒷머리는 이 신호를 별로 안 타서, 말굽 모양으로 남습니다. 모발이식 때 뒷머리를 떼어 옮기는 것도 그래서예요.","en":"The sides and back barely respond, so a horseshoe is left. That's also why hair transplants use hair from the back."},
+        {"who":"narr","text":"이 관계를 밝힌 사람이 1940년대 미국 학자 제임스 해밀턴이고, 대머리 단계표에 지금도 그 이름이 붙어 있습니다.","en":"The person who showed this link was the American scientist James Hamilton in the 1940s, and the baldness stage chart still carries his name.","tts":"이 관계를 밝힌 사람이 천구백사십 년대 미국 학자 제임스 해밀턴이고, 대머리 단계표에 지금도 그 이름이 붙어 있습니다.","pop":"1940년대 · 해밀턴"},
+        {"who":"narr","text":"민감한 정도는 유전입니다. 외할아버지를 보라는 말은 반만 맞아요. 엄마 쪽 유전자 하나가 크지만, 아빠 쪽 유전자도 여럿 섞입니다.","en":"The sensitivity is genetic. 'Look at your mother's father' is half right: one gene from the mother's side matters a lot, but many from the father's side mix in.","pop":"외할아버지만? → 반만 맞다"}
+      ]
+    },
+    {
+      "id": "c10c",
+      "beat": "4. 갈라진 지점",
+      "scene": {"bg":"bg/barbershop","actors":[{"id":"kid","art":"common/kid/normal","x":0.2},{"id":"dad","art":"dad/cape","x":0.52},{"id":"barber","art":"barber/laugh","x":0.8}]},
+      "lines": [
+        {"who":"barber","text":"그러니까 머리털이 가슴으로 이사 갔다는 말, 반은 맞는 거여.","en":"So when people say your head hair moved down to your chest, they're half right.","focus":"barber","cutin":"cutin/barber","sfx":"boing"},
+        {"who":"narr","text":"저는 그 말을 듣고, 거울 속 제 정수리를 오래 봤습니다.","en":"Hearing that, I stared at the top of my own head in the mirror for a long time.","pose":{"dad":"dad/cape-panic"},"pop":"이사 준비 중?"},
+        {"who":"barber","text":"면도하면 털이 굵어진다? 오십 년 밀어 봤는데 안 굵어지더라. 끝이 뭉툭해서 굵어 보이는 거지.","en":"Shaving makes hair thicker? I've shaved for fifty years and it doesn't. The blunt tip just looks thicker.","pose":{"barber":"barber/talk"}},
+        {"who":"narr","text":"실제로 1928년 실험에서도, 안 굵어졌습니다.","en":"A 1928 experiment found the same: no thicker.","tts":"실제로 천구백이십팔 년 실험에서도, 안 굵어졌습니다.","pop":"1928년 실험"}
+      ]
+    },
+    {
+      "id": "c11",
+      "beat": "5. 한 문장 정리",
+      "style": "triptych",
+      "triptych": [{"art":"prop/icon-guard","name":"지키는 털","label":"머리 · 눈썹 · 코털"},{"art":"prop/icon-wick","name":"알리는 털","label":"겨드랑이 · 거기"},{"art":"prop/icon-trace","name":"흔적만 남은 털","label":"팔다리 솜털 · 소름"}],
+      "lines": [
+        {"who":"narr","text":"정리하면 이렇습니다.","en":"So, to sum up:"},
+        {"who":"narr","text":"털은 없어진 게 아니라, 가늘어진 겁니다.","en":"Our hair didn't disappear. It got finer.","sfx":"stinger"},
+        {"who":"narr","text":"그리고 때가 되면, 자리마다 다른 스위치가 켜집니다. 어떤 자리는 굵어지고, 어떤 자리는 거꾸로 가늘어지고요.","en":"And when the time comes, a different switch flips in each spot. Some spots get thicker, and some go the other way."}
+      ]
+    },
+    {
+      "id": "c12",
+      "beat": "6. 아이 눈높이로 번역",
+      "caption": "이발소 앞 의자",
+      "scene": {"bg":"bg/barbershop-front","actors":[{"id":"kid","art":"common/kid/normal","x":0.36},{"id":"dad","art":"common/dad/normal","x":0.64}]},
+      "lines": [
+        {"who":"narr","text":"머리를 다 깎고, 이발소 앞에 아이랑 섰습니다. 어젯밤 못 한 대답을 하려고요.","en":"After the haircut I stood outside with my kid, to give last night's answer."},
+        {"who":"dad","text":"어제 아빠가 어른 되면 난다고만 했지. 그거 대답이 아니었어.","en":"Yesterday I just said it grows when you're a grown-up. That wasn't an answer."},
+        {"who":"dad","text":"아까 햇빛에 비춘 네 팔 기억나? 너도 온몸에 털이 있어. 아주 가늘 뿐이야.","en":"Remember your arm in the sunlight? You have hair all over too. It's just very fine.","pose":{"dad":"common/dad/explain"}},
+        {"who":"dad","text":"몸이 자랄 때가 되면, 그 가는 털 몇 군데가 굵어져. 이제 어른 몸으로 자랄 준비를 한다는 신호야.","en":"When your body is ready to grow up, that fine hair gets thicker in a few places. It's a sign your body is getting ready to become a grown-up body."},
+        {"who":"dad","text":"왜 하필 거기냐면, 거기엔 특별한 땀샘이 있는데 그 땀이 털 나는 구멍으로 나와. 그래서 털이 짝으로 같이 나는 거야.","en":"Why there? There's a special sweat gland there, and its sweat comes out through the hole the hair grows from. So the hair grows with it, as its partner."},
+        {"who":"dad","text":"더러워서 나는 것도, 부끄러운 것도 아니야. 원래 그렇게 만들어진 자리야.","en":"It's not because it's dirty, and it's nothing to be embarrassed about. That's just how those places are made.","pose":{"dad":"common/dad/normal"}},
+        {"who":"kid","text":"그럼 나는 언제 굵어져요?","en":"So when will mine get thick?","pose":{"kid":"common/kid/ask"}},
+        {"who":"dad","text":"그건 아빠도 몰라. 네 몸이 알아. 빨라도 괜찮고, 늦어도 괜찮아.","en":"I don't know. Your body knows. Early is fine, and late is fine."},
+        {"who":"kid","text":"몸이 알아요?","en":"My body knows?","pose":{"kid":"common/kid/normal"}},
+        {"who":"dad","text":"응. 몸이 알아.","en":"Yep. Your body knows."}
+      ]
+    },
+    {
+      "id": "c13",
+      "beat": "6. 아이 눈높이로 번역",
+      "scene": {"bg":"bg/barbershop-front","actors":[{"id":"kid","art":"common/kid/normal","x":0.36},{"id":"dad","art":"common/dad/normal","x":0.64}]},
+      "lines": [
+        {"who":"dad","text":"그리고 하나만 약속하자. 몸이 궁금하면 언제든지 아빠한테 물어봐. 부끄러운 질문 아니야.","en":"And let's make one promise. If you're curious about your body, ask me anytime. It's not an embarrassing question."},
+        {"who":"dad","text":"대신 다른 사람 몸 얘기는 큰 소리로 하지 않는 거야. 그건 그 사람 거니까. 오늘 할아버지는 웃어 주셨지만, 다 그렇진 않거든.","en":"But we don't talk loudly about other people's bodies. Their bodies belong to them. Grandpa laughed today, but not everyone will."},
+        {"who":"kid","text":"그럼 할아버지한테 죄송하다고 해야 돼요?","en":"So should I say sorry to Grandpa?","pose":{"kid":"common/kid/ask"}},
+        {"who":"dad","text":"응. 그게 좋겠다.","en":"Yeah. That'd be good."},
+        {"who":"narr","text":"아이가 이발소 문을 열고, 다시 들어갔습니다.","en":"My kid opened the barbershop door and went back in.","move":{"kid":-0.2}}
+      ]
+    },
+    {
+      "id": "c13b",
+      "beat": "7. 남는 이야기",
+      "scene": {"bg":"bg/barbershop","actors":[{"id":"kid","art":"common/kid/normal","x":0.3,"enter":"left"},{"id":"barber","art":"barber/normal","x":0.68}]},
+      "lines": [
+        {"who":"kid","text":"할아버지, 아까 머리 얘기 크게 해서 죄송해요.","en":"Grandpa, I'm sorry I talked about your head so loudly.","act":{"kid":"nod"}},
+        {"who":"barber","text":"허허, 괜찮다. 할아버지 머리는 오십 년째 자랑이여.","en":"Ha, that's alright. My head has been my pride for fifty years.","pose":{"barber":"barber/laugh"},"focus":"barber"},
+        {"who":"barber","text":"다음엔 아빠랑 둘이 있을 때 물어봐라. 이제 아빠가 잘 대답할 거다.","en":"Next time, ask when it's just you and your dad. He'll answer well now.","pose":{"barber":"barber/normal"}}
+      ]
+    },
+    {
+      "id": "c14",
+      "beat": "7. 남는 이야기",
+      "caption": "집에 가는 길",
+      "scene": {"bg":"bg/barbershop-front","pan":"right","actors":[{"id":"kid","art":"common/kid/normal","x":0.3,"enter":"left"},{"id":"dad","art":"common/dad/proud","x":0.62,"enter":"left"}]},
+      "lines": [
+        {"who":"narr","text":"아이가 몸에 대해 물으면, 비누 찾지 마시고 한번 대답해 보세요. 생각보다 재미있습니다.","en":"When your kid asks about their body, don't look for the soap. Try answering. It's more fun than you'd think."},
+        {"who":"kid","text":"아빠, 근데 그럼 아빠 머리는 언제 다시 굵어져요?","en":"Dad, so when will the hair on your head get thick again?","pose":{"kid":"common/kid/ask"},"focus":"kid","cutin":"common/cutin/kid-ask"},
+        {"who":"dad","text":"...저녁 늦겠다. 빨리 가자.","en":"...We'll be late for dinner. Let's hurry.","tts":"저녁 늦겠다. 빨리 가자.","sfx":"boing","pose":{"dad":"common/dad/panic"},"cutin":"common/cutin/dad-panic","move":{"dad":1.3}},
+        {"who":"kid","text":"아빠, 같이 가요!","en":"Dad, wait for me!","pose":{"kid":"common/kid/laugh"},"move":{"kid":1.2}}
+      ]
+    },
+    {
+      "id": "c15",
+      "beat": "7. 남는 이야기",
+      "caption": "다음 편",
+      "scene": {"bg":"full/next-teaser","pan":"left"},
+      "lines": [
+        {"who":"narr","text":"다음 편은, 아이가 감기에 걸려 병원에 갔다가 던진 질문입니다.","en":"Next time: the question my kid asked when we went to the doctor with a cold."},
+        {"who":"kid","text":"의사 선생님이랑 약사 선생님이랑 간호사 선생님은 뭐가 달라요?","en":"What's the difference between a doctor, a pharmacist and a nurse?"},
+        {"who":"narr","text":"저는 그 전에, 또 검색 좀 하고 오겠습니다.","en":"Before then, I'll go do some more searching."}
+      ]
+    },
+    {
+      "id": "end",
+      "beat": "",
+      "style": "end",
+      "art": "full/next-teaser",
+      "end": {"series":"여덟 살의 질문 · 4편","title":"털에 관한 모든 것","next":"다음 편 — 의사 · 약사 · 간호사, 뭐가 달라요?"},
+      "lines": []
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "rawVoice": true,
+  "title": "아파트 · 빌라 · 오피스텔, 뭐가 달라요?",
+  "bgm": "cheerful",
+  "cuts": [
+    {
+      "id": "c00", "beat": "0. 결과부터",
+      "scene": {
+        "bg": "common/bg/dining-room",
+        "actors": [
+          {"id":"kid","art":"common/kid/normal","x":0.3},
+          {"id":"dad","art":"common/dad/normal","x":0.68}
+        ]
+      },
+      "lines": [
+        {"who":"narr","text":"결과부터 말씀드리겠습니다.","en":"Let me start with the result."},
+        {"who":"narr","text":"저는 어제 저녁, 여덟 살한테 졌습니다.","en":"Last night, I lost to an eight-year-old.","pose":{"dad":"common/dad/panic"}},
+        {"who":"narr","text":"밥 먹다가요. 그것도 두 번.","en":"Over dinner. Twice.","pop":"2전 2패","sfx":"dudung","fx":"shake","pose":{"dad":"common/dad/shock"}}
+      ]
+    },
+    {
+      "id": "c01", "beat": "1. 그 질문",
+      "scene": {
+        "bg": "common/bg/dining-room",
+        "actors": [
+          {"id":"kid","art":"common/kid/normal","x":0.3,"enter":"left"},
+          {"id":"dad","art":"common/dad/normal","x":0.68}
+        ]
+      },
+      "lines": [
+        {"who":"narr","text":"아이가 친구 생일 초대장을 들여다보다가 물었습니다.","en":"My kid was staring at a friend's birthday invitation, and then asked:"},
+        {"who":"kid","text":"아빠, 친구네 집은 오피스텔이래요.","en":"Dad, it says my friend lives in an officetel.","pose":{"kid":"common/kid/ask"}},
+        {"who":"kid","text":"아파트랑 빌라랑 오피스텔은 뭐가 달라요?","en":"What's the difference between an apartment, a villa and an officetel?","focus":"kid","cutin":"common/cutin/kid-ask"}
+      ]
+    },
+    {
+      "id": "c02", "beat": "2. 얼버무린 순간",
+      "scene": {
+        "bg": "common/bg/dining-room",
+        "actors": [
+          {"id":"kid","art":"common/kid/ask","x":0.3},
+          {"id":"dad","art":"common/dad/normal","x":0.68}
+        ]
+      },
+      "lines": [
+        {"who":"dad","text":"음... 아파트가 좀 더 크고, 좀 더... 비싼 거야.","en":"Um... an apartment is a bit bigger, and a bit... pricier.","tts":"음, 아파트가 좀 더 크고, 좀 더, 비싼 거야.","sfx":"boing","pose":{"dad":"common/dad/panic"},"focus":"dad","cutin":"common/cutin/dad-panic"},
+        {"who":"narr","text":"집 이름을 물었는데, 집값으로 대답했습니다.","en":"Asked about the names of homes. Answered with the price of homes."},
+        {"who":"kid","text":"그럼 우리 집은 얼마예요?","en":"Then how much is our house?","pose":{"kid":"common/kid/wow"},"focus":"kid","fx":"lines"},
+        {"who":"narr","text":"1패.","en":"Strike one.","tts":"일 패.","pop":"1패","sfx":"dudung","fx":"shake","pose":{"dad":"common/dad/shock"}}
+      ]
+    },
+    {
+      "id": "c03", "beat": "2. 얼버무린 순간",
+      "scene": {
+        "bg": "common/bg/dining-room",
+        "actors": [
+          {"id":"kid","art":"common/kid/wow","x":0.3},
+          {"id":"dad","art":"common/dad/shock","x":0.68}
+        ]
+      },
+      "lines": [
+        {"who":"dad","text":"어... 그건... 비밀이야. 밥 먹자.","en":"Uh... that's... a secret. Eat your dinner.","tts":"어, 그건, 비밀이야. 밥 먹자.","sfx":"boing","pose":{"dad":"common/dad/panic"}},
+        {"who":"narr","text":"숟가락 뒤로 숨었습니다.","en":"I hid behind my spoon."},
+        {"who":"narr","text":"2패.","en":"Strike two.","tts":"이 패.","pop":"2패","sfx":"dudung","fx":"shake"},
+        {"who":"kid","text":"아빠, 모르면 모른다고 해도 돼요.","en":"Dad, it's okay to say you don't know.","pose":{"kid":"common/kid/doubt"},"focus":"kid","cutin":"common/cutin/kid-doubt"},
+        {"who":"narr","text":"...네. 몰랐습니다.","en":"...Yes. I didn't know.","tts":"네. 몰랐습니다.","pose":{"dad":"common/dad/shock"},"cutin":"common/cutin/dad-shock"}
+      ]
+    },
+    {
+      "id": "c04", "beat": "3. 왜 다들 헷갈리나", "caption": "그날 밤",
+      "scene": {
+        "bg": "common/bg/kid-room-night",
+        "actors": [
+          {"id":"dad","art":"common/dad/search","x":0.58,"enter":"right"}
+        ]
+      },
+      "lines": [
+        {"who":"narr","text":"그날 밤. 저는 불 꺼진 방에서 조용히 휴대폰을 켰습니다.","en":"That night, in a dark room, I quietly turned on my phone."},
+        {"who":"docu","text":"아빠라는 생물은, 궁지에 몰리면, 밤에 몰래 검색을 한다.","en":"The creature known as Dad, when cornered, searches the internet in secret at night.","focus":"dad"},
+        {"who":"narr","text":"검색창에 이렇게 쳤습니다. '빌라 뜻'.","en":"I typed this into the search bar: \"villa meaning.\"","tts":"검색창에 이렇게 쳤습니다. 빌라 뜻."},
+        {"who":"narr","text":"그리고 첫 줄에서 또 졌습니다.","en":"And I lost again, on the very first line.","pose":{"dad":"common/dad/shock"},"fx":"shake"}
+      ]
+    },
+    {
+      "id": "c05", "beat": "3. 왜 다들 헷갈리나", "caption": "건축법을 펼쳐 봤습니다",
+      "scene": {
+        "bg": "full/law-book"
+      },
+      "lines": [
+        {"who":"narr","text":"우리나라 건축법에는 집의 종류가 하나하나 적혀 있습니다.","en":"Korea's Building Act lists every type of housing, one by one.","sfx":"page","fx":"flash"},
+        {"who":"narr","text":"아파트, 연립주택, 다세대주택, 다가구주택.","en":"Apartment. Row house. Multi-household house. Multi-family house."},
+        {"who":"narr","text":"'빌라'는 없습니다.","en":"\"Villa\" isn't there.","tts":"빌라는, 없습니다.","pop":"없음!","sfx":"dudung","fx":"shake"},
+        {"who":"narr","text":"매일 쓰는 말인데, 법에는 한 글자도 없어요.","en":"We say it every day, and the law doesn't mention it once."},
+        {"who":"narr","text":"그럼 우리가 빌라라고 부르던 건 대체 뭐였을까요.","en":"So what exactly have we been calling a villa?"},
+        {"who":"narr","text":"세 이름을 누가 붙였는지, 하나씩 따라가 보겠습니다.","en":"Let's trace who gave each of these three names."}
+      ]
+    },
+    {
+      "id": "c06", "beat": "4. 갈라진 지점", "caption": "아파트 — 1962년, 마포",
+      "scene": {
+        "bg": "full/mapo-1962"
+      },
+      "lines": [
+        {"who":"narr","text":"먼저 아파트. 1962년, 서울 마포에 6층짜리 건물 여러 동이 한꺼번에 올라갑니다.","en":"First, the apartment. In 1962, a cluster of six-storey buildings went up all at once in Mapo, Seoul.","tts":"먼저 아파트. 천구백육십이년, 서울 마포에 육 층짜리 건물 여러 동이 한꺼번에 올라갑니다.","sfx":"page","fx":"flash"},
+        {"who":"narr","text":"마포아파트. 우리나라 첫 단지형 아파트로 꼽히는 곳입니다.","en":"Mapo Apartments, regarded as Korea's first apartment complex."},
+        {"who":"narr","text":"지금 법은 아파트를 딱 한 줄로 정해 둡니다.","en":"Today the law defines an apartment in a single line."},
+        {"who":"narr","text":"집으로 쓰는 층이 다섯 층 이상이면, 아파트.","en":"Five or more floors of homes: that's an apartment.","pop":"5층 이상"},
+        {"who":"narr","text":"크기도 아니고, 가격도 아니고, 브랜드도 아닙니다. 층수예요.","en":"Not the size. Not the price. Not the brand. The number of floors."},
+        {"who":"narr","text":"제 첫 번째 대답은 여기서 이미 틀렸습니다.","en":"So my first answer was already wrong, right here."}
+      ]
+    },
+    {
+      "id": "c07", "beat": "4. 갈라진 지점", "caption": "다섯 층인데 빌라?",
+      "scene": {
+        "bg": "full/piloti-villa"
+      },
+      "lines": [
+        {"who":"narr","text":"그럼 네 층까지는요? 법에서는 연립주택, 다세대주택이라고 부릅니다.","en":"And up to four floors? The law calls those row houses and multi-household houses.","sfx":"page","fx":"flash"},
+        {"who":"narr","text":"이름이 좀, 주민센터 서류 같죠.","en":"They do sound like forms at the district office."},
+        {"who":"narr","text":"그런데 동네에 수상한 건물이 하나 있습니다. 세어 보면 분명 다섯 층인데, 빌라예요.","en":"But there's a suspicious building in every neighborhood. Count it and it's clearly five floors. Yet it's a villa."},
+        {"who":"narr","text":"비밀은 1층입니다. 기둥만 서 있는 주차장.","en":"The secret is the ground floor: a car park with nothing but pillars.","tts":"비밀은 일 층입니다. 기둥만 서 있는 주차장."},
+        {"who":"narr","text":"법은 이 주차장 층을 층수에서 빼 줍니다.","en":"The law doesn't count that car park as a floor.","pop":"5 − 1 = 4"},
+        {"who":"narr","text":"겉으로는 5층, 서류로는 4층. 그래서 아파트가 아닙니다.","en":"Five floors to the eye, four on paper. So it's not an apartment.","tts":"겉으로는 오 층, 서류로는 사 층. 그래서 아파트가 아닙니다."},
+        {"who":"narr","text":"주차장 입장에서는 좀 서운한 얘기죠.","en":"Which is a little unfair to the car park, honestly."}
+      ]
+    },
+    {
+      "id": "c08", "beat": "4. 갈라진 지점", "caption": "villa — 로마 부자의 별장",
+      "scene": {
+        "bg": "full/roman-villa"
+      },
+      "lines": [
+        {"who":"narr","text":"그럼 '빌라'는 누가 붙인 이름일까요.","en":"Then who came up with the name \"villa\"?","tts":"그럼 빌라는 누가 붙인 이름일까요.","sfx":"page","fx":"flash"},
+        {"who":"narr","text":"빌라는 원래 라틴어입니다. 고대 로마 부자들이 도시 밖에 지어 놓은 별장이었어요.","en":"Villa is Latin. It was the country house that rich ancient Romans kept outside the city."}
+      ]
+    },
+    {
+      "id": "c09", "beat": "4. 갈라진 지점", "caption": "1980년대, 분양 광고에 등장",
+      "scene": {
+        "bg": "full/villa-ad-1980s"
+      },
+      "lines": [
+        {"who":"narr","text":"이 이름이 우리나라에 퍼진 건 1980년대 무렵으로 알려져 있습니다.","en":"The name is said to have spread in Korea around the 1980s.","tts":"이 이름이 우리나라에 퍼진 건 천구백팔십년대 무렵으로 알려져 있습니다.","sfx":"page","fx":"flash"},
+        {"who":"narr","text":"'다세대주택 분양'보다는 '빌라 분양'이 훨씬 그럴듯했던 거죠.","en":"\"Villas for sale\" simply sounded a lot better than \"multi-household houses for sale.\"","tts":"다세대주택 분양보다는, 빌라 분양이 훨씬 그럴듯했던 거죠."},
+        {"who":"narr","text":"그보다 먼저 유행한 이름은 '맨션'이었습니다. 영어로 대저택.","en":"Before that, the trendy name was \"mansion.\" As in, a great big manor.","tts":"그보다 먼저 유행한 이름은 맨션이었습니다. 영어로 대저택."},
+        {"who":"narr","text":"이름만 보면 우리나라 사람들은 전부, 별장 아니면 대저택에 삽니다.","en":"Going by the names alone, everyone in Korea lives in either a country estate or a manor.","pop":"전 국민 대저택"}
+      ]
+    },
+    {
+      "id": "c10", "beat": "4. 갈라진 지점", "caption": "office + hotel = 오피스텔",
+      "scene": {
+        "bg": "full/officetel-room"
+      },
+      "lines": [
+        {"who":"narr","text":"마지막, 오피스텔. 오피스와 호텔을 합친 말입니다.","en":"Last, the officetel. It's \"office\" and \"hotel\" stuck together.","sfx":"page","fx":"flash"},
+        {"who":"narr","text":"영어처럼 생겼지만, 영어권에서는 거의 안 쓰는 한국식 단어예요.","en":"It looks like English, but it's a Korean coinage hardly used in English-speaking countries."},
+        {"who":"narr","text":"첫 오피스텔은 1985년 서울 마포에 생긴 것으로 알려져 있습니다. 네, 또 마포입니다.","en":"The first one is said to have opened in 1985 in Mapo, Seoul. Yes, Mapo again.","tts":"첫 오피스텔은 천구백팔십오년 서울 마포에 생긴 것으로 알려져 있습니다. 네, 또 마포입니다."},
+        {"who":"narr","text":"중요한 건, 법이 오피스텔을 집으로 안 본다는 겁니다. 업무시설. 사무실이에요.","en":"The key point: the law doesn't treat an officetel as a home. It's a business facility. An office.","pop":"사무실!"},
+        {"who":"narr","text":"사무실인데, 거기서 먹고 자도 된다고 허락해 준 거죠.","en":"An office where you've been given permission to eat and sleep."},
+        {"who":"narr","text":"저희 회사는 허락한 적이 없는데, 다들 그러고 있긴 합니다.","en":"My company never gave that permission, and yet somehow everyone does it anyway."}
+      ]
+    },
+    {
+      "id": "c11", "beat": "5. 한 문장 정리", "style": "triptych",
+      "triptych": [
+        {"art":"prop/apartment","name":"아파트","label":"층수가 정했다"},
+        {"art":"prop/villa","name":"빌라","label":"광고가 지었다"},
+        {"art":"prop/officetel","name":"오피스텔","label":"사무실에서 태어났다"}
+      ],
+      "lines": [
+        {"who":"narr","text":"정리하면 이렇습니다.","en":"So, to sum up:"},
+        {"who":"narr","text":"아파트는 층수가 정하고,","en":"Apartments were defined by floor count,","sfx":"stinger"},
+        {"who":"narr","text":"빌라는 광고가 지었고,","en":"villas were built by advertising,"},
+        {"who":"narr","text":"오피스텔은 사무실에서 태어났습니다.","en":"and officetels were born in the office."}
+      ]
+    },
+    {
+      "id": "c12", "beat": "6. 아이 눈높이로 번역", "caption": "다음 날 저녁, 창가에서",
+      "scene": {
+        "bg": "bg/window-view",
+        "actors": [
+          {"id":"kid","art":"common/kid/normal","x":0.3},
+          {"id":"dad","art":"common/dad/normal","x":0.68}
+        ]
+      },
+      "lines": [
+        {"who":"narr","text":"다음 날 저녁, 저는 아이를 창가로 불렀습니다.","en":"The next evening, I called my kid over to the window."},
+        {"who":"dad","text":"어제 아빠가 대답 대충 했지? 사실은 아빠도 몰랐어. 그래서 찾아봤어.","en":"Dad didn't really answer you yesterday, did he? Truth is, I didn't know either. So I looked it up.","pose":{"dad":"common/dad/panic"}},
+        {"who":"dad","text":"집을 다섯 층부터 쌓으면 아파트야. 저기 높은 거.","en":"Stack homes five floors or higher and it's an apartment. Like that tall one over there.","pose":{"dad":"common/dad/explain"}},
+        {"who":"dad","text":"네 층까지는 진짜 이름이 '다세대주택'인데, 너무 어렵잖아. 그래서 사람들이 '빌라'라는 멋진 별명을 붙여 준 거야.","en":"Up to four floors, the real name is \"multi-household house,\" which is way too hard. So people gave it a fancy nickname: villa.","tts":"네 층까지는 진짜 이름이 다세대주택인데, 너무 어렵잖아. 그래서 사람들이 빌라라는 멋진 별명을 붙여 준 거야."},
+        {"who":"dad","text":"오피스텔은 원래 회사 사무실 건물인데, 거기서 잠도 잘 수 있게 만든 곳이고.","en":"And an officetel is really an office building, made so people can sleep there too."},
+        {"who":"dad","text":"그리고 어제 아빠가 비싼 게 아파트라고 한 건, 틀린 말이야.","en":"And when I said yesterday that apartments are the expensive ones, that was wrong.","pose":{"dad":"common/dad/think"}},
+        {"who":"dad","text":"이 이름들은 건물이 몇 층인지를 나누는 말이지, 거기 사는 사람을 나누는 말이 아니야.","en":"These names sort buildings by how many floors they have. They don't sort the people who live in them.","pose":{"dad":"common/dad/normal"}}
+      ]
+    },
+    {
+      "id": "c12b", "beat": "6. 아이 눈높이로 번역",
+      "scene": {
+        "bg": "bg/window-view",
+        "actors": [
+          {"id":"kid","art":"common/kid/normal","x":0.3},
+          {"id":"dad","art":"common/dad/normal","x":0.68}
+        ]
+      },
+      "lines": [
+        {"who":"narr","text":"아이가 창밖을 한참 보더니 물었습니다.","en":"My kid stared out the window for a long while, then asked:"},
+        {"who":"kid","text":"그럼 저 건물은 몇 층이에요?","en":"Then how many floors is that building?","pose":{"kid":"common/kid/ask"},"focus":"kid"},
+        {"who":"dad","text":"같이 세 볼까? 1층 주차장은 빼고.","en":"Shall we count together? Skip the car park on the ground floor.","tts":"같이 세 볼까? 일 층 주차장은 빼고.","pose":{"dad":"common/dad/explain"}},
+        {"who":"kid","text":"하나, 둘, 셋, 넷.","en":"One, two, three, four."},
+        {"who":"kid","text":"빌라다!","en":"It's a villa!","pose":{"kid":"common/kid/wow","dad":"common/dad/proud"},"focus":"kid"}
+      ]
+    },
+    {
+      "id": "c13", "beat": "7. 남는 이야기",
+      "scene": {
+        "bg": "bg/window-view",
+        "actors": [
+          {"id":"kid","art":"common/kid/wow","x":0.3},
+          {"id":"dad","art":"common/dad/proud","x":0.68}
+        ]
+      },
+      "lines": [
+        {"who":"narr","text":"이렇게 저는 2패 뒤에 귀한 1승을 챙겼습니다.","en":"And that's how, after two losses, I scraped one precious win.","tts":"이렇게 저는 이 패 뒤에 귀한 일 승을 챙겼습니다.","pop":"1승!","cutin":"common/cutin/dad-proud"},
+        {"who":"narr","text":"이름을 알고 나면 동네가 조금 다르게 보입니다.","en":"Once you know the names, your neighborhood looks a little different."},
+        {"who":"narr","text":"오늘 집에 가는 길에 1층이 주차장인 건물을 보면, 한번 세어 보세요.","en":"On your way home today, if you spot a building with a car park on the ground floor, try counting.","tts":"오늘 집에 가는 길에 일 층이 주차장인 건물을 보면, 한번 세어 보세요."}
+      ]
+    },
+    {
+      "id": "c13b", "beat": "7. 남는 이야기", "caption": "그리고 그날 저녁 밥상",
+      "scene": {
+        "bg": "common/bg/dining-room",
+        "actors": [
+          {"id":"kid","art":"common/kid/normal","x":0.3},
+          {"id":"dad","art":"common/dad/proud","x":0.68}
+        ]
+      },
+      "lines": [
+        {"who":"narr","text":"그리고 바로 그날 저녁 밥상.","en":"And then, at dinner that very evening:"},
+        {"who":"kid","text":"아빠, 근데 마트랑 시장이랑 백화점은 뭐가 달라요?","en":"Dad, so what's the difference between a mart, a market and a department store?","pose":{"kid":"common/kid/ask"},"focus":"kid","cutin":"common/cutin/kid-ask"},
+        {"who":"dad","text":"...밥 먹자.","en":"...Eat your dinner.","tts":"밥 먹자.","sfx":"boing","pose":{"dad":"common/dad/panic"},"focus":"dad","cutin":"common/cutin/dad-panic"},
+        {"who":"kid","text":"지금 먹고 있잖아요.","en":"I am eating.","pose":{"kid":"common/kid/doubt"}}
+      ]
+    },
+    {
+      "id": "c14", "beat": "7. 남는 이야기", "caption": "다음 편: 마트 · 시장 · 백화점",
+      "scene": {
+        "bg": "full/next-teaser"
+      },
+      "lines": [
+        {"who":"narr","text":"다음 편에서 뵙겠습니다. 저는 그 전에 검색 좀 하고 오겠습니다.","en":"See you next time. I've got some searching to do before then."}
+      ]
+    },
+    {
+      "id": "end", "beat": "", "style": "end", "art": "full/next-teaser",
+      "end": {"series":"여덟 살의 질문 · 2편","title":"아파트 · 빌라 · 오피스텔","next":"다음 편 — 마트 · 시장 · 백화점은 뭐가 다를까?"},
+      "lines": []
+    }
+  ]
+}

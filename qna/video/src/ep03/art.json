@@ -1,0 +1,218 @@
+{
+  "title": "3편 · 마트 · 시장 · 백화점, 뭐가 달라요?",
+  "cast": {
+    "granny": "the market grandmother: a small, sturdy Korean grandmother in her seventies who has run a vegetable stall all her life; tightly permed short gray-purple hair, soft round face with laugh wrinkles and rosy cheeks, warm natural skin tone (not red, not sweaty), bright crinkly eyes and a huge loud laughing mouth with one gold tooth; wearing a flower-patterned quilted vest over a bright purple long-sleeved top, a red money apron (fanny pack) tied around her waist, baggy flower-print work trousers and black rubber shoes; loud, quick-witted and always teasing her customers, but obviously kind and big-hearted; her face is cheerful, never mean"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/panic",
+    "common/dad/shock",
+    "common/dad/explain",
+    "common/dad/think",
+    "common/dad/proud",
+    "common/dad/search",
+    "common/kid/normal",
+    "common/kid/ask",
+    "common/kid/wow",
+    "common/kid/doubt",
+    "common/kid/laugh",
+    "common/cutin/dad-panic",
+    "common/cutin/kid-ask",
+    "common/cutin/kid-doubt",
+    "common/dad/explain-b",
+    "common/kid/ask-b"
+  ],
+  "items": [
+    {
+      "id": "bg/market-alley",
+      "kind": "bg",
+      "title": "배경 — 전통시장 골목",
+      "cuts": "c00–c04, c06, c11–c14",
+      "motion": "컷 내내 천천히 당겨지고, 집에 가는 장면에서는 옆으로 밀린다. 인물은 아래 1/3에 따로 얹는다.",
+      "desc": "A covered traditional Korean market alley in the daytime, seen straight-on like a stage set. A clean, cheerful, well-kept market that looks like a lovely place to visit. Along the back wall, a row of small shops and stalls: striped awnings, hanging dried fish and garlic braids, stacked plastic baskets of vegetables and fruit, a rice-cake shop with steam, bare light bulbs strung overhead under a translucent arcade roof. The ground is plain gray concrete paving, open and empty across the whole bottom third. Warm, lively, colorful and inviting, with bunting and neatly arranged goods."
+    },
+    {
+      "id": "prop/stall-front",
+      "kind": "layer",
+      "title": "앞쪽 레이어 — 채소 좌판",
+      "cuts": "c00–c03b, c06, c11–c13",
+      "motion": "할머니 앞에 놓인다. 할머니가 이 뒤에서 솟아오른다.",
+      "desc": "A low wooden vegetable stall table seen from the front, about waist height: a weathered wooden front panel and legs, and on top a crowded row of red and green plastic baskets heaped with bean sprouts, napa cabbage, green onions, radishes and garlic, with one old hanging scale at the left end. The top edge of the vegetables forms a bumpy line; nothing rises higher than the baskets."
+    },
+    {
+      "id": "granny/normal",
+      "kind": "char",
+      "who": "granny",
+      "ref": null,
+      "title": "할머니 — 기본",
+      "cuts": "c06, c11, c12",
+      "note": "할머니의 기준 그림. 이후 할머니 그림에 전부 ②로 첨부한다. 허리 아래는 좌판에 가려지니 윗몸이 잘 보이게. 인상 쓰는 얼굴이 아니라 반갑게 웃는 얼굴이어야 한다.",
+      "motion": "숨 쉬듯 살짝 움직이고, 말할 때 까딱거린다.",
+      "desc": "3/4 view, body and face turned slightly to the RIGHT. Standing with both fists on her hips, chin up, greeting a customer with a big warm welcoming grin that shows the gold tooth, eyes crinkled into friendly crescents, rosy cheeks. She looks like everyone's favourite grandmother. NOT frowning, NOT scowling, no anger marks."
+    },
+    {
+      "id": "granny/banter",
+      "kind": "char",
+      "who": "granny",
+      "ref": "granny/normal",
+      "title": "할머니 — 입담",
+      "cuts": "c00, c02, c03, c06, c13",
+      "motion": "좌판 뒤에서 솟아오르고, 말하는 동안 좌우로 흔들린다.",
+      "note": "화난 얼굴이 아니다. 호탕하게 웃으며 한 수 가르치는 얼굴이다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Lecturing a customer loudly and cheerfully, like a comedian mid-punchline: leaning forward, mouth stretched enormously wide open in a big talking grin showing teeth, the gold tooth and tongue, eyebrows raised high, eyes bright and twinkling, one arm raised high wagging a bundle of green onions like a teacher's pointer, the other hand planted on her hip. Playful and confident, clearly enjoying herself. NOT angry: no veins, no anger marks, no frown."
+    },
+    {
+      "id": "granny/banter-b",
+      "kind": "talk",
+      "who": "granny",
+      "ref": "granny/banter",
+      "optional": true,
+      "title": "할머니 — 입담 (말하는 그림)",
+      "cuts": "c00, c02, c03, c06, c13",
+      "motion": "입담 그림과 1/8초마다 번갈아 나와서 입이 움직인다.",
+      "desc": "Change only the face: the mouth is now half closed in a wide closed-lip grin (as if between two words), and one eye is winking. The raised arm with the green onions is tilted a few degrees further back."
+    },
+    {
+      "id": "granny/laugh",
+      "kind": "char",
+      "who": "granny",
+      "ref": "granny/normal",
+      "title": "할머니 — 껄껄",
+      "cuts": "c03b, c12, c13",
+      "motion": "표정이 바뀌는 순간 젤리처럼 튄다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Cackling with delight: head thrown back, mouth wide open in a huge laugh showing the gold tooth, eyes squeezed into happy crescents with deep laugh wrinkles, one hand slapping her own knee and the other pointing forward at someone."
+    },
+    {
+      "id": "granny/give",
+      "kind": "char",
+      "who": "granny",
+      "ref": "granny/normal",
+      "title": "할머니 — 덤 얹어 주기",
+      "cuts": "c06, c12b",
+      "motion": "콩나물 봉지가 손 옆에서 톡 튀어나온다 (봉지는 따로 그린다).",
+      "desc": "3/4 view turned slightly to the RIGHT. Giving a generous extra: leaning forward with one arm stretched far out to the right, the hand holding out a big heaped handful of bean sprouts, the other hand waving as if saying 'go on, take it'. A wide, generous, slightly bashful smile with warm crinkled eyes and rosy cheeks. NOT frowning."
+    },
+    {
+      "id": "cutin/granny-banter",
+      "kind": "cutin",
+      "who": "granny",
+      "ref": "granny/normal",
+      "title": "컷인 — 할머니 입담",
+      "cuts": "c00, c02, c03",
+      "motion": "화면 옆에서 튀어나와 흔들린다.",
+      "desc": "Facing slightly to the RIGHT. A gloriously loud, triumphant talking face: mouth stretched to an impossible size in a huge grin showing every tooth, the gold tooth glinting with a sparkle, one eyebrow cocked sky-high, eyes twinkling with mischief, permed hair bouncing, one finger raised beside her face as if making a winning point. Funny and lovable, not angry and not scary."
+    },
+    {
+      "id": "prop/ppeongtwigi",
+      "kind": "prop",
+      "title": "소품 — 뻥튀기 기계",
+      "cuts": "c04",
+      "ratio": "1:1",
+      "motion": "아빠 앞에 놓여 아빠를 가린다. '뻥!' 할 때 화면이 번쩍인다.",
+      "desc": "An old-fashioned Korean puffed-rice machine (ppeongtwigi): a black cast-iron rotating drum cannon with a pressure gauge and a crank handle, mounted on a small rusty wheeled frame with a gas burner underneath, and a long wire-mesh catching cage attached to its mouth, a few puffed rice grains scattered around. Seen from the side, chunky and solid, about as tall as an adult's waist."
+    },
+    {
+      "id": "prop/bean-sprouts",
+      "kind": "prop",
+      "title": "소품 — 콩나물 봉지",
+      "cuts": "c06, c12b",
+      "ratio": "1:1",
+      "motion": "톡 튀어나와 둥둥 떠 있는다.",
+      "desc": "A translucent black plastic market bag stuffed to overflowing with fresh bean sprouts, yellow heads and white stems bursting out of the top, a few sprouts falling off, tiny sparkle marks around it."
+    },
+    {
+      "id": "prop/price-tag",
+      "kind": "prop",
+      "title": "소품 — 빈 가격표",
+      "cuts": "c07",
+      "ratio": "1:1",
+      "motion": "위에서 뚝 떨어진 뒤 두근두근 커졌다 작아진다. 숫자는 영상에서 얹지 않는다(빈 표).",
+      "desc": "One huge old-fashioned paper price tag: cream-colored card with a reinforced punched hole and a loop of red string, slightly curled corners, completely blank (no numbers, no writing), with small shine marks."
+    },
+    {
+      "id": "prop/boucicaut",
+      "kind": "prop",
+      "title": "소품 — 부시코 (1852년 파리의 상인)",
+      "cuts": "c07",
+      "ratio": "2:3",
+      "motion": "오른쪽에서 미끄러져 들어와 좌우로 까딱거린다.",
+      "desc": "One person: a French shop owner of the 1850s, a middle-aged white European man with big mutton-chop sideburns and a balding head, in a black frock coat, waistcoat and cravat. Full body, 3/4 view turned slightly to the LEFT, standing proudly on tiptoe with a salesman's enormous toothy grin, one hand presenting forward with an open palm and the other holding up a string of small blank paper tags like a trophy."
+    },
+    {
+      "id": "prop/peddler",
+      "kind": "prop",
+      "title": "소품 — 장터를 옮겨 다니는 상인",
+      "cuts": "c05",
+      "ratio": "2:3",
+      "motion": "화면 왼쪽 밖에서 오른쪽으로 걸어서 지나간다.",
+      "desc": "One person: a Joseon-era Korean travelling peddler, a wiry sunburnt man in a white hanbok jacket and trousers with straw sandals and a straw hat (paeraengi) with a cotton ball on top. Full body, pure side view walking to the RIGHT in mid-stride, bent forward under a towering A-frame carrier (jige) on his back piled absurdly high with pots, bundles and dried fish, a walking stick in one hand, sweat flying, a determined grin."
+    },
+    {
+      "id": "prop/cart",
+      "kind": "prop",
+      "title": "소품 — 상자 가득한 카트",
+      "cuts": "c09, c10",
+      "ratio": "1:1",
+      "motion": "화면 왼쪽 밖에서 굴러 들어와 지나간다. 한 문장 정리 컷에서는 '마트' 칸에 들어간다.",
+      "desc": "A big metal supermarket shopping cart seen from the side, facing RIGHT, piled far too high with identical plain cardboard boxes and bulk packs (blank, no labels), one box about to fall off the top, small speed lines behind the wheels."
+    },
+    {
+      "id": "prop/shopping-bag",
+      "kind": "prop",
+      "title": "소품 — 백화점 쇼핑백",
+      "cuts": "c08, c10",
+      "ratio": "1:1",
+      "motion": "톡 튀어나와 둥둥 떠 있는다. 한 문장 정리 컷에서는 '백화점' 칸에 들어간다.",
+      "desc": "One luxurious glossy department-store paper shopping bag with rope handles and a ribbon, deep navy with gold trim, tissue paper peeking out of the top, completely blank (no logo, no text), with elegant sparkle marks."
+    },
+    {
+      "id": "prop/icon-market",
+      "kind": "prop",
+      "title": "소품 — 시장 좌판 (한 문장 정리용)",
+      "cuts": "c10",
+      "ratio": "1:1",
+      "motion": "한 문장 정리 컷의 '시장' 칸에 켜지면서 들어간다.",
+      "desc": "One small traditional market stall as a single compact object: a wooden table under a red-and-white striped parasol, baskets of vegetables on it, an old hanging scale and a bare light bulb. No people."
+    },
+    {
+      "id": "full/five-day-market",
+      "kind": "stage",
+      "title": "무대 — 조선 후기 오일장",
+      "cuts": "c05",
+      "motion": "배경이 오른쪽으로 천천히 밀리고, 그 앞을 상인(따로 그린 그림)이 걸어서 지나간다.",
+      "desc": "A bustling Joseon-era Korean five-day market in an open dirt field beside thatched-roof houses, mountains behind. In the upper two-thirds: crowds of people in white hanbok haggling with comically exaggerated faces, straw mats covered with pottery, grain sacks, chickens in baskets, an ox, a rice-cake seller, banners that are blank cloth. The lower third is an empty dirt road running across the whole picture from left to right, with nobody on it: a walking figure will be added there later."
+    },
+    {
+      "id": "full/bon-marche",
+      "kind": "stage",
+      "title": "무대 — 1852년 파리, 봉 마르셰",
+      "cuts": "c07",
+      "motion": "배경이 왼쪽으로 천천히 밀리고, 오른쪽 빈자리에 상인(따로 그린 그림)이 들어온다. 왼쪽 위쪽에는 가격표가 떨어진다.",
+      "desc": "The interior of a grand Paris department store in the 1850s: a soaring hall with iron-and-glass skylight, sweeping staircases, long polished counters piled with rolls of fabric, hats and gloves, every item carrying a small blank paper tag on a string. On the left, a crowd of elegant Parisian ladies in crinoline dresses and gentlemen in top hats gasp with comically shocked faces at the tags, one lady fainting. The right third of the picture is an empty stretch of floor in front of a counter: the shop owner will be added there later."
+    },
+    {
+      "id": "full/dept-floors",
+      "kind": "full",
+      "title": "장면 — 백화점은 고급스러운 건물주",
+      "cuts": "c08",
+      "motion": "배경이 위로 천천히 밀린다 (1층에서 꼭대기 층으로 올라가는 느낌).",
+      "desc": "A tall, elegant department store building shown as a cutaway doll's-house cross-section, five floors high. Every floor is divided into separate little boutique booths, each a different color with its own tiny shop clerk in a different uniform standing behind a counter with blank signs. On the roof, a giant smug figure in a tuxedo and monocle (the building itself personified as a landlord) lounges in an armchair, catching gold coins that float up from every booth through little chutes. Bright, glossy, luxurious."
+    },
+    {
+      "id": "full/mart-1993",
+      "kind": "stage",
+      "title": "무대 — 1993년, 첫 대형 할인점",
+      "cuts": "c09",
+      "motion": "배경이 오른쪽으로 천천히 밀리고, 그 앞으로 카트(따로 그린 그림)가 굴러 지나간다.",
+      "desc": "Inside a huge Korean warehouse-style discount store in 1993: towering steel shelves stacked to the ceiling with identical cardboard boxes and bulk packs (all blank), fluorescent strip lights, big blank hanging sale banners. In the upper two-thirds, Korean families in early-1990s clothes (permed hair, shoulder pads, a dad in a windbreaker) stare upward with stunned, sparkling-eyed faces, a child sitting in a cart seat pointing up. The lower third is an empty shiny aisle floor running across the whole picture: a rolling cart will be added there later."
+    },
+    {
+      "id": "full/next-teaser",
+      "kind": "full",
+      "title": "장면 — 다음 편 예고 (털)",
+      "cuts": "c15, 끝 화면",
+      "motion": "배경이 왼쪽으로 천천히 밀린다. 끝 화면에서는 흐리게 깔린다.",
+      "desc": "A quiet, slightly out-of-focus neighborhood street at sunset with a public bathhouse building in the distance (a tall chimney with steam, a blank sign). In the foreground at the bottom, seen from behind and only from the knees down: the dad's two hairy calves in shorts and slippers next to the kid's two small smooth calves in white socks, walking side by side, one black market bag of bean sprouts hanging between them. A big glossy question mark floats in the sky. No faces."
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+# 고유명사 템플릿: entity_type은 work(작품)만 조합에 사용. person은 경고 후 제외.
+# 최근 OTT 작품은 config/entities_auto.yaml(자동 생성)에서 use: true인 것이 합쳐진다. 여기는 수동 추가용.
+entities: []
+#  - name: 오징어 게임
+#    entity_type: work
+
+# 모듈 1a: 최근 OTT 오리지널 자동 수집 (python -m shortube entities)
+ott_works:
+  lookback_days: 14
+  platforms: [Netflix, TVING, Disney+, Coupang Play, Wavve, Watcha]
+
+# 템플릿 조합 대상 카테고리 ({entity} {seed})
+entity_categories: [explain]
+
+trends:
+  period_days: 90
+  time_unit: date            # date | week | month
+  anchor_keyword: 날씨        # 요청 간 정규화용 고정 기준 키워드
+  google_geo: KR
+  google_timeframe: today 3-m
+  google_sleep_seconds: [5, 10]
+  spike_ratio: 2.0           # recent_vs_prev >= 이 값이면 spike_flag
+
+autocomplete:
+  sleep_seconds: [0.5, 1.0]
+  intent_suffixes: [결말, 근황, 나이, 프로필, 논란, 순위, 이유, 방법, 원작, 몇 부작, 몇부작, 공개일, 촬영지, 시즌2, 사실, 역사]
+
+# 작품 조합 키워드는 이 의도가 있을 때만 후보로 남긴다 (허용 목록).
+# 배우 이름·키스신·몰아보기·결말 등은 off_whitelist로 제외 (COMPLIANCE_GUIDE 1-1).
+entity_allowed_intents: [몇 부작, 몇부작, 원작, 웹툰, 공개일, 공개 시간, 공개시간, 촬영지, 시즌2, 회차, 몇화]
+
+shorts:
+  published_after_days: 30   # search.list publishedAfter (Phase 4에서 확정)
+  max_results: 50
+  shorts_max_seconds: 180
+  outlier_views_per_sub: 5
+  outlier_max_subscribers: 50000
+  daily_quota: 10000
+  retention_days: 30         # YouTube API 데이터 보관 기한 (prune)
+
+# 이 단어가 포함된 키워드는 후보에서 제외 (excluded_reason=risk)
+risk_words: [근황, 논란, 열애, 결혼, 이혼, 사망, 폭로, 의혹, 사건, 사고, 피해자, 구속, 학폭, 마약, 프로포폴, 자살, 도박,
+             # 가족 채널: 성인·정치 주제 제외
+             19금, 성인용, 야한, 섹스, 성관계, 콘돔, 민주당, 국민의힘, 진보, 보수, 좌파, 우파]
+
+# 카테고리별 필수 의도: difference는 '차이'가 들어간 제안어만 남김
+category_required_intents:
+  difference: [차이]
+
+# 모라구 롱폼에서 이미 다룬 주제 (차이 후보에서 표시)
+done_topics:
+  - [호텔, 모텔, 유스호스텔]
+  - [아파트, 빌라, 오피스텔]
+  - [마트, 시장, 백화점]
+  - [의사, 약사, 간호사]
+# 콘텐츠 주제가 아닌 검색(음원 재생 등) — excluded_reason=noise
+noise_words: [광고없, 광고 없, 틀어, 노래모음, 연속듣기, 듣기, mp3, 가사, 노래방, 찬양]
+# 의료·투자·법률 조언형 제외 패턴 (정규식)
+advice_patterns: ['하면 낫', '치료법', '사면 오른', '주가 전망', '추천 종목', '소송 이기']
+
+# 일일 주제 로테이션 (python -m shortube pick)
+rotation:
+  weights:                   # 카테고리 선택 확률. 성과 데이터가 쌓이면(약 30편) 조정
+    difference: 1.0          # 모라구 유입용 "뭐가 달라요?" 주제 테스트 쇼츠
+    # 다른 채널 프로필(넷플릭스 순위): trivia 0.5 / explain 0.3 / chart 0.2
+  max_streak: 2              # 같은 카테고리 최대 연속 횟수
+  weekly_caps: {chart: 2}    # 최근 7일 상한 (차트 반복 복제 방지)
+  keyword_cooldown_days: 60  # 같은 키워드 재사용 금지 기간
+  entity_cooldown_days: 3    # 같은 작품 재사용 금지 기간
+
+title_patterns:
+  hook_words: [충격, 소름, 레전드, 실화, 반전, 결국, 이유, 근황, 진짜]
+  time_words: [오늘, 어제, 방금, 최신, '2026']
+  min_group_size: 10
+
+scoring:
+  weights:
+    interest: 0.30
+    momentum: 0.15
+    demand: 0.20
+    opportunity: 0.15
+    source_availability: 0.20
+  source_min: 60             # 이 값 미만이면 "출처 부족 — 제작 보류"
