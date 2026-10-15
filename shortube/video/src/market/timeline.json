@@ -1,0 +1,15 @@
+{
+  "fps": 30,
+  "scenes": [
+    { "id": "hook", "from": 0, "dur": 150 },
+    { "id": "damage", "from": 150, "dur": 255 },
+    { "id": "causes", "from": 405, "dur": 390 },
+    { "id": "earnings", "from": 795, "dur": 225 },
+    { "id": "technical", "from": 1020, "dur": 420 },
+    { "id": "outlook", "from": 1440, "dur": 255 },
+    { "id": "outro", "from": 1695, "dur": 105 }
+  ],
+  "total": 1800,
+  "hits": [40, 150, 300, 405, 435, 555, 675, 795, 1020, 1110, 1215, 1335, 1440, 1695],
+  "risers": [150, 405, 795, 1020, 1440, 1695]
+}

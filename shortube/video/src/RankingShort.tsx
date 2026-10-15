@@ -1,4 +1,4 @@
-import { AbsoluteFill } from "remotion";
+import { AbsoluteFill, Audio, staticFile } from "remotion";
 import { linearTiming, springTiming, TransitionPresentation, TransitionSeries } from "@remotion/transitions";
 import { fade } from "@remotion/transitions/fade";
 import { slide } from "@remotion/transitions/slide";
@@ -30,6 +30,8 @@ const transitions: TransitionPresentation<any>[] = [
 export const RankingShort: React.FC = () => (
   <AbsoluteFill>
     <Background />
+    {/* 배경음악: scripts/bgm.mjs 가 코드로 합성한 곡 (저작권 문제 없음) */}
+    <Audio src={staticFile("bgm/data-pulse.wav")} volume={0.7} />
     <TransitionSeries>
       {SCENES.flatMap(({ C, d }, i) => [
         <TransitionSeries.Sequence key={`s${i}`} durationInFrames={d} premountFor={15}>
