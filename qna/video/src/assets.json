@@ -250,5 +250,109 @@
   "ep03/full/next-teaser": {
     "w": 2560,
     "h": 1440
+  },
+  "ep04/bg/barbershop": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep04/bg/barbershop-front": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep04/full/bathroom-door": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep04/dad/cape": {
+    "w": 642,
+    "h": 1134
+  },
+  "ep04/dad/cape-panic": {
+    "w": 662,
+    "h": 1154
+  },
+  "ep04/dad/cape-search": {
+    "w": 642,
+    "h": 1126
+  },
+  "ep04/barber/normal": {
+    "w": 731,
+    "h": 1169
+  },
+  "ep04/barber/talk": {
+    "w": 719,
+    "h": 1172
+  },
+  "ep04/barber/talk-b": {
+    "w": 922,
+    "h": 1500
+  },
+  "ep04/barber/laugh": {
+    "w": 686,
+    "h": 1196
+  },
+  "ep04/barber/chest": {
+    "w": 924,
+    "h": 1500
+  },
+  "ep04/barber/bald": {
+    "w": 930,
+    "h": 1500
+  },
+  "ep04/cutin/barber": {
+    "w": 1300,
+    "h": 1296
+  },
+  "ep04/prop/shaving-brush": {
+    "w": 841,
+    "h": 905
+  },
+  "ep04/full/fuzz-arm": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep04/full/hairy-ancestor": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep04/full/guard-hair": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep04/full/hair-timer": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep04/full/goosebump-cat": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep04/full/mirror-foam": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep04/full/two-glands": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep04/full/bald-map": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep04/prop/icon-guard": {
+    "w": 1122,
+    "h": 1200
+  },
+  "ep04/prop/icon-wick": {
+    "w": 839,
+    "h": 1200
+  },
+  "ep04/prop/icon-trace": {
+    "w": 1200,
+    "h": 1128
+  },
+  "ep04/full/next-teaser": {
+    "w": 2560,
+    "h": 1440
   }
 }

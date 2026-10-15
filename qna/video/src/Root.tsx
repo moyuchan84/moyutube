@@ -2,7 +2,12 @@ import React from "react";
 import { Composition, Still } from "remotion";
 import { Episode, EpisodeCutStill } from "./Episode";
 import { type FaceText, Thumbnail } from "./Thumbnail";
+import { type ShortSpec, Short, buildShort } from "./shorts/Short";
 import { END_CARD, Teaser, teaserRange } from "./shorts/Teaser";
+import ep01Short from "./shorts/ep01.json";
+import ep02Short from "./shorts/ep02.json";
+import ep03Short from "./shorts/ep03.json";
+import ep04Short from "./shorts/ep04.json";
 import { FPS, buildTimeline } from "./timeline.js";
 import ep01Script from "./ep01/script.json";
 import ep01Timing from "./ep01/timing.json";
@@ -10,6 +15,8 @@ import ep02Script from "./ep02/script.json";
 import ep02Timing from "./ep02/timing.json";
 import ep03Script from "./ep03/script.json";
 import ep03Timing from "./ep03/timing.json";
+import ep04Script from "./ep04/script.json";
+import ep04Timing from "./ep04/timing.json";
 
 // 새 편은 여기에 한 줄 추가한다 (face 는 얼굴 썸네일의 글자)
 const EPISODES: { id: string; episode: string; timeline: ReturnType<typeof buildTimeline>; face?: FaceText }[] = [
@@ -32,6 +39,13 @@ const EPISODES: { id: string; episode: string; timeline: ReturnType<typeof build
       topic: ["ep03/prop/icon-market", "ep03/prop/cart", "ep03/prop/shopping-bag", "ep03/prop/bean-sprouts", "ep03/prop/price-tag", "ep03/prop/ppeongtwigi"],
     },
   },
+  {
+    id: "Ep04",
+    episode: "ep04",
+    timeline: buildTimeline(ep04Script, ep04Timing),
+    // 민감한 단어는 썸네일에 쓰지 않는다 — '거기'라고만 (기획서 6장)
+    face: { tag: "여덟 살 아들의 질문", top: ["털? ", "털?"], bottom: ["아빠,", " 왜 거기에 나요?"], topic: ["ep04/prop/icon-guard", "ep04/prop/icon-wick", "ep04/prop/icon-trace"] },
+  },
 ];
 
 // 쇼츠(9:16) 맛보기: 롱폼 구간을 잘라 본편으로 보낸다 (모라구 유입용)
@@ -50,9 +64,27 @@ const SHORTS = [
   },
 ];
 
+// 편집형 쇼츠: src/shorts/<epNN>.json (편집 계획) 하나 = 쇼츠 하나. 렌더는 npm run short -- epNN
+const EDITED_SHORTS = [ep01Short, ep02Short, ep03Short, ep04Short] as unknown as ShortSpec[];
+
 export const RemotionRoot = () => {
   return (
     <>
+      {EDITED_SHORTS.map((spec) => {
+        const timeline = EPISODES.find((e) => e.episode === spec.episode)!.timeline;
+        return (
+          <Composition
+            key={spec.id}
+            id={spec.id}
+            component={Short}
+            durationInFrames={buildShort(timeline, spec).durationInFrames}
+            fps={FPS}
+            width={1080}
+            height={1920}
+            defaultProps={{ timeline, spec }}
+          />
+        );
+      })}
       {SHORTS.map(({ id, ...props }) => (
         <Composition
           key={id}
