@@ -1,0 +1,980 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>유튜브 3채널 제작 · 자동화 가이드</title>
+<meta name="description" content="qna(여덟 살의 질문) · shortube(숫자로 보는 요즘) · funtube 를 만드는 순서, 시나리오 규칙, 자동화 명령과 팁을 한 곳에 모은 운영 문서">
+<style>
+:root{
+  --bg:#f6f7fb;--panel:#fff;--ink:#1c2233;--dim:#5b6479;--line:#dfe3ee;
+  --accent:#3b5bdb;--accent-soft:#e7ecff;
+  --qna:#d9480f;--qna-soft:#fff0e6;
+  --short:#0b7285;--short-soft:#e3fafc;
+  --fun:#9c36b5;--fun-soft:#f8ebff;
+  --warn:#e67700;--warn-soft:#fff4e0;--cost:#c92a2a;--cost-soft:#ffe8e8;--ok:#2b8a3e;--ok-soft:#e6f6ea;
+  --code:#0f172a;--code-ink:#e2e8f0;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0e1220;--panel:#171c2e;--ink:#e8ebf5;--dim:#9aa3bd;--line:#2a3150;
+  --accent:#8fa8ff;--accent-soft:#1f2850;--qna:#ff9a5c;--qna-soft:#33200f;--short:#5bd0e6;--short-soft:#0c2a30;
+  --fun:#d98cf0;--fun-soft:#2a1433;--warn:#ffb84d;--warn-soft:#33260d;--cost:#ff8787;--cost-soft:#361414;--ok:#69db7c;--ok-soft:#12301a;
+  --code:#070a14;--code-ink:#d7def0}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 "Pretendard","Noto Sans KR","Malgun Gothic",system-ui,sans-serif}
+a{color:var(--accent)}
+code,pre,kbd{font-family:"D2Coding","Consolas","Menlo",monospace}
+code{background:var(--accent-soft);padding:.1em .38em;border-radius:5px;font-size:.88em;word-break:break-all}
+header.top{position:sticky;top:0;z-index:30;background:var(--panel);border-bottom:1px solid var(--line);display:flex;gap:10px;align-items:center;padding:10px 18px;flex-wrap:wrap}
+header.top b{font-size:1rem}
+header.top nav{display:flex;gap:6px;flex-wrap:wrap;margin-left:auto}
+header.top nav a{text-decoration:none;font-size:.85rem;padding:4px 11px;border-radius:999px;border:1px solid var(--line);color:var(--ink)}
+header.top nav a.q{border-color:var(--qna);color:var(--qna)}header.top nav a.s{border-color:var(--short);color:var(--short)}header.top nav a.f{border-color:var(--fun);color:var(--fun)}
+.wrap{display:grid;grid-template-columns:260px minmax(0,1fr);gap:28px;max-width:1280px;margin:0 auto;padding:22px 18px 80px}
+aside.toc{position:sticky;top:70px;align-self:start;max-height:calc(100vh - 90px);overflow:auto;font-size:.88rem;padding-right:6px}
+aside.toc a{display:block;text-decoration:none;color:var(--dim);padding:3px 8px;border-left:3px solid transparent;border-radius:0 6px 6px 0}
+aside.toc a.h{font-weight:700;color:var(--ink);margin-top:12px}
+aside.toc a:hover,aside.toc a.on{color:var(--accent);border-left-color:var(--accent);background:var(--accent-soft)}
+main{min-width:0}
+section.proj{margin-top:46px;padding-top:6px}
+h1{font-size:1.9rem;margin:.2em 0 .3em;line-height:1.3}
+h2{font-size:1.5rem;margin:1.7em 0 .5em;padding-bottom:.25em;border-bottom:2px solid var(--line)}
+h3{font-size:1.16rem;margin:1.6em 0 .4em}
+h4{font-size:1rem;margin:1.3em 0 .3em;color:var(--dim)}
+.badge{display:inline-block;font-size:.75rem;font-weight:700;padding:2px 9px;border-radius:999px;margin-right:6px;vertical-align:middle}
+.b-q{background:var(--qna-soft);color:var(--qna)}.b-s{background:var(--short-soft);color:var(--short)}.b-f{background:var(--fun-soft);color:var(--fun)}
+.b-c{background:var(--cost-soft);color:var(--cost)}.b-ok{background:var(--ok-soft);color:var(--ok)}.b-w{background:var(--warn-soft);color:var(--warn)}
+.hero{background:linear-gradient(135deg,var(--accent-soft),var(--panel));border:1px solid var(--line);border-radius:18px;padding:22px 26px}
+.hero p{margin:.4em 0;color:var(--dim)}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:16px 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.card h3{margin:.1em 0 .3em}
+.card.q{border-top:5px solid var(--qna)}.card.s{border-top:5px solid var(--short)}.card.f{border-top:5px solid var(--fun)}
+.card ul{margin:.4em 0;padding-left:1.1em}
+.callout{border-left:5px solid var(--accent);background:var(--accent-soft);border-radius:0 12px 12px 0;padding:11px 16px;margin:14px 0}
+.callout.warn{border-color:var(--warn);background:var(--warn-soft)}
+.callout.cost{border-color:var(--cost);background:var(--cost-soft)}
+.callout.ok{border-color:var(--ok);background:var(--ok-soft)}
+.callout b.t{display:block;margin-bottom:2px}
+.callout p{margin:.3em 0}
+table{border-collapse:collapse;width:100%;margin:12px 0;background:var(--panel);border-radius:10px;overflow:hidden;font-size:.92rem}
+th,td{border:1px solid var(--line);padding:8px 11px;text-align:left;vertical-align:top}
+th{background:var(--accent-soft);font-size:.85rem}
+.tw{overflow-x:auto;margin:12px 0;border-radius:10px}
+.tw table{margin:0;min-width:560px}
+pre{background:var(--code);color:var(--code-ink);border-radius:12px;padding:14px 16px;overflow:auto;font-size:.84rem;line-height:1.55;position:relative;margin:12px 0}
+pre code{background:none;padding:0;color:inherit;word-break:normal}
+.copy{position:absolute;right:8px;top:8px;font-size:.72rem;border:1px solid #475069;background:#1b2238;color:#cbd5ee;border-radius:7px;padding:2px 9px;cursor:pointer}
+.copy:hover{background:#2a3358}
+.steps{counter-reset:s;list-style:none;padding:0;margin:14px 0}
+.steps>li{counter-increment:s;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:12px 16px 12px 58px;margin:10px 0;position:relative}
+.steps>li::before{content:counter(s);position:absolute;left:14px;top:12px;width:32px;height:32px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;display:grid;place-items:center}
+.steps.q>li::before{background:var(--qna)}.steps.s>li::before{background:var(--short)}.steps.f>li::before{background:var(--fun)}
+.steps>li b.n{display:block}
+.who{font-size:.72rem;font-weight:700;padding:1px 8px;border-radius:999px;margin-left:6px;border:1px solid var(--line);color:var(--dim)}
+.who.auto{color:var(--ok);border-color:var(--ok)}.who.human{color:var(--warn);border-color:var(--warn)}.who.paid{color:var(--cost);border-color:var(--cost)}
+.flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:12px 0;font-size:.86rem}
+.flow span{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:5px 11px}
+.flow i{font-style:normal;color:var(--dim)}
+.flow span.hl{background:var(--accent-soft);border-color:var(--accent);font-weight:700}
+.tree{font-family:"D2Coding","Consolas",monospace;font-size:.84rem;white-space:pre;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;overflow:auto;line-height:1.55}
+details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:8px 14px;margin:10px 0}
+details>summary{cursor:pointer;font-weight:700;padding:4px 0}
+.say{display:flex;gap:10px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 14px;margin:8px 0}
+.say q{flex:1;quotes:none;font-weight:600}
+.say .tag{font-size:.74rem;color:var(--dim);display:block;font-weight:400}
+.say button{border:1px solid var(--line);background:var(--accent-soft);color:var(--accent);border-radius:8px;padding:3px 10px;cursor:pointer;font-size:.78rem;white-space:nowrap}
+.kv{display:grid;grid-template-columns:150px 1fr;gap:4px 14px;margin:10px 0}
+.kv dt{font-weight:700;color:var(--dim)}.kv dd{margin:0}
+.meta{color:var(--dim);font-size:.88rem}
+footer{margin-top:60px;color:var(--dim);font-size:.85rem;border-top:1px solid var(--line);padding-top:16px}
+@media (max-width:900px){.wrap{grid-template-columns:1fr}aside.toc{display:none}header.top nav{margin-left:0}.kv{grid-template-columns:1fr}}
+@media print{header.top,aside.toc,.copy,.say button{display:none}.wrap{display:block}body{background:#fff}pre{white-space:pre-wrap}}
+</style>
+</head>
+<body>
+<header class="top">
+  <b>📺 제작 · 자동화 가이드</b>
+  <nav>
+    <a href="#overview">한눈에</a><a href="#common">공통</a>
+    <a class="q" href="#qna">qna</a><a class="s" href="#shortube">shortube</a><a class="f" href="#funtube">funtube</a>
+    <a href="#prompts">Claude에게 시키는 말</a><a href="#trouble">막힐 때</a>
+  </nav>
+</header>
+
+<div class="wrap">
+<aside class="toc" id="toc">
+  <a class="h" href="#overview">0. 한눈에 보기</a>
+  <a href="#overview-map">세 채널 비교</a><a href="#overview-which">무슨 일은 어디서</a>
+  <a class="h" href="#common">1. 공통 규칙</a>
+  <a href="#c-repo">저장소 · 브랜치</a><a href="#c-env">API 키 · 과금</a><a href="#c-remotion">Remotion · 코드 합성 음악</a><a href="#c-claude">Claude 스킬 · 메모리</a>
+  <a class="h" href="#qna">2. qna 여덟 살의 질문</a>
+  <a href="#q-what">무엇인가</a><a href="#q-folder">폴더 지도</a><a href="#q-process">11단계 절차</a><a href="#q-scenario">시나리오 규칙</a>
+  <a href="#q-script">script.json 읽는 법</a><a href="#q-art">그림 뽑기</a><a href="#q-voice">음성</a><a href="#q-make">make · 렌더</a><a href="#q-shorts">쇼츠(유입용)</a><a href="#q-upload">업로드</a><a href="#q-tips">자동화 팁</a>
+  <a class="h" href="#shortube">3. shortube 숫자로 보는 요즘</a>
+  <a href="#s-what">무엇인가</a><a href="#s-flow">하루 흐름</a><a href="#s-py">주제 선정(Python)</a><a href="#s-comp">규칙(컴플라이언스)</a><a href="#s-brief">브리프 · 사실 카드</a>
+  <a href="#s-video">영상 코드</a><a href="#s-design">연출 카드</a><a href="#s-bgm">배경음악</a><a href="#s-market">시황 · 차트 주제</a><a href="#s-upload">업로드 · 한도</a><a href="#s-tips">자동화 팁</a>
+  <a class="h" href="#funtube">4. funtube 웃긴 영상툰</a>
+  <a href="#f-what">무엇인가 · 방향</a><a href="#f-formats">영상 형식 9가지</a><a href="#f-hybrid">하이브리드 방식</a><a href="#f-process">제작 순서</a><a href="#f-schema">content 파일</a><a href="#f-tts">음성 · 효과음</a><a href="#f-song">노래 영상</a><a href="#f-faces">얼굴 시트</a><a href="#f-tips">자동화 팁</a>
+  <a class="h" href="#prompts">5. Claude에게 시키는 말</a>
+  <a class="h" href="#trouble">6. 막힐 때 · 체크리스트</a>
+  <a class="h" href="#cmds">7. 명령어 전체표</a>
+</aside>
+
+<main>
+
+<!-- ============================== 0. 한눈에 ============================== -->
+<section id="overview">
+<div class="hero">
+  <h1>유튜브 3채널, 만드는 법을 한 장에</h1>
+  <p>저장소 <code>D:\youtube</code> 에 있는 세 프로젝트(<b>qna · shortube · funtube</b>)를 <b>어떤 순서로 만들고, 어디까지 자동이고, 어디서 사람이 개입하는지</b> 정리한 운영 문서입니다. 시간이 지난 뒤 다시 봐도 자동화를 그대로 쓸 수 있게, 저장소의 실제 규칙 문서·스크립트를 읽고 옮겨 적었습니다.</p>
+  <p class="meta">작성 2026-10-17 · 근거: 루트/프로젝트 <code>CLAUDE.md</code>, <code>qna/video/README.md</code>·<code>VOICE.md</code>, <code>qna-shorts</code>·<code>shortube-daily</code> 스킬, <code>shortube/SPEC.md</code>·<code>COMPLIANCE_GUIDE.md</code>·<code>TTS_GUIDE.md</code>, funtube 스크립트 소스. <b>funtube 는 문서가 따로 없어서 코드를 읽고 정리한 것</b>이라 qna·shortube 만큼 규칙이 굳어 있지 않습니다.</p>
+</div>
+
+<div class="callout cost"><b class="t">💸 먼저 이것만: 돈이 드는 명령</b>
+<p>그림 생성(<code>artgen</code>, <code>facegen</code>)과 음성 생성(<code>voice … gen</code>, funtube <code>tts</code>)은 <b>저장소 루트 <code>.env</code> 의 Gemini 키로 실제 과금</b>됩니다. 사용자가 "API로 만들어 줘"라고 한 경우에만 실행하고, 점검만 할 때는 <code>--list</code> / <code>jobs</code> / <code>studio</code> 같은 호출 없는 모드를 씁니다. (자세히: <a href="#c-env">1-2</a>)</p></div>
+
+<h2 id="overview-map">세 채널 한눈에 비교</h2>
+<div class="grid3">
+  <div class="card q"><span class="badge b-q">qna</span><h3>여덟 살의 질문</h3>
+    <ul><li><b>채널</b> 모라구 (가족 채널)</li><li><b>형식</b> 8분 안팎 일러스트 롱폼 + 유입용 쇼츠</li><li><b>핵심</b> "아이의 질문 → 아빠가 얼버무림 → 명쾌한 설명"</li><li><b>엔진</b> Remotion + Gemini 그림·음성</li><li><b>사람 일</b> Gemini 그림 뽑기(또는 artgen), 시나리오 확정, 업로드</li><li><b>길잡이</b> <code>qna/CLAUDE.md</code></li></ul></div>
+  <div class="card s"><span class="badge b-s">shortube</span><h3>숫자로 보는 요즘</h3>
+    <ul><li><b>채널</b> 숫자로 보는 요즘 (@숫자로보는요즘)</li><li><b>형식</b> 40~60초 텍스트·차트 모션그래픽 쇼츠</li><li><b>핵심</b> 화제를 숫자·그래프로, <b>사실 카드</b>만 쓴다</li><li><b>엔진</b> Python(주제 선정) + Remotion(영상) + 코드 합성 BGM</li><li><b>사람 일</b> 검수, 한도 확인, 공개 결정</li><li><b>길잡이</b> <code>shortube/CLAUDE.md</code> + <code>COMPLIANCE_GUIDE.md</code></li></ul></div>
+  <div class="card f"><span class="badge b-f">funtube</span><h3>웃긴 영상툰</h3>
+    <ul><li><b>형식</b> 세로(1080×1920) 짧은 웃긴 영상: 단톡 · 상식 · 밸런스 · 2D 영상툰 · <b>3D 콩트(carpool)</b> · 노래</li><li><b>방향</b> <b>하이브리드</b> — 몸·무대·소리는 코드(3D·합성), 얼굴은 AI가 그린 표정 그림, 목소리는 AI 음성</li><li><b>핵심</b> 대본(JSON) 하나 → 음성 → 렌더</li><li><b>엔진</b> Remotion + Three.js 3D + Gemini(음성·표정 그림)</li><li><b>사람 일</b> 대본 쓰기, 표정 시트 고르기</li><li><b>길잡이</b> 없음 — 이 문서 4장</li></ul></div>
+</div>
+
+<h2 id="overview-which">무슨 일을 하려면 어디로 가나</h2>
+<div class="tw"><table>
+<tr><th>하고 싶은 일</th><th>프로젝트</th><th>시작점</th></tr>
+<tr><td>새 롱폼(아이 질문) 한 편 만들기</td><td>qna</td><td>스킬 <code>eight-year-olds-question</code> → <a href="#q-process">11단계</a></td></tr>
+<tr><td>롱폼을 쇼츠로 엮어 올리기</td><td>qna</td><td>스킬 <code>qna-shorts</code> → <a href="#q-shorts">쇼츠</a></td></tr>
+<tr><td>오늘 올릴 숫자 쇼츠 주제 뽑기</td><td>shortube</td><td>스킬 <code>shortube-daily</code> → <a href="#s-py">주제 선정</a></td></tr>
+<tr><td>화제(시황·날씨·게임 등) 쇼츠 만들기</td><td>shortube</td><td>브리프 → 영상 → BGM → 스틸 점검 → <a href="#s-flow">하루 흐름</a></td></tr>
+<tr><td>웃긴 단톡/상식/밸런스 게임 영상 (2D)</td><td>funtube</td><td><code>content/episodes.json</code> → <a href="#f-process">제작 순서</a></td></tr>
+<tr><td>표정·연기가 있는 3D 콩트 / 3D 노래 (하이브리드)</td><td>funtube</td><td><a href="#f-hybrid">하이브리드 방식</a> → 표정 시트(<code>facegen</code>) + <code>cam·face·act</code> 대본</td></tr>
+<tr><td>음성만 다시 / 목소리 바꾸기</td><td>qna · funtube</td><td><a href="#q-voice">qna 음성</a> · <a href="#f-tts">funtube 음성</a></td></tr>
+<tr><td>유튜브에 올리기</td><td>공통</td><td>qna <a href="#q-upload">업로드</a> · shortube <a href="#s-upload">업로드·한도</a></td></tr>
+</table></div>
+</section>
+
+<!-- ============================== 1. 공통 ============================== -->
+<section id="common" class="proj">
+<h1>1. 공통 규칙</h1>
+
+<h2 id="c-repo">1-1. 저장소 · 브랜치 · 올리지 않는 것</h2>
+<ul>
+  <li>GitHub: <code>moyuchan84/moyutube</code>. <b>작업은 브랜치에서 하고 PR 로 main 에 합친다.</b> (main 에 바로 커밋하지 않는다.)</li>
+  <li>GitHub Pages 는 main 의 루트를 내보낸다. 루트 <code>index.html</code> 은 <code>qna/</code> 로 넘겨 주는 페이지다. qna 의 <code>index.html</code>·<code>plan/</code>·<code>guide/</code>·<code>production/</code>·<code>auto/</code> 가 사이트다.</li>
+  <li><b>올리지 않는 것</b>: 키 파일 <code>.env</code>, 렌더 결과 <code>out/</code>, <code>node_modules/</code>, <code>.venv/</code>, 자동 생성 그림 <code>qna/video/public/art/</code>, shortube 의 <code>data/</code>·<code>output/videos/</code>.</li>
+  <li>Windows 환경: 셸은 PowerShell/Git Bash. shortube 파이썬은 <code>.venv/Scripts/python.exe</code>, 한글 깨짐 방지로 <code>PYTHONIOENCODING=utf-8</code>.</li>
+</ul>
+
+<h2 id="c-env">1-2. API 키 · 과금 규칙</h2>
+<p>Gemini 키는 <b><code>D:\youtube\.env</code> 한 곳</b>에만 둔다. <code>GEMINI_API_KEY</code>(기본), <code>GEMINI_API_KEY2</code>(첫 키가 한도에 걸리면 번갈아 쓰는 예비). 프로젝트 폴더마다 <code>.env</code> 를 새로 만들거나 키를 복사하지 않는다. 코드는 <b>환경변수 → 저장소 루트 <code>.env</code> → 프로젝트 <code>.env</code></b> 순서로 찾는다.</p>
+<div class="tw"><table>
+<tr><th>프로젝트</th><th>키를 읽는 곳</th><th>돈이 드는 명령</th><th>돈이 안 드는 점검 모드</th></tr>
+<tr><td>qna</td><td><code>qna/video/scripts/env.mjs</code> 의 <code>envValue()</code></td><td><code>npm run artgen -- epNN</code> (그림)<br><code>npm run voice -- epNN gen</code> (음성)</td><td><code>artgen epNN --list</code><br><code>voice epNN jobs</code> · <code>studio</code></td></tr>
+<tr><td>shortube</td><td><code>shortube/src/shortube/config.py</code> <code>load_config()</code></td><td>음성 · 그림 단계 (TTS_GUIDE.md)</td><td>주제 선정(<code>pick</code>)·브리프는 무료</td></tr>
+<tr><td>funtube</td><td><code>funtube/scripts/tts.mjs</code> · <code>facegen.mjs</code></td><td><code>npm run tts</code> · <code>node scripts/facegen.mjs</code></td><td>키가 없으면 <code>tts</code> 는 글자 수로 길이만 추정 · <code>facegen --list</code> · <code>--process-only</code> · <code>--placeholder</code></td></tr>
+</table></div>
+<div class="callout warn"><b class="t">왜 이렇게 엄격한가</b><p>2026-10-13 에 키가 없다고 생각하고 <code>artgen.mjs ep03</code> 을 "확인용"으로 돌렸다가 실제 생성 요청이 나간 적이 있습니다. <b>생성 명령은 사용자가 요청할 때만</b> 실행합니다. 새 스크립트에서 키가 필요하면 위와 같은 순서로 읽게 만들고, 키 값은 코드·로그·문서·커밋에 절대 쓰지 않습니다.</p></div>
+
+<h2 id="c-remotion">1-3. Remotion 영상 · 코드 합성 음악 (세 프로젝트 공통 방식)</h2>
+<ul>
+  <li><b>영상은 React 코드(Remotion)로 그린다.</b> 같은 데이터면 같은 영상이 나와서 재현·수정이 쉽다. 프로젝트마다 <code>node_modules</code> 가 따로라 처음에 폴더에서 <code>npm install</code>. (버전: qna 4.0.525 · shortube 4.0.529 · funtube ^4.0.535)</li>
+  <li><b>음악·효과음은 코드로 합성한다</b> (<code>bgm*.mjs</code>, <code>sfx.mjs</code>, <code>beat.mjs</code>). 외부 음원·유튜브 오디오 보관함 대신 쓰는 이유: Content ID 클레임 걱정이 없고, 같은 <code>timeline.json</code> 을 읽어 <b>장면 전환·숫자가 박히는 순간에 소리를 정확히 맞출 수 있다.</b> 설명란에는 <code>[음악] 채널에서 직접 만든 배경음악</code>.</li>
+  <li>패턴: <code>장면 목록(timeline.json) → 영상 컴포넌트와 BGM 스크립트가 같은 파일을 읽음</code>. 장면 길이를 바꾸면 BGM 도 다시 만들어야 맞는다 (<code>npm run … </code> 이 둘을 묶어 준다).</li>
+  <li><b>Claude 는 소리를 들을 수 없다.</b> 음악·음성은 만든 뒤 "한 번 들어 봐 달라"고 말한다. 볼륨은 RMS 로 확인 (대략 −15 ~ −20 dBFS).</li>
+</ul>
+
+<h2 id="c-claude">1-4. Claude 가 따르는 문서 · 스킬 · 메모리</h2>
+<div class="tw"><table>
+<tr><th>무엇</th><th>어디</th><th>역할</th></tr>
+<tr><td>루트 규칙</td><td><code>D:\youtube\CLAUDE.md</code></td><td>세 프로젝트 안내 · API 키 규칙 · 과금 경고 · 저장소 규칙. shortube 작업 전에 <code>shortube/CLAUDE.md</code> 와 <code>COMPLIANCE_GUIDE.md</code> 를 먼저 읽게 한다</td></tr>
+<tr><td>qna 규칙</td><td><code>qna/CLAUDE.md</code></td><td>폴더 규칙 + 한 편 만드는 순서 (이름을 즉석에서 만들지 않는다)</td></tr>
+<tr><td>shortube 규칙</td><td><code>shortube/CLAUDE.md</code> &gt; <code>COMPLIANCE_GUIDE.md</code> &gt; <code>SPEC.md</code></td><td>우선순위가 이 순서. CLAUDE.md 는 제작·업로드 체크리스트</td></tr>
+<tr><td>스킬</td><td><code>eight-year-olds-question</code> · <code>qna-shorts</code> · <code>shortube-daily</code></td><td>"이렇게 말하면 이 절차를 자동으로" (5장 참고)</td></tr>
+<tr><td>목소리 고정</td><td><code>qna/video/src/voice.json</code> + <code>VOICE.md</code></td><td>아빠 Algenib · 아이 Leda · 엄마 Kore. 바꾸지 않는다</td></tr>
+<tr><td>메모리</td><td><code>~/.claude/projects/D--youtube/memory/</code></td><td>시나리오는 집 밖에서 · 음색 고정 · 유료 스크립트 주의 · qna 절차 — 세션이 바뀌어도 유지</td></tr>
+</table></div>
+</section>
+
+<!-- ============================== 2. qna ============================== -->
+<section id="qna" class="proj">
+<h1><span class="badge b-q">qna</span>여덟 살의 질문</h1>
+
+<h2 id="q-what">2-1. 무엇을 만드는 채널인가</h2>
+<p>가족 채널 <b>모라구</b>의 시리즈. 아이가 무심코 던진 질문("호텔이랑 모텔이 뭐가 달라?")에 <b>엄마·아빠도 몰라서 얼버무리다가</b> 명쾌하게 설명해 주는 구조. 교사–학생이 아니라 <b>부모–자녀</b>이고, "엄마아빠도 몰랐어요"라는 공감이 핵심 톤이다. 지금까지: 1호텔·모텔·유스호스텔 / 2아파트·빌라·오피스텔 / 3마트·시장·백화점 / 4몸·머리카락 / 5의사·약사·간호사 / 6감기·독감.</p>
+<div class="flow"><span>기획서(.md)</span><i>→</i><span>script.json · art.json</span><i>→</i><span>콘티(storyboard.html)</span><i>→</i><span>그림</span><i>→</i><span>음성</span><i>→</i><span class="hl">make → mp4 · srt</span><i>→</i><span>쇼츠</span><i>→</i><span>업로드</span></div>
+
+<h2 id="q-folder">2-2. 폴더 지도 — 이 이름들만 쓴다</h2>
+<div class="tree">qna/
+├─ CLAUDE.md                  ← 작업 규칙
+├─ index.html                 ← 사이트 홈 (편 목록 카드)
+├─ plan/ guide/ production/ auto/   ← 사이트 페이지 (기획 · 튜토리얼 · 제작 노트 · 자동 제작 매뉴얼)
+├─ skill/                     ← eight-year-olds-question 스킬 패키지
+├─ art/                       ← 모든 편이 같이 쓰는 그림 원본
+│  ├─ anchor/style-cutin.png  ← 화풍 앵커 (모든 Gemini 요청에 ①로 첨부)
+│  ├─ common/{dad,kid,mom,cutin,bg}/  ← 아빠·아이·엄마 표정, 공통 배경
+│  └─ channel/                ← 채널 프로필 · 배너
+├─ episodes/NN-영문슬러그/      ← 편 하나 = 폴더 하나
+└─ video/                     ← Remotion 영상 코드 (README.md · VOICE.md)
+   ├─ src/epNN/               ← 그 편의 script.json · art.json · timing.json (사람이 고치는 곳)
+   ├─ src/shorts/epNN.json    ← 편집형 쇼츠 계획
+   ├─ src/voice.json · art-common.json · Root.tsx
+   ├─ scripts/                ← npm run 으로 부르는 도구들
+   ├─ public/                 ← 자동 생성 (처리된 그림 · 음성 · 효과음) — 손으로 고치지 않는다
+   ├─ voice-studio/epNN/      ← AI Studio 에서 받은 컷별 음성 원본
+   └─ out/epNN/               ← 완성 영상 · 자막 · 컷 이미지 · 썸네일 (git 에 안 올림)</div>
+
+<h3>편 폴더 <code>episodes/NN-slug/</code> 에 있어도 되는 파일</h3>
+<div class="tw"><table>
+<tr><th>파일</th><th>누가</th><th>내용</th></tr>
+<tr><td><code>&lt;slug&gt;.md</code></td><td>스킬 · Claude</td><td>기획서 원본: 구성 · 자료조사 · 콘티표 · 그림 목록 · 대본 · BGM · 썸네일/제목 · 한 문장</td></tr>
+<tr><td><code>index.html</code></td><td>스킬</td><td>같은 기획서를 사이트용으로 (3편 <code>index.html</code> 의 head/CSS 그대로)</td></tr>
+<tr><td><code>storyboard.html</code></td><td>도구</td><td><code>npm run storyboard -- epNN</code> — 컷별 배경 · 인물 위치 · 움직임 · 대사 콘티 시트. 그림이 생기면 다시 돌린다</td></tr>
+<tr><td><code>GEMINI_PROMPTS.md</code></td><td>도구</td><td><code>npm run prompts -- epNN</code> — 그림 프롬프트 문서 (직접 고치지 말고 <code>art.json</code> 을 고친다)</td></tr>
+<tr><td><code>ANTIGRAVITY.md</code></td><td>도구</td><td><code>npm run handoff -- epNN</code> — 그림·음성을 다른 에이전트에 넘길 때만</td></tr>
+<tr><td><code>art/&lt;id&gt;.png</code></td><td>사람</td><td>그 편 그림 원본 (Gemini 결과). id 는 <code>art.json</code> 의 id 그대로 (<code>bg/…</code> <code>full/…</code> <code>&lt;인물&gt;/…</code> <code>cutin/…</code> <code>prop/…</code>)</td></tr>
+<tr><td><code>jobs/</code></td><td>도구</td><td>자동 생성 (images.json · voice.json)</td></tr>
+<tr><td><code>thumb.svg</code>(또는 .jpg)</td><td>스킬</td><td>사이트 홈 카드 그림</td></tr>
+<tr><td><code>_old/</code></td><td>사람 · Claude</td><td>바뀌기 전 구성 · 버린 그림. <b>지우지 말고 옮긴다</b> (<code>_old/&lt;slug&gt;-v1-&lt;한 단어&gt;.md</code>)</td></tr>
+</table></div>
+<div class="callout"><p>편 번호 NN 은 <b>영상으로 나가는 순서</b>. <code>episodes/NN-…</code> 와 <code>video/src/epNN</code> 번호가 항상 같아야 한다. 위 표에 없는 파일을 편 폴더에 만들지 않는다 (임시 파일·생성 스크립트는 scratchpad 에).</p></div>
+
+<h2 id="q-process">2-3. 한 편 만드는 11단계</h2>
+<ol class="steps q">
+<li><b class="n">기획 <span class="who auto">자동(스킬)</span></b>스킬 <code>eight-year-olds-question</code> 에 주제를 던지면 자료조사 · 7박자 콘티 · 컷별 그림 콘티 · 나레이션 대본(당황 대사 포함) · BGM/효과음 · 썸네일 문구 · 한 문장 정리까지 한 번에. → <code>episodes/NN-slug/&lt;slug&gt;.md</code>, <code>index.html</code></li>
+<li><b class="n">대본 · 그림 목록 <span class="who auto">자동(Claude)</span></b>기획서 대본을 영상용으로 옮긴다 (<b>3편이 기준 예시</b>). → <code>video/src/epNN/script.json</code>, <code>art.json</code></li>
+<li><b class="n">콘티 확인 <span class="who human">사람 확인</span></b><code>npm run storyboard -- epNN</code> → <code>storyboard.html</code> 을 열어 컷 구성·길이 확인. <b>여기서 대본을 고친다</b> (그림 그린 뒤에 고치면 낭비).</li>
+<li><b>그림 프롬프트</b> <code>npm run prompts -- epNN</code> → <code>GEMINI_PROMPTS.md</code> (공통 그림은 <code>art/common/GEMINI_PROMPTS.md</code> 에 한 번만).</li>
+<li><b class="n">그림 <span class="who human">사람</span><span class="who paid">artgen 은 유료</span></b>Gemini 에서 손으로 뽑아 <code>episodes/NN-slug/art/&lt;id&gt;.png</code> 에 저장하거나, <code>npm run artgen -- epNN</code> (사용자에게 물어보고).</li>
+<li><b class="n">그림 처리 <span class="who auto">자동</span></b><code>npm run art -- epNN</code> — 초록 배경 제거 · 여백 자르기 · 크기 맞춤 → <code>video/public/art/epNN/</code>. 끝나면 다시 <code>npm run storyboard -- epNN</code>.</li>
+<li><b class="n">음성 <span class="who paid">gen 은 유료</span></b><code>npm run voice -- epNN studio</code>(손으로) 또는 <code>… gen</code>(API) → <code>voice-studio/epNN/</code>, <code>src/epNN/timing.json</code>.</li>
+<li><b class="n">등록 · 미리보기</b><code>src/Root.tsx</code> 의 <code>EPISODES</code> 에 한 줄 추가 (<b>timing.json 이 생긴 뒤</b>) → <code>npm run studio</code>.</li>
+<li><b class="n">완성 <span class="who auto">자동</span></b><code>npm run make -- epNN</code> → <code>video/out/epNN/epNN.mp4</code> + <code>subtitles.srt</code>. 썸네일은 <code>Ep NN-ThumbD</code> 스틸.</li>
+<li><b class="n">사이트 · 저장</b>홈 <code>index.html</code> 카드 갱신, 브랜치에서 커밋 → PR.</li>
+<li><b class="n">쇼츠 <span class="who auto">무료</span></b>스킬 <code>qna-shorts</code>: 편집 계획 <code>src/shorts/epNN.json</code> → <code>short -- epNN --check</code> → <code>short -- epNN</code> → Chrome 으로 <b>비공개</b> 업로드. 롱폼 음성·그림을 재사용하므로 비용 0.</li>
+</ol>
+
+<h2 id="q-scenario">2-4. 시나리오 규칙 — 재미가 여기서 갈린다</h2>
+<div class="callout ok"><b class="t">고정 규칙</b>
+<ul>
+<li><b>집 밖에서, 제삼의 인물과.</b> "거실에서 아이가 묻고 아빠가 화들짝 놀라는" 구조를 반복하지 않는다. 질문이 나올 만한 재미있는 장소(시장 · 약국 · 이발소 …)에서, 가족이 아닌 인물(욕쟁이 시장 할머니 · 이발사 할아버지 · 약사 선생님)을 넣는다.</li>
+<li><b>한창 벌어지는 장면부터 시작</b>한다 (0번 박자 "지금 상황"). 그 뒤 "3분 전으로 돌아가 보겠습니다" 식으로 되감는다.</li>
+<li><b>장소가 답의 일부</b>, 제삼의 인물이 답을 <b>몸으로 보여 준다</b>. 그림도 정적이지 않게 움직일 수 있는 구조로.</li>
+<li><b>6번 박자(아이 눈높이로 번역)에는 농담을 넣지 않는다.</b> 가장 진지하게 가는 구간.</li>
+<li>분량은 <b>8분 안팎</b> (3편 음성 약 321초에 배속 1.15). <code>storyboard.html</code> 과 기획서 콘티표의 시간으로 확인.</li>
+<li>대본을 고치면 기획서 <code>.md</code> 의 대본도 같이 고친다. 영상 대본이 원본이 된 뒤에는 <code>script.json</code> 기준.</li>
+</ul></div>
+
+<h3>7박자 구성 (컷의 <code>beat</code> 값)</h3>
+<div class="tw"><table>
+<tr><th>#</th><th>박자</th><th>하는 일</th></tr>
+<tr><td>0</td><td>지금 상황</td><td>이미 벌어지고 있는 장면으로 시작. 마지막 줄에 "3분 전으로…" 되감기 (<code>sfx:"rewind"</code>, <code>pop:"3분 전"</code>)</td></tr>
+<tr><td>1</td><td>그 질문</td><td>아이가 던진 질문. 아빠도 몰랐다는 공감의 시작</td></tr>
+<tr><td>2</td><td>얼버무린 순간</td><td>아빠의 당황 · 어설픈 대답 (여러 컷으로 길게 가도 된다: 6편은 c02~c02f)</td></tr>
+<tr><td>3</td><td>왜 다들 헷갈리나</td><td>헷갈리는 이유</td></tr>
+<tr><td>4</td><td>갈라진 지점</td><td>진짜 차이 (제삼의 인물이 몸으로 보여 줌). 컷이 가장 많은 구간</td></tr>
+<tr><td>5</td><td>한 문장 정리</td><td>결론 한 문장</td></tr>
+<tr><td>6</td><td>아이 눈높이로 번역</td><td><b>농담 금지.</b> 아이 말로 다시 설명</td></tr>
+<tr><td>7</td><td>남는 이야기</td><td>여운 · 다음 편 · 끝 카드 (<code>"style":"end"</code>)</td></tr>
+</table></div>
+
+<h3>소재 주의</h3>
+<ul>
+<li><b>몸 · 성 관련 소재는 몸을 그리지 않는다</b> (4편: 닫힌 문 · 거품 모자이크 · 단면도). 민감한 단어는 <b>대사에만</b>, 썸네일 · 제목 · 화면 글자(<code>hook</code> · <code>stamp</code> · <code>end</code> 포함)에는 쓰지 않는다. 쇼츠도 그런 대사를 아예 고르지 않는다.</li>
+<li>의료 소재(5·6편)는 정보 전달 톤을 지키고, 진단·처방 권유처럼 들리지 않게.</li>
+</ul>
+
+<h2 id="q-script">2-5. <code>script.json</code> · <code>art.json</code> 읽는 법</h2>
+<p>사람이 고치는 두 파일. 영상의 모든 연출이 여기에 글로 적혀 있다 (<code>video/src/epNN/</code>).</p>
+<h3>script.json — 컷(cut) 구조</h3>
+<pre><button class="copy">복사</button><code>{
+  "rawVoice": true,            // 전부 AI 음성이면 true (렌더 때 음높이 변조를 끈다)
+  "speed": 1.15,               // 편 전체 배속 (음성을 다시 만들지 않아도 됨)
+  "title": "마트 · 시장 · 백화점, 뭐가 달라요?",
+  "bgm": "cheerful",           // public/bgm/cheerful.wav 를 대사 밑에 깐다. 줄을 지우면 BGM 없음
+  "cuts": [{
+    "id": "c00", "beat": "0. 지금 상황",
+    "scene": {
+      "bg": "bg/market-alley",
+      "props":  [{"art":"prop/stall-front","x":0.2,"y":0.74,"w":0.4,"front":true}],
+      "actors": [{"id":"granny","art":"granny/banter","x":0.2,"idle":"sway"},
+                 {"id":"kid","art":"common/kid/normal","x":0.5},
+                 {"id":"dad","art":"common/dad/panic","x":0.76}]
+    },
+    "lines": [
+      {"who":"narr","text":"…","en":"…(영어 자막)"},
+      {"who":"granny","text":"…","focus":"granny","cutin":"cutin/granny-banter","fx":"zoom"},
+      {"who":"narr","text":"3분 전으로 돌아가 보겠습니다.","tts":"삼 분 전으로 …","pop":"3분 전","sfx":"rewind","fx":"flash"}
+    ]
+  }]
+}</code></pre>
+
+<div class="tw"><table>
+<tr><th>위치</th><th>항목</th><th>뜻</th></tr>
+<tr><td rowspan="6">scene</td><td><code>bg</code></td><td>배경 그림 (한 장짜리 <code>full/…</code> 도 여기). <code>tone:"flashback"</code> 이면 빛바랜 색 + 빨간 점선 테두리</td></tr>
+<tr><td><code>actors[].x · h</code></td><td>발 위치(0 왼쪽~1 오른쪽) · 키. 안 쓰면 아빠 0.64, 아이 0.43</td></tr>
+<tr><td><code>actors[].enter</code></td><td><code>left · right</code> 미끄러져 들어옴 / <code>drop</code> 위에서 / <code>pop</code> 튀어나옴 / <code>rise</code> 좌판 뒤에서 솟기</td></tr>
+<tr><td><code>actors[].idle</code></td><td><code>sway · bounce · shiver</code> (가만있을 때 움직임)</td></tr>
+<tr><td><code>actors[].flip · at</code></td><td>좌우 반전(아빠는 왼쪽, 아이는 오른쪽을 보게 그려져 있음) · 몇 번째 대사부터 나올지(0부터)</td></tr>
+<tr><td><code>props[]</code></td><td><code>x y w</code>, <code>float</code>(둥둥), <code>dim</code>(흐릿), <code>front</code>(배우 앞에 그림), <code>motion</code>(sway·pulse·spin·walk), <code>to</code>(화면 가로질러 이동)</td></tr>
+<tr><td rowspan="8">line</td><td><code>who</code></td><td>화자: <code>narr · dad · kid · mom · docu · granny …</code> (목소리는 <code>voice.json</code> 이 정함)</td></tr>
+<tr><td><code>pose</code></td><td>이 대사부터 그 인물의 그림(표정)을 바꿈 → 젤리처럼 눌렸다 튐</td></tr>
+<tr><td><code>focus</code> · <code>cutin</code></td><td>그 인물로 카메라 당기기 · 큰 얼굴 컷인이 별 모양 폭발과 함께 튀어나옴</td></tr>
+<tr><td><code>fx</code></td><td><code>shake</code> 흔들림 · <code>lines</code> 집중선 · <code>flash</code> 번쩍 · <code>zoom</code></td></tr>
+<tr><td><code>pop</code></td><td>큰 글자가 튀어나옴 (예 <code>"???"</code>)</td></tr>
+<tr><td><code>sfx · sfxAfter</code></td><td><code>boing · page · stinger · dudung · rewind</code> (대사 뒤 "뚜둥"은 화면 흔들림·큰 글자 포함)</td></tr>
+<tr><td><code>move · act</code></td><td>그 자리로 걸어가기 · <code>jump · shiver · nod</code></td></tr>
+<tr><td><code>tts · en</code></td><td>임시 음성이 읽을 문장(숫자·영어·괄호 대사에만) · 영어 번역 (있으면 <code>srt … en</code> 이 영어 자막 생성)</td></tr>
+</table></div>
+<p>특별 컷: <code>"style":"triptych"</code> + <code>"triptych":[{art,name,label}]</code> (세 칸 정리), <code>"style":"end"</code> + <code>"end":{series,title,next}</code> (끝 화면). 말하는 인물은 자동으로 까딱거리고, 가만 있어도 숨 쉬며 발밑 그림자가 생기고, 컷 내내 카메라가 천천히 밀고 들어간다 (<code>src/Scene.tsx</code>).</p>
+
+<h3>art.json — 그림 목록</h3>
+<ul>
+<li><code>cast</code>: 가족이 아닌 사람의 <b>생김새를 영어로 아주 구체적으로</b> 적는다 (헤어 · 옷 · 표정 성격까지). 같은 사람이 매번 달라 보이지 않게 하는 핵심.</li>
+<li><code>common</code>: 쓸 공통 그림 id (아빠·아이 표정 등). <code>items[]</code>: 그 편 전용 그림 — <code>id · kind · title · cuts(쓰는 컷)</code> + 묘사.</li>
+<li>그림 종류 <code>kind</code>: <code>char</code> 전신 · <code>cutin</code> 가슴 위 · <code>prop</code> 소품 (이 셋은 <b>초록 배경</b>으로 뽑아 투명 처리) · <code>bg</code> 사람 없는 배경 · <code>full</code> 완성된 한 장짜리 장면(16:9). 확장: <code>stage</code>(주인공 자리를 비운 무대) · <code>layer</code>(배우를 가리는 앞쪽 물건) · <code>talk</code>(말하는 그림).</li>
+<li><b>말하는 그림 <code>&lt;그림&gt;-b</code></b>: 같은 자세에 입만 다른 두 번째 그림. 있으면 말하는 동안 번갈아 나와 입이 움직인다 (없어도 됨).</li>
+<li><code>who</code> + <code>ref</code>(기준 그림, 기준 그림 자신은 <code>null</code>)로 같은 인물을 이어 간다. <code>inset: 0.025</code> 는 그림 테두리 자르기, <code>sky</code> 는 장면 하늘색 지정.</li>
+</ul>
+
+<h2 id="q-art">2-6. 그림 뽑기 — 사람이 하는 유일한 반복 작업</h2>
+<ol class="steps q">
+<li>문서(<code>GEMINI_PROMPTS.md</code>)의 블록을 위에서부터 하나씩 처리한다. 프롬프트를 <b>통째로 복사</b>해 Gemini 에 붙여넣는다.</li>
+<li>블록에 적힌 <b>첨부 이미지를 같이 올린다</b>. ① 화풍 앵커(<code>art/anchor/style-cutin.png</code>) ② 같은 사람을 유지하기 위한 기준 그림. 순서를 지킨다.</li>
+<li>결과를 블록의 <b>저장 경로·이름 그대로</b> 저장한다. 배경 제거·크기 조절은 하지 않는다 (<code>npm run art</code> 가 한다).</li>
+<li><b>한 사람은 한 대화창에서 끝내고</b>, 다음 사람·배경은 새 대화창에서. 대화가 길어지면 화풍이 흐려진다.</li>
+</ol>
+<div class="tw"><table>
+<tr><th>종류</th><th>저장 경로 예</th><th>뽑는 모양</th></tr>
+<tr><td>아빠·아이 전신</td><td><code>art/common/dad/panic.png</code></td><td>초록 배경, 2:3 세로</td></tr>
+<tr><td>리액션 컷인</td><td><code>art/common/cutin/dad-panic.png</code></td><td>초록 배경, 1:1, 가슴 위</td></tr>
+<tr><td>공통 배경</td><td><code>art/common/bg/living-room.png</code></td><td>사람 없음, 16:9</td></tr>
+<tr><td>편별 배경 / 인물 / 소품 / 장면</td><td><code>episodes/NN-…/art/bg|char|prop|full/…png</code></td><td>배경 사람 없음 16:9 · 인물 초록 2:3 · 소품 초록 1:1 · 장면 완성 16:9</td></tr>
+</table></div>
+
+<h3>자주 생기는 문제와 다시 뽑을 때 이어 보내는 문장</h3>
+<div class="tw"><table>
+<tr><th>문제</th><th>보낼 문장 (Gemini)</th></tr>
+<tr><td>배경이 단색 초록이 아님</td><td><code>Redo it with a perfectly flat pure green #00FF00 background, no shadow, no floor.</code></td></tr>
+<tr><td>몸이 잘림</td><td><code>Zoom out so the whole body fits with empty margin on every side.</code></td></tr>
+<tr><td>다른 사람처럼 나옴</td><td><code>Keep the exact same face, hair and clothes as attached image 2. Only change the pose.</code></td></tr>
+<tr><td>글자가 들어감</td><td><code>Remove all text and letters; leave signs blank.</code> (글자는 전부 코드가 얹는다)</td></tr>
+<tr><td>장면 하늘이 초록</td><td><code>This is a finished scene, not a cutout: paint a real sky, no green screen anywhere.</code></td></tr>
+<tr><td>배경에 사람이 있음</td><td><code>Remove every person. Background only.</code></td></tr>
+</table></div>
+<div class="callout warn"><b class="t">실제로 생긴 실수</b>
+<p>① 컷인을 다른 폴더에 저장 — <code>art/common/cutin/dad-panic.png</code> 가 맞고 <code>art/common/dad/dad-panic.png</code> 가 아니다 (폴더가 다르면 "없는 그림" 처리). ② 장면 그림의 하늘이 초록 — 초록 배경은 인물·컷인·소품에만 쓴다. ③ 그림 둘레 흰 테두리 → <code>inset</code>. ④ 그림에 일본어 의성어 등 글자가 들어감 → 다시 뽑기.</p></div>
+<p><code>npm run art -- epNN</code> 경고: 배경을 못 지웠다(→ 위 문장으로 다시 뽑기) · 그림이 가장자리에 닿음(몸이 잘렸을 수 있음, 컷인은 가슴에서 잘리는 게 정상) · 원본이 작아서 흐림(더 큰 해상도 또는 Upscayl 2배) · 16:9 가 아님(Gemini 에서 비율을 16:9 로). <b>없는 그림은 영상에서 점선 임시 그림으로 나오므로 한 장씩 넣어 가며 확인해도 된다.</b></p>
+
+<h2 id="q-voice">2-7. 음성 — 모든 편이 같은 음색</h2>
+<div class="tw"><table>
+<tr><th>역할</th><th>목소리 (AI Studio / Gemini TTS)</th><th>비고</th></tr>
+<tr><td>아빠 · 나레이션 · 다큐 톤 (Speaker 1)</td><td><b>Algenib</b> (거친 저음) + 말투 지시 "balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice…"</td><td>1편(2026-10-12)에서 확정. <b>바꾸지 않는다</b></td></tr>
+<tr><td>아이 (Speaker 2)</td><td><b>Leda</b> (어린 느낌, 높은 톤)</td><td>"여덟 살 아이, 밝고 높은 목소리" 문장이 <code>voice.json</code> 의 <code>style</code> 로 붙음</td></tr>
+<tr><td>엄마 (Guest, <code>mom</code>)</td><td><b>Kore</b></td><td>2026-10-16 추가, 아직 들어 보고 확정 전</td></tr>
+<tr><td>시장 할머니 (3편)</td><td>Gacrux</td><td>손님(Guest) 목소리</td></tr>
+<tr><td>이발사 할아버지 (4편)</td><td>Charon</td><td>아빠와 너무 비슷하면 Sadaltager · Rasalgethi 시도</td></tr>
+<tr><td>약사 선생님 (5편)</td><td>Sulafat</td><td>엄마 Kore 와 겹치지 않는지 확인</td></tr>
+</table></div>
+<div class="callout warn"><b class="t">한 컷에 목소리는 둘까지</b><p>AI Studio 의 화자 자리가 둘(Speaker 1·2)이라, 아빠+아이+엄마가 한 컷에서 모두 말하면 도구가 오류를 낸다 → <b>컷을 나눈다</b>. 손님이 나오면 <b>그 컷에서 비는 자리</b>를 쓴다 (아빠+할머니 컷은 Speaker 2=Gacrux, 아이+할머니 컷은 Speaker 1=Gacrux). <code>npm run voice -- epNN jobs</code> 가 이 검사를 한다.</p></div>
+
+<h3>음성을 만드는 세 가지 방법</h3>
+<div class="grid3">
+<div class="card q"><h3>① 한 번에 (API)</h3><span class="who paid">유료</span>
+<pre><button class="copy">복사</button><code>npm run voice -- ep02 gen
+npm run voice -- ep02 gen --all</code></pre>
+<p>대사가 바뀐 컷만 생성 → 줄마다 자르기 → 타이밍 갱신. 컷 하나를 한 번에 받아 <code>voice-studio/epNN/&lt;컷id&gt;.wav</code> 에 두고 줄 사이 쉼으로 자른다(못 찾으면 줄마다 따로). 모델은 그 키로 쓸 수 있는 Flash TTS 중 최신, 고정은 <code>voice.json</code> 의 <code>"model"</code>.</p></div>
+<div class="card q"><h3>② 손으로 (AI Studio 화면)</h3><span class="who human">사람</span>
+<pre><button class="copy">복사</button><code>npm run voice -- ep02 studio
+# 컷마다 복사 버튼 → AI Studio 에서
+# Speaker1=Algenib, Speaker2=Leda 로 생성
+# → voice-studio/ep02/&lt;컷id&gt;.wav 저장
+npm run voice -- ep02 split</code></pre>
+<p><code>out/ep02/voice-studio.html</code> 에서 컷마다 복사. 대사를 고친 뒤 <code>studio</code> 를 다시 돌리면 <b>다시 만들 컷만 ⚠</b> 로 표시된다.</p></div>
+<div class="card q"><h3>③ 다른 도구에 맡김</h3><span class="who auto">무료</span>
+<pre><button class="copy">복사</button><code>npm run handoff -- ep03</code></pre>
+<p><code>episodes/03-…/ANTIGRAVITY.md</code> + <code>jobs/images.json</code> + <code>jobs/voice.json</code>. 지시서를 읽히면 컷별 목소리·대사·저장 경로가 들어 있다. 그림·음성 모두 가능.</p></div>
+</div>
+<ul>
+<li>임시 음성: <code>npm run tts -- epNN</code> (Windows 내장 'Heami'). 흐름·길이 확인용. 임시 음성은 한 목소리를 변조해 쓰므로 실제 목소리를 넣을 땐 <code>"rawVoice": true</code> 필수.</li>
+<li>AI Studio WAV 는 안에 헤더가 한 번 더 있고 끝에 C2PA "AI 생성" 표시가 붙을 수 있다. <code>voice.mjs</code> 가 읽을 때 걸러 내니 손대지 않는다 (다른 편집기에 직접 넣을 때만 주의, 안 그러면 "칙" 잡음).</li>
+<li>직접 녹음으로 바꿔 끼우기: <code>voice -- epNN sheet</code> (녹음 대본 <code>voice-script.md</code>) → <code>public/epNN/voice/c01-0.wav</code> 처럼 같은 이름으로 덮기 → <code>voice -- epNN</code> 으로 타이밍 재계산. <b>녹음한 뒤에는 <code>--tts</code> 를 붙이지 않는다</b> (임시 음성이 덮어씀).</li>
+</ul>
+
+<h2 id="q-make">2-8. 렌더 · 미리보기 · 배속 · 자막</h2>
+<pre><button class="copy">복사</button><code>cd D:\youtube\qna\video
+npm run studio                  # 브라우저 미리보기 (왼쪽에서 Ep03 선택, 파일을 고치면 바로 반영)
+npm run make -- ep03            # 프롬프트 문서 → 그림 처리 → (음성 없으면 임시 음성) → sfx/bgm → 배속 → 렌더 → 자막
+npm run make -- ep03 --voice    # 대사가 바뀐 컷을 Gemini 음성으로 다시 (GEMINI_API_KEY, 유료)
+npm run make -- ep03 --tts      # 임시 음성(Windows TTS)부터 다시
+npm run stills -- ep03          # 컷별 1920x1080 PNG → out/ep03/cuts
+npx remotion still src/index.ts Ep03-ThumbD out/ep03/thumbnail.png    # 얼굴 썸네일
+npm run srt -- ep03 [en]        # 유튜브용 자막 (en 은 영어)</code></pre>
+<ul>
+<li><b>연출만 고쳤으면 음성을 다시 만들 필요가 없다.</b> <code>npm run studio</code> 로 확인하고 <code>make</code> 만 다시. <code>make</code> 는 <code>script.json</code> 이 음성보다 새것이면 경고를 띄운다 (대사를 고쳤다면 <code>--voice</code>/<code>--tts</code>).</li>
+<li><b>배속</b>: <code>script.json</code> 의 <code>"speed": 1.2</code> — 목소리·쉼·컷 전환·자막 타이밍 전부 (음높이 유지). 빠른 목소리는 <code>scripts/speed.mjs</code> 가 <code>public/&lt;편&gt;/voice-x&lt;배속&gt;/</code> 에 미리 만든다. 줄을 지우면 1배속.</li>
+<li><b>BGM</b>: <code>"bgm":"cheerful"</code> → <code>node scripts/bgm.mjs</code> 가 코드로 합성 (말하는 동안은 목소리보다 약 22dB 작게). 다른 곡은 <code>public/bgm/&lt;이름&gt;.wav</code> + 이름 변경. 효과음은 <code>node scripts/sfx.mjs</code>.</li>
+<li>렌더 시간: 4분짜리에 6~7분쯤 (8분 영상은 더 걸린다).</li>
+<li>완성본: <code>out/epNN/epNN.mp4</code> (1920×1080) · <code>subtitles.srt</code> (+ <code>subtitles.en.srt</code>).</li>
+</ul>
+
+<h2 id="q-shorts">2-9. 쇼츠 — 롱폼을 유입용으로 다시 엮기 (스킬 <code>qna-shorts</code>)</h2>
+<p>음성·그림은 <b>롱폼에 이미 있는 것만</b> 쓴다 → Gemini 호출 없음, 비용 0. 새 대사가 필요하면 멈추고 사용자에게 묻는다.</p>
+<div class="flow"><span>대사 목록 보기</span><i>→</i><span>구성 고르기</span><i>→</i><span>src/shorts/epNN.json</span><i>→</i><span>Root.tsx 의 EDITED_SHORTS 등록</span><i>→</i><span class="hl">short -- epNN --check</span><i>→</i><span>콘택트 시트 눈으로 확인</span><i>→</i><span>short -- epNN</span><i>→</i><span>비공개 업로드</span></div>
+<h3>구성 — 궁금증을 남기는 순서</h3>
+<ol>
+<li><b>0초에 질문</b>: 아이의 질문 대사로 바로 시작 (인사·나레이션 도입 금지). 위에 <code>hook</code> 두 줄이 쾅 — "아빠도 대답 못 한 / 진짜 차이"처럼 <b>답이 있다는 약속</b>.</li>
+<li><b>틀린 답 → 땡</b>: 아빠가 얼버무린 대사에 <code>stamp</code>.</li>
+<li><b>반전 한 줄</b>: "그런데 ~부터가 완전히 다릅니다"에 <code>pop:"?!"</code>.</li>
+<li><b>챕터</b>: 항목마다 <code>chapter</code> (위 목록에 불이 켜지고 첫째/둘째/셋째 도장). 한 항목에 대사 1~3개.</li>
+<li><b>마지막 항목은 답을 주지 않는다</b>: 시작 대사 하나만 보이고 끝 카드로 질문을 남겨 본편으로. 목록에서도 마지막 항목은 차례가 올 때까지 <code>???</code>.</li>
+<li>길이 <b>40~55초</b> (60초 넘으면 경고), 대사 9~12개. 6번 박자와 롱폼의 결론 문장은 쓰지 않는다 — 본편에서 볼 이유를 남긴다.</li>
+</ol>
+<pre><button class="copy">복사</button><code>{ "id":"Ep01-Short", "episode":"ep01", "series":"여덟 살 아들의 질문 1편",
+  "topics":["호텔","모텔","유스호스텔"],
+  "hook":["아빠도 대답 못 한","진짜 차이"],
+  "segments":[
+    { "line":"c01-1", "hl":["호텔이랑"], "cutin":false },           // 대사 id = &lt;컷&gt;-&lt;번호&gt;
+    { "line":"c03-0", "stamp":{"text":"땡!","sub":"가격 차이가 아니었다"} },
+    { "line":"c04-1", "transition":"whip", "pop":"?!" },
+    { "line":"c05-0", "chapter":0, "transition":"whip" },
+    { "line":"c07-0", "chapter":2, "transition":"glitch", "hold":4 }
+  ],
+  "end":{ "title":["독일의 한 선생님은","왜 이걸 만들었을까?"], "sub":"본편에서 확인하세요" },
+  "upload":{ "longTitle":"…", "title":"… #shorts", "description":"…", "tags":[], "playlist":"여덟 살 아들의 호기심" } }</code></pre>
+<p>조각 옵션: <code>transition</code> <code>whip</code>(가로 모션블러, 컷이 바뀔 때) · <code>glitch</code>(마지막 ??? 항목) / <code>zoom · cam</code>(기본은 말하는 배우를 따라가는 카메라 — 배우 1.6배, 나레이션 1.35, 배경만 1.15) / <code>hl</code>(노랗게 칠할 단어, 한 대사 1~3개) / <code>stamp · pop · shake · cutin · hold</code>. 자동: 훅 플래시 · 단어 단위 자막 · 위 목록+진행 막대 · 필름 입자 · 비네트 · BGM · 효과음 · 끝 카드.</p>
+<pre><button class="copy">복사</button><code>cd D:\youtube\qna\video
+# 대사 목록 (id · 화자 · 길이 · 대사)
+node -e "const s=require('./src/ep03/script.json'),t=require('./src/ep03/timing.json');for(const c of s.cuts)c.lines.forEach((l,i)=>console.log(c.id+'-'+i,l.who,(t[c.id+'-'+i]||0).toFixed(1)+'s',l.text))"
+npm run short -- ep03 --check   # 조각마다 스틸 → out/shorts/ep03-check.png (직접 열어 본다)
+npm run short -- ep03           # mp4 + upload.md + 10MB 이하 업로드용 사본(.upload.mp4)</code></pre>
+<p><b>확인할 것</b>: 글자가 오른쪽 140px · 아래 330px(쇼츠 UI 자리)에 걸리지 않는지 · 자막이 얼굴을 가리지 않는지 · 같은 그림이 3번 넘게 연달아 나오지 않는지. 고칠 게 있으면 json 만 고치고 다시 <code>--check</code>.</p>
+
+<h2 id="q-upload">2-10. YouTube Studio 업로드 (Claude in Chrome)</h2>
+<div class="callout warn"><b class="t">원칙</b><p>쇼츠는 <b>항상 비공개로 저장</b>하고 공개 전환은 사람이 한다. 업로드 버튼 전에 "이 파일을 이 제목으로 비공개 업로드할까요?" 확인을 받는다. 채널은 <b>모라구</b>(<code>UCCIm8f5JE4b4PmSrPIJd7zQ</code>) — 다른 채널(숫자로 보는 요즘)이 열려 있으면 <code>youtube.com/channel_switcher</code> 에서 바꾼다.</p></div>
+<ol>
+<li><code>anthropic-skills:chrome-browser</code> 스킬을 읽고 도구를 한 번에 불러온다 → <code>tabs_context_mcp</code> → 새 탭 → <code>studio.youtube.com</code>. 로그인 화면이면 멈추고 사용자에게 부탁 (비밀번호를 대신 넣지 않는다).</li>
+<li>본편 URL 찾기 (관련 동영상용). 업로드 창은 <code>…/videos/upload?d=ud</code> 로 바로 열린다.</li>
+<li>파일은 <code>find</code> 로 <code>input type=file</code> 을 찾아 <code>file_upload</code> — <b>10MB 한도</b>라 <code>epNN-short.upload.mp4</code> 사본을 쓴다. 파일 선택 버튼은 클릭하지 않는다(보이지 않는 창이 열림).</li>
+<li>제목 칸은 파일명이 들어 있으니 클릭 → <code>ctrl+a</code> → 입력. 설명 · 재생목록 · 아동용(<b>"아니요, 아동용이 아닙니다"</b> — 묻지 않고 선택) · "자세히 보기"로 태그(쉼표로 끝맺기) · <b>AI 사용: "예"</b>(그림·목소리가 AI 생성).</li>
+<li>"동영상 요소"의 <b>관련 동영상</b>에 본편 연결. 전화 인증 창이 뜨면 취소 (채널 인증은 이미 완료 2026-10-16).</li>
+<li>공개 상태 <b>비공개</b>를 확대 화면으로 확인 → 저장. 영상 링크를 <code>out/shorts/epNN-short.upload.md</code> 끝 <code>## 업로드 기록</code> 에 적는다.</li>
+</ol>
+<ul>
+<li>롱폼(수백 MB)은 확장으로 못 올린다(10MB). 업로드 창만 열고 <b>사람이 파일을 끌어다 놓은 뒤</b> 세부정보·썸네일·자막(파일 업로드 → '타이밍 포함')·영어 제목/설명(영어(미국), <b>제목 100자 넘으면 저장 안 됨</b>)을 채운다.</li>
+<li>같은 동작이 2~3번 실패하면 반복하지 말고 사용자에게 묻는다. 알림·확인창(삭제 등)을 띄우는 버튼은 누르지 않는다.</li>
+<li>업로드 창 클릭은 <code>ref</code> 보다 <b>스크린샷 좌표로</b>, 누른 뒤 zoom 으로 확인 (창이 다시 그려지면 ref 클릭이 안 먹을 때가 있음).</li>
+<li>Chrome 이 다른 Google 계정(AI Studio 용)이면 "권한이 없습니다" → 사람에게 계정 전환 부탁.</li>
+</ul>
+
+<h2 id="q-tips">2-11. qna 자동화 팁</h2>
+<div class="grid3">
+<div class="card q"><h3>🧭 순서를 지켜 낭비를 막기</h3><ul><li><b>콘티(3단계)에서 대본을 확정</b>하고 그림을 그린다.</li><li>그림 한 장 넣을 때마다 <code>art</code> → <code>storyboard</code> 를 돌려 빠진 것만 본다 (임시 점선 그림으로 대체됨).</li><li>점검은 항상 호출 없는 모드(<code>--list</code>, <code>jobs</code>, <code>studio</code>).</li></ul></div>
+<div class="card q"><h3>🔁 고칠 때 최소 단위로</h3><ul><li>연출만 → <code>studio</code> 확인 → <code>make</code>.</li><li>대사만 → <code>voice … gen</code> 이 <b>바뀐 컷만</b> 다시 생성 (해시 비교).</li><li>배속은 숫자 하나. 음성 재생성 불필요.</li><li>버린 구성은 <code>_old/</code> 로.</li></ul></div>
+<div class="card q"><h3>🧩 재사용</h3><ul><li>공통 그림(아빠·아이·엄마 표정, 거실)은 <b>한 번만</b> 뽑아 모든 편이 공유.</li><li>같은 인물은 <code>cast</code> 설명 + <code>ref</code> 로 일관성.</li><li>쇼츠는 롱폼 음성·그림 재사용 → 비용 0.</li><li>다른 에이전트에게 맡길 땐 <code>handoff</code>.</li></ul></div>
+</div>
+</section>
+
+<!-- ============================== 3. shortube ============================== -->
+<section id="shortube" class="proj">
+<h1><span class="badge b-s">shortube</span>숫자로 보는 요즘</h1>
+
+<h2 id="s-what">3-1. 무엇을 만드는 채널인가</h2>
+<p>채널 <b>숫자로 보는 요즘</b>(<code>UCatFTcoyLuCtsiK8JTPfQkA</code>) — 요즘 화제를 <b>숫자·그래프로 짚는 40~60초 쇼츠</b>. 화면은 텍스트 · 직접 그린 차트 · 도형 · 입자뿐(<b>인물 사진·로고·캡처·음원 없음</b>), 배경음악은 코드 합성. 재생목록: <b>숫자로 보는 시장 · 순위·차트 · 날씨·생활 · 건강</b>.</p>
+<div class="callout"><b class="t">문서 우선순위</b><p><b>COMPLIANCE_GUIDE.md &gt; shortube/CLAUDE.md &gt; SPEC.md</b>. 충돌하면 앞의 것이 이긴다. COMPLIANCE_GUIDE 의 "금지"는 기능으로 만들지 않고, "조건부"는 안전장치와 함께만 만든다.</p></div>
+
+<h2 id="s-flow">3-2. 한 편 만드는 6단계 (shortube/CLAUDE.md 0장)</h2>
+<ol class="steps s">
+<li><b class="n">브리프 먼저 <span class="who auto">Claude</span></b><code>output/briefs/YYYY-MM-DD_slotN.md</code> — 출처 표 · 사실 카드(YAML) · 스토리라인 · 연출 카드 · 메타데이터 · 검수 체크리스트. <b>영상에 들어가는 숫자는 사실 카드에 있는 것만.</b></li>
+<li><b class="n">영상</b><code>video/src/&lt;주제&gt;/</code> 에 컴포지션 + <code>timeline.json</code>(장면·타격 시점) + <code>Root.tsx</code> 등록.</li>
+<li><b class="n">배경음악</b><code>video/scripts/bgm-*.mjs</code> 로 코드 합성 (같은 <code>timeline.json</code> 을 읽어 장면 전환과 맞춘다).</li>
+<li><b class="n">점검 <span class="who human">눈으로</span></b>핵심 프레임 스틸 <code>npx remotion still &lt;Id&gt; out.png --frame=N --scale=0.4</code> 를 <b>직접 보고</b> 겹침·잘림·줄바꿈을 고친 뒤 렌더.</li>
+<li><b class="n">업로드</b>3-9장. 기본은 <b>비공개</b>. 공개는 사용자가 명시적으로 요청할 때만.</li>
+<li><b class="n">보고</b>무엇을 만들었고 무엇을 <b>확인 못 했는지</b>(음악은 귀로 못 들음, 미확인 사실 카드)를 그대로 알린다.</li>
+</ol>
+
+<h2 id="s-py">3-3. 주제 자동 선정 (Python + 스킬 <code>shortube-daily</code>)</h2>
+<p>"오늘 쇼츠 만들어줘" / <code>/shortube-daily 2</code> → <b>사용자에게 주제를 묻지 않고</b> 끝까지 진행한다. 후보가 0개처럼 규칙상 불가능할 때만 멈춘다. 업로드는 하지 않는다.</p>
+<pre><button class="copy">복사</button><code>cd D:\youtube\shortube
+export PYTHONIOENCODING=utf-8
+.venv/Scripts/python.exe -m shortube entities       # 최근 14일 OTT 작품 (캐시되므로 재실행 무해)
+.venv/Scripts/python.exe -m shortube autocomplete   # 자동완성 후보 + 리스크/조언/노이즈 필터
+.venv/Scripts/python.exe -m shortube pick --count 2 --json   # 로테이션이 슬롯별 category · entity · shortlist 선정
+# …브리프 작성·제작 후 이력 기록 (다음 날 로테이션·쿨다운에 반영)
+.venv/Scripts/python.exe -m shortube log-topic "&lt;대표 키워드&gt;" --category chart --brief output/briefs/&lt;파일&gt;.md</code></pre>
+<div class="tw"><table>
+<tr><th>로테이션 규칙 (<code>analysis/planner.py</code>)</th><th>값</th></tr>
+<tr><td>카테고리 가중치</td><td>상식(trivia) 0.5 / 신작 OTT 정보(explain) 0.3 / 차트(chart) 0.2. 약 30편 성과가 쌓이면 조회수 중앙값으로 조정 (최소 0.1은 탐색용)</td></tr>
+<tr><td>제한</td><td>같은 카테고리 최대 2연속 · 같은 날 두 슬롯은 다른 카테고리 · 차트 주 2회 상한 · 키워드 60일/작품 3일 쿨다운 · 같은 날 재실행은 같은 결과(날짜 시드)</td></tr>
+<tr><td>shortlist 걸러내기 (Claude)</td><td>위에서부터 보고 → 실존 인물 이름 · 채널명/영상 제목 · 너무 포괄적("소름돋는 사실들") · 지난 시점 수치(차트는 최신으로) · 의료·투자·법률 조언형 · 공인 출처 2개 못 찾음 → 건너뛰고 <b>첫 통과</b>를 고른다. 카테고리는 바꾸지 않는다</td></tr>
+</table></div>
+<div class="callout"><b class="t">사용자가 주제를 지정한 경우</b><p>이번 시황 쇼츠처럼 사용자가 주제를 말하면 <code>pick</code> 로테이션을 거치지 않고 지정 주제로 가며, 브리프 "선정 근거"에 그렇게 적는다. <b>이때도 요청 전제부터 사실 확인</b>(3-5).</p></div>
+
+<h2 id="s-comp">3-4. 규칙 — 쇼츠 작업 전에 반드시 (COMPLIANCE_GUIDE 요약)</h2>
+<h3>핵심 5줄</h3>
+<ol>
+<li><b>사실은 가져오고 표현은 직접 만든다.</b> 기사 문장·구성·사진은 보호된다.</li>
+<li><b>사람(개인) 콘텐츠는 만들지 않는다.</b> 한국은 사실을 말해도 명예훼손이 성립할 수 있다(형법 307조 1항).</li>
+<li><b>이미지·영상·음원은 외부에서 가져오지 않는다.</b> 텍스트 · 직접 그린 차트 · 라이선스 명확한 아이콘/지도만.</li>
+<li><b>영상마다 "내가 더한 가치"</b>(직접 계산 · 비교 · 시계열 해석 · 오해 바로잡기). 같은 틀에 단어만 바꾼 대량 생산은 수익화(YPP) "진정성 없는 콘텐츠"로 빠진다.</li>
+<li><b>자동화는 초안까지, 공개는 사람이.</b></li>
+</ol>
+<h3>주제별 반드시 / 금지</h3>
+<div class="tw"><table>
+<tr><th>주제</th><th>반드시</th><th>금지</th></tr>
+<tr><td><b>주식·시황</b></td><td>종가 기준 명시 · 방향 의견은 <b>증권사명 인용</b>으로 반등·지지·신중을 같은 비중 · "투자 권유 아님" 고정 · 한국 차트 색(상승 빨강·하락 파랑)</td><td>"사라/팔아라/바닥이다" · 목표가 · 유료 리딩·종목 추천 뉘앙스</td></tr>
+<tr><td><b>의료·의약품</b></td><td>임상 논문·식약처·심평원 등 공인 출처 · 효과와 <b>같은 비중</b>으로 부작용·요요·규제 · "전문의약품 · 의사 처방 필요 · 의학적 조언 아님" 상시 표기</td><td>복용·시술 권유 · 구매처·최저가 · 제품 사진·로고 · "맞으면 빠진다" 단정</td></tr>
+<tr><td><b>연예·아이돌</b></td><td>그룹 단위 공개 사실 · 성인 공인의 공개 경력 숫자</td><td><b>미성년 멤버 개인 정보</b> · 외모 비교 · 논란·사생활 · 인물 사진·무대 캡처·음원</td></tr>
+<tr><td><b>OTT·차트</b></td><td>상위 3~10개만 + 시계열 해석 같은 자체 분석 + 출처 텍스트</td><td>순위표 전체 재현 · 포스터·스틸컷·로고</td></tr>
+<tr><td><b>실존 인물 발언</b></td><td>원문 그대로 인용 + 출처 · 지목하지 않은 대상을 지목한 것처럼 쓰지 않기</td><td>인물 사진 · 발언 왜곡·과장</td></tr>
+</table></div>
+<h3>출처 등급</h3>
+<div class="tw"><table>
+<tr><th>등급</th><th>예</th><th>쓰는 법</th></tr>
+<tr><td><b>A</b> 자유 이용</td><td>공공누리 1유형, 정부 보도자료, 공공데이터, 퍼블릭 도메인</td><td>사실·수치 추출 자유, 출처 표기</td></tr>
+<tr><td><b>B</b> 표기 조건</td><td>CC BY / CC BY-SA(위키백과)</td><td>사실만. 문장 인용 시 라이선스 의무 → 문장은 쓰지 않는다</td></tr>
+<tr><td><b>C</b> 사실만 참고</td><td>언론 기사, 공식 차트 사이트, 기업 홈페이지</td><td>사실·수치만. 문장·구성·이미지 금지. 출처는 텍스트로</td></tr>
+<tr><td><b>D</b> 사용 금지</td><td>나무위키(CC BY-NC-SA), 유료 기사, 커뮤니티, 타 유튜버 대본, 출처 불명 블로그</td><td>열지도 않는다 (<code>config/sources.yaml</code> 의 <code>blocked_domains</code>)</td></tr>
+</table></div>
+<h3>금지 항목 (만들지 않음)</h3>
+<p class="meta">연예인 근황·열애·논란 콘텐츠 · 인물 사진·포스터·스틸컷·앨범아트·캡처 · 기업 로고 · 기사/블로그 문장 복사·살짝 바꿔쓰기 · 차트 전체(TOP100) 매주 그대로 옮기기 · 유명인 목소리 복제 TTS · 상업 음원/타 채널 BGM · 드라마 결말 상세 재서술 · 조회수/구독/댓글 자동화 봇·다계정 · 내용과 무관한 자극 제목/썸네일 · 태그/설명란 키워드 나열.</p>
+
+<h2 id="s-brief">3-5. 브리프 · 사실 카드 — 영상의 뼈대</h2>
+<div class="callout ok"><b class="t">요청 전제부터 의심한다</b>
+<p>사용자 요청의 전제도 확인한다. 실제 사례: "A20 LITE · SM 아이돌" → 실제는 <b>A2O LITE</b>, SM 아님 / "머스크의 고평가 발언" → 실제는 메모리 <b>가격</b> 비판, 회사 지목 없음 / "주가 반등" 보도 → 종가 기준으로는 하락 / (이번) "채권 발작"은 금요일이 아니라 10월 1일, "경기주 방어"는 목요일 이야기. <b>다르면 영상에 바로잡아 넣고 사용자에게 알린다</b> — 오히려 그게 영상의 훅·부가가치가 된다.</p></div>
+<h3>브리프 템플릿 (<code>output/briefs/YYYY-MM-DD_slotN.md</code>)</h3>
+<ol>
+<li><b>머리</b>: 날짜 · 슬롯 · 대표 키워드 · 데이터 기준일 · 선정 근거 · <b>⚠ 요청 전제 바로잡기</b></li>
+<li><b>출처 표</b>: # · 기관/사이트 · 문서 · URL · 등급 · 확인일 (1차 자료를 못 열었으면 "미확인 — 제작 전 필수"로 표시)</li>
+<li><b>사실 카드(YAML)</b>: <code>id · claim(내 말 1문장) · value · unit · as_of · sources[#] · verified(true/partial/false) · sensitivity</code></li>
+<li><b>직접 계산</b>(부가가치): 계산식을 적는다 (예: 3.83 ÷ 0.34 = 11.3배)</li>
+<li><b>대본 표</b>: 시간 · 내레이션/자막 · 화면 — 사실 카드만 보고 쓴다</li>
+<li><b>연출 카드</b> 7항목 · <b>메타데이터</b>(제목 후보 3 · 설명란 · 태그 ≤10) · <b>검수 체크리스트</b></li>
+</ol>
+<pre><button class="copy">복사</button><code>- id: M1
+  claim: "2026-10-16(금) 미국 종가: 나스닥 -2.15%, S&amp;P500 -1.09%, 다우 -0.34%"
+  as_of: 2026-10-16
+  sources: [1, 3]
+  verified: true      # 목요일 종가와 등락률로 역산해 일치 확인
+- id: M3
+  claim: "한 주 성과: 나스닥 -4.48% …"
+  sources: [2]
+  verified: partial   # 1건 → 화면에 '보도 기준'</code></pre>
+<ul>
+<li>출처 <b>2개 이상 교차 확인</b>. 하나뿐이면 <code>verified: partial</code> + 화면에 "보도 기준". 출처끼리 수치가 다르면 대본에서 빼거나 "기관마다 차이"로.</li>
+<li>시세는 <b>Yahoo 일봉이 공식 종가와 맞음</b>(뉴스 종가와 대조 필수). 네이버 차트는 시간외 포함이라 종가가 다를 수 있음. 0거래량·평평한 봉 같은 깨진 봉을 검사하고, 보정했으면 브리프에 기록.</li>
+<li>기간이 다른 값 비교(1년 vs 반기) 금지 — 기간 명시. 다른 임상시험끼리의 수치는 "다른 시험" 표기. <b>숫자에는 항상 기준일과 단위.</b></li>
+<li>문장은 사실 카드만 보고 새로 쓴다. 출처 문장과 <b>연속 20자 이상 겹치지 않게</b>(렌더 전 재확인). 정식 기준: 5-gram 겹침 15% 초과 시 실패.</li>
+</ul>
+
+<h2 id="s-video">3-6. 영상 코드 구조 (<code>shortube/video</code>)</h2>
+<div class="tree">video/
+├─ src/
+│  ├─ Root.tsx                 ← 모든 컴포지션 등록 (RankingShort · MarketShort · KpopNumbers · DietNumbers · HeatShort · GtaShort · SuneungShort · UsShort …)
+│  ├─ theme.ts                 ← 폰트(Noto Sans KR) · 색 · FPS=30 · 1080×1920
+│  ├─ components/Caption.tsx   ← 하단 자막 (bottom 250, 줄 단위 · 강조 단어 노랑 형광펜)
+│  ├─ components/Kinetic.tsx · RankChart.tsx · Background.tsx
+│  ├─ market/effects.tsx       ← Counter · Stamp · 흔들림 · clamp  (여러 영상이 가져다 씀)
+│  └─ &lt;주제&gt;/                  ← 한 영상 = 폴더 하나
+│     ├─ timeline.json         ← 장면(id·from·dur) · hits(숫자가 박히는 프레임) · risers(전환 직전 스웰) · bpm
+│     ├─ &lt;Name&gt;Short.tsx       ← Sequence 로 장면을 이어 붙임 + BGM &lt;Audio&gt;
+│     ├─ scenes.tsx · fx.tsx   ← 장면 컴포넌트 · 그 영상 전용 효과
+│     └─ (데이터 json)          ← kospi.json 등
+├─ scripts/bgm-*.mjs           ← 코드 합성 BGM → public/bgm/*.wav
+├─ scripts/market-data.mjs     ← ../data/prices/*.csv → 영상용 JSON (이평 · RSI · 볼린저)
+└─ package.json                ← "heat" · "gta" · "suneung" · "usmarket" · "market" 등: BGM 만들기 + 렌더를 한 줄로</div>
+<h3>새 영상을 추가하는 패턴 (예: UsShort)</h3>
+<ol>
+<li><code>src/&lt;주제&gt;/timeline.json</code> — 장면 길이(프레임, 30fps) · hits · risers. 합계가 <code>total</code>.</li>
+<li><code>fx.tsx</code>(배경·전환·상단 띠) + <code>scenes.tsx</code>(장면별 컴포넌트 + <code>Caption</code> 줄) + <code>&lt;Name&gt;Short.tsx</code>(Sequence 조립).</li>
+<li><code>Root.tsx</code> 에 <code>&lt;Composition id=… durationInFrames={TOTAL} …/&gt;</code> 추가, <code>package.json</code> 에 <code>"&lt;주제&gt;": "node scripts/bgm-&lt;주제&gt;.mjs &amp;&amp; remotion render …"</code> 한 줄.</li>
+<li><code>npx tsc --noEmit</code> 으로 타입 확인 → 스틸 점검 → <code>npm run &lt;주제&gt;</code>.</li>
+</ol>
+<h3>화면 규칙</h3>
+<ul>
+<li>1080×1920. <b>자막은 하단 박스(bottom 250)</b> — 본문 요소가 y≈1450 아래로 내려오면 겹친다. 줄바꿈이 어색하면 <code>whiteSpace:"pre-line"</code> 이나 <code>wordBreak:"keep-all"</code>, 아니면 문장 수정.</li>
+<li>출처·기준일·고지는 마지막 장면 또는 상단 고정 띠(<code>TopBand</code>).</li>
+<li>브랜드(남색 + 노랑 선 + 분홍 점, <code>Brand.tsx</code>)는 첫 1초나 마지막 띠로만. 본문 배경까지 매번 남색으로 고정하지 않는다.</li>
+<li>쓸 수 있는 재료: 코드 생성(SVG 필터·입자·그라디언트·도형 패턴·카메라 이동·화면 나누기) / 라이선스 분명한 외부 자료(Natural Earth 지도 · Material Symbols · Tabler Icons · Noto Emoji · OFL 폰트 — 받으면 <code>video/public/&lt;종류&gt;/LICENSE.md</code> 에 출처·라이선스·날짜) / <b>사진·영상 클립은 쓰지 않는다.</b></li>
+</ul>
+
+<h2 id="s-design">3-7. 연출 카드 — 찍어낸 영상처럼 보이지 않게</h2>
+<p>브리프마다 <b>7항목</b>을 채운다: <b>팔레트 · 주 레이아웃 · 장면 전환 · 카메라 · 상징 오브젝트 · 타이포 · 템포</b>. 규칙: <b>직전 2편과 7항목 중 4개 이상 달라야</b> 하고, <b>같은 날 올리는 2편은 팔레트·주 레이아웃이 반드시 달라야</b> 한다. <b>주제가 연출을 정한다</b> (더위 → 아지랑이·색 온도 / 시황 → 흔들림·긴박한 컷 / 수능 → 칠판·OMR / GTA → 노을 네온 고속도로 / 간밤 미국장 → 수심 눈금으로 낙하).</p>
+<div class="tw"><table>
+<tr><th>영상</th><th>팔레트</th><th>주 레이아웃</th><th>전환</th><th>템포</th></tr>
+<tr><td>폭염 (HeatShort)</td><td>주황→빨강→파랑으로 식음</td><td>화면 반 나누기 + 지도</td><td>아지랑이 녹임</td><td>멈춤→식음</td></tr>
+<tr><td>GTA (GtaShort)</td><td>노을 네온</td><td>가로 고속도로 연표</td><td>줌 스루</td><td>신스 가속</td></tr>
+<tr><td>수능 (SuneungShort)</td><td>칠판 초록 + 분필</td><td>OMR 칸 + 모눈종이 꺾은선</td><td>시험지 넘기기</td><td>시계 초침</td></tr>
+<tr><td>간밤 미국장 (UsShort)</td><td>심해 청록→검정, 얼음 파랑/빨강</td><td>수심 눈금에서 아래로 늘어나는 막대</td><td>위→아래 수직 와이프</td><td>물방울 똑똑, 도장에서 멈춤</td></tr>
+</table></div>
+
+<h2 id="s-bgm">3-8. 배경음악 — 코드 합성</h2>
+<ul>
+<li>외부 음원·오디오 보관함 대신 <b>코드 합성이 기본</b>. 설명란 <code>[음악] 채널에서 직접 만든 배경음악</code>.</li>
+<li>기존 스크립트(분위기별): <code>bgm.mjs</code>(밝고 잔잔) · <code>bgm-tension.mjs</code>(긴박·시황) · <code>bgm-dance.mjs</code>(밝은 댄스·K팝) · <code>bgm-info.mjs</code>(차분한 정보·의료, 리스크 구간 단조) · <code>bgm-heat.mjs</code>(더위→식음) · <code>bgm-gta.mjs</code> · <code>bgm-suneung.mjs</code> · <code>bgm-usmarket.mjs</code>(저음 드론 + 물방울). <b>새 주제는 비슷한 것을 복사해 진행·템포·화음만 바꾼다.</b></li>
+<li>구조: 마디 단위로 패드 코드 → 킥/물방울 같은 리듬 → <code>timeline.json</code> 의 <code>risers</code>(전환 직전 스웰) · <code>hits</code>(숫자 박히는 순간 킥/벨) → 끝 2초 페이드 → 정규화(tanh) → 16bit WAV. 마지막에 <b>RMS dBFS 를 출력</b>해 볼륨 점검 (대략 −15~−20, 영상 쪽 <code>&lt;Audio volume=0.75&gt;</code>).</li>
+<li>분위기 전환 아이디어: 특정 프레임(<code>calmFrom</code>·<code>coolFrom</code>) 이후 단조→장조, 킥 제거 — 이야기의 "식는 순간"을 소리로.</li>
+</ul>
+
+<h2 id="s-market">3-9. 시황 · 차트 주제를 만들 때 (가장 위험한 영역)</h2>
+<div class="callout cost"><b class="t">고정 문구와 금지</b><p>"투자 권유 아님 · 투자 판단과 책임은 본인" 고정. <b>"사라/팔아라/바닥이다", 목표가, 유료 리딩 뉘앙스 금지.</b> 한국 증시 월요일 전망 같은 <b>예측도 쓰지 않는다</b>. 방향 의견은 증권사·운용사 <b>이름 + 보도 요지</b>로 신중론/반등론을 같은 비중으로 (원문 직접 인용이 아니면 따옴표를 쓰지 않고 "보도 요지"로 표기).</p></div>
+<ul>
+<li><b>종가 기준·기준일을 화면에 상시 표기</b>(<code>TopBand</code>). 미국장은 "미국 현지 종가".</li>
+<li><b>한국 차트 색</b>: 상승 빨강 · 하락 파랑. 사용자가 "피로 물든"처럼 미국식 색으로 말해도 영상은 한국식 + 첫 장면에서 한 줄로 짚기.</li>
+<li><b>수치 검증 요령</b>: 지수 종가를 (전날 종가 × 등락률)로 역산해 보도와 맞추면 1건 보도도 신뢰도가 올라간다. 일봉 기술 분석은 <code>stockstealer</code> 규칙(200일선 국면 · 이평 정배열 · RSI14 · 볼린저 · 지지·저항 피벗)을 같은 기준으로 세 차트에 적용 → "과매도 ✓ / 추세 ✗" 같은 <b>판정 요약</b>이 부가가치.</li>
+<li>못 찾은 값(예: 금요일 마감 금리)은 <b>빈칸으로 두고 "확인하지 못해 싣지 않았습니다"</b>라고 화면에 적는 편이 틀린 숫자보다 낫다.</li>
+<li>의료 주제: 효과와 같은 비중으로 부작용·중단 후 요요·규제, "전문의약품 · 의사 처방 필요 · 의학적 조언 아님" 상시 표기. 연예: 그룹 단위 공개 사실만, 미성년 개인 정보 금지.</li>
+</ul>
+
+<h2 id="s-upload">3-10. 업로드 · 한도 (Claude in Chrome)</h2>
+<div class="tw"><table>
+<tr><th>기준</th><th>제한</th><th>근거</th></tr>
+<tr><td>하루 (최근 24시간)</td><td><b>최대 2편</b> — 비공개·일부공개도 센다</td><td>채널 정책 (COMPLIANCE 5장 "하루 1~2개")</td></tr>
+<tr><td>간격</td><td>같은 날 2편이면 <b>최소 3시간</b></td><td>몰아 올리지 않기</td></tr>
+<tr><td>일주일 (최근 7일)</td><td><b>최대 10편</b></td><td>채널 정책</td></tr>
+<tr><td>같은 날 2편</td><td>카테고리·연출 카드가 달라야 함</td><td>반복 리스크</td></tr>
+<tr><td>YouTube 시스템 한도</td><td>숫자 비공개. 최근 24시간 기준, 채널 이력·경고에 따라 다름. PC·모바일·API 모두 셈</td><td>YouTube 고객센터</td></tr>
+</table></div>
+<div class="callout warn"><b class="t">한도 확인은 이렇게 — 그리고 시계를 믿지 말고 확인</b>
+<p>① <code>output/uploads.csv</code> 의 최근 24시간·7일 줄 수를 센다. ② <b>Studio 콘텐츠 목록에서도 날짜를 직접 확인</b>(사용자가 직접 올린 영상은 장부에 없을 수 있음). ③ <b>현재 시각은 <code>date</code> 로 확인</b> — 이번 작업에서 <code>TZ=Asia/Seoul date</code> 가 UTC 를 내놓아 장부 시각을 잘못 적었다가 고친 적이 있다 (로컬 <code>date</code> 가 한국 시간이었음). ④ 한도를 넘으면 올리지 않고 <b>다음에 올릴 수 있는 시각</b>을 알린다. 다른 계정·채널로 돌려 올리는 우회 금지. 사용자가 한도를 넘겨 올려 달라면 표를 알려 주고 확인받은 뒤에만.</p></div>
+<ol class="steps s">
+<li><b>준비</b>: 원본은 <code>output/videos/</code>. 확장의 업로드는 파일당 <b>10MB 제한</b>인데 이번 영상(약 9.6MB)은 그대로 통과했다. 넘으면 스크래치패드에 2-pass 압축본(<code>-b:v 1100~1600k</code>, aac 128k)을 만들고 프레임 하나 뽑아 화질 확인.</li>
+<li><b>새 탭에서 작업</b>: <code>tabs_context_mcp</code> → 새 탭 → <code>studio.youtube.com/channel/&lt;채널ID&gt;/videos/upload?d=ud</code> (업로드 창이 바로 열림). 사용자가 쓰는 탭은 건드리지 않고, 끝나면 내가 연 탭을 닫는다.</li>
+<li><b>파일</b>: <code>find</code> 로 file input → <code>file_upload</code> (파일 선택 버튼은 클릭 금지).</li>
+<li><b>세부정보</b>: 제목 클릭 → <code>ctrl+a</code> → 입력 / 설명은 <b>기본 틀 <code>[자료 출처]…"0000년 0월 0일"</code> 을 통째로 지우고 브리프의 설명으로 교체</b> / 재생목록 드롭다운에서 주제에 맞는 것(맞는 게 없으면 새로 만들지 말고 사용자에게 묻기) / <b>아동용 아님</b> / "자세히 보기" 펼쳐 <b>AI 사용 = 아니요</b>(텍스트·차트만, 실존 인물처럼 보이는 합성·음성 없을 때만) / 태그(쉼표로 끝맺기, 10개 이하).</li>
+<li><b>검증</b>: 입력 후 스크린샷으로 내용이 남아 있는지 확인(업로드 직후 대화상자가 다시 그려지며 입력이 날아갈 수 있음). 라디오 선택은 스크롤해서 <b>실제 선택됐는지</b> 다시 본다.</li>
+<li><b>공개 범위</b>: 기본 <b>비공개</b>. <b>사용자가 "공개로"라고 명시한 경우에만</b> 공개 선택 후 "게시". 자동 모드 권한이 막으면 우회하지 말고 Studio 에서 직접 바꾸도록 안내.</li>
+<li><b>사후 확인</b>: Studio 콘텐츠 목록에서 <b>실제 공개 상태·게시일을 다시 확인</b>(채널 기본값 때문에 의도와 다르게 공개될 수 있음). 영상 ID 는 목록 링크(<code>/video/&lt;ID&gt;/edit</code>)에서 읽는다.</li>
+<li><b>장부</b>: <code>output/uploads.csv</code> 에 한 줄 — <code>uploaded_at,video_id,brief,title,visibility,category</code>, 시각은 한국시간.</li>
+</ol>
+<ul>
+<li>채널 업로드 기본값(2026-10-16 설정): 카테고리 교육 · 언어 한국어 · 설명란에 <code>[자료 출처]</code> 틀이 미리 들어감.</li>
+<li>영상 파일 교체는 불가 → 새로 올리고 옛 영상 삭제는 <b>사용자가</b> 한다 (영구 삭제는 Claude 가 하지 않음).</li>
+<li>설명란 고정 문구: 출처 목록 · "OO년 O월 O일 기준이며 이후 바뀔 수 있습니다" · 투자/의료 고지 · 직접 계산한 값 명시 · "대본 초안 작성에 AI 도구를 사용했으며 사람이 검수했습니다" · <code>[음악]</code> · 보도 1건 기준 수치 안내.</li>
+</ul>
+
+<h2 id="s-tips">3-11. shortube 자동화 팁</h2>
+<div class="grid3">
+<div class="card s"><h3>⚡ 한 줄로 시키기</h3><ul><li>"오늘 쇼츠 만들어줘" → 주제 선정·브리프 자동.</li><li>"〇〇 주제로 만들어줘" → 브리프(전제 확인 포함)→영상→BGM→스틸→렌더까지.</li><li>"올려줘" → 한도 확인 후 업로드, "공개로"를 말해야 공개.</li></ul></div>
+<div class="card s"><h3>🧱 부품 재사용</h3><ul><li><code>Caption</code> · <code>Counter</code> · <code>Stamp</code> · <code>clamp</code> 는 그대로 import.</li><li>새 영상 = 가장 비슷한 폴더 복사 → <code>timeline.json</code>·scenes 교체.</li><li>BGM 도 가장 비슷한 <code>bgm-*.mjs</code> 복사.</li></ul></div>
+<div class="card s"><h3>🔍 눈으로 하는 검사를 자동에 가깝게</h3><ul><li>핵심 프레임 8장을 <code>--scale=0.4</code> 로 스틸 → 겹침·잘림 확인 → 고치고 해당 프레임만 재렌더.</li><li><code>npx tsc --noEmit</code> 로 타입 오류 먼저.</li><li>렌더는 백그라운드로 돌려 두고 알림을 기다린다.</li></ul></div>
+<div class="card s"><h3>📋 반복 리스크 관리</h3><ul><li>같은 틀에 숫자만 바꾼 대량 업로드 금지 → 형식을 섞는다(순위 비교·숫자 하나·전후 비교·퀴즈).</li><li>브리프의 "부가가치 요소" 한 줄을 반드시.</li><li>최근 업로드 5편과 구성·문장이 같지 않은지.</li><li>가능하면 사람 목소리 내레이션 (TTS_GUIDE).</li></ul></div>
+<div class="card s"><h3>🎙 내레이션(선택)</h3><ul><li>TTS_GUIDE: "데이터 좋아하는 친한 친구" 톤, 해요체, 초당 6.5~7.5음절, 한 문장 15음절 안팎.</li><li>자막과 TTS 텍스트를 분리(숫자는 한글로: 일 위·십이 주째).</li><li>목소리 후보 Laomedeia·Puck·Sadachbia 등을 들어보고 1개 확정.</li><li>현재 영상들은 자막+BGM 중심(내레이션 없음).</li></ul></div>
+<div class="card s"><h3>🗂 이력</h3><ul><li><code>log-topic</code> 으로 로테이션 이력 기록.</li><li><code>uploads.csv</code> 로 한도 계산.</li><li>YouTube API 데이터는 30일 후 <code>prune</code>.</li></ul></div>
+</div>
+</section>
+
+<!-- ============================== 4. funtube ============================== -->
+<section id="funtube" class="proj">
+<h1><span class="badge b-f">funtube</span>웃긴 영상툰 · 하이브리드 방향 (코드에서 정리)</h1>
+<div class="callout warn"><b class="t">이 장의 성격 (2026-10-17 갱신)</b><p>funtube 에는 <code>CLAUDE.md</code>·README 가 없습니다. 아래는 <code>funtube/package.json</code> · <code>scripts/*.mjs</code> · <code>content/*.json</code> · <code>src/</code> (특히 새로 생긴 <code>Carpool.tsx</code> · <code>toon3d/acts.ts</code> · <code>toon3d/car.tsx</code>)를 읽고 정리한 것입니다. <b>"하이브리드"라는 이름과 방향 설명은 코드에서 읽어 낸 것이라, 의도하신 방향과 다르면 이 장을 고쳐 주세요.</b> 아직 굳은 운영 규칙(톤·금지 소재·업로드)은 없습니다.</p></div>
+
+<h2 id="f-what">4-1. 무엇인가 · 방향</h2>
+<p>1080×1920 세로 영상 모음. <b>대본(JSON) 한 파일 → AI 음성 → Remotion 렌더</b>가 기본 흐름이다. 초기에는 말풍선·이모지·2D SVG 위주였지만, 지금 방향은 <b>하이브리드</b>다: <b>"코드가 잘하는 것"과 "AI가 잘하는 것"을 한 장면 안에서 나눠 맡긴다.</b></p>
+<div class="grid3">
+  <div class="card f"><h3>🧱 코드가 맡는 것</h3><ul><li>몸 · 무대 · 차 · 카메라 (Three.js 3D, <code>toon3d/</code>)</li><li>몸 연기 사전 <code>ACTS</code> (호통·움찔·으스대기…)</li><li>타이밍 · 자막 · 효과음 · 비트 (전부 코드 합성)</li><li>→ 같은 대본이면 <b>같은 영상</b>(재현·수정 쉬움)</li></ul></div>
+  <div class="card f"><h3>🎨 AI가 맡는 것</h3><ul><li><b>얼굴</b>: Gemini 가 그린 6표정 시트 → 3D 머리에 입히는 데칼 (<code>facegen.mjs</code>)</li><li><b>목소리</b>: Gemini TTS (캐릭터별 보이스 + 톤 지시)</li><li>→ 사람이 직접 그리지 않고도 <b>캐릭터 개성·웃음</b>을 얻음</li></ul></div>
+  <div class="card f"><h3>👤 사람이 맡는 것</h3><ul><li>대본(웃음 설계)과 표정·연기 지정 (<code>face</code> · <code>act</code> · <code>cam</code>)</li><li>표정 시트 중 마음에 드는 버전 고르기 (<code>raw_*_v1/v2…</code> 보관)</li><li>최종 확인, 업로드</li></ul></div>
+</div>
+<div class="flow"><span>content/episodes.json (대본 + face·act·cam)</span><i>→</i><span class="hl">npm run tts</span><i>→</i><span>src/generated/timings.json + public/audio · public/sfx</span><i>→</i><span>facegen → public/faces/&lt;이름&gt;_1..6.png</span><i>→</i><span>npm run studio</span><i>→</i><span class="hl">npm run render</span><i>→</i><span>out/&lt;id&gt;.mp4</span></div>
+<p class="meta"><code>out/</code> 에 <code>chat · skit · facts · balance · fight · ride · ride3d · ride3dface · carpool</code> .mp4 가 있다 (<code>ride3dface-v2/-v3</code> 는 표정 시트를 바꿔 가며 비교한 버전).</p>
+
+<h2 id="f-formats">4-2. 영상 형식 9가지 — 방식별로 나누면</h2>
+<p><b>2D 코드 방식</b>(chat · skit · facts · balance · fight · ride)과 <b>3D 하이브리드 방식</b>(carpool · ride3d · ride3dface)으로 갈린다. <b>새 영상은 3D 하이브리드를 기본 방향</b>으로 보고, 가벼운 형식(단톡·상식·밸런스)은 2D 로 빠르게 뽑는다.</p>
+<div class="tw"><table>
+<tr><th>id</th><th>컴포넌트</th><th>내용</th><th>대본 필드</th></tr>
+<tr><td><code>chat</code></td><td><code>Chat.tsx</code></td><td>단톡방 채팅 개그 ("아빠가 갑자기 사랑한다고 했다"). 대사가 말풍선으로, 마지막에 시스템 메시지로 반전</td><td><code>room · voices · lines[who,text,say,style,pauseAfter]</code></td></tr>
+<tr><td><code>skit</code></td><td><code>Skit.tsx</code></td><td>짧은 콩트 ("7살 협상가 vs 엄마")</td><td>같은 구조 + <code>fx</code></td></tr>
+<tr><td><code>facts</code></td><td><code>Facts.tsx</code></td><td>상식 한 줄씩 ("이거 알았어? 🤯") — 이모지 + 한 문장, 마지막에 반전 <code>fx:"twist"</code></td><td><code>emoji · text · style</code></td></tr>
+<tr><td><code>balance</code></td><td><code>Balance.tsx</code></td><td>밸런스 게임 — A/B 선택지 카운트다운(3초) 후 다음</td><td><code>a · b · pauseAfter · end</code></td></tr>
+<tr><td><code>fight</code></td><td><code>Toon.tsx</code> + <code>toon/</code></td><td><b>2D 영상툰</b> — 캐릭터(<code>Kid.tsx</code> SVG), 카메라(<code>cam</code>), 포즈(<code>pose</code>), 피격(<code>hit · dmg · fx · sfx · sound</code>) ("맞짱 뜨다 드래곤볼 찍은 썰")</td><td><code>scene · cam · pose · dmg · hit</code></td></tr>
+<tr><td><code>ride</code></td><td><code>Song.tsx</code> + <code>Lyric.tsx</code></td><td><b>2D 노래 영상</b> ("길이 막혔어") — 가사가 박자에 맞춰 단어 단위로 노랗게 물듦. 풍경이 박자(bpm)에 비례해 지나감</td><td><code>content/song.json</code></td></tr>
+<tr><td><code>ride3d</code></td><td><code>Song3D.tsx</code> + <code>toon3d/</code></td><td>같은 노래의 <b>3D</b> 버전 (react-three-fiber + three.js, 관절 각도·머리 눌림 애니메이션). 얼굴은 기본 표정</td><td><code>song.json</code></td></tr>
+<tr><td><code>ride3dface</code> <span class="badge b-f">하이브리드</span></td><td><code>Song3D.tsx</code> (<code>faces</code> 속성)</td><td>3D 몸 + <b>AI 표정 그림</b>을 머리에 입힘. 박자·가사 위치에 따라 표정 1~6을 고름(<code>planFace · pickFace</code>)</td><td><code>song.json</code> + <code>faces.json</code></td></tr>
+<tr><td><code>carpool</code> <span class="badge b-f">하이브리드</span></td><td><code>Carpool.tsx</code> + <code>toon3d/car.tsx · acts.ts</code></td><td><b>3D 차 안 콩트</b> "길이 막혔어" (선배 · 후배 · 내비). 대본 한 줄마다 <b>카메라 샷 · 표정 번호 · 몸 연기</b>를 지정. 출발 → 내비 → 정적(심장 소리) → 내려 주기까지 풍경 속도가 연출로 바뀜</td><td><code>who · text · style · cam · face{} · act{} · sfx · fx · sound</code></td></tr>
+</table></div>
+
+<h2 id="f-hybrid">4-3. 하이브리드 방식 — 무엇을 어떻게 섞나</h2>
+<h3>한 장면의 층 구조 (<code>Carpool.tsx</code> 기준)</h3>
+<div class="tw"><table>
+<tr><th>층</th><th>만드는 방법</th><th>어디서</th><th>비용</th></tr>
+<tr><td>배경 · 차 · 하늘 · 안개</td><td>코드(Three.js)</td><td><code>toon3d/car.tsx</code> (<code>CarBack · CarFront</code>), <code>ThreeCanvas</code></td><td>무료</td></tr>
+<tr><td>몸 (팔·허리·어깨·머리 움직임)</td><td>코드 — 관절 각도로 연기</td><td><code>toon3d/Char3D.tsx</code> · <code>acts.ts</code></td><td>무료</td></tr>
+<tr><td><b>얼굴 표정</b></td><td><b>AI 그림</b> 6칸 시트 → 투명 PNG 6장을 머리에 데칼로</td><td><code>facegen.mjs</code> → <code>public/faces/&lt;이름&gt;_1..6.png</code> → <code>FaceChar</code></td><td><b>유료</b>(생성) · 한 번 만들면 재사용</td></tr>
+<tr><td>카메라 (샷 전환 · 밀고 들어가기 · 흔들림)</td><td>코드 — <code>CAMS</code> 표 + <code>Rig</code></td><td><code>Carpool.tsx</code></td><td>무료</td></tr>
+<tr><td>자막 · 이름표 · 내비 화면 · 제목 띠</td><td>코드(React) — 쇼츠 UI 안전 영역 <code>SAFE</code> 안</td><td><code>components/common.tsx</code></td><td>무료</td></tr>
+<tr><td><b>목소리</b></td><td><b>AI 음성</b>(캐릭터별 Gemini 보이스 + 영어 톤 지시)</td><td><code>scripts/tts.mjs</code></td><td><b>유료</b>(바뀐 줄만)</td></tr>
+<tr><td>효과음 · 엔진 소리 · 노래 비트</td><td>코드 합성</td><td><code>tts.mjs</code> 의 <code>synth</code> · <code>beat.mjs</code></td><td>무료</td></tr>
+</table></div>
+<p>핵심은 <b>"AI 산출물은 얼굴 그림과 목소리 두 가지뿐"</b>이라는 점이다. 그래서 (1) 캐릭터 일관성이 코드로 보장되고(몸·옷·무대는 매번 같음), (2) 대사 한 줄을 고치면 그 줄 음성만 다시 만들면 되고, (3) 연기를 바꾸는 건 대본의 <code>act</code> 이름 하나만 바꾸면 된다.</p>
+
+<h3>언제 무엇을 쓰나</h3>
+<div class="tw"><table>
+<tr><th>상황</th><th>고르는 방식</th><th>이유</th></tr>
+<tr><td>대사가 많고 표정·몸짓으로 웃기는 콩트</td><td><b>3D 하이브리드</b> (<code>carpool</code> 식)</td><td>표정(<code>face</code>) + 연기(<code>act</code>) + 샷(<code>cam</code>)을 줄마다 지정해 연출 가능</td></tr>
+<tr><td>음악·가사 중심</td><td><b>ride3dface</b> (또는 2D <code>ride</code>)</td><td>가사 박자에 표정을 맞춤. 2D 는 더 가볍고 렌더가 빠름</td></tr>
+<tr><td>채팅·상식·밸런스 같은 텍스트 위주</td><td><b>2D</b> (chat · facts · balance)</td><td>3D 가 필요 없음. 렌더 빠름·수정 쉬움</td></tr>
+<tr><td>타격·과장 액션 만화 느낌</td><td>2D 영상툰 (<code>fight</code>)</td><td>SVG 캐릭터 + 집중선·흔들림 효과</td></tr>
+</table></div>
+
+<h3>대본에서 연출을 지정하는 법 (<code>carpool</code> 예)</h3>
+<pre><button class="copy">복사</button><code>{ "who":"선배", "text":"야, 너 5분 늦었어. 시간 개념이 없어.",
+  "style":"scolding loudly, annoyed older boss",      // TTS 영어 톤
+  "cam":"c선배",                                       // 카메라 샷: wide · two · c선배 · c후배 · creep
+  "face":{ "선배":3, "후배":1 },                        // 표정 번호 1~6 (아래 표). 지정 안 하면 직전 표정 유지, 말하는 줄은 기본 2(TALKING)
+  "act": { "선배":"scold", "후배":"deadpan" } }         // 몸 연기 이름 (ACTS 사전). 다음 지정 전까지 유지
+
+{ "who":"효과", "text":"", "dur":1, "sfx":"door" }      // voices 에 없는 who = 음성 없는 효과 줄 (dur 초)
+{ "who":"내비", "text":"200미터 앞, 직진입니다.", "fx":"nav", "sound":"⬆ 직진 200m", "sfx":"chime" }   // fx:nav → 내비 화면에 sound 표시</code></pre>
+<div class="tw"><table>
+<tr><th>항목</th><th>값과 뜻</th></tr>
+<tr><td><code>face</code> 1~6</td><td>1 NEUTRAL 무표정 · 2 TALKING 말하는 입 · 3 ANGRY 분노(핏줄) · 4 SHOCK 충격(땀방울) · 5 CUTE 볼터치 미소 · 6 UNCANNY 섬뜩한 활짝 웃음 (<code>content/faces.json</code> 의 표정 순서 = 시트 읽는 순서)</td></tr>
+<tr><td><code>act</code> (ACTS)</td><td><code>idle · deadpan</code>(축 처진 무표정) · <code>scold</code>(삿대질 호통) · <code>flinch</code>(움찔) · <code>shrugOff</code>(억울한 으쓱) · <code>pointFwd</code>(직진!) · <code>wheel</code>(핸들 잡기) · <code>sweepRight</code>(우회전 휙) · <code>smug</code>(으스대기) · <code>surrender</code>(항복) · <code>freeze</code>(얼어붙음) · <code>lookOver</code>(천천히 쳐다봄). 새 연기는 <code>toon3d/acts.ts</code> 에 함수 하나 추가</td></tr>
+<tr><td><code>cam</code></td><td><code>wide</code>(전체) · <code>two</code>(둘 함께) · <code>c선배</code>/<code>c후배</code>(얼굴 클로즈업) · <code>creep</code>(천천히 다가가는 공포 샷). 새 샷은 <code>CAMS</code> 표에 <code>d(거리), tx, ty</code> 추가. 샷이 바뀌면 9프레임에 걸쳐 부드럽게 이동</td></tr>
+<tr><td><code>fx</code></td><td><code>drive</code>(출발: 풍경이 달리기 시작) · <code>nav</code>(내비 화면) · <code>stinger</code>(정적+붉은 비네트+심장 소리) · <code>out</code>(선배가 내려서 멀어짐). 이 줄들이 영상의 속도·장면 전환 기준점이라 <b>대본에서 빠지면 영상이 깨진다</b>(<code>beats.find(...)!</code>)</td></tr>
+<tr><td><code>sfx</code></td><td><code>door · blinker · chime · heart · away · engine …</code> (<code>public/sfx/</code>). <code>heart</code> 는 음량 1, 나머지 0.7. 엔진 소리는 출발~정적, 내려 준 뒤 구간에 반복 재생</td></tr>
+</table></div>
+<div class="callout"><b class="t">연출 설계 요령 (carpool 에서 읽히는 패턴)</b><ul>
+<li><b>무표정 vs 과장</b>: 후배는 <code>deadpan</code>+무표정(face 1·2), 선배는 호통·으스대기로 과장 → 대비가 웃음.</li>
+<li><b>소리를 비워서 웃기기</b>: <code>stinger</code> 구간에서 풍경을 멈추고 엔진을 끄고 심장 소리만 → 긴장 후 반전.</li>
+<li><b>샷으로 말하기</b>: 말하는 사람 클로즈업(<code>c선배</code>)과 반응 컷(<code>c후배</code>)을 번갈아, 공포 장면엔 <code>creep</code> 로 서서히 밀기.</li>
+<li><b>맞았을 때</b>: <code>flinch</code>/<code>surrender</code> 줄에서 카메라 흔들림 자동 적용.</li></ul></div>
+<div class="callout warn"><b class="t">3D 렌더 주의</b><p>3D 장면은 <code>remotion.config.ts</code> 에 <code>Config.setChromiumOpenGlRenderer("angle")</code> 가 필요하다(이미 설정됨). 2D 보다 <b>렌더가 느리고 파일이 크다</b>(carpool.mp4 약 24MB, ride3dface 약 28MB — 확장 업로드 10MB 한도를 넘으니 사람이 직접 올리거나 압축). 의존성: <code>three · @react-three/fiber · @remotion/three</code> — 처음엔 <code>npm install</code>.</p></div>
+
+<h2 id="f-process">4-4. 제작 순서</h2>
+<ol class="steps f">
+<li><b class="n">대본 쓰기 <span class="who human">사람·Claude</span></b><code>content/episodes.json</code> 에 새 키(id)로 <code>title · voices · lines</code> 추가. 노래면 <code>content/song.json</code>. 하이브리드 콩트라면 줄마다 <code>cam · face · act</code> 까지 적는다(4-3).</li>
+<li><b class="n">표정 시트 준비 <span class="who paid">생성은 유료</span></b>(하이브리드만) 캐릭터 묘사를 <code>content/faces.json</code> 의 <code>characters</code> 에 추가 → <code>node scripts/facegen.mjs --list</code> 로 프롬프트 확인(무료) → 요청이 있을 때만 <code>facegen &lt;이름&gt;</code>. 이미 있는 시트면 <code>--process-only</code>. 이 단계가 끝나야 <code>public/faces/&lt;이름&gt;_1..6.png</code> 가 생긴다.</li>
+<li><b class="n">컴포넌트 연결</b>2D 형식은 기존 컴포넌트(<code>Chat</code>·<code>Facts</code> …)를 쓰면 되고, 새 형식이면 <code>src/Root.tsx</code> 의 <code>EPISODES</code> 배열에 <code>{id, component}</code> 추가 (<code>EpisodeId</code> 는 episodes.json 키에서 자동). 3D 콩트는 <code>Carpool.tsx</code> 를 복사해 <code>EP</code> · <code>WHO</code> · <code>X</code>(좌석 위치) · <code>LOOK</code>(옷·머리색) · <code>CAMS</code> 를 바꾼다.</li>
+<li><b class="n">음성 + 효과음 <span class="who paid">키가 있으면 유료</span></b><code>npm run tts</code> (특정 편만: <code>node scripts/tts.mjs carpool</code>). 효과음 14종은 이때 코드로 합성된다. <b>먼저 <code>TTS_DRY=1 npm run tts</code> 로 길이만 추정해 레이아웃을 확인</b>하고(무료), 마음에 들면 키로 생성.</li>
+<li><b class="n">미리보기</b><code>npm run studio</code> → 샷·표정·연기·타이밍 확인. 대사만 고쳤다면 <code>tts</code> 를 다시 (바뀐 줄만 생성). 연기·카메라만 고쳤다면 음성은 그대로 두고 studio 로 확인.</li>
+<li><b class="n">렌더 <span class="who auto">무료</span></b><code>npm run render</code> (전부) 또는 <code>node scripts/render.mjs carpool</code> → <code>out/&lt;id&gt;.mp4</code>. 노래는 먼저 <code>npm run beat</code>. 3D 는 느리니 <b>한 편씩</b>.</li>
+<li><b class="n">타입 점검</b><code>npm run typecheck</code>.</li>
+</ol>
+<div class="callout warn"><p><code>scripts/render.mjs</code> 의 기본 목록(<code>all</code>)은 <code>chat skit facts balance fight ride ride3d ride3dface carpool</code> 입니다. 새 형식을 추가하면 이 배열에도 넣어야 "전부 렌더"에 포함됩니다.</p></div>
+
+<h2 id="f-schema">4-5. <code>content/</code> 파일 — 대본 문법</h2>
+<pre><button class="copy">복사</button><code>"chat": {
+  "title": "아빠가 갑자기 사랑한다고 했다",
+  "room": "우리집 🏠",
+  "voices": { "아빠":"Charon", "엄마":"Kore", "나":"Puck", "시스템":"Zephyr" },   // 화자 → Gemini 보이스
+  "lines": [
+    { "who":"아빠", "text":"사랑해 ❤️", "say":"사랑해~",                          // text=화면, say=읽을 문장(이모지·기호 보정)
+      "style":"suspiciously sweet and sheepish" },                              // 영어 톤 지시 (TTS 프롬프트에 들어감)
+    { "who":"시스템", "text":"엄마님이 아빠님을 내보냈습니다.", "pauseAfter":1.5 }   // 이 줄 뒤 추가 쉼(초)
+  ] }</code></pre>
+<div class="tw"><table>
+<tr><th>필드</th><th>뜻</th></tr>
+<tr><td><code>voices</code></td><td>화자 이름 → Gemini 사전 정의 보이스 (Puck · Kore · Charon · Zephyr · Fenrir · Orus · Leda …). <b>voices 에 없는 who(예: "효과")는 음성 없이 <code>dur</code> 초만큼 빈 줄</b></td></tr>
+<tr><td><code>text · say</code></td><td>화면 글자 · 실제 읽을 말 (없으면 text 에서 이모지를 지워 읽음)</td></tr>
+<tr><td><code>style</code></td><td>"Speak in Korean. Tone: … Say only this line" 프롬프트로 들어가는 영어 톤</td></tr>
+<tr><td><code>pauseAfter · dur</code></td><td>줄 뒤 추가 쉼(초) · 음성 없는 줄의 길이</td></tr>
+<tr><td><code>fx · emoji · a · b · end</code></td><td>형식별 연출 (twist · 이모지 · 밸런스 선택지 · 끝 표시)</td></tr>
+<tr><td><code>scene · cam · pose · dmg · hit · sfx · sound</code></td><td>2D 영상툰(<code>fight</code>) 전용: 배경 장면 · 카메라(wide/mid/closeL/closeR) · 인물 포즈(angry/punch/hit/down/smirk…) · 데미지 · 피격자 · 효과음 · 화면 의성어</td></tr>
+<tr><td><code>cam · face · act · fx · sfx · sound</code></td><td><b>3D 하이브리드(<code>carpool</code>) 전용</b>: 카메라 샷 · 인물별 표정 번호(1~6) · 인물별 몸 연기 이름 · 기준 연출(drive/nav/stinger/out) · 효과음 · 내비 화면 글자. 상세는 <a href="#f-hybrid">4-3</a></td></tr>
+</table></div>
+<p class="meta">같은 <code>cam</code> 이라는 필드 이름이라도 <b>2D(fight)와 3D(carpool)에서 값 목록이 다르다</b>(2D: wide/mid/closeL/closeR, 3D: wide/two/c선배/c후배/creep). 형식별 컴포넌트가 해석한다.</p>
+<p>타이밍은 <code>src/timeline.ts</code> 가 계산: 첫 대사 앞 0.4초, 줄 사이 기본 0.35초, <code>pauseAfter</code> 추가, 끝 0.5초. <code>src/generated/timings.json</code> 이 (줄별 음성 파일 · 길이)를 담는다 — <b>자동 생성이니 손으로 고치지 않는다.</b></p>
+
+<h2 id="f-tts">4-6. 음성 · 효과음 (<code>scripts/tts.mjs</code>)</h2>
+<ul>
+<li>모델 기본 <code>gemini-2.5-flash-preview-tts</code> (환경변수 <code>GEMINI_TTS_MODEL</code> 로 변경). 출력 24kHz 16bit 모노 PCM → WAV. <b>앞뒤 무음 자동 제거</b>(0.05초만 남김).</li>
+<li><b>캐시</b>: <code>[모델|보이스|style|say]</code> md5 가 같고 파일이 있으면 <b>다시 생성하지 않는다</b> → 대사 하나만 고치면 그 줄만 과금. 429/5xx 는 15초씩 늘려 최대 6번 재시도.</li>
+<li>키 순서: 환경변수 <code>GEMINI_API_KEY</code>/<code>GOOGLE_API_KEY</code> → 루트 <code>.env</code>. <b>키가 없으면 음성 없이 글자 수 × 0.13초로 길이만 추정</b>해 타이밍을 만든다 (레이아웃 점검용, 무료). <code>TTS_DRY=1</code> 로 일부러 키를 무시할 수 있다.</li>
+<li>효과음 14종은 <b>저작권 걱정 없이 코드로 합성</b>해 <code>public/sfx/</code> 에 만든다: 기본 <code>pop tick ding boom crinkle whoosh punch powerup</code> + <b>콩트용 사운드 디자인(차 안)</b> <code>door</code>(문) · <code>blinker</code>(깜빡이) · <code>chime</code>(내비 안내음) · <code>heart</code>(심장 소리 4박) · <code>away</code>(멀어지는 소리) · <code>engine</code>(엔진 저음, 반복 재생용). 새 효과음은 <code>synth("이름", 길이초, (t,p)=&gt;…)</code> 한 줄 추가 후 <code>tts</code> 를 한 번 돌리면 생성된다(키 없어도 됨).</li>
+<li>하이브리드 콩트에서는 목소리마다 <b>역할에 맞는 보이스 + 영어 톤</b>(예: 선배 "scolding loudly, annoyed older boss", 후배 "flat deadpan, very tired", 내비 "robotic car navigation voice, polite and flat")을 줘서 연기와 어울리게 한다. 한 편에서 보이스가 겹치지 않게 <code>voices</code> 를 정한다.</li>
+</ul>
+
+<h2 id="f-song">4-7. 노래 영상 (<code>beat.mjs</code> · <code>song.json</code>)</h2>
+<ul>
+<li><code>song.json</code> = <code>title · lead · sections[]</code>. 섹션: <code>name · style(intro/verse/chorus/bridge/end) · bpm · energy(0~3) · lines[{who,text,beats}]</code>. <code>bpm: 0</code> 이면 음악 없는 정적 구간(<code>lines[].seconds</code> 사용).</li>
+<li><code>node scripts/beat.mjs</code> (<code>npm run beat</code>) 가 이 구조대로 <b>킥·스네어 등 비트를 코드로 합성</b>해 <code>public/bgm/ride.wav</code> 로 저장 (고정 시드 잡음 → 매번 같은 소리, API 없음, 무료).</li>
+<li>영상 쪽 <code>src/songTimeline.ts</code> 가 <b>같은 계산</b>으로 가사 타이밍을 만들고, 풍경 이동 속도는 <code>bpm × 7</code> px/초(정적 구간은 멈춤). <b>beat.mjs 와 songTimeline.ts 의 계산이 어긋나면 소리와 가사가 어긋난다</b> — 한쪽을 고치면 다른 쪽도 같이.</li>
+<li>가사는 <code>beats</code> 로 길이를 정하므로, 박자 수만 바꿔 가사를 늘이고 줄인다.</li>
+</ul>
+
+<h2 id="f-faces">4-8. 얼굴 표정 시트 — 하이브리드의 AI 쪽 (<code>facegen.mjs</code>)</h2>
+<p>3D 노래(<code>ride3dface</code>)와 3D 콩트(<code>carpool</code>)가 <b>같은 표정 시트</b>(<code>public/faces/선배_1..6.png</code>, <code>후배_1..6.png</code>)를 쓴다. 캐릭터가 늘면 <code>faces.json</code> 의 <code>characters</code> 에 묘사를 추가해 시트를 새로 만든다. 표정 번호 의미는 4-3 의 표.</p>
+<pre><button class="copy">복사</button><code>node scripts/facegen.mjs --list                  # 프롬프트만 출력 (무료)
+node scripts/facegen.mjs 선배 후배                # Gemini 로 6칸 표정 시트 생성 (유료)
+node scripts/facegen.mjs --process-only          # 이미 받은 원본(art/faces/raw_&lt;이름&gt;.png)만 다시 자르기 (무료)
+node scripts/facegen.mjs --placeholder           # 임시 시트로 자르기만 — 파이프라인 점검 (무료)
+node scripts/facegen.mjs 선배 --force            # 원본이 있어도 다시 생성 (유료)</code></pre>
+<ul>
+<li><code>content/faces.json</code> = 화풍(<i>한국 웹툰 개그체 "grotesque-cute"</i>) · 작업 지시 · 캐릭터별 묘사 · 6표정 · 레이아웃. <b>얼굴 이목구비만</b> 초록(#00FF00) 배경에 3×2 격자로 그리게 한다 (머리 윤곽·머리카락·몸 없음 — 3D 머리에 투영하는 데칼).</li>
+<li>처리: 초록 키잉 → 가장 넓은 빈 틈 n개를 칸 경계로 → 6칸으로 잘라 <code>public/faces/&lt;이름&gt;_1..6.png</code> (투명 PNG). Gemini 가 오른쪽 아래에 넣는 작은 별 로고는 지운다.</li>
+<li>429 면 예비 키(<code>GEMINI_API_KEY2</code>)로 바꿔 재시도, 이미지 모델은 키로 쓸 수 있는 것 중 최신을 자동 선택(<code>GEMINI_IMAGE_MODEL</code> 로 고정 가능).</li>
+<li>표정 파일이 모자라면 원본(<code>raw_*.png</code> · <code>_v1</code> · <code>_v2-pale</code> 버전들)을 <code>art/faces</code> 에 보관해 두고 <code>--process-only</code> 로 다듬기만 반복.</li>
+</ul>
+
+<h2 id="f-tips">4-9. funtube 자동화 팁</h2>
+<div class="grid3">
+<div class="card f"><h3>💡 무료로 먼저</h3><ul><li>키 없이 <code>TTS_DRY=1 npm run tts</code> → 길이 추정으로 <b>타이밍·레이아웃 점검</b>.</li><li><code>facegen --placeholder</code> 로 파이프라인 점검 (임시 시트로 3D 머리에 입혀 봄).</li><li><code>facegen --list</code> 로 프롬프트만 확인.</li><li>마음에 들면 그때 키로 생성.</li></ul></div>
+<div class="card f"><h3>🧬 하이브리드 재사용</h3><ul><li><b>표정 시트·몸·차·연기 사전은 한 번 만들면 여러 편에서 재사용</b> — 새 편의 비용은 대본 + 음성뿐.</li><li>새 콩트 = <code>Carpool.tsx</code> 복사 → 무대(<code>car.tsx</code> 대신 새 무대)·<code>CAMS</code>·<code>LOOK</code> 교체.</li><li>연기가 모자라면 <code>acts.ts</code> 에 함수 추가 → 대본에서 이름으로 호출.</li><li>시트를 바꿔 가며 비교(<code>raw_*_v1/v2</code>, <code>ride3dface-v2/v3</code>)하고 마음에 드는 것만 <code>public/faces</code> 에 둔다.</li></ul></div>
+<div class="card f"><h3>♻ 캐시를 믿고 대사 수정</h3><ul><li>같은 모델·보이스·톤·문장이면 재생성 안 함 → 한 줄만 바꾸면 한 줄만 과금.</li><li>톤(<code>style</code>)만 바꿔도 해시가 바뀌어 다시 생성되니 주의.</li></ul></div>
+<div class="card f"><h3>🎭 웃음 설계</h3><ul><li>chat: 끝에 <b>시스템 메시지로 반전</b>.</li><li>facts: 마지막 줄에서 <b>관객을 저격</b>하는 twist.</li><li>balance: 선택지 3~4개 + "댓글로 알려줘" 끝.</li><li>fight(2D 영상툰): 허세 → 타격 → <b>의외의 결과</b>(드래곤볼 찍은 썰).</li><li>carpool(3D 콩트): <b>역할 대비</b>(호통 vs 무표정) + <b>정적·심장 소리로 긴장</b> 후 반전.</li></ul></div>
+</div>
+<div class="callout"><b class="t">funtube 를 qna 수준으로 굳히고 싶다면</b><p>① <code>funtube/CLAUDE.md</code> 에 <b>하이브리드 방향 선언</b>(코드/AI/사람의 역할 분담), 채널 정체성·톤·금지 소재·업로드 규칙 기록 ② 캐릭터 고정표(이름 → 표정 시트 버전 → 보이스 → 말투 → <code>LOOK</code>) 문서화 — qna 의 voice.json 처럼 <b>한 번 정하면 바꾸지 않는</b> 값으로 ③ 형식별 "기준 예시 편" 지정(3D 는 <code>carpool</code>, 2D 는 <code>chat</code>) ④ <code>render.mjs</code> 의 <code>all</code> 을 <code>episodes.json</code> 키에서 자동으로 만들기 ⑤ 3D 영상은 10MB 를 넘으니 업로드 절차(압축·직접 업로드)를 정하기. 이렇게 하면 이 장이 shortube 장처럼 단단해집니다.</p></div>
+</section>
+
+<!-- ============================== 5. 프롬프트 ============================== -->
+<section id="prompts" class="proj">
+<h1>5. Claude 에게 이렇게 말하세요</h1>
+<p class="meta">버튼으로 복사해서 그대로 붙여 쓸 수 있습니다. 괄호는 바꿔 넣으세요. 키 있는 생성이 필요하면 <b>"API 로 만들어 줘"</b>라고 분명히 말해야 유료 명령이 실행됩니다.</p>
+
+<h3>qna</h3>
+<div class="say"><q><span class="tag">새 편 기획</span>"감기와 독감" 같은 주제로 qna 7편을 기획해 줘. 집 밖 장소와 제삼의 인물로.</q><button>복사</button></div>
+<div class="say"><q><span class="tag">콘티까지(무료)</span>qna ep07 script.json · art.json 만들고 storyboard 까지 뽑아서 보여 줘. 그림·음성 API 는 아직 돌리지 마.</q><button>복사</button></div>
+<div class="say"><q><span class="tag">그림 생성(유료)</span>qna ep07 그림 API 로 만들어 줘 (artgen). 먼저 --list 로 몇 장인지 알려 주고 시작해.</q><button>복사</button></div>
+<div class="say"><q><span class="tag">음성(유료)</span>qna ep07 음성 API 로 만들어 줘 (voice gen). 대사 바뀐 컷만.</q><button>복사</button></div>
+<div class="say"><q><span class="tag">완성</span>qna ep07 make 해서 mp4 와 자막까지 뽑고, 컷 이미지로 어색한 데 있는지 봐 줘.</q><button>복사</button></div>
+<div class="say"><q><span class="tag">쇼츠</span>/qna-shorts ep07</q><button>복사</button></div>
+<div class="say"><q><span class="tag">고치기</span>ep03 3번 컷에서 할머니가 더 빨리 등장하게 하고 연출만 바꿔서 다시 렌더해 줘 (음성은 건드리지 마).</q><button>복사</button></div>
+
+<h3>shortube</h3>
+<div class="say"><q><span class="tag">오늘 주제 자동</span>/shortube-daily 2</q><button>복사</button></div>
+<div class="say"><q><span class="tag">주제 지정 + 제작</span>(주제와 최신 상황)으로 shortube 쇼츠 만들어 줘. 요청 전제부터 사실 확인하고, 브리프 → 영상 → BGM → 스틸 점검까지.</q><button>복사</button></div>
+<div class="say"><q><span class="tag">업로드(비공개)</span>방금 만든 쇼츠 비공개로 올려 줘. 한도 확인하고 Studio 에서 상태 재확인해서 알려 줘.</q><button>복사</button></div>
+<div class="say"><q><span class="tag">업로드(공개)</span>공개로 올려 줘.</q><button>복사</button></div>
+<div class="say"><q><span class="tag">점검</span>shortube 최근 5편이 구성·문장이 너무 비슷하지 않은지 점검하고 다음 편 연출 카드를 제안해 줘.</q><button>복사</button></div>
+
+<h3>funtube</h3>
+<div class="say"><q><span class="tag">대본</span>funtube 에 "(주제)" 단톡방 개그 chat 형식으로 대본을 episodes.json 에 추가해 줘. 반전은 마지막 시스템 메시지로.</q><button>복사</button></div>
+<div class="say"><q><span class="tag">무료 점검</span>funtube 새 편 tts 를 키 없이(TTS_DRY=1) 돌려서 길이만 확인하고 studio 로 볼 수 있게 해 줘.</q><button>복사</button></div>
+<div class="say"><q><span class="tag">하이브리드 콩트</span>funtube 에 "(상황)" 3D 콩트를 carpool 방식으로 추가해 줘. 인물 둘의 성격 대비로 웃기고, 줄마다 cam · face · act 를 지정해서 episodes.json 에 넣어 줘. 음성·표정 시트 API 는 아직 돌리지 마.</q><button>복사</button></div>
+<div class="say"><q><span class="tag">표정 시트(유료)</span>funtube 후배 표정 시트를 facegen 으로 다시 만들어 줘 (API). 먼저 --list 로 프롬프트 보여 주고, 기존 시트는 art/faces 에 _v 버전으로 보관해.</q><button>복사</button></div>
+<div class="say"><q><span class="tag">연기만 수정</span>carpool 에서 선배가 호통칠 때 더 크게 움직이게 acts.ts 의 scold 를 고치고 음성은 건드리지 말고 다시 렌더해 줘.</q><button>복사</button></div>
+
+<h3>문서 · 정리</h3>
+<div class="say"><q><span class="tag">규칙 반영</span>방금 정한 규칙을 qna/CLAUDE.md (또는 shortube/CLAUDE.md)에 반영하고 이 가이드(docs/workflow-guide.html)도 같이 고쳐 줘.</q><button>복사</button></div>
+<div class="say"><q><span class="tag">커밋</span>변경을 브랜치로 커밋하고 PR 올려 줘 (out/ · public/art · .env 는 제외).</q><button>복사</button></div>
+</section>
+
+<!-- ============================== 6. 막힐 때 ============================== -->
+<section id="trouble" class="proj">
+<h1>6. 막힐 때 · 체크리스트</h1>
+
+<h2>6-1. 증상 → 원인 → 처방</h2>
+<div class="tw"><table>
+<tr><th>증상</th><th>가능한 원인</th><th>처방</th></tr>
+<tr><td>qna: 그림이 점선 임시 그림으로 나옴</td><td>파일 이름·폴더가 <code>art.json</code> id 와 다름 (예: 컷인을 <code>dad/</code> 에 저장)</td><td>저장 경로 확인 → <code>npm run art -- epNN</code> 이 "빠진 그림 목록"을 출력</td></tr>
+<tr><td>qna: 음성 만들 때 "목소리가 셋" 오류</td><td>한 컷에 화자 3명</td><td>컷을 나눈다 (<code>voice -- epNN jobs</code> 로 검사)</td></tr>
+<tr><td>qna: 컷 시작·끝에 "칙" 잡음</td><td>AI Studio WAV 의 이중 헤더·C2PA 데이터</td><td><code>voice.mjs</code> 가 걸러 줌. 다른 편집기에 직접 넣을 때만 문제</td></tr>
+<tr><td>qna: 목소리가 일그러짐</td><td><code>rawVoice</code> 빠짐(임시 음성용 변조가 켜짐) 또는 녹음 후 <code>--tts</code> 실행</td><td><code>"rawVoice": true</code>, <code>--tts</code> 금지</td></tr>
+<tr><td>qna: 소리와 자막이 어긋남</td><td>대사를 고쳤는데 음성을 안 다시 만듦</td><td><code>make -- epNN --voice</code> (또는 <code>--tts</code>)</td></tr>
+<tr><td>qna: 쇼츠 글자가 가려짐</td><td>쇼츠 UI 영역(오른쪽 140px·아래 330px)</td><td><code>short --check</code> 콘택트 시트로 확인</td></tr>
+<tr><td>shortube: 자막이 본문과 겹침</td><td>본문 요소가 y≈1450 아래</td><td>요소를 올리거나 자막 줄 수정, <code>pre-line</code></td></tr>
+<tr><td>shortube: 숫자가 보도마다 다름</td><td>출처 간 불일치</td><td>범위로 쓰거나("약 5.1%") 빼고 <code>conflict</code> 메모, 화면에 "보도 기준"</td></tr>
+<tr><td>shortube: 업로드 후 입력이 사라짐</td><td>대화상자가 다시 그려짐</td><td>입력 후 스크린샷 확인, 좌표 클릭</td></tr>
+<tr><td>shortube: 10MB 넘음</td><td>확장 업로드 한도</td><td>2-pass 압축본 (<code>-b:v 1100~1600k</code>)</td></tr>
+<tr><td>shortube: "일일 업로드 한도 도달"</td><td>YouTube 시스템 한도</td><td>24시간 기다림. 다른 계정으로 우회 금지</td></tr>
+<tr><td>funtube: 음성이 안 나옴</td><td>키 없음 → 길이만 추정 모드</td><td>루트 <code>.env</code> 에 <code>GEMINI_API_KEY</code> (그리고 과금 동의 후 <code>npm run tts</code>)</td></tr>
+<tr><td>funtube 3D: 얼굴이 안 보이거나 텍스처 오류</td><td><code>public/faces/&lt;이름&gt;_1..6.png</code> 6장이 모두 없음 (FaceChar 는 6장을 한 번에 로드)</td><td><code>facegen --process-only</code> 로 원본(<code>art/faces/raw_*.png</code>)에서 다시 자르거나 <code>--placeholder</code></td></tr>
+<tr><td>funtube 3D: 렌더가 깨지거나 검은 화면</td><td>OpenGL 설정 누락</td><td><code>remotion.config.ts</code> 에 <code>Config.setChromiumOpenGlRenderer("angle")</code> 확인</td></tr>
+<tr><td>funtube carpool: 렌더 중 오류 <code>Cannot read … of undefined</code></td><td>대본에서 <code>fx</code> 기준 줄(<code>drive</code> · <code>stinger</code> · <code>out</code>)을 지움</td><td>세 줄을 대본에 되살린다 (풍경 속도·장면 전환의 기준)</td></tr>
+<tr><td>funtube 3D: 영상이 10MB 를 넘어 확장 업로드 불가</td><td>3D 렌더 용량(약 24~28MB)</td><td>압축본을 만들거나 사람이 Studio 에 직접 올리고, 이후 세부정보만 Claude 가 입력</td></tr>
+<tr><td>funtube: 노래와 가사가 어긋남</td><td><code>beat.mjs</code> 와 <code>songTimeline.ts</code> 계산 불일치</td><td>두 파일을 같이 고치고 <code>npm run beat</code> 다시</td></tr>
+<tr><td>공통: 한글이 깨짐(Windows)</td><td>콘솔 인코딩</td><td><code>PYTHONIOENCODING=utf-8</code></td></tr>
+</table></div>
+
+<h2>6-2. 올리기 전 체크리스트</h2>
+<div class="grid3">
+<div class="card q"><h3>qna 롱폼</h3><ul>
+<li>□ 시나리오가 집 밖 + 제삼의 인물인가</li><li>□ 6번 박자에 농담이 없는가</li><li>□ 몸·성 소재면 몸을 안 그렸고 민감 단어가 화면 글자에 없는가</li><li>□ 8분 안팎인가</li><li>□ 음색이 voice.json 과 같은가 (바꾸지 않았는가)</li><li>□ 영어 제목 100자 이하, 자막(srt) 올렸는가</li><li>□ 썸네일(ThumbD) · 본편 ID 를 SKILL.md 에 기록했는가</li></ul></div>
+<div class="card s"><h3>shortube 쇼츠</h3><ul>
+<li>□ 요청 전제를 확인하고 바로잡았는가</li><li>□ 모든 숫자가 사실 카드에 있고 기준일·단위가 있는가</li><li>□ 외부 이미지·로고·캡처 없음</li><li>□ 투자/의료 조언으로 읽힐 문장 없음 + 고지 문구</li><li>□ 부가가치 요소 한 문장으로 말할 수 있는가</li><li>□ 제목·훅이 실제 내용과 일치</li><li>□ 연출 카드가 직전 2편과 4개 이상 다름</li><li>□ 한도(24시간 2편·7일 10편) · 공개 범위 · 사후 상태 확인</li><li>□ <code>uploads.csv</code> 기록, 음악은 사람이 들어 봄</li></ul></div>
+<div class="card f"><h3>funtube</h3><ul>
+<li>□ <code>voices</code> 에 모든 화자가 있는가</li><li>□ (3D) <code>public/faces/&lt;이름&gt;_1..6.png</code> 6장 · 표정 번호가 1~6 안인가</li><li>□ (3D) <code>act</code> 이름이 <code>ACTS</code> 에 있고 <code>cam</code> 이 <code>CAMS</code> 에 있는가 · <code>drive/stinger/out</code> 줄이 있는가</li><li>□ (3D) 렌더 후 용량 확인(10MB 초과 시 업로드 방법)</li><li>□ 이모지가 음성에 읽히지 않게 <code>say</code> 를 줬는가</li><li>□ 마지막 반전/끝 표시</li><li>□ <code>render.mjs</code> 목록에 새 형식을 넣었는가</li><li>□ <code>npm run typecheck</code></li><li>□ 쇼츠 UI 안전 영역(<code>common.tsx</code>) 안에 글자가 있는가</li></ul></div>
+</div>
+
+<h2>6-3. 이 문서를 최신으로 유지하기</h2>
+<ul>
+<li>규칙의 <b>원본</b>은 각 프로젝트의 <code>CLAUDE.md</code>·스킬 문서다. 이 가이드는 그 요약 + 실전 팁이므로, 원본이 바뀌면 이 문서도 같이 고친다 (Claude 에게 "규칙 반영" 문구 사용).</li>
+<li>정책·법령·모델 이름은 바뀐다. COMPLIANCE_GUIDE 의 원문 링크(YouTube 수익 창출·스팸·합성 콘텐츠 정책, API 개발자 정책)는 <b>분기마다 재확인</b>. TTS 모델명도 구현 전에 공식 문서 재확인.</li>
+<li>이 문서에는 <b>키 값을 쓰지 않는다.</b></li>
+</ul>
+</section>
+
+<!-- ============================== 7. 명령어 ============================== -->
+<section id="cmds" class="proj">
+<h1>7. 명령어 전체표</h1>
+<h3><span class="badge b-q">qna</span> <code>cd D:\youtube\qna\video</code></h3>
+<div class="tw"><table>
+<tr><th>명령</th><th>하는 일</th><th>비용</th></tr>
+<tr><td><code>npm run prompts [-- epNN]</code></td><td>Gemini 프롬프트 문서 생성 (이미 있는 그림은 ✅)</td><td>무료</td></tr>
+<tr><td><code>npm run storyboard -- epNN</code></td><td>콘티 시트 <code>storyboard.html</code></td><td>무료</td></tr>
+<tr><td><code>npm run artgen -- epNN [--list]</code></td><td>없는 그림을 Gemini API 로 한 번에 (<code>--list</code> 는 목록만)</td><td><b>유료</b>(--list 무료)</td></tr>
+<tr><td><code>npm run art -- epNN</code></td><td>초록 배경 제거 · 자르기 · 크기 맞춤, 빠진 그림 목록</td><td>무료</td></tr>
+<tr><td><code>npm run voice -- epNN sheet|studio|split|jobs|gen [--all]</code></td><td>녹음 대본 / AI Studio 페이지 / 줄 자르기+타이밍 / 작업 목록 / API 생성</td><td><b>gen 만 유료</b></td></tr>
+<tr><td><code>npm run tts -- epNN</code></td><td>임시 음성(Windows 'Heami')</td><td>무료</td></tr>
+<tr><td><code>npm run sfx</code> · <code>node scripts/bgm.mjs</code></td><td>효과음 · 배경음악 코드 합성</td><td>무료</td></tr>
+<tr><td><code>npm run handoff -- epNN</code></td><td>그림·음성을 다른 도구에 넘길 지시서</td><td>무료</td></tr>
+<tr><td><code>npm run studio</code></td><td>Remotion 미리보기</td><td>무료</td></tr>
+<tr><td><code>npm run make -- epNN [--voice|--tts]</code></td><td>프롬프트→그림처리→음성→sfx/bgm→배속→렌더→자막</td><td><code>--voice</code> 만 유료</td></tr>
+<tr><td><code>npm run render</code> · <code>stills</code> · <code>srt</code></td><td>렌더 · 컷 PNG · 자막(<code>en</code> 인자로 영어)</td><td>무료</td></tr>
+<tr><td><code>npm run short -- epNN [--check]</code></td><td>편집형 쇼츠 렌더 / 확인용 콘택트 시트</td><td>무료</td></tr>
+</table></div>
+<h3><span class="badge b-s">shortube</span> <code>cd D:\youtube\shortube</code> (Python) · <code>cd video</code> (영상)</h3>
+<div class="tw"><table>
+<tr><th>명령</th><th>하는 일</th></tr>
+<tr><td><code>.venv/Scripts/python.exe -m shortube init</code></td><td>설정 검증 · SQLite 스키마</td></tr>
+<tr><td><code>… entities</code> · <code>autocomplete</code></td><td>최근 OTT 작품 수집 · 자동완성 후보 + 필터</td></tr>
+<tr><td><code>… pick --count N [--json]</code> · <code>log-topic</code></td><td>로테이션 주제 선정 · 이력 기록</td></tr>
+<tr><td><code>… differences [--top N]</code></td><td>"차이" 주제 후보 (<code>output/difference_topics.csv</code>)</td></tr>
+<tr><td><code>… trends · shorts · report · prune · run-all</code></td><td>트렌드/경쟁 쇼츠/리포트/30일 지난 API 데이터 정리/전체 (일부 Phase 는 미구현 — SPEC 9장)</td></tr>
+<tr><td><code>pytest</code></td><td>단위 테스트 (planner · filters · ott_works 등)</td></tr>
+<tr><td><code>npm run heat | gta | suneung | usmarket | market</code></td><td>BGM 합성 + 해당 영상 렌더 → <code>../output/videos/…mp4</code></td></tr>
+<tr><td><code>node scripts/market-data.mjs</code></td><td>일봉 CSV → <code>src/market/kospi.json</code> (이평 · RSI · 볼린저)</td></tr>
+<tr><td><code>npx remotion still &lt;Id&gt; out.png --frame=N --scale=0.4</code></td><td>핵심 프레임 스틸 점검</td></tr>
+<tr><td><code>npx tsc --noEmit</code></td><td>타입 확인</td></tr>
+</table></div>
+<h3><span class="badge b-f">funtube</span> <code>cd D:\youtube\funtube</code></h3>
+<div class="tw"><table>
+<tr><th>명령</th><th>하는 일</th><th>비용</th></tr>
+<tr><td><code>npm run tts [-- id…]</code></td><td>대사별 음성 + 효과음 합성 + 타이밍 (<code>TTS_DRY=1</code> 이면 키 무시)</td><td>키 있으면 <b>유료</b></td></tr>
+<tr><td><code>npm run beat</code></td><td>노래 비트 합성 → <code>public/bgm/ride.wav</code></td><td>무료</td></tr>
+<tr><td><code>node scripts/facegen.mjs [이름] [--list|--process-only|--placeholder|--force]</code></td><td>얼굴 6칸 표정 시트 생성·자르기 (하이브리드의 AI 쪽)</td><td>생성은 <b>유료</b></td></tr>
+<tr><td><code>TTS_DRY=1 npm run tts</code></td><td>키를 무시하고 글자 수로 길이만 추정 — 레이아웃 점검</td><td>무료</td></tr>
+<tr><td><code>npm run studio</code> · <code>render [-- id…]</code> · <code>typecheck</code></td><td>미리보기 · 렌더(<code>out/&lt;id&gt;.mp4</code>) · 타입 확인</td><td>무료</td></tr>
+</table></div>
+</section>
+
+<footer>
+  <p>저장 위치 <code>D:\youtube\docs\workflow-guide.html</code> · 2026-10-17 작성, 같은 날 funtube 하이브리드 방향 반영(4장). 키 값·개인 정보는 담지 않았습니다. 원본 규칙: <code>CLAUDE.md</code> (루트·qna·shortube) · <code>qna/.claude/skills/qna-shorts/SKILL.md</code> · <code>shortube/.claude/skills/shortube-daily/SKILL.md</code> · <code>shortube/COMPLIANCE_GUIDE.md</code>.</p>
+</footer>
+
+</main>
+</div>
+
+<script>
+// 코드 블록 복사 버튼
+document.querySelectorAll('pre .copy').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var code=btn.parentElement.querySelector('code');
+    navigator.clipboard.writeText(code.innerText).then(function(){btn.textContent='복사됨';setTimeout(function(){btn.textContent='복사'},1200)});
+  });
+});
+// 프롬프트 복사 버튼
+document.querySelectorAll('.say button').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var q=btn.parentElement.querySelector('q').cloneNode(true);
+    var tag=q.querySelector('.tag'); if(tag) tag.remove();
+    navigator.clipboard.writeText(q.innerText.trim()).then(function(){btn.textContent='복사됨';setTimeout(function(){btn.textContent='복사'},1200)});
+  });
+});
+// 목차 현재 위치 강조
+var links=[].slice.call(document.querySelectorAll('#toc a'));
+var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a});
+var io=new IntersectionObserver(function(es){
+  es.forEach(function(e){ if(e.isIntersecting){ links.forEach(function(a){a.classList.remove('on')}); var a=map[e.target.id]; if(a) a.classList.add('on'); } });
+},{rootMargin:'-20% 0px -70% 0px'});
+Object.keys(map).forEach(function(id){var el=document.getElementById(id); if(el) io.observe(el)});
+</script>
+</body>
+</html>

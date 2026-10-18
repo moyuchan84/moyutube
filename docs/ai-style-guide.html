@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>그림 · 음성 스타일 가이드</title>
+<meta name="description" content="여덟 살의 질문 · 숫자로 보는 요즘 · 웃긴 영상툰 — 채널별 AI 그림 화풍과 AI Studio 음성(목소리 이름 · 말투 지시)을 한 곳에 정리한 문서">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎙️</text></svg>">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<style>
+:root{
+  --bg:#f6f7fb;--panel:#fff;--ink:#1c2233;--dim:#5b6479;--line:#dfe3ee;
+  --accent:#3b5bdb;--accent-soft:#e7ecff;
+  --qna:#d9480f;--qna-soft:#fff0e6;
+  --short:#0b7285;--short-soft:#e3fafc;
+  --fun:#9c36b5;--fun-soft:#f8ebff;
+  --warn:#e67700;--warn-soft:#fff4e0;--cost:#c92a2a;--cost-soft:#ffe8e8;
+  --code:#0f172a;--code-ink:#e2e8f0;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0e1220;--panel:#171c2e;--ink:#e8ebf5;--dim:#9aa3bd;--line:#2a3150;
+  --accent:#8fa8ff;--accent-soft:#1f2850;--qna:#ff9a5c;--qna-soft:#33200f;--short:#5bd0e6;--short-soft:#0c2a30;
+  --fun:#d98cf0;--fun-soft:#2a1433;--warn:#ffb84d;--warn-soft:#33260d;--cost:#ff8787;--cost-soft:#361414;
+  --code:#070a14;--code-ink:#d7def0}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 'Pretendard Variable',Pretendard,"Noto Sans KR","Malgun Gothic",system-ui,sans-serif;letter-spacing:-0.01em}
+a{color:var(--accent)}
+code,pre{font-family:"D2Coding",Consolas,Menlo,monospace}
+code{background:var(--accent-soft);padding:1px 6px;border-radius:4px;font-size:.88em}
+pre{background:var(--code);color:var(--code-ink);padding:14px 16px;border-radius:8px;overflow-x:auto;font-size:13px;line-height:1.6;white-space:pre-wrap;word-break:break-word;margin:8px 0 16px}
+header.top{position:sticky;top:0;z-index:5;background:var(--panel);border-bottom:1px solid var(--line);padding:10px 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+header.top b{font-size:15px}
+header.top nav{display:flex;gap:6px;flex-wrap:wrap;margin-left:auto}
+header.top nav a{text-decoration:none;font-size:.85rem;padding:4px 11px;border-radius:999px;border:1px solid var(--line);color:var(--ink)}
+header.top nav a.q{border-color:var(--qna);color:var(--qna)}
+header.top nav a.s{border-color:var(--short);color:var(--short)}
+header.top nav a.f{border-color:var(--fun);color:var(--fun)}
+main{max-width:1000px;margin:0 auto;padding:36px 20px 96px}
+h1{font-size:clamp(28px,5vw,40px);letter-spacing:-0.03em;line-height:1.25;margin:0 0 10px}
+h2{font-size:24px;letter-spacing:-0.02em;margin:56px 0 14px;padding-bottom:8px;border-bottom:2px solid var(--line)}
+h3{font-size:18px;margin:30px 0 10px}
+p{margin:0 0 12px}
+.lead{color:var(--dim);font-size:17px;max-width:720px}
+.badge{display:inline-block;font-size:12px;font-weight:700;padding:1px 10px;border-radius:999px;margin-right:6px;vertical-align:middle}
+.b-q{background:var(--qna-soft);color:var(--qna)}.b-s{background:var(--short-soft);color:var(--short)}.b-f{background:var(--fun-soft);color:var(--fun)}
+h2.q{border-color:var(--qna)}h2.s{border-color:var(--short)}h2.f{border-color:var(--fun)}
+.tbl{overflow-x:auto;margin:8px 0 16px;border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+th,td{text-align:left;vertical-align:top;padding:9px 12px;border-bottom:1px solid var(--line)}
+th{background:var(--accent-soft);font-weight:700;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+td.v{font-weight:800;white-space:nowrap}
+td.en{font-family:Consolas,Menlo,monospace;font-size:12.5px;color:var(--dim);min-width:260px}
+.note{border-left:4px solid var(--accent);background:var(--accent-soft);padding:10px 14px;border-radius:0 8px 8px 0;margin:12px 0 16px;font-size:15px}
+.note.warn{border-color:var(--warn);background:var(--warn-soft)}
+.note.cost{border-color:var(--cost);background:var(--cost-soft)}
+.steps{margin:6px 0 16px;padding-left:22px}
+.steps li{margin-bottom:6px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:12px 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-size:14.5px}
+.card h3{margin:4px 0 8px;font-size:17px}
+.card ul{margin:0;padding-left:18px}
+.chip{display:inline-block;font-weight:700;font-size:13px;padding:1px 9px;border-radius:6px;background:var(--accent-soft);margin:2px 2px 2px 0}
+footer{margin-top:64px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--dim)}
+@media (max-width:760px){.grid{grid-template-columns:1fr}header.top nav{margin-left:0}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a href="../" style="text-decoration:none;color:inherit">← 채널 모음</a>
+  <b>그림 · 음성 스타일 가이드</b>
+  <nav>
+    <a href="#common">공통</a>
+    <a class="q" href="#qna">여덟 살의 질문</a>
+    <a class="s" href="#shortube">숫자로 보는 요즘</a>
+    <a class="f" href="#funtube">웃긴 영상툰</a>
+  </nav>
+</header>
+<main>
+  <h1>그림 · 음성 스타일 가이드</h1>
+  <p class="lead">채널마다 AI 그림의 화풍 문장, AI Studio 에서 고르는 목소리, 말투 지시(Style)를 그대로 옮겨 적었습니다. 새 편을 만들 때 여기서 복사해 쓰면 편이 바뀌어도 그림체와 음색이 흔들리지 않습니다.</p>
+
+  <div class="grid">
+    <div class="card"><span class="badge b-q">qna</span><h3>여덟 살의 질문</h3><ul>
+      <li><b>그림</b> 일본 개그만화 스티커풍, 화풍 앵커 그림 첨부</li>
+      <li><b>음성</b> AI Studio <b>여러 화자</b> — 아빠 <span class="chip">Algenib</span> 아이 <span class="chip">Leda</span> 엄마 <span class="chip">Kore</span></li></ul></div>
+    <div class="card"><span class="badge b-s">shortube</span><h3>숫자로 보는 요즘</h3><ul>
+      <li><b>그림</b> 쓰지 않음 — 글자 · 도형 · 코드로 그린 차트만</li>
+      <li><b>음성</b> 지금까지는 <b>없음</b>(자막 + 코드 합성 BGM). 넣을 때의 후보 <span class="chip">Laomedeia</span></li></ul></div>
+    <div class="card"><span class="badge b-f">funtube</span><h3>웃긴 영상툰</h3><ul>
+      <li><b>그림</b> 얼굴만 — 한국 개그웹툰 '그로테스크-귀여움' 표정 6칸 시트</li>
+      <li><b>음성</b> 한 줄씩 <b>단일 화자</b> — 선배 <span class="chip">Charon</span> 후배 <span class="chip">Puck</span> 등</li></ul></div>
+  </div>
+
+  <!-- ===================================================== -->
+  <h2 id="common">0. 공통</h2>
+  <div class="tbl"><table>
+    <tr><th>무엇</th><th>어디서</th><th>메모</th></tr>
+    <tr><td>음성</td><td><a href="https://aistudio.google.com/generate-speech">Google AI Studio — Generate speech</a></td><td>사전 정의 목소리(Algenib · Leda …) 중에서 고르고, Style 칸에 말투를 영어 문장으로 적는다. 받은 파일은 24kHz · 16비트 · 모노 WAV.</td></tr>
+    <tr><td>그림</td><td>Gemini 앱(손으로) 또는 Gemini API(스크립트)</td><td>캐릭터 · 소품은 <b>단색 초록 #00FF00 배경</b>으로 받아서 코드가 배경을 지운다.</td></tr>
+    <tr><td>API 키</td><td>저장소 루트 <code>D:\youtube\.env</code> 하나만</td><td><code>GEMINI_API_KEY</code>(기본) · <code>GEMINI_API_KEY2</code>(한도에 걸리면 예비). 프로젝트마다 복사하지 않는다.</td></tr>
+  </table></div>
+  <div class="note cost"><b>그림 · 음성 API 는 돈이 든다.</b> 사용자가 "API 로 만들어 줘"라고 할 때만 실행한다. 점검만 할 때는 무료 모드(<code>artgen.mjs epNN --list</code>, <code>voice.mjs epNN jobs</code> / <code>studio</code>, <code>facegen.mjs --list</code>)를 쓴다.</div>
+  <h3>세 채널이 똑같이 지키는 것</h3>
+  <ul class="steps">
+    <li><b>목소리 복제 기능은 쓰지 않는다.</b> 실존 인물 목소리를 흉내 내지 않고, 사전 정의 목소리만 쓴다.</li>
+    <li><b>그림에 글자를 그리지 않는다.</b> 자막 · 간판 · 숫자는 영상 코드가 얹는다. 모든 프롬프트 끝에 <code>No text, no letters, no numbers, no logos</code>.</li>
+    <li><b>정해진 목소리는 바꾸지 않는다.</b> 바꿔야 하면 설정 파일과 이 문서를 같이 고치고 날짜를 남긴다.</li>
+    <li>말투 지시는 <b>Style 칸</b>(또는 API 프롬프트 앞머리)에만 쓴다. 대사 칸에 쓰면 그대로 읽어 버린다.</li>
+  </ul>
+
+  <!-- ===================================================== -->
+  <h2 id="qna" class="q"><span class="badge b-q">qna</span>1. 여덟 살의 질문</h2>
+  <p>설정 원본은 <code>qna/video/src/voice.json</code>(음성)과 <code>qna/video/scripts/prompts.mjs</code> · <code>qna/video/src/art-common.json</code>(그림)입니다. 자세한 설명은 <code>qna/video/VOICE.md</code>, 공통 그림 프롬프트 전체는 <code>qna/art/common/GEMINI_PROMPTS.md</code>.</p>
+
+  <h3>1-1. 목소리 — AI Studio 여러 화자 모드</h3>
+  <div class="tbl"><table>
+    <tr><th>자리</th><th>누구 (역할 id)</th><th>목소리</th><th>Style 칸에 넣는 말투 지시</th><th>상태</th></tr>
+    <tr><td>Speaker 1</td><td>나레이션 · 아빠 · 다큐 톤<br><code>narr</code> <code>dad</code> <code>docu</code></td><td class="v">Algenib</td><td class="en">A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid</td><td>1편부터 확정</td></tr>
+    <tr><td>Speaker 2</td><td>아이 <code>kid</code></td><td class="v">Leda</td><td class="en">His eight-year-old child: bright, curious, high-pitched<br><span style="font-family:inherit">(1편 AI Studio 에서는 비워 둠 — 목소리 기본값)</span></td><td>1편부터 확정</td></tr>
+    <tr><td>비는 자리</td><td>엄마 <code>mom</code></td><td class="v">Kore</td><td class="en">The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding</td><td>2026-10-16 정함, 들어 보기 전</td></tr>
+    <tr><td>비는 자리</td><td>시장 할머니 <code>granny</code> (3편)</td><td class="v">Gacrux</td><td class="en">A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry</td><td>들어 보기 전</td></tr>
+    <tr><td>비는 자리</td><td>이발사 할아버지 <code>barber</code> (4편)</td><td class="v">Charon</td><td class="en">A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern</td><td>들어 보기 전 · 아빠와 비슷하면 Sadaltager / Rasalgethi</td></tr>
+    <tr><td>비는 자리</td><td>약사 선생님 <code>pharmacist</code> (5편)</td><td class="v">Sulafat</td><td class="en">A calm, kind Korean pharmacist woman in her early fifties who has run a small neighborhood pharmacy for twenty years: warm, clear, unhurried voice with a gentle dry humor, precise and reassuring, never stern</td><td>들어 보기 전</td></tr>
+    <tr><td>비는 자리</td><td>간호사 선생님 <code>nurse</code></td><td class="v">Zephyr</td><td class="en">A calm, kind Korean pediatric nurse woman in her early thirties: soft, clear, gentle voice with a warm smile in it, patient and reassuring with children, corrects grown-ups politely with a little playful humor, never stern</td><td>들어 보기 전</td></tr>
+  </table></div>
+  <p><b>전체 연출 지시</b> (API 는 대본 앞머리에 자동으로 붙인다. AI Studio 에서 전체 지시 칸이 있으면 여기에):</p>
+  <pre>Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud.</pre>
+  <p><b>연기 구분</b> — 같은 Algenib 목소리로 세 가지를 낸다:</p>
+  <div class="tbl"><table>
+    <tr><th>역할</th><th>지시</th></tr>
+    <tr><td><code>narr</code> 나레이션</td><td>Speaker 1 말투 지시 그대로 — 아빠가 아이 이야기를 들려주는 느낌</td></tr>
+    <tr><td><code>dad</code> 아빠 대사</td><td class="en">is the dad speaking inside the scene, acted out, not narration</td></tr>
+    <tr><td><code>docu</code> 다큐 톤</td><td class="en">is read in a very deep, slow, mock-serious nature-documentary narrator voice</td></tr>
+  </table></div>
+
+  <h3>AI Studio 에서 손으로 만드는 순서</h3>
+  <ol class="steps">
+    <li><code>qna/video</code> 에서 <code>npm run voice -- epNN studio</code> → <code>out/epNN/voice-studio.html</code> 을 연다. 컷마다 대사 복사 버튼과 그 컷에서 고를 목소리가 적혀 있다.</li>
+    <li>AI Studio 를 <b>여러 화자(Multi-speaker)</b> 모드로 두고 Speaker 1 = <b>Algenib</b>, Speaker 2 = <b>Leda</b>.</li>
+    <li>화면이 블록 방식이면 아빠 · 나레이션 블록의 Style 칸에 Speaker 1 말투 지시를 넣는다.</li>
+    <li><b>손님 · 엄마가 나오는 컷</b>은 그 컷에서 비는 자리를 바꾼다. 예: 아빠 + 할머니 → Speaker 2 = Gacrux / 아이 + 엄마 → Speaker 1 = Kore.</li>
+    <li>생성 → <code>voice-studio/epNN/&lt;컷id&gt;.wav</code> 로 저장 → <code>npm run voice -- epNN split</code> 으로 줄마다 자르고 타이밍 갱신.</li>
+  </ol>
+  <div class="note warn"><b>한 컷에 목소리는 둘까지.</b> AI Studio 가 두 자리뿐이라 아빠 · 아이 · 엄마가 한 컷에서 모두 말하면 오류가 난다. 대본에서 컷을 나눈다 (<code>npm run voice -- epNN jobs</code> 가 검사).</div>
+  <p>고른 과정: 아빠 Fola → Varo → <b>Algenib</b>("좀 더 굵게"), 아이 Rami → <b>Leda</b>("좀 더 어리게"). 안 써 본 후보: 아빠 Ludo · Bodi, 아이 Zephyr · Laomedeia · Achernar.</p>
+
+  <h3>1-2. 그림 — 화풍</h3>
+  <p>모든 그림 프롬프트는 이 화풍 문장으로 시작합니다 (<code>prompts.mjs</code> 의 <code>STYLE</code>):</p>
+  <pre>Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.</pre>
+  <p>그다음 첨부 그림에 맞추라는 문장이 붙습니다:</p>
+  <pre>Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+The character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.</pre>
+  <div class="tbl"><table>
+    <tr><th>첨부</th><th>파일</th><th>왜</th></tr>
+    <tr><td>①</td><td><code>qna/art/anchor/style-cutin.png</code></td><td>화풍 앵커. <b>모든</b> 요청에 첫 번째로 첨부. 바꾸면 채널 전체 화풍이 바뀐다.</td></tr>
+    <tr><td>②</td><td>그 사람의 기본 그림 (예: <code>art/common/dad/normal.png</code>)</td><td>같은 사람 유지용. 표정 · 자세만 바뀐다.</td></tr>
+  </table></div>
+
+  <h3>가족 캐릭터 설정 (그대로 복사)</h3>
+  <div class="tbl"><table>
+    <tr><th>누구</th><th>설정 문장</th></tr>
+    <tr><td>아빠</td><td class="en">the dad: a Korean father in his late 30s, slightly chubby with a round face, short black hair that is clearly thinning on top, thick eyebrows, faint stubble, wearing a mustard-yellow knit cardigan over a white t-shirt, gray sweatpants and house slippers; a kind but easily flustered look</td></tr>
+    <tr><td>아이</td><td class="en">the kid: an 8-year-old Korean child with a black bowl-cut, huge round curious eyes, one missing front tooth, wearing a red hoodie, navy shorts and white socks; small, fearless and very direct</td></tr>
+    <tr><td>엄마</td><td class="en">the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer</td></tr>
+  </table></div>
+
+  <h3>그림 종류와 비율</h3>
+  <div class="tbl"><table>
+    <tr><th>종류 (<code>kind</code>)</th><th>비율</th><th>배경</th><th>핵심 지시</th></tr>
+    <tr><td>캐릭터 <code>char</code></td><td>2:3 세로</td><td>초록</td><td>전신, 머리부터 발끝까지 여백. 팔과 들고 있는 물건은 몸에서 떨어지게(움직일 때 안 어색하게).</td></tr>
+    <tr><td>리액션 컷인 <code>cutin</code></td><td>1:1</td><td>초록</td><td>가슴 위 클로즈업, 얼굴이 화면 대부분, 과장 최대.</td></tr>
+    <tr><td>소품 <code>prop</code></td><td>1:1</td><td>초록</td><td>하나로 이어진 덩어리, 떨어진 조각 없이.</td></tr>
+    <tr><td>배경 <code>bg</code></td><td>16:9</td><td>장면</td><td>사람 없음, 시트콤 세트처럼 정면. 아래 1/3 은 비워 둔다(인물 자리).</td></tr>
+    <tr><td>무대 장면 <code>stage</code></td><td>16:9</td><td>장면</td><td>주인공 자리를 비워 둔 만화 한 칸. 왼쪽 위는 자막 자리라 조용하게.</td></tr>
+    <tr><td>한 장짜리 장면 <code>full</code></td><td>16:9</td><td>장면</td><td>완성 그림. 주인공은 가운데, 왼쪽 위는 조용하게.</td></tr>
+    <tr><td>앞쪽 레이어 <code>layer</code></td><td>16:9</td><td>초록</td><td>인물 앞을 가리는 넓은 물건(카운터 · 책상), 아래 절반에.</td></tr>
+    <tr><td>말하는 그림 <code>talk</code> (<code>-b</code>)</td><td>기준 그림과 같게</td><td>초록</td><td>두 번째 프레임. ②를 그대로 다시 그리고 <b>입만</b> 바꾼다.</td></tr>
+  </table></div>
+  <h3>다시 뽑을 때 이어서 보내는 문장</h3>
+  <div class="tbl"><table>
+    <tr><th>문제</th><th>보낼 문장</th></tr>
+    <tr><td>배경이 단색 초록이 아님</td><td class="en">Redo it with a perfectly flat pure green #00FF00 background, no shadow, no floor.</td></tr>
+    <tr><td>몸이 잘림</td><td class="en">Zoom out so the whole body fits with empty margin on every side.</td></tr>
+    <tr><td>다른 사람처럼 나옴</td><td class="en">Keep the exact same face, hair and clothes as attached image 2. Only change the pose.</td></tr>
+    <tr><td>글자가 들어감</td><td class="en">Remove all text and letters; leave signs blank.</td></tr>
+    <tr><td>화풍이 순해짐</td><td class="en">More grotesque gag-manga exaggeration, like the first attached image: bigger mouth, bulging eyes, more sweat.</td></tr>
+    <tr><td>배경에 사람이 있음</td><td class="en">Remove every person. Background only.</td></tr>
+    <tr><td>말하는 그림의 몸이 달라짐</td><td class="en">Too different. Copy attached image 2 exactly and change only the mouth.</td></tr>
+  </table></div>
+  <ul class="steps">
+    <li>한 사람은 <b>한 대화창</b>에서 끝내고, 다음 사람 · 배경은 새 대화창에서. 대화가 길어지면 화풍이 흐려진다.</li>
+    <li>배경 제거 · 자르기 · 크기 조절은 하지 않는다 — <code>npm run art -- epNN</code> 이 한다.</li>
+    <li>몸 · 성 관련 소재는 몸을 그리지 않는다 (닫힌 문 · 거품 모자이크 · 단면도).</li>
+  </ul>
+
+  <!-- ===================================================== -->
+  <h2 id="shortube" class="s"><span class="badge b-s">shortube</span>2. 숫자로 보는 요즘</h2>
+  <h3>2-1. 그림 — 쓰지 않는다</h3>
+  <p>화면은 1080×1920 에 <b>글자 · 도형 · 코드로 직접 그린 차트만</b> 씁니다. AI 그림, 사진, 로고, 캡처, 앨범아트는 쓰지 않습니다 (COMPLIANCE_GUIDE 1-1). 대신 쓰는 재료:</p>
+  <ul class="steps">
+    <li>코드 생성: SVG 필터(아지랑이 <code>feTurbulence</code>, 노이즈), 입자(낙엽 · 비), 그라디언트, 도형 패턴, 카메라 팬 · 줌</li>
+    <li>라이선스가 분명한 외부 자료: Natural Earth 지도, Material Symbols · Tabler Icons, Noto Emoji, OFL 폰트 — <code>video/public/&lt;종류&gt;/LICENSE.md</code> 에 출처를 적는다</li>
+    <li>브랜드: 남색 바탕 + 노랑 선 + 분홍 점 (<code>video/src/Brand.tsx</code>). 첫 1초 로고 띠나 마지막 띠로만 지키고, 본문 색은 주제에 맞춰 바꾼다.</li>
+  </ul>
+
+  <h3>2-2. 음성 — 지금은 없음, 넣을 때의 기준</h3>
+  <div class="note">올린 9편은 모두 <b>음성 없이 자막 + 코드 합성 배경음악</b>입니다. 그래서 업로드 때 AI 사용 = "아니요"로 둡니다. 내레이션을 넣기 시작하면 설명란에 <code>내레이션에 AI 음성을 사용했습니다</code> 한 줄을 넣습니다. 아래는 <code>shortube/TTS_GUIDE.md</code> 의 기준이며, 목소리는 <b>아직 확정 전</b>입니다.</div>
+  <p><b>목소리 정체성:</b> "데이터 좋아하는 친한 친구" — 뉴스 앵커도, 흥분한 예능 자막도 아닌 중간. 영상마다 목소리를 바꾸지 않고 <b>하나로 고정</b>, 카테고리별로는 Style 만 바꿉니다.</p>
+  <div class="tbl"><table>
+    <tr><th>순위</th><th>목소리</th><th>공식 설명</th><th>맞는 이유</th></tr>
+    <tr><td>1</td><td class="v">Laomedeia</td><td>Upbeat</td><td>밝지만 가볍지 않아 차트 · 상식 둘 다 무난</td></tr>
+    <tr><td>2</td><td class="v">Puck</td><td>Upbeat</td><td>더 경쾌하고 젊은 느낌, 차트형에 강함 <span style="color:var(--warn)">(funtube 후배 · 나레이터와 겹침)</span></td></tr>
+    <tr><td>3</td><td class="v">Sadachbia</td><td>Lively</td><td>활기 최대, 훅이 강하지만 피로할 수 있음</td></tr>
+    <tr><td>대안</td><td class="v">Achird · Charon</td><td>Friendly · Informative</td><td>상식형을 차분하게 갈 때 <span style="color:var(--warn)">(Charon 은 funtube 선배와 겹침)</span></td></tr>
+  </table></div>
+  <p>오디션: 훅 문장 하나를 후보 3개로 만들어 휴대폰 스피커로 듣고 정한 뒤 <code>config/settings.yaml</code> 의 <code>tts.voice</code> 에 고정.</p>
+  <h3>카테고리별 Style 프리셋 (단일 화자)</h3>
+  <div class="tbl"><table>
+    <tr><th>카테고리</th><th>Style 칸</th><th>훅 · 마무리</th></tr>
+    <tr><td>chart 차트</td><td class="en">upbeat data storyteller, medium-fast, emphasize numbers</td><td>"OO 1위, 그래프로 보면…" → 다음 주 예측 질문</td></tr>
+    <tr><td>trivia 상식</td><td class="en">curious friendly explainer, medium pace, a-ha moments</td><td>"OO 할 때, 왜 그럴까요?" → 한 문장 정리</td></tr>
+    <tr><td>explain 신작 정보</td><td class="en">bright and informative, quick, no spoilers tone</td><td>"OO, 몇 부작인지 아세요?" → 공개 일정</td></tr>
+  </table></div>
+  <p>장면별 예시 Style: 훅 <code>energetic and curious, quick punchy delivery, a smile in the voice</code> · 반전 <code>playful discovery, lean in on the twist</code> · 마무리 <code>light teasing question, rising intonation at the end, friendly</code>.</p>
+  <h3>대본 쓰는 규칙 (자막과 발음 문장을 나눈다)</h3>
+  <div class="tbl"><table>
+    <tr><th>자막</th><th>TTS 에 넣는 문장</th></tr>
+    <tr><td><code>1위</code>, <code>12주째</code></td><td><code>일 위</code>, <code>십이 주째</code> — 숫자는 한글로 풀어 쓴다</td></tr>
+    <tr><td><code>TOP 10</code>, <code>시즌2</code></td><td><code>탑 텐</code>, <code>시즌 투</code></td></tr>
+    <tr><td><code>9/28~10/4</code>, 출처 · 기준일</td><td>말하지 않음 — 화면 글자로만</td></tr>
+  </table></div>
+  <ul class="steps">
+    <li>한 문장 15음절 안팎(최대 25), 초당 6.5~7.5음절, 장면 길이의 85% 안. 해요체 + 가끔 "~죠".</li>
+    <li>장면 단위로 한 번씩 생성. 너무 길면 문장을 줄이고, 재생 속도는 1.1배까지만.</li>
+    <li>"역대급 · 충격" 같은 과장 금지. 사실 카드에 없는 말 금지.</li>
+  </ul>
+
+  <!-- ===================================================== -->
+  <h2 id="funtube" class="f"><span class="badge b-f">funtube</span>3. 웃긴 영상툰</h2>
+  <p>설정 원본은 <code>funtube/content/episodes.json</code>(대사마다 <code>voices</code> · <code>style</code>)과 <code>funtube/content/faces.json</code>(표정 그림)입니다.</p>
+
+  <h3>3-1. 목소리 — 한 줄씩 단일 화자</h3>
+  <p>funtube 는 대사 한 줄마다 따로 생성합니다(<code>node scripts/tts.mjs</code>). AI Studio 에서 손으로 할 때는 <b>단일 화자(Single-speaker)</b> 모드로 두고, 아래 표의 목소리를 고른 뒤 Style 칸에 그 줄의 <code>style</code> 을 넣습니다.</p>
+  <div class="tbl"><table>
+    <tr><th>목소리</th><th>맡는 인물 (편)</th><th>자주 쓰는 Style</th></tr>
+    <tr><td class="v">Charon</td><td>선배 (carpool · invest · office), 아빠 (chat), 나레이션 (fight)</td><td class="en">scolding loudly, annoyed older boss / smug, acting innocent / bossy, casual / documentary narrator, calm and slightly amused</td></tr>
+    <tr><td class="v">Puck</td><td>후배 (carpool · invest · office), 나 (chat), 나레이터 (facts), 민수 (fight)</td><td class="en">flat deadpan, very tired / flat deadpan, exhausted whisper / energetic, fun fact narrator / low, trying to sound cool</td></tr>
+    <tr><td class="v">Kore</td><td>엄마 (chat · skit)</td><td class="en">flat, uninterested / cold and suspicious / very calm but menacing / firm mom</td></tr>
+    <tr><td class="v">Leda</td><td>아이 (skit)</td><td class="en">cute little child begging / cute little child, sly and innocent</td></tr>
+    <tr><td class="v">Zephyr</td><td>시스템 (chat), 나레이터 (balance), 구경꾼 (fight), 내비 (carpool)</td><td class="en">deadpan announcer / playful game show host / whispering, excited kid / robotic car navigation voice, polite and flat</td></tr>
+    <tr><td class="v">Fenrir</td><td>철구 (fight), 신입 (office)</td><td class="en">gruff, tough-guy middle schooler / bright, energetic young new employee, totally carefree</td></tr>
+    <tr><td class="v">Orus</td><td>선생님 (fight)</td><td class="en">stern angry middle-aged teacher</td></tr>
+  </table></div>
+  <p>스크립트가 API 에 보내는 문장 모양 — AI Studio 에서도 같은 효과를 내려면 Style 칸에 톤을, 대사 칸에는 대사만:</p>
+  <pre>Speak in Korean. Tone: {style}. Say only this line:
+{대사 — 화면 글자와 다르게 읽혀야 하면 say 값}</pre>
+  <ul class="steps">
+    <li>화면 글자와 읽는 말이 다르면 <code>say</code> 에 적는다. 예: 화면 <code>ㅋㅋㅋㅋ</code> → 읽기 <code>푸하하하하하</code>, 화면 <code>?</code> → 읽기 <code>...뭐?</code>.</li>
+    <li>선배 = Charon, 후배 = Puck 은 3D 콩트 시리즈의 고정 짝이다. 새 직장 콩트도 같은 조합으로.</li>
+    <li>모델 기본값은 <code>gemini-2.5-flash-preview-tts</code> (환경변수 <code>GEMINI_TTS_MODEL</code> 로 바꿀 수 있음). 키가 없으면 음성 없이 글자 수로 길이만 추정한다.</li>
+    <li>노래 「길이 막혔어」(ride)는 <b>음성 없음</b> — 비트만 <code>npm run beat</code> 로 코드 합성하고 가사는 화면 글자로.</li>
+  </ul>
+  <div class="note warn"><b>채널 간 겹침 주의:</b> funtube 엄마 Kore · 아이 Leda 는 qna 의 엄마 · 아이와 같은 목소리이고, Charon 은 qna 이발사 할아버지와 같습니다. 같은 사람이 보는 채널이면 "같은 가족"처럼 들릴 수 있으니, 새 인물을 만들 때는 겹치지 않는 목소리(예: Despina · Callirrhoe · Sadaltager)를 먼저 들어 봅니다.</div>
+
+  <h3>3-2. 그림 — 얼굴 표정 6칸 시트</h3>
+  <p>몸 · 무대는 코드(3D), <b>얼굴만</b> AI 가 그립니다. 인물마다 표정 6개를 한 장(3×2, 3:2 가로)에 받아 <code>node scripts/facegen.mjs</code> 가 초록을 지우고 <code>public/faces/&lt;이름&gt;_1..6.png</code> 로 자릅니다. 프롬프트만 보려면 <code>--list</code>(무료).</p>
+  <p><b>화풍</b> (<code>faces.json</code> 의 <code>style</code>):</p>
+  <pre>Korean webtoon gag-comic style, 'grotesque-cute': deadpan, slightly unsettling and funny and adorable all at once. Thin, slightly wobbly hand-inked black outlines, completely flat colors with no shading or gradients, slightly asymmetrical naive hand-drawn features, huge round glossy eyes with tiny pupils, minimal nose, a small very expressive mouth, and exaggerated expressions that tip back and forth between cute and creepy. Imperfect scribbly charm, like a gag webtoon.</pre>
+  <p><b>할 일</b> — 얼굴 윤곽 · 머리카락 없이 이목구비만 (3D 머리에 붙이기 때문):</p>
+  <pre>Draw a reference sheet of 6 FACE DECALS of the SAME character, to be projected onto a smooth blank 3D head. Draw ONLY the facial features: eyes, eyebrows, nose, mouth, cheek blush, and small comic marks (sweat drops, anger veins, sparkles) right next to the face. DO NOT draw any head outline, face shape, skin color fill, hair, ears, neck, or body: the features float alone on the background.</pre>
+  <div class="tbl"><table>
+    <tr><th>번호</th><th>표정</th><th>지시</th></tr>
+    <tr><td>1</td><td>무표정</td><td class="en">NEUTRAL: deadpan, half-lidded eyes, tiny straight closed mouth.</td></tr>
+    <tr><td>2</td><td>말함</td><td class="en">TALKING: mouth open mid-sentence as a wide rounded shape with a hint of teeth, eyebrows slightly raised.</td></tr>
+    <tr><td>3</td><td>화남</td><td class="en">ANGRY: brows slammed down hard, gritted teeth, one throbbing anger-vein mark beside the eye.</td></tr>
+    <tr><td>4</td><td>충격</td><td class="en">SHOCK: eyes gigantic with tiny pinpoint pupils, mouth gaping open, one big sweat drop, brows very high.</td></tr>
+    <tr><td>5</td><td>귀여움</td><td class="en">CUTE: sweet closed-eye or sparkling-eye smile, rosy blush circles on both cheeks, adorable.</td></tr>
+    <tr><td>6</td><td>섬뜩</td><td class="en">UNCANNY: an unnervingly wide fixed grin stretching almost from cheek to cheek, huge round unblinking eyes with pupils far too small, slightly asymmetrical, eerie but hilarious.</td></tr>
+  </table></div>
+  <p>대본의 <code>"face": {"선배": 3}</code> 이 이 번호입니다 (3 = 화남).</p>
+  <div class="tbl"><table>
+    <tr><th>인물</th><th>설정 문장</th></tr>
+    <tr><td>선배</td><td class="en">CHARACTER: a smug, middle-aged Korean office senior. Round thin-rimmed glasses drawn as part of the face (draw the glasses in every expression), heavy sleepy eyelids, bags under the eyes, a thin self-satisfied mouth, thick bushy eyebrows.</td></tr>
+    <tr><td>후배</td><td class="en">CHARACTER: a young, tired but earnest Korean junior office worker. Big round eyes, thick short eyebrows, faint dark circles under the eyes, a small mouth, no glasses.</td></tr>
+  </table></div>
+  <p><b>배치 지시</b> — 칸이 겹치면 자르기가 실패하니 그대로 씁니다:</p>
+  <pre>Layout: a grid of exactly 3 columns by 2 rows on a SOLID PURE GREEN (#00FF00) background, landscape 3:2 image. Each expression sits alone in its own cell, centered, with very wide empty green margins around it and between cells (at least 15% of the cell width) so nothing ever touches or overlaps another cell. All six faces must use exactly the same scale, the same eye-line height and the same eye spacing so they line up on the same head. Faces look straight at the viewer. Use only black ink lines, white eyeballs with black pupils, pink blush, and warm accent colors; NEVER use green anywhere in the drawing. No text, no numbers, no labels, no arrows, no frames, no borders.</pre>
+  <ul class="steps">
+    <li>Gemini 앱에서 손으로 뽑을 때: 위 다섯 덩어리(화풍 → 할 일 → 인물 → "The 6 expressions, in reading order:" + 표정 6줄 → 배치)를 이 순서로 붙여 한 번에 보낸다. 받은 그림은 <code>funtube/art/faces/raw_&lt;이름&gt;.png</code> 로 저장하고 <code>node scripts/facegen.mjs &lt;이름&gt; --process-only</code>.</li>
+    <li>새 인물은 <code>faces.json</code> 의 <code>characters</code> 에 한 줄 추가. 화풍 · 표정 · 배치 문장은 건드리지 않는다.</li>
+    <li>2D 영상툰(fight) · 단톡(chat) · 상식(facts) · 밸런스(balance)는 그림 없이 코드와 이모지로 그린다.</li>
+  </ul>
+
+  <footer>설정이 바뀌면 원본 파일(<code>voice.json</code> · <code>prompts.mjs</code> · <code>art-common.json</code> · <code>TTS_GUIDE.md</code> · <code>episodes.json</code> · <code>faces.json</code>)을 먼저 고치고 이 문서를 맞춥니다. · 작성 2026.10.18</footer>
+</main>
+</body>
+</html>
