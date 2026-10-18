@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>숫자로 보는 요즘</title>
+<meta name="description" content="요즘 화제를 숫자 · 그래프로 짚는 쇼츠 채널 「숫자로 보는 요즘」의 올린 영상 · 제작 규칙 · 자동화 문서 모음.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="숫자로 보는 요즘">
+<meta property="og:description" content="요즘 화제를, 숫자 몇 개와 직접 그린 그래프로.">
+<meta property="og:image" content="https://moyuchan84.github.io/moyutube/shortube/site/banner.jpg">
+<link rel="icon" href="site/icon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<style>
+:root{
+  --bg:#141C33; --surface:#1C2644; --surface-2:#243055;
+  --ink:#F2F4FA; --dim:#A3ADC8; --rule:#34406A;
+  --yellow:#FFD23F; --pink:#FF6FA5; --blue:#4D8DFF; --red:#FF5A5A; --maxw:960px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,system-ui,'Malgun Gothic',sans-serif;
+  font-size:16px;line-height:1.75;letter-spacing:-0.01em;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-weight:800;letter-spacing:-0.03em;line-height:1.3;margin:0}
+p{margin:0 0 0.9em}
+a{color:inherit}
+.page{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.nav{font-size:13px;color:var(--dim);padding:16px 0 0}
+.nav a{color:var(--dim);text-decoration:none;border-bottom:1px solid var(--rule)}
+.nav a:hover{color:var(--yellow);border-color:var(--yellow)}
+
+/* ---------- hero ---------- */
+.hero{padding:56px 0 52px;border-bottom:3px solid var(--yellow);
+  background-image:linear-gradient(var(--rule) 1px,transparent 1px),linear-gradient(90deg,var(--rule) 1px,transparent 1px);
+  background-size:48px 48px;background-position:-1px -1px}
+.hero-top{display:flex;align-items:center;gap:16px;margin-bottom:26px}
+.hero-top img{width:64px;height:64px;border-radius:50%;border:2px solid var(--yellow)}
+.eyebrow{font-size:13px;color:var(--dim);margin:0}
+.hero h1{font-size:clamp(40px,8vw,68px);margin-bottom:20px}
+.hero h1 .dot{color:var(--pink)}
+.thesis{font-size:clamp(18px,2.8vw,23px);line-height:1.6;max-width:660px;margin:0 0 18px;font-weight:600}
+.thesis b{color:var(--yellow)}
+.hero-sub{font-size:15px;color:var(--dim);max-width:600px;margin:0 0 22px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15px;text-decoration:none;
+  background:var(--yellow);color:#141C33;padding:9px 18px;border-radius:999px}
+.btn:hover{background:#fff}
+.btn:focus-visible,a:focus-visible{outline:2px solid var(--pink);outline-offset:3px}
+
+/* ---------- stats ---------- */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:34px}
+.stat{background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:14px 16px}
+.stat b{display:block;font-size:30px;font-weight:800;color:var(--yellow);font-variant-numeric:tabular-nums;line-height:1.2}
+.stat span{font-size:13px;color:var(--dim)}
+
+/* ---------- sections ---------- */
+main{padding-top:56px;padding-bottom:96px}
+.sec{margin-bottom:60px}
+.sec-head{display:flex;align-items:baseline;gap:14px;border-bottom:1.5px solid var(--ink);padding-bottom:10px;margin-bottom:18px}
+.sec-head .no{font-size:26px;font-weight:800;color:var(--pink);line-height:1}
+.sec-head h2{font-size:24px}
+.sec-head .aside{margin-left:auto;font-size:13px;color:var(--dim)}
+
+/* ---------- shorts grid ---------- */
+.shorts{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+.short{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--rule);border-radius:6px;
+  overflow:hidden;text-decoration:none;color:inherit;transition:border-color .15s ease,transform .15s ease}
+a.short:hover{border-color:var(--yellow);transform:translateY(-2px)}
+.short-img{aspect-ratio:9/16;background:var(--surface-2);position:relative;overflow:hidden}
+.short-img img{width:100%;height:100%;object-fit:cover;display:block}
+.cat{position:absolute;top:10px;left:10px;font-size:11.5px;font-weight:700;padding:2px 9px;border-radius:999px;background:var(--bg);color:var(--yellow);border:1px solid var(--yellow)}
+.cat.market{color:var(--blue);border-color:var(--blue)}
+.cat.health{color:var(--red);border-color:var(--red)}
+.cat.kpop{color:var(--pink);border-color:var(--pink)}
+.short-body{padding:13px 14px 15px;flex:1;display:flex;flex-direction:column}
+.date{font-size:12px;color:var(--dim);font-variant-numeric:tabular-nums;margin-bottom:4px}
+.short h3{font-size:15.5px;line-height:1.4;margin-bottom:8px}
+.fix{font-size:13px;color:var(--dim);margin:auto 0 0;padding-top:8px;border-top:1px dashed var(--rule)}
+.fix b{color:var(--pink);font-weight:700}
+
+/* ---------- rules / docs ---------- */
+.rules{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.rule{background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--yellow);border-radius:4px;padding:14px 16px}
+.rule h3{font-size:16px;margin-bottom:4px}
+.rule p{font-size:14px;color:var(--dim);margin:0}
+.flow{list-style:none;counter-reset:f;padding:0;margin:0;display:grid;gap:8px}
+.flow li{counter-increment:f;display:grid;grid-template-columns:36px 1fr;gap:12px;align-items:baseline;
+  padding:12px 0;border-bottom:1px solid var(--rule)}
+.flow li::before{content:counter(f);font-weight:800;font-size:20px;color:var(--yellow)}
+.flow b{display:block}
+.flow span{font-size:14px;color:var(--dim)}
+.files{list-style:none;padding:0;margin:0;border-top:1px solid var(--rule)}
+.files li{display:grid;grid-template-columns:1fr auto;gap:4px 18px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--rule)}
+.files a{font-weight:700;text-decoration:none;border-bottom:1px solid var(--rule)}
+.files a:hover{color:var(--yellow);border-color:var(--yellow)}
+.files .desc{grid-column:1/-1;font-size:14px;color:var(--dim)}
+.files .kind{font-size:12.5px;color:var(--dim)}
+code{font-family:Consolas,Menlo,monospace;font-size:.9em;background:var(--surface-2);padding:1px 5px;border-radius:3px}
+footer{border-top:1px solid var(--rule);padding-top:22px;font-size:13px;color:var(--dim)}
+@media(max-width:640px){
+  .hero{padding:40px 0 40px}
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .shorts{grid-template-columns:repeat(2,1fr);gap:10px}
+  .sec-head .aside{display:none}
+}
+@media (prefers-reduced-motion:reduce){.short{transition:none}a.short:hover{transform:none}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="page">
+    <nav class="nav"><a href="../">← 채널 모음</a></nav>
+    <div class="hero-top" style="margin-top:22px">
+      <img src="site/icon.png" width="64" height="64" alt="숫자로 보는 요즘 채널 아이콘">
+      <p class="eyebrow">쇼츠 채널 · 작업 노트 · 2026.10 시작</p>
+    </div>
+    <h1>숫자로 보는 요즘<span class="dot">.</span></h1>
+    <p class="thesis">요즘 화제를 <b>숫자 몇 개와 직접 그린 그래프</b>로.<br>보도 제목이 틀렸으면, 바로잡는 것까지가 영상입니다.</p>
+    <p class="hero-sub">40~60초 텍스트 · 차트 모션그래픽 쇼츠. 사진 · 로고 · 음원 없이 글자와 도형만 쓰고, 배경음악도 코드로 합성합니다. 영상에 들어가는 숫자는 출처를 둘 이상 대조한 <b>사실 카드</b>에 있는 것만 씁니다.</p>
+    <a class="btn" href="https://www.youtube.com/channel/UCatFTcoyLuCtsiK8JTPfQkA">▶ 채널 보러 가기</a>
+    <div class="stats">
+      <div class="stat"><b>9</b><span>올린 쇼츠</span></div>
+      <div class="stat"><b>6</b><span>다룬 분야</span></div>
+      <div class="stat"><b>0</b><span>사진 · 로고 · 음원</span></div>
+      <div class="stat"><b>2+</b><span>숫자 하나당 출처</span></div>
+    </div>
+  </div>
+</header>
+<main class="page">
+  <section class="sec" aria-labelledby="s-shorts">
+    <div class="sec-head"><span class="no">1</span><h2 id="s-shorts">올린 쇼츠</h2><span class="aside">최근 것부터 · 누르면 YouTube 로</span></div>
+    <div class="shorts">
+      <a class="short" href="https://www.youtube.com/shorts/GiOFjhAEQ3U">
+        <div class="short-img"><img src="https://i.ytimg.com/vi/GiOFjhAEQ3U/hqdefault.jpg" loading="lazy" alt=""><span class="cat market">시황</span></div>
+        <div class="short-body"><div class="date">2026.10.18</div><h3>RSI · 골든크로스 · 볼린저, 코스피 10년 승률은? 필승은 아니었다</h3>
+          <p class="fix"><b>바로잡음</b> 차트 '패턴'은 사람마다 모양을 달리 그려 빼고, 숫자로 정의되는 지표 3개만 10년치로 돌렸다.</p></div>
+      </a>
+      <a class="short" href="https://www.youtube.com/shorts/kHbX8KTbbz0">
+        <div class="short-img"><img src="https://i.ytimg.com/vi/kHbX8KTbbz0/hqdefault.jpg" loading="lazy" alt=""><span class="cat market">시황</span></div>
+        <div class="short-body"><div class="date">2026.10.17</div><h3>간밤 미국장, 나스닥 -2.15% 그런데 다우는 -0.34%?</h3>
+          <p class="fix"><b>바로잡음</b> 채권 발작은 금요일이 아니라 10월 1일. 경기주는 '방어'가 아니라 '덜 빠졌다'.</p></div>
+      </a>
+      <a class="short" href="https://www.youtube.com/shorts/c20diqBpCUs">
+        <div class="short-img"><img src="https://i.ytimg.com/vi/c20diqBpCUs/hqdefault.jpg" loading="lazy" alt=""><span class="cat">교육</span></div>
+        <div class="short-body"><div class="date">2026.10.16</div><h3>수능 D-34, 55만 명 중 N수생이 23년 만에 최다</h3>
+          <p class="fix"><b>바로잡음</b> 'D-30'은 어림값. 시험일 11월 19일 기준으로 실제는 D-34.</p></div>
+      </a>
+      <a class="short" href="https://www.youtube.com/shorts/ytwA7-lvgJ0">
+        <div class="short-img"><img src="https://i.ytimg.com/vi/ytwA7-lvgJ0/hqdefault.jpg" loading="lazy" alt=""><span class="cat">차트</span></div>
+        <div class="short-body"><div class="date">2026.10.16</div><h3>GTA 6까지 4,811일, 숫자로 보는 GTA 29년</h3>
+          <p class="fix"><b>바로잡음</b> 트레일러 조회수 4억 7,500만(전 플랫폼 합산)과 9,042만(유튜브 24시간)은 같은 저울이 아니다.</p></div>
+      </a>
+      <a class="short" href="https://www.youtube.com/shorts/zY0rsfQXqi4">
+        <div class="short-img"><img src="https://i.ytimg.com/vi/zY0rsfQXqi4/hqdefault.jpg" loading="lazy" alt=""><span class="cat">상식</span></div>
+        <div class="short-body"><div class="date">2026.10.16</div><h3>10월 폭염 서울 30.1도, 사실 신기록이 아니었다</h3>
+          <p class="fix"><b>바로잡음</b> '119년 만의 신기록'이 아니라 1913년 10월 3일과 같은 값(동률).</p></div>
+      </a>
+      <a class="short" href="https://www.youtube.com/shorts/MXAW9LN6MZw">
+        <div class="short-img"><img src="https://i.ytimg.com/vi/MXAW9LN6MZw/hqdefault.jpg" loading="lazy" alt=""><span class="cat health">건강</span></div>
+        <div class="short-body"><div class="date">2026.10.15</div><h3>마운자로 · 위고비, 다이어트 주사를 숫자로 보면</h3>
+          <p class="fix"><b>균형</b> 효과 숫자와 같은 비중으로 부작용 · 중단 후 요요 · 규제 숫자. 의학적 조언 아님.</p></div>
+      </a>
+      <a class="short" href="https://www.youtube.com/shorts/GHUr2n_VT9Y">
+        <div class="short-img"><img src="https://i.ytimg.com/vi/GHUr2n_VT9Y/hqdefault.jpg" loading="lazy" alt=""><span class="cat kpop">K팝</span></div>
+        <div class="short-body"><div class="date">2026.10.15</div><h3>이수만의 귀환, 숫자 5개로 보면</h3>
+          <p class="fix"><b>바로잡음</b> 'A20'이 아니라 A2O LITE, SM이 아니라 A2O엔터테인먼트. 미성년 멤버 개인 정보는 뺐다.</p></div>
+      </a>
+      <a class="short" href="https://www.youtube.com/shorts/HAZG1ZqGLLc">
+        <div class="short-img"><img src="https://i.ytimg.com/vi/HAZG1ZqGLLc/hqdefault.jpg" loading="lazy" alt=""><span class="cat market">시황</span></div>
+        <div class="short-body"><div class="date">2026.10.15</div><h3>코스피 나흘 만에 -16%, 삼성전자 · 하이닉스 차트로 보면</h3>
+          <p class="fix"><b>바로잡음</b> 한국 차트는 하락이 파랑 — '피로 물든'이 아니라 '파랗게 질린' 차트.</p></div>
+      </a>
+      <a class="short" href="https://www.youtube.com/shorts/85Uwl-xFmuk">
+        <div class="short-img"><img src="https://i.ytimg.com/vi/85Uwl-xFmuk/hqdefault.jpg" loading="lazy" alt=""><span class="cat">차트</span></div>
+        <div class="short-body"><div class="date">2026.10.15</div><h3>넷플릭스 순위, 그래프로 보면 보이는 것</h3>
+          <p class="fix"><b>방식</b> 넷플릭스 공식 Top 10 파일 3주치를 직접 그린 순위 그래프로. 포스터 · 스틸컷 없음.</p></div>
+      </a>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="s-flow">
+    <div class="sec-head"><span class="no">2</span><h2 id="s-flow">한 편 만드는 순서</h2><span class="aside">shortube/CLAUDE.md 0장</span></div>
+    <ol class="flow">
+      <li><div><b>브리프</b><span>출처 표 · 사실 카드(YAML) · 스토리라인 · 메타데이터 · 연출 카드 · 검수 체크리스트. 요청의 전제부터 사실 확인.</span></div></li>
+      <li><div><b>영상</b><span>Remotion 컴포지션 + <code>timeline.json</code>(장면 · 타격 시점). 직전 2편과 연출 7항목 중 4개 이상 다르게.</span></div></li>
+      <li><div><b>배경음악</b><span><code>video/scripts/bgm-*.mjs</code> 로 코드 합성 — 같은 timeline 을 읽어 장면 전환과 박자를 맞춘다.</span></div></li>
+      <li><div><b>점검</b><span>핵심 프레임 스틸을 직접 보고 겹침 · 잘림 · 쇼츠 앱 안전 영역을 고친 뒤 렌더.</span></div></li>
+      <li><div><b>업로드</b><span>기본은 비공개. 저장한 뒤 실제 공개 상태를 다시 확인.</span></div></li>
+      <li><div><b>보고</b><span>무엇을 만들었고 무엇을 확인 못 했는지(귀로 못 들은 음악, 미확인 사실 카드) 그대로.</span></div></li>
+    </ol>
+  </section>
+
+  <section class="sec" aria-labelledby="s-rules">
+    <div class="sec-head"><span class="no">3</span><h2 id="s-rules">지키는 것</h2><span class="aside">COMPLIANCE_GUIDE 요약</span></div>
+    <div class="rules">
+      <div class="rule"><h3>주식 · 시황</h3><p>종가 기준 명시, 방향 의견은 증권사 인용으로 반등 · 지지 · 신중을 같은 비중으로. "사라 · 팔아라 · 바닥이다" 금지, 투자 권유 아님 고정.</p></div>
+      <div class="rule"><h3>의료 · 의약품</h3><p>공인 출처의 숫자만. 효과와 같은 비중으로 부작용 · 요요 · 규제. 복용 권유 · 구매처 · 제품 사진 금지.</p></div>
+      <div class="rule"><h3>연예 · 아이돌</h3><p>그룹 단위 공개 사실만. 미성년 멤버 개인 정보, 외모 비교, 논란 · 사생활, 인물 사진 · 무대 캡처 금지.</p></div>
+      <div class="rule"><h3>OTT · 차트</h3><p>상위 3~10개만 인용하고 시계열 해석은 직접. 순위표 전체 재현 · 포스터 · 로고 금지.</p></div>
+      <div class="rule"><h3>화면</h3><p>1080×1920, 글자 · 도형 · 직접 그린 차트만. 자막과 핵심 숫자는 앱의 제목 · 버튼 영역 밖에.</p></div>
+      <div class="rule"><h3>숫자</h3><p>사실 카드에 있는 것만, 항상 기준일과 단위. 기간이 다른 값을 나란히 놓지 않는다.</p></div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="s-docs">
+    <div class="sec-head"><span class="no">4</span><h2 id="s-docs">문서</h2></div>
+    <ul class="files">
+      <li><a href="https://github.com/moyuchan84/moyutube/blob/main/shortube/CLAUDE.md">제작 · 업로드 규칙</a><span class="kind">CLAUDE.md</span>
+        <span class="desc">매번 지키는 순서, 사실 확인, 주제별 주의사항, 화면 안전 영역, 연출 다양화, 업로드 절차.</span></li>
+      <li><a href="https://github.com/moyuchan84/moyutube/blob/main/shortube/COMPLIANCE_GUIDE.md">법적 · 정책 리스크 기준</a><span class="kind">COMPLIANCE_GUIDE.md</span>
+        <span class="desc">저작권 · 초상권 · 명예훼손 · YouTube 정책 기준. 다른 문서와 충돌하면 이 문서가 우선합니다.</span></li>
+      <li><a href="https://github.com/moyuchan84/moyutube/blob/main/shortube/SPEC.md">키워드 · 쇼츠 패턴 분석 명세</a><span class="kind">SPEC.md</span>
+        <span class="desc">트렌드 · 자동완성 · 경쟁 쇼츠를 모아 주제를 데이터로 고르는 Python 파이프라인 명세.</span></li>
+      <li><a href="https://github.com/moyuchan84/moyutube/blob/main/shortube/TTS_GUIDE.md">음성 가이드</a><span class="kind">TTS_GUIDE.md</span>
+        <span class="desc">Gemini TTS 로 나레이션을 만드는 방법과 주의할 점.</span></li>
+      <li><a href="../docs/ai-style-guide.html#shortube">그림 · 음성 스타일 가이드 — 2장</a><span class="kind">docs</span>
+        <span class="desc">그림을 쓰지 않는 이유와 대신 쓰는 재료, 내레이션을 넣을 때의 목소리 후보 · Style 프리셋.</span></li>
+      <li><a href="../docs/workflow-guide.html#s-what">세 채널 제작 · 자동화 가이드 — 3장</a><span class="kind">docs</span>
+        <span class="desc">주제 자동 선정 명령, 규칙 요약, 자동화 팁을 qna · funtube 와 한 문서에서.</span></li>
+    </ul>
+  </section>
+  <footer>
+    <p>논의용 작업 노트입니다. 투자 · 의학적 조언이 아닙니다. · 마지막 업데이트 2026.10.18</p>
+  </footer>
+</main>
+</body>
+</html>

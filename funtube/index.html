@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>웃긴 영상툰</title>
+<meta name="description" content="대본 한 장으로 음성 · 3D 콩트 · 노래까지 만드는 세로 웃긴 영상 프로젝트 funtube 의 에피소드 · 형식 · 제작 방법 모음.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="웃긴 영상툰">
+<meta property="og:description" content="대본 한 장 → 음성 → 렌더. 단톡 · 콩트 · 3D · 노래까지.">
+<meta property="og:image" content="https://moyuchan84.github.io/moyutube/funtube/site/senior.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤣</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<style>
+:root{
+  --paper:#FFF8E7; --surface:#FFFFFF; --surface-2:#FFF0C9;
+  --ink:#24180F; --dim:#7A6A5A; --rule:#EBDDBF;
+  --purple:#8A3FFC; --purple-soft:#EFE4FF; --orange:#FF7A1A; --green:#2FB36B;
+  --bubble-me:#FEE500; --maxw:960px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:'Pretendard Variable',Pretendard,-apple-system,BlinkMacSystemFont,system-ui,'Malgun Gothic',sans-serif;
+  font-size:16px;line-height:1.75;letter-spacing:-0.01em;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-weight:800;letter-spacing:-0.02em;line-height:1.3;margin:0}
+p{margin:0 0 0.9em}
+a{color:inherit}
+a:focus-visible{outline:2px solid var(--purple);outline-offset:3px}
+.page{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.nav{font-size:13px;padding:16px 0 0}
+.nav a{color:var(--dim);text-decoration:none;border-bottom:1px solid var(--rule)}
+.nav a:hover{color:var(--purple);border-color:var(--purple)}
+
+/* ---------- hero ---------- */
+.hero{padding:0 0 52px;background:radial-gradient(circle at 1px 1px,var(--rule) 1.5px,transparent 0) 0 0/22px 22px;border-bottom:2px solid var(--ink)}
+.hero-grid{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;padding-top:44px}
+.eyebrow{font-size:13px;color:var(--dim);margin:0 0 18px}
+.hero h1{font-family:'Black Han Sans',sans-serif;font-weight:400;font-size:clamp(46px,9vw,80px);line-height:1.1;margin-bottom:20px}
+.hero h1 .hl{color:var(--purple)}
+.thesis{font-size:clamp(18px,2.8vw,23px);line-height:1.6;max-width:600px;margin:0 0 16px;font-weight:600}
+.thesis b{background:linear-gradient(transparent 62%,var(--bubble-me) 62%)}
+.hero-sub{font-size:15px;color:var(--dim);max-width:580px;margin:0}
+.duo{display:flex;align-items:flex-end}
+.duo figure{margin:0;text-align:center}
+.duo img{width:140px;height:140px;border-radius:50%;background:#fff;border:2px solid var(--ink);display:block}
+.duo figure:last-child{margin-left:-18px;transform:translateY(16px)}
+.duo figcaption{font-size:12.5px;font-weight:700;margin-top:6px}
+
+/* ---------- pipeline ---------- */
+.pipe{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:28px}
+.pipe span{font-size:14px;font-weight:700;padding:5px 14px;border:1.5px solid var(--ink);border-radius:999px;background:var(--surface)}
+.pipe i{font-style:normal;color:var(--dim)}
+
+/* ---------- sections ---------- */
+main{padding-top:56px;padding-bottom:96px}
+.sec{margin-bottom:60px}
+.sec-head{display:flex;align-items:baseline;gap:14px;border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:18px}
+.sec-head .no{font-family:'Black Han Sans',sans-serif;font-size:28px;color:var(--purple);line-height:1}
+.sec-head h2{font-size:24px}
+.sec-head .aside{margin-left:auto;font-size:13px;color:var(--dim)}
+
+/* ---------- episodes ---------- */
+.eps{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.ep{display:flex;flex-direction:column;background:var(--surface);border:1.5px solid var(--ink);border-radius:10px;overflow:hidden;box-shadow:4px 4px 0 var(--ink)}
+.ep-stage{background:var(--surface-2);border-bottom:1.5px solid var(--ink);padding:14px;min-height:178px;display:flex;flex-direction:column;justify-content:center;gap:6px}
+.ep-body{padding:14px 16px 16px;flex:1;display:flex;flex-direction:column}
+.ep-id{font-size:12px;font-weight:700;color:var(--purple);font-family:Consolas,Menlo,monospace;margin-bottom:2px}
+.ep h3{font-size:18px;margin-bottom:6px}
+.ep .line{font-size:14px;color:var(--dim);margin:0}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:12px}
+.tag{font-size:11.5px;padding:1px 9px;border-radius:999px;background:var(--purple-soft);color:var(--purple);font-weight:600}
+.tag.ok{background:#E2F6EA;color:var(--green)}
+
+/* stage pieces */
+.b{max-width:82%;font-size:13px;line-height:1.45;padding:6px 11px;border-radius:14px;background:#fff;border:1px solid var(--rule);align-self:flex-start}
+.b.r{align-self:flex-end;background:var(--bubble-me);border-color:#E8D200}
+.b small{display:block;font-size:10.5px;color:var(--dim);font-weight:700}
+.b.sys{align-self:center;background:none;border:none;font-size:11.5px;color:var(--dim)}
+.chat{background:#B2C7DA}
+.chat .b{border:none}
+.fact{display:flex;gap:10px;align-items:center;font-size:13.5px;font-weight:600}
+.fact span{font-size:26px;line-height:1}
+.vs{display:grid;grid-template-columns:1fr auto 1fr;gap:8px;align-items:center;text-align:center;font-weight:700;font-size:14px}
+.vs div{background:#fff;border:1.5px solid var(--ink);border-radius:8px;padding:12px 6px}
+.vs em{font-style:normal;font-family:'Black Han Sans',sans-serif;color:var(--orange);font-size:20px}
+.faces{display:flex;align-items:center;justify-content:center;gap:10px}
+.faces img{width:68px;height:68px;border-radius:50%;background:#fff;border:1.5px solid var(--ink)}
+.faces + .b{align-self:center;max-width:100%;text-align:center}
+.boom{font-family:'Black Han Sans',sans-serif;font-size:30px;text-align:center;color:var(--orange);line-height:1.2;-webkit-text-stroke:1px var(--ink)}
+.lyric{font-family:'Black Han Sans',sans-serif;font-size:26px;text-align:center;line-height:1.3}
+.lyric small{display:block;font-family:inherit;font-size:13px;color:var(--dim);font-weight:400}
+.ep.song .ep-stage{background:var(--ink);color:#fff}
+.ep.song .lyric small{color:#C9B8A6}
+
+/* ---------- how ---------- */
+.how{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.card{background:var(--surface);border:1.5px solid var(--ink);border-radius:10px;padding:16px 18px}
+.card h3{font-size:16.5px;margin-bottom:6px}
+.card p{font-size:14px;color:var(--dim);margin:0}
+code{font-family:Consolas,Menlo,monospace;font-size:.88em;background:var(--surface-2);padding:1px 5px;border-radius:4px;color:var(--ink)}
+.files{list-style:none;padding:0;margin:0;border-top:1px solid var(--rule)}
+.files li{display:grid;grid-template-columns:1fr auto;gap:4px 18px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--rule)}
+.files a{font-weight:700;text-decoration:none;border-bottom:1px solid var(--rule)}
+.files a:hover{color:var(--purple);border-color:var(--purple)}
+.files .desc{grid-column:1/-1;font-size:14px;color:var(--dim)}
+.files .kind{font-size:12.5px;color:var(--dim)}
+footer{border-top:1px solid var(--rule);padding-top:22px;font-size:13px;color:var(--dim)}
+@media(max-width:640px){
+  .hero-grid{grid-template-columns:1fr;padding-top:32px}
+  .duo{justify-content:center}
+  .duo img{width:104px;height:104px}
+  .sec-head .aside{display:none}
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="page">
+    <nav class="nav"><a href="../">← 채널 모음</a></nav>
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">세로 웃긴 영상 · 작업 노트 · 2026.10</p>
+        <h1>웃긴 <span class="hl">영상툰</span></h1>
+        <p class="thesis"><b>대본 한 장</b>이면 목소리 · 연기 · 음악까지.<br>30초 안에 한 번 웃기는 세로 영상.</p>
+        <p class="hero-sub">단톡방 · 상식 · 밸런스 게임 · 2D 영상툰 · 3D 콩트 · 노래. 몸 · 무대 · 소리는 코드(3D · 합성), 얼굴은 AI가 그린 표정 그림, 목소리는 AI 음성으로 만드는 하이브리드 방식입니다.</p>
+      </div>
+      <div class="duo" aria-hidden="true">
+        <figure><img src="site/senior.png" width="140" height="140" alt=""><figcaption>선배</figcaption></figure>
+        <figure><img src="site/junior.png" width="140" height="140" alt=""><figcaption>후배</figcaption></figure>
+      </div>
+    </div>
+    <div class="pipe" aria-label="제작 흐름"><span>📝 대본 JSON</span><i>→</i><span>🎙️ AI 음성</span><i>→</i><span>⏱️ 타이밍</span><i>→</i><span>🎬 Remotion 렌더</span></div>
+  </div>
+</header>
+<main class="page">
+  <section class="sec" aria-labelledby="s-ep">
+    <div class="sec-head"><span class="no">1</span><h2 id="s-ep">에피소드</h2><span class="aside">content/episodes.json · song.json</span></div>
+    <div class="eps">
+      <article class="ep">
+        <div class="ep-stage chat">
+          <div class="b"><small>아빠</small>사랑해 ❤️</div>
+          <div class="b"><small>엄마</small>뭐 잘못했어?</div>
+          <div class="b"><small>엄마</small>30초 줄게</div>
+          <div class="b sys">엄마님이 아빠님을 내보냈습니다.</div>
+        </div>
+        <div class="ep-body"><div class="ep-id">chat</div><h3>아빠가 갑자기 사랑한다고 했다</h3>
+          <p class="line">가족 단톡방에 잘못 보낸 고백. 카톡 화면 그대로 한 줄씩 올라온다.</p>
+          <div class="tags"><span class="tag">단톡방</span><span class="tag">11줄</span></div></div>
+      </article>
+      <article class="ep">
+        <div class="ep-stage">
+          <div class="b"><small>아이</small>그럼… 냄새만 맡을게.</div>
+          <div class="b r"><small>엄마</small>…그건 돼.</div>
+          <div class="b"><small>아이</small>입 안에서 맡을 거야.</div>
+        </div>
+        <div class="ep-body"><div class="ep-id">skit</div><h3>7살 협상가 vs 엄마</h3>
+          <p class="line">사탕 하나 → 반 개 → 냄새만. 협상의 끝은 늘 논리.</p>
+          <div class="tags"><span class="tag">콩트</span><span class="tag">효과음 · 흔들림</span></div></div>
+      </article>
+      <article class="ep">
+        <div class="ep-stage">
+          <div class="fact"><span>🐘</span>코끼리는 점프를 못 한다.</div>
+          <div class="fact"><span>🦦</span>해달은 손을 잡고 잔다.</div>
+          <div class="fact"><span>🫵</span>그리고 너는… 아직도 할 일을 안 했다.</div>
+        </div>
+        <div class="ep-body"><div class="ep-id">facts</div><h3>이거 알았어? 🤯</h3>
+          <p class="line">동물 상식 셋, 마지막 한 줄은 보는 사람 저격.</p>
+          <div class="tags"><span class="tag">상식</span><span class="tag">반전 엔딩</span></div></div>
+      </article>
+      <article class="ep">
+        <div class="ep-stage">
+          <div class="vs"><div>🔥<br>평생 여름</div><em>VS</em><div>❄️<br>평생 겨울</div></div>
+          <div class="b sys">너의 선택은? 댓글로 알려줘!</div>
+        </div>
+        <div class="ep-body"><div class="ep-id">balance</div><h3>평생 하나만 골라!</h3>
+          <p class="line">밸런스 게임 세 문제. 고를 시간 3초씩, 댓글을 부르는 형식.</p>
+          <div class="tags"><span class="tag">밸런스 게임</span><span class="tag">댓글 유도</span></div></div>
+      </article>
+      <article class="ep">
+        <div class="ep-stage">
+          <div class="boom">퍽! 쾅! 💥</div>
+          <div class="b"><small>민수</small>저… 아직 힘의 절반도 안 썼는데요.</div>
+          <div class="b sys">그날부터 민수의 별명은 '절반'이 되었다.</div>
+        </div>
+        <div class="ep-body"><div class="ep-id">fight</div><h3>맞짱 뜨다 드래곤볼 찍은 썰</h3>
+          <p class="line">중2 운동장 뒤, 갈수록 커지는 기합. 2D 영상툰에 카메라 컷 연출.</p>
+          <div class="tags"><span class="tag">2D 영상툰</span><span class="tag">19줄</span></div></div>
+      </article>
+      <article class="ep">
+        <div class="ep-stage">
+          <div class="faces"><img src="site/senior-angry.png" alt="화난 선배 얼굴"><img src="site/junior.png" alt="무표정한 후배 얼굴"></div>
+          <div class="b"><small>선배</small>너 5분 늦었어. 나는 길이 막혔잖아.</div>
+        </div>
+        <div class="ep-body"><div class="ep-id">carpool</div><h3>길이 막혔어</h3>
+          <p class="line">30분 늦은 선배가 5분 늦은 후배를 혼낸다. 차 안 3D 콩트, 끝은 "일찍 나오시지 그러셨어요."</p>
+          <div class="tags"><span class="tag">3D 콩트</span><span class="tag">AI 표정</span><span class="tag">22줄</span></div></div>
+      </article>
+      <article class="ep">
+        <div class="ep-stage">
+          <div class="faces"><img src="site/senior.png" alt="뿌듯한 선배 얼굴"><img src="site/junior.png" alt="무표정한 후배 얼굴"></div>
+          <div class="b"><small>선배</small>우리 아파트 또 올랐더라. 역시 내 안목. 📈</div>
+        </div>
+        <div class="ep-body"><div class="ep-id">invest</div><h3>내가 사면 투자, 네가 사면 투기</h3>
+          <p class="line">오르면 안목, 떨어지면 장기 투자. 화면 위로 그래프가 같이 출렁인다.</p>
+          <div class="tags"><span class="tag">3D 콩트</span><span class="tag">차트 연출</span><span class="tag">23줄</span></div></div>
+      </article>
+      <article class="ep">
+        <div class="ep-stage">
+          <div class="faces"><img src="site/senior.png" alt="능청스러운 선배 얼굴"><img src="site/junior-shock.png" alt="놀란 후배 얼굴"></div>
+          <div class="b"><small>선배 · 5년 전</small>어이 신입, 이거 오늘까지.</div>
+        </div>
+        <div class="ep-body"><div class="ep-id">office</div><h3>나는 절대 저렇게 안 돼</h3>
+          <p class="line">6시에 일을 던지던 선배, 5년 뒤 그 의자에 앉은 건… 시간이 도는 사무실 콩트.</p>
+          <div class="tags"><span class="tag">3D 콩트</span><span class="tag">과거 · 현재</span><span class="tag">26줄</span></div></div>
+      </article>
+      <article class="ep song">
+        <div class="ep-stage">
+          <div class="lyric">길이 막혔어!<small>난 일찍 나왔어! · 110 → 136 BPM</small></div>
+        </div>
+        <div class="ep-body"><div class="ep-id">ride · ride3d · ride3dface</div><h3>노래 — 길이 막혔어</h3>
+          <p class="line">carpool 대사를 후렴으로 바꾼 노래. 8구간(인트로 · 후렴 · 벌스 · 브리지 · 드롭)에 비트도 코드로 합성.</p>
+          <div class="tags"><span class="tag">노래</span><span class="tag">2D · 3D 두 판</span><span class="tag">가사 싱크</span></div></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="s-how">
+    <div class="sec-head"><span class="no">2</span><h2 id="s-how">만드는 법</h2><span class="aside">funtube 폴더에서</span></div>
+    <div class="how">
+      <div class="card"><h3>📝 대본 쓰기</h3><p><code>content/episodes.json</code> 에 한 편을 추가. 줄마다 누가 · 무슨 말 · 어떤 말투(<code>style</code>)와 카메라 · 표정 · 효과음을 적는다.</p></div>
+      <div class="card"><h3>🎙️ 음성</h3><p><code>node scripts/tts.mjs</code> — Gemini 음성으로 줄마다 녹음. 키는 저장소 루트 <code>.env</code> 하나만 쓰고, 돈이 드니 요청할 때만.</p></div>
+      <div class="card"><h3>😀 표정 그림</h3><p><code>scripts/facegen.mjs</code> 로 인물마다 표정 6장 시트를 뽑아 <code>public/faces/</code> 에. 3D 몸에 얼굴만 붙인다.</p></div>
+      <div class="card"><h3>🥁 음악 · 효과음</h3><p><code>npm run beat</code> 로 노래 비트를 코드 합성. 문 · 경적 · 펀치 같은 효과음은 <code>public/sfx/</code> 에.</p></div>
+      <div class="card"><h3>🎬 미리보기 · 렌더</h3><p><code>npm run studio</code> 로 보면서 고치고, <code>npm run render</code> 로 1080×1920 영상. 결과는 <code>out/</code> (저장소에 안 올림).</p></div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="s-docs">
+    <div class="sec-head"><span class="no">3</span><h2 id="s-docs">자료</h2></div>
+    <ul class="files">
+      <li><a href="../docs/workflow-guide.html#f-what">세 채널 제작 · 자동화 가이드 — 4장 funtube</a><span class="kind">docs</span>
+        <span class="desc">대본 구조, 3D 콩트 카메라 · 동작 이름, 표정 시트, 노래 만들기를 한 문서에서.</span></li>
+      <li><a href="../docs/ai-style-guide.html#funtube">그림 · 음성 스타일 가이드 — 3장</a><span class="kind">docs</span>
+        <span class="desc">인물별 AI Studio 목소리(Charon · Puck …)와 Style, 표정 6칸 시트 프롬프트 전체.</span></li>
+    </ul>
+  </section>
+  <footer>
+    <p>논의용 작업 노트입니다. 정해진 내용은 언제든 바뀔 수 있습니다. · 마지막 업데이트 2026.10.18</p>
+  </footer>
+</main>
+</body>
+</html>
