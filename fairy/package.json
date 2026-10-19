@@ -1,0 +1,12 @@
+{
+  "name": "fairy",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "ingest": "node scripts/ingest.mjs",
+    "storyboard": "node scripts/storyboard.mjs"
+  },
+  "dependencies": {
+    "pdfjs-dist": "4.10.38"
+  }
+}
