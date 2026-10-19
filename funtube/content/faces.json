@@ -1,0 +1,17 @@
+{
+  "style": "Korean webtoon gag-comic style, 'grotesque-cute': deadpan, slightly unsettling and funny and adorable all at once. Thin, slightly wobbly hand-inked black outlines, completely flat colors with no shading or gradients, slightly asymmetrical naive hand-drawn features, huge round glossy eyes with tiny pupils, minimal nose, a small very expressive mouth, and exaggerated expressions that tip back and forth between cute and creepy. Imperfect scribbly charm, like a gag webtoon.",
+  "task": "Draw a reference sheet of 6 FACE DECALS of the SAME character, to be projected onto a smooth blank 3D head. Draw ONLY the facial features: eyes, eyebrows, nose, mouth, cheek blush, and small comic marks (sweat drops, anger veins, sparkles) right next to the face. DO NOT draw any head outline, face shape, skin color fill, hair, ears, neck, or body: the features float alone on the background.",
+  "layout": "Layout: a grid of exactly 3 columns by 2 rows on a SOLID PURE GREEN (#00FF00) background, landscape 3:2 image. Each expression sits alone in its own cell, centered, with very wide empty green margins around it and between cells (at least 15% of the cell width) so nothing ever touches or overlaps another cell. All six faces must use exactly the same scale, the same eye-line height and the same eye spacing so they line up on the same head. Faces look straight at the viewer. Use only black ink lines, white eyeballs with black pupils, pink blush, and warm accent colors; NEVER use green anywhere in the drawing. No text, no numbers, no labels, no arrows, no frames, no borders.",
+  "expressions": [
+    "1 (top-left) NEUTRAL: deadpan, half-lidded eyes, tiny straight closed mouth.",
+    "2 (top-middle) TALKING: mouth open mid-sentence as a wide rounded shape with a hint of teeth, eyebrows slightly raised.",
+    "3 (top-right) ANGRY: brows slammed down hard, gritted teeth, one throbbing anger-vein mark beside the eye.",
+    "4 (bottom-left) SHOCK: eyes gigantic with tiny pinpoint pupils, mouth gaping open, one big sweat drop, brows very high.",
+    "5 (bottom-middle) CUTE: sweet closed-eye or sparkling-eye smile, rosy blush circles on both cheeks, adorable.",
+    "6 (bottom-right) UNCANNY: an unnervingly wide fixed grin stretching almost from cheek to cheek, huge round unblinking eyes with pupils far too small, slightly asymmetrical, eerie but hilarious."
+  ],
+  "characters": {
+    "선배": "CHARACTER: a smug, middle-aged Korean office senior. Round thin-rimmed glasses drawn as part of the face (draw the glasses in every expression), heavy sleepy eyelids, bags under the eyes, a thin self-satisfied mouth, thick bushy eyebrows.",
+    "후배": "CHARACTER: a young, tired but earnest Korean junior office worker. Big round eyes, thick short eyebrows, faint dark circles under the eyes, a small mouth, no glasses."
+  }
+}

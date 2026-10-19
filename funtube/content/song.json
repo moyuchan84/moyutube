@@ -1,0 +1,38 @@
+{
+  "title": "길이 막혔어",
+  "lead": 0.3,
+  "sections": [
+    { "name": "intro", "style": "intro", "bpm": 110, "energy": 0, "lines": [
+      { "who": "선배", "text": "야, 너 5분 늦었어! 시간 개념이 없어!", "beats": 4 },
+      { "who": "후배", "text": "선배님은 30분 늦으셨는데요.", "beats": 4 } ] },
+    { "name": "chorus1", "style": "chorus", "bpm": 120, "energy": 2, "lines": [
+      { "who": "선배", "text": "길이 막혔어!", "beats": 4 },
+      { "who": "선배", "text": "길이 막혔어!", "beats": 4 },
+      { "who": "선배", "text": "난 일찍 나왔어!", "beats": 4 },
+      { "who": "선배", "text": "길이 막혔어!", "beats": 4 } ] },
+    { "name": "verse", "style": "verse", "bpm": 120, "energy": 1, "lines": [
+      { "who": "선배", "text": "삼십 분 늦은 내가", "beats": 4 },
+      { "who": "선배", "text": "오 분 늦은 너한테", "beats": 4 },
+      { "who": "선배", "text": "시간 개념 없다며", "beats": 4 },
+      { "who": "선배", "text": "시간 개념!", "beats": 4 } ] },
+    { "name": "chorus2", "style": "chorus", "bpm": 136, "energy": 3, "lines": [
+      { "who": "선배", "text": "길이 막혔어!", "beats": 4 },
+      { "who": "선배", "text": "길이 막혔어!", "beats": 4 },
+      { "who": "선배", "text": "난 일찍 나왔어!", "beats": 4 },
+      { "who": "선배", "text": "길이 막혔어!", "beats": 4 } ] },
+    { "name": "bridge", "style": "bridge", "bpm": 136, "energy": 2, "lines": [
+      { "who": "선배", "text": "아까 말했잖아 직진하라고", "beats": 4 },
+      { "who": "후배", "text": "한 적 없음!", "beats": 4 },
+      { "who": "선배", "text": "우회전 했어야지~", "beats": 4 },
+      { "who": "후배", "text": "내비는 직진!", "beats": 4 } ] },
+    { "name": "chorus3", "style": "chorus", "bpm": 156, "energy": 4, "lines": [
+      { "who": "선배", "text": "길이 막혔어!", "beats": 4 },
+      { "who": "선배", "text": "길이 막혔어!", "beats": 4 },
+      { "who": "선배", "text": "난 일찍 나왔어!", "beats": 4 },
+      { "who": "선배", "text": "길이 막혔어!", "beats": 4 } ] },
+    { "name": "drop", "style": "drop", "seconds": 2.2, "energy": 0, "lines": [
+      { "who": "후배", "text": "……", "seconds": 2.2 } ] },
+    { "name": "end", "style": "end", "seconds": 3.6, "energy": 0, "lines": [
+      { "who": "후배", "text": "일찍 나오시지 그러셨어요.", "seconds": 3.6 } ] }
+  ]
+}
