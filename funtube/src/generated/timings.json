@@ -122,5 +122,463 @@
       "file": null,
       "dur": 2.53
     }
+  ],
+  "fight": [
+    {
+      "file": null,
+      "dur": 5.13
+    },
+    {
+      "file": null,
+      "dur": 1.49
+    },
+    {
+      "file": null,
+      "dur": 0.84
+    },
+    {
+      "file": null,
+      "dur": 1.75
+    },
+    {
+      "file": null,
+      "dur": 0.7
+    },
+    {
+      "file": null,
+      "dur": 1.75
+    },
+    {
+      "file": null,
+      "dur": 3.83
+    },
+    {
+      "file": null,
+      "dur": 1.4
+    },
+    {
+      "file": null,
+      "dur": 1.49
+    },
+    {
+      "file": null,
+      "dur": 1.36
+    },
+    {
+      "file": null,
+      "dur": 0.84
+    },
+    {
+      "file": null,
+      "dur": 1.75
+    },
+    {
+      "file": null,
+      "dur": 2
+    },
+    {
+      "file": null,
+      "dur": 2.27
+    },
+    {
+      "file": null,
+      "dur": 1.88
+    },
+    {
+      "file": null,
+      "dur": 4.48
+    },
+    {
+      "file": null,
+      "dur": 2.27
+    },
+    {
+      "file": null,
+      "dur": 3.05
+    },
+    {
+      "file": null,
+      "dur": 4.35
+    }
+  ],
+  "carpool": [
+    {
+      "file": null,
+      "dur": 1
+    },
+    {
+      "file": "audio/carpool/1.wav",
+      "dur": 4.528,
+      "hash": "7159e847b4",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/carpool/2.wav",
+      "dur": 3.468,
+      "hash": "49c4a58b76",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/carpool/3.wav",
+      "dur": 3.037,
+      "hash": "90ca25e1a1",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/carpool/4.wav",
+      "dur": 2.523,
+      "hash": "1bec57e578",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/carpool/5.wav",
+      "dur": 0.628,
+      "hash": "96053faa28",
+      "src": "aistudio"
+    },
+    {
+      "file": null,
+      "dur": 2.4
+    },
+    {
+      "file": "audio/carpool/7.wav",
+      "dur": 2.217,
+      "hash": "9cdde9ddb8",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/carpool/8.wav",
+      "dur": 1.867,
+      "hash": "2f9fe4403d",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/carpool/9.wav",
+      "dur": 4.327,
+      "hash": "fad42a0325",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/carpool/10.wav",
+      "dur": 2.138,
+      "hash": "6fd1db5a38",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/carpool/11.wav",
+      "dur": 2.841,
+      "hash": "fab9ef44eb",
+      "src": "aistudio"
+    },
+    {
+      "file": null,
+      "dur": 3.05
+    },
+    {
+      "file": "audio/carpool/13.wav",
+      "dur": 2.593,
+      "hash": "65d793fc53",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/carpool/14.wav",
+      "dur": 2.42,
+      "hash": "e6c61864ca",
+      "src": "aistudio"
+    },
+    {
+      "file": null,
+      "dur": 2.4
+    },
+    {
+      "file": "audio/carpool/16.wav",
+      "dur": 0.905,
+      "hash": "7370b21ffa",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/carpool/17.wav",
+      "dur": 0.255,
+      "hash": "02c5a297f5",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/carpool/18.wav",
+      "dur": 0.783,
+      "hash": "cf314fb5cb",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/carpool/19.wav",
+      "dur": 1.902,
+      "hash": "20169715ed",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/carpool/20.wav",
+      "dur": 2.158,
+      "hash": "bd5580f588",
+      "src": "aistudio"
+    },
+    {
+      "file": null,
+      "dur": 2.6
+    }
+  ],
+  "invest": [
+    {
+      "file": null,
+      "dur": 1.2
+    },
+    {
+      "file": "audio/invest/1.wav",
+      "dur": 4.635,
+      "hash": "99d43e3965",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/invest/2.wav",
+      "dur": 2.202,
+      "hash": "b007e9b06f",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/invest/3.wav",
+      "dur": 2.931,
+      "hash": "ce26da9015",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/invest/4.wav",
+      "dur": 2.205,
+      "hash": "f78bbc6beb",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/invest/5.wav",
+      "dur": 1.359,
+      "hash": "738a3a25c0",
+      "src": "aistudio"
+    },
+    {
+      "file": null,
+      "dur": 1.1
+    },
+    {
+      "file": "audio/invest/7.wav",
+      "dur": 3.089,
+      "hash": "2ae89812bc",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/invest/8.wav",
+      "dur": 2.368,
+      "hash": "ae5ceca535",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/invest/9.wav",
+      "dur": 4.714,
+      "hash": "21e3f79712",
+      "src": "aistudio"
+    },
+    {
+      "file": null,
+      "dur": 1.1
+    },
+    {
+      "file": "audio/invest/11.wav",
+      "dur": 1.196,
+      "hash": "d4c640cfd9",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/invest/12.wav",
+      "dur": 2.17,
+      "hash": "4f18145062",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/invest/13.wav",
+      "dur": 3.649,
+      "hash": "0254fe49d9",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/invest/14.wav",
+      "dur": 2.722,
+      "hash": "e1c799f553",
+      "src": "aistudio"
+    },
+    {
+      "file": null,
+      "dur": 1.1
+    },
+    {
+      "file": "audio/invest/16.wav",
+      "dur": 1.408,
+      "hash": "8cbe8897eb",
+      "src": "aistudio"
+    },
+    {
+      "file": null,
+      "dur": 2.4
+    },
+    {
+      "file": "audio/invest/18.wav",
+      "dur": 3.249,
+      "hash": "172114f388",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/invest/19.wav",
+      "dur": 3.204,
+      "hash": "2ff889c8a4",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/invest/20.wav",
+      "dur": 1.578,
+      "hash": "00483266b0",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/invest/21.wav",
+      "dur": 4.429,
+      "hash": "e49091afc0",
+      "src": "aistudio"
+    },
+    {
+      "file": null,
+      "dur": 2.8
+    }
+  ],
+  "office": [
+    {
+      "file": null,
+      "dur": 1
+    },
+    {
+      "file": "audio/office/1.wav",
+      "dur": 2.312,
+      "hash": "8e40457f6b",
+      "src": "aistudio"
+    },
+    {
+      "file": null,
+      "dur": 0.55
+    },
+    {
+      "file": "audio/office/3.wav",
+      "dur": 2.147,
+      "hash": "749fa6ef68",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/office/4.wav",
+      "dur": 3.487,
+      "hash": "07f4fc567c",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/office/5.wav",
+      "dur": 1.051,
+      "hash": "41acdf0acf",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/office/6.wav",
+      "dur": 4.018,
+      "hash": "989c260390",
+      "src": "aistudio"
+    },
+    {
+      "file": null,
+      "dur": 0.9
+    },
+    {
+      "file": null,
+      "dur": 0.5
+    },
+    {
+      "file": null,
+      "dur": 2.66
+    },
+    {
+      "file": "audio/office/10.wav",
+      "dur": 2.7,
+      "hash": "26e115b8e7",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/office/11.wav",
+      "dur": 2.298,
+      "hash": "16b2eeea82",
+      "src": "aistudio"
+    },
+    {
+      "file": "audio/office/12.wav",
+      "dur": 0.671,
+      "hash": "b2b711f986",
+      "src": "aistudio"
+    },
+    {
+      "file": null,
+      "dur": 1.75
+    },
+    {
+      "file": "audio/office/14.wav",
+      "dur": 1.055,
+      "hash": "4801f40ccd",
+      "src": "aistudio"
+    },
+    {
+      "file": null,
+      "dur": 1.62
+    },
+    {
+      "file": "audio/office/16.wav",
+      "dur": 4.172,
+      "hash": "97ef58ee90",
+      "src": "aistudio"
+    },
+    {
+      "file": null,
+      "dur": 2.01
+    },
+    {
+      "file": null,
+      "dur": 1.75
+    },
+    {
+      "file": null,
+      "dur": 2.2
+    },
+    {
+      "file": null,
+      "dur": 2.92
+    },
+    {
+      "file": null,
+      "dur": 0.9
+    },
+    {
+      "file": "audio/office/22.wav",
+      "dur": 5.151,
+      "hash": "9563d0cc0c",
+      "src": "aistudio"
+    },
+    {
+      "file": null,
+      "dur": 0.8
+    },
+    {
+      "file": null,
+      "dur": 2.4
+    },
+    {
+      "file": null,
+      "dur": 3
+    }
   ]
 }

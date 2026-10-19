@@ -21,6 +21,16 @@ Speaker 1 말투 지시 (1편에서 아빠 · 나레이션 블록 전부에 넣�
 A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid
 ```
 
+## 엄마 목소리
+
+엄마는 가족이지만 AI Studio 자리(Speaker 1 · 2)가 둘뿐이라, 손님과 같은 방식(`"label": "Guest"`, 역할 `mom`)으로 넣었다. 엄마가 말하는 컷에서는 그 컷에서 비는 자리를 엄마 목소리로 바꾼다.
+
+| 누구 | 목소리 | 말투 지시 | 정한 날 |
+|---|---|---|---|
+| 엄마 (`mom`) | **Kore** (단단하고 차분한 여성) | `The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding` | 2026-10-16 (아직 들어 보지 않았다. 약사 Sulafat 와 같은 편에 나오면 겹치지 않는지 확인. 더 부드럽게 하려면 Despina · Callirrhoe 를 들어 본다) |
+
+- 아빠 · 아이 · 엄마가 한 컷에서 모두 말하면 목소리가 셋이 되어 도구가 오류를 낸다. 컷을 나눈다.
+
 ## 손님 목소리 (편에만 나오는 사람)
 
 가족이 아닌 사람이 말하는 편에서는 목소리를 하나 더 쓴다. `src/voice.json` 의 `"label": "Guest"` 항목이다.
@@ -29,6 +39,9 @@ A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voi
 |---|---|---|---|
 | 시장 할머니 (`granny`) | **Gacrux** (나이 든 여성) | `A loud, cheerful Korean market grandmother in her seventies: hearty, quick and teasing in a thick country accent, with a laugh in her voice, warm and never angry` | 3편 (2026-10-13 에 정함, 아직 들어 보고 확정한 것은 아니다) |
 | 이발사 할아버지 (`barber`) | **Charon** (낮은 남성, 차분함) | `A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern` | 4편 (2026-10-15 에 정함, 아직 들어 보지 않았다. 아빠 Algenib 와 너무 비슷하면 Sadaltager · Rasalgethi 를 들어 본다) |
+| 약사 선생님 (`pharmacist`) | **Sulafat** (따뜻한 여성) | `A calm, kind Korean pharmacist woman in her early fifties who has run a small neighborhood pharmacy for twenty years: warm, clear, unhurried voice with a gentle dry humor, precise and reassuring, never stern` | 5편 (2026-10-16 에 정함, 아직 들어 보지 않았다) |
+| 정형외과 원장님 (`doctor`) | **Iapetus** (맑은 중저음 남성) | `A calm, kind Korean orthopedic doctor in his mid-fifties who has run a neighborhood clinic for many years: slow, warm, clear middle-low voice with a small amused smile in it, patient and reassuring, corrects grown-ups politely, never stern` | 7편 (2026-10-18 에 정함, 아직 들어 보지 않았다. 아빠 Algenib 와 비슷하면 Rasalgethi · Sadaltager 를 들어 본다) |
+| 내과 접수 선생님 (`reception`) | **Achernar** (부드러운 여성) | `A cheerful Korean clinic receptionist woman in her late twenties: bright, brisk and polite, a friendly helpful voice with a light apologetic smile` | 7편 (2026-10-18 에 정함, 한 줄만 말한다. 아직 들어 보지 않았다) |
 
 - AI Studio 는 한 번에 두 목소리까지다. 그래서 **한 컷에는 목소리가 둘까지만** 나오게 대본을 나눈다 (셋이면 도구가 오류를 낸다).
 - 손님이 나오는 컷에서는 손님이 **그 컷에서 비는 자리**(Speaker 1 또는 2)를 쓴다. 예: 아빠 + 할머니 컷은 Speaker 2 = Gacrux, 아이 + 할머니 컷은 Speaker 1 = Gacrux.

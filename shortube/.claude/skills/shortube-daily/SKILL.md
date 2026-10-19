@@ -9,6 +9,7 @@ description: shortube 채널의 오늘 쇼츠 주제를 로테이션 전략으�
 
 **사용자에게 주제를 묻지 말고 끝까지 진행한다.** 규칙상 진행이 불가능할 때만(후보 0개 등) 이유를 알리고 멈춘다.
 모든 판단은 `COMPLIANCE_GUIDE.md`가 최우선이다. 업로드는 하지 않는다(사람이 함).
+영상 제작 · 음악 · 업로드까지 이어서 요청받으면 `shortube/CLAUDE.md`(제작 · 업로드 체크리스트)를 따른다.
 
 실행 파이썬: `.venv/Scripts/python.exe -m shortube` (Windows 콘솔 깨짐 방지로 `PYTHONIOENCODING=utf-8`).
 

@@ -1,0 +1,19 @@
+{
+  "fps": 30,
+  "bpm": 108,
+  "scenes": [
+    { "id": "hook", "from": 0, "dur": 120 },
+    { "id": "road", "from": 120, "dur": 330 },
+    { "id": "delay", "from": 450, "dur": 210 },
+    { "id": "sales", "from": 660, "dur": 240 },
+    { "id": "records", "from": 900, "dur": 300 },
+    { "id": "data", "from": 1200, "dur": 240 },
+    { "id": "live", "from": 1440, "dur": 180 },
+    { "id": "expect", "from": 1620, "dur": 240 },
+    { "id": "outro", "from": 1860, "dur": 120 }
+  ],
+  "total": 1980,
+  "hits": [40, 345, 545, 620, 760, 1150, 1530, 1650],
+  "risers": [120, 450, 660, 900, 1200, 1440, 1620, 1860],
+  "boost": [1440, 1620]
+}

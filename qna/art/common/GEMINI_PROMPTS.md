@@ -1,7 +1,7 @@
 # Gemini 프롬프트 — 공통 — 가족 캐릭터 · 집 배경
 
 > `video/scripts/prompts.mjs` 가 만든 파일이다. 직접 고치지 말고 `video/src/art-common.json` 을 고친 뒤 `npm run prompts` 를 다시 실행한다.
-> 모든 편이 같이 쓰는 그림이다. **한 번만 만들면 된다.** 진행: 22 / 22
+> 모든 편이 같이 쓰는 그림이다. **한 번만 만들면 된다.** 진행: 30 / 31
 
 ## 사용법
 
@@ -401,7 +401,195 @@ Same aspect ratio, framing and margins as attached image 2.
 Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
 ```
 
-#### 15. 컷인 — 아빠 당황 ✅
+#### 15. 엄마 — 기본 ✅
+- 저장: `art/common/mom/normal.png`
+- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/channel/profile.png` (채널 프로필 — 오른쪽 위 안경 쓴 여자가 엄마), ③ `art/channel/banner.png` (채널 배너 — 맨 오른쪽 팔짱 낀 여자가 엄마)
+- 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
+- 메모: 엄마의 기준 그림. 채널 프로필 · 배너의 엄마를 보고 전신으로 처음 그린다. 이후 엄마 그림에 전부 ②로 첨부한다.
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+Character: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.
+
+The mom must be exactly the same woman as the woman with round glasses in attached images 2 and 3 (the channel profile picture and banner): same face, glasses, hairstyle, hair color and sage-green sweater. Draw only her, alone, as a full-body character; ignore the other people in those images. 3/4 view, body and face turned slightly to the LEFT. Standing relaxed, hands loosely clasped in front, a calm gentle smile.
+
+Comic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.
+
+The cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.
+
+Full body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.
+
+Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
+```
+
+#### 16. 엄마 — 다 안다는 미소 ✅
+- 저장: `art/common/mom/smirk.png`
+- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/normal.png` (같은 사람 유지용 기준 그림)
+- 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
+- 메모: 프로필 · 배너의 그 표정. 아빠가 쩔쩔맬 때 옆에서 보는 엄마.
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+The character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.
+
+Character: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.
+
+3/4 view turned slightly to the LEFT. Arms crossed, weight on one leg, one eyebrow raised high, a knowing sideways half-smile, eyes glancing sideways as if watching someone struggle, a small sparkle glinting on her glasses.
+
+Comic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.
+
+The cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.
+
+Full body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.
+
+Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
+```
+
+#### 17. 엄마 — 설명 ✅
+- 저장: `art/common/mom/explain.png`
+- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/normal.png` (같은 사람 유지용 기준 그림)
+- 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+The character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.
+
+Character: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.
+
+3/4 view turned slightly to the LEFT. Explaining clearly and kindly: one hand raised with the palm open as if laying out a point, the other hand pushing up her glasses with one finger, eyebrows up, mouth open mid-sentence.
+
+Comic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.
+
+The cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.
+
+Full body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.
+
+Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
+```
+
+#### 18. 엄마 — 한숨 (이마 짚기) ✅
+- 저장: `art/common/mom/sigh.png`
+- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/normal.png` (같은 사람 유지용 기준 그림)
+- 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
+- 메모: 아빠의 엉뚱한 대답을 들었을 때.
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+The character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.
+
+Character: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.
+
+3/4 view turned slightly to the LEFT. Exasperated: one hand pressed to her forehead, eyes closed, a long sigh puffing out of her mouth as a small comic cloud, shoulders dropped, the other hand on her hip, glasses slightly crooked.
+
+Comic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.
+
+The cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.
+
+Full body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.
+
+Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
+```
+
+#### 19. 엄마 — 웃음
+- 저장: `art/common/mom/laugh.png`
+- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/normal.png` (같은 사람 유지용 기준 그림)
+- 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+The character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.
+
+Character: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.
+
+3/4 view turned slightly to the LEFT. Bursting out laughing: eyes squeezed into happy crescents behind her glasses, mouth wide open showing teeth, one hand half covering the mouth, the other hand slapping the air, leaning forward.
+
+Comic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.
+
+The cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.
+
+Full body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.
+
+Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
+```
+
+#### 20. 엄마 — 충격 ✅
+- 저장: `art/common/mom/shock.png`
+- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/normal.png` (같은 사람 유지용 기준 그림)
+- 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+The character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.
+
+Character: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.
+
+3/4 view turned slightly to the LEFT. Genuinely shocked: glasses sliding down her nose, eyes bulging, jaw dropped showing teeth, both hands up beside her cheeks, hair flicked up by shock lines.
+
+Comic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.
+
+The cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.
+
+Full body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.
+
+Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
+```
+
+#### 21. 엄마 — 설명 (말하는 그림) ✅
+- 저장: `art/common/mom/explain-b.png`
+- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/explain.png` (첫 번째 프레임 — 이 그림을 그대로 다시 그린다)
+- 종류 · 비율: 말하는 그림 (두 번째 프레임, 초록 배경) · 기준 그림과 같게
+- 영상에서의 움직임: 설명 그림과 1/8초마다 번갈아 나와서 입이 움직인다.
+- **없어도 된다.** 없으면 그 움직임만 빠지고 영상은 그대로 나온다.
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is a character cutout for a 2D animated video.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+This is the SECOND FRAME of a two-frame animation. Redraw attached image 2 EXACTLY: same character, same pose, same size, same position in the frame, same clothes, same colors, same line work, same framing and margins. Change ONLY what is described below. Everything else must be pixel-for-pixel as close to attached image 2 as possible so the two frames can be flipped back and forth.
+
+Character: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.
+
+Change only the face: the mouth is now closed in a small calm smile (as if between two words). Both hands stay exactly where they are.
+
+Same aspect ratio, framing and margins as attached image 2.
+
+Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
+```
+
+#### 22. 컷인 — 아빠 당황 ✅
 - 저장: `art/common/cutin/dad-panic.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 리액션 컷인 (가슴 위, 초록 배경) · 1:1
@@ -426,7 +614,7 @@ Chest-up close-up, the face fills most of the frame, centered, not cropped. Squa
 Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
 ```
 
-#### 16. 컷인 — 아빠 충격 ✅
+#### 23. 컷인 — 아빠 충격 ✅
 - 저장: `art/common/cutin/dad-shock.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 리액션 컷인 (가슴 위, 초록 배경) · 1:1
@@ -451,7 +639,7 @@ Chest-up close-up, the face fills most of the frame, centered, not cropped. Squa
 Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
 ```
 
-#### 17. 컷인 — 아빠 뿌듯 ✅
+#### 24. 컷인 — 아빠 뿌듯 ✅
 - 저장: `art/common/cutin/dad-proud.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 리액션 컷인 (가슴 위, 초록 배경) · 1:1
@@ -476,7 +664,7 @@ Chest-up close-up, the face fills most of the frame, centered, not cropped. Squa
 Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
 ```
 
-#### 18. 컷인 — 아이 질문 ✅
+#### 25. 컷인 — 아이 질문 ✅
 - 저장: `art/common/cutin/kid-ask.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/kid/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 리액션 컷인 (가슴 위, 초록 배경) · 1:1
@@ -501,7 +689,7 @@ Chest-up close-up, the face fills most of the frame, centered, not cropped. Squa
 Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
 ```
 
-#### 19. 컷인 — 아이 의심 ✅
+#### 26. 컷인 — 아이 의심 ✅
 - 저장: `art/common/cutin/kid-doubt.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/kid/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 리액션 컷인 (가슴 위, 초록 배경) · 1:1
@@ -526,7 +714,57 @@ Chest-up close-up, the face fills most of the frame, centered, not cropped. Squa
 Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
 ```
 
-#### 20. 배경 — 거실 ✅
+#### 27. 컷인 — 엄마 다 안다는 미소 ✅
+- 저장: `art/common/cutin/mom-smirk.png`
+- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/normal.png` (같은 사람 유지용 기준 그림)
+- 종류 · 비율: 리액션 컷인 (가슴 위, 초록 배경) · 1:1
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is a large close-up reaction shot for a comedy video: maximum facial detail, extreme exaggeration, dramatic lighting on the face.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+The character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.
+
+Character: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.
+
+Facing slightly to the LEFT. Smug and all-knowing: one eyebrow arched very high, eyes half-closed, a slow sly smile pulled to one side, a sharp sparkle flashing across her glasses.
+
+Comic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.
+
+Chest-up close-up, the face fills most of the frame, centered, not cropped. Square 1:1 aspect ratio.
+
+Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
+```
+
+#### 28. 컷인 — 엄마 어이없음 ✅
+- 저장: `art/common/cutin/mom-sigh.png`
+- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/normal.png` (같은 사람 유지용 기준 그림)
+- 종류 · 비율: 리액션 컷인 (가슴 위, 초록 배경) · 1:1
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is a large close-up reaction shot for a comedy video: maximum facial detail, extreme exaggeration, dramatic lighting on the face.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+The character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.
+
+Character: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.
+
+Facing slightly to the LEFT. Utterly done: dead flat stare through her glasses, mouth a straight line, a vein on the temple, a dark gloomy shadow over the upper half of the face, a big sigh cloud.
+
+Comic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.
+
+Chest-up close-up, the face fills most of the frame, centered, not cropped. Square 1:1 aspect ratio.
+
+Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
+```
+
+#### 29. 배경 — 거실 ✅
 - 저장: `art/common/bg/living-room.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 배경 (사람 없음) · 16:9
@@ -545,7 +783,7 @@ The camera will slowly pan and zoom across this picture, so paint about 8% extra
 Keep the bottom third of the picture an open, uncluttered floor: characters will be placed there later. All signs, posters, screens and labels are blank shapes with no text. 16:9 landscape, highest resolution.
 ```
 
-#### 21. 배경 — 저녁 밥상 ✅
+#### 30. 배경 — 저녁 밥상 ✅
 - 저장: `art/common/bg/dining-room.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 배경 (사람 없음) · 16:9
@@ -564,7 +802,7 @@ The camera will slowly pan and zoom across this picture, so paint about 8% extra
 Keep the bottom third of the picture an open, uncluttered floor: characters will be placed there later. All signs, posters, screens and labels are blank shapes with no text. 16:9 landscape, highest resolution.
 ```
 
-#### 22. 배경 — 밤의 아이 방 ✅
+#### 31. 배경 — 밤의 아이 방 ✅
 - 저장: `art/common/bg/kid-room-night.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 배경 (사람 없음) · 16:9

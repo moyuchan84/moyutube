@@ -1,0 +1,239 @@
+{
+  "title": "6편 · 감기 · 독감, 뭐가 달라요?",
+  "cast": {
+    "nurse": "the pediatric clinic nurse: a calm, kind Korean woman in her early thirties; neat black hair tied in a low ponytail with a few short strands framing her face, soft round face with a warm natural skin tone, gentle eyes and a ready smile; wearing a light-mint nurse's tunic with a white short-sleeved undershirt, a small blank name badge on the chest, white sneakers; patient and reassuring with children, corrects grown-ups politely with a little playful twinkle, never stern"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/panic",
+    "common/dad/explain",
+    "common/dad/think",
+    "common/dad/proud",
+    "common/dad/search",
+    "common/kid/normal",
+    "common/kid/ask",
+    "common/mom/normal",
+    "common/mom/smirk",
+    "common/mom/explain",
+    "common/mom/sigh",
+    "common/cutin/kid-ask",
+    "common/cutin/dad-proud",
+    "common/cutin/mom-smirk",
+    "common/dad/explain-b",
+    "common/kid/ask-b",
+    "common/mom/explain-b"
+  ],
+  "items": [
+    {
+      "id": "bg/clinic-waiting",
+      "kind": "bg",
+      "title": "배경 — 소아과 대기실",
+      "cuts": "c01–c04, c07, c08, c10, c13",
+      "motion": "컷 내내 천천히 당겨진다. 인물은 아래 1/3에 따로 얹는다. 호명 순간 살짝 흔들린다.",
+      "desc": "The waiting room of a small, bright Korean pediatric clinic, seen straight-on like a stage set. Pastel-colored walls with cheerful cartoon animal wall stickers, a reception window with a sliding glass pane on the left, rows of small colorful kids' chairs and a few adult chairs along the back wall, a low toy corner with a rug and wooden blocks on the right, a wall-mounted TV that is switched off, a rectangular blank spot on the wall in the center-back where a poster will be added later. Warm daylight from a window. Clean mint, cream and soft yellow tones. The floor is plain light tiles, open and empty across the whole bottom third. No people, no readable text."
+    },
+    {
+      "id": "bg/injection-room",
+      "kind": "bg",
+      "title": "배경 — 주사실",
+      "cuts": "c00, c12–c12d",
+      "motion": "컷 내내 천천히 당겨진다. 6번 박자에서는 거의 멈춘다.",
+      "desc": "A small, cozy and clean vaccination room of a Korean pediatric clinic, seen straight-on like a stage set. A padded child-sized examination chair with a small arm rest on the left-center, a white cabinet with sealed boxes of cotton and plasters on the right, a cartoon giraffe height chart on the wall, a simple wall clock, a sink with a soap dispenser, a window with a soft yellow curtain. Calm mint and cream tones, warm light. The floor is plain light tiles, open and empty across the whole bottom third. No people, no needles, no syringes, no readable text."
+    },
+    {
+      "id": "nurse/normal",
+      "kind": "char",
+      "who": "nurse",
+      "ref": null,
+      "title": "간호사 — 기본",
+      "cuts": "c03b, c02f, c12",
+      "note": "간호사 선생님의 기준 그림. 이후 간호사 그림에 전부 ②로 첨부한다. 주사 바늘 · 주사기는 그리지 않는다.",
+      "motion": "숨 쉬듯 살짝 움직이고, 말할 때 까딱거린다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing calmly, hands loosely clasped in front of the waist, a soft friendly smile, kind eyes. Relaxed and approachable. No syringe, no needle."
+    },
+    {
+      "id": "nurse/tray",
+      "kind": "char",
+      "who": "nurse",
+      "ref": "nurse/normal",
+      "title": "간호사 — 쟁반 들고",
+      "cuts": "c00, c02",
+      "motion": "화면 왼쪽에서 걸어 들어와 아빠 옆에서 멈춘다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Holding a small stainless tray in both hands at waist height; on the tray only a neat pile of cotton balls and a few colorful plasters, nothing sharp. A gentle polite smile. No syringe, no needle."
+    },
+    {
+      "id": "nurse/correct",
+      "kind": "char",
+      "who": "nurse",
+      "ref": "nurse/normal",
+      "title": "간호사 — 웃으며 바로잡기",
+      "cuts": "c00, c02, c02b, c02e",
+      "motion": "말하는 동안 좌우로 흔들린다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Politely correcting a grown-up: one index finger raised gently, head tilted a little, eyebrows lifted, a patient smile that says 'let me explain'. Not scolding, not stern."
+    },
+    {
+      "id": "nurse/correct-b",
+      "kind": "talk",
+      "who": "nurse",
+      "ref": "nurse/correct",
+      "optional": true,
+      "title": "간호사 — 바로잡기 (말하는 그림)",
+      "cuts": "c00, c02, c02b, c02e",
+      "motion": "바로잡기 그림과 1/8초마다 번갈아 나와서 입이 움직인다.",
+      "desc": "Change only the face: the mouth is now closed in a small friendly smile (as if between two words). The raised finger stays exactly where it is."
+    },
+    {
+      "id": "nurse/smile",
+      "kind": "char",
+      "who": "nurse",
+      "ref": "nurse/normal",
+      "title": "간호사 — 미소",
+      "cuts": "c02f, c12b, c12d",
+      "motion": "표정이 바뀌는 순간 젤리처럼 튄다. 6번 박자라 움직임은 작게.",
+      "desc": "3/4 view turned slightly to the RIGHT. A warm proud smile with eyes curved into happy crescents, one hand giving a small thumbs-up near the chest. Calm and gentle."
+    },
+    {
+      "id": "cutin/nurse-correct",
+      "kind": "cutin",
+      "who": "nurse",
+      "ref": "nurse/normal",
+      "title": "컷인 — 간호사 바로잡기",
+      "cuts": "c00, c02, c02e",
+      "motion": "화면 옆에서 튀어나와 흔들린다.",
+      "desc": "Facing slightly to the RIGHT. A huge friendly close-up: eyebrows up, a bright polite smile, one index finger raised beside the cheek, a small sparkle near the eye. Funny and lovable, not angry and not scary."
+    },
+    {
+      "id": "prop/vaccine-poster",
+      "kind": "prop",
+      "title": "소품 — 예방접종 포스터",
+      "cuts": "c01–c02f",
+      "ratio": "3:4",
+      "motion": "벽에 붙어 있다가 아이가 가리킬 때 커진다. 글자는 영상에서 얹는다(그림에는 빈칸).",
+      "desc": "A vertical clinic wall poster, front view: a cheerful cartoon arm with a round bandage on it, a smiling cartoon snowflake and a friendly cartoon shield shape, soft blue and white background with a rounded border. The upper strip and a small corner box are left completely empty for text to be added later. No letters, no numbers, no logos."
+    },
+    {
+      "id": "prop/bear-doll",
+      "kind": "prop",
+      "title": "소품 — 커다란 곰인형",
+      "cuts": "c03, c03b",
+      "ratio": "3:4",
+      "motion": "아빠 앞에 놓여 아빠를 가린다. 호명 순간 곰인형이 옆으로 쓰러진다.",
+      "desc": "A huge soft teddy bear sitting upright, about as tall as an adult man, honey-brown plush with a lighter muzzle and belly, a red bow tie, big friendly button eyes, seen from the front, chunky and cuddly."
+    },
+    {
+      "id": "prop/med-bag",
+      "kind": "prop",
+      "title": "소품 — 엄마 가방 속 약 봉투",
+      "cuts": "c02d, c02e, c11",
+      "ratio": "1:1",
+      "motion": "엄마 가방에서 빼꼼 나온다. 간호사 말 뒤에 봉투가 살짝 쪼그라든다.",
+      "desc": "A plain white paper pharmacy bag with a folded-over top peeking out of the opening of a beige tote bag, a few small round pills drawn lightly spilling from the fold. Completely blank: no text, no logos, no brand, no medicine names."
+    },
+    {
+      "id": "prop/cold-crowd",
+      "kind": "prop",
+      "title": "소품 — 감기 바이러스 손님들",
+      "cuts": "c04, c11",
+      "ratio": "16:9",
+      "motion": "화면 왼쪽 밖에서 우르르 몰려와 오른쪽으로 지나간다. 한 문장 정리 컷에서는 '감기' 칸에 들어간다.",
+      "desc": "A crowd of about twenty small, cute, round germ characters in many different colors, sizes and shapes (fuzzy balls, spiky balls, bean shapes, hats, tiny scarves), each with simple dot eyes and a smile, all marching together in a jumble like guests arriving at a party. Playful and friendly, never scary, no gore."
+    },
+    {
+      "id": "prop/flu-one",
+      "kind": "prop",
+      "title": "소품 — 독감 바이러스 한 녀석",
+      "cuts": "c07, c11",
+      "ratio": "1:1",
+      "motion": "가운데서 통통 튄다. 한 문장 정리 컷에서는 '독감' 칸에 들어간다.",
+      "desc": "One single cute germ character: a round purple ball with short rounded little spikes all around, big dot eyes, a sly mischievous grin and a tiny red scarf. Playful, a bit cheeky, never scary."
+    },
+    {
+      "id": "prop/flu-one-newcoat",
+      "kind": "prop",
+      "title": "소품 — 독감 바이러스, 새 옷",
+      "cuts": "c07",
+      "ref": "prop/flu-one",
+      "ratio": "1:1",
+      "motion": "'독감 한 녀석'과 번갈아 나오며 옷을 갈아입는 것처럼 보인다.",
+      "desc": "The same purple round germ character with the same face, but now wearing a different outfit: a tiny green striped sweater and a little orange knit hat instead of the red scarf, striking a proud pose. Same size and position as the original."
+    },
+    {
+      "id": "prop/lunchbox-4",
+      "kind": "prop",
+      "title": "소품 — 도시락, 네 칸",
+      "cuts": "c08",
+      "ratio": "4:3",
+      "motion": "화면에 놓여 있다가 한 칸이 비어 간다.",
+      "desc": "A cheerful lunchbox seen from above with FOUR equal square compartments in a 2 by 2 grid, each compartment holding one tiny cute germ character: two in orange (type A) and two in blue (type B), each with dot eyes and a smile. A pastel yellow lunchbox frame with a rounded edge. No text."
+    },
+    {
+      "id": "prop/lunchbox-3",
+      "kind": "prop",
+      "title": "소품 — 도시락, 세 칸",
+      "cuts": "c08",
+      "ref": "prop/lunchbox-4",
+      "ratio": "4:3",
+      "motion": "네 칸 도시락과 번갈아 나오며 한 칸이 사라진 모양. 영상 글자는 '4가 → 3가'.",
+      "desc": "The same pastel yellow lunchbox seen from above, now with THREE compartments: one blue germ character compartment has disappeared, leaving a clean empty space in the grid; the remaining three germ characters (two orange, one blue) look happy and unchanged. Same size and position as the four-compartment version. No text."
+    },
+    {
+      "id": "prop/ferret",
+      "kind": "prop",
+      "title": "소품 — 흰족제비",
+      "cuts": "c06",
+      "ratio": "16:9",
+      "motion": "오른쪽에서 미끄러져 들어와 재채기할 때 몸이 움찔 튄다.",
+      "desc": "A cute white ferret with a long slim body, small ears, a pink nose and black bead eyes, standing on its hind legs with a tissue-like little tuft of cotton beside its nose, mid-sneeze with its eyes squeezed shut and a tiny puff of mist. Playful and adorable, never sick-looking."
+    },
+    {
+      "id": "prop/hygrometer",
+      "kind": "prop",
+      "title": "소품 — 습도계",
+      "cuts": "c09",
+      "ratio": "1:1",
+      "motion": "바늘이 40% 아래로 내려오고, 독감 한 녀석이 공중에 오래 떠다닌다. 숫자는 영상에서 얹는다.",
+      "desc": "A round wall humidity gauge with a cream face and a red needle pointing to the dry end, a bronze rim, and a tiny cartoon water drop with a sad face at the wet end; the dial has only tick marks, no numbers and no letters."
+    },
+    {
+      "id": "prop/thermometer",
+      "kind": "prop",
+      "title": "소품 — 온도계",
+      "cuts": "c10",
+      "ratio": "1:3",
+      "motion": "두 개를 나란히 놓고 영상에서 빨간 눈금을 올린다(왼쪽은 천천히 조금, 오른쪽은 갑자기 높이).",
+      "desc": "A tall slim old-fashioned glass thermometer standing upright, front view, with a round bulb at the bottom and an empty clear tube with only small tick marks (no numbers). A friendly cartoon style. The red mercury is not drawn."
+    },
+    {
+      "id": "full/italy-1743",
+      "kind": "stage",
+      "title": "무대 — 1743년, 별 아래 이탈리아 골목",
+      "cuts": "c05",
+      "motion": "배경이 왼쪽으로 천천히 밀리고, 하늘에서 별이 반짝인다(영상 효과).",
+      "desc": "A narrow old Italian stone alley at dusk in the 1740s, seen straight-on: warm terracotta houses with shuttered windows and flower pots, laundry lines, a lantern glowing on a wall, cobblestones, and a huge sky above filled with big friendly stars and a crescent moon. In the lower third a few villagers in period clothes stand looking up at the sky and pointing, drawn small and charming. Painterly storybook style. No readable text."
+    },
+    {
+      "id": "full/lab-1933",
+      "kind": "stage",
+      "title": "무대 — 1933년, 영국의 연구실",
+      "cuts": "c06",
+      "motion": "배경이 오른쪽으로 천천히 밀리고, 빈 탁자 위로 흰족제비(따로 그린 그림)가 들어온다.",
+      "desc": "A 1930s British laboratory, seen straight-on like a stage set: dark wood benches, glass flasks and test tubes with pale colored liquids, a brass microscope, tall windows with grey English daylight, shelves of jars with blank labels, a chalkboard with only scribbled lines and arrows (no readable text). Two scientists in white coats and round glasses stand small in the left background looking at a bench. In the middle foreground there is an empty clean tabletop where a small animal will be added later. No readable text."
+    },
+    {
+      "id": "full/winter-street",
+      "kind": "stage",
+      "title": "무대 — 겨울 저녁 거리와 창문 닫은 방",
+      "cuts": "c09",
+      "motion": "왼쪽 거리(찬바람)에서 오른쪽 창문 닫힌 방으로 천천히 밀린다. 사람들은 작게.",
+      "desc": "A split-feel winter evening scene seen straight-on. Left half: a cold dusk street with bare trees, a few people in puffy coats and scarves hurrying along, small icy breath clouds, a streetlamp. Right half: a window-closed warm room seen from the outside street through a big window, a heater glowing, people sitting close together at a table with the windows tightly shut and fogged. Pale blue and warm orange tones. The upper right area of the picture is left empty for a gauge to be added later. No readable text."
+    },
+    {
+      "id": "full/next-teaser",
+      "kind": "full",
+      "title": "장면 — 다음 편 예고 (내과 · 외과 간판)",
+      "cuts": "c14, end",
+      "motion": "배경이 위로 천천히 밀린다(건물 간판을 올려다보는 느낌). 간판 글자는 영상에서 얹는다.",
+      "desc": "Looking up at the front of a medical building from the sidewalk in the afternoon: a tall light-colored building with a column of two blank vertical signboards, one with a green cross shape and one with a red cross shape, sticking out from the wall, blank white sign faces for text to be added later, a few pastel windows, a blue sky with soft clouds above. No people, no readable text."
+    }
+  ]
+}

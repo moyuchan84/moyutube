@@ -114,6 +114,8 @@ const block = (ep, item, n, cast) => {
   const ref = refOf(item);
   const attach = [`① \`${ANCHOR}\` (화풍 앵커)`];
   if (ref) attach.push(`② \`${rawRel(ep, ref)}\` (${k.second ? "첫 번째 프레임 — 이 그림을 그대로 다시 그린다" : "같은 사람 유지용 기준 그림"})`);
+  // attach: 기준 그림이 아직 없을 때 대신 보여 줄 그림 (예: 채널 프로필 속 엄마). 경로는 qna/ 기준
+  for (const a of item.attach ?? []) attach.push(`${"②③④"[attach.length - 1]} \`${a.path}\` (${a.label})`);
   const done = findRaw(ep, item.id) ? " ✅" : "";
   const lines = [
     `#### ${n}. ${item.title}${done}`,
@@ -170,7 +172,7 @@ const jobOf = (ep, item, cast) => {
     title: item.title,
     kind: item.kind,
     save: rawRel(ep, item.id),
-    attach: [ANCHOR, ...(ref ? [rawRel(ep, ref)] : [])],
+    attach: [ANCHOR, ...(ref ? [rawRel(ep, ref)] : []), ...(item.attach ?? []).map((a) => a.path)],
     aspect: (item.ratio ?? k.ratio).match(/\d+:\d+/)?.[0] ?? null,
     green: k.green,
     optional: Boolean(item.optional),
@@ -204,7 +206,16 @@ const writeEpisode = (ep) => {
     if (!item) throw new Error(`${ep}: 공통 그림 '${id}' 는 art-common.json 에 없습니다`);
     return `| ${findRaw(null, id) ? "✅" : "⬜"} | ${item.title} | \`${rawRel(null, id)}\` |`;
   });
-  const body = art.items.map((item, i) => block(ep, item, i + 1, art.cast)).join("\n");
+  // 이미 있는 그림은 표로만 남기고, 아직 없는 그림만 프롬프트 전문을 싣는다 (번호는 art.json 순서 그대로)
+  const numbered = art.items.map((item, i) => ({ item, n: i + 1, done: Boolean(findRaw(ep, item.id)) }));
+  const todo = numbered.filter((x) => !x.done);
+  const done = numbered.filter((x) => x.done);
+  const body = todo.length
+    ? todo.map(({ item, n }) => block(ep, item, n, art.cast)).join("\n")
+    : `남은 그림이 없다. \`npm run art -- ${ep}\` 로 처리하고 다음 단계로 넘어간다.\n`;
+  const doneTable = done.length
+    ? `| # | 그림 | 파일 |\n|---|---|---|\n${done.map(({ item, n }) => `| ${n} | ${item.title} | \`${rawRel(ep, item.id)}\` |`).join("\n")}\n`
+    : "아직 없다.\n";
   const jobs = [
     ...(art.common ?? []).map((id) => jobOf(null, common.items.find((c) => c.id === id))),
     ...art.items.map((item) => jobOf(ep, item, art.cast)),
@@ -231,9 +242,16 @@ ${used.join("\n")}
 
 ---
 
-## 1. 이 편의 그림
+## 1. 아직 없는 그림 — ${todo.length}장 (이것만 Gemini 에서 만든다)
 
-${body}`,
+${body}
+---
+
+## 2. 이미 있는 그림 — ${done.length}장 (건너뛴다)
+
+다시 뽑고 싶으면 그 파일을 \`_old/\` 로 옮긴 뒤 \`npm run prompts -- ${ep}\` 를 다시 실행하면 위 목록으로 돌아온다.
+
+${doneTable}`,
   );
 };
 

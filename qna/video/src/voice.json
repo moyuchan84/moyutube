@@ -22,6 +22,15 @@
     },
     {
       "label": "Guest",
+      "name": "엄마",
+      "voice": "Kore",
+      "roles": [
+        "mom"
+      ],
+      "style": "The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding"
+    },
+    {
+      "label": "Guest",
       "name": "할머니",
       "voice": "Gacrux",
       "roles": [
@@ -37,6 +46,42 @@
         "barber"
       ],
       "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+    },
+    {
+      "label": "Guest",
+      "name": "약사 선생님",
+      "voice": "Sulafat",
+      "roles": [
+        "pharmacist"
+      ],
+      "style": "A calm, kind Korean pharmacist woman in her early fifties who has run a small neighborhood pharmacy for twenty years: warm, clear, unhurried voice with a gentle dry humor, precise and reassuring, never stern"
+    },
+    {
+      "label": "Guest",
+      "name": "간호사 선생님",
+      "voice": "Zephyr",
+      "roles": [
+        "nurse"
+      ],
+      "style": "A calm, kind Korean pediatric nurse woman in her early thirties: soft, clear, gentle voice with a warm smile in it, patient and reassuring with children, corrects grown-ups politely with a little playful humor, never stern"
+    },
+    {
+      "label": "Guest",
+      "name": "정형외과 원장님",
+      "voice": "Iapetus",
+      "roles": [
+        "doctor"
+      ],
+      "style": "A calm, kind Korean orthopedic doctor in his mid-fifties who has run a neighborhood clinic for many years: slow, warm, clear middle-low voice with a small amused smile in it, patient and reassuring, corrects grown-ups politely, never stern"
+    },
+    {
+      "label": "Guest",
+      "name": "내과 접수 선생님",
+      "voice": "Achernar",
+      "roles": [
+        "reception"
+      ],
+      "style": "A cheerful Korean clinic receptionist woman in her late twenties: bright, brisk and polite, a friendly helpful voice with a light apologetic smile"
     }
   ],
   "direction": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud.",

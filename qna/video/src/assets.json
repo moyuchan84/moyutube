@@ -55,6 +55,30 @@
     "w": 688,
     "h": 1500
   },
+  "common/mom/normal": {
+    "w": 593,
+    "h": 1500
+  },
+  "common/mom/smirk": {
+    "w": 593,
+    "h": 1500
+  },
+  "common/mom/explain": {
+    "w": 778,
+    "h": 1500
+  },
+  "common/mom/sigh": {
+    "w": 738,
+    "h": 1500
+  },
+  "common/mom/shock": {
+    "w": 838,
+    "h": 1500
+  },
+  "common/mom/explain-b": {
+    "w": 778,
+    "h": 1500
+  },
   "common/cutin/dad-panic": {
     "w": 1218,
     "h": 1300
@@ -73,6 +97,14 @@
   },
   "common/cutin/kid-doubt": {
     "w": 1191,
+    "h": 1300
+  },
+  "common/cutin/mom-smirk": {
+    "w": 1177,
+    "h": 1300
+  },
+  "common/cutin/mom-sigh": {
+    "w": 1254,
     "h": 1300
   },
   "common/bg/living-room": {
@@ -352,6 +384,318 @@
     "h": 1128
   },
   "ep04/full/next-teaser": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep05/bg/pharmacy": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep05/prop/counter-front": {
+    "w": 1048,
+    "h": 431
+  },
+  "ep05/pharmacist/normal": {
+    "w": 433,
+    "h": 1150
+  },
+  "ep05/pharmacist/freeze": {
+    "w": 538,
+    "h": 1148
+  },
+  "ep05/pharmacist/ask": {
+    "w": 493,
+    "h": 1148
+  },
+  "ep05/pharmacist/explain": {
+    "w": 540,
+    "h": 1148
+  },
+  "ep05/pharmacist/explain-b": {
+    "w": 538,
+    "h": 1148
+  },
+  "ep05/pharmacist/smile": {
+    "w": 432,
+    "h": 1148
+  },
+  "ep05/cutin/pharmacist-freeze": {
+    "w": 861,
+    "h": 1024
+  },
+  "ep05/prop/gowns": {
+    "w": 1091,
+    "h": 604
+  },
+  "ep05/prop/nametags": {
+    "w": 1200,
+    "h": 543
+  },
+  "ep05/full/exam-room": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep05/prop/doctor": {
+    "w": 507,
+    "h": 1130
+  },
+  "ep05/prop/prescription": {
+    "w": 841,
+    "h": 870
+  },
+  "ep05/full/medieval-1240": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep05/prop/edict-scroll": {
+    "w": 820,
+    "h": 1200
+  },
+  "ep05/prop/medicine-box": {
+    "w": 1200,
+    "h": 1144
+  },
+  "ep05/full/convenience-night": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep05/full/crimea-1854": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep05/prop/nightingale": {
+    "w": 713,
+    "h": 1200
+  },
+  "ep05/prop/rose-chart": {
+    "w": 1186,
+    "h": 1200
+  },
+  "ep05/full/hospital-hall": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep05/prop/nurse-modern": {
+    "w": 601,
+    "h": 1200
+  },
+  "ep05/prop/stethoscope": {
+    "w": 1198,
+    "h": 1200
+  },
+  "ep05/prop/medicine-bag": {
+    "w": 938,
+    "h": 1200
+  },
+  "ep05/prop/thermometer": {
+    "w": 1162,
+    "h": 1200
+  },
+  "ep05/prop/temp-memo": {
+    "w": 1200,
+    "h": 1083
+  },
+  "ep05/full/next-teaser": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep06/bg/clinic-waiting": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep06/bg/injection-room": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep06/nurse/normal": {
+    "w": 672,
+    "h": 1500
+  },
+  "ep06/nurse/tray": {
+    "w": 708,
+    "h": 1500
+  },
+  "ep06/nurse/correct": {
+    "w": 750,
+    "h": 1500
+  },
+  "ep06/nurse/correct-b": {
+    "w": 750,
+    "h": 1500
+  },
+  "ep06/nurse/smile": {
+    "w": 679,
+    "h": 1500
+  },
+  "ep06/cutin/nurse-correct": {
+    "w": 1222,
+    "h": 1300
+  },
+  "ep06/prop/vaccine-poster": {
+    "w": 864,
+    "h": 1200
+  },
+  "ep06/prop/bear-doll": {
+    "w": 892,
+    "h": 1200
+  },
+  "ep06/prop/med-bag": {
+    "w": 883,
+    "h": 1200
+  },
+  "ep06/prop/cold-crowd": {
+    "w": 1200,
+    "h": 663
+  },
+  "ep06/prop/flu-one": {
+    "w": 1166,
+    "h": 1200
+  },
+  "ep06/prop/flu-one-newcoat": {
+    "w": 1106,
+    "h": 1200
+  },
+  "ep06/prop/lunchbox-4": {
+    "w": 1200,
+    "h": 1182
+  },
+  "ep06/prop/lunchbox-3": {
+    "w": 1200,
+    "h": 1182
+  },
+  "ep06/prop/ferret": {
+    "w": 897,
+    "h": 1200
+  },
+  "ep06/prop/hygrometer": {
+    "w": 1198,
+    "h": 1200
+  },
+  "ep06/prop/thermometer": {
+    "w": 261,
+    "h": 1200
+  },
+  "ep06/full/italy-1743": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep06/full/lab-1933": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep06/full/winter-street": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep06/full/next-teaser": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep07/bg/building-front": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep07/bg/elevator": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep07/bg/im-reception": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep07/bg/ortho-waiting": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep07/bg/ortho-room": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep07/bg/lobby": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep07/kid/bandage": {
+    "w": 602,
+    "h": 1500
+  },
+  "ep07/reception/point-down": {
+    "w": 1059,
+    "h": 1500
+  },
+  "ep07/doctor/normal": {
+    "w": 721,
+    "h": 1500
+  },
+  "ep07/doctor/xray": {
+    "w": 931,
+    "h": 1500
+  },
+  "ep07/doctor/correct": {
+    "w": 840,
+    "h": 1500
+  },
+  "ep07/doctor/hands": {
+    "w": 873,
+    "h": 1500
+  },
+  "ep07/cutin/doctor-correct": {
+    "w": 1300,
+    "h": 1285
+  },
+  "ep07/prop/floor-directory": {
+    "w": 796,
+    "h": 1200
+  },
+  "ep07/prop/counter": {
+    "w": 710,
+    "h": 516
+  },
+  "ep07/prop/xray-wrist": {
+    "w": 925,
+    "h": 1200
+  },
+  "ep07/prop/skeleton": {
+    "w": 469,
+    "h": 827
+  },
+  "ep07/prop/pill-hand": {
+    "w": 1200,
+    "h": 916
+  },
+  "ep07/prop/belly-map": {
+    "w": 1167,
+    "h": 1200
+  },
+  "ep07/full/london-1745": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep07/prop/barber-pole": {
+    "w": 575,
+    "h": 1200
+  },
+  "ep07/prop/dept-tree": {
+    "w": 1200,
+    "h": 1038
+  },
+  "ep07/prop/sign-compare": {
+    "w": 1200,
+    "h": 354
+  },
+  "ep07/prop/hospital-stairs": {
+    "w": 1200,
+    "h": 640
+  },
+  "ep07/prop/referral-letter": {
+    "w": 1200,
+    "h": 1058
+  },
+  "ep07/full/night-er": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep07/full/next-teaser": {
     "w": 2560,
     "h": 1440
   }

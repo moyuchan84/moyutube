@@ -16,7 +16,23 @@ export type Line = {
   a?: string;
   b?: string;
   end?: boolean;
+  dur?: number;
+  // 영상툰 연출
+  scene?: string;
+  cam?: string;
+  pose?: Record<string, string>;
+  dmg?: Record<string, number>;
+  hit?: string;
+  sfx?: string;
+  sound?: string;
+  face?: Record<string, number>; // 인물별 표정 번호(1~6)
+  act?: Record<string, string>; // 인물별 몸 연기 이름 (src/toon3d/acts.ts)
+  think?: boolean; // 속마음 (입은 안 움직이고 생각 풍선으로)
+  chart?: Chart | null; // 차트 창 (null 이면 닫는다). 다음 지정 전까지 유지
 };
+
+// 차트 창: 같은 label 이 이어지면 앞 차트 끝점부터 새 구간만 그린다. pts 는 첫 값 대비 상대값
+export type Chart = { label: string; pts: number[]; note?: string };
 
 export type Beat = Line & {
   index: number;
@@ -31,11 +47,12 @@ export type EpisodeId = keyof typeof episodes;
 export const buildTimeline = (id: EpisodeId) => {
   const ep = episodes[id];
   const t = (timings as Record<string, { file: string | null; dur: number }[]>)[id] ?? [];
+  const gap = (ep as { gap?: number }).gap ?? GAP; // 편마다 템포를 바꿀 수 있다
   let cursor = Math.round(LEAD_IN * FPS);
   const beats: Beat[] = (ep.lines as Line[]).map((line, index) => {
     const dur = t[index]?.dur ?? 1.5;
     const speak = Math.ceil(dur * FPS);
-    const length = speak + Math.round(((line.pauseAfter ?? 0) + GAP) * FPS);
+    const length = speak + Math.round(((line.pauseAfter ?? 0) + gap) * FPS);
     const beat = { ...line, index, from: cursor, speak, length, audio: t[index]?.file ?? null };
     cursor += length;
     return beat;

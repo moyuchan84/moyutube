@@ -1,0 +1,21 @@
+{
+  "fps": 30,
+  "bpm": 90,
+  "asOf": "2026-10-16",
+  "exam": "2026-11-19",
+  "scenes": [
+    { "id": "hook", "from": 0, "dur": 120 },
+    { "id": "total", "from": 120, "dur": 210 },
+    { "id": "nsu", "from": 330, "dur": 240 },
+    { "id": "history", "from": 570, "dur": 330 },
+    { "id": "absent", "from": 900, "dur": 180 },
+    { "id": "tamgu", "from": 1080, "dur": 210 },
+    { "id": "rules", "from": 1290, "dur": 210 },
+    { "id": "last", "from": 1500, "dur": 180 },
+    { "id": "outro", "from": 1680, "dur": 120 }
+  ],
+  "total": 1800,
+  "hits": [44, 290, 470, 710, 800, 990, 1200, 1400, 1560],
+  "quiet": [900, 1080],
+  "bell": 1690
+}

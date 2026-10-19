@@ -16,6 +16,8 @@ const items = new Map([...common.items, ...art.items].map((i) => [i.id, i]));
 const W = 1920, H = 1080, FLOOR = 0.8;
 const HEIGHT = { dad: 0.64, kid: 0.43, granny: 0.5 };
 const WHO = { narr: "나레이션", docu: "다큐 톤", dad: "아빠", kid: "아이", granny: "할머니", barber: "할아버지" };
+// 그 밖의 손님은 voice.json 의 이름을 쓴다 (약사 선생님 등)
+for (const sp of JSON.parse(readFileSync(join(VIDEO, "src", "voice.json"), "utf8")).speakers) if (sp.name) for (const r of sp.roles) WHO[r] ??= sp.name;
 const COLOR = { dad: "#C9A227", kid: "#B8352A", granny: "#7B4FA0", barber: "#4F7CA8" };
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 

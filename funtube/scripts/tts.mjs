@@ -12,7 +12,7 @@ const TIMINGS = path.join(ROOT, "src/generated/timings.json");
 const ROOT_ENV = path.resolve(ROOT, "../.env");
 const fromRootEnv = (name) =>
   fs.existsSync(ROOT_ENV) ? fs.readFileSync(ROOT_ENV, "utf8").match(new RegExp(`^\\s*${name}\\s*=\\s*"?([^"\\s]+)`, "m"))?.[1] : undefined;
-const API_KEY = process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY || fromRootEnv("GEMINI_API_KEY");
+const API_KEY = process.env.TTS_DRY ? undefined : process.env.GEMINI_API_KEY || process.env.GOOGLE_API_KEY || fromRootEnv("GEMINI_API_KEY");
 const MODEL = process.env.GEMINI_TTS_MODEL || "gemini-2.5-flash-preview-tts";
 const RATE = 24000; // Gemini TTS 출력: 24kHz 16bit mono PCM
 
@@ -87,6 +87,21 @@ synth("ding", 0.6, (t, p) => (sin(1046, t) + 0.5 * sin(1568, t)) * 0.6 * (1 - p)
 synth("boom", 0.9, (t, p) => (sin(70 - 30 * p, t) + 0.3 * (Math.random() * 2 - 1) * (1 - p) ** 6) * (1 - p) ** 1.5);
 synth("crinkle", 1.2, (t, p) => (Math.random() * 2 - 1) * (Math.random() < 0.25 ? 0.9 : 0.15) * (0.6 + 0.4 * sin(7, t)));
 synth("whoosh", 0.4, (t, p) => (Math.random() * 2 - 1) * Math.sin(Math.PI * p) * 0.5);
+
+synth("punch", 0.35, (t, p) => (sin(110 - 60 * p, t) * 1.2 + (Math.random() * 2 - 1) * (1 - p) ** 8) * (1 - p) ** 2);
+synth("powerup", 1.0, (t, p) => (sin(120 + 700 * p * p, t) + 0.5 * sin(240 + 1400 * p * p, t)) * Math.min(1, p * 6) * (1 - p ** 6) * 0.6);
+
+// 콩트용 사운드 디자인 (차 안)
+synth("door", 0.3, (t, p) => (sin(95 - 35 * p, t) + 0.5 * (Math.random() * 2 - 1) * (1 - p) ** 6) * (1 - p) ** 2);
+synth("blinker", 1.2, (t) => { const k = Math.floor(t / 0.3); const x = t - k * 0.3; return x < 0.05 ? sin(k % 2 ? 1250 : 1800, t) * (1 - x / 0.05) : 0; });
+synth("chime", 0.9, (t) => (t < 0.3 ? sin(880, t) * (1 - t / 0.3) ** 1.5 : sin(660, t) * (1 - (t - 0.3) / 0.6) ** 1.5) * 0.7);
+synth("heart", 1.6, (t) => [0, 0.3, 0.9, 1.2].reduce((m, b) => (t >= b && t < b + 0.22 ? m + sin(52, t) * (1 - (t - b) / 0.22) ** 2 : m), 0));
+synth("away", 2.4, (t, p) => ((Math.random() * 2 - 1) * 0.3 * Math.sqrt(Math.sin(Math.PI * p)) + sin(110 - 55 * p, t) * 0.4) * (1 - p));
+synth("engine", 2.0, (t) => (sin(48, t) + 0.5 * sin(96, t) + 0.3 * sin(144, t)) * (1 + 0.15 * sin(12, t)) * 0.45);
+// 투자편: 정체 구간 경적 (빵빵)
+synth("horn", 0.7, (t) => (t < 0.18 || (t > 0.3 && t < 0.62) ? (sin(415, t) + sin(523, t)) * 0.45 * Math.sign(sin(415, t)) : 0));
+// 사무실편: 키보드 타닥타닥
+synth("typing", 2.0, (t) => { const k = Math.floor(t / 0.085); const x = t - k * 0.085; return Math.sin(k * 12.9898) * 43758.5453 % 1 > -0.2 && x < 0.012 ? (Math.random() * 2 - 1) * (1 - x / 0.012) : 0; });
 
 // ---- 대사 음성 ----
 const estimate = (text) => 0.45 + [...text].length * 0.13;

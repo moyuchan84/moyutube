@@ -1,0 +1,1327 @@
+{
+  "rawVoice": true,
+  "speed": 1.15,
+  "title": "감기 · 독감, 뭐가 달라요?",
+  "bgm": "cheerful",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "0. 지금 상황",
+      "scene": {
+        "bg": "bg/injection-room",
+        "actors": [
+          {
+            "id": "nurse",
+            "art": "nurse/tray",
+            "x": 0.17,
+            "idle": "sway"
+          },
+          {
+            "id": "mom",
+            "art": "common/mom/normal",
+            "x": 0.36
+          },
+          {
+            "id": "kid",
+            "art": "common/kid/normal",
+            "x": 0.57
+          },
+          {
+            "id": "dad",
+            "art": "common/dad/panic",
+            "x": 0.8,
+            "idle": "shiver"
+          }
+        ]
+      },
+      "lines": [
+        {
+          "who": "narr",
+          "text": "지금 저는 소아과 주사실 앞에 서 있습니다.",
+          "en": "Right now I’m standing outside the injection room at a pediatric clinic."
+        },
+        {
+          "who": "narr",
+          "text": "주사는 아이가 맞을 건데, 따끔한 건 저희 부부예요. 지금 점수, 아빠 일 점, 엄마 일 점.",
+          "en": "The kid is the one getting the shot, but it’s the two of us who feel the sting. Current score: Dad 1, Mom 1.",
+          "pop": "아빠 1 : 엄마 1"
+        },
+        {
+          "who": "nurse",
+          "text": "아버님, 이 주사는 감기는 못 막아요.",
+          "en": "Sir, this shot can’t stop colds.",
+          "focus": "nurse",
+          "cutin": "cutin/nurse-correct",
+          "fx": "zoom"
+        },
+        {
+          "who": "narr",
+          "text": "네. 그게 첫 번째 점수였습니다.",
+          "en": "Yes. That was the first point."
+        },
+        {
+          "who": "narr",
+          "text": "10분 전으로 돌아가 보겠습니다.",
+          "en": "Let’s rewind ten minutes.",
+          "tts": "십 분 전으로 돌아가 보겠습니다.",
+          "pop": "10분 전",
+          "sfx": "rewind",
+          "fx": "flash"
+        }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "1. 그 질문",
+      "scene": {
+        "bg": "bg/clinic-waiting",
+        "props": [
+          {
+            "art": "prop/vaccine-poster",
+            "x": 0.5,
+            "y": 0.3,
+            "w": 0.22
+          }
+        ],
+        "actors": [
+          {
+            "id": "kid",
+            "art": "common/kid/normal",
+            "x": 0.45,
+            "enter": "right",
+            "idle": "bounce"
+          },
+          {
+            "id": "dad",
+            "art": "common/dad/normal",
+            "x": 0.72,
+            "enter": "right"
+          },
+          {
+            "id": "mom",
+            "art": "common/mom/normal",
+            "x": 0.9,
+            "at": 2,
+            "enter": "right"
+          }
+        ]
+      },
+      "lines": [
+        {
+          "who": "narr",
+          "text": "10월, 아이 독감 예방접종 날이었습니다. 동네 소아과 대기실은 팔을 걷은 아이들로 꽉 차 있었어요.",
+          "en": "It was October, flu-shot day for kids. The waiting room was packed with children rolling up their sleeves.",
+          "tts": "시월, 아이 독감 예방접종 날이었습니다. 동네 소아과 대기실은 팔을 걷은 아이들로 꽉 차 있었어요."
+        },
+        {
+          "who": "narr",
+          "text": "퇴근길에 엄마도 합류했습니다. 회사 가방에 약 봉투를 넣은 채로요.",
+          "en": "Mom joined us straight from work, with a medicine bag tucked in her work bag."
+        },
+        {
+          "who": "narr",
+          "text": "벽에 붙은 포스터를 한참 보던 아이가 물었습니다.",
+          "en": "After staring at the poster on the wall for a while, my kid asked."
+        },
+        {
+          "who": "kid",
+          "text": "아빠, 독감 주사 맞으면 이제 감기 안 걸려요?",
+          "en": "Dad, if I get the flu shot, will I stop catching colds?",
+          "pose": {
+            "kid": "common/kid/ask"
+          },
+          "act": {
+            "kid": "jump"
+          },
+          "focus": "kid",
+          "cutin": "common/cutin/kid-ask",
+          "fx": "zoom"
+        },
+        {
+          "who": "kid",
+          "text": "독감은 독한 감기잖아요.",
+          "en": "Flu is just a strong cold, right?",
+          "pose": {
+            "kid": "common/kid/ask"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "2. 얼버무린 순간",
+      "scene": {
+        "bg": "bg/clinic-waiting",
+        "props": [
+          {
+            "art": "prop/vaccine-poster",
+            "x": 0.5,
+            "y": 0.3,
+            "w": 0.22
+          }
+        ],
+        "actors": [
+          {
+            "id": "kid",
+            "art": "common/kid/ask",
+            "x": 0.4
+          },
+          {
+            "id": "dad",
+            "art": "common/dad/explain",
+            "x": 0.66
+          },
+          {
+            "id": "mom",
+            "art": "common/mom/normal",
+            "x": 0.88
+          },
+          {
+            "id": "nurse",
+            "art": "nurse/tray",
+            "x": 0.14,
+            "at": 3,
+            "enter": "left"
+          }
+        ]
+      },
+      "lines": [
+        {
+          "who": "dad",
+          "text": "그럼! 독감은 감기 중에 제일 센 거야. 제일 센 걸 막으면, 나머지는 다 막히지.",
+          "en": "Of course! Flu is the strongest kind of cold. Stop the strongest one and the rest get blocked too.",
+          "focus": "dad",
+          "cutin": "common/cutin/dad-proud",
+          "fx": "zoom"
+        },
+        {
+          "who": "narr",
+          "text": "꽤 그럴듯했습니다. 제 귀에는요.",
+          "en": "It sounded pretty convincing. To my ears, anyway."
+        },
+        {
+          "who": "narr",
+          "text": "그 순간, 주사 쟁반을 든 간호사 선생님이 제 옆에 서 계셨습니다.",
+          "en": "Just then, a nurse holding an injection tray was standing right beside me."
+        },
+        {
+          "who": "nurse",
+          "text": "아버님, 이 주사는 감기는 못 막아요. 독감만 막아요.",
+          "en": "Sir, this shot can’t stop colds. It only stops the flu.",
+          "pose": {
+            "nurse": "nurse/correct"
+          },
+          "focus": "nurse",
+          "cutin": "cutin/nurse-correct",
+          "fx": "zoom",
+          "sfx": "stinger"
+        },
+        {
+          "who": "narr",
+          "text": "따끔, 적립됐습니다.",
+          "en": "Sting. Point logged.",
+          "pop": "아빠 +1",
+          "sfx": "pop",
+          "pose": {
+            "dad": "common/dad/panic"
+          },
+          "fx": "flash"
+        }
+      ]
+    },
+    {
+      "id": "c02b",
+      "beat": "2. 얼버무린 순간",
+      "scene": {
+        "bg": "bg/clinic-waiting",
+        "props": [
+          {
+            "art": "prop/vaccine-poster",
+            "x": 0.5,
+            "y": 0.3,
+            "w": 0.22
+          }
+        ],
+        "actors": [
+          {
+            "id": "nurse",
+            "art": "nurse/correct",
+            "x": 0.18
+          },
+          {
+            "id": "kid",
+            "art": "common/kid/ask",
+            "x": 0.45
+          },
+          {
+            "id": "dad",
+            "art": "common/dad/panic",
+            "x": 0.72,
+            "idle": "shiver"
+          },
+          {
+            "id": "mom",
+            "art": "common/mom/smirk",
+            "x": 0.9
+          }
+        ]
+      },
+      "lines": [
+        {
+          "who": "kid",
+          "text": "그럼 감기 주사는요?",
+          "en": "Then what about a cold shot?",
+          "pose": {
+            "kid": "common/kid/ask"
+          }
+        },
+        {
+          "who": "nurse",
+          "text": "감기 주사는… 없어요.",
+          "en": "There’s no shot for colds.",
+          "pose": {
+            "nurse": "nurse/normal"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c02c",
+      "beat": "2. 얼버무린 순간",
+      "scene": {
+        "bg": "bg/clinic-waiting",
+        "props": [
+          {
+            "art": "prop/vaccine-poster",
+            "x": 0.5,
+            "y": 0.3,
+            "w": 0.22
+          }
+        ],
+        "actors": [
+          {
+            "id": "kid",
+            "art": "common/kid/ask",
+            "x": 0.4
+          },
+          {
+            "id": "dad",
+            "art": "common/dad/panic",
+            "x": 0.64
+          },
+          {
+            "id": "mom",
+            "art": "common/mom/normal",
+            "x": 0.86,
+            "idle": "sway"
+          }
+        ]
+      },
+      "lines": [
+        {
+          "who": "narr",
+          "text": "아이는 이번에 엄마를 봤습니다.",
+          "en": "This time my kid turned to look at Mom."
+        },
+        {
+          "who": "kid",
+          "text": "엄마, 엄마는 감기 걸리면 어떻게 해?",
+          "en": "Mom, what do you do when you catch a cold?",
+          "pose": {
+            "kid": "common/kid/ask"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c02d",
+      "beat": "2. 얼버무린 순간",
+      "scene": {
+        "bg": "bg/clinic-waiting",
+        "props": [
+          {
+            "art": "prop/vaccine-poster",
+            "x": 0.5,
+            "y": 0.3,
+            "w": 0.22
+          },
+          {
+            "art": "prop/med-bag",
+            "x": 0.93,
+            "y": 0.8,
+            "w": 0.12,
+            "motion": "sway"
+          }
+        ],
+        "actors": [
+          {
+            "id": "kid",
+            "art": "common/kid/normal",
+            "x": 0.4
+          },
+          {
+            "id": "dad",
+            "art": "common/dad/think",
+            "x": 0.64
+          },
+          {
+            "id": "mom",
+            "art": "common/mom/explain",
+            "x": 0.84
+          }
+        ]
+      },
+      "lines": [
+        {
+          "who": "mom",
+          "text": "엄마는 약 먹지. 약 먹으면 낫잖아.",
+          "en": "I take medicine. Medicine makes you better, right?",
+          "focus": "mom",
+          "cutin": "common/cutin/mom-smirk",
+          "fx": "zoom"
+        },
+        {
+          "who": "narr",
+          "text": "엄마는 자신 있었습니다. 간호사 선생님이 웃으셨고요.",
+          "en": "Mom was confident. The nurse smiled."
+        }
+      ]
+    },
+    {
+      "id": "c02e",
+      "beat": "2. 얼버무린 순간",
+      "scene": {
+        "bg": "bg/clinic-waiting",
+        "props": [
+          {
+            "art": "prop/vaccine-poster",
+            "x": 0.5,
+            "y": 0.3,
+            "w": 0.22
+          },
+          {
+            "art": "prop/med-bag",
+            "x": 0.93,
+            "y": 0.8,
+            "w": 0.12,
+            "motion": "pulse"
+          }
+        ],
+        "actors": [
+          {
+            "id": "nurse",
+            "art": "nurse/correct",
+            "x": 0.16,
+            "idle": "sway"
+          },
+          {
+            "id": "kid",
+            "art": "common/kid/normal",
+            "x": 0.42
+          },
+          {
+            "id": "dad",
+            "art": "common/dad/proud",
+            "x": 0.64
+          },
+          {
+            "id": "mom",
+            "art": "common/mom/sigh",
+            "x": 0.86
+          }
+        ]
+      },
+      "lines": [
+        {
+          "who": "nurse",
+          "text": "어머님, 감기약은 콧물이나 기침 같은 힘든 걸 잠깐 덜어 줄 수는 있어요. 그런데 감기를 낫게 하진 못해요. 항생제도 감기엔 안 듣고요.",
+          "en": "Ma’am, cold medicine can ease things like a runny nose or a cough for a while. But it can’t cure a cold. And antibiotics don’t work on colds either.",
+          "focus": "nurse",
+          "cutin": "cutin/nurse-correct",
+          "fx": "zoom"
+        },
+        {
+          "who": "narr",
+          "text": "따끔, 적립됐습니다.",
+          "en": "Sting. Point logged.",
+          "pop": "엄마 +1",
+          "sfx": "pop",
+          "fx": "flash"
+        }
+      ]
+    },
+    {
+      "id": "c02f",
+      "beat": "2. 얼버무린 순간",
+      "scene": {
+        "bg": "bg/clinic-waiting",
+        "props": [
+          {
+            "art": "prop/vaccine-poster",
+            "x": 0.5,
+            "y": 0.3,
+            "w": 0.22
+          }
+        ],
+        "actors": [
+          {
+            "id": "nurse",
+            "art": "nurse/normal",
+            "x": 0.18,
+            "idle": "sway"
+          },
+          {
+            "id": "kid",
+            "art": "common/kid/ask",
+            "x": 0.45
+          },
+          {
+            "id": "dad",
+            "art": "common/dad/think",
+            "x": 0.68
+          },
+          {
+            "id": "mom",
+            "art": "common/mom/normal",
+            "x": 0.88
+          }
+        ]
+      },
+      "lines": [
+        {
+          "who": "kid",
+          "text": "그럼 감기는 뭐가 낫게 해요?",
+          "en": "Then what makes a cold go away?",
+          "pose": {
+            "kid": "common/kid/ask"
+          }
+        },
+        {
+          "who": "nurse",
+          "text": "몸이요. 우리 몸이요.",
+          "en": "Your body. Our own bodies.",
+          "pose": {
+            "nurse": "nurse/smile"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "3. 왜 다들 헷갈리나",
+      "scene": {
+        "bg": "bg/clinic-waiting",
+        "props": [
+          {
+            "art": "prop/bear-doll",
+            "x": 0.5,
+            "y": 0.74,
+            "w": 0.34,
+            "front": true
+          }
+        ],
+        "actors": [
+          {
+            "id": "dad",
+            "art": "common/dad/search",
+            "x": 0.5
+          }
+        ]
+      },
+      "lines": [
+        {
+          "who": "narr",
+          "text": "저는 대기실 구석, 제 키만 한 곰인형 뒤로 가서 휴대폰을 켰습니다.",
+          "en": "I slipped behind a teddy bear as tall as me in the corner of the waiting room and turned on my phone."
+        },
+        {
+          "who": "docu",
+          "text": "아빠라는 생물은, 궁지에 몰리면, 곰 뒤에서도 검색을 한다.",
+          "en": "The creature called Dad, when cornered, will search even from behind a bear.",
+          "sfx": "dudung"
+        },
+        {
+          "who": "narr",
+          "text": "헷갈릴 만은 했습니다. 이름부터 독한 감기처럼 들리잖아요.",
+          "en": "To be fair, it was easy to mix up. Even the name sounds like a strong cold."
+        },
+        {
+          "who": "narr",
+          "text": "둘 다 겨울에 오고, 둘 다 기침을 하고, 둘 다 열이 납니다.",
+          "en": "Both come in winter, both make you cough, both give you a fever."
+        },
+        {
+          "who": "narr",
+          "text": "그래서 오늘은 어느 쪽이 더 센지 말고, 딱 하나만 봅니다.",
+          "en": "So today, forget which one is stronger. Let’s look at just one thing."
+        },
+        {
+          "who": "narr",
+          "text": "누가 일으키는가.",
+          "en": "Who causes it?",
+          "pop": "범인은 누구?",
+          "sfx": "stinger"
+        }
+      ]
+    },
+    {
+      "id": "c03b",
+      "beat": "3. 왜 다들 헷갈리나",
+      "scene": {
+        "bg": "bg/clinic-waiting",
+        "props": [
+          {
+            "art": "prop/bear-doll",
+            "x": 0.5,
+            "y": 0.74,
+            "w": 0.34,
+            "front": true
+          }
+        ],
+        "actors": [
+          {
+            "id": "dad",
+            "art": "common/dad/search",
+            "x": 0.5
+          },
+          {
+            "id": "nurse",
+            "art": "nurse/normal",
+            "x": 0.14,
+            "enter": "left"
+          }
+        ]
+      },
+      "lines": [
+        {
+          "who": "nurse",
+          "text": "다음 어린이, 들어오세요!",
+          "en": "Next child, please come in!",
+          "sfx": "dudung"
+        },
+        {
+          "who": "narr",
+          "text": "곰인형이 옆으로 쓰러졌습니다.",
+          "en": "The teddy bear toppled over.",
+          "fx": "shake"
+        }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "4. 갈라진 지점",
+      "scene": {
+        "bg": "bg/clinic-waiting",
+        "props": [
+          {
+            "art": "prop/cold-crowd",
+            "x": -0.2,
+            "y": 0.66,
+            "w": 0.46,
+            "motion": "walk",
+            "to": {
+              "x": 1.2
+            }
+          }
+        ],
+        "actors": [
+          {
+            "id": "dad",
+            "art": "common/dad/explain",
+            "x": 0.5,
+            "idle": "sway"
+          }
+        ]
+      },
+      "lines": [
+        {
+          "who": "narr",
+          "text": "주사실로 걸어가는 동안 읽은 것부터.",
+          "en": "First, what I read on the walk to the injection room."
+        },
+        {
+          "who": "narr",
+          "text": "감기는 병 하나의 이름이 아닙니다. 코와 목에 들어와서 콧물 나고 목 아프게 하는 바이러스를 통틀어 부르는 말이에요.",
+          "en": "A cold isn’t the name of a single illness. It’s a catch-all word for the viruses that get into your nose and throat and give you a runny nose and a sore throat."
+        },
+        {
+          "who": "narr",
+          "text": "그 바이러스가, 200가지가 넘습니다.",
+          "en": "There are more than two hundred of those viruses.",
+          "tts": "그 바이러스가, 이백 가지가 넘습니다.",
+          "pop": "200+",
+          "sfx": "stinger"
+        },
+        {
+          "who": "narr",
+          "text": "그중 절반쯤은 리노바이러스라는 녀석들인데, 이 녀석들만 해도 백오십 가지가 넘어요.",
+          "en": "About half are viruses called rhinoviruses, and those alone come in over a hundred and fifty kinds."
+        },
+        {
+          "who": "narr",
+          "text": "이 손님들은 주로 바이러스가 묻은 손으로 코나 입이나 눈을 만질 때 들어옵니다. 그래서 손 씻기가 제일 쉬운 문단속이에요.",
+          "en": "These guests mostly get in when a virus-covered hand touches your nose, mouth or eyes. That’s why washing your hands is the easiest way to lock the door."
+        },
+        {
+          "who": "narr",
+          "text": "감기는 대개 슬금슬금 옵니다. 콧물, 재채기, 목이 칼칼하고, 열은 없거나 조금. 그리고 일이 주 지나면 대부분 저절로 낫죠.",
+          "en": "Colds usually creep in: a runny nose, sneezing, a scratchy throat, little or no fever. And within a week or two most go away on their own."
+        },
+        {
+          "who": "narr",
+          "text": "감기 주사가 없는 이유도 여기 있습니다. 범인이 수백 가지에, 해마다 몰려오는 녀석들이 바뀌니까 어느 녀석을 막을지 고를 수가 없어요.",
+          "en": "That’s also why there’s no cold shot. With hundreds of culprits, and a different crowd each year, there’s no way to pick which one to block."
+        }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "4. 갈라진 지점",
+      "caption": "1743년 · 이탈리아",
+      "scene": {
+        "bg": "full/italy-1743",
+        "pan": "left"
+      },
+      "lines": [
+        {
+          "who": "narr",
+          "text": "그럼 독감은. 이름 이야기부터 하면, 영어로는 인플루엔자.",
+          "en": "Now, the flu. Starting with the name: in English, “influenza.”"
+        },
+        {
+          "who": "narr",
+          "text": "이탈리아 말로 영향이라는 뜻입니다.",
+          "en": "In Italian, it means “influence.”"
+        },
+        {
+          "who": "narr",
+          "text": "옛날 이탈리아 사람들은, 이렇게 한꺼번에 퍼지는 병을 별의 영향이라고 믿었거든요.",
+          "en": "Long ago, Italians believed an illness that spread to everyone at once was the influence of the stars."
+        },
+        {
+          "who": "narr",
+          "text": "1743년, 이탈리아에서 시작된 유행이 유럽으로 번지면서, 이 이름이 영어에 들어갑니다. 줄여서 플루.",
+          "en": "In 1743, an outbreak that began in Italy spread across Europe, and the name entered English. Shortened, it became “flu.”",
+          "tts": "천칠백사십삼 년, 이탈리아에서 시작된 유행이 유럽으로 번지면서, 이 이름이 영어에 들어갑니다. 줄여서 플루.",
+          "pop": "1743",
+          "sfx": "page"
+        },
+        {
+          "who": "narr",
+          "text": "별 탓을 하던 병의 진짜 범인은, 그로부터 190년 뒤에야 잡힙니다.",
+          "en": "The real culprit behind the star-blamed illness would not be caught until 190 years later.",
+          "tts": "별 탓을 하던 병의 진짜 범인은, 그로부터 백구십 년 뒤에야 잡힙니다."
+        }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "4. 갈라진 지점",
+      "caption": "1933년 · 영국",
+      "scene": {
+        "bg": "full/lab-1933",
+        "pan": "right",
+        "props": [
+          {
+            "art": "prop/ferret",
+            "x": 0.3,
+            "y": 0.66,
+            "w": 0.2,
+            "enter": "right",
+            "at": 1,
+            "motion": "sway"
+          }
+        ]
+      },
+      "lines": [
+        {
+          "who": "narr",
+          "text": "1933년 영국. 연구자들이 독감 환자의 목을 헹군 물을 걸러서, 흰족제비 코에 넣어 봅니다.",
+          "en": "Britain, 1933. Researchers filter the water used to rinse a flu patient’s throat and put it in a ferret’s nose.",
+          "tts": "천구백삼십삼 년 영국. 연구자들이 독감 환자의 목을 헹군 물을 걸러서, 흰족제비 코에 넣어 봅니다.",
+          "pop": "1933",
+          "sfx": "page"
+        },
+        {
+          "who": "narr",
+          "text": "흰족제비가, 사람처럼 독감에 걸렸어요. 재채기까지 하면서요.",
+          "en": "The ferret caught the flu just like a person. Sneezing and all.",
+          "sfx": "pang"
+        },
+        {
+          "who": "narr",
+          "text": "그렇게 처음으로, 독감을 일으키는 범인이 하나로 잡힙니다. 인플루엔자 바이러스.",
+          "en": "And so, for the first time, the culprit behind the flu was caught, and it was one: the influenza virus."
+        }
+      ]
+    },
+    {
+      "id": "c07",
+      "beat": "4. 갈라진 지점",
+      "scene": {
+        "bg": "bg/clinic-waiting",
+        "props": [
+          {
+            "art": "prop/flu-one",
+            "x": 0.5,
+            "y": 0.52,
+            "w": 0.2,
+            "motion": "pulse"
+          },
+          {
+            "art": "prop/flu-one-newcoat",
+            "x": 0.5,
+            "y": 0.52,
+            "w": 0.2,
+            "at": 3,
+            "enter": "pop",
+            "motion": "pulse"
+          }
+        ],
+        "actors": [
+          {
+            "id": "dad",
+            "art": "common/dad/explain",
+            "x": 0.8,
+            "idle": "sway"
+          },
+          {
+            "id": "kid",
+            "art": "common/kid/normal",
+            "x": 0.22
+          }
+        ]
+      },
+      "lines": [
+        {
+          "who": "narr",
+          "text": "범인이 하나라는 건, 그 녀석만 겨냥한 주사를 만들 수 있다는 뜻입니다. 그게 오늘 아이가 맞는 독감 주사예요.",
+          "en": "One culprit means you can make a shot aimed at just that one. That’s the flu shot my kid is getting today."
+        },
+        {
+          "who": "narr",
+          "text": "그런데 이 녀석이 좀 얄밉습니다. 해마다 조금씩 옷을 갈아입어요.",
+          "en": "But this one is a bit sneaky. Every year it changes its outfit a little."
+        },
+        {
+          "who": "narr",
+          "text": "그래서 해마다 세계보건기구가 올겨울엔 어떤 옷을 입고 올지 골라 두고, 거기에 맞춰 백신을 새로 만듭니다. 독감 주사를 해마다 맞는 이유죠.",
+          "en": "So every year the World Health Organization picks which outfits it expects this winter, and new vaccines are made to match. That’s why we get a flu shot every year.",
+          "sfx": "page"
+        }
+      ]
+    },
+    {
+      "id": "c08",
+      "beat": "4. 갈라진 지점",
+      "scene": {
+        "bg": "bg/clinic-waiting",
+        "props": [
+          {
+            "art": "prop/lunchbox-4",
+            "x": 0.5,
+            "y": 0.52,
+            "w": 0.3,
+            "motion": "pulse"
+          },
+          {
+            "art": "prop/lunchbox-3",
+            "x": 0.5,
+            "y": 0.52,
+            "w": 0.3,
+            "at": 3,
+            "enter": "pop"
+          }
+        ],
+        "actors": [
+          {
+            "id": "dad",
+            "art": "common/dad/explain",
+            "x": 0.82,
+            "idle": "sway"
+          },
+          {
+            "id": "kid",
+            "art": "common/kid/ask",
+            "x": 0.2
+          }
+        ]
+      },
+      "lines": [
+        {
+          "who": "narr",
+          "text": "포스터 구석에 3가라고 적혀 있었습니다. 그게 뭐냐면, 도시락 칸 수예요.",
+          "en": "In the corner of the poster it said “three-valent.” What it means is the number of compartments in a lunchbox.",
+          "tts": "포스터 구석에 삼가라고 적혀 있었습니다. 그게 뭐냐면, 도시락 칸 수예요.",
+          "pop": "3가?"
+        },
+        {
+          "who": "narr",
+          "text": "독감 바이러스는 A형 두 녀석, B형 두 계통, 이렇게 네 칸을 채워 왔어요. 그게 4가.",
+          "en": "The flu comes with two type-A viruses and two type-B lines, four compartments to fill. That was the four-valent vaccine.",
+          "tts": "독감 바이러스는 에이형 두 녀석, 비형 두 계통, 이렇게 네 칸을 채워 왔어요. 그게 사가."
+        },
+        {
+          "who": "narr",
+          "text": "그런데 B형 한 계통은, 2020년 3월 이후로 전 세계 어디서도 발견되지 않았습니다.",
+          "en": "But one of the type-B lines has not been found anywhere in the world since March 2020.",
+          "tts": "그런데 비형 한 계통은, 이천이십 년 삼 월 이후로 전 세계 어디서도 발견되지 않았습니다."
+        },
+        {
+          "who": "narr",
+          "text": "그래서 세계보건기구가 2023년에, 이제 그 칸은 빼도 된다고 했어요. 칸이 하나 줄어서 3가.",
+          "en": "So in 2023 the World Health Organization said that compartment can be dropped. One fewer compartment: three-valent.",
+          "tts": "그래서 세계보건기구가 이천이십삼 년에, 이제 그 칸은 빼도 된다고 했어요. 칸이 하나 줄어서 삼가.",
+          "pop": "4가 → 3가",
+          "sfx": "pop"
+        },
+        {
+          "who": "narr",
+          "text": "약해진 게 아니에요. 오지 않는 녀석은 빼고, 올 녀석만 담은 겁니다. 올해 우리나라 무료 접종도 세 칸짜리고, 나이는 열네 살까지 넓어졌습니다.",
+          "en": "It didn’t get weaker. The ones that no longer show up were removed, and only the ones that will come were packed. This year’s free vaccination in Korea is the three-compartment kind too, and it now covers kids up to age fourteen.",
+          "pop": "2026-2027절기 · 14세까지"
+        }
+      ]
+    },
+    {
+      "id": "c09",
+      "beat": "4. 갈라진 지점",
+      "caption": "왜 하필 겨울?",
+      "scene": {
+        "bg": "full/winter-street",
+        "pan": "right",
+        "props": [
+          {
+            "art": "prop/hygrometer",
+            "x": 0.78,
+            "y": 0.54,
+            "w": 0.2,
+            "at": 4,
+            "enter": "pop",
+            "motion": "pulse"
+          }
+        ]
+      },
+      "lines": [
+        {
+          "who": "narr",
+          "text": "그런데 왜 하필 겨울일까요. 엄마가 물었습니다.",
+          "en": "But why does it have to be winter? Mom asked."
+        },
+        {
+          "who": "mom",
+          "text": "겨울이니까 추워서 걸리는 거 아니야?",
+          "en": "Isn’t it because it’s cold in winter?",
+          "focus": "mom",
+          "cutin": "common/cutin/mom-smirk",
+          "fx": "zoom"
+        },
+        {
+          "who": "narr",
+          "text": "저도 그렇게 알았는데, 아니랍니다. 춥다고 바이러스가 생기진 않아요.",
+          "en": "I thought so too, but no. Cold doesn’t create viruses."
+        },
+        {
+          "who": "narr",
+          "text": "대신 겨울엔 공기가 바짝 마릅니다. 독감 바이러스는 공기가 건조하면 작은 알갱이로 오래 떠다니며 살아남아요. 방의 습도가 사십 퍼센트 아래로 내려갈 때 특히요.",
+          "en": "Instead, winter air gets very dry. In dry air, flu viruses survive and float around for a long time in tiny droplets, especially when a room’s humidity drops below forty percent.",
+          "pop": "습도 40%",
+          "sfx": "whoosh"
+        },
+        {
+          "who": "narr",
+          "text": "게다가 차가운 공기를 마시면 코 안이 식어서, 바이러스를 막는 반응이 줄어든다는 연구도 있어요. 아직 연구하는 중이지만요.",
+          "en": "There’s also research suggesting that breathing cold air cools the inside of your nose and weakens its defense against viruses. Though scientists are still studying it."
+        },
+        {
+          "who": "narr",
+          "text": "거기에 창문은 닫고, 실내에서 다 같이 모여 있으니 서로 내쉰 공기를 마시기 쉽죠. 그래서 창문을 가끔 여는 환기가 쉬운 방어입니다.",
+          "en": "On top of that, windows are shut and everyone gathers indoors, so it’s easy to breathe each other’s air. That’s why opening a window now and then is an easy defense."
+        }
+      ]
+    },
+    {
+      "id": "c10",
+      "beat": "4. 갈라진 지점",
+      "scene": {
+        "bg": "bg/clinic-waiting",
+        "props": [
+          {
+            "art": "prop/thermometer",
+            "x": 0.3,
+            "y": 0.56,
+            "w": 0.14,
+            "motion": "pulse"
+          },
+          {
+            "art": "prop/thermometer",
+            "x": 0.7,
+            "y": 0.56,
+            "w": 0.14,
+            "motion": "pulse"
+          }
+        ],
+        "actors": [
+          {
+            "id": "dad",
+            "art": "common/dad/explain",
+            "x": 0.5,
+            "idle": "sway"
+          }
+        ]
+      },
+      "lines": [
+        {
+          "who": "narr",
+          "text": "코로나19도 궁금하죠. 코로나바이러스는 큰 가족인데, 그중 몇몇은 감기 손님이기도 합니다. 하지만 코로나19를 일으키는 건 따로 이름이 붙은 또 다른 바이러스예요. 독감 주사로는 못 막고, 백신도 따로 있습니다.",
+          "en": "You’re probably wondering about COVID-19 too. Coronaviruses are a big family, and a few of them are cold guests. But what causes COVID-19 is another virus with its own name. The flu shot can’t stop it, and it has its own vaccine.",
+          "tts": "코로나 십구도 궁금하죠. 코로나바이러스는 큰 가족인데, 그중 몇몇은 감기 손님이기도 합니다. 하지만 코로나 십구를 일으키는 건 따로 이름이 붙은 또 다른 바이러스예요. 독감 주사로는 못 막고, 백신도 따로 있습니다."
+        },
+        {
+          "who": "narr",
+          "text": "그리고 독감은 오는 방식이 다릅니다. 슬금슬금이 아니라, 갑자기 옵니다.",
+          "en": "And the flu arrives differently. Not creeping in, but suddenly."
+        },
+        {
+          "who": "narr",
+          "text": "열이 확 오르고, 머리가 아프고, 온몸이 쑤시고, 오슬오슬 춥고. 일어나기도 힘들 만큼요.",
+          "en": "Your temperature shoots up, your head hurts, your whole body aches, you shiver. Enough that even getting up is hard."
+        },
+        {
+          "who": "narr",
+          "text": "대부분은 쉬면 낫지만, 어린아이나 어르신은 폐렴 같은 다른 병으로 번질 수 있어서 더 조심합니다.",
+          "en": "Most people get better with rest, but young children and older adults can develop other illnesses like pneumonia, so extra care is needed."
+        },
+        {
+          "who": "narr",
+          "text": "그리고 지금 아픈 게 감기인지 독감인지 정확히 가리는 건, 지난번에 배웠죠. 병을 정하는 사람, 의사 선생님의 몫입니다.",
+          "en": "And figuring out exactly whether it’s a cold or the flu, as we learned last time, is up to the person who decides the illness: the doctor."
+        }
+      ]
+    },
+    {
+      "id": "c11",
+      "beat": "5. 한 문장 정리",
+      "style": "triptych",
+      "triptych": [
+        {
+          "art": "prop/cold-crowd",
+          "name": "감기",
+          "label": "수백 가지 손님"
+        },
+        {
+          "art": "prop/flu-one",
+          "name": "독감",
+          "label": "딱 한 녀석"
+        },
+        {
+          "art": "prop/med-bag",
+          "name": "감기약",
+          "label": "힘든 걸 덜어 줄 뿐"
+        }
+      ],
+      "lines": [
+        {
+          "who": "narr",
+          "text": "정리하면 이렇습니다.",
+          "en": "So, to sum up:"
+        },
+        {
+          "who": "narr",
+          "text": "감기는 수백 가지 손님,",
+          "en": "A cold is hundreds of guests,",
+          "sfx": "stinger"
+        },
+        {
+          "who": "narr",
+          "text": "독감은 딱 한 녀석,",
+          "en": "the flu is just one,"
+        },
+        {
+          "who": "narr",
+          "text": "감기약은 힘든 걸 덜어 줄 뿐입니다.",
+          "en": "and cold medicine only eases the misery."
+        },
+        {
+          "who": "narr",
+          "text": "독감은 센 감기가 아니라, 범인이 다른 병입니다.",
+          "en": "The flu isn’t a stronger cold. It’s an illness with a different culprit.",
+          "sfx": "stinger",
+          "fx": "flash"
+        }
+      ]
+    },
+    {
+      "id": "c12",
+      "beat": "6. 아이 눈높이로 번역",
+      "scene": {
+        "bg": "bg/injection-room",
+        "actors": [
+          {
+            "id": "nurse",
+            "art": "nurse/normal",
+            "x": 0.16,
+            "idle": "sway"
+          },
+          {
+            "id": "mom",
+            "art": "common/mom/normal",
+            "x": 0.34
+          },
+          {
+            "id": "kid",
+            "art": "common/kid/normal",
+            "x": 0.55
+          },
+          {
+            "id": "dad",
+            "art": "common/dad/explain",
+            "x": 0.8
+          }
+        ]
+      },
+      "lines": [
+        {
+          "who": "narr",
+          "text": "주사실 의자에 아이를 앉히고, 손을 잡고, 아까 틀린 대답을 다시 했습니다.",
+          "en": "I sat my kid on the chair in the injection room, held their hand, and answered again what I had gotten wrong."
+        },
+        {
+          "who": "dad",
+          "text": "아까 아빠가 독감은 제일 센 감기라고 했지? 그거 틀린 말이었어.",
+          "en": "Remember I said the flu is the strongest cold? That was wrong."
+        },
+        {
+          "who": "dad",
+          "text": "감기는 코랑 목에 들어오는 작은 손님들 이름이야. 손님 종류가 몇백 가지나 돼서, 다 막는 주사를 만들 수가 없어.",
+          "en": "“Cold” is the name for little guests that come into your nose and throat. There are hundreds of kinds, so nobody can make one shot to stop them all."
+        },
+        {
+          "who": "dad",
+          "text": "독감은 달라. 딱 한 녀석이 오는 거야. 그래서 그 녀석만 막는 주사를 만들 수 있어.",
+          "en": "The flu is different. Just one culprit comes. So a shot that blocks only that one can be made."
+        },
+        {
+          "who": "dad",
+          "text": "그 녀석이 해마다 옷을 바꿔 입어서, 주사도 해마다 새로 맞는 거고.",
+          "en": "And since it changes outfits every year, you get a new shot every year."
+        },
+        {
+          "who": "dad",
+          "text": "오늘 이 주사는 감기는 못 막아. 대신 독감에 덜 걸리게, 걸려도 덜 아프게 도와줘.",
+          "en": "Today’s shot can’t stop colds. But it helps you catch the flu less, and hurt less if you do."
+        },
+        {
+          "who": "dad",
+          "text": "감기약은 힘든 걸 조금 덜어 주는 거고, 감기를 낫게 하는 건 네 몸이야. 그리고 약을 먹기 전에는 꼭 의사 선생님이나 약사 선생님한테 물어봐야 해.",
+          "en": "Cold medicine only eases things a little. It’s your body that gets rid of the cold. And before taking any medicine, always ask a doctor or a pharmacist."
+        },
+        {
+          "who": "dad",
+          "text": "갑자기 열이 많이 나고 온몸이 아프면, 그때는 의사 선생님한테 보여 드리는 거야.",
+          "en": "And if you suddenly get a high fever and your whole body aches, you show a doctor."
+        },
+        {
+          "who": "narr",
+          "text": "아이는 고개를 끄덕이고, 눈을 꼭 감고, 울지 않고 주사를 맞았습니다.",
+          "en": "My kid nodded, squeezed their eyes shut, and took the shot without crying."
+        }
+      ]
+    },
+    {
+      "id": "c12b",
+      "beat": "6. 아이 눈높이로 번역",
+      "scene": {
+        "bg": "bg/injection-room",
+        "actors": [
+          {
+            "id": "nurse",
+            "art": "nurse/smile",
+            "x": 0.16
+          },
+          {
+            "id": "mom",
+            "art": "common/mom/normal",
+            "x": 0.34
+          },
+          {
+            "id": "kid",
+            "art": "common/kid/normal",
+            "x": 0.55
+          },
+          {
+            "id": "dad",
+            "art": "common/dad/normal",
+            "x": 0.8
+          }
+        ]
+      },
+      "lines": [
+        {
+          "who": "nurse",
+          "text": "잘 참았어.",
+          "en": "Well done holding on."
+        },
+        {
+          "who": "narr",
+          "text": "반창고를 붙인 아이가, 주머니에서 종이 한 장을 꺼냈습니다. 지난번 밤에 제가 적었던 체온 메모였어요.",
+          "en": "With a bandage on, my kid pulled a piece of paper from a pocket. It was the temperature note I wrote that night last time."
+        }
+      ]
+    },
+    {
+      "id": "c12c",
+      "beat": "6. 아이 눈높이로 번역",
+      "scene": {
+        "bg": "bg/injection-room",
+        "actors": [
+          {
+            "id": "mom",
+            "art": "common/mom/normal",
+            "x": 0.34
+          },
+          {
+            "id": "kid",
+            "art": "common/kid/ask",
+            "x": 0.55
+          },
+          {
+            "id": "dad",
+            "art": "common/dad/normal",
+            "x": 0.8
+          }
+        ]
+      },
+      "lines": [
+        {
+          "who": "kid",
+          "text": "아빠도 맞아요. 아빠가 아프면, 내 열은 누가 적어요?",
+          "en": "Dad should get one too. If Dad gets sick, who writes down my temperature?",
+          "pose": {
+            "kid": "common/kid/ask"
+          }
+        },
+        {
+          "who": "mom",
+          "text": "엄마가 적을게. 그러니까 아빠도 걷어.",
+          "en": "I’ll write it down. So roll up your sleeve too.",
+          "pose": {
+            "mom": "common/mom/explain"
+          }
+        }
+      ]
+    },
+    {
+      "id": "c12d",
+      "beat": "6. 아이 눈높이로 번역",
+      "scene": {
+        "bg": "bg/injection-room",
+        "actors": [
+          {
+            "id": "nurse",
+            "art": "nurse/smile",
+            "x": 0.16
+          },
+          {
+            "id": "mom",
+            "art": "common/mom/normal",
+            "x": 0.34
+          },
+          {
+            "id": "kid",
+            "art": "common/kid/normal",
+            "x": 0.55
+          },
+          {
+            "id": "dad",
+            "art": "common/dad/normal",
+            "x": 0.8
+          }
+        ]
+      },
+      "lines": [
+        {
+          "who": "narr",
+          "text": "저는 소매를 걷었습니다.",
+          "en": "I rolled up my sleeve."
+        }
+      ]
+    },
+    {
+      "id": "c13",
+      "beat": "7. 남는 이야기",
+      "scene": {
+        "bg": "bg/clinic-waiting",
+        "actors": [
+          {
+            "id": "dad",
+            "art": "common/dad/think",
+            "x": 0.62
+          },
+          {
+            "id": "kid",
+            "art": "common/kid/normal",
+            "x": 0.38
+          },
+          {
+            "id": "mom",
+            "art": "common/mom/normal",
+            "x": 0.84
+          }
+        ]
+      },
+      "lines": [
+        {
+          "who": "narr",
+          "text": "독감 주사 맞으면 감기도 안 걸린다. 감기약 먹으면 감기가 낫는다. 저희 부부만 그렇게 알고 있었던 건 아니죠?",
+          "en": "Get a flu shot and you won’t catch colds either. Take cold medicine and the cold goes away. We weren’t the only ones who thought so, right?"
+        }
+      ]
+    },
+    {
+      "id": "c14",
+      "beat": "7. 남는 이야기",
+      "scene": {
+        "bg": "full/next-teaser",
+        "pan": "up"
+      },
+      "lines": [
+        {
+          "who": "narr",
+          "text": "병원을 나오는데, 아이가 건물 간판을 올려다봤습니다.",
+          "en": "As we left the clinic, my kid looked up at the building’s signs."
+        },
+        {
+          "who": "kid",
+          "text": "아빠, 내과는 몸 안을 고치고, 외과는 몸 밖을 고치는 데예요? 그럼 감기는 내과예요?",
+          "en": "Dad, is internal medicine for fixing the inside of the body and surgery for the outside? So is a cold internal medicine?",
+          "pose": {
+            "kid": "common/kid/ask"
+          }
+        },
+        {
+          "who": "dad",
+          "text": "…주사 맞은 팔 아프다. 빨리 가자.",
+          "en": "...My shot arm hurts. Let’s go."
+        },
+        {
+          "who": "narr",
+          "text": "다음 편은, 이 질문입니다.",
+          "en": "The next episode is about this question."
+        }
+      ]
+    },
+    {
+      "id": "end",
+      "beat": "",
+      "style": "end",
+      "art": "full/next-teaser",
+      "end": {
+        "series": "여덟 살의 질문 · 6편",
+        "title": "감기 · 독감",
+        "next": "다음 편 — 내과는 안을 고치고, 외과는 밖을 고쳐요?"
+      },
+      "lines": []
+    }
+  ]
+}

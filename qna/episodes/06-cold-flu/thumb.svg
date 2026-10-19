@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 30 364 199" width="728" height="398">
+<rect x="0" y="0" width="364" height="229" fill="#F6F8F4"/>
+<path d="M16 172H348" stroke="#C4D0C6" stroke-width="3"/>
+<circle cx="44" cy="74" r="11" fill="#66756E"/>
+<circle cx="74" cy="62" r="8" fill="#1B2A26"/>
+<circle cx="102" cy="80" r="13" fill="#66756E"/>
+<circle cx="56" cy="104" r="9" fill="#1B2A26"/>
+<circle cx="86" cy="112" r="12" fill="#66756E"/>
+<circle cx="120" cy="114" r="8" fill="#1B2A26"/>
+<circle cx="40" cy="138" r="10" fill="#1B2A26"/>
+<circle cx="72" cy="146" r="8" fill="#66756E"/>
+<circle cx="104" cy="148" r="11" fill="#1B2A26"/>
+<circle cx="132" cy="146" r="7" fill="#66756E"/>
+<circle cx="130" cy="58" r="7" fill="#66756E"/>
+<text x="182" y="124" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="40" font-weight="700" fill="#1B2A26">≠</text>
+<g stroke="#B8352A" stroke-width="5" stroke-linecap="round">
+<path d="M282 60V48M282 152V164M232 106H220M332 106H344M246 70L238 62M318 70L326 62M246 142L238 150M318 142L326 150"/>
+</g>
+<circle cx="282" cy="106" r="44" fill="#B8352A"/>
+<circle cx="268" cy="98" r="6" fill="#F6F8F4"/>
+<circle cx="296" cy="98" r="6" fill="#F6F8F4"/>
+<path d="M270 120Q282 128 294 120" stroke="#F6F8F4" stroke-width="4" fill="none" stroke-linecap="round"/>
+<text x="86" y="200" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="20" font-weight="700" fill="#1B2A26">감기</text>
+<text x="86" y="221" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="13" font-weight="700" fill="#66756E">범인 200가지+</text>
+<text x="282" y="200" text-anchor="middle" font-family="'Gowun Batang', serif" font-size="20" font-weight="700" fill="#B8352A">독감</text>
+<text x="282" y="221" text-anchor="middle" font-family="'Pretendard Variable', sans-serif" font-size="13" font-weight="700" fill="#66756E">범인 하나</text>
+</svg>
