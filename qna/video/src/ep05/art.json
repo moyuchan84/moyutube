@@ -1,0 +1,281 @@
+{
+  "title": "5편 · 의사 · 약사 · 간호사, 뭐가 달라요?",
+  "cast": {
+    "pharmacist": "the neighborhood pharmacist: a calm, kind Korean woman in her early fifties who has run the small pharmacy on the first floor of a clinic building for twenty years; neat chin-length black hair with a few gray strands, round thin-rimmed glasses resting low on her nose, gentle face with smile lines, warm natural skin tone; wearing a crisp white pharmacist's gown over a navy knit top, a small blank name badge on the chest, sleeves rolled once; patient, precise and quietly funny, never stern"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/panic",
+    "common/dad/shock",
+    "common/dad/explain",
+    "common/dad/think",
+    "common/dad/proud",
+    "common/dad/search",
+    "common/kid/normal",
+    "common/kid/ask",
+    "common/kid/wow",
+    "common/kid/doubt",
+    "common/kid/laugh",
+    "common/cutin/dad-panic",
+    "common/cutin/kid-ask",
+    "common/bg/kid-room-night",
+    "common/bg/dining-room",
+    "common/dad/explain-b",
+    "common/kid/ask-b"
+  ],
+  "items": [
+    {
+      "id": "bg/pharmacy",
+      "kind": "bg",
+      "title": "배경 — 동네 약국 안",
+      "cuts": "c00–c05, c07b, c08, c08b",
+      "motion": "컷 내내 천천히 당겨진다. 2000년 의약분업 컷에서는 옆으로 밀린다. 인물은 아래 1/3에 따로 얹는다.",
+      "desc": "The inside of a small, bright, tidy Korean neighborhood pharmacy on the first floor of a clinic building, seen straight-on like a stage set. Along the back wall, tall white shelves full of neatly lined-up medicine boxes in soft pastel colors (all labels blank, no readable text, no brand logos), a glass partition window over the dispensing area, a green cross sign on the wall. On the left side, a low open display rack of small boxes near a checkout counter. Clean white and mint tones, warm daylight from a glass door on the right. The floor is plain light tiles, open and empty across the whole bottom third."
+    },
+    {
+      "id": "prop/counter-front",
+      "kind": "layer",
+      "title": "앞쪽 레이어 — 약국 카운터",
+      "cuts": "c00–c03, c08, c08b",
+      "motion": "약사 선생님 앞에 놓인다. 약사 선생님은 이 뒤에 서 있다.",
+      "ratio": "16:9",
+      "desc": "The front panel of a pharmacy counter seen straight-on, about waist height: a clean white counter with a mint-green front panel and a light wood top, a small tray with a few paper medicine bags on top, a little bell. Wide and low. No text, no logos."
+    },
+    {
+      "id": "pharmacist/normal",
+      "kind": "char",
+      "who": "pharmacist",
+      "ref": null,
+      "title": "약사 선생님 — 기본",
+      "cuts": "c01, c08",
+      "note": "약사 선생님의 기준 그림. 이후 약사 그림에 전부 ②로 첨부한다. 허리 아래는 카운터에 가려지니 윗몸이 잘 보이게. 무뚝뚝한 얼굴이 아니라 차분하게 미소 짓는 얼굴.",
+      "motion": "숨 쉬듯 살짝 움직이고, 말할 때 까딱거린다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing calmly, holding a paper medicine bag in both hands at chest height, a soft professional smile, eyes looking over her glasses. Relaxed and friendly."
+    },
+    {
+      "id": "pharmacist/freeze",
+      "kind": "char",
+      "who": "pharmacist",
+      "ref": "pharmacist/normal",
+      "title": "약사 선생님 — 딱 멈춤",
+      "cuts": "c00, c02, c03",
+      "motion": "표정이 바뀌는 순간 젤리처럼 튀고, 그대로 굳는다(움직임 없음).",
+      "desc": "3/4 view turned slightly to the RIGHT. Frozen mid-motion like a paused video: one hand still holding a paper medicine bag halfway out, the other hand stopped in the air, eyebrows raised very high over her glasses, eyes wide and blinking, lips pressed into a tiny polite straight line. Comically stunned, not angry, not offended."
+    },
+    {
+      "id": "pharmacist/ask",
+      "kind": "char",
+      "who": "pharmacist",
+      "ref": "pharmacist/normal",
+      "title": "약사 선생님 — 몸무게 묻기",
+      "cuts": "c08",
+      "motion": "말하는 동안 까딱거린다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Leaning slightly forward over the counter, holding a blank prescription paper in one hand and raising the index finger of the other hand as if asking an important question, eyebrows gently raised, kind and attentive expression, mouth open mid-question."
+    },
+    {
+      "id": "pharmacist/explain",
+      "kind": "char",
+      "who": "pharmacist",
+      "ref": "pharmacist/normal",
+      "title": "약사 선생님 — 약 상자 보여 주기",
+      "cuts": "c08b",
+      "motion": "말하는 동안 좌우로 살짝 흔들린다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Holding up a small blank medicine box in one hand toward the viewer like showing it to a child, the other hand pointing at the small print area on the box, warm smile, mouth open explaining, eyes friendly behind the glasses."
+    },
+    {
+      "id": "pharmacist/explain-b",
+      "kind": "talk",
+      "who": "pharmacist",
+      "ref": "pharmacist/explain",
+      "optional": true,
+      "title": "약사 선생님 — 약 상자 보여 주기 (말하는 그림)",
+      "cuts": "c08b",
+      "motion": "약 상자 보여 주기 그림과 1/8초마다 번갈아 나와서 입이 움직인다."
+    },
+    {
+      "id": "pharmacist/smile",
+      "kind": "char",
+      "who": "pharmacist",
+      "ref": "pharmacist/normal",
+      "title": "약사 선생님 — 빙긋",
+      "cuts": "c03, c08",
+      "motion": "표정이 바뀌는 순간 젤리처럼 튄다.",
+      "desc": "3/4 view turned slightly to the RIGHT. A small amused knowing smile, eyes half closed behind the glasses, one hand lightly covering her mouth as if holding back a laugh, the other hand holding a paper medicine bag. Gentle and good-humored."
+    },
+    {
+      "id": "cutin/pharmacist-freeze",
+      "kind": "cutin",
+      "who": "pharmacist",
+      "ref": "pharmacist/normal",
+      "title": "컷인 — 약사 선생님 멈춤",
+      "cuts": "c02",
+      "motion": "화면 옆에서 튀어나와 흔들린다.",
+      "desc": "Facing slightly to the RIGHT. A huge frozen close-up: eyes wide open behind the glasses with a little glint on the lenses, eyebrows shot up, lips pressed into a tiny polite line, a single blink line beside the eye. Funny and lovable, not angry and not scary."
+    },
+    {
+      "id": "prop/gowns",
+      "kind": "prop",
+      "title": "소품 — 옷걸이에 걸린 흰 가운 세 벌",
+      "cuts": "c04",
+      "ratio": "16:9",
+      "motion": "툭 떨어진 뒤 살짝 흔들린다. '선생님' 글자는 영상에서 하나씩 얹는다.",
+      "desc": "Three identical clean white coats hanging side by side on simple wooden hangers from a horizontal rail, front view, evenly spaced, one has a stethoscope-shaped empty pocket, one a pen in the pocket, one a small watch clipped on. No text, no logos."
+    },
+    {
+      "id": "prop/nametags",
+      "kind": "prop",
+      "title": "소품 — 명찰 두 개",
+      "cuts": "c05",
+      "ratio": "16:9",
+      "motion": "톡 튀어나와 둥둥 떠 있는다. 명찰 글자는 영상에서 얹는다(그림에는 빈칸).",
+      "desc": "Two rectangular hospital name badges side by side, front view, each clipped to a small patch of white uniform fabric: the left badge has a thin red border, the right badge a thin mint-green border. The badges are completely blank, no text, no photo."
+    },
+    {
+      "id": "full/exam-room",
+      "kind": "stage",
+      "title": "무대 — 소아과 진료실",
+      "cuts": "c06",
+      "motion": "배경이 오른쪽으로 천천히 밀리고, 오른쪽 빈자리에 의사 선생님(따로 그린 그림)이 들어온다. 처방전이 톡 튀어나온다.",
+      "desc": "A friendly Korean pediatric clinic exam room: a small exam bed with a paper sheet, a desk with a computer monitor (blank screen), colorful animal stickers on the wall, a height chart, a box of tongue depressors. Soft pastel colors, cheerful. The right half of the lower third is empty floor with nobody there: a doctor figure will be added later."
+    },
+    {
+      "id": "prop/doctor",
+      "kind": "prop",
+      "title": "소품 — 의사 선생님 (청진기)",
+      "cuts": "c06",
+      "ratio": "2:3",
+      "motion": "오른쪽에서 미끄러져 들어와 고개를 까딱거린다.",
+      "desc": "A friendly Korean pediatrician in his forties, full body, standing, wearing a white coat over a light blue shirt, a stethoscope around his neck with one hand holding the chest piece forward as if about to listen, warm smile, short neat hair. Facing LEFT."
+    },
+    {
+      "id": "prop/prescription",
+      "kind": "prop",
+      "title": "소품 — 처방전 한 장",
+      "cuts": "c06, c08",
+      "ratio": "1:1",
+      "motion": "톡 튀어나와 둥둥 떠 있는다.",
+      "desc": "A single sheet of paper prescription with a thin red border and a few gray lines suggesting writing, slightly tilted, corner curled. No readable text."
+    },
+    {
+      "id": "full/medieval-1240",
+      "kind": "stage",
+      "title": "무대 — 1240년 무렵, 중세 도시의 광장",
+      "cuts": "c07",
+      "motion": "배경이 왼쪽으로 천천히 밀리고, 위에서 칙령 두루마리(따로 그린 그림)가 뚝 떨어진다.",
+      "desc": "A sunny 13th-century southern European town square drawn like a storybook: on the left, a physician's house with a little sign of a crescent and star (no text); on the right, an apothecary shop with jars of herbs and a mortar and pestle in the window. Townspeople in medieval clothes in the background. A wide empty cobblestone strip across the bottom third, and an empty patch of sky in the upper middle where a scroll will be added later."
+    },
+    {
+      "id": "prop/edict-scroll",
+      "kind": "prop",
+      "title": "소품 — 황제의 칙령 두루마리",
+      "cuts": "c07",
+      "ratio": "2:3",
+      "motion": "위에서 뚝 떨어진 뒤 두근두근 커졌다 작아진다.",
+      "desc": "An old parchment scroll unrolled vertically with wooden rollers at top and bottom, a big red wax seal at the bottom, decorative scribbles suggesting writing but no readable text."
+    },
+    {
+      "id": "prop/medicine-box",
+      "kind": "prop",
+      "title": "소품 — 약 상자",
+      "cuts": "c08b",
+      "ratio": "1:1",
+      "motion": "두 개를 나란히 놓고 톡 튀어나온다. '전문의약품' · '일반의약품' 글자는 영상에서 얹는다.",
+      "desc": "A small rectangular medicine box, three-quarter view, soft pastel color with a plain white label area. Completely blank, no text, no brand, no pills shown."
+    },
+    {
+      "id": "full/convenience-night",
+      "kind": "full",
+      "title": "장면 — 밤의 24시 편의점, 상비약 칸",
+      "cuts": "c08c",
+      "motion": "배경이 왼쪽으로 천천히 밀린다. '24' 와 상비약 이름은 영상에서 얹는다.",
+      "desc": "A Korean convenience store at night seen from inside near the checkout counter: bright fluorescent light, a dark blue night street visible through the glass door, a small separate glass-front shelf beside the counter holding a few tidy pastel medicine boxes (no text, no brands), snacks and drink fridges blurred in the background. Calm and clean. No people."
+    },
+    {
+      "id": "full/crimea-1854",
+      "kind": "stage",
+      "title": "무대 — 1854년, 크림전쟁의 야전병원",
+      "cuts": "c09",
+      "motion": "배경이 오른쪽으로 천천히 밀리고, 등불을 든 간호사(따로 그린 그림)가 걸어서 지나간다. 오른쪽 위에 장미 도표가 톡 튀어나온다.",
+      "desc": "A 19th-century military hospital ward at night drawn gently like a storybook, not scary: long row of simple beds with gray blankets, sleeping soldiers seen only as quiet shapes under blankets, arched windows with moonlight, a wooden floor. No blood, no wounds. The lower third is an empty aisle running across the whole picture with nobody walking in it, and an empty dark patch on the upper right."
+    },
+    {
+      "id": "prop/nightingale",
+      "kind": "prop",
+      "title": "소품 — 등불을 든 간호사 (나이팅게일)",
+      "cuts": "c09",
+      "ratio": "2:3",
+      "motion": "화면 왼쪽 밖에서 오른쪽으로 걸어서 지나간다. 등불이 살짝 깜빡인다.",
+      "desc": "A Victorian nurse in a long dark dress with a white apron and white cap, full body, walking to the RIGHT, holding up a small glowing oil lamp, calm caring face. Drawn as a general historical nurse figure, gentle storybook style."
+    },
+    {
+      "id": "prop/rose-chart",
+      "kind": "prop",
+      "title": "소품 — 장미 도표",
+      "cuts": "c09",
+      "ratio": "1:1",
+      "motion": "톡 튀어나와 천천히 돈다.",
+      "desc": "A simple round polar-area chart drawn on old paper, with wedge-shaped petals in soft red, blue and gray, like a flower. No numbers, no text."
+    },
+    {
+      "id": "full/hospital-hall",
+      "kind": "stage",
+      "title": "무대 — 오늘의 병원 복도",
+      "cuts": "c09b",
+      "motion": "배경이 왼쪽으로 천천히 밀리고, 간호사(따로 그린 그림)가 걸어 들어온다. 분야 이름은 영상에서 하나씩 얹는다.",
+      "desc": "A clean modern Korean hospital corridor in daytime: pale mint walls, a nurses' station counter in the background, handrails, doors with blank signs (no text), soft daylight. The lower third is an empty corridor floor running across the whole picture with nobody in it."
+    },
+    {
+      "id": "prop/nurse-modern",
+      "kind": "prop",
+      "title": "소품 — 오늘의 간호사 (차트 들고)",
+      "cuts": "c09b",
+      "ratio": "2:3",
+      "motion": "오른쪽에서 걸어 들어와 가운데에서 멈추고 까딱거린다.",
+      "desc": "A modern Korean nurse in her thirties, full body, in light blue scrubs, holding a clipboard chart close to her chest and a pen, a thermometer clipped to the pocket, attentive and kind expression, walking to the LEFT."
+    },
+    {
+      "id": "prop/stethoscope",
+      "kind": "prop",
+      "title": "소품 — 청진기 (한 문장 정리용)",
+      "cuts": "c10",
+      "ratio": "1:1",
+      "motion": "한 문장 정리 컷의 '의사' 칸에 켜지면서 들어간다.",
+      "desc": "A simple stethoscope laid in a neat loop, front view, dark tubing and a shiny silver chest piece."
+    },
+    {
+      "id": "prop/medicine-bag",
+      "kind": "prop",
+      "title": "소품 — 약봉투",
+      "cuts": "c00, c10",
+      "ratio": "1:1",
+      "motion": "톡 튀어나와 둥둥 떠 있는다. 한 문장 정리 컷에서는 '약사' 칸에 들어간다.",
+      "desc": "A white paper pharmacy medicine bag folded at the top, with a small red cross printed on the front and no readable text."
+    },
+    {
+      "id": "prop/thermometer",
+      "kind": "prop",
+      "title": "소품 — 체온계",
+      "cuts": "c10, c11",
+      "ratio": "1:1",
+      "motion": "한 문장 정리 컷의 '간호사' 칸에 들어간다. 밤 장면에서는 아빠 손 옆에 떠 있는다.",
+      "desc": "A simple digital thermometer, slightly tilted, white body with a small blank display window and a silver tip."
+    },
+    {
+      "id": "prop/temp-memo",
+      "kind": "prop",
+      "title": "소품 — 체온 메모",
+      "cuts": "c12, c13",
+      "ratio": "1:1",
+      "motion": "톡 튀어나와 둥둥 떠 있는다. 숫자는 영상에서 얹는다(그림에는 빈칸).",
+      "desc": "A small square sticky-note memo, slightly crumpled, with a tiny pencil beside it, a few blank handwritten lines suggested by soft gray strokes. No readable text or numbers."
+    },
+    {
+      "id": "full/next-teaser",
+      "kind": "full",
+      "title": "장면 — 다음 편 예고 (감기? 독감?)",
+      "cuts": "c14, 끝 화면",
+      "motion": "배경이 왼쪽으로 천천히 밀린다. 끝 화면에서는 흐리게 깔린다.",
+      "desc": "A cozy morning bedside table by a window with soft sunlight: a tissue box with a tissue sticking out, a children's face mask, a glass of water, a small sticky note, and a plush toy. Calm and warm. No people, no text."
+    }
+  ]
+}

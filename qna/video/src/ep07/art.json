@@ -1,0 +1,270 @@
+{
+  "title": "7편 · 내과 · 외과, 어디로 가요?",
+  "cast": {
+    "doctor": "the neighborhood orthopedic clinic director: a calm, kind Korean man in his mid-fifties; short neat salt-and-pepper hair, rimless round glasses, a gentle round face with smile lines and a warm natural skin tone; wearing a crisp white doctor's coat over a light-blue shirt with no tie, a small blank name badge on the chest, a stethoscope around the neck, gray slacks and comfortable brown shoes; slow, patient and reassuring, corrects grown-ups politely with a small amused twinkle, never stern",
+    "reception": "the reception staff of an internal medicine clinic: a cheerful Korean woman in her late twenties; shoulder-length straight dark hair tucked behind her ears, a friendly face with a warm natural skin tone; wearing a soft lavender clinic uniform top with a small blank name badge, white sneakers; brisk, polite and helpful"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/panic",
+    "common/dad/explain",
+    "common/dad/think",
+    "common/dad/proud",
+    "common/dad/shock",
+    "common/dad/search",
+    "common/kid/normal",
+    "common/kid/ask",
+    "common/kid/wow",
+    "common/kid/doubt",
+    "common/mom/normal",
+    "common/mom/smirk",
+    "common/mom/explain",
+    "common/mom/sigh",
+    "common/mom/shock",
+    "common/cutin/kid-ask",
+    "common/cutin/dad-proud",
+    "common/cutin/mom-sigh",
+    "common/dad/explain-b",
+    "common/kid/ask-b",
+    "common/mom/explain-b"
+  ],
+  "items": [
+    {
+      "id": "bg/building-front",
+      "kind": "bg",
+      "title": "배경 — 병원 건물 앞 (층마다 빈 간판)",
+      "cuts": "c01, c02, c07, c12",
+      "motion": "위로 천천히 올려다보듯 밀린다. 인물은 아래 1/3에 따로 얹는다.",
+      "desc": "The front of a five-story neighborhood medical building on a Korean street on a sunny Saturday morning, seen straight-on like a stage set. Each floor has a wide blank sign board in a different soft color (mint, cream, light blue, peach, lavender) with no text, and a few smaller blank sign plates beside the windows. A glass entrance door on the ground floor with a blank pharmacy-green sign plate, a narrow sidewalk with a street tree, a small bicycle rack with no bicycles next to the entrance, a crosswalk edge at the far right. Clear blue sky. The sidewalk is open and empty across the whole bottom third. No people, no readable text, no logos."
+    },
+    {
+      "id": "bg/elevator",
+      "kind": "bg",
+      "title": "배경 — 엘리베이터 안",
+      "cuts": "c00, c02c",
+      "motion": "거의 멈춰 있고, 층수 표시는 소품으로 얹어 바꾼다. 문이 열릴 때 살짝 흔들린다.",
+      "desc": "The inside of a small, clean building elevator, seen straight-on from the doorway like a stage set: brushed stainless walls with soft reflections, a handrail along the back wall, a blank rectangular floor-number display panel above the back wall in the center (dark, empty, no numbers), a column of round floor buttons on the right side panel with no readable numbers, warm ceiling light. The floor is plain gray, open and empty across the whole bottom third. No people, no readable text."
+    },
+    {
+      "id": "bg/im-reception",
+      "kind": "bg",
+      "title": "배경 — 5층 내과 접수대",
+      "cuts": "c02b",
+      "motion": "오른쪽으로 천천히 밀린다.",
+      "desc": "The reception area of a small, bright Korean internal medicine clinic on an upper floor, seen straight-on like a stage set: a long white reception counter on the left with a computer monitor seen from the back and a small bell, a blank sign plate on the wall behind it, a row of gray waiting chairs along the back wall, a water dispenser, a potted plant, a large window showing city rooftops. Calm white and lavender tones. The floor is plain light tiles, open and empty across the whole bottom third. No people, no readable text."
+    },
+    {
+      "id": "bg/ortho-waiting",
+      "kind": "bg",
+      "title": "배경 — 3층 정형외과 대기실",
+      "cuts": "c03, c03b",
+      "motion": "천천히 당겨진다. 호명 순간 살짝 흔들린다.",
+      "desc": "The waiting room of a friendly Korean orthopedic clinic, seen straight-on like a stage set: soft beige and light-blue walls, a reception window on the left, rows of padded waiting chairs, a wall rack of blank leaflets, a framed poster of a simple cartoon bone shape with no text, a water dispenser, a clear empty spot on the floor in the center where a standing model will be added later. Warm daylight. The floor is plain light wood, open and empty across the whole bottom third. No people, no readable text."
+    },
+    {
+      "id": "bg/ortho-room",
+      "kind": "bg",
+      "title": "배경 — 정형외과 진료실 (엑스레이 보는 벽 화면)",
+      "cuts": "c02d, c02e, c04, c05b, c06, c08",
+      "motion": "컷 내내 천천히 당겨진다.",
+      "desc": "A tidy, bright consultation room of a Korean orthopedic clinic, seen straight-on like a stage set: a desk with a computer monitor seen from the side on the left, a large wall-mounted viewing screen on the back wall that is plainly lit and empty, a simple examination bed with a paper sheet on the right, a shelf with a plain model of a knee joint and neat boxes of bandages, a window with blinds. Clean white and soft blue tones. The floor is plain light tiles, open and empty across the whole bottom third. No people, no readable text, no blood, no instruments."
+    },
+    {
+      "id": "bg/lobby",
+      "kind": "bg",
+      "title": "배경 — 1층 로비 (층별 안내판 앞)",
+      "cuts": "c11, c11b, c11c",
+      "motion": "6번 박자라 거의 멈춰 있다.",
+      "desc": "The small ground-floor lobby of a neighborhood medical building, seen straight-on like a stage set: elevator doors closed on the left, a tall empty wall space in the center-right where a floor directory board will be added later, a glass entrance door on the right with soft afternoon light coming in, a potted plant and a small bench. Calm, quiet, warm cream and gray tones. The floor is polished light stone, open and empty across the whole bottom third. No people, no readable text."
+    },
+    {
+      "id": "kid/bandage",
+      "kind": "char",
+      "who": "kid",
+      "ref": "common/kid/normal",
+      "title": "아이 — 손목 붕대 · 무릎 반창고",
+      "cuts": "c02e, c11, c11b, c11c, c12",
+      "note": "공통 아이 그림과 같은 사람. 손목에 흰 붕대, 무릎에 반창고 하나. 상처 · 피는 그리지 않는다.",
+      "motion": "제자리에 서 있고, 말할 때 까딱거린다. 6번 박자 끝에 붕대 감은 손목을 앞으로 내민다(그림 한 장으로 충분).",
+      "desc": "3/4 view, body and face turned slightly to the LEFT. Standing, the left wrist neatly wrapped in a clean white elastic bandage, holding that arm a little carefully in front of the chest; a small cartoon plaster on one knee. A brave, slightly proud little smile. No wound, no blood."
+    },
+    {
+      "id": "reception/point-down",
+      "kind": "char",
+      "who": "reception",
+      "ref": null,
+      "title": "내과 접수 선생님 — 아래층 가리키기",
+      "cuts": "c02b",
+      "note": "이 편에서 한 번만 나오는 사람이라 기준 그림을 겸한다.",
+      "motion": "손가락이 아래를 가리키며 까딱거린다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing behind nothing (the counter is in the background), one hand pointing straight down at the floor with the index finger, the other hand open in a polite gesture, a friendly apologetic smile."
+    },
+    {
+      "id": "doctor/normal",
+      "kind": "char",
+      "who": "doctor",
+      "ref": null,
+      "title": "정형외과 원장님 — 기본",
+      "cuts": "c02d, c04, c06, c08",
+      "note": "원장님의 기준 그림. 이후 원장님 그림에 전부 ②로 첨부한다. 주사기 · 수술 도구는 그리지 않는다.",
+      "motion": "숨 쉬듯 살짝 움직이고, 말할 때 까딱거린다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing calmly, hands loosely in the pockets of the white coat, a soft friendly smile behind round glasses. Relaxed and approachable."
+    },
+    {
+      "id": "doctor/xray",
+      "kind": "char",
+      "who": "doctor",
+      "ref": "doctor/normal",
+      "title": "정형외과 원장님 — 엑스레이 가리키기",
+      "cuts": "c02d",
+      "motion": "벽 화면 쪽을 가리키며 고개를 끄덕인다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Half-turned toward an unseen wall screen behind him, one arm raised pointing up and back with an open hand, looking over his shoulder with a reassuring smile."
+    },
+    {
+      "id": "doctor/correct",
+      "kind": "char",
+      "who": "doctor",
+      "ref": "doctor/normal",
+      "title": "정형외과 원장님 — 웃으며 바로잡기",
+      "cuts": "c02d",
+      "motion": "말하는 동안 좌우로 흔들린다.",
+      "desc": "3/4 view turned slightly to the RIGHT. One index finger raised gently like making a small kind point, eyebrows up, a warm amused smile, head tilted a little. Polite, never scolding."
+    },
+    {
+      "id": "doctor/hands",
+      "kind": "char",
+      "who": "doctor",
+      "ref": "doctor/normal",
+      "title": "정형외과 원장님 — 두 손 펴 보이기 (\"손으로\")",
+      "cuts": "c02e, c04",
+      "motion": "손바닥을 펴는 순간 젤리처럼 튄다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Holding both hands up in front of the chest with the palms open toward the viewer, fingers spread, like showing 'with these hands', a gentle proud smile. Clean hands, no gloves, no tools."
+    },
+    {
+      "id": "cutin/doctor-correct",
+      "kind": "cutin",
+      "who": "doctor",
+      "ref": "doctor/normal",
+      "title": "원장님 바로잡기 (컷인)",
+      "cuts": "c02d",
+      "motion": "화면 옆에서 튀어나와 흔들린다.",
+      "desc": "Chest-up close shot, facing slightly to the RIGHT. Index finger raised beside the face, eyebrows lifted, round glasses glinting, a kind knowing smile. Simple speed-line background."
+    },
+    {
+      "id": "prop/floor-directory",
+      "kind": "prop",
+      "title": "소품 — 층별 안내판",
+      "cuts": "c01, c11, c11c",
+      "motion": "칸마다 빈 글자칸. 6번 박자에서 아이가 짚는 칸이 차례로 밝아진다(영상 효과).",
+      "desc": "A tall, clean building floor directory board standing upright: a dark navy frame with five stacked horizontal panels, each panel a different soft pastel color (lavender, peach, light blue, mint, cream from top to bottom), each panel with a small blank number circle on the left and a blank text area on the right. Completely empty of text and numbers."
+    },
+    {
+      "id": "prop/counter",
+      "kind": "prop",
+      "title": "소품 — 헛걸음 카운터 (엘리베이터 층수판)",
+      "cuts": "c00, c02b, c02d",
+      "motion": "숫자는 영상에서 얹는다. 바뀔 때 '딩'.",
+      "desc": "A small rectangular elevator floor indicator panel in brushed metal with a dark glowing screen that is empty (no digits), a tiny up arrow and down arrow on its left side, both unlit. Clean and simple."
+    },
+    {
+      "id": "prop/xray-wrist",
+      "kind": "prop",
+      "title": "소품 — 손목 엑스레이 사진",
+      "cuts": "c02d",
+      "motion": "벽 화면 위에 떠 있다가 커진다.",
+      "desc": "A simple, friendly X-ray film of a child's hand and wrist: soft white bone shapes drawn with clean simple lines on a dark blue-black background, clearly intact and healthy, slightly cartoonish and not scary at all. No text, no markers."
+    },
+    {
+      "id": "prop/skeleton",
+      "kind": "prop",
+      "title": "소품 — 뼈 모형",
+      "cuts": "c03",
+      "motion": "아빠 앞에서 아빠를 가린다. 호명 순간 팔이 덜컥 흔들린다.",
+      "desc": "A cute, friendly classroom anatomy skeleton model on a rolling stand, drawn in a soft cartoon style with rounded bones, a cheerful little grin and round dark eye holes that look silly rather than spooky, one arm slightly raised as if waving. Ivory white with a light-blue stand. Not scary at all."
+    },
+    {
+      "id": "prop/pill-hand",
+      "kind": "prop",
+      "title": "소품 — 약 · 손 두 아이콘 (내과 · 외과)",
+      "cuts": "c04, c10",
+      "ratio": "16:9",
+      "motion": "저울 양쪽에 알약 아이콘과 손 아이콘이 톡 올라간다.",
+      "desc": "A simple balance scale with two round pans: on the left pan a big friendly two-tone capsule pill (soft blue and white), on the right pan a big open hand icon with the palm up (warm peach color). Clean flat storybook shapes, balanced and level. No text."
+    },
+    {
+      "id": "prop/belly-map",
+      "kind": "prop",
+      "title": "소품 — 배 속 지도 (맹장 자리 표시)",
+      "cuts": "c04",
+      "motion": "별표 하나가 반짝인다(영상 효과).",
+      "desc": "A playful treasure-map style drawing of a tummy: a rounded belly outline on old parchment paper with a winding dotted path inside shaped like friendly intestines, and one small gold star marking a spot in the lower right area. Drawn like a map, not a body. No organs in detail, no blood, no text."
+    },
+    {
+      "id": "full/london-1745",
+      "kind": "stage",
+      "title": "무대 — 1745년 런던, 이발사-외과의사 조합 회관",
+      "cuts": "c05",
+      "motion": "배경이 왼쪽으로 천천히 밀린다. 사람들은 작은 실루엣.",
+      "desc": "The great hall of an old 18th-century London guild, seen straight-on: tall wood-paneled walls, a big fireplace, a long oak table, candle chandeliers, tall windows with gray London sky. In the lower third two small groups of people in period clothes stand facing away from each other with a clear gap between them: on the left, barbers holding combs and razors and a basin; on the right, surgeons in dark coats holding leather cases. Drawn small and charming, faces simple. Painterly storybook style. No blood, no readable text."
+    },
+    {
+      "id": "prop/barber-pole",
+      "kind": "prop",
+      "title": "소품 — 이발소 회전 간판",
+      "cuts": "c05",
+      "motion": "빙글빙글 도는 것처럼 줄무늬가 위로 흐른다(영상 효과).",
+      "desc": "A classic barber pole: a glass cylinder with red, white and blue diagonal spiral stripes, a shiny chrome cap on top and bottom, mounted on a small wall bracket. Clean and cheerful. No text."
+    },
+    {
+      "id": "prop/dept-tree",
+      "kind": "prop",
+      "title": "소품 — 과 갈래 나무",
+      "cuts": "c06",
+      "ratio": "16:9",
+      "motion": "줄기 두 개에서 가지가 하나씩 돋아난다(영상에서 가지 이름을 얹는다).",
+      "desc": "A friendly storybook tree with two thick trunks growing side by side from one root: the left trunk tinted soft blue, the right trunk tinted warm peach. Each trunk splits into four or five branches, and at the tip of every branch hangs a blank round wooden sign tag. Green leaves, simple shapes. No text on the tags."
+    },
+    {
+      "id": "prop/sign-compare",
+      "kind": "prop",
+      "title": "소품 — 간판 두 개 비교",
+      "cuts": "c07",
+      "ratio": "16:9",
+      "motion": "왼쪽, 오른쪽 차례로 톡 튀어나온다. 글자는 영상에서.",
+      "desc": "Two clinic sign boards side by side. Left: one long sign board with a single wide blank name area. Right: a long sign board with a wide blank name area plus a much smaller separate blank plate attached under its right end. Both in clean white with a soft green stripe. Completely blank, no text."
+    },
+    {
+      "id": "prop/hospital-stairs",
+      "kind": "prop",
+      "title": "소품 — 병원 크기 계단 네 칸",
+      "cuts": "c08, c10",
+      "ratio": "16:9",
+      "motion": "작은 건물부터 큰 건물까지 네 채가 계단처럼 하나씩 솟는다.",
+      "desc": "Four cute hospital buildings standing on four rising steps from left to right like a staircase: a tiny one-story clinic with one window, a small three-story hospital, a bigger hospital building with many windows, and a large tall hospital with two wings and a helipad circle on the roof. Each has a small plain red cross shape. Soft pastel colors, flat storybook style. No text."
+    },
+    {
+      "id": "prop/referral-letter",
+      "kind": "prop",
+      "title": "소품 — 진료의뢰서 편지 봉투",
+      "cuts": "c08, c10, c11b",
+      "motion": "계단 첫 칸에서 날아올라 다음 칸에 꽂힌다.",
+      "desc": "A neat cream-colored letter envelope with the flap sealed by a small round red sticker shaped like a heart, a folded paper peeking out of the top. Clean and warm. No text."
+    },
+    {
+      "id": "full/night-er",
+      "kind": "full",
+      "title": "한 장 장면 — 밤의 응급실 입구 · 달빛 병원",
+      "cuts": "c09",
+      "motion": "왼쪽 응급실에서 오른쪽 달 아래 작은 병원으로 천천히 밀린다.",
+      "desc": "A calm night scene in a Korean city, wide 16:9. On the left, the brightly lit emergency entrance of a big hospital with a covered driveway and a parked ambulance, its sign blank; in front of it a short line of small simple figures being gently re-ordered by a staff member so a person on a stretcher goes first. On the right, a small cozy neighborhood children's clinic with warm yellow windows under a big round friendly full moon, a parent holding a small child's hand walking toward its door. Deep blue sky with stars. Gentle and reassuring, not scary. No blood, no readable text."
+    },
+    {
+      "id": "full/next-teaser",
+      "kind": "full",
+      "title": "다음 편 예고 — 빈 자전거 거치대",
+      "cuts": "c13, 끝 화면",
+      "motion": "빈 거치대로 천천히 당겨진다.",
+      "desc": "Close view of an empty bicycle rack on the sidewalk in front of a neighborhood medical building in soft late-afternoon light: every slot is empty, no bicycle and no lock anywhere, a few fallen leaves. Behind, the building's glass door and a street tree. Quiet, slightly comic mystery mood. No people, no readable text."
+    }
+  ]
+}

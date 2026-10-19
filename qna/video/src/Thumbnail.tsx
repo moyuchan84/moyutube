@@ -21,9 +21,11 @@ export type FaceText = {
   top: [string, string];
   bottom: [string, string];
   topic?: string[];
-  layout?: keyof typeof LAYOUTS;
+  layout?: keyof typeof LAYOUTS | "trio";
   kid?: string;
   dad?: string;
+  mom?: string; // trio 구도에서 엄마 표정 (art/common/cutin)
+  vs?: [string, string]; // trio 구도: 왼쪽 · 오른쪽 스티커 (art id)
 };
 const EP01_FACE: FaceText = { tag: "여덟 살 아들의 질문", top: ["호텔? ", "모텔?"], bottom: ["아빠,", " 뭐가 달라요?"] };
 
@@ -69,7 +71,47 @@ const LAYOUTS = {
   },
 } satisfies Record<string, Layout>;
 
+// 6편: "대결" 구도 — 글자는 위에 크게, 아래에 아빠 · 아이 · 엄마 세 얼굴. 배경은 대각선으로 갈라 왼쪽 차가운 파랑 / 오른쪽 뜨거운 주황
+const outline = (px: number): React.CSSProperties => ({ WebkitTextStroke: `${px}px ${INK}`, paintOrder: "stroke fill" });
+const TrioThumbnail: React.FC<{ text: FaceText }> = ({ text }) => {
+  const face = (name: string) => staticFile(`art/common/cutin/${name}.webp`);
+  const [left, right] = (text.vs ?? []).filter((id) => id in assets);
+  const sticker = (id: string | undefined, x: number, y: number, size: number, tilt: number) =>
+    id ? (
+      <div style={{ position: "absolute", left: x - size / 2, top: y - size / 2, width: size, height: size, borderRadius: "50%", backgroundColor: "#fff", border: `8px solid ${INK}`, boxSizing: "border-box", boxShadow: "0 10px 0 rgba(0,0,0,0.22)", transform: `rotate(${tilt}deg)`, display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <Img src={staticFile(`art/${id}.webp`)} style={{ width: "74%", height: "74%", objectFit: "contain" }} />
+      </div>
+    ) : null;
+  return (
+    <AbsoluteFill style={{ fontFamily: FONT, fontWeight: 700, overflow: "hidden", background: INK }}>
+      <AbsoluteFill style={{ background: "radial-gradient(circle at 20% 70%, #E4F4FF 0%, #86C6F2 50%, #3B86D0 100%)" }} />
+      <AbsoluteFill style={{ background: "radial-gradient(circle at 80% 70%, #FFE58A 0%, #FF9E3D 50%, #E5502A 100%)", clipPath: "polygon(58% 0, 100% 0, 100% 100%, 36% 100%)" }} />
+      <AbsoluteFill style={{ background: "repeating-conic-gradient(from 0deg at 50% 100%, rgba(255,255,255,0.20) 0deg 5deg, rgba(255,255,255,0) 5deg 15deg)" }} />
+      {/* 갈라지는 선 */}
+      <div style={{ position: "absolute", left: 0, top: 0, width: 1280, height: 720, clipPath: "polygon(57% 0, 59% 0, 37% 100%, 35% 100%)", backgroundColor: "#fff" }} />
+      <Img src={face(text.dad ?? "dad-panic")} style={{ position: "absolute", left: -70, bottom: -120, height: 470, transform: "rotate(-6deg)" }} />
+      <Img src={face(text.mom ?? "mom-smirk")} style={{ position: "absolute", right: -60, bottom: -110, height: 470, transform: "rotate(5deg)" }} />
+      <Img src={face(text.kid ?? "kid-ask")} style={{ position: "absolute", left: 392, bottom: -128, height: 520 }} />
+      {sticker(left, 132, 372, 200, -8)}
+      {sticker(right, 1148, 372, 200, 8)}
+      {/* VS 배지 */}
+      <div style={{ position: "absolute", left: 640 - 50, top: 306, width: 100, height: 100, borderRadius: "50%", backgroundColor: RED, border: `8px solid #fff`, boxSizing: "border-box", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 48, color: "#fff", letterSpacing: -2, transform: "rotate(-8deg)", boxShadow: "0 8px 0 rgba(0,0,0,0.25)" }}>
+        VS
+      </div>
+      {/* 글자: 위에 크게 */}
+      <div style={{ position: "absolute", left: 36, top: 28, fontSize: 38, color: "#fff", backgroundColor: RED, padding: "4px 22px", borderRadius: 8, transform: "rotate(-2deg)" }}>{text.tag}</div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 86, textAlign: "center", fontSize: 150, lineHeight: 1, color: "#fff", letterSpacing: -5, ...outline(16) }}>
+        {text.top[0]}<span style={{ color: "#FFD43B" }}>{text.top[1]}</span>
+      </div>
+      <div style={{ position: "absolute", left: 0, right: 0, top: 238, textAlign: "center", fontSize: 84, lineHeight: 1, color: "#FFD43B", letterSpacing: -3, ...outline(12) }}>
+        <span style={{ color: "#fff" }}>{text.bottom[0]}</span>{text.bottom[1]}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
 const FaceThumbnail: React.FC<{ text: FaceText }> = ({ text }) => {
+  if (text.layout === "trio") return <TrioThumbnail text={text} />;
   const topic = (text.topic ?? []).filter((id) => id in assets).slice(0, 3);
   const L: Layout = LAYOUTS[text.layout ?? "side"];
   // 주제 그림이 없는 나란히 구도는 얼굴을 크게 (1편 썸네일 그대로)

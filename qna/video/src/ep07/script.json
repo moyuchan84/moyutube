@@ -1,0 +1,407 @@
+{
+  "rawVoice": true,
+  "speed": 1.15,
+  "title": "내과 · 외과, 어디로 가요?",
+  "bgm": "cheerful",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "0. 지금 상황",
+      "scene": {
+        "bg": "bg/elevator",
+        "props": [{ "art": "prop/counter", "x": 0.5, "y": 0.16, "w": 0.16 }],
+        "actors": [
+          { "id": "mom", "art": "common/mom/sigh", "x": 0.25 },
+          { "id": "kid", "art": "common/kid/normal", "x": 0.5 },
+          { "id": "dad", "art": "common/dad/panic", "x": 0.75, "idle": "shiver" }
+        ]
+      },
+      "lines": [
+        { "who": "narr", "text": "지금 저는 병원 건물 엘리베이터 안에 있습니다.", "en": "Right now I’m inside the elevator of a medical building." },
+        { "who": "narr", "text": "오늘 이 엘리베이터를 탄 게, 벌써 세 번째예요.", "en": "This is already my third ride in this elevator today.", "pop": "5층 → 3층", "sfx": "pop" },
+        { "who": "narr", "text": "지금 헛걸음, 두 번.", "en": "Wasted trips so far: two.", "pop": "헛걸음 2", "fx": "flash" },
+        { "who": "mom", "text": "그러니까 처음부터 대학병원 가자니까.", "en": "That’s why I said we should’ve gone to the university hospital from the start.", "focus": "mom", "cutin": "common/cutin/mom-sigh", "fx": "zoom" },
+        { "who": "narr", "text": "그 말도, 틀렸습니다.", "en": "That was wrong too." },
+        { "who": "narr", "text": "30분 전으로 돌아가 보겠습니다.", "en": "Let’s rewind thirty minutes.", "tts": "삼십 분 전으로 돌아가 보겠습니다.", "pop": "30분 전", "sfx": "rewind", "fx": "flash" }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "1. 그 질문",
+      "scene": {
+        "bg": "bg/building-front",
+        "pan": "up",
+        "actors": [
+          { "id": "mom", "art": "common/mom/normal", "x": 0.22 },
+          { "id": "kid", "art": "common/kid/normal", "x": 0.48 },
+          { "id": "dad", "art": "common/dad/normal", "x": 0.74 }
+        ]
+      },
+      "lines": [
+        { "who": "narr", "text": "토요일 아침, 공원에서 아이가 넘어졌습니다. 손목으로 땅을 짚었고, 무릎이 까졌어요.", "en": "Saturday morning, my kid fell down at the park. They landed on their wrist and scraped a knee." },
+        { "who": "narr", "text": "울음을 그친 아이를 데리고 동네 병원 건물 앞에 섰습니다. 층마다 간판이 붙어 있었죠.", "en": "Once the crying stopped, I took them to the medical building in our neighborhood. There was a sign on every floor." },
+        { "who": "narr", "text": "간판을 하나씩 올려다보던 아이가 물었습니다.", "en": "Looking up at the signs one by one, my kid asked." },
+        { "who": "kid", "text": "아빠, 저번에 물어본 거요. 내과는 안을 고치고, 외과는 밖을 고쳐요?", "en": "Dad, remember what I asked last time? Internal medicine fixes the inside, and surgery fixes the outside?", "pose": { "kid": "common/kid/ask" }, "focus": "kid", "cutin": "common/cutin/kid-ask", "fx": "zoom" },
+        { "who": "kid", "text": "그럼 나는 어디 가요? 무릎은 밖이고, 손목은 안쪽이 아파요.", "en": "So where do I go? My knee is outside, but my wrist hurts on the inside." }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "2. 얼버무린 순간",
+      "scene": {
+        "bg": "bg/building-front",
+        "actors": [
+          { "id": "mom", "art": "common/mom/normal", "x": 0.2 },
+          { "id": "kid", "art": "common/kid/ask", "x": 0.44 },
+          { "id": "dad", "art": "common/dad/think", "x": 0.72 }
+        ]
+      },
+      "lines": [
+        { "who": "dad", "text": "음… 무릎은 밖이니까 외과. 근데 이 건물엔 외과가 없네?", "en": "Hmm… the knee is outside, so surgery. But there’s no surgery clinic in this building?" },
+        { "who": "dad", "text": "그럼 안쪽이 아픈 손목이 더 급하니까, 내과! 5층!", "en": "Then the wrist that hurts inside is more urgent, so internal medicine! Fifth floor!", "tts": "그럼 안쪽이 아픈 손목이 더 급하니까, 내과! 오 층!", "pose": { "dad": "common/dad/proud" }, "focus": "dad", "cutin": "common/cutin/dad-proud", "fx": "zoom", "sfx": "pang" },
+        { "who": "narr", "text": "꽤 논리적이었습니다. 제 귀에는요.", "en": "Quite logical. To my ears, anyway." }
+      ]
+    },
+    {
+      "id": "c02b",
+      "beat": "2. 얼버무린 순간",
+      "scene": {
+        "bg": "bg/im-reception",
+        "pan": "right",
+        "props": [{ "art": "prop/counter", "x": 0.88, "y": 0.14, "w": 0.12 }],
+        "actors": [
+          { "id": "reception", "art": "reception/point-down", "x": 0.2, "idle": "sway" },
+          { "id": "kid", "art": "common/kid/normal", "x": 0.5 },
+          { "id": "dad", "art": "common/dad/proud", "x": 0.74 }
+        ]
+      },
+      "lines": [
+        { "who": "narr", "text": "5층 내과 접수대. 선생님이 아이 손목을 보시더니, 손가락으로 바닥을 가리키셨습니다.", "en": "Fifth floor, internal medicine reception. The receptionist looked at my kid’s wrist and pointed at the floor.", "tts": "오 층 내과 접수대. 선생님이 아이 손목을 보시더니, 손가락으로 바닥을 가리키셨습니다." },
+        { "who": "reception", "text": "아버님, 뼈나 관절은 정형외과예요. 3층이요.", "en": "Sir, bones and joints go to orthopedics. Third floor.", "tts": "아버님, 뼈나 관절은 정형외과예요. 삼 층이요.", "focus": "reception", "fx": "zoom", "sfx": "stinger" },
+        { "who": "narr", "text": "헛걸음, 하나.", "en": "Wasted trip: one.", "pop": "헛걸음 1", "sfx": "pop", "pose": { "dad": "common/dad/panic" }, "fx": "flash" }
+      ]
+    },
+    {
+      "id": "c02c",
+      "beat": "2. 얼버무린 순간",
+      "scene": {
+        "bg": "bg/elevator",
+        "actors": [
+          { "id": "mom", "art": "common/mom/sigh", "x": 0.25 },
+          { "id": "kid", "art": "common/kid/normal", "x": 0.5 },
+          { "id": "dad", "art": "common/dad/panic", "x": 0.75 }
+        ]
+      },
+      "lines": [
+        { "who": "narr", "text": "엘리베이터 안에서, 엄마가 한숨을 쉬었습니다.", "en": "In the elevator, Mom sighed." },
+        { "who": "mom", "text": "그러니까 처음부터 대학병원 가자니까. 큰 데 가면 한 번에 다 보잖아.", "en": "That’s why I said university hospital from the start. A big place sees everything at once.", "pose": { "mom": "common/mom/explain" }, "focus": "mom" }
+      ]
+    },
+    {
+      "id": "c02d",
+      "beat": "2. 얼버무린 순간",
+      "scene": {
+        "bg": "bg/ortho-room",
+        "props": [
+          { "art": "prop/xray-wrist", "x": 0.5, "y": 0.32, "w": 0.24 },
+          { "art": "prop/counter", "x": 0.9, "y": 0.12, "w": 0.1, "at": 4 }
+        ],
+        "actors": [
+          { "id": "doctor", "art": "doctor/xray", "x": 0.18, "idle": "sway" },
+          { "id": "mom", "art": "common/mom/explain", "x": 0.46 },
+          { "id": "kid", "art": "common/kid/normal", "x": 0.66 },
+          { "id": "dad", "art": "common/dad/normal", "x": 0.86 }
+        ]
+      },
+      "lines": [
+        { "who": "narr", "text": "3층 정형외과. 엑스레이를 찍고, 원장님이 화면을 가리키셨어요.", "en": "Third floor, orthopedics. After an X-ray, the doctor pointed at the screen.", "tts": "삼 층 정형외과. 엑스레이를 찍고, 원장님이 화면을 가리키셨어요." },
+        { "who": "doctor", "text": "뼈는 괜찮아요. 살짝 삐었네요.", "en": "The bone is fine. Just a slight sprain.", "pose": { "doctor": "doctor/normal" } },
+        { "who": "doctor", "text": "어머님, 이 정도는 동네에서 충분해요. 그리고 대학병원은 진료의뢰서 없이 가시면, 건강보험이 안 돼서 진료비를 전부 내셔야 해요.", "en": "Ma’am, a neighborhood clinic is plenty for this. And if you go to a university hospital without a referral letter, health insurance won’t cover it and you pay the whole bill.", "pose": { "doctor": "doctor/correct", "mom": "common/mom/shock" }, "focus": "doctor", "cutin": "cutin/doctor-correct", "fx": "zoom", "sfx": "stinger" },
+        { "who": "narr", "text": "엄마도, 하나.", "en": "Mom: one, too.", "pop": "헛걸음 2", "sfx": "pop", "fx": "flash" }
+      ]
+    },
+    {
+      "id": "c02e",
+      "beat": "2. 얼버무린 순간",
+      "scene": {
+        "bg": "bg/ortho-room",
+        "actors": [
+          { "id": "doctor", "art": "doctor/normal", "x": 0.2, "idle": "sway" },
+          { "id": "kid", "art": "kid/bandage", "x": 0.52 },
+          { "id": "dad", "art": "common/dad/normal", "x": 0.8 }
+        ]
+      },
+      "lines": [
+        { "who": "kid", "text": "그럼 외과는 뭐 하는 데예요?", "en": "Then what does surgery do?", "pose": { "kid": "common/kid/ask" } },
+        { "who": "doctor", "text": "손으로 고치는 데.", "en": "It fixes things by hand.", "pose": { "doctor": "doctor/hands", "kid": "kid/bandage" }, "focus": "doctor", "sfx": "pop" }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "3. 왜 다들 헷갈리나",
+      "scene": {
+        "bg": "bg/ortho-waiting",
+        "props": [{ "art": "prop/skeleton", "x": 0.5, "y": 0.72, "w": 0.3, "front": true }],
+        "actors": [{ "id": "dad", "art": "common/dad/search", "x": 0.5 }]
+      },
+      "lines": [
+        { "who": "narr", "text": "붕대를 기다리는 동안, 저는 대기실 구석 뼈 모형 뒤에 서서 휴대폰을 켰습니다.", "en": "While we waited for the bandage, I stood behind the skeleton model in the corner of the waiting room and turned on my phone." },
+        { "who": "docu", "text": "아빠라는 생물은, 궁지에 몰리면, 뼈 뒤에서도 검색을 한다.", "en": "The creature called Dad, when cornered, will search even from behind a skeleton.", "sfx": "dudung" },
+        { "who": "narr", "text": "헷갈릴 만은 했습니다. 과가 스물여섯 개나 되고, 그중 이름에 외과가 붙은 과만 다섯 개예요.", "en": "To be fair, it’s confusing. There are twenty-six specialties, and five of them have “surgery” in the name.", "pop": "26개 · '외과'만 5개" },
+        { "who": "narr", "text": "게다가 동네 의원도, 대학병원도, 우리는 다 그냥 병원이라고 부르죠.", "en": "On top of that, we call both the neighborhood clinic and the university hospital just “the hospital.”" },
+        { "who": "narr", "text": "그래서 오늘은 딱 두 가지만 봅니다.", "en": "So today we look at just two things." },
+        { "who": "narr", "text": "무엇으로 고치나. 그리고, 어디부터 가나.", "en": "What it’s fixed with. And where to go first.", "pop": "과 · 크기", "sfx": "stinger" }
+      ]
+    },
+    {
+      "id": "c03b",
+      "beat": "3. 왜 다들 헷갈리나",
+      "scene": {
+        "bg": "bg/ortho-waiting",
+        "props": [{ "art": "prop/skeleton", "x": 0.5, "y": 0.72, "w": 0.3, "front": true, "motion": "sway" }],
+        "actors": [{ "id": "dad", "art": "common/dad/shock", "x": 0.5 }]
+      },
+      "lines": [
+        { "who": "nurse", "text": "손목 다친 친구, 들어오세요!", "en": "The friend with the hurt wrist, come on in!", "act": { "dad": "jump" }, "fx": "shake", "sfx": "pang" },
+        { "who": "narr", "text": "네, 갑니다.", "en": "Yes, coming." }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "4. 갈라진 지점",
+      "scene": {
+        "bg": "bg/ortho-room",
+        "props": [
+          { "art": "prop/pill-hand", "x": 0.42, "y": 0.4, "w": 0.34, "at": 2 },
+          { "art": "prop/belly-map", "x": 0.68, "y": 0.46, "w": 0.2, "at": 4 }
+        ],
+        "actors": [
+          { "id": "doctor", "art": "doctor/normal", "x": 0.16, "idle": "sway" },
+          { "id": "dad", "art": "common/dad/explain", "x": 0.86 }
+        ]
+      },
+      "lines": [
+        { "who": "narr", "text": "먼저 내과와 외과.", "en": "First, internal medicine and surgery." },
+        { "who": "narr", "text": "기준은 안이냐 밖이냐가 아닙니다. 무엇으로 고치느냐예요.", "en": "The line isn’t inside versus outside. It’s what you fix it with." },
+        { "who": "narr", "text": "내과는 주로 약으로, 외과는 주로 손으로. 그러니까, 수술로요.", "en": "Internal medicine mostly uses medicine; surgery mostly uses hands. In other words, operations.", "pop": "약 · 손", "sfx": "pop", "pose": { "doctor": "doctor/hands" } },
+        { "who": "narr", "text": "외과를 영어로 서저리라고 하는데, 뿌리가 그리스 말로 손으로 하는 일이라는 뜻입니다.", "en": "Surgery comes from a Greek word that means “work done by hand.”" },
+        { "who": "narr", "text": "그래서 배 안에 생기는 맹장염은, 외과에서 수술해요. 몸 안인데도요.", "en": "That’s why appendicitis, which happens inside the belly, is operated on by surgeons. Even though it’s inside the body.", "pose": { "doctor": "doctor/normal" }, "sfx": "pop" }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "4. 갈라진 지점",
+      "caption": "1540년 → 1745년 · 런던",
+      "scene": {
+        "bg": "full/london-1745",
+        "pan": "left",
+        "props": [{ "art": "prop/barber-pole", "x": 0.82, "y": 0.5, "w": 0.12, "at": 3, "enter": "right", "motion": "pulse" }]
+      },
+      "lines": [
+        { "who": "narr", "text": "재밌는 건, 옛날 유럽의 외과의사가 이발사와 한 조합에 있었다는 겁니다.", "en": "Here’s a fun part: in old Europe, surgeons belonged to the same guild as barbers." },
+        { "who": "narr", "text": "1540년 런던. 머리 깎는 사람과 상처를 꿰매는 사람이 한 회관을 썼어요. 둘 다 칼을 잘 다루는 사람들이었거든요.", "en": "London, 1540. The people who cut hair and the people who stitched wounds shared one hall. Both were good with blades.", "tts": "천오백사십 년 런던. 머리 깎는 사람과 상처를 꿰매는 사람이 한 회관을 썼어요. 둘 다 칼을 잘 다루는 사람들이었거든요.", "pop": "1540", "sfx": "page" },
+        { "who": "narr", "text": "그러다 1745년, 법으로 갈라섭니다. 외과의사는 외과의사끼리, 이발사는 이발사끼리.", "en": "Then in 1745, a law split them up. Surgeons with surgeons, barbers with barbers.", "tts": "그러다 천칠백사십오 년, 법으로 갈라섭니다. 외과의사는 외과의사끼리, 이발사는 이발사끼리.", "pop": "1745", "sfx": "whoosh" },
+        { "who": "narr", "text": "이발소 앞 빙글빙글 간판의 빨강은 피, 흰색은 붕대라는 이야기도 있는데, 이건 정설은 아니에요.", "en": "Some say the red on a barber pole is blood and the white is bandages, but that’s not established fact.", "pop": "정설 아님" }
+      ]
+    },
+    {
+      "id": "c05b",
+      "beat": "4. 갈라진 지점",
+      "scene": {
+        "bg": "bg/ortho-room",
+        "actors": [
+          { "id": "kid", "art": "kid/bandage", "x": 0.4 },
+          { "id": "dad", "art": "common/dad/explain", "x": 0.68 }
+        ]
+      },
+      "lines": [
+        { "who": "narr", "text": "동양에서도 외과는 원래 종기나 상처처럼, 몸 겉으로 드러난 병을 주로 봤습니다.", "en": "In the East too, surgery originally dealt mostly with illnesses that showed on the outside, like boils and wounds." },
+        { "who": "narr", "text": "그러니까 아이 말이, 옛날엔 반쯤 맞았던 거예요. 지금은 몸 안까지 손이 닿게 됐을 뿐이고요.", "en": "So my kid was half right, a long time ago. Now the hands just reach inside the body too.", "pose": { "kid": "common/kid/wow" } }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "4. 갈라진 지점",
+      "scene": {
+        "bg": "bg/ortho-room",
+        "props": [{ "art": "prop/dept-tree", "x": 0.5, "y": 0.42, "w": 0.46 }],
+        "actors": [
+          { "id": "doctor", "art": "doctor/normal", "x": 0.14, "idle": "sway" },
+          { "id": "kid", "art": "kid/bandage", "x": 0.86 }
+        ]
+      },
+      "lines": [
+        { "who": "narr", "text": "그 두 줄기에서 가지가 갈라집니다.", "en": "From those two trunks, branches split off.", "pop": "갈래 나무", "sfx": "pop" },
+        { "who": "narr", "text": "외과에서는 뼈와 관절을 보는 정형외과, 뇌와 신경을 보는 신경외과, 심장과 폐를 보는 흉부외과, 생김새를 되살리는 성형외과.", "en": "From surgery: orthopedics for bones and joints, neurosurgery for the brain and nerves, thoracic surgery for the heart and lungs, plastic surgery for restoring how things look.", "pop": "정형 · 신경 · 흉부 · 성형" },
+        { "who": "narr", "text": "코, 귀, 목은 이비인후과, 눈은 안과, 피부는 피부과.", "en": "Nose, ears and throat: ENT. Eyes: ophthalmology. Skin: dermatology.", "pop": "이비인후과 · 안과 · 피부과" },
+        { "who": "narr", "text": "그리고 아이 몸을 아이 크기로 보는 소아청소년과.", "en": "And pediatrics, which looks at a child’s body at a child’s size.", "pop": "소아청소년과" },
+        { "who": "narr", "text": "그럼 지난번 질문, 감기는 어디일까요. 감기는 내과예요. 아이라면 소아청소년과, 코나 귀가 유난히 아프면 이비인후과도 봅니다. 제일 불편한 곳으로 고르면 돼요.", "en": "So, last time’s question: where does a cold go? Internal medicine. For a child, pediatrics. And if the nose or ears hurt a lot, ENT sees colds too. Just pick by what bothers you most.", "pose": { "kid": "common/kid/wow" } }
+      ]
+    },
+    {
+      "id": "c07",
+      "beat": "4. 갈라진 지점",
+      "scene": {
+        "bg": "bg/building-front",
+        "props": [{ "art": "prop/sign-compare", "x": 0.5, "y": 0.42, "w": 0.6 }]
+      },
+      "lines": [
+        { "who": "narr", "text": "간판 읽는 법도 하나 배웠습니다.", "en": "I also learned how to read clinic signs.", "pop": "간판 둘", "sfx": "pop" },
+        { "who": "narr", "text": "○○피부과의원처럼 과 이름이 이름 안에 붙어 있으면, 그 과 전문의가 있는 곳이에요.", "en": "If the specialty is part of the clinic’s name, like “So-and-so Dermatology Clinic,” a specialist in that field runs it.", "tts": "아무개 피부과의원처럼 과 이름이 이름 안에 붙어 있으면, 그 과 전문의가 있는 곳이에요.", "pop": "○○피부과의원" },
+        { "who": "narr", "text": "○○의원 옆에 작게 진료과목 피부과라고 적혀 있으면, 그 진료를 보긴 하지만 그 과 전문의가 아닐 수도 있다는 뜻이고요.", "en": "If it says “So-and-so Clinic” with a small “treats: dermatology” next to it, they do see those patients, but the doctor may not be a specialist in that field.", "tts": "아무개 의원 옆에 작게 진료과목 피부과라고 적혀 있으면, 그 진료를 보긴 하지만 그 과 전문의가 아닐 수도 있다는 뜻이고요.", "pop": "○○의원 · 진료과목" }
+      ]
+    },
+    {
+      "id": "c08",
+      "beat": "4. 갈라진 지점",
+      "scene": {
+        "bg": "bg/ortho-room",
+        "props": [
+          { "art": "prop/hospital-stairs", "x": 0.52, "y": 0.42, "w": 0.5 },
+          { "art": "prop/referral-letter", "x": 0.32, "y": 0.5, "w": 0.08, "at": 3, "to": { "x": 0.72, "y": 0.3 } }
+        ],
+        "actors": [
+          { "id": "doctor", "art": "doctor/normal", "x": 0.12, "idle": "sway" },
+          { "id": "mom", "art": "common/mom/normal", "x": 0.88 }
+        ]
+      },
+      "lines": [
+        { "who": "narr", "text": "이제 엄마 차례, 병원의 크기입니다.", "en": "Now Mom’s turn: the size of hospitals.", "pop": "계단 네 칸", "sfx": "pop" },
+        { "who": "narr", "text": "제일 아래 칸이 동네 의원. 그 위가 입원실 침대가 서른 개 이상인 병원, 백 개 이상에 여러 과가 모인 종합병원.", "en": "The bottom step is the neighborhood clinic. Above it, a hospital with thirty or more beds, then a general hospital with a hundred or more beds and many departments.", "pop": "의원 → 병원 → 종합병원" },
+        { "who": "narr", "text": "맨 위가 상급종합병원. 어렵고 무거운 병을 보라고 나라가 정해 둔 곳인데, 전국에 마흔일곱 곳뿐이에요.", "en": "At the top: tertiary hospitals, designated by the state for difficult, serious illnesses. There are only forty-seven nationwide.", "pop": "상급종합병원 47곳", "sfx": "stinger" },
+        { "who": "narr", "text": "아래 칸에서 위 칸으로 갈 때 필요한 게, 진료의뢰서입니다. 동네 선생님이 이건 더 큰 데서 봐야겠다 하고 써 주는 거죠.", "en": "What you need to go up a step is a referral letter. Your neighborhood doctor writes it when they think a bigger place should see you.", "pop": "진료의뢰서", "sfx": "whoosh" },
+        { "who": "narr", "text": "그게 없으면 진료는 받을 수 있지만, 건강보험이 안 돼서 진료비를 전부 내야 합니다. 응급 상황은 빼고요.", "en": "Without it you can still be seen, but insurance won’t cover it and you pay everything. Emergencies are the exception.", "pose": { "mom": "common/mom/shock" } },
+        { "who": "narr", "text": "왜 그렇게 해 뒀을까요. 맨 위 칸은 자리가 적거든요. 삔 손목으로 줄을 서면, 정말 큰 병인 사람이 그만큼 기다려야 합니다.", "en": "Why set it up that way? The top step has few seats. If we line up there with a sprained wrist, someone who is seriously ill has to wait that much longer.", "pose": { "mom": "common/mom/normal" } }
+      ]
+    },
+    {
+      "id": "c09",
+      "beat": "4. 갈라진 지점",
+      "scene": { "bg": "full/night-er", "pan": "left" },
+      "lines": [
+        { "who": "narr", "text": "응급실도 마찬가지예요. 응급실은 빨리 봐 주는 곳이 아니라, 위급한 사람부터 보는 곳입니다.", "en": "Emergency rooms are the same. An ER isn’t where you get seen fast. It’s where the most urgent are seen first." },
+        { "who": "narr", "text": "온 순서가 아니라, 위급한 순서로 다시 줄을 세워요.", "en": "They line people up again, not by arrival, but by urgency.", "pop": "온 순서 → 위급한 순서", "sfx": "whoosh" },
+        { "who": "narr", "text": "그래서 2024년 가을부터는, 가벼운 증상으로 큰 병원 응급실에 가면 진료비의 90%를 내가 내게 됐어요.", "en": "So since autumn 2024, if you go to a big hospital’s ER with mild symptoms, you pay ninety percent of the bill yourself.", "tts": "그래서 이천이십사 년 가을부터는, 가벼운 증상으로 큰 병원 응급실에 가면 진료비의 구십 퍼센트를 내가 내게 됐어요.", "pop": "가벼운 증상 · 본인부담 90%" },
+        { "who": "narr", "text": "밤이나 주말에 아이가 열이 나면, 밤과 휴일에도 아이를 봐 주는 달빛어린이병원이 있습니다.", "en": "If a child gets a fever at night or on a weekend, there are Moonlight Children’s Hospitals that see kids at night and on holidays.", "pop": "달빛어린이병원" },
+        { "who": "narr", "text": "어디로 가야 할지 모르겠으면 119에 전화해서 물어봐도 돼요. 문 연 병원을 알려 줍니다.", "en": "If you don’t know where to go, you can call 119 and ask. They’ll tell you which hospitals are open.", "tts": "어디로 가야 할지 모르겠으면 일일구에 전화해서 물어봐도 돼요. 문 연 병원을 알려 줍니다.", "pop": "119 상담" },
+        { "who": "narr", "text": "다만 숨쉬기 힘들거나, 정신이 흐리거나, 피가 많이 나면. 그때는 고민하지 말고, 바로 119입니다.", "en": "But if someone can’t breathe well, isn’t fully conscious, or is bleeding a lot, don’t think twice. Call 119 right away.", "tts": "다만 숨쉬기 힘들거나, 정신이 흐리거나, 피가 많이 나면. 그때는 고민하지 말고, 바로 일일구입니다.", "pop": "위급하면 바로 119", "sfx": "stinger" }
+      ]
+    },
+    {
+      "id": "c10",
+      "beat": "5. 한 문장 정리",
+      "style": "triptych",
+      "triptych": [
+        { "art": "prop/pill-hand", "name": "내과 · 외과", "label": "약으로 · 손으로" },
+        { "art": "prop/hospital-stairs", "name": "처음엔", "label": "동네에서" },
+        { "art": "prop/referral-letter", "name": "큰 병원은", "label": "편지를 들고" }
+      ],
+      "lines": [
+        { "who": "narr", "text": "정리하면 이렇습니다.", "en": "So, to sum up:" },
+        { "who": "narr", "text": "내과는 약으로, 외과는 손으로.", "en": "Internal medicine with medicine, surgery with hands.", "sfx": "stinger" },
+        { "who": "narr", "text": "처음엔 동네에서, 큰 병원은 편지를 들고.", "en": "Start in the neighborhood; go to the big hospital with a letter." },
+        { "who": "narr", "text": "과는 어디가 아픈가로, 병원 크기는 얼마나 아픈가로 고릅니다.", "en": "Choose the specialty by where it hurts, and the size of the hospital by how much it hurts.", "sfx": "stinger", "fx": "flash" }
+      ]
+    },
+    {
+      "id": "c11",
+      "beat": "6. 아이 눈높이로 번역",
+      "scene": {
+        "bg": "bg/lobby",
+        "props": [{ "art": "prop/floor-directory", "x": 0.7, "y": 0.4, "w": 0.18 }],
+        "actors": [
+          { "id": "mom", "art": "common/mom/normal", "x": 0.14 },
+          { "id": "kid", "art": "kid/bandage", "x": 0.4 },
+          { "id": "dad", "art": "common/dad/explain", "x": 0.6 }
+        ]
+      },
+      "lines": [
+        { "who": "narr", "text": "손목에 붕대를 감고 1층으로 내려왔습니다. 로비 층별 안내판 앞에서, 아이 눈높이로 쪼그려 앉았어요.", "en": "With the wrist bandaged, we came down to the first floor. In front of the lobby directory, I crouched down to my kid’s eye level.", "tts": "손목에 붕대를 감고 일 층으로 내려왔습니다. 로비 층별 안내판 앞에서, 아이 눈높이로 쪼그려 앉았어요." },
+        { "who": "dad", "text": "아까 아빠가 외과는 밖, 내과는 안이라고 했지? 그거 틀린 말이었어.", "en": "Earlier I said surgery is the outside and internal medicine is the inside, right? That was wrong." },
+        { "who": "dad", "text": "내과는 약으로 고치는 선생님이고, 외과는 손으로 직접 고치는 선생님이야.", "en": "Internal medicine doctors fix things with medicine, and surgeons fix things directly with their hands." },
+        { "who": "dad", "text": "그리고 몸 부분마다 잘 아는 선생님이 따로 있어. 뼈는 정형외과, 코랑 귀는 이비인후과, 너처럼 자라는 몸은 소아청소년과.", "en": "And each part of the body has doctors who know it best. Bones: orthopedics. Nose and ears: ENT. A growing body like yours: pediatrics." },
+        { "who": "dad", "text": "어디가 아픈지 잘 모르겠으면, 먼저 동네에서 우리를 잘 아는 선생님한테 가는 거야.", "en": "If you’re not sure what’s wrong, first go to a neighborhood doctor who knows us well." },
+        { "who": "dad", "text": "그 선생님이 더 큰 병원이 필요하다고 생각하면, 편지를 써 주셔.", "en": "If that doctor thinks you need a bigger hospital, they write you a letter." }
+      ]
+    },
+    {
+      "id": "c11b",
+      "beat": "6. 아이 눈높이로 번역",
+      "scene": {
+        "bg": "bg/lobby",
+        "props": [
+          { "art": "prop/floor-directory", "x": 0.7, "y": 0.4, "w": 0.18 },
+          { "art": "prop/referral-letter", "x": 0.5, "y": 0.5, "w": 0.07, "at": 1 }
+        ],
+        "actors": [
+          { "id": "mom", "art": "common/mom/normal", "x": 0.14 },
+          { "id": "kid", "art": "kid/bandage", "x": 0.4 },
+          { "id": "dad", "art": "common/dad/explain", "x": 0.6 }
+        ]
+      },
+      "lines": [
+        { "who": "kid", "text": "편지요?", "en": "A letter?", "pose": { "kid": "common/kid/ask" } },
+        { "who": "dad", "text": "응. 진료의뢰서. 다음 선생님한테 이 아이 부탁합니다 하고 쓰는 편지.", "en": "Yes. A referral letter. A letter to the next doctor that says, “Please take care of this child.”" },
+        { "who": "dad", "text": "그런데 숨쉬기 힘들거나 많이 다쳤을 때는, 편지 없이 바로 119야.", "en": "But if it’s hard to breathe or you’re badly hurt, skip the letter and call 119 right away.", "tts": "그런데 숨쉬기 힘들거나 많이 다쳤을 때는, 편지 없이 바로 일일구야." }
+      ]
+    },
+    {
+      "id": "c11c",
+      "beat": "6. 아이 눈높이로 번역",
+      "scene": {
+        "bg": "bg/lobby",
+        "props": [{ "art": "prop/floor-directory", "x": 0.7, "y": 0.4, "w": 0.18, "motion": "pulse" }],
+        "actors": [
+          { "id": "kid", "art": "kid/bandage", "x": 0.42 },
+          { "id": "dad", "art": "common/dad/normal", "x": 0.18 }
+        ]
+      },
+      "lines": [
+        { "who": "narr", "text": "아이는 안내판을 올려다보더니, 손가락으로 한 층씩 짚었습니다.", "en": "My kid looked up at the directory and pointed at it one floor at a time." },
+        { "who": "kid", "text": "뼈는 3층. 코는 4층. 나는 2층.", "en": "Bones, third floor. Nose, fourth floor. Me, second floor.", "tts": "뼈는 삼 층. 코는 사 층. 나는 이 층." },
+        { "who": "narr", "text": "그리고 붕대 감은 손목을 제 쪽으로 내밀었습니다.", "en": "Then they held out the bandaged wrist toward me." },
+        { "who": "kid", "text": "오늘 3층 선생님이 고쳐 줬어요.", "en": "The third-floor doctor fixed me today.", "tts": "오늘 삼 층 선생님이 고쳐 줬어요." }
+      ]
+    },
+    {
+      "id": "c12",
+      "beat": "7. 남는 이야기",
+      "scene": {
+        "bg": "bg/building-front",
+        "actors": [
+          { "id": "mom", "art": "common/mom/smirk", "x": 0.22 },
+          { "id": "kid", "art": "kid/bandage", "x": 0.48 },
+          { "id": "dad", "art": "common/dad/normal", "x": 0.74 }
+        ]
+      },
+      "lines": [
+        { "who": "narr", "text": "외과는 밖을 고친다. 큰 병원이 다 낫다. 저희 부부만 그렇게 알고 있었던 건 아니죠?", "en": "Surgery fixes the outside. Bigger hospitals are always better. We weren’t the only couple who thought so, right?" },
+        { "who": "narr", "text": "건물을 나서는데, 아이가 걸음을 멈췄습니다.", "en": "As we left the building, my kid stopped walking." },
+        { "who": "kid", "text": "아빠, 내 자전거는요?", "en": "Dad, where’s my bike?", "pose": { "kid": "common/kid/doubt" }, "focus": "kid", "fx": "zoom", "sfx": "dudung" }
+      ]
+    },
+    {
+      "id": "c13",
+      "beat": "7. 남는 이야기",
+      "scene": { "bg": "full/next-teaser" },
+      "lines": [
+        { "who": "narr", "text": "아침에 타고 나왔던 자전거가, 어디에도 없었습니다.", "en": "The bike we rode out on that morning was nowhere to be seen." },
+        { "who": "dad", "text": "…도둑맞았나 보다. 지구대 가자.", "en": "…It must’ve been stolen. Let’s go to the police box." },
+        { "who": "kid", "text": "도둑 잡히면 감옥 가요? 바로요?", "en": "If they catch the thief, do they go to jail? Right away?" },
+        { "who": "narr", "text": "다음 편은, 이 질문입니다.", "en": "The next episode is about this question." }
+      ]
+    },
+    {
+      "id": "end",
+      "beat": "",
+      "style": "end",
+      "art": "full/next-teaser",
+      "end": {
+        "series": "여덟 살의 질문 · 7편",
+        "title": "내과 · 외과, 어디로 가요?",
+        "next": "다음 편 — 도둑 잡히면 감옥 가요? 바로요?"
+      },
+      "lines": []
+    }
+  ]
+}

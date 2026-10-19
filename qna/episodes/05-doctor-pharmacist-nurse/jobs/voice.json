@@ -1,0 +1,893 @@
+{
+  "episode": "ep05",
+  "title": "의사 · 약사 · 간호사, 뭐가 달라요?",
+  "engine": "Google AI Studio · Gemini Flash TTS (여러 화자)",
+  "format": "WAV, 24 kHz, 16-bit, mono. One file per cut, all lines of the cut in order.",
+  "direction": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud.",
+  "jobs": [
+    {
+      "cut": "c00",
+      "save": "video/voice-studio/ep05/c00.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "지금 저는 동네 약국 카운터 앞에서, 헛기침을 하고 있습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "콜록, 콜록.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "감기는 아이가 걸렸는데 말이죠.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "일 분 전으로 돌아가 보겠습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\nThe line \"콜록, 콜록.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 지금 저는 동네 약국 카운터 앞에서, 헛기침을 하고 있습니다.\nSpeaker 1: 콜록, 콜록.\nSpeaker 1: 감기는 아이가 걸렸는데 말이죠.\nSpeaker 1: 일 분 전으로 돌아가 보겠습니다."
+    },
+    {
+      "cut": "c01",
+      "save": "video/voice-studio/ep05/c01.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "아이가 감기에 걸려서 동네 소아과에 다녀왔습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "일 층 약국에서 약이 나오길 기다리는데, 아이가 제 소매를 잡아당겼어요.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "아빠, 의사 선생님이랑 약사 선생님이랑 간호사 선생님은 뭐가 달라요?",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "다 하얀 옷 입었는데.",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: His eight-year-old child: bright, curious, high-pitched.\n\nSpeaker 1: 아이가 감기에 걸려서 동네 소아과에 다녀왔습니다.\nSpeaker 1: 일 층 약국에서 약이 나오길 기다리는데, 아이가 제 소매를 잡아당겼어요.\nSpeaker 2: 아빠, 의사 선생님이랑 약사 선생님이랑 간호사 선생님은 뭐가 달라요?\nSpeaker 2: 다 하얀 옷 입었는데."
+    },
+    {
+      "cut": "c02",
+      "save": "video/voice-studio/ep05/c02.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "저는 아주 쉽게 대답했습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "의사 선생님이 대장이고, 간호사 선생님은 옆에서 도와주는 사람이고,",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "약사 선생님은, 약 파는 사람?",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "그 순간, 약국이 조용해졌습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "약봉투를 들고 계시던 약사 선생님이, 딱 멈추셨거든요.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\nThe line \"의사 선생님이 대장이고, 간호사 선생님은 옆에서 도와주는 사람이고,\" is the dad speaking inside the scene, acted out, not narration.\nThe line \"약사 선생님은, 약 파는 사람?\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 저는 아주 쉽게 대답했습니다.\nSpeaker 1: 의사 선생님이 대장이고, 간호사 선생님은 옆에서 도와주는 사람이고,\nSpeaker 1: 약사 선생님은, 약 파는 사람?\nSpeaker 1: 그 순간, 약국이 조용해졌습니다.\nSpeaker 1: 약봉투를 들고 계시던 약사 선생님이, 딱 멈추셨거든요."
+    },
+    {
+      "cut": "c03",
+      "save": "video/voice-studio/ep05/c03.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Sulafat",
+          "who": "약사 선생님",
+          "style": "A calm, kind Korean pharmacist woman in her early fifties who has run a small neighborhood pharmacy for twenty years: warm, clear, unhurried voice with a gentle dry humor, precise and reassuring, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "어, 그게, 콜록, 콜록.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "감기는 아이가 걸렸는데, 기침은 제가 했습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "pharmacist",
+          "text": "약 나오면 불러 드릴게요.",
+          "style": "A calm, kind Korean pharmacist woman in her early fifties who has run a small neighborhood pharmacy for twenty years: warm, clear, unhurried voice with a gentle dry humor, precise and reassuring, never stern"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "위에서부터 사다리처럼 줄을 세웠는데, 지금 생각하면 그 사다리부터 틀렸어요.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: A calm, kind Korean pharmacist woman in her early fifties who has run a small neighborhood pharmacy for twenty years: warm, clear, unhurried voice with a gentle dry humor, precise and reassuring, never stern.\nThe line \"어, 그게, 콜록, 콜록.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 어, 그게, 콜록, 콜록.\nSpeaker 1: 감기는 아이가 걸렸는데, 기침은 제가 했습니다.\nSpeaker 2: 약 나오면 불러 드릴게요.\nSpeaker 1: 위에서부터 사다리처럼 줄을 세웠는데, 지금 생각하면 그 사다리부터 틀렸어요."
+    },
+    {
+      "cut": "c04",
+      "save": "video/voice-studio/ep05/c04.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "저는 약 기다리는 의자에 앉아서, 조용히 휴대폰을 켰습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "docu",
+          "text": "아빠라는 생물은, 궁지에 몰리면, 약국에서도 검색을 한다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is read in a very deep, slow, mock-serious nature-documentary narrator voice"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "헷갈릴 만합니다. 셋 다 흰 옷을 입고, 셋 다 병원 근처에 있고,",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "우리는 셋 다 선생님이라고 부르니까요.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\nThe line \"아빠라는 생물은, 궁지에 몰리면, 약국에서도 검색을 한다.\" is read in a very deep, slow, mock-serious nature-documentary narrator voice.\n\nSpeaker 1: 저는 약 기다리는 의자에 앉아서, 조용히 휴대폰을 켰습니다.\nSpeaker 1: 아빠라는 생물은, 궁지에 몰리면, 약국에서도 검색을 한다.\nSpeaker 1: 헷갈릴 만합니다. 셋 다 흰 옷을 입고, 셋 다 병원 근처에 있고,\nSpeaker 1: 우리는 셋 다 선생님이라고 부르니까요."
+    },
+    {
+      "cut": "c05",
+      "save": "video/voice-studio/ep05/c05.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "게다가 아까 소아과에서 아이 체온을 재 주신 분.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "당연히 간호사 선생님인 줄 알았는데, 명찰에는 간호조무사라고 적혀 있었습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "둘은 이름만 비슷하지 다른 길이에요. 간호사는 대학에서 간호학을 공부하고 국가시험에 붙어 면허를 받고,",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "간호조무사는 정해진 교육과정을 마치고, 따로 국가시험을 봐서 자격을 받습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "간호조무사는 간호사나 의사의 지도 아래, 간호와 진료를 돕는 일을 맡아요. 동네 의원에서 자주 만나는 분이 간호조무사 선생님인 경우도 많고요.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "이렇게 흰 옷이 여럿이다 보니, 머릿속에 사다리를 하나 그려 놓게 됩니다. 맨 위에 의사, 그 밑에 나머지.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "그런데 이 사람들은 위아래가 아니라, 아픈 사람 한 명을 둘러싼 서로 다른 자리에 가깝습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "그래서 오늘은 딱 하나만 봅니다. 아픈 사람 한 명을 두고, 누가 무엇을 맡는가.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\n\nSpeaker 1: 게다가 아까 소아과에서 아이 체온을 재 주신 분.\nSpeaker 1: 당연히 간호사 선생님인 줄 알았는데, 명찰에는 간호조무사라고 적혀 있었습니다.\nSpeaker 1: 둘은 이름만 비슷하지 다른 길이에요. 간호사는 대학에서 간호학을 공부하고 국가시험에 붙어 면허를 받고,\nSpeaker 1: 간호조무사는 정해진 교육과정을 마치고, 따로 국가시험을 봐서 자격을 받습니다.\nSpeaker 1: 간호조무사는 간호사나 의사의 지도 아래, 간호와 진료를 돕는 일을 맡아요. 동네 의원에서 자주 만나는 분이 간호조무사 선생님인 경우도 많고요.\nSpeaker 1: 이렇게 흰 옷이 여럿이다 보니, 머릿속에 사다리를 하나 그려 놓게 됩니다. 맨 위에 의사, 그 밑에 나머지.\nSpeaker 1: 그런데 이 사람들은 위아래가 아니라, 아픈 사람 한 명을 둘러싼 서로 다른 자리에 가깝습니다.\nSpeaker 1: 그래서 오늘은 딱 하나만 봅니다. 아픈 사람 한 명을 두고, 누가 무엇을 맡는가."
+    },
+    {
+      "cut": "c06",
+      "save": "video/voice-studio/ep05/c06.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "의사부터. 그날 의사 선생님은 목을 보고, 가슴 소리를 듣고, 몇 가지를 묻고,",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "그리고, 감기네요, 하고 정했습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "어디가 왜 아픈지 판단하는 것. 그리고 거기에 맞는 약을 처방전에 적는 것까지.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "그런데 의사 선생님은 약을 직접 주지 않았죠. 종이 한 장만 줬습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\n\nSpeaker 1: 의사부터. 그날 의사 선생님은 목을 보고, 가슴 소리를 듣고, 몇 가지를 묻고,\nSpeaker 1: 그리고, 감기네요, 하고 정했습니다.\nSpeaker 1: 어디가 왜 아픈지 판단하는 것. 그리고 거기에 맞는 약을 처방전에 적는 것까지.\nSpeaker 1: 그런데 의사 선생님은 약을 직접 주지 않았죠. 종이 한 장만 줬습니다."
+    },
+    {
+      "cut": "c07",
+      "save": "video/voice-studio/ep05/c07.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "여기서 처음 갈라집니다. 천이백사십년 무렵, 신성로마제국 황제 프리드리히 이세가 좀 특이한 법을 만듭니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "의사는 약국을 같이 하면 안 되고, 약값은 정해진 대로 받으라는 법이었어요.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "진단하는 사람이 약까지 팔면 약을 더 쓰고 싶어질 수도 있고, 틀려도 한 번 더 봐 줄 사람이 없으니까요.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\n\nSpeaker 1: 여기서 처음 갈라집니다. 천이백사십년 무렵, 신성로마제국 황제 프리드리히 이세가 좀 특이한 법을 만듭니다.\nSpeaker 1: 의사는 약국을 같이 하면 안 되고, 약값은 정해진 대로 받으라는 법이었어요.\nSpeaker 1: 진단하는 사람이 약까지 팔면 약을 더 쓰고 싶어질 수도 있고, 틀려도 한 번 더 봐 줄 사람이 없으니까요."
+    },
+    {
+      "cut": "c07b",
+      "save": "video/voice-studio/ep05/c07b.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "우리나라는 훨씬 늦었습니다. 이천년 전까지만 해도 병원에서 약을 바로 받거나, 약국에서 처방전 없이 약을 짓는 일이 흔했어요.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "이천년 칠월 의약분업이 시작되면서, 진료와 처방은 병원, 조제는 약국으로 나뉩니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "시작할 때 진통이 컸고, 지금도 평가는 갈립니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\n\nSpeaker 1: 우리나라는 훨씬 늦었습니다. 이천년 전까지만 해도 병원에서 약을 바로 받거나, 약국에서 처방전 없이 약을 짓는 일이 흔했어요.\nSpeaker 1: 이천년 칠월 의약분업이 시작되면서, 진료와 처방은 병원, 조제는 약국으로 나뉩니다.\nSpeaker 1: 시작할 때 진통이 컸고, 지금도 평가는 갈립니다."
+    },
+    {
+      "cut": "c08",
+      "save": "video/voice-studio/ep05/c08.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Sulafat",
+          "who": "약사 선생님",
+          "style": "A calm, kind Korean pharmacist woman in her early fifties who has run a small neighborhood pharmacy for twenty years: warm, clear, unhurried voice with a gentle dry humor, precise and reassuring, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "그럼 약사는 처방전대로 약만 담아 주는 사람일까요. 약사 선생님이 약을 주기 전에 저한테 물었습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "pharmacist",
+          "text": "아이 몸무게가 몇 킬로죠? 요즘 다른 약 먹는 거 있어요?",
+          "style": "A calm, kind Korean pharmacist woman in her early fifties who has run a small neighborhood pharmacy for twenty years: warm, clear, unhurried voice with a gentle dry humor, precise and reassuring, never stern"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "몸무게가, 어.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "저는 몸무게에서 막혔습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "어린이 약은 몸무게에 따라 양이 달라지는 경우가 많습니다. 약사는 이 처방이 이 아이한테 맞는지, 같이 먹으면 안 되는 약은 없는지 한 번 더 확인해요.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "처방에 이상한 점이 보이면, 의사에게 물어서 확인한 다음 약을 지어야 한다고 법에도 적혀 있습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "약 파는 사람이 아니라, 두 번째로 보는 눈이었던 거죠.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: A calm, kind Korean pharmacist woman in her early fifties who has run a small neighborhood pharmacy for twenty years: warm, clear, unhurried voice with a gentle dry humor, precise and reassuring, never stern.\nThe line \"몸무게가, 어.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 그럼 약사는 처방전대로 약만 담아 주는 사람일까요. 약사 선생님이 약을 주기 전에 저한테 물었습니다.\nSpeaker 2: 아이 몸무게가 몇 킬로죠? 요즘 다른 약 먹는 거 있어요?\nSpeaker 1: 몸무게가, 어.\nSpeaker 1: 저는 몸무게에서 막혔습니다.\nSpeaker 1: 어린이 약은 몸무게에 따라 양이 달라지는 경우가 많습니다. 약사는 이 처방이 이 아이한테 맞는지, 같이 먹으면 안 되는 약은 없는지 한 번 더 확인해요.\nSpeaker 1: 처방에 이상한 점이 보이면, 의사에게 물어서 확인한 다음 약을 지어야 한다고 법에도 적혀 있습니다.\nSpeaker 1: 약 파는 사람이 아니라, 두 번째로 보는 눈이었던 거죠."
+    },
+    {
+      "cut": "c08b",
+      "save": "video/voice-studio/ep05/c08b.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "약이 나오길 기다리는데, 아이가 계산대 옆 진열대를 가리켰습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "아빠, 저 약은 종이 없이 그냥 사네요?",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "이번엔 대답하기 전에, 약사 선생님 얼굴부터 봤습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: His eight-year-old child: bright, curious, high-pitched.\n\nSpeaker 1: 약이 나오길 기다리는데, 아이가 계산대 옆 진열대를 가리켰습니다.\nSpeaker 2: 아빠, 저 약은 종이 없이 그냥 사네요?\nSpeaker 1: 이번엔 대답하기 전에, 약사 선생님 얼굴부터 봤습니다."
+    },
+    {
+      "cut": "c08b2",
+      "save": "video/voice-studio/ep05/c08b2.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Sulafat",
+          "who": "약사 선생님",
+          "style": "A calm, kind Korean pharmacist woman in her early fifties who has run a small neighborhood pharmacy for twenty years: warm, clear, unhurried voice with a gentle dry humor, precise and reassuring, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "pharmacist",
+          "text": "그건 일반의약품이라 처방전 없이도 살 수 있어요. 대신 저한테 물어보고 사는 약이에요.",
+          "style": "A calm, kind Korean pharmacist woman in her early fifties who has run a small neighborhood pharmacy for twenty years: warm, clear, unhurried voice with a gentle dry humor, precise and reassuring, never stern"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "약 상자를 보면 작은 글씨로 둘 중 하나가 적혀 있습니다. 전문의약품, 아니면 일반의약품.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "전문의약품은 의사가 진찰하고 처방전을 써 줘야 받을 수 있는 약이고, 일반의약품은 의사의 진찰 없이도 비교적 안전하게 쓸 수 있다고 정해 둔 약입니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: A calm, kind Korean pharmacist woman in her early fifties who has run a small neighborhood pharmacy for twenty years: warm, clear, unhurried voice with a gentle dry humor, precise and reassuring, never stern.\n\nSpeaker 2: 그건 일반의약품이라 처방전 없이도 살 수 있어요. 대신 저한테 물어보고 사는 약이에요.\nSpeaker 1: 약 상자를 보면 작은 글씨로 둘 중 하나가 적혀 있습니다. 전문의약품, 아니면 일반의약품.\nSpeaker 1: 전문의약품은 의사가 진찰하고 처방전을 써 줘야 받을 수 있는 약이고, 일반의약품은 의사의 진찰 없이도 비교적 안전하게 쓸 수 있다고 정해 둔 약입니다."
+    },
+    {
+      "cut": "c08c",
+      "save": "video/voice-studio/ep05/c08c.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "그중에서도 몇 가지는 밤에도 살 수 있게 이십사 시간 편의점에 놓여 있습니다. 해열진통제, 감기약, 소화제, 파스.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "안전상비의약품이라고 하는데, 이천이십육년 지금은 열한 가지예요.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\n\nSpeaker 1: 그중에서도 몇 가지는 밤에도 살 수 있게 이십사 시간 편의점에 놓여 있습니다. 해열진통제, 감기약, 소화제, 파스.\nSpeaker 1: 안전상비의약품이라고 하는데, 이천이십육년 지금은 열한 가지예요."
+    },
+    {
+      "cut": "c09",
+      "save": "video/voice-studio/ep05/c09.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "두 번째로 갈라지는 건 간호입니다. 천팔백오십사년, 크림전쟁.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "플로렌스 나이팅게일이 간호사들을 이끌고 전쟁터의 병원으로 갑니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "의사는 치료하고 다음 환자에게 가지만, 환자는 밤새 거기 누워 있죠. 나이팅게일은 밤마다 등불을 들고 병실을 돌았습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "그리고 전부 적었어요. 그 기록으로, 상처보다 병과 나쁜 위생 때문에 죽는 병사가 훨씬 많다는 걸 도표로 그려 보여 줍니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "나이팅게일은 통계 도표까지 그렸는데, 저는 우리 아이 몸무게도 몰랐습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "천팔백육십년 런던에 간호학교가 생기면서, 간호는 배워서 하는 직업이 됩니다. 우리나라에서는 천구백팔십칠년에, 간호원이던 이름이 간호사로 바뀌었고요.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\n\nSpeaker 1: 두 번째로 갈라지는 건 간호입니다. 천팔백오십사년, 크림전쟁.\nSpeaker 1: 플로렌스 나이팅게일이 간호사들을 이끌고 전쟁터의 병원으로 갑니다.\nSpeaker 1: 의사는 치료하고 다음 환자에게 가지만, 환자는 밤새 거기 누워 있죠. 나이팅게일은 밤마다 등불을 들고 병실을 돌았습니다.\nSpeaker 1: 그리고 전부 적었어요. 그 기록으로, 상처보다 병과 나쁜 위생 때문에 죽는 병사가 훨씬 많다는 걸 도표로 그려 보여 줍니다.\nSpeaker 1: 나이팅게일은 통계 도표까지 그렸는데, 저는 우리 아이 몸무게도 몰랐습니다.\nSpeaker 1: 천팔백육십년 런던에 간호학교가 생기면서, 간호는 배워서 하는 직업이 됩니다. 우리나라에서는 천구백팔십칠년에, 간호원이던 이름이 간호사로 바뀌었고요."
+    },
+    {
+      "cut": "c09b",
+      "save": "video/voice-studio/ep05/c09b.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "간호사의 일은 의사를 돕는 것만이 아닙니다. 환자를 관찰하고, 기록하고, 이상한 걸 먼저 알아채고 판단하는 것. 이것도 법에 적혀 있어요.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "이천이십오년부터는 간호사의 면허와 일을 따로 정한 간호법도 생겼고요.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "그리고 간호사 안에서도 갈래가 나뉩니다. 경력을 쌓고 따로 공부해서 시험을 통과하면, 한 분야를 깊게 맡는 전문간호사가 됩니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "마취, 응급, 중환자, 아동, 호스피스. 분야가 열세 개나 돼요.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "의사가 잠깐 보고 가는 동안에도, 계속 곁에 있는 사람들입니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\n\nSpeaker 1: 간호사의 일은 의사를 돕는 것만이 아닙니다. 환자를 관찰하고, 기록하고, 이상한 걸 먼저 알아채고 판단하는 것. 이것도 법에 적혀 있어요.\nSpeaker 1: 이천이십오년부터는 간호사의 면허와 일을 따로 정한 간호법도 생겼고요.\nSpeaker 1: 그리고 간호사 안에서도 갈래가 나뉩니다. 경력을 쌓고 따로 공부해서 시험을 통과하면, 한 분야를 깊게 맡는 전문간호사가 됩니다.\nSpeaker 1: 마취, 응급, 중환자, 아동, 호스피스. 분야가 열세 개나 돼요.\nSpeaker 1: 의사가 잠깐 보고 가는 동안에도, 계속 곁에 있는 사람들입니다."
+    },
+    {
+      "cut": "c10",
+      "save": "video/voice-studio/ep05/c10.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "정리하면 이렇습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "의사는 병을 정하고,",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "약사는 약을 짓고,",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "간호사는 곁을 지킵니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "그리고 한 사람이 다 하지 않게, 일부러 나눠 놓았습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\n\nSpeaker 1: 정리하면 이렇습니다.\nSpeaker 1: 의사는 병을 정하고,\nSpeaker 1: 약사는 약을 짓고,\nSpeaker 1: 간호사는 곁을 지킵니다.\nSpeaker 1: 그리고 한 사람이 다 하지 않게, 일부러 나눠 놓았습니다."
+    },
+    {
+      "cut": "c11",
+      "save": "video/voice-studio/ep05/c11.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "그날 밤, 아이 열이 올랐습니다. 저는 체온계를 들고 침대 옆에 앉아서, 낮에 못 한 대답을 다시 했어요.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "아까 아빠가 의사 선생님이 대장이라고 했지? 그거 틀린 말이었어. 병원에서는 세 사람이 서로 다른 일을 맡아.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "의사 선생님은 어디가 아픈지, 무슨 병인지 정하는 사람이야. 목도 보고, 가슴 소리도 듣고. 그리고 필요한 약을 종이에 적어 줘.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "약사 선생님은 그 종이를 받아서 약을 짓는 사람이야. 이 약이 네 몸무게에 맞는지, 다른 약이랑 부딪히지 않는지 한 번 더 확인해.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "아까 진열대에 있던 약은 종이 없이도 살 수 있게 정해 둔 약이야. 그래도 약사 선생님한테 물어보고 사는 거야.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "간호사 선생님은 아픈 사람 곁에서 계속 지켜보는 사람이야. 열이 몇 도인지 재고, 적어 두고, 이상하면 제일 먼저 알아채.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "한 사람이 다 하면 틀려도 아무도 모르잖아. 그래서 셋이 나눠서, 서로 한 번씩 더 보는 거야.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\nThe line \"아까 아빠가 의사 선생님이 대장이라고 했지? 그거 틀린 말이었어. 병원에서는 세 사람이 서로 다른 일을 맡아.\" is the dad speaking inside the scene, acted out, not narration.\nThe line \"의사 선생님은 어디가 아픈지, 무슨 병인지 정하는 사람이야. 목도 보고, 가슴 소리도 듣고. 그리고 필요한 약을 종이에 적어 줘.\" is the dad speaking inside the scene, acted out, not narration.\nThe line \"약사 선생님은 그 종이를 받아서 약을 짓는 사람이야. 이 약이 네 몸무게에 맞는지, 다른 약이랑 부딪히지 않는지 한 번 더 확인해.\" is the dad speaking inside the scene, acted out, not narration.\nThe line \"아까 진열대에 있던 약은 종이 없이도 살 수 있게 정해 둔 약이야. 그래도 약사 선생님한테 물어보고 사는 거야.\" is the dad speaking inside the scene, acted out, not narration.\nThe line \"간호사 선생님은 아픈 사람 곁에서 계속 지켜보는 사람이야. 열이 몇 도인지 재고, 적어 두고, 이상하면 제일 먼저 알아채.\" is the dad speaking inside the scene, acted out, not narration.\nThe line \"한 사람이 다 하면 틀려도 아무도 모르잖아. 그래서 셋이 나눠서, 서로 한 번씩 더 보는 거야.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 그날 밤, 아이 열이 올랐습니다. 저는 체온계를 들고 침대 옆에 앉아서, 낮에 못 한 대답을 다시 했어요.\nSpeaker 1: 아까 아빠가 의사 선생님이 대장이라고 했지? 그거 틀린 말이었어. 병원에서는 세 사람이 서로 다른 일을 맡아.\nSpeaker 1: 의사 선생님은 어디가 아픈지, 무슨 병인지 정하는 사람이야. 목도 보고, 가슴 소리도 듣고. 그리고 필요한 약을 종이에 적어 줘.\nSpeaker 1: 약사 선생님은 그 종이를 받아서 약을 짓는 사람이야. 이 약이 네 몸무게에 맞는지, 다른 약이랑 부딪히지 않는지 한 번 더 확인해.\nSpeaker 1: 아까 진열대에 있던 약은 종이 없이도 살 수 있게 정해 둔 약이야. 그래도 약사 선생님한테 물어보고 사는 거야.\nSpeaker 1: 간호사 선생님은 아픈 사람 곁에서 계속 지켜보는 사람이야. 열이 몇 도인지 재고, 적어 두고, 이상하면 제일 먼저 알아채.\nSpeaker 1: 한 사람이 다 하면 틀려도 아무도 모르잖아. 그래서 셋이 나눠서, 서로 한 번씩 더 보는 거야."
+    },
+    {
+      "cut": "c12",
+      "save": "video/voice-studio/ep05/c12.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "아이가 제 손에 든 체온계를 보더니 말했습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "그럼 오늘 밤은 아빠가 간호사 선생님이네요.",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "응, 오늘 밤만.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "그럼 까먹지 말고 적어요.",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "그날 저는 처음으로 아이 체온을 시간이랑 같이 적어 두었습니다. 밤 아홉 시 반, 삼십팔 점 일 도.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: His eight-year-old child: bright, curious, high-pitched.\nThe line \"응, 오늘 밤만.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 아이가 제 손에 든 체온계를 보더니 말했습니다.\nSpeaker 2: 그럼 오늘 밤은 아빠가 간호사 선생님이네요.\nSpeaker 1: 응, 오늘 밤만.\nSpeaker 2: 그럼 까먹지 말고 적어요.\nSpeaker 1: 그날 저는 처음으로 아이 체온을 시간이랑 같이 적어 두었습니다. 밤 아홉 시 반, 삼십팔 점 일 도."
+    },
+    {
+      "cut": "c13",
+      "save": "video/voice-studio/ep05/c13.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "혹시 지금 아이 몸무게, 바로 말할 수 있으세요? 저는 이제 압니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "다음 날 아침, 열이 내린 아이가 제 메모를 보더니 또 물었습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "아빠, 어제 병원에서 옆에 있던 형은 독감이래요. 감기랑 독감은 뭐가 달라요? 독감은 독한 감기예요?",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "약 먹을 시간이다. 약부터 먹자.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: His eight-year-old child: bright, curious, high-pitched.\nThe line \"약 먹을 시간이다. 약부터 먹자.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 혹시 지금 아이 몸무게, 바로 말할 수 있으세요? 저는 이제 압니다.\nSpeaker 1: 다음 날 아침, 열이 내린 아이가 제 메모를 보더니 또 물었습니다.\nSpeaker 2: 아빠, 어제 병원에서 옆에 있던 형은 독감이래요. 감기랑 독감은 뭐가 달라요? 독감은 독한 감기예요?\nSpeaker 1: 약 먹을 시간이다. 약부터 먹자."
+    },
+    {
+      "cut": "c14",
+      "save": "video/voice-studio/ep05/c14.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "다음 편은, 이 질문입니다. 저는 그 전에, 또 검색 좀 하고 오겠습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\n\nSpeaker 1: 다음 편은, 이 질문입니다. 저는 그 전에, 또 검색 좀 하고 오겠습니다."
+    }
+  ]
+}

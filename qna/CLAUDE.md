@@ -13,7 +13,7 @@ qna/
 ├─ skill/                     ← eight-year-olds-question 스킬 패키지
 ├─ art/                       ← 모든 편이 같이 쓰는 그림 원본
 │  ├─ anchor/style-cutin.png  ← 화풍 앵커 (모든 Gemini 요청에 ①로 첨부)
-│  ├─ common/{dad,kid,cutin,bg}/   ← 아빠 · 아이 표정, 공통 배경
+│  ├─ common/{dad,kid,mom,cutin,bg}/ ← 아빠 · 아이 · 엄마 표정, 공통 배경
 │  └─ channel/                ← 채널 프로필 · 배너
 ├─ episodes/NN-영문슬러그/      ← 편 하나 = 폴더 하나 (아래 "편 폴더")
 └─ video/                     ← Remotion 영상 코드 (README.md · VOICE.md)
@@ -60,7 +60,7 @@ qna/
 
 ### 고정 규칙
 - 시나리오는 집 밖에서, 제삼의 인물과. 한창 벌어지는 장면부터. 6번 박자(아이 눈높이)에는 농담 없음. 기준 예시는 3편.
-- 목소리: 아빠 · 나레이션 = Algenib, 아이 = Leda, 손님은 `src/voice.json` 의 Guest. 한 컷에 목소리는 둘까지 (`npm run voice -- epNN jobs` 가 검사한다).
+- 목소리: 아빠 · 나레이션 = Algenib, 아이 = Leda, 엄마 = Kore, 손님은 `src/voice.json` 의 Guest. 한 컷에 목소리는 둘까지 (`npm run voice -- epNN jobs` 가 검사한다).
 - 몸 · 성 관련 소재는 몸을 그리지 않는다 (4편: 닫힌 문 · 거품 모자이크 · 단면도). 민감한 단어는 대사에만, 썸네일 · 제목 · 화면 글자에는 쓰지 않는다.
 - 분량은 8분 안팎. `storyboard.html` 과 기획서 콘티표의 시간으로 확인한다.
 - 대본을 고치면 `.md` 기획서의 대본도 같이 고친다 (영상 대본이 원본이 된 뒤에는 `script.json` 기준).
