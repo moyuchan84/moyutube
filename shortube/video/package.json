@@ -6,7 +6,14 @@
     "studio": "remotion studio",
     "render": "remotion render RankingShort ../output/videos/2026-10-15_slot1.mp4",
     "still": "remotion still RankingShort ../output/videos/preview.png",
-    "market": "node scripts/market-data.mjs && node scripts/bgm-tension.mjs && remotion render MarketShort ../output/videos/2026-10-15_slot2_market.mp4"
+    "heat": "node scripts/bgm-heat.mjs && remotion render HeatShort ../output/videos/2026-10-16_slot1_heat.mp4",
+    "gta": "node scripts/bgm-gta.mjs && remotion render GtaShort ../output/videos/2026-10-16_slot2_gta.mp4",
+    "suneung": "node scripts/bgm-suneung.mjs && remotion render SuneungShort ../output/videos/2026-10-16_slot3_suneung.mp4",
+    "usmarket": "node scripts/bgm-usmarket.mjs && remotion render UsShort ../output/videos/2026-10-17_slot1_usmarket.mp4",
+    "backtest": "node scripts/fetch-kospi-long.mjs && node scripts/backtest-indicators.mjs && node scripts/bgm-backtest.mjs && remotion render BacktestShort ../output/videos/2026-10-18_slot1_backtest.mp4",
+    "seoulsupply": "node scripts/bgm-seoulsupply.mjs && remotion render SeoulSupplyShort ../output/videos/2026-10-19_slot1_seoulsupply.mp4",
+    "soxl": "node scripts/fetch-soxl.mjs && node scripts/soxl-data.mjs && node scripts/bgm-soxl.mjs && remotion render SoxlShort ../output/videos/2026-10-19_slot2_soxl.mp4",
+    "market":"node scripts/market-data.mjs && node scripts/bgm-tension.mjs && remotion render MarketShort ../output/videos/2026-10-15_slot2_market.mp4"
   },
   "dependencies": {
     "@remotion/cli": "4.0.529",

@@ -4,7 +4,7 @@ import { C, fontFamily, springs } from "../theme";
 export type Line = { text: string; from: number; to: number; em?: string[] };
 
 // 하단 자막: 줄 단위로 튀어 올라오고, em 단어는 노란 형광펜
-export const Caption: React.FC<{ lines: Line[] }> = ({ lines }) => {
+export const Caption: React.FC<{ lines: Line[]; bottom?: number }> = ({ lines, bottom = 250 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const line = lines.find((l) => frame >= l.from && frame < l.to);
@@ -19,7 +19,7 @@ export const Caption: React.FC<{ lines: Line[] }> = ({ lines }) => {
         position: "absolute",
         left: 70,
         right: 70,
-        bottom: 250,
+        bottom,
         textAlign: "center",
         fontFamily,
         fontWeight: 700,
