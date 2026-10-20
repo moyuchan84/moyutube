@@ -10,11 +10,15 @@ const slug = process.argv[2] || '01-real-hero';
 const dir = path.join(root, 'books', slug);
 const story = JSON.parse(fs.readFileSync(path.join(dir, 'story.json'), 'utf8'));
 const plan = JSON.parse(fs.readFileSync(path.join(dir, 'plan.json'), 'utf8'));
+// 음성이 만들어져 있으면(npm run voice) 실제 길이와 재생기를 넣는다
+const readJson = (f) => (fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : null);
+const timing = readJson(path.join(dir, 'voice', 'timing.json'));
+const vcfg = readJson(path.join(dir, 'voice.json'));
 
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
 // 엄마 낭독 속도: 글자당 약 0.22초 + 장면 앞뒤 숨 1.2초
 const chars = (s) => [...s.narration, ...s.dialogue.map((d) => d.line)].join('').replace(/\s/g, '').length;
-const secs = (s) => Math.max(plan.scenes[s.no]?.min ?? 0, Math.round(chars(s) * 0.22 + 1.2));
+const secs = (s) => (timing ? Math.round(timing.scenes[s.no].sec) : Math.max(plan.scenes[s.no]?.min ?? 0, Math.round(chars(s) * 0.22 + 1.2)));
 
 let total = 0;
 const cards = story.scenes
@@ -25,7 +29,7 @@ const cards = story.scenes
     const narr = s.narration.map((l) => `<p class="n">${esc(l)}</p>`).join('');
     const dia = s.dialogue.map((d) => `<p class="d d-${esc(d.who)}"><b>${esc(d.who)}</b> “${esc(d.line)}”</p>`).join('');
     return `
-<article class="cut" id="s${s.no}">
+<article class="cut" id="s${s.no}" data-start="${timing?.scenes[s.no].start ?? ''}">
   <div class="left"><div class="pic" style="--h:${p.hue ?? 40}">
     <span class="no">#${s.no}</span>
     <span class="len">${sec}초</span>
@@ -35,6 +39,7 @@ const cards = story.scenes
   <div class="txt">
     <h3>장면 ${s.no} <small>${esc(p.title ?? '')}</small></h3>
     ${narr || '<p class="mute">(낭독 없음 — 그림과 소리만)</p>'}${dia}
+    ${timing?.scenes[s.no].file ? `<audio controls preload="none" src="voice/${timing.scenes[s.no].file}"></audio>` : ''}
     <dl>
       <dt>구도</dt><dd>${esc(p.comp ?? '')}</dd>
       <dt>카메라</dt><dd>${esc(p.camera ?? '')}</dd>
@@ -54,6 +59,9 @@ const rec = story.scenes
   })
   .join('\n');
 
+const cast = vcfg
+  ? Object.values(vcfg.roles).map((r) => `<li><b>${esc(r.name)}</b> ${esc(r.voice)} — ${esc(r.style)}</li>`).join('')
+  : '';
 const chars_ = plan.characters
   .map((c) => `<li><b>${esc(c.name)}</b> ${esc(c.look)}</li>`)
   .join('');
@@ -78,6 +86,7 @@ h1{font-size:28px;margin:8px 0 0}h2{margin:40px 0 12px;font-size:20px;border-bot
   border:2px dashed hsl(var(--h) 35% 65%);display:flex;align-items:center;justify-content:center;padding:14px}
 .pic svg{display:block;width:100%;height:100%}.pic{padding:0;border-style:solid}.dir{margin:8px 0 0;font-size:12.5px;color:var(--mute)}.left{min-width:0}body.nocam .cam{display:none}.tools{margin:14px 0;font-size:14px}
 .no{position:absolute;z-index:2;left:8px;top:22px;font-weight:700;color:#5a4a36;background:#fffa;border-radius:8px;padding:0 6px}.len{position:absolute;z-index:2;right:8px;bottom:6px;font-size:12px;background:#0002;border-radius:9px;padding:0 8px;color:#4a3d2e}
+.player{position:sticky;top:6px;z-index:5;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}.player audio{flex:1 1 320px;min-width:0}.player .sub{flex:1 1 100%;margin:0}.cut.on{outline:3px solid var(--acc)}.txt audio{width:100%;margin-top:10px;height:34px}
 .txt h3{margin:0 0 6px;font-size:16px}.txt h3 small{color:var(--mute);font-weight:400;margin-left:6px}
 .n{margin:0}.d{margin:2px 0;color:var(--acc)}.d b{color:var(--ink);margin-right:4px;font-size:13px}.mute{color:var(--mute);margin:0}
 dl{margin:10px 0 0;font-size:13px;display:grid;grid-template-columns:48px 1fr;gap:2px 8px;color:var(--mute)}dt{font-weight:700}dd{margin:0}
@@ -94,6 +103,11 @@ table{width:100%;border-collapse:collapse;background:var(--card);border:1px soli
 <li><b>화면</b> ${esc(plan.format)}</li>
 </ul></div>
 
+${timing ? `<h2>듣기 (엄마가 읽어 주는 동화)</h2>
+<div class="box player"><audio id="all" controls preload="none" src="voice/all.wav"></audio>
+<label><input type="checkbox" id="follow" checked> 재생 따라 카드 이동</label>
+<p class="sub">전체 ${Math.floor(timing.total / 60)}분 ${Math.round(timing.total % 60)}초 · 서술은 엄마 목소리, 대사는 인물마다 다른 목소리 (장면 카드마다 따로 들을 수도 있어요)</p></div>
+<h2>목소리</h2><div class="box"><ul>${cast}</ul></div>` : ''}
 <h2>등장인물 (모든 그림에 같은 설명을 붙여 얼굴을 고정)</h2>
 <div class="box"><ul>${chars_}</ul></div>
 
@@ -104,7 +118,11 @@ ${cards}
 <h2>엄마 녹음 대본 (장면별 한 파일)</h2>
 <p class="sub">서술은 차분한 엄마 목소리로, 괄호 안 대사는 같은 목소리에 감정만 살려 읽으면 됩니다.</p>
 <table>${rec}</table>
-</main><script>document.getElementById("cam").onchange=e=>document.body.classList.toggle("nocam",!e.target.checked)</script></body></html>
+</main><script>document.getElementById("cam").onchange=e=>document.body.classList.toggle("nocam",!e.target.checked)
+const all=document.getElementById("all");if(all){const cuts=[...document.querySelectorAll(".cut")];let cur=null;
+all.ontimeupdate=()=>{const t=all.currentTime;let hit=null;for(const c of cuts){if(+c.dataset.start<=t)hit=c}if(hit&&hit!==cur){cur&&cur.classList.remove("on");hit.classList.add("on");cur=hit;if(document.getElementById("follow").checked)hit.scrollIntoView({behavior:"smooth",block:"center"})}};
+cuts.forEach(c=>c.querySelector(".pic").onclick=()=>{all.currentTime=+c.dataset.start;all.play()});
+document.querySelectorAll(".txt audio").forEach(a=>a.onplay=()=>all.pause())}</script></body></html>
 `;
 fs.writeFileSync(path.join(dir, 'storyboard.html'), html);
 console.log(`storyboard.html — ${story.scenes.length}장면, 약 ${total}초`);
