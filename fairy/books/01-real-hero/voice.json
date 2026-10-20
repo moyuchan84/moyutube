@@ -1,0 +1,11 @@
+{
+  "engine": "Google AI Studio · Gemini 3.8 Flash TTS (대화 · 화자 블록)",
+  "note": "엄마가 읽어 주는 동화. 서술은 30대 엄마 목소리, 등장인물은 각자 다른 목소리. 한 번(테이크)에 목소리는 둘까지.",
+  "roles": {
+    "narr": { "name": "엄마(서술)", "voice": "Sulafat", "style": "A Korean mom in her early thirties reading a picture book aloud to her child at bedtime: warm, soft, clear and gentle, unhurried storytelling pace, a loving smile in the voice, with natural expressive pauses" },
+    "준이": { "name": "준이", "voice": "Puck", "style": "Joon-i, an energetic Korean boy of about eight: bright, proud, loud and dramatic like a little superhero, cracks into tears when upset" },
+    "선호": { "name": "선호", "voice": "Achird", "style": "Seon-ho, a calm Korean boy of about eight: soft, steady, gentle and kind, never angry, speaks quietly" },
+    "민지": { "name": "민지", "voice": "Leda", "style": "Min-ji, a Korean girl of about eight: polite, friendly and composed, clear and sweet child voice, patient" },
+    "친구": { "name": "친구", "voice": "Fenrir", "style": "A Korean boy of about eight, a classmate: annoyed, sulky and complaining, a bit rough" }
+  }
+}

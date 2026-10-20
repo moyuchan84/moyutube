@@ -19,3 +19,7 @@ out/
 qna/video/public/art/
 shortube/data/
 shortube/output/
+
+# fairy 영상 (다시 만들 수 있는 것)
+fairy/video/public/art/
+fairy/video/public/audio/
