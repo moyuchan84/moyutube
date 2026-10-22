@@ -11,6 +11,7 @@ import ep04Short from "./shorts/ep04.json";
 import ep05Short from "./shorts/ep05.json";
 import ep06Short from "./shorts/ep06.json";
 import ep07Short from "./shorts/ep07.json";
+import ep08Short from "./shorts/ep08.json";
 import { FPS, buildTimeline } from "./timeline.js";
 import ep01Script from "./ep01/script.json";
 import ep01Timing from "./ep01/timing.json";
@@ -26,6 +27,8 @@ import ep06Script from "./ep06/script.json";
 import ep06Timing from "./ep06/timing.json";
 import ep07Script from "./ep07/script.json";
 import ep07Timing from "./ep07/timing.json";
+import ep08Script from "./ep08/script.json";
+import ep08Timing from "./ep08/timing.json";
 
 // 새 편은 여기에 한 줄 추가한다 (face 는 얼굴 썸네일의 글자)
 const EPISODES: { id: string; episode: string; timeline: ReturnType<typeof buildTimeline>; face?: FaceText }[] = [
@@ -73,6 +76,12 @@ const EPISODES: { id: string; episode: string; timeline: ReturnType<typeof build
     timeline: buildTimeline(ep07Script, ep07Timing),
     face: { tag: "여덟 살 아들의 질문", top: ["내과? ", "외과?"], bottom: ["아빠,", " 어디로 가요?"], layout: "trio", dad: "dad-shock", kid: "kid-ask", mom: "mom-sigh", vs: ["ep07/prop/belly-map", "ep07/prop/skeleton"] },
   },
+  {
+    id: "Ep08",
+    episode: "ep08",
+    timeline: buildTimeline(ep08Script, ep08Timing),
+    face: { tag: "여덟 살 아들의 질문", top: ["도둑 잡히면 ", "바로 감옥?"], bottom: ["아빠,", " 누가 정해요?"], layout: "trio", dad: "dad-shock", kid: "kid-ask", mom: "mom-sigh", vs: ["ep08/prop/warrant", "ep08/prop/scale-gavel"] },
+  },
 ];
 
 // 쇼츠(9:16) 맛보기: 롱폼 구간을 잘라 본편으로 보낸다 (모라구 유입용)
@@ -92,7 +101,7 @@ const SHORTS = [
 ];
 
 // 편집형 쇼츠: src/shorts/<epNN>.json (편집 계획) 하나 = 쇼츠 하나. 렌더는 npm run short -- epNN
-const EDITED_SHORTS = [ep01Short, ep02Short, ep03Short, ep04Short, ep05Short, ep06Short, ep07Short] as unknown as ShortSpec[];
+const EDITED_SHORTS = [ep01Short, ep02Short, ep03Short, ep04Short, ep05Short, ep06Short, ep07Short, ep08Short] as unknown as ShortSpec[];
 
 export const RemotionRoot = () => {
   return (

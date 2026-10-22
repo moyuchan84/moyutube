@@ -82,6 +82,24 @@
         "reception"
       ],
       "style": "A cheerful Korean clinic receptionist woman in her late twenties: bright, brisk and polite, a friendly helpful voice with a light apologetic smile"
+    },
+    {
+      "label": "Guest",
+      "name": "지구대 경찰관",
+      "voice": "Erinome",
+      "roles": [
+        "police"
+      ],
+      "style": "A calm, precise Korean police-box officer woman in her late thirties: clear, steady, slightly low voice that enunciates every word, patient and gently amused when she corrects grown-ups, never stern or scary"
+    },
+    {
+      "label": "Guest",
+      "name": "이웃 아저씨",
+      "voice": "Alnilam",
+      "roles": [
+        "neighbor"
+      ],
+      "style": "A Korean man in his early fifties at a police counter: loud, wounded and sincere, quick and a little breathless, comically indignant but never threatening"
     }
   ],
   "direction": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud.",

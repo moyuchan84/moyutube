@@ -698,5 +698,129 @@
   "ep07/full/next-teaser": {
     "w": 2560,
     "h": 1440
+  },
+  "ep08/bg/empty-rack": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep08/bg/police-box": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep08/bg/whiteboard": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep08/police/normal": {
+    "w": 808,
+    "h": 1500
+  },
+  "ep08/police/correct": {
+    "w": 803,
+    "h": 1500
+  },
+  "ep08/police/draw": {
+    "w": 851,
+    "h": 1500
+  },
+  "ep08/police/monitor": {
+    "w": 996,
+    "h": 1500
+  },
+  "ep08/neighbor/normal": {
+    "w": 1146,
+    "h": 1500
+  },
+  "ep08/kid/bandage": {
+    "w": 721,
+    "h": 1500
+  },
+  "ep08/cutin/police-correct": {
+    "w": 1126,
+    "h": 1300
+  },
+  "ep08/cutin/neighbor": {
+    "w": 1292,
+    "h": 1300
+  },
+  "ep08/prop/report-form": {
+    "w": 1091,
+    "h": 1200
+  },
+  "ep08/prop/tv-news": {
+    "w": 1200,
+    "h": 1111
+  },
+  "ep08/prop/standee": {
+    "w": 788,
+    "h": 1200
+  },
+  "ep08/prop/tally": {
+    "w": 1200,
+    "h": 790
+  },
+  "ep08/prop/fork-road": {
+    "w": 1200,
+    "h": 474
+  },
+  "ep08/prop/board-path": {
+    "w": 1139,
+    "h": 1200
+  },
+  "ep08/prop/bike-piece": {
+    "w": 1200,
+    "h": 1177
+  },
+  "ep08/prop/magnifier": {
+    "w": 1160,
+    "h": 1200
+  },
+  "ep08/prop/warrant": {
+    "w": 992,
+    "h": 1200
+  },
+  "ep08/prop/two-doors": {
+    "w": 1200,
+    "h": 913
+  },
+  "ep08/prop/case-file": {
+    "w": 1033,
+    "h": 1200
+  },
+  "ep08/prop/scale-gavel": {
+    "w": 1192,
+    "h": 1200
+  },
+  "ep08/prop/court-stairs": {
+    "w": 1200,
+    "h": 742
+  },
+  "ep08/prop/iou": {
+    "w": 934,
+    "h": 1200
+  },
+  "ep08/prop/civil-path": {
+    "w": 1200,
+    "h": 660
+  },
+  "ep08/prop/role-cards": {
+    "w": 1200,
+    "h": 447
+  },
+  "ep08/prop/cctv-bike": {
+    "w": 1200,
+    "h": 1188
+  },
+  "ep08/full/courtroom": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep08/full/sign-change": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep08/full/next-teaser": {
+    "w": 2560,
+    "h": 1440
   }
 }

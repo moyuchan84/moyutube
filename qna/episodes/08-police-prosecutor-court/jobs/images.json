@@ -1,0 +1,776 @@
+{
+  "episode": "ep08",
+  "title": "8편 · 경찰 · 검사 · 판사, 누가 뭘 정해요?",
+  "anchor": "art/anchor/style-cutin.png",
+  "jobs": [
+    {
+      "id": "common/dad/normal",
+      "title": "아빠 — 기본",
+      "kind": "char",
+      "save": "art/common/dad/normal.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "2:3",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nCharacter: the dad: a Korean father in his late 30s, slightly chubby with a round face, short black hair that is clearly thinning on top, thick eyebrows, faint stubble, wearing a mustard-yellow knit cardigan over a white t-shirt, gray sweatpants and house slippers; a kind but easily flustered look.\n\n3/4 view, body and face turned slightly to the LEFT. Standing relaxed, arms at his sides, a mild friendly smile.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nThe cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.\n\nFull body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "common/dad/panic",
+      "title": "아빠 — 당황",
+      "kind": "char",
+      "save": "art/common/dad/panic.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "art/common/dad/normal.png"
+      ],
+      "aspect": "2:3",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThe character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.\n\nCharacter: the dad: a Korean father in his late 30s, slightly chubby with a round face, short black hair that is clearly thinning on top, thick eyebrows, faint stubble, wearing a mustard-yellow knit cardigan over a white t-shirt, gray sweatpants and house slippers; a kind but easily flustered look.\n\n3/4 view turned slightly to the LEFT. He has just been asked a question he cannot answer: eyes darting sideways, forced crooked smile showing teeth, one hand rubbing the back of his neck, cold sweat drops flying off his forehead, knees slightly bent.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nThe cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.\n\nFull body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "common/dad/explain",
+      "title": "아빠 — 설명",
+      "kind": "char",
+      "save": "art/common/dad/explain.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "art/common/dad/normal.png"
+      ],
+      "aspect": "2:3",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThe character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.\n\nCharacter: the dad: a Korean father in his late 30s, slightly chubby with a round face, short black hair that is clearly thinning on top, thick eyebrows, faint stubble, wearing a mustard-yellow knit cardigan over a white t-shirt, gray sweatpants and house slippers; a kind but easily flustered look.\n\n3/4 view turned slightly to the LEFT. Explaining confidently: index finger raised high, chest puffed out, eyebrows up, mouth open mid-sentence, the other hand on his hip.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nThe cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.\n\nFull body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "common/dad/think",
+      "title": "아빠 — 생각",
+      "kind": "char",
+      "save": "art/common/dad/think.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "art/common/dad/normal.png"
+      ],
+      "aspect": "2:3",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThe character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.\n\nCharacter: the dad: a Korean father in his late 30s, slightly chubby with a round face, short black hair that is clearly thinning on top, thick eyebrows, faint stubble, wearing a mustard-yellow knit cardigan over a white t-shirt, gray sweatpants and house slippers; a kind but easily flustered look.\n\n3/4 view turned slightly to the LEFT. Deep in thought: one hand on his chin, eyes looking up, lips pursed, one eyebrow raised.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nThe cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.\n\nFull body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "common/dad/proud",
+      "title": "아빠 — 뿌듯",
+      "kind": "char",
+      "save": "art/common/dad/proud.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "art/common/dad/normal.png"
+      ],
+      "aspect": "2:3",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThe character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.\n\nCharacter: the dad: a Korean father in his late 30s, slightly chubby with a round face, short black hair that is clearly thinning on top, thick eyebrows, faint stubble, wearing a mustard-yellow knit cardigan over a white t-shirt, gray sweatpants and house slippers; a kind but easily flustered look.\n\n3/4 view turned slightly to the LEFT. Warm proud smile with closed crescent eyes, both hands on his hips, a small sparkle near his head.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nThe cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.\n\nFull body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "common/dad/shock",
+      "title": "아빠 — 충격",
+      "kind": "char",
+      "save": "art/common/dad/shock.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "art/common/dad/normal.png"
+      ],
+      "aspect": "2:3",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThe character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.\n\nCharacter: the dad: a Korean father in his late 30s, slightly chubby with a round face, short black hair that is clearly thinning on top, thick eyebrows, faint stubble, wearing a mustard-yellow knit cardigan over a white t-shirt, gray sweatpants and house slippers; a kind but easily flustered look.\n\n3/4 view turned slightly to the LEFT. Frozen in shock: eyes bulging out, jaw dropped showing teeth and tongue, hair standing on end, both hands up, shock lines close around his head.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nThe cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.\n\nFull body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "common/dad/search",
+      "title": "아빠 — 몰래 검색",
+      "kind": "char",
+      "save": "art/common/dad/search.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "art/common/dad/normal.png"
+      ],
+      "aspect": "2:3",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThe character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.\n\nCharacter: the dad: a Korean father in his late 30s, slightly chubby with a round face, short black hair that is clearly thinning on top, thick eyebrows, faint stubble, wearing a mustard-yellow knit cardigan over a white t-shirt, gray sweatpants and house slippers; a kind but easily flustered look.\n\n3/4 view turned slightly to the LEFT. Sneaking a search at night: hunched over and tiptoeing, holding a smartphone close to his face with both hands, the screen glow lighting his face from below, eyes wide and bloodshot, lips pressed tight, glancing nervously over his shoulder, cold sweat drops.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nThe cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.\n\nFull body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "common/kid/normal",
+      "title": "아이 — 기본",
+      "kind": "char",
+      "save": "art/common/kid/normal.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "2:3",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nCharacter: the kid: an 8-year-old Korean child with a black bowl-cut, huge round curious eyes, one missing front tooth, wearing a red hoodie, navy shorts and white socks; small, fearless and very direct.\n\n3/4 view, body and face turned slightly to the RIGHT. Standing with hands behind the back, head tilted, a bright curious smile.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nThe cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.\n\nFull body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "common/kid/ask",
+      "title": "아이 — 질문",
+      "kind": "char",
+      "save": "art/common/kid/ask.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "art/common/kid/normal.png"
+      ],
+      "aspect": "2:3",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThe character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.\n\nCharacter: the kid: an 8-year-old Korean child with a black bowl-cut, huge round curious eyes, one missing front tooth, wearing a red hoodie, navy shorts and white socks; small, fearless and very direct.\n\n3/4 view turned slightly to the RIGHT. Asking a question: looking far up at a tall adult, one arm stretched up pointing with the index finger, mouth wide open mid-question, eyebrows raised.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nThe cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.\n\nFull body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "common/kid/wow",
+      "title": "아이 — 우와",
+      "kind": "char",
+      "save": "art/common/kid/wow.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "art/common/kid/normal.png"
+      ],
+      "aspect": "2:3",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThe character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.\n\nCharacter: the kid: an 8-year-old Korean child with a black bowl-cut, huge round curious eyes, one missing front tooth, wearing a red hoodie, navy shorts and white socks; small, fearless and very direct.\n\n3/4 view turned slightly to the RIGHT. Amazed: sparkling star-filled eyes, huge open-mouth grin, both fists clenched in front of the chest.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nThe cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.\n\nFull body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "common/kid/doubt",
+      "title": "아이 — 의심",
+      "kind": "char",
+      "save": "art/common/kid/doubt.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "art/common/kid/normal.png"
+      ],
+      "aspect": "2:3",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThe character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.\n\nCharacter: the kid: an 8-year-old Korean child with a black bowl-cut, huge round curious eyes, one missing front tooth, wearing a red hoodie, navy shorts and white socks; small, fearless and very direct.\n\n3/4 view turned slightly to the RIGHT. Not buying it: arms crossed, eyes narrowed to suspicious slits, mouth a flat line pulled to one side, looking up sideways.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nThe cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.\n\nFull body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "common/mom/normal",
+      "title": "엄마 — 기본",
+      "kind": "char",
+      "save": "art/common/mom/normal.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "art/channel/profile.png",
+        "art/channel/banner.png"
+      ],
+      "aspect": "2:3",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nCharacter: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.\n\nThe mom must be exactly the same woman as the woman with round glasses in attached images 2 and 3 (the channel profile picture and banner): same face, glasses, hairstyle, hair color and sage-green sweater. Draw only her, alone, as a full-body character; ignore the other people in those images. 3/4 view, body and face turned slightly to the LEFT. Standing relaxed, hands loosely clasped in front, a calm gentle smile.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nThe cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.\n\nFull body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "common/mom/smirk",
+      "title": "엄마 — 다 안다는 미소",
+      "kind": "char",
+      "save": "art/common/mom/smirk.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "art/common/mom/normal.png"
+      ],
+      "aspect": "2:3",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThe character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.\n\nCharacter: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.\n\n3/4 view turned slightly to the LEFT. Arms crossed, weight on one leg, one eyebrow raised high, a knowing sideways half-smile, eyes glancing sideways as if watching someone struggle, a small sparkle glinting on her glasses.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nThe cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.\n\nFull body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "common/mom/explain",
+      "title": "엄마 — 설명",
+      "kind": "char",
+      "save": "art/common/mom/explain.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "art/common/mom/normal.png"
+      ],
+      "aspect": "2:3",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThe character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.\n\nCharacter: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.\n\n3/4 view turned slightly to the LEFT. Explaining clearly and kindly: one hand raised with the palm open as if laying out a point, the other hand pushing up her glasses with one finger, eyebrows up, mouth open mid-sentence.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nThe cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.\n\nFull body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "common/mom/sigh",
+      "title": "엄마 — 한숨 (이마 짚기)",
+      "kind": "char",
+      "save": "art/common/mom/sigh.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "art/common/mom/normal.png"
+      ],
+      "aspect": "2:3",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThe character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.\n\nCharacter: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.\n\n3/4 view turned slightly to the LEFT. Exasperated: one hand pressed to her forehead, eyes closed, a long sigh puffing out of her mouth as a small comic cloud, shoulders dropped, the other hand on her hip, glasses slightly crooked.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nThe cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.\n\nFull body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "common/mom/shock",
+      "title": "엄마 — 충격",
+      "kind": "char",
+      "save": "art/common/mom/shock.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "art/common/mom/normal.png"
+      ],
+      "aspect": "2:3",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThe character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.\n\nCharacter: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.\n\n3/4 view turned slightly to the LEFT. Genuinely shocked: glasses sliding down her nose, eyes bulging, jaw dropped showing teeth, both hands up beside her cheeks, hair flicked up by shock lines.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nThe cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.\n\nFull body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "common/cutin/kid-ask",
+      "title": "컷인 — 아이 질문",
+      "kind": "cutin",
+      "save": "art/common/cutin/kid-ask.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "art/common/kid/normal.png"
+      ],
+      "aspect": "1:1",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a large close-up reaction shot for a comedy video: maximum facial detail, extreme exaggeration, dramatic lighting on the face.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThe character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.\n\nCharacter: the kid: an 8-year-old Korean child with a black bowl-cut, huge round curious eyes, one missing front tooth, wearing a red hoodie, navy shorts and white socks; small, fearless and very direct.\n\nFacing slightly to the RIGHT. Innocent and relentless: enormous shining eyes staring straight up, mouth open in a big round 'why?', one finger raised next to the face.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nChest-up close-up, the face fills most of the frame, centered, not cropped. Square 1:1 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "common/cutin/dad-proud",
+      "title": "컷인 — 아빠 뿌듯",
+      "kind": "cutin",
+      "save": "art/common/cutin/dad-proud.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "art/common/dad/normal.png"
+      ],
+      "aspect": "1:1",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a large close-up reaction shot for a comedy video: maximum facial detail, extreme exaggeration, dramatic lighting on the face.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThe character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.\n\nCharacter: the dad: a Korean father in his late 30s, slightly chubby with a round face, short black hair that is clearly thinning on top, thick eyebrows, faint stubble, wearing a mustard-yellow knit cardigan over a white t-shirt, gray sweatpants and house slippers; a kind but easily flustered look.\n\nFacing slightly to the LEFT. Smug proud face: chin raised, nostrils flared, closed crescent eyes, huge satisfied grin, sparkles.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nChest-up close-up, the face fills most of the frame, centered, not cropped. Square 1:1 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "common/cutin/mom-sigh",
+      "title": "컷인 — 엄마 어이없음",
+      "kind": "cutin",
+      "save": "art/common/cutin/mom-sigh.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "art/common/mom/normal.png"
+      ],
+      "aspect": "1:1",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a large close-up reaction shot for a comedy video: maximum facial detail, extreme exaggeration, dramatic lighting on the face.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThe character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.\n\nCharacter: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.\n\nFacing slightly to the LEFT. Utterly done: dead flat stare through her glasses, mouth a straight line, a vein on the temple, a dark gloomy shadow over the upper half of the face, a big sigh cloud.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nChest-up close-up, the face fills most of the frame, centered, not cropped. Square 1:1 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "common/dad/explain-b",
+      "title": "아빠 — 설명 (말하는 그림)",
+      "kind": "talk",
+      "save": "art/common/dad/explain-b.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "art/common/dad/explain.png"
+      ],
+      "aspect": null,
+      "green": true,
+      "optional": true,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a character cutout for a 2D animated video.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThis is the SECOND FRAME of a two-frame animation. Redraw attached image 2 EXACTLY: same character, same pose, same size, same position in the frame, same clothes, same colors, same line work, same framing and margins. Change ONLY what is described below. Everything else must be pixel-for-pixel as close to attached image 2 as possible so the two frames can be flipped back and forth.\n\nCharacter: the dad: a Korean father in his late 30s, slightly chubby with a round face, short black hair that is clearly thinning on top, thick eyebrows, faint stubble, wearing a mustard-yellow knit cardigan over a white t-shirt, gray sweatpants and house slippers; a kind but easily flustered look.\n\nChange only the face and the raised hand: the mouth is now closed in a confident smile (as if between two words) and the raised index finger is tilted a few degrees forward.\n\nSame aspect ratio, framing and margins as attached image 2.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "common/kid/ask-b",
+      "title": "아이 — 질문 (말하는 그림)",
+      "kind": "talk",
+      "save": "art/common/kid/ask-b.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "art/common/kid/ask.png"
+      ],
+      "aspect": null,
+      "green": true,
+      "optional": true,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a character cutout for a 2D animated video.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThis is the SECOND FRAME of a two-frame animation. Redraw attached image 2 EXACTLY: same character, same pose, same size, same position in the frame, same clothes, same colors, same line work, same framing and margins. Change ONLY what is described below. Everything else must be pixel-for-pixel as close to attached image 2 as possible so the two frames can be flipped back and forth.\n\nCharacter: the kid: an 8-year-old Korean child with a black bowl-cut, huge round curious eyes, one missing front tooth, wearing a red hoodie, navy shorts and white socks; small, fearless and very direct.\n\nChange only the face: the mouth is now closed in a small pouty line (as if between two words) and the eyebrows are a little lower. The pointing arm stays exactly where it is.\n\nSame aspect ratio, framing and margins as attached image 2.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "common/mom/explain-b",
+      "title": "엄마 — 설명 (말하는 그림)",
+      "kind": "talk",
+      "save": "art/common/mom/explain-b.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "art/common/mom/explain.png"
+      ],
+      "aspect": null,
+      "green": true,
+      "optional": true,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a character cutout for a 2D animated video.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThis is the SECOND FRAME of a two-frame animation. Redraw attached image 2 EXACTLY: same character, same pose, same size, same position in the frame, same clothes, same colors, same line work, same framing and margins. Change ONLY what is described below. Everything else must be pixel-for-pixel as close to attached image 2 as possible so the two frames can be flipped back and forth.\n\nCharacter: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.\n\nChange only the face: the mouth is now closed in a small calm smile (as if between two words). Both hands stay exactly where they are.\n\nSame aspect ratio, framing and margins as attached image 2.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "bg/empty-rack",
+      "title": "배경 — 병원 건물 앞 빈 자전거 거치대",
+      "kind": "bg",
+      "save": "episodes/08-police-prosecutor-court/art/bg/empty-rack.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "16:9",
+      "green": false,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nBackground art only, absolutely no people and no characters. A flat, straight-on stage-like view (like a sitcom set), camera at chest height, no extreme perspective.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThe front of a five-story neighborhood medical building on a Korean street on a sunny Saturday, straight-on like a stage set, matching the 7th episode's building-front picture. Blank pastel sign boards on each floor, a glass entrance door. In the middle foreground a small empty bicycle rack with nothing locked to it, drawn clearly. Open empty sidewalk across the whole bottom third. No people, no readable text, no logos.\n\nThe camera will slowly pan and zoom across this picture, so paint about 8% extra scenery at every edge and keep nothing important within that margin.\n\nKeep the bottom third of the picture an open, uncluttered floor: characters will be placed there later. All signs, posters, screens and labels are blank shapes with no text. 16:9 landscape, highest resolution."
+    },
+    {
+      "id": "bg/police-box",
+      "title": "배경 — 동네 지구대 안 (민원 책상 · TV · 정수기)",
+      "kind": "bg",
+      "save": "episodes/08-police-prosecutor-court/art/bg/police-box.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "16:9",
+      "green": false,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nBackground art only, absolutely no people and no characters. A flat, straight-on stage-like view (like a sitcom set), camera at chest height, no extreme perspective.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThe inside of a small neighborhood police box in Korea, seen straight-on like a sitcom set: a long counter desk on the left with a computer monitor and papers, a wall-mounted TV on the back wall showing a blank news studio with a blank caption bar, a water dispenser by a side wall, a small whiteboard in the far top-right corner, a wall clock, a waiting bench on the right. Bright, tidy, calm daylight. No real emblems or logos, no readable text. The bottom third is an open empty floor for characters.\n\nThe camera will slowly pan and zoom across this picture, so paint about 8% extra scenery at every edge and keep nothing important within that margin.\n\nKeep the bottom third of the picture an open, uncluttered floor: characters will be placed there later. All signs, posters, screens and labels are blank shapes with no text. 16:9 landscape, highest resolution."
+    },
+    {
+      "id": "bg/whiteboard",
+      "title": "배경 — 지구대 화이트보드 앞",
+      "kind": "bg",
+      "save": "episodes/08-police-prosecutor-court/art/bg/whiteboard.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "16:9",
+      "green": false,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nBackground art only, absolutely no people and no characters. A flat, straight-on stage-like view (like a sitcom set), camera at chest height, no extreme perspective.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nA big blank white wall-mounted whiteboard filling most of the frame inside a neighborhood police box, with a marker tray holding colored markers and an eraser, a small area of the room's light-gray wall and a corner of a desk at each side. Clean, bright and empty so that drawings can be overlaid later. No writing, no text, no people. The bottom third is an open empty floor.\n\nThe camera will slowly pan and zoom across this picture, so paint about 8% extra scenery at every edge and keep nothing important within that margin.\n\nKeep the bottom third of the picture an open, uncluttered floor: characters will be placed there later. All signs, posters, screens and labels are blank shapes with no text. 16:9 landscape, highest resolution."
+    },
+    {
+      "id": "police/normal",
+      "title": "경찰관 — 기본 (신고서 받기)",
+      "kind": "char",
+      "save": "episodes/08-police-prosecutor-court/art/police/normal.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "2:3",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nCharacter: the neighborhood police box officer: a calm, precise Korean woman in her late thirties; dark hair in a neat low bun, a clear composed face with a warm natural skin tone and a small kind knowing smile; wearing a plain navy-blue police-style uniform with a matching peaked cap, a blank plain badge shape with NO emblem, NO insignia and NO real police logo, a black duty belt without any weapon, black shoes; firm and patient, corrects grown-ups with a gentle smile, never stern or scary.\n\n3/4 view turned slightly to the RIGHT. Standing at a counter, holding a pen over a blank report form clipboard, looking up with a calm attentive expression.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nThe cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.\n\nFull body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "police/correct",
+      "title": "경찰관 — 웃으며 바로잡기",
+      "kind": "char",
+      "save": "episodes/08-police-prosecutor-court/art/police/correct.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "episodes/08-police-prosecutor-court/art/police/normal.png"
+      ],
+      "aspect": "2:3",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThe character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.\n\nCharacter: the neighborhood police box officer: a calm, precise Korean woman in her late thirties; dark hair in a neat low bun, a clear composed face with a warm natural skin tone and a small kind knowing smile; wearing a plain navy-blue police-style uniform with a matching peaked cap, a blank plain badge shape with NO emblem, NO insignia and NO real police logo, a black duty belt without any weapon, black shoes; firm and patient, corrects grown-ups with a gentle smile, never stern or scary.\n\n3/4 view turned slightly to the RIGHT. One hand raised with the index finger up in a gentle 'let me correct that' gesture, the other hand holding the clipboard, a patient amused smile.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nThe cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.\n\nFull body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "police/draw",
+      "title": "경찰관 — 화이트보드에 그리기",
+      "kind": "char",
+      "save": "episodes/08-police-prosecutor-court/art/police/draw.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "episodes/08-police-prosecutor-court/art/police/normal.png"
+      ],
+      "aspect": "2:3",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThe character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.\n\nCharacter: the neighborhood police box officer: a calm, precise Korean woman in her late thirties; dark hair in a neat low bun, a clear composed face with a warm natural skin tone and a small kind knowing smile; wearing a plain navy-blue police-style uniform with a matching peaked cap, a blank plain badge shape with NO emblem, NO insignia and NO real police logo, a black duty belt without any weapon, black shoes; firm and patient, corrects grown-ups with a gentle smile, never stern or scary.\n\nBack three-quarter view turned toward the LEFT, facing an unseen whiteboard, one arm raised holding a marker as if drawing a path, the head turned slightly back toward the viewer with a friendly look.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nThe cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.\n\nFull body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "police/monitor",
+      "title": "경찰관 — 모니터 돌려 보여 주기",
+      "kind": "char",
+      "save": "episodes/08-police-prosecutor-court/art/police/monitor.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "episodes/08-police-prosecutor-court/art/police/normal.png"
+      ],
+      "aspect": "2:3",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThe character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.\n\nCharacter: the neighborhood police box officer: a calm, precise Korean woman in her late thirties; dark hair in a neat low bun, a clear composed face with a warm natural skin tone and a small kind knowing smile; wearing a plain navy-blue police-style uniform with a matching peaked cap, a blank plain badge shape with NO emblem, NO insignia and NO real police logo, a black duty belt without any weapon, black shoes; firm and patient, corrects grown-ups with a gentle smile, never stern or scary.\n\n3/4 view turned slightly to the RIGHT. Both hands turning a small computer monitor (its screen shown as a plain blank gray rectangle) toward the viewer, an apologetic but amused smile.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nThe cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.\n\nFull body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "neighbor/normal",
+      "title": "이웃 아저씨 — 억울해서 소리치기",
+      "kind": "char",
+      "save": "episodes/08-police-prosecutor-court/art/neighbor/normal.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "2:3",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nCharacter: the neighbor at the next window: a Korean man in his early fifties, short graying hair, a slightly puffy flushed face with bushy eyebrows, a worn brown windbreaker over a checkered shirt, gray trousers and old sneakers; loud, wounded and sincere, waving his arms, comical rather than angry.\n\n3/4 view turned slightly to the LEFT. Standing, both arms raised and flapping in frustration, mouth wide open as if shouting, eyebrows slanted, sweat drops flying off. Funny and sympathetic, not threatening.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nThe cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.\n\nFull body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "kid/bandage",
+      "title": "아이 — 손목 붕대 · 무릎 반창고",
+      "kind": "char",
+      "save": "episodes/08-police-prosecutor-court/art/kid/bandage.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "art/common/kid/normal.png"
+      ],
+      "aspect": "2:3",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThe character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.\n\nCharacter: the kid: an 8-year-old Korean child with a black bowl-cut, huge round curious eyes, one missing front tooth, wearing a red hoodie, navy shorts and white socks; small, fearless and very direct.\n\n3/4 view, body and face turned slightly to the LEFT. Standing, the left wrist neatly wrapped in a clean white elastic bandage, holding that arm a little carefully in front of the chest; a small cartoon plaster on one knee. A brave, slightly proud little smile. No wound, no blood.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nThe cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.\n\nFull body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "cutin/police-correct",
+      "title": "경찰관 바로잡기 (컷인)",
+      "kind": "cutin",
+      "save": "episodes/08-police-prosecutor-court/art/cutin/police-correct.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "episodes/08-police-prosecutor-court/art/police/normal.png"
+      ],
+      "aspect": "1:1",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a large close-up reaction shot for a comedy video: maximum facial detail, extreme exaggeration, dramatic lighting on the face.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThe character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.\n\nCharacter: the neighborhood police box officer: a calm, precise Korean woman in her late thirties; dark hair in a neat low bun, a clear composed face with a warm natural skin tone and a small kind knowing smile; wearing a plain navy-blue police-style uniform with a matching peaked cap, a blank plain badge shape with NO emblem, NO insignia and NO real police logo, a black duty belt without any weapon, black shoes; firm and patient, corrects grown-ups with a gentle smile, never stern or scary.\n\nChest-up close shot, facing slightly to the RIGHT. Index finger raised beside the face, one eyebrow lifted, a kind knowing smile under the peaked cap. Simple speed-line background.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nChest-up close-up, the face fills most of the frame, centered, not cropped. Square 1:1 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "cutin/neighbor",
+      "title": "이웃 아저씨 억울함 (컷인)",
+      "kind": "cutin",
+      "save": "episodes/08-police-prosecutor-court/art/cutin/neighbor.png",
+      "attach": [
+        "art/anchor/style-cutin.png",
+        "episodes/08-police-prosecutor-court/art/neighbor/normal.png"
+      ],
+      "aspect": "1:1",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a large close-up reaction shot for a comedy video: maximum facial detail, extreme exaggeration, dramatic lighting on the face.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThe character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.\n\nCharacter: the neighbor at the next window: a Korean man in his early fifties, short graying hair, a slightly puffy flushed face with bushy eyebrows, a worn brown windbreaker over a checkered shirt, gray trousers and old sneakers; loud, wounded and sincere, waving his arms, comical rather than angry.\n\nChest-up close shot, facing slightly to the LEFT. Huge open mouth shouting, eyes squeezed, a raised fist shaking with frustration, sweat drops flying. Comic and sympathetic, not scary. Simple speed-line background.\n\nComic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.\n\nChest-up close-up, the face fills most of the frame, centered, not cropped. Square 1:1 aspect ratio.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "prop/report-form",
+      "title": "소품 — 신고서와 연필",
+      "kind": "prop",
+      "save": "episodes/08-police-prosecutor-court/art/prop/report-form.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "1:1",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a single object cutout for a 2D animated video: bold readable shape, clear colors with soft shading, no people unless stated.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nA plain paper report form on a small clipboard with a pencil lying across it: a title bar, several blank rows with empty boxes on the right, one box slightly larger than the rest. Entirely blank, no text or numbers. The pencil has a pink eraser tip.\n\nThe cutout will be animated (popping in, swaying, sliding across the screen), so keep it as one compact connected shape with a clean outline and no loose parts floating apart from it.\n\nThe whole subject visible with a small empty margin on every side, not cropped, centered.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "prop/tv-news",
+      "title": "소품 — 빈 뉴스 화면 (TV)",
+      "kind": "prop",
+      "save": "episodes/08-police-prosecutor-court/art/prop/tv-news.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "1:1",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a single object cutout for a 2D animated video: bold readable shape, clear colors with soft shading, no people unless stated.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nA wall-mounted flat-screen TV showing a news studio with an empty desk and plain blue backdrop — no people at all — and a blank red caption bar across the bottom. No text, no channel logos.\n\nThe cutout will be animated (popping in, swaying, sliding across the screen), so keep it as one compact connected shape with a clean outline and no loose parts floating apart from it.\n\nThe whole subject visible with a small empty margin on every side, not cropped, centered.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "prop/standee",
+      "title": "소품 — 모자 쓴 동물 입간판 (가상 캐릭터)",
+      "kind": "prop",
+      "save": "episodes/08-police-prosecutor-court/art/prop/standee.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "1:1",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a single object cutout for a 2D animated video: bold readable shape, clear colors with soft shading, no people unless stated.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nA life-size cardboard standee of a cute made-up cartoon animal (a round chubby bear-like creature of our own invention) wearing a navy peaked cap, waving one paw, standing on a small base. It must NOT resemble any real police mascot; no emblem, no text, no badge details. Friendly and silly.\n\nThe cutout will be animated (popping in, swaying, sliding across the screen), so keep it as one compact connected shape with a clean outline and no loose parts floating apart from it.\n\nThe whole subject visible with a small empty margin on every side, not cropped, centered.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "prop/tally",
+      "title": "소품 — 바를 정 자 점수판",
+      "kind": "prop",
+      "save": "episodes/08-police-prosecutor-court/art/prop/tally.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "1:1",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a single object cutout for a 2D animated video: bold readable shape, clear colors with soft shading, no people unless stated.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nA small rectangular corner area of a whiteboard with a thin red marker border, completely empty and ready for tally marks, a marker hanging beside it on a string. No marks, no text.\n\nThe cutout will be animated (popping in, swaying, sliding across the screen), so keep it as one compact connected shape with a clean outline and no loose parts floating apart from it.\n\nThe whole subject visible with a small empty margin on every side, not cropped, centered.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "prop/fork-road",
+      "title": "소품 — 갈림길 (형사 / 민사)",
+      "kind": "prop",
+      "save": "episodes/08-police-prosecutor-court/art/prop/fork-road.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "16:9",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a single object cutout for a 2D animated video: bold readable shape, clear colors with soft shading, no people unless stated.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nA drawn-on-whiteboard style path that splits into two roads like a Y: the left road is drawn in blue marker ending at a small stylized balance scale and a tiny blank signpost, the right road in green marker ending at two simple stick-like figures shaking hands across a little table and a blank signpost. Marker-drawn look, rounded lines, plain white background. No text.\n\nThe cutout will be animated (popping in, swaying, sliding across the screen), so keep it as one compact connected shape with a clean outline and no loose parts floating apart from it.\n\nThe whole subject visible with a small empty margin on every side, not cropped, centered. Aspect ratio 16:9.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "prop/board-path",
+      "title": "소품 — 말판 (칸 8개)",
+      "kind": "prop",
+      "save": "episodes/08-police-prosecutor-court/art/prop/board-path.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "16:9",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a single object cutout for a 2D animated video: bold readable shape, clear colors with soft shading, no people unless stated.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nA board-game path drawn in marker on a whiteboard: eight rounded square spaces connected by a winding arrow line, in a gentle S-curve from left to right, spaces in alternating soft blue and pale yellow, each space blank. Marker-drawn friendly look on a plain white background. No text, no numbers.\n\nThe cutout will be animated (popping in, swaying, sliding across the screen), so keep it as one compact connected shape with a clean outline and no loose parts floating apart from it.\n\nThe whole subject visible with a small empty margin on every side, not cropped, centered. Aspect ratio 16:9.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "prop/bike-piece",
+      "title": "소품 — 자전거 모양 말",
+      "kind": "prop",
+      "save": "episodes/08-police-prosecutor-court/art/prop/bike-piece.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "1:1",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a single object cutout for a 2D animated video: bold readable shape, clear colors with soft shading, no people unless stated.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nA chunky board-game token shaped like a small children's bicycle, red frame, two round wheels, a tiny basket, standing on a round base like a game piece. Compact and cute. No text.\n\nThe cutout will be animated (popping in, swaying, sliding across the screen), so keep it as one compact connected shape with a clean outline and no loose parts floating apart from it.\n\nThe whole subject visible with a small empty margin on every side, not cropped, centered.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "prop/magnifier",
+      "title": "소품 — 돋보기 (찾는 사람)",
+      "kind": "prop",
+      "save": "episodes/08-police-prosecutor-court/art/prop/magnifier.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "1:1",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a single object cutout for a 2D animated video: bold readable shape, clear colors with soft shading, no people unless stated.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nA big cartoon magnifying glass with a thick dark-red handle and a round glass lens with a light blue shine, tilted at 45 degrees. Compact single shape.\n\nThe cutout will be animated (popping in, swaying, sliding across the screen), so keep it as one compact connected shape with a clean outline and no loose parts floating apart from it.\n\nThe whole subject visible with a small empty margin on every side, not cropped, centered.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "prop/warrant",
+      "title": "소품 — 영장 종이 (도장 칸 빈칸)",
+      "kind": "prop",
+      "save": "episodes/08-police-prosecutor-court/art/prop/warrant.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "1:1",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a single object cutout for a 2D animated video: bold readable shape, clear colors with soft shading, no people unless stated.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nA single sheet of official-looking paper with a decorative border, several blank horizontal lines and an empty round stamp circle at the bottom right, slightly curled corner. Completely blank: no text, no emblems, no seals.\n\nThe cutout will be animated (popping in, swaying, sliding across the screen), so keep it as one compact connected shape with a clean outline and no loose parts floating apart from it.\n\nThe whole subject visible with a small empty margin on every side, not cropped, centered.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "prop/two-doors",
+      "title": "소품 — 문 두 개 (닫힌 문 · 열린 문)",
+      "kind": "prop",
+      "save": "episodes/08-police-prosecutor-court/art/prop/two-doors.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "16:9",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a single object cutout for a 2D animated video: bold readable shape, clear colors with soft shading, no people unless stated.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nTwo doors side by side: on the left a smaller plain gray door firmly closed with a simple handle; on the right a larger, bright wooden door wide open, showing through it a warm sunny view of a cozy house roof and a garden path. The open door side is bigger and brighter. Flat storybook style. No bars, no prison imagery, no people, no text.\n\nThe cutout will be animated (popping in, swaying, sliding across the screen), so keep it as one compact connected shape with a clean outline and no loose parts floating apart from it.\n\nThe whole subject visible with a small empty margin on every side, not cropped, centered. Aspect ratio 16:9.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "prop/case-file",
+      "title": "소품 — 서류 봉투 (송치)",
+      "kind": "prop",
+      "save": "episodes/08-police-prosecutor-court/art/prop/case-file.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "1:1",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a single object cutout for a 2D animated video: bold readable shape, clear colors with soft shading, no people unless stated.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nA thick manila document envelope with a string-and-button closure, slightly bulging with papers, one corner of a blank sheet sticking out. No text, no logos.\n\nThe cutout will be animated (popping in, swaying, sliding across the screen), so keep it as one compact connected shape with a clean outline and no loose parts floating apart from it.\n\nThe whole subject visible with a small empty margin on every side, not cropped, centered.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "prop/scale-gavel",
+      "title": "소품 — 저울과 망치",
+      "kind": "prop",
+      "save": "episodes/08-police-prosecutor-court/art/prop/scale-gavel.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "1:1",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a single object cutout for a 2D animated video: bold readable shape, clear colors with soft shading, no people unless stated.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nA classic golden balance scale with two small plain pans, tilted slightly, and a wooden judge's gavel with a round sound block resting in front of it. Compact connected group, soft shading. No text.\n\nThe cutout will be animated (popping in, swaying, sliding across the screen), so keep it as one compact connected shape with a clean outline and no loose parts floating apart from it.\n\nThe whole subject visible with a small empty margin on every side, not cropped, centered.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "prop/court-stairs",
+      "title": "소품 — 세 계단 법원",
+      "kind": "prop",
+      "save": "episodes/08-police-prosecutor-court/art/prop/court-stairs.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "16:9",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a single object cutout for a 2D animated video: bold readable shape, clear colors with soft shading, no people unless stated.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nThree court buildings standing on three rising steps from left to right like a staircase: a small one-story district courthouse with a few columns, a medium courthouse with a pediment and more windows, and a large tall courthouse with a grand columned entrance and a small dome. Soft pastel colors, flat storybook style. No signs, no flags, no emblems, no text.\n\nThe cutout will be animated (popping in, swaying, sliding across the screen), so keep it as one compact connected shape with a clean outline and no loose parts floating apart from it.\n\nThe whole subject visible with a small empty margin on every side, not cropped, centered. Aspect ratio 16:9.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "prop/iou",
+      "title": "소품 — 차용증 (빌려준 돈 종이)",
+      "kind": "prop",
+      "save": "episodes/08-police-prosecutor-court/art/prop/iou.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "1:1",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a single object cutout for a 2D animated video: bold readable shape, clear colors with soft shading, no people unless stated.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nA single sheet of paper with a few blank lines and a small drawn stack of coins in the corner, a little crumpled, with a blank signature line at the bottom. No text, no numbers.\n\nThe cutout will be animated (popping in, swaying, sliding across the screen), so keep it as one compact connected shape with a clean outline and no loose parts floating apart from it.\n\nThe whole subject visible with a small empty margin on every side, not cropped, centered.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "prop/civil-path",
+      "title": "소품 — 민사 길 (소장 → 법원 → 판결 → 집행)",
+      "kind": "prop",
+      "save": "episodes/08-police-prosecutor-court/art/prop/civil-path.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "16:9",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a single object cutout for a 2D animated video: bold readable shape, clear colors with soft shading, no people unless stated.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nA short board-game path drawn in marker on a whiteboard: only four rounded green squares connected by an arrow in a straight line from left to right, much shorter than a long path; each square contains one tiny blank icon: a paper, a small courthouse, a gavel, a small coin bag. Marker-drawn friendly look on a plain white background. No text, no numbers.\n\nThe cutout will be animated (popping in, swaying, sliding across the screen), so keep it as one compact connected shape with a clean outline and no loose parts floating apart from it.\n\nThe whole subject visible with a small empty margin on every side, not cropped, centered. Aspect ratio 16:9.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "prop/role-cards",
+      "title": "소품 — 역할 카드 네 장 (경찰 · 중수청 · 검사 · 판사)",
+      "kind": "prop",
+      "save": "episodes/08-police-prosecutor-court/art/prop/role-cards.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "16:9",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a single object cutout for a 2D animated video: bold readable shape, clear colors with soft shading, no people unless stated.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nFour blank rounded playing cards laid side by side in a row, each a different soft color (blue, purple, green, gold), each with a plain simple icon at the top and an empty text area below: a magnifying glass, a shield-shaped blank badge with no emblem, a document with a pointing hand, a balance scale. The fourth gold card has tiny sparkle marks. No text, no emblems, no logos.\n\nThe cutout will be animated (popping in, swaying, sliding across the screen), so keep it as one compact connected shape with a clean outline and no loose parts floating apart from it.\n\nThe whole subject visible with a small empty margin on every side, not cropped, centered. Aspect ratio 16:9.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "prop/cctv-bike",
+      "title": "소품 — CCTV 모니터 속 공원 벤치와 자전거",
+      "kind": "prop",
+      "save": "episodes/08-police-prosecutor-court/art/prop/cctv-bike.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "1:1",
+      "green": true,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is a single object cutout for a 2D animated video: bold readable shape, clear colors with soft shading, no people unless stated.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nA computer monitor seen straight-on whose screen shows a slightly grainy, gray-green security-camera view from above of a quiet park: a wooden bench with a small red child's bicycle leaning against it, grass and a path. A corner timestamp bar shown only as a blank rectangle. No text.\n\nThe cutout will be animated (popping in, swaying, sliding across the screen), so keep it as one compact connected shape with a clean outline and no loose parts floating apart from it.\n\nThe whole subject visible with a small empty margin on every side, not cropped, centered.\n\nSolid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject."
+    },
+    {
+      "id": "full/courtroom",
+      "title": "무대 — 법정 (판사석 · 검사석 · 변호인석 · 피고인석)",
+      "kind": "stage",
+      "save": "episodes/08-police-prosecutor-court/art/full/courtroom.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "16:9",
+      "green": false,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is the stage for an animated scene, composed like a single manga panel. The main character is NOT in this picture: it is drawn separately and placed on top later, so leave the described spot empty.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nA calm Korean courtroom seen straight-on, wide 16:9: a high judge's bench at the back center with a plain chair, a prosecutor's table on the left, a defense table on the right, a witness stand, wooden railings and a few rows of gallery benches. A few very small faceless simple silhouettes sit at the tables. Warm wooden tones, soft light from tall windows. No flags, no emblems, no signs, no readable text, nothing scary.\n\nThe camera will slowly pan and zoom across this picture, so paint about 8% extra scenery at every edge and keep nothing important within that margin.\n\nLeave the top-left corner calm (a caption is added there later). All signs and labels are blank shapes with no text. 16:9 landscape, highest resolution."
+    },
+    {
+      "id": "full/sign-change",
+      "title": "무대 — 간판 바뀌는 날 (빈 간판 하나 내려가고 둘 올라감)",
+      "kind": "stage",
+      "save": "episodes/08-police-prosecutor-court/art/full/sign-change.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "16:9",
+      "green": false,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is the stage for an animated scene, composed like a single manga panel. The main character is NOT in this picture: it is drawn separately and placed on top later, so leave the described spot empty.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nA wide 16:9 street view of the front of a large plain government-style building in early autumn daylight. In the center a big blank sign board is being lowered by two small workers on a lift, and on either side two new blank sign boards of different soft colors are being raised on ropes, pulleys and ladders. Small faceless silhouettes of workers and a few passers-by watch from the sidewalk. No text, no emblems, no flags, no logos, no real building details.\n\nThe camera will slowly pan and zoom across this picture, so paint about 8% extra scenery at every edge and keep nothing important within that margin.\n\nLeave the top-left corner calm (a caption is added there later). All signs and labels are blank shapes with no text. 16:9 landscape, highest resolution."
+    },
+    {
+      "id": "full/next-teaser",
+      "title": "한 장 장면 — 다음 편 예고",
+      "kind": "full",
+      "save": "episodes/08-police-prosecutor-court/art/full/next-teaser.png",
+      "attach": [
+        "art/anchor/style-cutin.png"
+      ],
+      "aspect": "16:9",
+      "green": false,
+      "optional": false,
+      "done": true,
+      "prompt": "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.\n\nThis is one complete illustrated scene for an explainer video, composed like a single manga panel.\n\nMatch the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.\n\nTO BE DECIDED once the next episode's topic is chosen. Placeholder: a warm, empty park bench at sunset with a small red bicycle leaning against it and two ice-cream cones on the seat. 16:9, no people, no text.\n\nThe camera will slowly pan and zoom across this picture, so paint about 8% extra scenery at every edge and keep nothing important within that margin.\n\nKeep the main subject in the middle and leave the top-left corner calm (a caption is added there later). All signs and labels are blank shapes with no text. 16:9 landscape, highest resolution."
+    }
+  ]
+}
