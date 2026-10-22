@@ -13,6 +13,13 @@
     "backtest": "node scripts/fetch-kospi-long.mjs && node scripts/backtest-indicators.mjs && node scripts/bgm-backtest.mjs && remotion render BacktestShort ../output/videos/2026-10-18_slot1_backtest.mp4",
     "seoulsupply": "node scripts/bgm-seoulsupply.mjs && remotion render SeoulSupplyShort ../output/videos/2026-10-19_slot1_seoulsupply.mp4",
     "soxl": "node scripts/fetch-soxl.mjs && node scripts/soxl-data.mjs && node scripts/bgm-soxl.mjs && remotion render SoxlShort ../output/videos/2026-10-19_slot2_soxl.mp4",
+    "france": "node scripts/bgm-france.mjs && remotion render FranceShort ../output/videos/2026-10-19_france.mp4",
+    "tax": "node scripts/bgm-tax.mjs && remotion render TaxShort ../output/videos/2026-10-20_tax.mp4",
+    "dial": "node scripts/bgm-dial.mjs && remotion render DialShort ../output/videos/2026-10-21_dial.mp4",
+    "body": "node scripts/bgm-body.mjs && remotion render BodyShort ../output/videos/2026-10-21_body.mp4",
+    "billboard": "node scripts/bgm-billboard.mjs && remotion render BillboardShort ../output/videos/2026-10-22_billboard.mp4",
+    "whydrop": "node scripts/bgm-whydrop.mjs && remotion render WhyDropShort ../output/videos/2026-10-22_whydrop.mp4",
+    "networth": "node scripts/bgm-networth.mjs && remotion render NetWorthShort ../output/videos/2026-10-22_networth.mp4",
     "market":"node scripts/market-data.mjs && node scripts/bgm-tension.mjs && remotion render MarketShort ../output/videos/2026-10-15_slot2_market.mp4"
   },
   "dependencies": {

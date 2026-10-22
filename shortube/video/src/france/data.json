@@ -1,0 +1,12 @@
+{
+  "asOf": "2026-10-19",
+  "oct17": { "gov": 55, "union": 80, "paris": 11 },
+  "days2026": [
+    { "d": "10/6 화", "gov": 25, "union": 45 },
+    { "d": "10/8 목", "gov": 7.15, "union": null },
+    { "d": "10/13 화", "gov": 16.15, "union": 48 },
+    { "d": "10/17 토", "gov": 55, "union": 80 }
+  ],
+  "y2023": { "govMax": 127.2, "govMaxDate": "1/31", "unionMax": 350, "unionMaxDate": "3/7", "jan31Union": 280, "days": 140 },
+  "ratio": { "jan31_2023": 2.2, "oct6_2026": 1.8, "oct13_2026": 3.0, "oct17_2026": 1.45 }
+}
