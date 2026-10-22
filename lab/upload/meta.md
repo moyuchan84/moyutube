@@ -29,7 +29,7 @@
 
 - 1편 https://youtube.com/shorts/iROV1fmQP1c — 비공개, 재생목록 "보면 풀리는 수학", 아동용 아니요, AI 사용 아니요, 카테고리 교육
 - 2편 https://youtube.com/shorts/C7qj8ht_bQ4 — 위와 같음
-- 재생목록 "보면 풀리는 수학" 새로 만듦 (비공개, 추가된 날짜 오래된순)
-- 영어 자막: **아직 못 올림.** Studio 언어 페이지(영어 추가 → 제목·설명 입력 중)에서 크롬 탭이 멈췄다. 올릴 파일은 `circleLength.en.srt` · `circleArea.en.srt`. 영어 제목·설명은 아래:
+- 재생목록 "보면 풀리는 수학" 새로 만듦 (추가된 날짜 오래된순) → **공개**로 바꿈 (PLYm1ykL9nrZc). 영상은 아직 비공개라 바깥에서는 빈 목록으로 보인다
+- 영어 자막: 두 편 모두 게시함 (언어 → 언어 추가 → 영어 → 수동 자막 → 파일 업로드, 숨은 file input 에 SRT). 영어 제목·설명은 아직 안 넣음 — 첫 시도 때 제목·설명 입력 중 탭이 멈췄다. 넣을 문구:
   - 1편 EN: Why Is a Circle's Circumference 2πr? Just Roll It! | Math You Can See #Shorts
   - 2편 EN: Why Is a Circle's Area πr²? Slice It Like a Pizza! | Math You Can See #Shorts
