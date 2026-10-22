@@ -1,0 +1,37 @@
+1
+00:00:00,300 --> 00:00:02,300
+Is it still a × h ÷ 2
+when the height is outside the triangle?
+
+2
+00:00:02,300 --> 00:00:05,100
+This is an obtuse triangle:
+one angle is bigger than 90°.
+
+3
+00:00:05,300 --> 00:00:09,400
+The height goes from the top corner
+down to the extended base line.
+
+4
+00:00:09,600 --> 00:00:12,800
+Start from the big right triangle
+that contains the height...
+
+5
+00:00:13,000 --> 00:00:17,100
+...and take away the small right triangle.
+
+6
+00:00:17,300 --> 00:00:20,700
+Only the original triangle is left.
+
+7
+00:00:20,900 --> 00:00:24,900
+Even with the height outside, the area is a × h ÷ 2.
+(a + x)h ÷ 2 − xh ÷ 2 = ah ÷ 2
+
+8
+00:00:25,100 --> 00:00:28,300
+Next: if we slide the top corner,
+does the area stay the same?

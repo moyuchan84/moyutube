@@ -88,7 +88,9 @@ export function addChrome(
         opacity={0}
       />
       <Rect ref={main} y={-630} layout direction="row" alignItems="center" gap={22} opacity={0}>
-        <Latex tex={o.tex} height={92} fill={THEME.amber} shadowColor={THEME.amber} shadowBlur={30} />
+        {o.tex ? (
+          <Latex tex={o.tex} height={92} fill={THEME.amber} shadowColor={THEME.amber} shadowBlur={30} />
+        ) : null}
         <Txt text={o.tail} fontFamily={FONT} fontSize={92} fontWeight={800} fill={THEME.ink} />
       </Rect>
       <Rect

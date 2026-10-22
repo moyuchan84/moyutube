@@ -8,5 +8,5 @@ const motionCanvas = unwrap(motionCanvasModule);
 const ffmpeg = unwrap(ffmpegModule);
 
 export default defineConfig({
-  plugins: [motionCanvas({project: ['./src/circleLength.ts', './src/circleArea.ts']}), ffmpeg()],
+  plugins: [motionCanvas({project: ['./src/circleLength.ts', './src/circleArea.ts', './src/triAngles.ts', './src/triArea.ts', './src/triObtuse.ts', './src/triShear.ts']}), ffmpeg()],
 });
