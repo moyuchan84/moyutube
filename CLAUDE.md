@@ -1,6 +1,6 @@
 # youtube — 저장소 전체 규칙
 
-이 저장소에는 세 프로젝트가 있다: `qna/`(여덟 살의 질문 — 규칙은 [qna/CLAUDE.md](qna/CLAUDE.md)), `shortube/`(쇼츠 자동 제작 — [shortube/SPEC.md](shortube/SPEC.md)), `funtube/`.
+이 저장소에는 네 프로젝트가 있다: `lab/`(모라구 안의 수학·과학 설명 카테고리 — 규칙은 [lab/CLAUDE.md](lab/CLAUDE.md)), `qna/`(여덟 살의 질문 — 규칙은 [qna/CLAUDE.md](qna/CLAUDE.md)), `shortube/`(쇼츠 자동 제작 — [shortube/SPEC.md](shortube/SPEC.md)), `funtube/`.
 
 ## 쇼츠(shortube · 숫자로 보는 요즘) 작업 전에 반드시
 
