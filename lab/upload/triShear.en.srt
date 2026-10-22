@@ -1,0 +1,38 @@
+1
+00:00:00,300 --> 00:00:02,300
+If we slide the top corner sideways,
+does the area stay the same?
+
+2
+00:00:02,300 --> 00:00:05,400
+A triangle with a base of 8 squares and a height of 5.
+(8 × 5 ÷ 2 = 20 squares)
+
+3
+00:00:05,600 --> 00:00:13,000
+Let's slide the top corner sideways,
+parallel to the base.
+
+4
+00:00:13,000 --> 00:00:16,000
+The shape changes,
+but the area is still 20 squares!
+
+5
+00:00:16,200 --> 00:00:19,900
+Now what if we change the height?
+
+6
+00:00:19,900 --> 00:00:25,000
+When the height changes,
+the area changes too.
+
+7
+00:00:25,800 --> 00:00:29,600
+Same base and same height means the same area.
+(Area = a × h ÷ 2)
+
+8
+00:00:29,800 --> 00:00:33,200
+Angles add up to 180° · Area = a × h ÷ 2
+That's triangles!

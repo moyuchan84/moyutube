@@ -1,0 +1,45 @@
+1
+00:00:00,300 --> 00:00:02,300
+Why do we divide by 2 for a triangle's area?
+
+2
+00:00:02,300 --> 00:00:04,900
+Let's start with a right triangle.
+
+3
+00:00:05,100 --> 00:00:07,700
+Add an identical triangle,
+turned around...
+
+4
+00:00:07,900 --> 00:00:11,300
+A rectangle!
+The triangle is half of it.
+
+5
+00:00:11,500 --> 00:00:15,600
+Let's try a pointy (acute) triangle too.
+
+6
+00:00:15,800 --> 00:00:18,400
+Turn and attach a copy the same way:
+a parallelogram.
+
+7
+00:00:18,600 --> 00:00:22,900
+Cut along the height
+and move the piece across...
+
+8
+00:00:23,100 --> 00:00:26,700
+Now it's a rectangle
+with base a and height h.
+
+9
+00:00:26,900 --> 00:00:30,500
+Two triangles = one rectangle, so we divide by 2.
+(Triangle = a × h ÷ 2)
+
+10
+00:00:30,700 --> 00:00:33,900
+Next: what if the height is outside the triangle?

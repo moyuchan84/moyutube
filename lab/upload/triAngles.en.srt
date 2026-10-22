@@ -1,0 +1,33 @@
+1
+00:00:00,300 --> 00:00:03,100
+Why do the three angles of a triangle add up to 180°?
+
+2
+00:00:03,100 --> 00:00:06,000
+Let's color in the three angles.
+
+3
+00:00:06,200 --> 00:00:13,200
+Change the shape —
+the sum is always 180°.
+
+4
+00:00:13,400 --> 00:00:16,500
+Cut off the three angles
+and bring them to one point...
+
+5
+00:00:16,700 --> 00:00:20,300
+A perfectly straight line!
+Half a turn = 180°
+
+6
+00:00:20,500 --> 00:00:23,900
+In any triangle, the three angles add up to 180°.
+(α + β + γ = 180°)
+
+7
+00:00:24,100 --> 00:00:27,300
+Next: why do we divide by 2
+for a triangle's area?
+
