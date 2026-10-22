@@ -1,0 +1,30 @@
+1
+00:00:00,300 --> 00:00:04,700
+Why is the area of a circle πr²?
+(Last time: circumference = 2πr)
+
+2
+00:00:04,700 --> 00:00:06,800
+Cut the circle into equal slices, like a pizza.
+
+3
+00:00:07,000 --> 00:00:11,500
+Fit them together, alternating up and down...
+
+4
+00:00:11,700 --> 00:00:14,500
+The thinner the slices, the closer it gets to a rectangle!
+
+5
+00:00:14,700 --> 00:00:19,300
+Width = half the circumference = 2πr ÷ 2 = πr
+Height = the radius, r
+
+6
+00:00:19,500 --> 00:00:22,800
+Area of a rectangle = width × height
+πr × r = πr²
+
+7
+00:00:23,000 --> 00:00:26,900
+π × radius × radius — that's the area of a circle!
