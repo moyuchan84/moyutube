@@ -1,0 +1,136 @@
+{
+  "id": "Ep08-Motion",
+  "episode": "ep08",
+  "bgm": "cheerful",
+  "gap": 1,
+  "beats": [
+    { "line": "c01c-1", "shots": [
+      { "bg": "bg/police-box", "cast": [ { "art": "common/kid/ask", "x": 0.42, "h": 0.55, "talk": "kid" }, { "art": "common/dad/normal", "x": 0.72, "h": 0.8 } ], "cam": { "from": [0.45, 0.62, 1.6], "to": [0.43, 0.6, 1.95], "roll": [-4, 2] } },
+      { "at": 0.52, "in": "slam", "bg": "burst:#FFD23F:#FFB627", "cast": [ { "art": "common/cutin/kid-ask", "x": 0.4, "h": 1.0, "enter": "pop" } ], "cam": { "punch": [12] }, "text": [ { "t": "바로요?", "style": "shake", "x": 0.76, "y": 0.3, "rot": 6, "size": 170 } ], "sfx": [ { "name": "pop" } ] }
+    ] },
+    { "line": "c02-0", "pad": 26, "shots": [
+      { "in": "whip-l", "bg": "bg/police-box", "cast": [ { "art": "common/dad/proud", "x": 0.5, "h": 0.82, "enter": "spin" } ], "cam": { "from": [0.5, 0.48, 1.4], "to": [0.5, 0.44, 1.6], "roll": [3, -2] } },
+      { "at": 0.27, "in": "spin", "bg": "dots:#FFE3EE:#FFC6DC", "fx": [ "imagine" ],
+        "cast": [ { "art": "cutin/police-correct", "x": 0.3, "h": 0.92, "enter": "l" }, { "art": "@thief", "x": 0.72, "h": 0.72, "enter": "spin", "at": 4 } ],
+        "jail": 0.62,
+        "text": [ { "t": "딱!", "style": "slam", "x": 0.52, "y": 0.22, "at": 6 }, { "t": "철컹!", "style": "slam", "x": 0.72, "y": 0.2, "at": 0.64, "color": "#FFD23F", "size": 170 } ],
+        "sfx": [ { "name": "pang", "at": 6 }, { "name": "crash", "at": 0.62 } ] },
+      { "at": 0.74, "in": "smash", "bg": "stripes:#5BC0EB:#3FA7D6", "cast": [ { "art": "common/cutin/dad-proud", "x": 0.4, "h": 1.0, "enter": "pop" } ],
+        "freeze": 0.3, "tag": { "t": "아빠 (40)", "sub": "자신감 100% · 근거 0%", "x": 0.7, "y": 0.3 },
+        "sfx": [ { "name": "stamp", "at": 0.3 } ] }
+    ] },
+    { "line": "c00-2", "pad": 22, "shots": [
+      { "in": "glitch", "bg": "bg/police-box", "cast": [ { "art": "police/correct", "x": 0.5, "h": 0.84, "talk": "police" } ], "cam": { "from": [0.5, 0.45, 1.5], "to": [0.5, 0.4, 1.75] }, "note": "※ 실제 경찰관님은 매우 친절하셨습니다", "sfx": [ { "name": "scratch" } ] },
+      { "at": 0.62, "in": "smash", "bg": "#15303A", "cast": [ { "art": "common/cutin/dad-panic", "x": 0.5, "h": 1.0, "enter": "pop" } ], "fx": [ "lines", "shake" ], "cam": { "from": [0.5, 0.45, 1.0], "punch": [3, 7, 11] },
+        "mark": { "kind": "x", "at": 16 }, "sfx": [ { "name": "boing" }, { "name": "buzz", "at": 16 } ] }
+    ] },
+    { "hold": 48, "shots": [
+      { "in": "wipe", "bg": "stripes:#B8352A:#A02D23",
+        "props": [ { "art": "prop/scale-gavel", "x": 0.84, "y": 0.72, "w": 0.2, "enter": "pop", "at": 16, "rot": 8, "spin": true } ],
+        "text": [ { "t": "여덟 살의 질문 · 8화", "style": "pop", "y": 0.16, "size": 56 }, { "t": "경찰? 검사? 판사?", "style": "slam", "y": 0.4, "size": 140, "at": 3 }, { "t": "누가 뭘 정해요?", "style": "shake", "y": 0.64, "size": 120, "color": "#FFD23F", "at": 14 } ],
+        "sfx": [ { "name": "stinger", "at": 3 }, { "name": "pang", "at": 14 } ] }
+    ] },
+    { "line": "c00-4", "pad": 6, "shots": [
+      { "in": "glitch", "bg": "bg/police-box", "fx": [ "vhs" ], "cast": [ { "art": "police/normal", "x": 0.2, "h": 0.8 }, { "art": "common/dad/panic", "x": 0.6, "h": 0.8 }, { "art": "kid/bandage", "x": 0.8, "h": 0.55 } ], "cam": { "from": [0.5, 0.5, 1.6], "to": [0.5, 0.5, 1.0], "roll": [8, 0] }, "sfx": [ { "name": "rewind" } ] }
+    ] },
+    { "line": "c01-0", "shots": [
+      { "in": "flash", "bg": "bg/empty-rack", "cast": [ { "art": "common/mom/normal", "x": 0.26, "h": 0.74 }, { "art": "kid/bandage", "x": 0.5, "h": 0.55, "enter": "drop" }, { "art": "common/dad/normal", "x": 0.74, "h": 0.8 } ], "cam": { "from": [0.5, 0.5, 1.05], "to": [0.5, 0.5, 1.2] },
+        "text": [ { "t": "손목 삐끗 → 병원", "style": "pop", "y": 0.16, "size": 80, "at": 0.15 } ] },
+      { "at": 0.46, "in": "whip-r", "bg": "bg/empty-rack", "cam": { "from": [0.54, 0.78, 2.0], "to": [0.54, 0.78, 2.4] }, "text": [ { "t": "텅", "style": "slam", "y": 0.38, "size": 280, "at": 0.25 } ], "sfx": [ { "name": "slide", "at": 0.2 } ] },
+      { "at": 0.78, "in": "smash", "bg": "burst:#15303A:#1F4452", "cast": [ { "art": "common/cutin/dad-shock", "x": 0.36, "h": 1.0, "enter": "pop" } ], "cam": { "punch": [6] }, "text": [ { "t": "자전거\n실종", "style": "stamp", "x": 0.75, "y": 0.45, "size": 120, "at": 6 } ], "sfx": [ { "name": "dudung" } ] }
+    ] },
+    { "line": "c01b-0", "shots": [
+      { "in": "whip-l", "bg": "bg/police-box", "cast": [ { "art": "police/normal", "x": 0.14, "h": 0.8 }, { "art": "common/mom/normal", "x": 0.34, "h": 0.74 }, { "art": "common/dad/normal", "x": 0.52, "h": 0.8 }, { "art": "kid/bandage", "x": 0.66, "h": 0.55 }, { "art": "neighbor/normal", "x": 0.88, "h": 0.82 } ],
+        "props": [ { "art": "prop/report-form", "x": 0.42, "y": 0.68, "w": 0.1, "rot": -8, "front": true } ],
+        "cam": { "from": [0.42, 0.5, 1.0], "to": [0.46, 0.5, 1.14], "roll": [-3, -1] }, "text": [ { "t": "길 건너 지구대", "style": "pop", "y": 0.14, "size": 80 } ] },
+      { "at": 0.6, "in": "cut", "bg": "bg/police-box", "cast": [ { "art": "neighbor/normal", "x": 0.88, "h": 0.82 } ], "cam": { "from": [0.88, 0.45, 1.9], "to": [0.88, 0.42, 2.2], "roll": [4, 6] }, "text": [ { "t": "웅성웅성", "style": "shake", "x": 0.6, "y": 0.3, "size": 90, "rot": -8 } ] }
+    ] },
+    { "line": "c01b-1", "shots": [
+      { "in": "smash", "bg": "stripes:#B8352A:#A02D23", "cast": [ { "art": "cutin/neighbor", "x": 0.4, "h": 1.05, "enter": "pop" } ], "fx": [ "lines", "shake" ], "note": "※ 이 아저씨, 나중에 또 나옵니다",
+        "text": [ { "t": "잡아가요!!", "style": "shake", "x": 0.77, "y": 0.34, "rot": 8, "color": "#FFD23F", "at": 0.5 } ], "sfx": [ { "name": "pang" } ] }
+    ] },
+    { "line": "c01c-0", "shots": [
+      { "in": "whip-r", "bg": "bg/police-box", "cast": [ { "art": "common/dad/normal", "x": 0.46, "h": 0.8 }, { "art": "kid/bandage", "x": 0.62, "h": 0.55, "rot": -6 } ], "cam": { "from": [0.55, 0.66, 2.0], "to": [0.55, 0.66, 2.4] }, "text": [ { "t": "꾹 꾹", "style": "pop", "x": 0.7, "y": 0.42, "size": 100, "color": "#FFD23F", "at": 0.25 } ], "sfx": [ { "name": "boing", "at": 0.25 } ] }
+    ] },
+    { "hold": 20, "shots": [
+      { "in": "glitch", "bg": "dots:#F6EEDF:#E8DCC4", "fx": [ "mono" ], "cast": [ { "art": "common/cutin/kid-ask", "x": 0.3, "h": 0.9 }, { "art": "common/cutin/dad-proud", "x": 0.72, "h": 0.9 } ], "text": [ { "t": "(그리고 아까 그 대답)", "style": "type", "y": 0.14, "size": 70 } ], "sfx": [ { "name": "rewind", "volume": 0.3 } ] }
+    ] },
+    { "line": "c02-1", "shots": [
+      { "in": "whip-u", "bg": "burst:#5BC0EB:#3FA7D6", "cast": [ { "art": "common/dad/proud", "x": 0.42, "h": 0.92, "enter": "b" } ], "cam": { "roll": [-5, 5] },
+        "text": [ { "t": "든든", "style": "stamp", "x": 0.76, "y": 0.36, "size": 130, "at": 0.25 }, { "t": "(속으로는 모름)", "style": "type", "x": 0.76, "y": 0.6, "size": 56, "at": 0.55 } ], "sfx": [ { "name": "stamp", "at": 0.25 } ] }
+    ] },
+    { "line": "c02-2", "shots": [
+      { "in": "cut", "bg": "bg/police-box", "fx": [ "slowmo" ], "cast": [ { "art": "police/normal", "x": 0.5, "h": 0.86 } ], "cam": { "from": [0.5, 0.38, 2.2], "to": [0.5, 0.33, 3.0] }, "text": [ { "t": "스윽…", "style": "type", "x": 0.78, "y": 0.3, "size": 90, "at": 0.3 } ], "sfx": [ { "name": "tick" } ] }
+    ] },
+    { "line": "c02-3", "shots": [
+      { "in": "zoom", "bg": "burst:#1F5FA8:#2A6FBF", "cast": [ { "art": "cutin/police-correct", "x": 0.3, "h": 1.0, "enter": "l" } ], "text": [ { "t": "찾기 · 조사\n= 경찰", "style": "pop", "x": 0.72, "y": 0.4, "size": 110, "at": 0.15 } ] },
+      { "at": 0.55, "in": "wipe", "bg": "stripes:#F6EEDF:#EFE4CF", "props": [ { "art": "prop/scale-gavel", "x": 0.28, "y": 0.5, "w": 0.3, "enter": "pop" } ], "text": [ { "t": "감옥 결정\n= 판사", "style": "slam", "x": 0.7, "y": 0.45, "size": 120, "color": "#FFD23F", "at": 0.2 } ], "sfx": [ { "name": "ding", "at": 0.2 } ] }
+    ] },
+    { "line": "c02-4", "pad": 8, "shots": [
+      { "in": "smash", "bg": "dots:#F6EEDF:#E8DCC4", "tally": 1, "text": [ { "t": "1획", "style": "stamp", "x": 0.8, "y": 0.74, "size": 100, "at": 12 } ], "sfx": [ { "name": "pop", "at": 4 } ] }
+    ] },
+    { "line": "c02b-0", "shots": [
+      { "in": "whip-u", "bg": "dots:#15303A:#1F4452", "props": [ { "art": "prop/tv-news", "x": 0.5, "y": 0.42, "w": 0.48, "enter": "pop" } ], "cam": { "from": [0.5, 0.5, 1.0], "to": [0.5, 0.45, 1.18] }, "text": [ { "t": "구속영장 기각", "style": "news", "at": 0.35 } ], "sfx": [ { "name": "beep", "at": 0.35 } ] }
+    ] },
+    { "line": "c02b-1", "pad": 20, "shots": [
+      { "in": "whip-l", "bg": "bg/police-box", "cast": [ { "art": "common/mom/smirk", "x": 0.5, "h": 0.8, "talk": "mom" } ], "cam": { "from": [0.5, 0.46, 1.6], "to": [0.5, 0.42, 1.85] },
+        "freeze": 0.74, "tag": { "t": "엄마", "sub": "(틀렸습니다)", "x": 0.76, "y": 0.26 }, "mark": { "kind": "x", "at": 0.8 }, "sfx": [ { "name": "stamp", "at": 0.74 }, { "name": "buzz", "at": 0.8 } ] }
+    ] },
+    { "line": "c02c-0", "shots": [
+      { "in": "glitch", "bg": "bg/police-box", "cast": [ { "art": "police/correct", "x": 0.5, "h": 0.86, "talk": "police" } ], "cam": { "from": [0.5, 0.45, 1.5], "to": [0.5, 0.41, 1.75] }, "text": [ { "t": "기각 ≠ 무죄", "style": "stamp", "x": 0.78, "y": 0.3, "size": 90, "at": 0.45 } ], "sfx": [ { "name": "stamp", "at": 0.45 } ] },
+      { "at": 0.38, "in": "whip-l", "bg": "stripes:#1F5FA8:#2A6FBF", "text": [ { "t": "가둬 놓고 조사?", "style": "pop", "y": 0.36, "size": 120 }, { "t": "→ 그럴 필요까진 없음", "style": "pop", "y": 0.6, "size": 90, "color": "#FFD23F", "at": 0.3 } ] },
+      { "at": 0.72, "in": "whip-l", "bg": "stripes:#15303A:#1F4452", "props": [ { "art": "prop/magnifier", "x": 0.3, "y": 0.42, "w": 0.2, "enter": "pop" }, { "art": "prop/scale-gavel", "x": 0.7, "y": 0.42, "w": 0.2, "enter": "pop", "at": 6 } ], "text": [ { "t": "수사도 재판도 그대로", "style": "slam", "y": 0.78, "size": 90, "at": 10 } ], "sfx": [ { "name": "ding", "at": 10 } ] }
+    ] },
+    { "line": "c02c-1", "pad": 20, "shots": [
+      { "in": "smash", "bg": "dots:#F6EEDF:#E8DCC4", "tally": 2, "text": [ { "t": "2획", "style": "stamp", "x": 0.8, "y": 0.74, "size": 100, "at": 12 } ], "sfx": [ { "name": "pop", "at": 4 } ] }
+    ] },
+    { "line": "c02d-0", "shots": [
+      { "in": "whip-u", "bg": "dots:#15303A:#1F4452", "props": [ { "art": "prop/tv-news", "x": 0.5, "y": 0.42, "w": 0.48, "enter": "pop" } ], "cam": { "from": [0.5, 0.5, 1.0], "to": [0.5, 0.45, 1.18] }, "text": [ { "t": "검찰청, 78년 만에 문 닫아", "style": "news", "at": 0.3 } ], "sfx": [ { "name": "beep", "at": 0.3 } ] }
+    ] },
+    { "line": "c02d-1", "shots": [
+      { "in": "whip-l", "bg": "bg/police-box", "cast": [ { "art": "common/kid/ask", "x": 0.5, "h": 0.6, "talk": "kid" } ], "cam": { "from": [0.5, 0.62, 1.7], "to": [0.5, 0.6, 2.0], "roll": [-3, 3] } },
+      { "at": 0.58, "in": "slam", "bg": "burst:#FFD23F:#FFB627", "cast": [ { "art": "common/cutin/kid-ask", "x": 0.4, "h": 1.0, "enter": "pop" } ], "text": [ { "t": "누가??", "style": "shake", "x": 0.78, "y": 0.32, "rot": 6, "size": 170 } ], "sfx": [ { "name": "pop" } ] }
+    ] },
+    { "line": "c02d-2", "pad": 16, "shots": [
+      { "in": "smash", "bg": "bg/police-box", "cast": [ { "art": "common/dad/shock", "x": 0.5, "h": 0.86 } ], "cam": { "from": [0.5, 0.36, 2.2], "ease": "snap", "roll": [-7, -7], "punch": [4] }, "sfx": [ { "name": "pop" } ] },
+      { "at": 0.22, "in": "smash", "bg": "bg/police-box", "cast": [ { "art": "common/mom/shock", "x": 0.5, "h": 0.82 } ], "cam": { "from": [0.5, 0.38, 2.2], "ease": "snap", "roll": [7, 7], "punch": [4] }, "sfx": [ { "name": "pop" } ] },
+      { "at": 0.48, "in": "zoom", "bg": "burst:#1F5FA8:#2A6FBF", "cast": [ { "art": "police/normal", "x": 0.5, "h": 0.86 } ], "fx": [ "lines" ], "cam": { "from": [0.5, 0.45, 1.3], "to": [0.5, 0.42, 1.5] }, "text": [ { "t": "?!", "style": "slam", "x": 0.75, "y": 0.28, "size": 200, "color": "#FFD23F", "at": 6 } ], "sfx": [ { "name": "dudung", "at": 6 } ] }
+    ] },
+    { "line": "c03-0", "shots": [
+      { "in": "wipe", "bg": "bg/police-box", "cast": [ { "art": "police/monitor", "x": 0.24, "h": 0.82 } ], "cam": { "from": [0.3, 0.5, 1.3], "to": [0.28, 0.5, 1.45] }, "text": [ { "t": "CCTV 확인 중", "style": "type", "x": 0.3, "y": 0.18, "size": 70 } ] },
+      { "at": 0.42, "in": "whip-r", "bg": "bg/police-box", "cast": [ { "art": "common/dad/search", "x": 0.6, "y": 0.92, "h": 0.6 } ], "props": [ { "art": "prop/standee", "x": 0.5, "y": 0.68, "w": 0.3, "front": true } ], "cam": { "from": [0.54, 0.6, 1.5], "to": [0.56, 0.58, 1.75] },
+        "loading": { "t": "아빠 몰래 공부 중", "pct": 3, "at": 0.2 }, "sfx": [ { "name": "tick", "at": 0.2 } ] }
+    ] },
+    { "line": "c03-1", "shots": [
+      { "in": "iris", "bg": "bg/police-box", "fx": [ "docu" ], "cast": [ { "art": "common/dad/search", "x": 0.6, "y": 0.92, "h": 0.6 } ], "props": [ { "art": "prop/standee", "x": 0.5, "y": 0.68, "w": 0.3, "front": true } ], "cam": { "from": [0.62, 0.5, 1.7], "to": [0.66, 0.45, 2.1] },
+        "tag": { "t": "아빠 (Homo papa)", "sub": "위기 시 은신", "x": 0.3, "y": 0.62, "at": 0.35 }, "sfx": [ { "name": "dudung", "at": 0.92 } ] }
+    ] },
+    { "line": "c03-2", "shots": [
+      { "in": "whip-l", "bg": "stripes:#15303A:#1F4452", "text": [ { "t": "헷갈릴 만했다", "style": "pop", "size": 120 } ] },
+      { "at": 0.34, "in": "smash", "bg": "#B8352A", "cam": { "roll": [-6, -6] }, "text": [ { "t": "구속", "style": "slam", "size": 300 } ] },
+      { "at": 0.47, "in": "smash", "bg": "#1F5FA8", "text": [ { "t": "기각", "style": "slam", "size": 300, "rot": 6 } ] },
+      { "at": 0.6, "in": "smash", "bg": "#E0A100", "text": [ { "t": "기소", "style": "slam", "size": 300, "rot": -8 } ] },
+      { "at": 0.73, "in": "smash", "bg": "#7A4FA0", "text": [ { "t": "구형", "style": "slam", "size": 300, "rot": 8 } ] },
+      { "at": 0.86, "in": "smash", "bg": "#15303A", "text": [ { "t": "선고", "style": "slam", "size": 300, "rot": -4 } ] }
+    ] },
+    { "hold": 28, "shots": [
+      { "in": "spin", "bg": "burst:#B8352A:#A02D23", "fx": [ "shake" ], "cast": [ { "art": "common/cutin/dad-panic", "x": 0.4, "h": 1.0, "enter": "spin" } ], "text": [ { "t": "과부하", "style": "shake", "x": 0.76, "y": 0.4, "size": 160, "color": "#FFD23F", "at": 4 } ], "sfx": [ { "name": "crash", "at": 4 } ] }
+    ] },
+    { "line": "c03-3", "shots": [
+      { "in": "zoom", "bg": "dots:#F6EEDF:#E8DCC4", "text": [ { "t": "그 앞에 더 큰 말 2개", "style": "pop", "size": 110 } ] },
+      { "at": 0.58, "in": "whip-l", "bg": "stripes:#B8352A:#A02D23", "cam": { "roll": [-5, -2] }, "text": [ { "t": "형사", "style": "slam", "size": 300 } ], "sfx": [ { "name": "stinger" } ] },
+      { "at": 0.8, "in": "whip-r", "bg": "stripes:#1F5FA8:#2A6FBF", "cam": { "roll": [5, 2] }, "text": [ { "t": "민사", "style": "slam", "size": 300 } ] }
+    ] },
+    { "line": "c03-4", "shots": [
+      { "in": "wipe", "bg": "stripes:#15303A:#1F4452", "text": [ { "t": "오늘은 딱 두 개만", "style": "pop", "y": 0.2, "size": 80, "color": "#FFD23F" }, { "t": "① 무슨 사건?", "style": "slam", "y": 0.45, "size": 120, "at": 0.4 }, { "t": "② 누가 정해?", "style": "slam", "y": 0.7, "size": 120, "at": 0.72 } ],
+        "sfx": [ { "name": "pop", "at": 0.4 }, { "name": "pop", "at": 0.72 } ] }
+    ] },
+    { "line": "c03b-0", "pad": 20, "shots": [
+      { "in": "whip-l", "bg": "bg/police-box", "cast": [ { "art": "common/dad/shock", "x": 0.6, "y": 0.92, "h": 0.62, "exit": { "at": 22, "to": "l" } } ], "props": [ { "art": "prop/standee", "x": 0.5, "y": 0.68, "w": 0.3, "front": true } ], "cam": { "from": [0.56, 0.55, 1.6], "to": [0.5, 0.52, 1.5] },
+        "text": [ { "t": "들켰다", "style": "stamp", "x": 0.82, "y": 0.3, "size": 110, "at": 8 } ], "sfx": [ { "name": "stamp", "at": 8 }, { "name": "slide", "at": 22 } ] }
+    ] },
+    { "hold": 70, "shots": [
+      { "in": "iris", "bg": "burst:#15303A:#1F4452", "text": [ { "t": "모션 편집 시험판 v2", "style": "pop", "y": 0.42, "size": 120 }, { "t": "8편 앞부분 · 여기까지", "style": "pop", "y": 0.6, "size": 70, "color": "#FFD23F", "at": 12 } ] }
+    ] }
+  ]
+}

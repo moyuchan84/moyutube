@@ -1,11 +1,11 @@
 # youtube — 저장소 전체 규칙
 
-이 저장소에는 네 프로젝트가 있다: `lab/`(모라구 안의 수학·과학 설명 카테고리 — 규칙은 [lab/CLAUDE.md](lab/CLAUDE.md)), `qna/`(여덟 살의 질문 — 규칙은 [qna/CLAUDE.md](qna/CLAUDE.md)), `shortube/`(쇼츠 자동 제작 — [shortube/SPEC.md](shortube/SPEC.md)), `funtube/`.
+이 저장소에는 네 프로젝트가 있다: `lab/`(모라구 안의 수학·과학 설명 카테고리 — 규칙은 [lab/CLAUDE.md](lab/CLAUDE.md)), `qna/`(여덟 살의 질문 · 새 편은 3분 「모답맨」 포맷 — 규칙은 [qna/CLAUDE.md](qna/CLAUDE.md), 채널 · 포맷 전체 정리는 [qna/MODAPMAN.md](qna/MODAPMAN.md)), `shortube/`(쇼츠 자동 제작 — [shortube/SPEC.md](shortube/SPEC.md)), `funtube/`.
 
 ## 쇼츠(shortube · 숫자로 보는 요즘) 작업 전에 반드시
 
 - 주제 조사 · 영상 제작 · 음악 · 업로드 · 채널 설정 등 shortube 관련 일을 시작하기 전에 **[shortube/CLAUDE.md](shortube/CLAUDE.md) 와 [shortube/COMPLIANCE_GUIDE.md](shortube/COMPLIANCE_GUIDE.md) 를 먼저 읽고 따른다.**
-- 특히 잊지 말 것: 요청 전제부터 사실 확인 · 숫자는 사실 카드에 있는 것만 · 주식/의료/미성년·인물 주제의 금지 사항 · 사진·로고·음원 없음 · 배경음악은 코드 합성 · 업로드 기본 비공개 · 저장 후 실제 공개 상태 재확인 · 같은 틀 반복 업로드 주의.
+- 특히 잊지 말 것: 요청 전제부터 사실 확인 · 숫자는 사실 카드에 있는 것만 · 주식/의료/미성년·인물 주제의 금지 사항 · 사진·로고·음원 없음 · 배경음악은 코드 합성 · 업로드는 바로 공개(2026-10-22 사용자 결정, 묻지 않음) · 저장 후 실제 공개 상태 재확인 · 같은 틀 반복 업로드 주의.
 
 ## API 키 — 저장소 루트 `.env` 하나만 쓴다
 

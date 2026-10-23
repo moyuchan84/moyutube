@@ -148,4 +148,68 @@ writeWav(
   );
 }
 
+// ── 모션 편집판용 (src/motion/Motion.tsx) ──
+
+// 삐빅: 오답 부저 (낮은 톱니파 두 번)
+writeWav(
+  "buzz.wav",
+  render(0.7, (t) => {
+    const on = t < 0.28 || (t > 0.34 && t < 0.66);
+    const saw = ((t * 140) % 1) * 2 - 1 + (((t * 147) % 1) * 2 - 1);
+    return { extra: on ? saw * 0.22 * Math.min(t / 0.01, 1) : 0 };
+  }),
+);
+
+// 딩동: 정답 종소리 두 음
+writeWav(
+  "ding.wav",
+  render(1.2, (t) => {
+    const note = (f, start) => (t < start ? 0 : (Math.sin(2 * Math.PI * f * (t - start)) + 0.25 * Math.sin(2 * Math.PI * f * 3 * (t - start))) * Math.exp(-(t - start) * 4));
+    return { extra: (note(1318.5, 0) + note(1046.5, 0.22)) * 0.3 };
+  }),
+);
+
+// 끼익: 레코드 긁히는 소리 (노이즈를 빠르게 위아래로 훑는다)
+{
+  let lp = 0;
+  writeWav(
+    "scratch.wav",
+    render(0.5, (t) => {
+      const sweep = 0.5 + 0.45 * Math.sin(2 * Math.PI * 9 * t);
+      lp += sweep * ((Math.random() * 2 - 1) - lp);
+      const tone = Math.sin(2 * Math.PI * (600 + 900 * Math.sin(2 * Math.PI * 9 * t)) * t) * 0.3;
+      return { extra: (lp * 0.6 + tone) * Math.sin(Math.PI * Math.min(t / 0.5, 1)) };
+    }),
+  );
+}
+
+// 휘이잉: 아래로 미끄러지는 슬라이드 휘슬 (망했다)
+writeWav(
+  "slide.wav",
+  render(0.9, (t) => ({ freq: 1500 * Math.exp(-t * 1.8) + 18 * Math.sin(t * 2 * Math.PI * 7), amp: 0.32 * Math.min(t / 0.02, 1) * Math.min((0.9 - t) / 0.08, 1) })),
+);
+
+// 와장창: 크게 무너지는 소리 (노이즈 + 쇳소리 여러 개)
+{
+  let lp = 0;
+  writeWav(
+    "crash.wav",
+    render(1.1, (t) => {
+      lp += 0.8 * ((Math.random() * 2 - 1) - lp);
+      const metal = [1730, 2410, 3170].reduce((a, f) => a + Math.sin(2 * Math.PI * f * t), 0) * 0.08 * Math.exp(-t * 5);
+      const thump = Math.sin(2 * Math.PI * (60 + 140 * Math.exp(-t * 40)) * t) * Math.exp(-t * 8);
+      return { extra: (lp * Math.exp(-t * 3.5) * 0.7 + metal + thump * 0.8) * 0.9 };
+    }),
+  );
+}
+
+// 똑딱: 생각하는 시간 (짧은 나무 소리 네 번)
+writeWav(
+  "tick.wav",
+  render(1.0, (t) => {
+    const u = t % 0.25;
+    return { extra: Math.sin(2 * Math.PI * (Math.floor(t / 0.25) % 2 ? 1700 : 2100) * u) * Math.exp(-u * 90) * 0.5 };
+  }),
+);
+
 console.log("sfx written");

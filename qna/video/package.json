@@ -16,7 +16,10 @@
     "stills": "node scripts/stills.mjs",
     "render": "remotion render src/index.ts",
     "voice": "node scripts/voice.mjs",
-    "short": "node scripts/short.mjs"
+    "short": "node scripts/short.mjs",
+    "trim-voice": "node scripts/trim-voice.mjs",
+    "motion-srt": "node scripts/motion-srt.mjs",
+    "keywords": "node scripts/keywords.mjs"
   },
   "dependencies": {
     "@remotion/bundler": "4.0.525",

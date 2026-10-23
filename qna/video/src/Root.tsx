@@ -11,7 +11,15 @@ import ep04Short from "./shorts/ep04.json";
 import ep05Short from "./shorts/ep05.json";
 import ep06Short from "./shorts/ep06.json";
 import ep07Short from "./shorts/ep07.json";
+import ep08Short from "./shorts/ep08.json";
 import { FPS, buildTimeline } from "./timeline.js";
+import { type MotionPlan, Motion, buildMotion } from "./motion/Motion";
+import { type MotionThumbSpec, MotionThumb } from "./motion/Thumb";
+import { ChannelBanner } from "./ChannelBanner";
+import ep08Motion from "./motion/ep08.json";
+import ep08fMotion from "./motion/ep08f.json";
+import ep08fScript from "./ep08f/script.json";
+import ep08fTiming from "./ep08f/timing.json";
 import ep01Script from "./ep01/script.json";
 import ep01Timing from "./ep01/timing.json";
 import ep02Script from "./ep02/script.json";
@@ -26,6 +34,8 @@ import ep06Script from "./ep06/script.json";
 import ep06Timing from "./ep06/timing.json";
 import ep07Script from "./ep07/script.json";
 import ep07Timing from "./ep07/timing.json";
+import ep08Script from "./ep08/script.json";
+import ep08Timing from "./ep08/timing.json";
 
 // 새 편은 여기에 한 줄 추가한다 (face 는 얼굴 썸네일의 글자)
 const EPISODES: { id: string; episode: string; timeline: ReturnType<typeof buildTimeline>; face?: FaceText }[] = [
@@ -73,6 +83,12 @@ const EPISODES: { id: string; episode: string; timeline: ReturnType<typeof build
     timeline: buildTimeline(ep07Script, ep07Timing),
     face: { tag: "여덟 살 아들의 질문", top: ["내과? ", "외과?"], bottom: ["아빠,", " 어디로 가요?"], layout: "trio", dad: "dad-shock", kid: "kid-ask", mom: "mom-sigh", vs: ["ep07/prop/belly-map", "ep07/prop/skeleton"] },
   },
+  {
+    id: "Ep08",
+    episode: "ep08",
+    timeline: buildTimeline(ep08Script, ep08Timing),
+    face: { tag: "여덟 살 아들의 질문", top: ["도둑 잡히면 ", "바로 감옥?"], bottom: ["아빠,", " 누가 정해요?"], layout: "trio", dad: "dad-shock", kid: "kid-ask", mom: "mom-sigh", vs: ["ep08/prop/warrant", "ep08/prop/scale-gavel"] },
+  },
 ];
 
 // 쇼츠(9:16) 맛보기: 롱폼 구간을 잘라 본편으로 보낸다 (모라구 유입용)
@@ -91,12 +107,26 @@ const SHORTS = [
   },
 ];
 
+// 모답맨 (모션 편집판): src/motion/<id>.json 하나 = 영상 하나. thumb 가 있으면 <id>-Thumb 스틸도 만든다
+const MOTIONS: { id: string; episode: string; timeline: ReturnType<typeof buildMotion>; thumb?: MotionThumbSpec }[] = [
+  // 8편 앞부분을 롱폼 음성 그대로 다시 편집한 첫 시험판
+  { id: ep08Motion.id, episode: "ep08", timeline: buildMotion(ep08Motion as MotionPlan, ep08Script, ep08Timing) },
+  // 모답맨 8화: 새 대본(src/ep08f) · 새 음성, 그림은 8편 것
+  { id: ep08fMotion.id, episode: "ep08", timeline: buildMotion(ep08fMotion as MotionPlan, ep08fScript, ep08fTiming), thumb: ep08fMotion.thumb },
+];
+
 // 편집형 쇼츠: src/shorts/<epNN>.json (편집 계획) 하나 = 쇼츠 하나. 렌더는 npm run short -- epNN
-const EDITED_SHORTS = [ep01Short, ep02Short, ep03Short, ep04Short, ep05Short, ep06Short, ep07Short] as unknown as ShortSpec[];
+const EDITED_SHORTS = [ep01Short, ep02Short, ep03Short, ep04Short, ep05Short, ep06Short, ep07Short, ep08Short] as unknown as ShortSpec[];
 
 export const RemotionRoot = () => {
   return (
     <>
+      {MOTIONS.map(({ id, episode, timeline, thumb }) => (
+        <React.Fragment key={id}>
+          <Composition id={id} component={Motion} durationInFrames={timeline.durationInFrames} fps={FPS} width={1920} height={1080} defaultProps={{ timeline }} />
+          {thumb ? <Still id={`${id}-Thumb`} component={MotionThumb} width={1280} height={720} defaultProps={{ episode, spec: thumb }} /> : null}
+        </React.Fragment>
+      ))}
       {EDITED_SHORTS.map((spec) => {
         const timeline = EPISODES.find((e) => e.episode === spec.episode)!.timeline;
         return (
@@ -139,6 +169,8 @@ export const RemotionRoot = () => {
           <Still id={`${id}-ThumbD`} component={Thumbnail} width={1280} height={720} defaultProps={{ variant: "d" as const, face }} />
         </React.Fragment>
       ))}
+      {/* 채널 배너 (모라구) — out/channel/ 로 렌더해 Studio 맞춤설정에 올린다 */}
+      <Still id="Channel-Banner" component={ChannelBanner} width={2560} height={1440} />
       <Still id="Ep01-ThumbA" component={Thumbnail} width={1280} height={720} defaultProps={{ variant: "a" as const }} />
       <Still id="Ep01-ThumbB" component={Thumbnail} width={1280} height={720} defaultProps={{ variant: "b" as const }} />
       <Still id="Ep01-ThumbC" component={Thumbnail} width={1280} height={720} defaultProps={{ variant: "c" as const }} />

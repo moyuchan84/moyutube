@@ -53,7 +53,7 @@ cd qna/video && node -e "const s=require('./src/epNN/script.json'),t=require('./
     { "line": "c07-0", "chapter": 2, "transition": "glitch", "hold": 4 }
   ],
   "end": { "title": ["독일의 한 선생님은", "왜 이걸 만들었을까?"], "sub": "본편에서 확인하세요" },
-  "upload": { "longTitle": "...", "title": "... #shorts", "description": "...", "tags": [], "playlist": "여덟 살 아들의 호기심" }
+  "upload": { "longTitle": "...", "title": "... #shorts", "description": "...", "tags": [], "playlist": "모(오)답맨 (여덟 살 아들의 호기심)" }
 }
 ```
 
