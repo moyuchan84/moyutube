@@ -13,7 +13,7 @@ description: >-
 2026-10-23 사용자가 확정한 qna 포맷. 이전 포맷(아빠의 회상 · 긴 나레이션 · 8분 · 7박자)은 루즈해서 시청이 끊겼다.
 모답맨은 **3분 안쪽, 2~3초마다 화면이 바뀌는 모션 편집, 병맛, 하지만 내용의 본질(정확한 사실)은 그대로**다.
 
-**기준 예시 — 8편 `video/src/ep08f/script.json` · `video/src/motion/ep08f.json` · `video/out/motion/ep08f-modapman.mp4`.**
+**기준 예시 — 8편 `content/ep08f-modapman/script/script.json` · `content/ep08f-modapman/script/motion.json` · `video/out/motion/ep08f-modapman.mp4` (렌더 결과, git 제외).**
 새 편을 쓰기 전에 이 셋을 먼저 읽는다.
 
 ## 고정 규칙
@@ -55,14 +55,14 @@ description: >-
 ## 산출물 (이 순서로)
 
 1. **자료조사 메모** — 기원 · 갈라진 지점 · 오늘날 오해(= 오답 후보 목록) · 출처와 확인 상태. 오답 후보 3~4개를 누가 말할지 정한다.
-2. **대본** — `video/src/epNN/script.json`. 컷마다 목소리 둘까지(`voice.json`), 숫자는 `tts` 로 한글 읽기, 줄마다 `en`(영어 자막). `"speed": 1.2`, `"rawVoice": true`. 기획서 `.md` 에도 같은 대본.
-3. **그림 목록** — `art.json`: 배경 2~3장, 인물 포즈, 얼굴 컷인(놀람 · 자신만만 · 정색), 소품 10장 안팎(라운드 카드 옆에 놓일 것), 상상 장면 배경 1장. 공통 그림(`art/common`)부터 재사용.
-4. **샷 편집 계획** — `video/src/motion/epNN.json` (아래 "샷 계획").
+2. **대본** — `content/<편>/script/script.json`. 컷마다 목소리 둘까지(`voice.json`), 숫자는 `tts` 로 한글 읽기, 줄마다 `en`(영어 자막). `"speed": 1.2`, `"rawVoice": true`. 기획서 `.md` 에도 같은 대본.
+3. **그림 목록** — `art.json`: 배경 2~3장, 인물 포즈, 얼굴 컷인(놀람 · 자신만만 · 정색), 소품 10장 안팎(라운드 카드 옆에 놓일 것), 상상 장면 배경 1장. 공통 그림(`content/_common/art`)부터 재사용.
+4. **샷 편집 계획** — `content/<편>/script/motion.json` (아래 "샷 계획").
 5. **제목 · 설명 · 태그** — 아래 "제목 짓기". 영어 제목(100자 안) · 설명도.
 6. **썸네일** — 계획의 `thumb` (위 두 줄 + 작은 셋째 줄, 놀란 아빠 얼굴 + X + 정답 인물 + 오답 카운터).
 7. **한 문장 정리** — 정답 라운드 끝 나레이션과 같은 문장.
 
-## 샷 계획 (`src/motion/epNN.json`, 엔진은 `src/motion/Motion.tsx`)
+## 샷 계획 (`content/<편>/script/motion.json`, 엔진은 `src/motion/Motion.tsx`)
 
 - `beats` 하나 = 대사 한 줄(`line: "c03-1"`) 또는 대사 없는 장면(`hold: 프레임`). 대사 한 줄에 샷 1~3개(`at` 로 나눔).
 - **2~3초마다 화면이 바뀐다.** 긴 대사는 샷을 2~3개로 쪼갠다. 같은 그림이 4초 넘게 머물지 않게.
@@ -78,7 +78,7 @@ description: >-
 1. 주제의 검색어 후보 8~12개(뉴스성 키워드 · "A B 차이" · "~뜻" · 생활형 질문)를 `npm run keywords -- "검색어" …` 로 조회한다 (키는 루트 `.env` 의 `YOUTUBE_API_KEY`, 검색어당 할당량 101).
 2. **지금 뜨거운 말(최근 60일 영상이 많고 중앙값이 높은 것)을 제목 앞머리에**, 꾸준한 말("A·B·C 차이/정리")을 가운데, 끝에 `| 모답맨`.
 3. 아이 질문형 훅을 살린다. 예: `검찰청 폐지되면 나쁜 사람은 누가 재판에 보내요? 경찰·검사·판사 3분 정리 | 모답맨`
-4. 조회수 낮은 말은 제목 대신 태그로. 조사 표는 업로드 자료(`out/motion/<id>.upload.md`)에 남긴다.
+4. 조회수 낮은 말은 제목 대신 태그로. 조사 표는 업로드 자료(`content/<편>/upload/upload.md`)에 남긴다.
 5. 설명: 훅 2줄 → ✔ 오해 → 정답 4~5줄 → 챕터(`npm run motion-srt` 가 만든 시각, 각 10초 이상) → 모답맨 소개 한 줄 → ※ 주석 → 해시태그 5~6개.
 
 ## 영어 자막
@@ -93,5 +93,5 @@ description: >-
 
 ## 출력 형식
 
-기획서는 `episodes/NN-slug/<slug>.md` + 같은 내용의 `index.html`(`references/html-style-guide.md` 의 CSS 그대로). 채팅으로만 끝내지 않는다.
+기획서는 `content/<편>/plan.md` + 같은 내용의 `index.html`(`references/html-style-guide.md` 의 CSS 그대로). 채팅으로만 끝내지 않는다.
 다음 주제를 고를 때는 `references/topic-bank.md`.

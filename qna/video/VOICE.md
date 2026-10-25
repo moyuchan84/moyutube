@@ -45,7 +45,7 @@ A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voi
 
 - AI Studio 는 한 번에 두 목소리까지다. 그래서 **한 컷에는 목소리가 둘까지만** 나오게 대본을 나눈다 (셋이면 도구가 오류를 낸다).
 - 손님이 나오는 컷에서는 손님이 **그 컷에서 비는 자리**(Speaker 1 또는 2)를 쓴다. 예: 아빠 + 할머니 컷은 Speaker 2 = Gacrux, 아이 + 할머니 컷은 Speaker 1 = Gacrux.
-- 컷마다 무엇을 골라야 하는지는 `out/epNN/voice-studio.html` 의 카드(갈색 표시)와 `episodes/NN-…/jobs/voice.json` 의 `speakers` 에 적혀 있다.
+- 컷마다 무엇을 골라야 하는지는 `out/epNN/voice-studio.html` 의 카드(갈색 표시)와 `content/<편>/prompts/jobs/voice.json` 의 `speakers` 에 적혀 있다.
 
 ## 고른 과정 (다시 고를 때 참고)
 
@@ -67,7 +67,7 @@ npm run voice -- ep02 gen        # 대사가 바뀐 컷만 생성 → 줄마다 
 npm run voice -- ep02 gen --all  # 전부 다시
 ```
 
-- 컷 하나를 한 번에 받아 `voice-studio/epNN/<컷id>.wav` 에 두고, 줄 사이 쉼을 찾아 자른다. 쉼을 못 찾은 컷은 줄마다 따로 받는다.
+- 컷 하나를 한 번에 받아 `content/<편>/voice/studio/<컷id>.wav` 에 두고, 줄 사이 쉼을 찾아 자른다. 쉼을 못 찾은 컷은 줄마다 따로 받는다.
 - 모델은 그 키로 쓸 수 있는 Flash TTS 중 가장 새것을 고른다. 고정하려면 `src/voice.json` 의 `"model"` 에 모델 id 를 적는다.
 - 전부 AI 음성이 되면 `script.json` 에 `"rawVoice": true` 를 넣어 준다 (렌더할 때 음높이 변조를 끈다).
 - API 에는 블록별 말투 칸이 없어서, 말투 지시는 대본 앞머리에 문장으로 들어간다. Speaker 2 에는 "여덟 살 아이, 밝고 높은 목소리" 문장이 붙는다 (`src/voice.json` 의 `style`).
@@ -75,7 +75,7 @@ npm run voice -- ep02 gen --all  # 전부 다시
 ### 2. 다른 도구에 맡길 때 (Antigravity 등)
 
 ```bash
-npm run handoff -- ep03          # episodes/03-…/ANTIGRAVITY.md + jobs/images.json + jobs/voice.json
+npm run handoff -- ep03          # content/ep03-…/ANTIGRAVITY.md + jobs/images.json + jobs/voice.json
 ```
 
 지시서(`ANTIGRAVITY.md`)를 읽히면 된다. 컷별 목소리 · 대사 · 저장 경로가 `jobs/voice.json` 에 들어 있다.
@@ -84,7 +84,7 @@ npm run handoff -- ep03          # episodes/03-…/ANTIGRAVITY.md + jobs/images.
 
 ```bash
 npm run voice -- ep02 studio     # out/ep02/voice-studio.html — 컷마다 복사 버튼
-# AI Studio 에서 Speaker 1 = Algenib, Speaker 2 = Leda 로 두고 생성 → voice-studio/ep02/<컷id>.wav 로 저장
+# AI Studio 에서 Speaker 1 = Algenib, Speaker 2 = Leda 로 두고 생성 → content/<편>/voice/studio/<컷id>.wav 로 저장
 npm run voice -- ep02 split      # 줄마다 자르고 타이밍 갱신
 ```
 

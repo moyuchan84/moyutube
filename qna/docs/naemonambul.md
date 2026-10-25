@@ -1,20 +1,20 @@
 # 내모남불 — 모라구 시리즈
 
 > **내**가 하면 **모** 어때, **남**이 하면 **불**(법).
-> 모 씨네 가족(`qna/art/common`)이 나오는 이중 잣대 코미디. 편집은 모답맨 모션 엔진(`qna/video/src/motion/Motion.tsx`)을 같이 쓴다.
+> 모 씨네 가족(`qna/content/_common/art`)이 나오는 이중 잣대 코미디. 편집은 모답맨 모션 엔진(`qna/video/src/motion/Motion.tsx`)을 같이 쓴다.
 > 시작: 2026-10-25. 첫 편은 「자동차편」(funtube 「내로남불 · 운전석의 법칙」을 옮겨 온 것).
 
 ## 폴더
 
 | 무엇 | 어디 |
 |---|---|
-| 편 폴더 (기획서 · 그림 원본 · 프롬프트) | `naemonambul/NN-slug/` — `NN-slug.md` 대신 `<slug>.md`, `art/`, `GEMINI_PROMPTS.md`, `jobs/` |
-| 대본 · 그림 목록 · 타이밍 | `qna/video/src/nmNN/` (`script.json` · `art.json` · `timing.json`) |
-| 샷 편집 계획 | `qna/video/src/motion/nmNN.json` → `Root.tsx` 의 `MOTIONS` |
-| 음성 | `qna/video/public/nmNN/voice/<컷>-<줄>.wav` (원본은 `video/voice-raw/nmNN/`, git 에 안 올림) |
-| 결과물 | `qna/video/out/motion/` (git 에 안 올림) |
+| 편 폴더 (모든 것) | `qna/content/nmNN-<slug>/` — 모답맨 편과 같은 구조 (`unit.json` 에 `"series": "naemonambul"`, `plan.md` · `script/` · `prompts/` · `art/` · `voice/` · `upload/`). 새 편은 저장소 루트에서 `npm run new -- qna nm02 --slug <영문> --series naemonambul` |
+| 대본 · 그림 목록 · 타이밍 | `content/<편>/script/` (`script.json` · `art.json` · `timing.json`) |
+| 샷 편집 계획 | `content/<편>/script/motion.json` (Root 에 자동 등록) |
+| 음성 | `content/<편>/voice/<컷>-<줄>.wav` (받은 원본은 `content/<편>/voice/raw/`, 모두 git 에 있다) |
+| 렌더 결과 mp4 | `qna/video/out/motion/` (git 에 안 올림 — 다시 렌더할 수 있다) |
 
-`video/scripts/art-lib.mjs` 가 `nmNN` 을 이 폴더(`naemonambul/NN-*`)로 연결한다. 그래서 `npm run prompts -- nm01`, `npm run art -- nm01`, `trim-voice` · `voice.mjs` · `speed.mjs` · `motion-srt` 가 모답맨 편과 똑같이 돈다.
+`video/scripts/art-lib.mjs` 가 `nmNN` 을 이 폴더(`content/nmNN-*`)로 연결한다. 그래서 `npm run prompts -- nm01`, `npm run art -- nm01`, `trim-voice` · `voice.mjs` · `speed.mjs` · `motion-srt` 가 모답맨 편과 똑같이 돈다.
 
 ## 포맷 (모답맨과 같은 것 · 다른 것)
 
@@ -40,8 +40,8 @@
 - 재생목록(카테고리): 「내로남불 · 내모남불 (내가 하면 모 어때, 남이 하면 불법)」 PLEJvhEloY2QQ
 - 채널 홈 탭: 모(오)답맨 섹션 바로 아래에 이 재생목록 섹션
 - 제목은 노출을 위해 **"내로남불"을 앞에** 둔다 (사용자 요청). 예: `운전 내로남불 … | 내모남불`
-- 쇼츠는 본편 구간을 이어 붙인다 (`video/src/shorts/motion-nmNN.json`, 관련 동영상 = 본편)
-- 업로드 자료 · 기록: `video/out/motion/NmNN-Naemonambul.upload.md` (git 밖이라 링크는 아래 표에도 남긴다)
+- 쇼츠는 본편 구간을 이어 붙인다 (`content/<편>/script/motion-short.json`, 관련 동영상 = 본편)
+- 업로드 자료 · 기록: `content/<편>/upload/upload.md` (git 에 있다. 영상 ID 는 `unit.json` 의 `youtube` 에도)
 
 ## 편 목록
 

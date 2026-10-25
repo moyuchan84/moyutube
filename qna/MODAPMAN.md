@@ -46,18 +46,18 @@
 ## 3. 만드는 기준 (생성 기준)
 
 ### 대본
-- `video/src/epNN/script.json` — `"speed": 1.2`, `"rawVoice": true`, 컷마다 목소리 둘까지, 숫자는 `tts`(한글 읽기), 줄마다 `en`(영어 자막).
-- 대사 45~55줄, 공백 뺀 900~1,100자. 기획서 `episodes/NN-slug/<slug>.md` 에도 같은 대본.
+- `content/<편>/script/script.json` — `"speed": 1.2`, `"rawVoice": true`, 컷마다 목소리 둘까지, 숫자는 `tts`(한글 읽기), 줄마다 `en`(영어 자막).
+- 대사 45~55줄, 공백 뺀 900~1,100자. 기획서 `content/<편>/plan.md` 에도 같은 대본.
 
 ### 목소리 (`video/src/voice.json` 에 고정, 바꾸지 않는다)
 아빠 · 나레이션 = **Algenib**, 아이 = **Leda**, 엄마 = **Kore**, 경찰관 = Erinome, 이웃 아저씨 = Alnilam, 할머니 = Gacrux, 이발사 = Charon, 약사 = Sulafat, 간호사 = Zephyr, 정형외과 = Iapetus, 내과 접수 = Achernar.
 말투 덧붙임: 나레이션 "short, dry, deadpan aside with snappy comedic timing" · 아빠 장면 대사 "snappy comedic timing, a bit over-confident" · 아이 눈높이 박자 "warm, gentle and sincere, a little slower, no joking".
 
-### 그림 (화풍 앵커 `art/anchor/style-cutin.png`)
-- 공통 그림 먼저 재사용: `art/common/{dad,kid,mom,cutin,bg}` (아빠 panic/shock/proud/think/explain…, 얼굴 컷인 dad-panic/dad-shock/dad-proud/kid-ask/kid-doubt/mom-smirk/mom-sigh).
+### 그림 (화풍 앵커 `content/_common/art/anchor/style-cutin.png`)
+- 공통 그림 먼저 재사용: `content/_common/art/{dad,kid,mom,cutin,bg}` (아빠 panic/shock/proud/think/explain…, 얼굴 컷인 dad-panic/dad-shock/dad-proud/kid-ask/kid-doubt/mom-smirk/mom-sigh).
 - 편마다: 배경 2~3 · 정답 인물 포즈 + 얼굴 컷인 · 소품 10장 안팎 · 상상 장면 배경 1.
 
-### 샷 편집 (엔진 `video/src/motion/Motion.tsx`, 계획 `video/src/motion/epNN.json`)
+### 샷 편집 (엔진 `video/src/motion/Motion.tsx`, 계획 `content/<편>/script/motion.json`)
 - 박자 = 대사 한 줄(`line`) 또는 무대사 장면(`hold`), 대사 하나에 샷 1~3개.
 - 전환: whip · zoom · spin · wipe · iris · glitch · slam · smash · flash. 카메라: roll · punch(크래시 줌) · snap.
 - 장치: freeze+tag(멈춤 이름표) · mark(O/X) · tally(正) · loading · jail · note(※) · 글자 slam/stamp/pop/type/shake/news · fx imagine/docu/vhs/slowmo/lines.
@@ -103,7 +103,7 @@ npm run motion-srt -- epNN
 npm run keywords -- "검색어1" "검색어2"
 ```
 
-- 8화 결과물은 `out/`(git 에 안 올림)이라 새 컴퓨터에서는 위 명령으로 다시 만든다. 음성(`public/ep08f/voice`) · 그림 원본(`episodes/08-…/art`)은 git 에 있다. 처리된 그림 `public/art/` 은 `npm run art -- ep08` 로 다시 만든다.
+- 8화 결과물은 `out/`(git 에 안 올림)이라 새 컴퓨터에서는 위 명령으로 다시 만든다. 음성(`content/<편>/voice`) · 그림 원본(`content/ep08-…/art`)은 git 에 있다. 처리된 그림 `public/art/` 은 `npm run art -- ep08` 로 다시 만든다.
 - **크롬 AI Studio 음성 함정:** Run 직후 0.08초짜리 자리표시 음성이 먼저 온다(길이 0.25초 넘고 2초간 안 바뀔 때 저장) · Style 은 버튼을 열고 넣어야 적용 · 계정당 무료 약 40줄 → 한도에 걸리면 계정 전환 · 파일 넘기기는 127.0.0.1:8765 로컬 서버 + 페이지 JS.
 - **Studio 함정:** 10MB 넘는 파일은 로컬 서버 → fetch → DataTransfer 로 input 에 넣는다. 자막 · 배너처럼 파일 창이 뜨는 버튼은 `HTMLInputElement.prototype.click` 을 가로채 파일을 바로 넣는다(파일 창이 열리면 멈춤). "다음" 을 연달아 누르지 않는다(공개로 게시된 사고).
 
@@ -111,4 +111,4 @@ npm run keywords -- "검색어1" "검색어2"
 
 - 바꾸기 전 채널 설명: `video/out/channel/description-old-2026-10-23.md` (git 밖이라 여기에도 요지를 남김 — "'뭐라구?' 하고 되묻게 되는 순간을 모으는 가족 채널, 모라구입니다." + 여덟 살의 질문 / 아빠가 만든 앱 / 우리 집 실험실(준비 중) / 한 장 정리(준비 중) / 숫자로 보는 요즘).
 - 바꾸기 전 재생목록 설명: "여덟 살 아들이 무심코 던진 질문에 아빠가 말문이 막혔다가, 다시 찾아보고 아이 눈높이로 풀어 주는 시리즈입니다."
-- 시험판: `src/motion/ep08.json` (`Ep08-Motion`) — 롱폼 음성을 그대로 두고 편집만 바꾼 v2. 비교용으로 남겨 둠.
+- 시험판: `content/ep08-police-prosecutor-court/script/motion.json` (`Ep08-Motion`) — 롱폼 음성을 그대로 두고 편집만 바꾼 v2. 비교용으로 남겨 둠.

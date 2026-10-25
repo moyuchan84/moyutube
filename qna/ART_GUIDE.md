@@ -35,25 +35,25 @@
 
 | 역할 | 파일 | 언제 붙나 |
 |---|---|---|
-| **화풍 앵커** (사람 그림) | `art/anchor/style-cutin.png` | 사람이 나오는 모든 그림의 ① |
-| **소품 앵커** | `art/anchor/style-prop.png` (10화 우주 탐사선, 1024px) | 사람 없는 소품 · 앞쪽 레이어의 ① |
-| 아빠 기준 | `art/common/dad/normal.png` | 아빠가 나오는 모든 그림 |
-| 아이 기준 | `art/common/kid/normal.png` | 아이가 나오는 모든 그림 |
-| 엄마 기준 | `art/common/mom/normal.png` | 엄마가 나오는 모든 그림 |
-| 가족 대표 컷인 (얼굴 · 피부 톤) | `art/common/cutin/dad-shock.png` · `kid-ask.png` · `mom-smirk.png` | 그 사람의 가슴 위 컷인 |
-| 시그니처 첫 프레임 | `art/common/cutin/dad-sig-1.png` · `mom-sig-1.png` | 시그니처 2~N 컷 |
-| 손님 기준 | `episodes/NN-…/art/<손님>/normal.png` (그 편에서 먼저 뽑는다) | 그 손님이 나오는 모든 그림 |
-| 공통 배경 | `art/common/bg/living-room.png` 등 | 같은 장소를 다른 시간 · 조명으로 그릴 때 `attach` 로 |
+| **화풍 앵커** (사람 그림) | `content/_common/art/anchor/style-cutin.png` | 사람이 나오는 모든 그림의 ① |
+| **소품 앵커** | `content/_common/art/anchor/style-prop.png` (10화 우주 탐사선, 1024px) | 사람 없는 소품 · 앞쪽 레이어의 ① |
+| 아빠 기준 | `content/_common/art/dad/normal.png` | 아빠가 나오는 모든 그림 |
+| 아이 기준 | `content/_common/art/kid/normal.png` | 아이가 나오는 모든 그림 |
+| 엄마 기준 | `content/_common/art/mom/normal.png` | 엄마가 나오는 모든 그림 |
+| 가족 대표 컷인 (얼굴 · 피부 톤) | `content/_common/art/cutin/dad-shock.png` · `kid-ask.png` · `mom-smirk.png` | 그 사람의 가슴 위 컷인 |
+| 시그니처 첫 프레임 | `content/_common/art/cutin/dad-sig-1.png` · `mom-sig-1.png` | 시그니처 2~N 컷 |
+| 손님 기준 | `content/<편>/art/<손님>/normal.png` (그 편에서 먼저 뽑는다) | 그 손님이 나오는 모든 그림 |
+| 공통 배경 | `content/_common/art/bg/living-room.png` 등 | 같은 장소를 다른 시간 · 조명으로 그릴 때 `attach` 로 |
 
 <p>
-<img src="art/anchor/style-cutin.png" height="150" alt="화풍 앵커">
-<img src="art/anchor/style-prop.png" height="150" alt="소품 앵커">
-<img src="art/common/dad/normal.png" height="150" alt="아빠">
-<img src="art/common/kid/normal.png" height="150" alt="아이">
-<img src="art/common/mom/normal.png" height="150" alt="엄마">
+<img src="content/_common/art/anchor/style-cutin.png" height="150" alt="화풍 앵커">
+<img src="content/_common/art/anchor/style-prop.png" height="150" alt="소품 앵커">
+<img src="content/_common/art/dad/normal.png" height="150" alt="아빠">
+<img src="content/_common/art/kid/normal.png" height="150" alt="아이">
+<img src="content/_common/art/mom/normal.png" height="150" alt="엄마">
 </p>
 
-가족의 생김새 글(영어)은 `video/src/art-common.json` 의 `cast`, 대표 컷인은 `refs` 에 있다. 기준 그림을 바꾸면 그 뒤 모든 그림이 바뀌므로 **기준 그림은 고치지 않는다** (꼭 바꿔야 하면 옛 그림을 `_old/` 로 옮기고, 사용자에게 먼저 묻는다).
+가족의 생김새 글(영어)은 `content/_common/script/art.json` 의 `cast`, 대표 컷인은 `refs` 에 있다. 기준 그림을 바꾸면 그 뒤 모든 그림이 바뀌므로 **기준 그림은 고치지 않는다** (꼭 바꿔야 하면 옛 그림을 `_old/` 로 옮기고, 사용자에게 먼저 묻는다).
 
 ## 3. 첨부 규칙 — 코드가 자동으로 정한다
 
@@ -104,7 +104,7 @@
 | `who` | 주인공 한 명 (가족 `dad` · `kid` · `mom` 또는 `cast` 의 키). 생김새 글과 `normal` 이 자동으로 들어간다 |
 | `people` | `who` 말고 **같이 나오는 사람 전부**. 장면 · 상상 · 소품 속 인물까지. 사람이 없으면 `[]` |
 | `ref` | 기본값이 맞지 않을 때만 (첫 프레임, 다른 표정을 기준으로). 기준 그림 자신은 `null` |
-| `attach` | 기본 규칙에 없는 추가 그림 `[{ "path": "art/common/bg/living-room.png", "label": "같은 거실" }]` |
+| `attach` | 기본 규칙에 없는 추가 그림 `[{ "path": "content/_common/art/bg/living-room.png", "label": "같은 거실" }]` |
 | `desc` | **영어로**, 포즈 · 표정 · 소품만. 옷 · 얼굴은 cast 와 기준 그림이 맡으므로 다시 쓰지 않는다. 방향(LEFT/RIGHT)을 첫 문장에 |
 
 ## 5. 뽑는 순서
