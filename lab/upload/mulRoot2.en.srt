@@ -1,0 +1,47 @@
+1
+00:00:00,800 --> 00:00:04,510
+A square with an area of 2 —
+how long is each side?
+
+2
+00:00:04,560 --> 00:00:06,430
+A square made of 4 grid squares
+
+3
+00:00:06,480 --> 00:00:09,000
+Connect the middles of the four sides
+
+4
+00:00:09,050 --> 00:00:12,670
+What if we fold the 4 corners in?
+
+5
+00:00:12,720 --> 00:00:15,840
+They fill the inside exactly!
+Inside = half of the whole
+
+6
+00:00:15,890 --> 00:00:17,610
+Half of 4 → an area of 2
+
+7
+00:00:17,660 --> 00:00:21,780
+So each side of this square is √2
+
+8
+00:00:21,830 --> 00:00:27,350
+√2 times √2 is 2.
+Let's look for that number
+
+9
+00:00:27,400 --> 00:00:30,800
+It gets closer,
+but never exactly 2
+
+10
+00:00:30,850 --> 00:00:35,370
+Its decimals go on forever: 1.41421356…
+
+11
+00:00:35,420 --> 00:00:40,970
+Multiplication is area — the end!

@@ -1,0 +1,41 @@
+1
+00:00:00,800 --> 00:00:04,410
+Add up only odd numbers
+and you always get a square number?
+
+2
+00:00:04,460 --> 00:00:05,980
+Start with 1 square
+
+3
+00:00:06,030 --> 00:00:08,500
+Add the next odd number, 3, as an L shape
+
+4
+00:00:08,550 --> 00:00:11,980
+A square! 2 × 2 = 4
+
+5
+00:00:12,030 --> 00:00:15,540
+Add 5 and you get 3 × 3 = 9
+
+6
+00:00:15,590 --> 00:00:19,780
+Each L shape = the next odd number
+
+7
+00:00:19,830 --> 00:00:22,750
+Every new layer
+makes the square one bigger
+
+8
+00:00:22,800 --> 00:00:27,660
+So what if we add all the way to 19?
+
+9
+00:00:27,710 --> 00:00:31,160
+Add 10 odd numbers and you get 100 = 10²
+
+10
+00:00:32,160 --> 00:00:35,910
+NEXT: A square root (√) is squaring backwards!

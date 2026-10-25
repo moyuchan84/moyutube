@@ -1,0 +1,37 @@
+1
+00:00:00,800 --> 00:00:04,970
+Why are 3 × 4 and 4 × 3
+the same?
+
+2
+00:00:05,020 --> 00:00:11,290
+4 in each row, 3 rows
+
+3
+00:00:11,340 --> 00:00:14,510
+Now let's turn the whole thing
+
+4
+00:00:14,560 --> 00:00:19,180
+Now 3 in each row, 4 rows
+
+5
+00:00:19,230 --> 00:00:24,050
+We only turned it,
+so the count stays the same!
+
+6
+00:00:24,100 --> 00:00:26,520
+What if we turn the dots into squares?
+
+7
+00:00:26,570 --> 00:00:29,390
+Multiplication = the area of a rectangle
+
+8
+00:00:29,440 --> 00:00:34,290
+Stand it up — the area is still 12 squares
+
+9
+00:00:35,290 --> 00:00:39,040
+NEXT: Why does long multiplication for 13 × 12 work?
