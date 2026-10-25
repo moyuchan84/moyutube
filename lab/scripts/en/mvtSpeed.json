@@ -1,0 +1,15 @@
+{
+  "NEXT": "NEXT: How do you find\nthe area under a curve?",
+  "EN": {
+    "평균 100km/h 면|어딘가에선 꼭 100?": "If you average 100 km/h,\nwere you at exactly 100 at some point?",
+    "구간단속: 카메라 A 에서 B 까지 20km": "Average-speed check: 20 km from camera A to B",
+    "12분 만에 통과했다면?": "What if you got through in 12 minutes?",
+    "속도계는 60 에서 140 까지 오르내렸어요\n그런데 정확히 100 인 순간이 있었을까?": "The speedometer went anywhere from 60 to 140.\nBut was there a moment at exactly 100?",
+    "움직인 거리를 그래프로 그려 봐요": "Let's graph the distance traveled",
+    "처음과 끝을 이은 직선의 기울기\n= 평균 속도 100": "The slope of the line from start to finish\n= the average speed, 100",
+    "접선의 기울기 = 그 순간의 속도\n(1편의 미분!)": "The slope of the tangent = the speed at that moment\n(the derivative from episode 1!)",
+    "평균 직선과 나란한 순간!\n속도계도 딱 100": "A moment parallel to the average line!\nThe speedometer reads exactly 100",
+    "끊기지 않고 매끈하게 달렸다면\n이런 순간이 꼭 있어요 = 평균값 정리": "If the drive is smooth with no jumps,\nsuch a moment must exist = the Mean Value Theorem",
+    "그래서 구간 평균이 100 을 넘으면\n어딘가에선 100 넘게 달린 거예요": "So if your average is over 100,\nyou went over 100 somewhere"
+  }
+}

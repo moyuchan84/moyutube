@@ -1,0 +1,13 @@
+{
+  "NEXT": "NEXT: Adding forever,\nand the answer is 1?",
+  "EN": {
+    "sin 그래프는|원의 그림자?": "Is the sine graph\na circle's shadow?",
+    "반지름 1 인 관람차의 한 칸\n높이는 어떻게 변할까?": "One car on a Ferris wheel of radius 1 —\nhow does its height change?",
+    "돌아간 각만큼 오른쪽으로 가며\n높이를 점으로 찍어요": "Move right by the angle turned\nand mark the height as a dot",
+    "이 물결이 바로 sin 그래프!\n원 위 높이를 펼친 그림자": "This wave is the sine graph!\nThe circle's height, unrolled",
+    "30° 돌면 높이는 딱 절반\n그래서 sin 30° = 1/2": "Turn 30° and the height is exactly half,\nso sin 30° = 1/2",
+    "가로 그림자는 cos\nsin 은 세로, cos 는 가로": "The sideways shadow is cos:\nsin is up-down, cos is left-right",
+    "한 바퀴(2π) 돌면 제자리\n그래서 2π 마다 똑같이 반복": "After a full turn (2π) you're back where you started,\nso it repeats every 2π",
+    "소리, 파도, 그네처럼\n되풀이되는 움직임엔 sin 이 숨어 있어요": "Sound, waves, swings —\nsine hides in anything that repeats"
+  }
+}

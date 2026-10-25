@@ -54,6 +54,7 @@ const projects = [
   'fracAdd',
   'fracDiv',
   'unitArea',
+  'diffTangent',
   'magnetCut',
   'moonPhase',
   'seasons',
@@ -66,6 +67,17 @@ const projects = [
   'fingerSausage',
   'sideRead',
   'fadeDots',
+  'mvtSpeed',
+  'integArea',
+  'ftcRoller',
+  'logRule',
+  'eCompound',
+  'radianRope',
+  'sinShadow',
+  'geoSquare',
+  'bayesTest',
+  'dotShadow',
+  'dominoProof',
 ];
 
 export default defineConfig({

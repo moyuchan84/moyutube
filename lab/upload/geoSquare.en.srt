@@ -1,0 +1,54 @@
+1
+00:00:00,800 --> 00:00:03,810
+Adding forever,
+and the answer is 1?
+
+2
+00:00:03,860 --> 00:00:05,680
+A square with an area of 1
+
+3
+00:00:05,730 --> 00:00:07,500
+Color in half: 1/2
+
+4
+00:00:07,550 --> 00:00:09,320
+Half of what's left: 1/4
+
+5
+00:00:09,370 --> 00:00:12,890
+Half of what's left again… and on and on!
+
+6
+00:00:12,940 --> 00:00:16,760
+No matter how long we add, it can't leave the square.
+The gap shrinks to 0 → the sum is 1
+
+7
+00:00:16,810 --> 00:00:17,880
+What if it shrinks by 1/4 each time?
+
+8
+00:00:17,930 --> 00:00:21,050
+Only one of the three pieces is yellow,
+then repeat in the last corner
+
+9
+00:00:21,100 --> 00:00:24,820
+The three colors share it equally,
+so yellow is 1/3 of the whole!
+
+10
+00:00:24,870 --> 00:00:27,990
+(1/2) ÷ (1 − 1/2) = 1
+(1/4) ÷ (1 − 1/4) = 1/3
+
+11
+00:00:28,040 --> 00:00:31,490
+If the ratio is less than 1,
+an endless sum still has a limit = an infinite geometric series
+
+12
+00:00:32,490 --> 00:00:36,240
+NEXT: A positive test,
+but only a 9% chance it's real?

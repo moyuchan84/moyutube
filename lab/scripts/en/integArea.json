@@ -1,0 +1,15 @@
+{
+  "NEXT": "NEXT: Differentiate the area\nand you get the height?",
+  "EN": {
+    "곡선 아래 넓이는|어떻게 구할까?": "How do you find\nthe area under a curve?",
+    "y = x² 아래, 0 부터 1 까지의 넓이는?": "What's the area under y = x², from 0 to 1?",
+    "위가 휘어 있어서\n가로 × 세로로는 못 구해요": "The top is curved,\nso width × height won't work",
+    "그럼 직사각형 막대로 덮어 봐요": "So let's cover it with rectangular bars",
+    "곡선 위로 삐져나온 만큼\n실제보다 커요": "The bits sticking out above the curve\nmake it bigger than the real area",
+    "막대를 더 잘게 자르면?": "What if we cut the bars thinner?",
+    "삐져나온 부분이 사라지고\n0.333… 으로 다가가요": "The extra bits disappear\nand it closes in on 0.333…",
+    "이게 적분!\n아주 얇은 막대들을 다 더한 것": "That's integration!\nAdding up super-thin bars",
+    "∫ 는 합(Sum)의 S 를 길게 늘인 모양\nx² dx = 높이 × 아주 얇은 폭": "∫ is a stretched-out S for \"Sum\"\nx² dx = height × a super-thin width",
+    "그런데 매번 이렇게\n잘라서 더해야 할까요?": "But do we really have to\ncut and add every time?"
+  }
+}

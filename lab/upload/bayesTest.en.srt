@@ -1,0 +1,48 @@
+1
+00:00:00,800 --> 00:00:03,810
+A positive test,
+but only a 9% chance it's real?
+
+2
+00:00:03,860 --> 00:00:05,198
+Here are 1,000 people
+
+3
+00:00:05,248 --> 00:00:07,368
+10 of them have the disease (1%)
+
+4
+00:00:07,418 --> 00:00:11,026
+An imaginary test: always positive if you're sick,
+but 10% of healthy people test positive by mistake
+
+5
+00:00:11,076 --> 00:00:14,796
+Let's gather everyone who tested positive
+
+6
+00:00:14,846 --> 00:00:17,166
+Even with a positive result, it's only about a 9% chance!
+
+7
+00:00:17,216 --> 00:00:20,136
+There are so many healthy people
+that a 10% mistake rate alone means 99 people
+
+8
+00:00:20,186 --> 00:00:22,806
+What if we test just those 109 again?
+
+9
+00:00:22,856 --> 00:00:26,076
+Two positives — it jumps to 50%!
+
+10
+00:00:26,126 --> 00:00:29,776
+Counting again "among the people who tested positive" —
+that's conditional probability
+
+11
+00:00:30,776 --> 00:00:34,526
+NEXT: Is the dot product
+a shadow's length?

@@ -1,0 +1,17 @@
+{
+  "NEXT": "NEXT: Split the interest finer and finer —\ndoes the money grow forever?",
+  "EN": {
+    "곱셈을 덧셈으로|바꾸는 마법의 자": "A magic ruler that turns\nmultiplying into adding",
+    "보통 자는 눈금 간격이 똑같아요": "On a normal ruler, the marks are evenly spaced",
+    "이 자는 1, 2, 3 … 갈수록\n간격이 좁아져요": "On this ruler, the gaps between 1, 2, 3 …\nget narrower and narrower",
+    "똑같은 자를 하나 더 위에 놓고": "Put an identical ruler on top",
+    "2 × 3 을 해 볼게요\n위 자의 1 을 아래 자의 2 에 맞춰요": "Let's do 2 × 3:\nline up the top ruler's 1 with the bottom's 2",
+    "위 자의 3 아래를 보면… 6!": "Look below the top ruler's 3… it's 6!",
+    "사실 한 일은 길이 더하기": "All we really did was add lengths",
+    "2 의 길이 + 3 의 길이 = 6 의 길이\n곱셈이 덧셈이 됐어요!": "Length of 2 + length of 3 = length of 6\nMultiplying became adding!",
+    "그대로 두고 위 자의 4 를 보면?": "Leave it there and look at the top ruler's 4",
+    "눈금 길이의 정체 = log\n100 은 10 을 2번 곱한 수 → log 100 = 2": "Those lengths are logarithms (log)\n100 is 10 multiplied twice → log 100 = 2",
+    "곱하면 \"곱한 횟수\"끼리 더해져요\n100 × 1000 → 2번 + 3번 = 5번": "Multiply, and the \"number of times\" adds up\n100 × 1000 → 2 times + 3 times = 5 times",
+    "계산기가 없던 시절엔\n이 자(계산자)로 곱셈을 했어요": "Before calculators, people multiplied\nwith rulers like this (slide rules)"
+  }
+}
