@@ -16,7 +16,10 @@ __pycache__/
 
 # 영상 결과물 · 자동 생성 (다시 만들 수 있는 것)
 out/
-qna/video/public/art/
+# qna: video/public/<code>/ 는 content/<편>/voice 에서 sync 로 만드는 사본 · 배속 음성 · webp — 효과음 · 배경음악만 원본
+qna/video/public/*
+!qna/video/public/sfx/
+!qna/video/public/bgm/
 shortube/data/
 shortube/output/
 

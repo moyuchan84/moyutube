@@ -1,0 +1,21 @@
+{
+  "face": {
+    "tag": "여덟 살 아들의 질문",
+    "top": [
+      "내과? ",
+      "외과?"
+    ],
+    "bottom": [
+      "아빠,",
+      " 어디로 가요?"
+    ],
+    "layout": "trio",
+    "dad": "dad-shock",
+    "kid": "kid-ask",
+    "mom": "mom-sigh",
+    "vs": [
+      "ep07/prop/belly-map",
+      "ep07/prop/skeleton"
+    ]
+  }
+}

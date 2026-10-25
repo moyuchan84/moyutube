@@ -1,5 +1,5 @@
 // 뽑은 그림을 첨부했던 기준 그림과 나란히 놓고 보는 확인 시트 (qna/ART_GUIDE.md §5).
-// 사용: npm run artreview -- ep10          → episodes/10-…/jobs/review.html
+// 사용: npm run artreview -- ep10          → content/ep10-…/prompts/jobs/review.html
 //       npm run artreview -- ep10 --todo   → 아직 확인 안 한 것만 (review.json 에 ok 로 적은 것 빼고)
 // 얼굴 · 머리 · 옷 · 피부 톤 · 선 굵기가 기준 그림과 같은지 본다. 다르면 쓰지 않고 다시 뽑는다.
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
@@ -13,7 +13,7 @@ if (!ep || !listEpisodes().includes(ep)) {
 }
 const todoOnly = process.argv.includes("--todo");
 const art = loadEpisode(ep);
-const dir = join(ROOT, episodeDir(ep), "jobs");
+const dir = join(ROOT, episodeDir(ep), "prompts", "jobs");
 const reviewPath = join(dir, "review.json"); // { "<id>": "ok" | "redo: 이유" } — 사람이 적는다
 const marks = existsSync(reviewPath) ? JSON.parse(readFileSync(reviewPath, "utf8")) : {};
 

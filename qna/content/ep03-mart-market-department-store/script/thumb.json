@@ -1,0 +1,23 @@
+{
+  "face": {
+    "tag": "여덟 살 아들의 질문",
+    "top": [
+      "마트? ",
+      "시장?"
+    ],
+    "bottom": [
+      "아빠,",
+      " 뭐가 달라요?"
+    ],
+    "layout": "hang",
+    "dad": "dad-shock",
+    "topic": [
+      "ep03/prop/icon-market",
+      "ep03/prop/cart",
+      "ep03/prop/shopping-bag",
+      "ep03/prop/bean-sprouts",
+      "ep03/prop/price-tag",
+      "ep03/prop/ppeongtwigi"
+    ]
+  }
+}

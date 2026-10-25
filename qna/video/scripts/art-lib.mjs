@@ -1,43 +1,56 @@
-// 그림 목록(art.json)과 파일 경로 규칙. prompts.mjs · art.mjs 가 같이 쓴다.
+// 편(콘텐츠 단위) 경로와 그림 목록(art.json) 규칙. qna 의 모든 스크립트가 이 파일로 경로를 얻는다.
 //
-//   id                      원본(Gemini 결과를 넣는 곳)                    결과(영상이 읽는 곳)
-//   common/dad/normal   →   art/common/dad/normal.png                 →   video/public/art/common/dad/normal.webp
-//   bg/motel-counter    →   episodes/01-…/art/bg/motel-counter.png    →   video/public/art/ep01/bg/motel-counter.webp
-import { existsSync, readFileSync, readdirSync } from "node:fs";
-import { join, resolve } from "node:path";
+//   편 하나 = qna/content/<code>-<slug>/  (unit.json · plan.md · script/ · prompts/ · art/ · voice/ · upload/)
+//   공통(가족 · 앵커 · 채널) = qna/content/_common/  (art/ · script/art.json · prompts/)
+//
+//   그림 id                 원본(Gemini 결과를 넣는 곳)                      결과(영상이 읽는 곳)
+//   common/dad/normal   →   content/_common/art/dad/normal.png          →   video/public/art/common/dad/normal.webp
+//   bg/motel-counter    →   content/ep01-…/art/bg/motel-counter.png     →   video/public/art/ep01/bg/motel-counter.webp
+import { existsSync, readFileSync } from "node:fs";
+import { join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { findUnit, listUnits } from "../../../shared/unit.mjs";
 
 export const VIDEO = resolve(fileURLToPath(new URL("../", import.meta.url)));
-export const ROOT = resolve(VIDEO, "..");
-export const ANCHOR = "art/anchor/style-cutin.png";
-const EXTS = [".png", ".jpg", ".jpeg", ".webp"];
+export const ROOT = resolve(VIDEO, ".."); // qna/
+export const COMMON = join(ROOT, "content", "_common");
+export const ANCHOR = "content/_common/art/anchor/style-cutin.png";
+export const EXTS = [".png", ".jpg", ".jpeg", ".webp"];
 
 const readJson = (path) => JSON.parse(readFileSync(path, "utf8"));
 
-export const common = readJson(join(VIDEO, "src/art-common.json"));
+export const common = readJson(join(COMMON, "script", "art.json"));
 
-// art.json 이 있는 편만 (ep01, ep02 … · 내모남불 nm01 …)
-export const listEpisodes = () =>
-  readdirSync(join(VIDEO, "src"))
-    .filter((name) => /^(ep|nm)\d+$/.test(name) && existsSync(join(VIDEO, "src", name, "art.json")))
-    .sort();
-
-export const loadEpisode = (ep) => readJson(join(VIDEO, "src", ep, "art.json"));
-
-// ep01 → episodes/01-hotel-motel-hostel, nm01 → naemonambul/01-car (내모남불 시리즈)
-export const episodeDir = (ep) => {
-  const parent = ep.startsWith("nm") ? "naemonambul" : "episodes";
-  const prefix = `${ep.slice(2)}-`;
-  const dir = readdirSync(join(ROOT, parent)).find((name) => name.startsWith(prefix));
-  if (!dir) throw new Error(`${parent}/${prefix}* 폴더가 없습니다`);
-  return `${parent}/${dir}`;
+// ── 편 경로 ──────────────────────────────────────────────────────────────────────
+export const units = () => listUnits("qna");
+export const unit = (code) => findUnit("qna", code); // { code, dir, name, unit }
+export const unitPath = (code, ...p) => join(unit(code).dir, ...p);
+export const scriptPath = (code, file) => unitPath(code, "script", file);
+export const readScript = (code, file) => readJson(scriptPath(code, file));
+export const voiceDir = (code) => unitPath(code, "voice"); // 최종 음성 원본 (git) — public/<code>/voice 는 sync 가 만드는 사본
+export const studioDir = (code) => unitPath(code, "voice", "studio"); // AI Studio 에서 받은 컷별 원본
+export const uploadDir = (code) => unitPath(code, "upload");
+export const publicDir = (code, ...p) => join(VIDEO, "public", code, ...p);
+export const codes = () => units().map((u) => u.code);
+// 편 코드를 받는 명령에서: 틀리면 있는 목록을 보여 주고 멈춘다
+export const argCode = (code, usage) => {
+  if (!code || !codes().includes(code)) throw new Error(`${usage ?? "편 코드"}: <${codes().join("|")}>${code ? ` — '${code}' 는 없다` : ""}`);
+  return code;
 };
+
+// art.json 이 있는 편만 (ep01 … · 내모남불 nm01 …). 리메이크(ep01f)는 원편 그림을 쓴다
+export const listEpisodes = () => units().filter((u) => existsSync(join(u.dir, "script", "art.json"))).map((u) => u.code);
+
+export const loadEpisode = (ep) => readScript(ep, "art.json");
+
+// 편 폴더 (qna/ 기준 경로): ep10 → content/ep10-hope-ufo-alien
+export const episodeDir = (ep) => relative(ROOT, unit(ep).dir).split("\\").join("/");
 
 export const isCommon = (id) => id.startsWith("common/");
 
-// 저장할 때 쓰는 경로(확장자 .png 기준, 저장소 루트 기준)
+// 저장할 때 쓰는 경로(확장자 .png 기준, qna/ 기준)
 export const rawRel = (ep, id) =>
-  isCommon(id) ? `art/${id}.png` : `${episodeDir(ep)}/art/${id}.png`;
+  isCommon(id) ? `content/_common/art/${id.slice("common/".length)}.png` : `${episodeDir(ep)}/art/${id}.png`;
 
 // 실제로 있는 원본 파일(png/jpg/webp 아무거나). 없으면 null
 export const findRaw = (ep, id) => {
@@ -66,7 +79,7 @@ export const refOf = (item, cast = {}) => {
 //   ② ref — 같은 사람 기준 그림(또는 이어 그리는 컷의 앞 프레임)
 //   ③… item.attach (art.json 에 직접 적은 것 — 설명문이 "attached image 3" 처럼 번호로 부르므로 순서를 바꾸지 않는다)
 //   그 뒤 자동 — 이어 그리는 컷이면 그 사람 normal, 가족 컷인이면 그 사람 대표 컷인, 같이 나오는 사람(people)마다 normal
-export const ANCHOR_PROP = "art/anchor/style-prop.png";
+export const ANCHOR_PROP = "content/_common/art/anchor/style-prop.png";
 export const NO_PEOPLE_KINDS = new Set(["prop", "layer"]);
 
 // "dad" · "the kid" 처럼 설명문에 나오는 사람 → who. 편 손님은 cast 설명의 "the guide:" 머리말에서 뽑는다
@@ -121,6 +134,6 @@ export const attachProblems = (ep, item, cast = {}) => {
   const guess = item.kind === "bg" || Array.isArray(item.people) ? [] : mentionedPeople(item, cast);
   const missing = guess.filter((w) => !covered.has(w));
   if (missing.length) problems.push(`설명에 ${missing.join(", ")} 이(가) 나오는데 기준 그림이 첨부되지 않는다 → art.json 에 "people": ${JSON.stringify(missing)} 를 넣는다`);
-  for (const a of plan) if (!EXTS.some((e) => existsSync(join(ROOT, a.path.replace(/.png$/, e))))) problems.push(`첨부 그림이 아직 없다: ${a.path} (그 그림부터 뽑는다)`);
+  for (const a of plan) if (!EXTS.some((e) => existsSync(join(ROOT, a.path.replace(/\.png$/, e))))) problems.push(`첨부 그림이 아직 없다: ${a.path} (그 그림부터 뽑는다)`);
   return problems;
 };

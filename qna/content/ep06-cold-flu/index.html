@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>감기와 독감, 뭐가 달라요?</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✏️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<style>
+:root{
+  --paper:#E9EDE8; --surface:#F6F8F4; --surface-2:#DFE6DE;
+  --ink:#1B2A26; --pencil:#66756E; --rule:#C4D0C6;
+  --red:#B8352A; --red-soft:#E8CFCB; --maxw:860px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif;
+  font-size:16px;line-height:1.75;letter-spacing:-0.01em}
+h1,h2,h3{font-family:'Gowun Batang',serif;font-weight:700;line-height:1.35;margin:0}
+p{margin:0 0 0.9em}
+.page{max-width:var(--maxw);margin:0 auto;padding:0 20px 80px}
+.hero{padding:64px 0 40px;
+  background-image:repeating-linear-gradient(to bottom,transparent 0 37px,var(--rule) 37px 38px);
+  background-position:0 8px}
+.home{display:inline-block;font-size:13px;color:var(--pencil);text-decoration:none;border-bottom:1px solid var(--rule);margin-bottom:20px}
+.home:hover{color:var(--red);border-color:var(--red)}
+.eyebrow{font-size:13px;color:var(--pencil);margin:0 0 22px}
+.q-mark{font-family:'Nanum Pen Script',cursive;font-size:clamp(28px,5vw,40px);color:var(--red);display:block;margin-bottom:6px}
+.q-text{font-family:'Nanum Pen Script',cursive;font-size:clamp(30px,5.5vw,48px);line-height:1.45;margin:0 0 22px}
+.thesis{font-family:'Gowun Batang',serif;font-size:clamp(19px,3vw,26px);line-height:1.6;margin:0 0 8px}
+.thesis b{color:var(--red)}
+.q-text,.thesis{word-break:keep-all}
+section.block{margin:44px 0;max-width:800px}
+section.block.wide{max-width:none}
+section.block h3{font-size:18px;margin-bottom:14px;padding-left:13px;border-left:3px solid var(--red)}
+.body{font-size:15.5px}
+.body ul{padding-left:19px;margin:0 0 1em}
+.body li{margin-bottom:.45em}
+.beats{border-top:1px solid var(--rule)}
+.beat{display:grid;grid-template-columns:100px 1fr;gap:20px;padding:16px 0;border-bottom:1px solid var(--rule)}
+.beat-time{font-size:13px;color:var(--pencil);padding-top:3px;font-variant-numeric:tabular-nums}
+.beat-name{font-family:'Gowun Batang',serif;font-weight:700;font-size:16.5px;margin-bottom:5px}
+.beat-desc{font-size:14.5px;color:var(--pencil);white-space:pre-line}
+.beat.key .beat-name{color:var(--red)}
+.tbl{width:100%;border-collapse:collapse;font-size:14.5px;margin-bottom:14px}
+.tbl th,.tbl td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--rule);vertical-align:top}
+.tbl th{font-weight:600;font-size:13px;color:var(--pencil);border-bottom:1.5px solid var(--ink)}
+.wrap-x{overflow-x:auto}
+.cuts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.cut{margin:0;background:var(--surface);border:1px solid var(--rule);border-radius:2px;overflow:hidden}
+.cut svg{display:block;width:100%;height:auto;border-bottom:1px solid var(--rule)}
+.cut figcaption{padding:12px 16px 16px}
+.cut-no{display:block;font-family:'Gowun Batang',serif;font-weight:700;font-size:18px;color:var(--red);line-height:1.4}
+.cut-angle{display:inline-block;font-size:12px;color:var(--pencil);border:1px solid var(--rule);border-radius:2px;padding:0 7px;margin-top:6px}
+.cut-cap{display:block;font-size:16px;margin:8px 0 4px;line-height:1.55}
+.cut-desc{display:block;font-size:14px;color:var(--pencil);line-height:1.6}
+.thumb-label{font-size:13px;color:var(--pencil);margin:18px 0 8px}
+.thumb-list{display:flex;flex-direction:column;gap:8px;font-size:15px;padding-left:0;margin:0;list-style:none}
+.thumb-list li{background:var(--surface);border:1px solid var(--rule);padding:10px 14px;border-radius:2px}
+.summary-line{font-family:'Gowun Batang',serif;font-size:clamp(18px,2.6vw,22px);
+  background:var(--surface);border:1px solid var(--rule);padding:18px 22px;border-radius:2px}
+footer{border-top:1px solid var(--rule);margin-top:50px;padding-top:20px;font-size:13px;color:var(--pencil)}
+footer a{color:var(--red)}
+@media(max-width:640px){.beat{grid-template-columns:1fr;gap:4px}.beat-time{padding-top:0}}
+@media(max-width:600px){.cuts{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="page">
+  <a class="home" href="../../">← 여덟 살의 질문 홈</a>
+  <p class="eyebrow">여덟 살의 질문 · 6편 · 부모·자녀 관계 버전 · 2판 · 2026.10</p>
+  <span class="q-mark">여덟 살 아이</span>
+  <p class="q-text">“아빠, 독감 주사 맞으면 감기 안 걸려요?<br>독감은 독한 감기잖아요.”</p>
+  <p class="thesis">“독감은 <b>센 감기</b>가 아니라,<br><b>범인이 다른</b> 병입니다.”</p>
+</div></header>
+
+<main class="page">
+
+<section class="block">
+  <h3>이번 편의 구성 — 앞 편들과 다른 점</h3>
+  <div class="body">
+    <ul>
+      <li><b>장소는 소아과 독감 예방접종 날.</b> 10월, 아이 독감 무료접종을 하러 간 소아과 대기실과 주사실에서 질문 · 얼버무림 · 답이 전부 벌어진다. 집은 나오지 않는다.</li>
+      <li><b>오해가 둘이다 — 아빠 하나, 엄마 하나.</b> 아빠: “독감 주사 맞으면 감기도 안 걸려.” 엄마: “감기는 약 먹어야 나아.” 둘 다 틀렸고, 둘 다 같은 간호사 선생님에게 웃으며 바로잡힌다. 점수판은 '따끔 적립'(아빠 vs 엄마).</li>
+      <li><b>제삼의 인물, 주사실 간호사 선생님.</b> 5편에서 “간호사는 곁을 지킨다”로 끝냈는데, 이번에는 그 선생님이 두 부모의 틀린 말을 화내지 않고 바로잡는다.</li>
+      <li><b>엄마는 퇴근길에 합류한다.</b> 회사에서 바로 와서 가방에 약 봉투를 넣어 왔다(약 이름은 그림에도 말에도 없다). 목소리는 Kore.</li>
+      <li><b>한창 벌어지는 장면부터 시작한다.</b> “지금 저는 주사실 앞에서, 아빠 1점 엄마 1점…” → “10분 전으로 돌아가 보겠습니다”.</li>
+      <li><b>몰래 검색 장면은 대기실 곰인형 뒤.</b> 3편의 뻥튀기 기계 장면을 장소만 바꿔 잇는 시리즈 개그.</li>
+      <li><b>그림이 움직인다.</b> 감기 바이러스 '손님'들은 우르르 몰려 지나가고, 독감 바이러스 한 녀석은 해마다 옷을 갈아입고, 1933년 연구실에서는 흰족제비가 재채기를 한다. 3가/4가는 <b>도시락 칸</b>으로 보여 준다(칸이 넷에서 셋으로). 바이러스는 귀여운 캐릭터로, 주사 바늘 클로즈업은 없다.</li>
+      <li><b>6번 박자에는 농담이 없다.</b> 주사실에서 아빠가 아이 손을 잡고 다시 설명하고, 아이가 5편의 체온 메모를 꺼내며 “아빠도 맞아요” 한다. 엄마가 “엄마가 적을게. 그러니까 아빠도 걷어”라고 받는다.</li>
+      <li><b>건강 소재 원칙.</b> 원리 설명까지만. 약 이름 · 복용 · 치료 권유는 하지 않는다. “열이 갑자기 높으면 병원에서 선생님께 보여 드린다”, 아이에게 약을 먹이기 전에는 의사 · 약사 선생님께(5편 연결), 접종 여부는 “소아과 선생님과 상의”로 둔다.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="block">
+  <h3>자료조사 메모</h3>
+  <div class="body">
+    <ul>
+      <li><b>감기 — 이름이 아니라 묶음.</b> 감기는 코와 목(상기도)에 생기는 감염을 통틀어 부르는 말이고, 일으키는 바이러스가 200가지가 넘는다. 리노바이러스가 절반쯤을 차지하고(알려진 리노바이러스만 150~170가지 이상), 아데노바이러스 · 일부 코로나바이러스 등도 있다. 콧물 · 재채기 · 목 아픔이 서서히 시작하고 열은 없거나 낮은 편, 대개 1~2주 안에 특별한 치료 없이 낫는다. (출처: 시대닷컴 2025.1 · Mental Floss · Business Insider · Popular Science 보도 종합)</li>
+      <li><b>감기 백신이 없는 이유.</b> 범인이 수백 가지인 데다 해마다 유행하는 종류가 바뀌어 미리 고를 수가 없고, 증상이 대개 가벼워 백신의 부작용 위험을 감수할 이유가 약하다. (Popular Science · Mental Floss)</li>
+      <li><b>독감 — 범인이 하나.</b> 독감은 인플루엔자 바이러스(사람에게는 주로 A형 · B형)가 일으키는 별개의 병이다. 고열 · 두통 · 오한 · 근육통 · 심한 피로 같은 온몸 증상이 갑자기 시작하고 대개 5~9일 간다. 대부분 저절로 낫지만 중이염 · 폐렴 같은 합병증이 생길 수 있어 영유아 · 어르신 · 만성질환자 · 임신부는 특히 조심한다. 항바이러스제가 있지만 쓸지는 의사가 판단한다(영상에서 약 이름 · 복용 시기는 말하지 않는다). (출처: 서울시 복지분야 누리집 인플루엔자 안내, 트위그 2026.9.11 · 파이낸셜뉴스 2026.9.11)</li>
+      <li><b>이름이 오해를 만든다.</b> 한국어 '독감(毒感)'은 한자로 읽으면 '독한 감기'처럼 들린다. 사전 풀이 원문은 확인하지 못했으므로 사전을 인용하지 않는다.</li>
+      <li><b>influenza 의 어원.</b> 이탈리아어 influenza 는 '영향'이라는 뜻으로, 유행병이 별의 영향 때문이라고 믿던 데서 나왔다. 1743년 이탈리아에서 시작된 유행이 유럽으로 번지면서 영어에 들어갔고, 줄임말 flu 는 19세기에 생겼다. (Etymonline, Merriam-Webster, CDC Emerging Infectious Diseases “Etymologia: influenza”)</li>
+      <li><b>범인을 처음 찾은 날 — 1933년.</b> 영국 연구자 윌슨 스미스 · 크리스토퍼 앤드루스 · 패트릭 레이드로가 독감 환자의 목 씻은 물을 걸러 흰족제비(페럿) 코에 넣어 독감을 옮기는 데 성공했고, 사람 인플루엔자 A 바이러스를 처음 분리한 일로 꼽힌다. 흰족제비가 사람처럼 재채기를 했다. (Wilson Smith · Patrick Laidlaw 위키백과, J Clin Invest 1939)</li>
+      <li><b>독감 백신은 왜 해마다 맞나.</b> 인플루엔자 바이러스는 해마다 조금씩 모양이 바뀐다. 그래서 세계보건기구가 해마다 다음 겨울에 유행할 것 같은 종류를 골라 권고하고(북반구는 매년 2월 무렵), 그에 맞춰 백신을 새로 만든다. 백신은 독감을 100% 막는 것이 아니라 덜 걸리고 걸려도 덜 아프게 돕는다. 독감 백신은 감기를 막지 못한다.</li>
+      <li><b>3가 · 4가 — 도시락 칸 수.</b> (새로 확인)<ul><li>독감 백신의 '가(價)'는 백신이 겨냥하는 바이러스 종류의 수다. 3가 = A형 2종(H1N1 · H3N2) + B형 1계통(빅토리아). 4가 = 거기에 B형 야마가타 계통을 더한 것.</li><li>B형 야마가타 계통은 <b>2020년 3월 이후 전 세계에서 확인된 적이 없다.</b> 세계보건기구가 2023년 9월 백신 성분에서 빼도 된다고 권고했고, 2024년 2월에 다시 같은 내용을 밝혔다. 미국 FDA 자문위원회는 2024년 3월 2024-25절기부터 3가로 가기로 했고, 유럽의약품청은 2025-26절기까지 3가로 바꾸도록 권고했다. (CNN 2023.9.29, STAT 2023.9.29, WHO · FDA · NITAG 자료. “빼도 해가 되지는 않지만 이제 필요가 없다”는 것이 미국 CDC 연구자의 설명.)</li><li>한국: 2026-2027절기 국가예방접종은 <b>3가</b>로 진행되고, 2025-26절기에 4가에서 3가로 바뀐 것으로 보도되었다. ⚠ 기사 인용(위키트리 · 개인 블로그 종합) 단계라 <b>질병관리청 원문 확인 전</b>이다. 대본에서는 “올해 우리나라 무료 접종도 세 칸짜리” 정도로 두고, 원문을 확인하면 확정한다.</li><li>아이 번역: “안 나타나는 녀석은 도시락에서 뺐다. 약해진 게 아니라, 올해 올 녀석만 담은 것.”</li></ul></li>
+      <li><b>겨울에 많이 걸리는 이유.</b> (새로 확인 — Science News 2023, Tina Hesman Saey 기사를 중심으로 CIDRAP · 위 검색 종합)<ul><li><b>추위 자체가 원인은 아니다.</b> 추운 데 있었다고 감기에 걸리는 것은 아니다. 겨울의 여러 조건이 겹쳐서 옮기 쉬운 것.</li><li><b>건조한 공기.</b> 버지니아공대 린지 마르 교수 등: 독감 바이러스와 코로나19 바이러스는 상대습도가 약 40% 아래로 떨어질 때 가장 잘 생존한다. 습한 공기에서는 비말이 천천히 말라 바이러스가 약해지고, 건조하면 빨리 말라 작은 에어로졸로 오래 떠다닌다. 2007년 마운트시나이 연구(기니피그): 독감의 공기 전파는 낮은 온도 · 낮은 습도에서 잘 일어난다. (CIDRAP 보도)</li><li><b>참고: 감기를 일으키는 리노바이러스는 반대로 습할 때 더 잘 산다</b>(Donald Milton, 메릴랜드대). 그래서 “건조하면 감기”가 아니라 “건조하면 독감”이다. 대본에서는 독감 쪽만 말한다.</li><li><b>차가운 코.</b> 하버드 의대 벤저민 블레이어 연구팀(J Allergy Clin Immunol 2022): 코 세포가 바이러스를 유인하는 '미끼'(세포외 소포)를 내보내는데, 코 속 온도를 37℃에서 32℃로 낮추자 방출량이 약 42% 줄었다. 단, 이것은 세포 실험이고 <b>연구자들도 계절성의 원인을 아직 완전히 이해하지 못했다</b>고 말한다 — “~라는 연구가 있다”로만 쓴다. (같은 2007년 기니피그 연구는 5℃에 둬도 면역 반응이 크게 약해지지 않았다고 하여 이견도 있다.)</li><li><b>실내 생활.</b> 창문을 닫고 모여 있으면 남이 내쉰 공기를 마시기 쉽다(David Fisman, 토론토대). 환기가 방법.</li><li>이번 편에서 뺀 것: 비타민 D(일조량) 가설 — 연구 중인 조각이라 생략.</li></ul></li>
+      <li><b>감기는 어떻게 걸리나.</b> 감기 바이러스가 든 비말이나, 바이러스가 묻은 손으로 코 · 입 · 눈을 만지다 몸에 들어온다. 손 씻기가 기본(CDC 일반 안내). 영상에서는 “손에 묻은 손님이 코로 들어간다” 수준으로만.</li>
+      <li><b>감기약은 정말 효과가 있나.</b> (새로 확인 — 미국 CDC 감기 안내문 2026.3, 인디애나대 보건센터, AAFP)<ul><li>일반의약품 감기약은 콧물 · 코막힘 · 열 · 몸살 같은 <b>증상을 잠깐 덜어 줄 수 있지만, 감기를 낫게 하지 않고 앓는 기간을 줄여 주지도 못한다.</b> 감기에는 치료약이 없고 저절로 낫는다.</li><li><b>항생제는 바이러스에 듣지 않는다.</b> 감기에 쓰면 부작용과 내성 위험만 는다(CDC).</li><li><b>어린이:</b> 미국 CDC는 6세 미만 어린이에게 일반 감기약을 권하지 않는다(심각한 부작용 가능). 영상에서는 약 이름 · 나이 기준 없이 “아이에게 약을 먹이기 전에는 꼭 의사 · 약사 선생님께”까지만. (증상별 약 효능 논쟁은 제품마다 달라 빼고, 약 이름은 일절 쓰지 않는다.)</li></ul></li>
+      <li><b>코로나19와의 관계.</b> 코로나바이러스는 큰 가족이고, 그중 일부(계절성 코로나바이러스)는 감기 손님이다. 코로나19를 일으키는 SARS-CoV-2 는 따로 이름이 붙은 다른 바이러스이고, 독감과도 다른 병이며 백신도 따로 있다. 영상에서는 한 줄: “코로나19도 또 하나의 다른 바이러스 — 독감 주사로는 못 막는다”. 자세한 비교는 하지 않는다.</li>
+      <li><b>2026-2027절기 어린이 무료접종.</b> 올해부터 무료 대상이 생후 6개월~<b>14세</b>로 넓어졌다. 처음 맞거나 1회만 맞은 9세 미만은 2회 접종으로 9월 21일부터, 그 밖의 어린이는 9월 28일부터, 2027년 4월 30일까지. (경향신문 2026.8.25, 코리아데일리 2026.8.24, 위키트리 — 질병관리청 원문 확인 전) → 영상에는 “올해 무료 접종이 열네 살까지 넓어졌다” 정도만.</li>
+      <li><b>한국 맥락 · 오늘날 오해</b>: ① 독감 = 독한 감기 ② 독감 주사 맞으면 감기도 안 걸린다 ③ 감기약 먹으면 감기가 낫는다 ④ 추운 데 있어서 감기 걸렸다. 정확히 어느 병인지 가리는 건 의사의 몫(5편 “의사는 병을 정하고”)으로 연결한다.</li>
+      <li><b>이번 편에서 뺀 것</b>: 1918년 독감 대유행(사망자 숫자는 아이 채널 톤에 무겁다), 코로나19의 자세한 비교, 약 이름, 비타민 D 가설, 리노바이러스는 습할 때 잘 산다는 이야기.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="block">
+  <h3>콘티</h3>
+  <div class="beats">
+    <div class="beat"><div class="beat-time">0:00–0:20</div><div><div class="beat-name">0. 지금 상황</div><div class="beat-desc">“지금 저는 소아과 주사실 앞에서, 따끔 점수 아빠 1점 엄마 1점입니다.” 간호사: “아버님, 이 주사는 감기는 못 막아요.” → “10분 전으로 돌아가 보겠습니다”</div></div></div>
+    <div class="beat"><div class="beat-time">0:20–0:55</div><div><div class="beat-name">1. 그 질문</div><div class="beat-desc">독감 무료접종 하러 간 소아과 대기실. 퇴근길에 엄마 합류(가방에 약 봉투). 포스터 앞에서 “아빠, 독감 주사 맞으면 이제 감기 안 걸려요? 독감은 독한 감기잖아요.”</div></div></div>
+    <div class="beat"><div class="beat-time">0:55–2:10</div><div><div class="beat-name">2. 얼버무린 순간</div><div class="beat-desc">아빠: “독감은 감기 중에 제일 센 거야. 제일 센 걸 막으면 나머지도 막히지.” 간호사: “이 주사는 감기는 못 막아요.”(아빠 +1) → 아이: “엄마는 감기 걸리면 어떻게 해?” 엄마: “약 먹으면 낫지~” → 간호사: “어머님, 감기약은 증상을 덜어 줄 뿐 감기를 낫게 하진 않아요. 항생제도 감기엔 안 들어요.”(엄마 +1) → “그럼 감기는 뭐가 낫게 해요?” “몸이요.”</div></div></div>
+    <div class="beat"><div class="beat-time">2:10–2:50</div><div><div class="beat-name">3. 왜 다들 헷갈리나</div><div class="beat-desc">곰인형 뒤에서 몰래 검색(다큐 톤 한 줄) → 이름부터 '독한 감기'처럼 들리고, 둘 다 겨울에 오고, 둘 다 기침 · 열 → 오늘은 “누가 일으키는가”만 본다 → 호명</div></div></div>
+    <div class="beat"><div class="beat-time">2:50–6:20</div><div><div class="beat-name">4. 갈라진 지점</div><div class="beat-desc">① 감기: 200가지 넘는 손님, 서서히, 1~2주, 손으로 들어옴, 백신이 없는 이유 → ② 이름(별의 영향, 1743) → ③ 범인을 찾은 날(1933 흰족제비) → ④ 독감은 범인이 하나라 백신이 있고, 해마다 옷을 갈아입어 해마다 맞는다. 도시락 칸: 4가 → 3가(야마가타는 2020년 이후 사라져서 뺌), 올해 무료 14세까지 → ⑤ 왜 겨울? 추워서가 아니라 마른 공기 + 차가운 코 + 실내 → ⑥ 코로나19도 또 다른 바이러스 한 줄 → ⑦ 독감은 갑자기, 높은 열, 온몸. 가리는 건 의사 선생님</div></div></div>
+    <div class="beat"><div class="beat-time">6:20–6:40</div><div><div class="beat-name">5. 한 문장 정리</div><div class="beat-desc">“독감은 센 감기가 아니라, 범인이 다른 병입니다.”</div></div></div>
+    <div class="beat key"><div class="beat-time">6:40–7:35</div><div><div class="beat-name">6. 아이 눈높이로 번역</div><div class="beat-desc">주사실, 아이 손을 잡고 “감기는 코랑 목에 들어오는 수백 가지 손님 이름… 독감은 딱 한 녀석이라 그 녀석만 막는 주사가 있어. 감기약은 힘든 걸 덜어 주는 거고, 낫게 하는 건 네 몸이야” → 주사 → 아이가 5편 체온 메모를 꺼내며 “아빠도 맞아요. 아빠가 아프면 내 열은 누가 적어요?” → 엄마 “엄마가 적을게. 아빠도 걷어.” (농담 없음)</div></div></div>
+    <div class="beat"><div class="beat-time">7:35–8:10</div><div><div class="beat-name">7. 남는 이야기</div><div class="beat-desc">“독감 주사 맞으면 감기도 안 걸린다, 저만 그렇게 알았던 건 아니죠? 감기약 먹으면 낫는다고 알았던 분도요.” → 나오는 길에 '내과 · 외과' 간판: “내과는 안을 고치고 외과는 밖을 고쳐요? 그럼 감기는 내과예요?” → “…주사 맞은 팔 아프다. 빨리 가자.”</div></div></div>
+  </div>
+  <p class="body">시간은 원고 기준 추정이다. 영상 대본(<code>script.json</code>, 공백 제외 2,672자, 한 글자에 약 0.18초)으로 <b>약 8분</b>이다. 음성을 만든 뒤 <code>storyboard.html</code> 에서 다시 확인하고, 길면 4번 박자 ②③(이름 · 1933)을 먼저 줄인다.</p>
+</section>
+
+<section class="block">
+  <h3>그림 콘티 (새로 그릴 그림 25장)</h3>
+  <div class="wrap-x">
+  <table class="tbl">
+    <tr><th>그림</th><th>종류</th><th>쓰이는 컷</th><th>영상에서의 움직임</th></tr>
+    <tr><td>소아과 대기실</td><td>배경</td><td>c01–c05</td><td>천천히 당겨진다. 인물은 아래 1/3에 얹는다. 호명 순간 살짝 흔들린다.</td></tr>
+    <tr><td>주사실</td><td>배경</td><td>c00, c12, c12b</td><td>컷 내내 천천히 당겨진다. 6번 박자에서는 거의 멈춘다.</td></tr>
+    <tr><td>간호사 — 기본</td><td>인물</td><td>c03b, c12, c12b</td><td>숨 쉬듯 살짝 움직이고, 말할 때 까딱거린다.</td></tr>
+    <tr><td>간호사 — 쟁반 들고</td><td>인물</td><td>c00, c03</td><td>화면 오른쪽에서 걸어 들어와 아빠 옆에서 멈춘다. 쟁반 위에는 솜 · 반창고만.</td></tr>
+    <tr><td>간호사 — 웃으며 바로잡기</td><td>인물</td><td>c00, c03, c03b, c03c</td><td>말하는 동안 좌우로 흔들린다.</td></tr>
+    <tr><td>간호사 — 바로잡기 (말하는 그림) (없어도 됨)</td><td>말하는 그림</td><td>위와 같음</td><td>바로잡기 그림과 1/8초마다 번갈아 나와 입이 움직인다.</td></tr>
+    <tr><td>간호사 — 미소</td><td>인물</td><td>c12b</td><td>표정이 바뀌는 순간 젤리처럼 튄다. 6번 박자라 움직임은 작게.</td></tr>
+    <tr><td>간호사 바로잡기</td><td>컷인</td><td>c03, c03c</td><td>화면 옆에서 튀어나와 흔들린다.</td></tr>
+    <tr><td>예방접종 포스터</td><td>소품</td><td>c01</td><td>벽에 붙어 있다가 아이가 가리킬 때 커진다. 글자는 영상에서 얹는다(그림에는 빈칸).</td></tr>
+    <tr><td>커다란 곰인형</td><td>소품</td><td>c04</td><td>아빠 앞에 놓여 아빠를 가린다. 호명 순간 곰인형이 옆으로 쓰러진다.</td></tr>
+    <tr><td>엄마 가방 속 약 봉투</td><td>소품</td><td>c02b, c03c, c14</td><td>엄마 가방에서 빼꼼 나온다. 간호사 말 뒤에 봉투가 살짝 쪼그라든다. 글자 · 상표 없음.</td></tr>
+    <tr><td>감기 바이러스 손님들</td><td>소품</td><td>c06, c11</td><td>화면 왼쪽 밖에서 우르르 몰려와 오른쪽으로 지나간다. 한 문장 정리 컷에서는 '감기' 칸에 들어간다.</td></tr>
+    <tr><td>독감 바이러스 한 녀석</td><td>소품</td><td>c08, c09, c11</td><td>가운데서 통통 튄다. 한 문장 정리 컷에서는 '독감' 칸에 들어간다.</td></tr>
+    <tr><td>독감 바이러스 — 새 옷</td><td>소품</td><td>c09</td><td>'독감 한 녀석'과 번갈아 나오며 옷을 갈아입는 것처럼 보인다(달력이 넘어갈 때마다).</td></tr>
+    <tr><td>도시락 — 네 칸</td><td>소품</td><td>c09b</td><td>칸마다 바이러스 한 녀석씩(A·A·B·B). 화면에 놓여 있다가 한 칸이 비어 간다.</td></tr>
+    <tr><td>도시락 — 세 칸</td><td>소품</td><td>c09b</td><td>네 칸 도시락과 번갈아 나오며 한 칸이 사라진 모양. 영상 글자는 '4가 → 3가'.</td></tr>
+    <tr><td>흰족제비</td><td>소품</td><td>c08</td><td>오른쪽에서 미끄러져 들어와 재채기할 때 몸이 움찔 튄다.</td></tr>
+    <tr><td>습도계 (마른 겨울 방)</td><td>소품</td><td>c09c</td><td>바늘이 '40%' 아래로 내려오고, 독감 한 녀석이 공중에 오래 떠다닌다. 영상에서 숫자를 얹는다.</td></tr>
+    <tr><td>온도계</td><td>소품</td><td>c10, c12</td><td>두 개를 나란히 놓고 영상에서 빨간 눈금을 올린다(왼쪽은 천천히 조금, 오른쪽은 갑자기 높이).</td></tr>
+    <tr><td>1743년, 별 아래 이탈리아 골목</td><td>무대(주인공은 따로)</td><td>c07</td><td>배경이 왼쪽으로 천천히 밀리고, 하늘에서 별이 반짝인다(영상 효과).</td></tr>
+    <tr><td>1933년, 영국의 연구실</td><td>무대(주인공은 따로)</td><td>c08</td><td>배경이 오른쪽으로 천천히 밀리고, 빈 탁자 위로 흰족제비가 들어온다.</td></tr>
+    <tr><td>겨울 저녁 거리와 창문 닫은 방</td><td>무대</td><td>c09c</td><td>왼쪽 거리(찬바람)에서 오른쪽 창문 닫힌 방으로 천천히 밀린다. 사람들은 작게.</td></tr>
+    <tr><td>다음 편 예고 (내과 · 외과 간판)</td><td>한 장짜리 장면</td><td>c14, 끝 화면</td><td>배경이 위로 천천히 밀린다. 간판 글자는 영상에서 얹는다.</td></tr>
+    <tr><td>설명 (말하는 그림) (없어도 됨)</td><td>말하는 그림</td><td>아빠 · 아이가 말하는 컷</td><td>설명 그림과 1/8초마다 번갈아 나와서 입이 움직인다.</td></tr>
+    <tr><td>질문 (말하는 그림) (없어도 됨)</td><td>말하는 그림</td><td>아빠 · 아이가 말하는 컷</td><td>질문 그림과 1/8초마다 번갈아 나와서 입이 움직인다.</td></tr>
+  </table>
+  </div>
+  <p class="body">아빠 · 아이 · <b>엄마</b> 표정과 컷인은 1편 때 만든 공통 그림(<code>content/_common/art/</code>)을 그대로 쓴다. 바이러스는 작고 귀여운 캐릭터로, 주사 바늘은 그리지 않는다(쟁반 위에는 솜 · 반창고만). 약 봉투에는 글자도 상표도 그리지 않는다.</p>
+  <p class="body">손님 목소리: 간호사 선생님. <code>video/src/voice.json</code> 에 손님(Guest)을 역할별로 하나 더 추가한다(역할 <code>nurse</code>, 30대 여성의 차분하고 다정한 목소리). 엄마는 기존 Kore. <b>한 컷에 목소리는 둘까지</b>이므로 c03c(엄마 + 간호사), c03b(아빠 + 간호사)처럼 컷을 나눈다.</p>
+  <p class="body">그림 프롬프트는 4단계 <code>npm run prompts -- ep06</code> 이 <code>GEMINI_PROMPTS.md</code> 로 만든다.</p>
+</section>
+
+<section class="block">
+  <h3>전체 대본</h3>
+  <div class="body">
+    <p><b>[0. 지금 상황 — 0:00]</b><br>지금 저는 소아과 주사실 앞에 서 있습니다.<br>주사는 아이가 맞을 건데, 따끔한 건 저희 부부예요. 지금 점수, 아빠 일 점, 엄마 일 점.<br>간호사: “아버님, 이 주사는 감기는 못 막아요.”<br>네. 그게 첫 번째 점수였습니다.<br>10분 전으로 돌아가 보겠습니다. <i>(화면: 10분 전)</i><br></p>
+    <p><b>[1. 그 질문 — 0:20]</b><br>10월, 아이 독감 예방접종 날이었습니다. 동네 소아과 대기실은 팔을 걷은 아이들로 꽉 차 있었어요.<br>퇴근길에 엄마도 합류했습니다. 회사 가방에 약 봉투를 넣은 채로요.<br>벽에 붙은 포스터를 한참 보던 아이가 물었습니다.<br>아이: “아빠, 독감 주사 맞으면 이제 감기 안 걸려요?”<br>아이: “독감은 독한 감기잖아요.”<br></p>
+    <p><b>[2. 얼버무린 순간 — 0:55]</b><br>아빠: “그럼! 독감은 감기 중에 제일 센 거야. 제일 센 걸 막으면, 나머지는 다 막히지.”<br>꽤 그럴듯했습니다. 제 귀에는요.<br>그 순간, 주사 쟁반을 든 간호사 선생님이 제 옆에 서 계셨습니다.<br>간호사: “아버님, 이 주사는 감기는 못 막아요. 독감만 막아요.”<br>따끔, 적립됐습니다. <i>(화면: 아빠 +1)</i><br>아이: “그럼 감기 주사는요?”<br>간호사: “감기 주사는… 없어요.”<br>아이는 이번에 엄마를 봤습니다.<br>아이: “엄마, 엄마는 감기 걸리면 어떻게 해?”<br>엄마: “엄마는 약 먹지. 약 먹으면 낫잖아.”<br>엄마는 자신 있었습니다. 간호사 선생님이 웃으셨고요.<br>간호사: “어머님, 감기약은 콧물이나 기침 같은 힘든 걸 잠깐 덜어 줄 수는 있어요. 그런데 감기를 낫게 하진 못해요. 항생제도 감기엔 안 듣고요.”<br>따끔, 적립됐습니다. <i>(화면: 엄마 +1)</i><br>아이: “그럼 감기는 뭐가 낫게 해요?”<br>간호사: “몸이요. 우리 몸이요.”<br></p>
+    <p><b>[3. 왜 다들 헷갈리나 — 2:10]</b><br>저는 대기실 구석, 제 키만 한 곰인형 뒤로 가서 휴대폰을 켰습니다.<br><i>(낮고 진지한 다큐 톤)</i> 아빠라는 생물은, 궁지에 몰리면, 곰 뒤에서도 검색을 한다.<br>헷갈릴 만은 했습니다. 이름부터 '독한 감기'처럼 들리잖아요.<br>둘 다 겨울에 오고, 둘 다 기침을 하고, 둘 다 열이 납니다.<br>그래서 오늘은 어느 쪽이 더 센지 말고, 딱 하나만 봅니다.<br>누가 일으키는가. <i>(화면: 범인은 누구?)</i><br>간호사: “다음 어린이, 들어오세요!” <i>(곰인형이 옆으로 쓰러진다)</i><br></p>
+    <p><b>[4. 갈라진 지점 — 2:50]</b><br>주사실로 걸어가는 동안 읽은 것부터.<br>감기는 병 하나의 이름이 아닙니다. 코와 목에 들어와서 콧물 나고 목 아프게 하는 바이러스를 통틀어 부르는 말이에요.<br>그 바이러스가, 200가지가 넘습니다. <i>(화면: 200+)</i><br>그중 절반쯤은 리노바이러스라는 녀석들인데, 이 녀석들만 해도 백오십 가지가 넘어요.<br>이 손님들은 주로 바이러스가 묻은 손으로 코나 입이나 눈을 만질 때 들어옵니다. 그래서 손 씻기가 제일 쉬운 문단속이에요.<br>감기는 대개 슬금슬금 옵니다. 콧물, 재채기, 목이 칼칼하고, 열은 없거나 조금. 그리고 일이 주 지나면 대부분 저절로 낫죠.<br>감기 주사가 없는 이유도 여기 있습니다. 범인이 수백 가지에, 해마다 몰려오는 녀석들이 바뀌니까 어느 녀석을 막을지 고를 수가 없어요.<br><br>그럼 독감은. 이름 이야기부터 하면, 영어로는 '인플루엔자'.<br>이탈리아 말로 '영향'이라는 뜻입니다.<br>옛날 이탈리아 사람들은, 이렇게 한꺼번에 퍼지는 병을 별의 영향이라고 믿었거든요.<br>1743년, 이탈리아에서 시작된 유행이 유럽으로 번지면서, 이 이름이 영어에 들어갑니다. 줄여서 '플루'.<br>별 탓을 하던 병의 진짜 범인은, 그로부터 190년 뒤에야 잡힙니다.<br><br>1933년 영국. 연구자들이 독감 환자의 목을 헹군 물을 걸러서, 흰족제비 코에 넣어 봅니다.<br>흰족제비가, 사람처럼 독감에 걸렸어요. 재채기까지 하면서요. <i>(효과음: 에취)</i><br>그렇게 처음으로, 독감을 일으키는 범인이 하나로 잡힙니다. 인플루엔자 바이러스.<br>범인이 하나라는 건, 그 녀석만 겨냥한 주사를 만들 수 있다는 뜻입니다. 그게 오늘 아이가 맞는 독감 주사예요.<br>그런데 이 녀석이 좀 얄밉습니다. 해마다 조금씩 옷을 갈아입어요.<br>그래서 해마다 세계보건기구가 올겨울엔 어떤 옷을 입고 올지 골라 두고, 거기에 맞춰 백신을 새로 만듭니다. 독감 주사를 해마다 맞는 이유죠.<br><br>포스터 구석에 '3가'라고 적혀 있었습니다. 그게 뭐냐면, 도시락 칸 수예요. <i>(화면: 도시락)</i><br>독감 바이러스는 A형 두 녀석, B형 두 계통, 이렇게 네 칸을 채워 왔어요. 그게 4가.<br>그런데 B형 한 계통은, 2020년 3월 이후로 전 세계 어디서도 발견되지 않았습니다.<br>그래서 세계보건기구가 2023년에, 이제 그 칸은 빼도 된다고 했어요. 칸이 하나 줄어서 3가. <i>(화면: 4가 → 3가)</i><br>약해진 게 아니에요. 오지 않는 녀석은 빼고, 올 녀석만 담은 겁니다. 올해 우리나라 무료 접종도 세 칸짜리고, 나이는 열네 살까지 넓어졌습니다. <i>(화면: 2026-2027절기 · 14세까지)</i><br><br>그런데 왜 하필 겨울일까요. 엄마가 물었습니다.<br>엄마: “겨울이니까 추워서 걸리는 거 아니야?”<br>저도 그렇게 알았는데, 아니랍니다. 춥다고 바이러스가 생기진 않아요.<br>대신 겨울엔 공기가 바짝 마릅니다. 독감 바이러스는 공기가 건조하면 작은 알갱이로 오래 떠다니며 살아남아요. 방의 습도가 사십 퍼센트 아래로 내려갈 때 특히요. <i>(화면: 습도 40%)</i><br>게다가 차가운 공기를 마시면 코 안이 식어서, 바이러스를 막는 반응이 줄어든다는 연구도 있어요. 아직 연구하는 중이지만요.<br>거기에 창문은 닫고, 실내에서 다 같이 모여 있으니 서로 내쉰 공기를 마시기 쉽죠. 그래서 창문을 가끔 여는 환기가 쉬운 방어입니다.<br>코로나19도 궁금하죠. 코로나바이러스는 큰 가족인데, 그중 몇몇은 감기 손님이기도 합니다. 하지만 코로나19를 일으키는 건 따로 이름이 붙은 또 다른 바이러스예요. 독감 주사로는 못 막고, 백신도 따로 있습니다.<br><br>그리고 독감은 오는 방식이 다릅니다. 슬금슬금이 아니라, 갑자기 옵니다.<br>열이 확 오르고, 머리가 아프고, 온몸이 쑤시고, 오슬오슬 춥고. 일어나기도 힘들 만큼요.<br>대부분은 쉬면 낫지만, 어린아이나 어르신은 폐렴 같은 다른 병으로 번질 수 있어서 더 조심합니다.<br>그리고 지금 아픈 게 감기인지 독감인지 정확히 가리는 건, 지난번에 배웠죠. 병을 정하는 사람, 의사 선생님의 몫입니다.<br></p>
+    <p><b>[5. 한 문장 정리 — 6:20]</b><br>정리하면 이렇습니다.<br>감기는 수백 가지 손님,<br>독감은 딱 한 녀석,<br>감기약은 힘든 걸 덜어 줄 뿐입니다.<br>독감은 센 감기가 아니라, 범인이 다른 병입니다.<br></p>
+    <p><b>[6. 아이 눈높이로 번역 — 6:40]</b><br>주사실 의자에 아이를 앉히고, 손을 잡고, 아까 틀린 대답을 다시 했습니다.<br>“아까 아빠가 독감은 제일 센 감기라고 했지? 그거 틀린 말이었어.<br>감기는 코랑 목에 들어오는 작은 손님들 이름이야. 손님 종류가 몇백 가지나 돼서, 다 막는 주사를 만들 수가 없어.<br>독감은 달라. 딱 한 녀석이 오는 거야. 그래서 그 녀석만 막는 주사를 만들 수 있어.<br>그 녀석이 해마다 옷을 바꿔 입어서, 주사도 해마다 새로 맞는 거고.<br>오늘 이 주사는 감기는 못 막아. 대신 독감에 덜 걸리게, 걸려도 덜 아프게 도와줘.<br>감기약은 힘든 걸 조금 덜어 주는 거고, 감기를 낫게 하는 건 네 몸이야. 그리고 약을 먹기 전에는 꼭 의사 선생님이나 약사 선생님한테 물어봐야 해.<br>갑자기 열이 많이 나고 온몸이 아프면, 그때는 의사 선생님한테 보여 드리는 거야.“<br>아이는 고개를 끄덕이고, 눈을 꼭 감고, 울지 않고 주사를 맞았습니다.<br>간호사: “잘 참았어.”<br>반창고를 붙인 아이가, 주머니에서 종이 한 장을 꺼냈습니다. 지난번 밤에 제가 적었던 체온 메모였어요.<br>아이: “아빠도 맞아요. 아빠가 아프면, 내 열은 누가 적어요?”<br>엄마: “엄마가 적을게. 그러니까 아빠도 걷어.”<br>저는 소매를 걷었습니다.<br></p>
+    <p><b>[7. 남는 이야기 — 7:35]</b><br>독감 주사 맞으면 감기도 안 걸린다. 감기약 먹으면 감기가 낫는다. 저희 부부만 그렇게 알고 있었던 건 아니죠?<br>병원을 나오는데, 아이가 건물 간판을 올려다봤습니다.<br>아이: “아빠, 내과는 몸 안을 고치고, 외과는 몸 밖을 고치는 데예요? 그럼 감기는 내과예요?”<br>아빠: “…주사 맞은 팔 아프다. 빨리 가자.”<br>다음 편은, 이 질문입니다.</p>
+  </div>
+</section>
+
+<section class="block">
+  <h3>배경음악 · 효과음</h3>
+  <div class="wrap-x">
+  <table class="tbl">
+    <tr><th>박자</th><th>추천</th></tr>
+    <tr><td>0. 지금 상황</td><td>짧은 정적 → 간호사 대사 직후 '띵' 한 번, “10분 전” 자막에 되감기 효과음</td></tr>
+    <tr><td>1. 그 질문</td><td>유튜브 오디오 보관함 — 가벼운 우쿨렐레/피치카토 루프, 대기실 호출 '딩동' 아주 작게</td></tr>
+    <tr><td>2. 얼버무린 순간</td><td>같은 곡 유지 → “다 막히지” 뒤 반 박자 정적 → 아빠 +1 · 엄마 +1 자막마다 짧은 '뾱'(엄마는 한 음 높게) → “몸이요” 뒤 음악 다시</td></tr>
+    <tr><td>3. 왜 다들 헷갈리나</td><td>로파이 피아노로 전환. 다큐 톤 한 줄 동안만 낮은 첼로 한 음, 호명 '딩동' + 곰인형 쓰러지는 '퐁'</td></tr>
+    <tr><td>4. 갈라진 지점</td><td>3번과 같은 톤 유지. 1743 · 1933 연도 자막에 페이지 넘김, 흰족제비 '에취'(작고 귀엽게), 달력 넘김 '촤락', 도시락 칸이 빠질 때 '톡', 습도 숫자가 내려갈 때 가벼운 '쓰윽'</td></tr>
+    <tr><td>5. 한 문장 정리</td><td>짧은 스팅어 한 방 (체온계 '삐빅'으로 대체해도 좋음 — 5편과 이어짐)</td></tr>
+    <tr><td>6. 아이 눈높이로 번역</td><td>배경음 −20dB 이하 또는 완전 제거, 주사실 시계 초침 소리만 아주 작게. 주사 순간에는 효과음 없음</td></tr>
+    <tr><td>7. 남는 이야기</td><td>잔잔하게 페이드아웃, 다음 편 예고 자막과 함께</td></tr>
+  </table>
+  </div>
+  <p class="body">나레이션 대비 배경음 −20dB 기준, 라우드니스 정규화 −14 LUFS.</p>
+</section>
+
+<section class="block">
+  <h3>썸네일 문구 · 제목 후보</h3>
+  <p class="thumb-label">썸네일 문구</p>
+  <ul class="thumb-list">
+    <li>독감은 독한 감기 아니에요? (얼굴 썸네일, <code>Ep06-ThumbD</code>)</li>
+    <li>“아버님, 이 주사는 감기는 못 막아요”</li>
+    <li>감기약은 감기를 낫게 하지 않는다?</li>
+  </ul>
+  <p class="thumb-label">제목 후보</p>
+  <ul class="thumb-list">
+    <li>독감 주사 맞으면 감기도 안 걸린다고 했다가, 감기약 믿던 엄마까지 같이 바로잡혔습니다 | 감기 · 독감, 뭐가 달라요?</li>
+    <li>“독감은 독한 감기잖아요” 여덟 살의 질문에 소아과에서 따끔했던 아빠와 엄마</li>
+    <li>감기 주사는 왜 없을까 — 범인이 200가지가 넘어서 (3가 · 4가, 겨울 이유까지)</li>
+  </ul>
+</section>
+
+<section class="block">
+  <h3>한 문장 정리</h3>
+  <p class="summary-line">“독감은 센 감기가 아니라, 범인이 다른 병입니다.”</p>
+</section>
+
+<section class="block">
+  <h3>출처 · 확인 상태</h3>
+  <div class="wrap-x">
+  <table class="tbl">
+    <tr><th>항목</th><th>출처</th><th>상태</th></tr>
+    <tr><td>B형 야마가타 2020년 3월 이후 미검출, WHO 3가 권고</td><td>CNN · STAT 2023.9.29, WHO · FDA · NITAG 자료</td><td>확인(보도 + 기관 자료 검색 결과)</td></tr>
+    <tr><td>한국 2026-27 국가접종 3가, 14세까지 확대</td><td>위키트리, 경향신문 2026.8.25 등 기사</td><td><b>질병관리청 원문 미확인</b> — 확정 전 <code>kdca.go.kr</code> 에서 확인</td></tr>
+    <tr><td>겨울: 습도 40% 아래 독감 바이러스 생존, 차가운 코</td><td>Science News 2023(Saey), CIDRAP, Bleier 2022</td><td>확인 — 단 원인 전체가 밝혀진 것은 아니라 “~라는 연구가 있다”로 표현</td></tr>
+    <tr><td>감기약은 증상 완화일 뿐 낫게 하지 않는다, 항생제 무효</td><td>미국 CDC 감기 안내문 2026.3, 인디애나대 보건센터, AAFP</td><td>확인</td></tr>
+    <tr><td>코로나바이러스 일부가 감기 원인</td><td>시대닷컴 · 일반 의학 자료</td><td>일반 상식 수준, 영상은 한 줄만</td></tr>
+  </table>
+  </div>
+</section>
+
+<footer><p>eight-year-olds-question 스킬로 생성한 에피소드 문서입니다. · <a href="cold-flu.md">마크다운 원고</a> · <a href="../05-doctor-pharmacist-nurse/">← 이전 편</a> · <a href="../../">홈으로</a></p></footer>
+</main>
+</body>
+</html>

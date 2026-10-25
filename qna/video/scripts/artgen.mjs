@@ -1,4 +1,4 @@
-// 그림 작업 목록(episodes/NN-…/jobs/images.json)을 Gemini API 로 한 번에 만든다. 아직 없는 그림만 만든다.
+// 그림 작업 목록(content/<편>/prompts/jobs/images.json)을 Gemini API 로 한 번에 만든다. 아직 없는 그림만 만든다.
 // 사용: node scripts/artgen.mjs ep03              (없는 그림 전부)
 //       node scripts/artgen.mjs ep03 granny/yell  (그 그림만 다시)
 //       node scripts/artgen.mjs ep03 --list       (만들 목록만 보기)
@@ -19,7 +19,7 @@ const listOnly = args.includes("--list");
 
 // 목록은 항상 art.json 에서 새로 뽑는다
 execSync(`node scripts/prompts.mjs ${episode}`, { cwd: VIDEO, stdio: "ignore" });
-const { jobs } = JSON.parse(readFileSync(join(ROOT, episodeDir(episode), "jobs/images.json"), "utf8"));
+const { jobs } = JSON.parse(readFileSync(join(ROOT, episodeDir(episode), "prompts/jobs/images.json"), "utf8"));
 const exists = (rel) => [".png", ".jpg", ".jpeg", ".webp"].some((ext) => existsSync(join(ROOT, rel.replace(/\.png$/, ext))));
 const todo = jobs.filter((job) => (only.length ? only.some((id) => job.id.endsWith(id)) : !exists(job.save)));
 

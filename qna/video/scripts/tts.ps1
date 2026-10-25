@@ -4,8 +4,11 @@ param([string]$Episode = "ep01")
 
 Add-Type -AssemblyName System.Speech
 $root = Split-Path -Parent $PSScriptRoot
-$script = Get-Content -Raw -Encoding UTF8 (Join-Path $root "src\$Episode\script.json") | ConvertFrom-Json
-$voiceDir = Join-Path $root "public\$Episode\voice"
+# 편 폴더: qna/content/<편 코드>-<slug>/
+$unit = Get-ChildItem (Join-Path $root "..\content") -Directory | Where-Object { $_.Name -like "$Episode-*" -or $_.Name -eq $Episode } | Select-Object -First 1
+if (-not $unit) { throw "편 폴더가 없다: content/$Episode-*" }
+$script = Get-Content -Raw -Encoding UTF8 (Join-Path $unit.FullName "script\script.json") | ConvertFrom-Json
+$voiceDir = Join-Path $unit.FullName "voice"
 New-Item -ItemType Directory -Force $voiceDir | Out-Null
 
 # 화자별 말투: 아이는 높고 빠르게, 다큐 톤은 낮고 느리게
@@ -44,5 +47,5 @@ foreach ($cut in $script.cuts) {
 $synth.Dispose()
 
 # BOM 없이 저장 (Out-File utf8은 BOM을 붙여서 JSON import가 깨질 수 있음)
-[System.IO.File]::WriteAllText((Join-Path $root "src\$Episode\timing.json"), ($timing | ConvertTo-Json))
+[System.IO.File]::WriteAllText((Join-Path $unit.FullName "script\timing.json"), ($timing | ConvertTo-Json))
 "voice lines: $($timing.Count)"

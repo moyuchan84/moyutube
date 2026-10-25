@@ -1,0 +1,21 @@
+{
+  "face": {
+    "tag": "여덟 살 아들의 질문",
+    "top": [
+      "도둑 잡히면 ",
+      "바로 감옥?"
+    ],
+    "bottom": [
+      "아빠,",
+      " 누가 정해요?"
+    ],
+    "layout": "trio",
+    "dad": "dad-shock",
+    "kid": "kid-ask",
+    "mom": "mom-sigh",
+    "vs": [
+      "ep08/prop/warrant",
+      "ep08/prop/scale-gavel"
+    ]
+  }
+}

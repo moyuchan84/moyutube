@@ -1,0 +1,351 @@
+1
+00:00:00,333 --> 00:00:03,300
+Right now I’m inside the elevator of a medical building.
+
+2
+00:00:03,367 --> 00:00:06,500
+This is already my third ride in this elevator today.
+
+3
+00:00:06,567 --> 00:00:08,033
+Wasted trips so far: two.
+
+4
+00:00:08,100 --> 00:00:10,533
+"That’s why I said we should’ve gone to the university hospital from the start."
+
+5
+00:00:10,600 --> 00:00:12,600
+That was wrong too.
+
+6
+00:00:12,667 --> 00:00:14,233
+Let’s rewind thirty minutes.
+
+7
+00:00:14,800 --> 00:00:21,067
+Saturday morning, my kid fell down at the park. They landed on their wrist and scraped a knee.
+
+8
+00:00:21,133 --> 00:00:27,233
+Once the crying stopped, I took them to the medical building in our neighborhood. There was a sign on every floor.
+
+9
+00:00:27,300 --> 00:00:29,767
+Looking up at the signs one by one, my kid asked.
+
+10
+00:00:29,833 --> 00:00:35,400
+"Dad, remember what I asked last time? Internal medicine fixes the inside, and surgery fixes the outside?"
+
+11
+00:00:35,467 --> 00:00:40,133
+"So where do I go? My knee is outside, but my wrist hurts on the inside."
+
+12
+00:00:40,700 --> 00:00:45,133
+"Hmm… the knee is outside, so surgery. But there’s no surgery clinic in this building?"
+
+13
+00:00:45,200 --> 00:00:48,767
+"Then the wrist that hurts inside is more urgent, so internal medicine! Fifth floor!"
+
+14
+00:00:48,833 --> 00:00:51,500
+Quite logical. To my ears, anyway.
+
+15
+00:00:52,067 --> 00:00:58,433
+Fifth floor, internal medicine reception. The receptionist looked at my kid’s wrist and pointed at the floor.
+
+16
+00:00:58,500 --> 00:01:02,633
+"Sir, bones and joints go to orthopedics. Third floor."
+
+17
+00:01:02,700 --> 00:01:04,233
+Wasted trip: one.
+
+18
+00:01:04,800 --> 00:01:07,767
+In the elevator, Mom sighed.
+
+19
+00:01:07,833 --> 00:01:13,367
+"That’s why I said university hospital from the start. A big place sees everything at once."
+
+20
+00:01:13,933 --> 00:01:18,400
+Third floor, orthopedics. After an X-ray, the doctor pointed at the screen.
+
+21
+00:01:18,467 --> 00:01:21,133
+"The bone is fine. Just a slight sprain."
+
+22
+00:01:21,200 --> 00:01:30,333
+"Ma’am, a neighborhood clinic is plenty for this. And if you go to a university hospital without a referral letter, health insurance won’t cover it and you pay the whole bill."
+
+23
+00:01:30,400 --> 00:01:32,000
+Mom: one, too.
+
+24
+00:01:32,567 --> 00:01:34,200
+"Then what does surgery do?"
+
+25
+00:01:34,267 --> 00:01:35,467
+"It fixes things by hand."
+
+26
+00:01:36,033 --> 00:01:41,033
+While we waited for the bandage, I stood behind the skeleton model in the corner of the waiting room and turned on my phone.
+
+27
+00:01:41,100 --> 00:01:45,400
+The creature called Dad, when cornered, will search even from behind a skeleton.
+
+28
+00:01:45,467 --> 00:01:51,833
+To be fair, it’s confusing. There are twenty-six specialties, and five of them have “surgery” in the name.
+
+29
+00:01:51,900 --> 00:01:57,067
+On top of that, we call both the neighborhood clinic and the university hospital just “the hospital.”
+
+30
+00:01:57,133 --> 00:01:59,433
+So today we look at just two things.
+
+31
+00:01:59,500 --> 00:02:02,400
+What it’s fixed with. And where to go first.
+
+32
+00:02:02,967 --> 00:02:04,967
+"The friend with the hurt wrist, come on in!"
+
+33
+00:02:05,033 --> 00:02:06,200
+Yes, coming.
+
+34
+00:02:06,767 --> 00:02:08,767
+First, internal medicine and surgery.
+
+35
+00:02:08,833 --> 00:02:12,900
+The line isn’t inside versus outside. It’s what you fix it with.
+
+36
+00:02:12,967 --> 00:02:17,067
+Internal medicine mostly uses medicine; surgery mostly uses hands. In other words, operations.
+
+37
+00:02:17,133 --> 00:02:22,300
+Surgery comes from a Greek word that means “work done by hand.”
+
+38
+00:02:22,367 --> 00:02:27,233
+That’s why appendicitis, which happens inside the belly, is operated on by surgeons. Even though it’s inside the body.
+
+39
+00:02:27,800 --> 00:02:32,733
+Here’s a fun part: in old Europe, surgeons belonged to the same guild as barbers.
+
+40
+00:02:32,800 --> 00:02:41,133
+London, 1540. The people who cut hair and the people who stitched wounds shared one hall. Both were good with blades.
+
+41
+00:02:41,200 --> 00:02:48,367
+Then in 1745, a law split them up. Surgeons with surgeons, barbers with barbers.
+
+42
+00:02:48,433 --> 00:02:55,433
+Some say the red on a barber pole is blood and the white is bandages, but that’s not established fact.
+
+43
+00:02:56,000 --> 00:03:01,667
+In the East too, surgery originally dealt mostly with illnesses that showed on the outside, like boils and wounds.
+
+44
+00:03:01,733 --> 00:03:08,200
+So my kid was half right, a long time ago. Now the hands just reach inside the body too.
+
+45
+00:03:08,767 --> 00:03:11,067
+From those two trunks, branches split off.
+
+46
+00:03:11,133 --> 00:03:21,400
+From surgery: orthopedics for bones and joints, neurosurgery for the brain and nerves, thoracic surgery for the heart and lungs, plastic surgery for restoring how things look.
+
+47
+00:03:21,467 --> 00:03:26,200
+Nose, ears and throat: ENT. Eyes: ophthalmology. Skin: dermatology.
+
+48
+00:03:26,267 --> 00:03:29,900
+And pediatrics, which looks at a child’s body at a child’s size.
+
+49
+00:03:29,967 --> 00:03:42,233
+So, last time’s question: where does a cold go? Internal medicine. For a child, pediatrics. And if the nose or ears hurt a lot, ENT sees colds too. Just pick by what bothers you most.
+
+50
+00:03:42,800 --> 00:03:44,967
+I also learned how to read clinic signs.
+
+51
+00:03:45,033 --> 00:03:50,933
+If the specialty is part of the clinic’s name, like “So-and-so Dermatology Clinic,” a specialist in that field runs it.
+
+52
+00:03:51,000 --> 00:03:59,467
+If it says “So-and-so Clinic” with a small “treats: dermatology” next to it, they do see those patients, but the doctor may not be a specialist in that field.
+
+53
+00:04:00,033 --> 00:04:02,233
+Now Mom’s turn: the size of hospitals.
+
+54
+00:04:02,300 --> 00:04:09,633
+The bottom step is the neighborhood clinic. Above it, a hospital with thirty or more beds, then a general hospital with a hundred or more beds and many departments.
+
+55
+00:04:09,700 --> 00:04:16,633
+At the top: tertiary hospitals, designated by the state for difficult, serious illnesses. There are only forty-seven nationwide.
+
+56
+00:04:16,700 --> 00:04:23,800
+What you need to go up a step is a referral letter. Your neighborhood doctor writes it when they think a bigger place should see you.
+
+57
+00:04:23,867 --> 00:04:30,167
+Without it you can still be seen, but insurance won’t cover it and you pay everything. Emergencies are the exception.
+
+58
+00:04:30,233 --> 00:04:38,333
+Why set it up that way? The top step has few seats. If we line up there with a sprained wrist, someone who is seriously ill has to wait that much longer.
+
+59
+00:04:38,900 --> 00:04:44,733
+Emergency rooms are the same. An ER isn’t where you get seen fast. It’s where the most urgent are seen first.
+
+60
+00:04:44,800 --> 00:04:47,800
+They line people up again, not by arrival, but by urgency.
+
+61
+00:04:47,867 --> 00:04:55,000
+So since autumn 2024, if you go to a big hospital’s ER with mild symptoms, you pay ninety percent of the bill yourself.
+
+62
+00:04:55,067 --> 00:05:00,267
+If a child gets a fever at night or on a weekend, there are Moonlight Children’s Hospitals that see kids at night and on holidays.
+
+63
+00:05:00,333 --> 00:05:05,667
+If you don’t know where to go, you can call 119 and ask. They’ll tell you which hospitals are open.
+
+64
+00:05:05,733 --> 00:05:12,133
+But if someone can’t breathe well, isn’t fully conscious, or is bleeding a lot, don’t think twice. Call 119 right away.
+
+65
+00:05:12,700 --> 00:05:14,167
+So, to sum up:
+
+66
+00:05:14,233 --> 00:05:17,000
+Internal medicine with medicine, surgery with hands.
+
+67
+00:05:17,067 --> 00:05:20,267
+Start in the neighborhood; go to the big hospital with a letter.
+
+68
+00:05:20,333 --> 00:05:24,533
+Choose the specialty by where it hurts, and the size of the hospital by how much it hurts.
+
+69
+00:05:25,967 --> 00:05:32,233
+With the wrist bandaged, we came down to the first floor. In front of the lobby directory, I crouched down to my kid’s eye level.
+
+70
+00:05:32,300 --> 00:05:37,600
+"Earlier I said surgery is the outside and internal medicine is the inside, right? That was wrong."
+
+71
+00:05:37,667 --> 00:05:42,167
+"Internal medicine doctors fix things with medicine, and surgeons fix things directly with their hands."
+
+72
+00:05:42,233 --> 00:05:51,300
+"And each part of the body has doctors who know it best. Bones: orthopedics. Nose and ears: ENT. A growing body like yours: pediatrics."
+
+73
+00:05:51,367 --> 00:05:56,267
+"If you’re not sure what’s wrong, first go to a neighborhood doctor who knows us well."
+
+74
+00:05:56,333 --> 00:06:00,000
+"If that doctor thinks you need a bigger hospital, they write you a letter."
+
+75
+00:06:00,567 --> 00:06:01,433
+"A letter?"
+
+76
+00:06:01,500 --> 00:06:06,967
+"Yes. A referral letter. A letter to the next doctor that says, “Please take care of this child.”"
+
+77
+00:06:07,033 --> 00:06:11,533
+"But if it’s hard to breathe or you’re badly hurt, skip the letter and call 119 right away."
+
+78
+00:06:12,100 --> 00:06:16,433
+My kid looked up at the directory and pointed at it one floor at a time.
+
+79
+00:06:16,500 --> 00:06:20,500
+"Bones, third floor. Nose, fourth floor. Me, second floor."
+
+80
+00:06:20,567 --> 00:06:23,833
+Then they held out the bandaged wrist toward me.
+
+81
+00:06:23,900 --> 00:06:26,133
+"The third-floor doctor fixed me today."
+
+82
+00:06:26,700 --> 00:06:32,333
+Surgery fixes the outside. Bigger hospitals are always better. We weren’t the only couple who thought so, right?
+
+83
+00:06:32,400 --> 00:06:35,633
+As we left the building, my kid stopped walking.
+
+84
+00:06:35,700 --> 00:06:38,133
+"Dad, where’s my bike?"
+
+85
+00:06:38,700 --> 00:06:42,133
+The bike we rode out on that morning was nowhere to be seen.
+
+86
+00:06:42,200 --> 00:06:44,433
+"…It must’ve been stolen. Let’s go to the police box."
+
+87
+00:06:44,500 --> 00:06:46,900
+"If they catch the thief, do they go to jail? Right away?"
+
+88
+00:06:46,967 --> 00:06:48,767
+The next episode is about this question.

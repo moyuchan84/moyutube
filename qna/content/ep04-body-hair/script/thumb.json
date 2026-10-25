@@ -1,0 +1,18 @@
+{
+  "face": {
+    "tag": "여덟 살 아들의 질문",
+    "top": [
+      "털? ",
+      "털?"
+    ],
+    "bottom": [
+      "아빠,",
+      " 왜 거기에 나요?"
+    ],
+    "topic": [
+      "ep04/prop/icon-guard",
+      "ep04/prop/icon-wick",
+      "ep04/prop/icon-trace"
+    ]
+  }
+}

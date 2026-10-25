@@ -1,27 +1,31 @@
-// 내 목소리(또는 다른 TTS)로 바꿔 끼울 때 쓰는 도구.
+// 음성 도구. 편 폴더 = qna/content/<code>-<slug>/ (아래 <편>)
 //   node scripts/voice.mjs ep01 sheet    녹음 대본 → out/ep01/voice-script.md (파일 이름 · 화자 · 대사)
 //   node scripts/voice.mjs ep01 studio   AI Studio 붙여넣기 페이지 → out/ep01/voice-studio.html (컷마다 복사 버튼)
-//   node scripts/voice.mjs ep01 split    voice-studio/ep01/<컷id>.wav 를 대사 줄마다 잘라 public/ep01/voice 에 넣고 타이밍 갱신 (--all 은 전부 다시 자른다)
-//   node scripts/voice.mjs ep01 jobs     컷별 음성 작업 목록 → episodes/NN-…/jobs/voice.json (다른 도구에 넘길 때)
-//   node scripts/voice.mjs ep01 gen      Gemini API 로 컷별 음성을 받아 바로 split 까지 (GEMINI_API_KEY 필요, --all 은 전부 다시)
+//   node scripts/voice.mjs ep01 split    <편>/voice/studio/<컷id>.wav 를 대사 줄마다 잘라 <편>/voice/ 에 넣고 타이밍 갱신 (--all 은 전부 다시 자른다)
+//   node scripts/voice.mjs ep01 jobs     컷별 음성 작업 목록 → <편>/prompts/jobs/voice.json (다른 도구에 넘길 때)
+//   node scripts/voice.mjs ep01 gen      Gemini API 로 컷별 음성을 받아 바로 split 까지 (유료 — 사용자가 요청할 때만, --all 은 전부 다시)
 // 목소리와 말투는 src/voice.json 에 고정돼 있다 (설명: video/VOICE.md)
-//   node scripts/voice.mjs ep01          public/ep01/voice/*.wav 길이를 재서 src/ep01/timing.json 을 다시 쓴다
+//   node scripts/voice.mjs ep01          <편>/voice/*.wav 길이를 재서 <편>/script/timing.json 을 다시 쓴다
+// 음성 원본은 <편>/voice/ (git). 영상이 읽는 video/public/<code>/voice/ 는 sync 가 만드는 사본이다.
 import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, statSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { ROOT, VIDEO, episodeDir } from "./art-lib.mjs";
+import { ROOT, VIDEO, argCode, episodeDir, scriptPath, studioDir as studioDirOf, voiceDir as voiceDirOf } from "./art-lib.mjs";
 import { NO_KEY, envValue } from "./env.mjs";
+import { syncUnit } from "./sync.mjs";
 
-const [episode = "ep01", mode] = process.argv.slice(2).filter((a) => !a.startsWith("--"));
-const scriptFile = join(VIDEO, "src", episode, "script.json");
+const [code, mode] = process.argv.slice(2).filter((a) => !a.startsWith("--"));
+const episode = argCode(code, "사용: node scripts/voice.mjs <편> [sheet|studio|split|jobs|gen]");
+const scriptFile = scriptPath(episode, "script.json");
 const script = JSON.parse(readFileSync(scriptFile, "utf8"));
 const VOICE = JSON.parse(readFileSync(join(VIDEO, "src/voice.json"), "utf8"));
 const WHO = { narr: "나레이션", dad: "아빠", kid: "아이", docu: "다큐 톤(낮고 진지하게)", granny: "할머니" };
 const lines = script.cuts.flatMap((cut) => cut.lines.map((line, i) => ({ id: `${cut.id}-${i}`, beat: cut.beat, ...line })));
 
-const voiceDir = join(VIDEO, "public", episode, "voice");
-const studioDir = join(VIDEO, "voice-studio", episode); // AI Studio에서 받은 컷별 원본
-const lockFile = join(VIDEO, "src", episode, "voice-lock.json"); // 자를 때의 대사 지문과 원본 시각. 대사가 바뀐 컷을 찾는 데 쓴다
+const voiceDir = voiceDirOf(episode);
+const studioDir = studioDirOf(episode); // AI Studio에서 받은 컷별 원본
+const lockFile = join(voiceDir, "voice-lock.json"); // 자를 때의 대사 지문과 원본 시각. 대사가 바뀐 컷을 찾는 데 쓴다
+const unitRel = `qna/${episodeDir(episode)}`;
 const spoken = (line) => line.tts ?? line.text;
 const cutHash = (cut) => createHash("sha1").update(JSON.stringify(cut.lines.map((l) => [l.who, spoken(l)]))).digest("hex").slice(0, 12);
 const readLock = () => (existsSync(lockFile) ? JSON.parse(readFileSync(lockFile, "utf8")) : {});
@@ -83,7 +87,7 @@ const writeTiming = () => {
     else missing.push(l.id);
   }
   if (missing.length) throw new Error(`음성 파일이 없다: ${missing.join(", ")}`);
-  writeFileSync(join(VIDEO, "src", episode, "timing.json"), `${JSON.stringify(timing, null, 2)}\n`);
+  writeFileSync(scriptPath(episode, "timing.json"), `${JSON.stringify(timing, null, 2)}\n`);
   const total = Object.values(timing).reduce((a, b) => a + b, 0);
   console.log(`timing.json 갱신: ${lines.length}줄, 말하는 시간 ${(total / 60).toFixed(1)}분`);
 };
@@ -203,7 +207,7 @@ if (mode === "jobs") {
       const cast = castOf(cut);
       return {
         cut: cut.id,
-        save: `video/voice-studio/${episode}/${cut.id}.wav`,
+        save: `${unitRel}/voice/studio/${cut.id}.wav`,
         done: lock[cut.id]?.text === cutHash(cut),
         speakers: cast.map((sp) => ({ speaker: sp.slot, voice: sp.voice, who: sp.name ?? sp.roles.join("/"), style: sp.style })),
         lines: cut.lines.map((l) => {
@@ -213,13 +217,13 @@ if (mode === "jobs") {
         prompt: studioText(cut),
       };
     });
-  const dir = join(ROOT, episodeDir(episode), "jobs");
+  const dir = join(ROOT, episodeDir(episode), "prompts", "jobs");
   mkdirSync(dir, { recursive: true });
   writeFileSync(
     join(dir, "voice.json"),
     `${JSON.stringify({ episode, title: script.title, engine: VOICE.engine, format: "WAV, 24 kHz, 16-bit, mono. One file per cut, all lines of the cut in order.", direction: VOICE.direction, jobs }, null, 2)}\n`,
   );
-  console.log(`${episodeDir(episode)}/jobs/voice.json — ${jobs.length}컷 (남은 컷 ${jobs.filter((j) => !j.done).length})`);
+  console.log(`${unitRel}/prompts/jobs/voice.json — ${jobs.length}컷 (남은 컷 ${jobs.filter((j) => !j.done).length})`);
 } else if (mode === "sheet") {
   const outDir = join(VIDEO, "out", episode);
   mkdirSync(outDir, { recursive: true });
@@ -230,7 +234,7 @@ if (mode === "jobs") {
   });
   writeFileSync(
     join(outDir, "voice-script.md"),
-    `# ${script.title} — 녹음 대본 (${lines.length}줄)\n\n한 줄을 한 파일로 녹음해 \`video/public/${episode}/voice/\` 에 같은 이름의 WAV로 넣는다.\n앞뒤 무음은 0.1초 안쪽으로 자른다. 다 넣은 뒤 \`npm run voice -- ${episode}\`.\n${rows.join("\n")}\n`,
+    `# ${script.title} — 녹음 대본 (${lines.length}줄)\n\n한 줄을 한 파일로 녹음해 \`${unitRel}/voice/\` 에 같은 이름의 WAV로 넣는다.\n앞뒤 무음은 0.1초 안쪽으로 자른다. 다 넣은 뒤 \`npm run voice -- ${episode}\`.\n${rows.join("\n")}\n`,
   );
   console.log(`out/${episode}/voice-script.md (${lines.length}줄)`);
 } else if (mode === "studio") {
@@ -265,7 +269,7 @@ pre{white-space:pre-wrap;word-break:break-word;font:14px/1.6 ui-monospace,monosp
 <ol>
 <li><a href="https://aistudio.google.com/generate-speech" target="_blank">AI Studio 음성 생성</a>을 열고 <b>여러 화자(Multi-speaker)</b> 모드로 둔다. 목소리는 기본이 ${VOICE.speakers.filter((sp) => SLOTS.includes(sp.label)).map((sp) => `${sp.label} = <b>${sp.voice}</b>`).join(", ")} 이고, <b>카드에 갈색으로 표시된 컷</b>은 거기 적힌 대로 바꾼다 (${VOICE.speakers.filter((sp) => !SLOTS.includes(sp.label)).map((sp) => `${sp.name} = <b>${sp.voice}</b>`).join(", ") || "손님 목소리 없음"}). 설명은 <code>video/VOICE.md</code>.</li>
 <li>아래 컷의 <b>복사</b>를 누르고, 대본 칸(Raw structure)을 비운 뒤 붙여넣어 생성한다.</li>
-<li>받은 파일을 카드에 적힌 이름(예: <code>c01.wav</code>)으로 바꿔 <code>video/voice-studio/${episode}/</code> 에 넣는다.</li>
+<li>받은 파일을 카드에 적힌 이름(예: <code>c01.wav</code>)으로 바꿔 <code>${unitRel}/voice/studio/</code> 에 넣는다.</li>
 <li>다 넣었으면(일부만 넣어도 된다) <code>npm run voice -- ${episode} split</code> — 줄마다 자르고 타이밍을 맞춘다.</li>
 </ol>
 ${cards.join("\n")}
@@ -302,7 +306,7 @@ for (const b of document.querySelectorAll("button")) b.onclick = async () => {
     try {
       result = splitWav(wav, cut.lines.length, cut.lines.map(weightOf));
     } catch (e) {
-      throw new Error(`${cut.id}.wav: ${e.message}. 다시 생성하거나, 줄마다 직접 잘라 public/${episode}/voice 에 넣는다`);
+      throw new Error(`${cut.id}.wav: ${e.message}. 다시 생성하거나, 줄마다 직접 잘라 ${unitRel}/voice 에 넣는다`);
     }
     clearCut(cut);
     console.log(`${cut.id}${result.unsure ? "  ⚠ 줄 경계가 애매하다. 아래 길이가 대사와 맞는지 확인" : ""}`);
@@ -313,16 +317,17 @@ for (const b of document.querySelectorAll("button")) b.onclick = async () => {
     lock[cut.id] = { text: cutHash(cut), wav: stamp };
     done.push(cut.id);
   }
-  if (!done.length) console.log(`video/voice-studio/${episode}/ 에 새로 받은 <컷id>.wav 가 없다.`);
+  if (!done.length) console.log(`${unitRel}/voice/studio/ 에 새로 받은 <컷id>.wav 가 없다.`);
   if (done.length) {
     writeFileSync(lockFile, `${JSON.stringify(lock, null, 2)}\n`);
     writeTiming();
+    syncUnit(episode);
   }
   if (waiting.length) console.log(`아직 AI Studio 음성이 없거나 대사가 바뀐 컷: ${waiting.join(", ")}`);
   else if (!script.rawVoice) {
     // 전부 AI 음성이 됐으면 렌더할 때 음높이를 건드리지 않게 한다
     writeFileSync(scriptFile, readFileSync(scriptFile, "utf8").replace(/^\{\s*\n/, '{\n  "rawVoice": true,\n'));
-    console.log(`src/${episode}/script.json 에 "rawVoice": true 를 넣었다 (목소리 변조 끔).`);
+    console.log(`${unitRel}/script/script.json 에 "rawVoice": true 를 넣었다 (목소리 변조 끔).`);
   }
 } else {
   writeTiming();

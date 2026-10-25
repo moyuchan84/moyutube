@@ -1,9 +1,9 @@
 // art.json → Gemini 프롬프트 문서.
-//   공통(가족·집)  → art/common/GEMINI_PROMPTS.md
-//   편별           → episodes/NN-…/GEMINI_PROMPTS.md
+//   공통(가족·집)  → content/_common/prompts/GEMINI_PROMPTS.md
+//   편별           → content/<편>/prompts/GEMINI_PROMPTS.md · prompts/jobs/images.json
 // 사용: node scripts/prompts.mjs          (전부)
 //       node scripts/prompts.mjs ep01     (공통 + 1편)
-// 문구를 고치려면 이 파일이나 src/art-common.json · src/epNN/art.json 을 고친 뒤 다시 실행한다.
+// 문구를 고치려면 이 파일이나 content/_common/script/art.json · content/<편>/script/art.json 을 고친 뒤 다시 실행한다.
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { ANCHOR, ROOT, attachPlan, attachProblems, common, episodeDir, findRaw, listEpisodes, loadEpisode, rawRel } from "./art-lib.mjs";
@@ -208,10 +208,10 @@ const writeCommon = () => {
   const items = common.items;
   const body = items.map((item, i) => block(null, item, i + 1)).join("\n");
   write(
-    "art/common/GEMINI_PROMPTS.md",
+    "content/_common/prompts/GEMINI_PROMPTS.md",
     `# Gemini 프롬프트 — ${common.title}
 
-> \`video/scripts/prompts.mjs\` 가 만든 파일이다. 직접 고치지 말고 \`video/src/art-common.json\` 을 고친 뒤 \`npm run prompts\` 를 다시 실행한다.
+> \`video/scripts/prompts.mjs\` 가 만든 파일이다. 직접 고치지 말고 \`content/_common/script/art.json\` 을 고친 뒤 \`npm run prompts\` 를 다시 실행한다.
 > 모든 편이 같이 쓰는 그림이다. **한 번만 만들면 된다.** 진행: ${countDone(null, items)} / ${items.length}
 
 ${USAGE}
@@ -226,7 +226,7 @@ const writeEpisode = (ep) => {
   const dir = episodeDir(ep);
   const used = (art.common ?? []).map((id) => {
     const item = common.items.find((c) => c.id === id);
-    if (!item) throw new Error(`${ep}: 공통 그림 '${id}' 는 art-common.json 에 없습니다`);
+    if (!item) throw new Error(`${ep}: 공통 그림 '${id}' 는 content/_common/script/art.json 에 없습니다`);
     return `| ${findRaw(null, id) ? "✅" : "⬜"} | ${item.title} | \`${rawRel(null, id)}\` |`;
   });
   // 이미 있는 그림은 표로만 남기고, 아직 없는 그림만 프롬프트 전문을 싣는다 (번호는 art.json 순서 그대로)
@@ -243,12 +243,12 @@ const writeEpisode = (ep) => {
     ...(art.common ?? []).map((id) => jobOf(null, common.items.find((c) => c.id === id))),
     ...art.items.map((item) => jobOf(ep, item, art.cast)),
   ];
-  write(`${dir}/jobs/images.json`, `${JSON.stringify({ episode: ep, title: art.title, anchor: ANCHOR, jobs }, null, 2)}\n`);
+  write(`${dir}/prompts/jobs/images.json`, `${JSON.stringify({ episode: ep, title: art.title, anchor: ANCHOR, jobs }, null, 2)}\n`);
   write(
-    `${dir}/GEMINI_PROMPTS.md`,
+    `${dir}/prompts/GEMINI_PROMPTS.md`,
     `# Gemini 프롬프트 — ${art.title}
 
-> \`video/scripts/prompts.mjs\` 가 만든 파일이다. 직접 고치지 말고 \`video/src/${ep}/art.json\` 을 고친 뒤 \`npm run prompts\` 를 다시 실행한다.
+> \`video/scripts/prompts.mjs\` 가 만든 파일이다. 직접 고치지 말고 \`${dir}/script/art.json\` 을 고친 뒤 \`npm run prompts\` 를 다시 실행한다.
 > 이 편에만 쓰는 그림 ${art.items.length}장. 진행: ${countDone(ep, art.items)} / ${art.items.length}
 > 다 넣었으면 \`video/\` 에서 \`npm run make -- ${ep}\` → \`video/out/${ep}/${ep}.mp4\`
 
@@ -257,7 +257,7 @@ ${USAGE}
 
 ## 0. 먼저 — 공통 그림 (가족 · 집)
 
-아래는 이 편이 쓰는 공통 그림이다. 프롬프트는 [art/common/GEMINI_PROMPTS.md](../../art/common/GEMINI_PROMPTS.md)에 있고, 다른 편에서 이미 만들었으면 건너뛴다.
+아래는 이 편이 쓰는 공통 그림이다. 프롬프트는 [_common/prompts/GEMINI_PROMPTS.md](../../_common/prompts/GEMINI_PROMPTS.md)에 있고, 다른 편에서 이미 만들었으면 건너뛴다.
 
 | | 그림 | 파일 |
 |---|---|---|

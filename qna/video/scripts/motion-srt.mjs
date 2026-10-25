@@ -1,20 +1,16 @@
 // 모션 편집판의 자막(한국어 · 영어)과 챕터 시각을 만든다. 시각 계산은 src/motion/Motion.tsx 의 buildMotion 과 같다.
-// 사용: node scripts/motion-srt.mjs ep08f   (src/motion/<plan>.json 의 voice 가 이 편인 계획을 찾는다)
-// 결과: out/motion/<plan id>.ko.srt · .en.srt · .chapters.txt (박자가 바뀌는 곳)
-import { mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+// 사용: node scripts/motion-srt.mjs ep08f   (그 편의 script/motion.json)
+// 결과: 편 폴더 upload/ko.srt · en.srt · chapters.txt (박자가 바뀌는 곳)
+import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { VIDEO } from "./art-lib.mjs";
+import { argCode, episodeDir, readScript, scriptPath, uploadDir } from "./art-lib.mjs";
 
 const FPS = 30;
-const episode = process.argv[2];
-if (!episode) throw new Error("사용: node scripts/motion-srt.mjs epNN");
-const planFile = readdirSync(join(VIDEO, "src/motion"))
-  .filter((f) => f.endsWith(".json"))
-  .map((f) => JSON.parse(readFileSync(join(VIDEO, "src/motion", f), "utf8")))
-  .find((p) => (p.voice ?? p.episode) === episode);
-if (!planFile) throw new Error(`src/motion 에 ${episode} 음성을 쓰는 계획이 없다`);
-const script = JSON.parse(readFileSync(join(VIDEO, "src", episode, "script.json"), "utf8"));
-const timing = JSON.parse(readFileSync(join(VIDEO, "src", episode, "timing.json"), "utf8"));
+const episode = argCode(process.argv[2], "사용: node scripts/motion-srt.mjs");
+if (!existsSync(scriptPath(episode, "motion.json"))) throw new Error(`${episodeDir(episode)}/script/motion.json 이 없다 (모답맨 샷 계획)`);
+const planFile = readScript(episode, "motion.json");
+const script = readScript(episode, "script.json");
+const timing = readScript(episode, "timing.json");
 const speed = script.speed ?? 1;
 const gap = planFile.gap ?? 2;
 const frameOf = (at, length) => (at == null ? 0 : at < 1 ? Math.round(at * length) : at);
@@ -46,9 +42,9 @@ const stamp = (frames) => {
 const srt = (key) => lines.map((l, i) => `${i + 1}\n${stamp(l.from)} --> ${stamp(Math.min(l.from + l.dur + 6, lines[i + 1]?.from ?? Infinity))}\n${l[key]}\n`).join("\n");
 const clock = (frames) => `${Math.floor(frames / FPS / 60)}:${String(Math.floor(frames / FPS) % 60).padStart(2, "0")}`;
 
-const outDir = join(VIDEO, "out/motion");
+const outDir = uploadDir(episode);
 mkdirSync(outDir, { recursive: true });
-writeFileSync(join(outDir, `${planFile.id}.ko.srt`), srt("ko"));
-if (lines.every((l) => l.en)) writeFileSync(join(outDir, `${planFile.id}.en.srt`), srt("en"));
-writeFileSync(join(outDir, `${planFile.id}.chapters.txt`), chapters.map((c) => `${clock(c.from)} ${c.title}`).join("\n") + "\n");
-console.log(`${planFile.id}: 자막 ${lines.length}줄 · ${(cursor / FPS).toFixed(1)}초 · 챕터 ${chapters.length}개 → out/motion/`);
+writeFileSync(join(outDir, "ko.srt"), srt("ko"));
+if (lines.every((l) => l.en)) writeFileSync(join(outDir, "en.srt"), srt("en"));
+writeFileSync(join(outDir, "chapters.txt"), chapters.map((c) => `${clock(c.from)} ${c.title}`).join("\n") + "\n");
+console.log(`${planFile.id}: 자막 ${lines.length}줄 · ${(cursor / FPS).toFixed(1)}초 · 챕터 ${chapters.length}개 → qna/${episodeDir(episode)}/upload/`);

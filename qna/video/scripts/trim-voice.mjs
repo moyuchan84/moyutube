@@ -1,13 +1,13 @@
 // 대사 음성의 앞뒤 무음을 잘라 낸다 (모답맨: AI Studio 음성은 앞뒤에 평균 0.5초 무음이 붙어 템포가 늘어진다).
-// 사용: node scripts/trim-voice.mjs epNN   → public/epNN/voice/*.wav 를 그 자리에서 자른다 (말 앞뒤 0.06초는 남김)
+// 사용: node scripts/trim-voice.mjs epNN   → 편 폴더 voice/*.wav 를 그 자리에서 자른다 (말 앞뒤 0.06초는 남김)
 // 그다음: node scripts/voice.mjs epNN (timing.json) → node scripts/speed.mjs epNN (배속 파일)
 import { readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { VIDEO } from "./art-lib.mjs";
+import { argCode, publicDir, voiceDir } from "./art-lib.mjs";
+import { syncUnit } from "./sync.mjs";
 
-const episode = process.argv[2];
-if (!episode) throw new Error("사용: node scripts/trim-voice.mjs epNN");
-const dir = join(VIDEO, "public", episode, "voice");
+const episode = argCode(process.argv[2], "사용: node scripts/trim-voice.mjs");
+const dir = voiceDir(episode);
 const THRESHOLD = 0.03; // 최대 음량의 이 비율보다 작으면 무음
 const KEEP = 0.06; // 말 앞뒤에 남기는 여유 (초)
 
@@ -36,5 +36,6 @@ for (const name of readdirSync(dir).filter((f) => f.endsWith(".wav"))) {
   cut += (s.length - (z - a)) / rate;
 }
 // 배속 파일은 원본보다 새것이면 다시 안 만들므로 지워 둔다
-for (const name of readdirSync(join(VIDEO, "public", episode))) if (name.startsWith("voice-x")) rmSync(join(VIDEO, "public", episode, name), { recursive: true });
+for (const name of readdirSync(publicDir(episode))) if (name.startsWith("voice-x")) rmSync(publicDir(episode, name), { recursive: true });
+syncUnit(episode);
 console.log(`${episode}: 무음 ${cut.toFixed(1)}초 잘라 냄 → 이제 node scripts/voice.mjs ${episode} && node scripts/speed.mjs ${episode}`);
