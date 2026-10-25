@@ -1,0 +1,43 @@
+1
+00:00:00,800 --> 00:00:05,110
+Why isn't 1 m²
+equal to 100 cm²?
+
+2
+00:00:05,160 --> 00:00:07,280
+For length, 1 m = 100 cm
+
+3
+00:00:07,330 --> 00:00:10,750
+1 m² is the area of a square
+with 1 m sides
+
+4
+00:00:10,800 --> 00:00:16,920
+1 cm² is a tiny square
+with 1 cm sides
+
+5
+00:00:16,970 --> 00:00:20,940
+How many cm² fit in one row?
+
+6
+00:00:20,990 --> 00:00:23,810
+100 cm² is just this one row!
+
+7
+00:00:23,860 --> 00:00:30,380
+And there are 100 rows like that!
+
+8
+00:00:30,430 --> 00:00:32,950
+1 m² = 10,000 cm²!
+
+9
+00:00:33,000 --> 00:00:37,150
+Area grows 100 times across and 100 times down,
+so 100 × 100 times
+
+10
+00:00:38,150 --> 00:00:42,100
+Remember: 1 m² = 10,000 cm² (not 100 cm²)

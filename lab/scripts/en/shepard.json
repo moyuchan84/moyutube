@@ -1,0 +1,21 @@
+{
+  "TITLE": "A sound that keeps rising forever?",
+  "NEXT": "NEXT: You can't lift your ring finger?",
+  "EN": {
+    "소리를 작게 켜 주세요": "Turn the sound on, but keep it low",
+    "음이 어디까지 올라가는지\n끝까지 들어 봐요": "Listen all the way through\nto hear how high it goes",
+    "먼저 보통 계단 소리": "First, an ordinary staircase of notes",
+    "올라가다 보면 끝이 있죠": "Climb it, and you reach the top",
+    "이번엔 이 소리!": "Now listen to this one!",
+    "계속 올라가요…": "It keeps going up…",
+    "아직도 올라가요!": "Still going up!",
+    "그런데 끝이 없어요?!": "But it never ends?!",
+    "사실은 12계단마다\n처음 소리로 돌아와요!": "Actually, every 12 steps\nit's back to the very first sound!",
+    "한 옥타브씩 떨어진 소리\n여러 개를 같이 내요": "It plays several notes at once,\neach an octave apart",
+    "모두 같이 한 칸씩 올라가요": "They all step up together",
+    "너무 높아진 소리는\n작아지며 사라지고": "The note that gets too high\nfades away",
+    "아래에서 새 소리가\n작게 들어와요": "while a new note sneaks in quietly\nat the bottom",
+    "그래서 귀는 \"올라간다\"만 느끼고\n끝은 못 알아채요": "So your ears only notice \"going up\"\nand never catch the end",
+    "이걸 \"셰퍼드 톤\"이라고 해요": "This is called a \"Shepard tone\""
+  }
+}

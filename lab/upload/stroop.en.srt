@@ -1,0 +1,71 @@
+1
+00:00:00,000 --> 00:00:04,885
+Say the color of the words!
+
+2
+00:00:04,935 --> 00:00:07,255
+Don't read the word —
+say its COLOR out loud
+
+3
+00:00:07,305 --> 00:00:10,625
+For this one, the answer is "red"!
+
+4
+00:00:10,675 --> 00:00:14,395
+Say the colors!
+
+5
+00:00:14,445 --> 00:00:17,395
+Easy, right?
+
+6
+00:00:17,445 --> 00:00:21,915
+Now the words and colors don't match.
+Say the colors!
+
+7
+00:00:21,965 --> 00:00:24,915
+Not the word — the color!
+
+8
+00:00:24,965 --> 00:00:28,915
+Tongue-tied?
+
+9
+00:00:28,965 --> 00:00:33,485
+Red, green, blue / yellow, green, yellow
+red, blue, yellow
+
+10
+00:00:33,535 --> 00:00:35,455
+When you see a word,
+two things start in your brain at once
+
+11
+00:00:35,505 --> 00:00:38,255
+You've practiced reading so much
+that it's automatic and super fast
+
+12
+00:00:38,305 --> 00:00:40,855
+"Blue" arrives first
+and crashes into "red"
+
+13
+00:00:40,905 --> 00:00:44,825
+Your brain slows down because it has to hold back the reading
+and pick the color
+
+14
+00:00:44,875 --> 00:00:49,425
+Like riding a bike, things you're used to
+happen before you even think
+
+15
+00:00:49,475 --> 00:00:51,675
+This is called the "Stroop effect"
+
+16
+00:00:51,725 --> 00:00:54,175
+NEXT: A sound that keeps rising forever?

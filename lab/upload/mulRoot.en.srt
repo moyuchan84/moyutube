@@ -1,0 +1,37 @@
+1
+00:00:00,800 --> 00:00:04,710
+A square root (√)
+is squaring backwards!
+
+2
+00:00:04,760 --> 00:00:06,080
+A square with an area of 25
+
+3
+00:00:06,130 --> 00:00:10,250
+How long is each side?
+
+4
+00:00:10,300 --> 00:00:12,720
+Since 5 × 5 = 25, each side is 5 (√25 = 5)
+
+5
+00:00:12,770 --> 00:00:15,190
+Squaring: side → area
+
+6
+00:00:15,240 --> 00:00:20,260
+Square root: area → side
+It goes the other way
+
+7
+00:00:20,310 --> 00:00:29,830
+√ = look at the area, find the side
+
+8
+00:00:29,880 --> 00:00:36,130
+So what about a square with an area of 2?
+
+9
+00:00:37,130 --> 00:00:40,880
+NEXT: A square with an area of 2 — how long is each side?
