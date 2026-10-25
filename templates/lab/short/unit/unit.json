@@ -1,0 +1,10 @@
+{
+  "code": "{{code}}",
+  "title": "{{title}}",
+  "format": "short",
+  "series": "{{series}}",
+  "status": "idea",
+  "created": "{{date}}",
+  "youtube": [],
+  "tags": []
+}

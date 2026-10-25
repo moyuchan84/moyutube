@@ -1,0 +1,19 @@
+{
+  "name": "@moyu/shared",
+  "version": "1.0.0",
+  "private": true,
+  "description": "다섯 채널(qna · shortube · funtube · lab · fairy)이 같이 쓰는 코드 — 키 읽기 · 콘텐츠 단위 · Gemini · WAV · 자막",
+  "type": "module",
+  "exports": {
+    "./env": "./env.mjs",
+    "./unit": "./unit.mjs",
+    "./gemini": "./gemini.mjs",
+    "./wav": "./wav.mjs",
+    "./srt": "./srt.mjs",
+    "./downloads": "./downloads.mjs",
+    "./ffmpeg": "./ffmpeg.mjs"
+  },
+  "bin": {
+    "moyu": "./bin/moyu.mjs"
+  }
+}

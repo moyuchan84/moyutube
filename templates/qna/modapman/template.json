@@ -1,0 +1,9 @@
+{
+  "description": "모답맨 한 편 (3분 오답 쇼). 내모남불은 --series naemonambul, 코드 nmNN",
+  "next": [
+    "qna/.claude/skills/modapman/SKILL.md 를 읽고 plan.md 부터 채운다 (자료조사 → 오답 후보 → 대본)",
+    "script/script.json · script/art.json · script/motion.json 을 채운다 (기준 예시: 8편 모답맨판 ep08f)",
+    "그림은 qna/ART_GUIDE.md 순서 그대로: npm run prompts -- {{code}} → ⚠️ 0개 → artrefs → 생성 → artreview",
+    "음성 · 렌더 · 업로드는 qna/CLAUDE.md 작업 절차"
+  ]
+}

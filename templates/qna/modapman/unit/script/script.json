@@ -1,0 +1,16 @@
+{
+  "rawVoice": true,
+  "speed": 1.2,
+  "title": "모답맨 · {{title}}",
+  "bgm": "cheerful",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "콜드 오픈",
+      "lines": [
+        { "who": "kid", "text": "아빠, (아이의 질문)?", "en": "Dad, (the kid's question)?" },
+        { "who": "dad", "text": "(아빠의 자신만만한 오답)!", "en": "(Dad's confident wrong answer)!" }
+      ]
+    }
+  ]
+}

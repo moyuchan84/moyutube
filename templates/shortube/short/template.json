@@ -1,0 +1,9 @@
+{
+  "description": "쇼츠 한 편 (30~60초, 1080×1920). 카테고리는 plan.md 머리에 explain · trivia · chart 중 하나",
+  "next": [
+    "shortube/CLAUDE.md · COMPLIANCE_GUIDE.md 를 먼저 읽는다 (사실 카드에 있는 숫자만, 사진 · 로고 · 음원 없음)",
+    "plan.md(브리프)를 채운다 — 출처 표 · 사실 카드 · 대본 · 연출 카드(직전 2편과 4항목 이상 다르게) · 메타데이터 · 검수",
+    "영상 데이터는 content/{{code}}/script/, 컴포넌트는 shortube/video/src/units/{{code}}/",
+    "배경음악은 코드 합성 → content/{{code}}/music/bgm.wav, 업로드 후 unit.json youtube 와 content/uploads.csv 기록"
+  ]
+}
