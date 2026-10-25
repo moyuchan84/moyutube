@@ -4,10 +4,10 @@
 // 컷마다 배경 · 인물 위치 · 소품 · 움직임(등장, 걸어가기, 배경 밀기) · 화면 글자 · 대사를 한눈에 본다.
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join, relative } from "node:path";
-import { ROOT, VIDEO, assetKey, common, episodeDir, findRaw, isCommon, loadEpisode } from "./art-lib.mjs";
+import { ROOT, VIDEO, assetKey, common, episodeDir, findRaw, isCommon, listEpisodes, loadEpisode } from "./art-lib.mjs";
 
 const ep = process.argv[2];
-if (!/^ep\d+$/.test(ep ?? "")) throw new Error("사용: node scripts/storyboard.mjs ep04");
+if (!listEpisodes().includes(ep)) throw new Error(`사용: node scripts/storyboard.mjs <${listEpisodes().join("|")}>`);
 const script = JSON.parse(readFileSync(join(VIDEO, "src", ep, "script.json"), "utf8"));
 const art = loadEpisode(ep);
 const dir = join(ROOT, episodeDir(ep));

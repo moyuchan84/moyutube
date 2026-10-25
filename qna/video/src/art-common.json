@@ -5,6 +5,11 @@
     "kid": "the kid: an 8-year-old Korean child with a black bowl-cut, huge round curious eyes, one missing front tooth, wearing a red hoodie, navy shorts and white socks; small, fearless and very direct",
     "mom": "the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer"
   },
+  "refs": {
+    "dad": { "cutin": "common/cutin/dad-shock" },
+    "kid": { "cutin": "common/cutin/kid-ask" },
+    "mom": { "cutin": "common/cutin/mom-smirk" }
+  },
   "items": [
     { "id": "common/dad/normal", "kind": "char", "who": "dad", "title": "아빠 — 기본", "note": "아빠의 기준 그림. 이후 아빠 그림에 전부 ②로 첨부한다.", "desc": "3/4 view, body and face turned slightly to the LEFT. Standing relaxed, arms at his sides, a mild friendly smile." },
     { "id": "common/dad/panic", "kind": "char", "who": "dad", "title": "아빠 — 당황", "desc": "3/4 view turned slightly to the LEFT. He has just been asked a question he cannot answer: eyes darting sideways, forced crooked smile showing teeth, one hand rubbing the back of his neck, cold sweat drops flying off his forehead, knees slightly bent." },

@@ -6,10 +6,15 @@
 // 문구를 고치려면 이 파일이나 src/art-common.json · src/epNN/art.json 을 고친 뒤 다시 실행한다.
 import { mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
-import { ANCHOR, ROOT, common, episodeDir, findRaw, listEpisodes, loadEpisode, rawRel, refOf } from "./art-lib.mjs";
+import { ANCHOR, ROOT, attachPlan, attachProblems, common, episodeDir, findRaw, listEpisodes, loadEpisode, rawRel } from "./art-lib.mjs";
 
 const STYLE =
   "Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.";
+// 사람 없는 소품: 얼굴 화풍 문단 대신 쓴다 (얼굴 앵커를 붙이면 Gemini 가 앵커 속 사람 위에 물건을 덧그린다 — 10화)
+const PROP_STYLE =
+  "Japanese gag-manga sticker illustration style. A single object sticker: no human, no face unless the description below asks for one. Semi-realistic airbrushed shading with glossy highlights. Thin brown-black ink linework, saturated colors, clean edges. No text, no letters, no numbers, no logos, no watermark, no signature.";
+const PROP_MATCH =
+  "Match the drawing style of the first attached image (line weight, shading, color saturation) but draw a completely NEW object as described below. Do not copy, edit or reuse the attached object.";
 const MATCH =
   "Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.";
 const SAME =
@@ -89,15 +94,32 @@ const KIND = {
   },
 };
 
-const promptOf = (item, cast = {}) => {
+const castOf = (who, cast) => cast[who] ?? common.cast[who];
+const nameOf = (who, cast) => /^(the [^:]+):/i.exec(castOf(who, cast) ?? "")?.[1] ?? `the ${who}`;
+const planOf = (ep, item, cast = {}) => attachPlan(ep, item, cast, { second: Boolean(KIND[item.kind]?.second) });
+
+const promptOf = (ep, item, cast = {}) => {
   const k = KIND[item.kind];
-  const ref = refOf(item);
-  const parts = [STYLE, k.lead, MATCH];
-  if (k.second) parts.push(SAME_FRAME);
-  else if (ref) parts.push(SAME);
-  const who = item.who ? (cast[item.who] ?? common.cast[item.who]) : null;
+  const plan = planOf(ep, item, cast);
+  const propOnly = plan[0].role === "prop-anchor";
+  const parts = [propOnly ? PROP_STYLE : STYLE, k.lead, propOnly ? PROP_MATCH : MATCH];
+  if (plan.some((a) => a.role === "frame")) parts.push(SAME_FRAME);
+  else if (plan.some((a) => a.role === "ref")) parts.push(SAME);
+  // 자동으로 붙는 기준 그림은 번호로 누가 누군지 알려 준다
+  plan.forEach((a, i) => {
+    if (a.role === "person") parts.push(`Attached image ${i + 1} shows ${nameOf(a.who, cast)}: draw this person with exactly the same face, hairstyle, hair color, clothes, colors and body shape.`);
+    if (a.role === "person-cutin") parts.push(`Attached image ${i + 1} is a close-up of the same person: match that face, skin tone and level of exaggeration exactly.`);
+    if (a.role === "prev") parts.push(`Attached image ${i + 1} is the frame just before this one: continue smoothly from it, with the same face, colors and line work.`);
+  });
+  const who = item.who ? castOf(item.who, cast) : null;
   if (item.who && !who) throw new Error(`${item.id}: who '${item.who}' 의 생김새(cast)가 없습니다`);
   if (who) parts.push(`Character: ${who}.`);
+  for (const other of item.people ?? []) {
+    if (other === item.who) continue;
+    const d = castOf(other, cast);
+    if (!d) throw new Error(`${item.id}: people '${other}' 의 생김새(cast)가 없습니다`);
+    parts.push(`Also in the picture: ${d}.`);
+  }
   parts.push(item.desc);
   if (item.kind === "char" || item.kind === "cutin") parts.push(MARKS);
   const motion = item.kind === "char" ? MOTION.char : item.kind === "prop" ? MOTION.prop : !k.green ? MOTION.flat : null;
@@ -111,29 +133,28 @@ const promptOf = (item, cast = {}) => {
 const block = (ep, item, n, cast) => {
   const k = KIND[item.kind];
   if (!k) throw new Error(`${item.id}: kind '${item.kind}' 는 없습니다`);
-  const ref = refOf(item);
-  const attach = [`① \`${ANCHOR}\` (화풍 앵커)`];
-  if (ref) attach.push(`② \`${rawRel(ep, ref)}\` (${k.second ? "첫 번째 프레임 — 이 그림을 그대로 다시 그린다" : "같은 사람 유지용 기준 그림"})`);
-  // attach: 기준 그림이 아직 없을 때 대신 보여 줄 그림 (예: 채널 프로필 속 엄마). 경로는 qna/ 기준
-  for (const a of item.attach ?? []) attach.push(`${"②③④"[attach.length - 1]} \`${a.path}\` (${a.label})`);
+  const attach = planOf(ep, item, cast).map((a, i) => `${"①②③④⑤⑥⑦⑧"[i]} \`${a.path}\` (${a.label})`);
+  const problems = attachProblems(ep, item, cast ?? {});
   const done = findRaw(ep, item.id) ? " ✅" : "";
   const lines = [
     `#### ${n}. ${item.title}${done}`,
     `- 저장: \`${rawRel(ep, item.id)}\``,
-    `- 첨부: ${attach.join(", ")}`,
+    `- 첨부 ${attach.length}장 (빠짐없이, 이 순서로): ${attach.join(", ")}`,
+    ...problems.map((p) => `- ⚠️ ${p}`),
     `- 종류 · 비율: ${k.label} · ${item.ratio ?? k.ratio}`,
   ];
   if (item.cuts) lines.push(`- 쓰이는 컷: ${item.cuts}`);
   if (item.motion) lines.push(`- 영상에서의 움직임: ${item.motion}`);
   if (item.optional) lines.push("- **없어도 된다.** 없으면 그 움직임만 빠지고 영상은 그대로 나온다.");
   if (item.note) lines.push(`- 메모: ${item.note}`);
-  return `${lines.join("\n")}\n\n\`\`\`text\n${promptOf(item, cast)}\n\`\`\`\n`;
+  return `${lines.join("\n")}\n\n\`\`\`text\n${promptOf(ep, item, cast ?? {})}\n\`\`\`\n`;
 };
 
 const USAGE = `## 사용법
 
 1. 위에서부터 **차례대로** 한 블록씩 Gemini에 붙여넣는다. 화풍 문장은 블록마다 이미 들어 있다.
-2. 블록의 **첨부** 이미지를 같이 올린다. ①은 화풍 고정용 앵커, ②는 같은 사람 유지용 기준 그림이다 (순서 중요).
+2. 블록의 **첨부** 이미지를 **빠짐없이, 적힌 순서대로** 같이 올린다 (프롬프트가 "attached image 2" 처럼 번호로 부른다). 첨부 목록은 \`art-lib.mjs\` 의 \`attachPlan\` 이 정한다 — 손으로 빼거나 바꾸지 않는다. 첨부가 하나라도 실패하면 글자만 보내지 말고 멈춘다. 규칙 전체는 \`qna/ART_GUIDE.md\`.
+   ⚠️ 줄이 있는 블록은 기준 그림이 빠졌거나 아직 없는 것이다 — 그것부터 고친다.
 3. 결과는 **저장** 경로와 이름 그대로 넣는다. 배경 제거·자르기·크기 조절은 하지 않는다 (\`npm run art\` 가 한다).
 4. 한 사람은 **한 대화창**에서 끝내고, 다음 사람·배경은 새 대화창에서 시작한다. 대화가 길어지면 화풍이 흐려진다.
 5. 글자는 그리지 않는다. 자막·간판·연도는 영상 코드가 얹는다.
@@ -166,18 +187,20 @@ const countDone = (ep, items) => items.filter((item) => findRaw(ep, item.id)).le
 // 다른 도구(Antigravity · scripts/artgen.mjs)에 넘기는 그림 작업 한 건
 const jobOf = (ep, item, cast) => {
   const k = KIND[item.kind];
-  const ref = refOf(item);
+  const plan = planOf(ep, item, cast ?? {});
   return {
     id: item.id,
     title: item.title,
     kind: item.kind,
     save: rawRel(ep, item.id),
-    attach: [ANCHOR, ...(ref ? [rawRel(ep, ref)] : []), ...(item.attach ?? []).map((a) => a.path)],
+    attach: plan.map((a) => a.path),
+    attachLabels: plan.map((a) => a.label),
+    problems: attachProblems(ep, item, cast ?? {}),
     aspect: (item.ratio ?? k.ratio).match(/\d+:\d+/)?.[0] ?? null,
     green: k.green,
     optional: Boolean(item.optional),
     done: Boolean(findRaw(ep, item.id)),
-    prompt: promptOf(item, cast),
+    prompt: promptOf(ep, item, cast ?? {}),
   };
 };
 

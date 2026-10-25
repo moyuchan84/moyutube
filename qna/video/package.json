@@ -19,7 +19,9 @@
     "short": "node scripts/short.mjs",
     "trim-voice": "node scripts/trim-voice.mjs",
     "motion-srt": "node scripts/motion-srt.mjs",
-    "keywords": "node scripts/keywords.mjs"
+    "keywords": "node scripts/keywords.mjs",
+    "artreview": "node scripts/artreview.mjs",
+    "artrefs": "node scripts/artrefs.mjs"
   },
   "dependencies": {
     "@remotion/bundler": "4.0.525",

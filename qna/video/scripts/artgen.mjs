@@ -7,11 +7,13 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, extname, join } from "node:path";
 import { execSync } from "node:child_process";
-import { ROOT, VIDEO, episodeDir } from "./art-lib.mjs";
+import { ROOT, VIDEO, episodeDir, listEpisodes } from "./art-lib.mjs";
 import { NO_KEY, envValue } from "./env.mjs";
 
 const args = process.argv.slice(2);
-const episode = args.find((a) => /^ep\d+$/.test(a)) ?? "ep01";
+const episode = args.find((a) => listEpisodes().includes(a));
+// 편 코드가 틀리면 다른 편으로 넘어가지 않고 멈춘다 (예전에는 nm01 이 ep01 로 떨어졌다)
+if (!episode) throw new Error(`편 코드를 적는다: node scripts/artgen.mjs <${listEpisodes().join("|")}> [그림 id] [--list]`);
 const only = args.filter((a) => !a.startsWith("--") && a !== episode);
 const listOnly = args.includes("--list");
 
@@ -73,6 +75,12 @@ const inline = (rel) => {
 let made = 0;
 for (const job of todo) {
   // 기준 그림(②)이 아직 없으면 건너뛴다: 같은 사람으로 안 나온다
+  // 사람이 나오는데 그 사람 기준 그림이 빠진 그림은 만들지 않는다 (qna/ART_GUIDE.md §3)
+  const missingPeople = (job.problems ?? []).filter((p) => !p.startsWith("첨부 그림이 아직 없다"));
+  if (missingPeople.length) {
+    console.log(`⛔ ${job.title} — ${missingPeople.join(" / ")}`);
+    continue;
+  }
   const refs = job.attach.map(inline);
   if (refs.includes(null)) {
     console.log(`⏭ ${job.title} — 첨부할 그림이 아직 없다 (${job.attach[refs.indexOf(null)]}). 그 그림부터 만든다`);

@@ -63,7 +63,7 @@ qna/
 |---|---|---|---|
 | 1. 기획 | 스킬 `modapman`: 자료조사 · 오답 후보 3~4개 · 대본(한 줄 15~20자, `en` 영어 자막, 숫자는 `tts`) | `episodes/NN-slug/<slug>.md`, `index.html` | 무료 |
 | 2. 대본 · 그림 목록 | `src/epNN/script.json` (`"speed": 1.2`, `"rawVoice": true`, 컷마다 목소리 둘까지) · `art.json` | | 무료 |
-| 3. 그림 | `npm run prompts -- epNN` → 크롬 Gemini 로 뽑아 `art/<id>.png`, 또는 `npm run artgen -- epNN` (키는 저장소 루트 `.env`) → `npm run art -- epNN` | `video/public/art/epNN/` | **artgen 은 유료 — 물어보고** |
+| 3. 그림 | **[ART_GUIDE.md](ART_GUIDE.md) 순서 그대로**: `npm run prompts -- epNN` (⚠️ 0개 확인) → `npm run artrefs -- epNN` (첨부 사본) → 크롬 Gemini 로 첨부 전부 붙여 뽑아 `art/<id>.png`, 또는 `npm run artgen -- epNN` (키는 저장소 루트 `.env`) → `npm run artreview -- epNN` (기준 그림과 비교) → `npm run art -- epNN` | `video/public/art/epNN/` | **artgen 은 유료 — 물어보고** |
 | 4. 음성 | 크롬 AI Studio 에서 **줄 단위**로 생성(절차 · 함정은 메모리 qna-chrome-gen) 또는 `npm run voice -- epNN gen` → `public/epNN/voice/<컷>-<줄>.wav` | | **gen 은 유료 — 물어보고** |
 | 5. 음성 다듬기 | `npm run trim-voice -- epNN` (앞뒤 무음 자르기) → `node scripts/voice.mjs epNN` (timing.json) → `node scripts/speed.mjs epNN` (1.2배속) | `src/epNN/timing.json` | 무료 |
 | 6. 샷 계획 | `src/motion/epNN.json` (스킬의 "샷 계획" · 8편 `ep08f.json` 참고) → `src/Root.tsx` 의 `MOTIONS` 에 한 줄 | | 무료 |
@@ -75,6 +75,7 @@ qna/
 | 12. 쇼츠 | 스킬 `qna-shorts` (이전 포맷 기준 — 모답맨 본편에서 자를 때도 비공개 업로드 규칙은 같다) | | 무료 |
 
 ### 고정 규칙
+- **그림 규칙 전체는 [ART_GUIDE.md](ART_GUIDE.md)** — 화풍, 기준 그림 지도, 첨부 규칙(코드 `attachPlan` 이 자동으로 정함), art.json 쓰는 법, 뽑는 순서, 비교 확인. 아래는 그 규칙이 생긴 사연이다.
 - **그림은 항상 기준 그림을 첨부해서 뽑는다** (2026-10-24 사용자 지시). 크롬 Gemini 든 artgen 이든 `GEMINI_PROMPTS.md` 블록의 **첨부 ①(화풍 앵커 `art/anchor/style-cutin.png`) · ②(그 인물의 기준 그림)** 을 빼지 않는다. 가족(아빠 · 아이 · 엄마)은 `art/common/<인물>/normal.png`, 가슴 위 컷인이면 같은 인물의 기존 컷인(예: `common/cutin/dad-shock.png`)도 ③으로 붙인다. 프롬프트 글자만으로 그리면 얼굴 · 화풍이 달라진다 (9화 시그니처 포즈에서 실제로 달라졌다). 크롬에서 첨부하는 법: "업로드 및 도구 → 파일 업로드" 가 부르는 `input.click()` 을 가로채 그 input 을 잡고, `file_upload` 도구로 1024px 로 줄인 사본(10MB 미만)을 넣는다 — 메모리 qna-chrome-gen 참고.
   - **빠지기 쉬운 자리 (2026-10-25 사용자 재지시 — 글자 프롬프트만으로 그려서 그림체가 또 바뀌었다):**
     1. **가족이 한 명이라도 나오는 그림은 전부** 그 사람의 `art/common/<kid|dad|mom>/normal.png` 를 붙인다 — 포즈 · 컷인뿐 아니라 여럿이 나오는 장면(`full/…`), 상상 장면, 소품 속 인물까지. 나오는 사람이 셋이면 셋 다.

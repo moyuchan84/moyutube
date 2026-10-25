@@ -6,7 +6,8 @@
 ## 사용법
 
 1. 위에서부터 **차례대로** 한 블록씩 Gemini에 붙여넣는다. 화풍 문장은 블록마다 이미 들어 있다.
-2. 블록의 **첨부** 이미지를 같이 올린다. ①은 화풍 고정용 앵커, ②는 같은 사람 유지용 기준 그림이다 (순서 중요).
+2. 블록의 **첨부** 이미지를 **빠짐없이, 적힌 순서대로** 같이 올린다 (프롬프트가 "attached image 2" 처럼 번호로 부른다). 첨부 목록은 `art-lib.mjs` 의 `attachPlan` 이 정한다 — 손으로 빼거나 바꾸지 않는다. 첨부가 하나라도 실패하면 글자만 보내지 말고 멈춘다. 규칙 전체는 `qna/ART_GUIDE.md`.
+   ⚠️ 줄이 있는 블록은 기준 그림이 빠졌거나 아직 없는 것이다 — 그것부터 고친다.
 3. 결과는 **저장** 경로와 이름 그대로 넣는다. 배경 제거·자르기·크기 조절은 하지 않는다 (`npm run art` 가 한다).
 4. 한 사람은 **한 대화창**에서 끝내고, 다음 사람·배경은 새 대화창에서 시작한다. 대화가 길어지면 화풍이 흐려진다.
 5. 글자는 그리지 않는다. 자막·간판·연도는 영상 코드가 얹는다.
@@ -30,7 +31,7 @@
 
 #### 1. 아빠 — 기본 ✅
 - 저장: `art/common/dad/normal.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
+- 첨부 1장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
 - 메모: 아빠의 기준 그림. 이후 아빠 그림에 전부 ②로 첨부한다.
 
@@ -56,7 +57,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 2. 아빠 — 당황 ✅
 - 저장: `art/common/dad/panic.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림)
+- 첨부 2장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
 
 ```text
@@ -83,7 +84,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 3. 아빠 — 설명 ✅
 - 저장: `art/common/dad/explain.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림)
+- 첨부 2장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
 
 ```text
@@ -110,7 +111,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 4. 아빠 — 생각 ✅
 - 저장: `art/common/dad/think.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림)
+- 첨부 2장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
 
 ```text
@@ -137,7 +138,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 5. 아빠 — 뿌듯 ✅
 - 저장: `art/common/dad/proud.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림)
+- 첨부 2장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
 
 ```text
@@ -164,7 +165,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 6. 아빠 — 충격 ✅
 - 저장: `art/common/dad/shock.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림)
+- 첨부 2장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
 
 ```text
@@ -191,7 +192,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 7. 아빠 — 몰래 검색 ✅
 - 저장: `art/common/dad/search.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림)
+- 첨부 2장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
 - 메모: 편마다 나오는 '그날 밤 몰래 검색' 장면용.
 
@@ -219,7 +220,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 8. 아빠 — 설명 (말하는 그림) ✅
 - 저장: `art/common/dad/explain-b.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/explain.png` (첫 번째 프레임 — 이 그림을 그대로 다시 그린다)
+- 첨부 3장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/explain.png` (첫 번째 프레임 — 이 그림을 그대로 다시 그린다), ③ `art/common/dad/normal.png` (그 사람 기준 그림 (normal))
 - 종류 · 비율: 말하는 그림 (두 번째 프레임, 초록 배경) · 기준 그림과 같게
 - 영상에서의 움직임: 설명 그림과 1/8초마다 번갈아 나와서 입이 움직인다.
 - **없어도 된다.** 없으면 그 움직임만 빠지고 영상은 그대로 나온다.
@@ -233,6 +234,8 @@ Match the art style of the first attached image exactly: same line weight, same 
 
 This is the SECOND FRAME of a two-frame animation. Redraw attached image 2 EXACTLY: same character, same pose, same size, same position in the frame, same clothes, same colors, same line work, same framing and margins. Change ONLY what is described below. Everything else must be pixel-for-pixel as close to attached image 2 as possible so the two frames can be flipped back and forth.
 
+Attached image 3 shows the dad: draw this person with exactly the same face, hairstyle, hair color, clothes, colors and body shape.
+
 Character: the dad: a Korean father in his late 30s, slightly chubby with a round face, short black hair that is clearly thinning on top, thick eyebrows, faint stubble, wearing a mustard-yellow knit cardigan over a white t-shirt, gray sweatpants and house slippers; a kind but easily flustered look.
 
 Change only the face and the raised hand: the mouth is now closed in a confident smile (as if between two words) and the raised index finger is tilted a few degrees forward.
@@ -244,7 +247,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 9. 아이 — 기본 ✅
 - 저장: `art/common/kid/normal.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
+- 첨부 1장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
 - 메모: 아이의 기준 그림. 이후 아이 그림에 전부 ②로 첨부한다.
 
@@ -270,7 +273,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 10. 아이 — 질문 ✅
 - 저장: `art/common/kid/ask.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/kid/normal.png` (같은 사람 유지용 기준 그림)
+- 첨부 2장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/kid/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
 
 ```text
@@ -297,7 +300,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 11. 아이 — 우와 ✅
 - 저장: `art/common/kid/wow.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/kid/normal.png` (같은 사람 유지용 기준 그림)
+- 첨부 2장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/kid/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
 
 ```text
@@ -324,7 +327,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 12. 아이 — 의심 ✅
 - 저장: `art/common/kid/doubt.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/kid/normal.png` (같은 사람 유지용 기준 그림)
+- 첨부 2장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/kid/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
 
 ```text
@@ -351,7 +354,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 13. 아이 — 웃음 ✅
 - 저장: `art/common/kid/laugh.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/kid/normal.png` (같은 사람 유지용 기준 그림)
+- 첨부 2장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/kid/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
 
 ```text
@@ -378,7 +381,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 14. 아이 — 질문 (말하는 그림) ✅
 - 저장: `art/common/kid/ask-b.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/kid/ask.png` (첫 번째 프레임 — 이 그림을 그대로 다시 그린다)
+- 첨부 3장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/kid/ask.png` (첫 번째 프레임 — 이 그림을 그대로 다시 그린다), ③ `art/common/kid/normal.png` (그 사람 기준 그림 (normal))
 - 종류 · 비율: 말하는 그림 (두 번째 프레임, 초록 배경) · 기준 그림과 같게
 - 영상에서의 움직임: 질문 그림과 1/8초마다 번갈아 나와서 입이 움직인다.
 - **없어도 된다.** 없으면 그 움직임만 빠지고 영상은 그대로 나온다.
@@ -392,6 +395,8 @@ Match the art style of the first attached image exactly: same line weight, same 
 
 This is the SECOND FRAME of a two-frame animation. Redraw attached image 2 EXACTLY: same character, same pose, same size, same position in the frame, same clothes, same colors, same line work, same framing and margins. Change ONLY what is described below. Everything else must be pixel-for-pixel as close to attached image 2 as possible so the two frames can be flipped back and forth.
 
+Attached image 3 shows the kid: draw this person with exactly the same face, hairstyle, hair color, clothes, colors and body shape.
+
 Character: the kid: an 8-year-old Korean child with a black bowl-cut, huge round curious eyes, one missing front tooth, wearing a red hoodie, navy shorts and white socks; small, fearless and very direct.
 
 Change only the face: the mouth is now closed in a small pouty line (as if between two words) and the eyebrows are a little lower. The pointing arm stays exactly where it is.
@@ -403,7 +408,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 15. 엄마 — 기본 ✅
 - 저장: `art/common/mom/normal.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/channel/profile.png` (채널 프로필 — 오른쪽 위 안경 쓴 여자가 엄마), ③ `art/channel/banner.png` (채널 배너 — 맨 오른쪽 팔짱 낀 여자가 엄마)
+- 첨부 3장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/channel/profile.png` (채널 프로필 — 오른쪽 위 안경 쓴 여자가 엄마), ③ `art/channel/banner.png` (채널 배너 — 맨 오른쪽 팔짱 낀 여자가 엄마)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
 - 메모: 엄마의 기준 그림. 채널 프로필 · 배너의 엄마를 보고 전신으로 처음 그린다. 이후 엄마 그림에 전부 ②로 첨부한다.
 
@@ -429,7 +434,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 16. 엄마 — 다 안다는 미소 ✅
 - 저장: `art/common/mom/smirk.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/normal.png` (같은 사람 유지용 기준 그림)
+- 첨부 2장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
 - 메모: 프로필 · 배너의 그 표정. 아빠가 쩔쩔맬 때 옆에서 보는 엄마.
 
@@ -457,7 +462,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 17. 엄마 — 설명 ✅
 - 저장: `art/common/mom/explain.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/normal.png` (같은 사람 유지용 기준 그림)
+- 첨부 2장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
 
 ```text
@@ -484,7 +489,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 18. 엄마 — 한숨 (이마 짚기) ✅
 - 저장: `art/common/mom/sigh.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/normal.png` (같은 사람 유지용 기준 그림)
+- 첨부 2장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
 - 메모: 아빠의 엉뚱한 대답을 들었을 때.
 
@@ -512,7 +517,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 19. 엄마 — 웃음
 - 저장: `art/common/mom/laugh.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/normal.png` (같은 사람 유지용 기준 그림)
+- 첨부 2장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
 
 ```text
@@ -539,7 +544,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 20. 엄마 — 충격 ✅
 - 저장: `art/common/mom/shock.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/normal.png` (같은 사람 유지용 기준 그림)
+- 첨부 2장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
 
 ```text
@@ -566,7 +571,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 21. 엄마 — 설명 (말하는 그림) ✅
 - 저장: `art/common/mom/explain-b.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/explain.png` (첫 번째 프레임 — 이 그림을 그대로 다시 그린다)
+- 첨부 3장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/explain.png` (첫 번째 프레임 — 이 그림을 그대로 다시 그린다), ③ `art/common/mom/normal.png` (그 사람 기준 그림 (normal))
 - 종류 · 비율: 말하는 그림 (두 번째 프레임, 초록 배경) · 기준 그림과 같게
 - 영상에서의 움직임: 설명 그림과 1/8초마다 번갈아 나와서 입이 움직인다.
 - **없어도 된다.** 없으면 그 움직임만 빠지고 영상은 그대로 나온다.
@@ -580,6 +585,8 @@ Match the art style of the first attached image exactly: same line weight, same 
 
 This is the SECOND FRAME of a two-frame animation. Redraw attached image 2 EXACTLY: same character, same pose, same size, same position in the frame, same clothes, same colors, same line work, same framing and margins. Change ONLY what is described below. Everything else must be pixel-for-pixel as close to attached image 2 as possible so the two frames can be flipped back and forth.
 
+Attached image 3 shows the mom: draw this person with exactly the same face, hairstyle, hair color, clothes, colors and body shape.
+
 Character: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.
 
 Change only the face: the mouth is now closed in a small calm smile (as if between two words). Both hands stay exactly where they are.
@@ -591,7 +598,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 22. 컷인 — 아빠 당황 ✅
 - 저장: `art/common/cutin/dad-panic.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림)
+- 첨부 3장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림), ③ `art/common/cutin/dad-shock.png` (그 사람 대표 컷인 (얼굴 · 피부 톤))
 - 종류 · 비율: 리액션 컷인 (가슴 위, 초록 배경) · 1:1
 
 ```text
@@ -602,6 +609,8 @@ This is a large close-up reaction shot for a comedy video: maximum facial detail
 Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
 
 The character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.
+
+Attached image 3 is a close-up of the same person: match that face, skin tone and level of exaggeration exactly.
 
 Character: the dad: a Korean father in his late 30s, slightly chubby with a round face, short black hair that is clearly thinning on top, thick eyebrows, faint stubble, wearing a mustard-yellow knit cardigan over a white t-shirt, gray sweatpants and house slippers; a kind but easily flustered look.
 
@@ -616,7 +625,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 23. 컷인 — 아빠 충격 ✅
 - 저장: `art/common/cutin/dad-shock.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림)
+- 첨부 2장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 리액션 컷인 (가슴 위, 초록 배경) · 1:1
 
 ```text
@@ -641,7 +650,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 24. 컷인 — 아빠 뿌듯 ✅
 - 저장: `art/common/cutin/dad-proud.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림)
+- 첨부 3장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림), ③ `art/common/cutin/dad-shock.png` (그 사람 대표 컷인 (얼굴 · 피부 톤))
 - 종류 · 비율: 리액션 컷인 (가슴 위, 초록 배경) · 1:1
 
 ```text
@@ -652,6 +661,8 @@ This is a large close-up reaction shot for a comedy video: maximum facial detail
 Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
 
 The character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.
+
+Attached image 3 is a close-up of the same person: match that face, skin tone and level of exaggeration exactly.
 
 Character: the dad: a Korean father in his late 30s, slightly chubby with a round face, short black hair that is clearly thinning on top, thick eyebrows, faint stubble, wearing a mustard-yellow knit cardigan over a white t-shirt, gray sweatpants and house slippers; a kind but easily flustered look.
 
@@ -666,7 +677,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 25. 컷인 — 아이 질문 ✅
 - 저장: `art/common/cutin/kid-ask.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/kid/normal.png` (같은 사람 유지용 기준 그림)
+- 첨부 2장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/kid/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 리액션 컷인 (가슴 위, 초록 배경) · 1:1
 
 ```text
@@ -691,7 +702,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 26. 컷인 — 아이 의심 ✅
 - 저장: `art/common/cutin/kid-doubt.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/kid/normal.png` (같은 사람 유지용 기준 그림)
+- 첨부 3장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/kid/normal.png` (같은 사람 유지용 기준 그림), ③ `art/common/cutin/kid-ask.png` (그 사람 대표 컷인 (얼굴 · 피부 톤))
 - 종류 · 비율: 리액션 컷인 (가슴 위, 초록 배경) · 1:1
 
 ```text
@@ -702,6 +713,8 @@ This is a large close-up reaction shot for a comedy video: maximum facial detail
 Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
 
 The character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.
+
+Attached image 3 is a close-up of the same person: match that face, skin tone and level of exaggeration exactly.
 
 Character: the kid: an 8-year-old Korean child with a black bowl-cut, huge round curious eyes, one missing front tooth, wearing a red hoodie, navy shorts and white socks; small, fearless and very direct.
 
@@ -716,7 +729,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 27. 컷인 — 엄마 다 안다는 미소 ✅
 - 저장: `art/common/cutin/mom-smirk.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/normal.png` (같은 사람 유지용 기준 그림)
+- 첨부 2장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/normal.png` (같은 사람 유지용 기준 그림)
 - 종류 · 비율: 리액션 컷인 (가슴 위, 초록 배경) · 1:1
 
 ```text
@@ -741,7 +754,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 28. 컷인 — 엄마 어이없음 ✅
 - 저장: `art/common/cutin/mom-sigh.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/normal.png` (같은 사람 유지용 기준 그림)
+- 첨부 3장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/normal.png` (같은 사람 유지용 기준 그림), ③ `art/common/cutin/mom-smirk.png` (그 사람 대표 컷인 (얼굴 · 피부 톤))
 - 종류 · 비율: 리액션 컷인 (가슴 위, 초록 배경) · 1:1
 
 ```text
@@ -752,6 +765,8 @@ This is a large close-up reaction shot for a comedy video: maximum facial detail
 Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
 
 The character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.
+
+Attached image 3 is a close-up of the same person: match that face, skin tone and level of exaggeration exactly.
 
 Character: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.
 
@@ -766,7 +781,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 29. 시그니처 — 아빠 네모 입막음 ① 손 올리기 ✅
 - 저장: `art/common/cutin/dad-sig-1.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림)
+- 첨부 3장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림), ③ `art/common/cutin/dad-shock.png` (그 사람 대표 컷인 (얼굴 · 피부 톤))
 - 종류 · 비율: 리액션 컷인 (가슴 위, 초록 배경) · 1:1
 - 영상에서의 움직임: 크래시 줌으로 들어온다. ①→②→③ 을 4~6프레임씩 넘겨 움직이게 한다.
 - 메모: 모답맨 아빠 시그니처 세 장의 첫 장(기준 프레임). ②·③은 이 그림에서 손 · 얼굴만 바꾼다. 아빠 얼굴은 반드시 기준 그림(common/dad/normal)과 같게 — 첨부 ②를 빼고 그리면 다른 사람이 된다 (9화에서 실제로 얼굴이 달라졌다).
@@ -779,6 +794,8 @@ This is a large close-up reaction shot for a comedy video: maximum facial detail
 Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
 
 The character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.
+
+Attached image 3 is a close-up of the same person: match that face, skin tone and level of exaggeration exactly.
 
 Character: the dad: a Korean father in his late 30s, slightly chubby with a round face, short black hair that is clearly thinning on top, thick eyebrows, faint stubble, wearing a mustard-yellow knit cardigan over a white t-shirt, gray sweatpants and house slippers; a kind but easily flustered look.
 
@@ -793,7 +810,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 30. 시그니처 — 아빠 네모 입막음 ② 입에 딱 ✅
 - 저장: `art/common/cutin/dad-sig-2.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/cutin/dad-sig-1.png` (첫 번째 프레임 — 이 그림을 그대로 다시 그린다)
+- 첨부 3장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/cutin/dad-sig-1.png` (첫 번째 프레임 — 이 그림을 그대로 다시 그린다), ③ `art/common/dad/normal.png` (그 사람 기준 그림 (normal))
 - 종류 · 비율: 말하는 그림 (두 번째 프레임, 초록 배경) · 기준 그림과 같게
 - 영상에서의 움직임: ①과 같은 자리 · 같은 크기 — 손과 얼굴만 바뀐다.
 
@@ -806,6 +823,8 @@ Match the art style of the first attached image exactly: same line weight, same 
 
 This is the SECOND FRAME of a two-frame animation. Redraw attached image 2 EXACTLY: same character, same pose, same size, same position in the frame, same clothes, same colors, same line work, same framing and margins. Change ONLY what is described below. Everything else must be pixel-for-pixel as close to attached image 2 as possible so the two frames can be flipped back and forth.
 
+Attached image 3 shows the dad: draw this person with exactly the same face, hairstyle, hair color, clothes, colors and body shape.
+
 Character: the dad: a Korean father in his late 30s, slightly chubby with a round face, short black hair that is clearly thinning on top, thick eyebrows, faint stubble, wearing a mustard-yellow knit cardigan over a white t-shirt, gray sweatpants and house slippers; a kind but easily flustered look.
 
 Change ONLY the hands and the face: the thumbs and index fingers of both hands now touch tip to tip, forming one small RECTANGLE frame that is pressed right against his mouth as if trying to hide it. Above the hands his eyes are bulging huge and perfectly round, eyebrows shot up to the hairline, cheeks puffed. Everything else stays exactly the same.
@@ -817,7 +836,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 31. 시그니처 — 아빠 네모 입막음 ③ 부들부들 ✅
 - 저장: `art/common/cutin/dad-sig-3.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/cutin/dad-sig-1.png` (첫 번째 프레임 — 이 그림을 그대로 다시 그린다)
+- 첨부 4장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/cutin/dad-sig-1.png` (첫 번째 프레임 — 이 그림을 그대로 다시 그린다), ③ `art/common/dad/normal.png` (그 사람 기준 그림 (normal)), ④ `art/common/cutin/dad-sig-2.png` (바로 앞 컷)
 - 종류 · 비율: 말하는 그림 (두 번째 프레임, 초록 배경) · 기준 그림과 같게
 - 영상에서의 움직임: ①과 같은 자리 · 같은 크기 — 얼굴 · 땀 · 머리카락만 더 커진다.
 
@@ -830,6 +849,10 @@ Match the art style of the first attached image exactly: same line weight, same 
 
 This is the SECOND FRAME of a two-frame animation. Redraw attached image 2 EXACTLY: same character, same pose, same size, same position in the frame, same clothes, same colors, same line work, same framing and margins. Change ONLY what is described below. Everything else must be pixel-for-pixel as close to attached image 2 as possible so the two frames can be flipped back and forth.
 
+Attached image 3 shows the dad: draw this person with exactly the same face, hairstyle, hair color, clothes, colors and body shape.
+
+Attached image 4 is the frame just before this one: continue smoothly from it, with the same face, colors and line work.
+
 Character: the dad: a Korean father in his late 30s, slightly chubby with a round face, short black hair that is clearly thinning on top, thick eyebrows, faint stubble, wearing a mustard-yellow knit cardigan over a white t-shirt, gray sweatpants and house slippers; a kind but easily flustered look.
 
 Same as the previous frame with the rectangle of fingers still pressed against his mouth, but the panic peaks: the eyes bulge even bigger and tremble with tiny tears at the corners, the few hairs on top stand straight up, a burst of cold sweat drops sprays off his head, short shaking lines around the hands. Everything else stays exactly the same.
@@ -841,7 +864,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 32. 시그니처 — 엄마 검지 네모 ① 왼쪽 세로줄 ✅
 - 저장: `art/common/cutin/mom-sig-1.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/normal.png` (같은 사람 유지용 기준 그림), ③ `art/common/cutin/mom-smirk.png` (엄마 얼굴 컷인 — 피부 · 얼굴 톤 기준)
+- 첨부 3장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/normal.png` (같은 사람 유지용 기준 그림), ③ `art/common/cutin/mom-smirk.png` (엄마 얼굴 컷인 — 피부 · 얼굴 톤 기준)
 - 종류 · 비율: 리액션 컷인 (가슴 위, 초록 배경) · 1:1
 - 영상에서의 움직임: 어? 할 때마다 한 장씩 넘어간다.
 - 메모: 엄마 시그니처 다섯 장의 첫 장(기준 프레임). 곧게 편 오른손 검지로 입 둘레에 네모를 그린다: ① 왼쪽 → ② 오른쪽 → ③ 위 → ④ 아래 → 양 볼 누르고 "아악!". ②~④는 이 그림에서 손가락 자리만 바꾼다. 엄마 얼굴 · 안경 · 머리 · 세이지색 스웨터는 반드시 기준 그림(common/mom/normal)과 같게 (9화 첫 그림은 기준 없이 그려 다른 사람처럼 나왔다).
@@ -868,7 +891,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 33. 시그니처 — 엄마 검지 네모 ② 오른쪽 세로줄 ✅
 - 저장: `art/common/cutin/mom-sig-2.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/cutin/mom-sig-1.png` (첫 번째 프레임 — 이 그림을 그대로 다시 그린다)
+- 첨부 3장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/cutin/mom-sig-1.png` (첫 번째 프레임 — 이 그림을 그대로 다시 그린다), ③ `art/common/mom/normal.png` (그 사람 기준 그림 (normal))
 - 종류 · 비율: 말하는 그림 (두 번째 프레임, 초록 배경) · 기준 그림과 같게
 - 영상에서의 움직임: ①과 같은 자리 · 같은 크기 — 손가락만 옮겨 간다.
 
@@ -880,6 +903,8 @@ This is a character cutout for a 2D animated video.
 Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
 
 This is the SECOND FRAME of a two-frame animation. Redraw attached image 2 EXACTLY: same character, same pose, same size, same position in the frame, same clothes, same colors, same line work, same framing and margins. Change ONLY what is described below. Everything else must be pixel-for-pixel as close to attached image 2 as possible so the two frames can be flipped back and forth.
+
+Attached image 3 shows the mom: draw this person with exactly the same face, hairstyle, hair color, clothes, colors and body shape.
 
 Character: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.
 
@@ -892,7 +917,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 34. 시그니처 — 엄마 검지 네모 ③ 위 가로줄 ✅
 - 저장: `art/common/cutin/mom-sig-3.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/cutin/mom-sig-1.png` (첫 번째 프레임 — 이 그림을 그대로 다시 그린다)
+- 첨부 4장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/cutin/mom-sig-1.png` (첫 번째 프레임 — 이 그림을 그대로 다시 그린다), ③ `art/common/mom/normal.png` (그 사람 기준 그림 (normal)), ④ `art/common/cutin/mom-sig-2.png` (바로 앞 컷)
 - 종류 · 비율: 말하는 그림 (두 번째 프레임, 초록 배경) · 기준 그림과 같게
 - 영상에서의 움직임: ①과 같은 자리 · 같은 크기 — 손가락만 옮겨 간다.
 
@@ -904,6 +929,10 @@ This is a character cutout for a 2D animated video.
 Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
 
 This is the SECOND FRAME of a two-frame animation. Redraw attached image 2 EXACTLY: same character, same pose, same size, same position in the frame, same clothes, same colors, same line work, same framing and margins. Change ONLY what is described below. Everything else must be pixel-for-pixel as close to attached image 2 as possible so the two frames can be flipped back and forth.
+
+Attached image 3 shows the mom: draw this person with exactly the same face, hairstyle, hair color, clothes, colors and body shape.
+
+Attached image 4 is the frame just before this one: continue smoothly from it, with the same face, colors and line work.
 
 Character: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.
 
@@ -916,7 +945,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 35. 시그니처 — 엄마 검지 네모 ④ 아래 가로줄 ✅
 - 저장: `art/common/cutin/mom-sig-4.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/cutin/mom-sig-1.png` (첫 번째 프레임 — 이 그림을 그대로 다시 그린다)
+- 첨부 4장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/cutin/mom-sig-1.png` (첫 번째 프레임 — 이 그림을 그대로 다시 그린다), ③ `art/common/mom/normal.png` (그 사람 기준 그림 (normal)), ④ `art/common/cutin/mom-sig-3.png` (바로 앞 컷)
 - 종류 · 비율: 말하는 그림 (두 번째 프레임, 초록 배경) · 기준 그림과 같게
 - 영상에서의 움직임: ①과 같은 자리 · 같은 크기 — 손가락만 옮겨 간다.
 
@@ -929,6 +958,10 @@ Match the art style of the first attached image exactly: same line weight, same 
 
 This is the SECOND FRAME of a two-frame animation. Redraw attached image 2 EXACTLY: same character, same pose, same size, same position in the frame, same clothes, same colors, same line work, same framing and margins. Change ONLY what is described below. Everything else must be pixel-for-pixel as close to attached image 2 as possible so the two frames can be flipped back and forth.
 
+Attached image 3 shows the mom: draw this person with exactly the same face, hairstyle, hair color, clothes, colors and body shape.
+
+Attached image 4 is the frame just before this one: continue smoothly from it, with the same face, colors and line work.
+
 Character: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.
 
 IMPORTANT: the hand MUST visibly move. The same straight stiff index finger now lies HORIZONTALLY, pointing sideways, pressed just BELOW her lower lip across the top of the chin, drawing the bottom side of the square. The eyes are now trembling and starting to water, glasses slightly crooked. Everything else stays exactly the same.
@@ -940,7 +973,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 36. 시그니처 — 엄마 양 볼 누르고 악! ✅
 - 저장: `art/common/cutin/mom-sig-scream.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/cutin/mom-sig-1.png` (같은 사람 유지용 기준 그림)
+- 첨부 4장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/cutin/mom-sig-1.png` (앞 컷 · 기준 그림), ③ `art/common/mom/normal.png` (그 사람 기준 그림 (normal)), ④ `art/common/cutin/mom-smirk.png` (그 사람 대표 컷인 (얼굴 · 피부 톤))
 - 종류 · 비율: 리액션 컷인 (가슴 위, 초록 배경) · 1:1
 - 영상에서의 움직임: 번쩍과 함께 크래시 줌, 화면이 흔들린다.
 - 메모: 엄마 시그니처의 마지막 장. ①과 같은 크기 · 자리로 그린다. 케빈(나 홀로 집에)처럼 양 손바닥으로 볼을 누른다.
@@ -953,6 +986,10 @@ This is a large close-up reaction shot for a comedy video: maximum facial detail
 Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
 
 The character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.
+
+Attached image 3 shows the mom: draw this person with exactly the same face, hairstyle, hair color, clothes, colors and body shape.
+
+Attached image 4 is a close-up of the same person: match that face, skin tone and level of exaggeration exactly.
 
 Character: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.
 
@@ -967,7 +1004,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 37. 시그니처 — 아이 거꾸로 손 가면 아악! ✅
 - 저장: `art/common/cutin/kid-sig.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/kid/normal.png` (같은 사람 유지용 기준 그림)
+- 첨부 3장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/kid/normal.png` (같은 사람 유지용 기준 그림), ③ `art/common/cutin/kid-ask.png` (그 사람 대표 컷인 (얼굴 · 피부 톤))
 - 종류 · 비율: 리액션 컷인 (가슴 위, 초록 배경) · 1:1
 - 영상에서의 움직임: 튀어나오며 젤리처럼 늘어났다 돌아온다.
 - 메모: 모답맨 아이의 시그니처 놀람 포즈. 엄청난 사실을 알았을 때("달이 위성이었어요?!") 쓴다.
@@ -980,6 +1017,8 @@ This is a large close-up reaction shot for a comedy video: maximum facial detail
 Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
 
 The character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.
+
+Attached image 3 is a close-up of the same person: match that face, skin tone and level of exaggeration exactly.
 
 Character: the kid: an 8-year-old Korean child with a black bowl-cut, huge round curious eyes, one missing front tooth, wearing a red hoodie, navy shorts and white socks; small, fearless and very direct.
 
@@ -994,7 +1033,7 @@ Solid flat pure green (#00FF00) background filling everything around the subject
 
 #### 38. 배경 — 거실 ✅
 - 저장: `art/common/bg/living-room.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
+- 첨부 1장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 배경 (사람 없음) · 16:9
 
 ```text
@@ -1013,7 +1052,7 @@ Keep the bottom third of the picture an open, uncluttered floor: characters will
 
 #### 39. 배경 — 저녁 밥상 ✅
 - 저장: `art/common/bg/dining-room.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
+- 첨부 1장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 배경 (사람 없음) · 16:9
 
 ```text
@@ -1032,7 +1071,7 @@ Keep the bottom third of the picture an open, uncluttered floor: characters will
 
 #### 40. 배경 — 밤의 아이 방 ✅
 - 저장: `art/common/bg/kid-room-night.png`
-- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
+- 첨부 1장 (빠짐없이, 이 순서로): ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 배경 (사람 없음) · 16:9
 
 ```text
