@@ -1,0 +1,57 @@
+1
+00:00:00,000 --> 00:00:03,270
+The same color, but it looks different?
+
+2
+00:00:03,320 --> 00:00:07,040
+Square A or square B —
+which one is darker?
+
+3
+00:00:07,090 --> 00:00:09,210
+A looks darker, obviously… right?
+
+4
+00:00:09,260 --> 00:00:11,380
+Let's connect them with a bar of one color
+
+5
+00:00:11,430 --> 00:00:13,750
+Huh? The bar and both squares
+blend together!
+
+6
+00:00:13,800 --> 00:00:16,350
+Now let's erase everything around them
+
+7
+00:00:16,400 --> 00:00:19,920
+A and B are exactly the same color!
+
+8
+00:00:19,970 --> 00:00:23,190
+When there's a shadow, your brain figures
+"it must really be lighter"
+
+9
+00:00:23,240 --> 00:00:25,560
+So it corrects B in the shadow
+and sees it as a light square
+
+10
+00:00:25,610 --> 00:00:29,530
+You don't see the light exactly as it enters your eye —
+you see the color your brain works out
+
+11
+00:00:29,580 --> 00:00:33,500
+That's also why white paper in the shade
+doesn't look gray to you!
+
+12
+00:00:33,550 --> 00:00:35,750
+That's the end of Secrets of the Eye, Part 2!
+
+13
+00:00:35,800 --> 00:00:38,250
+NEXT: Say the color of the words!

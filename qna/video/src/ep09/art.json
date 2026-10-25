@@ -1,0 +1,218 @@
+{
+  "title": "9편 · 누리호는 지금 뭐 해요? 로켓 · 위성 · 우주선",
+  "cast": {
+    "guide": "the space science museum docent: a slim Korean man in his early thirties, neat side-parted black hair with one stubborn cowlick, thick black SQUARE-framed glasses, a long serious face that breaks into a nerdy delighted grin; wearing a navy zip-up staff vest with a small blank white name badge and a tiny rocket pin with NO logo, a light-blue shirt with rolled-up sleeves, khaki trousers, white sneakers; always holding a slim pointer stick; deadpan and polite when correcting grown-ups, quietly thrilled about rockets"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/panic",
+    "common/dad/explain",
+    "common/dad/proud",
+    "common/dad/shock",
+    "common/kid/normal",
+    "common/kid/ask",
+    "common/kid/wow",
+    "common/kid/laugh",
+    "common/mom/normal",
+    "common/mom/smirk",
+    "common/mom/explain",
+    "common/mom/shock",
+    "common/cutin/dad-shock",
+    "common/cutin/dad-proud",
+    "common/cutin/kid-ask",
+    "common/cutin/mom-smirk",
+    "common/cutin/dad-sig-1",
+    "common/cutin/dad-sig-2",
+    "common/cutin/dad-sig-3",
+    "common/cutin/mom-sig-1",
+    "common/cutin/mom-sig-2",
+    "common/cutin/mom-sig-3",
+    "common/cutin/mom-sig-4",
+    "common/cutin/mom-sig-scream",
+    "common/cutin/kid-sig"
+  ],
+  "items": [
+    {
+      "id": "bg/museum-hall",
+      "kind": "bg",
+      "title": "배경 — 우주과학관 전시홀 (주 무대)",
+      "cuts": "c00, c00b, c01, c01a, c01b, c02, c02b, c03, c04b, c04c, c05b, c06b",
+      "motion": "천천히 당겨진다. 오답 순간 살짝 흔들린다.",
+      "desc": "The bright main exhibition hall of a Korean space science museum, seen straight-on like a sitcom set: a tall white three-stage rocket model standing upright in the left third reaching toward the ceiling, plain white with a few thin colored bands and NO flags, NO letters, NO logos; a big dark-blue wall panel behind with a painted Earth and a curved orbit line; a small satellite model with gold foil and solar panels hanging from the ceiling on wires; blank exhibit plaques; polished light-gray floor. No people, no readable text. The bottom third is an open empty floor for characters."
+    },
+    {
+      "id": "bg/space-earth",
+      "kind": "bg",
+      "title": "배경 — 우주에서 본 지구 (라운드 카드 뒤)",
+      "cuts": "c04, c05, c05c, c06, c06c",
+      "motion": "아주 천천히 돈다. 라운드 글자 카드 · 소품이 위에 얹힌다.",
+      "desc": "Outer space seen from low Earth orbit: the curved blue edge of the Earth with white swirling clouds filling the bottom third of the picture, a thin glowing blue atmosphere line along the curve, a deep black-navy sky full of tiny stars above, a small bright Sun flare in the top-right corner. Wide and calm so text cards and objects can sit on top. No spacecraft, no people, no text."
+    },
+    {
+      "id": "bg/museum-plaza-dusk",
+      "kind": "bg",
+      "title": "배경 — 해 질 녘 과학관 앞 주차장 (아이 눈높이 · 반전)",
+      "cuts": "c07, c07b, c08, c08b",
+      "motion": "아이 눈높이 박자에서는 거의 멈춰 있다. 반전에서 하늘 쪽으로 기울어진다.",
+      "desc": "The outdoor plaza and small parking lot in front of a Korean space science museum at dusk: a tall white rocket statue standing on the right against the sky (plain, NO flags, NO letters), a low modern museum building behind it, a few parked cars in the distance on the left, streetlights just turning on, a wide orange-to-purple sunset sky with the first faint stars and a thin crescent moon high up. Calm and a little magical. No people, no readable text. The bottom third is an open empty paved ground for characters."
+    },
+    {
+      "id": "guide/normal",
+      "kind": "char",
+      "who": "guide",
+      "ref": null,
+      "title": "해설사 — 기본",
+      "cuts": "c00b, c01a, c03",
+      "note": "해설사의 기준 그림. 이후 해설사 그림에 전부 ②로 첨부한다. 명찰은 빈칸, 로고 · 글자 없음.",
+      "motion": "숨 쉬듯 살짝 움직이고, 말할 때 까딱거린다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing upright and polite, the pointer stick held in both hands in front of him, a perfectly calm deadpan face with a tiny polite smile."
+    },
+    {
+      "id": "guide/correct",
+      "kind": "char",
+      "who": "guide",
+      "ref": "guide/normal",
+      "title": "해설사 — 정색하고 바로잡기",
+      "cuts": "c00b, c01a, c02b, c06b, c08",
+      "motion": "말하는 동안 좌우로 흔들린다.",
+      "desc": "3/4 view turned slightly to the RIGHT. One hand raised with the index finger up in a calm 'actually…' gesture, the other hand pushing up his square glasses with the pointer, a flat deadpan face, one eyebrow slightly raised, a glint on the glasses."
+    },
+    {
+      "id": "guide/point",
+      "kind": "char",
+      "who": "guide",
+      "ref": "guide/normal",
+      "title": "해설사 — 지시봉으로 가리키며 신난 설명",
+      "cuts": "c04, c04b, c05, c05c, c06",
+      "motion": "지시봉 든 팔이 위아래로 까딱인다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Pointing up and to the right with the pointer stick fully extended, leaning forward, eyes sparkling behind the glasses, a delighted nerdy open-mouth grin, the other hand open in an explaining gesture."
+    },
+    {
+      "id": "guide/model",
+      "kind": "char",
+      "who": "guide",
+      "ref": "guide/normal",
+      "title": "해설사 — 작은 위성 모형 들고 보여 주기",
+      "cuts": "c04b, c06b",
+      "motion": "모형을 든 손이 둥글게 원을 그린다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Holding up a small boxy satellite model (gold foil body, two blue solar panel wings) in one hand at shoulder height, as if flying it around in a circle, the pointer tucked under the other arm, a proud gentle smile."
+    },
+    {
+      "id": "cutin/guide-correct",
+      "kind": "cutin",
+      "who": "guide",
+      "ref": "guide/normal",
+      "title": "해설사 정색 (컷인)",
+      "cuts": "c00b, c01a, c02b, c06b, c08",
+      "motion": "화면 옆에서 튀어나와 흔들린다.",
+      "desc": "Chest-up close shot, facing slightly to the RIGHT. Perfectly deadpan: half-closed unimpressed eyes, a sharp white glint across the square glasses hiding one eye, mouth a small flat line, one finger pushing the glasses up the nose. Simple speed-line background."
+    },
+    {
+      "id": "dad/v-sign",
+      "kind": "char",
+      "who": "dad",
+      "title": "아빠 — 하늘에 대고 양손 브이",
+      "cuts": "c00 (상상), c08, c08b",
+      "note": "반전 컷의 마지막 그림. 지친 기색 없이 끝까지 진지하게.",
+      "motion": "제자리에서 브이 손을 위아래로 흔든다.",
+      "desc": "3/4 view turned slightly to the LEFT. Leaning back and looking straight up at the sky, both arms raised high making big V-for-victory signs with both hands, a huge proud toothy grin with closed crescent eyes, sweat glistening, feet planted wide."
+    },
+    {
+      "id": "kid/wave-sky",
+      "kind": "char",
+      "who": "kid",
+      "title": "아이 — 하늘에 대고 작게 손 흔들기",
+      "cuts": "c07, c07b",
+      "note": "아이 눈높이 박자용. 농담 없이 따뜻하게.",
+      "motion": "손만 천천히 좌우로 흔든다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Looking up at the sky with a soft quiet smile and shining eyes, one small hand raised shoulder-high giving a little gentle wave, the other hand holding a small toy rocket against the chest."
+    },
+    {
+      "id": "full/nuri-selfie-imagine",
+      "kind": "full",
+      "title": "아빠의 상상 — 누리호가 우주에서 셀카 찍으며 브이",
+      "cuts": "c00",
+      "note": "틀린 설명을 그대로 그린 장면. 영상에서 분홍 '아빠의 상상' 효과가 얹힌다.",
+      "desc": "A silly imagined scene in outer space with the blue Earth below: a tall white three-stage rocket drawn as a goofy cartoon character with a big smiling face on its body and two little arms, floating in space and holding a selfie stick with a smartphone, its other hand making a V sign, winking, with sparkles around it. The rocket is plain white with thin colored bands, NO flags, NO letters, NO logos. Bright, absurd and cheerful."
+    },
+    {
+      "id": "full/family-rocket-imagine",
+      "kind": "full",
+      "title": "아빠의 상상 — 온 가족이 누리호 타고 우주 휴가",
+      "cuts": "c02",
+      "note": "틀린 설명을 그대로 그린 장면. 같은 가족처럼 보이게 아빠 · 엄마 · 아이 기준 그림을 함께 첨부해도 된다.",
+      "desc": "A silly imagined scene: a white three-stage rocket blasting up through the clouds, and the Korean family riding on the OUTSIDE of it like a roller coaster: the chubby balding dad in a mustard-yellow cardigan at the front wearing swim goggles and a sun hat, arms raised and cheering; the mom in a sage-green sweater and round glasses behind him gripping the rocket with a horrified face; the 8-year-old kid in a red hoodie at the back holding a beach ball and grinning. A picnic basket and a suitcase are tied onto the rocket with rope. The rocket is plain white, NO flags, NO letters, NO logos. Absurd and cheerful."
+    },
+    {
+      "id": "full/stage-drop",
+      "kind": "full",
+      "title": "장면 — 1단 · 2단이 떨어져 바다로",
+      "cuts": "c04",
+      "desc": "A clear explainer scene seen from the side high above the ocean: a white three-stage rocket climbing diagonally up toward the top-right into the dark-blue upper sky, and behind it two empty used-up rocket sections tumbling down, one far below falling toward a wide blue sea and about to make a big white splash, the other just separating with a small puff. Thin dotted curved lines show their fall paths. Plain white rocket with thin colored bands, NO flags, NO letters, NO logos. No people."
+    },
+    {
+      "id": "prop/nuri-rocket",
+      "kind": "prop",
+      "title": "소품 — 누리호(3단 로켓)",
+      "cuts": "c00b, c04, c06c",
+      "motion": "아래에서 쑥 솟아오른다.",
+      "desc": "A tall slim white three-stage rocket standing upright, with a pointed nose cone, thin colored bands marking the three sections, small fins at the base and a bright orange flame and white smoke puff under it. Plain, NO flags, NO letters, NO numbers, NO logos."
+    },
+    {
+      "id": "prop/rocket-truck",
+      "kind": "prop",
+      "title": "소품 — 택배 트럭이 된 로켓",
+      "cuts": "c00b, c04, c04c",
+      "motion": "옆으로 미끄러져 들어와 덜컹 멈춘다.",
+      "desc": "A funny cartoon mash-up: a white rocket lying sideways like a delivery truck, with four little truck wheels underneath, a tiny driver-cab window at the nose, and the nose cone opened up like a cargo hatch showing a small boxy gold satellite wrapped with a ribbon sitting inside like a parcel. Plain white body, NO letters, NO logos."
+    },
+    {
+      "id": "prop/small-sats",
+      "kind": "prop",
+      "title": "소품 — 작은 위성 다섯 대",
+      "cuts": "c04b, c04c",
+      "motion": "하나씩 톡톡 튀어나와 줄을 선다.",
+      "desc": "Five small identical boxy satellites lined up in a neat diagonal row, each about the size of a small suitcase, with a gold-foil body, two little blue solar panel wings and a small round camera lens on the front, drawn cute and shiny. NO letters, NO logos."
+    },
+    {
+      "id": "prop/aerial-photo",
+      "kind": "prop",
+      "title": "소품 — 위성이 보낸 첫 사진(빈 도시 항공 사진)",
+      "cuts": "c04b, c08b",
+      "motion": "툭 떨어지며 살짝 회전한다.",
+      "desc": "A printed photo with a white border, slightly curled, showing a top-down satellite view of a generic city: a grid of streets, blocks of buildings, a river curving through and a green park, in soft muted colors. Not any real recognizable city. NO letters, NO labels."
+    },
+    {
+      "id": "prop/earth-orbit",
+      "kind": "prop",
+      "title": "소품 — 지구를 돌며 떨어지는 위성",
+      "cuts": "c05, c05b, c05c",
+      "motion": "위성만 원을 따라 돈다(영상에서 돌린다).",
+      "desc": "A simple cute explainer diagram: a round cartoon Earth with blue oceans and green land, a thin white dotted circle around it, and one small boxy gold satellite on the circle with a short arrow pointing sideways along the path and a second short arrow pointing down toward the Earth. Clean, bold and readable. NO letters, NO numbers."
+    },
+    {
+      "id": "prop/moon",
+      "kind": "prop",
+      "title": "소품 — 달 (자연 위성)",
+      "cuts": "c06",
+      "motion": "둥실 떠오르며 살짝 흔들린다.",
+      "desc": "A round pale-gray full Moon with soft craters, drawn with a gentle surprised cartoon face (round eyes, small 'o' mouth) as if it just found out it is a satellite, a soft glow around it."
+    },
+    {
+      "id": "prop/crew-capsule",
+      "kind": "prop",
+      "title": "소품 — 사람이 탄 우주선",
+      "cuts": "c06b, c06c",
+      "motion": "옆에서 미끄러져 들어온다.",
+      "desc": "A cone-shaped crewed space capsule in white and silver with a round window, and through the window a cartoon astronaut in a white helmet waving happily. A small heat shield at the base. NO flags, NO letters, NO logos."
+    },
+    {
+      "id": "prop/rocket-inside",
+      "kind": "prop",
+      "title": "소품 — 누리호 속은 짐뿐 (좌석 없음)",
+      "cuts": "c06b",
+      "motion": "단면이 쫙 갈라지며 열린다.",
+      "desc": "A cutaway side view of a white rocket showing what is inside: the lower sections are filled with two huge round fuel tanks, and the nose section holds one small boxy satellite tied down with straps. There is no seat, no window and no room for people anywhere. Clean cartoon explainer drawing. NO letters, NO logos."
+    }
+  ]
+}

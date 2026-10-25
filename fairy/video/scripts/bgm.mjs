@@ -7,7 +7,8 @@ import { fileURLToPath } from 'url';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const TL = JSON.parse(fs.readFileSync(path.join(here, '..', 'src', 'timeline.json'), 'utf8'));
-const book = path.join(here, '..', '..', 'books', '01-real-hero');
+const slug = process.argv[2] || '01-real-hero';
+const book = path.join(here, '..', '..', 'books', slug);
 const R = 44100;
 const N = Math.round((TL.total + 1) * R);
 const music = new Float32Array(N); // 깔리는 음악 (목소리 밑에서 줄인다)
@@ -149,6 +150,8 @@ const subAt = (n, key, fallback = 0) => sc(n).subs.find((s) => s.text.includes(k
 const S = (n) => sc(n).start, E = (n) => sc(n).end;
 
 // ── 음악 · 효과음 배치 ──────────────────────────────
+const CUES = {};
+CUES['01-real-hero'] = () => {
 theme(0.2, TL.intro + 0.8, { eighth: 0.4, g: 0.55, fade: 0.6 }); // 표지: 오르골 주제
 // 0 TV 속 히어로: 합성 팡파르 + 환호, 점점 작아짐
 [[67, 0], [72, 0.35], [76, 0.7], [79, 1.05]].forEach(([m, t]) => put(music, S(0) + 0.3 + t, brass(m, t === 1.05 ? 1.6 : 0.4), 0.3));
@@ -203,6 +206,177 @@ for (let t = S(14) + 1; t < E(14) - 1; t += 1.7) put(sfx, t + Math.abs(rnd()) * 
 // 15 진짜 힘은 마음 + 끝 카드: 첫 장면 오르골 선율이 돌아옴
 theme(S(15) + 0.2, TL.total - 0.5, { eighth: 0.4, g: 0.52, fade: 2.5 });
 put(sfx, E(15) + 0.4, sparkle(), 0.3);
+};
+// ── 02 마음카페: 오르골 자장가가 카페의 배경, 손님마다 소리가 조금씩 다르다 ──
+CUES['02-maum-cafe'] = () => {
+  const doorbell = (soft = 1) => { const b = new Float32Array(Math.round(1.8 * R)); [[88, 0], [93, 0.09]].forEach(([m, t]) => { const x = bell(m, 1.5); put(b, t, x, 0.5 * soft); }); return b; };
+  const coin = () => { const b = new Float32Array(Math.round(0.9 * R)); [[96, 0], [100, 0.07], [96, 0.18]].forEach(([m, t]) => put(b, t, bell(m, 0.5), 0.4)); return b; };
+  const rumble = (d) => { const n = lp(noise(d), 160), o = new Float32Array(n.length); for (let i = 0; i < n.length; i++) { const t = i / R; o[i] = (n[i] * 5 + Math.sin(2 * Math.PI * (52 + 6 * Math.sin(t * 17)) * t) * 0.5) * (0.6 + 0.4 * Math.sin(t * 31)) * Math.min(1, t / 0.2, (d - t) / 0.3); } return o; };
+  const ding = () => gen(1.6, (t) => (Math.sin(2 * Math.PI * hz(84) * t) + 0.4 * Math.sin(2 * Math.PI * hz(84) * 2.01 * t)) * Math.exp(-t * 3.2) * Math.min(1, t * 300));
+  const tick = () => gen(0.08, (t) => Math.sin(2 * Math.PI * 1800 * t) * Math.exp(-t * 80));
+  const beat = () => { const b = new Float32Array(Math.round(0.5 * R)); [0, 0.2].forEach((t) => put(b, t, gen(0.2, (u) => Math.sin(2 * Math.PI * 62 * u) * Math.exp(-u * 18)), 1)); return b; };
+  const wind = (d) => { const n = bp(noise(d), 200, 900); for (let i = 0; i < n.length; i++) { const t = i / R; n[i] *= (0.5 + 0.5 * Math.sin(t * 1.3)) * Math.min(1, t / 1.5, (d - t) / 1.5); } return n; };
+  const chirp = () => gen(0.25, (t, i, n) => Math.sin(2 * Math.PI * (3200 + 900 * Math.sin(t * 40)) * t) * Math.sin(Math.PI * i / n) * 0.4);
+  const clink = (m = 100) => bell(m, 0.5);
+  const popc = () => gen(0.09, (t) => (rnd() * 0.6 + Math.sin(2 * Math.PI * 900 * t) * 0.5) * Math.exp(-t * 55));
+  const wheel = (d) => { const n = bp(noise(d), 600, 3000); for (let i = 0; i < n.length; i++) { const t = i / R; n[i] *= (0.6 + 0.4 * Math.sin(t * 60)) * Math.min(1, t / 0.2, (d - t) / 0.3); } return n; };
+  const splat = () => gen(0.35, (t) => (rnd() * 0.5 + Math.sin(2 * Math.PI * 140 * t)) * Math.exp(-t * 14));
+  const sigh = () => { const n = bp(noise(1.6), 300, 1800); for (let i = 0; i < n.length; i++) n[i] *= Math.sin(Math.PI * i / n.length) ** 1.5; return n; };
+  const poof = () => gen(0.4, (t) => rnd() * Math.exp(-t * 9) * 0.6 + Math.sin(2 * Math.PI * 180 * t) * Math.exp(-t * 20) * 0.5);
+  const lineEnd = (n, key) => sc(n).subs.find((s) => s.text.includes(key))?.to ?? sc(n).start + 3;
+  // 마음환전기계: 동전 → 덜컹덜컹 → 땡!
+  const exchange = (n, key = '동전', g = 1) => {
+    const t = lineEnd(n, key) + 0.4;
+    put(sfx, t, coin(), 0.4 * g);
+    put(sfx, t + 1.0, rumble(2.6), 0.3 * g);
+    put(sfx, t + 3.7, ding(), 0.35 * g);
+  };
+  theme(0.2, TL.intro + 0.8, { eighth: 0.4, g: 0.55, fade: 0.6 }); // 표지
+  // 0 숲속 마음카페: 새소리 + 오르골 시작
+  [0.6, 1.4, 3.1, 4.8, 6.3].forEach((t) => put(sfx, S(0) + t, chirp(), 0.12));
+  theme(S(0) + 1, E(0) + 0.5, { eighth: 0.42, g: 0.45 });
+  // 1 문이 열려요
+  put(sfx, S(1) + 0.3, doorbell(), 0.4);
+  theme(S(1) + 0.5, E(1) + 0.5, { eighth: 0.4, g: 0.4 });
+  // 2 쌩쌩 나무늘보: 킥보드 바퀴, 휙, 철퍽
+  put(sfx, S(2) + 0.2, wheel(3.2), 0.18);
+  put(sfx, S(2) + 1.8, swoosh(0.9), 0.25);
+  put(sfx, S(2) + 4.4, splat(), 0.35);
+  theme(S(2) + 0.3, E(2) + 0.3, { eighth: 0.22, inst: pizz, g: 0.4 });
+  // 3 답답하고 속상했겠는걸: 조용, 숨 고르기
+  put(sfx, S(3) + 0.8, breath(), 0.14);
+  theme(S(3) + 0.3, E(3) + 0.5, { eighth: 0.55, g: 0.3, melody: false });
+  // 4 모래시계 동전 · 마음환전기계
+  exchange(4, '동전');
+  theme(S(4) + 0.3, E(4) + 0.5, { eighth: 0.4, g: 0.35 });
+  // 5 무지개 주스: 얼음 달그락, 졸졸
+  for (let t = S(5) + 1.5; t < E(5) - 2; t += 2.3) put(sfx, t, clink(96 + Math.round(Math.abs(rnd()) * 6)), 0.18);
+  put(sfx, S(5) + 0.5, murmur(5), 0.06);
+  theme(S(5) + 0.3, E(5) + 0.5, { eighth: 0.4, g: 0.45 });
+  // 6 안절부절: 똑딱이 점점 빨라진다
+  for (let t = S(6) + 0.5, d = 0.8; t < E(6) - 0.5; t += d, d = Math.max(0.28, d * 0.9)) put(sfx, t, tick(), 0.22);
+  theme(S(6) + 0.3, E(6) + 0.3, { eighth: 0.3, inst: pizz, g: 0.35 });
+  // 7 무지개다!: 환호 · 반짝
+  put(sfx, S(7) + 0.6, applause(2.4), 0.12);
+  put(sfx, S(7) + 0.4, sparkle(), 0.35);
+  theme(S(7) + 0.3, E(7) + 0.5, { eighth: 0.36, g: 0.5, shift: 7 });
+  // 8 기둥 뒤에 숨은 사자: 잔잔한 소음, 떨리는 숨
+  put(sfx, S(8) + 0.3, murmur(8), 0.08);
+  put(sfx, S(8) + 3, breath(), 0.12);
+  theme(S(8) + 0.5, E(8) + 0.5, { eighth: 0.5, g: 0.28, melody: false });
+  // 9 옥수수 동전 · 팝콘 재료
+  exchange(9, '동전');
+  theme(S(9) + 0.3, E(9) + 0.5, { eighth: 0.42, g: 0.35 });
+  // 10 용기팝콘: 톡톡이 점점 커진다
+  for (let t = S(10) + 2.5, k = 0; t < E(10) - 1; t += 0.9 - Math.min(0.6, k * 0.05), k++) put(sfx, t, popc(), 0.1 + Math.min(0.25, k * 0.03));
+  theme(S(10) + 0.3, E(10) + 0.5, { eighth: 0.32, inst: pizz, g: 0.38 });
+  // 11 이거 한 번 먹어 볼래?: 살금살금 발소리, 떨림
+  [0.4, 0.9, 1.4, 1.9].forEach((t) => put(sfx, S(11) + t, step(), 0.15));
+  put(sfx, S(11) + 3, murmur(3), 0.07);
+  theme(S(11) + 0.3, E(11) + 0.4, { eighth: 0.48, g: 0.3 });
+  // 12 팡팡 늘어나는 친구들: 팝콘 연속 터짐, 새소리, 밝은 오르골
+  for (let t = S(12) + 0.4; t < E(12) - 1; t += 0.17 + Math.abs(rnd()) * 0.2) put(sfx, t, popc(), 0.1);
+  [2, 5, 8, 11].forEach((t) => put(sfx, S(12) + t, chirp(), 0.1));
+  theme(S(12) + 0.3, E(12) + 0.5, { eighth: 0.34, g: 0.5, shift: 7 });
+  // 13 고슴도치: 거친 문종, 씩씩거림, 낮은 한 음
+  put(sfx, S(13) + 0.3, doorbell(1.4), 0.5);
+  put(sfx, S(13) + 1.5, breath(), 0.2);
+  put(music, S(13) + 0.5, pad(41, 8), 0.1);
+  // 14 나쁜 마음도 받아주시나요?: 정적에 가깝게, 초침 한 번
+  put(sfx, S(14) + 2.2, tick(), 0.3);
+  put(sfx, S(14) + 6.5, breath(), 0.08);
+  // 15 나쁜 마음은 없단다: 한 단계 따뜻해진 오르골 + 기계
+  exchange(15, '동전');
+  theme(S(15) + 0.3, E(15) + 0.5, { eighth: 0.42, g: 0.45, shift: 2 });
+  // 16 솜사탕 파르페: 퐁, 안도의 한숨, 포근한 오르골
+  put(sfx, S(16) + 0.5, poof(), 0.3);
+  put(sfx, subAt(16, '아, 포근해') - 0.3, sigh(), 0.15);
+  theme(S(16) + 0.3, E(16) + 0.5, { eighth: 0.46, g: 0.45 });
+  // 17 카멜레온: 두근두근, 뿅뿅, 어지러운 소리
+  for (let t = S(17) + 0.5; t < E(17) - 1; t += 0.8) put(sfx, t, beat(), 0.22);
+  [2.5, 5, 7.5].forEach((t) => put(sfx, S(17) + t, pop(), 0.3));
+  put(music, S(17) + 1, pad(52, 11), 0.08);
+  // 18 마음의 색은 한 가지일 필요 없단다
+  exchange(18, '동전');
+  theme(S(18) + 0.3, E(18) + 0.5, { eighth: 0.5, g: 0.36 });
+  // 19 알록달록 회오리 막대사탕: 병 달그락, 반짝 리본, 팅~
+  for (let t = S(19) + 1; t < E(19) - 5; t += 1.6) put(sfx, t, clink(93 + Math.round(Math.abs(rnd()) * 5)), 0.15);
+  put(sfx, E(19) - 4, sparkle(), 0.35);
+  put(sfx, E(19) - 2.5, ding(), 0.3);
+  theme(S(19) + 0.3, E(19) + 0.5, { eighth: 0.4, g: 0.45 });
+  // 20 내 마음이 이렇게 예쁜 색이었다니: 반짝, 밝은 오르골
+  put(sfx, S(20) + 0.4, sparkle(), 0.35);
+  theme(S(20) + 0.3, E(20) + 0.5, { eighth: 0.34, g: 0.5, shift: 7 });
+  // 21 휴가 중입니다: 쓸쓸한 바람, 팻말 삐걱
+  put(sfx, S(21) + 0.2, wind(9), 0.18);
+  put(sfx, S(21) + 2.5, creak(), 0.2);
+  put(sfx, S(21) + 6, creak(), 0.15);
+  put(music, S(21) + 0.5, pad(45, 12), 0.07);
+  // 22 어서 들어와!: 딸랑 · 반짝 · 경쾌한 오르골
+  put(sfx, S(22) + 0.2, doorbell(), 0.4);
+  put(sfx, S(22) + 0.5, sparkle(), 0.25);
+  theme(S(22) + 0.3, E(22) + 0.3, { eighth: 0.3, inst: pizz, g: 0.45 });
+  // 23 친구들이 만든 화채: 와글와글, 그릇 달그락, 바퀴, 웃음
+  put(sfx, S(23) + 0.3, murmur(10), 0.1);
+  for (let t = S(23) + 2; t < E(23) - 2; t += 2.7) put(sfx, t, clink(90 + Math.round(Math.abs(rnd()) * 6)), 0.14);
+  put(sfx, S(23) + 1, wheel(1.5), 0.1);
+  put(sfx, E(23) - 5, laugh(), 0.08);
+  theme(S(23) + 0.3, E(23) + 0.5, { eighth: 0.38, g: 0.42 });
+  // 24 사장님 보고 싶다: 아늑한 오르골, 숟가락, 작은 한숨
+  put(sfx, S(24) + 1.5, clink(103), 0.12);
+  put(sfx, E(24) - 4, sigh(), 0.1);
+  theme(S(24) + 0.3, E(24) + 0.5, { eighth: 0.5, g: 0.38 });
+  // 25 진짜 마법레시피가!: 부드러운 문종, 숨 들이마심
+  put(sfx, S(25) + 0.2, doorbell(0.7), 0.35);
+  put(sfx, S(25) + 1.2, breath(), 0.12);
+  put(music, S(25) + 0.5, pad(55, 8), 0.1);
+  theme(S(25) + 1.5, E(25) + 0.5, { eighth: 0.44, g: 0.42, shift: 2 });
+  // 26 끝: 문종, 오르골 엔딩 + 끝 카드
+  put(sfx, S(26) + 0.2, doorbell(), 0.4);
+  theme(S(26) + 0.5, TL.total - 0.5, { eighth: 0.42, g: 0.52, fade: 2.5 });
+  put(sfx, E(26) + 0.4, sparkle(), 0.3);
+};
+// ── 03 분실물 보관함: 밤의 무서운 소문 → 패션쇼 → 따뜻한 재회 ──
+CUES['03-lost-found'] = () => {
+  const bellRing = (soft = 1) => { const b = new Float32Array(Math.round(1.8 * R)); [[88, 0], [93, 0.09]].forEach(([m, t]) => put(b, t, bell(m, 1.5), 0.5 * soft)); return b; };
+  const clink = (m = 100) => bell(m, 0.5);
+  const wind = (d) => { const n = bp(noise(d), 200, 900); for (let i = 0; i < n.length; i++) { const t = i / R; n[i] *= (0.5 + 0.5 * Math.sin(t * 1.3)) * Math.min(1, t / 1.5, (d - t) / 1.5); } return n; };
+  const sigh = () => { const n = bp(noise(1.6), 300, 1800); for (let i = 0; i < n.length; i++) n[i] *= Math.sin(Math.PI * i / n.length) ** 1.5; return n; };
+  const kind = (n) => (n <= 3 ? 'calm' : n <= 10 ? 'night' : n === 11 ? 'day' : n <= 16 ? 'sad' : n <= 19 ? 'tense' : n === 20 ? 'show' : n <= 23 ? 'day' : 'warm');
+  theme(0.2, TL.intro + 0.8, { eighth: 0.4, g: 0.55, fade: 0.6 }); // 표지
+  for (let n = 1; n <= TL.scenes.length; n++) {
+    const a = S(n - 1), b = E(n - 1), k = kind(n);
+    if (k === 'calm') theme(a + 0.3, b + 0.5, { eighth: 0.44, g: 0.42 });
+    if (k === 'night') {
+      put(sfx, a + 0.3, wind(Math.min(9, b - a)), 0.12);
+      theme(a + 0.5, b + 0.5, { eighth: 0.55, g: 0.28, melody: false });
+    }
+    if (k === 'day') {
+      put(sfx, a + 0.3, murmur(Math.min(10, b - a)), 0.1);
+      theme(a + 0.3, b + 0.5, { eighth: 0.4, g: 0.4 });
+    }
+    if (k === 'sad') {
+      put(sfx, a + 1.5, breath(), 0.1);
+      put(music, a + 0.5, pad(45, Math.min(10, b - a)), 0.08);
+    }
+    if (k === 'tense') theme(a + 0.3, b + 0.5, { eighth: 0.5, g: 0.3, melody: false });
+    if (k === 'show') {
+      put(sfx, a + 0.6, applause(2.4), 0.12);
+      put(sfx, a + 0.4, sparkle(), 0.3);
+      theme(a + 0.3, b + 0.5, { eighth: 0.34, g: 0.5, shift: 7 });
+    }
+    if (k === 'warm' && n < 30) theme(a + 0.3, b + 0.5, { eighth: 0.42, g: 0.4, shift: n >= 27 ? 2 : 0 }); // 30 · 31 은 아래 마무리 곡 하나로 (겹치면 선율이 어긋나 깨진다)
+  }
+  put(sfx, S(1) + 0.3, creak(), 0.2);
+  put(sfx, S(16) + 0.2, bellRing(), 0.4);
+  put(sfx, S(21) + 1.5, clink(96), 0.12);
+  put(sfx, S(25) + 0.5, sparkle(), 0.3);
+  put(sfx, S(26) + 1.5, sigh(), 0.12);
+  put(sfx, S(27) + 0.5, sparkle(), 0.3);
+  theme(S(29) + 0.3, TL.total - 0.5, { eighth: 0.42, g: 0.36, fade: 3 });
+  put(sfx, E(30) + 0.4, sparkle(), 0.3);
+};
+CUES[slug]();
 
 // ── 목소리 올리기 + 자동 낮춤(ducking) ───────────────
 const rd = fs.readFileSync(path.join(book, 'voice', 'all.wav'));
@@ -241,5 +415,5 @@ const h = Buffer.alloc(44);
 h.write('RIFF', 0); h.writeUInt32LE(36 + out.length * 2, 4); h.write('WAVEfmt ', 8); h.writeUInt32LE(16, 16); h.writeUInt16LE(1, 20); h.writeUInt16LE(1, 22);
 h.writeUInt32LE(R, 24); h.writeUInt32LE(R * 2, 28); h.writeUInt16LE(2, 32); h.writeUInt16LE(16, 34); h.write('data', 36); h.writeUInt32LE(out.length * 2, 40);
 fs.mkdirSync(path.join(here, '..', 'public', 'audio'), { recursive: true });
-fs.writeFileSync(path.join(here, '..', 'public', 'audio', 'mix.wav'), Buffer.concat([h, Buffer.from(out.buffer)]));
-console.log(`mix.wav — ${(N / R).toFixed(1)}초 · 목소리 x${vgain.toFixed(2)} · peak ${peak.toFixed(2)}`);
+fs.writeFileSync(path.join(here, '..', 'public', 'audio', `${slug}.wav`), Buffer.concat([h, Buffer.from(out.buffer)]));
+console.log(`audio/${slug}.wav — ${(N / R).toFixed(1)}초 · 목소리 x${vgain.toFixed(2)} · peak ${peak.toFixed(2)}`);

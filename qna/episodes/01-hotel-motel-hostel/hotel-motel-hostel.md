@@ -1,223 +1,163 @@
-# 1편 후보 — "호텔 · 모텔 · 유스호스텔, 뭐가 달라요?"
-*(스킬 eight-year-olds-question 테스트 실행 결과 — 부모·자녀 관계 버전)*
+# 1화 (모답맨판) — "호텔 · 모텔 · 유스호스텔, 뭐가 달라요?"
 
-## 1. 자료조사 메모
-- **호텔**: 19세기 유럽 상류층의 장기 체류용 숙박에서 출발. 프랑스어 hôtel(귀족 저택)이 어원.
-- **모텔**: motor + hotel의 합성어. 1920년대 미국에서 자동차 여행객이 차를 세워두고 바로 잘 수 있게 만든 저층 숙박시설.
-- **유스호스텔**: 1912년 독일 교사 리하르트 시르만이 도보 여행 중인 학생들을 위해 시작. 지금도 청소년·배낭여행객 중심.
-- **한국 맥락 메모**: 한국에서 '모텔'은 1990년대 이후 자동차 여행보다 **단시간·연인용 숙박**이라는 이미지가 강하게 붙었다 — 미국 원래 어원과는 다른 방향으로 변형된 사례. 이 지점이 2번 박자 "얼버무림"의 실제 이유지만, 대본에는 이유를 직접 설명하지 않는다(스킬 규칙).
-- 오늘날 오해: "모텔=저급, 호텔=고급"은 정확한 구분이 아님. 원래는 **누구를 위한 숙소인가**의 차이였지 등급 차이가 아니었음.
-- 정설은 아니지만: 국내 최초 '유스호스텔'은 1960년대 도입, 청소년 수련 목적의 정부 지원 시설로 출발.
+> 2026-10-24 모답맨 포맷으로 다시 만듦. 이전 롱폼 기획서(회상 · 7박자)는 `_old/hotel-motel-hostel-v1-longform.md`.
+> 영상 대본 원본은 `video/src/ep01f/script.json`, 샷 계획은 `video/src/motion/ep01f.json`. 그림은 1편(`ep01`) 것을 같이 쓴다.
 
-## 2. 콘티표
+## 1. 자료조사 메모 (확인 상태)
 
-| 박자 | 시간 | 이번 화 내용 |
+| 사실 | 대본에서 | 확인 |
 |---|---|---|
-| 1. 그 질문 | 0:00–0:20 | "아빠, 호텔이랑 모텔이랑 유스호스텔은 뭐가 달라요?" |
-| 2. 얼버무린 순간 | 0:20–0:50 | 말끝 흐리고 화제 돌림 → "가격이 다른 거야" 얼버무림 |
-| 3. 왜 다들 헷갈리나 | 0:50–1:30 | 셋 다 '자는 곳'이라 뭉뚱그려 부르지만 원래 만들어진 이유가 완전히 다름 |
-| 4. 갈라진 지점 | 1:30–4:30 | 호텔(귀족 저택 유래) → 모텔(자동차 여행객, 1920s 미국) → 유스호스텔(1912년 시르만, 청소년 도보여행) |
-| 5. 한 문장 정리 | 4:30–5:20 | "호텔은 귀족을 위해, 모텔은 자동차를 위해, 유스호스텔은 아이들을 위해." |
-| 6. 아이 눈높이로 번역 | 5:20–6:40 | 다음 날 아이에게 실제로 해준 설명 |
-| 7. 남는 이야기 | 6:40–7:30 | 다음 편 예고: "아파트·빌라·오피스텔은 또 왜 이름이 다를까?" |
+| hotel · hostel · hospital 은 모두 라틴어 hospitale("손님 맞는 집")에서 나왔다. hotel 은 고대 프랑스어 ostel(숙소)을 거쳤다 | 1라운드 | Etymonline (hotel · hostel · hospital) |
+| 중세의 hospital 은 순례자 · 가난한 사람 · 아픈 사람을 재워 주던 집 | 1라운드 "길손이랑 아픈 사람" | Etymonline hospital("guest-house, inn") |
+| 1925년 12월 미국 캘리포니아 샌루이스오비스포의 Milestone Mo-Tel 이 첫 "모텔". motor + hotel. 간판에 "Milestone Motor Hotel" 이 다 안 들어가 줄였다는 이야기 | 2라운드 — 간판 이야기는 "~는 얘기도 있고요"로 낮춰 말함 | 위키백과 Motel Inn, KSBY · KRDO 보도(100주년) |
+| 1909년 독일 교사 리하르트 시르만이 학생들과 도보 여행 중 폭풍을 만나 빈 학교에서 잠 → 1912년 알테나 성에 첫 유스호스텔 | 3라운드 | 위키백과 Richard Schirrmann, HI 블로그, 룩셈부르크 유스호스텔 연혁 |
+| 한국 법: 호텔 = 관광진흥법 관광숙박업(호텔업), 유스호스텔 = 청소년활동진흥법 청소년수련시설, "모텔"은 법령 용어가 아니고 공중위생관리법 일반숙박업 | 3라운드 | 행정사 자료 · 청소년수련시설 6유형(수련관 · 수련원 · 문화의집 · 특화시설 · 야영장 · 유스호스텔). 업로드 전 국가법령정보센터 조문 재확인 |
+| 유스호스텔은 나이 제한이 없는 곳이 대부분이고 가족실이 있다 | 엄마의 오답 정정 — "**여긴**" 으로 이 숙소 이야기로 한정 | HI 회원 · 이용 연령 제한 없음 |
 
-## 3. 그림 콘티 (컷 10장)
+- 이전 기획서의 "호텔 = 귀족 저택을 손님방으로 쓰던 것이 시작"은 근거가 약해 뺐다(hôtel particulier 는 귀족의 도시 저택이라는 뜻일 뿐). 대신 hotel · hostel · hospital 한 집안 이야기로 바꿨다.
+- **민감 소재(한국 모텔의 통념):** 아이 대사 "차 있잖아요!" → 아빠 "어… 그게…"(1편 롱폼의 그 말버릇) → 엄마 "여기 예약했어." 로만 처리. 이유는 대사로 풀지 않고, 제목 · 썸네일 · 화면 글자에 그 뜻의 말을 쓰지 않는다.
 
-| 컷 | 박자 | 앵글 | 구성 | 자막 | 색 포인트 |
-|---|---|---|---|---|---|
-| #1 | 1. 그 질문 | 와이드 | 거실, 아이 실루엣이 부모 쪽을 올려다봄 | "아빠, 호텔이랑 모텔이랑 유스호스텔은 뭐가 달라요?" | 잉크색 위주, 배경은 종이색 |
-| #2 | 2. 얼버무린 순간 | 미디엄 | 부모 실루엣이 시선을 돌리고 뒷목을 만짐 | "어... 그게..." | 강조색(빨강) 살짝 |
-| #3 | 2. 얼버무린 순간 | 클로즈업 | 딴 곳을 보는 눈동자 대신 고개 각도만 | "음, 가격이 좀 다른 거야" | 회색 |
-| #4 | 3. 왜 다들 헷갈리나 | 자막컷 | 호텔·모텔·유스호스텔 세 단어가 겹쳐 흐릿하게 표시 | "다 그냥 '자는 곳' 아니야?" | 잉크색 |
-| #5 | 4. 갈라진 지점 | 와이드 | 유럽풍 저택 실루엣, 귀족 손님 실루엣이 문 앞에 | "귀족의 저택에서 시작된 호텔" | 강조색(빨강) |
-| #6 | 4. 갈라진 지점 | 와이드 | 1920년대 자동차와 나란히 붙은 낮은 건물 실루엣 | "자동차 여행객을 위한 모텔" | 잉크색 |
-| #7 | 4. 갈라진 지점 | 미디엄 | 배낭 멘 아이들 실루엣이 줄지어 건물로 들어감 | "1912년, 한 교사가 만든 유스호스텔" | 회색 |
-| #8 | 5. 한 문장 정리 | 자막컷 | 세 건물 실루엣이 나란히, 문구가 가운데 | "귀족을 위해, 자동차를 위해, 아이들을 위해" | 강조색(빨강), 썸네일 재사용 컷 |
-| #9 | 6. 아이 눈높이로 번역 | 미디엄 | 부모와 아이 실루엣이 나란히 앉아 있음 | "그래서 다음 날 이렇게 말해줬습니다" | 잉크색 |
-| #10 | 7. 남는 이야기 | 와이드 | 다음 편 예고 — 아파트·빌라 실루엣이 흐릿하게 예고 | "다음 편: 아파트, 빌라, 오피스텔은?" | 회색, 페이드아웃 톤 |
+## 2. 오답 후보 (카운터 4)
 
+| # | 누가 | 오답 | 정정 |
+|---|---|---|---|
+| 1 | 아빠 | 비싸면 호텔, 싸면 모텔, 더 싸면 유스호스텔 | 값으로 붙인 이름이 아니다 |
+| 2 | 엄마 (모범답안… 이었으나) | 유스호스텔은 학생만 잔다 | 나이 제한 없음, 가족실 있음 |
+| 3 | 아빠 (상상 장면) | 모텔 = 모 씨네 호텔 | 모 = 모터(자동차) |
+| 4 | 아빠 (반전) | 차는 방문 앞에 세우면 되죠? 모텔처럼! | 주차장은 언덕 아래, 걸어서 — 아이: "도보 여행이에요! 그 선생님처럼!" |
 
-**러프 스케치 시트** (마크다운 뷰어가 SVG를 지원하면 아래에 렌더링됩니다 — 2단 배치로 가독성 개선):
+## 3. 무대 · 인물
 
-<svg width="100%" viewBox="0 0 832 1711" xmlns="http://www.w3.org/2000/svg" role="img">
-<title>호텔·모텔·유스호스텔 편 그림 콘티 전체 시트 (가독성 개선판)</title>
-<desc>10개 컷을 2단 배치, 큰 실루엣과 큰 캡션으로 표현한 러프 스토리보드 시트</desc>
-<rect x="0" y="0" width="832" height="1711" fill="#E9EDE8"/>
+- 장소: 가족 여행 첫날, 언덕 위 유스호스텔 프런트 (집 밖, 제삼의 인물).
+- 정답 담당: **유스호스텔 사장님** (60대 초, 평생 산 다닌 등산 아저씨, 녹색 플리스 조끼). 목소리 Sadaltager (`video/src/voice.json` 역할 `manager`).
+- 한 줄 태클: "아닙니다." · "주차장은 언덕 아래예요. 걸어 올라오세요."
 
-  <g transform="translate(40,40)">
-    <rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2" />
-    <g transform="translate(30.0,14) scale(1.9)">
-    <ellipse cx="40" cy="95" rx="20" ry="5" fill="#C4D0C6"/>
-    <path d="M40 95 L40 60 Q40 48 48 48 L56 48 Q64 48 64 60 L64 95 Z" fill="#1B2A26"/>
-    <circle cx="52" cy="42" r="9" fill="#1B2A26"/>
-    <ellipse cx="120" cy="95" rx="26" ry="5" fill="#C4D0C6"/>
-    <path d="M104 95 L104 40 Q104 25 116 25 L128 25 Q140 25 140 40 L140 95 Z" fill="#1B2A26"/>
-    <circle cx="122" cy="16" r="12" fill="#1B2A26"/>
-    </g>
-    <text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#1 · 1. 그 질문</text>
-    <text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">"아빠, 뭐가 달라요?"</text>
-  </g>
-  <g transform="translate(428,40)">
-    <rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2" />
-    <g transform="translate(30.0,14) scale(1.9)">
-    <ellipse cx="80" cy="95" rx="26" ry="5" fill="#C4D0C6"/>
-    <path d="M64 95 L64 40 Q64 25 76 25 L88 25 Q100 25 100 40 L100 95 Z" fill="#1B2A26"/>
-    <circle cx="72" cy="17" r="12" fill="#1B2A26"/>
-    <path d="M100 55 L118 50" stroke="#B8352A" stroke-width="2" stroke-linecap="round"/>
-    <path d="M100 65 L118 63" stroke="#B8352A" stroke-width="2" stroke-linecap="round"/>
-    </g>
-    <text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#2 · 2. 얼버무린 순간</text>
-    <text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">"어... 그게..."</text>
-  </g>
-  <g transform="translate(40,371)">
-    <rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2" />
-    <g transform="translate(30.0,14) scale(1.9)">
-    <circle cx="80" cy="55" r="30" fill="#1B2A26"/>
-    <path d="M100 40 Q112 35 115 45" stroke="#66756E" stroke-width="2" fill="none"/>
-    </g>
-    <text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#3 · 2. 얼버무린 순간</text>
-    <text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">"음, 가격이..."</text>
-  </g>
-  <g transform="translate(428,371)">
-    <rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2" />
-    <g transform="translate(30.0,14) scale(1.9)">
-    <circle cx="55" cy="55" r="26" fill="none" stroke="#66756E" stroke-width="2" opacity="0.6"/>
-    <circle cx="90" cy="55" r="26" fill="none" stroke="#66756E" stroke-width="2" opacity="0.6"/>
-    <circle cx="125" cy="55" r="26" fill="none" stroke="#66756E" stroke-width="2" opacity="0.6"/>
-    <text x="90" y="62" text-anchor="middle" font-size="20" fill="#1B2A26">?</text>
-    </g>
-    <text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#4 · 3. 왜 헷갈리나</text>
-    <text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">"다 같은 거 아냐?"</text>
-  </g>
-  <g transform="translate(40,702)">
-    <rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2" />
-    <g transform="translate(30.0,14) scale(1.9)">
-    <rect x="50" y="55" width="90" height="45" fill="#1B2A26"/>
-    <path d="M45 55 L95 20 L145 55 Z" fill="#B8352A"/>
-    <rect x="85" y="75" width="14" height="25" fill="#F6F8F4"/>
-    <rect x="60" y="65" width="10" height="10" fill="#F6F8F4"/>
-    <rect x="120" y="65" width="10" height="10" fill="#F6F8F4"/>
-    </g>
-    <text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#5 · 4. 갈라진 지점</text>
-    <text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">"귀족을 위한 호텔"</text>
-  </g>
-  <g transform="translate(428,702)">
-    <rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2" />
-    <g transform="translate(30.0,14) scale(1.9)">
-    <rect x="90" y="55" width="55" height="35" fill="#1B2A26"/>
-    <rect x="100" y="65" width="12" height="12" fill="#F6F8F4"/>
-    <rect x="120" y="65" width="12" height="12" fill="#F6F8F4"/>
-    <path d="M20 90 L30 78 L60 78 L68 90 Z" fill="#B8352A"/>
-    <rect x="18" y="88" width="52" height="8" fill="#B8352A"/>
-    <circle cx="30" cy="98" r="6" fill="#1B2A26"/>
-    <circle cx="58" cy="98" r="6" fill="#1B2A26"/>
-    </g>
-    <text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#6 · 4. 갈라진 지점</text>
-    <text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">"자동차를 위한 모텔"</text>
-  </g>
-  <g transform="translate(40,1033)">
-    <rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2" />
-    <g transform="translate(30.0,14) scale(1.9)"><path d="M45 95 L45 70 Q45 62 51 62 L55 62 Q61 62 61 70 L61 95 Z" fill="#1B2A26"/><circle cx="53" cy="56" r="7" fill="#1B2A26"/><path d="M70 95 L70 70 Q70 62 76 62 L80 62 Q86 62 86 70 L86 95 Z" fill="#1B2A26"/><circle cx="78" cy="56" r="7" fill="#1B2A26"/><path d="M95 95 L95 70 Q95 62 101 62 L105 62 Q111 62 111 70 L111 95 Z" fill="#1B2A26"/><circle cx="103" cy="56" r="7" fill="#1B2A26"/><path d="M120 95 L120 70 Q120 62 126 62 L130 62 Q136 62 136 70 L136 95 Z" fill="#1B2A26"/><circle cx="128" cy="56" r="7" fill="#1B2A26"/><rect x="135" y="45" width="20" height="50" fill="#F6F8F4" stroke="#66756E"/></g>
-    <text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#7 · 4. 갈라진 지점</text>
-    <text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">"아이들을 위한 유스호스텔"</text>
-  </g>
-  <g transform="translate(428,1033)">
-    <rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2" />
-    <g transform="translate(30.0,14) scale(1.9)">
-    <rect x="30" y="45" width="30" height="55" fill="#1B2A26"/>
-    <path d="M27 45 L45 25 L63 45 Z" fill="#B8352A"/>
-    <rect x="70" y="60" width="40" height="40" fill="#1B2A26"/>
-    <rect x="120" y="50" width="28" height="50" fill="#1B2A26"/>
-    </g>
-    <text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#8 · 5. 한 문장 정리</text>
-    <text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">"각자를 위해"</text>
-  </g>
-  <g transform="translate(40,1364)">
-    <rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2" />
-    <g transform="translate(30.0,14) scale(1.9)">
-    <rect x="35" y="80" width="120" height="18" rx="4" fill="#F6F8F4" stroke="#66756E"/>
-    <path d="M55 80 L55 50 Q55 42 62 42 L70 42 Q77 42 77 50 L77 80 Z" fill="#1B2A26"/>
-    <circle cx="66" cy="35" r="9" fill="#1B2A26"/>
-    <path d="M90 80 L90 45 Q90 35 100 35 L112 35 Q122 35 122 45 L122 80 Z" fill="#1B2A26"/>
-    <circle cx="106" cy="27" r="11" fill="#1B2A26"/>
-    </g>
-    <text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#9 · 6. 눈높이 번역</text>
-    <text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">"다음날 이렇게"</text>
-  </g>
-  <g transform="translate(428,1364)">
-    <rect x="0" y="0" width="364" height="229" fill="#F6F8F4" stroke="#C4D0C6" stroke-width="2" />
-    <g transform="translate(30.0,14) scale(1.9)">
-    <rect x="30" y="55" width="30" height="45" fill="#66756E" opacity="0.35"/>
-    <rect x="70" y="45" width="30" height="55" fill="#66756E" opacity="0.35"/>
-    <rect x="110" y="60" width="30" height="40" fill="#66756E" opacity="0.35"/>
-    <path d="M25 100 L145 100" stroke="#C4D0C6" stroke-width="2"/>
-    </g>
-    <text x="14" y="263" font-family="'Pretendard Variable', sans-serif" font-size="19" font-weight="700" fill="#B8352A">#10 · 7. 남는 이야기</text>
-    <text x="14" y="289" font-family="'Pretendard Variable', sans-serif" font-size="17" fill="#66756E">"다음 편 예고"</text>
-  </g>
-</svg>
+## 4. 대본 (한 · 영) — 49줄
 
-## 4. 전체 대본
+**[콜드 오픈]**
 
-**[1. 그 질문 — 0:00]**
-지난주에 저희 집 여덟 살 아이가 갑자기 이렇게 물었습니다.
-"아빠, 호텔이랑 모텔이랑 유스호스텔은 뭐가 달라요?"
+| 컷 | 누가 | 대사 | English |
+|---|---|---|---|
+| c00 | 라구 | 아빠, 호텔, 모텔, 유스호스텔. 뭐가 달라요? | Dad, hotel, motel, youth hostel. What's the difference? |
+| c00 | 아빠 | 쉽지! 비싸면 호텔, 싸면 모텔, 더 싸면 유스호스텔! | Easy! Pricey is a hotel, cheap is a motel, cheaper still is a youth hostel! |
+| c00b | 사장님 | 아버님. 값으로 붙인 이름이 아니에요. | Sir, those names have nothing to do with price. |
+| c00b | 아빠 | …네? | …Huh? |
+| c00c | 나레이션 | 오답, 하나. 저는 모답맨입니다. | Wrong answer number one. I'm Modapman. |
 
-**[2. 얼버무린 순간 — 0:20]**
-저는 이 질문에 이렇게 답했습니다.
-"어... 그게... 음, 가격이 좀 다른 거야."
-(살짝 헛기침하고 다른 이야기로 넘어감)
+**[사건 개요]**
 
-저는 아이한테 가격 얘기로 얼버무렸고, 지금 생각하면 진짜 이유는 하나도 말 안 한 거였어요.
+| 컷 | 누가 | 대사 | English |
+|---|---|---|---|
+| c01 | 나레이션 | 사건 개요. 가족 여행 첫날. 장소, 유스호스텔 프런트. | Case summary. Family trip, day one. Location: a youth hostel front desk. |
+| c01a | 엄마 | 근데 여기, 학생만 자는 데 아니야? 우리 쫓겨나는 거 아냐? | Wait, isn't this place for students only? Are we getting kicked out? |
+| c01a | 사장님 | 여긴 나이 제한 없어요. 가족실도 있고요. | There's no age limit here. We have family rooms too. |
+| c01b | 나레이션 | 오답, 둘. 모범답안… 이었으나. | Wrong answer, two. Mom, the model answer… usually. |
 
-**[3. 왜 다들 헷갈리나 — 0:50]**
-우리는 이 세 개를 그냥 '자는 곳'으로 뭉뚱그려 씁니다. 그런데 이 셋은 태어난 이유부터가 완전히 다릅니다. 오늘은 이 세 단어가 각각 **누구를 위해** 만들어졌는지부터 따라가 보겠습니다.
+**[오답 퍼레이드]**
 
-**[4. 갈라진 지점 — 1:30]**
-호텔이라는 단어는 프랑스어 '오텔(hôtel)'에서 왔습니다. 원래는 귀족들의 저택을 부르는 말이었어요. 그 저택에 손님방을 두고 여행하는 귀족을 재워주던 게 지금 호텔의 시작입니다.
+| 컷 | 누가 | 대사 | English |
+|---|---|---|---|
+| c02 | 라구 | 그럼 모텔은 왜 '모'예요? | Then why is it called a "mo"-tel? |
+| c02 | 아빠 | 그건… 모 씨네 호텔이라서 모텔! 우리 집안 거야! | That's… because it's the Mo family's hotel! Mo-tel! It's ours! |
+| c02b | 사장님 | 아닙니다. | No. |
+| c02b | 나레이션 | 오답, 셋. 모 씨 일가, 숙박업 진출 실패. | Wrong answer, three. The Mo family's hotel empire: cancelled. |
 
-모텔은 다릅니다. 1920년대 미국에서 자동차가 갑자기 흔해졌습니다. 그런데 자동차로 먼 길을 가다 보면, 밤에 차를 세우고 바로 옆에서 잘 곳이 필요했어요. 그래서 'motor'와 'hotel'을 합쳐서 '모텔'이라는 새 단어를 만들었습니다. 자동차 여행객을 위한 숙소였던 거죠.
+**[정답 라운드]**
 
-유스호스텔은 1912년, 독일의 한 교사에게서 시작됩니다. 리하르트 시르만이라는 선생님이 학생들을 데리고 도보 여행을 다니다가, 아이들이 싸고 안전하게 묵을 곳이 마땅치 않다는 걸 알게 됐어요. 그래서 학교 건물을 빌려 청소년 전용 숙소를 만들었고, 그게 지금의 유스호스텔이 됐습니다.
+| 컷 | 누가 | 대사 | English |
+|---|---|---|---|
+| c03 | 사장님 | 체크인 전에, 딱 세 판만 하죠. | Before check-in, let's do just three rounds. |
+| c03 | 아빠 | 체크인에 판이…? | Check-in has rounds…? |
 
-**[5. 한 문장 정리 — 4:30]**
-정리하면 이렇습니다.
-"호텔은 귀족을 위해, 모텔은 자동차를 위해, 유스호스텔은 아이들을 위해."
+**[1라운드 · 한 집안 말]**
 
-**[6. 아이 눈높이로 번역 — 5:20]**
-다음 날, 저는 아이한테 다시 이렇게 말해줬습니다.
-"어제 아빠가 대답을 대충 했지? 사실 이 세 개는 원래 다른 사람들을 위해서 생긴 거야. 호텔은 옛날에 귀한 손님이 묵던 큰 집에서 시작했고, 모텔은 자동차 타고 멀리 가는 사람들이 차 바로 옆에서 잘 수 있게 만든 거고, 유스호스텔은 너처럼 여행 가는 어린이들을 위해서 어떤 선생님이 만든 거야."
-그러자 아이가 물었습니다. "그럼 저희도 유스호스텔 가면 되겠네요?"
-"응, 딱 너 같은 어린이를 위해서 만들어진 곳이야."
+| 컷 | 누가 | 대사 | English |
+|---|---|---|---|
+| c04 | 사장님 | 1라운드. 호텔, 호스텔, 그리고 병원, 호스피털. | Round one. Hotel, hostel… and hospital. |
+| c04 | 사장님 | 셋 다 '손님 맞는 집'이라는 라틴어에서 나왔어요. | All three come from a Latin word for a house that takes in guests. |
+| c04 | 라구 | 병원도요? | The hospital too? |
+| c04 | 사장님 | 옛날엔 길손이랑 아픈 사람을 재워 주던 집이었거든요. | Long ago, it was a house that took in travelers and the sick. |
+| c04b | 아빠 | 병원은 호텔이다. 메모. | Hospital equals hotel. Noted. |
+| c04b | 나레이션 | 메모했습니다. 틀리게. | Noted. Incorrectly. |
 
-**[7. 남는 이야기 — 6:40]**
-이름 하나에도 누구를 위해 만들어졌는지가 숨어 있습니다. 다음 편에서는 아파트, 빌라, 오피스텔이 왜 이렇게 이름이 갈렸는지 따라가 보겠습니다.
+**[2라운드 · 모텔의 모]**
 
-## 5. 배경음악 · 효과음
+| 컷 | 누가 | 대사 | English |
+|---|---|---|---|
+| c05 | 사장님 | 2라운드. 모텔의 '모'는 모터. 자동차예요. | Round two. The "mo" in motel is motor. As in, car. |
+| c05 | 사장님 | 1925년 미국. 차를 방문 앞에 세우고 바로 자는 숙소가 생겼어요. | 1925, America. A place opened where you park at your door and go straight to bed. |
+| c05 | 사장님 | 모터 호텔. 간판에 다 안 들어가서 줄였다는 얘기도 있고요. | Motor hotel. Legend says the full name didn't fit on the sign, so they shortened it. |
+| c05 | 아빠 | 모 씨가 아니라… 모터. | Not Mo… but motor. |
+| c05b | 라구 | 그럼 우리도 모텔 가도 되잖아요! 차 있잖아요! | Then we can go to a motel too! We have a car! |
+| c05b | 아빠 | 어… 그게… | Uh… well… |
+| c05c | 엄마 | 여기 예약했어. | We booked here. |
 
-| 박자 | 추천 |
-|---|---|
-| 1. 그 질문 | 유튜브 오디오 보관함 — 가벼운 우쿨렐레/피치카토 루프, 낮은 볼륨으로 깔기 |
-| 2. 얼버무린 순간 | 같은 곡 유지 + 헛기침 타이밍에 짧은 "삐끗" 코믹 효과음 1회만 |
-| 3. 왜 다들 헷갈리나 | 로파이 피아노 계열로 전환, 잔잔하게 |
-| 4. 갈라진 지점 | 3번과 동일 톤 유지, 연도·인물 나올 때 페이지 넘기는 듯한 효과음 살짝 |
-| 5. 한 문장 정리 | 짧은 스팅어 한 방(강조음) |
-| 6. 아이 눈높이로 번역 | 배경음 -20dB 이하로 확 줄이거나 완전히 제거 |
-| 7. 남는 이야기 | 잔잔하게 페이드아웃, 다음 편 예고 자막과 함께 |
+**[3라운드 · 걷는 아이들]**
 
-나레이션 대비 배경음 전체 −20dB 기준, 라우드니스 정규화 −14 LUFS.
+| 컷 | 누가 | 대사 | English |
+|---|---|---|---|
+| c06 | 사장님 | 3라운드. 1909년 독일, 한 선생님이 아이들과 걷다가 폭풍을 만났어요. | Round three. Germany, 1909. A teacher was hiking with kids when a storm hit. |
+| c06 | 사장님 | 빈 학교에서 겨우 잤죠. 그래서 1912년, 성 안에 아이들 숙소를 차렸어요. | They barely got shelter in an empty school. So in 1912, he set up a kids' lodge inside a castle. |
+| c06 | 라구 | 성에서 자요?! | They slept in a castle?! |
+| c06 | 사장님 | 그게 첫 유스호스텔. 걸어서 여행하는 아이들을 위한 집. | That was the first youth hostel. A home for kids traveling on foot. |
+| c06b | 사장님 | 한국 법도 나눠요. 호텔은 관광 숙소, 유스호스텔은 청소년 수련시설. | Korean law splits them too. Hotels are tourist lodging; youth hostels are youth activity facilities. |
+| c06b | 사장님 | 모텔은요? 법에는 그 이름이 없어요. 그냥 일반숙박업. | And motels? The law doesn't even use the word. It's just "general lodging." |
+| c06b | 아빠 | 이름도 없는데 간판은 제일 커… | No official name, yet the biggest sign… |
+| c06c | 나레이션 | 한 줄 정리. 호텔은 손님을, 모텔은 자동차를, 유스호스텔은 걷는 아이들을 위해. | In one line: hotels for guests, motels for cars, youth hostels for kids on foot. |
+| c06c | 나레이션 | 값이 아니라, 누구를 위한 집이냐. | It's not about price. It's about who the house is for. |
 
-## 6. 썸네일 문구 3안 + 제목 후보
+**[아이 눈높이]**
 
-**썸네일 문구**
-1. 호텔 / 모텔 / 유스호스텔, 뭐가 다른 거예요?
-2. "가격 차이야" — 이거 사실 틀린 답이었습니다
-3. 귀족을 위해, 자동차를 위해, 아이들을 위해
+| 컷 | 누가 | 대사 | English |
+|---|---|---|---|
+| c07 | 아빠 | 호텔은 멀리서 온 손님을 맞는 집. | A hotel is a house that welcomes guests from far away. |
+| c07 | 아빠 | 모텔은 차로 오래 달린 사람이 바로 쉬는 집. | A motel is where people who've driven a long way can rest right away. |
+| c07 | 아빠 | 유스호스텔은, 너처럼 걸어서 여행하는 아이들을 위해 어떤 선생님이 만든 집이야. | And a youth hostel is a house a teacher made for kids like you who travel on foot. |
+| c07 | 라구 | 그럼 여기가 제일 우리 거네요. | Then this one's the most ours. |
+| c07 | 아빠 | 응. 딱 너를 위한 집이야. | Yep. A house made just for you. |
+| c07b | 나레이션 | 아이는 방 열쇠를 두 손으로 받았습니다. | My kid took the room key with both hands. |
 
-**제목 후보**
-1. 여덟 살한테 "모텔이 뭐예요?" 라는 질문을 받으면
-2. 호텔·모텔·유스호스텔, 이름부터가 다른 이유
-3. "가격이 달라" 라고 얼버무렸던 그 질문의 진짜 답
+**[반전]**
 
-## 7. 한 문장 정리
-"호텔은 귀족을 위해, 모텔은 자동차를 위해, 유스호스텔은 아이들을 위해."
+| 컷 | 누가 | 대사 | English |
+|---|---|---|---|
+| c08 | 아빠 | 자, 차는 방문 앞에 세우면 되죠? 모텔처럼! | Okay, I'll park right by our door, yes? Like a motel! |
+| c08 | 사장님 | 주차장은 언덕 아래예요. 걸어 올라오세요. | The parking lot's at the bottom of the hill. You walk up. |
+| c08 | 아빠 | …아. | …Oh. |
+| c08b | 나레이션 | 짐 가방은 세 개. 언덕은 높았습니다. | Three suitcases. One very steep hill. |
+| c08b | 라구 | 아빠, 우리 도보 여행이에요! 그 선생님처럼! | Dad, it's a walking trip! Just like that teacher! |
+| c08b | 나레이션 | 오답, 넷. 역시, 모답맨. | Wrong answer, four. Modapman strikes again. |
+
+## 5. 그림 목록
+
+- 공통: 아빠 · 아이 · 엄마 표정, 얼굴 컷인 (`art/common`).
+- 1편에 있던 것 재사용: `full/hotel-mansion` · `full/motel-1920s` · `full/hostel-1912` · `prop/hotel` · `prop/motel` · `prop/hostel`.
+- 새로 (2026-10-24, 크롬 Gemini): `bg/hostel-lobby` · `bg/hill-parking` · `manager/normal` · `manager/correct` · `manager/key` · `manager/point` · `cutin/manager-correct` · `full/mo-motel-imagine` · `prop/hospice` · `prop/room-key` · `prop/suitcases` · `prop/storm` · `cutin/dad-shy`(모텔 질문에 빨개진 아빠) · `prop/motel-shy`(부끄러워 간판을 가리는 모텔 — 사용자 요청 2026-10-24).
+- 목록과 프롬프트 원본: `video/src/ep01/art.json` → `GEMINI_PROMPTS.md`.
+
+## 6. 제목 · 키워드 (YouTube API, 2026-10-24)
+
+| 검색어 | 조회수 중앙값 | 최근 60일 |
+|---|---|---|
+| 모텔 뜻 | 66만 | 2개 (중앙값 466만) |
+| 모텔 어원 | 135만 | 4개 |
+| 호텔 모텔 유스호스텔 | 5만 | 2개 |
+| 가족여행 숙소 추천 | 23만 | 2개 |
+| 호스텔 호텔 차이 | 1.5만 | 0 |
+| 호텔 모텔 차이 | 4.9천 | 1개 |
+| 유스호스텔 | 3.4천 | 0 |
+| 유스호스텔 가족 | 1.6천 | 2개 |
+
+- "모텔 뜻 · 어원"은 조회수가 크지만 상위 영상이 성인 통념 쪽이다. 제목에는 **어원(모 = 모터)** 의 뜻으로만 쓴다.
+- 제목안: **모텔의 '모'는 무슨 뜻? 호텔·모텔·유스호스텔 차이 3분 정리 | 모답맨**
+- 영어: What does the "Mo" in Motel mean? Hotel vs Motel vs Youth Hostel in 3 minutes | Modapman
+- 태그로: 호텔 모텔 차이, 유스호스텔, 가족여행 숙소, 호스텔, 모텔 어원
+
+## 7. 썸네일
+
+- 위 두 줄: **모텔의 '모'는** / **무슨 뜻?** · 셋째 줄: 호텔·모텔·유스호스텔 3분 정리 (제목 훅과 같게)
+- 놀란 아빠 얼굴 + X + 사장님 컷인 + 오답 카운터 4.
+
+## 8. 한 문장 정리
+
+"호텔은 손님을, 모텔은 자동차를, 유스호스텔은 걷는 아이들을 위해. 값이 아니라, 누구를 위한 집이냐."

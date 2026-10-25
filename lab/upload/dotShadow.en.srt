@@ -1,0 +1,48 @@
+1
+00:00:00,800 --> 00:00:04,510
+Is the dot product
+a shadow's length?
+
+2
+00:00:04,560 --> 00:00:06,430
+Two arrows (vectors), a and b
+
+3
+00:00:06,480 --> 00:00:09,000
+Shine light straight down onto a,
+and b casts a shadow on a
+
+4
+00:00:09,050 --> 00:00:11,770
+Dot product = length of a × length of the shadow
+
+5
+00:00:11,820 --> 00:00:14,140
+Let's change the angle
+
+6
+00:00:14,190 --> 00:00:17,910
+Same direction: the shadow is longest
+
+7
+00:00:17,960 --> 00:00:21,480
+At a right angle the shadow is 0 → the dot product is 0
+
+8
+00:00:21,530 --> 00:00:25,350
+Lean past it to the other side and it's negative!
+
+9
+00:00:25,400 --> 00:00:28,520
+Shadow length = |b| cos θ
+(the sideways shadow from the sin·cos episode!)
+
+10
+00:00:28,570 --> 00:00:32,020
+When you pull a sled at an angle,
+the force that moves it forward = the shadow
+
+11
+00:00:33,020 --> 00:00:36,770
+NEXT: An infinite proof
+with dominoes

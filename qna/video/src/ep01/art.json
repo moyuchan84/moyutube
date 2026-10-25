@@ -13,7 +13,15 @@
     "common/kid/laugh",
     "common/cutin/dad-panic",
     "common/cutin/kid-ask",
-    "common/bg/living-room"
+    "common/bg/living-room",
+    "common/dad/shock",
+    "common/mom/normal",
+    "common/mom/smirk",
+    "common/mom/shock",
+    "common/cutin/dad-shock",
+    "common/cutin/dad-proud",
+    "common/cutin/kid-doubt",
+    "common/cutin/mom-smirk"
   ],
   "items": [
     {
@@ -82,6 +90,119 @@
       "title": "장면 — 다음 편 예고 (아파트 · 빌라 · 오피스텔)",
       "cuts": "c10b, 끝 화면",
       "desc": "A Korean city street at dusk with three very different buildings standing side by side and filling the frame: on the left a tall slab-shaped apartment block with many identical balconies, in the middle a small four-storey red-brick villa with an open pilotis car park on the ground floor, on the right a slim glass officetel tower. A huge cartoon question mark shape floats in the sky above them. No people."
+    },
+    {
+      "id": "bg/hostel-lobby",
+      "kind": "bg",
+      "title": "배경 — 유스호스텔 프런트 (모답맨 1화 주 무대)",
+      "cuts": "c00~c08",
+      "desc": "The cozy front lobby of a Korean youth hostel in the hills, seen straight-on like a sitcom set: a long wooden reception counter on the left with a small bell and a guest book, a wall rack of wooden room-key tags behind it, a cork board with blank flyers and a blank paper trail map, bunk-bed photos as blank frames, a row of colorful hiking backpacks and walking sticks leaning on the right wall, big windows showing green hills, warm afternoon daylight, pine wood walls. No readable text, no logos. The bottom third is an open empty wooden floor for characters."
+    },
+    {
+      "id": "bg/hill-parking",
+      "kind": "bg",
+      "title": "배경 — 언덕 아래 주차장에서 올려다본 유스호스텔 (반전)",
+      "cuts": "c08, c08b",
+      "desc": "A small gravel parking lot at the bottom of a ridiculously steep green hill, seen straight-on: a long zigzag stone stairway and footpath climbs all the way up to a tiny wooden youth hostel building perched on the very top of the hill against a bright blue sky with puffy clouds. A plain blank wooden signpost with an arrow pointing up. Late afternoon light. No people, no cars, no readable text. The bottom third is the open empty gravel lot for characters."
+    },
+    {
+      "id": "manager/normal",
+      "kind": "char",
+      "who": "manager",
+      "ref": null,
+      "title": "유스호스텔 사장님 — 기본 (프런트에서 맞이)",
+      "cuts": "c00b, c01a, c03",
+      "note": "사장님의 기준 그림. 이후 사장님 그림에 전부 ②로 첨부한다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing upright with both hands resting on an unseen counter edge, a warm welcoming smile, head tilted a little."
+    },
+    {
+      "id": "manager/correct",
+      "kind": "char",
+      "who": "manager",
+      "ref": "manager/normal",
+      "title": "유스호스텔 사장님 — 웃으며 바로잡기",
+      "cuts": "c00b, c02b, c04~c06b",
+      "desc": "3/4 view turned slightly to the RIGHT. One hand raised with the index finger up in a gentle \"let me correct that\" gesture, the other hand on his hip, one eyebrow raised, a patient amused smile."
+    },
+    {
+      "id": "manager/key",
+      "kind": "char",
+      "who": "manager",
+      "ref": "manager/normal",
+      "title": "유스호스텔 사장님 — 방 열쇠 건네기",
+      "cuts": "c07b",
+      "desc": "3/4 view turned slightly to the RIGHT. Bending forward a little and holding out a big wooden room-key tag with an old brass key toward someone small, a kind grandfatherly smile."
+    },
+    {
+      "id": "manager/point",
+      "kind": "char",
+      "who": "manager",
+      "ref": "manager/normal",
+      "title": "유스호스텔 사장님 — 언덕 아래를 가리키기 (반전)",
+      "cuts": "c08",
+      "desc": "3/4 view turned slightly to the RIGHT. Pointing far down and away with one outstretched arm and thumb, the other hand cupped beside his mouth as if calling out, a cheerful deadpan grin."
+    },
+    {
+      "id": "cutin/manager-correct",
+      "kind": "cutin",
+      "who": "manager",
+      "ref": "manager/normal",
+      "title": "사장님 바로잡기 (컷인)",
+      "cuts": "c00b, c02b, c08",
+      "desc": "Chest-up close shot, facing slightly to the RIGHT. Index finger raised beside the face, one thick eyebrow lifted, a calm knowing smile with smile lines. Simple speed-line background."
+    },
+    {
+      "id": "full/mo-motel-imagine",
+      "kind": "full",
+      "title": "장면 — 아빠의 상상: 모 씨네 호텔 (모텔)",
+      "cuts": "c02",
+      "desc": "A ridiculously gaudy, over-the-top roadside hotel building at night in a cartoon daydream style: gold columns, a giant crown on the roof, rainbow spotlights sweeping the sky, a red carpet with velvet ropes, fireworks bursting overhead, and an enormous BLANK golden marquee sign board on the roof with no letters at all. Pastel pink sparkles everywhere like a daydream. No people, no readable text."
+    },
+    {
+      "id": "prop/hospice",
+      "kind": "prop",
+      "title": "소품 — 옛날 길손 숙소 (병원의 시작)",
+      "cuts": "c04",
+      "desc": "A small medieval European stone guest house seen straight from the front: an arched wooden door wide open with warm light inside, a lantern hanging by the door, a row of simple beds with white blankets visible through the doorway, a walking staff and a traveler's bundle leaning by the entrance. Slightly chubby, toy-like proportions. No people."
+    },
+    {
+      "id": "prop/room-key",
+      "kind": "prop",
+      "title": "소품 — 나무 방 열쇠",
+      "cuts": "c07b",
+      "desc": "A big old brass room key attached by a ring to a chunky rounded wooden key tag (the tag is blank, no number or text). Slightly chubby, toy-like proportions."
+    },
+    {
+      "id": "prop/suitcases",
+      "kind": "prop",
+      "title": "소품 — 짐 가방 세 개",
+      "cuts": "c08b",
+      "desc": "Three travel suitcases stacked in a wobbly tower: a big red hard-shell suitcase at the bottom, a blue duffel bag in the middle, a small yellow kid's backpack on top, with a stuffed toy peeking out. Slightly chubby, toy-like proportions."
+    },
+    {
+      "id": "prop/storm",
+      "kind": "prop",
+      "title": "소품 — 비구름과 번개 (1909년 폭풍)",
+      "cuts": "c06",
+      "desc": "A big dark-gray cartoon storm cloud pouring heavy rain, with two bright yellow zigzag lightning bolts shooting out of it. Slightly chubby, toy-like proportions. No people."
+    },
+    {
+      "id": "cutin/dad-shy",
+      "kind": "cutin",
+      "who": "dad",
+      "title": "컷인 — 아빠 부끄러움 (모텔 질문)",
+      "cuts": "c05b-1",
+      "desc": "Facing slightly to the LEFT. Painfully embarrassed: face flushed bright red up to the ears, eyes squeezed into wobbly lines looking away, an awkward wavy-lipped smile, both index fingers poking together shyly in front of his chest, steam puffing from his head, cold sweat drops. Comic, innocent, never suggestive."
+    },
+    {
+      "id": "prop/motel-shy",
+      "kind": "prop",
+      "title": "소품 — 부끄러워 간판을 가리는 모텔 건물",
+      "cuts": "c06b-2",
+      "desc": "The same low single-storey American roadside motel building as a cute cartoon character: two windows as big shy eyes squeezed shut, rosy pink blushing cheeks painted on the wall, two little cartoon arms covering its tall blank neon arrow sign on the roof, a few sweat drops and tiny heart-free sparkle marks. Slightly chubby, toy-like proportions. Innocent and funny, never suggestive. No people, no text."
     }
-  ]
+  ],
+  "cast": {
+    "manager": "the youth hostel owner: a cheerful, sturdy Korean man in his early sixties who has hiked mountains all his life; short silver-gray hair, a tanned weathered face with smile lines and thick dark eyebrows, a dark-green fleece vest over a checked flannel shirt with rolled sleeves, beige cargo trousers and hiking boots, a lanyard with a blank plain name card (no text); calm, dry and kindly amused when he corrects grown-ups, never stern"
+  }
 }

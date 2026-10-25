@@ -1,0 +1,18 @@
+{
+  "TITLE": "Measure your reaction time with just a ruler!",
+  "NEXT": "NEXT: Why is summer hot?",
+  "EN": {
+    "친구가 30cm 자 끝을 잡고\n0 이 아래로 가게 세워요": "A friend holds the end of a 30 cm ruler\nupright, with 0 at the bottom",
+    "내 엄지와 검지를\n0 눈금에 살짝 벌려 둬요": "Hold your thumb and index finger\nslightly open at the 0 mark",
+    "친구가 말없이 놓으면\n최대한 빨리 잡아요!": "When your friend lets go without warning,\ncatch it as fast as you can!",
+    "언제 놓을지 몰라요…": "You never know when it'll drop…",
+    "잡은 곳의 눈금을 읽어요": "Read the mark where you caught it",
+    "눈금을 표에서 찾으면\n내 반응 시간!": "Find that mark in the table —\nthat's your reaction time!",
+    "15cm 에서 잡았다면\n0.17초 만에 잡은 거예요": "If you caught it at 15 cm,\nyou caught it in 0.17 seconds",
+    "물건은 떨어질수록\n점점 빨라져요": "Falling things\nget faster and faster",
+    "그래서 떨어진 거리만 보면\n걸린 시간을 알 수 있어요": "So just from how far it fell,\nyou can tell how long it took",
+    "반응 시간 = 눈으로 보고\n뇌를 거쳐 손이 움직이는 시간": "Reaction time = the time from your eyes seeing it,\nthrough your brain, to your hand moving",
+    "세 번 재서\n가족과 비교해 보세요!": "Measure three times\nand compare with your family!",
+    "자가 얼굴에 닿지 않게 조심!": "Be careful the ruler doesn't hit your face!"
+  }
+}

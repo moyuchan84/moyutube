@@ -1,0 +1,384 @@
+{
+  "rawVoice": true,
+  "speed": 1.2,
+  "title": "모답맨 · 호텔 · 모텔 · 유스호스텔, 뭐가 달라요?",
+  "bgm": "cheerful",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "콜드 오픈",
+      "lines": [
+        {
+          "who": "kid",
+          "text": "아빠, 호텔, 모텔, 유스호스텔. 뭐가 달라요?",
+          "en": "Dad, hotel, motel, youth hostel. What's the difference?"
+        },
+        {
+          "who": "dad",
+          "text": "쉽지! 비싸면 호텔, 싸면 모텔, 더 싸면 유스호스텔!",
+          "en": "Easy! Pricey is a hotel, cheap is a motel, cheaper still is a youth hostel!"
+        }
+      ]
+    },
+    {
+      "id": "c00b",
+      "beat": "콜드 오픈",
+      "lines": [
+        {
+          "who": "manager",
+          "text": "아버님. 값으로 붙인 이름이 아니에요.",
+          "en": "Sir, those names have nothing to do with price."
+        },
+        {
+          "who": "dad",
+          "text": "…네?",
+          "en": "…Huh?"
+        }
+      ]
+    },
+    {
+      "id": "c00c",
+      "beat": "콜드 오픈",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "오답, 하나. 저는 모답맨입니다.",
+          "en": "Wrong answer number one. I'm Modapman."
+        }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "사건 개요",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "사건 개요. 가족 여행 첫날. 장소, 유스호스텔 프런트.",
+          "en": "Case summary. Family trip, day one. Location: a youth hostel front desk."
+        }
+      ]
+    },
+    {
+      "id": "c01a",
+      "beat": "사건 개요",
+      "lines": [
+        {
+          "who": "mom",
+          "text": "근데 여기, 학생만 자는 데 아니야? 우리 쫓겨나는 거 아냐?",
+          "en": "Wait, isn't this place for students only? Are we getting kicked out?"
+        },
+        {
+          "who": "manager",
+          "text": "여긴 나이 제한 없어요. 가족실도 있고요.",
+          "en": "There's no age limit here. We have family rooms too."
+        }
+      ]
+    },
+    {
+      "id": "c01b",
+      "beat": "사건 개요",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "오답, 둘. 모범답안… 이었으나.",
+          "en": "Wrong answer, two. Mom, the model answer… usually."
+        }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "오답 퍼레이드",
+      "lines": [
+        {
+          "who": "kid",
+          "text": "그럼 모텔은 왜 '모'예요?",
+          "en": "Then why is it called a \"mo\"-tel?"
+        },
+        {
+          "who": "dad",
+          "text": "그건… 모 씨네 호텔이라서 모텔! 우리 집안 거야!",
+          "en": "That's… because it's the Mo family's hotel! Mo-tel! It's ours!"
+        }
+      ]
+    },
+    {
+      "id": "c02b",
+      "beat": "오답 퍼레이드",
+      "lines": [
+        {
+          "who": "manager",
+          "text": "아닙니다.",
+          "en": "No."
+        },
+        {
+          "who": "narr",
+          "text": "오답, 셋. 모 씨 일가, 숙박업 진출 실패.",
+          "en": "Wrong answer, three. The Mo family's hotel empire: cancelled."
+        }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "1라운드 · 한 집안 말",
+      "lines": [
+        {
+          "who": "manager",
+          "text": "체크인 전에, 딱 세 판만 하죠.",
+          "en": "Before check-in, let's do just three rounds."
+        },
+        {
+          "who": "dad",
+          "text": "체크인에 판이…?",
+          "en": "Check-in has rounds…?"
+        }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "1라운드 · 한 집안 말",
+      "lines": [
+        {
+          "who": "manager",
+          "text": "1라운드. 호텔, 호스텔, 그리고 병원, 호스피털.",
+          "tts": "일 라운드. 호텔, 호스텔, 그리고 병원, 호스피털.",
+          "en": "Round one. Hotel, hostel… and hospital."
+        },
+        {
+          "who": "manager",
+          "text": "셋 다 '손님 맞는 집'이라는 라틴어에서 나왔어요.",
+          "en": "All three come from a Latin word for a house that takes in guests."
+        },
+        {
+          "who": "kid",
+          "text": "병원도요?",
+          "en": "The hospital too?"
+        },
+        {
+          "who": "manager",
+          "text": "옛날엔 길손이랑 아픈 사람을 재워 주던 집이었거든요.",
+          "en": "Long ago, it was a house that took in travelers and the sick."
+        }
+      ]
+    },
+    {
+      "id": "c04b",
+      "beat": "1라운드 · 한 집안 말",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "병원은 호텔이다. 메모.",
+          "en": "Hospital equals hotel. Noted."
+        },
+        {
+          "who": "narr",
+          "text": "메모했습니다. 틀리게.",
+          "en": "Noted. Incorrectly."
+        }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "2라운드 · 모텔의 모",
+      "lines": [
+        {
+          "who": "manager",
+          "text": "2라운드. 모텔의 '모'는 모터. 자동차예요.",
+          "tts": "이 라운드. 모텔의 '모'는 모터. 자동차예요.",
+          "en": "Round two. The \"mo\" in motel is motor. As in, car."
+        },
+        {
+          "who": "manager",
+          "text": "1925년 미국. 차를 방문 앞에 세우고 바로 자는 숙소가 생겼어요.",
+          "tts": "천구백이십오 년 미국. 차를 방문 앞에 세우고 바로 자는 숙소가 생겼어요.",
+          "en": "1925, America. A place opened where you park at your door and go straight to bed."
+        },
+        {
+          "who": "manager",
+          "text": "모터 호텔. 간판에 다 안 들어가서 줄였다는 얘기도 있고요.",
+          "en": "Motor hotel. Legend says the full name didn't fit on the sign, so they shortened it."
+        },
+        {
+          "who": "dad",
+          "text": "모 씨가 아니라… 모터.",
+          "en": "Not Mo… but motor."
+        }
+      ]
+    },
+    {
+      "id": "c05b",
+      "beat": "2라운드 · 모텔의 모",
+      "lines": [
+        {
+          "who": "kid",
+          "text": "그럼 우리도 모텔 가도 되잖아요! 차 있잖아요!",
+          "en": "Then we can go to a motel too! We have a car!"
+        },
+        {
+          "who": "dad",
+          "text": "어… 그게…",
+          "en": "Uh… well…"
+        }
+      ]
+    },
+    {
+      "id": "c05c",
+      "beat": "2라운드 · 모텔의 모",
+      "lines": [
+        {
+          "who": "mom",
+          "text": "여기 예약했어.",
+          "en": "We booked here."
+        }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "3라운드 · 걷는 아이들",
+      "lines": [
+        {
+          "who": "manager",
+          "text": "3라운드. 1909년 독일, 한 선생님이 아이들과 걷다가 폭풍을 만났어요.",
+          "tts": "삼 라운드. 천구백구 년 독일, 한 선생님이 아이들과 걷다가 폭풍을 만났어요.",
+          "en": "Round three. Germany, 1909. A teacher was hiking with kids when a storm hit."
+        },
+        {
+          "who": "manager",
+          "text": "빈 학교에서 겨우 잤죠. 그래서 1912년, 성 안에 아이들 숙소를 차렸어요.",
+          "tts": "빈 학교에서 겨우 잤죠. 그래서 천구백십이 년, 성 안에 아이들 숙소를 차렸어요.",
+          "en": "They barely got shelter in an empty school. So in 1912, he set up a kids' lodge inside a castle."
+        },
+        {
+          "who": "kid",
+          "text": "성에서 자요?!",
+          "en": "They slept in a castle?!"
+        },
+        {
+          "who": "manager",
+          "text": "그게 첫 유스호스텔. 걸어서 여행하는 아이들을 위한 집.",
+          "en": "That was the first youth hostel. A home for kids traveling on foot."
+        }
+      ]
+    },
+    {
+      "id": "c06b",
+      "beat": "3라운드 · 걷는 아이들",
+      "lines": [
+        {
+          "who": "manager",
+          "text": "한국 법도 나눠요. 호텔은 관광 숙소, 유스호스텔은 청소년 수련시설.",
+          "en": "Korean law splits them too. Hotels are tourist lodging; youth hostels are youth activity facilities."
+        },
+        {
+          "who": "manager",
+          "text": "모텔은요? 법에는 그 이름이 없어요. 그냥 일반숙박업.",
+          "en": "And motels? The law doesn't even use the word. It's just \"general lodging.\""
+        },
+        {
+          "who": "dad",
+          "text": "이름도 없는데 간판은 제일 커…",
+          "en": "No official name, yet the biggest sign…"
+        }
+      ]
+    },
+    {
+      "id": "c06c",
+      "beat": "3라운드 · 걷는 아이들",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "한 줄 정리. 호텔은 손님을, 모텔은 자동차를, 유스호스텔은 걷는 아이들을 위해.",
+          "en": "In one line: hotels for guests, motels for cars, youth hostels for kids on foot."
+        },
+        {
+          "who": "narr",
+          "text": "값이 아니라, 누구를 위한 집이냐.",
+          "en": "It's not about price. It's about who the house is for."
+        }
+      ]
+    },
+    {
+      "id": "c07",
+      "beat": "아이 눈높이",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "호텔은 멀리서 온 손님을 맞는 집.",
+          "en": "A hotel is a house that welcomes guests from far away."
+        },
+        {
+          "who": "dad",
+          "text": "모텔은 차로 오래 달린 사람이 바로 쉬는 집.",
+          "en": "A motel is where people who've driven a long way can rest right away."
+        },
+        {
+          "who": "dad",
+          "text": "유스호스텔은, 너처럼 걸어서 여행하는 아이들을 위해 어떤 선생님이 만든 집이야.",
+          "en": "And a youth hostel is a house a teacher made for kids like you who travel on foot."
+        },
+        {
+          "who": "kid",
+          "text": "그럼 여기가 제일 우리 거네요.",
+          "en": "Then this one's the most ours."
+        },
+        {
+          "who": "dad",
+          "text": "응. 딱 너를 위한 집이야.",
+          "en": "Yep. A house made just for you."
+        }
+      ]
+    },
+    {
+      "id": "c07b",
+      "beat": "아이 눈높이",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "아이는 방 열쇠를 두 손으로 받았습니다.",
+          "en": "My kid took the room key with both hands."
+        }
+      ]
+    },
+    {
+      "id": "c08",
+      "beat": "반전",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "자, 차는 방문 앞에 세우면 되죠? 모텔처럼!",
+          "en": "Okay, I'll park right by our door, yes? Like a motel!"
+        },
+        {
+          "who": "manager",
+          "text": "주차장은 언덕 아래예요. 걸어 올라오세요.",
+          "en": "The parking lot's at the bottom of the hill. You walk up."
+        },
+        {
+          "who": "dad",
+          "text": "…아.",
+          "en": "…Oh."
+        }
+      ]
+    },
+    {
+      "id": "c08b",
+      "beat": "반전",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "짐 가방은 세 개. 언덕은 높았습니다.",
+          "en": "Three suitcases. One very steep hill."
+        },
+        {
+          "who": "kid",
+          "text": "아빠, 우리 도보 여행이에요! 그 선생님처럼!",
+          "en": "Dad, it's a walking trip! Just like that teacher!"
+        },
+        {
+          "who": "narr",
+          "text": "오답, 넷. 역시, 모답맨.",
+          "en": "Wrong answer, four. Modapman strikes again."
+        }
+      ]
+    }
+  ]
+}

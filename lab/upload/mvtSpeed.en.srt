@@ -1,0 +1,51 @@
+1
+00:00:00,800 --> 00:00:04,410
+If you average 100 km/h,
+were you at exactly 100 at some point?
+
+2
+00:00:04,460 --> 00:00:11,030
+Average-speed check: 20 km from camera A to B
+
+3
+00:00:11,080 --> 00:00:14,300
+What if you got through in 12 minutes?
+
+4
+00:00:14,350 --> 00:00:18,270
+The speedometer went anywhere from 60 to 140.
+But was there a moment at exactly 100?
+
+5
+00:00:18,320 --> 00:00:24,140
+Let's graph the distance traveled
+
+6
+00:00:24,190 --> 00:00:26,540
+The slope of the line from start to finish
+= the average speed, 100
+
+7
+00:00:26,590 --> 00:00:31,110
+The slope of the tangent = the speed at that moment
+(the derivative from episode 1!)
+
+8
+00:00:31,160 --> 00:00:34,180
+A moment parallel to the average line!
+The speedometer reads exactly 100
+
+9
+00:00:34,230 --> 00:00:37,350
+If the drive is smooth with no jumps,
+such a moment must exist = the Mean Value Theorem
+
+10
+00:00:37,400 --> 00:00:41,050
+So if your average is over 100,
+you went over 100 somewhere
+
+11
+00:00:42,050 --> 00:00:45,800
+NEXT: How do you find
+the area under a curve?

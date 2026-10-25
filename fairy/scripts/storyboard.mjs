@@ -15,6 +15,19 @@ const readJson = (f) => (fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8'
 const timing = readJson(path.join(dir, 'voice', 'timing.json'));
 const vcfg = readJson(path.join(dir, 'voice.json'));
 
+// 막대 인형 스케치는 01-real-hero 전용. 다른 책은 plan 의 stage(이모지 배치)로 구도만 그린다.
+const legacy = slug === '01-real-hero';
+const stageSketch = (cam, stage = []) => {
+  const em = stage
+    .map(
+      (o) =>
+        `<text x="${o.x}" y="${o.y}" font-size="${o.s}" text-anchor="middle">${o.e}</text>` +
+        (o.l ? `<text x="${o.x}" y="${o.y + 9}" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">${o.l}</text>` : ''),
+    )
+    .join('');
+  return sketch(-1, cam).replace('<g class="cam">', em + '<g class="cam">');
+};
+
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
 // 엄마 낭독 속도: 글자당 약 0.22초 + 장면 앞뒤 숨 1.2초
 const chars = (s) => [...s.narration, ...s.dialogue.map((d) => d.line)].join('').replace(/\s/g, '').length;
@@ -33,11 +46,11 @@ const cards = story.scenes
   <div class="left"><div class="pic" style="--h:${p.hue ?? 40}">
     <span class="no">#${s.no}</span>
     <span class="len">${sec}초</span>
-    ${sketch(s.no, p.cam)}
+    ${legacy ? sketch(s.no, p.cam) : stageSketch(p.cam, p.stage)}
   </div>
   <p class="dir">그림 지시: ${esc(s.art)}</p></div>
   <div class="txt">
-    <h3>장면 ${s.no} <small>${esc(p.title ?? '')}</small></h3>
+    <h3>장면 ${s.no} <small>${esc(p.title ?? '')}${s.ref ? ` · 원고 ${esc(s.ref)}` : ''}</small></h3>
     ${narr || '<p class="mute">(낭독 없음 — 그림과 소리만)</p>'}${dia}
     ${timing?.scenes[s.no].file ? `<audio controls preload="none" src="voice/${timing.scenes[s.no].file}"></audio>` : ''}
     <dl>
@@ -108,11 +121,12 @@ ${timing ? `<h2>듣기 (엄마가 읽어 주는 동화)</h2>
 <label><input type="checkbox" id="follow" checked> 재생 따라 카드 이동</label>
 <p class="sub">전체 ${Math.floor(timing.total / 60)}분 ${Math.round(timing.total % 60)}초 · 서술은 엄마 목소리, 대사는 인물마다 다른 목소리 (장면 카드마다 따로 들을 수도 있어요)</p></div>
 <h2>목소리</h2><div class="box"><ul>${cast}</ul></div>` : ''}
+${!timing && vcfg ? `<h2>목소리 (제안 배역)</h2><div class="box"><ul>${cast}</ul></div>` : ''}
 <h2>등장인물 (모든 그림에 같은 설명을 붙여 얼굴을 고정)</h2>
 <div class="box"><ul>${chars_}</ul></div>
 
 <h2>콘티</h2>
-<p class="tools"><label><input type="checkbox" id="cam" checked> 카메라 프레임 표시 (파란 점선 = 시작, 빨간 실선 = 끝)</label> · 인물은 막대 인형 스케치입니다. 실제 그림은 나중에 수채화풍 크레용으로 만듭니다.</p>
+<p class="tools"><label><input type="checkbox" id="cam" checked> 카메라 프레임 표시 (파란 점선 = 시작, 빨간 실선 = 끝)</label> · ${legacy ? '인물은 막대 인형 스케치입니다.' : '그림 위치는 이모지로 대신한 구도 스케치입니다.'} 실제 그림은 나중에 수채화풍 크레용으로 만듭니다.</p>
 ${cards}
 
 <h2>엄마 녹음 대본 (장면별 한 파일)</h2>

@@ -11,16 +11,17 @@ const dir = path.join(root, 'books', slug);
 const art = JSON.parse(fs.readFileSync(path.join(dir, 'art.json'), 'utf8'));
 const story = JSON.parse(fs.readFileSync(path.join(dir, 'story.json'), 'utf8'));
 
-const STYLE =
+// art.json 에 style / ref / tail / neg / attach 가 있으면 그것을 쓴다 (책마다 화풍이 다를 때)
+const STYLE = art.style ??
   'Drawing style (copy from the attached anchor image): thin black ink outlines, pastel-crayon and colored-pencil hatching, loose vertical crayon strokes in the background on warm cream paper, comical slightly lumpy faces with puffy pink noses and lips, round pink cheeks, light freckles, stubby hands, tiny doodle details. Playful, warm picture-book feeling. No 3D, no gloss, no photo-realism.';
 
-const REF =
+const REF = art.ref ??
   'The attached anchor image is ONLY a reference for the character designs and the drawing style. Do NOT copy its layout or pose; draw a completely different new scene as described. Keep the same faces, hair and clothes for each character.';
 
-const TAIL =
+const TAIL = art.tail ??
   'Landscape 16:9. Keep the bottom 15% calm and uncluttered (subtitles go there) and keep faces away from the very edges.';
 
-const NEG =
+const NEG = art.neg ??
   'No text, no letters, no captions, no logos, no watermark, no real people, no existing cartoon characters, no extra main characters beyond those listed, no scary or truly tragic expressions, no extra fingers, no 3D, no anime.';
 
 const sceneOf = (no) => story.scenes.find((s) => s.no === no);
@@ -32,7 +33,7 @@ const items = art.scenes.map((a) => {
     `COMPOSITION: ${a.comp}`,
     `BACKGROUND COLOR MOOD: ${a.bg}.`,
     '',
-    'CHARACTERS IN THIS SCENE (must match the anchor):',
+    `CHARACTERS IN THIS SCENE (must match the ${art.attach ? 'attached reference / cast sheet' : 'anchor'}):`,
     cast,
     '',
     REF,
@@ -43,7 +44,7 @@ const items = art.scenes.map((a) => {
   const s = typeof a.scene === 'number' ? sceneOf(a.scene) : null;
   const text = s
     ? [...s.narration, ...s.dialogue.map((d) => `(${d.who}) “${d.line}”`)].join(' / ') || '(글 없음 — 그림과 소리만)'
-    : '(표지 — 글 없음)';
+    : a.scene === 'cast' ? '(등장인물 시트 — 글 없음. 먼저 이것부터 뽑는다)' : '(표지 — 글 없음)';
   return { ...a, prompt, text };
 });
 
@@ -51,7 +52,7 @@ const esc = (s) => s.replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>':
 
 const md =
   `# ${story.title} — Gemini 그림 프롬프트\n\n` +
-  `장면마다 **새 대화**에서, \`art/anchor/style-anchor.png\` 를 첨부하고 프롬프트를 붙여 넣는다. 결과는 \`books/${slug}/art/<id>.png\` 로 저장.\n\n` +
+  `장면마다 **새 대화**에서, ${art.attach ? art.attach.map((a) => `\`${a}\``).join(' · ') : '`art/anchor/style-anchor.png`'} 를 첨부하고 프롬프트를 붙여 넣는다. 결과는 \`books/${slug}/art/<id>.png\` 로 저장.\n\n` +
   items.map((i) => `## ${i.id}  (장면 ${i.scene})\n> ${i.text}\n\n\`\`\`\n${i.prompt}\n\`\`\`\n`).join('\n');
 fs.writeFileSync(path.join(dir, 'GEMINI_PROMPTS.md'), md);
 fs.writeFileSync(path.join(dir, 'prompts.json'), JSON.stringify(items.map(({ id, prompt }) => ({ id, prompt })), null, 2));
@@ -74,7 +75,7 @@ details{margin-top:6px}pre{white-space:pre-wrap;font:12.5px/1.55 ui-monospace,Co
 <h1>${esc(story.title)} — Gemini 그림 프롬프트</h1>
 <ol class="how">
 <li>Chrome 에서 Gemini 를 열고 <b>장면마다 새 대화</b>를 시작한다 (같은 대화에서 이어 보내면 앞 그림 구도를 따라간다).</li>
-<li><b>이미지 만들기</b> 모드, 비율 <b>16:9</b>, 모델은 3.1 Pro 를 권한다. <b>style-anchor.png</b> 를 첨부한다 (<code>fairy/art/anchor/style-anchor.png</code>).</li>
+<li><b>이미지 만들기</b> 모드, 비율 <b>16:9</b>, 모델은 3.1 Pro 를 권한다. ${art.attach ? `다음 이미지를 첨부한다: ${art.attach.map((a) => `<code>${esc(a)}</code>`).join(' · ')}.` : '<b>style-anchor.png</b> 를 첨부한다 (<code>fairy/art/anchor/style-anchor.png</code>).'}</li>
 <li>아래 [복사] 를 눌러 프롬프트를 붙여 넣고 요청한다. 여러 장 뽑아 가장 닮은 것을 고른다.</li>
 <li><code>books/${slug}/art/&lt;id&gt;.png</code> 로 저장한다 (표지는 <code>cover.png</code>, 장면은 <code>p00.png</code> …).</li>
 </ol>

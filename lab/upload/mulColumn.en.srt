@@ -1,0 +1,43 @@
+1
+00:00:00,800 --> 00:00:05,210
+Why does long multiplication
+for 13 × 12 work?
+
+2
+00:00:05,260 --> 00:00:07,380
+13 × 12 is the area of a rectangle
+13 wide and 12 tall
+
+3
+00:00:07,430 --> 00:00:10,450
+Let's cut it at the 10s
+
+4
+00:00:10,500 --> 00:00:17,120
+Pull the pieces apart: 100 + 30 + 20 + 6 = 156
+
+5
+00:00:17,170 --> 00:00:20,390
+Now let's put it next to the long multiplication
+
+6
+00:00:20,440 --> 00:00:23,560
+13 × 2 = the bottom strip
+20 + 6 = 26
+
+7
+00:00:23,610 --> 00:00:26,730
+13 × 10 = the big top block
+100 + 30 = 130
+
+8
+00:00:26,780 --> 00:00:28,700
+Add the two lines = the whole area
+
+9
+00:00:28,750 --> 00:00:32,150
+Each line of long multiplication = one strip of the rectangle!
+
+10
+00:00:33,150 --> 00:00:36,900
+NEXT: Is 5² equal to 10 or 25?

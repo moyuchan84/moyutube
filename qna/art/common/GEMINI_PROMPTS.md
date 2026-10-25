@@ -1,7 +1,7 @@
 # Gemini 프롬프트 — 공통 — 가족 캐릭터 · 집 배경
 
 > `video/scripts/prompts.mjs` 가 만든 파일이다. 직접 고치지 말고 `video/src/art-common.json` 을 고친 뒤 `npm run prompts` 를 다시 실행한다.
-> 모든 편이 같이 쓰는 그림이다. **한 번만 만들면 된다.** 진행: 30 / 31
+> 모든 편이 같이 쓰는 그림이다. **한 번만 만들면 된다.** 진행: 39 / 40
 
 ## 사용법
 
@@ -764,7 +764,235 @@ Chest-up close-up, the face fills most of the frame, centered, not cropped. Squa
 Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
 ```
 
-#### 29. 배경 — 거실 ✅
+#### 29. 시그니처 — 아빠 네모 입막음 ① 손 올리기 ✅
+- 저장: `art/common/cutin/dad-sig-1.png`
+- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/dad/normal.png` (같은 사람 유지용 기준 그림)
+- 종류 · 비율: 리액션 컷인 (가슴 위, 초록 배경) · 1:1
+- 영상에서의 움직임: 크래시 줌으로 들어온다. ①→②→③ 을 4~6프레임씩 넘겨 움직이게 한다.
+- 메모: 모답맨 아빠 시그니처 세 장의 첫 장(기준 프레임). ②·③은 이 그림에서 손 · 얼굴만 바꾼다. 아빠 얼굴은 반드시 기준 그림(common/dad/normal)과 같게 — 첨부 ②를 빼고 그리면 다른 사람이 된다 (9화에서 실제로 얼굴이 달라졌다).
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is a large close-up reaction shot for a comedy video: maximum facial detail, extreme exaggeration, dramatic lighting on the face.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+The character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.
+
+Character: the dad: a Korean father in his late 30s, slightly chubby with a round face, short black hair that is clearly thinning on top, thick eyebrows, faint stubble, wearing a mustard-yellow knit cardigan over a white t-shirt, gray sweatpants and house slippers; a kind but easily flustered look.
+
+Facing the viewer, turned very slightly to the LEFT. Frame 1 of his signature panic pose: he has just realized he was wrong. Both hands are rising up in front of his chest, the thumbs and index fingers of the two hands starting to reach toward each other to form a rectangle frame, the other fingers curled. Eyes already wide and round, eyebrows jumping up, mouth a small stunned "o", the first cold sweat drop on his forehead. His face, thinning hair, stubble, mustard-yellow cardigan and white t-shirt are exactly as in attached image 2.
+
+Comic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.
+
+Chest-up close-up, the face fills most of the frame, centered, not cropped. Square 1:1 aspect ratio.
+
+Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
+```
+
+#### 30. 시그니처 — 아빠 네모 입막음 ② 입에 딱 ✅
+- 저장: `art/common/cutin/dad-sig-2.png`
+- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/cutin/dad-sig-1.png` (첫 번째 프레임 — 이 그림을 그대로 다시 그린다)
+- 종류 · 비율: 말하는 그림 (두 번째 프레임, 초록 배경) · 기준 그림과 같게
+- 영상에서의 움직임: ①과 같은 자리 · 같은 크기 — 손과 얼굴만 바뀐다.
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is a character cutout for a 2D animated video.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+This is the SECOND FRAME of a two-frame animation. Redraw attached image 2 EXACTLY: same character, same pose, same size, same position in the frame, same clothes, same colors, same line work, same framing and margins. Change ONLY what is described below. Everything else must be pixel-for-pixel as close to attached image 2 as possible so the two frames can be flipped back and forth.
+
+Character: the dad: a Korean father in his late 30s, slightly chubby with a round face, short black hair that is clearly thinning on top, thick eyebrows, faint stubble, wearing a mustard-yellow knit cardigan over a white t-shirt, gray sweatpants and house slippers; a kind but easily flustered look.
+
+Change ONLY the hands and the face: the thumbs and index fingers of both hands now touch tip to tip, forming one small RECTANGLE frame that is pressed right against his mouth as if trying to hide it. Above the hands his eyes are bulging huge and perfectly round, eyebrows shot up to the hairline, cheeks puffed. Everything else stays exactly the same.
+
+Same aspect ratio, framing and margins as attached image 2.
+
+Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
+```
+
+#### 31. 시그니처 — 아빠 네모 입막음 ③ 부들부들 ✅
+- 저장: `art/common/cutin/dad-sig-3.png`
+- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/cutin/dad-sig-1.png` (첫 번째 프레임 — 이 그림을 그대로 다시 그린다)
+- 종류 · 비율: 말하는 그림 (두 번째 프레임, 초록 배경) · 기준 그림과 같게
+- 영상에서의 움직임: ①과 같은 자리 · 같은 크기 — 얼굴 · 땀 · 머리카락만 더 커진다.
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is a character cutout for a 2D animated video.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+This is the SECOND FRAME of a two-frame animation. Redraw attached image 2 EXACTLY: same character, same pose, same size, same position in the frame, same clothes, same colors, same line work, same framing and margins. Change ONLY what is described below. Everything else must be pixel-for-pixel as close to attached image 2 as possible so the two frames can be flipped back and forth.
+
+Character: the dad: a Korean father in his late 30s, slightly chubby with a round face, short black hair that is clearly thinning on top, thick eyebrows, faint stubble, wearing a mustard-yellow knit cardigan over a white t-shirt, gray sweatpants and house slippers; a kind but easily flustered look.
+
+Same as the previous frame with the rectangle of fingers still pressed against his mouth, but the panic peaks: the eyes bulge even bigger and tremble with tiny tears at the corners, the few hairs on top stand straight up, a burst of cold sweat drops sprays off his head, short shaking lines around the hands. Everything else stays exactly the same.
+
+Same aspect ratio, framing and margins as attached image 2.
+
+Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
+```
+
+#### 32. 시그니처 — 엄마 검지 네모 ① 왼쪽 세로줄 ✅
+- 저장: `art/common/cutin/mom-sig-1.png`
+- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/mom/normal.png` (같은 사람 유지용 기준 그림), ③ `art/common/cutin/mom-smirk.png` (엄마 얼굴 컷인 — 피부 · 얼굴 톤 기준)
+- 종류 · 비율: 리액션 컷인 (가슴 위, 초록 배경) · 1:1
+- 영상에서의 움직임: 어? 할 때마다 한 장씩 넘어간다.
+- 메모: 엄마 시그니처 다섯 장의 첫 장(기준 프레임). 곧게 편 오른손 검지로 입 둘레에 네모를 그린다: ① 왼쪽 → ② 오른쪽 → ③ 위 → ④ 아래 → 양 볼 누르고 "아악!". ②~④는 이 그림에서 손가락 자리만 바꾼다. 엄마 얼굴 · 안경 · 머리 · 세이지색 스웨터는 반드시 기준 그림(common/mom/normal)과 같게 (9화 첫 그림은 기준 없이 그려 다른 사람처럼 나왔다).
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is a large close-up reaction shot for a comedy video: maximum facial detail, extreme exaggeration, dramatic lighting on the face.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+The character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.
+
+Character: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.
+
+Facing the viewer, turned very slightly to the LEFT. Her signature fluster pose, frame 1 of 4. Her RIGHT index finger is held perfectly STRAIGHT and stiff like a little ruler (the other fingers curled into a fist, thumb tucked), and she uses it to trace an invisible SQUARE frame around her mouth, one side at a time. Frame 1: the straight finger stands VERTICALLY right beside the corner of her lips on the VIEWER'S LEFT side of the picture, fingertip pointing straight up, drawing the left side of the square. Lips pressed into a small tense line, eyes wide and darting behind her round glasses, eyebrows raised, a single sweat drop, the left arm down out of the way. Comically stunned, still trying to stay composed. Her face, glasses, bob hair and sage-green sweater are exactly as in attached image 2. Keep her face exactly as soft and pleasant as in her close-up (attached image 3): fair smooth skin with only a light pink blush, no red blotches, no veins, no heavy wrinkles.
+
+Comic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.
+
+Chest-up close-up, the face fills most of the frame, centered, not cropped. Square 1:1 aspect ratio.
+
+Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
+```
+
+#### 33. 시그니처 — 엄마 검지 네모 ② 오른쪽 세로줄 ✅
+- 저장: `art/common/cutin/mom-sig-2.png`
+- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/cutin/mom-sig-1.png` (첫 번째 프레임 — 이 그림을 그대로 다시 그린다)
+- 종류 · 비율: 말하는 그림 (두 번째 프레임, 초록 배경) · 기준 그림과 같게
+- 영상에서의 움직임: ①과 같은 자리 · 같은 크기 — 손가락만 옮겨 간다.
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is a character cutout for a 2D animated video.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+This is the SECOND FRAME of a two-frame animation. Redraw attached image 2 EXACTLY: same character, same pose, same size, same position in the frame, same clothes, same colors, same line work, same framing and margins. Change ONLY what is described below. Everything else must be pixel-for-pixel as close to attached image 2 as possible so the two frames can be flipped back and forth.
+
+Character: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.
+
+IMPORTANT: the hand MUST visibly move. The right hand now crosses in front of her chin so that the same straight stiff index finger stands VERTICALLY right beside the corner of her lips on the VIEWER'S RIGHT side of the picture (the opposite side from the image you just made), fingertip pointing straight up, drawing the right side of the square. The eyes now glance toward the finger. Everything else stays exactly the same.
+
+Same aspect ratio, framing and margins as attached image 2.
+
+Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
+```
+
+#### 34. 시그니처 — 엄마 검지 네모 ③ 위 가로줄 ✅
+- 저장: `art/common/cutin/mom-sig-3.png`
+- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/cutin/mom-sig-1.png` (첫 번째 프레임 — 이 그림을 그대로 다시 그린다)
+- 종류 · 비율: 말하는 그림 (두 번째 프레임, 초록 배경) · 기준 그림과 같게
+- 영상에서의 움직임: ①과 같은 자리 · 같은 크기 — 손가락만 옮겨 간다.
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is a character cutout for a 2D animated video.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+This is the SECOND FRAME of a two-frame animation. Redraw attached image 2 EXACTLY: same character, same pose, same size, same position in the frame, same clothes, same colors, same line work, same framing and margins. Change ONLY what is described below. Everything else must be pixel-for-pixel as close to attached image 2 as possible so the two frames can be flipped back and forth.
+
+Character: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.
+
+IMPORTANT: the hand MUST visibly move. The same straight stiff index finger now lies HORIZONTALLY, pointing sideways, pressed just ABOVE her upper lip and under the nose like a little mustache, drawing the top side of the square. The eyes now glance up and a second sweat drop appears. Everything else stays exactly the same.
+
+Same aspect ratio, framing and margins as attached image 2.
+
+Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
+```
+
+#### 35. 시그니처 — 엄마 검지 네모 ④ 아래 가로줄 ✅
+- 저장: `art/common/cutin/mom-sig-4.png`
+- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/cutin/mom-sig-1.png` (첫 번째 프레임 — 이 그림을 그대로 다시 그린다)
+- 종류 · 비율: 말하는 그림 (두 번째 프레임, 초록 배경) · 기준 그림과 같게
+- 영상에서의 움직임: ①과 같은 자리 · 같은 크기 — 손가락만 옮겨 간다.
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is a character cutout for a 2D animated video.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+This is the SECOND FRAME of a two-frame animation. Redraw attached image 2 EXACTLY: same character, same pose, same size, same position in the frame, same clothes, same colors, same line work, same framing and margins. Change ONLY what is described below. Everything else must be pixel-for-pixel as close to attached image 2 as possible so the two frames can be flipped back and forth.
+
+Character: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.
+
+IMPORTANT: the hand MUST visibly move. The same straight stiff index finger now lies HORIZONTALLY, pointing sideways, pressed just BELOW her lower lip across the top of the chin, drawing the bottom side of the square. The eyes are now trembling and starting to water, glasses slightly crooked. Everything else stays exactly the same.
+
+Same aspect ratio, framing and margins as attached image 2.
+
+Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
+```
+
+#### 36. 시그니처 — 엄마 양 볼 누르고 악! ✅
+- 저장: `art/common/cutin/mom-sig-scream.png`
+- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/cutin/mom-sig-1.png` (같은 사람 유지용 기준 그림)
+- 종류 · 비율: 리액션 컷인 (가슴 위, 초록 배경) · 1:1
+- 영상에서의 움직임: 번쩍과 함께 크래시 줌, 화면이 흔들린다.
+- 메모: 엄마 시그니처의 마지막 장. ①과 같은 크기 · 자리로 그린다. 케빈(나 홀로 집에)처럼 양 손바닥으로 볼을 누른다.
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is a large close-up reaction shot for a comedy video: maximum facial detail, extreme exaggeration, dramatic lighting on the face.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+The character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.
+
+Character: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.
+
+Same framing and size as attached image 2, but a new pose: the classic open-palm scream — BOTH palms pressed flat against her own cheeks, squishing them, elbows out, mouth stretched into a huge long vertical oval scream showing teeth and tongue, eyes bulging wide behind round glasses that have jumped up off her nose, hair flicked out by shock lines. Maximum comic horror, not scary. Same face, glasses, hair and sage-green sweater as attached image 2.
+
+Comic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.
+
+Chest-up close-up, the face fills most of the frame, centered, not cropped. Square 1:1 aspect ratio.
+
+Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
+```
+
+#### 37. 시그니처 — 아이 거꾸로 손 가면 아악! ✅
+- 저장: `art/common/cutin/kid-sig.png`
+- 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커), ② `art/common/kid/normal.png` (같은 사람 유지용 기준 그림)
+- 종류 · 비율: 리액션 컷인 (가슴 위, 초록 배경) · 1:1
+- 영상에서의 움직임: 튀어나오며 젤리처럼 늘어났다 돌아온다.
+- 메모: 모답맨 아이의 시그니처 놀람 포즈. 엄청난 사실을 알았을 때("달이 위성이었어요?!") 쓴다.
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is a large close-up reaction shot for a comedy video: maximum facial detail, extreme exaggeration, dramatic lighting on the face.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+The character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.
+
+Character: the kid: an 8-year-old Korean child with a black bowl-cut, huge round curious eyes, one missing front tooth, wearing a red hoodie, navy shorts and white socks; small, fearless and very direct.
+
+Facing the viewer, turned very slightly to the RIGHT. His signature shock pose, the upside-down hand mask: both hands flipped upside down in front of his face, the thumb and index finger of each hand curled into a ring around each eye like goggles, the other three fingers of each hand lying down along his cheeks like the points of a mask. Through the rings his eyes are huge and sparkling; below, his mouth is stretched wide open in a huge 'AAAH!' showing the missing front tooth. Elbows out to the sides, thrilled rather than scared.
+
+Comic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.
+
+Chest-up close-up, the face fills most of the frame, centered, not cropped. Square 1:1 aspect ratio.
+
+Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
+```
+
+#### 38. 배경 — 거실 ✅
 - 저장: `art/common/bg/living-room.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 배경 (사람 없음) · 16:9
@@ -783,7 +1011,7 @@ The camera will slowly pan and zoom across this picture, so paint about 8% extra
 Keep the bottom third of the picture an open, uncluttered floor: characters will be placed there later. All signs, posters, screens and labels are blank shapes with no text. 16:9 landscape, highest resolution.
 ```
 
-#### 30. 배경 — 저녁 밥상 ✅
+#### 39. 배경 — 저녁 밥상 ✅
 - 저장: `art/common/bg/dining-room.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 배경 (사람 없음) · 16:9
@@ -802,7 +1030,7 @@ The camera will slowly pan and zoom across this picture, so paint about 8% extra
 Keep the bottom third of the picture an open, uncluttered floor: characters will be placed there later. All signs, posters, screens and labels are blank shapes with no text. 16:9 landscape, highest resolution.
 ```
 
-#### 31. 배경 — 밤의 아이 방 ✅
+#### 40. 배경 — 밤의 아이 방 ✅
 - 저장: `art/common/bg/kid-room-night.png`
 - 첨부: ① `art/anchor/style-cutin.png` (화풍 앵커)
 - 종류 · 비율: 배경 (사람 없음) · 16:9

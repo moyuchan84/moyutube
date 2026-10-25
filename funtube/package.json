@@ -7,7 +7,8 @@
     "beat": "node scripts/beat.mjs",
     "studio": "remotion studio src/index.ts",
     "render": "node scripts/render.mjs",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "rush": "node scripts/rush.mjs"
   },
   "keywords": [],
   "author": "",

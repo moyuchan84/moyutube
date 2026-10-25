@@ -57,13 +57,48 @@ type Shot = {
   loading?: { t: string; pct: number; at?: number }; // 진행 막대가 pct 에서 멈춘다
   jail?: number; // 이 시점에 감옥 창살이 위에서 떨어진다
   note?: string; // 위쪽 구석의 작은 주석 (※ …)
-  fx?: ("lines" | "shake" | "vhs" | "docu" | "mono" | "imagine" | "slowmo")[];
+  // 애니 연출(내모남불): impact(임팩트 프레임) · focus(흰 집중선) · gaan(충격 세로줄) · aura(분노 오라) · kira(반짝이)
+  fx?: ("lines" | "shake" | "vhs" | "docu" | "mono" | "imagine" | "slowmo" | "impact" | "focus" | "gaan" | "aura" | "kira")[];
   sfx?: { name: string; at?: number; volume?: number }[];
 };
 // count: 이 박자에서 오답 카운터가 이 숫자가 된다 (countAt: 박자 안의 시점)
-type Beat = { line?: string; hold?: number; pad?: number; count?: number; countAt?: number; shots: Shot[] };
+// calm: chop 으로 쪼개지 않는 박자 (아이 눈높이처럼 천천히 가야 하는 곳)
+type Beat = { line?: string; hold?: number; pad?: number; count?: number; countAt?: number; calm?: boolean; shots: Shot[] };
 // episode: 그림을 가져올 편, voice: 음성을 가져올 폴더 (없으면 episode), counter: 구석 카운터 이름표 (없으면 안 보임)
-export type MotionPlan = { id: string; episode: string; voice?: string; bgm?: string; gap?: number; counter?: string; beats: Beat[] };
+// chop: 글자 · 이름표가 없는 그림 샷이 이 프레임보다 길면 확대 · 기울기를 바꾼 컷 여러 개로 쪼갠다 (빠른 컷 편집)
+export type MotionPlan = { id: string; episode: string; voice?: string; bgm?: string; gap?: number; counter?: string; chop?: number; beats: Beat[] };
+
+const CHOP_VARIANTS = [
+  { zoom: 1, roll: 0 },
+  { zoom: 1.22, roll: -3 },
+  { zoom: 1.1, roll: 2.5 },
+];
+const chopShot = (shot: PlacedShot, chop: number): PlacedShot[] => {
+  const n = Math.ceil(shot.dur / chop);
+  if (n < 2 || shot.text?.length || shot.tag || shot.freeze != null || shot.loading || shot.mark || shot.tally || shot.jail != null) return [shot];
+  const from = shot.cam?.from ?? [0.5, 0.5, 1];
+  const to = shot.cam?.to ?? [from[0], from[1], from[2] * 1.06];
+  const step = Math.round(shot.dur / n);
+  return Array.from({ length: n }, (_, k) => {
+    const v = CHOP_VARIANTS[k % CHOP_VARIANTS.length];
+    const t0 = k / n;
+    const t1 = (k + 1) / n;
+    const at = (t: number, i: number) => from[i] + (to[i] - from[i]) * t;
+    const piece: PlacedShot = {
+      ...shot,
+      from: shot.from + k * step,
+      dur: k === n - 1 ? shot.dur - k * step : step,
+      in: k === 0 ? shot.in : "cut",
+      cam: { ...shot.cam, from: [at(t0, 0), at(t0, 1), at(t0, 2) * v.zoom], to: [at(t1, 0), at(t1, 1), at(t1, 2) * v.zoom * 1.04], roll: v.roll ? [v.roll, v.roll * 1.3] : shot.cam?.roll, punch: k === 0 ? shot.cam?.punch : undefined },
+      // 이어지는 조각에서는 등장 동작 · 효과음 · 임팩트를 다시 하지 않는다
+      cast: k === 0 ? shot.cast : shot.cast?.map((c) => ({ ...c, enter: undefined, at: undefined })),
+      props: k === 0 ? shot.props : shot.props?.map((pr) => ({ ...pr, enter: undefined, at: undefined })),
+      sfx: k === 0 ? shot.sfx : [],
+      fx: k === 0 ? shot.fx : shot.fx?.filter((x) => x !== "impact"),
+    };
+    return piece;
+  });
+};
 
 type PlacedShot = Shot & { from: number; dur: number; out: Trans; who?: string; lineFrom: number; lineDur: number };
 type PlacedLine = { id: string; who: string; text: string; voice: string; from: number; dur: number };
@@ -105,7 +140,8 @@ export const buildMotion = (plan: MotionPlan, script: ScriptLike, timing: Record
     const starts = beat.shots.map((s) => frameOf(s.at, length));
     beat.shots.forEach((shot, i) => {
       const end = i + 1 < beat.shots.length ? starts[i + 1] : length;
-      shots.push({ ...shot, from: cursor + starts[i], dur: end - starts[i], out: "cut", who, lineFrom: cursor, lineDur: length });
+      const placed: PlacedShot = { ...shot, from: cursor + starts[i], dur: end - starts[i], out: "cut", who, lineFrom: cursor, lineDur: length };
+      shots.push(...(plan.chop && !beat.calm ? chopShot(placed, plan.chop) : [placed]));
     });
     cursor += length;
   }
@@ -113,7 +149,8 @@ export const buildMotion = (plan: MotionPlan, script: ScriptLike, timing: Record
   return { shots, lines, counts, durationInFrames: cursor, episode: plan.episode, bgm: plan.bgm, counter: plan.counter };
 };
 
-export const Motion: React.FC<{ timeline: MotionTimeline }> = ({ timeline }) => {
+// noSubs · noBgm: 쇼츠처럼 다른 틀 안에 넣을 때 자막 · 배경음악을 바깥에서 따로 그린다
+export const Motion: React.FC<{ timeline: MotionTimeline; noSubs?: boolean; noBgm?: boolean }> = ({ timeline, noSubs, noBgm }) => {
   const { episode } = timeline;
   return (
     <AbsoluteFill style={{ backgroundColor: INK, overflow: "hidden" }}>
@@ -127,7 +164,7 @@ export const Motion: React.FC<{ timeline: MotionTimeline }> = ({ timeline }) => 
       {timeline.lines.map((line) => (
         <Sequence key={line.id} from={line.from} durationInFrames={line.dur + 4} layout="none">
           <Audio src={staticFile(line.voice)} />
-          <Subtitle line={line} />
+          {noSubs ? null : <Subtitle line={line} />}
         </Sequence>
       ))}
       {timeline.shots.flatMap((shot, i) => {
@@ -140,7 +177,7 @@ export const Motion: React.FC<{ timeline: MotionTimeline }> = ({ timeline }) => 
           </Sequence>
         ));
       })}
-      {timeline.bgm ? (
+      {timeline.bgm && !noBgm ? (
         <Audio
           src={staticFile(`bgm/${timeline.bgm}.wav`)}
           loop
@@ -207,6 +244,8 @@ const ShotView: React.FC<{ episode: string; shot: PlacedShot }> = ({ episode, sh
     fx.includes("mono") || frozen ? "grayscale(0.9) contrast(1.25)" : "",
     fx.includes("docu") ? "sepia(0.35) saturate(0.7) contrast(1.1)" : "",
     fx.includes("imagine") ? "saturate(1.6) hue-rotate(-12deg) brightness(1.05)" : "",
+    fx.includes("impact") && f < 5 ? "grayscale(1) invert(1) contrast(2.2)" : "",
+    fx.includes("gaan") ? "saturate(0.5) brightness(0.85)" : "",
   ].join(" ").trim();
   const jailAt = shot.jail == null ? null : frameOf(shot.jail, shot.dur);
   return (
@@ -217,6 +256,11 @@ const ShotView: React.FC<{ episode: string; shot: PlacedShot }> = ({ episode, sh
       {jailAt != null && f >= jailAt ? <Jail f={f - jailAt} /> : null}
       {frozen ? <Halftone since={f - freezeAt!} /> : null}
       {fx.includes("lines") ? <SpeedLines f={f} /> : null}
+      {fx.includes("aura") ? <Aura f={f} /> : null}
+      {fx.includes("gaan") ? <Gaan f={f} /> : null}
+      {fx.includes("focus") ? <FocusLines f={f} /> : null}
+      {fx.includes("kira") ? <Kira f={f} seed={shot.from} /> : null}
+      {fx.includes("impact") && f < 5 ? <ImpactFrame f={f} /> : null}
       {fx.includes("vhs") ? <Vhs f={f} /> : null}
       {fx.includes("docu") ? <Docu /> : null}
       {fx.includes("imagine") ? <Imagine f={f} /> : null}
@@ -549,6 +593,73 @@ const Counter: React.FC<{ label: string; counts: { from: number; n: number }[] }
   );
 };
 
+// ── 애니 연출 ──
+// 임팩트 프레임: 맞는 순간 4프레임 동안 흑백 반전 + 검은 방사선
+const ImpactFrame: React.FC<{ f: number }> = ({ f }) => (
+  <AbsoluteFill style={{ mixBlendMode: "multiply" }}>
+    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" style={{ transform: `rotate(${f * 7}deg) scale(1.8)` }}>
+      <path d={BURST(26)} fill="#000" opacity={0.85} />
+    </svg>
+  </AbsoluteFill>
+);
+
+// 흰 집중선: 가운데를 비워 두고 바깥에서 안쪽으로 몰리는 선 (매 2프레임 흔들림)
+const FocusLines: React.FC<{ f: number }> = ({ f }) => {
+  const tick = Math.floor(f / 2);
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none" }}>
+      <svg viewBox="0 0 1920 1080" width="100%" height="100%">
+        {Array.from({ length: 90 }, (_, i) => {
+          const a = (i / 90) * Math.PI * 2 + random(`fa${i}-${tick}`) * 0.03;
+          const inner = 430 + random(`fi${i}-${tick}`) * 260;
+          const w = 2 + random(`fw${i}`) * 9;
+          return <line key={i} x1={960 + Math.cos(a) * inner} y1={540 + Math.sin(a) * inner * 0.62} x2={960 + Math.cos(a) * 1500} y2={540 + Math.sin(a) * 1500} stroke="#fff" strokeWidth={w} opacity={0.85} />;
+        })}
+      </svg>
+    </AbsoluteFill>
+  );
+};
+
+// 충격 세로줄 ("가-안"): 위에서 내려오는 어두운 그늘 + 세로 줄무늬
+const Gaan: React.FC<{ f: number }> = ({ f }) => {
+  const k = interpolate(f, [0, 8], [0, 1], { ...clamp, easing: expoOut });
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none" }}>
+      <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(20,30,90,0.85) 0%, rgba(40,50,120,0.45) 45%, transparent 75%)", clipPath: `inset(0 0 ${(1 - k) * 100}% 0)` }} />
+      <AbsoluteFill style={{ backgroundImage: "repeating-linear-gradient(90deg, rgba(10,10,40,0.55) 0 6px, transparent 6px 34px)", WebkitMaskImage: "linear-gradient(180deg, #000 0%, #000 35%, transparent 70%)", clipPath: `inset(0 0 ${(1 - k) * 100}% 0)` }} />
+    </AbsoluteFill>
+  );
+};
+
+// 분노 오라: 화면 가장자리에서 일렁이는 빨강 · 주황 불꽃 빛
+const Aura: React.FC<{ f: number }> = ({ f }) => {
+  const pulse = 0.75 + Math.sin(f * 0.9) * 0.25;
+  return (
+    <AbsoluteFill style={{ pointerEvents: "none", mixBlendMode: "screen" }}>
+      <AbsoluteFill style={{ boxShadow: `inset 0 0 ${220 * pulse}px ${90 * pulse}px rgba(255,60,20,0.85)` }} />
+      <AbsoluteFill style={{ background: `radial-gradient(ellipse at 50% 115%, rgba(255,140,0,${0.55 * pulse}) 0%, transparent 55%)` }} />
+    </AbsoluteFill>
+  );
+};
+
+// 반짝이 (키라키라): 네 갈래 별이 여기저기서 켜졌다 꺼진다
+const Kira: React.FC<{ f: number; seed: number }> = ({ f, seed }) => (
+  <AbsoluteFill style={{ pointerEvents: "none" }}>
+    {Array.from({ length: 16 }, (_, i) => {
+      const x = random(`kx${seed}-${i}`) * W;
+      const y = random(`ky${seed}-${i}`) * H * 0.9;
+      const size = 30 + random(`ks${seed}-${i}`) * 70;
+      const phase = random(`kp${seed}-${i}`) * 20;
+      const k = Math.max(0, Math.sin((f + phase) * 0.35));
+      return (
+        <svg key={i} viewBox="-10 -10 20 20" width={size} height={size} style={{ position: "absolute", left: x - size / 2, top: y - size / 2, transform: `scale(${k}) rotate(${f * 4}deg)`, filter: "drop-shadow(0 0 8px #fff)" }}>
+          <path d="M0,-10 L2,-2 L10,0 L2,2 L0,10 L-2,2 L-10,0 L-2,-2 Z" fill={i % 3 ? "#fff" : "#FFE680"} />
+        </svg>
+      );
+    })}
+  </AbsoluteFill>
+);
+
 // 일부러 대충 그린 도둑 (아빠 상상 속 등장인물)
 const Thief: React.FC = () => (
   <svg viewBox="0 0 55 100" width="100%" height="100%">
@@ -658,6 +769,7 @@ const SPEAKER: Record<string, { name: string; color: string }> = {
   kid: { name: "아이", color: RED },
   mom: { name: "엄마", color: "#7A4FA0" },
   police: { name: "경찰관", color: "#1F5FA8" },
+  traffic: { name: "교통경찰관", color: "#1F5FA8" },
   neighbor: { name: "옆 창구 아저씨", color: "#8A5A2B" },
 };
 

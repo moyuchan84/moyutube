@@ -1,0 +1,15 @@
+{
+  "NEXT": "NEXT: Is the dot product\na shadow's length?",
+  "EN": {
+    "검사가 양성인데|진짜일 확률은 9%?": "A positive test,\nbut only a 9% chance it's real?",
+    "1000명이 있어요": "Here are 1,000 people",
+    "그중 병에 걸린 사람은 10명 (1%)": "10 of them have the disease (1%)",
+    "가상의 검사: 병이 있으면 꼭 양성\n없어도 10% 는 잘못 양성": "An imaginary test: always positive if you're sick,\nbut 10% of healthy people test positive by mistake",
+    "양성이 나온 사람만 모아 보면": "Let's gather everyone who tested positive",
+    "양성이어도 진짜일 확률은 9% 쯤!": "Even with a positive result, it's only about a 9% chance!",
+    "병 없는 사람이 워낙 많아서\n10% 실수만으로도 99명이에요": "There are so many healthy people\nthat a 10% mistake rate alone means 99 people",
+    "양성인 109명만 한 번 더 검사하면?": "What if we test just those 109 again?",
+    "두 번 양성이면 50% 로 껑충!": "Two positives — it jumps to 50%!",
+    "\"양성인 사람들 중에서\" 다시 세기\n이게 조건부확률이에요": "Counting again \"among the people who tested positive\" —\nthat's conditional probability"
+  }
+}

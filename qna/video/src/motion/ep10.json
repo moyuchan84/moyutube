@@ -1,0 +1,2835 @@
+{
+  "id": "Ep10-Modapman",
+  "episode": "ep10",
+  "voice": "ep10",
+  "bgm": "cheerful",
+  "gap": 1,
+  "counter": "모답맨 오답",
+  "thumb": {
+    "top": "HOPE? HOF?",
+    "bottom": "외계인??",
+    "sub": "UFO 3분 정리",
+    "dad": "common/cutin/mom-sig-scream",
+    "guest": "cutin/astro-correct",
+    "count": 4,
+    "poster": "full/hope-poster",
+    "posterTitle": "HOPE",
+    "textLeft": 420
+  },
+  "beats": [
+    {
+      "line": "c00-0",
+      "shots": [
+        {
+          "bg": "full/sofa-movie",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1
+            ],
+            "to": [
+              0.5,
+              0.45,
+              1.15
+            ]
+          },
+          "text": [
+            {
+              "t": "HOPE 상영 중",
+              "style": "news",
+              "at": 0.05
+            }
+          ],
+          "sfx": [
+            {
+              "name": "tick"
+            }
+          ]
+        },
+        {
+          "at": 0.45,
+          "in": "slam",
+          "bg": "burst:#FFD23F:#FFB627",
+          "cast": [
+            {
+              "art": "common/cutin/kid-ask",
+              "x": 0.3,
+              "h": 1,
+              "enter": "pop",
+              "talk": "kid"
+            }
+          ],
+          "props": [
+            {
+              "art": "prop/court-beer-hall",
+              "x": 0.74,
+              "y": 0.44,
+              "w": 0.3,
+              "enter": "drop"
+            }
+          ],
+          "text": [
+            {
+              "t": "호프 = 술집?",
+              "style": "shake",
+              "x": 0.74,
+              "y": 0.84,
+              "rot": 4,
+              "size": 100,
+              "at": 0.3
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            },
+            {
+              "name": "whoosh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00-1",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "full/sofa-movie",
+          "fx": [
+            "shake"
+          ],
+          "cam": {
+            "from": [
+              0.35,
+              0.45,
+              1.8
+            ],
+            "to": [
+              0.35,
+              0.42,
+              2
+            ]
+          },
+          "text": [
+            {
+              "t": "15세 관람가",
+              "style": "stamp",
+              "x": 0.78,
+              "y": 0.24,
+              "size": 100,
+              "color": "#B8352A",
+              "at": 0.35
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00a-0",
+      "pad": 6,
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "stripes:#5BC0EB:#3FA7D6",
+          "cast": [
+            {
+              "art": "common/cutin/dad-proud",
+              "x": 0.34,
+              "h": 1,
+              "enter": "spin",
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "HOPE = 희망",
+              "style": "slam",
+              "x": 0.74,
+              "y": 0.3,
+              "size": 100
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pang"
+            }
+          ]
+        },
+        {
+          "at": 0.42,
+          "in": "zoom",
+          "bg": "dots:#F6EEDF:#E8DCC4",
+          "props": [
+            {
+              "art": "prop/hop-cone",
+              "x": 0.3,
+              "y": 0.46,
+              "w": 0.34,
+              "enter": "pop",
+              "rot": -6
+            }
+          ],
+          "text": [
+            {
+              "t": "술집 호프 = 홉?!",
+              "style": "slam",
+              "x": 0.72,
+              "y": 0.4,
+              "size": 100,
+              "color": "#B8352A",
+              "at": 0.2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            },
+            {
+              "name": "pang",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00b-0",
+      "shots": [
+        {
+          "in": "glitch",
+          "bg": "bg/living-room-movie",
+          "cast": [
+            {
+              "art": "common/mom/explain",
+              "x": 0.55,
+              "h": 0.8,
+              "talk": "mom"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.55,
+              0.45,
+              1.6
+            ],
+            "to": [
+              0.55,
+              0.42,
+              1.8
+            ]
+          },
+          "text": [
+            {
+              "t": "홉 ✕",
+              "style": "stamp",
+              "x": 0.84,
+              "y": 0.3,
+              "size": 120,
+              "at": 0.1
+            }
+          ],
+          "sfx": [
+            {
+              "name": "scratch"
+            },
+            {
+              "name": "stamp",
+              "at": 0.1
+            }
+          ]
+        },
+        {
+          "at": 0.45,
+          "in": "whip-r",
+          "bg": "dots:#F6EEDF:#E8DCC4",
+          "props": [
+            {
+              "art": "prop/court-beer-hall",
+              "x": 0.3,
+              "y": 0.46,
+              "w": 0.4,
+              "enter": "r"
+            }
+          ],
+          "text": [
+            {
+              "t": "Hof = 궁정",
+              "style": "slam",
+              "x": 0.74,
+              "y": 0.34,
+              "size": 110,
+              "color": "#B8352A"
+            },
+            {
+              "t": "궁정 맥주집에서",
+              "style": "pop",
+              "x": 0.74,
+              "y": 0.56,
+              "size": 80,
+              "at": 0.5
+            }
+          ],
+          "sfx": [
+            {
+              "name": "slide"
+            },
+            {
+              "name": "ding",
+              "at": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00b-1",
+      "pad": 14,
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "#15303A",
+          "cast": [
+            {
+              "art": "common/cutin/dad-sig-1",
+              "x": 0.5,
+              "h": 1
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.5,
+              0.45,
+              1
+            ],
+            "punch": [
+              2,
+              6
+            ]
+          }
+        },
+        {
+          "at": 0.25,
+          "in": "cut",
+          "bg": "#15303A",
+          "cast": [
+            {
+              "art": "common/cutin/dad-sig-2",
+              "x": 0.5,
+              "h": 1
+            }
+          ]
+        },
+        {
+          "at": 0.5,
+          "in": "cut",
+          "bg": "#15303A",
+          "cast": [
+            {
+              "art": "common/cutin/dad-sig-3",
+              "x": 0.5,
+              "h": 1
+            }
+          ],
+          "fx": [
+            "lines",
+            "shake"
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00c-0",
+      "pad": 8,
+      "count": 1,
+      "countAt": 0.2,
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "dots:#F6EEDF:#E8DCC4",
+          "tally": 1,
+          "mark": {
+            "kind": "x",
+            "at": 2
+          },
+          "text": [
+            {
+              "t": "모답맨",
+              "style": "stamp",
+              "x": 0.78,
+              "y": 0.78,
+              "size": 110,
+              "at": 0.55
+            }
+          ],
+          "sfx": [
+            {
+              "name": "buzz",
+              "at": 2
+            },
+            {
+              "name": "stamp",
+              "at": 0.55
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hold": 44,
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "stripes:#15303A:#1F4452",
+          "props": [
+            {
+              "art": "prop/ufo-unknowns",
+              "x": 0.86,
+              "y": 0.66,
+              "w": 0.16,
+              "enter": "pop",
+              "at": 14,
+              "rot": 8
+            }
+          ],
+          "text": [
+            {
+              "t": "여덟 살의 질문 × 모답맨",
+              "style": "pop",
+              "y": 0.16,
+              "size": 56
+            },
+            {
+              "t": "UFO · 외계 생명체 · 외계인",
+              "style": "slam",
+              "y": 0.4,
+              "size": 100,
+              "at": 3
+            },
+            {
+              "t": "진짜 있어요?",
+              "style": "shake",
+              "y": 0.64,
+              "size": 150,
+              "color": "#FFD23F",
+              "at": 12
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stinger",
+              "at": 3
+            },
+            {
+              "name": "pang",
+              "at": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c01-0",
+      "shots": [
+        {
+          "in": "glitch",
+          "bg": "bg/living-room-movie",
+          "fx": [
+            "vhs"
+          ],
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.3
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.05
+            ]
+          },
+          "text": [
+            {
+              "t": "그날 밤 · 잠 못 든 아이",
+              "style": "news",
+              "at": 0.1
+            }
+          ],
+          "sfx": [
+            {
+              "name": "rewind"
+            }
+          ]
+        },
+        {
+          "at": 0.55,
+          "in": "whip-l",
+          "bg": "bg/observatory-hall",
+          "cast": [
+            {
+              "art": "astro/normal",
+              "x": 0.2,
+              "h": 0.82
+            },
+            {
+              "art": "common/mom/normal",
+              "x": 0.52,
+              "h": 0.74
+            },
+            {
+              "art": "common/dad/normal",
+              "x": 0.7,
+              "h": 0.8
+            },
+            {
+              "art": "common/kid/normal",
+              "x": 0.86,
+              "h": 0.55
+            }
+          ],
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.1
+            ]
+          },
+          "text": [
+            {
+              "t": "시민 천문대",
+              "style": "pop",
+              "y": 0.16,
+              "size": 80
+            }
+          ],
+          "tag": {
+            "t": "정답 담당",
+            "sub": "천문대 연구원",
+            "x": 0.2,
+            "y": 0.3,
+            "at": 0.4
+          },
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c01-1",
+      "pad": 6,
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "burst:#FFD23F:#FFB627",
+          "cast": [
+            {
+              "art": "common/cutin/kid-ask",
+              "x": 0.34,
+              "h": 1,
+              "enter": "pop",
+              "talk": "kid"
+            }
+          ],
+          "text": [
+            {
+              "t": "외계인, 진짜?",
+              "style": "shake",
+              "x": 0.76,
+              "y": 0.34,
+              "size": 120
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c01a-0",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "bg/observatory-hall",
+          "cast": [
+            {
+              "art": "common/mom/smirk",
+              "x": 0.55,
+              "h": 0.8,
+              "talk": "mom"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.55,
+              0.45,
+              1.6
+            ],
+            "to": [
+              0.55,
+              0.42,
+              1.85
+            ]
+          },
+          "text": [
+            {
+              "t": "UFO = 외계인!",
+              "style": "pop",
+              "x": 0.84,
+              "y": 0.28,
+              "size": 80,
+              "at": 0.3
+            }
+          ]
+        },
+        {
+          "at": 0.55,
+          "in": "spin",
+          "bg": "full/ufo-visit-imagine",
+          "fx": [
+            "imagine"
+          ],
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1
+            ],
+            "to": [
+              0.5,
+              0.45,
+              1.12
+            ]
+          },
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c01a-1",
+      "shots": [
+        {
+          "in": "glitch",
+          "bg": "bg/observatory-hall",
+          "cast": [
+            {
+              "art": "astro/correct",
+              "x": 0.3,
+              "h": 0.84,
+              "talk": "astro"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.32,
+              0.45,
+              1.5
+            ],
+            "to": [
+              0.32,
+              0.42,
+              1.7
+            ]
+          },
+          "text": [
+            {
+              "t": "UFO",
+              "style": "slam",
+              "x": 0.72,
+              "y": 0.24,
+              "size": 120
+            },
+            {
+              "t": "= 정체를 모르는",
+              "style": "pop",
+              "x": 0.72,
+              "y": 0.42,
+              "size": 80,
+              "at": 0.2
+            },
+            {
+              "t": "비행 물체",
+              "style": "pop",
+              "x": 0.72,
+              "y": 0.56,
+              "size": 80,
+              "at": 0.3
+            }
+          ],
+          "sfx": [
+            {
+              "name": "scratch"
+            }
+          ]
+        },
+        {
+          "at": 0.62,
+          "in": "cut",
+          "bg": "dots:#F6EEDF:#E8DCC4",
+          "cast": [
+            {
+              "art": "cutin/astro-correct",
+              "x": 0.34,
+              "h": 1
+            }
+          ],
+          "text": [
+            {
+              "t": "외계인 ✕",
+              "style": "stamp",
+              "x": 0.76,
+              "y": 0.42,
+              "size": 130
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c01b-0",
+      "pad": 6,
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "burst:#FF8FB1:#FF6F9C",
+          "cast": [
+            {
+              "art": "common/cutin/mom-sig-1",
+              "x": 0.5,
+              "h": 1
+            }
+          ],
+          "text": [
+            {
+              "t": "어?",
+              "style": "pop",
+              "x": 0.18,
+              "y": 0.3,
+              "size": 110
+            }
+          ],
+          "sfx": [
+            {
+              "name": "tick"
+            }
+          ]
+        },
+        {
+          "at": 0.14,
+          "in": "cut",
+          "bg": "burst:#FF8FB1:#FF6F9C",
+          "cast": [
+            {
+              "art": "common/cutin/mom-sig-2",
+              "x": 0.5,
+              "h": 1
+            }
+          ],
+          "text": [
+            {
+              "t": "어?",
+              "style": "pop",
+              "x": 0.82,
+              "y": 0.26,
+              "size": 120
+            }
+          ],
+          "sfx": [
+            {
+              "name": "tick"
+            }
+          ]
+        },
+        {
+          "at": 0.28,
+          "in": "cut",
+          "bg": "burst:#FF8FB1:#FF6F9C",
+          "cast": [
+            {
+              "art": "common/cutin/mom-sig-3",
+              "x": 0.5,
+              "h": 1
+            }
+          ],
+          "text": [
+            {
+              "t": "어?",
+              "style": "pop",
+              "x": 0.18,
+              "y": 0.56,
+              "size": 130
+            }
+          ],
+          "sfx": [
+            {
+              "name": "tick"
+            }
+          ]
+        },
+        {
+          "at": 0.42,
+          "in": "cut",
+          "bg": "burst:#FF8FB1:#FF6F9C",
+          "cast": [
+            {
+              "art": "common/cutin/mom-sig-4",
+              "x": 0.5,
+              "h": 1
+            }
+          ],
+          "text": [
+            {
+              "t": "어…",
+              "style": "pop",
+              "x": 0.82,
+              "y": 0.6,
+              "size": 140
+            }
+          ],
+          "sfx": [
+            {
+              "name": "tick"
+            }
+          ]
+        },
+        {
+          "at": 0.58,
+          "in": "smash",
+          "bg": "#15303A",
+          "cast": [
+            {
+              "art": "common/cutin/mom-sig-scream",
+              "x": 0.5,
+              "h": 1
+            }
+          ],
+          "fx": [
+            "lines",
+            "shake"
+          ],
+          "cam": {
+            "from": [
+              0.5,
+              0.45,
+              1
+            ],
+            "punch": [
+              2,
+              6
+            ]
+          },
+          "text": [
+            {
+              "t": "악!",
+              "style": "shake",
+              "x": 0.8,
+              "y": 0.26,
+              "size": 180,
+              "color": "#FFD23F"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "crash"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c01b-1",
+      "pad": 6,
+      "count": 2,
+      "countAt": 0.15,
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "bg/observatory-hall",
+          "cast": [
+            {
+              "art": "common/mom/shock",
+              "x": 0.55,
+              "h": 0.82
+            }
+          ],
+          "cam": {
+            "from": [
+              0.55,
+              0.38,
+              2.2
+            ],
+            "ease": "snap",
+            "roll": [
+              6,
+              6
+            ]
+          },
+          "freeze": 0.15,
+          "mark": {
+            "kind": "x",
+            "at": 0.2
+          },
+          "tag": {
+            "t": "어제 정답",
+            "sub": "하루 만에 탈락",
+            "x": 0.26,
+            "y": 0.3,
+            "at": 0.45
+          },
+          "sfx": [
+            {
+              "name": "buzz",
+              "at": 0.2
+            },
+            {
+              "name": "stamp",
+              "at": 0.45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-0",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "bg/observatory-hall",
+          "cast": [
+            {
+              "art": "common/dad/explain",
+              "x": 0.7,
+              "h": 0.84,
+              "talk": "dad"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.7,
+              0.4,
+              1.8
+            ],
+            "to": [
+              0.7,
+              0.38,
+              2.2
+            ]
+          },
+          "text": [
+            {
+              "t": "외계 우주선 왔다!",
+              "style": "slam",
+              "x": 0.3,
+              "y": 0.3,
+              "size": 100,
+              "at": 0.15
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pang",
+              "at": 0.15
+            }
+          ]
+        },
+        {
+          "at": 0.45,
+          "in": "spin",
+          "bg": "full/ufo-visit-imagine",
+          "fx": [
+            "imagine",
+            "shake"
+          ],
+          "cam": {
+            "from": [
+              0.6,
+              0.6,
+              1.3
+            ],
+            "to": [
+              0.45,
+              0.45,
+              1.05
+            ]
+          },
+          "text": [
+            {
+              "t": "어서 와~",
+              "style": "shake",
+              "x": 0.24,
+              "y": 0.2,
+              "size": 100,
+              "color": "#FFD23F",
+              "at": 0.2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "whoosh"
+            },
+            {
+              "name": "boing",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-1",
+      "shots": [
+        {
+          "in": "glitch",
+          "bg": "bg/observatory-hall",
+          "cast": [
+            {
+              "art": "astro/correct",
+              "x": 0.3,
+              "h": 0.84,
+              "talk": "astro"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.32,
+              0.45,
+              1.5
+            ],
+            "to": [
+              0.32,
+              0.42,
+              1.7
+            ]
+          },
+          "text": [
+            {
+              "t": "혜성 ○",
+              "style": "stamp",
+              "x": 0.72,
+              "y": 0.3,
+              "size": 120,
+              "at": 0.1
+            }
+          ],
+          "sfx": [
+            {
+              "name": "scratch"
+            },
+            {
+              "name": "stamp",
+              "at": 0.1
+            }
+          ]
+        },
+        {
+          "at": 0.45,
+          "in": "whip-l",
+          "bg": "bg/deep-space",
+          "props": [
+            {
+              "art": "prop/interstellar-comet",
+              "x": 0.42,
+              "y": 0.42,
+              "w": 0.4,
+              "enter": "r"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1
+            ],
+            "to": [
+              0.55,
+              0.5,
+              1.1
+            ]
+          },
+          "text": [
+            {
+              "t": "다른 별에서 온 얼음 덩어리",
+              "style": "slam",
+              "y": 0.84,
+              "size": 80,
+              "color": "#FFD23F",
+              "at": 0.2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "whoosh"
+            },
+            {
+              "name": "ding",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02b-0",
+      "pad": 8,
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "#15303A",
+          "cast": [
+            {
+              "art": "common/cutin/dad-shock",
+              "x": 0.5,
+              "h": 1
+            }
+          ],
+          "cam": {
+            "punch": [
+              3
+            ]
+          },
+          "text": [
+            {
+              "t": "얼음…",
+              "style": "type",
+              "x": 0.8,
+              "y": 0.3,
+              "size": 100
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02b-1",
+      "pad": 6,
+      "count": 3,
+      "countAt": 0.1,
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "dots:#F6EEDF:#E8DCC4",
+          "tally": 3,
+          "mark": {
+            "kind": "x",
+            "at": 2
+          },
+          "sfx": [
+            {
+              "name": "buzz",
+              "at": 2
+            }
+          ]
+        },
+        {
+          "at": 0.45,
+          "in": "glitch",
+          "bg": "full/ufo-visit-imagine",
+          "fx": [
+            "mono"
+          ],
+          "cam": {
+            "from": [
+              0.5,
+              0.4,
+              1.3
+            ],
+            "to": [
+              0.5,
+              0.6,
+              1
+            ]
+          },
+          "props": [
+            {
+              "art": "prop/interstellar-comet",
+              "x": 0.7,
+              "y": 0.4,
+              "w": 0.22,
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "얼음에게 인사함",
+              "style": "news",
+              "at": 2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "slide"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-0",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "bg/observatory-hall",
+          "cast": [
+            {
+              "art": "astro/point",
+              "x": 0.24,
+              "h": 0.84,
+              "talk": "astro"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.4,
+              0.5,
+              1.1
+            ],
+            "to": [
+              0.42,
+              0.5,
+              1.2
+            ]
+          },
+          "text": [
+            {
+              "t": "딱 세 판",
+              "style": "slam",
+              "x": 0.64,
+              "y": 0.36,
+              "size": 150,
+              "at": 0.35
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stinger",
+              "at": 0.35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-1",
+      "pad": 6,
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "#15303A",
+          "cast": [
+            {
+              "art": "common/cutin/dad-shock",
+              "x": 0.5,
+              "h": 1
+            }
+          ],
+          "cam": {
+            "punch": [
+              3
+            ]
+          },
+          "text": [
+            {
+              "t": "천문대도 판…?",
+              "style": "type",
+              "x": 0.78,
+              "y": 0.3,
+              "size": 90
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-0",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "stripes:#15303A:#1F4452",
+          "text": [
+            {
+              "t": "ROUND 1",
+              "style": "slam",
+              "y": 0.24,
+              "size": 110,
+              "color": "#FFD23F"
+            },
+            {
+              "t": "UFO",
+              "style": "pop",
+              "y": 0.46,
+              "size": 140,
+              "at": 0.25
+            },
+            {
+              "t": "= 아직 모르는 것",
+              "style": "stamp",
+              "y": 0.68,
+              "size": 100,
+              "color": "#FFD23F",
+              "at": 0.6
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stinger"
+            },
+            {
+              "name": "stamp",
+              "at": 0.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-1",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "bg/deep-space",
+          "props": [
+            {
+              "art": "prop/ufo-unknowns",
+              "x": 0.36,
+              "y": 0.46,
+              "w": 0.44,
+              "enter": "pop"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1
+            ],
+            "to": [
+              0.55,
+              0.5,
+              1.1
+            ]
+          },
+          "text": [
+            {
+              "t": "풍선 · 드론",
+              "style": "pop",
+              "x": 0.78,
+              "y": 0.3,
+              "size": 80,
+              "at": 0.2
+            },
+            {
+              "t": "비행기 · 금성",
+              "style": "pop",
+              "x": 0.78,
+              "y": 0.48,
+              "size": 80,
+              "at": 0.55
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop",
+              "at": 0.2
+            },
+            {
+              "name": "pop",
+              "at": 0.55
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-2",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "dots:#F6EEDF:#E8DCC4",
+          "props": [
+            {
+              "art": "prop/ufo-unknowns",
+              "x": 0.22,
+              "y": 0.46,
+              "w": 0.26,
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "미국 국방부",
+              "style": "pop",
+              "x": 0.66,
+              "y": 0.24,
+              "size": 80
+            },
+            {
+              "t": "80년 치 신고 검토",
+              "style": "slam",
+              "x": 0.66,
+              "y": 0.42,
+              "size": 90,
+              "at": 0.25
+            },
+            {
+              "t": "외계인 증거 0",
+              "style": "stamp",
+              "x": 0.66,
+              "y": 0.64,
+              "size": 120,
+              "color": "#B8352A",
+              "at": 0.6
+            }
+          ],
+          "sfx": [
+            {
+              "name": "slide"
+            },
+            {
+              "name": "stamp",
+              "at": 0.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04b-0",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "burst:#FFD23F:#FFB627",
+          "cast": [
+            {
+              "art": "common/kid/wow",
+              "x": 0.36,
+              "h": 0.8,
+              "enter": "b",
+              "talk": "kid"
+            }
+          ],
+          "text": [
+            {
+              "t": "모르면 UFO",
+              "style": "shake",
+              "x": 0.76,
+              "y": 0.3,
+              "size": 90
+            },
+            {
+              "t": "알면 풍선!",
+              "style": "shake",
+              "x": 0.76,
+              "y": 0.5,
+              "size": 100,
+              "color": "#B8352A",
+              "at": 0.5
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            },
+            {
+              "name": "pop",
+              "at": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04b-1",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "bg/observatory-hall",
+          "cast": [
+            {
+              "art": "common/mom/normal",
+              "x": 0.55,
+              "h": 0.8,
+              "talk": "mom"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.55,
+              0.42,
+              1.7
+            ],
+            "to": [
+              0.55,
+              0.4,
+              1.9
+            ]
+          },
+          "text": [
+            {
+              "t": "어제 그 반짝이…",
+              "style": "type",
+              "x": 0.84,
+              "y": 0.3,
+              "size": 70
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04b-2",
+      "pad": 8,
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "#F6EEDF",
+          "cast": [
+            {
+              "art": "cutin/astro-correct",
+              "x": 0.36,
+              "h": 1
+            }
+          ],
+          "text": [
+            {
+              "t": "금성",
+              "style": "stamp",
+              "x": 0.78,
+              "y": 0.42,
+              "size": 150,
+              "color": "#B8352A"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "scratch"
+            },
+            {
+              "name": "stamp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-0",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "stripes:#15303A:#1F4452",
+          "text": [
+            {
+              "t": "ROUND 2",
+              "style": "slam",
+              "y": 0.22,
+              "size": 110,
+              "color": "#FFD23F"
+            },
+            {
+              "t": "외계 생명체",
+              "style": "pop",
+              "y": 0.42,
+              "size": 120,
+              "at": 0.2
+            },
+            {
+              "t": "= 지구 밖 모든 생명",
+              "style": "slam",
+              "y": 0.62,
+              "size": 90,
+              "at": 0.4
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stinger"
+            }
+          ]
+        },
+        {
+          "at": 0.7,
+          "in": "whip-l",
+          "bg": "dots:#F6EEDF:#E8DCC4",
+          "props": [
+            {
+              "art": "prop/microbes",
+              "x": 0.5,
+              "y": 0.44,
+              "w": 0.4,
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "세균까지!",
+              "style": "stamp",
+              "y": 0.84,
+              "size": 110,
+              "color": "#B8352A"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-1",
+      "shots": [
+        {
+          "in": "spin",
+          "bg": "full/octopus-alien-imagine",
+          "fx": [
+            "imagine"
+          ],
+          "cam": {
+            "from": [
+              0.5,
+              0.45,
+              1.1
+            ],
+            "to": [
+              0.5,
+              0.4,
+              1.25
+            ]
+          },
+          "text": [
+            {
+              "t": "아빠의 외계인",
+              "style": "pop",
+              "x": 0.22,
+              "y": 0.18,
+              "size": 80
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-2",
+      "shots": [
+        {
+          "in": "glitch",
+          "bg": "bg/observatory-hall",
+          "cast": [
+            {
+              "art": "astro/point",
+              "x": 0.3,
+              "h": 0.84,
+              "talk": "astro"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.32,
+              0.45,
+              1.5
+            ],
+            "to": [
+              0.32,
+              0.42,
+              1.7
+            ]
+          },
+          "props": [
+            {
+              "art": "prop/microbes",
+              "x": 0.74,
+              "y": 0.42,
+              "w": 0.26,
+              "enter": "pop",
+              "at": 0.3
+            }
+          ],
+          "text": [
+            {
+              "t": "작은 흔적부터",
+              "style": "slam",
+              "x": 0.74,
+              "y": 0.78,
+              "size": 90,
+              "at": 0.4
+            }
+          ],
+          "sfx": [
+            {
+              "name": "scratch"
+            },
+            {
+              "name": "ding",
+              "at": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05b-0",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "bg/deep-space",
+          "props": [
+            {
+              "art": "prop/mars-leopard-rock",
+              "x": 0.36,
+              "y": 0.46,
+              "w": 0.4,
+              "enter": "drop"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.4,
+              0.5,
+              1.2
+            ],
+            "to": [
+              0.4,
+              0.5,
+              1.35
+            ]
+          },
+          "text": [
+            {
+              "t": "화성 · 표범 무늬 돌",
+              "style": "slam",
+              "x": 0.76,
+              "y": 0.3,
+              "size": 80
+            },
+            {
+              "t": "옛날 세균이…?",
+              "style": "pop",
+              "x": 0.76,
+              "y": 0.5,
+              "size": 90,
+              "color": "#FFD23F",
+              "at": 0.55
+            }
+          ],
+          "sfx": [
+            {
+              "name": "whoosh"
+            },
+            {
+              "name": "pang",
+              "at": 0.55
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05b-1",
+      "pad": 8,
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "burst:#7A4FA0:#8C5DB4",
+          "cast": [
+            {
+              "art": "common/cutin/kid-sig",
+              "x": 0.5,
+              "h": 1,
+              "enter": "pop"
+            }
+          ],
+          "fx": [
+            "lines",
+            "shake"
+          ],
+          "cam": {
+            "from": [
+              0.5,
+              0.45,
+              1
+            ],
+            "punch": [
+              2,
+              6
+            ]
+          },
+          "text": [
+            {
+              "t": "아악!",
+              "style": "shake",
+              "x": 0.82,
+              "y": 0.24,
+              "size": 150,
+              "color": "#FFD23F",
+              "at": 0.3
+            }
+          ],
+          "sfx": [
+            {
+              "name": "crash"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05b-2",
+      "shots": [
+        {
+          "in": "glitch",
+          "bg": "bg/observatory-hall",
+          "cast": [
+            {
+              "art": "astro/correct",
+              "x": 0.3,
+              "h": 0.84,
+              "talk": "astro"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.32,
+              0.45,
+              1.5
+            ],
+            "to": [
+              0.32,
+              0.42,
+              1.7
+            ]
+          },
+          "text": [
+            {
+              "t": "확정 ✕",
+              "style": "stamp",
+              "x": 0.72,
+              "y": 0.3,
+              "size": 110,
+              "at": 0.1
+            },
+            {
+              "t": "그럴 수도 있다",
+              "style": "pop",
+              "x": 0.72,
+              "y": 0.52,
+              "size": 90,
+              "color": "#B8352A",
+              "at": 0.4
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06-0",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "stripes:#15303A:#1F4452",
+          "text": [
+            {
+              "t": "ROUND 3",
+              "style": "slam",
+              "y": 0.22,
+              "size": 110,
+              "color": "#FFD23F"
+            },
+            {
+              "t": "외계인",
+              "style": "pop",
+              "y": 0.42,
+              "size": 130,
+              "at": 0.2
+            },
+            {
+              "t": "= 말이 통할 생명",
+              "style": "slam",
+              "y": 0.64,
+              "size": 100,
+              "color": "#FFD23F",
+              "at": 0.5
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stinger"
+            },
+            {
+              "name": "pang",
+              "at": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06-1",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "bg/observatory-roof-night",
+          "cast": [
+            {
+              "art": "astro/listen",
+              "x": 0.26,
+              "h": 0.8,
+              "talk": "astro"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.4,
+              0.5,
+              1.15
+            ],
+            "to": [
+              0.45,
+              0.45,
+              1.25
+            ]
+          }
+        },
+        {
+          "at": 0.45,
+          "in": "cut",
+          "bg": "bg/deep-space",
+          "props": [
+            {
+              "art": "prop/radio-telescope",
+              "x": 0.4,
+              "y": 0.5,
+              "w": 0.42,
+              "enter": "pop"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1
+            ],
+            "to": [
+              0.5,
+              0.45,
+              1.1
+            ]
+          },
+          "text": [
+            {
+              "t": "우주의 신호를 듣는다",
+              "style": "slam",
+              "x": 0.74,
+              "y": 0.3,
+              "size": 70
+            }
+          ],
+          "sfx": [
+            {
+              "name": "beep"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06-2",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "dots:#F6EEDF:#E8DCC4",
+          "props": [
+            {
+              "art": "prop/radio-telescope",
+              "x": 0.24,
+              "y": 0.46,
+              "w": 0.28,
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "60년 넘게 들었지만",
+              "style": "pop",
+              "x": 0.66,
+              "y": 0.3,
+              "size": 80
+            },
+            {
+              "t": "확실한 신호 0",
+              "style": "stamp",
+              "x": 0.66,
+              "y": 0.54,
+              "size": 120,
+              "color": "#B8352A",
+              "at": 0.55
+            }
+          ],
+          "sfx": [
+            {
+              "name": "beep"
+            },
+            {
+              "name": "stamp",
+              "at": 0.55
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06b-0",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "burst:#FFD23F:#FFB627",
+          "cast": [
+            {
+              "art": "common/kid/ask",
+              "x": 0.36,
+              "h": 0.8,
+              "enter": "b",
+              "talk": "kid"
+            }
+          ],
+          "text": [
+            {
+              "t": "놀러 오면 되잖아요",
+              "style": "shake",
+              "x": 0.76,
+              "y": 0.32,
+              "size": 80
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06b-1",
+      "shots": [
+        {
+          "in": "glitch",
+          "bg": "bg/observatory-hall",
+          "cast": [
+            {
+              "art": "astro/correct",
+              "x": 0.3,
+              "h": 0.84,
+              "talk": "astro"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.32,
+              0.45,
+              1.5
+            ],
+            "to": [
+              0.32,
+              0.42,
+              1.7
+            ]
+          },
+          "sfx": [
+            {
+              "name": "scratch"
+            }
+          ]
+        },
+        {
+          "at": 0.4,
+          "in": "whip-l",
+          "bg": "bg/deep-space",
+          "props": [
+            {
+              "art": "prop/space-probe",
+              "x": 0.36,
+              "y": 0.44,
+              "w": 0.36,
+              "enter": "r"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1
+            ],
+            "to": [
+              0.6,
+              0.5,
+              1.1
+            ]
+          },
+          "text": [
+            {
+              "t": "제일 가까운 별까지",
+              "style": "pop",
+              "x": 0.76,
+              "y": 0.3,
+              "size": 70
+            },
+            {
+              "t": "7만 년+",
+              "style": "slam",
+              "x": 0.76,
+              "y": 0.52,
+              "size": 150,
+              "color": "#FFD23F",
+              "at": 0.5
+            }
+          ],
+          "sfx": [
+            {
+              "name": "slide"
+            },
+            {
+              "name": "stamp",
+              "at": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06b-2",
+      "pad": 6,
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "#15303A",
+          "cast": [
+            {
+              "art": "common/cutin/dad-shock",
+              "x": 0.5,
+              "h": 1
+            }
+          ],
+          "fx": [
+            "mono"
+          ],
+          "text": [
+            {
+              "t": "휴가로는 좀…",
+              "style": "type",
+              "x": 0.8,
+              "y": 0.26,
+              "size": 80
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06c-0",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "dots:#F6EEDF:#E8DCC4",
+          "props": [
+            {
+              "art": "prop/ufo-unknowns",
+              "x": 0.24,
+              "y": 0.4,
+              "w": 0.22,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/microbes",
+              "x": 0.72,
+              "y": 0.4,
+              "w": 0.24,
+              "enter": "pop",
+              "at": 0.45
+            }
+          ],
+          "text": [
+            {
+              "t": "UFO = 모르는 것",
+              "style": "slam",
+              "x": 0.24,
+              "y": 0.76,
+              "size": 64
+            },
+            {
+              "t": "외계 생명체 = 모든 생명",
+              "style": "slam",
+              "x": 0.72,
+              "y": 0.76,
+              "size": 64,
+              "at": 0.45
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            },
+            {
+              "name": "pop",
+              "at": 0.45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06c-1",
+      "pad": 10,
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "burst:#15303A:#1F4452",
+          "props": [
+            {
+              "art": "prop/radio-telescope",
+              "x": 0.14,
+              "y": 0.5,
+              "w": 0.16,
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "외계인 = 말이 통할 생명",
+              "style": "slam",
+              "y": 0.34,
+              "size": 90
+            },
+            {
+              "t": "셋 다, 아직 확인 ✕",
+              "style": "stamp",
+              "y": 0.58,
+              "size": 110,
+              "color": "#FFD23F",
+              "at": 0.5
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07-0",
+      "shots": [
+        {
+          "in": "iris",
+          "bg": "bg/observatory-roof-night",
+          "cast": [
+            {
+              "art": "common/dad/normal",
+              "x": 0.4,
+              "h": 0.8
+            },
+            {
+              "art": "common/kid/ask",
+              "x": 0.6,
+              "h": 0.55,
+              "talk": "kid"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.55,
+              0.55,
+              1.3
+            ],
+            "to": [
+              0.55,
+              0.55,
+              1.4
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "line": "c07-1",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "bg/observatory-roof-night",
+          "cast": [
+            {
+              "art": "common/dad/explain",
+              "x": 0.4,
+              "h": 0.8,
+              "talk": "dad"
+            },
+            {
+              "art": "common/kid/normal",
+              "x": 0.6,
+              "h": 0.55
+            }
+          ],
+          "cam": {
+            "from": [
+              0.44,
+              0.45,
+              1.6
+            ],
+            "to": [
+              0.44,
+              0.45,
+              1.7
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "line": "c07-2",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "bg/observatory-roof-night",
+          "cam": {
+            "from": [
+              0.5,
+              0.3,
+              1.1
+            ],
+            "to": [
+              0.5,
+              0.2,
+              1.2
+            ]
+          },
+          "text": [
+            {
+              "t": "별은 엄청 많고",
+              "style": "pop",
+              "y": 0.86,
+              "size": 64
+            }
+          ]
+        },
+        {
+          "at": 0.5,
+          "in": "cut",
+          "bg": "bg/deep-space",
+          "props": [
+            {
+              "art": "prop/radio-telescope",
+              "x": 0.5,
+              "y": 0.5,
+              "w": 0.34,
+              "enter": "pop"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1
+            ],
+            "to": [
+              0.5,
+              0.48,
+              1.08
+            ]
+          },
+          "text": [
+            {
+              "t": "오늘 밤에도 누군가 듣고 있다",
+              "style": "pop",
+              "y": 0.86,
+              "size": 64
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07-3",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "bg/observatory-roof-night",
+          "cast": [
+            {
+              "art": "common/dad/normal",
+              "x": 0.4,
+              "h": 0.8
+            },
+            {
+              "art": "common/kid/wow",
+              "x": 0.6,
+              "h": 0.55,
+              "talk": "kid"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.6,
+              0.6,
+              1.7
+            ],
+            "to": [
+              0.6,
+              0.6,
+              1.8
+            ]
+          },
+          "text": [
+            {
+              "t": "HOPE = 희망",
+              "style": "pop",
+              "x": 0.8,
+              "y": 0.24,
+              "size": 70,
+              "at": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07-4",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "bg/observatory-roof-night",
+          "cast": [
+            {
+              "art": "common/dad/proud",
+              "x": 0.4,
+              "h": 0.8,
+              "talk": "dad"
+            },
+            {
+              "art": "common/kid/normal",
+              "x": 0.6,
+              "h": 0.55
+            }
+          ],
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.4
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.45
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "line": "c07-5",
+      "pad": 6,
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "bg/observatory-roof-night",
+          "cast": [
+            {
+              "art": "kid/ear-sky",
+              "x": 0.5,
+              "h": 0.6,
+              "talk": "kid"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.5,
+              0.6,
+              1.5
+            ],
+            "to": [
+              0.5,
+              0.55,
+              1.6
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "line": "c07b-0",
+      "pad": 10,
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "bg/observatory-roof-night",
+          "cast": [
+            {
+              "art": "kid/ear-sky",
+              "x": 0.5,
+              "h": 0.6
+            }
+          ],
+          "cam": {
+            "from": [
+              0.5,
+              0.6,
+              1.3
+            ],
+            "to": [
+              0.5,
+              0.35,
+              1.1
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "line": "c08-0",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "bg/observatory-roof-night",
+          "cast": [
+            {
+              "art": "dad/point-sky",
+              "x": 0.66,
+              "h": 0.84,
+              "talk": "dad"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.66,
+              0.42,
+              1.5
+            ],
+            "to": [
+              0.66,
+              0.4,
+              1.75
+            ]
+          },
+          "text": [
+            {
+              "t": "외계인 신호다!",
+              "style": "shake",
+              "x": 0.3,
+              "y": 0.3,
+              "size": 100,
+              "color": "#FFD23F",
+              "at": 0.45
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pang",
+              "at": 0.45
+            }
+          ]
+        },
+        {
+          "at": 0.7,
+          "in": "zoom",
+          "bg": "bg/deep-space",
+          "props": [
+            {
+              "art": "prop/blinking-plane",
+              "x": 0.5,
+              "y": 0.44,
+              "w": 0.34,
+              "enter": "pop"
+            }
+          ],
+          "fx": [
+            "imagine"
+          ],
+          "sfx": [
+            {
+              "name": "beep"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c08-1",
+      "pad": 8,
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "#F6EEDF",
+          "cast": [
+            {
+              "art": "cutin/astro-correct",
+              "x": 0.36,
+              "h": 1
+            }
+          ],
+          "props": [
+            {
+              "art": "prop/blinking-plane",
+              "x": 0.78,
+              "y": 0.4,
+              "w": 0.28,
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "비행기",
+              "style": "stamp",
+              "x": 0.78,
+              "y": 0.76,
+              "size": 140,
+              "color": "#B8352A"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "scratch"
+            },
+            {
+              "name": "stamp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c08-2",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "bg/observatory-roof-night",
+          "cast": [
+            {
+              "art": "common/dad/proud",
+              "x": 0.6,
+              "h": 0.84,
+              "talk": "dad"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.6,
+              0.42,
+              1.6
+            ],
+            "to": [
+              0.6,
+              0.4,
+              1.8
+            ]
+          }
+        },
+        {
+          "at": 0.5,
+          "in": "cut",
+          "bg": "dots:#F6EEDF:#E8DCC4",
+          "props": [
+            {
+              "art": "prop/hop-cone",
+              "x": 0.3,
+              "y": 0.46,
+              "w": 0.3,
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "홉 집?",
+              "style": "slam",
+              "x": 0.72,
+              "y": 0.4,
+              "size": 120
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c08b-0",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "burst:#FFD23F:#FFB627",
+          "cast": [
+            {
+              "art": "common/kid/wow",
+              "x": 0.36,
+              "h": 0.8,
+              "enter": "b",
+              "talk": "kid"
+            }
+          ],
+          "props": [
+            {
+              "art": "prop/court-beer-hall",
+              "x": 0.76,
+              "y": 0.44,
+              "w": 0.3,
+              "enter": "drop",
+              "rot": 6
+            }
+          ],
+          "text": [
+            {
+              "t": "호프 = 궁정!",
+              "style": "shake",
+              "x": 0.76,
+              "y": 0.84,
+              "size": 100,
+              "at": 0.35
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            },
+            {
+              "name": "stamp",
+              "at": 0.35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c08b-1",
+      "pad": 30,
+      "count": 4,
+      "countAt": 0.15,
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "dots:#F6EEDF:#E8DCC4",
+          "tally": 4,
+          "mark": {
+            "kind": "x",
+            "at": 2
+          },
+          "text": [
+            {
+              "t": "역시, 모답맨",
+              "style": "stamp",
+              "x": 0.5,
+              "y": 0.84,
+              "size": 100,
+              "at": 0.55
+            }
+          ],
+          "sfx": [
+            {
+              "name": "buzz",
+              "at": 2
+            },
+            {
+              "name": "crash",
+              "at": 0.55
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hold": 75,
+      "shots": [
+        {
+          "in": "iris",
+          "bg": "burst:#15303A:#1F4452",
+          "cast": [
+            {
+              "art": "common/cutin/mom-sig-scream",
+              "x": 0.5,
+              "h": 0.8,
+              "enter": "spin"
+            }
+          ],
+          "text": [
+            {
+              "t": "모답맨",
+              "style": "slam",
+              "y": 0.2,
+              "size": 120,
+              "color": "#FFD23F"
+            },
+            {
+              "t": "다음 오답도 기대해 주세요",
+              "style": "pop",
+              "y": 0.86,
+              "size": 64,
+              "at": 14
+            }
+          ],
+          "note": "※ 영화 「호프」의 내용은 다루지 않아요. 화성 표범 무늬 돌은 '생명 흔적일 가능성'이며 확정이 아니에요(NASA 2025)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+1
+00:00:00,800 --> 00:00:03,810
+A magic ruler that turns
+multiplying into adding
+
+2
+00:00:03,860 --> 00:00:06,180
+On a normal ruler, the marks are evenly spaced
+
+3
+00:00:06,230 --> 00:00:08,350
+On this ruler, the gaps between 1, 2, 3 …
+get narrower and narrower
+
+4
+00:00:08,400 --> 00:00:09,920
+Put an identical ruler on top
+
+5
+00:00:09,970 --> 00:00:12,890
+Let's do 2 × 3:
+line up the top ruler's 1 with the bottom's 2
+
+6
+00:00:12,940 --> 00:00:15,560
+Look below the top ruler's 3… it's 6!
+
+7
+00:00:15,610 --> 00:00:18,630
+All we really did was add lengths
+
+8
+00:00:18,680 --> 00:00:21,900
+Length of 2 + length of 3 = length of 6
+Multiplying became adding!
+
+9
+00:00:21,950 --> 00:00:26,370
+Leave it there and look at the top ruler's 4
+
+10
+00:00:26,420 --> 00:00:30,440
+Those lengths are logarithms (log)
+100 is 10 multiplied twice → log 100 = 2
+
+11
+00:00:30,490 --> 00:00:33,810
+Multiply, and the "number of times" adds up
+100 × 1000 → 2 times + 3 times = 5 times
+
+12
+00:00:33,860 --> 00:00:37,310
+Before calculators, people multiplied
+with rulers like this (slide rules)
+
+13
+00:00:38,310 --> 00:00:42,060
+NEXT: Split the interest finer and finer —
+does the money grow forever?

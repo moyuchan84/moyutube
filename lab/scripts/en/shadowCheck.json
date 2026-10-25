@@ -1,0 +1,17 @@
+{
+  "TITLE": "The same color, but it looks different?",
+  "NEXT": "NEXT: Say the color of the words!",
+  "EN": {
+    "A 칸과 B 칸,\n어느 쪽이 더 진할까요?": "Square A or square B —\nwhich one is darker?",
+    "당연히 A 가 진해 보이죠?": "A looks darker, obviously… right?",
+    "같은 색 막대로 이어 볼게요": "Let's connect them with a bar of one color",
+    "어? 막대랑 두 칸이\n이어져 보여요!": "Huh? The bar and both squares\nblend together!",
+    "둘레를 지워 보면": "Now let's erase everything around them",
+    "A 와 B 는 똑같은 색!": "A and B are exactly the same color!",
+    "뇌는 그림자가 있으면\n\"원래는 더 밝다\"고 계산해요": "When there's a shadow, your brain figures\n\"it must really be lighter\"",
+    "그래서 그림자 속 B 를\n밝은 칸이라고 고쳐 봐요": "So it corrects B in the shadow\nand sees it as a light square",
+    "눈에 들어온 빛 그대로가 아니라\n뇌가 계산한 색을 보는 거예요": "You don't see the light exactly as it enters your eye —\nyou see the color your brain works out",
+    "그늘 속 흰 종이를\n회색이라고 안 하는 것도 이 덕분!": "That's also why white paper in the shade\ndoesn't look gray to you!",
+    "눈의 비밀 2부, 끝!": "That's the end of Secrets of the Eye, Part 2!"
+  }
+}

@@ -1,0 +1,787 @@
+{
+  "episode": "ep09",
+  "title": "모답맨 · 누리호는 지금 뭐 해요? 로켓 · 위성 · 우주선",
+  "engine": "Google AI Studio · Gemini Flash TTS (여러 화자)",
+  "format": "WAV, 24 kHz, 16-bit, mono. One file per cut, all lines of the cut in order.",
+  "direction": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud.",
+  "jobs": [
+    {
+      "cut": "c00",
+      "save": "video/voice-studio/ep09/c00.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "아빠, 누리호는 지금 뭐 해요?",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "우주에서 사진 찍고 있지! 브이도 하고!",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: His eight-year-old child: bright, curious, high-pitched.\nThe line \"우주에서 사진 찍고 있지! 브이도 하고!\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 2: 아빠, 누리호는 지금 뭐 해요?\nSpeaker 1: 우주에서 사진 찍고 있지! 브이도 하고!"
+    },
+    {
+      "cut": "c00b",
+      "save": "video/voice-studio/ep09/c00b.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Rasalgethi",
+          "who": "우주과학관 해설사",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "guide",
+          "text": "아버님, 누리호는 사진기가 아니에요. 택배 트럭이에요.",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "…네?",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern.\nThe line \"…네?\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 2: 아버님, 누리호는 사진기가 아니에요. 택배 트럭이에요.\nSpeaker 1: …네?"
+    },
+    {
+      "cut": "c00c",
+      "save": "video/voice-studio/ep09/c00c.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "오답, 하나. 저는 모답맨입니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\n\nSpeaker 1: 오답, 하나. 저는 모답맨입니다."
+    },
+    {
+      "cut": "c01",
+      "save": "video/voice-studio/ep09/c01.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "사건 개요. 누리호 발사 뉴스가 나온 주말. 장소, 우주과학관.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\n\nSpeaker 1: 사건 개요. 누리호 발사 뉴스가 나온 주말. 장소, 우주과학관."
+    },
+    {
+      "cut": "c01a",
+      "save": "video/voice-studio/ep09/c01a.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Kore",
+          "who": "엄마",
+          "style": "The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Rasalgethi",
+          "who": "우주과학관 해설사",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "mom",
+          "text": "위성은 무중력이라 우주에 둥둥 떠 있는 거잖아요.",
+          "style": "The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "guide",
+          "text": "둥둥 안 떠요. 지금도 떨어지는 중이에요.",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding. Speaker 2: A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern.\n\nSpeaker 1: 위성은 무중력이라 우주에 둥둥 떠 있는 거잖아요.\nSpeaker 2: 둥둥 안 떠요. 지금도 떨어지는 중이에요."
+    },
+    {
+      "cut": "c01b",
+      "save": "video/voice-studio/ep09/c01b.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Kore",
+          "who": "엄마",
+          "style": "The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "mom",
+          "text": "어? 어? 어? 어… 아악!",
+          "style": "The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "오답, 둘. 엄마도 결국, 모 씨 집안 사람.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding.\n\nSpeaker 2: 어? 어? 어? 어… 아악!\nSpeaker 1: 오답, 둘. 엄마도 결국, 모 씨 집안 사람."
+    },
+    {
+      "cut": "c02",
+      "save": "video/voice-studio/ep09/c02.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "그럼 우주선은요? 위성이랑 뭐가 달라요?",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "우주선은 큰 위성! 다음 휴가는 누리호 타고 우주 간다!",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: His eight-year-old child: bright, curious, high-pitched.\nThe line \"우주선은 큰 위성! 다음 휴가는 누리호 타고 우주 간다!\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 2: 그럼 우주선은요? 위성이랑 뭐가 달라요?\nSpeaker 1: 우주선은 큰 위성! 다음 휴가는 누리호 타고 우주 간다!"
+    },
+    {
+      "cut": "c02b",
+      "save": "video/voice-studio/ep09/c02b.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Rasalgethi",
+          "who": "우주과학관 해설사",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "guide",
+          "text": "누리호엔 사람 자리가 없어요.",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "오답, 셋. 모 씨 일가, 우주 진출 실패.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern.\n\nSpeaker 2: 누리호엔 사람 자리가 없어요.\nSpeaker 1: 오답, 셋. 모 씨 일가, 우주 진출 실패."
+    },
+    {
+      "cut": "c03",
+      "save": "video/voice-studio/ep09/c03.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Rasalgethi",
+          "who": "우주과학관 해설사",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "guide",
+          "text": "그럼, 딱 세 판만 하죠.",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "과학관에도 판이…?",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern.\nThe line \"과학관에도 판이…?\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 2: 그럼, 딱 세 판만 하죠.\nSpeaker 1: 과학관에도 판이…?"
+    },
+    {
+      "cut": "c04",
+      "save": "video/voice-studio/ep09/c04.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "voice": "Rasalgethi",
+          "who": "우주과학관 해설사",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "guide",
+          "text": "일 라운드. 누리호는 로켓, 정확히는 발사체예요.",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "guide",
+          "text": "위성을 우주까지 실어다 주는 택배 트럭이죠.",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "guide",
+          "text": "연료 다 쓴 칸은 떼어 버려요. 일 단, 이 단은 바다로.",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "트럭이 떨어져요?!",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 2: His eight-year-old child: bright, curious, high-pitched. Speaker 1: A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern.\n\nSpeaker 1: 일 라운드. 누리호는 로켓, 정확히는 발사체예요.\nSpeaker 1: 위성을 우주까지 실어다 주는 택배 트럭이죠.\nSpeaker 1: 연료 다 쓴 칸은 떼어 버려요. 일 단, 이 단은 바다로.\nSpeaker 2: 트럭이 떨어져요?!"
+    },
+    {
+      "cut": "c04b",
+      "save": "video/voice-studio/ep09/c04b.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Rasalgethi",
+          "who": "우주과학관 해설사",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "그럼 사진은 누가 찍어요?",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "guide",
+          "text": "실려 간 위성이요. 이번엔 작은 위성 다섯 대.",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "guide",
+          "text": "발사하고 하루도 안 돼서 첫 사진을 보냈어요.",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern.\nThe line \"그럼 사진은 누가 찍어요?\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 그럼 사진은 누가 찍어요?\nSpeaker 2: 실려 간 위성이요. 이번엔 작은 위성 다섯 대.\nSpeaker 2: 발사하고 하루도 안 돼서 첫 사진을 보냈어요."
+    },
+    {
+      "cut": "c04c",
+      "save": "video/voice-studio/ep09/c04c.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "누리호는 트럭. 사진사는 위성. 메모.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "맞게 적었습니다. 처음으로.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\nThe line \"누리호는 트럭. 사진사는 위성. 메모.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 누리호는 트럭. 사진사는 위성. 메모.\nSpeaker 1: 맞게 적었습니다. 처음으로."
+    },
+    {
+      "cut": "c05",
+      "save": "video/voice-studio/ep09/c05.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Rasalgethi",
+          "who": "우주과학관 해설사",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "guide",
+          "text": "이 라운드. 위성은 사실, 계속 떨어지고 있어요.",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "guide",
+          "text": "대신 옆으로 엄청 빨라요. 일 초에 칠 킬로미터 넘게.",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "guide",
+          "text": "떨어지는 만큼 땅이 둥글게 휘어 버려서, 바닥에 안 닿고 계속 돌아요.",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern.\n\nSpeaker 1: 이 라운드. 위성은 사실, 계속 떨어지고 있어요.\nSpeaker 1: 대신 옆으로 엄청 빨라요. 일 초에 칠 킬로미터 넘게.\nSpeaker 1: 떨어지는 만큼 땅이 둥글게 휘어 버려서, 바닥에 안 닿고 계속 돌아요."
+    },
+    {
+      "cut": "c05b",
+      "save": "video/voice-studio/ep09/c05b.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "voice": "Kore",
+          "who": "엄마",
+          "style": "The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "mom",
+          "text": "둥둥이 아니라… 계속 떨어지는 중.",
+          "style": "The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "엄청 빨리 떨어지면서 계속 빗나가는 거네요!",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 2: His eight-year-old child: bright, curious, high-pitched. Speaker 1: The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding.\n\nSpeaker 1: 둥둥이 아니라… 계속 떨어지는 중.\nSpeaker 2: 엄청 빨리 떨어지면서 계속 빗나가는 거네요!"
+    },
+    {
+      "cut": "c05c",
+      "save": "video/voice-studio/ep09/c05c.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "voice": "Rasalgethi",
+          "who": "우주과학관 해설사",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "guide",
+          "text": "맞아요. 그래서 지구 한 바퀴에 한 시간 반쯤.",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "학교 끝나기 전에 한 바퀴!",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 2: His eight-year-old child: bright, curious, high-pitched. Speaker 1: A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern.\n\nSpeaker 1: 맞아요. 그래서 지구 한 바퀴에 한 시간 반쯤.\nSpeaker 2: 학교 끝나기 전에 한 바퀴!"
+    },
+    {
+      "cut": "c06",
+      "save": "video/voice-studio/ep09/c06.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "voice": "Rasalgethi",
+          "who": "우주과학관 해설사",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "guide",
+          "text": "삼 라운드. 행성 둘레를 빙빙 도는 건, 다 위성이에요.",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "그럼 달도요?",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "guide",
+          "text": "달도 위성이에요. 사람이 안 만든, 자연 위성.",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "달이 위성이었어요?!",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 2: His eight-year-old child: bright, curious, high-pitched. Speaker 1: A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern.\n\nSpeaker 1: 삼 라운드. 행성 둘레를 빙빙 도는 건, 다 위성이에요.\nSpeaker 2: 그럼 달도요?\nSpeaker 1: 달도 위성이에요. 사람이 안 만든, 자연 위성.\nSpeaker 2: 달이 위성이었어요?!"
+    },
+    {
+      "cut": "c06b",
+      "save": "video/voice-studio/ep09/c06b.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Rasalgethi",
+          "who": "우주과학관 해설사",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "guide",
+          "text": "사람이 만들어 쏘면 인공위성. 사람이 타고 가면 우주선.",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "guide",
+          "text": "누리호는 짐만 싣는 로켓이라, 좌석이 없어요.",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "창가 자리도…?",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "guide",
+          "text": "창문도 없어요.",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern.\nThe line \"창가 자리도…?\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 2: 사람이 만들어 쏘면 인공위성. 사람이 타고 가면 우주선.\nSpeaker 2: 누리호는 짐만 싣는 로켓이라, 좌석이 없어요.\nSpeaker 1: 창가 자리도…?\nSpeaker 2: 창문도 없어요."
+    },
+    {
+      "cut": "c06c",
+      "save": "video/voice-studio/ep09/c06c.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "한 줄 정리. 로켓은 실어다 주고, 위성은 돌면서 일하고, 우주선은 사람을 태운다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "누리호는 위성이 아니라, 위성을 올려 준 로켓.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\n\nSpeaker 1: 한 줄 정리. 로켓은 실어다 주고, 위성은 돌면서 일하고, 우주선은 사람을 태운다.\nSpeaker 1: 누리호는 위성이 아니라, 위성을 올려 준 로켓."
+    },
+    {
+      "cut": "c07",
+      "save": "video/voice-studio/ep09/c07.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "누리호는 위성을 업고, 하늘 끝까지 달려 준 거야.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "그리고 한 칸씩 내려놓고, 바다로 돌아갔어.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "끝까지 같이 못 가요?",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "응. 대신 위성은 지금도 안 쉬고 돌면서, 우리 땅을 찍어.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "그럼 누리호는 데려다주는 사람이네요.",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "응. 그게 제일 어려운 일이야.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: His eight-year-old child: bright, curious, high-pitched.\nThe line \"누리호는 위성을 업고, 하늘 끝까지 달려 준 거야.\" is the dad speaking inside the scene, acted out, not narration.\nThe line \"그리고 한 칸씩 내려놓고, 바다로 돌아갔어.\" is the dad speaking inside the scene, acted out, not narration.\nThe line \"응. 대신 위성은 지금도 안 쉬고 돌면서, 우리 땅을 찍어.\" is the dad speaking inside the scene, acted out, not narration.\nThe line \"응. 그게 제일 어려운 일이야.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 누리호는 위성을 업고, 하늘 끝까지 달려 준 거야.\nSpeaker 1: 그리고 한 칸씩 내려놓고, 바다로 돌아갔어.\nSpeaker 2: 끝까지 같이 못 가요?\nSpeaker 1: 응. 대신 위성은 지금도 안 쉬고 돌면서, 우리 땅을 찍어.\nSpeaker 2: 그럼 누리호는 데려다주는 사람이네요.\nSpeaker 1: 응. 그게 제일 어려운 일이야."
+    },
+    {
+      "cut": "c07b",
+      "save": "video/voice-studio/ep09/c07b.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "아이는 하늘에 대고, 작게 손을 흔들었습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\n\nSpeaker 1: 아이는 하늘에 대고, 작게 손을 흔들었습니다."
+    },
+    {
+      "cut": "c08",
+      "save": "video/voice-studio/ep09/c08.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Rasalgethi",
+          "who": "우주과학관 해설사",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "한 바퀴 한 시간 반이랬죠? 그럼 이따 우리 머리 위로 온다!",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "guide",
+          "text": "그동안 지구도 돌아서, 딴 데로 지나가요.",
+          "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "…그래도 브이 하고 기다릴래요.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern.\nThe line \"한 바퀴 한 시간 반이랬죠? 그럼 이따 우리 머리 위로 온다!\" is the dad speaking inside the scene, acted out, not narration.\nThe line \"…그래도 브이 하고 기다릴래요.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 한 바퀴 한 시간 반이랬죠? 그럼 이따 우리 머리 위로 온다!\nSpeaker 2: 그동안 지구도 돌아서, 딴 데로 지나가요.\nSpeaker 1: …그래도 브이 하고 기다릴래요."
+    },
+    {
+      "cut": "c08b",
+      "save": "video/voice-studio/ep09/c08b.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "아빠, 위성 첫 사진은 미국이었대요!",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "아빠는 주차장에서 한 시간 반 동안 브이를 했습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "오답, 넷. 역시, 모답맨.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: His eight-year-old child: bright, curious, high-pitched.\n\nSpeaker 2: 아빠, 위성 첫 사진은 미국이었대요!\nSpeaker 1: 아빠는 주차장에서 한 시간 반 동안 브이를 했습니다.\nSpeaker 1: 오답, 넷. 역시, 모답맨."
+    }
+  ]
+}

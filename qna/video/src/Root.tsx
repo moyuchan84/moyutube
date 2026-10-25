@@ -16,10 +16,26 @@ import { FPS, buildTimeline } from "./timeline.js";
 import { type MotionPlan, Motion, buildMotion } from "./motion/Motion";
 import { type MotionThumbSpec, MotionThumb } from "./motion/Thumb";
 import { ChannelBanner } from "./ChannelBanner";
+import { type MotionShortSpec, MotionShort, motionShortLength } from "./shorts/MotionShort";
+import ep09MotionShort from "./shorts/motion-ep09.json";
+import ep10MotionShort from "./shorts/motion-ep10.json";
+import nm01MotionShorts from "./shorts/motion-nm01.json";
 import ep08Motion from "./motion/ep08.json";
 import ep08fMotion from "./motion/ep08f.json";
 import ep08fScript from "./ep08f/script.json";
 import ep08fTiming from "./ep08f/timing.json";
+import ep01fMotion from "./motion/ep01f.json";
+import ep01fScript from "./ep01f/script.json";
+import ep01fTiming from "./ep01f/timing.json";
+import ep09Motion from "./motion/ep09.json";
+import ep09Script from "./ep09/script.json";
+import ep09Timing from "./ep09/timing.json";
+import ep10Motion from "./motion/ep10.json";
+import ep10Script from "./ep10/script.json";
+import ep10Timing from "./ep10/timing.json";
+import nm01Motion from "./motion/nm01.json";
+import nm01Script from "./nm01/script.json";
+import nm01Timing from "./nm01/timing.json";
 import ep01Script from "./ep01/script.json";
 import ep01Timing from "./ep01/timing.json";
 import ep02Script from "./ep02/script.json";
@@ -113,6 +129,21 @@ const MOTIONS: { id: string; episode: string; timeline: ReturnType<typeof buildM
   { id: ep08Motion.id, episode: "ep08", timeline: buildMotion(ep08Motion as MotionPlan, ep08Script, ep08Timing) },
   // 모답맨 8화: 새 대본(src/ep08f) · 새 음성, 그림은 8편 것
   { id: ep08fMotion.id, episode: "ep08", timeline: buildMotion(ep08fMotion as MotionPlan, ep08fScript, ep08fTiming), thumb: ep08fMotion.thumb },
+  // 모답맨 1화 리메이크: 새 대본(src/ep01f) · 새 음성, 그림은 1편 것
+  { id: ep01fMotion.id, episode: "ep01", timeline: buildMotion(ep01fMotion as MotionPlan, ep01fScript, ep01fTiming), thumb: ep01fMotion.thumb },
+  // 모답맨 9화: 누리호 · 로켓 · 위성 · 우주선 (9편부터는 epNN 하나)
+  { id: ep09Motion.id, episode: "ep09", timeline: buildMotion(ep09Motion as MotionPlan, ep09Script, ep09Timing), thumb: ep09Motion.thumb },
+  { id: ep10Motion.id, episode: "ep10", timeline: buildMotion(ep10Motion as MotionPlan, ep10Script, ep10Timing), thumb: ep10Motion.thumb },
+  // 내모남불 ① 자동차편 (모라구 새 시리즈 · 폴더 naemonambul/01-car, 대본 src/nm01)
+  { id: nm01Motion.id, episode: "nm01", timeline: buildMotion(nm01Motion as MotionPlan, nm01Script, nm01Timing), thumb: nm01Motion.thumb },
+];
+
+// 모답맨 쇼츠: 본편(MOTIONS) 몇 구간 + 훅 + 질문 카드 (src/shorts/motion-<epNN>.json)
+const MOTION_SHORTS: { spec: MotionShortSpec; motion: string }[] = [
+  { spec: ep09MotionShort as MotionShortSpec, motion: ep09Motion.id },
+  { spec: ep10MotionShort as MotionShortSpec, motion: ep10Motion.id },
+  // 내모남불 ① 쇼츠 세 개 (깜빡이 · 주차 · 끼어들기)
+  ...(nm01MotionShorts as MotionShortSpec[]).map((spec) => ({ spec, motion: nm01Motion.id })),
 ];
 
 // 편집형 쇼츠: src/shorts/<epNN>.json (편집 계획) 하나 = 쇼츠 하나. 렌더는 npm run short -- epNN
@@ -126,6 +157,10 @@ export const RemotionRoot = () => {
           <Composition id={id} component={Motion} durationInFrames={timeline.durationInFrames} fps={FPS} width={1920} height={1080} defaultProps={{ timeline }} />
           {thumb ? <Still id={`${id}-Thumb`} component={MotionThumb} width={1280} height={720} defaultProps={{ episode, spec: thumb }} /> : null}
         </React.Fragment>
+      ))}
+      {MOTION_SHORTS.map(({ spec, motion }) => (
+        <Composition key={spec.id} id={spec.id} component={MotionShort} durationInFrames={motionShortLength(spec)} fps={FPS} width={1080} height={1920}
+          defaultProps={{ timeline: MOTIONS.find((m) => m.id === motion)!.timeline, spec }} />
       ))}
       {EDITED_SHORTS.map((spec) => {
         const timeline = EPISODES.find((e) => e.episode === spec.episode)!.timeline;

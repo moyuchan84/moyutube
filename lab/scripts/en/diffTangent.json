@@ -1,0 +1,17 @@
+{
+  "NEXT": "NEXT: Average 100 km/h means\nexactly 100 at some moment?",
+  "EN": {
+    "곡선의 기울기,|어떻게 잴까?": "How do you measure\nthe slope of a curve?",
+    "곡선 y = x² 위의 한 점 P": "A point P on the curve y = x²",
+    "곡선은 계속 휘어서\n기울기를 바로 못 재요": "A curve keeps bending,\nso we can't measure its slope directly",
+    "그럼 옆에 점 Q 를 하나 더 찍고\n두 점을 직선으로 이어요": "So put another point Q next to it\nand join the two with a straight line",
+    "Q 를 P 쪽으로 점점 붙이면…": "Slide Q closer and closer to P…",
+    "기울기가 2 에 딱 붙어요!": "The slope closes in on 2!",
+    "두 점이 하나가 된 직선 = 접선\n접선의 기울기 = 2": "When the two points become one = the tangent line\nIts slope = 2",
+    "P 를 크게 확대해 볼까요?": "Let's zoom way in on P",
+    "곡선이 접선과 거의 겹쳐요\n가까이 보면 곡선도 직선!": "The curve almost lies on the tangent —\nup close, a curve looks straight!",
+    "이 기울기를 구하는 게 \"미분\"\n아주 가까이서 본 기울기": "Finding this slope is \"differentiation\":\nthe slope seen from really close up",
+    "P 를 옮기면 기울기도 바뀌어요": "Move P and the slope changes too",
+    "기울기는 언제나 x 의 2배\n(x²)′ = 2x": "The slope is always twice x\n(x²)′ = 2x"
+  }
+}

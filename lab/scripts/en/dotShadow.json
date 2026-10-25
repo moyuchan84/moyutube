@@ -1,0 +1,15 @@
+{
+  "NEXT": "NEXT: An infinite proof\nwith dominoes",
+  "EN": {
+    "벡터의 내적은|그림자 길이?": "Is the dot product\na shadow's length?",
+    "두 화살표(벡터) a 와 b": "Two arrows (vectors), a and b",
+    "a 에 수직으로 빛을 비추면\nb 의 그림자가 a 위에 생겨요": "Shine light straight down onto a,\nand b casts a shadow on a",
+    "내적 = a 의 길이 × 그림자 길이": "Dot product = length of a × length of the shadow",
+    "각을 바꿔 볼게요": "Let's change the angle",
+    "같은 방향: 그림자가 제일 길어요": "Same direction: the shadow is longest",
+    "직각이면 그림자 0 → 내적 0": "At a right angle the shadow is 0 → the dot product is 0",
+    "반대쪽으로 넘어가면 음수!": "Lean past it to the other side and it's negative!",
+    "그림자 길이 = |b| cos θ\n(sin·cos 편의 가로 그림자!)": "Shadow length = |b| cos θ\n(the sideways shadow from the sin·cos episode!)",
+    "썰매를 비스듬히 끌 때\n앞으로 가는 데 쓰인 힘 = 그림자": "When you pull a sled at an angle,\nthe force that moves it forward = the shadow"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "TITLE": "Say the color of the words!",
+  "NEXT": "NEXT: A sound that keeps rising forever?",
+  "EN": {
+    "글자를 읽지 말고\n글자의 \"색\"을 소리 내 말해요": "Don't read the word —\nsay its COLOR out loud",
+    "이건 \"빨강\"이 정답!": "For this one, the answer is \"red\"!",
+    "색을 말해 보세요!": "Say the colors!",
+    "술술 되죠?": "Easy, right?",
+    "이번엔 글자와 색이 달라요\n색을 말해요!": "Now the words and colors don't match.\nSay the colors!",
+    "읽지 말고 색!": "Not the word — the color!",
+    "혀가 꼬이죠?": "Tongue-tied?",
+    "빨강 초록 파랑 / 노랑 초록 노랑\n빨강 파랑 노랑": "Red, green, blue / yellow, green, yellow\nred, blue, yellow",
+    "글자를 보면 뇌에서\n두 가지가 동시에 출발해요": "When you see a word,\ntwo things start in your brain at once",
+    "읽기는 연습을 아주 많이 해서\n저절로, 엄청 빨라요": "You've practiced reading so much\nthat it's automatic and super fast",
+    "\"파랑\"이 먼저 도착해서\n\"빨강\"이랑 부딪쳐요": "\"Blue\" arrives first\nand crashes into \"red\"",
+    "뇌가 읽기를 꾹 누르고\n색을 고르느라 느려지는 거예요": "Your brain slows down because it has to hold back the reading\nand pick the color",
+    "자전거처럼 익숙해진 일은\n생각하기도 전에 저절로 돼요": "Like riding a bike, things you're used to\nhappen before you even think",
+    "이걸 \"스트룹 효과\"라고 해요": "This is called the \"Stroop effect\""
+  }
+}

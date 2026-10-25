@@ -1,0 +1,183 @@
+{
+  "title": "내모남불 ① 자동차편 · 끼어들기 · 깜빡이 · 주차",
+  "cast": {
+    "traffic": "a Korean traffic police officer woman in her mid-thirties, slim and upright, a neat low black ponytail, straight bangs, sharp calm eyes under straight eyebrows, NO glasses, a tiny beauty mark on her right cheek; wearing a navy-blue police uniform shirt and navy trousers under a bright fluorescent yellow-green reflective safety vest with silver reflective stripes, a navy peaked cap, white gloves, black shoes; absolutely NO text, NO letters, NO badges with writing and NO logos anywhere on the uniform; perfectly deadpan and polite"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/kid/normal",
+    "common/mom/normal",
+    "common/cutin/dad-shock",
+    "common/cutin/dad-proud",
+    "common/cutin/dad-sig-1",
+    "common/cutin/dad-sig-2",
+    "common/cutin/dad-sig-3",
+    "common/cutin/kid-ask",
+    "common/cutin/kid-doubt",
+    "common/cutin/mom-smirk",
+    "common/cutin/mom-sigh",
+    "common/cutin/mom-sig-scream",
+    "common/cutin/mom-sig-1",
+    "common/cutin/mom-sig-2",
+    "common/cutin/mom-sig-3",
+    "common/cutin/mom-sig-4"
+  ],
+  "items": [
+    {
+      "id": "full/highway-cutin",
+      "kind": "full",
+      "title": "장면 — 빨간 경차가 깜빡이 없이 코앞으로 끼어듦",
+      "cuts": "c00",
+      "motion": "옆으로 휙 들어오고 속도선이 얹힌다.",
+      "desc": "A sunny Korean city expressway seen from a low angle just behind and above a plain white compact sedan (no logo, blank license plate). A small boxy red compact car with no logo swerves diagonally across the lane marking right in front of the white sedan's bumper, its turn signal lamps clearly dark and unlit. Motion blur on the red car, dust and small sparks, tire marks, dramatic speed. Blue sky, sound barrier walls and green hills at the sides. No people visible."
+    },
+    {
+      "id": "full/car-interior",
+      "kind": "full",
+      "who": "dad",
+      "attach": [
+        { "path": "art/common/mom/normal.png", "label": "엄마 기준 그림" },
+        { "path": "art/common/kid/normal.png", "label": "아이 기준 그림" }
+      ],
+      "title": "장면 — 차 안 정면 (아빠 운전 · 엄마 조수석 · 아이 뒷좌석)",
+      "cuts": "c01, c02, c03, c06",
+      "note": "주 무대. 핸들은 왼쪽(한국 차). 아이는 뒷좌석 가운데 부스터 시트 + 안전벨트.",
+      "motion": "천천히 당겨지고, 대사마다 인물 쪽으로 카메라가 옮겨 간다.",
+      "desc": "Inside a plain white family sedan, seen straight-on from outside through the front windshield like a sitcom set. The dad (attached image 2) sits in the LEFT front seat (driver seat, steering wheel on the left) holding the wheel with a smug confident grin; the mom (attached image 3, same face, glasses, bob hair and sage-green sweater) sits in the RIGHT front passenger seat, arms folded, giving him a sideways skeptical look; the 8-year-old kid (attached image 4, same bowl cut, red hoodie) sits in the middle of the back seat in a booster seat with the seatbelt across the chest, leaning forward curiously between the two front seats. All three wear seatbelts. Bright daylight, a little dashboard, blurred road and trees reflected at the edges of the glass."
+    },
+    {
+      "id": "cutin/dad-rage-wheel",
+      "kind": "cutin",
+      "who": "dad",
+      "attach": [{ "path": "art/common/cutin/dad-shock.png", "label": "아빠 컷인 표정 참고" }],
+      "title": "아빠 컷인 — 핸들 쥐고 분노",
+      "cuts": "c00, c02",
+      "motion": "크래시 줌으로 확 당겨진다.",
+      "desc": "Facing the viewer. Both hands crushing the top of a steering wheel that is visible at the bottom of the frame, leaning forward, face red with rage, bulging veins on the forehead (anime anger mark), eyes bulging, huge open shouting mouth showing teeth, spit flying, steam puffing from the ears."
+    },
+    {
+      "id": "cutin/dad-chill",
+      "kind": "cutin",
+      "who": "dad",
+      "attach": [{ "path": "art/common/cutin/dad-proud.png", "label": "아빠 컷인 표정 참고" }],
+      "title": "아빠 컷인 — 한 손 운전, 휘파람 \"모 어때~\"",
+      "cuts": "c00a, c02a, c04a",
+      "motion": "멈춤 + 이름표가 붙는다.",
+      "desc": "Facing slightly to the RIGHT. Lazily steering with one finger on a steering wheel visible at the bottom of the frame, the other hand waving casually, eyes closed in total self-satisfaction, lips puckered whistling, a little glowing halo floating above his head, a few sparkles and a tiny music note shape (no letters)."
+    },
+    {
+      "id": "full/exit-queue",
+      "kind": "full",
+      "title": "장면 — 출구 앞 긴 줄, 맨 앞에서 끼어드는 검은 차",
+      "cuts": "c02",
+      "motion": "줄을 따라 위에서 아래로 훑다가 끼어드는 차에서 멈춘다.",
+      "desc": "High three-quarter aerial view of a Korean expressway exit ramp at late morning: a very long, perfectly orderly queue of cars waiting in the right lane stretches far into the distance, while the lane beside it is almost empty. At the very front, right where the exit splits off, a shiny black sedan with no logo cuts diagonally into the queue, its nose squeezing into a tiny gap; the car behind it brakes with red brake lights glowing. Small shock lines around the black car. No people visible, no text on road signs (blank green sign boards)."
+    },
+    {
+      "id": "full/judge-imagine",
+      "kind": "full",
+      "who": "dad",
+      "title": "아빠의 상상 — 법복 입은 아빠가 망치를 탕",
+      "cuts": "c02",
+      "note": "영상에서 분홍 '아빠의 상상' 효과가 얹힌다.",
+      "desc": "A silly imagined courtroom in pastel pink and gold light: the dad sits behind a huge wooden judge's bench wearing a black judge's robe over his cardigan, slamming a big wooden gavel down so hard it cracks the bench, wood chips flying, his face furious and righteous, glaring down at a tiny black car (toy-sized, no people) standing on the floor in front of the bench like a defendant. Sparkles, dramatic spotlight beams. No text, no flags, no emblems."
+    },
+    {
+      "id": "full/dad-merge",
+      "kind": "full",
+      "who": "dad",
+      "title": "장면 — 아빠 차가 빈 차로로 달려 맨 앞에서 쓱",
+      "cuts": "c02a",
+      "motion": "옆으로 미끄러지며 들어온다.",
+      "desc": "The same expressway exit queue seen from the side at road level: the plain white sedan (no logo, blank plate) slides diagonally from the empty lane into a tiny gap at the very front of the long waiting queue. Through the open driver's window the dad (attached image 2, same face and mustard cardigan) raises one hand in a cheeky little wave, eyes closed, whistling innocently, a small halo above his head. The car behind brakes hard with smoke from its tires. Speed lines, dust."
+    },
+    {
+      "id": "traffic/normal",
+      "kind": "char",
+      "who": "traffic",
+      "ref": null,
+      "title": "교통경찰관 — 기본",
+      "cuts": "c02b, c03b",
+      "note": "교통경찰관의 기준 그림. 이후 경찰관 그림에 전부 ②로 첨부한다. 제복에 글자 · 휘장 · 로고 없음.",
+      "motion": "숨 쉬듯 살짝 움직이고, 말할 때 까딱거린다.",
+      "desc": "3/4 view turned slightly to the LEFT. Standing upright and calm, holding a red glowing traffic baton (a light stick) down at her side in one hand, the other hand lightly raised palm-forward in a polite 'please stop' gesture, a perfectly deadpan face with the tiniest polite smile."
+    },
+    {
+      "id": "traffic/point",
+      "kind": "char",
+      "who": "traffic",
+      "ref": "traffic/normal",
+      "title": "교통경찰관 — 경광봉으로 갓길 가리키기",
+      "cuts": "c02b, c03b",
+      "motion": "가리키는 팔이 위아래로 까딱인다.",
+      "desc": "3/4 view turned slightly to the LEFT. Pointing firmly to the side with the glowing red traffic baton fully extended, the other hand on her hip, half-closed unimpressed eyes, one eyebrow slightly raised, mouth a small flat line."
+    },
+    {
+      "id": "cutin/traffic-flat",
+      "kind": "cutin",
+      "who": "traffic",
+      "ref": "traffic/normal",
+      "title": "교통경찰관 정색 (컷인)",
+      "cuts": "c02b, c03b, c04b",
+      "motion": "화면 옆에서 튀어나와 흔들린다.",
+      "desc": "Facing slightly to the LEFT. Perfectly deadpan: half-closed unimpressed eyes, one eyebrow raised a millimeter, mouth a small flat line, a cold sharp glint in one eye, the peaked cap casting a little shadow, the glowing red baton held up next to her face."
+    },
+    {
+      "id": "traffic/shopping",
+      "kind": "char",
+      "who": "traffic",
+      "ref": "traffic/normal",
+      "title": "교통경찰관 — 비번, 장 보러 온 차림",
+      "cuts": "c04b",
+      "note": "같은 사람이지만 제복 대신 사복. 얼굴 · 머리는 기준 그림 그대로.",
+      "motion": "옆에서 쓱 들어온다.",
+      "desc": "The SAME woman as attached image 2 (same face, ponytail, bangs and beauty mark) but off duty: no cap, no vest, wearing a plain gray hoodie, jeans and white sneakers, holding a red plastic supermarket basket full of groceries with a long green leek sticking out. 3/4 view turned slightly to the LEFT, standing still and staring flatly at the viewer with the exact same deadpan face, one eyebrow raised."
+    },
+    {
+      "id": "cutin/dad-heart",
+      "kind": "cutin",
+      "who": "dad",
+      "attach": [{ "path": "art/common/cutin/dad-proud.png", "label": "아빠 컷인 표정 참고" }],
+      "title": "아빠 컷인 — 가슴에 손, 분홍 하트 \"마음속으로 켰어\"",
+      "cuts": "c03",
+      "motion": "하트가 깜빡이처럼 켜졌다 꺼진다.",
+      "desc": "Facing the viewer. One hand placed gently on his chest, eyes closed peacefully, a serene absurdly sincere smile, a soft glowing pink heart of light shining from his chest, dreamy pink and pastel bokeh sparkles around him."
+    },
+    {
+      "id": "full/mart-hydrant",
+      "kind": "full",
+      "title": "장면 — 마트 앞 소화전, 그 앞에 선 남의 차",
+      "cuts": "c04",
+      "motion": "소화전 쪽으로 당겨진다.",
+      "desc": "The front of a big Korean neighborhood supermarket building on a sunny Saturday (blank sign board, no letters), a wide sidewalk with shopping carts. At the curb, a bright red fire hydrant stands in front of a section of curb painted red; a dark gray SUV with no logo and a blank plate is parked right in front of the hydrant, blocking it. Small shock lines around the SUV. No people."
+    },
+    {
+      "id": "full/dad-hydrant",
+      "kind": "full",
+      "who": "dad",
+      "title": "장면 — 아빠가 소화전 앞에 대고 \"딱 1분만\"",
+      "cuts": "c04a",
+      "motion": "멈춤 + 이름표가 붙는다.",
+      "desc": "The same supermarket front with the bright red fire hydrant and red-painted curb: now the plain white sedan (no logo, blank plate) is parked right in front of the hydrant. The dad (attached image 2, same face and mustard cardigan) stands next to the car holding up one index finger with a cheeky wink and a big grin, as if saying 'just one minute', car keys dangling from the other hand. Sweat drop, sparkle."
+    },
+    {
+      "id": "full/bench-sunset",
+      "kind": "full",
+      "who": "kid",
+      "attach": [{ "path": "art/common/dad/normal.png", "label": "아빠 기준 그림" }],
+      "title": "장면 — 노을빛 벤치의 아이와 아빠 (아이 눈높이)",
+      "cuts": "c05",
+      "note": "농담 없는 박자. 따뜻하고 조용하게.",
+      "motion": "거의 움직이지 않고 아주 천천히 당겨진다.",
+      "desc": "A quiet warm moment in late afternoon golden light: on a wooden bench outside the supermarket, the 8-year-old kid (attached image 2, same bowl cut and red hoodie) sits next to the dad (attached image 3, same face and mustard cardigan) with two full shopping bags at their feet. The kid looks up at the dad and speaks seriously with a small gentle smile; the dad listens with a soft, thoughtful, slightly embarrassed face. In the background, the red fire hydrant stands clear and unblocked at the curb. Calm, sincere, no comic effects."
+    },
+    {
+      "id": "full/blinker-home",
+      "kind": "full",
+      "title": "장면 — 돌아오는 길, 2km째 깜빡이 켠 흰 차",
+      "cuts": "c06, c06a",
+      "motion": "깜빡이 불빛이 반짝이고 뒤에서 빵빵.",
+      "desc": "An evening Korean city road under an orange sunset, seen from behind and slightly above: the plain white sedan (no logo, blank plate) drives perfectly straight in its lane with its LEFT turn signal lamp blinking brightly (big glowing orange light flare), while a long line of cars behind it is confused, one car flashing its headlights. Little question mark shapes floating above the cars behind (no letters). No people visible."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "engine": "Google AI Studio · Gemini TTS (대화 · 화자 블록) — 제안 배역, 아직 만들어 듣고 확정하지 않음",
+  "note": "엄마가 읽어 주는 동화. 서술은 01·02권과 같은 엄마 목소리(Sulafat), 물건마다 다른 목소리. 한 번(테이크)에 목소리는 하나: 화자가 바뀌면 새 테이크. alias 는 이름이 다른 화자를 같은 배역으로 합친다.",
+  "alias": { "안내문": "narr", "이름표": "narr", "물건": "물건들", "아이들": "아이", "주인": "아이" },
+  "roles": {
+    "narr": { "name": "엄마(서술)", "voice": "Sulafat", "style": "A Korean mom in her early thirties reading a picture book aloud to her child at bedtime: warm, soft, clear and gentle, unhurried storytelling pace, a loving smile in the voice, with natural expressive pauses; hushed and a little tense in the scary night scenes, brighter and warmer as the story turns happy" },
+    "할아버지": { "name": "보관함 할아버지", "voice": "Charon", "style": "A kind, slow old grandfather who is also a wooden cabinet: creaky, tired and sighing at first, then light, cheerful and chuckling at the end ('heh heh')" },
+    "공책": { "name": "괴물 공책", "voice": "Puck", "style": "A bold, brave, big-brother-like boy's voice: loud, confident and encouraging, trembling a little when scared, warm when comforting" },
+    "줄넘기": { "name": "노랑 줄넘기", "voice": "Zephyr", "style": "A timid, bouncy, nervous young voice: shivering and shaky when scared (deol-deol-deol), perky when excited" },
+    "우산": { "name": "파랑 우산", "voice": "Achird", "style": "A soft, patient, slightly weary voice: whispering and spooky-story-telling, weak and faint when fading, warm and glowing when remembering happy rainy days" },
+    "잠바": { "name": "잠바", "voice": "Autonoe", "style": "A small worried voice, fretting and sighing, a bit comical" },
+    "필통": { "name": "필통(통통이)", "voice": "Leda", "style": "Tongtong, a hurt and shy pencil case: tiny, trembling and sad, with long pauses; scared that it will be thrown again; then tearfully relieved and a shy smile at the end" },
+    "도윤": { "name": "도윤", "voice": "Fenrir", "style": "Doyun, a Korean boy of about nine: shy and embarrassed under his cap, then brave and sincere when apologizing, voice shaking with emotion but gentle" },
+    "여자아이": { "name": "여자아이", "voice": "Kore", "style": "A cheerful, sharp-eyed Korean girl of about nine: bright, delighted and kind, a big happy gasp when she finds her favorite character" },
+    "아이": { "name": "학교 아이들", "voice": "Orus", "style": "A casual Korean schoolkid of about ten: breezy, careless and matter-of-fact (when he says mom will just buy it again); amazed 'wow' when cheering; whispering and doubtful when gossiping" },
+    "물건들": { "name": "물건들(무서운 소문)", "voice": "Callirrhoe", "style": "Frightened little voices whispering rumors in the dark: hushed, shaky and fast, then trembling and resigned ('we're really done for')" },
+    "방송": { "name": "학교 안내방송", "voice": "Sadaltager", "style": "A clear, friendly school announcer: polite, steady and warm, reading a public announcement slowly and brightly" }
+  }
+}

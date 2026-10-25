@@ -1,0 +1,16 @@
+{
+  "fps": 30,
+  "bpm": 126,
+  "scenes": [
+    { "id": "hook", "from": 0, "dur": 165 },
+    { "id": "rule", "from": 165, "dur": 240 },
+    { "id": "walk", "from": 405, "dur": 450 },
+    { "id": "run", "from": 855, "dur": 300 },
+    { "id": "marathon", "from": 1155, "dur": 240 },
+    { "id": "myth", "from": 1395, "dur": 240 },
+    { "id": "outro", "from": 1635, "dur": 180 }
+  ],
+  "total": 1815,
+  "hits": [95, 300, 760, 1000, 1290, 1500],
+  "risers": [165, 405, 855, 1155, 1395, 1635]
+}

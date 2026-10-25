@@ -107,6 +107,42 @@
     "w": 1254,
     "h": 1300
   },
+  "common/cutin/dad-sig-1": {
+    "w": 1300,
+    "h": 1210
+  },
+  "common/cutin/dad-sig-2": {
+    "w": 1500,
+    "h": 1395
+  },
+  "common/cutin/dad-sig-3": {
+    "w": 1500,
+    "h": 1471
+  },
+  "common/cutin/mom-sig-1": {
+    "w": 1275,
+    "h": 1300
+  },
+  "common/cutin/mom-sig-2": {
+    "w": 1471,
+    "h": 1500
+  },
+  "common/cutin/mom-sig-3": {
+    "w": 1471,
+    "h": 1500
+  },
+  "common/cutin/mom-sig-4": {
+    "w": 1471,
+    "h": 1500
+  },
+  "common/cutin/mom-sig-scream": {
+    "w": 1300,
+    "h": 1300
+  },
+  "common/cutin/kid-sig": {
+    "w": 1300,
+    "h": 1170
+  },
   "common/bg/living-room": {
     "w": 2560,
     "h": 1440
@@ -154,6 +190,62 @@
   "ep01/full/next-teaser": {
     "w": 2560,
     "h": 1440
+  },
+  "ep01/bg/hostel-lobby": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep01/bg/hill-parking": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep01/manager/normal": {
+    "w": 744,
+    "h": 1500
+  },
+  "ep01/manager/correct": {
+    "w": 872,
+    "h": 1500
+  },
+  "ep01/manager/key": {
+    "w": 1060,
+    "h": 1500
+  },
+  "ep01/manager/point": {
+    "w": 1031,
+    "h": 1500
+  },
+  "ep01/cutin/manager-correct": {
+    "w": 1277,
+    "h": 1300
+  },
+  "ep01/full/mo-motel-imagine": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep01/prop/hospice": {
+    "w": 1200,
+    "h": 1153
+  },
+  "ep01/prop/room-key": {
+    "w": 1200,
+    "h": 1044
+  },
+  "ep01/prop/suitcases": {
+    "w": 897,
+    "h": 1200
+  },
+  "ep01/prop/storm": {
+    "w": 1200,
+    "h": 1193
+  },
+  "ep01/cutin/dad-shy": {
+    "w": 1112,
+    "h": 1300
+  },
+  "ep01/prop/motel-shy": {
+    "w": 1200,
+    "h": 1158
   },
   "ep02/full/law-book": {
     "w": 2560,
@@ -820,6 +912,250 @@
     "h": 1440
   },
   "ep08/full/next-teaser": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep09/bg/museum-hall": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep09/bg/space-earth": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep09/bg/museum-plaza-dusk": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep09/guide/normal": {
+    "w": 779,
+    "h": 1500
+  },
+  "ep09/guide/correct": {
+    "w": 781,
+    "h": 1500
+  },
+  "ep09/guide/point": {
+    "w": 915,
+    "h": 1500
+  },
+  "ep09/guide/model": {
+    "w": 945,
+    "h": 1500
+  },
+  "ep09/cutin/guide-correct": {
+    "w": 1300,
+    "h": 1300
+  },
+  "ep09/dad/v-sign": {
+    "w": 1105,
+    "h": 1500
+  },
+  "ep09/kid/wave-sky": {
+    "w": 899,
+    "h": 1500
+  },
+  "ep09/full/nuri-selfie-imagine": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep09/full/family-rocket-imagine": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep09/full/stage-drop": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep09/prop/nuri-rocket": {
+    "w": 378,
+    "h": 1200
+  },
+  "ep09/prop/rocket-truck": {
+    "w": 1200,
+    "h": 703
+  },
+  "ep09/prop/small-sats": {
+    "w": 1200,
+    "h": 878
+  },
+  "ep09/prop/aerial-photo": {
+    "w": 1200,
+    "h": 1107
+  },
+  "ep09/prop/earth-orbit": {
+    "w": 1190,
+    "h": 1200
+  },
+  "ep09/prop/moon": {
+    "w": 1200,
+    "h": 1199
+  },
+  "ep09/prop/crew-capsule": {
+    "w": 1105,
+    "h": 1200
+  },
+  "ep09/prop/rocket-inside": {
+    "w": 592,
+    "h": 1200
+  },
+  "ep10/bg/living-room-movie": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep10/bg/observatory-hall": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep10/bg/deep-space": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep10/bg/observatory-roof-night": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep10/astro/normal": {
+    "w": 594,
+    "h": 1500
+  },
+  "ep10/astro/correct": {
+    "w": 708,
+    "h": 1500
+  },
+  "ep10/astro/point": {
+    "w": 1070,
+    "h": 1500
+  },
+  "ep10/astro/listen": {
+    "w": 826,
+    "h": 1500
+  },
+  "ep10/cutin/astro-correct": {
+    "w": 1038,
+    "h": 1300
+  },
+  "ep10/full/sofa-movie": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep10/full/ufo-visit-imagine": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep10/full/octopus-alien-imagine": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep10/dad/point-sky": {
+    "w": 1011,
+    "h": 1500
+  },
+  "ep10/kid/ear-sky": {
+    "w": 724,
+    "h": 1500
+  },
+  "ep10/prop/hop-cone": {
+    "w": 1160,
+    "h": 1200
+  },
+  "ep10/prop/court-beer-hall": {
+    "w": 1200,
+    "h": 1129
+  },
+  "ep10/prop/ufo-unknowns": {
+    "w": 900,
+    "h": 1200
+  },
+  "ep10/prop/interstellar-comet": {
+    "w": 1200,
+    "h": 1156
+  },
+  "ep10/prop/mars-leopard-rock": {
+    "w": 1200,
+    "h": 1026
+  },
+  "ep10/prop/microbes": {
+    "w": 1188,
+    "h": 1200
+  },
+  "ep10/prop/radio-telescope": {
+    "w": 1006,
+    "h": 1200
+  },
+  "ep10/prop/space-probe": {
+    "w": 1200,
+    "h": 1099
+  },
+  "ep10/prop/blinking-plane": {
+    "w": 1200,
+    "h": 955
+  },
+  "ep10/full/hope-poster": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm01/full/highway-cutin": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm01/full/car-interior": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm01/cutin/dad-rage-wheel": {
+    "w": 1300,
+    "h": 1262
+  },
+  "nm01/cutin/dad-chill": {
+    "w": 1211,
+    "h": 1300
+  },
+  "nm01/full/exit-queue": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm01/full/judge-imagine": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm01/full/dad-merge": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm01/traffic/normal": {
+    "w": 609,
+    "h": 1500
+  },
+  "nm01/traffic/point": {
+    "w": 824,
+    "h": 1500
+  },
+  "nm01/cutin/traffic-flat": {
+    "w": 1040,
+    "h": 1300
+  },
+  "nm01/traffic/shopping": {
+    "w": 756,
+    "h": 1500
+  },
+  "nm01/cutin/dad-heart": {
+    "w": 1188,
+    "h": 1300
+  },
+  "nm01/full/mart-hydrant": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm01/full/dad-hydrant": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm01/full/bench-sunset": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm01/full/blinker-home": {
     "w": 2560,
     "h": 1440
   }

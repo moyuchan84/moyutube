@@ -1,0 +1,73 @@
+1
+00:00:00,000 --> 00:00:04,590
+A sound that keeps rising forever?
+
+2
+00:00:04,640 --> 00:00:06,360
+Turn the sound on, but keep it low
+
+3
+00:00:06,410 --> 00:00:09,910
+Listen all the way through
+to hear how high it goes
+
+4
+00:00:09,960 --> 00:00:15,880
+First, an ordinary staircase of notes
+
+5
+00:00:15,930 --> 00:00:17,450
+Climb it, and you reach the top
+
+6
+00:00:17,500 --> 00:00:21,220
+Now listen to this one!
+
+7
+00:00:21,270 --> 00:00:25,220
+It keeps going up…
+
+8
+00:00:25,270 --> 00:00:29,220
+Still going up!
+
+9
+00:00:29,270 --> 00:00:32,220
+But it never ends?!
+
+10
+00:00:32,270 --> 00:00:36,190
+Actually, every 12 steps
+it's back to the very first sound!
+
+11
+00:00:36,240 --> 00:00:38,360
+It plays several notes at once,
+each an octave apart
+
+12
+00:00:38,410 --> 00:00:42,630
+They all step up together
+
+13
+00:00:42,680 --> 00:00:46,630
+The note that gets too high
+fades away
+
+14
+00:00:46,680 --> 00:00:51,130
+while a new note sneaks in quietly
+at the bottom
+
+15
+00:00:51,180 --> 00:00:55,100
+So your ears only notice "going up"
+and never catch the end
+
+16
+00:00:55,150 --> 00:00:57,350
+This is called a "Shepard tone"
+
+17
+00:00:57,400 --> 00:00:59,450
+NEXT: You can't lift your ring finger?

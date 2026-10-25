@@ -63,7 +63,7 @@ const splitTake = (take) => {
       const c = (a + b) / 2;
       if (Math.abs(c - target) < Math.max(1.2, dur * 0.12) && (!best || Math.abs(c - target) < Math.abs(best - target))) best = c;
     }
-    cuts.push(Math.max(cuts[cuts.length - 1] + 0.3, best ?? target));
+    cuts.push(Math.max(cuts[cuts.length - 1] + Math.min(0.9, dur / (w.length * 2)), best ?? target));
   }
   cuts.push(dur);
   return take.lines.map((l, i) => ({ ...l, from: cuts[i], to: cuts[i + 1] }));
@@ -81,13 +81,16 @@ const chunks = (line) => {
     if (best >= 0) break;
   }
   if (best < 0) return [{ ...line, text: t }];
+  while (best + 1 < t.length - 1 && /[,.?!…]/.test(t[best + 1])) best++; // 줄임표 · 느낌표가 이어지면 앞 조각에 붙인다
   const a = t.slice(0, best + 1).trim(), b = t.slice(best + 1).trim();
   if (!a || !b) return [{ ...line, text: t }];
   const r = a.length / (a.length + b.length), m = line.from + (line.to - line.from) * r;
-  return [{ ...line, to: m, text: a }, { ...line, from: m, text: b }];
+  // 반쪽이 아직 길면 다시 나눈다 (긴 대사는 세 · 네 번에 나눠 보여 준다)
+  return [...chunks({ ...line, t: a, to: m }), ...chunks({ ...line, t: b, from: m })];
 };
 
-const ART = { 14: 'p01', 15: 'p02' }; // p14 · p15 그림이 아직 없을 때 쓸 대체 그림 (같은 침대 · 같은 등굣길)
+const HERO = slug === '01-real-hero'; // 01 만의 사정: p14 · p15 대체 그림, 10 장면 네 컷
+const ART = HERO ? { 14: 'p01', 15: 'p02' } : {}; // p14 · p15 그림이 아직 없을 때 쓸 대체 그림 (같은 침대 · 같은 등굣길)
 const artFiles = fs.readdirSync(path.join(book, 'art'));
 const has = (id) => artFiles.includes(`${id}.png`);
 const pic = (n) => {
@@ -105,7 +108,7 @@ const scenes = story.scenes.map((s) => {
   }
   const p = plan.scenes[s.no] ?? {};
   let imgs;
-  if (s.no === 10) {
+  if (HERO && s.no === 10) {
     // 네 컷: 서술이 그 장면을 말하는 순간에 맞춰 그림을 바꾼다
     const find = (k) => subs.find((x) => x.text.includes(k))?.from ?? null;
     const dEnd = subs.find((x) => x.who === '민지')?.from ?? start + tm.sec - 5;
@@ -120,7 +123,13 @@ const scenes = story.scenes.map((s) => {
 });
 
 const end = scenes.at(-1).end;
-const out = { fps: FPS, width: 1920, height: 1080, title: story.title, author: story.author, intro: INTRO, outro: OUTRO, total: +(end + OUTRO).toFixed(2), scenes };
+// 책마다 다른 화면 꾸밈: 말하는 사람 색 · 표지 글자 색 · 끝 카드 문구
+const LOOK = {
+  '01-real-hero': { colors: { 준이: '#c0392b', 선호: '#2f6fa8', 민지: '#3c8a55', 친구: '#c9822b' }, thumb: [['진짜 히어로가', '#c0392b'], ['되는 법', '#2c3e63']], ink: '#2c3e63', endLine: '진짜 힘은 망토가 아니라, 그 안의 마음', tag: '엄마의 동화책', title: story.title },
+  '02-maum-cafe': { colors: { 바라: '#8a5a2b', 나무늘보: '#a0622d', 사자: '#c98a12', 다람쥐: '#c0612b', 고슴도치: '#7a5a3c', 카멜레온: '#2f9a7a', 토끼: '#6a7fb0' }, thumb: [['내 마음 알아주는', '#8a5a2b'], ['마음카페', '#c0392b']], ink: '#5a3a1c', endLine: '어떤 마음이든, 언제든 환영합니다', tag: '엄마의 동화책', title: '내 마음 알아주는 마법레시피\n마음카페' },
+  '03-lost-found': { colors: { 할아버지: '#6b4a2b', 공책: '#c0392b', 줄넘기: '#c9a227', 우산: '#2f6fa8', 잠바: '#7a5a8a', 필통: '#3c8a55', 도윤: '#2c3e63', 여자아이: '#d0607a', 아이: '#c9822b', 물건들: '#5a6a7a', 방송: '#444444' }, thumb: [['반짝! 분실물', '#e0a420'], ['보관함의 비밀', '#3a5a8a']], ink: '#2c3e63', endLine: '잃어버린 물건에도 마음이 있어요', tag: '엄마의 동화책', title: story.title },
+}[slug];
+const out = { slug, look: LOOK, audio: `audio/${slug}.wav`, fps: FPS, width: 1920, height: 1080, title: story.title, author: story.author, intro: INTRO, outro: OUTRO, total: +(end + OUTRO).toFixed(2), scenes };
 fs.writeFileSync(path.join(here, '..', 'src', 'timeline.json'), JSON.stringify(out, null, 1));
 console.log(`timeline.json — 장면 ${scenes.length} · 자막 ${scenes.reduce((a, s) => a + s.subs.length, 0)}줄 · ${out.total}초`);
-for (const n of [14, 15]) if (!has(`p${n}`)) console.log(`※ art/p${n}.png 없음 → ${ART[n]} 로 대체`);
+if (HERO) for (const n of [14, 15]) if (!has(`p${n}`)) console.log(`※ art/p${n}.png 없음 → ${ART[n]} 로 대체`);

@@ -1,0 +1,18 @@
+{
+  "TITLE": "What if you cut a magnet in half?",
+  "NEXT": "See you in the next experiment!",
+  "EN": {
+    "막대자석을 반으로 자르면\nN 조각 하나, S 조각 하나?": "If you cut a bar magnet in half,\ndo you get one N piece and one S piece?",
+    "잘라 볼게요!": "Let's cut it!",
+    "조각마다 N 과 S 가\n다시 생겨요!": "Each piece gets\nits own N and S!",
+    "한 번 더 잘라도?": "What if we cut again?",
+    "네 조각 모두 N 과 S!\nN 만 있는 자석은 없어요": "All four pieces have N and S!\nThere's no magnet with only N",
+    "쇠붙이 속에는\n아주 작은 자석들이 있어요": "Inside a piece of iron\nthere are tiny little magnets",
+    "이 작은 자석들이\n한 방향으로 줄 서면 = 자석!": "When those tiny magnets\nall line up the same way = a magnet!",
+    "가운데를 잘라도\n줄은 그대로예요": "Cut it in the middle,\nand the lines stay the same",
+    "그래서 자른 자리에\n새 N 과 S 가 생겨요": "So a new N and S appear\nright where you cut",
+    "두 조각을 다시 가까이 대면?": "What if you bring the two pieces close again?",
+    "찰칵! 다시 하나가 돼요": "Snap! They become one again",
+    "진짜 자석은 자르지 마세요\n(깨지면 날카로워요)": "Don't cut a real magnet\n(broken pieces can be sharp)"
+  }
+}

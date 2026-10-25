@@ -100,6 +100,42 @@
         "neighbor"
       ],
       "style": "A Korean man in his early fifties at a police counter: loud, wounded and sincere, quick and a little breathless, comically indignant but never threatening"
+    },
+    {
+      "label": "Guest",
+      "name": "유스호스텔 사장님",
+      "voice": "Sadaltager",
+      "roles": [
+        "manager"
+      ],
+      "style": "A cheerful, sturdy Korean youth hostel owner in his early sixties who has hiked mountains all his life: warm, clear, slightly gravelly middle-low voice, unhurried and dry, kindly amused when he corrects grown-ups, never stern"
+    },
+    {
+      "label": "Guest",
+      "name": "우주과학관 해설사",
+      "voice": "Rasalgethi",
+      "roles": [
+        "guide"
+      ],
+      "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+    },
+    {
+      "label": "Guest",
+      "name": "천문대 연구원",
+      "voice": "Autonoe",
+      "roles": [
+        "astro"
+      ],
+      "style": "A Korean woman astronomer in her early forties who runs the public programs at a city observatory: low, calm, dry and precise, perfectly deadpan when correcting grown-ups with one short line, but soft and quietly wondrous when talking about the sky"
+    },
+    {
+      "label": "Guest",
+      "name": "교통경찰관 (내모남불)",
+      "voice": "Erinome",
+      "roles": [
+        "traffic"
+      ],
+      "style": "A Korean traffic police officer woman in her mid-thirties: crisp, perfectly deadpan and polite, clear steady voice that enunciates every word, dry comedic timing when she corrects the dad, never angry or scary"
     }
   ],
   "direction": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud.",

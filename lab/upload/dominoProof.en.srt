@@ -1,0 +1,57 @@
+1
+00:00:00,800 --> 00:00:03,810
+An infinite proof
+with dominoes
+
+2
+00:00:03,860 --> 00:00:06,430
+Dominoes lined up forever —
+how can we be sure they all fall?
+
+3
+00:00:06,480 --> 00:00:08,600
+We only need to check two things:
+(1) the first one falls  (2) if one falls, the next one falls
+
+4
+00:00:08,650 --> 00:00:11,590
+What if (2) fails? (a gap that's too wide)
+
+5
+00:00:11,640 --> 00:00:13,860
+It stops partway
+
+6
+00:00:13,910 --> 00:00:16,230
+What if there's no (1)? Nothing falls at all
+
+7
+00:00:16,280 --> 00:00:19,360
+If (1) and (2) are both true…
+
+8
+00:00:19,410 --> 00:00:22,730
+Every single one falls, forever!
+
+9
+00:00:22,780 --> 00:00:26,200
+Let's check this formula for every n,
+just like dominoes
+
+10
+00:00:26,250 --> 00:00:29,470
+First domino: it's true for n = 1
+
+11
+00:00:29,520 --> 00:00:33,040
+If it's true up to n, adding n+1
+gives exactly the formula for the next step
+
+12
+00:00:33,090 --> 00:00:36,540
+Check just two steps and it holds forever!
+= mathematical induction
+
+13
+00:00:37,540 --> 00:00:41,290
+See you in the next episode!

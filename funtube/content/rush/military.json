@@ -1,0 +1,95 @@
+{
+  "id": "military",
+  "title": "군인의 1년 반, 1분 요약",
+  "bpm": 112,
+  "voice": "Puck",
+  "style": "fast, flat, deadpan Korean young man, dry comedic delivery, very short and punchy",
+  "clock": { "label": "복무 D+", "from": 0, "to": 548 },
+  "look": { "hair": "long", "hat": "none", "shirt": "#4D7CFF" },
+  "art": {
+    "style": "Korean webtoon gag-comic illustration, same look as a modern Korean comedy YouTube banner: confident thin black ink outlines with slight hand-drawn wobble, flat bright colors with soft cel shading, warm cream (#FFF8E7) background with subtle orange halftone dots, highly expressive exaggerated faces, comic symbols (sweat drops, motion marks, swirls, exclamation marks) drawn around characters, clean and polished, funny but warm.",
+    "cast": "MAIN CHARACTER (always the same person): a skinny Korean young man about 20 years old, round face, thick black eyebrows, big expressive dark eyes, slightly big ears. After enlistment he has a very short black buzz cut and wears a Korean Army green-brown digital camouflage combat uniform with a blank name tape.",
+    "layout": "Vertical 9:16 composition. Keep the main character large and centered in the middle 60% of the frame. Keep the top 12% and the bottom 25% simple (background only) because captions are added later. IMPORTANT: no text, no letters, no numbers, no logos, no watermark anywhere in the image."
+  },
+  "shots": [
+    { "k": "title", "b": 2, "text": "군인의 1년 반" },
+    { "k": "title", "b": 2, "text": "*1분* 요약", "sfx": "vboom" },
+
+    { "k": "pic", "b": 3, "art": "letter", "text": "입영통지서 *도착*", "say": "어? 나 왔네?", "sfx": "ding", "tr": "flash", "clk": 0 },
+    { "k": "counter", "b": 3, "bg": "#8A3FFC", "bg2": "#5A1FC8", "prefix": "D-", "v0": 30, "v1": 1, "label": "입대까지", "emoji": ["📅"], "sfx": "riser", "tr": "cut" },
+    { "k": "pic", "b": 3, "art": "haircut", "text": "머리 *삭제*", "sfx": "vboom", "cam": "shake", "tr": "zoom" },
+    { "k": "pic", "b": 3, "art": "goodbye", "text": "부모님 안녕…", "tr": "whip" },
+    { "k": "list", "b": 4, "text": "보급품 수령", "items": ["양말 → 이름 씀", "속옷 → 이름 씀", "수건 → 이름 씀", "나도 → *이름표 붙음*"], "tr": "glitch", "clk": 3 },
+
+    { "k": "pic", "b": 3, "art": "pantsgone", "text": "빨래 걷었더니 *내 팬티 실종*", "sfx": "scratch", "tr": "cut" },
+    { "k": "pic", "b": 2, "art": "pantsthief", "text": "옆 동기가 *입고 있음*", "sfx": "vboom", "cam": "shake", "tr": "zoom" },
+    { "k": "text", "b": 2, "bg": "#FF7A1A", "bg2": "#D9550A", "text": "이름 써도/*소용없음*", "emoji": ["🩲"], "tr": "cut" },
+
+    { "k": "pic", "b": 3, "art": "shooting", "text": "사격: 영점이 *안 맞음*", "sfx": "bang", "tr": "flash", "clk": 14 },
+    { "k": "meter", "b": 2, "bg": "#24180F", "dark": true, "label": "명중률", "v0": 0, "v1": 5, "emoji": ["🎯"], "tr": "cut" },
+    { "k": "pic", "b": 3, "art": "gas", "text": "화생방: 눈물 콧물 *대방출*", "sfx": "boom", "tr": "invert" },
+    { "k": "pic", "b": 2, "art": "gasface", "cam": "shake", "tr": "cut" },
+
+    { "k": "pic", "b": 3, "art": "yugyeok", "text": "유격: PT 체조 *무한 반복*", "tr": "whip", "clk": 25 },
+    { "k": "text", "b": 2, "bg": "#24180F", "pattern": "grid", "text": "마지막 구호는/*생략*", "tr": "cut" },
+    { "k": "pic", "b": 2, "art": "shout", "text": "…꼭 한 명 *외침*", "sfx": "vboom", "cam": "shake", "tr": "cut" },
+    { "k": "stamp", "b": 2, "text": "처음부터", "sub": "다시 1번부터…", "sfx": "punch" },
+
+    { "k": "pic", "b": 3, "art": "chocopie", "text": "종교행사 = *초코파이*", "sfx": "ding", "tr": "flash" },
+    { "k": "pic", "b": 3, "art": "burger", "text": "군대리아: *직접 조립*", "sfx": "pop", "tr": "zoom", "clk": 40 },
+
+    { "k": "pic", "b": 3, "art": "private", "text": "자대 배치 *이병*", "sfx": "powerup", "tr": "flash", "clk": 60 },
+    { "k": "text", "b": 3, "bg": "#8A3FFC", "bg2": "#5A1FC8", "text": "말끝은/무조건/*다나까*", "sfx": "vboom", "tr": "cut" },
+    { "k": "pic", "b": 2, "art": "scold", "text": "선임: *왜 그랬어?*", "cam": "shake", "sfx": "boom", "tr": "cut" },
+    { "k": "stamp", "b": 2, "text": "죄송합니다", "sub": "오늘만 7번째", "sfx": "punch" },
+
+    { "k": "pic", "b": 3, "art": "guard", "text": "새벽 2시 *보초*", "sfx": "heart", "tr": "whip", "clk": 200 },
+    { "k": "counter", "b": 2, "bg": "#0A0F2B", "dark": true, "pattern": "none", "prefix": "02:0", "v0": 0, "v1": 1, "label": "시간이 *안 감*", "tr": "cut" },
+    { "k": "pic", "b": 3, "art": "winter", "text": "혹한기: 발가락 *실종*", "sfx": "crinkle", "tr": "whip", "clk": 240 },
+
+    { "k": "pic", "b": 3, "art": "vacation", "text": "첫 *휴가*!!", "say": "휴가다!!", "sfx": "chime", "tr": "flash", "clk": 300 },
+    { "k": "meter", "b": 2, "bg": "#FF7A1A", "bg2": "#D9550A", "label": "남은 휴가", "v0": 100, "v1": 0, "emoji": ["⏳"], "sfx": "riser", "tr": "cut" },
+    { "k": "pic", "b": 2, "art": "return", "text": "복귀 날은 *칼같이*", "sfx": "scratch", "tr": "glitch" },
+
+    { "k": "text", "b": 2, "bg": "#FEE500", "text": "일병 = *눈치*", "emoji": ["👀"], "tr": "cut" },
+    { "k": "text", "b": 2, "bg": "#8A3FFC", "text": "상병 = *여유*", "emoji": ["😎"], "tr": "cut" },
+    { "k": "pic", "b": 2, "art": "sergeant", "text": "병장 = *달력만 봄*", "tr": "cut", "clk": 420 },
+    { "k": "pic", "b": 3, "art": "px", "text": "PX = *천국*", "sfx": "powerup", "tr": "flash", "clk": 470 },
+
+    { "k": "counter", "b": 3, "bg": "#8A3FFC", "bg2": "#5A1FC8", "prefix": "D-", "v0": 3, "v1": 0, "label": "전역까지", "emoji": ["🎉"], "sfx": "riser", "tr": "zoom", "clk": 548 },
+    { "k": "pic", "b": 3, "art": "discharge", "text": "*전역*!!", "say": "전역이다!!", "sfx": ["powerup", "chime"], "tr": "flash" },
+
+    { "k": "title", "b": 3, "text": "그리고/누가 물었다", "sfx": "scratch" },
+    { "k": "title", "b": 3, "text": "*1억* 줄 테니/다시 가라면?", "sfx": "ding" },
+    { "k": "pic", "b": 3, "art": "nope", "say": "아니요.", "cam": "pull", "tr": "cut" },
+    { "k": "title", "b": 3, "text": "*아니요.*", "sfx": "vboom" },
+    { "k": "title", "b": 2, "text": "…*10억*이면?", "sfx": "ding" },
+    { "k": "pic", "b": 3, "art": "think", "text": "…*잠깐만*.", "cam": "push", "sfx": "riser", "tr": "cut" },
+    { "k": "title", "b": 2, "text": "끝" }
+  ],
+  "scenes": {
+    "letter": "At home in his messy bedroom, the MAIN CHARACTER (before enlistment: longer messy black hair, blue hoodie) holds an official enlistment notice letter with both hands, frozen in shock, sweat drops flying, a cat sleeping on the bed behind him.",
+    "haircut": "At a small barber shop, the MAIN CHARACTER sits in a barber chair wrapped in a cape while electric clippers shave a wide stripe through his longer hair; clumps of black hair fly everywhere; he is crying dramatic waterfall tears, mouth wide open.",
+    "goodbye": "At the gate of an army training center, the MAIN CHARACTER (fresh buzz cut, casual clothes, small backpack) looks back over his shoulder with teary eyes; in the background his mom and dad wave and wipe tears; other young men with buzz cuts walk in.",
+    "pantsgone": "In an army barracks laundry area, the MAIN CHARACTER in camouflage uniform stares in horror at an empty spot on a drying rack between rows of identical army underwear and socks; dramatic shock lines behind him.",
+    "pantsthief": "In an army barracks, a different chubby recruit with a buzz cut stands in army boxer shorts and a green t-shirt, whistling innocently and looking away; the MAIN CHARACTER in the foreground points at him, eyes bulging, extremely shocked.",
+    "shooting": "At an army shooting range, the MAIN CHARACTER lies in prone position aiming a generic cartoon training rifle (simple, non-detailed), wearing a helmet and ear protection, squinting hard; in the distance a paper target is completely untouched while bullet holes are scattered on the dirt around it.",
+    "gas": "Right outside a concrete gas chamber training building, a line of recruits in camouflage uniforms stumble out holding their gas masks in their hands, all of them with streaming tears, runny noses and coughing, wisps of white fog drifting out the door; the MAIN CHARACTER is at the front, the most miserable.",
+    "gasface": "Extreme close-up of the MAIN CHARACTER's face right after gas chamber training: eyes squeezed shut, rivers of tears, a big comical snot bubble from his nose, red face, white fog wisps around.",
+    "yugyeok": "At a muddy army obstacle-training ground, the MAIN CHARACTER and other recruits wearing red-and-white striped training caps do exhausting full-body calisthenics in perfect formation, sweating, faces suffering; a stern drill instructor wearing a red cap and sunglasses watches with arms crossed.",
+    "shout": "Army calisthenics formation in a muddy field: all recruits in red-and-white striped training caps freeze and glare with angry faces at one recruit in the middle (the MAIN CHARACTER) who is shouting loudly with his mouth wide open, his face suddenly realizing his mistake.",
+    "chocopie": "In a simple army base auditorium on a weekend, rows of buzz-cut recruits in camouflage uniforms sit happily; the MAIN CHARACTER holds a single round chocolate marshmallow snack cake with both hands like a treasure, sparkling tears of joy in his eyes, a soft golden glow around the snack.",
+    "burger": "In an army mess hall, the MAIN CHARACTER sits at a steel tray table proudly assembling a huge homemade hamburger from tray parts: a plain bun, a meat patty, cabbage salad, a slice of cheese and jam, with an extremely satisfied face; sparkles around the burger.",
+    "private": "Inside an army barracks room with neat bunk beds, the MAIN CHARACTER as a brand-new private (one stripe rank patch on the chest) stands perfectly stiff saluting, eyes wide and nervous; three older soldiers lounging on the bunks stare at him with curious, slightly smug faces.",
+    "scold": "In an army barracks hallway, a tall older soldier with a stern face and crossed arms looms over the MAIN CHARACTER, who stands at attention sweating buckets, eyes darting, a tiny dark cloud above his head.",
+    "guard": "Night guard duty at a small army guard post under a big full moon and stars; the MAIN CHARACTER in a helmet and winter jacket stands holding his strap, eyes half closed fighting sleep, head drooping; dark navy color palette with the warm cream halftone only around him.",
+    "winter": "Winter field training in deep snow: small army tents behind, the MAIN CHARACTER in a heavy winter combat parka and helmet is half frozen, icicles hanging from his eyebrows and nose, breath fog, shivering motion lines, snow falling.",
+    "vacation": "On a bright city street, the MAIN CHARACTER on his first leave (buzz cut, camouflage uniform) jumps in the air with pure joy holding a box of fried chicken in one hand and a smartphone in the other, sparkles and confetti around him.",
+    "return": "Very early dawn at the army base gate, the MAIN CHARACTER in uniform with a duffel bag stands with dead lifeless eyes and slumped shoulders, a gloomy grey rain cloud over only his head while the sunrise glows behind.",
+    "sergeant": "In an army barracks, the MAIN CHARACTER as a relaxed sergeant (four stripe rank patch) lies comfortably on his bunk with legs crossed, lazily crossing off days on a big wall calendar with a marker, a smug sleepy smile.",
+    "px": "Inside a small army base convenience store (PX), the MAIN CHARACTER in uniform holds an armful of frozen snacks, instant noodles, chips and soda cans piled up to his chin, eyes sparkling like stars, a heavenly glow from the freezer behind him.",
+    "discharge": "At the army base gate on discharge day, the MAIN CHARACTER (four stripe rank patch) throws his army cap high into the sky with both arms up, screaming with joy; confetti and streamers everywhere; fellow soldiers clapping behind him.",
+    "think": "Close-up of the MAIN CHARACTER years later in casual clothes (short black hair, grey sweatshirt) at the same cafe table, suddenly seriously reconsidering: hand on his chin, eyes looking up sideways, a sweat drop, lips pressed, a big thought bubble above his head filled with stacks of cash bundles and gold coins (no numbers, no text), a coffee cup in front of him.",
+    "nope": "Close-up of the MAIN CHARACTER years later in casual clothes (short black hair, grey sweatshirt) sitting at a cafe, giving a completely flat, dead-serious expressionless stare straight at the viewer, a coffee cup in front of him."
+  }
+}

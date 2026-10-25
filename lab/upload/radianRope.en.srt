@@ -1,0 +1,46 @@
+1
+00:00:00,800 --> 00:00:03,810
+Measuring angles with length?
+Radians
+
+2
+00:00:03,860 --> 00:00:06,230
+We usually measure angles in degrees (°)
+One full turn = 360°
+
+3
+00:00:06,280 --> 00:00:08,400
+This time, cut a string as long as the radius
+
+4
+00:00:08,450 --> 00:00:11,670
+and wrap it around the circle
+
+5
+00:00:11,720 --> 00:00:14,540
+The angle one string makes = 1 radian
+(about 57.3°)
+
+6
+00:00:14,590 --> 00:00:18,710
+So how many strings fit
+in half a turn?
+
+7
+00:00:18,760 --> 00:00:22,580
+3 and a bit more… 3.14… strings = π!
+
+8
+00:00:22,630 --> 00:00:26,450
+Half a turn = π, a full turn = 2π
+We count angles in "how many radii"
+
+9
+00:00:26,500 --> 00:00:29,950
+So with radians,
+arc length is just one multiplication!
+
+10
+00:00:30,950 --> 00:00:34,700
+NEXT: Is the sine graph
+a circle's shadow?

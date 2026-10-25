@@ -16,20 +16,21 @@ const readJson = (path) => JSON.parse(readFileSync(path, "utf8"));
 
 export const common = readJson(join(VIDEO, "src/art-common.json"));
 
-// art.json 이 있는 편만 (ep01, ep02 …)
+// art.json 이 있는 편만 (ep01, ep02 … · 내모남불 nm01 …)
 export const listEpisodes = () =>
   readdirSync(join(VIDEO, "src"))
-    .filter((name) => /^ep\d+$/.test(name) && existsSync(join(VIDEO, "src", name, "art.json")))
+    .filter((name) => /^(ep|nm)\d+$/.test(name) && existsSync(join(VIDEO, "src", name, "art.json")))
     .sort();
 
 export const loadEpisode = (ep) => readJson(join(VIDEO, "src", ep, "art.json"));
 
-// ep01 → episodes/01-hotel-motel-hostel
+// ep01 → episodes/01-hotel-motel-hostel, nm01 → naemonambul/01-car (내모남불 시리즈)
 export const episodeDir = (ep) => {
+  const parent = ep.startsWith("nm") ? "naemonambul" : "episodes";
   const prefix = `${ep.slice(2)}-`;
-  const dir = readdirSync(join(ROOT, "episodes")).find((name) => name.startsWith(prefix));
-  if (!dir) throw new Error(`episodes/${prefix}* 폴더가 없습니다`);
-  return `episodes/${dir}`;
+  const dir = readdirSync(join(ROOT, parent)).find((name) => name.startsWith(prefix));
+  if (!dir) throw new Error(`${parent}/${prefix}* 폴더가 없습니다`);
+  return `${parent}/${dir}`;
 };
 
 export const isCommon = (id) => id.startsWith("common/");

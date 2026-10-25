@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>내 마음 알아주는 마법레시피 ‘마음카페’ — 콘티</title>
+<style>
+:root{--bg:#fbf6ea;--ink:#3b3228;--mute:#8a7b68;--card:#fffdf7;--line:#e6d9bf;--acc:#c0392b}
+@media (prefers-color-scheme:dark){:root{--bg:#1d1a16;--ink:#f0e8d8;--mute:#a79a86;--card:#27231e;--line:#3d362d;--acc:#ff7b6b}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 "Pretendard","Malgun Gothic",sans-serif}
+main{max-width:1000px;margin:0 auto;padding:24px 16px 80px}
+h1{font-size:28px;margin:8px 0 0}h2{margin:40px 0 12px;font-size:20px;border-bottom:2px solid var(--line);padding-bottom:6px}
+.sub{color:var(--mute);margin:4px 0 0}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px}
+.box ul{margin:0;padding-left:18px}
+.cut{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:16px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin:0 0 16px}
+.pic{position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;
+  background:radial-gradient(circle at 25% 30%,hsl(var(--h) 70% 85%),transparent 60%),radial-gradient(circle at 80% 70%,hsl(calc(var(--h) + 40) 55% 82%),transparent 55%),#f7efe0;
+  border:2px dashed hsl(var(--h) 35% 65%);display:flex;align-items:center;justify-content:center;padding:14px}
+.pic svg{display:block;width:100%;height:100%}.pic{padding:0;border-style:solid}.dir{margin:8px 0 0;font-size:12.5px;color:var(--mute)}.left{min-width:0}body.nocam .cam{display:none}.tools{margin:14px 0;font-size:14px}
+.no{position:absolute;z-index:2;left:8px;top:22px;font-weight:700;color:#5a4a36;background:#fffa;border-radius:8px;padding:0 6px}.len{position:absolute;z-index:2;right:8px;bottom:6px;font-size:12px;background:#0002;border-radius:9px;padding:0 8px;color:#4a3d2e}
+.player{position:sticky;top:6px;z-index:5;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}.player audio{flex:1 1 320px;min-width:0}.player .sub{flex:1 1 100%;margin:0}.cut.on{outline:3px solid var(--acc)}.txt audio{width:100%;margin-top:10px;height:34px}
+.txt h3{margin:0 0 6px;font-size:16px}.txt h3 small{color:var(--mute);font-weight:400;margin-left:6px}
+.n{margin:0}.d{margin:2px 0;color:var(--acc)}.d b{color:var(--ink);margin-right:4px;font-size:13px}.mute{color:var(--mute);margin:0}
+dl{margin:10px 0 0;font-size:13px;display:grid;grid-template-columns:48px 1fr;gap:2px 8px;color:var(--mute)}dt{font-weight:700}dd{margin:0}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line)}td{padding:8px 10px;border-top:1px solid var(--line);vertical-align:top}td:first-child{width:36px;color:var(--mute)}td.f{width:90px;font-family:monospace;font-size:12px;color:var(--mute)}
+@media (max-width:700px){.cut{grid-template-columns:1fr}}
+</style></head><body><main>
+<h1>내 마음 알아주는 마법레시피 ‘마음카페’</h1>
+<p class="sub">글 김혜진 · 엄마의 동화책 · 콘티 · 27장면 · 예상 5분 13초</p>
+
+<h2>한눈에</h2>
+<div class="box"><ul>
+<li><b>화풍</b> 수채화풍 크레용 — 종이 질감, 번진 물감 위에 크레용 선. 따뜻하고 포근한 색, 디저트는 사탕 · 솜사탕처럼 통통하고 달콤하게. 사진 · 실존 캐릭터 없음. 화풍 앵커는 01-real-hero 와 같은 art/anchor 를 쓰되 카피바라 · 동물 친구 얼굴은 새로 고정한다.</li>
+<li><b>목소리</b> 엄마(서술, Sulafat) + 동물마다 다른 목소리 제안 (voice.json). 아직 만들어 듣고 확정하지 않은 제안 배역.</li>
+<li><b>화면</b> 가로 16:9 롱폼. 쪽 넘김 전환 + 천천히 움직이는 카메라, 문장 단위 자막. 손님 한 명 = 한 쪽 이야기(마음 → 동전 → 기계 → 디저트)가 반복되는 구조라서, 장면 길이와 소리로 손님마다 맛을 살짝 다르게 연출한다. 쇼츠는 세로로 따로.</li>
+</ul></div>
+
+
+<h2>목소리 (제안 배역)</h2><div class="box"><ul><li><b>엄마(서술)</b> Sulafat — A Korean mom in her early thirties reading a picture book aloud to her child at bedtime: warm, soft, clear and gentle, unhurried storytelling pace, a loving smile in the voice, with natural expressive pauses</li><li><b>바라(카피바라 사장님)</b> Gacrux — Bara, a calm, kind capybara cafe owner: a mature, warm, slow and soothing Korean voice, always listening first, gently amused, like a comforting older sister or aunt</li><li><b>나무늘보</b> Puck — A hyper, impatient kid-like sloth: fast, loud, frustrated, tumbling over words, then amazed and delighted at the end</li><li><b>사자</b> Achird — A big but very shy lion: tiny hesitant voice with long pauses and sniffles, slowly gaining confidence, finally warm and friendly</li><li><b>고슴도치(도치)</b> Fenrir — A sulky, hurt young hedgehog: resentful and tearful at first, small and unsure when asking, then relaxed and soft</li><li><b>카멜레온</b> Zephyr — A bright, nervous, flustered young voice, mixing excitement and fear, then delighted</li><li><b>토끼</b> Leda — A young child rabbit: upset and about to cry, then brightening with grateful joy</li><li><b>다람쥐 1·2·3</b> Autonoe — Tiny squirrel friends, quick and chirpy, trembling at first, then cheerful (differentiate 1, 2, 3 by pitch)</li></ul></div>
+<h2>등장인물 (모든 그림에 같은 설명을 붙여 얼굴을 고정)</h2>
+<div class="box"><ul><li><b>바라 (카피바라)</b> 마음카페 사장님. 둥글고 푸근한 갈색 몸, 느긋하고 인자한 미소, 작은 앞치마와 찻잔 무늬 리본. 늘 손님의 눈높이로 몸을 낮춰 눈을 마주친다.</li><li><b>나무늘보</b> 손님 1. 보통은 느린 동물인데 이 이야기에서는 킥보드를 타고 쌩쌩 달린다. 온몸 진흙. 나중엔 인라인을 탄다.</li><li><b>사자</b> 손님 2. 덩치가 크지만 소심함. 꼬리를 다리 사이로 말고 기둥 뒤에 숨는다. 갈기는 풍성하지만 눈은 순하다.</li><li><b>고슴도치 (도치)</b> 손님 3. 억울할 때 가시를 곤두세움, 마음이 풀리면 가시가 포근히 눕는다.</li><li><b>카멜레온</b> 손님 4. 마음에 따라 몸 색이 변한다. 여러 마음이 섞이면 소용돌이 무늬, 마지막엔 세상에 하나뿐인 알록달록한 색.</li><li><b>토끼</b> 손님 5(마지막). 아빠가 약속을 지키지 않아 속상한 아이 토끼. 사과를 좋아함.</li><li><b>다람쥐 · 새 · 곰 · 두더지</b> 조연 동물 친구들. 사자의 팝콘을 먹는 다람쥐(처음 2마리 → 10마리), 새 3마리. 화채 장면에 곰 · 두더지 합류. 단순한 얼굴로 그리되 화풍은 그대로.</li></ul></div>
+
+<h2>콘티</h2>
+<p class="tools"><label><input type="checkbox" id="cam" checked> 카메라 프레임 표시 (파란 점선 = 시작, 빨간 실선 = 끝)</label> · 그림 위치는 이모지로 대신한 구도 스케치입니다. 실제 그림은 나중에 수채화풍 크레용으로 만듭니다.</p>
+
+<article class="cut" id="s0" data-start="">
+  <div class="left"><div class="pic" style="--h:35">
+    <span class="no">#0</span>
+    <span class="len">12초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="40" y="120" font-size="56" text-anchor="middle">🌳</text><text x="285" y="120" font-size="56" text-anchor="middle">🌳</text><text x="160" y="112" font-size="78" text-anchor="middle">🏠</text><text x="160" y="121" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">마음카페</text><text x="70" y="30" font-size="30" text-anchor="middle">☁️</text><text x="250" y="50" font-size="20" text-anchor="middle">🪙</text><g class="cam"><rect x="0" y="0" width="320" height="180" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="80" y="45" width="160" height="90" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><text x="3" y="9" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="237" y="132" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 숲속 작은 마음카페의 바깥 모습. 아늑한 나무집, 간판, 굴뚝의 연기.</p></div>
+  <div class="txt">
+    <h3>장면 0 <small>숲속 마음카페 · 원고 소개</small></h3>
+    <p class="n">마음카페에 내 마음을 털어놓으면 마법레시피 동전이 생겨요.</p><p class="n">어떤 마음이라도 맛있는 디저트 재료가 될 수 있답니다.</p>
+    
+    <dl>
+      <dt>구도</dt><dd>와이드 · 나무집 카페 + 간판 + 굴뚝 연기, 좌우에 나무</dd>
+      <dt>카메라</dt><dd>숲길 와이드에서 카페 문 쪽으로 천천히 당겨 들어감 (소개 낭독 동안)</dd>
+      <dt>소리</dt><dd>숲 새소리, 은은한 오르골 멜로디가 시작됨</dd>
+      <dt>분위기</dt><dd>포근한 설렘</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s1" data-start="">
+  <div class="left"><div class="pic" style="--h:30">
+    <span class="no">#1</span>
+    <span class="len">8초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="215" y="100" font-size="70" text-anchor="middle">🚪</text><text x="205" y="36" font-size="22" text-anchor="middle">🔔</text><text x="120" y="120" font-size="64" text-anchor="middle">🦫</text><text x="120" y="129" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">바라</text><g class="cam"><rect x="30" y="10" width="260" height="146.3" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="80" y="40" width="160" height="90" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="160" y1="83.15" x2="160" y2="85" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="33" y="19" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="237" y="127" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 마음카페 문 앞에 카피바라가 종을 울리며 인자하게 웃으며 맞이한다. (딸랑 딸랑)</p></div>
+  <div class="txt">
+    <h3>장면 1 <small>딸랑딸랑, 문이 열려요 · 원고 #1</small></h3>
+    <p class="mute">(낭독 없음 — 그림과 소리만)</p><p class="d d-바라"><b>바라</b> “마음을 알아주는 마법레시피가 있는 마음카페에 오신 것을 환영해요.”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>미디엄 · 문 앞 카피바라, 문 위에 매달린 종</dd>
+      <dt>카메라</dt><dd>문 앞 바라를 향해 가볍게 줌인</dd>
+      <dt>소리</dt><dd>딸랑 딸랑 문종 소리 + 따뜻한 환영 효과</dd>
+      <dt>분위기</dt><dd>인자함 · 환대</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s2" data-start="">
+  <div class="left"><div class="pic" style="--h:15">
+    <span class="no">#2</span>
+    <span class="len">13초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="55" y="112" font-size="56" text-anchor="middle">🏠</text><text x="215" y="118" font-size="56" text-anchor="middle">🦥</text><text x="215" y="127" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">나무늘보</text><text x="245" y="140" font-size="34" text-anchor="middle">🛴</text><text x="285" y="108" font-size="24" text-anchor="middle">💨</text><g class="cam"><rect x="120" y="30" width="200" height="112.5" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="0" y="40" width="200" height="112.5" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="220" y1="86.25" x2="100" y2="96.25" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="123" y="39" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="197" y="149.5" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 나무늘보가 킥보드를 아주 빠르게 쌩쌩 타고 달려오며 말한다. 온몸에 진흙이 묻어 있고 정신이 없어 보인다.</p></div>
+  <div class="txt">
+    <h3>장면 2 <small>쌩쌩 달려온 나무늘보 · 원고 #2-1</small></h3>
+    <p class="mute">(낭독 없음 — 그림과 소리만)</p><p class="d d-나무늘보"><b>나무늘보</b> “아, 느려 느려 왜 이렇게 느려! 빨리 빨리 선생님이 자꾸 가만히 있으라고 해요! 자꾸 나만 혼내고! 난 더 빨리 움직이고 싶은데!!”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>풀 샷 · 진흙 묻은 나무늘보가 킥보드로 돌진, 뒤에 카페</dd>
+      <dt>카메라</dt><dd>오른쪽에서 달려오는 킥보드를 패닝으로 따라가다 카페 앞에서 정지</dd>
+      <dt>소리</dt><dd>킥보드 바퀴 소리, 휙 바람, 진흙 철퍽</dd>
+      <dt>분위기</dt><dd>정신없음 · 짜증 · 반전 웃음(느림보가 쌩쌩)</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s3" data-start="">
+  <div class="left"><div class="pic" style="--h:40">
+    <span class="no">#3</span>
+    <span class="len">5초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="105" y="120" font-size="66" text-anchor="middle">🦫</text><text x="105" y="129" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">바라</text><text x="220" y="125" font-size="54" text-anchor="middle">🦥</text><text x="220" y="134" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">나무늘보</text><text x="160" y="60" font-size="24" text-anchor="middle">💬</text><g class="cam"><rect x="0" y="0" width="320" height="180" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="70" y="45" width="160" height="90" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="160" y1="90" x2="150" y2="90" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="3" y="9" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="227" y="132" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 바라가 나무늘보의 눈을 마주치며 이야기를 듣고 있다.</p></div>
+  <div class="txt">
+    <h3>장면 3 <small>“답답하고 속상했겠는걸” · 원고 #2-2</small></h3>
+    <p class="mute">(낭독 없음 — 그림과 소리만)</p><p class="d d-바라"><b>바라</b> “이런, 이런 그동안 답답하고 속상했겠는걸.”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>미디엄 투 샷 · 바라와 나무늘보가 눈을 마주 봄</dd>
+      <dt>카메라</dt><dd>두 인물 투 샷에서 바라의 눈높이로 서서히 당김</dd>
+      <dt>소리</dt><dd>조용해짐, 숨 고르는 소리, 오르골 낮게</dd>
+      <dt>분위기</dt><dd>공감 · 경청 (앞 장면과 속도 대비)</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s4" data-start="">
+  <div class="left"><div class="pic" style="--h:215">
+    <span class="no">#4</span>
+    <span class="len">8초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="75" y="90" font-size="34" text-anchor="middle">🪙</text><text x="75" y="99" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">모래시계</text><text x="200" y="100" font-size="80" text-anchor="middle">🏧</text><text x="200" y="109" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">마음환전기계</text><text x="262" y="140" font-size="26" text-anchor="middle">🌈</text><text x="285" y="150" font-size="20" text-anchor="middle">🧊</text><text x="242" y="150" font-size="20" text-anchor="middle">💧</text><g class="cam"><rect x="60" y="60" width="130" height="73.1" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="180" y="70" width="130" height="73.1" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="125" y1="96.55" x2="245" y2="106.55" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="63" y="69" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="307" y="140.1" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 바라가 인자하게 웃으며 나무늘보의 손에 모래시계 모양이 그려진 동전을 건네준다. 동전을 마음환전기계에 넣자 요란하게 움직이더니, 무지개, 얼음 7개, 설탕, 물이 기계의 출구에 나온다.</p></div>
+  <div class="txt">
+    <h3>장면 4 <small>모래시계 동전 · 마음환전기계 · 원고 #3-1 · 3-2</small></h3>
+    <p class="mute">(낭독 없음 — 그림과 소리만)</p><p class="d d-바라"><b>바라</b> “마음환전기계에 이 동전을 한 번 넣어보렴.”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>클로즈업 연속 · ①동전 ②기계 ③출구(무지개 · 얼음 7개 · 설탕 · 물)</dd>
+      <dt>카메라</dt><dd>동전을 건네는 손 클로즈업 → 기계 입구 → 출구에서 재료가 나오는 곳으로 이동</dd>
+      <dt>소리</dt><dd>동전 짤랑, 환전기계 덜컹덜컹 요란한 기계음, 땡! 하고 재료가 나옴</dd>
+      <dt>분위기</dt><dd>호기심 · 마법</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s5" data-start="">
+  <div class="left"><div class="pic" style="--h:270">
+    <span class="no">#5</span>
+    <span class="len">17초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="85" y="118" font-size="66" text-anchor="middle">🦫</text><text x="85" y="127" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">바라</text><text x="200" y="100" font-size="56" text-anchor="middle">🥤</text><text x="235" y="78" font-size="22" text-anchor="middle">🧊</text><text x="275" y="128" font-size="44" text-anchor="middle">🦥</text><g class="cam"><rect x="0" y="0" width="320" height="180" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="130" y="70" width="100" height="56.3" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="160" y1="90" x2="180" y2="98.15" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="3" y="9" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="227" y="123.3" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 바라가 콧노래를 부르며 기계에서 나온 재료로 무지개 주스를 만든다. 완성된 무지개 주스를 나무늘보에게 웃으며 건넨다.</p></div>
+  <div class="txt">
+    <h3>장면 5 <small>무지개 주스 만들기 · 원고 #4-1 · 4-2</small></h3>
+    <p class="mute">(낭독 없음 — 그림과 소리만)</p><p class="d d-바라"><b>바라</b> “이번 마음 재료로는 어떤 맛이 만들어지려나?”</p><p class="d d-바라"><b>바라</b> “지금은 그냥 물이지만, 얼음이 모두 녹을 때까지 기다리면, 무지개 빛 색 주스가 된단다. 7가지 색이 다 나오면 무슨 맛인지 궁금한 걸”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>미디엄 → 클로즈업 · 잔에 담긴 물과 얼음 7개</dd>
+      <dt>카메라</dt><dd>콧노래 부르는 바라 → 잔 속 얼음 클로즈업 → 나무늘보에게 건네는 손</dd>
+      <dt>소리</dt><dd>바라의 콧노래, 얼음 달그락, 졸졸 물 따르는 소리</dd>
+      <dt>분위기</dt><dd>다정 · 기대감</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s6" data-start="">
+  <div class="left"><div class="pic" style="--h:20">
+    <span class="no">#6</span>
+    <span class="len">8초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="245" y="100" font-size="60" text-anchor="middle">🥤</text><text x="232" y="90" font-size="14" text-anchor="middle">🟥</text><text x="250" y="90" font-size="14" text-anchor="middle">🟧</text><text x="90" y="118" font-size="64" text-anchor="middle">🦥</text><text x="90" y="127" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">나무늘보</text><text x="160" y="50" font-size="24" text-anchor="middle">⌛</text><g class="cam"><rect x="100" y="40" width="160" height="90" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="20" y="50" width="100" height="56.3" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="180" y1="85" x2="70" y2="78.15" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="103" y="49" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="117" y="103.3" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 나무늘보가 빨강색, 주황색 두 가지 색으로 변한 주스를 바라보며 안절부절 못한다.</p></div>
+  <div class="txt">
+    <h3>장면 6 <small>안절부절 기다림 · 원고 #5-1</small></h3>
+    <p class="mute">(낭독 없음 — 그림과 소리만)</p><p class="d d-나무늘보"><b>나무늘보</b> “먹고 싶어 먹고 싶다!! 아직 주황색이야!! 얼음 몇 개나 더 남은거야!!”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>클로즈업 · 빨강·주황 두 색만 나온 잔과 발 동동 구르는 나무늘보</dd>
+      <dt>카메라</dt><dd>잔 → 나무늘보 얼굴 → 잔을 짧게 오가며 점점 빠르게(초조함)</dd>
+      <dt>소리</dt><dd>똑딱 시계 소리가 점점 빨라짐, 얼음 녹는 소리</dd>
+      <dt>분위기</dt><dd>조급 · 코믹</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s7" data-start="">
+  <div class="left"><div class="pic" style="--h:330">
+    <span class="no">#7</span>
+    <span class="len">7초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="150" y="118" font-size="72" text-anchor="middle">🦥</text><text x="150" y="127" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">나무늘보</text><text x="205" y="100" font-size="44" text-anchor="middle">🥤</text><text x="160" y="40" font-size="56" text-anchor="middle">🌈</text><text x="80" y="70" font-size="24" text-anchor="middle">✨</text><text x="250" y="60" font-size="24" text-anchor="middle">✨</text><g class="cam"><rect x="100" y="50" width="130" height="73.1" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="0" y="0" width="320" height="180" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="165" y1="86.55" x2="160" y2="90" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="103" y="59" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="317" y="177" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 7가지 무지개색이 다 나올 때까지 기다린 나무늘보는 뿌듯한 마음으로 행복하게 주스를 마시며 신나한다.</p></div>
+  <div class="txt">
+    <h3>장면 7 <small>무지개다! 이런 맛은 처음이야 · 원고 #5-2</small></h3>
+    <p class="mute">(낭독 없음 — 그림과 소리만)</p><p class="d d-나무늘보"><b>나무늘보</b> “오오!! 우아!!! 무지개다!! 이런 맛은 처음이야!!!”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>미디엄 → 와이드 · 일곱 색 무지개 주스를 든 나무늘보, 배경에 작은 무지개 반짝임</dd>
+      <dt>카메라</dt><dd>무지개 잔에서 천천히 빠지며 환하게 웃는 나무늘보 전신까지</dd>
+      <dt>소리</dt><dd>와~ 하는 환호 반짝임, 꿀꺽꿀꺽, 오르골 밝은 변주</dd>
+      <dt>분위기</dt><dd>뿌듯함 · 기쁨</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s8" data-start="">
+  <div class="left"><div class="pic" style="--h:225">
+    <span class="no">#8</span>
+    <span class="len">9초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="220" y="100" font-size="80" text-anchor="middle">🏛️</text><text x="220" y="109" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">기둥</text><text x="240" y="128" font-size="50" text-anchor="middle">🦁</text><text x="240" y="137" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">사자</text><text x="60" y="125" font-size="56" text-anchor="middle">🦫</text><text x="60" y="134" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">바라</text><g class="cam"><rect x="0" y="0" width="320" height="180" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="150" y="70" width="130" height="73.1" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="160" y1="90" x2="215" y2="106.55" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="3" y="9" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="277" y="140.1" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 덩치는 크지만 꼬리가 다리 사이로 들어가고 몸을 잔뜩 움츠린 소심한 사자가 기둥 뒤에 숨어서 작게 이야기한다.</p></div>
+  <div class="txt">
+    <h3>장면 8 <small>기둥 뒤에 숨은 사자 · 원고 #6-1</small></h3>
+    <p class="mute">(낭독 없음 — 그림과 소리만)</p><p class="d d-사자"><b>사자</b> “다들..자꾸..나만 보면..도망가요...나는 놀고 싶었던 것 뿐인데..흑..”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>미디엄 롱 · 큰 기둥 뒤에 몸을 잔뜩 움츠린 사자(꼬리가 다리 사이)</dd>
+      <dt>카메라</dt><dd>카페 안을 천천히 훑다가 기둥 뒤 사자에서 멈춤(발견)</dd>
+      <dt>소리</dt><dd>카페 안 잔잔한 소음, 작고 떨리는 목소리, 흑 흑</dd>
+      <dt>분위기</dt><dd>소심 · 쓸쓸함</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s9" data-start="">
+  <div class="left"><div class="pic" style="--h:48">
+    <span class="no">#9</span>
+    <span class="len">9초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="70" y="120" font-size="62" text-anchor="middle">🦫</text><text x="70" y="129" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">바라</text><text x="135" y="128" font-size="48" text-anchor="middle">🦁</text><text x="135" y="137" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">사자</text><text x="205" y="70" font-size="28" text-anchor="middle">🌽</text><text x="205" y="79" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">옥수수 동전</text><text x="265" y="105" font-size="62" text-anchor="middle">🏧</text><text x="290" y="150" font-size="20" text-anchor="middle">🧈</text><g class="cam"><rect x="0" y="0" width="320" height="180" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="160" y="80" width="130" height="73.1" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="160" y1="90" x2="225" y2="116.55" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="3" y="9" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="287" y="150.1" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 바라가 사자의 눈을 마주치며 이야기를 듣는다. 바라가 사자에게 옥수수 모양 동전을 건네고, 사자가 동전을 넣으니 기계가 요란하게 움직인다. 옥수수, 소금, 버터가 출구에서 나와 팝콘이 만들어진다.</p></div>
+  <div class="txt">
+    <h3>장면 9 <small>옥수수 동전 · 팝콘 재료 · 원고 #6-2 · 7</small></h3>
+    <p class="mute">(낭독 없음 — 그림과 소리만)</p><p class="d d-바라"><b>바라</b> “이런, 그동안 너무 외로웠겠는걸.”</p><p class="d d-바라"><b>바라</b> “마음환전기계에 이 동전을 한 번 넣어보겠니?”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>미디엄 + 클로즈업 · 옥수수 모양 동전, 기계 출구</dd>
+      <dt>카메라</dt><dd>바라의 눈 맞춤 → 옥수수 동전 건넴 → 기계 출구(옥수수 · 소금 · 버터)</dd>
+      <dt>소리</dt><dd>동전 소리, 기계 덜컹, 땡!, 옥수수 알 톡톡</dd>
+      <dt>분위기</dt><dd>다정 → 두근두근</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s10" data-start="">
+  <div class="left"><div class="pic" style="--h:45">
+    <span class="no">#10</span>
+    <span class="len">12초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="160" y="100" font-size="60" text-anchor="middle">🍿</text><text x="160" y="109" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">용기팝콘</text><text x="85" y="120" font-size="62" text-anchor="middle">🦫</text><text x="85" y="129" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">바라</text><text x="240" y="126" font-size="52" text-anchor="middle">🦁</text><text x="240" y="135" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">사자</text><text x="190" y="60" font-size="20" text-anchor="middle">✨</text><g class="cam"><rect x="70" y="70" width="130" height="73.1" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="60" y="40" width="200" height="112.5" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="135" y1="106.55" x2="160" y2="96.25" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="73" y="79" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="257" y="149.5" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 바라가 팝콘을 사자에게 웃으며 건넨다.</p></div>
+  <div class="txt">
+    <h3>장면 10 <small>용기팝콘 · 원고 #7-2 · 8-1</small></h3>
+    <p class="mute">(낭독 없음 — 그림과 소리만)</p><p class="d d-바라"><b>바라</b> “이번 마음 재료로는 어떤 맛이 만들어지려나?”</p><p class="d d-바라"><b>바라</b> “사자야, 여기 용기팝콘을 받으렴. 용기를 낼수록 팝콘은 팡팡 늘어 날거야.”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>클로즈업 → 미디엄 · 김이 나는 팝콘, 사자 앞으로 내미는 손</dd>
+      <dt>카메라</dt><dd>팝콘 만들기 클로즈업 → 바라가 사자에게 팝콘을 건네는 투 샷</dd>
+      <dt>소리</dt><dd>콧노래, 톡톡 팝콘 튀는 소리 점점 커짐</dd>
+      <dt>분위기</dt><dd>따뜻함 · 응원</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s11" data-start="">
+  <div class="left"><div class="pic" style="--h:100">
+    <span class="no">#11</span>
+    <span class="len">8초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="85" y="126" font-size="56" text-anchor="middle">🦁</text><text x="85" y="135" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">사자</text><text x="125" y="112" font-size="26" text-anchor="middle">🍿</text><text x="215" y="138" font-size="36" text-anchor="middle">🐿️</text><text x="250" y="138" font-size="36" text-anchor="middle">🐿️</text><text x="290" y="110" font-size="48" text-anchor="middle">🌳</text><g class="cam"><rect x="20" y="60" width="100" height="56.3" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="120" y="55" width="160" height="90" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="70" y1="88.15" x2="200" y2="100" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="23" y="69" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="277" y="142" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 사자가 카페 앞을 지나가는 다람쥐에게 팝콘을 소심하게 주고, 다람쥐 두 마리가 벌벌 떨며 팝콘을 받는다.</p></div>
+  <div class="txt">
+    <h3>장면 11 <small>“이거 한 번 먹어 볼래?” · 원고 #8-2</small></h3>
+    <p class="mute">(낭독 없음 — 그림과 소리만)</p><p class="d d-사자"><b>사자</b> “이..거..한..번.. 먹어 볼래? 팝..콘인데..”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>와이드 · 카페 문 앞 사자와 지나가던 다람쥐 두 마리</dd>
+      <dt>카메라</dt><dd>사자 얼굴(떨리는 눈) → 카페 앞 길에서 다가오는 다람쥐 2마리로 이동</dd>
+      <dt>소리</dt><dd>발소리 살금살금, 팝콘 봉지 바스락, 다람쥐 떨림 소리</dd>
+      <dt>분위기</dt><dd>긴장 · 용기 한 걸음</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s12" data-start="">
+  <div class="left"><div class="pic" style="--h:85">
+    <span class="no">#12</span>
+    <span class="len">12초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="160" y="118" font-size="66" text-anchor="middle">🦁</text><text x="160" y="127" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">사자</text><text x="85" y="135" font-size="30" text-anchor="middle">🐿️</text><text x="115" y="148" font-size="30" text-anchor="middle">🐿️</text><text x="215" y="142" font-size="30" text-anchor="middle">🐿️</text><text x="250" y="134" font-size="30" text-anchor="middle">🐿️</text><text x="285" y="148" font-size="30" text-anchor="middle">🐿️</text><text x="120" y="36" font-size="24" text-anchor="middle">🐦</text><text x="165" y="26" font-size="24" text-anchor="middle">🐦</text><text x="210" y="38" font-size="24" text-anchor="middle">🐦</text><text x="160" y="78" font-size="24" text-anchor="middle">🍿</text><g class="cam"><rect x="90" y="70" width="130" height="73.1" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="0" y="0" width="320" height="180" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="155" y1="106.55" x2="160" y2="90" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="93" y="79" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="317" y="177" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 다람쥐가 10마리로 늘어 사자 앞에 있고, 사자는 표정이 밝다. 머리 위에는 새들도 3마리 정도 찾아왔다. 사자가 들고 있는 팝콘은 계속 팡팡 터지며 늘어나고 있다.</p></div>
+  <div class="txt">
+    <h3>장면 12 <small>팡팡 늘어나는 친구들 · 원고 #8-3</small></h3>
+    <p class="mute">(낭독 없음 — 그림과 소리만)</p><p class="d d-사자"><b>사자</b> “여기 아직 내게 남은 팝콘이 많아. 맛있지?”</p><p class="d d-다람쥐1"><b>다람쥐1</b> “고마워 너무 고소해”</p><p class="d d-다람쥐2"><b>다람쥐2</b> “나도 줘. 나도 줘”</p><p class="d d-다람쥐3"><b>다람쥐3</b> “사자야, 너도 같이 먹자”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>미디엄 → 와이드 · 사자 둘레에 다람쥐 10마리, 머리 위에 새 3마리</dd>
+      <dt>카메라</dt><dd>다람쥐 3마리 → 점점 뒤로 빠지며 10마리 + 하늘의 새들까지 보여 주는 크레인 아웃</dd>
+      <dt>소리</dt><dd>팝콘 팡팡 연속 터짐, 다람쥐들 와글와글, 새 지저귐, 밝은 오르골</dd>
+      <dt>분위기</dt><dd>기쁨 폭발</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s13" data-start="">
+  <div class="left"><div class="pic" style="--h:5">
+    <span class="no">#13</span>
+    <span class="len">11초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="40" y="100" font-size="56" text-anchor="middle">🚪</text><text x="180" y="125" font-size="70" text-anchor="middle">🦔</text><text x="180" y="134" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">고슴도치</text><text x="215" y="80" font-size="28" text-anchor="middle">💢</text><g class="cam"><rect x="0" y="40" width="200" height="112.5" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="120" y="50" width="100" height="56.3" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="100" y1="96.25" x2="170" y2="78.15" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="3" y="49" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="217" y="103.3" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 고슴도치가 가시를 곤두세우고, 억울하고 슬픈 표정으로 카페에 들어와 이야기한다.</p></div>
+  <div class="txt">
+    <h3>장면 13 <small>가시를 곤두세운 고슴도치 · 원고 #9-1</small></h3>
+    <p class="mute">(낭독 없음 — 그림과 소리만)</p><p class="d d-고슴도치"><b>고슴도치</b> “엄마도 밉고, 형도 밉고, 다 미워.. 맨날 나만 잘못했다고 하고..이번엔 진짜 내가 망가트린 거 아닌데..”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>미디엄 · 가시가 곤두선 고슴도치, 불끈 쥔 주먹</dd>
+      <dt>카메라</dt><dd>문 쪽에서 들어오는 고슴도치를 따라 천천히 이동 → 얼굴 클로즈업</dd>
+      <dt>소리</dt><dd>문종 딸랑(거칠게), 씩씩거림, 낮은 첼로풍 한 음</dd>
+      <dt>분위기</dt><dd>억울함 · 화남</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s14" data-start="">
+  <div class="left"><div class="pic" style="--h:255">
+    <span class="no">#14</span>
+    <span class="len">12초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="95" y="122" font-size="66" text-anchor="middle">🦫</text><text x="95" y="131" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">바라</text><text x="225" y="130" font-size="56" text-anchor="middle">🦔</text><text x="225" y="139" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">고슴도치</text><text x="255" y="70" font-size="28" text-anchor="middle">💭</text><g class="cam"><rect x="0" y="0" width="320" height="180" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="160" y="60" width="100" height="56.3" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="160" y1="90" x2="210" y2="88.15" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="3" y="9" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="257" y="113.3" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 바라가 고슴도치의 눈을 마주치며 이야기를 듣는다. 고슴도치가 눈치를 보며 조심스럽게 물어본다.</p></div>
+  <div class="txt">
+    <h3>장면 14 <small>“나쁜 마음도 받아주시나요?” · 원고 #9-2 · 10-1</small></h3>
+    <p class="mute">(낭독 없음 — 그림과 소리만)</p><p class="d d-바라"><b>바라</b> “이런, 이런 얼마나 억울하고 슬펐을까..”</p><p class="d d-고슴도치"><b>고슴도치</b> “그런데요, 미워하면 안 되는 거잖아요. 이런 나쁜 마음도 받아주시나요?”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>미디엄 투 샷 → 고슴도치 클로즈업(눈치 보는 눈)</dd>
+      <dt>카메라</dt><dd>바라의 경청(고정) → 조심스레 고개를 드는 고슴도치 얼굴로 느린 줌인</dd>
+      <dt>소리</dt><dd>정적에 가깝게, 시계 초침 한 번, 작은 숨소리</dd>
+      <dt>분위기</dt><dd>조심스러움 · 두려움</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s15" data-start="">
+  <div class="left"><div class="pic" style="--h:200">
+    <span class="no">#15</span>
+    <span class="len">19초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="80" y="120" font-size="66" text-anchor="middle">🦫</text><text x="80" y="129" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">바라</text><text x="150" y="70" font-size="36" text-anchor="middle">☁️</text><text x="150" y="79" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">구름 동전</text><text x="240" y="105" font-size="66" text-anchor="middle">🏧</text><text x="275" y="152" font-size="20" text-anchor="middle">🍬</text><text x="205" y="150" font-size="20" text-anchor="middle">💗</text><g class="cam"><rect x="0" y="0" width="320" height="180" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="150" y="70" width="100" height="56.3" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="160" y1="90" x2="200" y2="98.15" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="3" y="9" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="247" y="123.3" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 바라가 인자하게 웃으며 고슴도치의 손에 구름 모양이 그려진 동전을 건네준다. 동전을 기계에 넣자 솜사탕, 젤리, 막대과자, 하트 스프링클이 나오고, 바라가 콧노래를 부르며 폭신폭신 솜사탕 파르페를 만든다.</p></div>
+  <div class="txt">
+    <h3>장면 15 <small>“나쁜 마음은 없단다” · 원고 #10-2 · 11</small></h3>
+    <p class="mute">(낭독 없음 — 그림과 소리만)</p><p class="d d-바라"><b>바라</b> “도치야. 이 세상에 나쁜 마음은 없단다. 도치가 지금 느끼는 감정은 그렇게 느낄만한 이유가 있는 거지. 마음환전기계에 이 동전을 한 번 넣어볼까?”</p><p class="d d-바라"><b>바라</b> “이번 마음 재료로는 어떤 맛이 만들어지려나?”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>미디엄 → 클로즈업 · 구름 모양 동전, 출구의 솜사탕 · 젤리 · 막대과자 · 하트 스프링클</dd>
+      <dt>카메라</dt><dd>바라의 따뜻한 표정(고정) → 구름 동전 클로즈업 → 기계 → 솜사탕 재료</dd>
+      <dt>소리</dt><dd>오르골이 한 단계 따뜻하게 올라감, 동전 소리, 기계 덜컹, 땡</dd>
+      <dt>분위기</dt><dd>수용 · 안도 (이 책의 핵심 장면)</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s16" data-start="">
+  <div class="left"><div class="pic" style="--h:335">
+    <span class="no">#16</span>
+    <span class="len">14초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="60" y="122" font-size="56" text-anchor="middle">🦫</text><text x="60" y="131" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">바라</text><text x="120" y="100" font-size="40" text-anchor="middle">🍧</text><text x="120" y="109" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">파르페</text><text x="220" y="120" font-size="90" text-anchor="middle">☁️</text><text x="220" y="108" font-size="48" text-anchor="middle">🦔</text><text x="220" y="117" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">고슴도치</text><text x="270" y="70" font-size="20" text-anchor="middle">💗</text><g class="cam"><rect x="60" y="60" width="130" height="73.1" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="0" y="0" width="320" height="180" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="125" y1="96.55" x2="160" y2="90" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="63" y="69" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="317" y="177" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 바라가 파르페를 고슴도치에게 웃으며 건넨다. 고슴도치가 구름 위에 누워 파르페를 먹으며 편안한 표정으로 행복해한다.</p></div>
+  <div class="txt">
+    <h3>장면 16 <small>솜사탕 파르페 · 원고 #12</small></h3>
+    <p class="mute">(낭독 없음 — 그림과 소리만)</p><p class="d d-바라"><b>바라</b> “너의 마음을 안아줄 폭신폭신 솜사탕 파르페란다. 아무리 뾰족한 마음이어도 모두 품어줄 거야.”</p><p class="d d-고슴도치"><b>고슴도치</b> “아, 포근해. 기분이 폭신폭신 편안해졌어!”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>클로즈업 → 와이드 · 구름 위에 누운 고슴도치(가시가 부드럽게 눕는다)</dd>
+      <dt>카메라</dt><dd>파르페를 건네는 손 → 구름 위에 누운 고슴도치 전신으로 부드럽게 빠짐</dd>
+      <dt>소리</dt><dd>폭신폭신 효과음(퐁), 하아~ 안도의 한숨, 오르골 포근하게</dd>
+      <dt>분위기</dt><dd>포근 · 해소</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s17" data-start="">
+  <div class="left"><div class="pic" style="--h:150">
+    <span class="no">#17</span>
+    <span class="len">17초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="160" y="118" font-size="84" text-anchor="middle">🦎</text><text x="160" y="127" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">카멜레온</text><text x="100" y="70" font-size="36" text-anchor="middle">🌀</text><text x="225" y="62" font-size="36" text-anchor="middle">🌀</text><text x="70" y="140" font-size="18" text-anchor="middle">🟣</text><text x="255" y="140" font-size="18" text-anchor="middle">🟢</text><text x="160" y="36" font-size="18" text-anchor="middle">🟡</text><g class="cam"><rect x="0" y="0" width="320" height="180" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="70" y="40" width="130" height="73.1" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="160" y1="90" x2="135" y2="76.55" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="3" y="9" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="197" y="110.1" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 카멜레온의 몸 색이 정신없이 소용돌이치고 있다.</p></div>
+  <div class="txt">
+    <h3>장면 17 <small>소용돌이치는 카멜레온 · 원고 #13-1</small></h3>
+    <p class="mute">(낭독 없음 — 그림과 소리만)</p><p class="d d-카멜레온"><b>카멜레온</b> “내일 이사를 가는데요. 처음 가보는 숲이 너무 무서운 데, 궁금하기도 해요. 새로운 친구들 만나는 게 설레기도 하는데, 숨고 싶기도 하고.. 아무래도 제가 이상한 것 같아요.”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>클로즈업 · 몸 전체가 여러 색으로 소용돌이치는 카멜레온</dd>
+      <dt>카메라</dt><dd>카멜레온 클로즈업에서 몸 색 소용돌이에 맞춰 살짝 흔들리며 회전하듯 당김</dd>
+      <dt>소리</dt><dd>두근두근 심장 박동, 색이 바뀔 때마다 뿅뿅, 조금 어지러운 현악</dd>
+      <dt>분위기</dt><dd>두려움 + 설렘 + 숨고 싶음 (섞인 마음)</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s18" data-start="">
+  <div class="left"><div class="pic" style="--h:25">
+    <span class="no">#18</span>
+    <span class="len">21초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="90" y="120" font-size="66" text-anchor="middle">🦫</text><text x="90" y="129" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">바라</text><text x="215" y="128" font-size="54" text-anchor="middle">🦎</text><text x="215" y="137" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">카멜레온</text><text x="160" y="80" font-size="30" text-anchor="middle">🌀</text><text x="160" y="89" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">회오리 동전</text><g class="cam"><rect x="0" y="0" width="320" height="180" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="130" y="70" width="100" height="56.3" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="160" y1="90" x2="180" y2="98.15" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="3" y="9" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="227" y="123.3" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 바라가 카멜레온에게 회오리 모양이 그려진 동전을 건네준다.</p></div>
+  <div class="txt">
+    <h3>장면 18 <small>“마음의 색은 한 가지일 필요 없단다” · 원고 #13-2</small></h3>
+    <p class="mute">(낭독 없음 — 그림과 소리만)</p><p class="d d-바라"><b>바라</b> “이런, 동시에 여러 마음이 느껴져서 마음이 어지러웠구나. 하지만, 마음의 색이 꼭 한가지일 필요는 없단다. 나도 손님을 만나는 게 기쁘면서도 쉬고 싶을 때가 있거든. 마음환전기계에 이 동전을 한 번 넣어볼래?”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>미디엄 투 샷 → 클로즈업 · 회오리 모양 동전</dd>
+      <dt>카메라</dt><dd>바라와 카멜레온 투 샷에서 회오리 동전으로 천천히 이동</dd>
+      <dt>소리</dt><dd>조용한 오르골, 안심시키는 낮은 화음, 동전 짤랑</dd>
+      <dt>분위기</dt><dd>이해 · 위로</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s19" data-start="">
+  <div class="left"><div class="pic" style="--h:300">
+    <span class="no">#19</span>
+    <span class="len">15초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="85" y="105" font-size="62" text-anchor="middle">🏧</text><text x="135" y="150" font-size="22" text-anchor="middle">🧪</text><text x="160" y="150" font-size="20" text-anchor="middle">🍓</text><text x="190" y="150" font-size="20" text-anchor="middle">🎀</text><text x="235" y="100" font-size="58" text-anchor="middle">🍭</text><text x="235" y="109" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">막대사탕</text><text x="285" y="130" font-size="40" text-anchor="middle">🦎</text><g class="cam"><rect x="170" y="80" width="130" height="73.1" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="100" y="50" width="130" height="73.1" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="235" y1="116.55" x2="165" y2="86.55" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="173" y="89" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="227" y="120.1" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 동전을 넣자 여러 가지 색깔의 색소 병, 과일, 설탕, 리본, 막대가 나온다. 바라가 콧노래를 부르며 알록달록 회오리 막대사탕을 만들어 카멜레온에게 웃으며 건넨다.</p></div>
+  <div class="txt">
+    <h3>장면 19 <small>알록달록 회오리 막대사탕 · 원고 #14 · 15-1</small></h3>
+    <p class="mute">(낭독 없음 — 그림과 소리만)</p><p class="d d-바라"><b>바라</b> “이번 마음 재료로는 어떤 맛이 만들어지려나?”</p><p class="d d-바라"><b>바라</b> “여러 마음이 담겨 세상에 하나 뿐인 멋진 색이 되었네? 자, 여기 알록달록 회오리 막대사탕 한번 먹어보렴.”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>클로즈업 연속 · ①재료 ②만드는 손 ③완성</dd>
+      <dt>카메라</dt><dd>기계 출구(색소 병 · 과일 · 설탕 · 리본 · 막대) → 바라의 손끝에서 사탕이 만들어짐 → 카멜레온에게 건넴</dd>
+      <dt>소리</dt><dd>병 달그락, 반짝 리본 효과, 콧노래, 사탕 완성 팅~</dd>
+      <dt>분위기</dt><dd>신기함 · 기대</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s20" data-start="">
+  <div class="left"><div class="pic" style="--h:320">
+    <span class="no">#20</span>
+    <span class="len">8초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="150" y="118" font-size="76" text-anchor="middle">🦎</text><text x="150" y="127" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">카멜레온</text><text x="215" y="96" font-size="46" text-anchor="middle">🍭</text><text x="100" y="50" font-size="24" text-anchor="middle">✨</text><text x="250" y="56" font-size="24" text-anchor="middle">✨</text><g class="cam"><rect x="70" y="30" width="160" height="90" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="110" y="40" width="100" height="56.3" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="150" y1="75" x2="160" y2="68.15" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="73" y="39" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="207" y="93.3" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 카멜레온이 행복해하며 자신의 몸 색깔을 닮은 막대사탕을 먹는다.</p></div>
+  <div class="txt">
+    <h3>장면 20 <small>“내 마음이 이렇게 예쁜 색이었다니!” · 원고 #15-2</small></h3>
+    <p class="mute">(낭독 없음 — 그림과 소리만)</p><p class="d d-카멜레온"><b>카멜레온</b> “와! 너무 예쁘다. 내 마음이 이렇게 예쁜 색이었다니! 달콤해! 맛있어!”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>미디엄 클로즈업 · 몸 색과 같은 막대사탕을 든 카멜레온</dd>
+      <dt>카메라</dt><dd>사탕과 몸 색이 같은 것을 보여 주는 클로즈업 → 환하게 웃는 카멜레온</dd>
+      <dt>소리</dt><dd>아~ 하는 감탄, 달콤한 반짝임, 오르골 밝게</dd>
+      <dt>분위기</dt><dd>행복 · 자기 수용</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s21" data-start="">
+  <div class="left"><div class="pic" style="--h:220">
+    <span class="no">#21</span>
+    <span class="len">14초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="215" y="100" font-size="70" text-anchor="middle">🚪</text><text x="200" y="60" font-size="30" text-anchor="middle">🪧</text><text x="200" y="69" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">휴가 중</text><text x="100" y="126" font-size="60" text-anchor="middle">🐰</text><text x="100" y="135" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">토끼</text><text x="120" y="98" font-size="18" text-anchor="middle">💧</text><g class="cam"><rect x="130" y="20" width="130" height="73.1" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="20" y="55" width="160" height="90" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="195" y1="56.55" x2="100" y2="100" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="133" y="29" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="177" y="142" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 마음카페 문 앞에 ‘휴가 중’ 이라는 안내문을 보고 토끼가 슬퍼하고 있다.</p></div>
+  <div class="txt">
+    <h3>장면 21 <small>“휴가 중입니다” · 원고 #16-1</small></h3>
+    <p class="n">‘마음카페 사장님은 지금 휴가 중입니다.’</p><p class="d d-토끼"><b>토끼</b> “이게 뭐야! 안 그래도 아빠가 나랑 놀아준다고 해놓고 약속을 지키지 않아서 속상한데! 으앙!”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>미디엄 · 닫힌 문에 걸린 팻말, 눈물 맺힌 토끼</dd>
+      <dt>카메라</dt><dd>닫힌 문과 팻말 → 토끼의 풀 죽은 뒷모습으로 천천히 이동</dd>
+      <dt>소리</dt><dd>쓸쓸한 바람, 팻말 삐걱, 토끼의 으앙!(작게 시작해서 커짐)</dd>
+      <dt>분위기</dt><dd>서운함 · 반전 직전의 쓸쓸함</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s22" data-start="">
+  <div class="left"><div class="pic" style="--h:55">
+    <span class="no">#22</span>
+    <span class="len">6초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="160" y="100" font-size="80" text-anchor="middle">🚪</text><text x="160" y="124" font-size="62" text-anchor="middle">🦁</text><text x="160" y="133" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">사자</text><text x="128" y="84" font-size="24" text-anchor="middle">🦎</text><text x="192" y="84" font-size="24" text-anchor="middle">🦔</text><text x="232" y="128" font-size="46" text-anchor="middle">🦥</text><text x="232" y="137" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">나무늘보</text><text x="40" y="128" font-size="44" text-anchor="middle">🐰</text><text x="40" y="137" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">토끼</text><g class="cam"><rect x="0" y="0" width="320" height="180" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="40" y="55" width="160" height="90" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="160" y1="90" x2="120" y2="100" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="3" y="9" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="197" y="142" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 마음카페의 문을 사자가 연다. 사자 양쪽 어깨에 카멜레온과 고슴도치가 앉아 있고, 사자 옆에는 나무늘보가 웃으며 서 있다.</p></div>
+  <div class="txt">
+    <h3>장면 22 <small>“어서 들어와!” · 원고 #16-2</small></h3>
+    <p class="mute">(낭독 없음 — 그림과 소리만)</p><p class="d d-사자"><b>사자</b> “토끼였구나! 괜찮아! 어서 들어와!”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>미디엄 · 문을 연 사자(어깨에 카멜레온 · 고슴도치), 옆에 웃는 나무늘보</dd>
+      <dt>카메라</dt><dd>문이 열리며 빛이 쏟아지고, 사자와 친구들을 향해 당김</dd>
+      <dt>소리</dt><dd>딸랑! 문종, 환한 효과음, 오르골 경쾌하게</dd>
+      <dt>분위기</dt><dd>반가움 · 의외의 따뜻함</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s23" data-start="">
+  <div class="left"><div class="pic" style="--h:10">
+    <span class="no">#23</span>
+    <span class="len">18초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="160" y="100" font-size="70" text-anchor="middle">🍉</text><text x="160" y="109" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">화채</text><text x="70" y="125" font-size="44" text-anchor="middle">🐻</text><text x="110" y="148" font-size="30" text-anchor="middle">🐿️</text><text x="215" y="148" font-size="30" text-anchor="middle">🐭</text><text x="215" y="157" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">두더지</text><text x="250" y="125" font-size="40" text-anchor="middle">🐰</text><text x="285" y="138" font-size="36" text-anchor="middle">🦥</text><text x="285" y="147" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">인라인</text><text x="160" y="36" font-size="22" text-anchor="middle">🐦</text><g class="cam"><rect x="0" y="0" width="320" height="180" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="60" y="40" width="200" height="112.5" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="160" y1="90" x2="160" y2="96.25" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="3" y="9" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="257" y="149.5" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 마음카페 가운데 커다란 그릇에 알록달록 화채가 있다. 곰, 다람쥐들, 두더지, 새, 동물 친구들이 화채를 나눠 먹고 있다. 나무늘보가 인라인을 타고 와서 화채를 서빙해 준다. 토끼가 화채를 먹으며 기뻐한다.</p></div>
+  <div class="txt">
+    <h3>장면 23 <small>친구들이 만든 화채 · 원고 #17-1</small></h3>
+    <p class="mute">(낭독 없음 — 그림과 소리만)</p><p class="d d-카멜레온"><b>카멜레온</b> “사장님 대신 우리가 마음카페를 지키고 있어.”</p><p class="d d-나무늘보"><b>나무늘보</b> “바라 사장님처럼 마법레시피는 없지만, 우리가 조금씩 가지고 온 걸로 만든 거야.”</p><p class="d d-토끼"><b>토끼</b> “화채잖아. 내가 좋아하는 사과도 있어! 애들아, 고마워!”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>와이드 · 가운데 알록달록 화채 그릇, 곰 · 다람쥐 · 두더지 · 새가 둘러앉음</dd>
+      <dt>카메라</dt><dd>카페 전경 크레인 다운 → 가운데 큰 화채 그릇 → 인라인으로 서빙하는 나무늘보를 따라 패닝</dd>
+      <dt>소리</dt><dd>와글와글 카페 소리, 화채 그릇 달그락, 인라인 바퀴 소리, 토끼 웃음</dd>
+      <dt>분위기</dt><dd>왁자지껄 · 감동</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s24" data-start="">
+  <div class="left"><div class="pic" style="--h:35">
+    <span class="no">#24</span>
+    <span class="len">9초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="160" y="105" font-size="56" text-anchor="middle">🍉</text><text x="100" y="120" font-size="40" text-anchor="middle">🦔</text><text x="215" y="118" font-size="48" text-anchor="middle">🦁</text><text x="130" y="148" font-size="38" text-anchor="middle">🦥</text><text x="190" y="148" font-size="34" text-anchor="middle">🦎</text><text x="70" y="145" font-size="34" text-anchor="middle">🐰</text><text x="275" y="40" font-size="30" text-anchor="middle">🌇</text><g class="cam"><rect x="60" y="40" width="200" height="112.5" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="0" y="0" width="320" height="180" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="160" y1="96.25" x2="160" y2="90" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="63" y="49" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="317" y="177" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 모두 화채 그릇 주변을 둘러앉아 화채를 먹고 있다.</p></div>
+  <div class="txt">
+    <h3>장면 24 <small>“사장님 보고 싶다” · 원고 #17-2</small></h3>
+    <p class="mute">(낭독 없음 — 그림과 소리만)</p><p class="d d-고슴도치"><b>고슴도치</b> “우리가 만들었지만 진짜 맛있네.”</p><p class="d d-사자"><b>사자</b> “그런데 바라 사장님은 언제 오시지?”</p><p class="d d-나무늘보"><b>나무늘보</b> “사장님 보고 싶다.”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>와이드 · 그릇을 둘러앉은 동물 친구들, 창밖 저녁빛</dd>
+      <dt>카메라</dt><dd>화채 그릇을 둘러앉은 원 안에서 천천히 줌아웃 (따뜻한 정지)</dd>
+      <dt>소리</dt><dd>아늑한 오르골, 숟가락 소리, 작은 한숨</dd>
+      <dt>분위기</dt><dd>그리움 · 아늑함</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s25" data-start="">
+  <div class="left"><div class="pic" style="--h:50">
+    <span class="no">#25</span>
+    <span class="len">8초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="40" y="100" font-size="60" text-anchor="middle">🚪</text><text x="130" y="120" font-size="76" text-anchor="middle">🦫</text><text x="130" y="129" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">바라</text><text x="245" y="125" font-size="56" text-anchor="middle">🍉</text><text x="150" y="80" font-size="20" text-anchor="middle">💧</text><text x="200" y="60" font-size="22" text-anchor="middle">✨</text><g class="cam"><rect x="0" y="0" width="320" height="180" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="70" y="40" width="100" height="56.3" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="160" y1="90" x2="120" y2="68.15" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="3" y="9" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="167" y="93.3" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 바라 사장님이 화채를 보더니 감동의 눈물을 흘린다.</p></div>
+  <div class="txt">
+    <h3>장면 25 <small>“진짜 마법레시피가!” · 원고 #18-1</small></h3>
+    <p class="mute">(낭독 없음 — 그림과 소리만)</p><p class="d d-바라"><b>바라</b> “애들아, 내가 돌아왔어! 세상에, 여기 있었네. 진짜 마법레시피가!”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>미디엄 → 클로즈업 · 바라의 눈물과 미소, 화채 그릇</dd>
+      <dt>카메라</dt><dd>문가에 선 바라 실루엣 → 화채를 보고 눈물 맺히는 얼굴로 당김</dd>
+      <dt>소리</dt><dd>문종 딸랑(부드럽게), 바라의 숨 들이마심, 감동의 현악</dd>
+      <dt>분위기</dt><dd>감동 · 눈물 (이 책의 클라이맥스)</dd>
+    </dl>
+  </div>
+</article>
+
+<article class="cut" id="s26" data-start="">
+  <div class="left"><div class="pic" style="--h:40">
+    <span class="no">#26</span>
+    <span class="len">13초</span>
+    <svg viewBox="0 0 320 180" xmlns="http://www.w3.org/2000/svg" font-family="'Malgun Gothic','Pretendard',sans-serif" role="img" aria-label="장면 -1 구도 스케치"><defs><radialGradient id="gl"><stop offset="0" stop-color="#ffe9a0" stop-opacity=".95"/><stop offset="1" stop-color="#ffe9a0" stop-opacity="0"/></radialGradient><marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#d9483b"/></marker><filter id="pp"><feTurbulence baseFrequency=".8" numOctaves="2" seed="4"/><feColorMatrix values="0 0 0 0 .45 0 0 0 0 .38 0 0 0 0 .3 0 0 0 .22 0"/></filter></defs><rect width="320" height="180" filter="url(#pp)" opacity=".5"/><text x="160" y="85" font-size="70" text-anchor="middle">🏠</text><text x="160" y="94" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">마음카페</text><text x="160" y="148" font-size="50" text-anchor="middle">🦫</text><text x="160" y="157" font-size="7" text-anchor="middle" fill="#5a4a36" stroke="#fff" stroke-width=".5" paint-order="stroke">바라</text><text x="100" y="150" font-size="38" text-anchor="middle">🦁</text><text x="215" y="150" font-size="36" text-anchor="middle">🦥</text><text x="60" y="150" font-size="30" text-anchor="middle">🦎</text><text x="255" y="152" font-size="30" text-anchor="middle">🦔</text><text x="30" y="152" font-size="26" text-anchor="middle">🐿️</text><text x="290" y="120" font-size="24" text-anchor="middle">🐦</text><text x="160" y="118" font-size="26" text-anchor="middle">👋</text><g class="cam"><rect x="60" y="40" width="200" height="112.5" fill="none" stroke="#1f6fd0" stroke-width="1.6" stroke-dasharray="5 3"/><rect x="0" y="0" width="320" height="180" fill="#d9483b" fill-opacity=".07" stroke="#d9483b" stroke-width="1.8"/><line x1="160" y1="96.25" x2="160" y2="90" stroke="#d9483b" stroke-width="1.6" marker-end="url(#ar)"/><text x="63" y="49" font-size="8" fill="#1f6fd0" font-weight="700" stroke="#fff" stroke-width=".4">시작</text><text x="317" y="177" font-size="8" fill="#d9483b" font-weight="700" text-anchor="end" stroke="#fff" stroke-width=".4">끝</text></g></svg>
+  </div>
+  <p class="dir">그림 지시: 바라와 마음카페에 있는 사자, 나무늘보, 카멜레온, 고슴도치, 다람쥐, 두더지, 새, 모든 동물 친구들이 마음카페 문 앞에서 손을 흔들고 있다.</p></div>
+  <div class="txt">
+    <h3>장면 26 <small>“어떤 마음이든 언제든 환영입니다” · 원고 #18-2 · 끝</small></h3>
+    <p class="mute">(낭독 없음 — 그림과 소리만)</p><p class="d d-바라"><b>바라</b> “마음카페에 또 놀러오세요. 어떤 마음이든 언제든 환영입니다.”</p><p class="d d-카멜레온"><b>카멜레온</b> “사장님 휴가 어디로 다녀오셨어요?”</p><p class="d d-바라"><b>바라</b> “비밀!”</p>
+    
+    <dl>
+      <dt>구도</dt><dd>와이드 · 문 앞에 모두 모여 손 흔드는 바라와 동물 친구들</dd>
+      <dt>카메라</dt><dd>카페 문 앞 단체 사진 구도로 천천히 줌아웃, 마지막에 간판이 보이며 멈춤</dd>
+      <dt>소리</dt><dd>딸랑 문종, 모두 함께 손 흔드는 소리, 오르골 엔딩 멜로디</dd>
+      <dt>분위기</dt><dd>따뜻한 마무리 · 윙크 같은 “비밀!”</dd>
+    </dl>
+  </div>
+</article>
+
+<h2>엄마 녹음 대본 (장면별 한 파일)</h2>
+<p class="sub">서술은 차분한 엄마 목소리로, 괄호 안 대사는 같은 목소리에 감정만 살려 읽으면 됩니다.</p>
+<table><tr><td>00</td><td>마음카페에 내 마음을 털어놓으면 마법레시피 동전이 생겨요.<br>어떤 마음이라도 맛있는 디저트 재료가 될 수 있답니다.</td><td class="f">s00.wav</td></tr>
+<tr><td>01</td><td>(바라) “마음을 알아주는 마법레시피가 있는 마음카페에 오신 것을 환영해요.”</td><td class="f">s01.wav</td></tr>
+<tr><td>02</td><td>(나무늘보) “아, 느려 느려 왜 이렇게 느려! 빨리 빨리 선생님이 자꾸 가만히 있으라고 해요! 자꾸 나만 혼내고! 난 더 빨리 움직이고 싶은데!!”</td><td class="f">s02.wav</td></tr>
+<tr><td>03</td><td>(바라) “이런, 이런 그동안 답답하고 속상했겠는걸.”</td><td class="f">s03.wav</td></tr>
+<tr><td>04</td><td>(바라) “마음환전기계에 이 동전을 한 번 넣어보렴.”</td><td class="f">s04.wav</td></tr>
+<tr><td>05</td><td>(바라) “이번 마음 재료로는 어떤 맛이 만들어지려나?”<br>(바라) “지금은 그냥 물이지만, 얼음이 모두 녹을 때까지 기다리면, 무지개 빛 색 주스가 된단다. 7가지 색이 다 나오면 무슨 맛인지 궁금한 걸”</td><td class="f">s05.wav</td></tr>
+<tr><td>06</td><td>(나무늘보) “먹고 싶어 먹고 싶다!! 아직 주황색이야!! 얼음 몇 개나 더 남은거야!!”</td><td class="f">s06.wav</td></tr>
+<tr><td>07</td><td>(나무늘보) “오오!! 우아!!! 무지개다!! 이런 맛은 처음이야!!!”</td><td class="f">s07.wav</td></tr>
+<tr><td>08</td><td>(사자) “다들..자꾸..나만 보면..도망가요...나는 놀고 싶었던 것 뿐인데..흑..”</td><td class="f">s08.wav</td></tr>
+<tr><td>09</td><td>(바라) “이런, 그동안 너무 외로웠겠는걸.”<br>(바라) “마음환전기계에 이 동전을 한 번 넣어보겠니?”</td><td class="f">s09.wav</td></tr>
+<tr><td>10</td><td>(바라) “이번 마음 재료로는 어떤 맛이 만들어지려나?”<br>(바라) “사자야, 여기 용기팝콘을 받으렴. 용기를 낼수록 팝콘은 팡팡 늘어 날거야.”</td><td class="f">s10.wav</td></tr>
+<tr><td>11</td><td>(사자) “이..거..한..번.. 먹어 볼래? 팝..콘인데..”</td><td class="f">s11.wav</td></tr>
+<tr><td>12</td><td>(사자) “여기 아직 내게 남은 팝콘이 많아. 맛있지?”<br>(다람쥐1) “고마워 너무 고소해”<br>(다람쥐2) “나도 줘. 나도 줘”<br>(다람쥐3) “사자야, 너도 같이 먹자”</td><td class="f">s12.wav</td></tr>
+<tr><td>13</td><td>(고슴도치) “엄마도 밉고, 형도 밉고, 다 미워.. 맨날 나만 잘못했다고 하고..이번엔 진짜 내가 망가트린 거 아닌데..”</td><td class="f">s13.wav</td></tr>
+<tr><td>14</td><td>(바라) “이런, 이런 얼마나 억울하고 슬펐을까..”<br>(고슴도치) “그런데요, 미워하면 안 되는 거잖아요. 이런 나쁜 마음도 받아주시나요?”</td><td class="f">s14.wav</td></tr>
+<tr><td>15</td><td>(바라) “도치야. 이 세상에 나쁜 마음은 없단다. 도치가 지금 느끼는 감정은 그렇게 느낄만한 이유가 있는 거지. 마음환전기계에 이 동전을 한 번 넣어볼까?”<br>(바라) “이번 마음 재료로는 어떤 맛이 만들어지려나?”</td><td class="f">s15.wav</td></tr>
+<tr><td>16</td><td>(바라) “너의 마음을 안아줄 폭신폭신 솜사탕 파르페란다. 아무리 뾰족한 마음이어도 모두 품어줄 거야.”<br>(고슴도치) “아, 포근해. 기분이 폭신폭신 편안해졌어!”</td><td class="f">s16.wav</td></tr>
+<tr><td>17</td><td>(카멜레온) “내일 이사를 가는데요. 처음 가보는 숲이 너무 무서운 데, 궁금하기도 해요. 새로운 친구들 만나는 게 설레기도 하는데, 숨고 싶기도 하고.. 아무래도 제가 이상한 것 같아요.”</td><td class="f">s17.wav</td></tr>
+<tr><td>18</td><td>(바라) “이런, 동시에 여러 마음이 느껴져서 마음이 어지러웠구나. 하지만, 마음의 색이 꼭 한가지일 필요는 없단다. 나도 손님을 만나는 게 기쁘면서도 쉬고 싶을 때가 있거든. 마음환전기계에 이 동전을 한 번 넣어볼래?”</td><td class="f">s18.wav</td></tr>
+<tr><td>19</td><td>(바라) “이번 마음 재료로는 어떤 맛이 만들어지려나?”<br>(바라) “여러 마음이 담겨 세상에 하나 뿐인 멋진 색이 되었네? 자, 여기 알록달록 회오리 막대사탕 한번 먹어보렴.”</td><td class="f">s19.wav</td></tr>
+<tr><td>20</td><td>(카멜레온) “와! 너무 예쁘다. 내 마음이 이렇게 예쁜 색이었다니! 달콤해! 맛있어!”</td><td class="f">s20.wav</td></tr>
+<tr><td>21</td><td>‘마음카페 사장님은 지금 휴가 중입니다.’<br>(토끼) “이게 뭐야! 안 그래도 아빠가 나랑 놀아준다고 해놓고 약속을 지키지 않아서 속상한데! 으앙!”</td><td class="f">s21.wav</td></tr>
+<tr><td>22</td><td>(사자) “토끼였구나! 괜찮아! 어서 들어와!”</td><td class="f">s22.wav</td></tr>
+<tr><td>23</td><td>(카멜레온) “사장님 대신 우리가 마음카페를 지키고 있어.”<br>(나무늘보) “바라 사장님처럼 마법레시피는 없지만, 우리가 조금씩 가지고 온 걸로 만든 거야.”<br>(토끼) “화채잖아. 내가 좋아하는 사과도 있어! 애들아, 고마워!”</td><td class="f">s23.wav</td></tr>
+<tr><td>24</td><td>(고슴도치) “우리가 만들었지만 진짜 맛있네.”<br>(사자) “그런데 바라 사장님은 언제 오시지?”<br>(나무늘보) “사장님 보고 싶다.”</td><td class="f">s24.wav</td></tr>
+<tr><td>25</td><td>(바라) “애들아, 내가 돌아왔어! 세상에, 여기 있었네. 진짜 마법레시피가!”</td><td class="f">s25.wav</td></tr>
+<tr><td>26</td><td>(바라) “마음카페에 또 놀러오세요. 어떤 마음이든 언제든 환영입니다.”<br>(카멜레온) “사장님 휴가 어디로 다녀오셨어요?”<br>(바라) “비밀!”</td><td class="f">s26.wav</td></tr></table>
+</main><script>document.getElementById("cam").onchange=e=>document.body.classList.toggle("nocam",!e.target.checked)
+const all=document.getElementById("all");if(all){const cuts=[...document.querySelectorAll(".cut")];let cur=null;
+all.ontimeupdate=()=>{const t=all.currentTime;let hit=null;for(const c of cuts){if(+c.dataset.start<=t)hit=c}if(hit&&hit!==cur){cur&&cur.classList.remove("on");hit.classList.add("on");cur=hit;if(document.getElementById("follow").checked)hit.scrollIntoView({behavior:"smooth",block:"center"})}};
+cuts.forEach(c=>c.querySelector(".pic").onclick=()=>{all.currentTime=+c.dataset.start;all.play()});
+document.querySelectorAll(".txt audio").forEach(a=>a.onplay=()=>all.pause())}</script></body></html>

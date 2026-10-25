@@ -6,7 +6,9 @@
   "scripts": {
     "prep": "node scripts/prep.mjs",
     "studio": "remotion studio",
-    "render": "node scripts/prep.mjs && remotion render Book out/01-real-hero.mp4"
+    "render": "node scripts/prep.mjs && remotion render Book out/01-real-hero.mp4",
+    "render:maum": "node scripts/prep.mjs 02-maum-cafe && remotion render Book out/02-maum-cafe.mp4",
+    "short": "node scripts/shorts.mjs"
   },
   "dependencies": {
     "@remotion/cli": "4.0.529",

@@ -1,0 +1,2963 @@
+{
+ "id": "Ep09-Modapman",
+ "episode": "ep09",
+ "voice": "ep09",
+ "bgm": "cheerful",
+ "gap": 1,
+ "counter": "모답맨 오답",
+ "thumb": {
+  "top": "누리호가",
+  "bottom": "사진 찍는다?",
+  "sub": "로켓·위성·우주선 3분 정리",
+  "dad": "common/cutin/dad-sig-2",
+  "guest": "cutin/guide-correct",
+  "count": 4
+ },
+ "beats": [
+  {
+   "line": "c00-0",
+   "shots": [
+    {
+     "bg": "bg/museum-hall",
+     "cast": [
+      {
+       "art": "common/kid/ask",
+       "x": 0.56,
+       "h": 0.55,
+       "talk": "kid"
+      },
+      {
+       "art": "common/dad/normal",
+       "x": 0.78,
+       "h": 0.8
+      }
+     ],
+     "cam": {
+      "from": [
+       0.62,
+       0.62,
+       1.6
+      ],
+      "to": [
+       0.6,
+       0.6,
+       1.9
+      ],
+      "roll": [
+       -4,
+       2
+      ]
+     }
+    },
+    {
+     "at": 0.5,
+     "in": "slam",
+     "bg": "burst:#FFD23F:#FFB627",
+     "cast": [
+      {
+       "art": "common/cutin/kid-ask",
+       "x": 0.3,
+       "h": 1,
+       "enter": "pop"
+      }
+     ],
+     "props": [
+      {
+       "art": "prop/nuri-rocket",
+       "x": 0.74,
+       "y": 0.46,
+       "w": 0.22,
+       "enter": "drop"
+      }
+     ],
+     "text": [
+      {
+       "t": "지금 뭐 해요?",
+       "style": "shake",
+       "x": 0.74,
+       "y": 0.84,
+       "rot": 4,
+       "size": 100,
+       "at": 0.3
+      }
+     ],
+     "sfx": [
+      {
+       "name": "pop"
+      },
+      {
+       "name": "whoosh"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c00-1",
+   "pad": 10,
+   "shots": [
+    {
+     "in": "whip-l",
+     "bg": "stripes:#5BC0EB:#3FA7D6",
+     "cast": [
+      {
+       "art": "common/cutin/dad-proud",
+       "x": 0.36,
+       "h": 1,
+       "enter": "spin"
+      }
+     ],
+     "text": [
+      {
+       "t": "쉽지!",
+       "style": "slam",
+       "x": 0.74,
+       "y": 0.3
+      }
+     ],
+     "sfx": [
+      {
+       "name": "pang"
+      }
+     ]
+    },
+    {
+     "at": 0.3,
+     "in": "spin",
+     "bg": "full/nuri-selfie-imagine",
+     "fx": [
+      "imagine"
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.15
+      ]
+     },
+     "text": [
+      {
+       "t": "찰칵!",
+       "style": "stamp",
+       "x": 0.78,
+       "y": 0.2,
+       "size": 120,
+       "color": "#FFD23F",
+       "at": 0.3
+      },
+      {
+       "t": "✌",
+       "style": "pop",
+       "x": 0.2,
+       "y": 0.7,
+       "size": 150,
+       "at": 0.6
+      }
+     ],
+     "sfx": [
+      {
+       "name": "pop",
+       "at": 0.3
+      },
+      {
+       "name": "boing",
+       "at": 0.6
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c00b-0",
+   "shots": [
+    {
+     "in": "glitch",
+     "bg": "bg/museum-hall",
+     "cast": [
+      {
+       "art": "guide/correct",
+       "x": 0.3,
+       "h": 0.84,
+       "talk": "guide"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.32,
+       0.45,
+       1.5
+      ],
+      "to": [
+       0.32,
+       0.4,
+       1.75
+      ]
+     },
+     "text": [
+      {
+       "t": "사진기 ✕",
+       "style": "stamp",
+       "x": 0.72,
+       "y": 0.3,
+       "size": 110,
+       "at": 0.25
+      }
+     ],
+     "sfx": [
+      {
+       "name": "scratch"
+      },
+      {
+       "name": "stamp",
+       "at": 0.25
+      }
+     ]
+    },
+    {
+     "at": 0.55,
+     "in": "whip-r",
+     "bg": "dots:#F6EEDF:#E8DCC4",
+     "props": [
+      {
+       "art": "prop/rocket-truck",
+       "x": 0.5,
+       "y": 0.48,
+       "w": 0.46,
+       "enter": "r"
+      }
+     ],
+     "text": [
+      {
+       "t": "택배 트럭 ○",
+       "style": "slam",
+       "y": 0.84,
+       "size": 110,
+       "color": "#B8352A",
+       "at": 0.2
+      }
+     ],
+     "sfx": [
+      {
+       "name": "slide"
+      },
+      {
+       "name": "ding",
+       "at": 0.2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c00b-1",
+   "pad": 14,
+   "shots": [
+    {
+     "in": "smash",
+     "bg": "#15303A",
+     "cast": [
+      {
+       "art": "common/cutin/dad-sig-1",
+       "x": 0.5,
+       "h": 1
+      }
+     ],
+     "sfx": [
+      {
+       "name": "boing"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1
+      ],
+      "punch": [
+       2,
+       6
+      ]
+     }
+    },
+    {
+     "at": 0.25,
+     "in": "cut",
+     "bg": "#15303A",
+     "cast": [
+      {
+       "art": "common/cutin/dad-sig-2",
+       "x": 0.5,
+       "h": 1
+      }
+     ]
+    },
+    {
+     "at": 0.5,
+     "in": "cut",
+     "bg": "#15303A",
+     "cast": [
+      {
+       "art": "common/cutin/dad-sig-3",
+       "x": 0.5,
+       "h": 1
+      }
+     ],
+     "fx": [
+      "lines",
+      "shake"
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c00c-0",
+   "pad": 8,
+   "count": 1,
+   "countAt": 0.2,
+   "shots": [
+    {
+     "in": "smash",
+     "bg": "dots:#F6EEDF:#E8DCC4",
+     "tally": 1,
+     "mark": {
+      "kind": "x",
+      "at": 2
+     },
+     "text": [
+      {
+       "t": "모답맨",
+       "style": "stamp",
+       "x": 0.78,
+       "y": 0.78,
+       "size": 110,
+       "at": 0.55
+      }
+     ],
+     "sfx": [
+      {
+       "name": "buzz",
+       "at": 2
+      },
+      {
+       "name": "stamp",
+       "at": 0.55
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "hold": 44,
+   "shots": [
+    {
+     "in": "wipe",
+     "bg": "stripes:#15303A:#1F4452",
+     "props": [
+      {
+       "art": "prop/nuri-rocket",
+       "x": 0.86,
+       "y": 0.66,
+       "w": 0.16,
+       "enter": "pop",
+       "at": 14,
+       "rot": 8
+      }
+     ],
+     "text": [
+      {
+       "t": "여덟 살의 질문 × 모답맨",
+       "style": "pop",
+       "y": 0.16,
+       "size": 56
+      },
+      {
+       "t": "로켓 · 위성 · 우주선",
+       "style": "slam",
+       "y": 0.4,
+       "size": 120,
+       "at": 3
+      },
+      {
+       "t": "뭐가 달라요?",
+       "style": "shake",
+       "y": 0.64,
+       "size": 150,
+       "color": "#FFD23F",
+       "at": 12
+      }
+     ],
+     "sfx": [
+      {
+       "name": "stinger",
+       "at": 3
+      },
+      {
+       "name": "pang",
+       "at": 12
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c01-0",
+   "shots": [
+    {
+     "in": "glitch",
+     "bg": "bg/space-earth",
+     "fx": [
+      "vhs"
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.3,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.1
+      ]
+     },
+     "props": [
+      {
+       "art": "prop/small-sats",
+       "x": 0.5,
+       "y": 0.36,
+       "w": 0.3,
+       "enter": "pop"
+      }
+     ],
+     "text": [
+      {
+       "t": "누리호 발사 뉴스 · 그 주말",
+       "style": "news",
+       "at": 0.1
+      }
+     ],
+     "sfx": [
+      {
+       "name": "rewind"
+      }
+     ]
+    },
+    {
+     "at": 0.55,
+     "in": "whip-l",
+     "bg": "bg/museum-hall",
+     "cast": [
+      {
+       "art": "guide/normal",
+       "x": 0.2,
+       "h": 0.82
+      },
+      {
+       "art": "common/mom/normal",
+       "x": 0.52,
+       "h": 0.74
+      },
+      {
+       "art": "common/dad/normal",
+       "x": 0.7,
+       "h": 0.8
+      },
+      {
+       "art": "common/kid/normal",
+       "x": 0.86,
+       "h": 0.55
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.1
+      ]
+     },
+     "text": [
+      {
+       "t": "우주과학관",
+       "style": "pop",
+       "y": 0.16,
+       "size": 80
+      }
+     ],
+     "tag": {
+      "t": "정답 담당",
+      "sub": "해설사",
+      "x": 0.2,
+      "y": 0.3,
+      "at": 0.4
+     },
+     "sfx": [
+      {
+       "name": "stamp",
+       "at": 0.4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c01a-0",
+   "shots": [
+    {
+     "in": "whip-r",
+     "bg": "bg/museum-hall",
+     "cast": [
+      {
+       "art": "common/mom/explain",
+       "x": 0.55,
+       "h": 0.8,
+       "talk": "mom"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.45,
+       1.6
+      ],
+      "to": [
+       0.55,
+       0.42,
+       1.85
+      ]
+     },
+     "text": [
+      {
+       "t": "무중력이라 둥둥~",
+       "style": "pop",
+       "x": 0.82,
+       "y": 0.28,
+       "size": 80,
+       "at": 0.3
+      }
+     ]
+    },
+    {
+     "at": 0.55,
+     "in": "spin",
+     "bg": "bg/space-earth",
+     "fx": [
+      "imagine"
+     ],
+     "props": [
+      {
+       "art": "prop/small-sats",
+       "x": 0.5,
+       "y": 0.4,
+       "w": 0.34,
+       "enter": "pop",
+       "rot": -10
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.1
+      ],
+      "roll": [
+       -4,
+       4
+      ]
+     },
+     "text": [
+      {
+       "t": "둥~ 둥~",
+       "style": "shake",
+       "x": 0.78,
+       "y": 0.24,
+       "size": 110,
+       "color": "#FFD23F"
+      }
+     ],
+     "sfx": [
+      {
+       "name": "boing"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c01a-1",
+   "shots": [
+    {
+     "in": "glitch",
+     "bg": "bg/museum-hall",
+     "cast": [
+      {
+       "art": "guide/correct",
+       "x": 0.3,
+       "h": 0.84,
+       "talk": "guide"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.32,
+       0.45,
+       1.5
+      ],
+      "to": [
+       0.32,
+       0.42,
+       1.7
+      ]
+     },
+     "text": [
+      {
+       "t": "둥둥 ✕",
+       "style": "stamp",
+       "x": 0.72,
+       "y": 0.3,
+       "size": 110,
+       "at": 0.1
+      },
+      {
+       "t": "떨어지는 중 ○",
+       "style": "stamp",
+       "x": 0.72,
+       "y": 0.52,
+       "size": 100,
+       "color": "#FFD23F",
+       "at": 0.5
+      }
+     ],
+     "sfx": [
+      {
+       "name": "stamp",
+       "at": 0.1
+      },
+      {
+       "name": "ding",
+       "at": 0.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c01b-0",
+   "pad": 6,
+   "shots": [
+    {
+     "in": "smash",
+     "bg": "burst:#FF8FB1:#FF6F9C",
+     "cast": [
+      {
+       "art": "common/cutin/mom-sig-1",
+       "x": 0.5,
+       "h": 1
+      }
+     ],
+     "text": [
+      {
+       "t": "어?",
+       "style": "pop",
+       "x": 0.18,
+       "y": 0.3,
+       "size": 110
+      }
+     ],
+     "sfx": [
+      {
+       "name": "tick"
+      }
+     ]
+    },
+    {
+     "at": 0.14,
+     "in": "cut",
+     "bg": "burst:#FF8FB1:#FF6F9C",
+     "cast": [
+      {
+       "art": "common/cutin/mom-sig-2",
+       "x": 0.5,
+       "h": 1
+      }
+     ],
+     "text": [
+      {
+       "t": "어?",
+       "style": "pop",
+       "x": 0.82,
+       "y": 0.26,
+       "size": 120
+      }
+     ],
+     "sfx": [
+      {
+       "name": "tick"
+      }
+     ]
+    },
+    {
+     "at": 0.28,
+     "in": "cut",
+     "bg": "burst:#FF8FB1:#FF6F9C",
+     "cast": [
+      {
+       "art": "common/cutin/mom-sig-3",
+       "x": 0.5,
+       "h": 1
+      }
+     ],
+     "text": [
+      {
+       "t": "어?",
+       "style": "pop",
+       "x": 0.18,
+       "y": 0.56,
+       "size": 130
+      }
+     ],
+     "sfx": [
+      {
+       "name": "tick"
+      }
+     ]
+    },
+    {
+     "at": 0.42,
+     "in": "cut",
+     "bg": "burst:#FF8FB1:#FF6F9C",
+     "cast": [
+      {
+       "art": "common/cutin/mom-sig-4",
+       "x": 0.5,
+       "h": 1
+      }
+     ],
+     "text": [
+      {
+       "t": "어…",
+       "style": "pop",
+       "x": 0.82,
+       "y": 0.6,
+       "size": 140
+      }
+     ],
+     "sfx": [
+      {
+       "name": "tick"
+      }
+     ]
+    },
+    {
+     "at": 0.58,
+     "in": "smash",
+     "bg": "#15303A",
+     "cast": [
+      {
+       "art": "common/cutin/mom-sig-scream",
+       "x": 0.5,
+       "h": 1
+      }
+     ],
+     "fx": [
+      "lines",
+      "shake"
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1
+      ],
+      "punch": [
+       2,
+       6
+      ]
+     },
+     "text": [
+      {
+       "t": "아악!",
+       "style": "shake",
+       "x": 0.8,
+       "y": 0.26,
+       "size": 170,
+       "color": "#FFD23F"
+      }
+     ],
+     "sfx": [
+      {
+       "name": "crash"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c01b-1",
+   "pad": 6,
+   "count": 2,
+   "countAt": 0.15,
+   "shots": [
+    {
+     "in": "smash",
+     "bg": "bg/museum-hall",
+     "cast": [
+      {
+       "art": "common/mom/shock",
+       "x": 0.55,
+       "h": 0.82
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.38,
+       2.2
+      ],
+      "ease": "snap",
+      "roll": [
+       6,
+       6
+      ]
+     },
+     "freeze": 0.15,
+     "mark": {
+      "kind": "x",
+      "at": 0.2
+     },
+     "tag": {
+      "t": "엄마도",
+      "sub": "모 씨 집안 사람",
+      "x": 0.26,
+      "y": 0.3,
+      "at": 0.45
+     },
+     "sfx": [
+      {
+       "name": "buzz",
+       "at": 0.2
+      },
+      {
+       "name": "stamp",
+       "at": 0.45
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c02-0",
+   "shots": [
+    {
+     "in": "slam",
+     "bg": "burst:#FFD23F:#FFB627",
+     "cast": [
+      {
+       "art": "common/cutin/kid-ask",
+       "x": 0.36,
+       "h": 1,
+       "enter": "pop",
+       "talk": "kid"
+      }
+     ],
+     "props": [
+      {
+       "art": "prop/crew-capsule",
+       "x": 0.78,
+       "y": 0.5,
+       "w": 0.24,
+       "enter": "pop",
+       "at": 0.3
+      }
+     ],
+     "text": [
+      {
+       "t": "우주선은?",
+       "style": "shake",
+       "x": 0.78,
+       "y": 0.18,
+       "rot": 6,
+       "size": 120,
+       "at": 0.3
+      }
+     ],
+     "sfx": [
+      {
+       "name": "pop"
+      },
+      {
+       "name": "pop",
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c02-1",
+   "shots": [
+    {
+     "in": "zoom",
+     "bg": "bg/museum-hall",
+     "cast": [
+      {
+       "art": "common/dad/explain",
+       "x": 0.7,
+       "h": 0.84,
+       "talk": "dad"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.7,
+       0.4,
+       1.8
+      ],
+      "to": [
+       0.7,
+       0.38,
+       2.2
+      ]
+     },
+     "text": [
+      {
+       "t": "큰 위성!",
+       "style": "slam",
+       "x": 0.3,
+       "y": 0.3,
+       "size": 120,
+       "at": 0.15
+      }
+     ],
+     "sfx": [
+      {
+       "name": "pang",
+       "at": 0.15
+      }
+     ]
+    },
+    {
+     "at": 0.4,
+     "in": "spin",
+     "bg": "full/family-rocket-imagine",
+     "fx": [
+      "imagine",
+      "shake"
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1
+      ],
+      "to": [
+       0.5,
+       0.35,
+       1.2
+      ]
+     },
+     "text": [
+      {
+       "t": "다음 휴가 = 우주",
+       "style": "slam",
+       "x": 0.5,
+       "y": 0.16,
+       "size": 100,
+       "color": "#B8352A",
+       "at": 0.2
+      }
+     ],
+     "sfx": [
+      {
+       "name": "whoosh"
+      },
+      {
+       "name": "crash",
+       "at": 0.2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c02b-0",
+   "pad": 10,
+   "shots": [
+    {
+     "in": "smash",
+     "bg": "#F6EEDF",
+     "cast": [
+      {
+       "art": "cutin/guide-correct",
+       "x": 0.36,
+       "h": 1
+      }
+     ],
+     "props": [
+      {
+       "art": "prop/rocket-inside",
+       "x": 0.78,
+       "y": 0.5,
+       "w": 0.3,
+       "enter": "pop",
+       "at": 0.3
+      }
+     ],
+     "text": [
+      {
+       "t": "좌석 0",
+       "style": "stamp",
+       "x": 0.78,
+       "y": 0.86,
+       "size": 110,
+       "at": 0.5
+      }
+     ],
+     "sfx": [
+      {
+       "name": "scratch"
+      },
+      {
+       "name": "stamp",
+       "at": 0.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c02b-1",
+   "pad": 6,
+   "count": 3,
+   "countAt": 0.1,
+   "shots": [
+    {
+     "in": "smash",
+     "bg": "dots:#F6EEDF:#E8DCC4",
+     "tally": 3,
+     "mark": {
+      "kind": "x",
+      "at": 2
+     },
+     "sfx": [
+      {
+       "name": "buzz",
+       "at": 2
+      }
+     ]
+    },
+    {
+     "at": 0.45,
+     "in": "glitch",
+     "bg": "full/family-rocket-imagine",
+     "fx": [
+      "mono"
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1
+      ]
+     },
+     "text": [
+      {
+       "t": "모 씨 일가, 우주 진출 실패",
+       "style": "news",
+       "at": 2
+      }
+     ],
+     "sfx": [
+      {
+       "name": "slide"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c03-0",
+   "shots": [
+    {
+     "in": "wipe",
+     "bg": "bg/museum-hall",
+     "cast": [
+      {
+       "art": "guide/point",
+       "x": 0.24,
+       "h": 0.84,
+       "talk": "guide"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.5,
+       1.1
+      ],
+      "to": [
+       0.42,
+       0.5,
+       1.2
+      ]
+     },
+     "text": [
+      {
+       "t": "딱 세 판",
+       "style": "slam",
+       "x": 0.64,
+       "y": 0.36,
+       "size": 150,
+       "at": 0.35
+      }
+     ],
+     "sfx": [
+      {
+       "name": "stinger",
+       "at": 0.35
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c03-1",
+   "pad": 6,
+   "shots": [
+    {
+     "in": "smash",
+     "bg": "#15303A",
+     "cast": [
+      {
+       "art": "common/cutin/dad-shock",
+       "x": 0.5,
+       "h": 1
+      }
+     ],
+     "cam": {
+      "punch": [
+       3
+      ]
+     },
+     "text": [
+      {
+       "t": "과학관에 판…?",
+       "style": "type",
+       "x": 0.78,
+       "y": 0.3,
+       "size": 90
+      }
+     ],
+     "sfx": [
+      {
+       "name": "boing"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c04-0",
+   "shots": [
+    {
+     "in": "zoom",
+     "bg": "stripes:#15303A:#1F4452",
+     "text": [
+      {
+       "t": "ROUND 1",
+       "style": "slam",
+       "y": 0.24,
+       "size": 110,
+       "color": "#FFD23F"
+      },
+      {
+       "t": "누리호 = 로켓",
+       "style": "pop",
+       "y": 0.48,
+       "size": 120,
+       "at": 0.3
+      },
+      {
+       "t": "(발사체)",
+       "style": "stamp",
+       "y": 0.7,
+       "size": 100,
+       "color": "#FFD23F",
+       "at": 0.65
+      }
+     ],
+     "sfx": [
+      {
+       "name": "stinger"
+      },
+      {
+       "name": "stamp",
+       "at": 0.65
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c04-1",
+   "shots": [
+    {
+     "in": "whip-l",
+     "bg": "bg/space-earth",
+     "props": [
+      {
+       "art": "prop/rocket-truck",
+       "x": 0.36,
+       "y": 0.42,
+       "w": 0.4,
+       "enter": "r"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1
+      ],
+      "to": [
+       0.55,
+       0.5,
+       1.1
+      ]
+     },
+     "text": [
+      {
+       "t": "위성 배달",
+       "style": "slam",
+       "x": 0.76,
+       "y": 0.3,
+       "size": 110,
+       "at": 0.3
+      }
+     ],
+     "sfx": [
+      {
+       "name": "whoosh"
+      },
+      {
+       "name": "ding",
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c04-2",
+   "shots": [
+    {
+     "in": "whip-u",
+     "bg": "full/stage-drop",
+     "cam": {
+      "from": [
+       0.6,
+       0.35,
+       1.4
+      ],
+      "to": [
+       0.45,
+       0.65,
+       1.1
+      ]
+     },
+     "text": [
+      {
+       "t": "연료 다 쓴 칸 → 분리",
+       "style": "pop",
+       "y": 0.14,
+       "size": 80,
+       "at": 0.05
+      }
+     ],
+     "sfx": [
+      {
+       "name": "pang",
+       "at": 0.1
+      }
+     ]
+    },
+    {
+     "at": 0.55,
+     "in": "cut",
+     "bg": "full/stage-drop",
+     "fx": [
+      "shake"
+     ],
+     "cam": {
+      "from": [
+       0.3,
+       0.75,
+       1.8
+      ],
+      "to": [
+       0.3,
+       0.78,
+       2
+      ]
+     },
+     "text": [
+      {
+       "t": "1단 · 2단 → 바다",
+       "style": "stamp",
+       "y": 0.2,
+       "size": 110,
+       "color": "#FFD23F"
+      }
+     ],
+     "sfx": [
+      {
+       "name": "crash"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c04-3",
+   "shots": [
+    {
+     "in": "slam",
+     "bg": "burst:#FFD23F:#FFB627",
+     "cast": [
+      {
+       "art": "common/kid/wow",
+       "x": 0.4,
+       "h": 0.8,
+       "enter": "b",
+       "talk": "kid"
+      }
+     ],
+     "text": [
+      {
+       "t": "트럭이?!",
+       "style": "shake",
+       "x": 0.77,
+       "y": 0.32,
+       "size": 140
+      }
+     ],
+     "sfx": [
+      {
+       "name": "pop"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c04b-0",
+   "shots": [
+    {
+     "in": "whip-r",
+     "bg": "bg/museum-hall",
+     "cast": [
+      {
+       "art": "common/dad/panic",
+       "x": 0.66,
+       "h": 0.84,
+       "talk": "dad"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.66,
+       0.42,
+       1.7
+      ],
+      "to": [
+       0.66,
+       0.4,
+       1.9
+      ]
+     },
+     "text": [
+      {
+       "t": "그럼 찰칵은 누가?",
+       "style": "type",
+       "x": 0.3,
+       "y": 0.3,
+       "size": 80,
+       "at": 0.2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c04b-1",
+   "shots": [
+    {
+     "in": "glitch",
+     "bg": "bg/museum-hall",
+     "cast": [
+      {
+       "art": "guide/model",
+       "x": 0.3,
+       "h": 0.84,
+       "talk": "guide"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.32,
+       0.45,
+       1.5
+      ],
+      "to": [
+       0.32,
+       0.42,
+       1.7
+      ]
+     }
+    },
+    {
+     "at": 0.45,
+     "in": "whip-l",
+     "bg": "bg/space-earth",
+     "props": [
+      {
+       "art": "prop/small-sats",
+       "x": 0.5,
+       "y": 0.4,
+       "w": 0.44,
+       "enter": "pop"
+      }
+     ],
+     "text": [
+      {
+       "t": "작은 위성 × 5",
+       "style": "slam",
+       "y": 0.82,
+       "size": 110,
+       "color": "#FFD23F",
+       "at": 0.2
+      }
+     ],
+     "sfx": [
+      {
+       "name": "pop"
+      },
+      {
+       "name": "stamp",
+       "at": 0.2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c04b-2",
+   "shots": [
+    {
+     "in": "wipe",
+     "bg": "dots:#F6EEDF:#E8DCC4",
+     "props": [
+      {
+       "art": "prop/aerial-photo",
+       "x": 0.34,
+       "y": 0.48,
+       "w": 0.4,
+       "enter": "drop",
+       "rot": -6
+      }
+     ],
+     "text": [
+      {
+       "t": "하루도 안 돼서",
+       "style": "pop",
+       "x": 0.74,
+       "y": 0.34,
+       "size": 90
+      },
+      {
+       "t": "첫 사진 도착",
+       "style": "stamp",
+       "x": 0.74,
+       "y": 0.54,
+       "size": 100,
+       "color": "#B8352A",
+       "at": 0.45
+      }
+     ],
+     "sfx": [
+      {
+       "name": "slide"
+      },
+      {
+       "name": "ding",
+       "at": 0.45
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c04c-0",
+   "shots": [
+    {
+     "in": "whip-r",
+     "bg": "dots:#5BC0EB:#3FA7D6",
+     "cast": [
+      {
+       "art": "common/dad/explain",
+       "x": 0.36,
+       "h": 0.9,
+       "enter": "b",
+       "talk": "dad"
+      }
+     ],
+     "text": [
+      {
+       "t": "누리호 = 트럭",
+       "style": "type",
+       "x": 0.74,
+       "y": 0.3,
+       "size": 80
+      },
+      {
+       "t": "위성 = 사진사",
+       "style": "type",
+       "x": 0.74,
+       "y": 0.48,
+       "size": 80,
+       "at": 0.45
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c04c-1",
+   "pad": 6,
+   "shots": [
+    {
+     "in": "smash",
+     "bg": "#15303A",
+     "text": [
+      {
+       "t": "누리호 = 트럭",
+       "style": "pop",
+       "y": 0.34,
+       "size": 100
+      },
+      {
+       "t": "정답",
+       "style": "stamp",
+       "y": 0.6,
+       "size": 160,
+       "color": "#5BD67A",
+       "at": 0.2
+      }
+     ],
+     "mark": {
+      "kind": "o",
+      "at": 0.2
+     },
+     "sfx": [
+      {
+       "name": "ding",
+       "at": 0.2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c05-0",
+   "shots": [
+    {
+     "in": "zoom",
+     "bg": "stripes:#15303A:#1F4452",
+     "text": [
+      {
+       "t": "ROUND 2",
+       "style": "slam",
+       "y": 0.26,
+       "size": 110,
+       "color": "#FFD23F"
+      },
+      {
+       "t": "위성은 떨어지는 중",
+       "style": "slam",
+       "y": 0.5,
+       "size": 120,
+       "at": 0.4
+      }
+     ],
+     "sfx": [
+      {
+       "name": "stinger"
+      },
+      {
+       "name": "pang",
+       "at": 0.4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c05-1",
+   "shots": [
+    {
+     "in": "whip-l",
+     "bg": "bg/space-earth",
+     "props": [
+      {
+       "art": "prop/earth-orbit",
+       "x": 0.34,
+       "y": 0.46,
+       "w": 0.4,
+       "enter": "pop",
+       "spin": true
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.08
+      ]
+     },
+     "text": [
+      {
+       "t": "옆으로 엄청 빠르게",
+       "style": "pop",
+       "x": 0.74,
+       "y": 0.3,
+       "size": 80
+      },
+      {
+       "t": "초속 7km+",
+       "style": "slam",
+       "x": 0.74,
+       "y": 0.52,
+       "size": 130,
+       "color": "#FFD23F",
+       "at": 0.5
+      }
+     ],
+     "fx": [
+      "lines"
+     ],
+     "sfx": [
+      {
+       "name": "whoosh"
+      },
+      {
+       "name": "stamp",
+       "at": 0.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c05-2",
+   "shots": [
+    {
+     "in": "cut",
+     "bg": "dots:#F6EEDF:#E8DCC4",
+     "props": [
+      {
+       "art": "prop/earth-orbit",
+       "x": 0.5,
+       "y": 0.5,
+       "w": 0.5,
+       "enter": "pop",
+       "spin": true
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.12
+      ]
+     },
+     "text": [
+      {
+       "t": "떨어지는 만큼",
+       "style": "pop",
+       "x": 0.18,
+       "y": 0.2,
+       "size": 70
+      }
+     ]
+    },
+    {
+     "at": 0.5,
+     "in": "whip-l",
+     "bg": "bg/space-earth",
+     "props": [
+      {
+       "art": "prop/small-sats",
+       "x": 0.5,
+       "y": 0.32,
+       "w": 0.24,
+       "enter": "r"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.4,
+       0.6,
+       1.3
+      ],
+      "to": [
+       0.6,
+       0.55,
+       1.15
+      ]
+     },
+     "text": [
+      {
+       "t": "땅이 휘어서 → 계속 빗나감",
+       "style": "slam",
+       "y": 0.84,
+       "size": 80,
+       "color": "#FFD23F"
+      }
+     ],
+     "sfx": [
+      {
+       "name": "whoosh"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c05b-0",
+   "shots": [
+    {
+     "in": "cut",
+     "bg": "bg/museum-hall",
+     "cast": [
+      {
+       "art": "common/mom/smirk",
+       "x": 0.55,
+       "h": 0.8,
+       "talk": "mom"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.55,
+       0.45,
+       1.7
+      ],
+      "to": [
+       0.55,
+       0.42,
+       1.9
+      ]
+     },
+     "fx": [
+      "mono"
+     ],
+     "text": [
+      {
+       "t": "둥둥 ✕",
+       "style": "type",
+       "x": 0.82,
+       "y": 0.3,
+       "size": 90
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c05b-1",
+   "shots": [
+    {
+     "in": "slam",
+     "bg": "burst:#FFD23F:#FFB627",
+     "cast": [
+      {
+       "art": "common/kid/laugh",
+       "x": 0.4,
+       "h": 0.8,
+       "enter": "b",
+       "talk": "kid"
+      }
+     ],
+     "text": [
+      {
+       "t": "계속 빗나감!",
+       "style": "shake",
+       "x": 0.77,
+       "y": 0.32,
+       "size": 110
+      }
+     ],
+     "sfx": [
+      {
+       "name": "pop"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c05c-0",
+   "shots": [
+    {
+     "in": "whip-r",
+     "bg": "bg/space-earth",
+     "props": [
+      {
+       "art": "prop/earth-orbit",
+       "x": 0.5,
+       "y": 0.44,
+       "w": 0.4,
+       "enter": "pop",
+       "spin": true
+      }
+     ],
+     "text": [
+      {
+       "t": "지구 한 바퀴",
+       "style": "pop",
+       "x": 0.5,
+       "y": 0.12,
+       "size": 80
+      },
+      {
+       "t": "약 1시간 30분",
+       "style": "slam",
+       "y": 0.84,
+       "size": 120,
+       "color": "#FFD23F",
+       "at": 0.4
+      }
+     ],
+     "sfx": [
+      {
+       "name": "stamp",
+       "at": 0.4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c05c-1",
+   "pad": 6,
+   "shots": [
+    {
+     "in": "slam",
+     "bg": "burst:#5BC0EB:#3FA7D6",
+     "cast": [
+      {
+       "art": "common/kid/wow",
+       "x": 0.4,
+       "h": 0.8,
+       "enter": "b",
+       "talk": "kid"
+      }
+     ],
+     "text": [
+      {
+       "t": "하교 전에 한 바퀴!",
+       "style": "shake",
+       "x": 0.76,
+       "y": 0.32,
+       "size": 90
+      }
+     ],
+     "sfx": [
+      {
+       "name": "pop"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c06-0",
+   "shots": [
+    {
+     "in": "zoom",
+     "bg": "stripes:#15303A:#1F4452",
+     "text": [
+      {
+       "t": "ROUND 3",
+       "style": "slam",
+       "y": 0.28,
+       "size": 110,
+       "color": "#FFD23F"
+      },
+      {
+       "t": "행성 둘레를 돌면 = 위성",
+       "style": "pop",
+       "y": 0.52,
+       "size": 90,
+       "at": 0.3
+      }
+     ],
+     "sfx": [
+      {
+       "name": "stinger"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c06-1",
+   "shots": [
+    {
+     "in": "slam",
+     "bg": "burst:#FFD23F:#FFB627",
+     "cast": [
+      {
+       "art": "common/cutin/kid-ask",
+       "x": 0.36,
+       "h": 1,
+       "enter": "pop",
+       "talk": "kid"
+      }
+     ],
+     "props": [
+      {
+       "art": "prop/moon",
+       "x": 0.78,
+       "y": 0.42,
+       "w": 0.26,
+       "enter": "pop"
+      }
+     ],
+     "sfx": [
+      {
+       "name": "pop"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c06-2",
+   "shots": [
+    {
+     "in": "whip-l",
+     "bg": "bg/space-earth",
+     "props": [
+      {
+       "art": "prop/moon",
+       "x": 0.3,
+       "y": 0.42,
+       "w": 0.32,
+       "enter": "pop"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1
+      ],
+      "to": [
+       0.45,
+       0.5,
+       1.1
+      ]
+     },
+     "text": [
+      {
+       "t": "달 = 자연 위성",
+       "style": "slam",
+       "x": 0.72,
+       "y": 0.34,
+       "size": 110,
+       "color": "#FFD23F"
+      },
+      {
+       "t": "아무도 안 만듦",
+       "style": "pop",
+       "x": 0.72,
+       "y": 0.54,
+       "size": 80,
+       "at": 0.5
+      }
+     ],
+     "sfx": [
+      {
+       "name": "ding"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c06-3",
+   "pad": 8,
+   "shots": [
+    {
+     "in": "smash",
+     "bg": "burst:#7A4FA0:#8C5DB4",
+     "cast": [
+      {
+       "art": "common/cutin/kid-sig",
+       "x": 0.5,
+       "h": 1,
+       "enter": "pop"
+      }
+     ],
+     "fx": [
+      "lines",
+      "shake"
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1
+      ],
+      "punch": [
+       2,
+       6
+      ]
+     },
+     "text": [
+      {
+       "t": "아악!",
+       "style": "shake",
+       "x": 0.82,
+       "y": 0.24,
+       "size": 150,
+       "color": "#FFD23F",
+       "at": 0.3
+      }
+     ],
+     "sfx": [
+      {
+       "name": "crash"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c06b-0",
+   "shots": [
+    {
+     "in": "whip-l",
+     "bg": "stripes:#1F5FA8:#2A6FBF",
+     "props": [
+      {
+       "art": "prop/small-sats",
+       "x": 0.22,
+       "y": 0.46,
+       "w": 0.26,
+       "enter": "pop"
+      }
+     ],
+     "text": [
+      {
+       "t": "만들어 쏘면 = 인공위성",
+       "style": "slam",
+       "x": 0.64,
+       "y": 0.4,
+       "size": 76
+      }
+     ]
+    },
+    {
+     "at": 0.5,
+     "in": "whip-l",
+     "bg": "stripes:#2E8B57:#3AA36A",
+     "props": [
+      {
+       "art": "prop/crew-capsule",
+       "x": 0.22,
+       "y": 0.46,
+       "w": 0.26,
+       "enter": "pop"
+      }
+     ],
+     "text": [
+      {
+       "t": "사람이 타면 = 우주선",
+       "style": "slam",
+       "x": 0.64,
+       "y": 0.4,
+       "size": 80,
+       "color": "#FFD23F"
+      }
+     ],
+     "sfx": [
+      {
+       "name": "ding"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c06b-1",
+   "shots": [
+    {
+     "in": "wipe",
+     "bg": "dots:#F6EEDF:#E8DCC4",
+     "props": [
+      {
+       "art": "prop/rocket-inside",
+       "x": 0.3,
+       "y": 0.48,
+       "w": 0.36,
+       "enter": "pop"
+      }
+     ],
+     "text": [
+      {
+       "t": "짐만 싣는 로켓",
+       "style": "pop",
+       "x": 0.72,
+       "y": 0.34,
+       "size": 90
+      },
+      {
+       "t": "좌석 ✕",
+       "style": "stamp",
+       "x": 0.72,
+       "y": 0.56,
+       "size": 130,
+       "color": "#B8352A",
+       "at": 0.5
+      }
+     ],
+     "sfx": [
+      {
+       "name": "stamp",
+       "at": 0.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c06b-2",
+   "pad": 4,
+   "shots": [
+    {
+     "in": "smash",
+     "bg": "burst:#FF8FB1:#FF6F9C",
+     "cast": [
+      {
+       "art": "common/cutin/dad-sig-1",
+       "x": 0.5,
+       "h": 1
+      }
+     ],
+     "sfx": [
+      {
+       "name": "boing"
+      }
+     ]
+    },
+    {
+     "at": 0.25,
+     "in": "cut",
+     "bg": "burst:#FF8FB1:#FF6F9C",
+     "cast": [
+      {
+       "art": "common/cutin/dad-sig-2",
+       "x": 0.5,
+       "h": 1
+      }
+     ]
+    },
+    {
+     "at": 0.5,
+     "in": "cut",
+     "bg": "burst:#FF8FB1:#FF6F9C",
+     "cast": [
+      {
+       "art": "common/cutin/dad-sig-3",
+       "x": 0.5,
+       "h": 1
+      }
+     ],
+     "fx": [
+      "lines",
+      "shake"
+     ],
+     "text": [
+      {
+       "t": "창가 자리도…?",
+       "style": "type",
+       "x": 0.8,
+       "y": 0.24,
+       "size": 80
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c06b-3",
+   "pad": 8,
+   "shots": [
+    {
+     "in": "smash",
+     "bg": "#F6EEDF",
+     "cast": [
+      {
+       "art": "cutin/guide-correct",
+       "x": 0.4,
+       "h": 1
+      }
+     ],
+     "text": [
+      {
+       "t": "창문도 ✕",
+       "style": "stamp",
+       "x": 0.78,
+       "y": 0.4,
+       "size": 130,
+       "at": 0.2
+      }
+     ],
+     "sfx": [
+      {
+       "name": "scratch"
+      },
+      {
+       "name": "stamp",
+       "at": 0.2
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c06c-0",
+   "shots": [
+    {
+     "in": "wipe",
+     "bg": "dots:#F6EEDF:#E8DCC4",
+     "props": [
+      {
+       "art": "prop/nuri-rocket",
+       "x": 0.2,
+       "y": 0.4,
+       "w": 0.2,
+       "enter": "pop"
+      },
+      {
+       "art": "prop/small-sats",
+       "x": 0.5,
+       "y": 0.4,
+       "w": 0.24,
+       "enter": "pop",
+       "at": 0.35
+      },
+      {
+       "art": "prop/crew-capsule",
+       "x": 0.8,
+       "y": 0.4,
+       "w": 0.2,
+       "enter": "pop",
+       "at": 0.7
+      }
+     ],
+     "text": [
+      {
+       "t": "실어다 주고",
+       "style": "slam",
+       "x": 0.2,
+       "y": 0.76,
+       "size": 80
+      },
+      {
+       "t": "돌면서 일하고",
+       "style": "slam",
+       "x": 0.5,
+       "y": 0.76,
+       "size": 80,
+       "at": 0.35
+      },
+      {
+       "t": "사람을 태운다",
+       "style": "slam",
+       "x": 0.8,
+       "y": 0.76,
+       "size": 80,
+       "at": 0.7
+      }
+     ],
+     "sfx": [
+      {
+       "name": "pop"
+      },
+      {
+       "name": "pop",
+       "at": 0.35
+      },
+      {
+       "name": "pop",
+       "at": 0.7
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c06c-1",
+   "pad": 10,
+   "shots": [
+    {
+     "in": "zoom",
+     "bg": "burst:#15303A:#1F4452",
+     "props": [
+      {
+       "art": "prop/nuri-rocket",
+       "x": 0.14,
+       "y": 0.5,
+       "w": 0.16,
+       "enter": "pop"
+      }
+     ],
+     "text": [
+      {
+       "t": "누리호는 위성이 아니라",
+       "style": "pop",
+       "y": 0.34,
+       "size": 90,
+       "color": "#9AA0A6"
+      },
+      {
+       "t": "위성을 올려 준 로켓",
+       "style": "slam",
+       "y": 0.56,
+       "size": 120,
+       "color": "#FFD23F",
+       "at": 0.4
+      }
+     ],
+     "sfx": [
+      {
+       "name": "stamp",
+       "at": 0.4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c07-0",
+   "shots": [
+    {
+     "in": "iris",
+     "bg": "bg/museum-plaza-dusk",
+     "cast": [
+      {
+       "art": "common/dad/explain",
+       "x": 0.4,
+       "h": 0.8,
+       "talk": "dad"
+      },
+      {
+       "art": "common/kid/normal",
+       "x": 0.6,
+       "h": 0.55
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.55,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.55,
+       1.3
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "line": "c07-1",
+   "shots": [
+    {
+     "in": "cut",
+     "bg": "full/stage-drop",
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1
+      ],
+      "to": [
+       0.5,
+       0.6,
+       1.1
+      ]
+     },
+     "text": [
+      {
+       "t": "한 칸씩 내려놓고",
+       "style": "pop",
+       "y": 0.86,
+       "size": 64
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c07-2",
+   "shots": [
+    {
+     "in": "cut",
+     "bg": "bg/museum-plaza-dusk",
+     "cast": [
+      {
+       "art": "common/dad/normal",
+       "x": 0.4,
+       "h": 0.8
+      },
+      {
+       "art": "common/kid/ask",
+       "x": 0.6,
+       "h": 0.55,
+       "talk": "kid"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.6,
+       1.7
+      ],
+      "to": [
+       0.6,
+       0.6,
+       1.8
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "line": "c07-3",
+   "shots": [
+    {
+     "in": "cut",
+     "bg": "bg/museum-plaza-dusk",
+     "cast": [
+      {
+       "art": "common/dad/explain",
+       "x": 0.4,
+       "h": 0.8,
+       "talk": "dad"
+      },
+      {
+       "art": "common/kid/normal",
+       "x": 0.6,
+       "h": 0.55
+      }
+     ],
+     "cam": {
+      "from": [
+       0.44,
+       0.45,
+       1.6
+      ],
+      "to": [
+       0.44,
+       0.45,
+       1.7
+      ]
+     }
+    },
+    {
+     "at": 0.5,
+     "in": "cut",
+     "bg": "bg/space-earth",
+     "props": [
+      {
+       "art": "prop/small-sats",
+       "x": 0.5,
+       "y": 0.36,
+       "w": 0.3,
+       "enter": "pop"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1
+      ],
+      "to": [
+       0.52,
+       0.5,
+       1.08
+      ]
+     },
+     "text": [
+      {
+       "t": "지금도 돌면서, 우리 땅을",
+       "style": "pop",
+       "y": 0.86,
+       "size": 64
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c07-4",
+   "shots": [
+    {
+     "in": "cut",
+     "bg": "bg/museum-plaza-dusk",
+     "cast": [
+      {
+       "art": "common/dad/normal",
+       "x": 0.4,
+       "h": 0.8
+      },
+      {
+       "art": "common/kid/wow",
+       "x": 0.6,
+       "h": 0.55,
+       "talk": "kid"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.6,
+       0.6,
+       1.7
+      ],
+      "to": [
+       0.6,
+       0.6,
+       1.8
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "line": "c07-5",
+   "pad": 6,
+   "shots": [
+    {
+     "in": "cut",
+     "bg": "bg/museum-plaza-dusk",
+     "cast": [
+      {
+       "art": "common/dad/proud",
+       "x": 0.4,
+       "h": 0.8,
+       "talk": "dad"
+      },
+      {
+       "art": "common/kid/normal",
+       "x": 0.6,
+       "h": 0.55
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.5,
+       1.4
+      ],
+      "to": [
+       0.5,
+       0.5,
+       1.45
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "line": "c07b-0",
+   "pad": 10,
+   "shots": [
+    {
+     "in": "cut",
+     "bg": "bg/museum-plaza-dusk",
+     "cast": [
+      {
+       "art": "kid/wave-sky",
+       "x": 0.5,
+       "h": 0.6
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.6,
+       1.3
+      ],
+      "to": [
+       0.5,
+       0.4,
+       1.15
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "line": "c08-0",
+   "shots": [
+    {
+     "in": "whip-l",
+     "bg": "bg/museum-plaza-dusk",
+     "cast": [
+      {
+       "art": "common/dad/explain",
+       "x": 0.66,
+       "h": 0.84,
+       "talk": "dad"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.66,
+       0.42,
+       1.6
+      ],
+      "to": [
+       0.66,
+       0.4,
+       1.85
+      ]
+     },
+     "text": [
+      {
+       "t": "이따 머리 위로 온다!",
+       "style": "pop",
+       "x": 0.3,
+       "y": 0.3,
+       "size": 90,
+       "at": 0.55
+      }
+     ],
+     "sfx": [
+      {
+       "name": "pang",
+       "at": 0.55
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c08-1",
+   "shots": [
+    {
+     "in": "glitch",
+     "bg": "bg/museum-plaza-dusk",
+     "cast": [
+      {
+       "art": "guide/correct",
+       "x": 0.3,
+       "h": 0.84,
+       "talk": "guide"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.32,
+       0.45,
+       1.5
+      ],
+      "to": [
+       0.32,
+       0.42,
+       1.7
+      ]
+     },
+     "sfx": [
+      {
+       "name": "scratch"
+      }
+     ]
+    },
+    {
+     "at": 0.45,
+     "in": "whip-l",
+     "bg": "bg/space-earth",
+     "props": [
+      {
+       "art": "prop/earth-orbit",
+       "x": 0.5,
+       "y": 0.44,
+       "w": 0.44,
+       "enter": "pop",
+       "spin": true
+      }
+     ],
+     "text": [
+      {
+       "t": "지구도 돈다 → 딴 데로",
+       "style": "stamp",
+       "y": 0.86,
+       "size": 90,
+       "at": 0.3
+      }
+     ],
+     "sfx": [
+      {
+       "name": "slide"
+      },
+      {
+       "name": "stamp",
+       "at": 0.3
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c08-2",
+   "pad": 8,
+   "shots": [
+    {
+     "in": "cut",
+     "bg": "bg/museum-plaza-dusk",
+     "cast": [
+      {
+       "art": "dad/v-sign",
+       "x": 0.5,
+       "h": 0.84,
+       "talk": "dad"
+      }
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.45,
+       1.5
+      ],
+      "to": [
+       0.5,
+       0.45,
+       1.7
+      ]
+     },
+     "text": [
+      {
+       "t": "✌ 기다림",
+       "style": "pop",
+       "x": 0.82,
+       "y": 0.26,
+       "size": 90
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c08b-0",
+   "shots": [
+    {
+     "in": "slam",
+     "bg": "burst:#FFD23F:#FFB627",
+     "cast": [
+      {
+       "art": "common/kid/laugh",
+       "x": 0.36,
+       "h": 0.8,
+       "enter": "b",
+       "talk": "kid"
+      }
+     ],
+     "props": [
+      {
+       "art": "prop/aerial-photo",
+       "x": 0.76,
+       "y": 0.46,
+       "w": 0.3,
+       "enter": "drop",
+       "rot": 6
+      }
+     ],
+     "text": [
+      {
+       "t": "첫 사진 = 미국",
+       "style": "shake",
+       "x": 0.76,
+       "y": 0.84,
+       "size": 90,
+       "at": 0.4
+      }
+     ],
+     "sfx": [
+      {
+       "name": "pop"
+      },
+      {
+       "name": "stamp",
+       "at": 0.4
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c08b-1",
+   "shots": [
+    {
+     "in": "whip-l",
+     "bg": "bg/museum-plaza-dusk",
+     "cast": [
+      {
+       "art": "dad/v-sign",
+       "x": 0.5,
+       "h": 0.84
+      }
+     ],
+     "fx": [
+      "slowmo"
+     ],
+     "cam": {
+      "from": [
+       0.5,
+       0.4,
+       1.2
+      ],
+      "to": [
+       0.5,
+       0.25,
+       1
+      ]
+     },
+     "text": [
+      {
+       "t": "1시간 30분 경과",
+       "style": "news",
+       "at": 0.3
+      }
+     ],
+     "sfx": [
+      {
+       "name": "tick"
+      },
+      {
+       "name": "tick",
+       "at": 0.5
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "line": "c08b-2",
+   "pad": 30,
+   "count": 4,
+   "countAt": 0.15,
+   "shots": [
+    {
+     "in": "smash",
+     "bg": "dots:#F6EEDF:#E8DCC4",
+     "tally": 4,
+     "mark": {
+      "kind": "x",
+      "at": 2
+     },
+     "text": [
+      {
+       "t": "역시, 모답맨",
+       "style": "stamp",
+       "x": 0.5,
+       "y": 0.84,
+       "size": 100,
+       "at": 0.55
+      }
+     ],
+     "sfx": [
+      {
+       "name": "buzz",
+       "at": 2
+      },
+      {
+       "name": "crash",
+       "at": 0.55
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "hold": 75,
+   "shots": [
+    {
+     "in": "iris",
+     "bg": "burst:#15303A:#1F4452",
+     "cast": [
+      {
+       "art": "common/cutin/dad-sig-2",
+       "x": 0.5,
+       "h": 0.8,
+       "enter": "spin"
+      }
+     ],
+     "text": [
+      {
+       "t": "모답맨",
+       "style": "slam",
+       "y": 0.2,
+       "size": 120,
+       "color": "#FFD23F"
+      },
+      {
+       "t": "다음 오답도 기대해 주세요",
+       "style": "pop",
+       "y": 0.86,
+       "size": 64,
+       "at": 14
+      }
+     ],
+     "note": "※ 누리호 5차 발사(2026.10.7) 보도 기준. 궤도 속도 · 주기는 저궤도 위성의 대략적인 값이에요"
+    }
+   ]
+  }
+ ]
+}

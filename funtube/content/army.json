@@ -1,0 +1,92 @@
+{
+  "title": "군대 1년 반, 1분 요약",
+  "voice": "Puck",
+  "style": "fast, punchy, energetic Korean high-school boy doing a quick funny summary video, slightly sarcastic, no pauses",
+  "gap": 0.08,
+  "beats": [
+    {
+      "stage": "시작", "say": "군대 1년 반, 딱 1분에 요약해 줌. 출발!",
+      "caps": [["군대 1년 반", 0], ["*1분*에 요약!", 0.45]],
+      "bg": ["#FFD23F", "#FF7A1A"], "prop": "stopwatch", "rank": 0, "hair": "long", "hat": "none", "face": "hype", "pose": "wave",
+      "sfx": "powerup", "trans": "flash", "tags": ["1:00", "GO"]
+    },
+    {
+      "stage": "입영일자", "say": "입영통지서 오는 순간, 인생에 디데이가 생김.",
+      "caps": [["입영통지서 *도착*", 0], ["인생에 *D-DAY* 생김", 0.5]],
+      "bg": ["#4D7CFF", "#2A3FA8"], "prop": "calendar", "rank": 0, "hair": "long", "hat": "none", "face": "shock", "pose": "shrug",
+      "sfx": "ding", "trans": "slideL", "tags": ["D-100", "D-30", "D-1"]
+    },
+    {
+      "stage": "보충대", "say": "입소 당일, 부모님이랑 인사하고 들어가면, 머리가 밀림. 거울 속에 모르는 사람 있음.",
+      "caps": [["입소 당일 *보충대*", 0], ["머리 *삭제*", 0.4], ["거울 속 *누구세요*", 0.7]],
+      "bg": ["#B8E986", "#4CAF50"], "prop": "clippers", "rank": 0, "hair": "cut", "hat": "none", "face": "shock", "pose": "idle",
+      "sfx": "whoosh", "trans": "zoom", "tags": ["부모님♥", "싹둑"]
+    },
+    {
+      "stage": "군용품", "say": "군용품 받는데, 양말에도 이름을 쓰래. 전부. 다.",
+      "caps": [["군용품 *수령*", 0], ["양말에도 *이름*", 0.35], ["*전부 다*", 0.8]],
+      "bg": ["#C9B27C", "#7D6B3F"], "prop": "duffel", "rank": 0, "hair": "buzz", "hat": "none", "face": "deadpan", "pose": "hold",
+      "sfx": "crinkle", "trans": "slideR", "tags": ["양말", "속옷", "이름표"]
+    },
+    {
+      "stage": "훈련소", "say": "훈련소 5주. 샤워는 쫓기듯이, 초코파이 하나에 눈물 남.",
+      "caps": [["*훈련소* 5주", 0], ["샤워 *초고속*", 0.35], ["초코파이에 *눈물*", 0.65]],
+      "bg": ["#FF8A8A", "#C62F4B"], "prop": "chocopie", "rank": 0, "hair": "buzz", "hat": "cap", "face": "cry", "pose": "shrug",
+      "sfx": "pop", "trans": "flash", "tags": ["5주", "차렷", "열중쉬어"]
+    },
+    {
+      "stage": "이등병", "say": "이등병 달고 자대 배치. 말끝은 무조건 다나까.",
+      "caps": [["자대 배치 *이병*", 0], ["말끝은 무조건", 0.45], ["*다나까!*", 0.75]],
+      "bg": ["#7DE2D1", "#1B8F86"], "prop": "stripes1", "rank": 1, "hair": "buzz", "hat": "cap", "face": "hype", "pose": "salute",
+      "sfx": "ding", "trans": "slideL", "tags": ["~다", "~나", "~까"]
+    },
+    {
+      "stage": "갈굼", "say": "선임이 왜 그랬냐고 물으면, 정답은 하나. 죄송합니다.",
+      "caps": [["선임: 왜 그랬어?", 0], ["정답은 *하나*", 0.5], ["*죄송합니다!*", 0.75]],
+      "bg": ["#FF5A5F", "#8E1B3A"], "prop": "bubbles", "rank": 1, "hair": "buzz", "hat": "none", "face": "sweat", "pose": "salute",
+      "sfx": "boom", "trans": "zoom", "shake": true, "tags": ["?!", "?!?!"]
+    },
+    {
+      "stage": "작업", "say": "작업은 계절 한정. 여름엔 풀 뽑고, 겨울엔 눈 치움.",
+      "caps": [["*작업* 계절 한정", 0], ["여름 *제초*", 0.4], ["겨울 *제설*", 0.7]],
+      "bg": ["#A5D8FF", "#4A90D9"], "prop": "shovel", "rank": 1, "hair": "buzz", "hat": "cap", "face": "deadpan", "pose": "hold",
+      "sfx": "tick", "trans": "slideR", "tags": ["풀", "눈", "또 풀"]
+    },
+    {
+      "stage": "보초", "say": "새벽 두 시 보초. 시계 고장 난 줄. 시간이 안 감.",
+      "caps": [["새벽 *2시* 보초", 0], ["시계 *고장*?", 0.5], ["시간이 *안 감*", 0.75]],
+      "bg": ["#1B2455", "#0A0F2B"], "prop": "moon", "rank": 2, "hair": "buzz", "hat": "helmet", "face": "sleepy", "pose": "hold",
+      "sfx": "heart", "trans": "flash", "dark": true, "tags": ["zzz", "02:00", "02:01"]
+    },
+    {
+      "stage": "휴가", "say": "첫 휴가! 나오면 시간이 두 배로 빠름. 복귀 날 아침은 칼같이 옴.",
+      "caps": [["첫 *휴가*!!", 0], ["시간 *2배속*", 0.4], ["복귀 아침은 *칼같이*", 0.7]],
+      "bg": ["#FFE066", "#FF9F1C"], "prop": "phone", "rank": 2, "hair": "buzz", "hat": "none", "face": "hype", "pose": "wave",
+      "sfx": "chime", "trans": "slideL", "tags": ["치킨", "침대", "벌써?"]
+    },
+    {
+      "stage": "일병 상병 병장", "say": "일병은 눈치, 상병은 여유, 병장은 달력만 봄.",
+      "caps": [["일병 *눈치*", 0], ["상병 *여유*", 0.34], ["병장 *달력만*", 0.68]],
+      "bg": ["#B197FC", "#6741D9"], "prop": "ranks", "rank": 2, "rankSeq": [2, 3, 4], "hair": "buzz", "hat": "none", "face": "smug", "pose": "point",
+      "sfx": "powerup", "trans": "zoom", "tags": ["짬", "짬", "짬"]
+    },
+    {
+      "stage": "PX", "say": "PX 가면 천국. 냉동 하나에 행복 풀충전.",
+      "caps": [["*PX* 가면 천국", 0], ["냉동 하나에", 0.5], ["행복 *풀충전*", 0.72]],
+      "bg": ["#FFB3D1", "#E64980"], "prop": "snacks", "rank": 3, "hair": "buzz", "hat": "none", "face": "hype", "pose": "shrug",
+      "sfx": "pop", "trans": "slideR", "tags": ["냉동", "과자", "콜라"]
+    },
+    {
+      "stage": "전역", "say": "그리고 전역. 사회 나오니까 누가 물어봄. 다시 가라면?",
+      "caps": [["그리고 *전역*!", 0], ["누가 물어봄", 0.4], ["*다시 가라면?*", 0.7]],
+      "bg": ["#FFD23F", "#F59F00"], "prop": "discharge", "rank": 4, "hair": "buzz", "hat": "none", "face": "smug", "pose": "wave",
+      "sfx": "chime", "trans": "flash", "tags": ["만기", "전역!"]
+    },
+    {
+      "stage": "엔딩", "say": "아니요.", "pauseAfter": 0.9,
+      "caps": [["*아니요.*", 0]],
+      "bg": ["#24180F", "#000000"], "prop": "stamp", "rank": 4, "hair": "buzz", "hat": "none", "face": "deadpan", "pose": "idle",
+      "sfx": "punch", "trans": "zoom", "shake": true, "dark": true, "tags": []
+    }
+  ]
+}

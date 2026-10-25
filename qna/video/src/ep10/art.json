@@ -1,0 +1,263 @@
+{
+  "title": "10편 · 외계인 진짜 있어요? UFO · 외계 생명체 · 외계인",
+  "cast": {
+    "astro": "the observatory astronomer: a slim Korean woman in her early forties, long straight black hair tied in a loose low bun with a pencil stuck through it, NO glasses, sharp calm eyes under straight eyebrows, a small mole under her left eye; wearing a dark-navy zip-up fleece jacket over a light-gray turtleneck with a small blank white name badge and NO logo, a tiny red-light flashlight clipped to the chest pocket, dark-gray trousers, black sneakers; deadpan and dry when correcting grown-ups, quietly full of wonder when talking about the sky"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/panic",
+    "common/dad/explain",
+    "common/dad/proud",
+    "common/dad/shock",
+    "common/kid/normal",
+    "common/kid/ask",
+    "common/kid/wow",
+    "common/kid/doubt",
+    "common/mom/normal",
+    "common/mom/smirk",
+    "common/mom/explain",
+    "common/mom/shock",
+    "common/cutin/dad-shock",
+    "common/cutin/dad-proud",
+    "common/cutin/kid-ask",
+    "common/cutin/mom-smirk",
+    "common/cutin/dad-sig-1",
+    "common/cutin/dad-sig-2",
+    "common/cutin/dad-sig-3",
+    "common/cutin/mom-sig-1",
+    "common/cutin/mom-sig-2",
+    "common/cutin/mom-sig-3",
+    "common/cutin/mom-sig-4",
+    "common/cutin/mom-sig-scream",
+    "common/cutin/kid-sig"
+  ],
+  "items": [
+    {
+      "id": "bg/living-room-movie",
+      "kind": "bg",
+      "title": "배경 — 밤 거실, 영화 보는 TV 불빛 (콜드 오픈)",
+      "cuts": "c00, c00a, c00b",
+      "motion": "TV 불빛이 깜빡이듯 밝기가 조금씩 바뀐다.",
+      "desc": "The same cozy Korean apartment living room as in attached image 2 but late at night with the lights off: the beige fabric sofa against the back wall lit by a cold blue-white glow coming from a big TV on the left edge of the picture (we only see the TV from the side, its screen not visible), a bowl of popcorn and two cans of soda on the low wooden table, a soft blanket on the sofa, dark window behind with city lights. No people, no readable text, no movie images. The bottom third is open floor for characters.",
+      "attach": [
+        {
+          "path": "art/common/bg/living-room.png",
+          "label": "같은 거실 (낮) — 가구 배치 유지용"
+        }
+      ]
+    },
+    {
+      "id": "bg/observatory-hall",
+      "kind": "bg",
+      "title": "배경 — 시민 천문대 전시실 (주 무대)",
+      "cuts": "c01, c01a, c01b, c02, c02b, c03, c04b, c05, c06b",
+      "motion": "천천히 당겨진다. 오답 순간 살짝 흔들린다.",
+      "desc": "The bright exhibition room of a small Korean city public observatory, seen straight-on like a sitcom set: a big white telescope on a heavy mount in the left third, a curved dark-blue wall behind painted with the planets of the solar system in a row, a large round backlit photo panel of a spiral galaxy, a small hanging model of the Moon, blank exhibit plaques, a spiral staircase on the right leading up to the dome, polished light-gray floor. No people, no readable text, no logos. The bottom third is an open empty floor for characters."
+    },
+    {
+      "id": "bg/deep-space",
+      "kind": "bg",
+      "title": "배경 — 별 가득한 우주 (라운드 카드 뒤)",
+      "cuts": "c04, c05b, c06, c06c",
+      "motion": "아주 천천히 돈다. 라운드 글자 카드 · 소품이 위에 얹힌다.",
+      "desc": "Deep outer space: a rich navy-black sky full of countless tiny stars of different colors, a soft purple and teal nebula cloud drifting across the middle, a faint band of the Milky Way running diagonally, a small red planet in the bottom-left corner. Wide and calm so text cards and objects can sit on top. No spacecraft, no people, no text."
+    },
+    {
+      "id": "bg/observatory-roof-night",
+      "kind": "bg",
+      "title": "배경 — 밤 천문대 옥상 · 주차장 (아이 눈높이 · 반전)",
+      "cuts": "c07, c07b, c08, c08b",
+      "motion": "아이 눈높이 박자에서는 거의 멈춰 있다. 반전에서 하늘 쪽으로 기울어진다.",
+      "desc": "The rooftop terrace of a small Korean city observatory at night: a white dome with its slit open on the right, a low metal railing, the lights of the city and a small parking lot far below, and a huge clear night sky full of stars filling the top two thirds, the Milky Way faintly visible, one tiny red light of an airplane high in the sky. Calm, quiet and wondrous. No people, no readable text. The bottom third is open floor for characters."
+    },
+    {
+      "id": "astro/normal",
+      "kind": "char",
+      "who": "astro",
+      "ref": null,
+      "title": "천문대 연구원 — 기본",
+      "cuts": "c01a, c02, c03",
+      "note": "연구원의 기준 그림. 이후 연구원 그림에 전부 ②로 첨부한다. 명찰은 빈칸, 로고 · 글자 없음.",
+      "motion": "숨 쉬듯 살짝 움직이고, 말할 때 까딱거린다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing upright with her arms loosely crossed, holding a thin tablet against her chest, a perfectly calm deadpan face with the tiniest polite smile."
+    },
+    {
+      "id": "astro/correct",
+      "kind": "char",
+      "who": "astro",
+      "ref": "astro/normal",
+      "title": "연구원 — 정색하고 바로잡기",
+      "cuts": "c01a, c02, c04b, c08",
+      "motion": "말하는 동안 좌우로 흔들린다.",
+      "desc": "3/4 view turned slightly to the RIGHT. One hand raised with the index finger up in a calm 'actually…' gesture, the other hand holding the tablet at her side, half-closed unimpressed eyes, one eyebrow slightly raised, mouth a small flat line."
+    },
+    {
+      "id": "astro/point",
+      "kind": "char",
+      "who": "astro",
+      "ref": "astro/normal",
+      "title": "연구원 — 하늘을 가리키며 설명",
+      "cuts": "c04, c05, c05b, c06",
+      "motion": "가리키는 팔이 위아래로 까딱인다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Pointing up and to the right with her arm fully extended toward the sky, leaning forward a little, eyes shining with quiet wonder, a soft open-mouth smile, the tablet tucked under the other arm."
+    },
+    {
+      "id": "astro/listen",
+      "kind": "char",
+      "who": "astro",
+      "ref": "astro/normal",
+      "title": "연구원 — 귀에 손 대고 우주 소리 듣기",
+      "cuts": "c06, c06b",
+      "motion": "귀에 댄 손이 천천히 까딱인다.",
+      "desc": "3/4 view turned slightly to the RIGHT. One hand cupped behind her ear as if listening very carefully, eyes closed, head tilted up toward the sky, a calm serious face, the other hand holding the tablet."
+    },
+    {
+      "id": "cutin/astro-correct",
+      "kind": "cutin",
+      "who": "astro",
+      "ref": "astro/normal",
+      "title": "연구원 정색 (컷인)",
+      "cuts": "c01a, c02, c04b, c08",
+      "motion": "화면 옆에서 튀어나와 흔들린다.",
+      "desc": "Facing slightly to the RIGHT. Perfectly deadpan: half-closed unimpressed eyes, one eyebrow raised a millimeter, mouth a small flat line, a cold sharp glint in one eye, a single strand of hair slipping out of the bun. Simple speed-line accents close to her head."
+    },
+    {
+      "id": "full/sofa-movie",
+      "kind": "full",
+      "title": "장면 — 밤 소파에서 영화 보는 엄마 아빠, 끼어든 아이",
+      "cuts": "c00, c00a",
+      "note": "콜드 오픈 첫 그림. TV 화면은 보이지 않게(영화 장면 · 포스터를 그리지 않는다). 엄마가 아이 눈을 가린다 — 15세 영화라서.",
+      "motion": "천천히 당겨지고, 아이 대사에서 멈칫 흔들린다.",
+      "desc": "Night in the dark living room, lit only by a cold blue-white TV glow from the left (the TV screen itself is out of the picture). The mom and dad sit side by side on the beige sofa under a blanket, the dad holding a huge bowl of popcorn with a few kernels frozen in mid-air; the 8-year-old kid in pajamas has popped up from behind the sofa between them, and the mom is calmly covering the kid's eyes with one hand without looking away from the TV. The dad looks startled, the kid grins innocently under mom's hand. The mom, dad and kid look exactly as in attached images 2, 3 and 4. No readable text, no movie images.",
+      "attach": [
+        {
+          "path": "art/common/mom/normal.png",
+          "label": "엄마 기준 그림"
+        },
+        {
+          "path": "art/common/dad/normal.png",
+          "label": "아빠 기준 그림"
+        },
+        {
+          "path": "art/common/kid/normal.png",
+          "label": "아이 기준 그림"
+        }
+      ]
+    },
+    {
+      "id": "full/ufo-visit-imagine",
+      "kind": "full",
+      "title": "아빠의 상상 — 외계인 우주선이 태양계에 놀러 옴",
+      "cuts": "c02",
+      "note": "틀린 설명을 그대로 그린 장면. 영상에서 분홍 '아빠의 상상' 효과가 얹힌다. 아빠 얼굴은 기준 그림 그대로.",
+      "desc": "A silly imagined scene in outer space with Saturn and the Sun in the background: a big shiny classic flying saucer with colorful blinking lights arriving like a tour bus, three cute round green aliens with antennae leaning out of its windows waving and holding cameras like tourists; floating in space in front of it is the chubby balding dad in his mustard-yellow cardigan, wearing a fishbowl space helmet, waving both arms back at them with a huge welcoming grin. The dad looks exactly as in attached image 2. Bright, absurd and cheerful. No text, no logos.",
+      "attach": [
+        {
+          "path": "art/common/dad/normal.png",
+          "label": "아빠 기준 그림"
+        }
+      ]
+    },
+    {
+      "id": "full/octopus-alien-imagine",
+      "kind": "full",
+      "title": "아빠의 상상 — 문어 머리 초록 아저씨",
+      "cuts": "c05",
+      "note": "아빠가 떠올리는 '외계인' — 다음 컷의 작은 세균과 대비된다.",
+      "desc": "A silly imagined scene: a classic B-movie alien posing proudly in front of a starry sky, a tall green man with a huge bulbous octopus head, big black glossy eyes, wiggly tentacles instead of a beard, wearing a shiny silver jumpsuit with a big collar and holding a toy ray gun, striking a heroic pose with sparkles around him. Cheesy and funny, not scary. No text, no logos."
+    },
+    {
+      "id": "dad/point-sky",
+      "kind": "char",
+      "who": "dad",
+      "title": "아빠 — 하늘 가리키며 \"외계인이다!\"",
+      "cuts": "c08",
+      "note": "반전 컷. 확신에 찬 얼굴.",
+      "motion": "가리키는 팔이 위아래로 흔들린다.",
+      "desc": "3/4 view turned slightly to the LEFT. Leaning back and pointing straight up at the sky with one arm fully extended, the other hand grabbing his own head in excitement, eyes huge and sparkling, mouth wide open shouting, sweat drops flying."
+    },
+    {
+      "id": "kid/ear-sky",
+      "kind": "char",
+      "who": "kid",
+      "title": "아이 — 하늘에 귀 대고 듣기",
+      "cuts": "c07, c07b",
+      "note": "아이 눈높이 박자용. 농담 없이 따뜻하게.",
+      "motion": "거의 움직이지 않고 숨 쉬듯만.",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing on tiptoe, head tilted up toward the sky with eyes softly closed, one small hand cupped behind the ear to listen, the other hand held up a little toward the stars, a soft quiet smile."
+    },
+    {
+      "id": "prop/hop-cone",
+      "kind": "prop",
+      "title": "소품 — 홉 열매 (맥주 재료)",
+      "cuts": "c00a",
+      "desc": "A small bunch of fresh green hop cones (the papery cone-shaped flowers used in beer) hanging on a short vine with two jagged leaves, drawn bright and cute."
+    },
+    {
+      "id": "prop/court-beer-hall",
+      "kind": "prop",
+      "title": "소품 — 옛 독일 궁정 맥주집",
+      "cuts": "c00b",
+      "note": "실제 건물을 그대로 그리지 않는다 — 바이에른풍 옛 맥주집 느낌만. 간판 글자 없음.",
+      "desc": "A cute storybook illustration of an old Bavarian-style beer hall building: cream walls, a steep dark roof, arched windows, a little crown emblem over the arched doorway, blue-and-white striped pennants, two giant foamy beer mugs on a barrel in front. No letters, no signs with text, no flags."
+    },
+    {
+      "id": "prop/ufo-unknowns",
+      "kind": "prop",
+      "title": "소품 — UFO의 정체들 (풍선 · 드론 · 비행기 · 금성)",
+      "cuts": "c04",
+      "desc": "Four everyday things floating together in a neat cluster, each with a little sparkle: a white weather balloon with a small box hanging below, a small four-rotor drone with blinking lights, a tiny airplane with a red light, and one very bright star-like planet glowing white-gold. Cute and clear."
+    },
+    {
+      "id": "prop/interstellar-comet",
+      "kind": "prop",
+      "title": "소품 — 다른 별에서 온 얼음 혜성",
+      "cuts": "c02",
+      "desc": "A lumpy gray-white chunk of dirty ice and rock flying diagonally, with a faint glowing blue-green fuzzy coma around it and a short soft tail streaming behind it. A comet, clearly natural rock and ice, no windows, no lights, no machinery."
+    },
+    {
+      "id": "prop/mars-leopard-rock",
+      "kind": "prop",
+      "title": "소품 — 화성 표범 무늬 돌",
+      "cuts": "c05b",
+      "desc": "A reddish-brown arrowhead-shaped rock from Mars with small pale spots ringed in dark edges like a leopard's spots on its surface, a few white veins running through it, sitting on a little patch of red dusty ground."
+    },
+    {
+      "id": "prop/microbes",
+      "kind": "prop",
+      "title": "소품 — 아주 작은 세균들",
+      "cuts": "c05, c05b",
+      "desc": "A tight cluster of cute tiny microbes seen as if under a magnifying glass: round and rod-shaped blobs in soft green, blue and pink with tiny wiggly tails and simple happy dot faces, inside a round magnifying-lens shape."
+    },
+    {
+      "id": "prop/radio-telescope",
+      "kind": "prop",
+      "title": "소품 — 거대 전파 망원경",
+      "cuts": "c06",
+      "desc": "A giant white radio telescope dish on a sturdy frame, tilted up toward the sky, with faint curved wave lines drawn coming down into the dish. No letters, no logos."
+    },
+    {
+      "id": "prop/space-probe",
+      "kind": "prop",
+      "title": "소품 — 별까지 가는 느린 탐사선",
+      "cuts": "c06b",
+      "note": "실제 탐사선 · 기관 로고를 그리지 않는다.",
+      "desc": "A small old-fashioned space probe with a big white dish antenna, a gold box body and two thin long booms, drifting slowly with a tiny snail riding on top of the dish for comedy, sleepy 'zzz' clouds (no letters, just three small cloud puffs). No logos, no flags."
+    },
+    {
+      "id": "prop/blinking-plane",
+      "kind": "prop",
+      "title": "소품 — 밤하늘 비행기 (깜빡이는 빨간 불)",
+      "cuts": "c08",
+      "desc": "A small passenger airplane seen from below at night, dark silhouette with a bright red blinking light on the wing tip and a white strobe on the tail, little radiating light lines around the red light. No letters, no logos."
+    },
+    {
+      "id": "full/hope-poster",
+      "kind": "full",
+      "ratio": "3:4",
+      "title": "썸네일 — 영화 포스터 느낌 그림 (실제 포스터 아님)",
+      "cuts": "thumb",
+      "desc": "An ORIGINAL dramatic movie-poster style illustration (not a copy of any real poster): a tiny remote Korean seaside village at night seen from a low angle, rooftops and a lone streetlight, and above it a huge mysterious pale light glowing through dark clouds in the sky, beams falling on the village. Two small silhouetted villagers in the foreground look up at it. Deep teal night sky with warm orange glows, cinematic, mysterious and a little scary. Empty dark space at the bottom of the picture for a title (but draw no text). Same ink linework and airbrushed shading as the style anchor, but serious and atmospheric instead of comic. No people close-up, no faces in detail."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+1
+00:00:00,800 --> 00:00:04,310
+Differentiate the area
+and you get the height?
+
+2
+00:00:04,360 --> 00:00:09,780
+Let's paint with a roller 3 tall
+
+3
+00:00:09,830 --> 00:00:13,650
+Every 1 step adds 3 of area —
+how fast the area grows = the roller's height
+
+4
+00:00:13,700 --> 00:00:19,520
+Now the roller follows the line 2x,
+so it keeps getting taller
+
+5
+00:00:19,570 --> 00:00:22,890
+The area is 1, 4 … it's a triangle, so x²
+
+6
+00:00:22,940 --> 00:00:26,660
+Push a bit more and the new slice
+= current height × a super-thin width
+
+7
+00:00:26,710 --> 00:00:30,730
+So differentiating the area gives the height!
+(x²)′ = 2x — just like in episode 1
+
+8
+00:00:30,780 --> 00:00:33,900
+Find an F whose derivative is f,
+and the area is just one subtraction!
+
+9
+00:00:33,950 --> 00:00:37,270
+Episode 3's area comes right out:
+(x³/3)′ = x²  →  1/3 − 0 = 1/3
+
+10
+00:00:37,320 --> 00:00:40,770
+Differentiation and integration undo each other!
+= the Fundamental Theorem of Calculus
+
+11
+00:00:41,770 --> 00:00:45,520
+NEXT: Logarithms — the magic ruler
+that turns multiplying into adding
