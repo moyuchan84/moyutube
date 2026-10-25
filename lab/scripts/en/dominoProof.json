@@ -1,0 +1,17 @@
+{
+  "NEXT": "See you in the next episode!",
+  "EN": {
+    "도미노로 하는|무한 증명": "An infinite proof\nwith dominoes",
+    "끝없이 늘어선 도미노\n전부 쓰러진다고 어떻게 확신할까?": "Dominoes lined up forever —\nhow can we be sure they all fall?",
+    "딱 두 가지만 확인하면 돼요": "We only need to check two things:\n(1) the first one falls  (2) if one falls, the next one falls",
+    "(2) 가 깨지면? (사이가 너무 멀면)": "What if (2) fails? (a gap that's too wide)",
+    "중간에서 멈춰요": "It stops partway",
+    "(1) 이 없으면? 아무것도 안 쓰러져요": "What if there's no (1)? Nothing falls at all",
+    "(1), (2) 가 둘 다 맞으면…": "If (1) and (2) are both true…",
+    "끝까지, 무한히 전부 쓰러져요!": "Every single one falls, forever!",
+    "이 식이 모든 n 에서 맞는지\n도미노처럼 확인해요": "Let's check this formula for every n,\njust like dominoes",
+    "첫 도미노: n = 1 일 때 맞아요": "First domino: it's true for n = 1",
+    "n 까지 맞다면, n+1 을 더해도\n다음 칸 공식과 똑같아요": "If it's true up to n, adding n+1\ngives exactly the formula for the next step",
+    "두 칸만 확인하면 무한까지!\n= 수학적 귀납법": "Check just two steps and it holds forever!\n= mathematical induction"
+  }
+}

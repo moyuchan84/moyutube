@@ -1,0 +1,59 @@
+1
+00:00:00,800 --> 00:00:05,310
+How do you measure
+the slope of a curve?
+
+2
+00:00:05,360 --> 00:00:07,280
+A point P on the curve y = x²
+
+3
+00:00:07,330 --> 00:00:09,550
+A curve keeps bending,
+so we can't measure its slope directly
+
+4
+00:00:09,600 --> 00:00:11,720
+So put another point Q next to it
+and join the two with a straight line
+
+5
+00:00:11,770 --> 00:00:17,790
+Slide Q closer and closer to P…
+
+6
+00:00:17,840 --> 00:00:19,760
+The slope closes in on 2!
+
+7
+00:00:19,810 --> 00:00:22,130
+When the two points become one = the tangent line
+Its slope = 2
+
+8
+00:00:22,180 --> 00:00:26,600
+Let's zoom way in on P
+
+9
+00:00:26,650 --> 00:00:31,970
+The curve almost lies on the tangent —
+up close, a curve looks straight!
+
+10
+00:00:32,020 --> 00:00:34,740
+Finding this slope is "differentiation":
+the slope seen from really close up
+
+11
+00:00:34,790 --> 00:00:41,710
+Move P and the slope changes too
+
+12
+00:00:41,760 --> 00:00:45,210
+The slope is always twice x
+(x²)′ = 2x
+
+13
+00:00:46,210 --> 00:00:49,960
+NEXT: Average 100 km/h means
+exactly 100 at some moment?

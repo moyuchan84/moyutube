@@ -1,0 +1,51 @@
+1
+00:00:00,800 --> 00:00:05,310
+How do you find
+the area under a curve?
+
+2
+00:00:05,360 --> 00:00:07,330
+What's the area under y = x², from 0 to 1?
+
+3
+00:00:07,380 --> 00:00:09,500
+The top is curved,
+so width × height won't work
+
+4
+00:00:09,550 --> 00:00:12,070
+So let's cover it with rectangular bars
+
+5
+00:00:12,120 --> 00:00:14,240
+The bits sticking out above the curve
+make it bigger than the real area
+
+6
+00:00:14,290 --> 00:00:21,146
+What if we cut the bars thinner?
+
+7
+00:00:21,196 --> 00:00:24,116
+The extra bits disappear
+and it closes in on 0.333…
+
+8
+00:00:24,166 --> 00:00:26,886
+That's integration!
+Adding up super-thin bars
+
+9
+00:00:26,936 --> 00:00:30,256
+∫ is a stretched-out S for "Sum"
+x² dx = height × a super-thin width
+
+10
+00:00:30,306 --> 00:00:33,356
+But do we really have to
+cut and add every time?
+
+11
+00:00:34,356 --> 00:00:38,106
+NEXT: Differentiate the area
+and you get the height?

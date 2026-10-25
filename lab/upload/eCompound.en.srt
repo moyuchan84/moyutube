@@ -1,0 +1,51 @@
+1
+00:00:00,800 --> 00:00:04,310
+Split the interest finer and finer —
+does the money grow forever?
+
+2
+00:00:04,360 --> 00:00:07,080
+Put 1 into an imaginary bank
+that pays 100% interest a year
+
+3
+00:00:07,130 --> 00:00:09,050
+After a year, one payment of interest: 1 → 2
+
+4
+00:00:09,100 --> 00:00:11,020
+What if it pays 50% twice, every half year?
+
+5
+00:00:11,070 --> 00:00:13,590
+1.5, then another 50% → 2.25
+The interest earns interest too!
+
+6
+00:00:13,640 --> 00:00:18,960
+Let's split it even finer
+
+7
+00:00:19,010 --> 00:00:22,730
+The finer we split, the more we get…
+but each gain gets smaller
+
+8
+00:00:22,780 --> 00:00:26,000
+Even split into every second, every instant,
+it never passes 2.718…
+
+9
+00:00:26,050 --> 00:00:29,370
+That limit is the number e:
+where (1 + 1/n) multiplied n times ends up
+
+10
+00:00:29,420 --> 00:00:32,870
+Anything that grows or shrinks nonstop —
+e always shows up in the math
+
+11
+00:00:33,870 --> 00:00:37,620
+NEXT: Measuring angles with length?
+Radians

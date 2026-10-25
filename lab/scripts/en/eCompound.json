@@ -1,0 +1,15 @@
+{
+  "NEXT": "NEXT: Measuring angles with length?\nRadians",
+  "EN": {
+    "이자를 잘게 쪼개면|무한히 불어날까?": "Split the interest finer and finer —\ndoes the money grow forever?",
+    "1년 이자가 100% 인\n상상의 은행에 1 을 맡겨요": "Put 1 into an imaginary bank\nthat pays 100% interest a year",
+    "1년 뒤 한 번에 이자 1 → 2": "After a year, one payment of interest: 1 → 2",
+    "반년마다 50% 씩 두 번 주면?": "What if it pays 50% twice, every half year?",
+    "1.5 에 또 50% → 2.25\n이자에도 이자가 붙어요!": "1.5, then another 50% → 2.25\nThe interest earns interest too!",
+    "더 잘게 쪼개 볼까요?": "Let's split it even finer",
+    "쪼갤수록 늘긴 하는데…\n늘어나는 양이 점점 줄어요": "The finer we split, the more we get…\nbut each gain gets smaller",
+    "매초, 매 순간으로 쪼개도\n2.718… 을 절대 못 넘어요": "Even split into every second, every instant,\nit never passes 2.718…",
+    "이 끝 수가 바로 e\n(1 + 1/n) 을 n 번 곱한 값의 끝": "That limit is the number e:\nwhere (1 + 1/n) multiplied n times ends up",
+    "쉬지 않고 자라거나 줄어드는 것\n그 계산에 늘 e 가 나와요": "Anything that grows or shrinks nonstop —\ne always shows up in the math"
+  }
+}

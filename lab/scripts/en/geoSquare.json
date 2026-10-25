@@ -1,0 +1,16 @@
+{
+  "NEXT": "NEXT: A positive test,\nbut only a 9% chance it's real?",
+  "EN": {
+    "끝없이 더하는데|답이 1 이라고?": "Adding forever,\nand the answer is 1?",
+    "넓이가 1 인 정사각형": "A square with an area of 1",
+    "절반을 칠해요: 1/2": "Color in half: 1/2",
+    "남은 곳의 절반: 1/4": "Half of what's left: 1/4",
+    "또 남은 곳의 절반… 계속!": "Half of what's left again… and on and on!",
+    "끝없이 더해도 네모 밖으론 못 나가요\n남은 틈이 0 으로 → 합은 1": "No matter how long we add, it can't leave the square.\nThe gap shrinks to 0 → the sum is 1",
+    "이번엔 1/4 씩 줄어들면?": "What if it shrinks by 1/4 each time?",
+    "세 조각 중 하나만 노랑\n나머지 한 칸에서 또 반복": "Only one of the three pieces is yellow,\nthen repeat in the last corner",
+    "세 색이 똑같이 나눠 가지니\n노랑은 전체의 1/3!": "The three colors share it equally,\nso yellow is 1/3 of the whole!",
+    "(1/2) ÷ (1 − 1/2) = 1\n(1/4) ÷ (1 − 1/4) = 1/3": "(1/2) ÷ (1 − 1/2) = 1\n(1/4) ÷ (1 − 1/4) = 1/3",
+    "비율이 1 보다 작으면\n무한히 더해도 끝이 있어요 = 무한등비급수": "If the ratio is less than 1,\nan endless sum still has a limit = an infinite geometric series"
+  }
+}

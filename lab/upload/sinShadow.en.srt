@@ -1,0 +1,44 @@
+1
+00:00:00,800 --> 00:00:03,810
+Is the sine graph
+a circle's shadow?
+
+2
+00:00:03,860 --> 00:00:08,030
+One car on a Ferris wheel of radius 1 —
+how does its height change?
+
+3
+00:00:08,080 --> 00:00:14,800
+Move right by the angle turned
+and mark the height as a dot
+
+4
+00:00:14,850 --> 00:00:19,470
+This wave is the sine graph!
+The circle's height, unrolled
+
+5
+00:00:19,520 --> 00:00:22,240
+Turn 30° and the height is exactly half,
+so sin 30° = 1/2
+
+6
+00:00:22,290 --> 00:00:25,310
+The sideways shadow is cos:
+sin is up-down, cos is left-right
+
+7
+00:00:25,360 --> 00:00:29,310
+After a full turn (2π) you're back where you started,
+so it repeats every 2π
+
+8
+00:00:29,360 --> 00:00:32,810
+Sound, waves, swings —
+sine hides in anything that repeats
+
+9
+00:00:33,810 --> 00:00:37,560
+NEXT: Adding forever,
+and the answer is 1?

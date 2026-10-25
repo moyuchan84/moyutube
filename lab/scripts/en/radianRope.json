@@ -1,0 +1,14 @@
+{
+  "NEXT": "NEXT: Is the sine graph\na circle's shadow?",
+  "EN": {
+    "각도를 길이로|잰다? 라디안": "Measuring angles with length?\nRadians",
+    "각도는 보통 도(°)로 재요\n한 바퀴 = 360°": "We usually measure angles in degrees (°)\nOne full turn = 360°",
+    "이번엔 반지름만큼 끈을 잘라서": "This time, cut a string as long as the radius",
+    "원 둘레에 감아 볼게요": "and wrap it around the circle",
+    "끈 하나가 만든 각 = 1 라디안\n(약 57.3°)": "The angle one string makes = 1 radian\n(about 57.3°)",
+    "그럼 반 바퀴에는\n끈이 몇 개 들어갈까?": "So how many strings fit\nin half a turn?",
+    "3개 하고 조금 더… 3.14…개 = π 개!": "3 and a bit more… 3.14… strings = π!",
+    "반 바퀴 = π, 한 바퀴 = 2π\n각도를 \"반지름 몇 개\"로 세는 거예요": "Half a turn = π, a full turn = 2π\nWe count angles in \"how many radii\"",
+    "그래서 라디안을 쓰면\n호의 길이가 곱셈 한 번!": "So with radians,\narc length is just one multiplication!"
+  }
+}
