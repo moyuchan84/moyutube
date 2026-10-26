@@ -78,6 +78,7 @@ const projects = [
   'bayesTest',
   'dotShadow',
   'dominoProof',
+  'arrowFins',
 ];
 
 export default defineConfig({
