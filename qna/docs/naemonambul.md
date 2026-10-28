@@ -48,5 +48,8 @@
 | 편 | 주제 | 상태 |
 |---|---|---|
 | 01 자동차편 | 끼어들기 · 깜빡이 · 주차 | 2026-10-25 공개 — 본편 https://youtu.be/8eM3G4L7zEQ · 쇼츠 QBzdCbXA5uk(깜빡이) · gGeUyI6Hl1U(주차) · 8nxwK3uSFL4(끼어들기) |
+| 02 엘리베이터편 | 닫힘 버튼 · 층 버튼 · 통화 (IDEAS A-1) | 2026-10-26 시나리오 초안 — `content/nm02-elevator/plan.md` |
+| 03 주식편 | 오르면 · 내리면 · 단톡방 (IDEAS B-1 + 남 잘되면 배 아픈 아빠) | 2026-10-27 공개 — 본편 https://youtu.be/GgaDTLkde-o · 쇼츠 kmF04p6HQGY(오르면) · ze_i2WtPjQ4(내리면) · Sbtkwn6cDN8(단톡방) |
+| 04 부동산편 | 호가 · 호재/소각장 · 영끌/이자 + 속사포(세대수 · 전세 · 현수막) + 팔면 폭락 (IDEAS B-2 확장) | 2026-10-28 공개 — 본편 https://youtu.be/4BGGeubzpDA · 쇼츠 VH8U3GjtL9I(호가) · hGJB5oqtd48(호재 · 소각장) · CeweE4TBEIM(영끌 · 속사포) |
 
 **다음 편 아이디어:** [IDEAS.md](IDEAS.md) — 공공장소편(엘리베이터 · 버스 · 식당 · 아파트), 돈편(주식 · 집값 · 더치페이), 우리 집편, 운전편 ②

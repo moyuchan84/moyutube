@@ -1,0 +1,867 @@
+{
+  "episode": "nm04",
+  "title": "내모남불 ④ 부동산편 · 호가 · 호재 · 영끌",
+  "engine": "Google AI Studio · Gemini Flash TTS (여러 화자)",
+  "format": "WAV, 24 kHz, 16-bit, mono. One file per cut, all lines of the cut in order.",
+  "direction": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud.",
+  "jobs": [
+    {
+      "cut": "c00",
+      "save": "qna/content/nm04-realestate/voice/studio/c00.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "완전 거품이네. 집값은 떨어져야 돼.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\nThe line \"완전 거품이네. 집값은 떨어져야 돼.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 완전 거품이네. 집값은 떨어져야 돼."
+    },
+    {
+      "cut": "c00a",
+      "save": "qna/content/nm04-realestate/voice/studio/c00a.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Vindemiatrix",
+          "who": "공인중개사 사장님 (내모남불)",
+          "style": "A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "realtor",
+          "text": "도장, 여기 찍으시면 됩니다.",
+          "style": "A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "자, 이제 오를 일만 남았다!",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry.\nThe line \"자, 이제 오를 일만 남았다!\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 2: 도장, 여기 찍으시면 됩니다.\nSpeaker 1: 자, 이제 오를 일만 남았다!"
+    },
+    {
+      "cut": "c00b",
+      "save": "qna/content/nm04-realestate/voice/studio/c00b.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "사기 전엔 거품, 사고 나면 바닥. 내모남불, 하나.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "저는… 모답맨입니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\nThe line \"저는… 모답맨입니다.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 사기 전엔 거품, 사고 나면 바닥. 내모남불, 하나.\nSpeaker 1: 저는… 모답맨입니다."
+    },
+    {
+      "cut": "c01",
+      "save": "qna/content/nm04-realestate/voice/studio/c01.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Kore",
+          "who": "엄마",
+          "style": "The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "사건 개요. 토요일 오전, 동네 부동산. 전세 만기 두 달 전.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "mom",
+          "text": "보러만 온다더니, 도장은 왜 찍었어?",
+          "style": "The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "사장님, 우리 집 이제 얼마예요?",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding.\nThe line \"사장님, 우리 집 이제 얼마예요?\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 사건 개요. 토요일 오전, 동네 부동산. 전세 만기 두 달 전.\nSpeaker 2: 보러만 온다더니, 도장은 왜 찍었어?\nSpeaker 1: 사장님, 우리 집 이제 얼마예요?"
+    },
+    {
+      "cut": "c01a",
+      "save": "qna/content/nm04-realestate/voice/studio/c01a.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Vindemiatrix",
+          "who": "공인중개사 사장님 (내모남불)",
+          "style": "A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "realtor",
+          "text": "방금 사셨습니다.",
+          "style": "A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry.\n\nSpeaker 1: 방금 사셨습니다."
+    },
+    {
+      "cut": "c02",
+      "save": "qna/content/nm04-realestate/voice/studio/c02.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "딱 세 판만 하죠. 일 라운드, 호가.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "아빠, 호가가 뭐야?",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: His eight-year-old child: bright, curious, high-pitched.\n\nSpeaker 1: 딱 세 판만 하죠. 일 라운드, 호가.\nSpeaker 2: 아빠, 호가가 뭐야?"
+    },
+    {
+      "cut": "c02a",
+      "save": "qna/content/nm04-realestate/voice/studio/c02a.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "파는 사람 희망 사항이지. 거래가 돼야 시세야.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\nThe line \"파는 사람 희망 사항이지. 거래가 돼야 시세야.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 파는 사람 희망 사항이지. 거래가 돼야 시세야."
+    },
+    {
+      "cut": "c02b",
+      "save": "qna/content/nm04-realestate/voice/studio/c02b.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "어? 옆 동이 이 가격에 내놨대!",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "그럼 우리 집도 이제 이 가격이야. 모 어때~",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "남의 호가는 희망 사항, 우리 호가는 시세. 내모남불, 둘.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\nThe line \"어? 옆 동이 이 가격에 내놨대!\" is the dad speaking inside the scene, acted out, not narration.\nThe line \"그럼 우리 집도 이제 이 가격이야. 모 어때~\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 어? 옆 동이 이 가격에 내놨대!\nSpeaker 1: 그럼 우리 집도 이제 이 가격이야. 모 어때~\nSpeaker 1: 남의 호가는 희망 사항, 우리 호가는 시세. 내모남불, 둘."
+    },
+    {
+      "cut": "c02c",
+      "save": "qna/content/nm04-realestate/voice/studio/c02c.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "내 것이 더 비싸 보이는 것. 보유 효과라고 합니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "보유… 뭐?",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: His eight-year-old child: bright, curious, high-pitched.\n\nSpeaker 1: 내 것이 더 비싸 보이는 것. 보유 효과라고 합니다.\nSpeaker 2: 보유… 뭐?"
+    },
+    {
+      "cut": "c02d",
+      "save": "qna/content/nm04-realestate/voice/studio/c02d.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Vindemiatrix",
+          "who": "공인중개사 사장님 (내모남불)",
+          "style": "A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "단톡방에서 이 가격 밑으론 내놓지 말재. 좋아요!",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "realtor",
+          "text": "그건 집값 담합입니다. 법으로 금지돼 있어요.",
+          "style": "A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry.\nThe line \"단톡방에서 이 가격 밑으론 내놓지 말재. 좋아요!\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 단톡방에서 이 가격 밑으론 내놓지 말재. 좋아요!\nSpeaker 2: 그건 집값 담합입니다. 법으로 금지돼 있어요."
+    },
+    {
+      "cut": "c03",
+      "save": "qna/content/nm04-realestate/voice/studio/c03.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "이 라운드. 호재와 현수막.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "남의 동네에 역이 생긴다고? 그거 십 년 걸려. 설레발이야.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\nThe line \"남의 동네에 역이 생긴다고? 그거 십 년 걸려. 설레발이야.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 이 라운드. 호재와 현수막.\nSpeaker 1: 남의 동네에 역이 생긴다고? 그거 십 년 걸려. 설레발이야."
+    },
+    {
+      "cut": "c03a",
+      "save": "qna/content/nm04-realestate/voice/studio/c03a.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "아빠, 우리 동네에도 역 생긴대!",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "확정이야, 확정! 역 생기고, 백화점 생기고, 황금 집이다!",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: His eight-year-old child: bright, curious, high-pitched.\nThe line \"확정이야, 확정! 역 생기고, 백화점 생기고, 황금 집이다!\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 2: 아빠, 우리 동네에도 역 생긴대!\nSpeaker 1: 확정이야, 확정! 역 생기고, 백화점 생기고, 황금 집이다!"
+    },
+    {
+      "cut": "c03b",
+      "save": "qna/content/nm04-realestate/voice/studio/c03b.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Vindemiatrix",
+          "who": "공인중개사 사장님 (내모남불)",
+          "style": "A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "realtor",
+          "text": "현수막은, 확정이 아닙니다.",
+          "style": "A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "보고 싶은 소식만 믿는 것, 확증 편향. 내모남불, 셋.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry.\n\nSpeaker 2: 현수막은, 확정이 아닙니다.\nSpeaker 1: 보고 싶은 소식만 믿는 것, 확증 편향. 내모남불, 셋."
+    },
+    {
+      "cut": "c03c",
+      "save": "qna/content/nm04-realestate/voice/studio/c03c.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Kore",
+          "who": "엄마",
+          "style": "The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "옆 동네에 소각장? 꼭 필요한 시설이지. 반대하면 이기적이야.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "mom",
+          "text": "여보, 그거 우리 동네래.",
+          "style": "The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding.\nThe line \"옆 동네에 소각장? 꼭 필요한 시설이지. 반대하면 이기적이야.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 옆 동네에 소각장? 꼭 필요한 시설이지. 반대하면 이기적이야.\nSpeaker 2: 여보, 그거 우리 동네래."
+    },
+    {
+      "cut": "c03d",
+      "save": "qna/content/nm04-realestate/voice/studio/c03d.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "결사반대! 우리 동네는 절대 안 돼!",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "내 뒷마당만은 안 된다, 님비. 내모남불, 넷.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\nThe line \"결사반대! 우리 동네는 절대 안 돼!\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 결사반대! 우리 동네는 절대 안 돼!\nSpeaker 1: 내 뒷마당만은 안 된다, 님비. 내모남불, 넷."
+    },
+    {
+      "cut": "c03e",
+      "save": "qna/content/nm04-realestate/voice/studio/c03e.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Vindemiatrix",
+          "who": "공인중개사 사장님 (내모남불)",
+          "style": "A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "realtor",
+          "text": "다들 우리 동네는 안 된다시면… 어디에 짓죠?",
+          "style": "A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry.\n\nSpeaker 1: 다들 우리 동네는 안 된다시면… 어디에 짓죠?"
+    },
+    {
+      "cut": "c04",
+      "save": "qna/content/nm04-realestate/voice/studio/c04.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Puck",
+          "who": "아빠 친구 (내모남불)",
+          "style": "The dad's old high-school friend, a Korean man in his mid-forties on a video call: whiny, sniffling and comically heartbroken, a little nasal, overly dramatic but harmless"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "삼 라운드. 영끌과 이자.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "buddy",
+          "text": "야, 나도 집 샀다. 영끌로.",
+          "style": "The dad's old high-school friend, a Korean man in his mid-forties on a video call: whiny, sniffling and comically heartbroken, a little nasal, overly dramatic but harmless"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: The dad's old high-school friend, a Korean man in his mid-forties on a video call: whiny, sniffling and comically heartbroken, a little nasal, overly dramatic but harmless.\n\nSpeaker 1: 삼 라운드. 영끌과 이자.\nSpeaker 2: 야, 나도 집 샀다. 영끌로."
+    },
+    {
+      "cut": "c04a",
+      "save": "qna/content/nm04-realestate/voice/studio/c04a.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Kore",
+          "who": "엄마",
+          "style": "The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "영끌? 무리했네. 이자 감당 되겠어?",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "mom",
+          "text": "우리도 대출 끝까지 받았잖아.",
+          "style": "The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding.\nThe line \"영끌? 무리했네. 이자 감당 되겠어?\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 영끌? 무리했네. 이자 감당 되겠어?\nSpeaker 2: 우리도 대출 끝까지 받았잖아."
+    },
+    {
+      "cut": "c04b",
+      "save": "qna/content/nm04-realestate/voice/studio/c04b.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "우리 건 레버리지야. 전략이지. 모 어때~",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "아빠, 전에 월세는 버리는 돈이랬잖아.",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: His eight-year-old child: bright, curious, high-pitched.\nThe line \"우리 건 레버리지야. 전략이지. 모 어때~\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 우리 건 레버리지야. 전략이지. 모 어때~\nSpeaker 2: 아빠, 전에 월세는 버리는 돈이랬잖아."
+    },
+    {
+      "cut": "c04c",
+      "save": "qna/content/nm04-realestate/voice/studio/c04c.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "이자는 달라! 이건… 투자 비용이야!",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "남이 하면 영끌, 내가 하면 레버리지. 내모남불, 다섯, 여섯.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\nThe line \"이자는 달라! 이건… 투자 비용이야!\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 이자는 달라! 이건… 투자 비용이야!\nSpeaker 1: 남이 하면 영끌, 내가 하면 레버리지. 내모남불, 다섯, 여섯."
+    },
+    {
+      "cut": "c04d",
+      "save": "qna/content/nm04-realestate/voice/studio/c04d.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Vindemiatrix",
+          "who": "공인중개사 사장님 (내모남불)",
+          "style": "A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "realtor",
+          "text": "나만은 괜찮을 거라는 믿음. 낙관 편향이라고 합니다.",
+          "style": "A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "…네?",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry.\nThe line \"…네?\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 2: 나만은 괜찮을 거라는 믿음. 낙관 편향이라고 합니다.\nSpeaker 1: …네?"
+    },
+    {
+      "cut": "c05",
+      "save": "qna/content/nm04-realestate/voice/studio/c05.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "보너스 라운드. 속사포 내모남불!",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "남의 단지는 복잡하고, 우리 단지는 대단지!",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "남이 전세 올리면 너무하고, 내가 올리면 시세대로!",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "남의 현수막은 흉하고, 우리 현수막은 단합!",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "내모남불, 일곱, 여덟, 아홉!",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\nThe line \"남의 단지는 복잡하고, 우리 단지는 대단지!\" is the dad speaking inside the scene, acted out, not narration.\nThe line \"남이 전세 올리면 너무하고, 내가 올리면 시세대로!\" is the dad speaking inside the scene, acted out, not narration.\nThe line \"남의 현수막은 흉하고, 우리 현수막은 단합!\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 보너스 라운드. 속사포 내모남불!\nSpeaker 1: 남의 단지는 복잡하고, 우리 단지는 대단지!\nSpeaker 1: 남이 전세 올리면 너무하고, 내가 올리면 시세대로!\nSpeaker 1: 남의 현수막은 흉하고, 우리 현수막은 단합!\nSpeaker 1: 내모남불, 일곱, 여덟, 아홉!"
+    },
+    {
+      "cut": "c06",
+      "save": "qna/content/nm04-realestate/voice/studio/c06.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "아빠, 우리 집 올랐어? 내렸어?",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "…글쎄. 매일 보느라 바빴는데, 모르겠다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "올라도 내려도, 내 방은 그대로야. 나는 이 놀이터가 좋아.",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "…그러네. 사는 집이지, 숫자가 아니지.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: His eight-year-old child: bright, curious, high-pitched.\nThe line \"…글쎄. 매일 보느라 바빴는데, 모르겠다.\" is the dad speaking inside the scene, acted out, not narration.\nThe line \"…그러네. 사는 집이지, 숫자가 아니지.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 2: 아빠, 우리 집 올랐어? 내렸어?\nSpeaker 1: …글쎄. 매일 보느라 바빴는데, 모르겠다.\nSpeaker 2: 올라도 내려도, 내 방은 그대로야. 나는 이 놀이터가 좋아.\nSpeaker 1: …그러네. 사는 집이지, 숫자가 아니지."
+    },
+    {
+      "cut": "c07",
+      "save": "qna/content/nm04-realestate/voice/studio/c07.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Vindemiatrix",
+          "who": "공인중개사 사장님 (내모남불)",
+          "style": "A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "내가 딱 꼭대기에서 판 거야. 이제 폭락할 거야.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "realtor",
+          "text": "고객님 파신 집, 또 올랐습니다.",
+          "style": "A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry.\nThe line \"내가 딱 꼭대기에서 판 거야. 이제 폭락할 거야.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 내가 딱 꼭대기에서 판 거야. 이제 폭락할 거야.\nSpeaker 2: 고객님 파신 집, 또 올랐습니다."
+    },
+    {
+      "cut": "c07a",
+      "save": "qna/content/nm04-realestate/voice/studio/c07a.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "…거품이야, 거품.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "못 딴 포도는 시다. 신 포도. 내모남불, 열.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\nThe line \"…거품이야, 거품.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: …거품이야, 거품.\nSpeaker 1: 못 딴 포도는 시다. 신 포도. 내모남불, 열."
+    },
+    {
+      "cut": "c07b",
+      "save": "qna/content/nm04-realestate/voice/studio/c07b.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Vindemiatrix",
+          "who": "공인중개사 사장님 (내모남불)",
+          "style": "A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "realtor",
+          "text": "그 말씀, 일 년 전에도 하셨습니다.",
+          "style": "A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "꼭대기가 아니었습니다. 이건 내모남불이 아닙니다. 그냥 오답.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry.\n\nSpeaker 2: 그 말씀, 일 년 전에도 하셨습니다.\nSpeaker 1: 꼭대기가 아니었습니다. 이건 내모남불이 아닙니다. 그냥 오답."
+    },
+    {
+      "cut": "c07c",
+      "save": "qna/content/nm04-realestate/voice/studio/c07c.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "…역시, 모답맨.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\nThe line \"…역시, 모답맨.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: …역시, 모답맨."
+    }
+  ]
+}

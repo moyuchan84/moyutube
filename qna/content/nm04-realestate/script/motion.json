@@ -1,0 +1,3120 @@
+{
+  "id": "Nm04-Naemonambul",
+  "episode": "nm04",
+  "voice": "nm04",
+  "bgm": "cheerful",
+  "gap": 0,
+  "chop": 40,
+  "counter": "내모남불",
+  "thumb": {
+    "badge": "내모남불 ④ 부동산편",
+    "countLabel": "내모남불",
+    "count": 10,
+    "layers": [
+      {
+        "bg": "split:#8FD3FF:#FF9F43",
+        "x": 430
+      },
+      {
+        "fx": "lines",
+        "x": 880,
+        "y": 400
+      },
+      {
+        "img": "full/stamp-slam",
+        "panel": [
+          0.38,
+          0.42,
+          2
+        ],
+        "x": 880,
+        "y": 430,
+        "w": 700,
+        "h": 500,
+        "rot": 3
+      },
+      {
+        "fx": "kira",
+        "x": 880,
+        "y": 330
+      },
+      {
+        "img": "cutin/dad-sour",
+        "sticker": true,
+        "x": 235,
+        "y": 520,
+        "h": 420,
+        "rot": -7
+      },
+      {
+        "text": "사기 전엔",
+        "x": 235,
+        "y": 150,
+        "size": 70,
+        "rot": -6
+      },
+      {
+        "text": "거품!",
+        "style": "bubble",
+        "fill": "#FFFFFF",
+        "x": 250,
+        "y": 290,
+        "size": 96,
+        "rot": -4,
+        "tail": "b"
+      },
+      {
+        "text": "사고 나면",
+        "x": 860,
+        "y": 120,
+        "size": 70,
+        "rot": 3
+      },
+      {
+        "text": "바닥~",
+        "style": "stamp",
+        "x": 1060,
+        "y": 640,
+        "size": 96,
+        "rot": -8
+      }
+    ]
+  },
+  "beats": [
+    {
+      "line": "c00-0",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "#0A1218",
+          "text": [
+            {
+              "t": "▲ 시세 | ▲▲ 또 올라 | ▲ ○억 | ▲ 비싸다 | ▼ 떨어져라",
+              "style": "ticker"
+            }
+          ],
+          "props": [
+            {
+              "art": "prop/listing-sheet",
+              "x": 0.5,
+              "y": 0.45,
+              "w": 0.32,
+              "enter": "drop",
+              "rot": -4
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "pang"
+            }
+          ]
+        },
+        {
+          "at": 0.35,
+          "in": "whip-r",
+          "bg": "full/window-bubble",
+          "cam": {
+            "from": [
+              0.45,
+              0.4,
+              1.5
+            ],
+            "to": [
+              0.47,
+              0.38,
+              1.75
+            ],
+            "ease": "snap"
+          },
+          "text": [
+            {
+              "t": "거품!!",
+              "x": 0.72,
+              "y": 0.2,
+              "size": 170,
+              "color": "#7FC8F8",
+              "style": "slam"
+            }
+          ],
+          "fx": [
+            "focus"
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        },
+        {
+          "at": 0.72,
+          "in": "zoom",
+          "bg": "stripes:#7FC8F8:#B9E2FA",
+          "cast": [
+            {
+              "art": "common/cutin/dad-shock",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "dad"
+            }
+          ],
+          "freeze": 0.3,
+          "tag": {
+            "t": "사기 전",
+            "sub": "거품~",
+            "x": 0.8,
+            "y": 0.25
+          },
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00a-0",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "bg/realtor-office",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.48,
+              1.15
+            ]
+          },
+          "cast": [
+            {
+              "art": "realtor/stamp",
+              "x": 0.5,
+              "h": 0.92,
+              "enter": "pop",
+              "talk": "realtor"
+            }
+          ],
+          "text": [
+            {
+              "t": "계약서",
+              "x": 0.2,
+              "y": 0.3,
+              "size": 100,
+              "style": "pop",
+              "at": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00a-1",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "full/stamp-slam",
+          "cam": {
+            "from": [
+              0.4,
+              0.5,
+              1.4
+            ],
+            "to": [
+              0.4,
+              0.55,
+              1.6
+            ],
+            "punch": [
+              3,
+              8
+            ]
+          },
+          "text": [
+            {
+              "t": "쾅!",
+              "x": 0.3,
+              "y": 0.72,
+              "size": 200,
+              "color": "#E63946",
+              "style": "stamp"
+            }
+          ],
+          "fx": [
+            "impact",
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "stamp"
+            },
+            {
+              "name": "crash",
+              "at": 3
+            }
+          ]
+        },
+        {
+          "at": 0.5,
+          "in": "zoom",
+          "bg": "stripes:#FFD23F:#FFE680",
+          "cast": [
+            {
+              "art": "common/cutin/dad-proud",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "dad"
+            }
+          ],
+          "freeze": 0.5,
+          "tag": {
+            "t": "산 뒤",
+            "sub": "이제 오른다~",
+            "x": 0.8,
+            "y": 0.25
+          },
+          "fx": [
+            "aura",
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00b-0",
+      "count": 1,
+      "countAt": 0.8,
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "#15303A",
+          "text": [
+            {
+              "t": "사기 전엔",
+              "y": 0.3,
+              "size": 120
+            },
+            {
+              "t": "거품",
+              "y": 0.55,
+              "size": 220,
+              "color": "#7FC8F8",
+              "style": "slam",
+              "at": 0.08
+            }
+          ]
+        },
+        {
+          "at": 0.36,
+          "in": "whip-r",
+          "bg": "#15303A",
+          "text": [
+            {
+              "t": "사고 나면",
+              "y": 0.3,
+              "size": 120
+            },
+            {
+              "t": "바닥",
+              "y": 0.55,
+              "size": 220,
+              "color": "#FFD23F",
+              "style": "stamp",
+              "at": 0.12
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.12
+            }
+          ]
+        },
+        {
+          "at": 0.72,
+          "in": "slam",
+          "bg": "burst:#FFD23F:#FFB627",
+          "text": [
+            {
+              "t": "내모남불, 하나.",
+              "y": 0.45,
+              "size": 170,
+              "style": "slam"
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "buzz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00b-1",
+      "pad": 6,
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "full/stamp-slam",
+          "cam": {
+            "from": [
+              0.4,
+              0.4,
+              1.6
+            ],
+            "to": [
+              0.4,
+              0.36,
+              2.1
+            ],
+            "ease": "snap"
+          },
+          "text": [
+            {
+              "t": "모답맨",
+              "x": 0.5,
+              "y": 0.82,
+              "size": 120,
+              "color": "#FFD23F",
+              "style": "pop",
+              "at": 0.4
+            }
+          ],
+          "fx": [
+            "focus",
+            "kira"
+          ]
+        }
+      ]
+    },
+    {
+      "hold": 60,
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "burst:#FFD23F:#FFB627",
+          "text": [
+            {
+              "t": "내가 하면 모 어때",
+              "y": 0.25,
+              "size": 120,
+              "style": "slam"
+            },
+            {
+              "t": "남이 하면 불—",
+              "x": 0.45,
+              "y": 0.48,
+              "size": 140,
+              "style": "pop",
+              "at": 14
+            },
+            {
+              "t": "패!",
+              "x": 0.8,
+              "y": 0.48,
+              "size": 170,
+              "style": "stamp",
+              "at": 30
+            },
+            {
+              "t": "내모남불 ④ 부동산편",
+              "y": 0.74,
+              "size": 84,
+              "color": "#15303A",
+              "style": "pop",
+              "at": 42
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "pang"
+            },
+            {
+              "name": "stamp",
+              "at": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c01-0",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "bg/realtor-office",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.02
+            ],
+            "to": [
+              0.5,
+              0.45,
+              1.15
+            ]
+          },
+          "props": [
+            {
+              "art": "prop/listing-sheet",
+              "x": 0.8,
+              "y": 0.42,
+              "w": 0.22,
+              "enter": "drop",
+              "rot": 8,
+              "at": 0.4
+            }
+          ],
+          "text": [
+            {
+              "t": "토요일 오전 · 동네 부동산",
+              "style": "news"
+            },
+            {
+              "t": "전세 만기 D-60",
+              "x": 0.8,
+              "y": 0.7,
+              "size": 80,
+              "color": "#E63946",
+              "style": "stamp",
+              "at": 0.6
+            }
+          ],
+          "sfx": [
+            {
+              "name": "tick"
+            },
+            {
+              "name": "stamp",
+              "at": 0.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c01-1",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "dots:#C9B6E4:#B39DDB",
+          "cast": [
+            {
+              "art": "common/cutin/mom-sigh",
+              "x": 0.32,
+              "h": 1.02,
+              "talk": "mom"
+            }
+          ],
+          "text": [
+            {
+              "t": "보러만 온다며?!",
+              "x": 0.72,
+              "y": 0.4,
+              "size": 120,
+              "style": "stamp",
+              "at": 0.3
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c01-2",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "full/stamp-slam",
+          "cam": {
+            "from": [
+              0.4,
+              0.45,
+              1.5
+            ],
+            "to": [
+              0.4,
+              0.42,
+              1.7
+            ]
+          },
+          "freeze": 0.55,
+          "tag": {
+            "t": "내모남불 후보",
+            "sub": "자칭 투자왕",
+            "x": 0.78,
+            "y": 0.25
+          },
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 0.55
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c01a-0",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "bg/realtor-office",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.15
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.25
+            ]
+          },
+          "cast": [
+            {
+              "art": "realtor/calculator",
+              "x": 0.55,
+              "h": 0.92,
+              "enter": "pop",
+              "talk": "realtor"
+            }
+          ],
+          "text": [
+            {
+              "t": "⏱ 1분 전",
+              "x": 0.2,
+              "y": 0.35,
+              "size": 110,
+              "style": "stamp",
+              "at": 0.2
+            }
+          ],
+          "fx": [
+            "gaan"
+          ],
+          "sfx": [
+            {
+              "name": "crash"
+            },
+            {
+              "name": "stamp",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-0",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "burst:#15303A:#22485A",
+          "text": [
+            {
+              "t": "ROUND 1",
+              "y": 0.36,
+              "size": 190,
+              "style": "slam"
+            },
+            {
+              "t": "🏷 호가",
+              "y": 0.6,
+              "size": 120,
+              "color": "#FFD23F",
+              "style": "pop",
+              "at": 0.25
+            },
+            {
+              "t": "한 달 뒤",
+              "style": "news"
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "pang"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-1",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "dots:#7FC8F8:#5AB0E8",
+          "cast": [
+            {
+              "art": "common/cutin/kid-ask",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "kid"
+            }
+          ],
+          "text": [
+            {
+              "t": "호가?",
+              "x": 0.78,
+              "y": 0.3,
+              "size": 140,
+              "style": "shake"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02a-0",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "#F6EEDF",
+          "props": [
+            {
+              "art": "prop/listing-sheet",
+              "x": 0.7,
+              "y": 0.42,
+              "w": 0.3,
+              "enter": "pop",
+              "rot": 5
+            }
+          ],
+          "cast": [
+            {
+              "art": "common/dad/proud",
+              "x": 0.28,
+              "h": 0.95,
+              "enter": "l",
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "남의 호가",
+              "x": 0.7,
+              "y": 0.14,
+              "size": 80
+            },
+            {
+              "t": "희망 사항~",
+              "x": 0.7,
+              "y": 0.78,
+              "size": 100,
+              "color": "#2E86DE",
+              "style": "pop",
+              "at": 0.2
+            }
+          ]
+        },
+        {
+          "at": 0.55,
+          "in": "zoom",
+          "bg": "#0A1218",
+          "text": [
+            {
+              "t": "거래량",
+              "y": 0.3,
+              "size": 120
+            },
+            {
+              "t": "0",
+              "y": 0.58,
+              "size": 260,
+              "color": "#7FC8F8",
+              "style": "stamp",
+              "at": 0.1
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 0.1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02b-0",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "#0A1218",
+          "chart": {
+            "dir": "up",
+            "label": "옆 동 호가"
+          },
+          "sfx": [
+            {
+              "name": "ding",
+              "at": 18
+            }
+          ]
+        },
+        {
+          "at": 0.5,
+          "in": "slam",
+          "bg": "burst:#FF8FB1:#FF6F9A",
+          "cast": [
+            {
+              "art": "cutin/dad-sparkle",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "dad"
+            }
+          ],
+          "fx": [
+            "kira",
+            "focus"
+          ],
+          "sfx": [
+            {
+              "name": "pang"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02b-1",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "stripes:#FFD23F:#FFE680",
+          "cast": [
+            {
+              "art": "cutin/dad-sparkle",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "dad"
+            }
+          ],
+          "freeze": 0.6,
+          "tag": {
+            "t": "우리 호가",
+            "sub": "= 시세~",
+            "x": 0.8,
+            "y": 0.25
+          },
+          "fx": [
+            "aura",
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 0.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02b-2",
+      "count": 2,
+      "countAt": 0.78,
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "#15303A",
+          "text": [
+            {
+              "t": "남의 호가",
+              "x": 0.27,
+              "y": 0.3,
+              "size": 100
+            },
+            {
+              "t": "희망 사항",
+              "x": 0.27,
+              "y": 0.52,
+              "size": 120,
+              "color": "#7FC8F8",
+              "style": "slam",
+              "at": 0.1
+            },
+            {
+              "t": "우리 호가",
+              "x": 0.73,
+              "y": 0.3,
+              "size": 100,
+              "at": 0.3
+            },
+            {
+              "t": "시세",
+              "x": 0.73,
+              "y": 0.52,
+              "size": 170,
+              "color": "#FFD23F",
+              "style": "stamp",
+              "at": 0.4
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.4
+            }
+          ]
+        },
+        {
+          "at": 0.72,
+          "in": "slam",
+          "bg": "burst:#FFD23F:#FFB627",
+          "text": [
+            {
+              "t": "내모남불, 둘.",
+              "y": 0.45,
+              "size": 170,
+              "style": "slam"
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "buzz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02c-0",
+      "shots": [
+        {
+          "in": "glitch",
+          "bg": "#F6EEDF",
+          "text": [
+            {
+              "t": "내 것은",
+              "y": 0.25,
+              "size": 110
+            },
+            {
+              "t": "더 비싸 보인다",
+              "y": 0.46,
+              "size": 150,
+              "color": "#E63946",
+              "style": "slam",
+              "at": 0.2
+            },
+            {
+              "t": "보유 효과",
+              "y": 0.7,
+              "size": 110,
+              "style": "stamp",
+              "at": 0.6
+            }
+          ],
+          "note": "※ 행동경제학 용어 · endowment effect (Thaler, 1980)",
+          "sfx": [
+            {
+              "name": "ding",
+              "at": 0.15
+            },
+            {
+              "name": "stamp",
+              "at": 0.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02c-1",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "dots:#7FC8F8:#5AB0E8",
+          "cast": [
+            {
+              "art": "common/cutin/kid-ask",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "kid"
+            }
+          ],
+          "text": [
+            {
+              "t": "?",
+              "x": 0.78,
+              "y": 0.3,
+              "size": 200,
+              "style": "shake"
+            }
+          ],
+          "fx": [
+            "gaan"
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02d-0",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "dots:#B2C7D9:#9FB6CA",
+          "chat": {
+            "title": "우리 단지 주민방",
+            "x": 0.5,
+            "msgs": [
+              {
+                "who": "302동",
+                "t": "○억 아래로는 내놓지 맙시다 🙏"
+              },
+              {
+                "who": "1105호",
+                "t": "동의합니다!"
+              },
+              {
+                "who": "808호",
+                "t": "우리 단지 자존심~"
+              },
+              {
+                "who": "나",
+                "t": "👍 좋아요!",
+                "me": true
+              }
+            ]
+          },
+          "sfx": [
+            {
+              "name": "beep",
+              "at": 6
+            },
+            {
+              "name": "beep",
+              "at": 15
+            },
+            {
+              "name": "beep",
+              "at": 24
+            },
+            {
+              "name": "beep",
+              "at": 33
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02d-1",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "#F6EEDF",
+          "cast": [
+            {
+              "art": "cutin/realtor-flat",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "realtor"
+            }
+          ],
+          "fx": [
+            "gaan"
+          ],
+          "sfx": [
+            {
+              "name": "crash"
+            }
+          ]
+        },
+        {
+          "at": 0.4,
+          "in": "glitch",
+          "bg": "#F6EEDF",
+          "text": [
+            {
+              "t": "가격 맞추자고 유도",
+              "y": 0.26,
+              "size": 100
+            },
+            {
+              "t": "= 집값 담합",
+              "y": 0.47,
+              "size": 150,
+              "color": "#E63946",
+              "style": "slam",
+              "at": 0.1
+            },
+            {
+              "t": "법으로 금지",
+              "y": 0.7,
+              "size": 110,
+              "style": "stamp",
+              "at": 0.45
+            }
+          ],
+          "mark": {
+            "kind": "x",
+            "at": 0.3
+          },
+          "note": "※ 공인중개사법 제33조 제2항 (2020년 시행) · 일반 설명",
+          "sfx": [
+            {
+              "name": "buzz",
+              "at": 0.3
+            },
+            {
+              "name": "stamp",
+              "at": 0.45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-0",
+      "shots": [
+        {
+          "in": "glitch",
+          "bg": "burst:#15303A:#22485A",
+          "text": [
+            {
+              "t": "ROUND 2",
+              "y": 0.36,
+              "size": 190,
+              "style": "slam"
+            },
+            {
+              "t": "📢 호재 · 현수막",
+              "y": 0.6,
+              "size": 120,
+              "color": "#FFD23F",
+              "style": "pop",
+              "at": 0.25
+            },
+            {
+              "t": "석 달 뒤",
+              "style": "news"
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "pang"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-1",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "#F6EEDF",
+          "props": [
+            {
+              "art": "prop/station",
+              "x": 0.72,
+              "y": 0.45,
+              "w": 0.32,
+              "enter": "pop"
+            }
+          ],
+          "cast": [
+            {
+              "art": "common/dad/proud",
+              "x": 0.28,
+              "h": 0.95,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "남의 동네 역?",
+              "x": 0.72,
+              "y": 0.12,
+              "size": 80
+            },
+            {
+              "t": "10년 걸려~",
+              "x": 0.72,
+              "y": 0.8,
+              "size": 100,
+              "color": "#2E86DE",
+              "style": "pop",
+              "at": 0.35
+            }
+          ]
+        },
+        {
+          "at": 0.65,
+          "in": "zoom",
+          "bg": "stripes:#7FC8F8:#B9E2FA",
+          "cast": [
+            {
+              "art": "common/cutin/dad-proud",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "dad"
+            }
+          ],
+          "freeze": 0.4,
+          "tag": {
+            "t": "남의 호재",
+            "sub": "설레발~",
+            "x": 0.8,
+            "y": 0.25
+          },
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03a-0",
+      "shots": [
+        {
+          "in": "whip-u",
+          "bg": "bg/complex-gate",
+          "cam": {
+            "from": [
+              0.5,
+              0.65,
+              1.1
+            ],
+            "to": [
+              0.3,
+              0.45,
+              1.45
+            ]
+          },
+          "cast": [
+            {
+              "art": "common/kid/normal",
+              "x": 0.62,
+              "h": 0.7,
+              "y": 0.98,
+              "enter": "b",
+              "talk": "kid"
+            }
+          ],
+          "text": [
+            {
+              "t": "모라구역 유치 확정!",
+              "x": 0.2,
+              "y": 0.42,
+              "size": 46,
+              "color": "#E63946",
+              "rot": -2,
+              "at": 0.15
+            }
+          ],
+          "sfx": [
+            {
+              "name": "slide",
+              "at": 0.15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03a-1",
+      "shots": [
+        {
+          "in": "whip-u",
+          "bg": "full/station-imagine",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.45,
+              1.2
+            ]
+          },
+          "text": [
+            {
+              "t": "확정!!",
+              "x": 0.2,
+              "y": 0.2,
+              "size": 150,
+              "color": "#FFD23F",
+              "style": "slam"
+            }
+          ],
+          "fx": [
+            "imagine",
+            "lines",
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "dudung"
+            }
+          ]
+        },
+        {
+          "at": 0.55,
+          "in": "zoom",
+          "bg": "full/station-imagine",
+          "cam": {
+            "from": [
+              0.55,
+              0.3,
+              1.6
+            ],
+            "to": [
+              0.55,
+              0.28,
+              1.9
+            ]
+          },
+          "text": [
+            {
+              "t": "황금 집!",
+              "x": 0.5,
+              "y": 0.82,
+              "size": 140,
+              "color": "#FFD23F",
+              "style": "stamp"
+            }
+          ],
+          "fx": [
+            "imagine",
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "ding"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03b-0",
+      "shots": [
+        {
+          "in": "glitch",
+          "bg": "full/station-imagine",
+          "fx": [
+            "mono"
+          ],
+          "mark": {
+            "kind": "x",
+            "at": 0.05
+          }
+        },
+        {
+          "at": 0.25,
+          "in": "slam",
+          "bg": "#F6EEDF",
+          "cast": [
+            {
+              "art": "cutin/realtor-flat",
+              "x": 0.32,
+              "h": 1.02,
+              "talk": "realtor"
+            }
+          ],
+          "text": [
+            {
+              "t": "현수막",
+              "x": 0.74,
+              "y": 0.32,
+              "size": 110
+            },
+            {
+              "t": "≠ 확정",
+              "x": 0.74,
+              "y": 0.55,
+              "size": 150,
+              "color": "#E63946",
+              "style": "stamp",
+              "at": 0.2
+            }
+          ],
+          "fx": [
+            "gaan"
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03b-1",
+      "count": 3,
+      "countAt": 0.8,
+      "shots": [
+        {
+          "in": "glitch",
+          "bg": "#F6EEDF",
+          "text": [
+            {
+              "t": "보고 싶은 소식만",
+              "y": 0.25,
+              "size": 110
+            },
+            {
+              "t": "믿는다",
+              "y": 0.46,
+              "size": 160,
+              "color": "#E63946",
+              "style": "slam",
+              "at": 0.2
+            },
+            {
+              "t": "확증 편향",
+              "y": 0.7,
+              "size": 110,
+              "style": "stamp",
+              "at": 0.6
+            }
+          ],
+          "note": "※ 인지심리학 용어 · confirmation bias (Wason, 1960)",
+          "sfx": [
+            {
+              "name": "ding",
+              "at": 0.15
+            },
+            {
+              "name": "stamp",
+              "at": 0.6
+            }
+          ]
+        },
+        {
+          "at": 0.75,
+          "in": "slam",
+          "bg": "burst:#FFD23F:#FFB627",
+          "text": [
+            {
+              "t": "내모남불, 셋.",
+              "y": 0.45,
+              "size": 170,
+              "style": "slam"
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "buzz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03c-0",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "#F6EEDF",
+          "props": [
+            {
+              "art": "prop/incinerator",
+              "x": 0.72,
+              "y": 0.45,
+              "w": 0.32,
+              "enter": "pop"
+            }
+          ],
+          "cast": [
+            {
+              "art": "common/dad/proud",
+              "x": 0.28,
+              "h": 0.95,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "옆 동네 소각장?",
+              "x": 0.72,
+              "y": 0.12,
+              "size": 80
+            },
+            {
+              "t": "꼭 필요하지~",
+              "x": 0.72,
+              "y": 0.8,
+              "size": 100,
+              "color": "#2E86DE",
+              "style": "pop",
+              "at": 0.35
+            }
+          ]
+        },
+        {
+          "at": 0.65,
+          "in": "zoom",
+          "bg": "stripes:#7FC8F8:#B9E2FA",
+          "cast": [
+            {
+              "art": "common/cutin/dad-proud",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "dad"
+            }
+          ],
+          "freeze": 0.4,
+          "tag": {
+            "t": "남의 동네",
+            "sub": "필요한 시설~",
+            "x": 0.8,
+            "y": 0.25
+          },
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03c-1",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "dots:#C9B6E4:#B39DDB",
+          "cast": [
+            {
+              "art": "common/cutin/mom-smirk",
+              "x": 0.32,
+              "h": 1.02,
+              "talk": "mom"
+            }
+          ],
+          "text": [
+            {
+              "t": "우리 동네래",
+              "x": 0.72,
+              "y": 0.42,
+              "size": 130,
+              "style": "stamp",
+              "at": 0.35
+            }
+          ],
+          "sfx": [
+            {
+              "name": "scratch"
+            },
+            {
+              "name": "stamp",
+              "at": 0.35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03d-0",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "full/banner-oppose",
+          "cam": {
+            "from": [
+              0.45,
+              0.4,
+              1.3
+            ],
+            "to": [
+              0.45,
+              0.38,
+              1.5
+            ],
+            "punch": [
+              4,
+              10
+            ]
+          },
+          "text": [
+            {
+              "t": "결사반대!!",
+              "x": 0.5,
+              "y": 0.14,
+              "size": 160,
+              "color": "#E63946",
+              "style": "slam"
+            }
+          ],
+          "fx": [
+            "impact",
+            "focus",
+            "shake"
+          ],
+          "sfx": [
+            {
+              "name": "crash"
+            }
+          ]
+        },
+        {
+          "at": 0.55,
+          "in": "zoom",
+          "bg": "burst:#E63946:#B5202D",
+          "cast": [
+            {
+              "art": "common/cutin/dad-shock",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "dad"
+            }
+          ],
+          "freeze": 0.4,
+          "tag": {
+            "t": "우리 동네",
+            "sub": "절대 안 돼!",
+            "x": 0.8,
+            "y": 0.25
+          },
+          "fx": [
+            "aura"
+          ],
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03d-1",
+      "count": 4,
+      "countAt": 0.78,
+      "shots": [
+        {
+          "in": "glitch",
+          "bg": "#F6EEDF",
+          "text": [
+            {
+              "t": "필요한 건 알지만",
+              "y": 0.25,
+              "size": 110
+            },
+            {
+              "t": "내 뒷마당만은 ✕",
+              "y": 0.46,
+              "size": 150,
+              "color": "#E63946",
+              "style": "slam",
+              "at": 0.2
+            },
+            {
+              "t": "님비 (NIMBY)",
+              "y": 0.7,
+              "size": 110,
+              "style": "stamp",
+              "at": 0.6
+            }
+          ],
+          "note": "※ Not In My Back Yard · 사회 현상 용어",
+          "sfx": [
+            {
+              "name": "ding",
+              "at": 0.15
+            },
+            {
+              "name": "stamp",
+              "at": 0.6
+            }
+          ]
+        },
+        {
+          "at": 0.72,
+          "in": "slam",
+          "bg": "burst:#FFD23F:#FFB627",
+          "text": [
+            {
+              "t": "내모남불, 넷.",
+              "y": 0.45,
+              "size": 170,
+              "style": "slam"
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "buzz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03e-0",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "#F6EEDF",
+          "cast": [
+            {
+              "art": "cutin/realtor-flat",
+              "x": 0.3,
+              "h": 1.02,
+              "talk": "realtor"
+            }
+          ],
+          "props": [
+            {
+              "art": "prop/incinerator",
+              "x": 0.75,
+              "y": 0.5,
+              "w": 0.26,
+              "enter": "pop",
+              "spin": true,
+              "at": 0.3
+            }
+          ],
+          "text": [
+            {
+              "t": "그럼… 어디에?",
+              "x": 0.75,
+              "y": 0.18,
+              "size": 110,
+              "style": "pop",
+              "at": 0.5
+            }
+          ],
+          "fx": [
+            "gaan"
+          ],
+          "sfx": [
+            {
+              "name": "crash"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-0",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "burst:#15303A:#22485A",
+          "text": [
+            {
+              "t": "ROUND 3",
+              "y": 0.36,
+              "size": 190,
+              "style": "slam"
+            },
+            {
+              "t": "💸 영끌 · 이자",
+              "y": 0.6,
+              "size": 120,
+              "color": "#FFD23F",
+              "style": "pop",
+              "at": 0.25
+            },
+            {
+              "t": "반년 뒤",
+              "style": "news"
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "pang"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-1",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "dots:#6B8CA8:#5A7894",
+          "cast": [
+            {
+              "art": "buddy/call-key",
+              "x": 0.4,
+              "h": 0.98,
+              "enter": "pop",
+              "talk": "buddy"
+            }
+          ],
+          "props": [
+            {
+              "art": "prop/house-key",
+              "x": 0.78,
+              "y": 0.55,
+              "w": 0.22,
+              "enter": "pop",
+              "spin": true,
+              "at": 0.3
+            }
+          ],
+          "text": [
+            {
+              "t": "📱 영상통화",
+              "x": 0.78,
+              "y": 0.18,
+              "size": 80,
+              "style": "pop"
+            },
+            {
+              "t": "영끌!",
+              "x": 0.78,
+              "y": 0.32,
+              "size": 120,
+              "color": "#FFD23F",
+              "style": "stamp",
+              "at": 0.6
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "beep"
+            },
+            {
+              "name": "stamp",
+              "at": 0.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04a-0",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "bg/realtor-office",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.1
+            ],
+            "to": [
+              0.45,
+              0.5,
+              1.2
+            ]
+          },
+          "cast": [
+            {
+              "art": "common/dad/proud",
+              "x": 0.4,
+              "h": 0.95,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "무리했네~",
+              "x": 0.75,
+              "y": 0.3,
+              "size": 120,
+              "color": "#2E86DE",
+              "style": "pop",
+              "at": 0.2
+            }
+          ]
+        },
+        {
+          "at": 0.6,
+          "in": "zoom",
+          "bg": "stripes:#7FC8F8:#B9E2FA",
+          "cast": [
+            {
+              "art": "common/cutin/dad-proud",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "dad"
+            }
+          ],
+          "freeze": 0.3,
+          "tag": {
+            "t": "남이 하면",
+            "sub": "영끌~",
+            "x": 0.8,
+            "y": 0.25
+          },
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04a-1",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "dots:#C9B6E4:#B39DDB",
+          "cast": [
+            {
+              "art": "common/cutin/mom-smirk",
+              "x": 0.32,
+              "h": 1.02,
+              "talk": "mom"
+            }
+          ],
+          "text": [
+            {
+              "t": "우리도",
+              "x": 0.72,
+              "y": 0.3,
+              "size": 110
+            },
+            {
+              "t": "대출 MAX",
+              "x": 0.72,
+              "y": 0.52,
+              "size": 140,
+              "color": "#E63946",
+              "style": "stamp",
+              "at": 0.3
+            }
+          ],
+          "sfx": [
+            {
+              "name": "scratch"
+            },
+            {
+              "name": "stamp",
+              "at": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04b-0",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "stripes:#FFD23F:#FFE680",
+          "cast": [
+            {
+              "art": "common/cutin/dad-proud",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "dad"
+            }
+          ],
+          "freeze": 0.55,
+          "tag": {
+            "t": "내가 하면",
+            "sub": "레버리지~",
+            "x": 0.8,
+            "y": 0.25
+          },
+          "fx": [
+            "aura",
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 0.55
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04b-1",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "dots:#7FC8F8:#5AB0E8",
+          "cast": [
+            {
+              "art": "common/cutin/kid-doubt",
+              "x": 0.32,
+              "h": 1.02,
+              "talk": "kid"
+            }
+          ],
+          "text": [
+            {
+              "t": "월세 =",
+              "x": 0.72,
+              "y": 0.3,
+              "size": 110
+            },
+            {
+              "t": "버리는 돈?",
+              "x": 0.72,
+              "y": 0.52,
+              "size": 120,
+              "style": "pop",
+              "at": 0.3
+            }
+          ],
+          "sfx": [
+            {
+              "name": "rewind",
+              "at": 0.1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04c-0",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "burst:#E8E8E8:#CFCFCF",
+          "cast": [
+            {
+              "art": "cutin/dad-interest",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "띵! 이자 출금",
+              "style": "news"
+            }
+          ],
+          "fx": [
+            "impact",
+            "gaan"
+          ],
+          "sfx": [
+            {
+              "name": "beep"
+            },
+            {
+              "name": "crash",
+              "at": 4
+            }
+          ]
+        },
+        {
+          "at": 0.55,
+          "in": "slam",
+          "bg": "stripes:#FFD23F:#FFE680",
+          "cast": [
+            {
+              "art": "common/cutin/dad-proud",
+              "x": 0.3,
+              "h": 1.02,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "투자 비용!!",
+              "x": 0.72,
+              "y": 0.4,
+              "size": 140,
+              "color": "#E63946",
+              "style": "slam"
+            }
+          ],
+          "fx": [
+            "aura"
+          ],
+          "freeze": 0.5,
+          "tag": {
+            "t": "이자",
+            "sub": "투자 비용~",
+            "x": 0.8,
+            "y": 0.75
+          },
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04c-1",
+      "count": 6,
+      "countAt": 0.75,
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "#15303A",
+          "text": [
+            {
+              "t": "남이 하면",
+              "x": 0.27,
+              "y": 0.3,
+              "size": 100
+            },
+            {
+              "t": "영끌",
+              "x": 0.27,
+              "y": 0.52,
+              "size": 170,
+              "color": "#7FC8F8",
+              "style": "slam",
+              "at": 0.1
+            },
+            {
+              "t": "내가 하면",
+              "x": 0.73,
+              "y": 0.3,
+              "size": 100,
+              "at": 0.25
+            },
+            {
+              "t": "레버리지",
+              "x": 0.73,
+              "y": 0.52,
+              "size": 140,
+              "color": "#FFD23F",
+              "style": "stamp",
+              "at": 0.35
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.35
+            }
+          ]
+        },
+        {
+          "at": 0.62,
+          "in": "slam",
+          "bg": "burst:#FFD23F:#FFB627",
+          "text": [
+            {
+              "t": "내모남불, 다섯, 여섯.",
+              "y": 0.45,
+              "size": 170,
+              "style": "slam"
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "buzz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04d-0",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "#F6EEDF",
+          "cast": [
+            {
+              "art": "cutin/realtor-flat",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "realtor"
+            }
+          ],
+          "fx": [
+            "gaan"
+          ],
+          "sfx": [
+            {
+              "name": "crash"
+            }
+          ]
+        },
+        {
+          "at": 0.35,
+          "in": "glitch",
+          "bg": "#F6EEDF",
+          "text": [
+            {
+              "t": "나만은",
+              "y": 0.25,
+              "size": 110
+            },
+            {
+              "t": "괜찮을 거야",
+              "y": 0.46,
+              "size": 160,
+              "color": "#E63946",
+              "style": "slam",
+              "at": 0.2
+            },
+            {
+              "t": "낙관 편향",
+              "y": 0.7,
+              "size": 110,
+              "style": "stamp",
+              "at": 0.6
+            }
+          ],
+          "note": "※ 심리학 용어 · optimism bias (Weinstein, 1980)",
+          "sfx": [
+            {
+              "name": "ding",
+              "at": 0.15
+            },
+            {
+              "name": "stamp",
+              "at": 0.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04d-1",
+      "pad": 30,
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "burst:#15303A:#22485A",
+          "cast": [
+            {
+              "art": "common/cutin/dad-sig-1",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "dad"
+            }
+          ],
+          "fx": [
+            "gaan"
+          ]
+        },
+        {
+          "at": 0.33,
+          "bg": "burst:#15303A:#22485A",
+          "cast": [
+            {
+              "art": "common/cutin/dad-sig-2",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "dad"
+            }
+          ],
+          "fx": [
+            "gaan"
+          ]
+        },
+        {
+          "at": 0.66,
+          "bg": "burst:#15303A:#22485A",
+          "cast": [
+            {
+              "art": "common/cutin/dad-sig-3",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "dad"
+            }
+          ],
+          "fx": [
+            "gaan"
+          ],
+          "sfx": [
+            {
+              "name": "dudung"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-0",
+      "shots": [
+        {
+          "in": "flash",
+          "bg": "burst:#FF3B4D:#FF7A45",
+          "text": [
+            {
+              "t": "BONUS",
+              "y": 0.36,
+              "size": 200,
+              "style": "slam"
+            },
+            {
+              "t": "⚡ 속사포 내모남불",
+              "y": 0.62,
+              "size": 110,
+              "color": "#FFD23F",
+              "style": "pop",
+              "at": 0.3
+            }
+          ],
+          "fx": [
+            "impact",
+            "focus"
+          ],
+          "sfx": [
+            {
+              "name": "pang"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-1",
+      "count": 7,
+      "countAt": 0.85,
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "#F6EEDF",
+          "props": [
+            {
+              "art": "prop/big-complex",
+              "x": 0.27,
+              "y": 0.5,
+              "w": 0.2,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/big-complex",
+              "x": 0.73,
+              "y": 0.48,
+              "w": 0.36,
+              "enter": "pop",
+              "at": 0.4
+            }
+          ],
+          "text": [
+            {
+              "t": "남의 단지",
+              "x": 0.27,
+              "y": 0.18,
+              "size": 80
+            },
+            {
+              "t": "복잡 ✕",
+              "x": 0.27,
+              "y": 0.82,
+              "size": 100,
+              "color": "#2E86DE",
+              "style": "stamp",
+              "at": 0.15
+            },
+            {
+              "t": "우리 단지",
+              "x": 0.73,
+              "y": 0.18,
+              "size": 80,
+              "at": 0.4
+            },
+            {
+              "t": "대단지 ○",
+              "x": 0.73,
+              "y": 0.82,
+              "size": 110,
+              "color": "#E63946",
+              "style": "slam",
+              "at": 0.5
+            }
+          ],
+          "fx": [
+            "shake"
+          ],
+          "sfx": [
+            {
+              "name": "buzz",
+              "at": 0.15
+            },
+            {
+              "name": "ding",
+              "at": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-2",
+      "count": 8,
+      "countAt": 0.85,
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "#F6EEDF",
+          "props": [
+            {
+              "art": "common/cutin/dad-shock",
+              "x": 0.27,
+              "y": 0.5,
+              "w": 0.3,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/house-key",
+              "x": 0.73,
+              "y": 0.5,
+              "w": 0.26,
+              "enter": "pop",
+              "spin": true,
+              "at": 0.4
+            }
+          ],
+          "text": [
+            {
+              "t": "남이 올리면",
+              "x": 0.27,
+              "y": 0.18,
+              "size": 80
+            },
+            {
+              "t": "너무해 ✕",
+              "x": 0.27,
+              "y": 0.82,
+              "size": 100,
+              "color": "#2E86DE",
+              "style": "stamp",
+              "at": 0.15
+            },
+            {
+              "t": "내가 올리면",
+              "x": 0.73,
+              "y": 0.18,
+              "size": 80,
+              "at": 0.4
+            },
+            {
+              "t": "시세대로 ○",
+              "x": 0.73,
+              "y": 0.82,
+              "size": 110,
+              "color": "#E63946",
+              "style": "slam",
+              "at": 0.5
+            }
+          ],
+          "fx": [
+            "shake"
+          ],
+          "sfx": [
+            {
+              "name": "buzz",
+              "at": 0.15
+            },
+            {
+              "name": "ding",
+              "at": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-3",
+      "count": 9,
+      "countAt": 0.85,
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "bg/complex-gate",
+          "cam": {
+            "from": [
+              0.5,
+              0.45,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.45,
+              1.12
+            ]
+          },
+          "text": [
+            {
+              "t": "남의 현수막: 흉해 ✕",
+              "x": 0.2,
+              "y": 0.42,
+              "size": 44,
+              "color": "#2E86DE",
+              "at": 0.05
+            },
+            {
+              "t": "우리 현수막: 단합 ○",
+              "x": 0.8,
+              "y": 0.42,
+              "size": 44,
+              "color": "#E63946",
+              "at": 0.45
+            }
+          ],
+          "fx": [
+            "shake"
+          ],
+          "sfx": [
+            {
+              "name": "buzz",
+              "at": 0.05
+            },
+            {
+              "name": "ding",
+              "at": 0.45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-4",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "burst:#FFD23F:#FFB627",
+          "text": [
+            {
+              "t": "내모남불,",
+              "y": 0.3,
+              "size": 130,
+              "style": "slam"
+            },
+            {
+              "t": "7 · 8 · 9!",
+              "y": 0.56,
+              "size": 220,
+              "color": "#E63946",
+              "style": "stamp",
+              "at": 0.3
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.3
+            },
+            {
+              "name": "stamp",
+              "at": 0.45
+            },
+            {
+              "name": "stamp",
+              "at": 0.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06-0",
+      "pad": 8,
+      "calm": true,
+      "shots": [
+        {
+          "in": "iris",
+          "bg": "full/playground-dusk",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.02
+            ],
+            "to": [
+              0.45,
+              0.5,
+              1.15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "line": "c06-1",
+      "pad": 6,
+      "calm": true,
+      "shots": [
+        {
+          "bg": "full/playground-dusk",
+          "cam": {
+            "from": [
+              0.68,
+              0.45,
+              1.5
+            ],
+            "to": [
+              0.68,
+              0.44,
+              1.62
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "line": "c06-2",
+      "pad": 10,
+      "calm": true,
+      "shots": [
+        {
+          "bg": "full/playground-dusk",
+          "cam": {
+            "from": [
+              0.3,
+              0.5,
+              1.5
+            ],
+            "to": [
+              0.3,
+              0.48,
+              1.62
+            ]
+          }
+        },
+        {
+          "at": 0.55,
+          "in": "cut",
+          "bg": "bg/playground-dusk",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.45,
+              0.5,
+              1.15
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "line": "c06-3",
+      "pad": 10,
+      "calm": true,
+      "shots": [
+        {
+          "bg": "full/playground-dusk",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.15
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.02
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "line": "c07-0",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "bg/realtor-office",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.45,
+              0.5,
+              1.15
+            ]
+          },
+          "cast": [
+            {
+              "art": "common/dad/proud",
+              "x": 0.4,
+              "h": 0.95,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "1년 뒤 · 이사 가는 날",
+              "style": "news"
+            },
+            {
+              "t": "꼭대기 매도!",
+              "x": 0.75,
+              "y": 0.3,
+              "size": 110,
+              "color": "#FFD23F",
+              "style": "slam",
+              "at": 0.2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "tick"
+            }
+          ]
+        },
+        {
+          "at": 0.6,
+          "in": "zoom",
+          "bg": "stripes:#FFD23F:#FFE680",
+          "cast": [
+            {
+              "art": "common/cutin/dad-proud",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "dad"
+            }
+          ],
+          "freeze": 0.4,
+          "tag": {
+            "t": "판 뒤",
+            "sub": "이제 폭락~",
+            "x": 0.8,
+            "y": 0.25
+          },
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07-1",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "#0A1218",
+          "chart": {
+            "dir": "up",
+            "label": "판 집"
+          },
+          "text": [
+            {
+              "t": "▲ 판 집 | ▲▲ 또 올라 | ▲ 신고가 | ▲ …",
+              "style": "ticker"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "buzz"
+            },
+            {
+              "name": "ding",
+              "at": 18
+            }
+          ]
+        },
+        {
+          "at": 0.5,
+          "in": "slam",
+          "bg": "bg/realtor-office",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.15
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.25
+            ]
+          },
+          "cast": [
+            {
+              "art": "realtor/calculator",
+              "x": 0.55,
+              "h": 0.92,
+              "talk": "realtor"
+            }
+          ],
+          "fx": [
+            "gaan"
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07a-0",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "stripes:#7FC8F8:#B9E2FA",
+          "cast": [
+            {
+              "art": "cutin/dad-sour",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "거품이야…",
+              "x": 0.78,
+              "y": 0.3,
+              "size": 110,
+              "style": "shake",
+              "at": 0.2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "whoosh",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07a-1",
+      "count": 10,
+      "countAt": 0.78,
+      "shots": [
+        {
+          "in": "glitch",
+          "bg": "#F6EEDF",
+          "props": [
+            {
+              "art": "prop/sour-grapes",
+              "x": 0.5,
+              "y": 0.3,
+              "w": 0.22,
+              "enter": "drop"
+            }
+          ],
+          "text": [
+            {
+              "t": "못 딴 포도는",
+              "x": 0.25,
+              "y": 0.5,
+              "size": 90
+            },
+            {
+              "t": "시다",
+              "x": 0.75,
+              "y": 0.5,
+              "size": 150,
+              "color": "#7A3FB0",
+              "style": "slam",
+              "at": 0.2
+            },
+            {
+              "t": "신 포도",
+              "y": 0.75,
+              "size": 110,
+              "style": "stamp",
+              "at": 0.45
+            }
+          ],
+          "note": "※ 이솝 「여우와 신 포도」 · 인지 부조화 (Festinger, 1957)",
+          "sfx": [
+            {
+              "name": "ding",
+              "at": 0.2
+            },
+            {
+              "name": "stamp",
+              "at": 0.45
+            }
+          ]
+        },
+        {
+          "at": 0.72,
+          "in": "slam",
+          "bg": "burst:#FFD23F:#FFB627",
+          "text": [
+            {
+              "t": "내모남불, 열.",
+              "y": 0.45,
+              "size": 170,
+              "style": "slam"
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "buzz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07b-0",
+      "shots": [
+        {
+          "in": "glitch",
+          "bg": "full/window-bubble",
+          "cam": {
+            "from": [
+              0.45,
+              0.4,
+              1.3
+            ],
+            "to": [
+              0.45,
+              0.4,
+              1.4
+            ]
+          },
+          "text": [
+            {
+              "t": "1년 전",
+              "style": "news"
+            },
+            {
+              "t": "◀◀",
+              "x": 0.85,
+              "y": 0.15,
+              "size": 90
+            }
+          ],
+          "fx": [
+            "vhs"
+          ],
+          "sfx": [
+            {
+              "name": "rewind"
+            }
+          ]
+        },
+        {
+          "at": 0.45,
+          "in": "slam",
+          "bg": "#F6EEDF",
+          "cast": [
+            {
+              "art": "cutin/realtor-flat",
+              "x": 0.32,
+              "h": 1.02,
+              "talk": "realtor"
+            }
+          ],
+          "text": [
+            {
+              "t": "같은 말씀",
+              "x": 0.74,
+              "y": 0.42,
+              "size": 130,
+              "style": "stamp",
+              "at": 0.2
+            }
+          ],
+          "fx": [
+            "gaan"
+          ],
+          "sfx": [
+            {
+              "name": "crash"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07b-1",
+      "count": 11,
+      "countAt": 0.65,
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "#15303A",
+          "text": [
+            {
+              "t": "꼭대기가 아니었습니다",
+              "y": 0.3,
+              "size": 110,
+              "style": "pop"
+            },
+            {
+              "t": "내모남불 ✕",
+              "y": 0.5,
+              "size": 110,
+              "at": 0.35
+            },
+            {
+              "t": "그냥 오답.",
+              "y": 0.72,
+              "size": 170,
+              "color": "#FFD23F",
+              "style": "stamp",
+              "at": 0.6
+            }
+          ],
+          "mark": {
+            "kind": "x",
+            "at": 0.55
+          },
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "buzz",
+              "at": 0.55
+            },
+            {
+              "name": "stamp",
+              "at": 0.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07c-0",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "full/window-bubble",
+          "cam": {
+            "from": [
+              0.47,
+              0.38,
+              1.6
+            ],
+            "to": [
+              0.47,
+              0.35,
+              2
+            ],
+            "ease": "snap"
+          },
+          "text": [
+            {
+              "t": "역시, 모답맨.",
+              "x": 0.5,
+              "y": 0.82,
+              "size": 120,
+              "color": "#FFD23F",
+              "style": "slam",
+              "at": 0.2
+            }
+          ],
+          "fx": [
+            "focus",
+            "kira",
+            "mono"
+          ],
+          "sfx": [
+            {
+              "name": "stinger"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hold": 110,
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "burst:#FFD23F:#FFB627",
+          "text": [
+            {
+              "t": "올라도 내려도",
+              "y": 0.28,
+              "size": 130,
+              "style": "slam"
+            },
+            {
+              "t": "내 방은 그대로 ♥",
+              "y": 0.5,
+              "size": 160,
+              "color": "#E63946",
+              "style": "pop",
+              "at": 14
+            },
+            {
+              "t": "사는 집이지, 숫자가 아니지",
+              "y": 0.72,
+              "size": 72,
+              "style": "stamp",
+              "at": 40
+            }
+          ],
+          "note": "※ 특정 지역 · 단지 · 투자를 권하지 않습니다. 시세표 · 역 · 시설은 꾸민 것이며 법 · 용어는 일반 설명입니다. 개별 상담은 전문가에게.",
+          "sfx": [
+            {
+              "name": "stinger"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
