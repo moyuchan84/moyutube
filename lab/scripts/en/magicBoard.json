@@ -1,0 +1,24 @@
+{
+  "NEXT": "NEXT: Put in any number and you get 1089?",
+  "EN": {
+    "네 마음,|내가 맞혀 볼게": "I'm going to read your mind",
+    "지금부터 나를 따라\n계산만 해 줘!": "Just follow along\nand do the math with me!",
+    "두 자리 수를\n하나 생각해요": "Think of any\ntwo-digit number",
+    "그 수의 두 숫자를\n더해요": "Add its\ntwo digits together",
+    "처음 수에서\n그 합을 빼요": "Subtract that sum\nfrom your number",
+    "답이 적힌 칸의 기호를\n꼭 기억해요!": "Find your answer on the board\nand remember its symbol!",
+    "천천히 하고 싶으면\n화면을 꾹 눌러 멈춰요": "Need more time?\nPress and hold the screen to pause",
+    "기억했지?\n이제 네 마음을 읽을게…": "Got it?\nNow I'll read your mind…",
+    "네 기호는…\n금색 별!": "Your symbol is…\nthe gold star!",
+    "맞았으면 댓글에\n\"별\" 하나!": "If I got it right,\ncomment \"star\"!",
+    "어떻게 알았냐고?": "How did I know?",
+    "답은 언제나\n이 아홉 칸 중 하나": "Your answer is always\none of these nine squares",
+    "9 · 18 · 27 … 81 전부 별!\n다른 별은 눈속임이야": "9 · 18 · 27 … 81 are all stars!\nThe other stars are just decoys",
+    "10 묶음 3개 + 낱개 7개": "37 = 3 bars of ten + 7 ones",
+    "3 + 7 = 10 개를 빼 볼게요": "Now take away 3 + 7 = 10 blocks",
+    "묶음마다 9 개씩 남아요": "Each bar has 9 left: 9 × 3 = 27",
+    "몇 묶음이든 묶음마다 9!": "Any number works: 9 left in every bar!",
+    "답은 언제나 9 의 배수\n그래서 늘 별!": "The answer is always a multiple of 9,\nso it's always the star!",
+    "이제 네가 마술사!": "Now you're the magician! Try it on Mom or Dad:\nthe two digits of their answer always add up to 9"
+  }
+}
