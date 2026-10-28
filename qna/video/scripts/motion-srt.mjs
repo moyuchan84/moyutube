@@ -25,7 +25,7 @@ for (const beat of planFile.beats) {
     const cut = script.cuts.find((c) => c.id === cutId);
     const line = cut.lines[Number(beat.line.slice(beat.line.lastIndexOf("-") + 1))];
     const dur = Math.ceil((timing[beat.line] / speed) * FPS);
-    lines.push({ from: cursor, dur, ko: line.text, en: line.en ?? "" });
+    lines.push({ from: cursor, dur, ko: line.sub ?? line.text, en: line.en ?? "" });
     if (chapters.at(-1)?.title !== cut.beat) chapters.push({ from: cursor, title: cut.beat });
     length = dur + gap;
   }

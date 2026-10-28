@@ -1,0 +1,455 @@
+{
+  "rawVoice": true,
+  "speed": 1.2,
+  "title": "모답맨 · 칠면조 먹으면 교회 다니는 거예요? 천주교 · 개신교 · 장로교 · 감리교 · 이단 · 이슬람 · 유대교",
+  "bgm": "cheerful",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "콜드 오픈",
+      "lines": [
+        {
+          "who": "kid",
+          "text": "아빠, 칠면조 먹으면 교회 다니는 거예요?",
+          "en": "Dad, if we eat turkey, does that mean we go to church?"
+        },
+        {
+          "who": "dad",
+          "text": "당연하지! 추수감사절은 교회의 추석! 칠면조는 교회 전용 닭!",
+          "en": "Of course! Thanksgiving is church Chuseok! Turkey is church-only chicken!"
+        }
+      ]
+    },
+    {
+      "id": "c00b",
+      "beat": "콜드 오픈",
+      "lines": [
+        {
+          "who": "butcher",
+          "text": "칠면조는 그냥 새예요. 아무나 먹어요.",
+          "en": "A turkey's just a bird. Anyone can eat it."
+        },
+        {
+          "who": "dad",
+          "text": "…네?",
+          "en": "…Huh?"
+        }
+      ]
+    },
+    {
+      "id": "c00c",
+      "beat": "콜드 오픈",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "오답, 하나. 저는 모답맨입니다.",
+          "en": "Wrong answer number one. I'm Modapman."
+        }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "사건 개요",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "사건 개요. 추수감사절 장보기. 장소, 마트 정육 코너.",
+          "en": "Case summary. Thanksgiving shopping. Location: the meat counter."
+        },
+        {
+          "who": "kid",
+          "text": "사장님, 이 초록 도장은 뭐예요?",
+          "en": "Mister, what's this green stamp?"
+        }
+      ]
+    },
+    {
+      "id": "c01a",
+      "beat": "사건 개요",
+      "lines": [
+        {
+          "who": "butcher",
+          "text": "할랄. 이슬람 규칙대로 잡은 고기라는 표시예요.",
+          "en": "Halal. It means the meat was prepared by Islamic rules."
+        },
+        {
+          "who": "kid",
+          "text": "할머니는 성당, 큰아빠는 교회 가요. 다른 종교예요?",
+          "en": "Grandma goes to Catholic Mass, my uncle goes to a Protestant church. Different religions?"
+        }
+      ]
+    },
+    {
+      "id": "c01b",
+      "beat": "사건 개요",
+      "lines": [
+        {
+          "who": "mom",
+          "text": "그럼. 성당은 천주교, 교회는 기독교. 완전 다르지.",
+          "en": "Sure. Mass is Catholic, church is Christian. Totally different."
+        },
+        {
+          "who": "butcher",
+          "text": "둘 다 기독교예요. 한집안 형제.",
+          "en": "Both are Christian. Brothers from the same family."
+        }
+      ]
+    },
+    {
+      "id": "c01c",
+      "beat": "사건 개요",
+      "lines": [
+        {
+          "who": "mom",
+          "text": "어? 어? 어? 어… 악!",
+          "en": "Wha? Wha? Wha? Wha… AAAH!"
+        },
+        {
+          "who": "narr",
+          "text": "오답, 둘. 모범답안, 장보기 십 분 만에 탈락.",
+          "en": "Wrong answer, two. Mom the model answer, out ten minutes into shopping."
+        }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "오답 퍼레이드",
+      "lines": [
+        {
+          "who": "kid",
+          "text": "큰아빠가 이단 얘기를 하던데요. 이단이 뭐예요?",
+          "en": "My uncle talked about 'idan.' What's that?"
+        },
+        {
+          "who": "dad",
+          "text": "이단 옆차기! 한 번 뛰어서 두 번 차는 거!",
+          "en": "Idan, like the jump kick! One jump, two kicks!"
+        }
+      ]
+    },
+    {
+      "id": "c02b",
+      "beat": "오답 퍼레이드",
+      "lines": [
+        {
+          "who": "butcher",
+          "text": "다를 이, 끝 단. 끝이 다르다는 말이에요.",
+          "en": "Different, and end. It means 'different at the core.' It's the word for heresy."
+        },
+        {
+          "who": "narr",
+          "text": "오답, 셋. 아빠는 정육 코너에서 허공을 찼습니다.",
+          "en": "Wrong answer, three. Dad kicked thin air at the meat counter."
+        }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "1라운드 · 예수님을 누구로 보나",
+      "lines": [
+        {
+          "who": "butcher",
+          "text": "그럼, 딱 세 판만 하죠.",
+          "en": "Okay. Just three rounds."
+        },
+        {
+          "who": "dad",
+          "text": "고기는 근으로 세시면서…",
+          "en": "You count meat by the pound, though…"
+        }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "1라운드 · 예수님을 누구로 보나",
+      "lines": [
+        {
+          "who": "butcher",
+          "text": "1라운드. 유대교, 기독교, 이슬람. 셋 다 아브라함을 조상으로 모셔요.",
+          "en": "Round one. Judaism, Christianity, Islam. All three honor Abraham as their forefather.",
+          "tts": "일 라운드. 유대교, 기독교, 이슬람. 셋 다 아브라함을 조상으로 모셔요."
+        },
+        {
+          "who": "butcher",
+          "text": "갈리는 건 딱 하나. 예수님을 누구로 보느냐.",
+          "en": "They split on one thing. Who Jesus is."
+        }
+      ]
+    },
+    {
+      "id": "c04b",
+      "beat": "1라운드 · 예수님을 누구로 보나",
+      "lines": [
+        {
+          "who": "butcher",
+          "text": "유대교는 구원자가 아직 안 오셨다. 기독교는 예수님이 하나님의 아들.",
+          "en": "Judaism: the savior hasn't come yet. Christianity: Jesus is the Son of God."
+        },
+        {
+          "who": "butcher",
+          "text": "이슬람은 예수님은 큰 예언자, 마지막 예언자는 무함마드.",
+          "en": "Islam: Jesus is a great prophet, and the last prophet is Muhammad."
+        }
+      ]
+    },
+    {
+      "id": "c04c",
+      "beat": "1라운드 · 예수님을 누구로 보나",
+      "lines": [
+        {
+          "who": "butcher",
+          "text": "책도 히브리 성경, 성경, 꾸란. 모이는 날도 토, 일, 금.",
+          "en": "Their books: the Hebrew Bible, the Bible, the Quran. Their holy days: Saturday, Sunday, Friday."
+        },
+        {
+          "who": "dad",
+          "text": "셋 다 다니면… 주말이 사흘!",
+          "en": "Join all three and… a three-day weekend!"
+        }
+      ]
+    },
+    {
+      "id": "c04d",
+      "beat": "1라운드 · 예수님을 누구로 보나",
+      "lines": [
+        {
+          "who": "butcher",
+          "text": "유대교랑 이슬람은 돼지고기를 안 먹어요. 규칙 지킨 고기가 코셔, 할랄.",
+          "en": "Judaism and Islam don't eat pork. Meat made by their rules is kosher, or halal."
+        },
+        {
+          "who": "kid",
+          "text": "그래서 초록 도장!",
+          "en": "So that's the green stamp!"
+        }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "2라운드 · 무엇을 기준으로 삼나",
+      "lines": [
+        {
+          "who": "butcher",
+          "text": "2라운드. 기독교 안에 큰집이 셋. 천주교, 정교회, 개신교.",
+          "en": "Round two. Inside Christianity, three big branches. Catholic, Orthodox, Protestant.",
+          "tts": "이 라운드. 기독교 안에 큰집이 셋. 천주교, 정교회, 개신교."
+        },
+        {
+          "who": "butcher",
+          "text": "오백 년 전, 루터라는 신부님이 성경으로 돌아가자고 했어요.",
+          "en": "Five hundred years ago, a priest named Luther said, 'Back to the Bible.'"
+        }
+      ]
+    },
+    {
+      "id": "c05a",
+      "beat": "2라운드 · 무엇을 기준으로 삼나",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "아, 리모델링! 천주교를 리모델링한 게 개신교!",
+          "en": "Ah, a remodel! Protestants are the remodeled Catholics!"
+        },
+        {
+          "who": "butcher",
+          "text": "…반은 맞아요. 개신이 고쳐서 새롭게, 라는 뜻이라.",
+          "en": "…Half right. The Korean word does mean 'fix and renew.'"
+        }
+      ]
+    },
+    {
+      "id": "c05b",
+      "beat": "2라운드 · 무엇을 기준으로 삼나",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "오답, 반 개. 반올림해서, 넷.",
+          "en": "Wrong answer, one half. Rounded up: four."
+        }
+      ]
+    },
+    {
+      "id": "c05c",
+      "beat": "2라운드 · 무엇을 기준으로 삼나",
+      "lines": [
+        {
+          "who": "butcher",
+          "text": "천주교는 성경에, 교회가 이어 온 전통도 함께 봐요. 개신교는 오직 성경.",
+          "en": "Catholics look to the Bible plus the church's long tradition. Protestants: the Bible alone."
+        }
+      ]
+    },
+    {
+      "id": "c05d",
+      "beat": "2라운드 · 무엇을 기준으로 삼나",
+      "lines": [
+        {
+          "who": "butcher",
+          "text": "성당엔 신부님, 교회엔 목사님. 신부님은 결혼을 안 하세요.",
+          "en": "Catholic churches have priests, Protestant churches have pastors. Priests don't marry."
+        },
+        {
+          "who": "kid",
+          "text": "목사님은요?",
+          "en": "What about pastors?"
+        },
+        {
+          "who": "butcher",
+          "text": "하셔도 돼요.",
+          "en": "They can."
+        }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "3라운드 · 교회를 어떻게 이끄나",
+      "lines": [
+        {
+          "who": "butcher",
+          "text": "3라운드. 개신교 안에도 집안이 여럿. 장로교, 감리교, 침례교…",
+          "en": "Round three. Protestants have lots of families too. Presbyterian, Methodist, Baptist…",
+          "tts": "삼 라운드. 개신교 안에도 집안이 여럿. 장로교, 감리교, 침례교…"
+        },
+        {
+          "who": "dad",
+          "text": "우리 모 씨도 본관이 다르면 집안이 다르죠!",
+          "en": "Like our Mo family! Same last name, different ancestral clans!"
+        }
+      ]
+    },
+    {
+      "id": "c06a",
+      "beat": "3라운드 · 교회를 어떻게 이끄나",
+      "lines": [
+        {
+          "who": "butcher",
+          "text": "그거예요. 장로교는 칼뱅, 감리교는 웨슬리에서 시작했어요.",
+          "en": "Exactly. Presbyterians began with Calvin, Methodists with Wesley."
+        },
+        {
+          "who": "butcher",
+          "text": "믿는 건 거의 같아요. 장로님들 회의냐, 감독님이냐가 달라요.",
+          "en": "They believe almost the same things. They differ in who leads: a council of elders, or bishops."
+        }
+      ]
+    },
+    {
+      "id": "c06b",
+      "beat": "3라운드 · 교회를 어떻게 이끄나",
+      "lines": [
+        {
+          "who": "butcher",
+          "text": "감리교 이름은 규칙대로만 산다고 친구들이 놀린 별명이에요.",
+          "en": "'Methodist' was a nickname. Friends teased them for living by strict methods."
+        },
+        {
+          "who": "mom",
+          "text": "규칙대로 사는 모범생… 그건 내 담당인데.",
+          "en": "Living by the rules, model student… that's supposed to be my job."
+        }
+      ]
+    },
+    {
+      "id": "c06c",
+      "beat": "3라운드 · 교회를 어떻게 이끄나",
+      "lines": [
+        {
+          "who": "butcher",
+          "text": "한국엔 1885년 부활절, 두 집 선교사가 같은 배로 왔어요.",
+          "en": "In 1885, on Easter, a missionary from each family arrived in Korea on the same boat.",
+          "tts": "한국엔 천팔백팔십오 년 부활절, 두 집 선교사가 같은 배로 왔어요."
+        },
+        {
+          "who": "kid",
+          "text": "그럼 이단은요?",
+          "en": "Then what's heresy?"
+        }
+      ]
+    },
+    {
+      "id": "c06d",
+      "beat": "3라운드 · 교회를 어떻게 이끄나",
+      "lines": [
+        {
+          "who": "butcher",
+          "text": "예수님이 누구신지 같은 핵심이 다르다고, 교단들이 정한 곳이에요.",
+          "en": "Groups that church bodies have ruled differ on core teachings, like who Jesus is."
+        },
+        {
+          "who": "narr",
+          "text": "한 줄 정리. 예수님을 보는 눈, 성경을 보는 기준, 교회를 이끄는 방식.",
+          "en": "In one line: how they see Jesus, what they go by, and how they run the church."
+        }
+      ]
+    },
+    {
+      "id": "c07",
+      "beat": "아이 눈높이",
+      "lines": [
+        {
+          "who": "kid",
+          "text": "다 다른데, 왜 다 감사해요?",
+          "en": "They're all different. So why are they all thankful?"
+        },
+        {
+          "who": "dad",
+          "text": "믿는 건 달라도, 고마운 마음은 비슷하거든.",
+          "en": "They believe different things, but feeling grateful is pretty much the same."
+        },
+        {
+          "who": "dad",
+          "text": "그래서 남이 믿는 건 놀리지 않는 거야. 친구 집 규칙을 지키는 것처럼.",
+          "en": "That's why we never make fun of what others believe. Like following the rules at a friend's house."
+        },
+        {
+          "who": "kid",
+          "text": "그럼 옆집 하산이 놀러 오면, 초록 도장 고기로 해요.",
+          "en": "Then when Hasan next door comes over, let's get meat with the green stamp."
+        }
+      ]
+    },
+    {
+      "id": "c07b",
+      "beat": "아이 눈높이",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "아이는 초록 도장을, 하나하나 찾았습니다.",
+          "en": "My kid looked for the green stamps, one by one."
+        }
+      ]
+    },
+    {
+      "id": "c08",
+      "beat": "반전",
+      "lines": [
+        {
+          "who": "kid",
+          "text": "아빠, 그럼 우리 집은 무슨 교예요?",
+          "en": "Dad, so what religion is our family?"
+        },
+        {
+          "who": "dad",
+          "text": "우리 집? 모 씨니까… 모교!",
+          "en": "Our family? We're the Mo family, so… Mo-ism! (In Korean, 'mogyo' means your old school.)"
+        }
+      ]
+    },
+    {
+      "id": "c08b",
+      "beat": "반전",
+      "lines": [
+        {
+          "who": "butcher",
+          "text": "그건 졸업한 학교예요.",
+          "en": "That's the school you graduated from."
+        },
+        {
+          "who": "narr",
+          "text": "오답, 다섯. 역시, 모답맨.",
+          "en": "Wrong answer, five. Modapman strikes again."
+        }
+      ]
+    }
+  ]
+}

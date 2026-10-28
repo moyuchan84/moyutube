@@ -1,0 +1,218 @@
+{
+  "id": "Ep04F-Modapman",
+  "episode": "ep04",
+  "voice": "ep04f",
+  "bgm": "cheerful",
+  "gap": 1,
+  "counter": "모답맨 오답",
+  "thumb": {
+    "top": "대머리는",
+    "bottom": "왜 생겨요?",
+    "count": 4,
+    "layers": [
+      { "bg": "burst:#2BA8C9:#1B7FA6", "x": 520, "y": 420 },
+      { "fx": "lines", "x": 520, "y": 430 },
+      { "img": "barber/bald", "h": 560, "x": 560, "y": 450, "rot": -4 },
+      { "text": "공부해서 빠진 거야!", "style": "bubble", "tail": "b", "size": 42, "x": 230, "y": 170, "rot": -5 },
+      { "img": "common/cutin/dad-proud", "h": 520, "x": 190, "y": 470, "rot": -5 },
+      { "text": "오답", "style": "stamp", "size": 70, "x": 220, "y": 650, "rot": -9 },
+      { "img": "prop/hair-movers", "sticker": true, "h": 200, "x": 860, "y": 610, "rot": 6 },
+      { "text": "대머리는", "size": 96, "x": 1000, "y": 170, "rot": -3 },
+      { "text": "왜 생겨요?", "size": 110, "color": "#FFD23F", "x": 1000, "y": 290, "rot": -3 },
+      { "text": "겨드랑이 털 · 수염 · 대머리 3분", "size": 38, "x": 1000, "y": 390, "rot": -3 }
+    ]
+  },
+  "beats": [
+    { "line": "c00-0", "shots": [
+      { "bg": "full/bathroom-door", "cam": { "from": [0.5, 0.5, 1.15], "to": [0.5, 0.48, 1.3] }, "text": [{ "t": "샤워 중", "style": "news", "at": 0.05 }], "sfx": [{ "name": "tick" }] },
+      { "at": 0.5, "in": "slam", "bg": "burst:#FFD23F:#FFB627", "cast": [{ "art": "common/cutin/kid-ask", "x": 0.3, "h": 1, "enter": "pop", "talk": "kid" }], "text": [{ "t": "아빠는 왜 털이?", "style": "shake", "x": 0.74, "y": 0.36, "size": 100 }, { "t": "겨드랑이에도!", "style": "pop", "x": 0.74, "y": 0.6, "size": 90, "color": "#B8352A", "at": 0.3 }], "sfx": [{ "name": "pop" }, { "name": "pop", "at": 0.3 }] }
+    ] },
+    { "line": "c00-1", "shots": [
+      { "in": "whip-r", "bg": "full/bathroom-door", "fx": ["shake"], "cam": { "from": [0.5, 0.4, 1.6], "to": [0.5, 0.38, 1.85] }, "text": [{ "t": "그건…!", "style": "slam", "x": 0.5, "y": 0.2, "size": 120 }], "sfx": [{ "name": "pang" }] },
+      { "at": 0.4, "in": "spin", "bg": "burst:#FF8FB1:#FF6F9C", "fx": ["imagine"], "props": [{ "art": "prop/fur-blanket", "x": 0.5, "y": 0.46, "w": 0.4, "enter": "drop" }], "text": [{ "t": "추워서 털 이불!", "style": "shake", "y": 0.86, "size": 100, "color": "#FFD23F", "at": 0.2 }], "sfx": [{ "name": "boing" }] }
+    ] },
+    { "line": "c00b-0", "shots": [
+      { "in": "glitch", "bg": "#F6EEDF", "cast": [{ "art": "cutin/barber-flat", "x": 0.66, "h": 1, "talk": "barber" }], "text": [{ "t": "이불 아님", "style": "stamp", "x": 0.28, "y": 0.4, "size": 120, "color": "#B8352A", "at": 0.15 }], "sfx": [{ "name": "scratch" }, { "name": "stamp", "at": 0.15 }] }
+    ] },
+    { "line": "c00b-1", "pad": 14, "shots": [
+      { "in": "smash", "bg": "#15303A", "cast": [{ "art": "common/cutin/dad-sig-1", "x": 0.5, "h": 1 }], "sfx": [{ "name": "boing" }], "cam": { "from": [0.5, 0.45, 1], "punch": [2, 6] } },
+      { "at": 0.3, "in": "cut", "bg": "#15303A", "cast": [{ "art": "common/cutin/dad-sig-2", "x": 0.5, "h": 1 }] },
+      { "at": 0.6, "in": "cut", "bg": "#15303A", "cast": [{ "art": "common/cutin/dad-sig-3", "x": 0.5, "h": 1 }], "fx": ["lines", "shake"] }
+    ] },
+    { "line": "c00c-0", "pad": 8, "count": 1, "countAt": 0.2, "shots": [
+      { "in": "smash", "bg": "dots:#F6EEDF:#E8DCC4", "tally": 1, "mark": { "kind": "x", "at": 2 }, "text": [{ "t": "모답맨", "style": "stamp", "x": 0.78, "y": 0.78, "size": 110, "at": 0.55 }], "sfx": [{ "name": "buzz", "at": 2 }, { "name": "stamp", "at": 0.55 }] }
+    ] },
+    { "hold": 48, "shots": [
+      { "in": "wipe", "bg": "stripes:#15303A:#1F4452", "props": [{ "art": "prop/shaving-brush", "x": 0.86, "y": 0.68, "w": 0.15, "enter": "pop", "at": 14, "rot": 8 }, { "art": "prop/razor", "x": 0.13, "y": 0.68, "w": 0.14, "enter": "pop", "at": 18, "rot": -8 }], "text": [{ "t": "여덟 살의 질문 × 모답맨", "style": "pop", "y": 0.16, "size": 56 }, { "t": "겨드랑이 · 수염 · 대머리", "style": "slam", "y": 0.4, "size": 84, "at": 3 }, { "t": "털은 왜 나요?", "style": "shake", "y": 0.64, "size": 150, "color": "#FFD23F", "at": 12 }], "sfx": [{ "name": "stinger", "at": 3 }, { "name": "pang", "at": 12 }] }
+    ] },
+    { "line": "c01-0", "shots": [
+      { "in": "glitch", "bg": "bg/barbershop", "fx": ["vhs"], "cam": { "from": [0.5, 0.5, 1.3], "to": [0.5, 0.5, 1.05] }, "text": [{ "t": "사건 개요 · 다음 날", "style": "news", "at": 0.1 }], "sfx": [{ "name": "rewind" }] },
+      { "at": 0.5, "in": "whip-l", "bg": "bg/barbershop", "cast": [{ "art": "dad/cape", "x": 0.2, "h": 0.74 }, { "art": "common/kid/normal", "x": 0.42, "h": 0.5 }, { "art": "common/mom/normal", "x": 0.6, "h": 0.72 }, { "art": "barber/normal", "x": 0.83, "h": 0.8 }], "cam": { "from": [0.5, 0.5, 1], "to": [0.5, 0.5, 1.1] }, "text": [{ "t": "동네 이발소", "style": "pop", "y": 0.14, "size": 80 }], "tag": { "t": "정답 담당", "sub": "이발 50년 할아버지", "x": 0.8, "y": 0.3, "at": 0.4 }, "sfx": [{ "name": "stamp", "at": 0.4 }] }
+    ] },
+    { "line": "c01-1", "shots": [
+      { "in": "whip-r", "bg": "bg/barbershop", "cast": [{ "art": "common/mom/sigh", "x": 0.6, "h": 0.8, "talk": "mom" }], "cam": { "from": [0.6, 0.45, 1.6], "to": [0.6, 0.42, 1.8] }, "text": [{ "t": "동네방네", "style": "shake", "x": 0.26, "y": 0.3, "size": 110 }] },
+      { "at": 0.55, "in": "slam", "bg": "burst:#FF8FB1:#FF6F9C", "cast": [{ "art": "dad/cape-panic", "x": 0.5, "h": 0.9, "enter": "pop" }], "fx": ["shake"], "text": [{ "t": "아빠 체면 0%", "style": "stamp", "x": 0.5, "y": 0.86, "size": 90, "color": "#B8352A", "at": 0.15 }], "sfx": [{ "name": "boing" }] }
+    ] },
+    { "line": "c01a-0", "shots": [
+      { "in": "zoom", "bg": "bg/barbershop", "cast": [{ "art": "barber/normal", "x": 0.7, "h": 0.84, "talk": "barber" }], "cam": { "from": [0.68, 0.42, 1.5], "to": [0.68, 0.4, 1.75] }, "text": [{ "t": "털 얘기면", "style": "pop", "x": 0.28, "y": 0.3, "size": 90 }] },
+      { "at": 0.5, "in": "slam", "bg": "burst:#FFD23F:#FFB627", "cast": [{ "art": "cutin/barber", "x": 0.66, "h": 1, "enter": "spin" }], "text": [{ "t": "50년 경력", "style": "stamp", "x": 0.26, "y": 0.42, "size": 110, "color": "#B8352A", "at": 0.15 }], "sfx": [{ "name": "stamp", "at": 0.15 }] }
+    ] },
+    { "line": "c02-0", "shots": [
+      { "in": "whip-l", "bg": "bg/barbershop", "cast": [{ "art": "common/mom/explain", "x": 0.6, "h": 0.8, "talk": "mom" }], "cam": { "from": [0.6, 0.45, 1.6], "to": [0.6, 0.42, 1.8] }, "text": [{ "t": "밀면 굵어진다", "style": "slam", "x": 0.26, "y": 0.3, "size": 90 }], "sfx": [{ "name": "pang" }] },
+      { "at": 0.55, "in": "whip-r", "bg": "dots:#F6EEDF:#E8DCC4", "props": [{ "art": "prop/razor", "x": 0.3, "y": 0.46, "w": 0.34, "enter": "r", "rot": -10 }], "text": [{ "t": "함부로 밀지 마!", "style": "shake", "x": 0.72, "y": 0.44, "size": 96 }], "sfx": [{ "name": "whoosh" }] }
+    ] },
+    { "line": "c02-1", "shots": [
+      { "in": "glitch", "bg": "bg/barbershop", "cast": [{ "art": "barber/talk", "x": 0.7, "h": 0.84, "talk": "barber" }], "cam": { "from": [0.68, 0.42, 1.55], "to": [0.68, 0.4, 1.75] }, "text": [{ "t": "안 굵어져요", "style": "stamp", "x": 0.28, "y": 0.32, "size": 100, "color": "#B8352A" }], "sfx": [{ "name": "scratch" }, { "name": "stamp" }] },
+      { "at": 0.45, "in": "zoom", "bg": "dots:#F6EEDF:#E8DCC4", "props": [{ "art": "prop/hair-tips", "x": 0.32, "y": 0.48, "w": 0.4, "enter": "pop" }], "text": [{ "t": "뾰족 → 뭉툭", "style": "slam", "x": 0.74, "y": 0.34, "size": 96 }, { "t": "느낌만 굵다", "style": "stamp", "x": 0.74, "y": 0.58, "size": 90, "color": "#2E9E4F", "at": 0.35 }], "sfx": [{ "name": "pop" }, { "name": "ding", "at": 0.35 }] }
+    ] },
+    { "line": "c02b-0", "pad": 6, "count": 2, "countAt": 0.15, "shots": [
+      { "in": "smash", "bg": "bg/barbershop", "cast": [{ "art": "common/mom/shock", "x": 0.55, "h": 0.82 }], "cam": { "from": [0.55, 0.38, 2.2], "ease": "snap", "roll": [6, 6] }, "freeze": 0.15, "mark": { "kind": "x", "at": 0.2 }, "tag": { "t": "모범답안", "sub": "이발소 3분 만에 탈락", "x": 0.26, "y": 0.3, "at": 0.45 }, "sfx": [{ "name": "buzz", "at": 0.2 }, { "name": "stamp", "at": 0.45 }] }
+    ] },
+    { "line": "c03-0", "shots": [
+      { "in": "whip-l", "bg": "bg/barbershop", "cast": [{ "art": "common/kid/ask", "x": 0.36, "h": 0.6, "talk": "kid" }, { "art": "barber/chest", "x": 0.74, "h": 0.84 }], "cam": { "from": [0.55, 0.5, 1.3], "to": [0.55, 0.48, 1.45] }, "text": [{ "t": "머리 ✕ 가슴 ○ ?", "style": "shake", "y": 0.16, "size": 96, "at": 0.25 }], "sfx": [{ "name": "pop", "at": 0.25 }] },
+      { "at": 0.55, "in": "zoom", "bg": "bg/barbershop", "cast": [{ "art": "barber/bald", "x": 0.6, "h": 0.9 }], "cam": { "from": [0.6, 0.2, 2.4], "to": [0.6, 0.22, 2.1] }, "fx": ["kira"], "sfx": [{ "name": "ding" }] }
+    ] },
+    { "line": "c03-1", "shots": [
+      { "in": "zoom", "bg": "bg/barbershop", "cast": [{ "art": "dad/cape", "x": 0.4, "h": 0.84, "talk": "dad" }], "cam": { "from": [0.4, 0.3, 1.9], "to": [0.4, 0.28, 2.2] }, "text": [{ "t": "그건!", "style": "slam", "x": 0.76, "y": 0.3, "size": 130 }], "sfx": [{ "name": "pang" }] },
+      { "at": 0.4, "in": "spin", "bg": "burst:#FF8FB1:#FF6F9C", "fx": ["imagine", "shake"], "props": [{ "art": "prop/bulb-brain", "x": 0.5, "y": 0.46, "w": 0.42, "enter": "drop" }], "text": [{ "t": "머리 너무 써서 닳음!", "style": "shake", "y": 0.86, "size": 90, "color": "#FFD23F", "at": 0.2 }], "sfx": [{ "name": "boing" }] }
+    ] },
+    { "line": "c03b-0", "shots": [
+      { "in": "slam", "bg": "burst:#FFD23F:#FFB627", "cast": [{ "art": "common/cutin/dad-proud", "x": 0.32, "h": 1, "enter": "spin", "talk": "dad" }], "text": [{ "t": "똑똑 = 대머리", "style": "stamp", "x": 0.74, "y": 0.34, "size": 100, "color": "#B8352A" }, { "t": "앞머리 = 공부의 흔적", "style": "pop", "x": 0.74, "y": 0.58, "size": 70, "at": 0.4 }], "sfx": [{ "name": "stamp" }, { "name": "pop", "at": 0.4 }] }
+    ] },
+    { "line": "c03b-1", "pad": 4, "shots": [
+      { "in": "smash", "bg": "#F6EEDF", "cast": [{ "art": "cutin/barber-flat", "x": 0.66, "h": 1, "talk": "barber" }], "text": [{ "t": "공부 안 함", "style": "stamp", "x": 0.28, "y": 0.4, "size": 110, "at": 0.1 }], "sfx": [{ "name": "scratch" }, { "name": "stamp", "at": 0.1 }] }
+    ] },
+    { "line": "c03c-0", "pad": 6, "count": 3, "countAt": 0.15, "shots": [
+      { "in": "smash", "bg": "bg/barbershop", "cast": [{ "art": "dad/cape-panic", "x": 0.45, "h": 0.9 }], "cam": { "from": [0.45, 0.3, 2.1], "ease": "snap", "roll": [-5, -5] }, "freeze": 0.15, "mark": { "kind": "x", "at": 0.2 }, "tag": { "t": "공부의 흔적", "sub": "아님", "x": 0.74, "y": 0.3, "at": 0.45 }, "sfx": [{ "name": "buzz", "at": 0.2 }, { "name": "stamp", "at": 0.45 }] }
+    ] },
+    { "line": "c04-0", "shots": [
+      { "in": "zoom", "bg": "bg/barbershop", "cast": [{ "art": "barber/talk", "x": 0.7, "h": 0.84, "talk": "barber" }], "cam": { "from": [0.68, 0.42, 1.5], "to": [0.68, 0.4, 1.75] }, "text": [{ "t": "딱 세 판!", "style": "slam", "x": 0.28, "y": 0.36, "size": 130, "color": "#FFD23F" }], "sfx": [{ "name": "pang" }] }
+    ] },
+    { "line": "c04-1", "pad": 4, "shots": [
+      { "in": "whip-r", "bg": "dots:#F6EEDF:#E8DCC4", "cast": [{ "art": "common/cutin/dad-panic", "x": 0.34, "h": 1 }], "text": [{ "t": "이발에 판이…?", "style": "pop", "x": 0.76, "y": 0.4, "size": 90 }], "sfx": [{ "name": "boing" }] }
+    ] },
+    { "line": "c05-0", "shots": [
+      { "in": "zoom", "bg": "stripes:#15303A:#1F4452", "text": [{ "t": "ROUND 1", "style": "slam", "y": 0.22, "size": 110, "color": "#FFD23F" }, { "t": "털은", "style": "pop", "y": 0.44, "size": 120, "at": 0.2 }, { "t": "원래 있다", "style": "stamp", "y": 0.66, "size": 120, "color": "#FFD23F", "at": 0.45 }], "sfx": [{ "name": "stinger" }, { "name": "stamp", "at": 0.45 }] }
+    ] },
+    { "line": "c05-1", "shots": [
+      { "in": "whip-l", "bg": "full/fuzz-arm", "cam": { "from": [0.3, 0.55, 1.3], "to": [0.6, 0.5, 1.15] }, "text": [{ "t": "솜털", "style": "slam", "x": 0.24, "y": 0.2, "size": 130, "color": "#FFD23F" }], "sfx": [{ "name": "whoosh" }] },
+      { "at": 0.55, "in": "zoom", "bg": "full/fuzz-arm", "cam": { "from": [0.45, 0.55, 2], "to": [0.47, 0.55, 2.3] }, "text": [{ "t": "온몸에 원래 있음", "style": "stamp", "y": 0.84, "size": 90, "color": "#2E9E4F", "at": 0.15 }], "sfx": [{ "name": "ding", "at": 0.15 }] }
+    ] },
+    { "line": "c05b-0", "pad": 4, "shots": [
+      { "in": "slam", "bg": "burst:#7DD87D:#4FBF5F", "cast": [{ "art": "common/kid/wow", "x": 0.34, "h": 0.8, "enter": "b", "talk": "kid" }], "text": [{ "t": "진짜 있다!", "style": "shake", "x": 0.74, "y": 0.4, "size": 110 }], "sfx": [{ "name": "ding" }] }
+    ] },
+    { "line": "c05b-1", "shots": [
+      { "in": "whip-r", "bg": "bg/barbershop", "cast": [{ "art": "barber/talk", "x": 0.7, "h": 0.84, "talk": "barber" }], "cam": { "from": [0.68, 0.42, 1.55], "to": [0.68, 0.4, 1.75] }, "text": [{ "t": "때가 되면", "style": "pop", "x": 0.28, "y": 0.3, "size": 90 }] },
+      { "at": 0.45, "in": "zoom", "bg": "dots:#F6EEDF:#E8DCC4", "props": [{ "art": "prop/puberty-switch", "x": 0.3, "y": 0.46, "w": 0.34, "enter": "pop" }], "text": [{ "t": "어른 준비", "style": "slam", "x": 0.72, "y": 0.34, "size": 110 }, { "t": "신호 ON", "style": "stamp", "x": 0.72, "y": 0.58, "size": 110, "color": "#B8352A", "at": 0.3 }], "sfx": [{ "name": "tick" }, { "name": "stamp", "at": 0.3 }] }
+    ] },
+    { "line": "c05c-0", "shots": [
+      { "in": "zoom", "bg": "stripes:#15303A:#1F4452", "text": [{ "t": "솜털 → 굵은 털", "style": "slam", "y": 0.2, "size": 100, "color": "#FFD23F" }, { "t": "수염", "style": "pop", "x": 0.2, "y": 0.52, "size": 100, "at": 0.12 }, { "t": "구레나룻", "style": "pop", "x": 0.42, "y": 0.62, "size": 90, "at": 0.3 }, { "t": "겨드랑이", "style": "pop", "x": 0.64, "y": 0.52, "size": 90, "at": 0.5 }, { "t": "거기", "style": "pop", "x": 0.84, "y": 0.62, "size": 100, "at": 0.68 }], "sfx": [{ "name": "pop", "at": 0.12 }, { "name": "pop", "at": 0.3 }, { "name": "pop", "at": 0.5 }, { "name": "pop", "at": 0.68 }] }
+    ] },
+    { "line": "c05c-1", "pad": 4, "shots": [
+      { "in": "slam", "bg": "burst:#FFD23F:#FFB627", "cast": [{ "art": "common/cutin/dad-proud", "x": 0.32, "h": 1, "enter": "pop", "talk": "dad" }], "props": [{ "art": "prop/puberty-switch", "x": 0.76, "y": 0.42, "w": 0.26, "enter": "drop", "rot": 6 }], "text": [{ "t": "사춘기!", "style": "shake", "x": 0.76, "y": 0.82, "size": 110, "at": 0.1 }], "sfx": [{ "name": "pang" }] }
+    ] },
+    { "line": "c06-0", "shots": [
+      { "in": "zoom", "bg": "stripes:#15303A:#1F4452", "text": [{ "t": "ROUND 2", "style": "slam", "y": 0.22, "size": 110, "color": "#FFD23F" }, { "t": "왜 하필", "style": "pop", "y": 0.44, "size": 120, "at": 0.2 }, { "t": "겨드랑이랑 거기?", "style": "stamp", "y": 0.66, "size": 110, "color": "#FFD23F", "at": 0.45 }], "sfx": [{ "name": "stinger" }, { "name": "stamp", "at": 0.45 }] },
+      { "at": 0.6, "in": "whip-l", "bg": "full/mirror-foam", "cam": { "from": [0.45, 0.5, 1.1], "to": [0.45, 0.48, 1.25] }, "text": [{ "t": "거품 모자이크", "style": "news", "at": 0.05 }], "sfx": [{ "name": "whoosh" }] }
+    ] },
+    { "line": "c06b-0", "shots": [
+      { "in": "whip-r", "bg": "full/two-glands", "cam": { "from": [0.25, 0.5, 1.5], "to": [0.3, 0.5, 1.6] }, "text": [{ "t": "보통 땀샘", "style": "pop", "x": 0.28, "y": 0.16, "size": 84 }, { "t": "피부 위로", "style": "pop", "x": 0.28, "y": 0.84, "size": 70, "at": 0.2 }], "sfx": [{ "name": "pop" }] },
+      { "at": 0.45, "in": "whip-l", "bg": "full/two-glands", "cam": { "from": [0.75, 0.5, 1.5], "to": [0.72, 0.5, 1.65] }, "text": [{ "t": "특별한 땀샘", "style": "slam", "x": 0.7, "y": 0.16, "size": 96, "color": "#FFD23F" }, { "t": "털 뿌리 안으로!", "style": "stamp", "x": 0.7, "y": 0.84, "size": 90, "color": "#B8352A", "at": 0.25 }], "sfx": [{ "name": "stamp", "at": 0.25 }] }
+    ] },
+    { "line": "c06b-1", "pad": 4, "shots": [
+      { "in": "slam", "bg": "burst:#FFD23F:#FFB627", "cast": [{ "art": "common/cutin/kid-doubt", "x": 0.32, "h": 1, "enter": "pop", "talk": "kid" }], "text": [{ "t": "털 속으로 땀?", "style": "shake", "x": 0.74, "y": 0.4, "size": 100 }], "sfx": [{ "name": "pop" }] }
+    ] },
+    { "line": "c06c-0", "shots": [
+      { "in": "zoom", "bg": "dots:#F6EEDF:#E8DCC4", "props": [{ "art": "prop/icon-wick", "x": 0.3, "y": 0.46, "w": 0.36, "enter": "pop" }], "text": [{ "t": "털 = 심지", "style": "slam", "x": 0.72, "y": 0.34, "size": 120 }, { "t": "땀을 붙잡아 퍼뜨림", "style": "pop", "x": 0.72, "y": 0.58, "size": 70, "at": 0.35 }], "sfx": [{ "name": "pang" }, { "name": "pop", "at": 0.35 }] }
+    ] },
+    { "line": "c06c-1", "shots": [
+      { "in": "whip-r", "bg": "full/two-glands", "cam": { "from": [0.82, 0.3, 2], "to": [0.84, 0.3, 2.2] }, "text": [{ "t": "냄새 범인", "style": "slam", "x": 0.3, "y": 0.2, "size": 100 }, { "t": "= 피부 세균", "style": "stamp", "x": 0.3, "y": 0.42, "size": 100, "color": "#B8352A", "at": 0.3 }], "sfx": [{ "name": "scratch" }, { "name": "stamp", "at": 0.3 }] },
+      { "at": 0.65, "in": "cut", "bg": "dots:#F6EEDF:#E8DCC4", "text": [{ "t": "땀 자체는", "style": "pop", "y": 0.36, "size": 100 }, { "t": "거의 무향", "style": "stamp", "y": 0.6, "size": 120, "color": "#2E9E4F", "at": 0.15 }], "sfx": [{ "name": "ding", "at": 0.15 }] }
+    ] },
+    { "line": "c06d-0", "shots": [
+      { "in": "whip-l", "bg": "bg/barbershop", "cast": [{ "art": "common/mom/smirk", "x": 0.6, "h": 0.8, "talk": "mom" }], "cam": { "from": [0.6, 0.45, 1.6], "to": [0.6, 0.42, 1.8] }, "text": [{ "t": "그래서 클 때쯤…", "style": "type", "x": 0.26, "y": 0.3, "size": 80 }] }
+    ] },
+    { "line": "c06d-1", "shots": [
+      { "in": "zoom", "bg": "bg/barbershop", "cast": [{ "art": "barber/normal", "x": 0.7, "h": 0.84, "talk": "barber" }], "cam": { "from": [0.68, 0.42, 1.55], "to": [0.68, 0.4, 1.75] } },
+      { "at": 0.4, "in": "slam", "bg": "stripes:#15303A:#1F4452", "props": [{ "art": "prop/puberty-switch", "x": 0.5, "y": 0.4, "w": 0.24, "enter": "pop" }], "text": [{ "t": "털 + 땀샘", "style": "slam", "y": 0.72, "size": 110, "color": "#FFD23F" }, { "t": "같은 신호에 같이 ON", "style": "pop", "y": 0.88, "size": 70, "at": 0.25 }], "sfx": [{ "name": "tick" }, { "name": "stamp", "at": 0.25 }] }
+    ] },
+    { "line": "c07-0", "shots": [
+      { "in": "zoom", "bg": "stripes:#15303A:#1F4452", "text": [{ "t": "ROUND 3", "style": "slam", "y": 0.22, "size": 110, "color": "#FFD23F" }, { "t": "대머리", "style": "stamp", "y": 0.56, "size": 170, "color": "#FFD23F", "at": 0.3 }], "sfx": [{ "name": "stinger" }, { "name": "stamp", "at": 0.3 }] },
+      { "at": 0.5, "in": "smash", "bg": "bg/barbershop", "cast": [{ "art": "barber/bald", "x": 0.6, "h": 0.9 }], "cam": { "from": [0.6, 0.22, 2.4], "to": [0.6, 0.24, 2.0] }, "fx": ["kira"], "sfx": [{ "name": "ding" }] }
+    ] },
+    { "line": "c07-1", "shots": [
+      { "in": "whip-r", "bg": "bg/barbershop", "cast": [{ "art": "barber/talk", "x": 0.7, "h": 0.84, "talk": "barber" }], "cam": { "from": [0.68, 0.42, 1.55], "to": [0.68, 0.4, 1.75] }, "text": [{ "t": "같은 신호", "style": "pop", "x": 0.28, "y": 0.3, "size": 90 }] },
+      { "at": 0.45, "in": "spin", "bg": "full/bald-map", "cam": { "from": [0.5, 0.35, 1.5], "to": [0.5, 0.4, 1.2] }, "text": [{ "t": "정수리만 거꾸로", "style": "shake", "y": 0.86, "size": 100, "color": "#B8352A", "at": 0.2 }], "sfx": [{ "name": "scratch", "at": 0.2 }] }
+    ] },
+    { "line": "c07b-0", "shots": [
+      { "in": "zoom", "bg": "dots:#F6EEDF:#E8DCC4", "cast": [{ "art": "barber/chest", "x": 0.3, "h": 0.84 }], "text": [{ "t": "수염 · 가슴", "style": "slam", "x": 0.72, "y": 0.3, "size": 100 }, { "t": "굵어져라!", "style": "stamp", "x": 0.72, "y": 0.54, "size": 110, "color": "#2E9E4F", "at": 0.2 }], "sfx": [{ "name": "stamp", "at": 0.2 }] },
+      { "at": 0.5, "in": "whip-l", "bg": "dots:#F6EEDF:#E8DCC4", "cast": [{ "art": "barber/bald", "x": 0.3, "h": 0.84 }], "text": [{ "t": "정수리", "style": "slam", "x": 0.72, "y": 0.3, "size": 110 }, { "t": "가늘어져라…", "style": "stamp", "x": 0.72, "y": 0.54, "size": 100, "color": "#B8352A", "at": 0.2 }], "sfx": [{ "name": "stamp", "at": 0.2 }] }
+    ] },
+    { "line": "c07b-1", "shots": [
+      { "in": "zoom", "bg": "bg/barbershop", "cast": [{ "art": "dad/cape", "x": 0.4, "h": 0.84, "talk": "dad" }], "cam": { "from": [0.4, 0.3, 1.9], "to": [0.4, 0.28, 2.2] }, "text": [{ "t": "아하!", "style": "slam", "x": 0.76, "y": 0.3, "size": 130 }], "sfx": [{ "name": "pang" }] },
+      { "at": 0.35, "in": "spin", "bg": "burst:#FF8FB1:#FF6F9C", "fx": ["imagine"], "props": [{ "art": "prop/hair-movers", "x": 0.5, "y": 0.46, "w": 0.44, "enter": "l" }], "text": [{ "t": "머리털 → 가슴 이사!", "style": "shake", "y": 0.86, "size": 96, "color": "#FFD23F", "at": 0.2 }], "sfx": [{ "name": "whoosh" }, { "name": "boing", "at": 0.2 }] }
+    ] },
+    { "line": "c07c-0", "shots": [
+      { "in": "glitch", "bg": "#F6EEDF", "cast": [{ "art": "cutin/barber-flat", "x": 0.66, "h": 1, "talk": "barber" }], "text": [{ "t": "이사 아님", "style": "stamp", "x": 0.28, "y": 0.32, "size": 110, "color": "#B8352A" }, { "t": "알아듣는 털이 다름", "style": "pop", "x": 0.28, "y": 0.56, "size": 70, "at": 0.4 }], "sfx": [{ "name": "scratch" }, { "name": "pop", "at": 0.4 }] }
+    ] },
+    { "line": "c07c-1", "shots": [
+      { "in": "zoom", "bg": "full/bald-map", "cam": { "from": [0.5, 0.5, 1.1], "to": [0.5, 0.55, 1.25] }, "text": [{ "t": "옆 · 뒤 = 둔감", "style": "slam", "y": 0.14, "size": 100 }, { "t": "말굽 모양", "style": "stamp", "y": 0.86, "size": 110, "color": "#FFD23F", "at": 0.35 }], "sfx": [{ "name": "pop" }, { "name": "stamp", "at": 0.35 }] }
+    ] },
+    { "line": "c07d-0", "pad": 4, "shots": [
+      { "in": "slam", "bg": "burst:#FFD23F:#FFB627", "cast": [{ "art": "common/cutin/kid-ask", "x": 0.32, "h": 1, "enter": "pop", "talk": "kid" }], "text": [{ "t": "U자!", "style": "shake", "x": 0.74, "y": 0.4, "size": 180, "color": "#B8352A" }], "sfx": [{ "name": "pop" }] }
+    ] },
+    { "line": "c07d-1", "shots": [
+      { "in": "zoom", "bg": "bg/barbershop", "cast": [{ "art": "barber/laugh", "x": 0.7, "h": 0.84, "talk": "barber" }], "cam": { "from": [0.68, 0.42, 1.55], "to": [0.68, 0.4, 1.75] }, "text": [{ "t": "그려", "style": "pop", "x": 0.28, "y": 0.3, "size": 110 }] },
+      { "at": 0.4, "in": "whip-r", "bg": "dots:#F6EEDF:#E8DCC4", "text": [{ "t": "뒷머리 → 앞으로", "style": "slam", "y": 0.34, "size": 110 }, { "t": "옮겨도 안 빠짐", "style": "stamp", "y": 0.6, "size": 110, "color": "#2E9E4F", "at": 0.3 }, { "t": "= 모발이식", "style": "pop", "y": 0.82, "size": 70, "at": 0.55 }], "sfx": [{ "name": "stamp", "at": 0.3 }, { "name": "ding", "at": 0.55 }] }
+    ] },
+    { "line": "c07e-0", "pad": 8, "shots": [
+      { "in": "wipe", "bg": "stripes:#15303A:#1F4452", "text": [{ "t": "한 줄 정리", "style": "news", "at": 0.02 }, { "t": "① 솜털이 굵어지고", "style": "slam", "y": 0.3, "size": 86, "at": 0.1 }, { "t": "② 땀샘이 켜지고", "style": "slam", "y": 0.5, "size": 86, "color": "#FFD23F", "at": 0.38 }, { "t": "③ 정수리만 거꾸로", "style": "slam", "y": 0.7, "size": 86, "at": 0.66 }], "sfx": [{ "name": "stamp", "at": 0.1 }, { "name": "stamp", "at": 0.38 }, { "name": "stamp", "at": 0.66 }] }
+    ] },
+    { "line": "c08-0", "calm": true, "shots": [
+      { "in": "iris", "bg": "bg/barbershop-front", "cast": [{ "art": "common/dad/normal", "x": 0.66, "h": 0.84, "talk": "dad" }, { "art": "common/kid/normal", "x": 0.4, "h": 0.55 }], "cam": { "from": [0.55, 0.5, 1.2], "to": [0.55, 0.49, 1.28] } }
+    ] },
+    { "line": "c08-1", "calm": true, "shots": [
+      { "in": "cut", "bg": "full/fuzz-arm", "cam": { "from": [0.4, 0.55, 1.15], "to": [0.45, 0.55, 1.22] } }
+    ] },
+    { "line": "c08b-0", "calm": true, "shots": [
+      { "in": "cut", "bg": "bg/barbershop-front", "cast": [{ "art": "common/dad/explain", "x": 0.64, "h": 0.84, "talk": "dad" }, { "art": "common/kid/normal", "x": 0.4, "h": 0.55 }], "cam": { "from": [0.55, 0.45, 1.25], "to": [0.55, 0.44, 1.33] } }
+    ] },
+    { "line": "c08b-1", "calm": true, "shots": [
+      { "in": "cut", "bg": "bg/barbershop-front", "cast": [{ "art": "common/kid/ask", "x": 0.42, "h": 0.6, "talk": "kid" }], "cam": { "from": [0.45, 0.55, 1.4], "to": [0.45, 0.54, 1.5] } }
+    ] },
+    { "line": "c08c-0", "calm": true, "shots": [
+      { "in": "cut", "bg": "bg/barbershop-front", "cast": [{ "art": "common/dad/normal", "x": 0.62, "h": 0.84, "talk": "dad" }], "cam": { "from": [0.62, 0.42, 1.45], "to": [0.62, 0.41, 1.55] } }
+    ] },
+    { "line": "c08c-1", "calm": true, "shots": [
+      { "in": "cut", "bg": "bg/barbershop-front", "cast": [{ "art": "common/dad/explain-b", "x": 0.64, "h": 0.84, "talk": "dad" }, { "art": "common/kid/normal", "x": 0.4, "h": 0.55 }], "cam": { "from": [0.55, 0.47, 1.2], "to": [0.55, 0.46, 1.28] } }
+    ] },
+    { "line": "c08d-0", "calm": true, "shots": [
+      { "in": "cut", "bg": "bg/barbershop", "cast": [{ "art": "common/kid/normal", "x": 0.4, "h": 0.55, "talk": "kid" }, { "art": "barber/normal", "x": 0.72, "h": 0.8 }], "cam": { "from": [0.55, 0.5, 1.2], "to": [0.55, 0.49, 1.28] } }
+    ] },
+    { "line": "c08d-1", "calm": true, "pad": 8, "shots": [
+      { "in": "cut", "bg": "bg/barbershop", "cast": [{ "art": "barber/laugh", "x": 0.68, "h": 0.84, "talk": "barber" }], "cam": { "from": [0.66, 0.42, 1.45], "to": [0.66, 0.41, 1.55] } }
+    ] },
+    { "line": "c09-0", "shots": [
+      { "in": "whip-l", "bg": "bg/barbershop-front", "cast": [{ "art": "common/kid/doubt", "x": 0.42, "h": 0.6, "talk": "kid" }], "cam": { "from": [0.42, 0.58, 1.8], "to": [0.42, 0.55, 2] }, "text": [{ "t": "아빠도?", "style": "shake", "x": 0.76, "y": 0.3, "size": 110, "at": 0.3 }], "sfx": [{ "name": "pop", "at": 0.3 }] }
+    ] },
+    { "line": "c09-1", "shots": [
+      { "in": "zoom", "bg": "bg/barbershop-front", "cast": [{ "art": "common/dad/proud", "x": 0.66, "h": 0.84, "talk": "dad" }], "cam": { "from": [0.66, 0.42, 1.7], "to": [0.66, 0.4, 1.95] }, "text": [{ "t": "걱정 마!", "style": "slam", "x": 0.28, "y": 0.3, "size": 110 }], "sfx": [{ "name": "pang" }] },
+      { "at": 0.45, "in": "whip-r", "bg": "dots:#F6EEDF:#E8DCC4", "props": [{ "art": "prop/grandpa-photos", "x": 0.5, "y": 0.46, "w": 0.6, "enter": "pop" }], "cam": { "from": [0.32, 0.46, 1.6], "to": [0.32, 0.44, 1.75] }, "text": [{ "t": "외할아버지 = 풍성", "style": "stamp", "y": 0.86, "size": 90, "color": "#2E9E4F", "at": 0.25 }], "sfx": [{ "name": "ding", "at": 0.25 }] }
+    ] },
+    { "line": "c09b-0", "shots": [
+      { "in": "glitch", "bg": "#F6EEDF", "cast": [{ "art": "cutin/barber-flat", "x": 0.66, "h": 1, "talk": "barber" }], "text": [{ "t": "반만 맞음", "style": "stamp", "x": 0.28, "y": 0.32, "size": 110, "color": "#B8352A" }, { "t": "아빠 쪽도 닮음", "style": "pop", "x": 0.28, "y": 0.56, "size": 76, "at": 0.4 }], "sfx": [{ "name": "scratch" }, { "name": "pop", "at": 0.4 }] }
+    ] },
+    { "line": "c09b-1", "shots": [
+      { "in": "whip-l", "bg": "dots:#F6EEDF:#E8DCC4", "props": [{ "art": "prop/grandpa-photos", "x": 0.5, "y": 0.46, "w": 0.6 }], "cam": { "from": [0.68, 0.44, 1.6], "to": [0.68, 0.42, 1.9] }, "fx": ["kira"], "text": [{ "t": "친할아버지", "style": "pop", "y": 0.14, "size": 90, "at": 0.1 }, { "t": "반짝반짝", "style": "shake", "y": 0.86, "size": 120, "color": "#FFD23F", "at": 0.35 }], "sfx": [{ "name": "ding", "at": 0.35 }] }
+    ] },
+    { "line": "c09c-0", "shots": [
+      { "in": "smash", "bg": "#15303A", "cast": [{ "art": "common/cutin/dad-shock", "x": 0.5, "h": 1 }], "fx": ["lines", "shake"], "cam": { "from": [0.5, 0.45, 1], "punch": [2, 6] }, "text": [{ "t": "저녁 늦겠다…", "style": "type", "y": 0.86, "size": 80, "at": 0.2 }], "sfx": [{ "name": "crash" }] }
+    ] },
+    { "line": "c09c-1", "pad": 30, "count": 4, "countAt": 0.15, "shots": [
+      { "in": "smash", "bg": "dots:#F6EEDF:#E8DCC4", "tally": 4, "mark": { "kind": "x", "at": 2 }, "text": [{ "t": "역시, 모답맨", "style": "stamp", "x": 0.5, "y": 0.84, "size": 100, "at": 0.55 }], "sfx": [{ "name": "buzz", "at": 2 }, { "name": "crash", "at": 0.55 }] }
+    ] },
+    { "hold": 75, "shots": [
+      { "in": "iris", "bg": "burst:#15303A:#1F4452", "cast": [{ "art": "common/cutin/dad-panic", "x": 0.5, "h": 0.8, "enter": "spin" }], "text": [{ "t": "모답맨", "style": "slam", "y": 0.2, "size": 120, "color": "#FFD23F" }, { "t": "다음 오답도 기대해 주세요", "style": "pop", "y": 0.86, "size": 64, "at": 14 }], "note": "※ 일반 설명이에요. 털 · 탈모 고민은 피부과 전문의와 상담하세요" }
+    ] }
+  ]
+}

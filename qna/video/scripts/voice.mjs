@@ -346,6 +346,7 @@ async function generate(lock) {
   const keys = [...new Set([key1, key2].filter(Boolean))];
   if (!keys.length) throw new Error(NO_KEY);
   let keyIndex = 0;
+  let dailyHits = 0;
   const API = "https://generativelanguage.googleapis.com/v1beta";
   const call = async (path, body) => {
     for (let attempt = 1; ; attempt++) {
@@ -357,11 +358,16 @@ async function generate(lock) {
       });
       if (res.ok) return res.json();
       const text = await res.text();
-      if (res.status === 429 && keys.length > 1 && /PerDay/i.test(text)) {
-        console.log(`  일일 한도 도달 — 다음 API 키로 전환`);
-        keyIndex++;
-        continue;
+      if (res.status === 429 && /PerDay/i.test(text)) {
+        // 키를 한 바퀴 다 돌았는데도 일일 한도면 멈춘다 (전환만 끝없이 되풀이하지 않게)
+        if (keys.length > 1 && ++dailyHits < keys.length) {
+          console.log(`  일일 한도 도달 — 다음 API 키로 전환`);
+          keyIndex++;
+          continue;
+        }
+        throw new Error(`모든 API 키가 이 모델의 일일 한도에 걸렸다. 내일 다시 하거나 크롬 AI Studio 로 남은 줄을 만든다`);
       }
+      dailyHits = 0;
       if ((res.status === 429 || res.status >= 500) && attempt < 10) {
         console.log(`  ${res.status} — 60초 뒤 다시 시도 (${attempt}/9)`);
         await new Promise((r) => setTimeout(r, 60000));

@@ -19,7 +19,23 @@
     "common/cutin/kid-ask",
     "common/cutin/kid-doubt",
     "common/dad/explain-b",
-    "common/kid/ask-b"
+    "common/kid/ask-b",
+    "common/mom/normal",
+    "common/mom/explain",
+    "common/mom/shock",
+    "common/mom/smirk",
+    "common/cutin/mom-smirk",
+    "common/cutin/dad-shock",
+    "common/cutin/dad-proud",
+    "common/cutin/dad-sig-1",
+    "common/cutin/dad-sig-2",
+    "common/cutin/dad-sig-3",
+    "common/cutin/mom-sig-1",
+    "common/cutin/mom-sig-2",
+    "common/cutin/mom-sig-3",
+    "common/cutin/mom-sig-4",
+    "common/cutin/mom-sig-scream",
+    "common/cutin/kid-sig"
   ],
   "items": [
     {
@@ -261,6 +277,86 @@
       "cuts": "c15, 끝 화면",
       "motion": "배경이 왼쪽으로 천천히 밀린다. 끝 화면에서는 흐리게 깔린다.",
       "desc": "A slightly out-of-focus Korean neighborhood street on a chilly morning: a small clinic building and a pharmacy next door with a green cross sign (blank sign boards, no text). In the foreground at the bottom, seen from behind and only from the knees down: the dad's legs in gray sweatpants and slippers next to the kid's small legs in navy shorts, white socks and a too-big scarf trailing, walking toward the clinic, the kid holding a crumpled tissue. A big glossy question mark floats in the sky. No faces."
+    },
+    {
+      "id": "cutin/barber-flat",
+      "kind": "cutin",
+      "who": "barber",
+      "title": "컷인 — 할아버지 정색 (모답맨판)",
+      "cuts": "ep04f c00b, c03b, c09b",
+      "motion": "한 줄 태클 때 툭 들어온다.",
+      "desc": "Facing slightly to the LEFT. A totally flat, deadpan, unimpressed close-up: half-lidded bored eyes looking straight at the viewer, both bushy white eyebrows perfectly level, mouth a flat straight line under the white mustache, the shiny bald head gleaming. Holding a comb up beside his face like a pointer. Dry comedy, funny, not angry.",
+      "attach": [
+        {
+          "path": "content/ep04-body-hair/art/cutin/barber.png",
+          "label": "the same barber grandpa close-up (face, lighting)"
+        }
+      ]
+    },
+    {
+      "id": "prop/fur-blanket",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 아빠의 상상: 털 이불 (모답맨판)",
+      "cuts": "ep04f c00",
+      "motion": "상상 화면에 뚝 떨어진다.",
+      "desc": "A tiny, ridiculously fluffy brown fur blanket folded like a little quilt, with a small knitted pom-pom, a toy thermometer stuck in it showing freezing cold blue, a few cartoon snowflakes and shiver lines around it. Silly and cute."
+    },
+    {
+      "id": "prop/razor",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 면도기 (모답맨판)",
+      "cuts": "ep04f c02",
+      "motion": "옆에서 휙 들어온다.",
+      "desc": "A classic plastic hand razor with a blue handle and a shiny blade head, a puff of white shaving foam on the head, a little sparkle on the blade. Clean and simple."
+    },
+    {
+      "id": "prop/hair-tips",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 털 끝 확대: 뾰족한 끝 vs 잘린 끝 (모답맨판)",
+      "cuts": "ep04f c02",
+      "motion": "돋보기처럼 커진다.",
+      "desc": "A big round magnifying-glass close-up showing two single dark hair strands standing side by side, both exactly the same thickness: the left one ends in a naturally thin, sharp tapered point; the right one is cut straight across with a flat, blunt square end. A small comic snip mark next to the flat end. Clear and diagram-like, no labels."
+    },
+    {
+      "id": "prop/bulb-brain",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 아빠의 상상: 머리를 너무 써서 닳음 (모답맨판)",
+      "cuts": "ep04f c03",
+      "motion": "상상 화면에서 부들부들 떨며 김이 난다.",
+      "desc": "A cartoon pink brain glowing like an overheated light bulb, steam and little sparks puffing off it, a few loose single hair strands flying away from it in panic, a tiny graduation cap tilted on top. Silly gag image."
+    },
+    {
+      "id": "prop/puberty-switch",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 어른 준비 스위치 (모답맨판)",
+      "cuts": "ep04f c05b, c05c, c06d",
+      "motion": "딸깍 켜지며 번쩍인다.",
+      "desc": "A big chunky retro wall toggle switch on a round wooden plate, flipped up to ON, with a glowing warm yellow light burst and sparkles around it, a small sprouting green seedling next to it. No letters."
+    },
+    {
+      "id": "prop/hair-movers",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 아빠의 상상: 머리털 이사 (모답맨판)",
+      "cuts": "ep04f c07b",
+      "motion": "상상 화면에서 오른쪽으로 통통 굴러간다.",
+      "desc": "A tiny cartoon moving truck loaded with bundles of black hair strands tied with string like luggage, a few single hair strands with little suitcases hopping onto it, dust puffs behind the wheels, driving downhill. Silly and cute, no people, no letters."
+    },
+    {
+      "id": "prop/grandpa-photos",
+      "kind": "prop",
+      "people": [
+        "dad"
+      ],
+      "title": "소품 — 외할아버지 · 친할아버지 사진 (모답맨판)",
+      "cuts": "ep04f c09, c09b",
+      "motion": "왼쪽 사진 → 오른쪽 사진 순서로 확대된다.",
+      "desc": "ONLY two big old wooden picture frames standing side by side, filling the whole image edge to edge; nothing else, nobody standing outside the frames (the dad himself does NOT appear in this image). LEFT frame: a chest-up portrait photo of a smiling Korean grandpa in his seventies with a big thick fluffy head of gray hair, round glasses, a cardigan (the mom's father). RIGHT frame: a chest-up portrait photo of a Korean grandpa in his seventies whose face looks like a 75-year-old version of the man in attached image 2 (same face shape, same eyebrows, same smile), but completely bald with a super shiny head that has a big sparkle glint (the dad's father). Warm family photos, no text."
     }
   ]
 }

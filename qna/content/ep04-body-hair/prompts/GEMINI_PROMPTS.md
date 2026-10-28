@@ -1,7 +1,7 @@
 # Gemini 프롬프트 — 4편 · 아빠는 왜 거기에 털이 나요?
 
 > `video/scripts/prompts.mjs` 가 만든 파일이다. 직접 고치지 말고 `content/ep04-body-hair/script/art.json` 을 고친 뒤 `npm run prompts` 를 다시 실행한다.
-> 이 편에만 쓰는 그림 26장. 진행: 26 / 26
+> 이 편에만 쓰는 그림 34장. 진행: 33 / 34
 > 다 넣었으면 `video/` 에서 `npm run make -- ep04` → `video/out/ep04/ep04.mp4`
 
 ## 사용법
@@ -52,16 +52,57 @@
 | ✅ | 컷인 — 아이 의심 | `content/_common/art/cutin/kid-doubt.png` |
 | ✅ | 아빠 — 설명 (말하는 그림) | `content/_common/art/dad/explain-b.png` |
 | ✅ | 아이 — 질문 (말하는 그림) | `content/_common/art/kid/ask-b.png` |
+| ✅ | 엄마 — 기본 | `content/_common/art/mom/normal.png` |
+| ✅ | 엄마 — 설명 | `content/_common/art/mom/explain.png` |
+| ✅ | 엄마 — 충격 | `content/_common/art/mom/shock.png` |
+| ✅ | 엄마 — 다 안다는 미소 | `content/_common/art/mom/smirk.png` |
+| ✅ | 컷인 — 엄마 다 안다는 미소 | `content/_common/art/cutin/mom-smirk.png` |
+| ✅ | 컷인 — 아빠 충격 | `content/_common/art/cutin/dad-shock.png` |
+| ✅ | 컷인 — 아빠 뿌듯 | `content/_common/art/cutin/dad-proud.png` |
+| ✅ | 시그니처 — 아빠 네모 입막음 ① 손 올리기 | `content/_common/art/cutin/dad-sig-1.png` |
+| ✅ | 시그니처 — 아빠 네모 입막음 ② 입에 딱 | `content/_common/art/cutin/dad-sig-2.png` |
+| ✅ | 시그니처 — 아빠 네모 입막음 ③ 부들부들 | `content/_common/art/cutin/dad-sig-3.png` |
+| ✅ | 시그니처 — 엄마 검지 네모 ① 왼쪽 세로줄 | `content/_common/art/cutin/mom-sig-1.png` |
+| ✅ | 시그니처 — 엄마 검지 네모 ② 오른쪽 세로줄 | `content/_common/art/cutin/mom-sig-2.png` |
+| ✅ | 시그니처 — 엄마 검지 네모 ③ 위 가로줄 | `content/_common/art/cutin/mom-sig-3.png` |
+| ✅ | 시그니처 — 엄마 검지 네모 ④ 아래 가로줄 | `content/_common/art/cutin/mom-sig-4.png` |
+| ✅ | 시그니처 — 엄마 양 볼 누르고 악! | `content/_common/art/cutin/mom-sig-scream.png` |
+| ✅ | 시그니처 — 아이 거꾸로 손 가면 아악! | `content/_common/art/cutin/kid-sig.png` |
 
 ---
 
-## 1. 아직 없는 그림 — 0장 (이것만 Gemini 에서 만든다)
+## 1. 아직 없는 그림 — 1장 (이것만 Gemini 에서 만든다)
 
-남은 그림이 없다. `npm run art -- ep04` 로 처리하고 다음 단계로 넘어간다.
+#### 34. 소품 — 외할아버지 · 친할아버지 사진 (모답맨판)
+- 저장: `content/ep04-body-hair/art/prop/grandpa-photos.png`
+- 첨부 2장 (빠짐없이, 이 순서로): ① `content/_common/art/anchor/style-cutin.png` (화풍 앵커), ② `content/_common/art/dad/normal.png` (같이 나오는 사람 기준 그림 (normal))
+- 종류 · 비율: 소품 (초록 배경) · 1:1
+- 쓰이는 컷: ep04f c09, c09b
+- 영상에서의 움직임: 왼쪽 사진 → 오른쪽 사진 순서로 확대된다.
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is a single object cutout for a 2D animated video: bold readable shape, clear colors with soft shading, no people unless stated.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+Attached image 2 shows the dad: draw this person with exactly the same face, hairstyle, hair color, clothes, colors and body shape.
+
+Also in the picture: the dad: a Korean father in his late 30s, slightly chubby with a round face, short black hair that is clearly thinning on top, thick eyebrows, faint stubble, wearing a mustard-yellow knit cardigan over a white t-shirt, gray sweatpants and house slippers; a kind but easily flustered look.
+
+ONLY two big old wooden picture frames standing side by side, filling the whole image edge to edge; nothing else, nobody standing outside the frames (the dad himself does NOT appear in this image). LEFT frame: a chest-up portrait photo of a smiling Korean grandpa in his seventies with a big thick fluffy head of gray hair, round glasses, a cardigan (the mom's father). RIGHT frame: a chest-up portrait photo of a Korean grandpa in his seventies whose face looks like a 75-year-old version of the man in attached image 2 (same face shape, same eyebrows, same smile), but completely bald with a super shiny head that has a big sparkle glint (the dad's father). Warm family photos, no text.
+
+The cutout will be animated (popping in, swaying, sliding across the screen), so keep it as one compact connected shape with a clean outline and no loose parts floating apart from it.
+
+The whole subject visible with a small empty margin on every side, not cropped, centered.
+
+Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
+```
 
 ---
 
-## 2. 이미 있는 그림 — 26장 (건너뛴다)
+## 2. 이미 있는 그림 — 33장 (건너뛴다)
 
 다시 뽑고 싶으면 그 파일을 `_old/` 로 옮긴 뒤 `npm run prompts -- ep04` 를 다시 실행하면 위 목록으로 돌아온다.
 
@@ -93,3 +134,10 @@
 | 24 | 소품 — 알리는 털 (한 문장 정리용) | `content/ep04-body-hair/art/prop/icon-wick.png` |
 | 25 | 소품 — 흔적만 남은 털 (한 문장 정리용) | `content/ep04-body-hair/art/prop/icon-trace.png` |
 | 26 | 장면 — 다음 편 예고 (병원 · 약국) | `content/ep04-body-hair/art/full/next-teaser.png` |
+| 27 | 컷인 — 할아버지 정색 (모답맨판) | `content/ep04-body-hair/art/cutin/barber-flat.png` |
+| 28 | 소품 — 아빠의 상상: 털 이불 (모답맨판) | `content/ep04-body-hair/art/prop/fur-blanket.png` |
+| 29 | 소품 — 면도기 (모답맨판) | `content/ep04-body-hair/art/prop/razor.png` |
+| 30 | 소품 — 털 끝 확대: 뾰족한 끝 vs 잘린 끝 (모답맨판) | `content/ep04-body-hair/art/prop/hair-tips.png` |
+| 31 | 소품 — 아빠의 상상: 머리를 너무 써서 닳음 (모답맨판) | `content/ep04-body-hair/art/prop/bulb-brain.png` |
+| 32 | 소품 — 어른 준비 스위치 (모답맨판) | `content/ep04-body-hair/art/prop/puberty-switch.png` |
+| 33 | 소품 — 아빠의 상상: 머리털 이사 (모답맨판) | `content/ep04-body-hair/art/prop/hair-movers.png` |

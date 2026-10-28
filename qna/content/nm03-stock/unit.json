@@ -1,0 +1,28 @@
+{
+  "code": "nm03",
+  "slug": "stock",
+  "title": "내모남불 ③ 주식편 · 오르면 · 내리면 · 단톡방",
+  "series": "naemonambul",
+  "format": "modapman",
+  "status": "uploaded",
+  "created": "2026-10-27",
+  "youtube": [
+    {
+      "id": "GgaDTLkde-o",
+      "kind": "long"
+    },
+    {
+      "id": "kmF04p6HQGY",
+      "kind": "short"
+    },
+    {
+      "id": "ze_i2WtPjQ4",
+      "kind": "short"
+    },
+    {
+      "id": "Sbtkwn6cDN8",
+      "kind": "short"
+    }
+  ],
+  "tags": []
+}

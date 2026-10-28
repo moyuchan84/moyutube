@@ -479,6 +479,38 @@
     "w": 2560,
     "h": 1440
   },
+  "ep04/cutin/barber-flat": {
+    "w": 1174,
+    "h": 1300
+  },
+  "ep04/prop/fur-blanket": {
+    "w": 1200,
+    "h": 1040
+  },
+  "ep04/prop/razor": {
+    "w": 917,
+    "h": 1200
+  },
+  "ep04/prop/hair-tips": {
+    "w": 901,
+    "h": 1200
+  },
+  "ep04/prop/bulb-brain": {
+    "w": 1200,
+    "h": 983
+  },
+  "ep04/prop/puberty-switch": {
+    "w": 1163,
+    "h": 1200
+  },
+  "ep04/prop/hair-movers": {
+    "w": 1200,
+    "h": 940
+  },
+  "ep04/prop/grandpa-photos": {
+    "w": 1200,
+    "h": 1067
+  },
   "ep05/bg/pharmacy": {
     "w": 2560,
     "h": 1440
@@ -1095,6 +1127,102 @@
     "w": 2560,
     "h": 1440
   },
+  "ep11/butcher/normal": {
+    "w": 840,
+    "h": 1500
+  },
+  "ep11/butcher/correct": {
+    "w": 817,
+    "h": 1500
+  },
+  "ep11/butcher/explain": {
+    "w": 913,
+    "h": 1500
+  },
+  "ep11/butcher/smile": {
+    "w": 622,
+    "h": 1500
+  },
+  "ep11/cutin/butcher-flat": {
+    "w": 1062,
+    "h": 1300
+  },
+  "ep11/bg/meat-counter": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep11/bg/family-tree": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep11/bg/imagine-pink": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep11/full/turkey-tie-imagine": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep11/full/jump-kick-imagine": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep11/full/stamp-hunt": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep11/prop/turkey": {
+    "w": 1133,
+    "h": 1200
+  },
+  "ep11/prop/halal-stamp": {
+    "w": 1200,
+    "h": 975
+  },
+  "ep11/prop/kosher-stamp": {
+    "w": 1200,
+    "h": 1008
+  },
+  "ep11/prop/pig-no": {
+    "w": 1013,
+    "h": 1200
+  },
+  "ep11/prop/three-books": {
+    "w": 1200,
+    "h": 1040
+  },
+  "ep11/prop/calendar": {
+    "w": 1200,
+    "h": 1006
+  },
+  "ep11/prop/hammer-paper": {
+    "w": 811,
+    "h": 1200
+  },
+  "ep11/prop/toolbox": {
+    "w": 1200,
+    "h": 1108
+  },
+  "ep11/prop/round-table": {
+    "w": 1200,
+    "h": 863
+  },
+  "ep11/prop/high-chair": {
+    "w": 698,
+    "h": 1200
+  },
+  "ep11/prop/steamship": {
+    "w": 1200,
+    "h": 941
+  },
+  "ep11/prop/mo-stamp": {
+    "w": 1200,
+    "h": 1186
+  },
+  "ep11/prop/grad-cap": {
+    "w": 1200,
+    "h": 1111
+  },
   "nm01/full/highway-cutin": {
     "w": 2560,
     "h": 1440
@@ -1158,5 +1286,257 @@
   "nm01/full/blinker-home": {
     "w": 2560,
     "h": 1440
+  },
+  "nm02/manager/normal": {
+    "w": 574,
+    "h": 1500
+  },
+  "nm02/manager/radio": {
+    "w": 626,
+    "h": 1500
+  },
+  "nm02/cutin/manager-flat": {
+    "w": 1053,
+    "h": 1300
+  },
+  "nm02/bg/lobby": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm02/bg/elevator-inside": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm02/full/door-closing": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm02/cutin/dad-rage": {
+    "w": 1173,
+    "h": 1300
+  },
+  "nm02/prop/finger-mash": {
+    "w": 1200,
+    "h": 1076
+  },
+  "nm02/cutin/dad-whistle": {
+    "w": 1179,
+    "h": 1300
+  },
+  "nm02/full/family-hall": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm02/full/rocket-imagine": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm02/prop/panel-all-lit": {
+    "w": 619,
+    "h": 1200
+  },
+  "nm02/full/neighbor-buttons": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm02/full/dad-wrong-floor": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm02/full/loud-phone": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm02/full/dad-speaker": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm02/full/bench-dusk": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm02/full/mom-door": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm03/teller/normal": {
+    "w": 791,
+    "h": 1500
+  },
+  "nm03/teller/call": {
+    "w": 867,
+    "h": 1500
+  },
+  "nm03/teller/no-recommend": {
+    "w": 774,
+    "h": 1500
+  },
+  "nm03/cutin/teller-flat": {
+    "w": 1109,
+    "h": 1300
+  },
+  "nm03/buddy/normal": {
+    "w": 958,
+    "h": 1500
+  },
+  "nm03/buddy/cry": {
+    "w": 813,
+    "h": 1500
+  },
+  "nm03/bg/bank-lobby": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm03/bg/bank-dusk": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm03/full/waiting-phone": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm03/full/stock-god-imagine": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm03/cutin/dad-blue": {
+    "w": 1240,
+    "h": 1300
+  },
+  "nm03/full/dad-cheap": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm03/cutin/dad-bellyache": {
+    "w": 1233,
+    "h": 1300
+  },
+  "nm03/full/dad-crop": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm03/full/mom-reveal": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm03/full/bench-dusk": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm03/prop/phone-up": {
+    "w": 668,
+    "h": 1200
+  },
+  "nm03/prop/phone-down": {
+    "w": 717,
+    "h": 1200
+  },
+  "nm03/prop/number-ticket": {
+    "w": 1089,
+    "h": 1200
+  },
+  "nm03/prop/bankbook": {
+    "w": 1200,
+    "h": 1104
+  },
+  "nm04/realtor/normal": {
+    "w": 745,
+    "h": 1500
+  },
+  "nm04/realtor/stamp": {
+    "w": 892,
+    "h": 1500
+  },
+  "nm04/realtor/calculator": {
+    "w": 772,
+    "h": 1500
+  },
+  "nm04/cutin/realtor-flat": {
+    "w": 1147,
+    "h": 1300
+  },
+  "nm04/buddy/normal": {
+    "w": 958,
+    "h": 1500
+  },
+  "nm04/buddy/call-key": {
+    "w": 963,
+    "h": 1500
+  },
+  "nm04/bg/realtor-window": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm04/bg/realtor-office": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm04/bg/complex-gate": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm04/bg/playground-dusk": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm04/full/window-bubble": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm04/full/stamp-slam": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm04/cutin/dad-sparkle": {
+    "w": 1300,
+    "h": 1264
+  },
+  "nm04/full/station-imagine": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm04/full/banner-oppose": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm04/cutin/dad-interest": {
+    "w": 1170,
+    "h": 1300
+  },
+  "nm04/cutin/dad-sour": {
+    "w": 1300,
+    "h": 1288
+  },
+  "nm04/full/playground-dusk": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm04/prop/phone-up": {
+    "w": 668,
+    "h": 1200
+  },
+  "nm04/prop/listing-sheet": {
+    "w": 1164,
+    "h": 1200
+  },
+  "nm04/prop/station": {
+    "w": 1200,
+    "h": 1183
+  },
+  "nm04/prop/incinerator": {
+    "w": 999,
+    "h": 1200
+  },
+  "nm04/prop/big-complex": {
+    "w": 1200,
+    "h": 1011
+  },
+  "nm04/prop/house-key": {
+    "w": 1200,
+    "h": 1018
+  },
+  "nm04/prop/sour-grapes": {
+    "w": 993,
+    "h": 1200
   }
 }

@@ -40,7 +40,10 @@ type Cast = {
   at?: number;
 };
 type Prop = { art: string; x: number; y: number; w: number; rot?: number; enter?: "l" | "r" | "pop" | "drop"; at?: number; spin?: boolean; front?: boolean }; // front: 인물 앞에 그린다
-type Text = { t: string; x?: number; y?: number; size?: number; color?: string; style?: "slam" | "stamp" | "pop" | "type" | "news" | "shake"; at?: number; rot?: number };
+type Text = { t: string; x?: number; y?: number; size?: number; color?: string; style?: "slam" | "stamp" | "pop" | "type" | "news" | "shake" | "ticker"; at?: number; rot?: number };
+// 모션그래픽 (주식편): chart(선이 그려지는 그래프 — up 빨강 / down 파랑 / crash 올랐다 폭락), chat(단톡방 말풍선이 차례로 뜬다)
+type Chart = { dir: "up" | "down" | "crash"; at?: number; x?: number; y?: number; w?: number; h?: number; label?: string };
+type Chat = { title?: string; at?: number; x?: number; msgs: { who: string; t: string; me?: boolean; img?: "up" | "down" }[] };
 type Shot = {
   at?: number; // 대사 안에서 이 샷이 시작하는 곳 (1 미만은 대사 길이의 비율, 1 이상은 프레임)
   in?: Trans;
@@ -57,6 +60,8 @@ type Shot = {
   loading?: { t: string; pct: number; at?: number }; // 진행 막대가 pct 에서 멈춘다
   jail?: number; // 이 시점에 감옥 창살이 위에서 떨어진다
   note?: string; // 위쪽 구석의 작은 주석 (※ …)
+  chart?: Chart | Chart[]; // 여러 개면 나란히 (앞 샷의 그래프를 그대로 두고 하나 더)
+  chat?: Chat;
   // 애니 연출(내모남불): impact(임팩트 프레임) · focus(흰 집중선) · gaan(충격 세로줄) · aura(분노 오라) · kira(반짝이)
   fx?: ("lines" | "shake" | "vhs" | "docu" | "mono" | "imagine" | "slowmo" | "impact" | "focus" | "gaan" | "aura" | "kira")[];
   sfx?: { name: string; at?: number; volume?: number }[];
@@ -75,7 +80,7 @@ const CHOP_VARIANTS = [
 ];
 const chopShot = (shot: PlacedShot, chop: number): PlacedShot[] => {
   const n = Math.ceil(shot.dur / chop);
-  if (n < 2 || shot.text?.length || shot.tag || shot.freeze != null || shot.loading || shot.mark || shot.tally || shot.jail != null) return [shot];
+  if (n < 2 || shot.text?.length || shot.tag || shot.freeze != null || shot.loading || shot.mark || shot.tally || shot.jail != null || shot.chart || shot.chat) return [shot];
   const from = shot.cam?.from ?? [0.5, 0.5, 1];
   const to = shot.cam?.to ?? [from[0], from[1], from[2] * 1.06];
   const step = Math.round(shot.dur / n);
@@ -112,7 +117,7 @@ export type MotionTimeline = {
   counter?: string;
 };
 
-type ScriptLike = { speed?: number; cuts: { id: string; lines: { who: string; text: string }[] }[] };
+type ScriptLike = { speed?: number; cuts: { id: string; lines: { who: string; text: string; sub?: string }[] }[] };
 
 const frameOf = (at: number | undefined, length: number) => (at == null ? 0 : at < 1 ? Math.round(at * length) : at);
 
@@ -132,7 +137,7 @@ export const buildMotion = (plan: MotionPlan, script: ScriptLike, timing: Record
       if (!src || timing[beat.line] == null) throw new Error(`모션 계획: ${beat.line} 대사가 없다`);
       const dur = Math.ceil((timing[beat.line] / speed) * FPS);
       who = src.who;
-      lines.push({ id: beat.line, who, text: src.text, voice: `${plan.voice ?? plan.episode}/voice${speed === 1 ? "" : `-x${speed}`}/${beat.line}.wav`, from: cursor, dur });
+      lines.push({ id: beat.line, who, text: src.sub ?? src.text, voice: `${plan.voice ?? plan.episode}/voice${speed === 1 ? "" : `-x${speed}`}/${beat.line}.wav`, from: cursor, dur });
       length = dur + gap;
     }
     length += beat.pad ?? 0;
@@ -269,6 +274,8 @@ const ShotView: React.FC<{ episode: string; shot: PlacedShot }> = ({ episode, sh
       {shot.loading ? <Loading {...shot.loading} f={f - frameOf(shot.loading.at, shot.dur)} /> : null}
       {shot.mark ? <Mark kind={shot.mark.kind} f={f - frameOf(shot.mark.at, shot.dur)} /> : null}
       {shot.note ? <Note t={shot.note} f={f} /> : null}
+      {([] as Chart[]).concat(shot.chart ?? []).map((c, i) => <ChartView key={i} c={c} f={f - frameOf(c.at, shot.dur)} />)}
+      {shot.chat ? <ChatView c={shot.chat} f={f - frameOf(shot.chat.at, shot.dur)} /> : null}
       {(shot.text ?? []).map((text, i) => (
         <Kinetic key={i} text={text} f={f - frameOf(text.at, shot.dur)} />
       ))}
@@ -421,6 +428,20 @@ const Kinetic: React.FC<{ text: Text; f: number }> = ({ text, f }) => {
     paintOrder: "stroke",
     filter: `drop-shadow(${size / 18}px ${size / 18}px 0 ${INK})`,
   };
+  if (style === "ticker") {
+    // 시세 띠: 화면 위쪽을 가로질러 계속 흐른다 (▲ 빨강 · ▼ 파랑). 항목은 | 로 나눈다
+    const unit = text.t.split("|").map((u) => u.trim());
+    const row = [...unit, ...unit, ...unit, ...unit];
+    return (
+      <div style={{ position: "absolute", left: 0, right: 0, top: (text.y ?? 0.02) * H, height: 76, backgroundColor: "rgba(10,18,24,0.92)", borderTop: `4px solid ${YELLOW}`, borderBottom: `4px solid ${YELLOW}`, overflow: "hidden", opacity: Math.min(1, f / 4) }}>
+        <div style={{ display: "flex", gap: 70, whiteSpace: "nowrap", transform: `translateX(${-((f * 9) % 2400)}px)`, fontFamily: DISPLAY, fontSize: 48, lineHeight: "76px", paddingLeft: 40 }}>
+          {row.map((u, i) => (
+            <span key={i} style={{ color: u.includes("▼") ? "#4DA3FF" : u.includes("▲") ? "#FF4D5A" : "#fff" }}>{u}</span>
+          ))}
+        </div>
+      </div>
+    );
+  }
   if (style === "news") {
     const k = expoOut(Math.min(1, f / 10));
     return (
@@ -582,13 +603,16 @@ const Counter: React.FC<{ label: string; counts: { from: number; n: number }[] }
   return (
     <div style={{ position: "absolute", right: 34, top: 30, display: "flex", alignItems: "center", gap: 12, transformOrigin: "100% 0", transform: `scale(${pop}) rotate(${since < 14 ? Math.sin(since * 1.5) * 4 : 2}deg)` }}>
       <div style={{ fontFamily: DISPLAY, fontSize: 34, color: INK, backgroundColor: YELLOW, padding: "4px 14px", border: `4px solid ${INK}` }}>{label}</div>
-      <div style={{ width: 84, height: 84, backgroundColor: flash ? RED : "#fff", border: `5px solid ${INK}`, boxShadow: `6px 6px 0 ${INK}` }}>
-        <svg viewBox="-6 -6 112 112" width="100%" height="100%">
-          {STROKES.slice(0, now.n).map(([x1, y1, x2, y2], i) => (
-            <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke={flash ? "#fff" : RED} strokeWidth={11} strokeLinecap="round" />
-          ))}
-        </svg>
-      </div>
+      {/* 5 를 넘으면 正 칸이 하나씩 늘어난다 (부동산편 10개) */}
+      {Array.from({ length: Math.max(1, Math.ceil(now.n / 5)) }, (_, box) => (
+        <div key={box} style={{ width: 84, height: 84, backgroundColor: flash ? RED : "#fff", border: `5px solid ${INK}`, boxShadow: `6px 6px 0 ${INK}` }}>
+          <svg viewBox="-6 -6 112 112" width="100%" height="100%">
+            {STROKES.slice(0, Math.min(5, now.n - box * 5)).map(([x1, y1, x2, y2], i) => (
+              <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke={flash ? "#fff" : RED} strokeWidth={11} strokeLinecap="round" />
+            ))}
+          </svg>
+        </div>
+      ))}
     </div>
   );
 };
@@ -742,6 +766,87 @@ const Mark: React.FC<{ kind: "o" | "x"; f: number }> = ({ kind, f }) => {
   );
 };
 
+// 그래프: 격자 위로 선이 그려지고 끝에 빛나는 점 · 화살표 (숫자 없음)
+const CHART_PTS: Record<Chart["dir"], number[]> = {
+  up: [0.78, 0.72, 0.75, 0.6, 0.64, 0.5, 0.42, 0.46, 0.3, 0.18, 0.08],
+  down: [0.12, 0.2, 0.16, 0.32, 0.28, 0.45, 0.4, 0.58, 0.7, 0.66, 0.9],
+  crash: [0.7, 0.6, 0.5, 0.38, 0.3, 0.2, 0.15, 0.2, 0.55, 0.85, 0.95],
+};
+const ChartView: React.FC<{ c: Chart; f: number }> = ({ c, f }) => {
+  if (f < 0) return null;
+  const w = (c.w ?? 0.62) * W;
+  const h = (c.h ?? 0.5) * H;
+  const left = (c.x ?? 0.5) * W - w / 2;
+  const top = (c.y ?? 0.45) * H - h / 2;
+  const pts = CHART_PTS[c.dir];
+  const k = interpolate(f, [2, 20], [0, 1], { ...clamp, easing: Easing.bezier(0.5, 0, 0.2, 1) });
+  const color = c.dir === "up" ? "#FF3B4D" : "#3D8BFF";
+  const xy = pts.map((v, i) => [(i / (pts.length - 1)) * w, v * h]);
+  const path = xy.map(([x, y], i) => `${i ? "L" : "M"}${x},${y}`).join(" ");
+  const len = xy.reduce((a, [x, y], i) => (i ? a + Math.hypot(x - xy[i - 1][0], y - xy[i - 1][1]) : 0), 0);
+  let rest = len * k;
+  let tip = xy[0];
+  for (let i = 1; i < xy.length; i++) {
+    const seg = Math.hypot(xy[i][0] - xy[i - 1][0], xy[i][1] - xy[i - 1][1]);
+    if (rest <= seg) {
+      const r = rest / seg;
+      tip = [xy[i - 1][0] + (xy[i][0] - xy[i - 1][0]) * r, xy[i - 1][1] + (xy[i][1] - xy[i - 1][1]) * r];
+      break;
+    }
+    rest -= seg;
+    tip = xy[i];
+  }
+  const pulse = 1 + Math.sin(f * 0.6) * 0.25;
+  return (
+    <div style={{ position: "absolute", left, top, width: w, height: h, backgroundColor: "rgba(10,18,24,0.88)", border: `6px solid ${INK}`, borderRadius: 18, boxShadow: `14px 14px 0 ${INK}`, transform: `scale(${interpolate(f, [0, 6], [0.7, 1], { ...clamp, easing: expoOut })}) rotate(-2deg)` }}>
+      <svg viewBox={`-20 -20 ${w + 40} ${h + 40}`} width="100%" height="100%" style={{ overflow: "visible" }}>
+        {Array.from({ length: 5 }, (_, i) => (
+          <line key={i} x1={0} x2={w} y1={(i / 4) * h} y2={(i / 4) * h} stroke="rgba(255,255,255,0.12)" strokeWidth={2} />
+        ))}
+        <path d={`${path} L${w},${h} L0,${h} Z`} fill={color} opacity={0.18 * k} />
+        <path d={path} fill="none" stroke={color} strokeWidth={12} strokeLinejoin="round" strokeLinecap="round" strokeDasharray={len} strokeDashoffset={len * (1 - k)} style={{ filter: `drop-shadow(0 0 14px ${color})` }} />
+        <circle cx={tip[0]} cy={tip[1]} r={16 * pulse} fill="#fff" stroke={color} strokeWidth={6} />
+      </svg>
+      <div style={{ position: "absolute", right: 30, top: 14, fontFamily: DISPLAY, fontSize: 90, color, textShadow: `4px 4px 0 ${INK}`, opacity: k > 0.95 ? 1 : 0 }}>{c.dir === "up" ? "▲" : "▼"}</div>
+      {c.label ? <div style={{ position: "absolute", left: 26, top: 18, fontFamily: DISPLAY, fontSize: 48, color: "#fff" }}>{c.label}</div> : null}
+    </div>
+  );
+};
+
+// 단톡방: 폰 화면 같은 창에 말풍선이 하나씩 뿅 (me 는 오른쪽 노랑, img 는 ▲/▼ 캡처)
+const ChatView: React.FC<{ c: Chat; f: number }> = ({ c, f }) => {
+  const { fps } = useVideoConfig();
+  if (f < 0) return null;
+  const left = (c.x ?? 0.5) * W - 330;
+  return (
+    <div style={{ position: "absolute", left, top: 70, width: 660, height: 820, backgroundColor: "#B2C7D9", border: `8px solid ${INK}`, borderRadius: 40, boxShadow: `16px 16px 0 ${INK}`, overflow: "hidden", transform: `scale(${spring({ frame: f, fps, config: { damping: 12, stiffness: 180 } })}) rotate(2deg)` }}>
+      <div style={{ height: 90, backgroundColor: "#fff", borderBottom: `5px solid ${INK}`, fontFamily: DISPLAY, fontSize: 44, color: INK, display: "flex", alignItems: "center", paddingLeft: 30 }}>{c.title ?? "가족 단톡방"}</div>
+      <div style={{ padding: "24px 26px", display: "flex", flexDirection: "column", gap: 20 }}>
+        {c.msgs.map((m, i) => {
+          const since = f - 6 - i * 9;
+          if (since < 0) return null;
+          const k = spring({ frame: since, fps, config: { damping: 10, stiffness: 220 } });
+          return (
+            <div key={i} style={{ display: "flex", flexDirection: m.me ? "row-reverse" : "row", gap: 14, alignItems: "flex-start", transform: `scale(${k})`, transformOrigin: m.me ? "100% 0" : "0 0" }}>
+              {m.me ? null : <div style={{ width: 70, height: 70, borderRadius: 26, backgroundColor: "#8FA8BC", border: `4px solid ${INK}`, flexShrink: 0 }} />}
+              <div style={{ display: "flex", flexDirection: "column", alignItems: m.me ? "flex-end" : "flex-start" }}>
+                {m.me ? null : <div style={{ fontFamily: GOTHIC, fontWeight: 800, fontSize: 26, color: INK, marginBottom: 4 }}>{m.who}</div>}
+                <div style={{ maxWidth: 440, backgroundColor: m.me ? "#FEE500" : "#fff", border: `4px solid ${INK}`, borderRadius: 22, padding: "12px 20px", fontFamily: GOTHIC, fontWeight: 800, fontSize: 36, color: INK }}>
+                  {m.img ? (
+                    <div style={{ fontFamily: DISPLAY, fontSize: 120, lineHeight: 1, color: m.img === "up" ? "#FF3B4D" : "#3D8BFF", textAlign: "center", padding: "6px 40px" }}>{m.img === "up" ? "▲" : "▼"}</div>
+                  ) : (
+                    m.t
+                  )}
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
 // ※ 주석: 위쪽 구석에 작게, 근본 없는 해명
 const Note: React.FC<{ t: string; f: number }> = ({ t, f }) => (
   <div style={{ position: "absolute", left: 40, bottom: 160, maxWidth: 820, fontFamily: GOTHIC, fontWeight: 800, fontSize: 32, color: "#fff", backgroundColor: "rgba(21,48,58,0.82)", padding: "8px 18px", borderRadius: 6, opacity: interpolate(f, [2, 6], [0, 1], clamp) }}>
@@ -771,6 +876,9 @@ const SPEAKER: Record<string, { name: string; color: string }> = {
   police: { name: "경찰관", color: "#1F5FA8" },
   traffic: { name: "교통경찰관", color: "#1F5FA8" },
   neighbor: { name: "옆 창구 아저씨", color: "#8A5A2B" },
+  aptmgr: { name: "관리소장님", color: "#1F5FA8" },
+  teller: { name: "은행 직원", color: "#0F7B6C" },
+  buddy: { name: "아빠 친구", color: "#5A8F3C" },
 };
 
 const Subtitle: React.FC<{ line: PlacedLine }> = ({ line }) => {

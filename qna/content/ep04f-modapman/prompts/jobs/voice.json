@@ -1,0 +1,915 @@
+{
+  "episode": "ep04f",
+  "title": "모답맨 · 대머리는 왜 생겨요? 겨드랑이 · 거기 털은 왜 나요?",
+  "engine": "Google AI Studio · Gemini Flash TTS (여러 화자)",
+  "format": "WAV, 24 kHz, 16-bit, mono. One file per cut, all lines of the cut in order.",
+  "direction": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud.",
+  "jobs": [
+    {
+      "cut": "c00",
+      "save": "qna/content/ep04f-modapman/voice/studio/c00.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "아빠, 아빠는 고추에 왜 털이 있어요? 겨드랑이에도!",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "그건… 어른 되면 거기가 추워서! 털 이불 덮는 거야!",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: His eight-year-old child: bright, curious, high-pitched.\nThe line \"그건… 어른 되면 거기가 추워서! 털 이불 덮는 거야!\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 2: 아빠, 아빠는 고추에 왜 털이 있어요? 겨드랑이에도!\nSpeaker 1: 그건… 어른 되면 거기가 추워서! 털 이불 덮는 거야!"
+    },
+    {
+      "cut": "c00b",
+      "save": "qna/content/ep04f-modapman/voice/studio/c00b.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Charon",
+          "who": "이발사 할아버지",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "barber",
+          "text": "이불 아니여.",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "…네?",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern.\nThe line \"…네?\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 2: 이불 아니여.\nSpeaker 1: …네?"
+    },
+    {
+      "cut": "c00c",
+      "save": "qna/content/ep04f-modapman/voice/studio/c00c.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "오답, 하나. 저는 모답맨입니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\n\nSpeaker 1: 오답, 하나. 저는 모답맨입니다."
+    },
+    {
+      "cut": "c01",
+      "save": "qna/content/ep04f-modapman/voice/studio/c01.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Kore",
+          "who": "엄마",
+          "style": "The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "사건 개요. 다음 날, 동네 이발소. 아이가 다 말했습니다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "mom",
+          "text": "얘가 아침부터 동네방네 물어보고 다녀요.",
+          "style": "The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding.\n\nSpeaker 1: 사건 개요. 다음 날, 동네 이발소. 아이가 다 말했습니다.\nSpeaker 2: 얘가 아침부터 동네방네 물어보고 다녀요."
+    },
+    {
+      "cut": "c01a",
+      "save": "qna/content/ep04f-modapman/voice/studio/c01a.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Charon",
+          "who": "이발사 할아버지",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "barber",
+          "text": "털 얘기면 잘 왔다. 오십 년 깎았어.",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern.\n\nSpeaker 1: 털 얘기면 잘 왔다. 오십 년 깎았어."
+    },
+    {
+      "cut": "c02",
+      "save": "qna/content/ep04f-modapman/voice/studio/c02.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Kore",
+          "who": "엄마",
+          "style": "The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Charon",
+          "who": "이발사 할아버지",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "mom",
+          "text": "털은 밀면 더 굵게 나. 그러니까 함부로 밀지 마.",
+          "style": "The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "barber",
+          "text": "안 굵어져요. 잘린 끝이 뭉툭해서 그렇게 느껴질 뿐.",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding. Speaker 2: A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern.\n\nSpeaker 1: 털은 밀면 더 굵게 나. 그러니까 함부로 밀지 마.\nSpeaker 2: 안 굵어져요. 잘린 끝이 뭉툭해서 그렇게 느껴질 뿐."
+    },
+    {
+      "cut": "c02b",
+      "save": "qna/content/ep04f-modapman/voice/studio/c02b.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "오답, 둘. 모범답안… 이었으나.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\n\nSpeaker 1: 오답, 둘. 모범답안… 이었으나."
+    },
+    {
+      "cut": "c03",
+      "save": "qna/content/ep04f-modapman/voice/studio/c03.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "근데 할아버지는 왜 머리엔 털이 없고, 가슴엔 많아요?",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "그건! 머리를 너무 많이 써서, 머리털이 닳은 거야!",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: His eight-year-old child: bright, curious, high-pitched.\nThe line \"그건! 머리를 너무 많이 써서, 머리털이 닳은 거야!\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 2: 근데 할아버지는 왜 머리엔 털이 없고, 가슴엔 많아요?\nSpeaker 1: 그건! 머리를 너무 많이 써서, 머리털이 닳은 거야!"
+    },
+    {
+      "cut": "c03b",
+      "save": "qna/content/ep04f-modapman/voice/studio/c03b.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Charon",
+          "who": "이발사 할아버지",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "똑똑하면 대머리! 아빠 앞머리도 공부의 흔적이지.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "barber",
+          "text": "나 공부 안 했어.",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern.\nThe line \"똑똑하면 대머리! 아빠 앞머리도 공부의 흔적이지.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 똑똑하면 대머리! 아빠 앞머리도 공부의 흔적이지.\nSpeaker 2: 나 공부 안 했어."
+    },
+    {
+      "cut": "c03c",
+      "save": "qna/content/ep04f-modapman/voice/studio/c03c.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "오답, 셋. 공부의 흔적, 아님.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\n\nSpeaker 1: 오답, 셋. 공부의 흔적, 아님."
+    },
+    {
+      "cut": "c04",
+      "save": "qna/content/ep04f-modapman/voice/studio/c04.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Charon",
+          "who": "이발사 할아버지",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "barber",
+          "text": "가위 들기 전에, 딱 세 판만 하자고.",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "이발에 판이…?",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern.\nThe line \"이발에 판이…?\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 2: 가위 들기 전에, 딱 세 판만 하자고.\nSpeaker 1: 이발에 판이…?"
+    },
+    {
+      "cut": "c05",
+      "save": "qna/content/ep04f-modapman/voice/studio/c05.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Charon",
+          "who": "이발사 할아버지",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "barber",
+          "text": "일 라운드. 털은 새로 나는 게 아니여.",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "barber",
+          "text": "솜털이 원래 온몸에 있어. 꼬마 팔에도.",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern.\n\nSpeaker 1: 일 라운드. 털은 새로 나는 게 아니여.\nSpeaker 1: 솜털이 원래 온몸에 있어. 꼬마 팔에도."
+    },
+    {
+      "cut": "c05b",
+      "save": "qna/content/ep04f-modapman/voice/studio/c05b.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "voice": "Charon",
+          "who": "이발사 할아버지",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "어? 진짜 있다!",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "barber",
+          "text": "때가 되면, 몸에서 어른 준비 신호가 나와.",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 2: His eight-year-old child: bright, curious, high-pitched. Speaker 1: A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern.\n\nSpeaker 2: 어? 진짜 있다!\nSpeaker 1: 때가 되면, 몸에서 어른 준비 신호가 나와."
+    },
+    {
+      "cut": "c05c",
+      "save": "qna/content/ep04f-modapman/voice/studio/c05c.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Charon",
+          "who": "이발사 할아버지",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "barber",
+          "text": "그럼 수염, 구레나룻, 겨드랑이, 거기 솜털이 굵은 털로 바뀌어.",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "아, 사춘기!",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern.\nThe line \"아, 사춘기!\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 2: 그럼 수염, 구레나룻, 겨드랑이, 거기 솜털이 굵은 털로 바뀌어.\nSpeaker 1: 아, 사춘기!"
+    },
+    {
+      "cut": "c06",
+      "save": "qna/content/ep04f-modapman/voice/studio/c06.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Charon",
+          "who": "이발사 할아버지",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "barber",
+          "text": "이 라운드. 왜 하필 겨드랑이랑 거기냐.",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern.\n\nSpeaker 1: 이 라운드. 왜 하필 겨드랑이랑 거기냐."
+    },
+    {
+      "cut": "c06b",
+      "save": "qna/content/ep04f-modapman/voice/studio/c06b.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "voice": "Charon",
+          "who": "이발사 할아버지",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "barber",
+          "text": "거기엔 특별한 땀샘이 따로 있어. 털 뿌리 안으로 땀을 내.",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "털 속으로 땀이요?",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 2: His eight-year-old child: bright, curious, high-pitched. Speaker 1: A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern.\n\nSpeaker 1: 거기엔 특별한 땀샘이 따로 있어. 털 뿌리 안으로 땀을 내.\nSpeaker 2: 털 속으로 땀이요?"
+    },
+    {
+      "cut": "c06c",
+      "save": "qna/content/ep04f-modapman/voice/studio/c06c.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Charon",
+          "who": "이발사 할아버지",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "barber",
+          "text": "털은 그 땀을 붙잡는 심지여. 양초 심지처럼.",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "barber",
+          "text": "냄새는 땀이 아니라, 피부에 사는 세균이 만들고.",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern.\n\nSpeaker 1: 털은 그 땀을 붙잡는 심지여. 양초 심지처럼.\nSpeaker 1: 냄새는 땀이 아니라, 피부에 사는 세균이 만들고."
+    },
+    {
+      "cut": "c06d",
+      "save": "qna/content/ep04f-modapman/voice/studio/c06d.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Kore",
+          "who": "엄마",
+          "style": "The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Charon",
+          "who": "이발사 할아버지",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "mom",
+          "text": "그래서 클 때쯤 겨드랑이 냄새가 나는구나.",
+          "style": "The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "barber",
+          "text": "그 땀샘도 같은 신호에 같이 켜지거든.",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: The kid's mom, a Korean woman in her late thirties: calm, clear, slightly low voice with a quiet knowing smile in it, dry and gently teasing toward the dad, warm and patient with the kid, never shrill or scolding. Speaker 2: A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern.\n\nSpeaker 1: 그래서 클 때쯤 겨드랑이 냄새가 나는구나.\nSpeaker 2: 그 땀샘도 같은 신호에 같이 켜지거든."
+    },
+    {
+      "cut": "c07",
+      "save": "qna/content/ep04f-modapman/voice/studio/c07.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Charon",
+          "who": "이발사 할아버지",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "barber",
+          "text": "삼 라운드. 내 머리.",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "barber",
+          "text": "같은 신호인데, 정수리 털은 거꾸로 알아들어.",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern.\n\nSpeaker 1: 삼 라운드. 내 머리.\nSpeaker 1: 같은 신호인데, 정수리 털은 거꾸로 알아들어."
+    },
+    {
+      "cut": "c07b",
+      "save": "qna/content/ep04f-modapman/voice/studio/c07b.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Charon",
+          "who": "이발사 할아버지",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "barber",
+          "text": "수염, 가슴엔 '굵어져라', 정수리엔 '가늘어져라'.",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "아, 머리털이 가슴으로 이사 간 거구나!",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern.\nThe line \"아, 머리털이 가슴으로 이사 간 거구나!\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 2: 수염, 가슴엔 '굵어져라', 정수리엔 '가늘어져라'.\nSpeaker 1: 아, 머리털이 가슴으로 이사 간 거구나!"
+    },
+    {
+      "cut": "c07c",
+      "save": "qna/content/ep04f-modapman/voice/studio/c07c.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Charon",
+          "who": "이발사 할아버지",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "barber",
+          "text": "이사가 아니고, 알아듣는 털이 다른 거여.",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "barber",
+          "text": "옆이랑 뒤는 둔해서, 말굽처럼 남지.",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern.\n\nSpeaker 1: 이사가 아니고, 알아듣는 털이 다른 거여.\nSpeaker 1: 옆이랑 뒤는 둔해서, 말굽처럼 남지."
+    },
+    {
+      "cut": "c07d",
+      "save": "qna/content/ep04f-modapman/voice/studio/c07d.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "voice": "Charon",
+          "who": "이발사 할아버지",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "그래서 할아버지 머리가 U자예요?",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "barber",
+          "text": "그려. 그래서 뒷머리를 앞에 옮겨 심으면, 안 빠져.",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 2: His eight-year-old child: bright, curious, high-pitched. Speaker 1: A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern.\n\nSpeaker 2: 그래서 할아버지 머리가 U자예요?\nSpeaker 1: 그려. 그래서 뒷머리를 앞에 옮겨 심으면, 안 빠져."
+    },
+    {
+      "cut": "c07e",
+      "save": "qna/content/ep04f-modapman/voice/studio/c07e.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "한 줄 정리. 솜털이 굵어지고, 땀샘이 켜지고, 정수리만 거꾸로.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\n\nSpeaker 1: 한 줄 정리. 솜털이 굵어지고, 땀샘이 켜지고, 정수리만 거꾸로."
+    },
+    {
+      "cut": "c08",
+      "save": "qna/content/ep04f-modapman/voice/studio/c08.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "어제 그거, 대답이 아니었어. 미안.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "너도 온몸에 털이 있어. 크면 몇 군데가 굵어질 거야.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\nThe line \"어제 그거, 대답이 아니었어. 미안.\" is the dad speaking inside the scene, acted out, not narration.\nThe line \"너도 온몸에 털이 있어. 크면 몇 군데가 굵어질 거야.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 어제 그거, 대답이 아니었어. 미안.\nSpeaker 1: 너도 온몸에 털이 있어. 크면 몇 군데가 굵어질 거야."
+    },
+    {
+      "cut": "c08b",
+      "save": "qna/content/ep04f-modapman/voice/studio/c08b.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "더러운 것도, 부끄러운 것도 아니야. 자라는 거야.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "그럼 나는 언제요?",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: His eight-year-old child: bright, curious, high-pitched.\nThe line \"더러운 것도, 부끄러운 것도 아니야. 자라는 거야.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 더러운 것도, 부끄러운 것도 아니야. 자라는 거야.\nSpeaker 2: 그럼 나는 언제요?"
+    },
+    {
+      "cut": "c08c",
+      "save": "qna/content/ep04f-modapman/voice/studio/c08c.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "네 몸이 알아. 궁금하면 언제든 아빠한테 물어봐.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "대신 다른 사람 몸 얘기는, 작은 목소리로. 약속?",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\nThe line \"네 몸이 알아. 궁금하면 언제든 아빠한테 물어봐.\" is the dad speaking inside the scene, acted out, not narration.\nThe line \"대신 다른 사람 몸 얘기는, 작은 목소리로. 약속?\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 네 몸이 알아. 궁금하면 언제든 아빠한테 물어봐.\nSpeaker 1: 대신 다른 사람 몸 얘기는, 작은 목소리로. 약속?"
+    },
+    {
+      "cut": "c08d",
+      "save": "qna/content/ep04f-modapman/voice/studio/c08d.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "voice": "Charon",
+          "who": "이발사 할아버지",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "약속. …할아버지, 아까 크게 말해서 죄송해요.",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "barber",
+          "text": "괜찮어. 할아버지 머리는 오십 년째 자랑이여.",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 2: His eight-year-old child: bright, curious, high-pitched. Speaker 1: A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern.\n\nSpeaker 2: 약속. …할아버지, 아까 크게 말해서 죄송해요.\nSpeaker 1: 괜찮어. 할아버지 머리는 오십 년째 자랑이여."
+    },
+    {
+      "cut": "c09",
+      "save": "qna/content/ep04f-modapman/voice/studio/c09.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "아빠도 대머리 돼요?",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "걱정 마! 대머리는 외가를 닮는대. 외할아버지 머리 풍성하잖아!",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: His eight-year-old child: bright, curious, high-pitched.\nThe line \"걱정 마! 대머리는 외가를 닮는대. 외할아버지 머리 풍성하잖아!\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 2: 아빠도 대머리 돼요?\nSpeaker 1: 걱정 마! 대머리는 외가를 닮는대. 외할아버지 머리 풍성하잖아!"
+    },
+    {
+      "cut": "c09b",
+      "save": "qna/content/ep04f-modapman/voice/studio/c09b.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 2",
+          "voice": "Leda",
+          "who": "kid",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        },
+        {
+          "speaker": "Speaker 1",
+          "voice": "Charon",
+          "who": "이발사 할아버지",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "barber",
+          "text": "반만 맞아. 아빠 쪽도 닮어.",
+          "style": "A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "kid",
+          "text": "친할아버지는… 반짝반짝인데요?",
+          "style": "His eight-year-old child: bright, curious, high-pitched"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 2: His eight-year-old child: bright, curious, high-pitched. Speaker 1: A Korean barber grandpa in his early seventies who has run a neighborhood barbershop for fifty years: dry, slow, deadpan and gently teasing, a warm low old-man voice with a chuckle in it, proud of his craft and happy to laugh at his own bald head, never stern.\n\nSpeaker 1: 반만 맞아. 아빠 쪽도 닮어.\nSpeaker 2: 친할아버지는… 반짝반짝인데요?"
+    },
+    {
+      "cut": "c09c",
+      "save": "qna/content/ep04f-modapman/voice/studio/c09c.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "…저녁 늦겠다. 빨리 가자.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "오답, 넷. 역시, 모답맨.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid.\nThe line \"…저녁 늦겠다. 빨리 가자.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: …저녁 늦겠다. 빨리 가자.\nSpeaker 1: 오답, 넷. 역시, 모답맨."
+    }
+  ]
+}

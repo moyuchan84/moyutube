@@ -35,6 +35,9 @@ const WHO: Record<string, [string, string]> = {
   narr: ["모답맨", "#FFFFFF"],
   guide: ["해설사", "#5BC0EB"],
   traffic: ["교통경찰관", "#5BC0EB"],
+  aptmgr: ["관리소장님", "#5BC0EB"],
+  teller: ["은행 직원", "#2EC4B6"],
+  buddy: ["아빠 친구", "#9BE564"],
 };
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 

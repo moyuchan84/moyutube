@@ -130,12 +130,57 @@
     },
     {
       "label": "Guest",
+      "name": "정육 코너 사장님",
+      "voice": "Umbriel",
+      "roles": [
+        "butcher"
+      ],
+      "style": "A Korean butcher in his late fifties who has run a neighborhood mart's meat counter for nearly thirty years and stocks halal and kosher meat for his customers: easygoing, slightly gruff middle-low voice, perfectly deadpan when he corrects grown-ups with one short line, warm and patient with the kid, never stern"
+    },
+    {
+      "label": "Guest",
       "name": "교통경찰관 (내모남불)",
       "voice": "Erinome",
       "roles": [
         "traffic"
       ],
       "style": "A Korean traffic police officer woman in her mid-thirties: crisp, perfectly deadpan and polite, clear steady voice that enunciates every word, dry comedic timing when she corrects the dad, never angry or scary"
+    },
+    {
+      "label": "Guest",
+      "name": "아파트 관리소장님 (내모남불)",
+      "voice": "Orus",
+      "roles": [
+        "aptmgr"
+      ],
+      "style": "A Korean apartment complex manager in his early sixties: flat, dry, deadpan voice like a building announcement, polite but completely unimpressed, never angry"
+    },
+    {
+      "label": "Guest",
+      "name": "은행 창구 직원 (내모남불)",
+      "voice": "Schedar",
+      "roles": [
+        "teller"
+      ],
+      "style": "A Korean bank teller woman in her late twenties: smooth, even, perfectly polite customer-service voice, completely deadpan and unhurried, never recommends anything, never angry"
+    },
+    {
+      "label": "Guest",
+      "name": "아빠 친구 (내모남불)",
+      "voice": "Puck",
+      "roles": [
+        "buddy"
+      ],
+      "style": "The dad's old high-school friend, a Korean man in his mid-forties on a video call: whiny, sniffling and comically heartbroken, a little nasal, overly dramatic but harmless"
+    },
+    {
+      "label": "Guest",
+      "name": "공인중개사 사장님 (내모남불)",
+      "voice": "Vindemiatrix",
+      "roles": [
+        "realtor"
+      ],
+      "style": "A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry"
     }
   ],
   "direction": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud.",
