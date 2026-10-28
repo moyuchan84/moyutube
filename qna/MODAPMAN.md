@@ -18,6 +18,9 @@
 - **채널 설명** (적용됨): "모 씨네 가족 채널, 모라구입니다." 로 시작해 세 식구를 소개하고 카테고리를 ▶ 로 나열. 원문은 `video/out/channel/description.md`, 바꾸기 전 설명은 아래 7절.
 - 모라구 안의 카테고리 (각자 규칙 문서가 따로 있다):
   - **모(오)답맨** — 이 문서. qna 폴더
+  - **내모남불** — [docs/naemonambul.md](docs/naemonambul.md)
+  - **포모라구** (기획 중) — [docs/pomoragu.md](docs/pomoragu.md)
+  - **이게 모예요?** (기획 중, 쇼츠 전용) — [docs/igemoyeyo.md](docs/igemoyeyo.md)
   - **보면 풀리는 수학 · 과학** — `lab/` ([lab/CLAUDE.md](../lab/CLAUDE.md))
   - **엄마가 만든 동화 / 상담심리사 엄마의 인성동화책** — `fairy/`
   - **아빠가 만든 앱** — 앱 소개 영상

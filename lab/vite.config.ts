@@ -78,6 +78,12 @@ const projects = [
   'bayesTest',
   'dotShadow',
   'dominoProof',
+  'arrowFins',
+  'magicBoard',
+  'magic1089',
+  'chunkMemo',
+  'slowChange',
+  'passCount',
 ];
 
 export default defineConfig({

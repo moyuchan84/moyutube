@@ -1,0 +1,14 @@
+{
+  "code": "dial",
+  "title": "미국은 올랐는데 코스피는 -3.73%? 간밤 미국장과 21일 개장 숫자 — 시차로 읽기",
+  "format": "short",
+  "status": "edit",
+  "created": "2026-10-21",
+  "youtube": [],
+  "tags": [],
+  "video": {
+    "composition": "DialShort",
+    "bgm": "bgm/dial.mjs"
+  },
+  "notes": "렌더는 했지만 업로드 장부(uploads.csv)에 기록이 없다"
+}

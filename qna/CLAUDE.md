@@ -14,6 +14,7 @@
   (claude.ai 용 패키지는 `skill/modapman.skill` — 스킬을 고치면 이 폴더를 다시 압축한다)
 - **기준 예시는 8편 모답맨판** `content/ep08f-modapman/`: `script/script.json`(대본) · `script/motion.json`(샷 계획) · `upload/`(업로드 자료).
 - **내모남불**은 모라구 안의 다른 시리즈다. 같은 가족 · 같은 그림 · 같은 모션 엔진을 쓰고, 편 코드만 `nmNN` 이다 (`unit.json` 에 `"series": "naemonambul"`). 시리즈 규칙은 [docs/naemonambul.md](docs/naemonambul.md), 아이디어는 [docs/naemonambul-ideas.md](docs/naemonambul-ideas.md).
+- **기획 중인 시리즈 (아직 편 없음):** 「포모라구」(FOMO + 모라구, 유행 · 소비 심리) [docs/pomoragu.md](docs/pomoragu.md) · 「이게 모예요?」(쇼츠 전용 물건 · 표시 사전) [docs/igemoyeyo.md](docs/igemoyeyo.md).
 - 1~8편 롱폼(아빠의 회상 · 8분 · 7박자, 스킬 `eight-year-olds-question` · `skill/eight-year-olds-question.skill`)은 **이전 포맷**이다. 새 편에 쓰지 않는다.
 
 ## 폴더 — 무엇이 어디에 있나
@@ -24,7 +25,7 @@
 qna/
 ├─ CLAUDE.md · ART_GUIDE.md · MODAPMAN.md   ← 작업 규칙 · 그림 가이드 · 채널 정리
 ├─ index.html · plan/ guide/ production/ auto/  ← 사이트 (편 목록 카드 · 채널 기획 · 튜토리얼 · 제작 노트 · 자동 제작 매뉴얼)
-├─ docs/                      ← 시리즈 문서 (naemonambul.md · naemonambul-ideas.md)
+├─ docs/                      ← 시리즈 문서 (naemonambul.md · naemonambul-ideas.md · pomoragu.md · igemoyeyo.md)
 ├─ skill/                     ← claude.ai 용 스킬 패키지 (modapman.skill = 지금 포맷, eight-year-olds-question.skill = 이전 포맷)
 ├─ .claude/skills/            ← modapman (편 만들기) · qna-shorts (쇼츠)
 ├─ content/                   ← 편 하나 = 폴더 하나 (아래 "편 폴더")

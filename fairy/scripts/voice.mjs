@@ -12,10 +12,15 @@ const takes = JSON.parse(fs.readFileSync(path.join(vdir, 'takes.json'), 'utf8'))
 const story = JSON.parse(fs.readFileSync(path.join(dir, 'story.json'), 'utf8'));
 const plan = JSON.parse(fs.readFileSync(path.join(dir, 'plan.json'), 'utf8'));
 
+// edit.json 이 있으면 빠른 편집: voice/fast 테이크(speed.mjs) + 짧은 쉼
+const editFile = path.join(dir, 'edit.json');
+const edit = fs.existsSync(editFile) ? JSON.parse(fs.readFileSync(editFile, 'utf8')) : null;
+const RAW = edit ? 'fast' : 'raw';
+
 const RATE = 24000;
-const HEAD = 0.5; // 장면 첫 소리 앞 숨
-const GAP = 0.45; // 같은 장면 안 테이크 사이
-const TAIL = 0.9; // 장면 끝 여운
+const HEAD = edit?.head ?? 0.5; // 장면 첫 소리 앞 숨
+const GAP = edit?.gap ?? 0.45; // 같은 장면 안 테이크 사이
+const TAIL = edit?.tail ?? 0.9; // 장면 끝 여운
 
 // AI Studio 파일: 16비트 모노 24kHz. 안쪽 data 청크만 뽑는다
 const pcm = (file) => {
@@ -47,7 +52,7 @@ const all = [];
 let cursor = 0;
 for (const s of story.scenes) {
   const mine = takes.filter((t) => t.scene === s.no);
-  const min = plan.scenes[s.no]?.min ?? 0;
+  const min = (plan.scenes[s.no]?.min ?? 0) * (edit?.minScale ?? 1);
   let parts = [];
   let t = 0;
   const offsets = [];
@@ -55,7 +60,7 @@ for (const s of story.scenes) {
     parts.push(silence(HEAD)); t += HEAD;
     mine.forEach((k, i) => {
       if (i) { parts.push(silence(GAP)); t += GAP; }
-      const d = trim(pcm(path.join(vdir, 'raw', `${k.id}.wav`)));
+      const d = trim(pcm(path.join(vdir, RAW, `${k.id}.wav`)));
       offsets.push({ take: k.id, at: +t.toFixed(2), sec: +(d.length / 2 / RATE).toFixed(2), voices: k.voices });
       parts.push(d); t += d.length / 2 / RATE;
     });

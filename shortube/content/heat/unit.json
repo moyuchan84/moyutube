@@ -1,0 +1,22 @@
+{
+  "code": "heat",
+  "title": "10월 폭염 서울 30.1도, 사실 신기록이 아니었다",
+  "format": "short",
+  "category": "trivia",
+  "status": "uploaded",
+  "created": "2026-10-16",
+  "published": "2026-10-16",
+  "youtube": [
+    {
+      "id": "zY0rsfQXqi4",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "public"
+    }
+  ],
+  "tags": [],
+  "video": {
+    "composition": "HeatShort",
+    "bgm": "bgm/heat.mjs"
+  }
+}

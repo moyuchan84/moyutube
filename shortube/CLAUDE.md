@@ -9,9 +9,10 @@
 
 ## 0. 매번 지키는 순서
 
-1. **브리프 먼저**: `output/briefs/YYYY-MM-DD_slotN.md` — 출처 표 · 사실 카드(YAML) · 스토리라인 · 메타데이터 · 검수 체크리스트. 영상에 들어가는 숫자는 **사실 카드에 있는 것만** 쓴다.
-2. **영상**: `video/src/<주제>/` 에 컴포지션 + `timeline.json`(장면·타격 시점), `Root.tsx` 에 등록.
-3. **배경음악**: `video/scripts/bgm-*.mjs` 로 코드 합성 (같은 `timeline.json` 을 읽어 장면 전환과 맞춘다).
+0. **편 폴더**: 저장소 루트에서 `npm run new -- shortube <주제영단어> --title "…"` → `content/<code>/` (unit.json · plan.md). 폴더 규칙은 [docs/CONVENTIONS.md](../docs/CONVENTIONS.md).
+1. **브리프 먼저**: `content/<code>/plan.md` — 출처 표 · 사실 카드(YAML) · 스토리라인 · 메타데이터 · 검수 체크리스트. 영상에 들어가는 숫자는 **사실 카드에 있는 것만** 쓴다.
+2. **영상**: 데이터는 `content/<code>/script/` (`timeline.json` = 장면·타격 시점, 그 밖의 숫자 json), 컴포넌트는 `video/src/units/<code>/` (`index.ts` 가 `component` · `durationInFrames` 를 내보낸다). `unit.json` 의 `video.composition` 에 컴포지션 id. **Root.tsx 는 고치지 않는다** — 자동 등록(`scripts/registry.mjs`).
+3. **배경음악**: `video/scripts/bgm/<code>.mjs` 로 코드 합성 (같은 `timeline.json` 을 읽어 장면 전환과 맞춘다) → `content/<code>/music/<code>.wav`. 렌더는 `npm run render -- <code>` (video 에서, 음악이 없으면 먼저 합성 · `--data` 는 데이터 다시 받기 · `--still N` 은 확인용 스틸).
 4. **점검**: 핵심 프레임 스틸(`npx remotion still <Id> --frame=N --scale=0.4`)을 직접 보고 겹침·잘림·줄바꿈을 고친 뒤 렌더.
 5. **업로드**: 아래 5장. 기본은 **공개** (2026-10-22 사용자 결정 — 묻지 않고 바로 공개).
 6. **보고**: 무엇을 만들었고, 무엇을 확인 못 했는지(예: 음악은 귀로 못 들음, 미확인 사실 카드) 그대로 알린다.
@@ -38,15 +39,15 @@
 ## 3. 화면
 
 - 1080×1920, 텍스트·도형·직접 그린 차트만. **인물 사진 · 로고 · 캡처 · 앨범아트 금지.**
-- 기존 부품 재사용: `components/Caption`(하단 자막) · `components/Kinetic` · `market/effects`(Counter · Stamp · 흔들림) · `kpop/effects` · `diet/` 배경.
+- 기존 부품 재사용: `components/Caption`(하단 자막) · `components/Kinetic` · `units/market/effects`(Counter · Stamp · 흔들림) · `units/kpop/effects` · `units/diet/` 배경.
 - **쇼츠 앱 안전 영역**: 앱이 하단(y≈1560 아래)에 제목·채널명·설명을, 오른쪽(x>950)에 좋아요·댓글 버튼을, 위쪽(y<200)에 검색·카메라를 겹쳐 띄운다. 자막과 핵심 숫자는 이 영역 밖에 둔다.
 - 자막은 `<Caption bottom={400} .../>` (박스가 y≈1340~1520) — 기본값 250 은 앱 제목에 가려지니 새 영상에서는 400 을 쓴다(2026-10-18 지표 백테스트 영상부터). 본문 요소는 y≈1330 위에서 끝낸다. 줄바꿈이 어색하면 `whiteSpace: "pre-line"` 이나 문장 수정.
 - 출처·기준일·고지 문구는 마지막 장면 또는 상단 고정 띠로.
-- 채널 브랜드: 남색 바탕 + 노랑 선 + 분홍 점 (`video/src/Brand.tsx`, 프로필·배너 원본 `output/brand/`).
+- 채널 브랜드: 남색 바탕 + 노랑 선 + 분홍 점 (`video/src/Brand.tsx`, 프로필·배너 원본 `content/_common/brand/`).
 
 ### 3-1. 연출 다양화 — 찍어 낸 영상처럼 보이지 않게
 
-- 브리프마다 **"연출 카드"** 표를 채운다: 팔레트 · 주 레이아웃 · 장면 전환 · 카메라 · 상징 오브젝트 · 타이포 · 템포 (7항목). 예시는 `output/briefs/2026-10-16_slot1.md`.
+- 브리프마다 **"연출 카드"** 표를 채운다: 팔레트 · 주 레이아웃 · 장면 전환 · 카메라 · 상징 오브젝트 · 타이포 · 템포 (7항목). 예시는 `content/heat/plan.md`.
 - **직전 2편과 7항목 중 4개 이상 달라야** 한다. 같은 날 올리는 2편은 팔레트 · 주 레이아웃이 반드시 달라야 한다.
 - 주제가 연출을 정한다: 색 · 오브젝트 · 움직임이 그 주제에서 나와야 한다 (예: 더위 → 아지랑이 · 색 온도 변화 / 시황 → 흔들림 · 긴박한 컷). 브랜드는 첫 1초 로고 띠나 마지막 띠로만 지키고, 본문 배경까지 매번 남색으로 고정하지 않는다.
 - 쓸 수 있는 화면 재료 (사진 대신):
@@ -57,7 +58,8 @@
 ## 4. 배경음악
 
 - 외부 음원·유튜브 오디오 보관함 대신 **코드 합성**이 기본 (Content ID 걱정 없음, 설명란 `[음악] 채널에서 직접 만든 배경음악`).
-- 분위기별 기존 스크립트: `bgm.mjs`(밝고 잔잔) · `bgm-tension.mjs`(긴박·시황) · `bgm-dance.mjs`(밝은 댄스·K팝) · `bgm-info.mjs`(차분한 정보·의료, 리스크 구간 단조). 새 주제는 비슷한 것을 복사해 진행·템포만 바꾼다.
+- 분위기별 기존 스크립트(`video/scripts/bgm/`): `ranking.mjs`(밝고 잔잔) · `market.mjs`(긴박·시황) · `kpop.mjs`(밝은 댄스·K팝) · `diet.mjs`(차분한 정보·의료, 리스크 구간 단조). 새 주제는 비슷한 것을 `bgm/<code>.mjs` 로 복사해 진행·템포 · 입출력 경로(`content/<code>/…`)만 바꾸고, `unit.json` 의 `video.bgm` 에 적는다.
+- 합성에 잡음 난수가 들어 있어 다시 돌리면 wav 가 조금 달라진다 — 업로드한 편은 `--bgm` 으로 다시 만들지 않는다.
 - 볼륨은 RMS 로 확인(대략 -15 ~ -20 dBFS). **Claude 는 소리를 들을 수 없으니** 보고할 때 "한 번 들어 봐 달라"고 말한다.
 
 ## 5. 업로드 (Claude in Chrome)
@@ -82,9 +84,9 @@
 | 같은 날 2편 | 카테고리 · 연출 카드가 달라야 함 | 6장 반복 리스크 |
 | YouTube 시스템 한도 | 숫자는 공개되지 않음. 최근 24시간 기준이고, 나라 · 채널 이력 · 경고(스트라이크)에 따라 달라지며, PC · 모바일 · API 업로드를 모두 센다 | [YouTube 고객센터](https://support.google.com/youtube/answer/10383400) |
 
-- 업로드 전에: `output/uploads.csv` 의 최근 24시간 · 7일 줄 수를 세고, **Studio 콘텐츠 목록에서도 날짜를 직접 확인**한다 (사용자가 직접 올린 영상은 장부에 없을 수 있음). 채널 한도(하루 2편 · 3시간 간격 · 7일 10편)를 넘어도 2026-10-22 사용자 결정에 따라 **따로 확인받지 않고 공개로 올린다** — 대신 보고 때 현재 24시간 · 7일 편수를 한 줄로 알린다.
+- 업로드 전에: `content/uploads.csv` 의 최근 24시간 · 7일 줄 수를 세고, **Studio 콘텐츠 목록에서도 날짜를 직접 확인**한다 (사용자가 직접 올린 영상은 장부에 없을 수 있음). 채널 한도(하루 2편 · 3시간 간격 · 7일 10편)를 넘어도 2026-10-22 사용자 결정에 따라 **따로 확인받지 않고 공개로 올린다** — 대신 보고 때 현재 24시간 · 7일 편수를 한 줄로 알린다.
 - "일일 업로드 한도에 도달했습니다" 가 뜨면(YouTube 시스템 한도) 24시간 기다린다. 이것은 사용자 결정과 무관하게 지킨다. 다른 계정 · 다른 채널로 돌려 올리는 식의 우회는 하지 않는다 (스팸 정책).
-- 업로드가 끝나면 `output/uploads.csv` 에 한 줄 추가: `uploaded_at,video_id,brief,title,visibility,category`. 날짜 · 시각은 한국시간(KST).
+- 업로드가 끝나면 `content/uploads.csv` 에 한 줄 추가: `uploaded_at,video_id,unit,title,visibility,category` (unit = 편 코드). 날짜 · 시각은 한국시간(KST). 그 편 `unit.json` 의 `status` 를 `uploaded` 로, `youtube` 에 `{ "id", "kind": "short", "visibility" }` 를 넣는다.
 
 ## 6. 채널 운영 — 템플릿 반복 리스크
 
@@ -95,10 +97,11 @@
 
 | 무엇 | 어디 |
 |---|---|
-| 브리프 | `output/briefs/YYYY-MM-DD_slotN.md` |
-| 업로드 장부 | `output/uploads.csv` (5-1 개수 제한 확인용) |
-| 완성 영상 | `output/videos/` (git 제외) |
-| 시세 원자료 | `data/prices/*.csv` (git 제외) → `video/scripts/market-data.mjs` 가 JSON 으로 |
-| 영상 코드 | `video/src/<주제>/` + `video/src/Root.tsx` |
-| 음악 생성 | `video/scripts/bgm*.mjs` → `video/public/bgm/*.wav` |
+| 편 하나 | `content/<code>/` — `unit.json` · `plan.md`(브리프) · `script/`(timeline · 데이터) · `music/`(배경음악 wav) |
+| 업로드 장부 | `content/uploads.csv` (5-1 개수 제한 확인용) |
+| 완성 영상 | `output/videos/<created>_<code>.mp4` (git 제외) |
+| 시세 원자료 | `data/prices/*.csv` (git 제외) → `video/scripts/data/market-data.mjs` 가 JSON 으로 |
+| 영상 코드 | `video/src/units/<code>/` (Root 자동 등록) · 공용 부품 `video/src/components/` |
+| 음악 생성 | `video/scripts/bgm/<code>.mjs` → `content/<code>/music/*.wav` (→ `video/public/bgm/` 은 sync 사본) |
+| 데이터 스크립트 | `video/scripts/data/*.mjs` (원자료 `data/` → `content/<code>/script/*.json`) |
 | 주제 자동 선정 | `.claude/skills/shortube-daily/` |

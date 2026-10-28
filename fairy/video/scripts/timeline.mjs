@@ -12,9 +12,14 @@ const plan = JSON.parse(fs.readFileSync(path.join(book, 'plan.json'), 'utf8'));
 const timing = JSON.parse(fs.readFileSync(path.join(book, 'voice', 'timing.json'), 'utf8'));
 const takes = JSON.parse(fs.readFileSync(path.join(book, 'voice', 'takes.json'), 'utf8'));
 
+// edit.json 이 있으면 빠른 편집 (voice/fast 테이크 · 짧은 표지 · 박자마다 컷)
+const editFile = path.join(book, 'edit.json');
+const edit = fs.existsSync(editFile) ? JSON.parse(fs.readFileSync(editFile, 'utf8')) : null;
+const RAW = edit ? 'fast' : 'raw';
+
 export const FPS = 30;
-export const INTRO = 6; // 표지 + 제목
-export const OUTRO = 9; // 끝 카드
+export const INTRO = edit?.intro ?? 6; // 표지 + 제목
+export const OUTRO = edit?.outro ?? 9; // 끝 카드
 const RATE = 24000;
 
 const pcm = (file) => {
@@ -48,7 +53,7 @@ const weight = (t) => Math.max(3, t.replace(/[^가-힣a-zA-Z0-9]/g, '').length +
 
 // 한 테이크의 줄마다 [시작, 끝] (테이크 안 초)
 const splitTake = (take) => {
-  const d = trim(pcm(path.join(book, 'voice', 'raw', `${take.id}.wav`)));
+  const d = trim(pcm(path.join(book, 'voice', RAW, `${take.id}.wav`)));
   const dur = d.length / 2 / RATE;
   const w = take.lines.map((l) => weight(l.t));
   const sum = w.reduce((a, b) => a + b, 0);
@@ -122,6 +127,54 @@ const scenes = story.scenes.map((s) => {
   return { no: s.no, title: p.title ?? '', start: +start.toFixed(2), end: +(start + tm.sec).toFixed(2), cam: p.cam ?? [0, 0, 320, 180, 0, 0, 320, 180], imgs, subs, sound: p.sound ?? '' };
 });
 
+// 빠른 편집: 장면 안을 자막 박자마다 끊어 컷(shot)으로 나눈다. 카메라는 연출표 길(시작 → 끝 네모)을 따라가되
+// 컷마다 넓게 · 가깝게를 번갈아 바꾸고, 인물이 "!" 로 외치는 컷은 줌 펀치 + 흔들림, 고른 의성어는 큰 글자 스티커.
+const MIN_SHOT = 1.3, MAX_SHOT = 4.2;
+const lerp = (a, b, p) => a + (b - a) * p;
+const rect = (x, y, w) => {
+  w = Math.max(150, Math.min(320, w));
+  const h = w * 0.5625;
+  return [Math.max(0, Math.min(320 - w, x)), Math.max(0, Math.min(180 - h, y)), w];
+};
+const along = (cam, p) => [lerp(cam[0], cam[4], p), lerp(cam[1], cam[5], p), lerp(cam[2], cam[6], p)];
+// 당길 때는 얼굴이 있는 위쪽(높이 30%)을 붙잡고 당긴다
+const zoom = ([x, y, w], k) => { const ay = k < 1 ? 0.3 : 0.5, c = [x + w / 2, y + w * 0.5625 * ay], nw = w * k; return rect(c[0] - nw / 2, c[1] - nw * 0.5625 * ay, nw); };
+const shotsOf = (s) => {
+  const cuts = new Set([s.start, ...s.imgs.map((i) => i.from)]);
+  const hard = new Set(cuts); // 그림이 바뀌는 곳은 꼭 자른다
+  for (const c of s.subs) cuts.add(+Math.max(s.start, c.from - 0.05).toFixed(2));
+  let ts = [...cuts].filter((t) => t < s.end - 0.5).sort((a, b) => a - b);
+  // 너무 짧은 컷은 앞 컷에 붙이고, 긴 컷은 반으로 나눈다
+  ts = ts.filter((t, i) => hard.has(t) || i === 0 || t - ts[i - 1] >= MIN_SHOT);
+  ts = ts.filter((t, i) => hard.has(t) || i === ts.length - 1 || ts[i + 1] - t >= MIN_SHOT || s.end - t < MIN_SHOT);
+  const out = [];
+  ts.forEach((t, i) => {
+    const to = ts[i + 1] ?? s.end;
+    const n = Math.max(1, Math.round((to - t) / MAX_SHOT));
+    for (let k = 0; k < n; k++) out.push([t + ((to - t) * k) / n, t + ((to - t) * (k + 1)) / n]);
+  });
+  const multi = s.imgs.length > 1; // 여러 그림 장면은 그림마다 전체에서 시작
+  const base = multi ? [0, 0, 320, 180, 10, 6, 300, 168.75] : s.cam;
+  return out.map(([from, to], i) => {
+    const img = [...s.imgs].reverse().find((im) => im.from <= from + 0.01) ?? s.imgs[0];
+    const p = (from + to) / 2 - s.start, q = Math.min(1, p / Math.max(1, s.end - s.start));
+    const r = rect(...along(base, q));
+    const line = s.subs.find((c) => c.from >= from - 0.1 && c.from < to);
+    const punch = !!line && line.who !== 'narr' && /!/.test(line.text);
+    // 컷마다 크기를 번갈아: 길 위 네모 → 가깝게 → 넓게 …
+    const k = punch ? 1 : i % 3 === 1 ? 0.82 : i % 3 === 2 ? 1.28 : 1; // 외치는 컷은 펀치가 있으니 더 당기지 않는다
+    const a = zoom(r, k), b = zoom(a, i % 2 ? 1.06 : 0.94); // 컷 안에서도 살짝 밀고 당긴다
+    return { id: img.id, from: +from.toFixed(2), to: +to.toFixed(2), cam: [a[0], a[1], a[2], a[2] * 0.5625, b[0], b[1], b[2], b[2] * 0.5625].map((v) => +v.toFixed(1)), punch, first: i === 0 };
+  });
+};
+if (edit) for (const s of scenes) {
+  s.shots = shotsOf(s);
+  for (const c of s.subs) {
+    const w = (edit.stickers ?? []).find((x) => c.text.includes(x));
+    if (w) c.sticker = w;
+  }
+}
+
 const end = scenes.at(-1).end;
 // 책마다 다른 화면 꾸밈: 말하는 사람 색 · 표지 글자 색 · 끝 카드 문구
 const LOOK = {
@@ -129,7 +182,7 @@ const LOOK = {
   '02-maum-cafe': { colors: { 바라: '#8a5a2b', 나무늘보: '#a0622d', 사자: '#c98a12', 다람쥐: '#c0612b', 고슴도치: '#7a5a3c', 카멜레온: '#2f9a7a', 토끼: '#6a7fb0' }, thumb: [['내 마음 알아주는', '#8a5a2b'], ['마음카페', '#c0392b']], ink: '#5a3a1c', endLine: '어떤 마음이든, 언제든 환영합니다', tag: '엄마의 동화책', title: '내 마음 알아주는 마법레시피\n마음카페' },
   '03-lost-found': { colors: { 할아버지: '#6b4a2b', 공책: '#c0392b', 줄넘기: '#c9a227', 우산: '#2f6fa8', 잠바: '#7a5a8a', 필통: '#3c8a55', 도윤: '#2c3e63', 여자아이: '#d0607a', 아이: '#c9822b', 물건들: '#5a6a7a', 방송: '#444444' }, thumb: [['반짝! 분실물', '#e0a420'], ['보관함의 비밀', '#3a5a8a']], ink: '#2c3e63', endLine: '잃어버린 물건에도 마음이 있어요', tag: '엄마의 동화책', title: story.title },
 }[slug];
-const out = { slug, look: LOOK, audio: `audio/${slug}.wav`, fps: FPS, width: 1920, height: 1080, title: story.title, author: story.author, intro: INTRO, outro: OUTRO, total: +(end + OUTRO).toFixed(2), scenes };
+const out = { slug, fast: !!edit, look: LOOK, audio: `audio/${slug}.wav`, fps: FPS, width: 1920, height: 1080, title: story.title, author: story.author, intro: INTRO, outro: OUTRO, total: +(end + OUTRO).toFixed(2), scenes };
 fs.writeFileSync(path.join(here, '..', 'src', 'timeline.json'), JSON.stringify(out, null, 1));
 console.log(`timeline.json — 장면 ${scenes.length} · 자막 ${scenes.reduce((a, s) => a + s.subs.length, 0)}줄 · ${out.total}초`);
 if (HERO) for (const n of [14, 15]) if (!has(`p${n}`)) console.log(`※ art/p${n}.png 없음 → ${ART[n]} 로 대체`);

@@ -1,0 +1,6 @@
+{
+  "asOf": "2026-10-28",
+  "japan": { "announce": "11월 2일", "agency": "방재청 출범", "min": 3, "best": 7, "items": ["식량", "물", "휴대용 화장실", "위생용품"], "disasters": ["난카이 해곡 대지진", "수도 직하지진", "후지산 분화"] },
+  "uk": { "start": "10월 22일", "name": "Be Ready", "hours": 72, "perDay": 3, "items": ["현금", "손전등", "라디오", "구급상자"] },
+  "water": { "perDay": 3, "people": 4, "bottle": 2 }
+}

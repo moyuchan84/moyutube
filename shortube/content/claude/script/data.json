@@ -1,0 +1,31 @@
+{
+  "asOf": "2026-10-26",
+  "ticker": "ANT",
+  "quarters": [
+    { "q": "25.1Q", "m": 376 },
+    { "q": "2Q", "m": 787 },
+    { "q": "3Q", "m": 1382 },
+    { "q": "4Q", "m": 2040 },
+    { "q": "26.1Q", "m": 4731 },
+    { "q": "2Q", "m": 11555 }
+  ],
+  "h1Revenue": 16286,
+  "consumption": 13100,
+  "consumptionPct": 80,
+  "opus": { "in": 4, "out": 20 },
+  "context": [
+    { "label": "2023.5 이전", "k": 9 },
+    { "label": "2023.5", "k": 100 },
+    { "label": "지금 (2026.10)", "k": 1000 }
+  ],
+  "chars": "약 250만 자",
+  "chips": ["AWS Trainium", "Google TPU", "NVIDIA GPU", "AMD GPU"],
+  "commit": [
+    { "name": "Google", "b": 1145, "term": "2026.4~2033.7" },
+    { "name": "Amazon", "b": 1100, "term": "2026.5~2036.4" },
+    { "name": "Microsoft", "b": 449, "term": "2026.11~2033.5" }
+  ],
+  "growth": { "revenue": 1368, "compute": 300 },
+  "loss": { "net": 807, "fairValue": 724, "operating": 6.93 },
+  "people": { "employees": 5300, "perEmployee": 660, "perEmployeePrev": 140, "codePct": 90, "cust1m": 1900, "cust10m": 250 }
+}

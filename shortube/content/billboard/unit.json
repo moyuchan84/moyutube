@@ -1,0 +1,22 @@
+{
+  "code": "billboard",
+  "title": "올해 빌보드 200 1위 K팝 앨범 5장, 첫 주 유닛은 98,000~641,000",
+  "format": "short",
+  "category": "chart",
+  "status": "uploaded",
+  "created": "2026-10-22",
+  "published": "2026-10-22",
+  "youtube": [
+    {
+      "id": "XGpL7pf1OQo",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "public"
+    }
+  ],
+  "tags": [],
+  "video": {
+    "composition": "BillboardShort",
+    "bgm": "bgm/billboard.mjs"
+  }
+}

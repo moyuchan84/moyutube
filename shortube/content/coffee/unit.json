@@ -1,0 +1,17 @@
+{
+  "code": "coffee",
+  "title": "같은 355ml, 아메리카노 12kcal vs 카페모카 256kcal — 커피 열량 · 당류 · 카페인 · 콜드브루 시간",
+  "format": "short",
+  "status": "edit",
+  "created": "2026-10-23",
+  "youtube": [],
+  "tags": [],
+  "video": {
+    "composition": "CoffeeShort",
+    "bgm": "bgm/coffee.mjs",
+    "data": [
+      "data/coffee-data.mjs"
+    ]
+  },
+  "notes": "렌더는 했지만 업로드 장부(uploads.csv)에 기록이 없다"
+}

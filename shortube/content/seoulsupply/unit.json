@@ -1,0 +1,22 @@
+{
+  "code": "seoulsupply",
+  "title": "서울 집은 짓는데 입주는 줄어든다? 3년 시차 숫자로 보면",
+  "format": "short",
+  "category": "market",
+  "status": "uploaded",
+  "created": "2026-10-19",
+  "published": "2026-10-19",
+  "youtube": [
+    {
+      "id": "s2Q_EGSfAZA",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "public"
+    }
+  ],
+  "tags": [],
+  "video": {
+    "composition": "SeoulSupplyShort",
+    "bgm": "bgm/seoulsupply.mjs"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "code": "english",
+  "title": "작년 수능 영어 1등급 3.11%, 절대평가인데 상위 4%보다 적었다",
+  "format": "short",
+  "category": "education",
+  "status": "uploaded",
+  "created": "2026-10-23",
+  "published": "2026-10-23",
+  "youtube": [
+    {
+      "id": "CLp_OJvFEcU",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "public"
+    }
+  ],
+  "tags": [],
+  "video": {
+    "composition": "EnglishShort",
+    "bgm": "bgm/english.mjs"
+  }
+}

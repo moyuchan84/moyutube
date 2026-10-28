@@ -1,0 +1,85 @@
+1
+00:00:00,000 --> 00:00:02,680
+I've already written down your answer
+
+2
+00:00:02,730 --> 00:00:03,550
+The answer is already
+in this envelope!
+
+3
+00:00:03,600 --> 00:00:07,920
+Think of any
+three-digit number
+(first and last digits at least 2 apart)
+
+4
+00:00:07,970 --> 00:00:15,290
+Reverse it, then subtract
+the smaller number from the bigger one
+
+5
+00:00:15,340 --> 00:00:18,060
+Reverse that answer
+and add the two together
+
+6
+00:00:18,110 --> 00:00:21,550
+Need more time?
+Press and hold the screen to pause
+
+7
+00:00:22,300 --> 00:00:26,550
+Done?
+Your answer is…
+
+8
+00:00:26,600 --> 00:00:28,570
+Your answer is…
+1089!
+
+9
+00:00:28,620 --> 00:00:29,670
+If I got it right,
+comment "1089"!
+
+10
+00:00:29,720 --> 00:00:31,090
+How did I know?
+
+11
+00:00:31,140 --> 00:00:33,960
+Whatever number you pick…
+
+12
+00:00:34,010 --> 00:00:35,730
+it's always 1089!
+
+13
+00:00:35,780 --> 00:00:39,170
+After subtracting, there are
+only 8 possible answers
+
+14
+00:00:39,220 --> 00:00:41,490
+The middle digit is always 9,
+and the two ends add up to 9
+
+15
+00:00:41,540 --> 00:00:43,820
+Add it to its reverse,
+column by column…
+
+16
+00:00:43,870 --> 00:00:46,390
+Ends make 9, the middle makes 18:
+900 + 180 + 9 = 1089, every time!
+
+17
+00:00:46,440 --> 00:00:50,350
+Now you're the magician! Secretly write 1089 on paper,
+have someone do the steps, then unfold it!
+
+18
+00:00:51,000 --> 00:00:53,350
+NEXT: The number you think of vanishes, and only 4 is left?

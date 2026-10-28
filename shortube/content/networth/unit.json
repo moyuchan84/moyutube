@@ -1,0 +1,22 @@
+{
+  "code": "networth",
+  "title": "한국 가구 평균 순자산 4.7억, 그런데 57%는 3억 미만입니다",
+  "format": "short",
+  "category": "money",
+  "status": "uploaded",
+  "created": "2026-10-22",
+  "published": "2026-10-22",
+  "youtube": [
+    {
+      "id": "VIOSRkPk5kM",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "public"
+    }
+  ],
+  "tags": [],
+  "video": {
+    "composition": "NetWorthShort",
+    "bgm": "bgm/networth.mjs"
+  }
+}

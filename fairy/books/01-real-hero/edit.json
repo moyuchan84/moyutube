@@ -1,0 +1,13 @@
+{
+ "note": "빠른 편집 설정. 지우면 예전 느린 편집으로 돌아간다. speed.mjs · voice.mjs · timeline.mjs · bgm.mjs · Book.tsx 가 읽는다.",
+ "tempo": 1.2,
+ "maxPause": 0.3,
+ "head": 0.15,
+ "gap": 0.2,
+ "tail": 0.35,
+ "minScale": 0.6,
+ "intro": 3,
+ "outro": 6,
+ "music": 0.62,
+ "stickers": ["슈우우웅!", "으아앙!", "무효야!", "발사!!", "축하해!"]
+}

@@ -55,9 +55,24 @@ const bell = (m, d = 1.6) => gen(d, (t) => (Math.sin(2 * Math.PI * hz(m) * t) + 
 const MEL = [[72, 2], [76, 2], [79, 2], [81, 3], [79, 3], [77, 2], [76, 2], [74, 2], [72, 6], [74, 2], [77, 2], [81, 2], [79, 3], [76, 3], [74, 2], [72, 2], [67, 2], [72, 6]];
 const CHORD = [[48, [0, 4, 7]], [53, [0, 4, 7]], [55, [0, 4, 7]], [48, [0, 4, 7]], [50, [0, 3, 7]], [48, [0, 4, 7]], [55, [0, 4, 7]], [48, [0, 4, 7]]];
 const THEME_LEN = 48; // 8분음표 개수
+// 빠른 편집(edit.json): 같은 주제를 더 빠르게 + 밝은 곡엔 가벼운 드럼
+const editFile = path.join(book, 'edit.json');
+const EDIT = fs.existsSync(editFile) ? JSON.parse(fs.readFileSync(editFile, 'utf8')) : null;
+const kick = () => gen(0.25, (t) => Math.sin(2 * Math.PI * (48 + 90 * Math.exp(-t * 30)) * t) * Math.exp(-t * 14));
+const snare = () => { const n = bp(gen(0.18, () => rnd()), 1200, 6000); for (let i = 0; i < n.length; i++) n[i] *= Math.exp((-i / R) * 24); return n; };
+const hat = () => { const n = hp(gen(0.05, () => rnd()), 7000); for (let i = 0; i < n.length; i++) n[i] *= Math.exp((-i / R) * 70); return n; };
+// 6/8 한 마디: 쿵 · 칫 · 칫 · 탁 · 칫 · 칫
+const drums = (buf, t0, eighth) => {
+  put(buf, t0, kick(), 0.55);
+  put(buf, t0 + 3 * eighth, snare(), 0.32);
+  if (eighth < 0.2) put(buf, t0 + 5 * eighth, kick(), 0.3);
+  for (let k = 0; k < 6; k++) put(buf, t0 + k * eighth, hat(), k % 3 ? 0.1 : 0.16);
+};
 // 시작~끝 사이를 주제로 채운다. eighth = 8분음표 길이(초), inst = 음색
 const theme = (a, b, { eighth = 0.36, inst = box, g = 0.5, melody = true, arp = true, bass = true, shift = 0, fade = 1.2 } = {}) => {
   const buf = new Float32Array(N);
+  const beat = EDIT && melody && inst !== piano && g >= 0.4;
+  if (EDIT) { eighth = Math.max(0.16, eighth * (EDIT.music ?? 1)); fade = Math.min(fade, 0.8); }
   const loop = THEME_LEN * eighth;
   for (let base = a; base < b; base += loop) {
     if (melody) {
@@ -67,6 +82,7 @@ const theme = (a, b, { eighth = 0.36, inst = box, g = 0.5, melody = true, arp = 
     CHORD.forEach(([root, ch], bar) => {
       const t0 = base + bar * 6 * eighth;
       if (bass) put(buf, t0, pad(root + shift - 12, 6 * eighth + 0.4), 0.18);
+      if (beat) drums(buf, t0, eighth);
       if (arp) [0, 2, 1, 2, 1, 2].forEach((ix, k) => put(buf, t0 + k * eighth, inst(root + 12 + ch[ix] + shift, 1.2), 0.32));
     });
   }

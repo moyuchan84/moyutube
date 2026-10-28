@@ -1,0 +1,26 @@
+{
+  "code": "soxl",
+  "title": "반도체지수 -4.30%인 날, 3배 ETF는 -13.35%였습니다",
+  "format": "short",
+  "category": "market",
+  "status": "uploaded",
+  "created": "2026-10-19",
+  "published": "2026-10-19",
+  "youtube": [
+    {
+      "id": "jz7uSgwhWGI",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "private"
+    }
+  ],
+  "tags": [],
+  "video": {
+    "composition": "SoxlShort",
+    "bgm": "bgm/soxl.mjs",
+    "data": [
+      "data/fetch-soxl.mjs",
+      "data/soxl-data.mjs"
+    ]
+  }
+}

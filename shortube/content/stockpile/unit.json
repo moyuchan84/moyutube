@@ -1,0 +1,22 @@
+{
+  "code": "stockpile",
+  "title": "일본 3일치 식량 비축 요청, 전쟁 대비? 4인 가족 물 36L 계산해 보면",
+  "format": "short",
+  "status": "uploaded",
+  "created": "2026-10-28",
+  "youtube": [
+    {
+      "id": "6l6QnKRLAb8",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "public"
+    }
+  ],
+  "tags": [],
+  "video": {
+    "composition": "StockpileShort",
+    "bgm": "bgm/stockpile.mjs"
+  },
+  "category": "life",
+  "published": "2026-10-28"
+}

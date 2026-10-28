@@ -1,0 +1,22 @@
+{
+  "code": "whydrop",
+  "title": "간밤 미국은 올랐는데 코스피 -3.52%, 외국인 10월 삼전닉스 13조 순매도",
+  "format": "short",
+  "category": "market",
+  "status": "uploaded",
+  "created": "2026-10-22",
+  "published": "2026-10-22",
+  "youtube": [
+    {
+      "id": "vf_aBQUSHI8",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "public"
+    }
+  ],
+  "tags": [],
+  "video": {
+    "composition": "WhyDropShort",
+    "bgm": "bgm/whydrop.mjs"
+  }
+}

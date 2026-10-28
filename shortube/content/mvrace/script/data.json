@@ -1,0 +1,11 @@
+{
+  "asOf": "2026-10-28T07:54:41Z",
+  "asOfKst": "2026.10.28 16:54",
+  "mvs": [
+    { "name": "LISA", "song": "Tarantino", "pub": "2026-10-23T04:00:07Z", "views": 64168105, "color": "#FF3EA5" },
+    { "name": "MEOVV", "song": "GO HARD", "pub": "2026-10-12T08:59:59Z", "views": 25316217, "color": "#B66BFF" },
+    { "name": "ATEEZ", "song": "Drip", "pub": "2026-10-23T04:00:02Z", "views": 18738506, "color": "#FFB01F" },
+    { "name": "RIIZE", "song": "Insomnia", "pub": "2026-10-25T15:00:04Z", "views": 10297266, "color": "#33E1FF" },
+    { "name": "ILLIT", "song": "체포하겠어", "pub": "2026-10-26T08:58:08Z", "views": 8922191, "color": "#9BFF3A" }
+  ]
+}

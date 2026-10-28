@@ -1,0 +1,23 @@
+{
+  "code": "claude",
+  "title": "앤트로픽 상장 서류 열어 보니, Claude 분기 매출 1년 새 14.7배 · 토큰 · 컨텍스트 · 연산 숫자로 보면",
+  "format": "short",
+  "category": "market",
+  "status": "uploaded",
+  "created": "2026-10-27",
+  "youtube": [
+    {
+      "id": "lyxirYx0sv8",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "public"
+    }
+  ],
+  "tags": [],
+  "video": {
+    "composition": "ClaudeShort",
+    "bgm": "bgm/claude.mjs"
+  },
+  "published": "2026-10-27",
+  "notes": "재생목록(숫자로 보는 시장) 추가가 Studio 에서 반영되지 않음 — 수동 추가 필요"
+}

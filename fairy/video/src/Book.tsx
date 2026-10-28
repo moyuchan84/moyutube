@@ -8,14 +8,16 @@ const FONT = `${fontFamily}, 'Batang', 'Malgun Gothic', serif`;
 
 const PAPER = "#f5ead2";
 const INK = "#3b3228";
-const FADE = 20; // 장면 사이 겹치는 프레임 (쪽 넘김 느낌의 부드러운 전환)
+const FAST = !!timeline.fast; // 빠른 편집 (books/<slug>/edit.json)
+const FADE = FAST ? 6 : 20; // 장면 사이 겹치는 프레임 (느린 편집은 쪽 넘김 느낌의 부드러운 전환)
 const PAD = 36; // 그림 둘레 종이 여백
 const WHO: Record<string, string> = timeline.look.colors;
 const HERO = timeline.slug === "01-real-hero";
 
 type Cam = number[];
 type Img = { id: string; from: number; to: number };
-type Sub = { who: string; text: string; from: number; to: number };
+type Sub = { who: string; text: string; from: number; to: number; sticker?: string };
+type ShotT = { id: string; from: number; to: number; cam: Cam; punch: boolean; first: boolean };
 
 const fr = (s: number) => Math.round(s * timeline.fps);
 
@@ -44,15 +46,57 @@ const Page: React.FC<{ img: Img; cam: Cam; W: number; H: number }> = ({ img, cam
   );
 };
 
+// 빠른 편집의 컷: 장면 첫 컷만 짧게 밝아지고 나머지는 바로 끊는다. 외치는 컷은 줌 펀치 + 흔들림
+const Cut: React.FC<{ shot: ShotT; W: number; H: number }> = ({ shot, W, H }) => {
+  const f = useCurrentFrame();
+  const dur = fr(shot.to) - fr(shot.from);
+  const op = shot.first ? interpolate(f, [0, FADE], [0, 1], { extrapolateRight: "clamp" }) : 1;
+  const k = shot.punch ? interpolate(f, [0, 10], [1.16, 1], { easing: Easing.out(Easing.back(2)), extrapolateRight: "clamp" }) : 1;
+  const amp = shot.punch ? interpolate(f, [0, 14], [14, 0], { extrapolateRight: "clamp" }) : 0;
+  const dx = Math.sin(f * 2.7) * amp, dy = Math.cos(f * 3.3) * amp * 0.6;
+  return (
+    <AbsoluteFill style={{ opacity: op, transform: `translate(${dx}px, ${dy}px) scale(${k})` }}>
+      <Shot src={shot.id} cam={shot.cam} W={W} H={H} frames={dur + FADE} />
+    </AbsoluteFill>
+  );
+};
+
+// 의성어 · 외침을 큰 글자로 (만화 효과 글자)
+const Sticker: React.FC<{ sub: Sub; i: number }> = ({ sub, i }) => {
+  const f = useCurrentFrame();
+  const dur = fr(sub.to) - fr(sub.from);
+  const s = interpolate(f, [0, 7, 12], [0.2, 1.25, 1], { easing: Easing.out(Easing.quad), extrapolateRight: "clamp" });
+  const op = interpolate(f, [0, 3, dur - 5, dur], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const rot = (i % 2 ? 7 : -8) + Math.sin(f / 3) * 2.5;
+  const color = WHO[sub.who] ?? "#e8a317";
+  return (
+    <div style={{ position: "absolute", top: 70, left: i % 2 ? undefined : 90, right: i % 2 ? 90 : undefined, opacity: op, transform: `rotate(${rot}deg) scale(${s})` }}>
+      <span style={{ fontFamily: FONT, fontWeight: 700, fontSize: 150, color, WebkitTextStroke: "14px #fff", paintOrder: "stroke fill", textShadow: "0 10px 0 rgba(60,40,10,0.35)", letterSpacing: -4 }}>{sub.sticker}</span>
+    </div>
+  );
+};
+
+// 장면 시작에 왼쪽 위로 들어왔다 나가는 장면 제목 (TV 동화 느낌)
+const SceneTag: React.FC<{ title: string; frames: number }> = ({ title, frames }) => {
+  const f = useCurrentFrame();
+  const x = interpolate(f, [0, 8, frames - 8, frames], [-520, 0, 0, -520], { easing: Easing.out(Easing.cubic), extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  return (
+    <div style={{ position: "absolute", top: 36, left: 0, transform: `translateX(${x}px)`, background: timeline.look.ink, color: "#fff8e8", fontFamily: FONT, fontWeight: 700, fontSize: 40, padding: "10px 34px 12px 40px", borderRadius: "0 40px 40px 0", boxShadow: "0 6px 18px rgba(40,25,5,0.35)" }}>
+      {title}
+    </div>
+  );
+};
+
 const Caption: React.FC<{ sub: Sub }> = ({ sub }) => {
   const f = useCurrentFrame();
   const dur = fr(sub.to) - fr(sub.from);
-  const op = interpolate(f, [0, 6, dur - 6, dur], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const rise = interpolate(f, [0, 8], [10, 0], { extrapolateRight: "clamp" });
+  const op = interpolate(f, [0, FAST ? 3 : 6, dur - (FAST ? 3 : 6), dur], [0, 1, 1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const rise = FAST ? 0 : interpolate(f, [0, 8], [10, 0], { extrapolateRight: "clamp" });
+  const pop = FAST ? interpolate(f, [0, 6], [0.86, 1], { easing: Easing.out(Easing.back(2.2)), extrapolateRight: "clamp" }) : 1;
   const talk = sub.who !== "narr";
   const color = WHO[sub.who] ?? INK;
   return (
-    <div style={{ position: "absolute", left: 0, right: 0, bottom: 34, display: "flex", justifyContent: "center", opacity: op, transform: `translateY(${rise}px)` }}>
+    <div style={{ position: "absolute", left: 0, right: 0, bottom: 34, display: "flex", justifyContent: "center", opacity: op, transform: `translateY(${rise}px) scale(${pop})` }}>
       <div
         style={{
           maxWidth: 1500,
@@ -81,12 +125,15 @@ const Caption: React.FC<{ sub: Sub }> = ({ sub }) => {
 
 const Cover: React.FC<{ end?: boolean; frames: number }> = ({ end, frames }) => {
   const f = useCurrentFrame();
-  const op = interpolate(f, [0, 24, frames - 20, frames], [0, 1, 1, end ? 1 : 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-  const text = interpolate(f, [24, 54], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const inF = FAST ? 6 : 24;
+  const op = interpolate(f, [0, inF, frames - (FAST ? FADE : 20), frames], [0, 1, 1, end ? 1 : 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const text = interpolate(f, FAST ? [4, 10] : [24, 54], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  // 빠른 편집: 제목이 크게 들어와 쿵 하고 자리 잡는다
+  const slam = FAST ? interpolate(f, [4, 14], [1.5, 1], { easing: Easing.out(Easing.back(1.8)), extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 1;
   return (
     <AbsoluteFill style={{ opacity: op }}>
       <Shot src="cover" cam={end ? [10, 10, 300, 168.75, 0, 0, 320, 180] : [0, 0, 320, 180, 12, 8, 296, 166.5]} W={timeline.width - PAD * 2} H={timeline.height - PAD * 2} frames={frames} />
-      <AbsoluteFill style={{ alignItems: "center", opacity: text, fontFamily: FONT, color: timeline.look.ink, textAlign: "center", paddingTop: end ? (HERO ? 120 : 60) : 28 }}>
+      <AbsoluteFill style={{ alignItems: "center", opacity: text, transform: `scale(${slam})`, fontFamily: FONT, color: timeline.look.ink, textAlign: "center", paddingTop: end ? (HERO ? 120 : 60) : 28 }}>
         {end ? (
           <div style={HERO ? undefined : { background: "rgba(255,250,236,0.84)", borderRadius: 40, padding: "18px 70px 24px", boxShadow: "0 10px 30px rgba(70,45,10,0.25)" }}>
             <div style={{ fontSize: 150, fontWeight: 700, textShadow: "0 4px 0 #fff8, 0 0 30px #fff" }}>끝</div>
@@ -122,7 +169,17 @@ export const Book: React.FC = () => {
         <Sequence from={0} durationInFrames={fr(timeline.intro) + FADE}>
           <Cover frames={fr(timeline.intro) + FADE} />
         </Sequence>
-        {timeline.scenes.map((s) =>
+        {FAST && timeline.scenes.flatMap((s) =>
+          (s.shots ?? []).map((sh: ShotT, k: number) => {
+            const from = fr(sh.from), to = fr(sh.to) + (k === s.shots.length - 1 ? FADE : 0);
+            return (
+              <Sequence key={`${s.no}-shot-${k}`} from={from} durationInFrames={Math.max(1, to - from)}>
+                <Cut shot={sh} W={W} H={H} />
+              </Sequence>
+            );
+          }),
+        )}
+        {!FAST && timeline.scenes.map((s) =>
           s.imgs.map((im: Img, k: number) => {
             const cam = HERO && s.no === 10 ? ([[0, 0, 320, 180, 20, 10, 280, 157.5], [300, 20, 260, 146.25, 40, 20, 280, 157.5], [0, 20, 320, 180, 30, 14, 290, 163.1], [40, 0, 280, 157.5, 0, 0, 320, 180]][k] ?? s.cam) : s.cam;
             const from = fr(im.from), to = fr(im.to) + FADE;
@@ -140,6 +197,18 @@ export const Book: React.FC = () => {
             </Sequence>
           )),
         )}
+        {FAST && timeline.scenes.flatMap((s) =>
+          s.subs.filter((c: Sub) => c.sticker).map((c: Sub, i: number) => (
+            <Sequence key={`${s.no}-st-${i}`} from={fr(c.from)} durationInFrames={Math.max(20, Math.min(fr(2.2), fr(c.to) - fr(c.from)))}>
+              <Sticker sub={c} i={s.no + i} />
+            </Sequence>
+          )),
+        )}
+        {FAST && timeline.scenes.filter((s) => s.title && s.subs.length).map((s) => (
+          <Sequence key={`${s.no}-tag`} from={fr(s.start)} durationInFrames={fr(2)}>
+            <SceneTag title={s.title} frames={fr(2)} />
+          </Sequence>
+        ))}
         <Sequence from={outroAt} durationInFrames={total - outroAt}>
           <Cover end frames={total - outroAt} />
         </Sequence>
