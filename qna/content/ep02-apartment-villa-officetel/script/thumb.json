@@ -1,0 +1,18 @@
+{
+  "face": {
+    "tag": "여덟 살 아들의 질문",
+    "top": [
+      "아파트? ",
+      "빌라?"
+    ],
+    "bottom": [
+      "아빠,",
+      " 우리 집은 뭐예요?"
+    ],
+    "topic": [
+      "ep02/prop/apartment",
+      "ep02/prop/villa",
+      "ep02/prop/officetel"
+    ]
+  }
+}

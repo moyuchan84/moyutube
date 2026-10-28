@@ -1,0 +1,238 @@
+{
+  "title": "내모남불 ③ 주식편 · 오르면 · 내리면 · 단톡방",
+  "cast": {
+    "teller": "the bank teller: a Korean woman in her late twenties, black hair pulled back in a neat low bun, straight bangs, small pearl earrings, a calm oval face with a tiny polite smile; wearing a navy bank uniform vest over a white blouse with a small navy-and-teal neck scarf, a blank name badge with absolutely no writing; absolutely NO text, NO letters and NO logos anywhere; perfectly deadpan and polite",
+    "buddy": "the dad's old friend: a Korean man in his mid-forties, round face, short spiky black hair, thick black-framed glasses, a light stubble, slightly chubby; wearing a wrinkled mint-green hoodie; absolutely NO text, NO letters and NO logos anywhere; comically dramatic"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/panic",
+    "common/kid/normal",
+    "common/mom/normal",
+    "common/cutin/dad-shock",
+    "common/cutin/dad-proud",
+    "common/cutin/dad-sig-1",
+    "common/cutin/dad-sig-2",
+    "common/cutin/dad-sig-3",
+    "common/cutin/kid-ask",
+    "common/cutin/kid-doubt",
+    "common/cutin/mom-smirk",
+    "common/cutin/mom-sigh"
+  ],
+  "items": [
+    {
+      "id": "teller/normal",
+      "kind": "char",
+      "who": "teller",
+      "ref": null,
+      "title": "은행 직원 — 기본",
+      "cuts": "c02d, c02e, c03d, c04c, c06c",
+      "note": "은행 직원의 기준 그림. 이것부터 뽑아 확정한 뒤 나머지 직원 그림에 ②로 첨부한다.",
+      "motion": "숨 쉬듯 살짝 움직이고, 말할 때 까딱거린다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing perfectly upright with her hands folded neatly in front of her, a calm deadpan face with a tiny polite customer-service smile, eyes half-lidded and unbothered."
+    },
+    {
+      "id": "teller/call",
+      "kind": "char",
+      "who": "teller",
+      "title": "은행 직원 — 한 손 들어 번호를 부름",
+      "cuts": "c02d, c06c",
+      "motion": "손을 든 채 까딱.",
+      "desc": "3/4 view turned slightly to the RIGHT. One hand raised politely at shoulder height, palm open, as if calling the next customer, the other hand holding a thin blank folder against her chest, the same deadpan polite face."
+    },
+    {
+      "id": "teller/no-recommend",
+      "kind": "char",
+      "who": "teller",
+      "title": "은행 직원 — 두 손바닥을 펴 보이며 \"추천 안 합니다\"",
+      "cuts": "c03e",
+      "motion": "두 손바닥이 앞으로 쑥, 정지.",
+      "desc": "Facing the viewer. Both palms held up and out in front of her chest in a calm, firm 'I won't say anything' gesture, eyes closed serenely, a perfectly flat polite mouth, a tiny cool sweat-free sparkle beside her face."
+    },
+    {
+      "id": "cutin/teller-flat",
+      "kind": "cutin",
+      "who": "teller",
+      "ref": "teller/normal",
+      "title": "은행 직원 정색 (컷인)",
+      "cuts": "c02e, c03d, c04c",
+      "motion": "화면 옆에서 튀어나와 흔들린다.",
+      "desc": "Facing slightly to the RIGHT. Perfectly deadpan: half-closed unimpressed eyes, one eyebrow raised a millimeter, a small flat polite mouth, one index finger raised calmly beside her face, a cold white anime glint in her eyes."
+    },
+    {
+      "id": "buddy/normal",
+      "kind": "char",
+      "who": "buddy",
+      "ref": null,
+      "title": "아빠 친구 — 기본",
+      "cuts": "c03b",
+      "note": "친구의 기준 그림. 이것부터 뽑아 확정한 뒤 buddy/cry · full/dad-cheap 에 첨부한다.",
+      "motion": "숨 쉬듯 살짝.",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing with a cheerful, slightly goofy grin, one hand scratching the back of his head."
+    },
+    {
+      "id": "buddy/cry",
+      "kind": "char",
+      "who": "buddy",
+      "title": "아빠 친구 — 영상 통화 셀카 구도로 엉엉",
+      "cuts": "c03b, c03c",
+      "note": "영상에서 휴대폰 화면 틀(코드) 안에 들어간다.",
+      "motion": "흐느끼며 들썩, 눈물 줄기.",
+      "desc": "Close selfie-angle bust shot, looking straight at the viewer as if into a phone camera on a video call. Bawling dramatically: eyes squeezed shut behind the thick glasses, two huge anime waterfall tears streaming down, mouth wide open in a wail, snot bubble, face tinted pale blue, a tiny rain cloud above his head. Plain soft background."
+    },
+    {
+      "id": "bg/bank-lobby",
+      "kind": "bg",
+      "title": "배경 — 동네 은행 대기석",
+      "cuts": "c00, c01, c02, c02d, c03, c04, c06",
+      "note": "주 무대. 인물은 초록 배경 그림을 위에 얹는다. 번호 화면은 비워 두고 숫자는 코드로.",
+      "motion": "대사마다 인물 쪽으로 카메라가 옮겨 간다.",
+      "desc": "The waiting area of a small, bright neighborhood bank branch in the afternoon, seen straight-on like a sitcom set: a long row of teller counters with low glass partitions in the back, a blank black number display box hanging above the counters (no numbers), a ticket machine on a stand, two rows of light-gray waiting chairs in front, a potted plant, warm ceiling lights, light wood floor. No people, absolutely no text, no logos, no signs."
+    },
+    {
+      "id": "bg/bank-dusk",
+      "kind": "bg",
+      "title": "배경 — 해질녘 은행 앞 벤치",
+      "cuts": "c05",
+      "motion": "아주 천천히 당겨진다.",
+      "desc": "The quiet sidewalk outside a small neighborhood bank at golden dusk: a wooden bench under a young street tree, the glass doors of the bank behind it glowing warmly, soft orange sky, a few lit shop windows in soft focus. No people, no text, no signs, no logos."
+    },
+    {
+      "id": "full/waiting-phone",
+      "kind": "full",
+      "who": "dad",
+      "people": [
+        "kid",
+        "mom"
+      ],
+      "title": "콜드 오픈 — 대기석에서 휴대폰 보며 벌떡 일어난 아빠",
+      "cuts": "c00, c01",
+      "motion": "아빠 쪽으로 휙 당겨졌다가 대사마다 인물 쪽으로.",
+      "desc": "In a bright bank waiting area with gray chairs: the dad has jumped up from his chair holding his phone high with one hand and a small blank queue ticket in the other, a huge triumphant open-mouthed grin, eyes sparkling. The kid sits on the next chair swinging their legs and looking up at him curiously; the mom sits beside the kid with arms folded, giving the dad a flat sideways look. The phone screen shows only a big red upward arrow, no numbers. No text anywhere."
+    },
+    {
+      "id": "full/stock-god-imagine",
+      "kind": "full",
+      "who": "dad",
+      "title": "아빠의 상상 — 빨간 화살표 로켓을 탄 투자의 신 아빠",
+      "cuts": "c02a",
+      "note": "영상에서 분홍 '아빠의 상상' 효과가 얹힌다.",
+      "motion": "아래에서 위로 휙, 반짝이 쏟아짐.",
+      "desc": "A silly imagined scene in pastel pink and gold light: the dad in a shiny gold suit and sunglasses rides a giant glossy red upward arrow like a rocket soaring into the sky, one fist raised in triumph, cheeks flapping in the wind, a smug wide grin. Below, a crowd of tiny generic cheering people applauds and throws confetti. Stars, sparkles, comic speed lines. No text, no numbers, no logos."
+    },
+    {
+      "id": "cutin/dad-blue",
+      "kind": "cutin",
+      "who": "dad",
+      "attach": [
+        {
+          "path": "content/_common/art/cutin/dad-shock.png",
+          "label": "아빠 컷인 표정 참고"
+        }
+      ],
+      "title": "아빠 컷인 — 파랗게 질림 \"왜 파래?!\"",
+      "cuts": "c03, c06",
+      "motion": "크래시 줌, 얼굴이 파랗게 번진다.",
+      "desc": "Facing the viewer. Horrified: his whole face literally turned pale blue from the forehead down, vertical gloom lines over his eyes, tiny shrunken pupils, jaw dropped, a single sweat drop, gripping his phone with both hands so hard it trembles."
+    },
+    {
+      "id": "full/dad-cheap",
+      "kind": "full",
+      "who": "dad",
+      "people": [
+        "mom",
+        "buddy"
+      ],
+      "title": "ROUND 2 — 우는 친구 앞에서 \"싸졌네? 사볼까?\" 하는 아빠",
+      "cuts": "c03c",
+      "motion": "아빠 반짝이는 눈 → 휴대폰 속 친구 → 엄마로 옮겨 간다.",
+      "desc": "In a bright bank waiting area: the dad holds his phone up in a video call, the friend visible on the phone screen bawling with waterfall tears. The dad is not looking at the crying friend at all: he grins with big sparkling star-shaped eyes and drool, one finger raised in a bright 'aha, it's on sale!' idea pose. Behind him, the mom stares at the dad in disbelief, one hand pressed to her forehead. No numbers, no text."
+    },
+    {
+      "id": "cutin/dad-bellyache",
+      "kind": "cutin",
+      "who": "dad",
+      "attach": [
+        {
+          "path": "content/_common/art/cutin/dad-shock.png",
+          "label": "아빠 컷인 표정 참고"
+        }
+      ],
+      "title": "아빠 컷인 — 배를 움켜쥠 \"아이고, 배야…\"",
+      "cuts": "c04",
+      "motion": "꾸르륵 흔들림, 식은땀.",
+      "desc": "Facing slightly to the RIGHT. Doubled over clutching his stomach with both hands, face tinted sickly green, eyes squeezed into wobbly lines, teeth gritted, big beads of cold sweat, a little jagged spiral mark over his belly showing a cramp."
+    },
+    {
+      "id": "full/dad-crop",
+      "kind": "full",
+      "who": "dad",
+      "title": "ROUND 3 — 캡처에서 파란 부분을 잘라내는 아빠",
+      "cuts": "c04b",
+      "motion": "가위가 싹둑 지나간다.",
+      "desc": "Close shot in the bank waiting area: the dad hunches over his phone in total concentration, tongue sticking out of the corner of his mouth, one eye squinting, using a giant cartoon pair of scissors to snip a strip of blue off the phone screen, leaving only a red upward arrow; blue paper scraps flutter down. Sneaky, proud and silly. No numbers, no text."
+    },
+    {
+      "id": "full/mom-reveal",
+      "kind": "full",
+      "who": "mom",
+      "people": [
+        "dad"
+      ],
+      "title": "반전 — 빨간 화살표 휴대폰을 쓱 보여 주는 엄마",
+      "cuts": "c06a",
+      "motion": "엄마 휴대폰 쪽으로 쓱, 반짝.",
+      "desc": "In a bright bank waiting area: the mom calmly holds out her phone toward the dad with a cool, knowing little smile, the screen showing only a big glossy red upward arrow and sparkles. The dad, holding his own phone covered in blue downward arrows, leans back in total shock, jaw dropped, eyes popping. No numbers, no text."
+    },
+    {
+      "id": "full/bench-dusk",
+      "kind": "full",
+      "who": "kid",
+      "people": [
+        "dad"
+      ],
+      "title": "아이 눈높이 — 해질녘 벤치, 새 통장을 든 아이와 아빠",
+      "cuts": "c05",
+      "note": "농담 없는 박자. 따뜻하고 조용하게.",
+      "motion": "거의 움직이지 않고 아주 천천히 당겨진다.",
+      "desc": "A quiet warm moment in golden dusk light: on a wooden bench outside a small bank, the kid sits next to the dad holding a small new bankbook in both hands, looking up at him with a serious, gentle face; the dad, phone resting face-down on his knee, looks down at the kid with a soft, thoughtful, slightly embarrassed smile. Calm, sincere, no comic effects, no text."
+    },
+    {
+      "id": "prop/phone-up",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 빨간 위 화살표 그래프 휴대폰",
+      "cuts": "c00, c02, c06a",
+      "motion": "화살표가 쭉 올라간다 (코드 효과).",
+      "desc": "A smartphone seen straight-on, its screen showing a simple bright red zigzag line graph climbing up to a big glossy red upward arrow, little sparkles around it. No numbers, no letters, no logos, no app icons."
+    },
+    {
+      "id": "prop/phone-down",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 파란 아래 화살표 그래프 휴대폰",
+      "cuts": "c03, c06",
+      "motion": "화살표가 뚝 떨어진다 (코드 효과).",
+      "desc": "A smartphone seen straight-on, its screen showing a simple blue zigzag line graph plunging down to a big glossy blue downward arrow, a tiny gloomy rain cloud above it. No numbers, no letters, no logos, no app icons."
+    },
+    {
+      "id": "prop/number-ticket",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 은행 번호표",
+      "cuts": "c01, c02d, c06c",
+      "note": "숫자 47 은 코드로 얹는다.",
+      "motion": "툭 튀어나와 살짝 흔들린다.",
+      "desc": "A small white paper bank queue ticket with a slightly curled edge, a large empty rectangle in the middle where the number would go, a thin teal stripe at the top. Completely blank, no numbers, no letters, no logos."
+    },
+    {
+      "id": "prop/bankbook",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 새 어린이 통장",
+      "cuts": "c05",
+      "motion": "천천히 반짝.",
+      "desc": "A small brand-new children's bankbook, closed, with a soft sky-blue cover decorated with a simple cute piggy-bank pattern and tiny stars. No letters, no numbers, no logos."
+    }
+  ]
+}

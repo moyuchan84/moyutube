@@ -1,0 +1,20 @@
+{
+  "code": "ep01",
+  "slug": "hotel-motel-hostel",
+  "title": "호텔 · 모텔 · 유스호스텔, 뭐가 달라요?",
+  "format": "longform",
+  "status": "uploaded",
+  "created": "2026-10-15",
+  "youtube": [
+    {
+      "id": "HBDKnxz3ubk",
+      "kind": "long",
+      "note": "비공개 — 1화 리메이크(ep01f)로 교체"
+    },
+    {
+      "id": "RYCGizrpJLY",
+      "kind": "short"
+    }
+  ],
+  "tags": []
+}

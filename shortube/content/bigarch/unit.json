@@ -1,0 +1,22 @@
+{
+  "code": "bigarch",
+  "title": "빅아치 12,400원, 빅맥보다 1.7배 무겁고 값은 2.2배 · 1g당 가격으로 보면",
+  "format": "short",
+  "category": "life",
+  "status": "uploaded",
+  "created": "2026-10-24",
+  "published": "2026-10-24",
+  "youtube": [
+    {
+      "id": "QPrkI5PLuj0",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "public"
+    }
+  ],
+  "tags": [],
+  "video": {
+    "composition": "BigArchShort",
+    "bgm": "bgm/bigarch.mjs"
+  }
+}

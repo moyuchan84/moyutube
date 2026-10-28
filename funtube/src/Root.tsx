@@ -10,6 +10,9 @@ import { Song3D } from "./components/Song3D";
 import { Carpool } from "./components/Carpool";
 import { Invest } from "./components/Invest";
 import { Office } from "./components/Office";
+import { AnimeRush } from "./rush/anime/AnimeRush";
+import { Rush } from "./rush/Rush";
+import { THEMES, durationOf } from "./rush/themes";
 import { buildSong } from "./songTimeline";
 import { FPS, buildTimeline, type EpisodeId } from "./timeline";
 
@@ -29,6 +32,13 @@ export const Root: React.FC = () => (
     <Composition id="ride" component={Song} durationInFrames={buildSong().durationInFrames} fps={FPS} width={1080} height={1920} />
     <Composition id="ride3d" component={Song3D} durationInFrames={buildSong().durationInFrames} fps={FPS} width={1080} height={1920} />
     <Composition id="ride3dface" component={Song3D} defaultProps={{ faces: true }} durationInFrames={buildSong().durationInFrames} fps={FPS} width={1080} height={1920} />
+    {THEMES.map((t) => (
+      t.engine === "anime" ? (
+        <Composition key={t.id} id={`anime-${t.id}`} component={() => <AnimeRush theme={t} />} durationInFrames={durationOf(t)} fps={FPS} width={1080} height={1920} />
+      ) : (
+      <Composition key={t.id} id={`rush-${t.id}`} component={() => <Rush theme={t} />} durationInFrames={durationOf(t)} fps={FPS} width={1080} height={1920} />
+      )
+    ))}
     {EPISODES.map(({ id, component }) => (
       <Composition
         key={id}

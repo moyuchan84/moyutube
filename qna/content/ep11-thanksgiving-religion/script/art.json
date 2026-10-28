@@ -1,0 +1,233 @@
+{
+  "title": "11화 — 칠면조 먹으면 교회 다니는 거예요? 천주교 · 개신교 · 장로교 · 감리교 · 이단 · 이슬람 · 유대교",
+  "cast": {
+    "butcher": "the supermarket butcher: a Korean man in his late fifties who has run the meat counter for almost thirty years, short, stocky and chubby with a big round clean-shaven face (NO mustache, NO beard), heavy-lidded sleepy eyes, thick gray eyebrows, short gray hair under a tall white hygiene cap, chubby forearms in white arm sleeves; wearing a white short-sleeved work shirt under a long clean white apron, dark trousers, white rubber boots, always holding a big pair of stainless-steel meat tongs; absolutely NO text, NO letters, NO name badge writing and NO logos anywhere; calm, deadpan and kind, never mocking anyone"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/panic",
+    "common/dad/explain",
+    "common/dad/proud",
+    "common/dad/shock",
+    "common/kid/normal",
+    "common/kid/ask",
+    "common/kid/wow",
+    "common/kid/doubt",
+    "common/mom/normal",
+    "common/mom/smirk",
+    "common/mom/explain",
+    "common/mom/shock",
+    "common/mom/sigh",
+    "common/cutin/dad-shock",
+    "common/cutin/dad-proud",
+    "common/cutin/kid-ask",
+    "common/cutin/mom-smirk",
+    "common/cutin/dad-sig-1",
+    "common/cutin/dad-sig-2",
+    "common/cutin/dad-sig-3",
+    "common/cutin/mom-sig-1",
+    "common/cutin/mom-sig-2",
+    "common/cutin/mom-sig-3",
+    "common/cutin/mom-sig-4",
+    "common/cutin/mom-sig-scream"
+  ],
+  "items": [
+    {
+      "id": "butcher/normal",
+      "kind": "char",
+      "who": "butcher",
+      "ref": null,
+      "title": "정육 코너 사장님 — 기본",
+      "cuts": "c00b, c01a, c01b, c03",
+      "note": "사장님의 기준 그림. 이것부터 뽑아 확정한 뒤 나머지 사장님 그림에 ②로 첨부한다.",
+      "motion": "숨 쉬듯 살짝 움직이고, 말할 때 까딱거린다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing upright behind nothing, holding the big meat tongs loosely in one hand at his side, the other hand resting on his apron, a calm deadpan face with the tiniest polite smile."
+    },
+    {
+      "id": "butcher/correct",
+      "kind": "char",
+      "who": "butcher",
+      "title": "사장님 — 집게 들고 손가락으로 바로잡기",
+      "cuts": "c00b, c01b, c02b, c05a, c08b",
+      "motion": "말하는 동안 손가락이 까딱인다.",
+      "desc": "3/4 view turned slightly to the RIGHT. One index finger raised in a calm 'actually…' gesture, the meat tongs held in the other hand, half-closed unimpressed eyes, one thick eyebrow slightly raised, mouth a small flat line."
+    },
+    {
+      "id": "butcher/explain",
+      "kind": "char",
+      "who": "butcher",
+      "title": "사장님 — 손바닥 펴고 차근차근 설명",
+      "cuts": "c04, c04b, c04c, c05, c05c, c06, c06a, c06b",
+      "motion": "펼친 손이 천천히 오르내린다.",
+      "desc": "3/4 view turned slightly to the RIGHT. One open palm held out to the side as if laying out cards on a counter, the tongs tucked under the other arm, leaning forward a little, a patient serious face with eyes slightly crinkled, mouth open mid-sentence."
+    },
+    {
+      "id": "butcher/smile",
+      "kind": "char",
+      "who": "butcher",
+      "title": "사장님 — 따뜻한 웃음 (아이 눈높이)",
+      "cuts": "c06c, c07, c07b",
+      "motion": "거의 움직이지 않고 숨 쉬듯만.",
+      "desc": "3/4 view turned slightly to the RIGHT. Holding the tongs against his chest with both hands, a warm gentle closed-eye smile, cheeks lifted, a quiet grandfatherly face. Soft and calm, no comic exaggeration."
+    },
+    {
+      "id": "cutin/butcher-flat",
+      "kind": "cutin",
+      "who": "butcher",
+      "ref": "butcher/normal",
+      "title": "사장님 정색 (컷인)",
+      "cuts": "c00b, c01b, c02b, c04c, c08b",
+      "motion": "화면 옆에서 튀어나와 흔들린다.",
+      "desc": "Facing slightly to the RIGHT. Perfectly deadpan: half-closed unimpressed eyes, one thick eyebrow raised a millimeter, mouth a small flat line, the shiny meat tongs raised beside his face with a cold white glint on them. Simple speed-line accents close to his head."
+    },
+    {
+      "id": "bg/meat-counter",
+      "kind": "bg",
+      "title": "배경 — 동네 큰 마트 정육 코너 (주 무대)",
+      "cuts": "c00, c00b, c01, c01a, c01b, c02, c02b, c03, c05a, c06b, c08",
+      "motion": "천천히 당겨진다. 오답 순간 살짝 흔들린다.",
+      "desc": "The meat counter of a big bright Korean neighborhood supermarket, seen straight-on like a sitcom set: a long refrigerated glass display case in the middle full of neatly arranged red meat cuts and a few whole turkeys on ice, small blank white price tags with no writing, a hanging scale on the left, white tiled wall behind with blank menu boards, a little autumn harvest decoration of pumpkins and corn on top of the case, a shopping cart at the far right edge, bright warm store lights. No people, no readable text, no logos, no religious symbols. The bottom third is open floor for characters."
+    },
+    {
+      "id": "bg/family-tree",
+      "kind": "bg",
+      "title": "배경 — 족보 나무 판 (라운드 카드 뒤)",
+      "cuts": "c03, c04, c05, c06, c06d",
+      "note": "가지마다 빈 이름표 — 이름 글자는 영상 코드가 얹는다. 종교 상징을 그리지 않는다.",
+      "motion": "라운드마다 그 가지로 크래시 줌.",
+      "desc": "A big old parchment family-tree chart like a Korean clan genealogy scroll: one thick trunk at the bottom splitting into three main branches, the middle branch splitting again into three, and its right branch splitting again into several small twigs, every branch end holding a blank round wooden name tag with no writing. Warm beige paper with soft brown ink lines, little leaves, a faint frame of colorful stained-glass-like geometric pattern around the edge (only abstract shapes, no figures, no crosses, no symbols). Wide and calm so text cards can sit on top. No people, no text."
+    },
+    {
+      "id": "bg/imagine-pink",
+      "kind": "bg",
+      "title": "배경 — 아빠의 상상 분홍 배경",
+      "cuts": "c00, c02, c08",
+      "motion": "천천히 돈다.",
+      "desc": "A dreamy pink and lavender imagination background: soft swirling clouds, small sparkles and floating hearts, a gentle radial glow from the center, like a cartoon daydream bubble seen from inside. No people, no objects, no text."
+    },
+    {
+      "id": "full/turkey-tie-imagine",
+      "kind": "full",
+      "people": ["dad"],
+      "title": "아빠의 상상 — 넥타이 맨 '교회 전용 닭' 칠면조",
+      "cuts": "c00",
+      "note": "틀린 설명을 그대로 그린 장면. 교회 내부 · 십자가 · 종교 상징은 그리지 않는다.",
+      "desc": "A silly imagined scene on a soft pink daydream background: a big plump live turkey standing proudly like a gentleman, wearing a tiny neat necktie and a little bow on its head, holding a tiny blank booklet under its wing, while the dad stands beside it in his usual clothes giving a huge confident thumbs-up with a sparkling grin. Absurd and cheerful. No buildings, no crosses, no religious symbols, no text, no logos."
+    },
+    {
+      "id": "full/jump-kick-imagine",
+      "kind": "full",
+      "people": ["dad", "butcher"],
+      "title": "아빠의 상상 — 정육 코너 앞 이단 옆차기",
+      "cuts": "c02, c02b",
+      "note": "영상에서 슬로모션 · 집중선이 얹힌다. 사장님은 무표정.",
+      "desc": "In front of the supermarket meat counter: the chubby dad flying high in the air doing a dramatic taekwondo double jump kick, one leg stretched out, the other tucked, his cardigan flapping, face fiercely shouting with bulging eyes and flying sweat drops, kicking at nothing but empty air. Behind the glass meat case, the butcher in his white cap and apron stands holding his meat tongs and watches with a perfectly blank deadpan face. Dynamic, absurd. No text, no logos."
+    },
+    {
+      "id": "full/stamp-hunt",
+      "kind": "full",
+      "people": ["kid", "mom"],
+      "title": "장면 — 아이가 초록 도장을 하나하나 찾는다 (아이 눈높이 끝)",
+      "cuts": "c07b",
+      "note": "농담 · 과장 없이 따뜻하게. 도장은 가상의 초록 동그라미 — 실제 인증 마크 · 글자 없음.",
+      "desc": "Inside a bright supermarket meat aisle: the 8-year-old kid crouches in front of a refrigerated shelf, carefully holding up a wrapped meat package to look at a small plain green round sticker on it, eyes focused and shining; the mom stands behind pushing a shopping cart and watches with a soft proud smile. Warm, quiet and gentle, mild expressions. The green stickers are plain circles with no letters or symbols. No text, no logos."
+    },
+    {
+      "id": "prop/turkey",
+      "kind": "prop",
+      "title": "소품 — 칠면조 (그냥 새)",
+      "cuts": "c00b",
+      "desc": "A plump live turkey standing calmly, brown and bronze feathers, red wattle, tail fanned out a little, looking blankly to the side like an ordinary bird."
+    },
+    {
+      "id": "prop/halal-stamp",
+      "kind": "prop",
+      "title": "소품 — 가상의 초록 도장 붙은 고기 포장",
+      "cuts": "c01, c01a, c04d, c07",
+      "note": "실제 할랄 · 코셔 인증 로고를 그리지 않는다. 글자 · 상징 없는 초록 동그라미.",
+      "desc": "A neatly wrapped supermarket meat package on a white foam tray under clear plastic wrap, red beef slices inside, with one plain bright green round sticker on the corner. The sticker has no letters, no symbols, no pictures — just a clean green circle with a thin darker green ring."
+    },
+    {
+      "id": "prop/kosher-stamp",
+      "kind": "prop",
+      "title": "소품 — 가상의 파란 도장 붙은 고기 포장",
+      "cuts": "c04d",
+      "note": "코셔 쪽 표시. 실제 인증 로고 없음.",
+      "desc": "A neatly wrapped supermarket meat package on a white foam tray under clear plastic wrap, red lamb chops inside, with one plain bright blue round sticker on the corner. The sticker has no letters, no symbols, no pictures — just a clean blue circle with a thin darker blue ring."
+    },
+    {
+      "id": "prop/pig-no",
+      "kind": "prop",
+      "title": "소품 — 돼지 저울에 X",
+      "cuts": "c04d",
+      "desc": "A cute round pink cartoon pig sitting on an old-fashioned kitchen scale, with a big bold red X mark drawn over the whole picture."
+    },
+    {
+      "id": "prop/three-books",
+      "kind": "prop",
+      "title": "소품 — 덮인 책 세 권 (표지 무늬 없음)",
+      "cuts": "c04c",
+      "note": "경전 이름은 영상 글자로. 표지에 글자 · 상징 · 무늬 없음.",
+      "desc": "Three closed thick hardcover books standing side by side, one deep blue, one dark red, one dark green, each with plain covers and a gold edge, no letters, no symbols, no patterns on the covers."
+    },
+    {
+      "id": "prop/calendar",
+      "kind": "prop",
+      "title": "소품 — 탁상 달력 (금 · 토 · 일 칸)",
+      "cuts": "c04c",
+      "note": "요일 · 숫자 글자는 영상이 얹는다.",
+      "desc": "A desk calendar with a spiral binding showing one week as seven blank boxes in a row, the last three boxes slightly larger and empty, no numbers, no letters."
+    },
+    {
+      "id": "prop/hammer-paper",
+      "kind": "prop",
+      "title": "소품 — 나무 문에 망치와 종이 (1517)",
+      "cuts": "c05",
+      "note": "루터 얼굴 · 몸을 그리지 않는다. 종이에 글자 없음(물결선만).",
+      "desc": "An old heavy wooden church-style door panel with iron studs (only the door, no building, no cross), a long sheet of old parchment nailed to it, the parchment covered in wavy gray lines instead of writing, and an old iron hammer hanging in mid-air beside it as if it just struck the nail."
+    },
+    {
+      "id": "prop/toolbox",
+      "kind": "prop",
+      "title": "소품 — 리모델링 공구 상자",
+      "cuts": "c05a",
+      "desc": "An open red metal toolbox overflowing with tools: a hammer, a paint roller dripping white paint, a measuring tape, a wrench and a small level, with a few sparkles around it."
+    },
+    {
+      "id": "prop/round-table",
+      "kind": "prop",
+      "title": "소품 — 원탁과 의자들 (장로 회의)",
+      "cuts": "c06a",
+      "desc": "A round wooden meeting table with seven identical simple wooden chairs evenly placed around it, seen from slightly above, a few blank sheets of paper and cups of water on the table. No people."
+    },
+    {
+      "id": "prop/high-chair",
+      "kind": "prop",
+      "title": "소품 — 높은 의자 하나 (감독)",
+      "cuts": "c06a",
+      "desc": "One single tall dignified wooden chair with a high carved back and red cushion standing on a small raised step, alone. No people, no symbols on the chair."
+    },
+    {
+      "id": "prop/steamship",
+      "kind": "prop",
+      "title": "소품 — 작은 증기선 (1885)",
+      "cuts": "c06c",
+      "desc": "A small old-fashioned black-and-white steamship from the 1880s with one tall smokestack puffing gray smoke, two masts, little round portholes, riding on cartoon blue waves. No flags, no letters, no names on the hull."
+    },
+    {
+      "id": "prop/mo-stamp",
+      "kind": "prop",
+      "title": "소품 — 빨간 \"모\" 도장 (본관)",
+      "cuts": "c06",
+      "note": "채널 배너의 그 도장. 글자 '모'만 허용 — 영상 코드로 얹어도 된다.",
+      "desc": "A traditional Korean red seal stamp: a short round red stone stamp handle standing next to a fresh square red stamp impression on cream paper, the impression area left as an empty red square frame (the letter will be added later)."
+    },
+    {
+      "id": "prop/grad-cap",
+      "kind": "prop",
+      "title": "소품 — 학사모 (모교)",
+      "cuts": "c08b",
+      "desc": "A black square graduation cap with a gold tassel resting on a rolled diploma tied with a red ribbon, a few sparkles. No letters, no logos."
+    }
+  ]
+}

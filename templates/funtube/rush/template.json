@@ -1,0 +1,8 @@
+{
+  "description": "rush/anime 숏폼 한 편 — 연출 · 그림 프롬프트 · 음성이 script/rush.json 한 파일에",
+  "next": [
+    "funtube/RUSH.md 의 규칙 · 컷 종류로 script/rush.json 을 채운다",
+    "그림은 rush-art (크롬 Gemini 또는 --yes 유료), 음성은 rush (gen 은 유료 — 물어보고)",
+    "업로드 정보는 upload/upload.md (AI 사용 고지 포함)"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "code": "gta",
+  "title": "GTA 6까지 4,811일, 숫자로 보는 GTA 29년",
+  "format": "short",
+  "category": "chart",
+  "status": "uploaded",
+  "created": "2026-10-16",
+  "published": "2026-10-16",
+  "youtube": [
+    {
+      "id": "ytwA7-lvgJ0",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "public"
+    }
+  ],
+  "tags": [],
+  "video": {
+    "composition": "GtaShort",
+    "bgm": "bgm/gta.mjs"
+  }
+}

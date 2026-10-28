@@ -1,0 +1,14 @@
+{
+  "code": "body",
+  "title": "키는 +8.5cm, 몸무게는 +17.2kg — 한국 30대 남자 42년, 키·몸무게·BMI 숫자로 보면",
+  "format": "short",
+  "status": "edit",
+  "created": "2026-10-21",
+  "youtube": [],
+  "tags": [],
+  "video": {
+    "composition": "BodyShort",
+    "bgm": "bgm/body.mjs"
+  },
+  "notes": "렌더는 했지만 업로드 장부(uploads.csv)에 기록이 없다"
+}

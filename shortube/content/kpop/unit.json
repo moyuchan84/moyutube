@@ -1,0 +1,22 @@
+{
+  "code": "kpop",
+  "title": "이수만의 귀환, 숫자 5개로 보면 | A2O LITE|아이찡",
+  "format": "short",
+  "category": "kpop",
+  "status": "uploaded",
+  "created": "2026-10-15",
+  "published": "2026-10-15",
+  "youtube": [
+    {
+      "id": "GHUr2n_VT9Y",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "public"
+    }
+  ],
+  "tags": [],
+  "video": {
+    "composition": "KpopNumbers",
+    "bgm": "bgm/kpop.mjs"
+  }
+}

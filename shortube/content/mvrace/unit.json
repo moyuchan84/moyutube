@@ -1,0 +1,22 @@
+{
+  "code": "mvrace",
+  "title": "LISA 1초에 144번 재생? 10월 K팝 뮤비 5편, 시간당 조회수로 줄 세우면",
+  "format": "short",
+  "status": "uploaded",
+  "created": "2026-10-28",
+  "youtube": [
+    {
+      "id": "iEK0yuwjtls",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "public"
+    }
+  ],
+  "tags": [],
+  "video": {
+    "composition": "MvraceShort",
+    "bgm": "bgm/mvrace.mjs"
+  },
+  "category": "kpop",
+  "published": "2026-10-28"
+}

@@ -1,0 +1,282 @@
+{
+  "id": "drive1",
+  "title": "운전석의 법칙 ① 횡단보도 · 출발 신호",
+  "bpm": 100,
+  "voice": "Charon",
+  "style": "no voice — drama carried by direction, captions and BGM",
+  "art": {
+    "style": "Japanese theatrical anime film style (high-budget anime movie key frame look, NOT a specific existing anime): crisp clean line art, rich cel shading with sharp shadow shapes, dramatic cinematic lighting with rim light and lens glare, saturated sky gradients, intense speed lines and focus lines when emotions explode, sparkling particles, sweat drops and anger veins drawn as anime symbols, dynamic camera angles (low angle, dutch tilt, extreme close-up on eyes), over-the-top serious expression used for comedy.",
+    "cast": "SENIOR (always the same person): a Korean office worker in his mid-thirties, slightly chubby round face, round thin black-rimmed glasses, sleepy half-lidded eyes, a smug little mouth, short neat black hair parted to the side; outfit: light blue dress shirt with sleeves rolled up, loose navy tie, grey slacks. JUNIOR (always the same person): a Korean office worker in his late twenties, slim, big earnest eyes with visible dark circles, messy short brown hair; outfit: white shirt and beige cardigan. The car is a plain generic white compact sedan with no logo; any license plate is blank.",
+    "layout": "Vertical 9:16, ONE single illustration (not a comic page, no panel grid). Keep the characters large and centered in the middle 60% of the frame. Keep the top 12% and the bottom 25% simple (background only) because captions are added later. IMPORTANT: no text, no letters, no numbers, no logos, no watermark anywhere in the image, including signs, road markings other than plain stripes, phone screens and license plates.",
+    "ref": "content/rush/ref/drive-sheet.jpg",
+    "sheet": "Character reference sheet in Japanese theatrical anime film style: SENIOR on the left and JUNIOR on the right, each shown full body from the front in their default outfit, plus three small head shots of each (smug, furious with anger vein, shocked). Plain light grey background. No text, no labels."
+  },
+  "scenes": {
+    "car-crosswalk": "Inside the white sedan at a crosswalk, seen from the back seat over SENIOR's shoulder: SENIOR grips the steering wheel and drums his fingers impatiently, glaring through the windshield. Outside, an elderly grandmother with a cane is slowly crossing the zebra crossing, the pedestrian light (a plain glowing green walking figure with no text) is blinking. Warm afternoon sunlight, lens glare.",
+    "car-angry": "Extreme close-up of SENIOR in the driver's seat, glasses flashing white with glare, one huge anger vein on his forehead, teeth clenched, intense red focus lines radiating behind him, dramatic low-angle shot like a final boss reveal.",
+    "walk-crosswalk": "Same city crosswalk, now SENIOR is a PEDESTRIAN walking on the zebra crossing holding a convenience-store plastic bag, and a generic grey SUV with dark tinted windows is creeping forward into the crossing toward him, its front bumper very close. Dutch-tilted camera angle, tense mood, dust swirl.",
+    "walk-angry": "Extreme close-up of SENIOR standing on the crosswalk, pointing furiously at the camera (where the car is), eyes blazing with righteous anger, hair blown back by wind, sparkling justice-hero light behind him, speed lines, heroic and over-dramatic.",
+    "versus": "Split-screen showdown composition with a jagged lightning bolt dividing the image diagonally: on the upper left SENIOR sits in the driver's seat glaring right; on the lower right the SAME SENIOR stands on the sidewalk glaring left. Both have identical furious faces. Sparks and electric energy clash in the middle, epic anime rivalry shot.",
+    "light-front": "Inside the white sedan, view through the windshield over SENIOR's shoulder: the traffic light ahead is green, but the generic dark blue car in front has not moved; through its rear window the silhouette of its driver is looking down at a glowing phone. SENIOR leans forward, eyes twitching, sweat drop.",
+    "honk": "SENIOR slams the center of the steering wheel with both palms, whole body leaning in, mouth wide open yelling, massive white impact burst and sound-wave rings exploding from the wheel, extreme speed lines, camera shake feeling, glasses slipping off his nose.",
+    "phone-light": "Next day, SENIOR sits relaxed in the driver's seat at a red light, smiling happily down at his glowing phone (screen shows only blurry colorful shapes), one hand loosely on the wheel; through the windshield the traffic light has just turned green and he has not noticed. Soft calm evening light, peaceful mood.",
+    "honked-angry": "SENIOR jolts in the driver's seat, startled, phone flying in the air, then twisting around to glare backward through the rear window at the car behind him, anger vein, white shock lines, dramatic dutch angle.",
+    "passenger": "Inside the car, JUNIOR sits in the passenger seat facing the camera with a completely flat, tired, deadpan expression and half-closed eyes, arms crossed, while SENIOR drives beside him out of focus. Quiet, dry, slightly comedic stillness, soft window light.",
+    "smug": "Close-up of SENIOR driving, turning his head slowly to the camera with an extremely smug, self-satisfied smile, glasses gleaming, sparkling roses and golden light particles floating behind him as if he were a dramatic anime prince."
+  },
+  "shots": [
+    {
+      "k": "title",
+      "b": 3,
+      "art": "versus",
+      "text": "운전석의 법칙",
+      "sub": "THE LAW OF THE DRIVER'S SEAT",
+      "m": "hit",
+      "sfx": "impact"
+    },
+    {
+      "k": "title",
+      "b": 2,
+      "art": "versus",
+      "text": "*내로남불* 편",
+      "sub": "DOUBLE STANDARD",
+      "tr": "slash",
+      "m": "tense"
+    },
+    {
+      "k": "title",
+      "b": 2,
+      "kicker": "제1장",
+      "text": "횡단보도",
+      "sub": "CHAPTER 01 · CROSSWALK",
+      "tr": "shutter",
+      "m": "hit"
+    },
+    {
+      "k": "pic",
+      "b": 3,
+      "art": "car-crosswalk",
+      "text": "초록불 *깜빡깜빡*",
+      "tr": "slash",
+      "m": "tense",
+      "sfx": "tick"
+    },
+    {
+      "k": "pic",
+      "b": 3,
+      "art": "car-angry",
+      "text": "1초가 1시간",
+      "line": "아 빨리 좀 *건너*!",
+      "fx": [
+        "impact",
+        "lines",
+        "rgb"
+      ],
+      "tr": "zoom",
+      "m": "epic"
+    },
+    {
+      "k": "title",
+      "b": 2,
+      "text": "같은 날 · *걸어서*",
+      "sub": "SAME DAY · ON FOOT",
+      "tr": "glitch",
+      "m": "stop",
+      "sfx": "scratch"
+    },
+    {
+      "k": "pic",
+      "b": 3,
+      "art": "walk-crosswalk",
+      "crop": [
+        12,
+        100
+      ],
+      "text": "차가 *슬금슬금*",
+      "fx": [
+        "speed"
+      ],
+      "tr": "whip",
+      "m": "tense",
+      "sfx": "engine"
+    },
+    {
+      "k": "pic",
+      "b": 3,
+      "art": "walk-angry",
+      "crop": [
+        21,
+        95
+      ],
+      "text": "입장이 바뀌면",
+      "line": "*사람이 먼저*지!",
+      "fx": [
+        "impact",
+        "lines"
+      ],
+      "tr": "flash",
+      "m": "epic"
+    },
+    {
+      "k": "pic",
+      "b": 3,
+      "art": "versus",
+      "text": "같은 사람 *맞음*",
+      "fx": [
+        "rgb"
+      ],
+      "tr": "slash",
+      "m": "hit"
+    },
+    {
+      "k": "title",
+      "b": 2,
+      "kicker": "제2장",
+      "text": "출발 신호",
+      "sub": "CHAPTER 02 · GREEN LIGHT",
+      "tr": "shutter",
+      "m": "hit"
+    },
+    {
+      "k": "pic",
+      "b": 3,
+      "art": "light-front",
+      "text": "초록불인데 *앞차가 안 감*",
+      "tr": "slash",
+      "m": "tense"
+    },
+    {
+      "k": "counter",
+      "b": 2,
+      "label": "참은 시간",
+      "v0": 0,
+      "v1": 1,
+      "m": "build",
+      "sfx": "tick",
+      "tr": "cut"
+    },
+    {
+      "k": "pic",
+      "b": 2,
+      "art": "honk",
+      "crop": [
+        21,
+        78
+      ],
+      "text": "*빠아앙*",
+      "fx": [
+        "impact",
+        "lines",
+        "rgb"
+      ],
+      "tr": "zoom",
+      "m": "hit",
+      "sfx": "horn"
+    },
+    {
+      "k": "title",
+      "b": 2,
+      "text": "*다음 날*",
+      "sub": "NEXT DAY",
+      "tr": "glitch",
+      "m": "stop",
+      "sfx": "scratch"
+    },
+    {
+      "k": "pic",
+      "b": 3,
+      "art": "phone-light",
+      "crop": [
+        21,
+        78
+      ],
+      "text": "신호 대기 중 *잠깐만*",
+      "tr": "whip",
+      "m": "calm"
+    },
+    {
+      "k": "text",
+      "b": 1,
+      "text": "빠앙!",
+      "tr": "flash",
+      "m": "hit",
+      "sfx": "horn"
+    },
+    {
+      "k": "pic",
+      "b": 3,
+      "art": "honked-angry",
+      "crop": [
+        21,
+        78
+      ],
+      "text": "0.5초 늦었을 뿐인데",
+      "line": "*1초*도 못 기다려?",
+      "fx": [
+        "impact",
+        "lines",
+        "rgb"
+      ],
+      "tr": "zoom",
+      "m": "epic"
+    },
+    {
+      "k": "meter",
+      "b": 3,
+      "label": "남에게 바라는 인내심",
+      "v0": 10,
+      "v1": 100,
+      "m": "build",
+      "tr": "slash"
+    },
+    {
+      "k": "pic",
+      "b": 4,
+      "art": "passenger",
+      "crop": [
+        21,
+        78
+      ],
+      "text": "조용히 듣던 후배",
+      "line": "차에 타면 *차 편*/내리면 *사람 편*",
+      "tr": "cut",
+      "m": "stop"
+    },
+    {
+      "k": "pic",
+      "b": 3,
+      "art": "smug",
+      "crop": [
+        21,
+        78
+      ],
+      "line": "난 항상 *옳은 편*이야",
+      "fx": [
+        "sparkle"
+      ],
+      "tr": "flash",
+      "m": "comic",
+      "sfx": "chime"
+    },
+    {
+      "k": "stamp",
+      "b": 3,
+      "art": "smug",
+      "text": "신고 접수",
+      "sub": "처리는 안 함",
+      "tr": "cut",
+      "m": "end",
+      "sfx": "stamp"
+    },
+    {
+      "k": "title",
+      "b": 3,
+      "kicker": "다음 화",
+      "text": "끼어들기",
+      "sub": "NEXT · CUT IN",
+      "tr": "shutter",
+      "m": "tense"
+    }
+  ],
+  "engine": "anime"
+}

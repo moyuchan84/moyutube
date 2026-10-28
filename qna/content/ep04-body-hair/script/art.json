@@ -1,0 +1,362 @@
+{
+  "title": "4편 · 아빠는 왜 거기에 털이 나요?",
+  "cast": {
+    "barber": "the barber grandpa: a cheerful, wiry Korean man in his early seventies who has run the same small neighborhood barbershop for fifty years; the top of his head is completely bald and shiny like a polished egg, with a neat horseshoe-shaped ring of short white hair left only around the sides and back; thick bushy white eyebrows, a tidy white mustache, deep smile wrinkles, small twinkly eyes; a big fluffy tuft of curly white-and-gray chest hair bursts out of the open collar of his shirt, and his forearms are hairy too; wearing a crisp short white barber's coat with the top two buttons open over a pale blue shirt, black slacks and brown sandals, a black comb tucked behind one ear and a pair of scissors in the breast pocket; dry, deadpan, proud of his craft and always ready to laugh at himself; warm and kind, never scary"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/panic",
+    "common/dad/shock",
+    "common/dad/explain",
+    "common/dad/think",
+    "common/dad/proud",
+    "common/kid/normal",
+    "common/kid/ask",
+    "common/kid/wow",
+    "common/kid/doubt",
+    "common/kid/laugh",
+    "common/cutin/dad-panic",
+    "common/cutin/kid-ask",
+    "common/cutin/kid-doubt",
+    "common/dad/explain-b",
+    "common/kid/ask-b",
+    "common/mom/normal",
+    "common/mom/explain",
+    "common/mom/shock",
+    "common/mom/smirk",
+    "common/cutin/mom-smirk",
+    "common/cutin/dad-shock",
+    "common/cutin/dad-proud",
+    "common/cutin/dad-sig-1",
+    "common/cutin/dad-sig-2",
+    "common/cutin/dad-sig-3",
+    "common/cutin/mom-sig-1",
+    "common/cutin/mom-sig-2",
+    "common/cutin/mom-sig-3",
+    "common/cutin/mom-sig-4",
+    "common/cutin/mom-sig-scream",
+    "common/cutin/kid-sig"
+  ],
+  "items": [
+    {
+      "id": "bg/barbershop",
+      "kind": "bg",
+      "title": "배경 — 동네 이발소 안",
+      "cuts": "c00, c03, c03b, c03c, c04, c06b, c09, c09b, c10, c10c, c13b",
+      "motion": "컷 내내 천천히 당겨진다. 이발 의자에 앉은 아빠 · 이발사 할아버지 · 아이는 아래 1/3에 따로 얹는다.",
+      "desc": "The inside of an old, tiny, spotless Korean neighborhood barbershop from the 1980s that is still running today, seen straight-on like a sitcom set. Across the back wall: one huge wide mirror in a chrome frame, under it a long white counter with glass jars of blue disinfectant holding combs, a hair clipper, a shaving brush in a mug, a hot towel steamer, bottles of hair tonic; above the mirror a row of faded framed hairstyle posters (blank, no faces readable), a round wall clock, a small TV on a corner shelf, a potted plant, and a window on the right letting in warm afternoon sunlight. A little cut hair is swept into a pile near a broom in the corner. The floor is a checkerboard of cream and pale green tiles, open and empty across the whole bottom third: the barber chair and people will be added there later. Warm, nostalgic, cozy and clean."
+    },
+    {
+      "id": "bg/barbershop-front",
+      "kind": "bg",
+      "title": "배경 — 이발소 앞 (해 질 녘)",
+      "cuts": "c12, c13, c14",
+      "motion": "6번 박자에서는 거의 움직이지 않고 아주 천천히 당겨진다. 집에 가는 장면에서는 옆으로 밀린다.",
+      "desc": "The outside of the same small Korean neighborhood barbershop at golden sunset, seen straight-on: a narrow shop front with a glass door and window (blank sign board above, no text), a classic red-white-blue striped barber pole glowing beside the door, a low wooden bench in front of the window, a few potted plants, an old bicycle leaning on the wall, a quiet alley with low houses and tangled electric wires behind, a soft orange-pink sky. The pavement in front is open and empty across the whole bottom third: people will be added there later. Calm, warm and gentle."
+    },
+    {
+      "id": "full/bathroom-door",
+      "kind": "full",
+      "title": "장면 — 샤워 중인 욕실 문 (사람은 안 보인다)",
+      "cuts": "c01, c02",
+      "motion": "문틈 김이 보이는 채로 천천히 당겨진다. 말소리만 문 너머에서 들린다. 사람은 절대 그리지 않는다.",
+      "desc": "A cozy Korean apartment hallway at night, looking straight at a CLOSED white bathroom door. Warm light glows through the frosted glass panel of the door and through the gap underneath, and thick white steam puffs out from the gap and the top edge. In front of the door on the floor: a pair of big gray adult bath slippers and a pair of tiny red kid's bath slippers, side by side, plus a yellow rubber duck that fell out. On the door handle hangs a fluffy towel. Little water-drop and steam squiggle marks float in the air. No people are visible at all: nobody, no silhouettes, no bodies, no reflections. Funny and warm, like the outside of a sitcom bathroom scene."
+    },
+    {
+      "id": "dad/cape",
+      "kind": "char",
+      "who": "dad",
+      "ref": "common/dad/normal",
+      "title": "아빠 — 이발 의자 (보자기)",
+      "cuts": "c00, c03, c06b, c09, c09b, c10, c10c",
+      "note": "의자째 한 장으로 그린다. 몸은 흰 보자기에 덮여 목 아래가 안 보인다.",
+      "motion": "제자리에 앉아 있고, 말할 때 까딱거린다. 표정이 바뀌면 젤리처럼 튄다.",
+      "desc": "3/4 view, body and face turned slightly to the LEFT. Sitting in an old red leather barber chair with chrome armrests and a chrome footrest, the whole body below the neck wrapped in a big white barber cape fastened at the neck, so only his head and his slippers show. His hair is half cut, a few cut hairs stuck on the cape. Sitting obediently and stiffly, a polite slightly nervous smile."
+    },
+    {
+      "id": "dad/cape-panic",
+      "kind": "char",
+      "who": "dad",
+      "ref": "dad/cape",
+      "title": "아빠 — 이발 의자에서 당황",
+      "cuts": "c00, c03, c03b, c03c, c09b, c10c",
+      "motion": "부들부들 떨고, 보자기 속으로 쑥 들어가려는 느낌.",
+      "desc": "Same barber chair and white cape, 3/4 view turned slightly to the LEFT. He has just heard his kid say something embarrassing out loud in public: sinking down into the cape up to his nose like a turtle, eyes darting sideways, forced crooked smile, face bright red, cold sweat drops flying off his forehead, the cape bunched up around his chin."
+    },
+    {
+      "id": "dad/cape-search",
+      "kind": "char",
+      "who": "dad",
+      "ref": "dad/cape",
+      "title": "아빠 — 보자기 속 몰래 검색",
+      "cuts": "c04",
+      "note": "편마다 나오는 '몰래 검색' 장면을 이번에는 이발 보자기 속에서 한다.",
+      "motion": "제자리에서 들썩거린다.",
+      "desc": "Same barber chair, 3/4 view turned slightly to the LEFT. He has pulled the white barber cape up over his head like a little tent; his face peeks out from inside it, lit eerily from below by the glow of a smartphone he holds under the cape with both hands, eyes wide and bloodshot, lips pressed tight, glancing sideways nervously, cold sweat drops."
+    },
+    {
+      "id": "barber/normal",
+      "kind": "char",
+      "who": "barber",
+      "ref": null,
+      "title": "이발사 할아버지 — 기본",
+      "cuts": "c00, c03, c06b, c09, c13b",
+      "note": "할아버지의 기준 그림. 이후 할아버지 그림에 전부 ②로 첨부한다. 정수리는 반짝이는 대머리, 옆 · 뒤만 흰 머리가 말굽 모양으로 남아 있어야 하고, 셔츠 깃 사이로 흰 가슴털이 보여야 한다.",
+      "motion": "숨 쉬듯 살짝 움직이고, 말할 때 까딱거린다.",
+      "desc": "3/4 view, body and face turned slightly to the LEFT. Standing relaxed and proud, scissors in one raised hand snipping the air, a comb in the other, a calm warm smile under the white mustache, eyes crinkled. The shiny bald top of his head has a bright highlight. The chest hair tuft clearly shows in the open collar."
+    },
+    {
+      "id": "barber/talk",
+      "kind": "char",
+      "who": "barber",
+      "ref": "barber/normal",
+      "title": "이발사 할아버지 — 한 수 가르치기",
+      "cuts": "c03, c03b, c03c, c06b, c09, c09b, c10c",
+      "motion": "말하는 동안 가위를 지휘봉처럼 흔들며 좌우로 흔들린다.",
+      "desc": "3/4 view turned slightly to the LEFT. Explaining like a wise old master with a twinkle: leaning forward, mouth open mid-sentence in a big grin under the mustache, bushy eyebrows raised high, one hand raising the scissors like a teacher's pointer, the other hand behind his back. Playful and confident, kind."
+    },
+    {
+      "id": "barber/talk-b",
+      "kind": "talk",
+      "who": "barber",
+      "ref": "barber/talk",
+      "optional": true,
+      "title": "이발사 할아버지 — 한 수 가르치기 (말하는 그림)",
+      "cuts": "c03, c03b, c03c, c06b, c09, c09b, c10c",
+      "motion": "한 수 가르치기 그림과 1/8초마다 번갈아 나와서 입이 움직인다.",
+      "desc": "Change only the face and the raised hand: the mouth is now closed in a smug closed-lip smile under the mustache (as if between two words), and the scissors are tilted a few degrees further back."
+    },
+    {
+      "id": "barber/laugh",
+      "kind": "char",
+      "who": "barber",
+      "ref": "barber/normal",
+      "title": "이발사 할아버지 — 껄껄 (자기 머리 쓰다듬기)",
+      "cuts": "c03c, c10c, c13b",
+      "motion": "표정이 바뀌는 순간 젤리처럼 튄다.",
+      "desc": "3/4 view turned slightly to the LEFT. Cackling at himself with delight: head thrown back, mouth wide open in a huge laugh, eyes squeezed into happy crescents, one palm rubbing the top of his own shiny bald head (a sparkle pings off it), the other hand slapping his knee."
+    },
+    {
+      "id": "barber/chest",
+      "kind": "char",
+      "who": "barber",
+      "ref": "barber/normal",
+      "title": "이발사 할아버지 — 가슴털 자랑",
+      "cuts": "c09, c09b",
+      "note": "셔츠는 벗지 않는다. 단추 두 개 푼 깃 사이로 보이는 가슴털까지만.",
+      "motion": "가슴을 쭉 내밀며 통통 튄다.",
+      "desc": "3/4 view turned slightly to the LEFT. Comically proud: puffing his chest out like a rooster, chin up, eyes closed smugly, one thumb pointing at the big fluffy curly white chest hair tuft poking out of his open collar (shirt and coat stay on, only the two top buttons are open), the other fist on his hip, little sparkles around the chest hair."
+    },
+    {
+      "id": "barber/bald",
+      "kind": "char",
+      "who": "barber",
+      "ref": "barber/normal",
+      "title": "이발사 할아버지 — 정수리 보여 주기",
+      "cuts": "c10",
+      "motion": "고개를 숙인 채 좌우로 천천히 돈다.",
+      "desc": "3/4 view turned slightly to the LEFT. Bowing his head forward deeply to show off the top of it like a museum exhibit: the shiny bald dome faces the viewer with a big glossy highlight, and he points with his comb at the white horseshoe ring of hair left on the sides and back, a proud deadpan smile visible under the mustache."
+    },
+    {
+      "id": "cutin/barber",
+      "kind": "cutin",
+      "who": "barber",
+      "ref": "barber/normal",
+      "title": "컷인 — 할아버지의 일침",
+      "cuts": "c00, c03, c07b, c10, c10c",
+      "motion": "화면 옆에서 튀어나와 흔들린다.",
+      "desc": "Facing slightly to the LEFT. A dramatic deadpan close-up: the shiny bald head gleaming with a starburst glint like a mirror, one bushy white eyebrow cocked sky-high, eyes narrowed with a knowing twinkle, a sly smile under the mustache, the scissors raised beside his face with a sharp shine. Funny and lovable, not scary."
+    },
+    {
+      "id": "prop/shaving-brush",
+      "kind": "prop",
+      "title": "소품 — 면도 솔",
+      "cuts": "c06b",
+      "ratio": "1:1",
+      "motion": "톡 튀어나와 간질이듯 좌우로 흔들린다.",
+      "desc": "One old-fashioned shaving brush with a round wooden handle and a fluffy badger-hair head topped with a big blob of white shaving foam, a few foam bubbles flying off, tilted diagonally."
+    },
+    {
+      "id": "full/fuzz-arm",
+      "kind": "full",
+      "title": "장면 — 햇빛에 비친 아이 팔의 솜털",
+      "cuts": "c05",
+      "motion": "팔을 따라 천천히 옆으로 밀리고, 돋보기 자리가 확대된다.",
+      "desc": "A big close-up of a small child's forearm (the kid's red hoodie sleeve pushed up) held up against a bright sunny barbershop window. Backlit by the sunlight, hundreds of tiny, fine, pale golden peach-fuzz hairs glow all along the edge of the arm like a soft halo. A wrinkled grandpa's hand holds a big old magnifying glass over the arm, and inside the lens the fine hairs are enlarged and clearly visible. Sparkle marks. Wonder and surprise."
+    },
+    {
+      "id": "full/hairy-ancestor",
+      "kind": "full",
+      "title": "장면 — 털을 가늘게 바꾼 사람",
+      "cuts": "c05b",
+      "motion": "배경이 오른쪽으로 천천히 밀린다.",
+      "desc": "A sunny, scorching African savanna long ago, under a huge blazing cartoon sun. On the left, a very hairy, ape-like early human ancestor covered in thick brown fur sits panting in the shade of an acacia tree, tongue out, comically overheated, with heat squiggles. On the right, a sleek early human with only short head hair and almost no visible body hair runs happily and tirelessly across the grass, covered in big glossy sweat drops that sparkle, a cool breeze line around him. Funny contrast, gag-manga faces. No modern objects."
+    },
+    {
+      "id": "full/guard-hair",
+      "kind": "full",
+      "who": "dad",
+      "ref": "common/dad/normal",
+      "title": "장면 — 지키는 털 (눈썹 · 속눈썹 · 코털)",
+      "cuts": "c06",
+      "motion": "얼굴 위에서 아래로 천천히 밀린다 (눈썹 → 속눈썹 → 코).",
+      "desc": "A comic infographic close-up of the dad's big face, front view, sweating on a hot day. Tiny cartoon details show what each hair does, with no text: big sweat drops sliding down his forehead are steered by his thick eyebrows sideways like gutters and drip off the sides of his face; a cloud of dust specks bounces off his eyelashes like a fence; at his nostrils a few nose hairs act like a net catching tiny cute dust bunnies with angry little faces. Little arrows and motion lines. Funny and clear."
+    },
+    {
+      "id": "full/hair-timer",
+      "kind": "full",
+      "title": "장면 — 털마다 자라는 기간이 다르다",
+      "cuts": "c07b",
+      "motion": "배경이 위로 천천히 밀린다. 숫자는 영상에서 얹는다.",
+      "desc": "A playful garden-shelf illustration: two flower pots side by side on a windowsill, each with a cartoon kitchen timer stuck in the soil. In the left pot, one single black hair grows as an enormously long vine that climbs, loops and spills over the shelf and down to the floor, its timer dial turned almost all the way round. In the right pot, one short, curved little black eyebrow-like hair sprout has already stopped growing and taken a nap, a tiny sleeping cap on top and 'Zzz' bubble shapes without letters, its timer already rung with a little bell burst. Blank labels, no text, no numbers. Cute and funny."
+    },
+    {
+      "id": "full/goosebump-cat",
+      "kind": "full",
+      "title": "장면 — 털을 세우던 근육 (소름 vs 고양이)",
+      "cuts": "c07",
+      "motion": "배경이 왼쪽으로 천천히 밀린다.",
+      "desc": "A split comic panel. On the left: a close-up of a child's forearm in a red hoodie sleeve, covered in goosebumps, the tiny fine hairs standing straight up, a cold blue wind swirl and a shiver line; a magnifying circle shows under the skin a tiny cartoon muscle like a little rope pulling each hair upright. On the right: a gray cat startled by a cucumber, its fur puffed out enormously so it looks twice its size, back arched, tail like a bottle brush, eyes huge. Funny contrast."
+    },
+    {
+      "id": "full/mirror-foam",
+      "kind": "full",
+      "title": "장면 — 거울에 면도 거품으로 그린 그림 (모자이크)",
+      "cuts": "c08",
+      "note": "사람 몸은 거품으로 그린 막대 사람까지만. 수영복 부분은 커다란 거품 덩어리로 덮어 '모자이크'처럼 보이게 한다.",
+      "motion": "거울을 향해 천천히 당겨지고, 거품 덩어리가 '퐁' 하고 커진다.",
+      "desc": "A close-up of the big barbershop mirror. Drawn on the glass with white shaving foam is a very simple, cute stick figure of a person standing with arms raised and wearing a pair of swimming trunks drawn as a simple foam outline. Small foam circles mark both armpits. Over the whole swimming-trunks area sits one huge, fluffy, perfectly round blob of shaving foam, completely covering it like a comic censor mosaic, with sparkles around it. The barber grandpa's wrinkled hand holding a shaving brush enters from the right edge, having just added the blob. Funny, innocent and silly. No real bodies, only the foam stick figure."
+    },
+    {
+      "id": "full/two-glands",
+      "kind": "full",
+      "title": "장면 — 땀샘 두 종류 (털집 안으로 나오는 샘)",
+      "cuts": "c08b",
+      "motion": "왼쪽 샘에서 오른쪽 샘으로 천천히 밀린다.",
+      "desc": "A friendly, cartoon-style cross-section of skin like a science picture book, pale peach layers. On the left, a coiled normal sweat gland like a little blue spring sends a straight tube up and pops a clear water droplet out onto the skin surface, with a cool breeze line. On the right, a bigger lumpy gland painted warm red sends its tube sideways into the side of a hair follicle (a long pocket in the skin holding one dark hair), and the hair sticking out above the skin works like a candle wick: wavy scent lines rise from it. Tiny cute round bacteria with happy faces sit on the skin near the hair, munching like they are at a buffet and puffing out little smell clouds. No text, no labels."
+    },
+    {
+      "id": "full/bald-map",
+      "kind": "full",
+      "title": "장면 — 정수리 지도 (사막과 숲, 모발이식 트럭)",
+      "cuts": "c10b",
+      "motion": "배경이 위에서 아래로 천천히 밀리고, 트럭 쪽으로 당겨진다.",
+      "desc": "A funny bird's-eye view of the barber grandpa's head seen straight from above, drawn like a fantasy treasure map: the bald shiny top in the middle is a gleaming desert with a single tumbleweed, a cactus and a lonely tiny flag; around it, the horseshoe-shaped ring of white hair at the sides and back is a thick, healthy white forest. On the back side, two tiny cartoon trucks carry little bundles of trees out of the back forest along a dotted road toward the front desert, little workers in hard hats waving. The ears stick out at the edges like islands. Blank map labels, no text."
+    },
+    {
+      "id": "prop/icon-guard",
+      "kind": "prop",
+      "title": "소품 — 지키는 털 (한 문장 정리용)",
+      "cuts": "c11",
+      "ratio": "1:1",
+      "motion": "한 문장 정리 컷의 첫 칸에 켜지면서 들어간다.",
+      "desc": "One cute cartoon eye with a thick black eyebrow and long eyelashes, the eyebrow wearing a tiny knight's helmet and holding a tiny shield, a sweat drop bouncing off the eyebrow sideways."
+    },
+    {
+      "id": "prop/icon-wick",
+      "kind": "prop",
+      "title": "소품 — 알리는 털 (한 문장 정리용)",
+      "cuts": "c11",
+      "ratio": "1:1",
+      "motion": "한 문장 정리 컷의 둘째 칸에 켜지면서 들어간다.",
+      "desc": "One cute cartoon candle whose wick is a single curly dark hair, with soft wavy colorful scent lines (not a flame) rising from it, and a tiny happy round bacterium sitting at the base hugging the candle."
+    },
+    {
+      "id": "prop/icon-trace",
+      "kind": "prop",
+      "title": "소품 — 흔적만 남은 털 (한 문장 정리용)",
+      "cuts": "c11",
+      "ratio": "1:1",
+      "motion": "한 문장 정리 컷의 셋째 칸에 켜지면서 들어간다.",
+      "desc": "One cute cartoon forearm with goosebumps and tiny fine hairs standing up, shivering, with a tiny ice cube wearing a scarf sitting on it, blue cold swirl lines around."
+    },
+    {
+      "id": "full/next-teaser",
+      "kind": "full",
+      "title": "장면 — 다음 편 예고 (병원 · 약국)",
+      "cuts": "c15, 끝 화면",
+      "motion": "배경이 왼쪽으로 천천히 밀린다. 끝 화면에서는 흐리게 깔린다.",
+      "desc": "A slightly out-of-focus Korean neighborhood street on a chilly morning: a small clinic building and a pharmacy next door with a green cross sign (blank sign boards, no text). In the foreground at the bottom, seen from behind and only from the knees down: the dad's legs in gray sweatpants and slippers next to the kid's small legs in navy shorts, white socks and a too-big scarf trailing, walking toward the clinic, the kid holding a crumpled tissue. A big glossy question mark floats in the sky. No faces."
+    },
+    {
+      "id": "cutin/barber-flat",
+      "kind": "cutin",
+      "who": "barber",
+      "title": "컷인 — 할아버지 정색 (모답맨판)",
+      "cuts": "ep04f c00b, c03b, c09b",
+      "motion": "한 줄 태클 때 툭 들어온다.",
+      "desc": "Facing slightly to the LEFT. A totally flat, deadpan, unimpressed close-up: half-lidded bored eyes looking straight at the viewer, both bushy white eyebrows perfectly level, mouth a flat straight line under the white mustache, the shiny bald head gleaming. Holding a comb up beside his face like a pointer. Dry comedy, funny, not angry.",
+      "attach": [
+        {
+          "path": "content/ep04-body-hair/art/cutin/barber.png",
+          "label": "the same barber grandpa close-up (face, lighting)"
+        }
+      ]
+    },
+    {
+      "id": "prop/fur-blanket",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 아빠의 상상: 털 이불 (모답맨판)",
+      "cuts": "ep04f c00",
+      "motion": "상상 화면에 뚝 떨어진다.",
+      "desc": "A tiny, ridiculously fluffy brown fur blanket folded like a little quilt, with a small knitted pom-pom, a toy thermometer stuck in it showing freezing cold blue, a few cartoon snowflakes and shiver lines around it. Silly and cute."
+    },
+    {
+      "id": "prop/razor",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 면도기 (모답맨판)",
+      "cuts": "ep04f c02",
+      "motion": "옆에서 휙 들어온다.",
+      "desc": "A classic plastic hand razor with a blue handle and a shiny blade head, a puff of white shaving foam on the head, a little sparkle on the blade. Clean and simple."
+    },
+    {
+      "id": "prop/hair-tips",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 털 끝 확대: 뾰족한 끝 vs 잘린 끝 (모답맨판)",
+      "cuts": "ep04f c02",
+      "motion": "돋보기처럼 커진다.",
+      "desc": "A big round magnifying-glass close-up showing two single dark hair strands standing side by side, both exactly the same thickness: the left one ends in a naturally thin, sharp tapered point; the right one is cut straight across with a flat, blunt square end. A small comic snip mark next to the flat end. Clear and diagram-like, no labels."
+    },
+    {
+      "id": "prop/bulb-brain",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 아빠의 상상: 머리를 너무 써서 닳음 (모답맨판)",
+      "cuts": "ep04f c03",
+      "motion": "상상 화면에서 부들부들 떨며 김이 난다.",
+      "desc": "A cartoon pink brain glowing like an overheated light bulb, steam and little sparks puffing off it, a few loose single hair strands flying away from it in panic, a tiny graduation cap tilted on top. Silly gag image."
+    },
+    {
+      "id": "prop/puberty-switch",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 어른 준비 스위치 (모답맨판)",
+      "cuts": "ep04f c05b, c05c, c06d",
+      "motion": "딸깍 켜지며 번쩍인다.",
+      "desc": "A big chunky retro wall toggle switch on a round wooden plate, flipped up to ON, with a glowing warm yellow light burst and sparkles around it, a small sprouting green seedling next to it. No letters."
+    },
+    {
+      "id": "prop/hair-movers",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 아빠의 상상: 머리털 이사 (모답맨판)",
+      "cuts": "ep04f c07b",
+      "motion": "상상 화면에서 오른쪽으로 통통 굴러간다.",
+      "desc": "A tiny cartoon moving truck loaded with bundles of black hair strands tied with string like luggage, a few single hair strands with little suitcases hopping onto it, dust puffs behind the wheels, driving downhill. Silly and cute, no people, no letters."
+    },
+    {
+      "id": "prop/grandpa-photos",
+      "kind": "prop",
+      "people": [
+        "dad"
+      ],
+      "title": "소품 — 외할아버지 · 친할아버지 사진 (모답맨판)",
+      "cuts": "ep04f c09, c09b",
+      "motion": "왼쪽 사진 → 오른쪽 사진 순서로 확대된다.",
+      "desc": "ONLY two big old wooden picture frames standing side by side, filling the whole image edge to edge; nothing else, nobody standing outside the frames (the dad himself does NOT appear in this image). LEFT frame: a chest-up portrait photo of a smiling Korean grandpa in his seventies with a big thick fluffy head of gray hair, round glasses, a cardigan (the mom's father). RIGHT frame: a chest-up portrait photo of a Korean grandpa in his seventies whose face looks like a 75-year-old version of the man in attached image 2 (same face shape, same eyebrows, same smile), but completely bald with a super shiny head that has a big sparkle glint (the dad's father). Warm family photos, no text."
+    }
+  ]
+}

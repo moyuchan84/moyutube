@@ -1,0 +1,10 @@
+{
+  "code": "{{code}}",
+  "slug": "{{slug}}",
+  "title": "{{title}}",
+  "format": "book",
+  "status": "idea",
+  "created": "{{date}}",
+  "youtube": [],
+  "tags": []
+}

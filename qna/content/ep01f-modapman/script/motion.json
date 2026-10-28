@@ -1,0 +1,196 @@
+{
+  "id": "Ep01F-Modapman",
+  "episode": "ep01",
+  "voice": "ep01f",
+  "bgm": "cheerful",
+  "gap": 1,
+  "counter": "모답맨 오답",
+  "thumb": { "top": "모텔의 '모'는", "bottom": "무슨 뜻?", "sub": "호텔·모텔·유스호스텔 3분 정리", "dad": "common/cutin/dad-shock", "guest": "cutin/manager-correct", "count": 4 },
+  "beats": [
+    { "line": "c00-0", "shots": [
+      { "bg": "bg/hostel-lobby", "cast": [ { "art": "common/kid/ask", "x": 0.56, "h": 0.55, "talk": "kid" }, { "art": "common/dad/normal", "x": 0.78, "h": 0.8 } ], "cam": { "from": [0.62, 0.62, 1.6], "to": [0.6, 0.6, 1.9], "roll": [-4, 2] } },
+      { "at": 0.5, "in": "slam", "bg": "burst:#FFD23F:#FFB627", "cast": [ { "art": "common/cutin/kid-ask", "x": 0.3, "h": 1.0, "enter": "pop" } ],
+        "props": [ { "art": "prop/hotel", "x": 0.62, "y": 0.4, "w": 0.16, "enter": "pop", "at": 2 }, { "art": "prop/motel", "x": 0.77, "y": 0.4, "w": 0.16, "enter": "pop", "at": 6 }, { "art": "prop/hostel", "x": 0.92, "y": 0.4, "w": 0.16, "enter": "pop", "at": 10 } ],
+        "text": [ { "t": "뭐가 달라요?", "style": "shake", "x": 0.77, "y": 0.74, "rot": 4, "size": 110, "at": 0.3 } ], "sfx": [ { "name": "pop" }, { "name": "pop", "at": 6 }, { "name": "pop", "at": 10 } ] }
+    ] },
+    { "line": "c00-1", "pad": 10, "shots": [
+      { "in": "whip-l", "bg": "stripes:#5BC0EB:#3FA7D6", "cast": [ { "art": "common/cutin/dad-proud", "x": 0.36, "h": 1.0, "enter": "spin" } ], "text": [ { "t": "쉽지!", "style": "slam", "x": 0.74, "y": 0.3 } ], "sfx": [ { "name": "pang" } ] },
+      { "at": 0.3, "in": "whip-l", "bg": "dots:#FFE3EE:#FFC6DC", "fx": [ "imagine" ],
+        "props": [ { "art": "prop/hotel", "x": 0.2, "y": 0.46, "w": 0.24, "enter": "drop" }, { "art": "prop/motel", "x": 0.5, "y": 0.5, "w": 0.22, "enter": "drop", "at": 0.3 }, { "art": "prop/hostel", "x": 0.8, "y": 0.54, "w": 0.2, "enter": "drop", "at": 0.6 } ],
+        "text": [ { "t": "₩₩₩", "style": "stamp", "x": 0.2, "y": 0.18, "size": 110, "color": "#FFD23F" }, { "t": "₩₩", "style": "stamp", "x": 0.5, "y": 0.22, "size": 100, "color": "#FFD23F", "at": 0.3 }, { "t": "₩", "style": "stamp", "x": 0.8, "y": 0.26, "size": 90, "color": "#FFD23F", "at": 0.6 } ],
+        "sfx": [ { "name": "stamp" }, { "name": "stamp", "at": 0.3 }, { "name": "stamp", "at": 0.6 } ] }
+    ] },
+    { "line": "c00b-0", "shots": [
+      { "in": "glitch", "bg": "bg/hostel-lobby", "cast": [ { "art": "manager/correct", "x": 0.3, "h": 0.84, "talk": "manager" } ], "cam": { "from": [0.32, 0.45, 1.5], "to": [0.32, 0.4, 1.75] },
+        "text": [ { "t": "값 ≠ 이름", "style": "stamp", "x": 0.72, "y": 0.3, "size": 110, "at": 0.45 } ], "sfx": [ { "name": "scratch" }, { "name": "stamp", "at": 0.45 } ] }
+    ] },
+    { "line": "c00b-1", "pad": 14, "shots": [
+      { "in": "smash", "bg": "#15303A", "cast": [ { "art": "common/cutin/dad-panic", "x": 0.5, "h": 1.0, "enter": "pop" } ], "fx": [ "lines", "shake" ], "cam": { "from": [0.5, 0.45, 1.0], "punch": [2, 6, 10] }, "sfx": [ { "name": "boing" } ] }
+    ] },
+    { "line": "c00c-0", "pad": 8, "count": 1, "countAt": 0.2, "shots": [
+      { "in": "smash", "bg": "dots:#F6EEDF:#E8DCC4", "tally": 1, "mark": { "kind": "x", "at": 2 }, "text": [ { "t": "모답맨", "style": "stamp", "x": 0.78, "y": 0.78, "size": 110, "at": 0.55 } ], "sfx": [ { "name": "buzz", "at": 2 }, { "name": "stamp", "at": 0.55 } ] }
+    ] },
+    { "hold": 44, "shots": [
+      { "in": "wipe", "bg": "stripes:#B8352A:#A02D23", "props": [ { "art": "prop/room-key", "x": 0.86, "y": 0.72, "w": 0.16, "enter": "pop", "at": 14, "rot": 8, "spin": true } ],
+        "text": [ { "t": "여덟 살의 질문 × 모답맨", "style": "pop", "y": 0.16, "size": 56 }, { "t": "호텔 · 모텔 · 유스호스텔", "style": "slam", "y": 0.4, "size": 120, "at": 3 }, { "t": "뭐가 달라요?", "style": "shake", "y": 0.64, "size": 150, "color": "#FFD23F", "at": 12 } ],
+        "sfx": [ { "name": "stinger", "at": 3 }, { "name": "pang", "at": 12 } ] }
+    ] },
+    { "line": "c01-0", "shots": [
+      { "in": "glitch", "bg": "bg/hill-parking", "fx": [ "vhs" ], "cam": { "from": [0.5, 0.3, 1.8], "to": [0.5, 0.5, 1.1] }, "text": [ { "t": "가족 여행 첫날", "style": "stamp", "x": 0.5, "y": 0.78, "size": 100, "at": 0.15 } ], "sfx": [ { "name": "rewind" }, { "name": "stamp", "at": 0.15 } ] },
+      { "at": 0.6, "in": "whip-l", "bg": "bg/hostel-lobby", "cast": [ { "art": "manager/normal", "x": 0.2, "h": 0.82 }, { "art": "common/mom/normal", "x": 0.52, "h": 0.74 }, { "art": "common/dad/normal", "x": 0.7, "h": 0.8 }, { "art": "common/kid/normal", "x": 0.86, "h": 0.55 } ], "cam": { "from": [0.5, 0.5, 1.0], "to": [0.5, 0.5, 1.1] }, "text": [ { "t": "유스호스텔 프런트", "style": "pop", "y": 0.16, "size": 80 } ] }
+    ] },
+    { "line": "c01a-0", "shots": [
+      { "in": "whip-r", "bg": "bg/hostel-lobby", "cast": [ { "art": "common/mom/explain", "x": 0.55, "h": 0.8, "talk": "mom" } ], "cam": { "from": [0.55, 0.45, 1.6], "to": [0.55, 0.42, 1.85] }, "text": [ { "t": "학생 전용?", "style": "pop", "x": 0.82, "y": 0.28, "size": 100, "at": 0.3 } ] },
+      { "at": 0.6, "in": "slam", "bg": "burst:#B8352A:#A02D23", "cast": [ { "art": "common/cutin/mom-sigh", "x": 0.4, "h": 1.0, "enter": "pop" } ], "text": [ { "t": "쫓겨나?!", "style": "shake", "x": 0.78, "y": 0.34, "size": 140, "color": "#FFD23F" } ], "sfx": [ { "name": "pang" } ] }
+    ] },
+    { "line": "c01a-1", "shots": [
+      { "in": "glitch", "bg": "bg/hostel-lobby", "cast": [ { "art": "manager/correct", "x": 0.3, "h": 0.84, "talk": "manager" } ], "cam": { "from": [0.32, 0.45, 1.5], "to": [0.32, 0.42, 1.7] },
+        "text": [ { "t": "나이 제한 ✕", "style": "stamp", "x": 0.72, "y": 0.3, "size": 100, "at": 0.1 }, { "t": "가족실 ○", "style": "stamp", "x": 0.72, "y": 0.52, "size": 100, "color": "#FFD23F", "at": 0.55 } ], "sfx": [ { "name": "stamp", "at": 0.1 }, { "name": "ding", "at": 0.55 } ] }
+    ] },
+    { "line": "c01b-0", "pad": 6, "count": 2, "countAt": 0.15, "shots": [
+      { "in": "smash", "bg": "bg/hostel-lobby", "cast": [ { "art": "common/mom/shock", "x": 0.55, "h": 0.82 } ], "cam": { "from": [0.55, 0.38, 2.2], "ease": "snap", "roll": [6, 6] }, "freeze": 0.15, "mark": { "kind": "x", "at": 0.2 },
+        "tag": { "t": "모(母)범답안", "sub": "…이었으나", "x": 0.26, "y": 0.3, "at": 0.45 }, "sfx": [ { "name": "buzz", "at": 0.2 }, { "name": "stamp", "at": 0.45 } ] }
+    ] },
+    { "line": "c02-0", "shots": [
+      { "in": "slam", "bg": "burst:#FFD23F:#FFB627", "cast": [ { "art": "common/cutin/kid-ask", "x": 0.38, "h": 1.0, "enter": "pop" } ], "text": [ { "t": "왜 '모'?", "style": "shake", "x": 0.78, "y": 0.32, "rot": 6, "size": 160, "at": 0.4 } ], "sfx": [ { "name": "pop" } ] }
+    ] },
+    { "line": "c02-1", "shots": [
+      { "in": "zoom", "bg": "bg/hostel-lobby", "cast": [ { "art": "common/dad/think", "x": 0.7, "h": 0.84 } ], "cam": { "from": [0.7, 0.4, 1.8], "to": [0.7, 0.38, 2.2] }, "sfx": [ { "name": "tick" } ] },
+      { "at": 0.3, "in": "spin", "bg": "full/mo-motel-imagine", "fx": [ "imagine" ], "cast": [ { "art": "common/dad/proud", "x": 0.3, "h": 0.66, "enter": "spin", "at": 4 } ], "cam": { "from": [0.5, 0.5, 1.0], "to": [0.5, 0.45, 1.12] },
+        "text": [ { "t": "모 씨네 호텔", "style": "slam", "x": 0.5, "y": 0.22, "size": 120, "color": "#B8352A", "at": 6 }, { "t": "= 모텔", "style": "stamp", "x": 0.8, "y": 0.5, "size": 110, "at": 0.45 } ], "sfx": [ { "name": "crash", "at": 6 }, { "name": "stamp", "at": 0.45 } ] }
+    ] },
+    { "line": "c02b-0", "pad": 10, "shots": [
+      { "in": "smash", "bg": "#F6EEDF", "cast": [ { "art": "cutin/manager-correct", "x": 0.4, "h": 1.0 } ], "text": [ { "t": "아님", "style": "stamp", "x": 0.78, "y": 0.4, "size": 150, "at": 4 } ], "sfx": [ { "name": "scratch" }, { "name": "stamp", "at": 4 } ] }
+    ] },
+    { "line": "c02b-1", "pad": 6, "count": 3, "countAt": 0.1, "shots": [
+      { "in": "smash", "bg": "dots:#F6EEDF:#E8DCC4", "tally": 3, "mark": { "kind": "x", "at": 2 }, "sfx": [ { "name": "buzz", "at": 2 } ] },
+      { "at": 0.45, "in": "glitch", "bg": "full/mo-motel-imagine", "fx": [ "mono" ], "cam": { "from": [0.5, 0.4, 1.3], "to": [0.5, 0.6, 1.0] }, "text": [ { "t": "숙박업 진출 실패", "style": "news", "at": 2 } ], "sfx": [ { "name": "slide" } ] }
+    ] },
+    { "line": "c03-0", "shots": [
+      { "in": "wipe", "bg": "bg/hostel-lobby", "cast": [ { "art": "manager/correct", "x": 0.24, "h": 0.84, "talk": "manager" } ], "cam": { "from": [0.4, 0.5, 1.1], "to": [0.42, 0.5, 1.2] }, "text": [ { "t": "딱 세 판", "style": "slam", "x": 0.64, "y": 0.36, "size": 150, "at": 0.35 } ], "sfx": [ { "name": "stinger", "at": 0.35 } ] }
+    ] },
+    { "line": "c03-1", "pad": 6, "shots": [
+      { "in": "smash", "bg": "#15303A", "cast": [ { "art": "common/cutin/dad-shock", "x": 0.5, "h": 1.0 } ], "cam": { "punch": [3] }, "text": [ { "t": "체크인에 판…?", "style": "type", "x": 0.78, "y": 0.3, "size": 90 } ], "sfx": [ { "name": "boing" } ] }
+    ] },
+    { "line": "c04-0", "shots": [
+      { "in": "zoom", "bg": "stripes:#15303A:#1F4452", "text": [ { "t": "ROUND 1", "style": "slam", "y": 0.24, "size": 110, "color": "#FFD23F" }, { "t": "HOTEL · HOSTEL", "style": "pop", "y": 0.48, "size": 110, "at": 0.3 }, { "t": "HOSPITAL?!", "style": "stamp", "y": 0.7, "size": 120, "color": "#FFD23F", "at": 0.7 } ], "sfx": [ { "name": "stinger" }, { "name": "stamp", "at": 0.7 } ] }
+    ] },
+    { "line": "c04-1", "shots": [
+      { "in": "whip-l", "bg": "burst:#7A4FA0:#8C5DB4", "props": [ { "art": "prop/hospice", "x": 0.26, "y": 0.48, "w": 0.3, "enter": "pop" } ], "text": [ { "t": "hospitale", "style": "slam", "x": 0.68, "y": 0.3, "size": 110 }, { "t": "= 손님 맞는 집", "style": "pop", "x": 0.68, "y": 0.5, "size": 90, "color": "#FFD23F", "at": 0.35 }, { "t": "라틴어", "style": "stamp", "x": 0.68, "y": 0.7, "size": 70, "at": 0.65 } ], "sfx": [ { "name": "stamp", "at": 0.65 } ] }
+    ] },
+    { "line": "c04-2", "shots": [
+      { "in": "slam", "bg": "burst:#FFD23F:#FFB627", "cast": [ { "art": "common/kid/wow", "x": 0.42, "h": 0.8, "enter": "b", "talk": "kid" } ], "text": [ { "t": "병원도?!", "style": "shake", "x": 0.76, "y": 0.32, "size": 130 } ], "sfx": [ { "name": "pop" } ] }
+    ] },
+    { "line": "c04-3", "shots": [
+      { "in": "whip-r", "bg": "stripes:#F6EEDF:#EFE4CF", "props": [ { "art": "prop/hospice", "x": 0.5, "y": 0.42, "w": 0.34, "enter": "pop" } ], "cam": { "from": [0.5, 0.45, 1.0], "to": [0.5, 0.42, 1.15] },
+        "text": [ { "t": "길손", "style": "pop", "x": 0.18, "y": 0.78, "size": 90 }, { "t": "+ 아픈 사람", "style": "pop", "x": 0.5, "y": 0.84, "size": 90, "color": "#B8352A", "at": 0.4 }, { "t": "재워 주던 집", "style": "slam", "x": 0.82, "y": 0.78, "size": 80, "at": 0.7 } ], "sfx": [ { "name": "ding", "at": 0.7 } ] }
+    ] },
+    { "line": "c04b-0", "shots": [
+      { "in": "whip-r", "bg": "dots:#5BC0EB:#3FA7D6", "cast": [ { "art": "common/dad/explain", "x": 0.42, "h": 0.9, "enter": "b", "talk": "dad" } ], "text": [ { "t": "병원 = 호텔", "style": "type", "x": 0.76, "y": 0.34, "size": 90, "at": 0.2 } ], "sfx": [ { "name": "boing", "at": 0.2 } ] }
+    ] },
+    { "line": "c04b-1", "pad": 6, "shots": [
+      { "in": "smash", "bg": "#15303A", "text": [ { "t": "병원 = 호텔", "style": "pop", "y": 0.4, "size": 120, "color": "#9AA0A6" }, { "t": "틀림", "style": "stamp", "y": 0.62, "size": 160, "color": "#FF5A5A", "at": 0.35 } ], "sfx": [ { "name": "buzz", "at": 0.35 } ] }
+    ] },
+    { "line": "c05-0", "shots": [
+      { "in": "zoom", "bg": "stripes:#15303A:#1F4452", "text": [ { "t": "ROUND 2", "style": "slam", "y": 0.26, "size": 110, "color": "#FFD23F" }, { "t": "MO = MOTOR", "style": "slam", "y": 0.5, "size": 150, "at": 0.45 } ], "sfx": [ { "name": "stinger" }, { "name": "pang", "at": 0.45 } ] },
+      { "at": 0.72, "in": "whip-l", "bg": "burst:#1F5FA8:#2A6FBF", "props": [ { "art": "prop/motel", "x": 0.5, "y": 0.46, "w": 0.34, "enter": "drop" } ], "text": [ { "t": "모 = 자동차", "style": "stamp", "y": 0.82, "size": 110, "color": "#FFD23F", "at": 4 } ], "sfx": [ { "name": "stamp", "at": 4 } ] }
+    ] },
+    { "line": "c05-1", "shots": [
+      { "in": "glitch", "bg": "full/motel-1920s", "fx": [ "vhs" ], "cam": { "from": [0.3, 0.5, 1.3], "to": [0.42, 0.5, 1.15] }, "text": [ { "t": "1925 · 미국", "style": "stamp", "x": 0.74, "y": 0.2, "size": 90, "at": 0.1 } ], "sfx": [ { "name": "rewind" }, { "name": "stamp", "at": 0.1 } ] },
+      { "at": 0.55, "in": "cut", "bg": "full/motel-1920s", "fx": [ "vhs" ], "cam": { "from": [0.62, 0.6, 1.8], "to": [0.62, 0.6, 2.0] }, "text": [ { "t": "차 → 방문 → 침대", "style": "pop", "y": 0.84, "size": 90, "color": "#FFD23F" } ] }
+    ] },
+    { "line": "c05-2", "shots": [
+      { "in": "wipe", "bg": "dots:#F6EEDF:#E8DCC4", "props": [ { "art": "prop/motel", "x": 0.5, "y": 0.62, "w": 0.3, "enter": "pop" } ],
+        "text": [ { "t": "MOTOR HOTEL", "style": "slam", "y": 0.2, "size": 130 }, { "t": "MO-TEL", "style": "stamp", "y": 0.38, "size": 130, "color": "#B8352A", "at": 0.45 } ], "note": "※ 간판 이야기는 전해 오는 이야기", "sfx": [ { "name": "scratch", "at": 0.45 } ] }
+    ] },
+    { "line": "c05-3", "shots": [
+      { "in": "cut", "bg": "bg/hostel-lobby", "cast": [ { "art": "common/dad/shock", "x": 0.7, "h": 0.84, "talk": "dad" } ], "cam": { "from": [0.7, 0.4, 2.0], "to": [0.7, 0.38, 2.3] }, "fx": [ "mono" ], "text": [ { "t": "모 씨 ✕  모터 ○", "style": "type", "y": 0.16, "size": 80 } ] }
+    ] },
+    { "line": "c05b-0", "shots": [
+      { "in": "slam", "bg": "burst:#FFD23F:#FFB627", "cast": [ { "art": "common/kid/laugh", "x": 0.4, "h": 0.8, "enter": "b", "talk": "kid" } ], "text": [ { "t": "차 있잖아요!", "style": "shake", "x": 0.77, "y": 0.32, "size": 110 } ], "sfx": [ { "name": "pop" } ] }
+    ] },
+    { "line": "c05b-1", "pad": 8, "shots": [
+      { "in": "smash", "bg": "burst:#FF8FB1:#FF6F9C", "cast": [ { "art": "cutin/dad-shy", "x": 0.5, "h": 1.0, "enter": "pop" } ], "fx": [ "lines" ], "cam": { "from": [0.5, 0.45, 1.0], "to": [0.5, 0.45, 1.12] }, "text": [ { "t": "(///_///)", "style": "pop", "x": 0.82, "y": 0.22, "size": 80, "rot": 8, "at": 0.25 } ], "sfx": [ { "name": "boing" } ] },
+      { "at": 0.5, "in": "glitch", "bg": "#15303A", "cast": [ { "art": "common/cutin/dad-panic", "x": 0.5, "h": 1.0 } ], "loading": { "t": "아빠 대답 로딩 중", "pct": 12, "at": 2 }, "sfx": [ { "name": "beep", "at": 2 } ] }
+    ] },
+    { "line": "c05c-0", "pad": 8, "shots": [
+      { "in": "whip-l", "bg": "bg/hostel-lobby", "cast": [ { "art": "common/mom/smirk", "x": 0.55, "h": 0.8, "talk": "mom" } ], "cam": { "from": [0.55, 0.45, 1.7], "to": [0.55, 0.42, 1.9] }, "text": [ { "t": "다음 질문", "style": "stamp", "x": 0.82, "y": 0.3, "size": 90, "at": 0.4 } ], "sfx": [ { "name": "stamp", "at": 0.4 } ] }
+    ] },
+    { "line": "c06-0", "shots": [
+      { "in": "zoom", "bg": "stripes:#15303A:#1F4452", "text": [ { "t": "ROUND 3", "style": "slam", "y": 0.28, "size": 110, "color": "#FFD23F" }, { "t": "1909 · 독일", "style": "stamp", "y": 0.5, "size": 100, "at": 0.25 } ], "sfx": [ { "name": "stinger" }, { "name": "stamp", "at": 0.25 } ] },
+      { "at": 0.55, "in": "whip-u", "bg": "full/hostel-1912", "fx": [ "shake" ], "props": [ { "art": "prop/storm", "x": 0.72, "y": 0.24, "w": 0.3, "enter": "drop", "front": true } ], "cam": { "from": [0.5, 0.5, 1.15], "to": [0.5, 0.5, 1.0] }, "sfx": [ { "name": "crash", "at": 3 } ] }
+    ] },
+    { "line": "c06-1", "shots": [
+      { "in": "glitch", "bg": "stripes:#F6EEDF:#EFE4CF", "props": [ { "art": "prop/storm", "x": 0.3, "y": 0.42, "w": 0.26, "enter": "pop" } ], "text": [ { "t": "빈 학교에서 겨우", "style": "pop", "x": 0.68, "y": 0.4, "size": 90 } ] },
+      { "at": 0.5, "in": "whip-l", "bg": "full/hostel-1912", "cam": { "from": [0.62, 0.4, 1.7], "to": [0.6, 0.42, 1.4] }, "text": [ { "t": "1912 · 성 안에 아이들 숙소", "style": "slam", "y": 0.84, "size": 80, "color": "#FFD23F", "at": 0.15 } ], "sfx": [ { "name": "pang", "at": 0.15 } ] }
+    ] },
+    { "line": "c06-2", "shots": [
+      { "in": "slam", "bg": "burst:#FFD23F:#FFB627", "cast": [ { "art": "common/cutin/kid-ask", "x": 0.4, "h": 1.0, "enter": "pop", "talk": "kid" } ], "text": [ { "t": "성?!", "style": "shake", "x": 0.78, "y": 0.34, "size": 180 } ], "sfx": [ { "name": "pop" } ] }
+    ] },
+    { "line": "c06-3", "shots": [
+      { "in": "wipe", "bg": "burst:#2E8B57:#3AA36A", "props": [ { "art": "prop/hostel", "x": 0.28, "y": 0.48, "w": 0.3, "enter": "pop" } ], "text": [ { "t": "첫 유스호스텔", "style": "slam", "x": 0.68, "y": 0.32, "size": 100 }, { "t": "걸어서 여행하는", "style": "pop", "x": 0.68, "y": 0.52, "size": 80, "at": 0.4 }, { "t": "아이들을 위한 집", "style": "pop", "x": 0.68, "y": 0.68, "size": 80, "color": "#FFD23F", "at": 0.6 } ], "sfx": [ { "name": "ding", "at": 0.6 } ] }
+    ] },
+    { "line": "c06b-0", "shots": [
+      { "in": "whip-l", "bg": "stripes:#1F5FA8:#2A6FBF", "props": [ { "art": "prop/hotel", "x": 0.2, "y": 0.46, "w": 0.22, "enter": "pop" } ], "text": [ { "t": "호텔 = 관광 숙소", "style": "slam", "x": 0.6, "y": 0.36, "size": 90 } ] },
+      { "at": 0.5, "in": "whip-l", "bg": "stripes:#2E8B57:#3AA36A", "props": [ { "art": "prop/hostel", "x": 0.2, "y": 0.46, "w": 0.22, "enter": "pop" } ], "text": [ { "t": "유스호스텔", "style": "slam", "x": 0.62, "y": 0.32, "size": 90 }, { "t": "= 청소년 수련시설", "style": "pop", "x": 0.62, "y": 0.52, "size": 80, "color": "#FFD23F", "at": 0.3 } ] }
+    ] },
+    { "line": "c06b-1", "shots": [
+      { "in": "whip-l", "bg": "stripes:#7A4FA0:#8C5DB4", "props": [ { "art": "prop/motel", "x": 0.2, "y": 0.46, "w": 0.22, "enter": "pop" } ], "text": [ { "t": "모텔?", "style": "slam", "x": 0.62, "y": 0.26, "size": 110 }, { "t": "법에 그 이름 없음", "style": "stamp", "x": 0.62, "y": 0.48, "size": 80, "at": 0.35 }, { "t": "→ 일반숙박업", "style": "pop", "x": 0.62, "y": 0.68, "size": 90, "color": "#FFD23F", "at": 0.7 } ], "sfx": [ { "name": "stamp", "at": 0.35 }, { "name": "ding", "at": 0.7 } ] }
+    ] },
+    { "line": "c06b-2", "pad": 6, "shots": [
+      { "in": "cut", "bg": "bg/hostel-lobby", "cast": [ { "art": "common/dad/think", "x": 0.7, "h": 0.84, "talk": "dad" } ], "cam": { "from": [0.7, 0.4, 1.9], "to": [0.7, 0.4, 2.1], "roll": [-3, 3] } },
+      { "at": 0.45, "in": "spin", "bg": "dots:#FFE3EE:#FFC6DC", "props": [ { "art": "prop/motel-shy", "x": 0.5, "y": 0.5, "w": 0.4, "enter": "pop" } ], "cam": { "from": [0.5, 0.5, 1.0], "to": [0.5, 0.5, 1.1], "roll": [-2, 2] }, "text": [ { "t": "부끄…", "style": "type", "x": 0.82, "y": 0.24, "size": 90, "at": 4 } ], "sfx": [ { "name": "boing", "at": 2 } ] }
+    ] },
+    { "line": "c06c-0", "shots": [
+      { "in": "wipe", "bg": "dots:#F6EEDF:#E8DCC4", "props": [ { "art": "prop/hotel", "x": 0.2, "y": 0.4, "w": 0.22, "enter": "pop" }, { "art": "prop/motel", "x": 0.5, "y": 0.4, "w": 0.22, "enter": "pop", "at": 0.3 }, { "art": "prop/hostel", "x": 0.8, "y": 0.4, "w": 0.22, "enter": "pop", "at": 0.6 } ],
+        "text": [ { "t": "손님", "style": "slam", "x": 0.2, "y": 0.74, "size": 100 }, { "t": "자동차", "style": "slam", "x": 0.5, "y": 0.74, "size": 100, "at": 0.3 }, { "t": "걷는 아이들", "style": "slam", "x": 0.8, "y": 0.74, "size": 90, "at": 0.6 } ],
+        "sfx": [ { "name": "pop" }, { "name": "pop", "at": 0.3 }, { "name": "pop", "at": 0.6 } ] }
+    ] },
+    { "line": "c06c-1", "pad": 10, "shots": [
+      { "in": "zoom", "bg": "burst:#15303A:#1F4452", "text": [ { "t": "값이 아니라", "style": "pop", "y": 0.34, "size": 100, "color": "#9AA0A6" }, { "t": "누구를 위한 집이냐", "style": "slam", "y": 0.56, "size": 120, "color": "#FFD23F", "at": 0.35 } ], "sfx": [ { "name": "stamp", "at": 0.35 } ] }
+    ] },
+    { "line": "c07-0", "shots": [
+      { "in": "iris", "bg": "bg/hostel-lobby", "cast": [ { "art": "common/dad/explain", "x": 0.55, "h": 0.8, "talk": "dad" }, { "art": "common/kid/normal", "x": 0.78, "h": 0.55 } ], "cam": { "from": [0.64, 0.55, 1.3], "to": [0.64, 0.55, 1.4] }, "text": [ { "t": "손님을 맞는 집", "style": "pop", "y": 0.16, "size": 70 } ] }
+    ] },
+    { "line": "c07-1", "shots": [
+      { "in": "cut", "bg": "bg/hostel-lobby", "cast": [ { "art": "common/dad/explain", "x": 0.55, "h": 0.8, "talk": "dad" }, { "art": "common/kid/normal", "x": 0.78, "h": 0.55 } ], "cam": { "from": [0.58, 0.45, 1.7], "to": [0.58, 0.45, 1.8] }, "text": [ { "t": "바로 쉬는 집", "style": "pop", "y": 0.16, "size": 70 } ] }
+    ] },
+    { "line": "c07-2", "shots": [
+      { "in": "cut", "bg": "bg/hostel-lobby", "cast": [ { "art": "common/dad/explain", "x": 0.55, "h": 0.8, "talk": "dad" }, { "art": "common/kid/normal", "x": 0.78, "h": 0.55 } ], "cam": { "from": [0.66, 0.55, 1.3], "to": [0.66, 0.55, 1.45] } },
+      { "at": 0.5, "in": "cut", "bg": "full/hostel-1912", "cam": { "from": [0.5, 0.5, 1.0], "to": [0.55, 0.5, 1.1] }, "text": [ { "t": "걸어서 여행하는 아이들을 위해", "style": "pop", "y": 0.86, "size": 64 } ] }
+    ] },
+    { "line": "c07-3", "shots": [
+      { "in": "cut", "bg": "bg/hostel-lobby", "cast": [ { "art": "common/dad/normal", "x": 0.55, "h": 0.8 }, { "art": "common/kid/wow", "x": 0.78, "h": 0.55, "talk": "kid" } ], "cam": { "from": [0.74, 0.6, 1.8], "to": [0.74, 0.6, 1.9] } }
+    ] },
+    { "line": "c07-4", "pad": 6, "shots": [
+      { "in": "cut", "bg": "bg/hostel-lobby", "cast": [ { "art": "common/dad/normal", "x": 0.55, "h": 0.8, "talk": "dad" }, { "art": "common/kid/normal", "x": 0.78, "h": 0.55 } ], "cam": { "from": [0.62, 0.45, 1.6], "to": [0.62, 0.45, 1.65] } }
+    ] },
+    { "line": "c07b-0", "pad": 10, "shots": [
+      { "in": "cut", "bg": "bg/hostel-lobby", "cast": [ { "art": "manager/key", "x": 0.3, "h": 0.82 }, { "art": "common/kid/wow", "x": 0.55, "h": 0.55 } ], "cam": { "from": [0.42, 0.55, 1.4], "to": [0.42, 0.55, 1.55] } },
+      { "at": 0.55, "in": "flash", "bg": "dots:#F6EEDF:#E8DCC4", "props": [ { "art": "prop/room-key", "x": 0.5, "y": 0.45, "w": 0.24, "enter": "pop" } ], "cam": { "from": [0.5, 0.5, 1.0], "to": [0.5, 0.5, 1.08] } }
+    ] },
+    { "line": "c08-0", "shots": [
+      { "in": "whip-l", "bg": "bg/hostel-lobby", "cast": [ { "art": "common/dad/proud", "x": 0.66, "h": 0.84, "talk": "dad" } ], "cam": { "from": [0.66, 0.42, 1.6], "to": [0.66, 0.4, 1.85] }, "text": [ { "t": "모텔처럼!", "style": "pop", "x": 0.3, "y": 0.3, "size": 110, "at": 0.55 } ], "sfx": [ { "name": "pang", "at": 0.55 } ] }
+    ] },
+    { "line": "c08-1", "shots": [
+      { "in": "glitch", "bg": "bg/hostel-lobby", "cast": [ { "art": "manager/point", "x": 0.3, "h": 0.84, "talk": "manager" } ], "cam": { "from": [0.32, 0.45, 1.5], "to": [0.32, 0.42, 1.7] }, "sfx": [ { "name": "scratch" } ] },
+      { "at": 0.45, "in": "whip-u", "bg": "bg/hill-parking", "cam": { "from": [0.5, 0.2, 1.8], "to": [0.5, 0.65, 1.0] }, "text": [ { "t": "주차장 ↓", "style": "stamp", "x": 0.5, "y": 0.84, "size": 100, "at": 0.35 } ], "sfx": [ { "name": "slide" }, { "name": "stamp", "at": 0.35 } ] }
+    ] },
+    { "line": "c08-2", "pad": 12, "shots": [
+      { "in": "smash", "bg": "#15303A", "cast": [ { "art": "common/cutin/dad-shock", "x": 0.5, "h": 1.0 } ], "fx": [ "slowmo" ], "cam": { "from": [0.5, 0.45, 1.0], "to": [0.5, 0.45, 1.3] }, "sfx": [ { "name": "slide" } ] }
+    ] },
+    { "line": "c08b-0", "shots": [
+      { "in": "whip-l", "bg": "bg/hill-parking", "cast": [ { "art": "common/dad/panic", "x": 0.4, "h": 0.72 } ], "props": [ { "art": "prop/suitcases", "x": 0.6, "y": 0.66, "w": 0.2, "enter": "drop", "at": 0.3, "front": true } ], "cam": { "from": [0.5, 0.6, 1.2], "to": [0.5, 0.35, 1.05], "roll": [-3, -3] },
+        "text": [ { "t": "짐 3개", "style": "stamp", "x": 0.82, "y": 0.5, "size": 90, "at": 0.3 } ], "sfx": [ { "name": "dudung", "at": 0.3 } ] }
+    ] },
+    { "line": "c08b-1", "shots": [
+      { "in": "slam", "bg": "burst:#FFD23F:#FFB627", "cast": [ { "art": "common/kid/laugh", "x": 0.4, "h": 0.8, "enter": "b", "talk": "kid" } ], "text": [ { "t": "도보 여행!", "style": "shake", "x": 0.77, "y": 0.32, "size": 130, "at": 0.3 } ], "sfx": [ { "name": "ding", "at": 0.3 } ] }
+    ] },
+    { "line": "c08b-2", "pad": 30, "count": 4, "countAt": 0.15, "shots": [
+      { "in": "smash", "bg": "dots:#F6EEDF:#E8DCC4", "tally": 4, "mark": { "kind": "x", "at": 2 }, "text": [ { "t": "역시, 모답맨", "style": "stamp", "x": 0.5, "y": 0.84, "size": 100, "at": 0.55 } ], "sfx": [ { "name": "buzz", "at": 2 }, { "name": "crash", "at": 0.55 } ] }
+    ] },
+    { "hold": 75, "shots": [
+      { "in": "iris", "bg": "burst:#15303A:#1F4452", "cast": [ { "art": "common/cutin/dad-panic", "x": 0.5, "h": 0.8, "enter": "spin" } ], "text": [ { "t": "모답맨", "style": "slam", "y": 0.2, "size": 120, "color": "#FFD23F" }, { "t": "다음 오답도 기대해 주세요", "style": "pop", "y": 0.86, "size": 64, "at": 14 } ], "note": "※ 숙소 분류는 일반 설명이에요. 정확한 기준은 각 법령 · 지자체 안내로" }
+    ] }
+  ]
+}

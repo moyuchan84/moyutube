@@ -82,6 +82,105 @@
         "reception"
       ],
       "style": "A cheerful Korean clinic receptionist woman in her late twenties: bright, brisk and polite, a friendly helpful voice with a light apologetic smile"
+    },
+    {
+      "label": "Guest",
+      "name": "지구대 경찰관",
+      "voice": "Erinome",
+      "roles": [
+        "police"
+      ],
+      "style": "A calm, precise Korean police-box officer woman in her late thirties: clear, steady, slightly low voice that enunciates every word, patient and gently amused when she corrects grown-ups, never stern or scary"
+    },
+    {
+      "label": "Guest",
+      "name": "이웃 아저씨",
+      "voice": "Alnilam",
+      "roles": [
+        "neighbor"
+      ],
+      "style": "A Korean man in his early fifties at a police counter: loud, wounded and sincere, quick and a little breathless, comically indignant but never threatening"
+    },
+    {
+      "label": "Guest",
+      "name": "유스호스텔 사장님",
+      "voice": "Sadaltager",
+      "roles": [
+        "manager"
+      ],
+      "style": "A cheerful, sturdy Korean youth hostel owner in his early sixties who has hiked mountains all his life: warm, clear, slightly gravelly middle-low voice, unhurried and dry, kindly amused when he corrects grown-ups, never stern"
+    },
+    {
+      "label": "Guest",
+      "name": "우주과학관 해설사",
+      "voice": "Rasalgethi",
+      "roles": [
+        "guide"
+      ],
+      "style": "A Korean space science museum docent man in his early thirties, a polite rocket nerd: clear, crisp, informative middle voice, perfectly deadpan when he corrects grown-ups, then lights up with quiet excitement about rockets and orbits, never stern"
+    },
+    {
+      "label": "Guest",
+      "name": "천문대 연구원",
+      "voice": "Autonoe",
+      "roles": [
+        "astro"
+      ],
+      "style": "A Korean woman astronomer in her early forties who runs the public programs at a city observatory: low, calm, dry and precise, perfectly deadpan when correcting grown-ups with one short line, but soft and quietly wondrous when talking about the sky"
+    },
+    {
+      "label": "Guest",
+      "name": "정육 코너 사장님",
+      "voice": "Umbriel",
+      "roles": [
+        "butcher"
+      ],
+      "style": "A Korean butcher in his late fifties who has run a neighborhood mart's meat counter for nearly thirty years and stocks halal and kosher meat for his customers: easygoing, slightly gruff middle-low voice, perfectly deadpan when he corrects grown-ups with one short line, warm and patient with the kid, never stern"
+    },
+    {
+      "label": "Guest",
+      "name": "교통경찰관 (내모남불)",
+      "voice": "Erinome",
+      "roles": [
+        "traffic"
+      ],
+      "style": "A Korean traffic police officer woman in her mid-thirties: crisp, perfectly deadpan and polite, clear steady voice that enunciates every word, dry comedic timing when she corrects the dad, never angry or scary"
+    },
+    {
+      "label": "Guest",
+      "name": "아파트 관리소장님 (내모남불)",
+      "voice": "Orus",
+      "roles": [
+        "aptmgr"
+      ],
+      "style": "A Korean apartment complex manager in his early sixties: flat, dry, deadpan voice like a building announcement, polite but completely unimpressed, never angry"
+    },
+    {
+      "label": "Guest",
+      "name": "은행 창구 직원 (내모남불)",
+      "voice": "Schedar",
+      "roles": [
+        "teller"
+      ],
+      "style": "A Korean bank teller woman in her late twenties: smooth, even, perfectly polite customer-service voice, completely deadpan and unhurried, never recommends anything, never angry"
+    },
+    {
+      "label": "Guest",
+      "name": "아빠 친구 (내모남불)",
+      "voice": "Puck",
+      "roles": [
+        "buddy"
+      ],
+      "style": "The dad's old high-school friend, a Korean man in his mid-forties on a video call: whiny, sniffling and comically heartbroken, a little nasal, overly dramatic but harmless"
+    },
+    {
+      "label": "Guest",
+      "name": "공인중개사 사장님 (내모남불)",
+      "voice": "Vindemiatrix",
+      "roles": [
+        "realtor"
+      ],
+      "style": "A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry"
     }
   ],
   "direction": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud.",

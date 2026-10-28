@@ -1,0 +1,25 @@
+{
+  "code": "market",
+  "title": "코스피 나흘 만에 -16%, 삼성전자, 하이닉스 차트로 보면 지금 어디쯤일까",
+  "format": "short",
+  "category": "market",
+  "status": "uploaded",
+  "created": "2026-10-15",
+  "published": "2026-10-15",
+  "youtube": [
+    {
+      "id": "HAZG1ZqGLLc",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "public"
+    }
+  ],
+  "tags": [],
+  "video": {
+    "composition": "MarketShort",
+    "bgm": "bgm/market.mjs",
+    "data": [
+      "data/market-data.mjs"
+    ]
+  }
+}

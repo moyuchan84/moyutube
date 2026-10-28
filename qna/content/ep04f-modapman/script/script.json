@@ -1,0 +1,462 @@
+{
+  "rawVoice": true,
+  "speed": 1.2,
+  "title": "모답맨 · 대머리는 왜 생겨요? 겨드랑이 · 거기 털은 왜 나요?",
+  "bgm": "cheerful",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "콜드 오픈",
+      "lines": [
+        {
+          "who": "kid",
+          "text": "아빠, 아빠는 고추에 왜 털이 있어요? 겨드랑이에도!",
+          "sub": "아빠, 아빠는 거기에 왜 털이 있어요? 겨드랑이에도!",
+          "en": "Dad, why do you have hair down there? And in your armpits too!"
+        },
+        {
+          "who": "dad",
+          "text": "그건… 어른 되면 거기가 추워서! 털 이불 덮는 거야!",
+          "en": "That's… because grown-ups get cold down there! It's a fur blanket!"
+        }
+      ]
+    },
+    {
+      "id": "c00b",
+      "beat": "콜드 오픈",
+      "lines": [
+        {
+          "who": "barber",
+          "text": "이불 아니여.",
+          "en": "It's not a blanket."
+        },
+        {
+          "who": "dad",
+          "text": "…네?",
+          "en": "…Huh?"
+        }
+      ]
+    },
+    {
+      "id": "c00c",
+      "beat": "콜드 오픈",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "오답, 하나. 저는 모답맨입니다.",
+          "en": "Wrong answer number one. I'm Modapman."
+        }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "사건 개요",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "사건 개요. 다음 날, 동네 이발소. 아이가 다 말했습니다.",
+          "en": "Case summary. Next day, the neighborhood barbershop. My kid told him everything."
+        },
+        {
+          "who": "mom",
+          "text": "얘가 아침부터 동네방네 물어보고 다녀요.",
+          "en": "He's been asking the whole neighborhood since this morning."
+        }
+      ]
+    },
+    {
+      "id": "c01a",
+      "beat": "사건 개요",
+      "lines": [
+        {
+          "who": "barber",
+          "text": "털 얘기면 잘 왔다. 오십 년 깎았어.",
+          "en": "If it's about hair, you came to the right place. I've cut it for fifty years."
+        }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "오답 퍼레이드",
+      "lines": [
+        {
+          "who": "mom",
+          "text": "털은 밀면 더 굵게 나. 그러니까 함부로 밀지 마.",
+          "en": "Shave it and it grows back thicker. So don't go shaving."
+        },
+        {
+          "who": "barber",
+          "text": "안 굵어져요. 잘린 끝이 뭉툭해서 그렇게 느껴질 뿐.",
+          "en": "It doesn't. The cut tip is blunt, so it just feels thicker."
+        }
+      ]
+    },
+    {
+      "id": "c02b",
+      "beat": "오답 퍼레이드",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "오답, 둘. 모범답안… 이었으나.",
+          "en": "Wrong answer, two. Mom, the model answer… usually."
+        }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "오답 퍼레이드",
+      "lines": [
+        {
+          "who": "kid",
+          "text": "근데 할아버지는 왜 머리엔 털이 없고, 가슴엔 많아요?",
+          "en": "But Grandpa, why is there no hair on your head, but lots on your chest?"
+        },
+        {
+          "who": "dad",
+          "text": "그건! 머리를 너무 많이 써서, 머리털이 닳은 거야!",
+          "en": "That's because he used his head so much, the hair wore off!"
+        }
+      ]
+    },
+    {
+      "id": "c03b",
+      "beat": "오답 퍼레이드",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "똑똑하면 대머리! 아빠 앞머리도 공부의 흔적이지.",
+          "en": "Smart people go bald! My thin front is proof of all my studying."
+        },
+        {
+          "who": "barber",
+          "text": "나 공부 안 했어.",
+          "en": "I never studied."
+        }
+      ]
+    },
+    {
+      "id": "c03c",
+      "beat": "오답 퍼레이드",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "오답, 셋. 공부의 흔적, 아님.",
+          "en": "Wrong answer, three. Not proof of studying."
+        }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "정답 라운드",
+      "lines": [
+        {
+          "who": "barber",
+          "text": "가위 들기 전에, 딱 세 판만 하자고.",
+          "en": "Before I pick up the scissors, let's do just three rounds."
+        },
+        {
+          "who": "dad",
+          "text": "이발에 판이…?",
+          "en": "A haircut has rounds…?"
+        }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "1라운드 · 털은 원래 있다",
+      "lines": [
+        {
+          "who": "barber",
+          "text": "1라운드. 털은 새로 나는 게 아니여.",
+          "tts": "일 라운드. 털은 새로 나는 게 아니여.",
+          "en": "Round one. Hair doesn't sprout out of nowhere."
+        },
+        {
+          "who": "barber",
+          "text": "솜털이 원래 온몸에 있어. 꼬마 팔에도.",
+          "en": "Fine fuzz is already all over your body. Even on this kid's arm."
+        }
+      ]
+    },
+    {
+      "id": "c05b",
+      "beat": "1라운드 · 털은 원래 있다",
+      "lines": [
+        {
+          "who": "kid",
+          "text": "어? 진짜 있다!",
+          "en": "Huh? It's really there!"
+        },
+        {
+          "who": "barber",
+          "text": "때가 되면, 몸에서 어른 준비 신호가 나와.",
+          "en": "When the time comes, your body sends a 'getting ready to grow up' signal."
+        }
+      ]
+    },
+    {
+      "id": "c05c",
+      "beat": "1라운드 · 털은 원래 있다",
+      "lines": [
+        {
+          "who": "barber",
+          "text": "그럼 수염, 구레나룻, 겨드랑이, 거기 솜털이 굵은 털로 바뀌어.",
+          "en": "Then the fuzz on the chin, the sideburns, the armpits and down there turns into thick hair."
+        },
+        {
+          "who": "dad",
+          "text": "아, 사춘기!",
+          "en": "Ah, puberty!"
+        }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "2라운드 · 왜 하필 거기",
+      "lines": [
+        {
+          "who": "barber",
+          "text": "2라운드. 왜 하필 겨드랑이랑 거기냐.",
+          "tts": "이 라운드. 왜 하필 겨드랑이랑 거기냐.",
+          "en": "Round two. Why the armpits and down there, of all places?"
+        }
+      ]
+    },
+    {
+      "id": "c06b",
+      "beat": "2라운드 · 왜 하필 거기",
+      "lines": [
+        {
+          "who": "barber",
+          "text": "거기엔 특별한 땀샘이 따로 있어. 털 뿌리 안으로 땀을 내.",
+          "en": "Those spots have a special sweat gland. It sweats right into the hair root."
+        },
+        {
+          "who": "kid",
+          "text": "털 속으로 땀이요?",
+          "en": "Sweat into the hair?"
+        }
+      ]
+    },
+    {
+      "id": "c06c",
+      "beat": "2라운드 · 왜 하필 거기",
+      "lines": [
+        {
+          "who": "barber",
+          "text": "털은 그 땀을 붙잡는 심지여. 양초 심지처럼.",
+          "en": "The hair is a wick that holds that sweat. Like a candle wick."
+        },
+        {
+          "who": "barber",
+          "text": "냄새는 땀이 아니라, 피부에 사는 세균이 만들고.",
+          "en": "And the smell isn't the sweat. The bacteria living on the skin make it."
+        }
+      ]
+    },
+    {
+      "id": "c06d",
+      "beat": "2라운드 · 왜 하필 거기",
+      "lines": [
+        {
+          "who": "mom",
+          "text": "그래서 클 때쯤 겨드랑이 냄새가 나는구나.",
+          "en": "So that's why armpits start to smell as kids grow up."
+        },
+        {
+          "who": "barber",
+          "text": "그 땀샘도 같은 신호에 같이 켜지거든.",
+          "en": "That gland switches on with the same signal."
+        }
+      ]
+    },
+    {
+      "id": "c07",
+      "beat": "3라운드 · 대머리",
+      "lines": [
+        {
+          "who": "barber",
+          "text": "3라운드. 내 머리.",
+          "tts": "삼 라운드. 내 머리.",
+          "en": "Round three. My head."
+        },
+        {
+          "who": "barber",
+          "text": "같은 신호인데, 정수리 털은 거꾸로 알아들어.",
+          "en": "Same signal, but the hair on top of the head hears it backwards."
+        }
+      ]
+    },
+    {
+      "id": "c07b",
+      "beat": "3라운드 · 대머리",
+      "lines": [
+        {
+          "who": "barber",
+          "text": "수염, 가슴엔 '굵어져라', 정수리엔 '가늘어져라'.",
+          "en": "To the beard and chest it says 'get thick.' To the top of the head, 'get thin.'"
+        },
+        {
+          "who": "dad",
+          "text": "아, 머리털이 가슴으로 이사 간 거구나!",
+          "en": "Oh, so the head hair moved down to the chest!"
+        }
+      ]
+    },
+    {
+      "id": "c07c",
+      "beat": "3라운드 · 대머리",
+      "lines": [
+        {
+          "who": "barber",
+          "text": "이사가 아니고, 알아듣는 털이 다른 거여.",
+          "en": "It didn't move. Different hairs just hear it differently."
+        },
+        {
+          "who": "barber",
+          "text": "옆이랑 뒤는 둔해서, 말굽처럼 남지.",
+          "en": "The sides and back don't react, so a horseshoe is left."
+        }
+      ]
+    },
+    {
+      "id": "c07d",
+      "beat": "3라운드 · 대머리",
+      "lines": [
+        {
+          "who": "kid",
+          "text": "그래서 할아버지 머리가 U자예요?",
+          "en": "So that's why your hair is shaped like a U?"
+        },
+        {
+          "who": "barber",
+          "text": "그려. 그래서 뒷머리를 앞에 옮겨 심으면, 안 빠져.",
+          "en": "Yep. That's why if you move hair from the back to the front, it stays."
+        }
+      ]
+    },
+    {
+      "id": "c07e",
+      "beat": "3라운드 · 대머리",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "한 줄 정리. 솜털이 굵어지고, 땀샘이 켜지고, 정수리만 거꾸로.",
+          "en": "In one line: fuzz gets thick, glands switch on, and only the top of the head goes the other way."
+        }
+      ]
+    },
+    {
+      "id": "c08",
+      "beat": "아이 눈높이",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "어제 그거, 대답이 아니었어. 미안.",
+          "en": "What I said yesterday wasn't a real answer. Sorry."
+        },
+        {
+          "who": "dad",
+          "text": "너도 온몸에 털이 있어. 크면 몇 군데가 굵어질 거야.",
+          "en": "You've got hair all over too. When you grow up, a few spots will get thicker."
+        }
+      ]
+    },
+    {
+      "id": "c08b",
+      "beat": "아이 눈높이",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "더러운 것도, 부끄러운 것도 아니야. 자라는 거야.",
+          "en": "It's not dirty, and it's not embarrassing. It's just growing up."
+        },
+        {
+          "who": "kid",
+          "text": "그럼 나는 언제요?",
+          "en": "Then when will mine?"
+        }
+      ]
+    },
+    {
+      "id": "c08c",
+      "beat": "아이 눈높이",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "네 몸이 알아. 궁금하면 언제든 아빠한테 물어봐.",
+          "en": "Your body knows. Ask me anytime you're curious."
+        },
+        {
+          "who": "dad",
+          "text": "대신 다른 사람 몸 얘기는, 작은 목소리로. 약속?",
+          "en": "But when it's about someone else's body, use a quiet voice. Promise?"
+        }
+      ]
+    },
+    {
+      "id": "c08d",
+      "beat": "아이 눈높이",
+      "lines": [
+        {
+          "who": "kid",
+          "text": "약속. …할아버지, 아까 크게 말해서 죄송해요.",
+          "en": "Promise. …Grandpa, sorry I said it so loudly."
+        },
+        {
+          "who": "barber",
+          "text": "괜찮어. 할아버지 머리는 오십 년째 자랑이여.",
+          "en": "It's alright. My head has been my pride for fifty years."
+        }
+      ]
+    },
+    {
+      "id": "c09",
+      "beat": "반전",
+      "lines": [
+        {
+          "who": "kid",
+          "text": "아빠도 대머리 돼요?",
+          "en": "Will you go bald too, Dad?"
+        },
+        {
+          "who": "dad",
+          "text": "걱정 마! 대머리는 외가를 닮는대. 외할아버지 머리 풍성하잖아!",
+          "en": "Don't worry! Baldness comes from Mom's side, they say. Her dad has plenty of hair!"
+        }
+      ]
+    },
+    {
+      "id": "c09b",
+      "beat": "반전",
+      "lines": [
+        {
+          "who": "barber",
+          "text": "반만 맞아. 아빠 쪽도 닮어.",
+          "en": "Only half right. You take after your dad's side too."
+        },
+        {
+          "who": "kid",
+          "text": "친할아버지는… 반짝반짝인데요?",
+          "en": "But your dad, Grandpa… is super shiny."
+        }
+      ]
+    },
+    {
+      "id": "c09c",
+      "beat": "반전",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "…저녁 늦겠다. 빨리 가자.",
+          "en": "…We'll be late for dinner. Let's go."
+        },
+        {
+          "who": "narr",
+          "text": "오답, 넷. 역시, 모답맨.",
+          "en": "Wrong answer, four. Modapman strikes again."
+        }
+      ]
+    }
+  ]
+}

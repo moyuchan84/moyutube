@@ -1,0 +1,22 @@
+{
+  "code": "france",
+  "title": "같은 날 프랑스 시위 55만 vs 80만, 집계가 다른 이유와 2023년 비교",
+  "format": "short",
+  "category": "news",
+  "status": "uploaded",
+  "created": "2026-10-19",
+  "published": "2026-10-19",
+  "youtube": [
+    {
+      "id": "9nSms67yyRA",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "private"
+    }
+  ],
+  "tags": [],
+  "video": {
+    "composition": "FranceShort",
+    "bgm": "bgm/france.mjs"
+  }
+}

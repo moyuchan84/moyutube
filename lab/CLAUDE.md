@@ -1,6 +1,6 @@
 # lab — 수학 · 과학 설명 영상 (작업명)
 
-작업 전에 [CATEGORY.md](CATEGORY.md) 의 컨셉과 [TOOLS.md](TOOLS.md) 를 읽는다. 과학 갈래(보면 풀리는 과학)는 [SCIENCE.md](SCIENCE.md) 가 기획 · 전체 상태표의 기준이다.
+작업 전에 [CATEGORY.md](CATEGORY.md) 의 컨셉과 [TOOLS.md](TOOLS.md) 를 읽는다. 과학 갈래(보면 풀리는 과학)는 [SCIENCE.md](SCIENCE.md) 가 기획 · 전체 상태표의 기준이다. 새 카테고리 「마술의 비밀」(작업명)은 [MAGIC.md](MAGIC.md).
 
 - 한 편에 개념 하나. 수치 · 공식은 교과서 수준으로 확실한 것만. 불확실하면 넣지 않는다.
 - 화면은 코드로 그린 도형 · 그래프. AI 그림은 쓰지 않는다 (필요하면 사용자에게 묻는다).

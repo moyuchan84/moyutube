@@ -1,0 +1,11 @@
+{
+  "code": "{{code}}",
+  "slug": "{{slug}}",
+  "title": "{{title}}",
+  "series": "{{series}}",
+  "format": "modapman",
+  "status": "idea",
+  "created": "{{date}}",
+  "youtube": [],
+  "tags": []
+}

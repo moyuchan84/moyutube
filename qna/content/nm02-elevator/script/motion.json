@@ -1,0 +1,203 @@
+{
+  "id": "Nm02-Naemonambul",
+  "episode": "nm02",
+  "voice": "nm02",
+  "bgm": "cheerful",
+  "gap": 0,
+  "chop": 42,
+  "counter": "내모남불",
+  "thumb": {
+    "top": "남이 누르면 민폐!",
+    "bottom": "내가 누르면 모 어때~",
+    "sub": "엘리베이터편",
+    "dad": "cutin/dad-whistle",
+    "guest": "cutin/manager-flat",
+    "count": 4,
+    "textLeft": 400,
+    "badge": "내모남불",
+    "countLabel": "내모남불"
+  },
+  "beats": [
+    { "line": "c00-0", "shots": [
+      { "bg": "full/door-closing", "cam": { "from": [0.5, 0.45, 1.15], "to": [0.5, 0.4, 1.45] }, "fx": ["slowmo", "lines", "focus"], "sfx": [{ "name": "whoosh" }] },
+      { "at": 0.6, "in": "slam", "bg": "bg/elevator-inside", "cam": { "from": [0.5, 0.5, 1.4], "to": [0.5, 0.5, 1.3], "punch": [3] }, "text": [{ "t": "쾅", "x": 0.5, "y": 0.45, "size": 260, "color": "#FFD23F", "style": "slam" }], "fx": ["impact", "shake"], "sfx": [{ "name": "crash" }] }
+    ] },
+    { "line": "c00-1", "shots": [
+      { "in": "slam", "bg": "burst:#E63946:#B5202D", "cast": [{ "art": "cutin/dad-rage", "x": 0.36, "h": 1.02, "enter": "pop", "talk": "dad" }], "text": [{ "t": "사람을 두고?!", "x": 0.74, "y": 0.45, "size": 140, "color": "#FFD23F", "style": "slam", "at": 0.3 }], "cam": { "punch": [4] }, "fx": ["impact", "aura", "focus"], "sfx": [{ "name": "buzz", "at": 0.3 }] }
+    ] },
+    { "line": "c00a-0", "shots": [
+      { "in": "whip-l", "bg": "bg/elevator-inside", "cam": { "from": [0.4, 0.5, 1.2], "to": [0.4, 0.5, 1.35] }, "cast": [{ "art": "common/kid/normal", "x": 0.3, "h": 0.6, "enter": "pop", "talk": "kid" }] },
+      { "at": 0.5, "in": "slam", "bg": "dots:#7FC8F8:#5AB0E8", "cast": [{ "art": "common/cutin/kid-doubt", "x": 0.5, "h": 1, "enter": "pop", "talk": "kid" }] }
+    ] },
+    { "line": "c00a-1", "shots": [
+      { "in": "smash", "bg": "burst:#15303A:#22485A", "cast": [{ "art": "prop/finger-mash", "x": 0.5, "h": 0.95, "enter": "pop" }], "text": [{ "t": "닫힘 닫힘 닫힘", "x": 0.5, "y": 0.14, "size": 100, "color": "#FFD23F", "style": "shake" }], "fx": ["focus", "impact", "shake"], "sfx": [{ "name": "tick" }, { "name": "tick", "at": 0.1 }, { "name": "tick", "at": 0.2 }, { "name": "tick", "at": 0.3 }] },
+      { "at": 0.45, "in": "zoom", "bg": "stripes:#FFD23F:#FFE680", "cast": [{ "art": "cutin/dad-whistle", "x": 0.5, "h": 1.02, "enter": "pop", "talk": "dad" }], "freeze": 0.8, "tag": { "t": "내가 하면", "sub": "모 어때~", "x": 0.8, "y": 0.25 }, "fx": ["aura", "kira"], "sfx": [{ "name": "boing", "at": 0.8 }] }
+    ] },
+    { "line": "c00b-0", "count": 1, "countAt": 0.82, "shots": [
+      { "in": "wipe", "bg": "#15303A", "text": [{ "t": "내가 하면", "y": 0.3, "size": 120 }, { "t": "모 어때~", "y": 0.55, "size": 190, "color": "#FFD23F", "style": "slam", "at": 0.08 }] },
+      { "at": 0.4, "in": "whip-r", "bg": "#15303A", "text": [{ "t": "남이 하면", "y": 0.3, "size": 120 }, { "t": "불법!", "y": 0.55, "size": 190, "style": "stamp", "at": 0.12 }], "sfx": [{ "name": "stamp", "at": 0.12 }] },
+      { "at": 0.78, "in": "slam", "bg": "burst:#FFD23F:#FFB627", "text": [{ "t": "내모남불, 하나.", "y": 0.45, "size": 170, "style": "slam" }], "fx": ["impact"], "sfx": [{ "name": "buzz" }] }
+    ] },
+    { "line": "c00b-1", "pad": 6, "shots": [
+      { "in": "zoom", "bg": "full/family-hall", "cam": { "from": [0.33, 0.4, 1.6], "to": [0.33, 0.36, 2.1], "ease": "snap" }, "text": [{ "t": "모답맨", "x": 0.5, "y": 0.8, "size": 110, "color": "#FFD23F", "style": "pop", "at": 0.4 }], "fx": ["focus", "kira"] }
+    ] },
+    { "hold": 54, "shots": [
+      { "in": "slam", "bg": "burst:#FFD23F:#FFB627", "text": [{ "t": "내가 하면 모 어때", "y": 0.27, "size": 120, "style": "slam" }, { "t": "남이 하면 불—", "x": 0.44, "y": 0.5, "size": 140, "style": "pop", "at": 14 }, { "t": "법!", "x": 0.82, "y": 0.5, "size": 180, "style": "stamp", "at": 30 }, { "t": "내모남불 ② 엘리베이터편", "y": 0.76, "size": 80, "color": "#15303A", "style": "pop", "at": 40 }], "fx": ["impact"], "sfx": [{ "name": "pang" }, { "name": "stamp", "at": 30 }] }
+    ] },
+
+    { "line": "c01-0", "shots": [
+      { "in": "wipe", "bg": "full/family-hall", "cam": { "from": [0.5, 0.5, 1.02], "to": [0.5, 0.5, 1.12] }, "text": [{ "t": "토요일 오전 · 15층", "style": "news" }], "sfx": [{ "name": "tick" }] }
+    ] },
+    { "line": "c01-1", "shots": [
+      { "in": "whip-r", "bg": "dots:#C9B6E4:#B39DDB", "cast": [{ "art": "common/cutin/mom-smirk", "x": 0.5, "h": 1, "enter": "pop", "talk": "mom" }] }
+    ] },
+    { "line": "c01-2", "shots": [
+      { "in": "zoom", "bg": "full/family-hall", "cam": { "from": [0.3, 0.42, 1.6], "to": [0.3, 0.4, 1.8] }, "freeze": 0.55, "tag": { "t": "내모남불 후보", "sub": "자칭 매너왕", "x": 0.72, "y": 0.25 }, "fx": ["kira"], "sfx": [{ "name": "boing", "at": 0.55 }] }
+    ] },
+    { "line": "c01-3", "shots": [
+      { "in": "slam", "bg": "#15303A", "text": [{ "t": "있습니다.", "y": 0.38, "size": 130, "style": "pop" }, { "t": "이 아파트에만 300명", "y": 0.6, "size": 120, "color": "#FFD23F", "style": "stamp", "at": 0.45 }], "sfx": [{ "name": "stamp", "at": 0.45 }] }
+    ] },
+
+    { "line": "c02-0", "shots": [
+      { "in": "wipe", "bg": "burst:#15303A:#22485A", "text": [{ "t": "ROUND 1", "y": 0.38, "size": 230, "color": "#FFD23F", "style": "slam" }, { "t": "닫힘 버튼", "y": 0.66, "size": 150, "style": "pop", "at": 0.45 }], "fx": ["impact"], "sfx": [{ "name": "pang" }] }
+    ] },
+    { "line": "c02-1", "shots": [
+      { "in": "whip-l", "bg": "dots:#7FC8F8:#5AB0E8", "cast": [{ "art": "common/cutin/kid-doubt", "x": 0.5, "h": 1, "enter": "pop", "talk": "kid" }], "sfx": [{ "name": "pop" }] }
+    ] },
+    { "line": "c02-2", "shots": [
+      { "in": "zoom", "bg": "stripes:#FFD23F:#FFE680", "cast": [{ "art": "common/cutin/dad-proud", "x": 0.4, "h": 1.02, "enter": "pop", "talk": "dad" }], "text": [{ "t": "나 → 상황 탓", "x": 0.78, "y": 0.4, "size": 100, "style": "pop", "at": 0.4 }], "fx": ["aura"] }
+    ] },
+    { "line": "c02-3", "shots": [
+      { "in": "whip-r", "bg": "full/door-closing", "fx": ["imagine"], "cam": { "from": [0.5, 0.45, 1.1], "to": [0.5, 0.45, 1.25] }, "text": [{ "t": "남 → 성격 탓", "x": 0.5, "y": 0.18, "size": 110, "color": "#E63946", "style": "stamp", "at": 0.35 }], "sfx": [{ "name": "stamp", "at": 0.35 }] }
+    ] },
+    { "line": "c02-4", "count": 2, "countAt": 0.3, "shots": [
+      { "in": "slam", "bg": "burst:#FFD23F:#FFB627", "text": [{ "t": "내모남불, 둘.", "y": 0.45, "size": 170, "style": "slam" }], "fx": ["impact"], "sfx": [{ "name": "buzz" }] }
+    ] },
+    { "line": "c02a-0", "shots": [
+      { "in": "glitch", "bg": "#F6EEDF", "text": [{ "t": "남이 하면", "x": 0.27, "y": 0.24, "size": 100 }, { "t": "성격 탓", "x": 0.27, "y": 0.45, "size": 150, "color": "#E63946", "style": "slam", "at": 0.2 }, { "t": "내가 하면", "x": 0.73, "y": 0.24, "size": 100 }, { "t": "상황 탓", "x": 0.73, "y": 0.45, "size": 150, "color": "#2A9D8F", "style": "slam", "at": 0.45 }, { "t": "행위자-관찰자 편향", "y": 0.66, "size": 90, "style": "stamp", "at": 0.7 }], "note": "※ 사회심리학 용어 (Jones & Nisbett, 1971)", "sfx": [{ "name": "ding", "at": 0.2 }, { "name": "stamp", "at": 0.7 }] }
+    ] },
+    { "line": "c02a-1", "shots": [
+      { "in": "slam", "bg": "dots:#7FC8F8:#5AB0E8", "cast": [{ "art": "common/cutin/kid-ask", "x": 0.5, "h": 1, "enter": "pop", "talk": "kid" }], "text": [{ "t": "?", "x": 0.78, "y": 0.3, "size": 220, "style": "shake" }], "sfx": [{ "name": "boing" }] }
+    ] },
+    { "line": "c02b-0", "shots": [
+      { "in": "smash", "bg": "bg/elevator-inside", "cam": { "from": [0.5, 0.5, 1.15], "to": [0.5, 0.5, 1.25] }, "cast": [{ "art": "manager/normal", "x": 0.3, "h": 0.92, "talk": "aptmgr" }], "fx": ["impact", "gaan"], "sfx": [{ "name": "crash" }] },
+      { "at": 0.45, "in": "slam", "bg": "#F6EEDF", "cast": [{ "art": "prop/finger-mash", "x": 0.3, "h": 0.8, "enter": "pop" }], "text": [{ "t": "× 10", "x": 0.6, "y": 0.4, "size": 150, "style": "pop" }, { "t": "= 1", "x": 0.82, "y": 0.4, "size": 170, "color": "#E63946", "style": "stamp", "at": 0.5 }], "sfx": [{ "name": "stamp", "at": 0.5 }] }
+    ] },
+    { "line": "c02b-1", "shots": [
+      { "in": "slam", "bg": "burst:#15303A:#22485A", "cast": [{ "art": "common/cutin/dad-shock", "x": 0.5, "h": 1.02, "enter": "pop", "talk": "dad" }], "cam": { "punch": [2, 8, 14] }, "fx": ["gaan", "focus"], "sfx": [{ "name": "dudung" }] }
+    ] },
+    { "line": "c02c-0", "shots": [
+      { "in": "whip-u", "bg": "full/rocket-imagine", "fx": ["imagine", "lines", "shake"], "cam": { "from": [0.5, 0.65, 1.1], "to": [0.5, 0.3, 1.25], "punch": [10] }, "sfx": [{ "name": "whoosh" }, { "name": "dudung", "at": 10 }] }
+    ] },
+    { "line": "c02c-1", "shots": [
+      { "in": "glitch", "bg": "full/rocket-imagine", "fx": ["mono"], "cam": { "from": [0.5, 0.4, 1.2], "to": [0.5, 0.4, 1.2] }, "mark": { "kind": "x", "at": 0.1 }, "sfx": [{ "name": "buzz", "at": 0.1 }] },
+      { "at": 0.35, "in": "slam", "bg": "#F6EEDF", "cast": [{ "art": "cutin/manager-flat", "x": 0.5, "h": 1, "enter": "r", "talk": "aptmgr" }], "fx": ["gaan"] }
+    ] },
+    { "line": "c02d-0", "shots": [
+      { "in": "slam", "bg": "#F6EEDF", "cast": [{ "art": "manager/normal", "x": 0.86, "h": 0.86, "enter": "r", "talk": "aptmgr" }], "text": [{ "t": "닫힘 ✕", "x": 0.25, "y": 0.22, "size": 130, "color": "#E63946", "style": "stamp" }, { "t": "열림 ○", "x": 0.55, "y": 0.22, "size": 130, "color": "#2A9D8F", "style": "stamp", "at": 0.25 }, { "t": "뒤에 타는 사람을 위해", "x": 0.4, "y": 0.44, "size": 90, "style": "pop", "at": 0.45 }, { "t": "열림 버튼", "x": 0.4, "y": 0.62, "size": 150, "color": "#FFD23F", "style": "slam", "at": 0.6 }], "note": "※ 승강기 안전 이용 수칙 (지자체 안내)", "sfx": [{ "name": "stamp" }, { "name": "ding", "at": 0.6 }] }
+    ] },
+    { "line": "c02d-1", "shots": [
+      { "in": "smash", "bg": "burst:#15303A:#22485A", "cast": [{ "art": "common/cutin/dad-shock", "x": 0.5, "h": 1.02, "talk": "dad" }], "cam": { "punch": [2] }, "fx": ["impact"], "sfx": [{ "name": "scratch" }] }
+    ] },
+
+    { "line": "c03-0", "shots": [
+      { "in": "glitch", "bg": "burst:#15303A:#22485A", "text": [{ "t": "ROUND 2", "y": 0.38, "size": 230, "color": "#FFD23F", "style": "slam" }, { "t": "층 버튼", "y": 0.66, "size": 150, "style": "pop", "at": 0.45 }], "fx": ["impact"], "sfx": [{ "name": "pang" }] }
+    ] },
+    { "line": "c03-1", "shots": [
+      { "in": "zoom", "bg": "#15303A", "cast": [{ "art": "prop/panel-all-lit", "x": 0.5, "h": 0.95, "enter": "pop" }], "text": [{ "t": "14", "x": 0.2, "y": 0.3, "size": 140, "color": "#FF9F1C", "style": "pop" }, { "t": "13", "x": 0.8, "y": 0.45, "size": 140, "color": "#FF9F1C", "style": "pop", "at": 0.2 }, { "t": "12", "x": 0.2, "y": 0.65, "size": 140, "color": "#FF9F1C", "style": "pop", "at": 0.4 }], "fx": ["focus", "kira"], "sfx": [{ "name": "ding" }, { "name": "ding", "at": 0.2 }, { "name": "ding", "at": 0.4 }] },
+      { "at": 0.6, "in": "whip-r", "bg": "full/neighbor-buttons", "cam": { "from": [0.6, 0.5, 1.1], "to": [0.4, 0.4, 1.5] }, "fx": ["lines"] }
+    ] },
+    { "line": "c03-2", "shots": [
+      { "in": "slam", "bg": "burst:#E63946:#B5202D", "cast": [{ "art": "cutin/dad-rage", "x": 0.36, "h": 1.02, "enter": "pop", "talk": "dad" }], "text": [{ "t": "부모는?!", "x": 0.76, "y": 0.45, "size": 170, "color": "#FFD23F", "style": "slam", "at": 0.3 }], "cam": { "punch": [4] }, "fx": ["impact", "aura", "shake"], "sfx": [{ "name": "buzz", "at": 0.3 }] }
+    ] },
+    { "line": "c03a-0", "shots": [
+      { "in": "wipe", "bg": "#15303A", "text": [{ "t": "그날 오후.", "y": 0.5, "size": 130, "style": "type" }], "sfx": [{ "name": "tick" }] }
+    ] },
+    { "line": "c03a-1", "shots": [
+      { "in": "whip-l", "bg": "full/dad-wrong-floor", "cam": { "from": [0.6, 0.45, 1.3], "to": [0.68, 0.45, 1.45] } },
+      { "at": 0.45, "bg": "full/dad-wrong-floor", "cam": { "from": [0.22, 0.48, 2], "to": [0.22, 0.48, 2.3], "ease": "snap" }, "text": [{ "t": "5 · 6", "x": 0.5, "y": 0.2, "size": 150, "color": "#FF9F1C", "style": "stamp" }], "fx": ["focus"], "sfx": [{ "name": "scratch" }] }
+    ] },
+    { "line": "c03a-2", "shots": [
+      { "in": "zoom", "bg": "stripes:#FFD23F:#FFE680", "cast": [{ "art": "cutin/dad-whistle", "x": 0.5, "h": 1.02, "enter": "pop", "talk": "dad" }], "freeze": 0.7, "tag": { "t": "내가 하면", "sub": "실수지~", "x": 0.8, "y": 0.25 }, "fx": ["kira", "aura"], "sfx": [{ "name": "boing", "at": 0.7 }] }
+    ] },
+    { "line": "c03a-3", "count": 3, "countAt": 0.3, "shots": [
+      { "in": "slam", "bg": "burst:#FFD23F:#FFB627", "text": [{ "t": "내모남불, 셋.", "y": 0.45, "size": 170, "style": "slam" }], "fx": ["impact"], "sfx": [{ "name": "buzz" }] }
+    ] },
+    { "line": "c03b-0", "shots": [
+      { "in": "smash", "bg": "bg/elevator-inside", "cam": { "from": [0.5, 0.5, 1.15], "to": [0.5, 0.5, 1.25] }, "cast": [{ "art": "manager/normal", "x": 0.3, "h": 0.92, "talk": "aptmgr" }], "text": [{ "t": "…또 계셨다", "x": 0.72, "y": 0.2, "size": 90, "style": "pop", "at": 0.15 }], "fx": ["gaan"], "sfx": [{ "name": "crash" }] },
+      { "at": 0.5, "in": "slam", "bg": "#F6EEDF", "cast": [{ "art": "cutin/manager-flat", "x": 0.86, "h": 0.8, "enter": "r", "talk": "aptmgr" }, { "art": "prop/panel-all-lit", "x": 0.14, "h": 0.8, "enter": "pop" }], "text": [{ "t": "누른 층은", "x": 0.48, "y": 0.3, "size": 110 }, { "t": "다 선다", "x": 0.48, "y": 0.52, "size": 170, "color": "#FFD23F", "style": "slam", "at": 0.15 }, { "t": "버튼으로 장난치지 않기", "x": 0.48, "y": 0.74, "size": 80, "style": "stamp", "at": 0.5 }], "note": "※ 승강기 안전 이용 수칙 (지자체 안내)", "sfx": [{ "name": "ding", "at": 0.15 }, { "name": "stamp", "at": 0.5 }] }
+    ] },
+    { "line": "c03b-1", "shots": [
+      { "in": "whip-r", "bg": "dots:#C9B6E4:#B39DDB", "cast": [{ "art": "common/cutin/mom-sigh", "x": 0.5, "h": 1, "enter": "pop", "talk": "mom" }], "text": [{ "t": "그 부모 = 당신", "x": 0.5, "y": 0.15, "size": 110, "color": "#E63946", "style": "stamp", "at": 0.6 }], "fx": ["gaan"], "sfx": [{ "name": "stamp", "at": 0.6 }] }
+    ] },
+
+    { "line": "c04-0", "shots": [
+      { "in": "zoom", "bg": "burst:#15303A:#22485A", "text": [{ "t": "ROUND 3", "y": 0.38, "size": 230, "color": "#FFD23F", "style": "slam" }, { "t": "통화", "y": 0.66, "size": 150, "style": "pop", "at": 0.45 }], "fx": ["impact"], "sfx": [{ "name": "pang" }] }
+    ] },
+    { "line": "c04-1", "shots": [
+      { "in": "whip-l", "bg": "full/loud-phone", "cam": { "from": [0.75, 0.4, 1.5], "to": [0.75, 0.4, 1.7] }, "text": [{ "t": "어어! 그래그래!!", "x": 0.5, "y": 0.15, "size": 100, "color": "#E63946", "style": "shake" }], "fx": ["shake", "lines"] },
+      { "at": 0.45, "bg": "full/loud-phone", "cam": { "from": [0.25, 0.4, 1.6], "to": [0.25, 0.38, 1.8], "ease": "snap" }, "text": [{ "t": "민폐야!", "x": 0.6, "y": 0.2, "size": 140, "color": "#FFD23F", "style": "slam", "at": 0.2 }], "fx": ["focus"], "sfx": [{ "name": "buzz", "at": 0.2 }] }
+    ] },
+    { "line": "c04-2", "shots": [
+      { "in": "slam", "bg": "dots:#7FC8F8:#5AB0E8", "cast": [{ "art": "common/cutin/kid-doubt", "x": 0.5, "h": 1, "enter": "pop", "talk": "kid" }], "sfx": [{ "name": "pop" }] }
+    ] },
+    { "line": "c04a-0", "shots": [
+      { "in": "whip-r", "bg": "full/dad-speaker", "cam": { "from": [0.45, 0.5, 1.25], "to": [0.45, 0.45, 1.5] }, "text": [{ "t": "📞 스피커", "x": 0.5, "y": 0.88, "size": 90, "style": "pop" }], "fx": ["shake", "focus"], "sfx": [{ "name": "beep" }] }
+    ] },
+    { "line": "c04a-1", "shots": [
+      { "in": "zoom", "bg": "full/dad-speaker", "cam": { "from": [0.15, 0.6, 1.8], "to": [0.15, 0.6, 2], "ease": "snap" }, "fx": ["shake"] },
+      { "at": 0.4, "in": "slam", "bg": "stripes:#FFD23F:#FFE680", "cast": [{ "art": "cutin/dad-whistle", "x": 0.5, "h": 1.02, "enter": "pop", "talk": "dad" }], "freeze": 0.75, "tag": { "t": "내가 하면", "sub": "급한 전화~", "x": 0.8, "y": 0.25 }, "fx": ["aura", "kira"], "sfx": [{ "name": "boing", "at": 0.75 }] }
+    ] },
+    { "line": "c04a-2", "count": 4, "countAt": 0.3, "shots": [
+      { "in": "slam", "bg": "burst:#FFD23F:#FFB627", "text": [{ "t": "내모남불, 넷.", "y": 0.45, "size": 170, "style": "slam" }], "fx": ["impact"], "sfx": [{ "name": "buzz" }] }
+    ] },
+    { "line": "c04b-0", "shots": [
+      { "in": "smash", "bg": "full/dad-speaker", "cam": { "from": [0.77, 0.45, 1.8], "to": [0.77, 0.42, 2.2], "ease": "snap" }, "fx": ["gaan", "focus"], "sfx": [{ "name": "crash" }] }
+    ] },
+    { "line": "c04b-1", "shots": [
+      { "in": "slam", "bg": "#F6EEDF", "cast": [{ "art": "manager/normal", "x": 0.86, "h": 0.86, "enter": "r", "talk": "aptmgr" }], "text": [{ "t": "승강기 안에서는 조용히", "x": 0.4, "y": 0.3, "size": 110, "color": "#FFD23F", "style": "slam" }, { "t": "통화는 내려서", "x": 0.4, "y": 0.58, "size": 140, "style": "stamp", "at": 0.4 }], "note": "※ 수칙: 승강기 안에서 떠들지 맙시다 (지자체 안내) · 통화는 매너 권유", "sfx": [{ "name": "ding" }, { "name": "stamp", "at": 0.4 }] }
+    ] },
+    { "line": "c04b-2", "pad": 30, "shots": [
+      { "in": "smash", "bg": "burst:#15303A:#22485A", "cast": [{ "art": "common/cutin/dad-sig-1", "x": 0.5, "h": 1.02, "talk": "dad" }], "fx": ["gaan"] },
+      { "at": 0.33, "bg": "burst:#15303A:#22485A", "cast": [{ "art": "common/cutin/dad-sig-2", "x": 0.5, "h": 1.02, "talk": "dad" }], "fx": ["gaan"] },
+      { "at": 0.66, "bg": "burst:#15303A:#22485A", "cast": [{ "art": "common/cutin/dad-sig-3", "x": 0.5, "h": 1.02, "talk": "dad" }], "fx": ["gaan"], "sfx": [{ "name": "dudung" }] }
+    ] },
+
+    { "line": "c05-0", "pad": 8, "calm": true, "shots": [
+      { "in": "iris", "bg": "full/bench-dusk", "cam": { "from": [0.5, 0.5, 1.02], "to": [0.47, 0.5, 1.12] } }
+    ] },
+    { "line": "c05-1", "pad": 6, "calm": true, "shots": [
+      { "bg": "full/bench-dusk", "cam": { "from": [0.4, 0.5, 1.5], "to": [0.4, 0.49, 1.62] } }
+    ] },
+    { "line": "c05-2", "pad": 6, "calm": true, "shots": [
+      { "bg": "full/bench-dusk", "cam": { "from": [0.62, 0.42, 1.5], "to": [0.62, 0.42, 1.6] } }
+    ] },
+    { "line": "c05-3", "pad": 10, "calm": true, "shots": [
+      { "bg": "full/bench-dusk", "cam": { "from": [0.5, 0.6, 1.6], "to": [0.5, 0.52, 1.25] } }
+    ] },
+
+    { "line": "c06-0", "shots": [
+      { "in": "wipe", "bg": "#15303A", "text": [{ "t": "다음 날 아침", "y": 0.5, "size": 120, "style": "type" }], "sfx": [{ "name": "tick" }] },
+      { "at": 0.35, "in": "smash", "bg": "burst:#15303A:#22485A", "cast": [{ "art": "prop/finger-mash", "x": 0.5, "h": 0.95, "enter": "pop" }], "fx": ["focus", "shake"], "sfx": [{ "name": "tick" }, { "name": "tick", "at": 0.15 }, { "name": "tick", "at": 0.3 }] }
+    ] },
+    { "line": "c06-1", "shots": [
+      { "in": "whip-r", "bg": "dots:#7FC8F8:#5AB0E8", "cast": [{ "art": "common/cutin/kid-ask", "x": 0.5, "h": 1, "enter": "pop", "talk": "kid" }], "fx": ["shake"] }
+    ] },
+    { "line": "c06a-0", "shots": [
+      { "in": "zoom", "bg": "full/mom-door", "cam": { "from": [0.5, 0.45, 1.05], "to": [0.5, 0.4, 1.4] }, "fx": ["slowmo", "lines"] },
+      { "at": 0.45, "in": "slam", "bg": "dots:#C9B6E4:#B39DDB", "cast": [{ "art": "common/cutin/mom-sig-scream", "x": 0.5, "h": 1.02, "enter": "pop", "talk": "mom" }], "fx": ["shake", "gaan", "impact"], "sfx": [{ "name": "crash" }] }
+    ] },
+    { "line": "c06a-1", "count": 5, "countAt": 0.8, "shots": [
+      { "in": "wipe", "bg": "#15303A", "text": [{ "t": "내모남불이 아닙니다", "y": 0.32, "size": 120, "style": "pop" }, { "t": "남이 아니라 아내", "y": 0.52, "size": 130, "color": "#FFD23F", "style": "slam", "at": 0.35 }, { "t": "그냥 오답.", "y": 0.74, "size": 170, "style": "stamp", "at": 0.78 }], "mark": { "kind": "x", "at": 0.8 }, "fx": ["impact"], "sfx": [{ "name": "buzz", "at": 0.78 }] }
+    ] },
+    { "line": "c06b-0", "shots": [
+      { "in": "smash", "bg": "bg/elevator-inside", "cam": { "from": [0.4, 0.5, 1.2], "to": [0.35, 0.5, 1.35] }, "cast": [{ "art": "manager/radio", "x": 0.35, "h": 0.92, "talk": "aptmgr" }], "text": [{ "t": "15층 · 사모님 1명 낙오", "style": "news", "at": 0.3 }], "fx": ["gaan"], "sfx": [{ "name": "beep" }] }
+    ] },
+    { "line": "c06b-1", "shots": [
+      { "in": "zoom", "bg": "full/family-hall", "cam": { "from": [0.33, 0.4, 1.7], "to": [0.33, 0.36, 2.1], "ease": "snap" }, "text": [{ "t": "역시, 모답맨.", "x": 0.5, "y": 0.8, "size": 120, "color": "#FFD23F", "style": "slam", "at": 0.35 }], "fx": ["focus", "kira"], "sfx": [{ "name": "stamp", "at": 0.35 }] }
+    ] },
+    { "hold": 110, "shots": [
+      { "in": "slam", "bg": "burst:#FFD23F:#FFB627", "text": [{ "t": "뛰어오는 사람도", "y": 0.3, "size": 130, "style": "slam" }, { "t": "누군가의 아빠", "y": 0.52, "size": 180, "color": "#E63946", "style": "pop", "at": 14 }, { "t": "다음 편 · 버스편", "y": 0.72, "size": 80, "style": "stamp", "at": 40 }], "note": "※ 일반 설명입니다. 승강기마다 다를 수 있어요.", "sfx": [{ "name": "stinger" }] }
+    ] }
+  ]
+}

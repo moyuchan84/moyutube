@@ -1,0 +1,290 @@
+{
+  "title": "내모남불 ④ 부동산편 · 호가 · 호재 · 영끌",
+  "cast": {
+    "realtor": "the realtor: a Korean woman in her late fifties who has run the neighborhood real-estate office for thirty years, short permed dark-brown hair with a few gray streaks, small reading glasses perched low on her nose on a thin beaded glasses chain, a round calm face; wearing a soft beige cardigan over a lavender blouse, a blank name badge with absolutely no writing; absolutely NO text, NO letters and NO logos anywhere; perfectly deadpan, unhurried and polite",
+    "buddy": "the dad's old friend: a Korean man in his mid-forties, round face, short spiky black hair, thick black-framed glasses, a light stubble, slightly chubby; wearing a wrinkled mint-green hoodie; absolutely NO text, NO letters and NO logos anywhere; comically dramatic"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/panic",
+    "common/dad/proud",
+    "common/kid/normal",
+    "common/mom/normal",
+    "common/cutin/dad-shock",
+    "common/cutin/dad-proud",
+    "common/cutin/dad-sig-1",
+    "common/cutin/dad-sig-2",
+    "common/cutin/dad-sig-3",
+    "common/cutin/kid-ask",
+    "common/cutin/kid-doubt",
+    "common/cutin/mom-smirk",
+    "common/cutin/mom-sigh"
+  ],
+  "items": [
+    {
+      "id": "realtor/normal",
+      "kind": "char",
+      "who": "realtor",
+      "ref": null,
+      "title": "공인중개사 사장님 — 기본",
+      "cuts": "c00a, c01a, c02d, c03b, c03e, c04d, c07, c07b",
+      "note": "사장님의 기준 그림. 이것부터 뽑아 확정한 뒤 나머지 사장님 그림에 ②로 첨부한다.",
+      "motion": "숨 쉬듯 살짝 움직이고, 말할 때 안경 너머로 눈만 든다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing upright with her hands folded calmly in front of her, looking over the top of her reading glasses with a perfectly flat, unbothered face and a tiny polite smile."
+    },
+    {
+      "id": "realtor/stamp",
+      "kind": "char",
+      "who": "realtor",
+      "title": "사장님 — 계약서와 도장 인주를 내밀며 \"여기 찍으시면 됩니다\"",
+      "cuts": "c00a",
+      "motion": "인주를 앞으로 쓱.",
+      "desc": "3/4 view turned slightly to the RIGHT. Leaning forward a little, sliding a blank sheet of paper forward with one hand and holding out a small round red ink pad with the other, pointing politely at the bottom of the paper, a calm professional face. The paper is completely blank."
+    },
+    {
+      "id": "realtor/calculator",
+      "kind": "char",
+      "who": "realtor",
+      "title": "사장님 — 계산기를 탁탁 두드리며 정색",
+      "cuts": "c01a, c07, c07b",
+      "motion": "손가락이 계산기를 탁탁, 눈은 아빠를 본다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Holding a big old-fashioned desk calculator in one hand and tapping it with one finger of the other hand, eyes raised over her reading glasses toward the viewer, perfectly deadpan. The calculator display is blank."
+    },
+    {
+      "id": "cutin/realtor-flat",
+      "kind": "cutin",
+      "who": "realtor",
+      "ref": "realtor/normal",
+      "title": "사장님 정색 (컷인)",
+      "cuts": "c02d, c03b, c03e, c04d, c07b",
+      "motion": "화면 옆에서 튀어나와 흔들린다.",
+      "desc": "Facing slightly to the RIGHT. Perfectly deadpan: pushing her reading glasses up her nose with one finger, half-closed unimpressed eyes, a small flat mouth, a cold white anime glint flashing on the lenses."
+    },
+    {
+      "id": "buddy/normal",
+      "kind": "char",
+      "who": "buddy",
+      "ref": null,
+      "title": "아빠 친구 — 기본 (3편 그림 그대로)",
+      "cuts": "c04",
+      "note": "3편(nm03) 의 buddy/normal.png 를 복사해 왔다. 다시 뽑지 않는다.",
+      "motion": "숨 쉬듯 살짝.",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing with a cheerful, slightly goofy grin, one hand scratching the back of his head."
+    },
+    {
+      "id": "buddy/call-key",
+      "kind": "char",
+      "who": "buddy",
+      "title": "아빠 친구 — 영상 통화 셀카, 새 집 열쇠를 들고 비장하게 \"영끌로\"",
+      "cuts": "c04, c04a",
+      "note": "영상에서 휴대폰 화면 틀(코드) 안에 들어간다.",
+      "motion": "열쇠를 흔들며 들썩, 식은땀.",
+      "desc": "Close selfie-angle bust shot, looking straight at the viewer as if into a phone camera on a video call. Holding up a single shiny new house key next to his face with a proud but shaky grin, one eye twitching, big beads of nervous sweat on his forehead, his other hand clutching a thick blank stack of paper against his chest. Plain soft background."
+    },
+    {
+      "id": "bg/realtor-window",
+      "kind": "bg",
+      "title": "배경 — 부동산 사무소 바깥 유리창 (매물 시세표)",
+      "cuts": "c00",
+      "note": "시세표 종이는 비워 두고 ▲ · ○억 은 코드로 얹는다.",
+      "motion": "유리창 쪽으로 휙 당겨진다.",
+      "desc": "The front of a small neighborhood real-estate office on the ground floor of an apartment shopping arcade, seen straight-on on a bright morning: a big glass window covered edge to edge with rows of small blank white paper listing sheets taped in a grid, a glass door, a potted plant by the door, a light sidewalk in front. No people, absolutely no text, no numbers, no logos, no signs."
+    },
+    {
+      "id": "bg/realtor-office",
+      "kind": "bg",
+      "title": "배경 — 동네 부동산 사무소 안",
+      "cuts": "c00a, c01, c02, c04, c07",
+      "note": "주 무대. 인물은 초록 배경 그림을 위에 얹는다.",
+      "motion": "대사마다 인물 쪽으로 카메라가 옮겨 간다.",
+      "desc": "Inside a small, cozy neighborhood real-estate office, seen straight-on like a sitcom set: a wooden desk with a desktop monitor and a desk calculator in the back, a big blank framed map board on the wall (no writing), a low leather sofa and a small glass coffee table with paper cups in front, a water dispenser, the glass window with blank listing sheets taped on it seen from inside, warm morning light. No people, absolutely no text, no numbers, no logos."
+    },
+    {
+      "id": "bg/complex-gate",
+      "kind": "bg",
+      "title": "배경 — 아파트 단지 정문 (빈 현수막)",
+      "cuts": "c03, c03a, c03b, c03c, c03d",
+      "note": "현수막은 비워 두고 글자(\"모라구역 유치 확정!\", \"결사반대\")는 코드로 얹는다.",
+      "motion": "현수막 쪽으로 쭉 올라간다.",
+      "desc": "The main gate of a big Korean apartment complex on a sunny afternoon, seen straight-on: tall pale apartment towers in the back, a gate arch with a little guard booth, neat trees, and two long blank white fabric banners hanging tied between the trees and the fence. No people, absolutely no text, no numbers, no logos on the banners or buildings."
+    },
+    {
+      "id": "bg/playground-dusk",
+      "kind": "bg",
+      "title": "배경 — 해질녘 단지 놀이터",
+      "cuts": "c06",
+      "motion": "아주 천천히 당겨진다.",
+      "desc": "A quiet apartment-complex playground at golden dusk: a small slide and a swing set, a wooden bench under a tree, soft orange sky, warm lit windows of the apartment towers glowing in soft focus behind. No people, no text, no signs, no logos."
+    },
+    {
+      "id": "full/window-bubble",
+      "kind": "full",
+      "who": "dad",
+      "people": [
+        "kid",
+        "mom"
+      ],
+      "title": "콜드 오픈 — 시세표 유리창 앞에서 \"완전 거품이네\" 하는 아빠",
+      "cuts": "c00",
+      "motion": "유리창 → 아빠 얼굴로 휙.",
+      "desc": "In front of the glass window of a small real-estate office covered with blank paper listing sheets: the dad points at the window with one hand on his hip, nose in the air, a sour, judgmental frown, a big cartoon soap bubble floating up from the window beside his finger. The kid stands next to him looking at the window curiously; the mom stands a step behind with arms folded, unimpressed. No text, no numbers."
+    },
+    {
+      "id": "full/stamp-slam",
+      "kind": "full",
+      "who": "dad",
+      "people": [
+        "mom",
+        "realtor"
+      ],
+      "title": "콜드 오픈 — 계약서에 도장을 쾅 찍는 아빠",
+      "cuts": "c00a",
+      "motion": "도장이 쾅 내려오며 화면이 흔들린다.",
+      "desc": "Inside a small real-estate office at a wooden desk: the dad slams a small red name stamp down onto a blank sheet of paper with a huge triumphant open-mouthed grin, impact lines bursting around the stamp, sparkles in his eyes. Beside him the mom slaps a hand to her forehead in disbelief; across the desk the realtor sits calmly holding the red ink pad, completely deadpan. The paper is completely blank. No text."
+    },
+    {
+      "id": "cutin/dad-sparkle",
+      "kind": "cutin",
+      "who": "dad",
+      "attach": [
+        {
+          "path": "content/_common/art/cutin/dad-proud.png",
+          "label": "아빠 컷인 표정 참고"
+        }
+      ],
+      "title": "아빠 컷인 — 휴대폰을 보며 눈이 반짝 \"우리 집도 이 가격이야\"",
+      "cuts": "c02b",
+      "motion": "크래시 줌, 눈에서 별이 튄다.",
+      "desc": "Facing the viewer. Holding his phone close to his face with both hands, eyes turned into huge sparkling stars, a wide drooling grin, cheeks flushed pink, tiny hearts and sparkles popping around his head. The phone back faces the viewer, no screen visible."
+    },
+    {
+      "id": "full/station-imagine",
+      "kind": "full",
+      "who": "dad",
+      "title": "아빠의 상상 — 집 앞에 역 · 백화점이 솟고 금빛이 된 우리 집",
+      "cuts": "c03a",
+      "note": "영상에서 분홍 '아빠의 상상' 효과가 얹힌다. 사장님 대사에 금이 가며 깨진다.",
+      "motion": "건물들이 아래에서 뿅뿅 솟아오른다.",
+      "desc": "A silly imagined scene in pastel pink and gold light: the dad in a shiny gold suit and sunglasses stands on the balcony of a glowing golden apartment tower, arms spread wide in triumph. Around the tower, a subway station entrance, a giant shopping mall and a park with fountains are popping up out of the ground like toys, with sparkles and confetti everywhere. No text, no numbers, no logos, no signs."
+    },
+    {
+      "id": "full/banner-oppose",
+      "kind": "full",
+      "who": "dad",
+      "title": "ROUND 2 — 머리띠를 두르고 주먹을 든 아빠 \"결사반대!\"",
+      "cuts": "c03d",
+      "note": "머리띠 · 현수막은 비워 둔다. \"결사반대\" 글자는 코드로 얹는다.",
+      "motion": "주먹이 쿵 올라가며 집중선.",
+      "desc": "At the gate of an apartment complex with a blank white banner behind: the dad wears a plain blank white headband tied tightly around his forehead, one fist thrust high in the air, mouth wide open in a furious shout, veins popping on his temple, flames of passion behind him, comic speed lines. Only moments ago he was calm, so the mood is ridiculous. The headband and banner are completely blank. No text."
+    },
+    {
+      "id": "cutin/dad-interest",
+      "kind": "cutin",
+      "who": "dad",
+      "attach": [
+        {
+          "path": "content/_common/art/cutin/dad-shock.png",
+          "label": "아빠 컷인 표정 참고"
+        }
+      ],
+      "title": "아빠 컷인 — 이자 알림을 보고 창백, 지갑에서 돈이 날개 달고 날아감",
+      "cuts": "c04c",
+      "motion": "알림이 띵, 얼굴이 하얗게 질린다.",
+      "desc": "Facing the viewer. His face drained pale white with gloom lines, eyes bulging, jaw dropped, a single sweat drop, holding an open wallet in one hand as a few banknotes with little cartoon wings fly away out of it, a small phone in his other hand with a blank glowing notification bubble. No text, no numbers on the money."
+    },
+    {
+      "id": "cutin/dad-sour",
+      "kind": "cutin",
+      "who": "dad",
+      "attach": [
+        {
+          "path": "content/_common/art/cutin/dad-proud.png",
+          "label": "아빠 컷인 표정 참고"
+        }
+      ],
+      "title": "아빠 컷인 — 입을 삐죽, 억지 콧방귀 \"거품이야, 거품\"",
+      "cuts": "c07a",
+      "motion": "고개를 휙 돌리며 콧바람.",
+      "desc": "Facing slightly to the RIGHT. Turning his head away with his nose in the air and eyes squeezed shut, lips pursed into a sour pout, cheeks puffed, a little puff of air snorting out of his nose, a tiny bead of sweat betraying that he is hurt. Sore loser energy."
+    },
+    {
+      "id": "full/playground-dusk",
+      "kind": "full",
+      "who": "kid",
+      "people": [
+        "dad"
+      ],
+      "title": "아이 눈높이 — 해질녘 놀이터 벤치의 아이와 아빠",
+      "cuts": "c06",
+      "note": "농담 없는 박자. 따뜻하고 조용하게.",
+      "motion": "거의 움직이지 않고 아주 천천히 당겨진다.",
+      "desc": "A quiet warm moment in golden dusk light: on a wooden bench at an apartment playground, the kid sits next to the dad swinging their legs, looking up at him with a serious, gentle face; the dad, his phone resting face-down on his knee, looks down at the kid with a soft, thoughtful, slightly embarrassed smile. Calm, sincere, no comic effects, no text."
+    },
+    {
+      "id": "prop/phone-up",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 빨간 위 화살표 그래프 휴대폰 (3편 그림 그대로)",
+      "cuts": "c02b, c07",
+      "note": "3편(nm03) 의 prop/phone-up.png 를 복사해 왔다. 다시 뽑지 않는다.",
+      "motion": "화살표가 쭉 올라간다 (코드 효과).",
+      "desc": "A smartphone seen straight-on, its screen showing a simple bright red zigzag line graph climbing up to a big glossy red upward arrow, little sparkles around it. No numbers, no letters, no logos, no app icons."
+    },
+    {
+      "id": "prop/listing-sheet",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 매물 시세표 한 장",
+      "cuts": "c00, c02a",
+      "note": "\"○억\" · ▲ 는 코드로 얹는다. 실제 가격은 절대 넣지 않는다.",
+      "motion": "툭 붙었다가 살짝 펄럭.",
+      "desc": "A single small white paper real-estate listing sheet taped to glass with two strips of clear tape at the top corners, a simple line drawing of an apartment building icon in the top left, and empty ruled rows below. Completely blank, no numbers, no letters, no logos."
+    },
+    {
+      "id": "prop/station",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 지하철역 입구 (호재)",
+      "cuts": "c03, c03a",
+      "motion": "땅에서 뿅 솟아오른다.",
+      "desc": "A cute chunky subway station entrance with a glass canopy and stairs leading down, a shiny new look with a few sparkles around it. No letters, no numbers, no logos, no line colors with names."
+    },
+    {
+      "id": "prop/incinerator",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 소각장 (굴뚝 건물)",
+      "cuts": "c03c, c03d, c03e",
+      "note": "웃음은 아빠의 이중 잣대에만. 시설 자체를 더럽거나 무섭게 그리지 않는다.",
+      "motion": "툭 튀어나와 굴뚝에서 하얀 김이 폴폴.",
+      "desc": "A clean, modern, friendly-looking waste incineration plant building: a boxy pale gray building with a single tall slim chimney releasing a soft puff of white steam, a few small trees in front. Neutral and tidy, not dirty or scary. No letters, no numbers, no logos."
+    },
+    {
+      "id": "prop/big-complex",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 대단지 아파트 (속사포 · 세대수)",
+      "cuts": "c05",
+      "motion": "동이 하나씩 뿅뿅 늘어난다 (코드 효과).",
+      "desc": "A huge cluster of many identical pale apartment towers packed tightly together, seen from a slight bird's-eye angle, like a cute toy model. No letters, no numbers, no logos."
+    },
+    {
+      "id": "prop/house-key",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 새 집 열쇠 (전세 · 집주인)",
+      "cuts": "c05",
+      "motion": "빙글 돌며 반짝.",
+      "desc": "A single shiny brass house key on a small ring with a tiny house-shaped keychain, glinting with sparkles. No letters, no numbers, no logos."
+    },
+    {
+      "id": "prop/sour-grapes",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 높은 가지의 포도 송이 (신 포도 카드)",
+      "cuts": "c07a",
+      "motion": "포도가 위로 쓱 멀어진다.",
+      "desc": "A plump bunch of glossy purple grapes hanging high from a curling vine branch, with a little sour green squiggle aura around it. No letters, no numbers, no logos."
+    }
+  ]
+}

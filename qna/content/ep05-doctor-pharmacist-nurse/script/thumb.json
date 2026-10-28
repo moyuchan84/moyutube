@@ -1,0 +1,18 @@
+{
+  "face": {
+    "tag": "여덟 살 아들의 질문",
+    "top": [
+      "의사? ",
+      "약사?"
+    ],
+    "bottom": [
+      "아빠,",
+      " 뭐가 달라요?"
+    ],
+    "topic": [
+      "ep05/prop/stethoscope",
+      "ep05/prop/medicine-box",
+      "ep05/prop/nurse-modern"
+    ]
+  }
+}

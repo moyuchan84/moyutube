@@ -1,0 +1,8 @@
+{
+  "description": "그림책 한 권 영상. code 는 bNN, 원작 PDF 는 source/ 에",
+  "next": [
+    "원작 PDF 를 content/{{code}}-{{slug}}/source/ 에 넣는다",
+    "fairy/scripts 로 story → 그림 프롬프트 → 그림(크롬 Gemini) → 음성(AI Studio) → timeline 순서",
+    "업로드 자료는 upload/ (meta.json · srt · chapters · thumbnail)"
+  ]
+}

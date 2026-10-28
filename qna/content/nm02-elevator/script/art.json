@@ -1,0 +1,220 @@
+{
+  "title": "내모남불 ② 엘리베이터편 · 닫힘 버튼 · 층 버튼 · 통화",
+  "cast": {
+    "manager": "the apartment manager: a Korean man in his early sixties, short neat gray hair combed to the side, rimless rectangular glasses, a long expressionless face with faint smile lines, thin straight mouth; wearing a navy work vest over a light-blue collared shirt, dark gray slacks, black shoes, a blank name badge with absolutely no writing, a black walkie-talkie clipped to his belt; absolutely NO text, NO letters and NO logos anywhere; perfectly deadpan and polite"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/panic",
+    "common/kid/normal",
+    "common/mom/normal",
+    "common/cutin/dad-shock",
+    "common/cutin/dad-proud",
+    "common/cutin/dad-sig-1",
+    "common/cutin/dad-sig-2",
+    "common/cutin/dad-sig-3",
+    "common/cutin/kid-ask",
+    "common/cutin/kid-doubt",
+    "common/cutin/mom-smirk",
+    "common/cutin/mom-sigh",
+    "common/cutin/mom-sig-scream"
+  ],
+  "items": [
+    {
+      "id": "manager/normal",
+      "kind": "char",
+      "who": "manager",
+      "ref": null,
+      "title": "관리소장 — 기본",
+      "cuts": "c02b, c02d, c03b, c04b",
+      "note": "관리소장의 기준 그림. 이것부터 뽑아 확정한 뒤 나머지 소장님 그림에 ②로 첨부한다.",
+      "motion": "숨 쉬듯 살짝 움직이고, 말할 때 까딱거린다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing perfectly upright with his hands clasped neatly in front of him, a completely deadpan expressionless face, eyes calm behind the rimless glasses."
+    },
+    {
+      "id": "manager/radio",
+      "kind": "char",
+      "who": "manager",
+      "title": "관리소장 — 무전기를 들고 보고",
+      "cuts": "c06b",
+      "motion": "무전기를 입에 대고 까딱.",
+      "desc": "3/4 view turned slightly to the RIGHT. Holding the black walkie-talkie up to his mouth with one hand, pressing the talk button, the other hand behind his back, the same deadpan face, eyes looking sideways at the viewer, one tiny glint on his glasses."
+    },
+    {
+      "id": "cutin/manager-flat",
+      "kind": "cutin",
+      "who": "manager",
+      "ref": "manager/normal",
+      "title": "관리소장 정색 (컷인)",
+      "cuts": "c02b, c02c, c03b, c04b",
+      "motion": "화면 옆에서 튀어나와 흔들린다.",
+      "desc": "Facing slightly to the RIGHT. Perfectly deadpan: half-closed unimpressed eyes, a cold white anime glint across the rimless glasses, one eyebrow raised a millimeter, mouth a small flat line, one index finger raised calmly beside his face."
+    },
+    {
+      "id": "bg/lobby",
+      "kind": "bg",
+      "title": "배경 — 아파트 1층 엘리베이터 로비",
+      "cuts": "c00, c03a",
+      "motion": "옆으로 휙 지나간다.",
+      "desc": "The ground-floor elevator lobby of a clean modern Korean apartment building in bright morning light, seen straight-on like a sitcom set: two brushed-steel elevator doors side by side in the center, a blank floor indicator panel above each door (no numbers), a small call-button plate beside each door, light beige marble floor, a potted plant, mailboxes on the side wall with no writing. No people, no text."
+    },
+    {
+      "id": "bg/elevator-inside",
+      "kind": "bg",
+      "title": "배경 — 엘리베이터 안 (빈 무대)",
+      "cuts": "c00a, c02, c04, c06",
+      "note": "주 무대. 인물은 초록 배경 그림을 위에 얹는다.",
+      "motion": "대사마다 인물 쪽으로 카메라가 옮겨 간다.",
+      "desc": "The inside of a Korean apartment elevator car seen from just inside the doors, looking at the back wall like a sitcom set: brushed stainless-steel walls, a large mirror on the back wall, a handrail, warm ceiling light panel, a tall button panel on the RIGHT wall with two columns of round floor buttons (no numbers or symbols printed) and two larger buttons at the bottom. Empty, no people, no text, no posters."
+    },
+    {
+      "id": "full/door-closing",
+      "kind": "full",
+      "who": "dad",
+      "title": "콜드 오픈 — 닫히는 문을 향해 달려오는 아빠",
+      "cuts": "c00",
+      "motion": "느린 화면으로 문틈이 좁아지다 쾅.",
+      "desc": "Seen from INSIDE an elevator looking out through the narrowing gap of the closing steel doors: in the bright apartment lobby outside, the dad is sprinting toward the elevator with one arm stretched out desperately, mouth wide open shouting, eyes bulging, sweat drops flying, house slippers flying off, a plastic grocery bag swinging. The gap between the doors is only a third of the frame. Speed lines, dramatic low angle, anime action shot."
+    },
+    {
+      "id": "cutin/dad-rage",
+      "kind": "cutin",
+      "who": "dad",
+      "attach": [
+        {
+          "path": "content/_common/art/cutin/dad-shock.png",
+          "label": "아빠 컷인 표정 참고"
+        }
+      ],
+      "title": "아빠 컷인 — 분노 \"어떻게 사람을 두고 닫아?!\"",
+      "cuts": "c00, c03",
+      "motion": "크래시 줌으로 확 당겨진다.",
+      "desc": "Facing the viewer. Furious righteous rage: both fists clenched up at his chest, face red, a big anime anger-vein mark on the forehead, eyes bulging, huge open shouting mouth showing teeth and gums, spit flying, steam puffing from both ears."
+    },
+    {
+      "id": "prop/finger-mash",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 닫힘 버튼 연타하는 손가락",
+      "cuts": "c00a, c06",
+      "motion": "손가락이 떨리듯 연타, 집중선.",
+      "desc": "Extreme close-up of a single chubby index finger jabbing a round stainless-steel elevator button so fast that it leaves many motion-blur afterimages of the finger, a glowing ring around the button, small impact bursts, sweat droplets. Only the hand and the button, no face, no symbols or letters on the button."
+    },
+    {
+      "id": "cutin/dad-whistle",
+      "kind": "cutin",
+      "who": "dad",
+      "attach": [
+        {
+          "path": "content/_common/art/cutin/dad-proud.png",
+          "label": "아빠 컷인 표정 참고"
+        }
+      ],
+      "title": "아빠 컷인 — 휘파람 + 후광 \"모 어때~\"",
+      "cuts": "c00a, c03a, c04a",
+      "motion": "멈춤 + 이름표가 붙는다.",
+      "desc": "Facing slightly to the RIGHT. Eyes closed in total self-satisfaction, lips puckered whistling, one hand waving casually, a little glowing golden halo floating above his thinning head, sparkles and a tiny music-note shape (no letters)."
+    },
+    {
+      "id": "full/family-hall",
+      "kind": "full",
+      "who": "dad",
+      "people": [
+        "mom",
+        "kid"
+      ],
+      "title": "사건 개요 — 15층 엘리베이터 앞 가족 셋",
+      "cuts": "c01",
+      "motion": "천천히 당겨지고 대사마다 인물 쪽으로.",
+      "desc": "A bright Korean apartment hallway on a high floor in the morning, a steel elevator door on the right with a blank floor indicator. The family waits in front of it: the dad stands proudly with a thumbs-up and a smug grin, the mom stands beside him with arms folded giving him a sideways skeptical look, the kid stands in front holding a small backpack strap, looking up curiously. No text."
+    },
+    {
+      "id": "full/rocket-imagine",
+      "kind": "full",
+      "who": "dad",
+      "title": "아빠의 상상 — 닫힘 연타로 로켓처럼 발사되는 엘리베이터",
+      "cuts": "c02c",
+      "note": "영상에서 분홍 '아빠의 상상' 효과가 얹힌다.",
+      "motion": "아래에서 위로 휙, 화면 흔들림.",
+      "desc": "A silly imagined scene in pastel pink and gold light: a steel elevator car shaped like a rocket blasts straight up out of the roof of an apartment building with huge flames and smoke clouds below it. Through a round window on the elevator, the dad is visible mashing a button with a wild triumphant grin, cheeks flapping from the G-force, eyes bulging. Stars and sparkles, comic speed lines. No text."
+    },
+    {
+      "id": "prop/panel-all-lit",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 불이 전부 켜진 층 버튼판",
+      "cuts": "c03",
+      "motion": "버튼이 위에서부터 하나씩 켜진다 (코드 효과).",
+      "desc": "A tall stainless-steel elevator button panel seen straight-on, two columns of round buttons, every single button glowing bright orange at once, little sparkle flares on each one, no numbers or symbols printed on any button. Only the panel."
+    },
+    {
+      "id": "full/neighbor-buttons",
+      "kind": "full",
+      "who": "dad",
+      "title": "ROUND 2 — 남의 집 아이가 버튼을 전부 누르고 내림",
+      "cuts": "c03",
+      "note": "남의 집 아이는 우리 아이와 다른 생김새 (노란 모자 · 줄무늬 티).",
+      "motion": "버튼판에서 아빠 얼굴로 휙.",
+      "desc": "Inside an apartment elevator: a cheeky little neighbor boy (a stranger boy with spiky hair, a yellow cap and a blue striped t-shirt) is skipping out of the open doors with a mischievous grin and a peace sign, while behind him the entire button panel glows orange with every button lit. The dad stands inside staring at the panel in horror, jaw dropped to his chest, eyes popping out, one hand on his head. No text.",
+      "people": []
+    },
+    {
+      "id": "full/dad-wrong-floor",
+      "kind": "full",
+      "who": "dad",
+      "people": [
+        "mom"
+      ],
+      "title": "ROUND 2 — 엄마와 얘기하다 버튼 두 개를 잘못 누른 아빠",
+      "cuts": "c03a",
+      "motion": "버튼 쪽으로 당겨졌다가 엄마 쪽으로.",
+      "desc": "Inside an apartment elevator in the afternoon: the dad, chatting and laughing while looking at the mom, absent-mindedly presses two buttons on the side panel with two fingers at once, two buttons glowing. The mom stands next to him holding a shopping bag, pointing at the panel with a flat, unimpressed look and one raised eyebrow. No numbers or text on the buttons."
+    },
+    {
+      "id": "full/loud-phone",
+      "kind": "full",
+      "who": "dad",
+      "people": [
+        "kid"
+      ],
+      "title": "ROUND 3 — 크게 통화하는 낯선 아저씨, 찡그린 아빠",
+      "cuts": "c04",
+      "motion": "음파 효과와 함께 흔들린다.",
+      "desc": "Inside an apartment elevator: a stranger, a stocky middle-aged man in a gray hiking jacket (a different man, not the dad), is shouting into his phone with a huge open mouth, comic sound-wave lines bursting from it and bouncing off the steel walls. The dad stands squeezed in the corner covering one ear and glaring at him with an exaggerated annoyed scowl, while the kid next to the dad looks up at the dad doubtfully. No text."
+    },
+    {
+      "id": "full/dad-speaker",
+      "kind": "full",
+      "who": "dad",
+      "people": [
+        "manager"
+      ],
+      "title": "ROUND 3 — 스피커폰으로 크게 웃는 아빠, 귀 막은 사람들, 구석의 소장님",
+      "cuts": "c04a, c04b",
+      "motion": "아빠에서 구석의 소장님 쪽으로 옮겨 간다.",
+      "desc": "Inside a crowded apartment elevator: the dad holds his phone flat in front of his face on speaker mode, laughing loudly with his head thrown back, huge open mouth, big comic sound-wave lines filling the car. Two other neighbors (generic adults, not the family) cover their ears with pained faces. In the back corner the apartment manager stands perfectly still and deadpan, staring straight at the dad, glasses glinting. No text."
+    },
+    {
+      "id": "full/bench-dusk",
+      "kind": "full",
+      "who": "kid",
+      "people": [
+        "dad"
+      ],
+      "title": "아이 눈높이 — 해질녘 놀이터 벤치의 아이와 아빠",
+      "cuts": "c05",
+      "note": "농담 없는 박자. 따뜻하고 조용하게.",
+      "motion": "거의 움직이지 않고 아주 천천히 당겨진다.",
+      "desc": "A quiet warm moment in golden dusk light: on a wooden bench at the apartment playground, the kid sits next to the dad, holding the dad's hand and looking up at him seriously with a small gentle smile; the dad listens with a soft, thoughtful, slightly embarrassed face. Apartment buildings with a few lit windows and a slide in the soft-focus background. Calm, sincere, no comic effects."
+    },
+    {
+      "id": "full/mom-door",
+      "kind": "full",
+      "who": "mom",
+      "title": "반전 — 닫히는 문틈 너머 장바구니 들고 달려오는 엄마",
+      "cuts": "c06a",
+      "motion": "느린 화면으로 문틈이 좁아지다 쾅.",
+      "desc": "Seen from INSIDE an elevator looking out through the narrowing gap of the closing steel doors onto a bright apartment hallway: the mom is running toward the elevator holding a heavy shopping basket with a long green leek sticking out, one hand reaching out, mouth wide open screaming, glasses flying up off her nose, hair flying. The gap is only a third of the frame. Speed lines, anime action shot. No text."
+    }
+  ]
+}

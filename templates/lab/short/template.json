@@ -1,0 +1,9 @@
+{
+  "description": "보면 풀리는 수학 · 과학 쇼츠 한 편 (55~59초, Motion Canvas). code 는 camelCase (Motion Canvas 프로젝트 이름)",
+  "next": [
+    "lab/SCIENCE.md · CATEGORY.md 의 틀 · 안전 기준을 읽는다 (수치는 교과서 수준만)",
+    "장면 코드 lab/src/scenes/{{code}}.tsx 와 lab/src/{{code}}.ts · .meta 를 만든다 (기존 편 복사)",
+    "영어 자막 script/en.json → srt, 배경음악 music/ — lab/scripts 의 bgm · srt",
+    "업로드 후 unit.json youtube 기록"
+  ]
+}

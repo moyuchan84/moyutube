@@ -1,0 +1,311 @@
+{
+  "id": "drive2",
+  "title": "운전석의 법칙 ② 끼어들기 · 깜빡이",
+  "bpm": 100,
+  "voice": "Charon",
+  "style": "no voice — drama carried by direction, captions and BGM",
+  "art": {
+    "style": "Japanese theatrical anime film style (high-budget anime movie key frame look, NOT a specific existing anime): crisp clean line art, rich cel shading with sharp shadow shapes, dramatic cinematic lighting with rim light and lens glare, saturated sky gradients, intense speed lines and focus lines when emotions explode, sparkling particles, sweat drops and anger veins drawn as anime symbols, dynamic camera angles (low angle, dutch tilt, extreme close-up on eyes), over-the-top serious expression used for comedy.",
+    "cast": "SENIOR (always the same person): a Korean office worker in his mid-thirties, slightly chubby round face, round thin black-rimmed glasses, sleepy half-lidded eyes, a smug little mouth, short neat black hair parted to the side; outfit: light blue dress shirt with sleeves rolled up, loose navy tie, grey slacks. JUNIOR (always the same person): a Korean office worker in his late twenties, slim, big earnest eyes with visible dark circles, messy short brown hair; outfit: white shirt and beige cardigan. The car is a plain generic white compact sedan with no logo; any license plate is blank.",
+    "layout": "Vertical 9:16, ONE single illustration (not a comic page, no panel grid). Keep the characters large and centered in the middle 60% of the frame. Keep the top 12% and the bottom 25% simple (background only) because captions are added later. IMPORTANT: no text, no letters, no numbers, no logos, no watermark anywhere in the image, including signs, road markings other than plain stripes, phone screens and license plates.",
+    "ref": "content/rush/ref/drive-sheet.jpg",
+    "sheet": "Character reference sheet in Japanese theatrical anime film style: SENIOR on the left and JUNIOR on the right, each shown full body from the front in their default outfit, plus three small head shots of each (smug, furious with anger vein, shocked). Plain light grey background. No text, no labels."
+  },
+  "scenes": {
+    "versus2": "Split-screen showdown composition with a jagged lightning bolt dividing the image diagonally: on the upper left SENIOR in the driver seat of the white sedan, grinning sneakily while nosing into a lane; on the lower right the SAME SENIOR in the same car, furious with an anger vein, glaring at a car cutting in front of him. Sparks and electric energy clash in the middle, epic anime rivalry shot.",
+    "merge-queue": "High angle view of a city expressway exit at sunset: a very long, perfectly orderly queue of cars waiting in the right lane stretches to the horizon, while the left lane next to it is almost empty. SENIOR in the white sedan drives in the empty lane alongside the queue, peeking at the waiting cars with a sly grin, glasses glinting. Long cinematic shadows, lens glare.",
+    "squeeze": "The white sedan pushes its nose diagonally into a tiny gap at the very front of the waiting queue, right before the exit; the car behind brakes. Through the open driver window SENIOR raises one hand in a quick apologetic wave with a cheeky sideways smile, sweat drop. Dynamic dutch angle, speed lines, dust.",
+    "innocent": "Close-up of SENIOR in the driver seat whistling innocently with eyes closed and lips puckered, a glowing halo above his head, soft sparkles and flower petals floating around him, as if he were a pure saint. Overly holy light, comedic.",
+    "cutin": "Dramatic low wide shot on a highway: a generic red sports car with no logo slices diagonally across lanes right in front of the white sedan, only centimeters from its bumper, with motion blur, sparks and intense speed lines; the white sedan's headlights flare. Explosive action-movie composition.",
+    "cutin-angry": "Extreme close-up of SENIOR in the driver seat, both hands crushing the steering wheel, face red with rage, multiple anger veins, glasses with a white glare, flames of fury burning behind him, intense red focus lines, low-angle final boss shot.",
+    "nosignal-other": "View through the windshield over SENIOR's shoulder: a generic silver minivan in the next lane suddenly swerves into his lane right ahead with its turn signal lamps clearly dark (not blinking); SENIOR jerks back in shock, eyes popping out, white shock lines, sweat drops.",
+    "lecture": "SENIOR in the driver seat raising an index finger like a strict teacher giving a lecture, eyes closed and chin up, glasses flashing white, a dramatic spotlight on him and a dark background with radiating golden lines, extremely self-righteous and serious.",
+    "self-swerve": "Aerial three-quarter view of a busy multi-lane road: the white sedan cuts sharply across two lanes in one swoop with its turn signal lamps completely dark, while the cars around it slam on their brakes with tire smoke and red brake lights glowing; motion trails behind the white sedan. Chaotic, dynamic, speed lines.",
+    "heart-signal": "SENIOR in the driver seat with one hand placed gently on his chest, eyes closed peacefully, a soft glowing pink heart of light shining from his chest and pulsing like a blinking lamp, serene smile, dreamy pastel bokeh around him. Calm and absurdly sincere.",
+    "passenger2": "Inside the white sedan, camera looking at the two front seats from the dashboard. SENIOR is the DRIVER: he sits behind the steering wheel and holds it with both hands, slightly out of focus. JUNIOR sits in the PASSENGER seat next to him with NO steering wheel in front of him; JUNIOR is in sharp focus with a completely flat, tired, deadpan expression and half-closed eyes, silently pointing one finger across at the turn signal lever sticking out of the steering column beside SENIOR’s steering wheel. Dry comedic stillness, soft window light.",
+    "smug2": "Close-up of SENIOR (the chubby round-faced man with round black-rimmed glasses and side-parted short black hair from the reference sheet, same light blue shirt and navy tie) driving the white sedan, slowly lowering a pair of dark sunglasses over his round glasses with one finger and looking at the camera with an extremely smug, self-satisfied smile, a gleaming star sparkle on his teeth, golden light particles and roses floating behind him like a dramatic anime prince. He must look exactly like SENIOR: chubby, round face, NOT slim, NOT handsome."
+  },
+  "shots": [
+    {
+      "k": "title",
+      "b": 3,
+      "art": "versus2",
+      "text": "운전석의 법칙",
+      "sub": "THE LAW OF THE DRIVER'S SEAT",
+      "m": "hit",
+      "sfx": "impact"
+    },
+    {
+      "k": "title",
+      "b": 2,
+      "art": "versus2",
+      "text": "*내로남불* 2화",
+      "sub": "DOUBLE STANDARD · EP.02",
+      "tr": "slash",
+      "m": "tense"
+    },
+    {
+      "k": "title",
+      "b": 2,
+      "kicker": "제1장",
+      "text": "끼어들기",
+      "sub": "CHAPTER 01 · CUT IN",
+      "tr": "shutter",
+      "m": "hit"
+    },
+    {
+      "k": "pic",
+      "b": 3,
+      "art": "merge-queue",
+      "crop": [
+        21,
+        78
+      ],
+      "text": "출구 앞 줄 *1km*",
+      "tr": "slash",
+      "m": "tense",
+      "sfx": "engine"
+    },
+    {
+      "k": "pic",
+      "b": 3,
+      "art": "squeeze",
+      "crop": [
+        21,
+        78
+      ],
+      "text": "맨 앞에서 *쓱*",
+      "fx": [
+        "speed"
+      ],
+      "tr": "whip",
+      "m": "tense"
+    },
+    {
+      "k": "pic",
+      "b": 3,
+      "art": "innocent",
+      "crop": [
+        21,
+        78
+      ],
+      "text": "본인 생각",
+      "line": "다들 이렇게 *하잖아*~",
+      "fx": [
+        "sparkle"
+      ],
+      "tr": "flash",
+      "m": "comic",
+      "sfx": "chime"
+    },
+    {
+      "k": "title",
+      "b": 2,
+      "text": "*5분 뒤*",
+      "sub": "5 MINUTES LATER",
+      "tr": "glitch",
+      "m": "stop",
+      "sfx": "scratch"
+    },
+    {
+      "k": "pic",
+      "b": 2,
+      "art": "cutin",
+      "crop": [
+        21,
+        78
+      ],
+      "text": "*칼치기*",
+      "fx": [
+        "impact",
+        "lines",
+        "rgb"
+      ],
+      "tr": "zoom",
+      "m": "hit",
+      "sfx": "horn"
+    },
+    {
+      "k": "pic",
+      "b": 3,
+      "art": "cutin-angry",
+      "crop": [
+        13,
+        85
+      ],
+      "text": "남이 하면",
+      "line": "저건 *새치기*잖아!",
+      "fx": [
+        "impact",
+        "lines"
+      ],
+      "tr": "flash",
+      "m": "epic"
+    },
+    {
+      "k": "pic",
+      "b": 3,
+      "art": "versus2",
+      "text": "같은 *끼어들기*",
+      "fx": [
+        "rgb"
+      ],
+      "tr": "slash",
+      "m": "hit",
+      "crop": [
+        12,
+        88
+      ]
+    },
+    {
+      "k": "title",
+      "b": 2,
+      "kicker": "제2장",
+      "text": "깜빡이",
+      "sub": "CHAPTER 02 · TURN SIGNAL",
+      "tr": "shutter",
+      "m": "hit"
+    },
+    {
+      "k": "pic",
+      "b": 3,
+      "art": "nosignal-other",
+      "crop": [
+        21,
+        78
+      ],
+      "text": "깜빡이 *없이* 휙",
+      "fx": [
+        "speed"
+      ],
+      "tr": "slash",
+      "m": "tense",
+      "sfx": "whoosh"
+    },
+    {
+      "k": "pic",
+      "b": 3,
+      "art": "lecture",
+      "crop": [
+        21,
+        78
+      ],
+      "text": "훈계 시작",
+      "line": "깜빡이는 *약속*이야",
+      "fx": [
+        "impact",
+        "lines"
+      ],
+      "tr": "zoom",
+      "m": "epic"
+    },
+    {
+      "k": "title",
+      "b": 2,
+      "text": "*그런데*",
+      "sub": "MEANWHILE",
+      "tr": "glitch",
+      "m": "stop",
+      "sfx": "scratch"
+    },
+    {
+      "k": "pic",
+      "b": 3,
+      "art": "self-swerve",
+      "crop": [
+        21,
+        78
+      ],
+      "text": "본인은 *무음* 차선 변경",
+      "fx": [
+        "speed"
+      ],
+      "tr": "whip",
+      "m": "tense",
+      "sfx": "engine"
+    },
+    {
+      "k": "text",
+      "b": 1,
+      "text": "빵빵!",
+      "tr": "flash",
+      "m": "hit",
+      "sfx": "horn"
+    },
+    {
+      "k": "pic",
+      "b": 3,
+      "art": "heart-signal",
+      "crop": [
+        21,
+        78
+      ],
+      "text": "당당한 해명",
+      "line": "*마음속으로* 켰어",
+      "fx": [
+        "sparkle"
+      ],
+      "tr": "zoom",
+      "m": "calm",
+      "sfx": "blinker"
+    },
+    {
+      "k": "meter",
+      "b": 3,
+      "label": "남에게 바라는 깜빡이",
+      "v0": 10,
+      "v1": 100,
+      "m": "build",
+      "tr": "slash"
+    },
+    {
+      "k": "pic",
+      "b": 4,
+      "art": "passenger2",
+      "crop": [
+        17,
+        80
+      ],
+      "text": "조용히 가리키는 후배",
+      "line": "선배, 그 막대기/*장식* 아니에요",
+      "tr": "cut",
+      "m": "stop"
+    },
+    {
+      "k": "pic",
+      "b": 3,
+      "art": "smug2",
+      "crop": [
+        15,
+        86
+      ],
+      "line": "내 차선은 *내가* 정해",
+      "fx": [
+        "sparkle"
+      ],
+      "tr": "flash",
+      "m": "comic",
+      "sfx": "chime"
+    },
+    {
+      "k": "stamp",
+      "b": 3,
+      "art": "smug2",
+      "text": "신고 접수",
+      "sub": "처리는 안 함",
+      "tr": "cut",
+      "m": "end",
+      "sfx": "stamp"
+    },
+    {
+      "k": "title",
+      "b": 3,
+      "kicker": "다음 화",
+      "text": "주차",
+      "sub": "NEXT · PARKING",
+      "tr": "shutter",
+      "m": "tense"
+    }
+  ],
+  "engine": "anime"
+}

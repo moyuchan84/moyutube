@@ -8,7 +8,7 @@ from pathlib import Path
 import typer
 
 from shortube import db
-from shortube.config import ConfigError, load_config
+from shortube.config import PROJECT_ROOT, ConfigError, load_config
 
 app = typer.Typer(help="shortube 키워드·쇼츠 패턴 분석", no_args_is_help=True)
 log = logging.getLogger("shortube")
@@ -153,14 +153,14 @@ def log_topic(
 
 
 @app.command()
-def trends(seeds: Path = typer.Option(Path("config/seeds.yaml"), help="시드 파일")) -> None:
+def trends(seeds: Path = typer.Option(PROJECT_ROOT / "config" / "seeds.yaml", help="시드 파일")) -> None:
     """네이버 DataLab · 구글 트렌드 · 위키 조회수 수집."""
     _not_ready("Phase 2~3")
 
 
 @app.command()
 def autocomplete(
-    seeds: Path = typer.Option(Path("config/seeds.yaml"), help="시드 파일"),
+    seeds: Path = typer.Option(PROJECT_ROOT / "config" / "seeds.yaml", help="시드 파일"),
     expand: bool = typer.Option(False, help="자음/알파벳 확장 수집"),
 ) -> None:
     """유튜브 자동완성 수집 + 의도 분류 + 리스크 필터."""

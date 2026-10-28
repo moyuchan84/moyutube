@@ -38,7 +38,10 @@ export function capLog(kind: string, text: string) {
   caps.push({t: Math.round(useTime() * 1000) / 1000, kind, text});
 }
 
-export type CueKind = 'whoosh' | 'swish' | 'pop' | 'tick' | 'boom' | 'chime' | 'riser' | 'wipe' | 'type' | 'shepOn' | 'shepOff' | 'scaleOn';
+export type CueKind =
+  | 'whoosh' | 'swish' | 'pop' | 'tick' | 'boom' | 'chime' | 'riser' | 'wipe' | 'type' | 'shepOn' | 'shepOff' | 'scaleOn'
+  // 마술 편 (scripts/bgm-magic.mjs): 음악 구간 전환 · 드럼롤 · 효과음
+  | `m:${'intro' | 'build' | 'hush' | 'groove' | 'outro'}` | 'roll' | 'hit' | 'scratch' | 'tap' | 'poof' | 'sparkle' | 'curtain' | `ping${number}`;
 
 export function cue(kind: CueKind) {
   cues.push({t: Math.round(useTime() * 1000) / 1000, kind});

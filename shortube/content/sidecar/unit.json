@@ -1,0 +1,22 @@
+{
+  "code": "sidecar",
+  "title": "코스피 6,012 마감, 올해 사이드카 54번째 · 2008년 금융위기 26번의 2배",
+  "format": "short",
+  "status": "uploaded",
+  "created": "2026-10-28",
+  "youtube": [
+    {
+      "id": "DbGH0UPJK6U",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "public"
+    }
+  ],
+  "tags": [],
+  "video": {
+    "composition": "SidecarShort",
+    "bgm": "bgm/sidecar.mjs"
+  },
+  "category": "market",
+  "published": "2026-10-28"
+}

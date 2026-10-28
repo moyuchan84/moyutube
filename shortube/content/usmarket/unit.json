@@ -1,0 +1,22 @@
+{
+  "code": "usmarket",
+  "title": "간밤 미국장, 나스닥 -2.15% 그런데 다우는 -0.34%? 숫자로 보면",
+  "format": "short",
+  "category": "market",
+  "status": "uploaded",
+  "created": "2026-10-17",
+  "published": "2026-10-17",
+  "youtube": [
+    {
+      "id": "kHbX8KTbbz0",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "public"
+    }
+  ],
+  "tags": [],
+  "video": {
+    "composition": "UsShort",
+    "bgm": "bgm/usmarket.mjs"
+  }
+}

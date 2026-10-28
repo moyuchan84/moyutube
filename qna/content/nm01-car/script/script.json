@@ -1,0 +1,166 @@
+{
+  "rawVoice": true,
+  "speed": 1.25,
+  "title": "내모남불 ① 자동차편 · 끼어들기 · 깜빡이 · 주차",
+  "bgm": "cheerful",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "콜드 오픈",
+      "lines": [
+        { "who": "dad", "text": "아니, 깜빡이도 안 켜고 끼어들어?", "en": "Seriously? Cutting in without a signal?" },
+        { "who": "dad", "text": "저거 불법이야, 불법!", "en": "That's illegal! Illegal!" }
+      ]
+    },
+    {
+      "id": "c00a",
+      "beat": "콜드 오픈",
+      "lines": [
+        { "who": "kid", "text": "아빠, 방금 아빠도 안 켰는데?", "en": "Dad, you didn't signal just now either." },
+        { "who": "dad", "text": "아빠는 괜찮아. 모 어때~", "en": "I'm fine. So what~" }
+      ]
+    },
+    {
+      "id": "c00b",
+      "beat": "콜드 오픈",
+      "lines": [
+        { "who": "narr", "text": "내가 하면 모 어때, 남이 하면 불법. 내모남불, 하나.", "en": "When I do it, so what. When you do it, illegal. Double standard, number one." },
+        { "who": "dad", "text": "저는… 모답맨입니다.", "en": "I'm… Modapman." }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "사건 개요",
+      "lines": [
+        { "who": "narr", "text": "사건 개요. 토요일 오전, 목적지 마트.", "en": "Case summary. Saturday morning. Destination: the supermarket." },
+        { "who": "mom", "text": "오늘은 운전 얌전히 해.", "en": "Drive nicely today." },
+        { "who": "dad", "text": "나만큼 법 지키는 사람이 어딨어?", "en": "Who follows the law better than me?" },
+        { "who": "narr", "text": "있습니다. 많이.", "en": "Plenty of people." }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "ROUND 1 끼어들기",
+      "lines": [
+        { "who": "narr", "text": "딱 세 판만 하죠. 1라운드, 끼어들기.", "tts": "딱 세 판만 하죠. 일 라운드, 끼어들기.", "en": "Just three rounds. Round one: cutting in." },
+        { "who": "dad", "text": "저 봐! 맨 앞에서 쓱 끼잖아!", "en": "Look! He just slid in at the very front!" },
+        { "who": "dad", "text": "줄 선 사람들한테 사과해, 사과!", "en": "Apologize to everyone in line! Apologize!" }
+      ]
+    },
+    {
+      "id": "c02a",
+      "beat": "ROUND 1 끼어들기",
+      "lines": [
+        { "who": "narr", "text": "5분 뒤.", "tts": "오 분 뒤.", "en": "Five minutes later." },
+        { "who": "mom", "text": "…여보, 지금 어디로 가?", "en": "…Honey, where are you going?" },
+        { "who": "dad", "text": "이건 새치기 아니고, 살짝 들어간 거야.", "en": "This isn't cutting. I just eased in a little." },
+        { "who": "narr", "text": "내모남불, 둘.", "en": "Double standard, number two." }
+      ]
+    },
+    {
+      "id": "c02b",
+      "beat": "ROUND 1 끼어들기",
+      "lines": [
+        { "who": "traffic", "text": "선생님, 살짝도 끼어들기입니다.", "en": "Sir, a little is still cutting in." },
+        { "who": "traffic", "text": "줄 선 차들 사이로 들어오시면 안 돼요.", "en": "You can't squeeze in between cars waiting in line." },
+        { "who": "traffic", "text": "범칙금 3만 원, 벌점 10점입니다.", "tts": "범칙금 삼만 원, 벌점 십 점입니다.", "en": "That's a 30,000 won fine and 10 penalty points." },
+        { "who": "dad", "text": "…네?", "en": "…Huh?" }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "ROUND 2 깜빡이",
+      "lines": [
+        { "who": "narr", "text": "2라운드, 깜빡이. 마침 집중단속 기간.", "tts": "이 라운드, 깜빡이. 마침 집중단속 기간.", "en": "Round two: turn signals. Right in the middle of a crackdown." },
+        { "who": "dad", "text": "모라구야, 깜빡이는 대화야.", "en": "Moragu, a turn signal is a conversation." },
+        { "who": "dad", "text": "'저 들어갈게요~' 하고 말하는 거지.", "en": "It says, 'I'm coming in~'" },
+        { "who": "kid", "text": "그럼 아까 아빠는 무슨 말 했어?", "en": "Then what did you say back there?" },
+        { "who": "dad", "text": "아빠는… 마음속으로 켰어.", "en": "I… signaled in my heart." },
+        { "who": "narr", "text": "내모남불, 셋.", "en": "Double standard, number three." }
+      ]
+    },
+    {
+      "id": "c03b",
+      "beat": "ROUND 2 깜빡이",
+      "lines": [
+        { "who": "traffic", "text": "마음속은 카메라에 안 찍힙니다.", "en": "Your heart doesn't show up on camera." },
+        { "who": "traffic", "text": "차로 바꾸기 30미터 전부터 켜세요.", "tts": "차로 바꾸기 삼십 미터 전부터 켜세요.", "en": "Turn it on 30 meters before you change lanes." },
+        { "who": "mom", "text": "여보, 이건 모범답안도 못 도와줘.", "en": "Honey, even the model answer can't save you here." }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "ROUND 3 주차",
+      "lines": [
+        { "who": "narr", "text": "3라운드, 주차. 장소, 마트 앞.", "tts": "삼 라운드, 주차. 장소, 마트 앞.", "en": "Round three: parking. Location: in front of the supermarket." },
+        { "who": "dad", "text": "소화전 앞에 차를 대? 당장 신고해!", "en": "Parked in front of a fire hydrant? Report him right now!" },
+        { "who": "kid", "text": "왜 거기 대면 안 돼?", "en": "Why can't you park there?" }
+      ]
+    },
+    {
+      "id": "c04x",
+      "beat": "ROUND 3 주차",
+      "lines": [
+        { "who": "mom", "text": "불 나면 소방차가 물 받는 데니까.", "en": "Because that's where fire trucks get water when there's a fire." }
+      ]
+    },
+    {
+      "id": "c04a",
+      "beat": "ROUND 3 주차",
+      "lines": [
+        { "who": "narr", "text": "3분 뒤. 주차장 만차.", "tts": "삼 분 뒤. 주차장 만차.", "en": "Three minutes later. The parking lot is full." },
+        { "who": "dad", "text": "딱 1분만. 모 어때~", "tts": "딱 일 분만. 모 어때~", "en": "Just one minute. So what~" },
+        { "who": "narr", "text": "내모남불, 넷.", "en": "Double standard, number four." }
+      ]
+    },
+    {
+      "id": "c04b",
+      "beat": "ROUND 3 주차",
+      "lines": [
+        { "who": "traffic", "text": "…또 뵙네요.", "en": "…We meet again." },
+        { "who": "traffic", "text": "저도 장은 봅니다.", "en": "I do grocery shopping too." },
+        { "who": "traffic", "text": "소화전 5미터 안은 주차 금지예요.", "tts": "소화전 오 미터 안은 주차 금지예요.", "en": "No parking within 5 meters of a fire hydrant." },
+        { "who": "traffic", "text": "신고 사진은 1분 간격으로 두 장.", "tts": "신고 사진은 일 분 간격으로 두 장.", "en": "A report takes two photos, one minute apart." },
+        { "who": "traffic", "text": "그래서 1분이면 충분합니다. 신고가요.", "tts": "그래서 일 분이면 충분합니다. 신고가요.", "en": "So one minute is plenty. For the report." },
+        { "who": "dad", "text": "…네?", "en": "…Huh?" }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "아이 눈높이",
+      "lines": [
+        { "who": "kid", "text": "아빠, 줄도, 깜빡이도, 소화전도…", "en": "Dad, the line, the signal, the hydrant…" },
+        { "who": "kid", "text": "다 남을 위한 거네.", "en": "They're all for other people." },
+        { "who": "dad", "text": "…그러네. 불 나면 1초가 급하니까.", "tts": "…그러네. 불 나면 일 초가 급하니까.", "en": "…You're right. In a fire, every second counts." },
+        { "who": "kid", "text": "그럼 '모 어때' 말고, '남 어때' 해.", "en": "Then don't say 'so what.' Say 'what about them?'" },
+        { "who": "dad", "text": "남은 어떨까, 먼저 생각하라고?", "en": "Think first about how others will feel?" },
+        { "who": "kid", "text": "응. 그게 대화잖아.", "en": "Yeah. That's what a conversation is." }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "반전",
+      "lines": [
+        { "who": "narr", "text": "돌아오는 길.", "en": "On the way home." },
+        { "who": "dad", "text": "자, 이제부터 무조건 켠다!", "en": "Okay, from now on I always signal!" },
+        { "who": "narr", "text": "2킬로미터 뒤.", "tts": "이 킬로미터 뒤.", "en": "Two kilometers later." }
+      ]
+    },
+    {
+      "id": "c06a",
+      "beat": "반전",
+      "lines": [
+        { "who": "mom", "text": "여보, 깜빡이 아직도 켜져 있어.", "en": "Honey, your signal is still on." },
+        { "who": "kid", "text": "아빠, 이번엔 너무 오래 켰어.", "en": "Dad, this time you left it on too long." }
+      ]
+    },
+    {
+      "id": "c06b",
+      "beat": "반전",
+      "lines": [
+        { "who": "narr", "text": "이건 내모남불이 아닙니다. 그냥 오답.", "en": "That's not a double standard. Just a wrong answer." },
+        { "who": "dad", "text": "…역시, 모답맨.", "en": "…Modapman, as always." }
+      ]
+    }
+  ]
+}

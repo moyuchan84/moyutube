@@ -1,66 +1,107 @@
-# 여덟 살의 질문 (qna) — 폴더와 작업 절차
+# 여덟 살의 질문 (qna) — 모답맨 · 폴더와 작업 절차
 
 이 폴더는 가족 유튜브 채널 「여덟 살의 질문」의 전부다: GitHub Pages 사이트(기획 문서) + 영상 자동 제작 코드.
 **새 편을 만들 때도, 고칠 때도 아래 폴더 규칙과 순서를 그대로 따른다.** 새 폴더 · 새 파일 이름을 즉석에서 만들지 않는다.
 
+## 포맷 — 모답맨 (2026-10-23 확정)
+
+**새 편은 전부 「모답맨」 포맷으로 만든다.** 모답맨 = 모 씨네 아빠 + 오답맨. 아이의 질문에 아빠가 자신만만하게 틀리고,
+가족 · 주변 인물의 오답이 카운터로 쌓이다가, 정답 담당 제삼의 인물이 라운드제로 바로잡는 **3분짜리 병맛 오답 쇼**.
+2~3초마다 화면이 바뀌는 모션 편집(애프터 이펙트 느낌). 내용의 본질(정확한 사실)은 그대로 지킨다.
+
+- **채널 정체성(모 씨네) · 포맷을 정한 이유 · 지금 상태 · 이어서 하는 법은 [MODAPMAN.md](MODAPMAN.md)** — 새 컴퓨터 · 새 대화에서는 이것부터 읽는다.
+- 기획 · 대본 · 샷 계획의 규칙은 스킬 **`modapman`**(`.claude/skills/modapman/SKILL.md`)에 있다. 새 편은 이 스킬을 먼저 읽는다.
+  (claude.ai 용 패키지는 `skill/modapman.skill` — 스킬을 고치면 이 폴더를 다시 압축한다)
+- **기준 예시는 8편 모답맨판** `content/ep08f-modapman/`: `script/script.json`(대본) · `script/motion.json`(샷 계획) · `upload/`(업로드 자료).
+- **내모남불**은 모라구 안의 다른 시리즈다. 같은 가족 · 같은 그림 · 같은 모션 엔진을 쓰고, 편 코드만 `nmNN` 이다 (`unit.json` 에 `"series": "naemonambul"`). 시리즈 규칙은 [docs/naemonambul.md](docs/naemonambul.md), 아이디어는 [docs/naemonambul-ideas.md](docs/naemonambul-ideas.md).
+- **기획 중인 시리즈 (아직 편 없음):** 「포모라구」(FOMO + 모라구, 유행 · 소비 심리) [docs/pomoragu.md](docs/pomoragu.md) · 「이게 모예요?」(쇼츠 전용 물건 · 표시 사전) [docs/igemoyeyo.md](docs/igemoyeyo.md).
+- 1~8편 롱폼(아빠의 회상 · 8분 · 7박자, 스킬 `eight-year-olds-question` · `skill/eight-year-olds-question.skill`)은 **이전 포맷**이다. 새 편에 쓰지 않는다.
+
 ## 폴더 — 무엇이 어디에 있나
+
+저장소 전체 규칙은 [docs/CONVENTIONS.md](../docs/CONVENTIONS.md) — 다섯 채널이 같은 뼈대(`content/<편>/` · `video/` · `scripts/`)를 쓴다.
 
 ```
 qna/
-├─ CLAUDE.md                  ← 이 문서 (작업 규칙)
-├─ index.html                 ← 사이트 홈 (편 목록 카드)
-├─ plan/ guide/ production/ auto/   ← 사이트 페이지 (채널 기획 · 튜토리얼 · 제작 노트 · 자동 제작 매뉴얼)
-├─ skill/                     ← eight-year-olds-question 스킬 패키지
-├─ art/                       ← 모든 편이 같이 쓰는 그림 원본
-│  ├─ anchor/style-cutin.png  ← 화풍 앵커 (모든 Gemini 요청에 ①로 첨부)
-│  ├─ common/{dad,kid,mom,cutin,bg}/ ← 아빠 · 아이 · 엄마 표정, 공통 배경
-│  └─ channel/                ← 채널 프로필 · 배너
-├─ episodes/NN-영문슬러그/      ← 편 하나 = 폴더 하나 (아래 "편 폴더")
-└─ video/                     ← Remotion 영상 코드 (README.md · VOICE.md)
-   ├─ src/epNN/               ← 그 편의 대본 · 그림 목록 (사람이 고치는 곳)
-   ├─ src/voice.json · art-common.json · Root.tsx
-   ├─ scripts/                ← npm run 으로 부르는 도구들
-   ├─ public/                 ← 자동 생성 (처리된 그림 · 음성 · 효과음) — 손으로 고치지 않는다
-   ├─ voice-studio/epNN/      ← AI Studio 에서 받은 컷별 음성 원본
-   └─ out/epNN/               ← 완성 영상 · 자막 · 컷 이미지 · 썸네일 (git 에 안 올림)
+├─ CLAUDE.md · ART_GUIDE.md · MODAPMAN.md   ← 작업 규칙 · 그림 가이드 · 채널 정리
+├─ index.html · plan/ guide/ production/ auto/  ← 사이트 (편 목록 카드 · 채널 기획 · 튜토리얼 · 제작 노트 · 자동 제작 매뉴얼)
+├─ docs/                      ← 시리즈 문서 (naemonambul.md · naemonambul-ideas.md · pomoragu.md · igemoyeyo.md)
+├─ skill/                     ← claude.ai 용 스킬 패키지 (modapman.skill = 지금 포맷, eight-year-olds-question.skill = 이전 포맷)
+├─ .claude/skills/            ← modapman (편 만들기) · qna-shorts (쇼츠)
+├─ content/                   ← 편 하나 = 폴더 하나 (아래 "편 폴더")
+│  ├─ _common/                ← 모든 편이 같이 쓰는 것
+│  │  ├─ art/anchor/          ← 화풍 앵커 style-cutin.png · 소품 앵커 style-prop.png
+│  │  ├─ art/{dad,kid,mom,cutin,bg}/  ← 아빠 · 아이 · 엄마 표정 · 시그니처 컷인 · 공통 배경
+│  │  ├─ art/channel/         ← 채널 프로필 · 배너
+│  │  ├─ script/art.json      ← 가족 생김새(cast) · 대표 컷인(refs) · 공통 그림 목록
+│  │  └─ prompts/             ← 공통 그림 프롬프트 (자동 생성)
+│  ├─ ep10-hope-ufo-alien/    ← 모답맨 편 (ep01 ~ ep08 은 이전 롱폼)
+│  ├─ ep01f-modapman/ · ep08f-modapman/   ← 롱폼을 모답맨으로 다시 만든 판 (그림은 원편 것, unit.json variantOf)
+│  └─ nm01-car/               ← 내모남불 (unit.json series)
+└─ video/                     ← Remotion 영상 엔진 (README.md · VOICE.md) — 편 데이터는 여기 두지 않는다
+   ├─ src/                    ← 엔진 코드: Root.tsx · motion/(모답맨 Motion.tsx · Thumb.tsx) · shorts/ · Episode.tsx(롱폼) · voice.json(목소리)
+   ├─ src/generated/units.ts  ← 편 목록 (registry.mjs 가 만든다 — 손으로 고치지 않는다)
+   ├─ scripts/                ← npm run 으로 부르는 도구들 (모두 편 코드를 인자로 받는다)
+   ├─ public/                 ← sfx/ · bgm/ 만 원본. <code>/ · art/ 는 sync · art 가 만드는 사본 (git 제외)
+   └─ out/                    ← 렌더 결과 mp4 · 확인용 스틸 (git 제외)
 ```
 
-### 편 폴더 `episodes/NN-slug/` — 항상 이 이름들만
+### 편 폴더 `content/<code>-<slug>/` — 항상 이 이름들만
+
+새 편은 저장소 루트에서 `npm run new -- qna ep11 --slug kimchi-fridge --title "…"` (내모남불은 `nm02 … --series naemonambul`) 로 만든다. 템플릿은 `templates/qna/modapman/`.
 
 | 파일 | 누가 만드나 | 내용 |
 |---|---|---|
-| `<slug>.md` | 스킬 (사람 · Claude) | 기획서 원본: 구성 · 자료조사 · 콘티표 · 그림 목록 · 대본 · BGM · 썸네일/제목 · 한 문장 |
+| `unit.json` | `npm run new` · 사람 | 편 코드 · 제목 · 형식 · 상태 · 유튜브 ID (업로드하면 `status: uploaded` 와 `youtube` 를 채운다) |
+| `plan.md` | 스킬 `modapman` | 기획서 원본: 자료조사 · 오답 후보 · 대본(한·영) · 그림 목록 · 제목/키워드 조사 · 한 문장 |
 | `index.html` | 스킬 | 같은 기획서를 사이트용으로 (3편 `index.html` 의 head/CSS 를 그대로 쓴다) |
-| `storyboard.html` | `npm run storyboard -- epNN` | 콘티 시트 (컷별 배경 · 인물 위치 · 움직임 · 대사). 그림이 생기면 다시 돌린다 |
-| `GEMINI_PROMPTS.md` | `npm run prompts -- epNN` | 그림 프롬프트 문서 |
-| `ANTIGRAVITY.md` | `npm run handoff -- epNN` | 그림 · 음성 작업을 다른 에이전트에 넘길 때만 |
-| `art/<id>.png` | 사람 (Gemini 결과 저장) | 그 편 그림 원본. id 는 `art.json` 의 id 그대로 (`bg/…`, `full/…`, `<인물>/…`, `cutin/…`, `prop/…`) |
-| `jobs/` | 도구 | 자동 생성 (images.json · voice.json) |
-| `thumb.svg` (또는 `thumb.jpg`) | 스킬 | 사이트 홈 카드 그림 |
-| `_old/` | 사람 · Claude | 바뀌기 전 구성 · 버린 그림. 지우지 말고 여기로 옮긴다 (`_old/<slug>-v1-<한 단어>.md` 처럼 이름 뒤에 버전) |
+| `script/script.json` · `art.json` · `motion.json` | 사람 · Claude | 대본 · 그림 목록 · 샷 계획 (영상이 읽는 곳) |
+| `script/timing.json` | `npm run voice -- <편>` | 줄마다 음성 길이 (자동) |
+| `script/motion-short.json` · `shorts.json` · `thumb.json` | 사람 · Claude | 모답맨 쇼츠 · 롱폼 편집형 쇼츠 · 롱폼 썸네일 글자 |
+| `prompts/GEMINI_PROMPTS.md` · `prompts/jobs/` | `npm run prompts -- <편>` 등 | 그림 프롬프트 · 작업 목록 · 비교 시트 (자동) |
+| `art/<id>.png` | 사람 · 크롬 Gemini | 그림 원본. id 는 `art.json` 의 id 그대로 (`bg/…`, `full/…`, `<인물>/…`, `cutin/…`, `prop/…`) |
+| `voice/<컷>-<줄>.wav` · `voice/studio/` · `voice/raw/` | 음성 도구 · 사람 | 최종 음성 · AI Studio 컷별 원본 · 받은 원본 |
+| `upload/` | 도구 · 사람 | `upload.md`(제목 · 설명 · 태그 · 업로드 기록) · `ko.srt` · `en.srt` · `chapters.txt` · `thumbnail.png` · 사이트 카드 `thumb.svg` |
+| `storyboard.html` | 이전 포맷 도구 | 1~8편에만 있다. 모답맨은 샷 계획 + 스틸 확인으로 대신한다 |
+| `_old/` | 사람 · Claude | 바뀌기 전 구성 · 버린 그림. 지우지 말고 여기로 옮긴다 (`_old/plan-v1-<한 단어>.md` 처럼 이름 뒤에 버전) |
 
-- 편 번호 NN 은 **영상으로 나가는 순서**다. `episodes/NN-…` 와 `video/src/epNN` 의 번호가 항상 같아야 한다.
-- 위 표에 없는 파일을 편 폴더에 만들지 않는다 (임시 파일 · 생성 스크립트는 scratchpad 에).
+- 편 번호 NN 은 **영상으로 나가는 순서**다. 폴더 이름은 `unit.json` 의 `code` 로 시작해야 한다 (`npm run verify` 가 검사).
+- 위 표에 없는 파일 · 폴더를 편 폴더에 만들지 않는다 (임시 파일 · 생성 스크립트는 scratchpad 에).
 
-## 작업 절차 — 한 편을 만드는 순서
+## 작업 절차 — 모답맨 한 편 (명령은 `video` 에서)
 
 | 단계 | 할 일 | 결과물 | 비용 |
 |---|---|---|---|
-| 1. 기획 | 스킬 `eight-year-olds-question` 으로 주제 → 구성 · 자료조사 · 대본 | `episodes/NN-slug/<slug>.md`, `index.html` | 무료 |
-| 2. 대본 · 그림 목록 | 기획서 대본을 영상용으로 옮긴다 (3편이 기준 예시) | `video/src/epNN/script.json`, `art.json` | 무료 |
-| 3. 콘티 확인 | `npm run storyboard -- epNN` → `storyboard.html` 을 열어 컷 구성 · 길이 확인. 여기서 대본을 고친다 | `storyboard.html` | 무료 |
-| 4. 그림 프롬프트 | `npm run prompts -- epNN` | `GEMINI_PROMPTS.md` | 무료 |
-| 5. 그림 | Gemini 에서 손으로 뽑아 `art/<id>.png` 에 저장, 또는 `npm run artgen -- epNN` (키는 저장소 루트 `.env`, ../CLAUDE.md) | `episodes/NN-slug/art/` | **artgen 은 유료 — 사용자에게 물어보고** |
-| 6. 그림 처리 | `npm run art -- epNN` (초록 배경 제거 · 크기 맞춤) → 다시 `npm run storyboard -- epNN` | `video/public/art/epNN/` | 무료 |
-| 7. 음성 | `npm run voice -- epNN studio` (손으로) 또는 `npm run voice -- epNN gen` | `video/voice-studio/epNN/`, `src/epNN/timing.json` | **gen 은 유료 — 물어보고** |
-| 8. 등록 · 미리보기 | `src/Root.tsx` 의 `EPISODES` 에 한 줄 추가 (timing.json 이 생긴 뒤) → `npm run studio` | | 무료 |
-| 9. 완성 | `npm run make -- epNN` → 썸네일 `Ep NN-ThumbD` | `video/out/epNN/` | 무료 |
-| 10. 사이트 · 저장 | 홈 `index.html` 카드 갱신, 브랜치에서 커밋 → PR | | |
-| 11. 쇼츠 | 스킬 `qna-shorts` (`.claude/skills/qna-shorts/SKILL.md`): 편집 계획 `video/src/shorts/epNN.json` → `npm run short -- epNN --check` → `npm run short -- epNN` → Chrome 으로 **비공개** 업로드 | `video/out/shorts/epNN-short.mp4` | 무료 (롱폼 음성 · 그림 재사용) |
+| 0. 편 폴더 | 저장소 루트에서 `npm run new -- qna epNN --slug <영문> --title "…"` | `content/epNN-<slug>/` | 무료 |
+| 1. 기획 | 스킬 `modapman`: 자료조사 · 오답 후보 3~4개 · 대본(한 줄 15~20자, `en` 영어 자막, 숫자는 `tts`) | `plan.md`, `index.html` | 무료 |
+| 2. 대본 · 그림 목록 | `script/script.json` (`"speed": 1.2`, `"rawVoice": true`, 컷마다 목소리 둘까지) · `script/art.json` | | 무료 |
+| 3. 그림 | **[ART_GUIDE.md](ART_GUIDE.md) 순서 그대로**: `npm run prompts -- epNN` (⚠️ 0개 확인) → `npm run artrefs -- epNN` (첨부 사본) → 크롬 Gemini 로 첨부 전부 붙여 뽑아 `art/<id>.png`, 또는 `npm run artgen -- epNN` (키는 저장소 루트 `.env`) → `npm run artreview -- epNN` (기준 그림과 비교) → `npm run art -- epNN` | `video/public/art/epNN/` | **artgen 은 유료 — 물어보고** |
+| 4. 음성 | 크롬 AI Studio 에서 **줄 단위**로 생성(절차 · 함정은 메모리 qna-chrome-gen) → 편 폴더 `voice/<컷>-<줄>.wav`, 또는 `npm run voice -- epNN gen` | | **gen 은 유료 — 물어보고** |
+| 5. 음성 다듬기 | `npm run trim-voice -- epNN` (앞뒤 무음 자르기) → `npm run voice -- epNN` (timing.json) → `npm run speed -- epNN` (1.2배속) | `script/timing.json` | 무료 |
+| 6. 샷 계획 | `script/motion.json` (스킬의 "샷 계획" · `ep08f-modapman` 참고). **Root.tsx 는 고치지 않는다** — 편 목록은 자동 등록 | | 무료 |
+| 7. 확인 · 렌더 | 스틸 몇 장으로 화면 확인(`npm run still -- <id> out/x.png --frame=N`) → `npm run render -- <id> out/motion/<epNN>-modapman.mp4` (출력은 파일로 돌려 받는다 — 파이프에 물리면 `write EOF` 로 죽는다) → `npm run still -- <id>-Thumb ../content/<편>/upload/thumbnail.png` | mp4 는 `out/` | 무료 |
+| 8. 자막 · 챕터 | `npm run motion-srt -- epNN` | `upload/ko.srt` · `en.srt` · `chapters.txt` | 무료 |
+| 9. 제목 · 키워드 | `npm run keywords -- "검색어" …` (YouTube API, 루트 `.env` 의 `YOUTUBE_API_KEY`) → 지금 뜨거운 말을 제목 앞에, 끝에 `\| 모답맨` → `upload/upload.md` | | 무료 (할당량) |
+| 10. 업로드 | 크롬 Studio, 모라구(UCCIm8f5JE4b4PmSrPIJd7zQ): 제목 · 설명 · 썸네일 · 재생목록 "모(오)답맨 (여덟 살 아들의 호기심)" · 아동용 아니요 · AI 사용 아니요(만화 · 실존 인물 아님) · 태그 · 교육 · 한국어 자막 → 언어 탭에서 영어 제목/설명/자막 → **비공개** 저장 → 실제 상태 다시 읽기 | `upload/upload.md` 끝에 업로드 기록, `unit.json` 의 `status` · `youtube` | |
+| 11. 사이트 · 저장 | 홈 `index.html` 카드 갱신, 브랜치에서 커밋 → PR | | |
+| 12. 쇼츠 | 스킬 `qna-shorts` (이전 포맷 기준 — 모답맨 본편에서 자를 때도 비공개 업로드 규칙은 같다) | | 무료 |
 
 ### 고정 규칙
-- 시나리오는 집 밖에서, 제삼의 인물과. 한창 벌어지는 장면부터. 6번 박자(아이 눈높이)에는 농담 없음. 기준 예시는 3편.
-- 목소리: 아빠 · 나레이션 = Algenib, 아이 = Leda, 엄마 = Kore, 손님은 `src/voice.json` 의 Guest. 한 컷에 목소리는 둘까지 (`npm run voice -- epNN jobs` 가 검사한다).
+- **그림 규칙 전체는 [ART_GUIDE.md](ART_GUIDE.md)** — 화풍, 기준 그림 지도, 첨부 규칙(코드 `attachPlan` 이 자동으로 정함), art.json 쓰는 법, 뽑는 순서, 비교 확인. 아래는 그 규칙이 생긴 사연이다.
+- **그림은 항상 기준 그림을 첨부해서 뽑는다** (2026-10-24 사용자 지시). 크롬 Gemini 든 artgen 이든 `GEMINI_PROMPTS.md` 블록의 **첨부 ①(화풍 앵커 `content/_common/art/anchor/style-cutin.png`) · ②(그 인물의 기준 그림)** 을 빼지 않는다. 가족(아빠 · 아이 · 엄마)은 `content/_common/art/<인물>/normal.png`, 가슴 위 컷인이면 같은 인물의 기존 컷인(예: `content/_common/art/cutin/dad-shock.png`)도 붙인다. 프롬프트 글자만으로 그리면 얼굴 · 화풍이 달라진다 (9화 시그니처 포즈에서 실제로 달라졌다). 크롬에서 첨부하는 법: "업로드 및 도구 → 파일 업로드" 가 부르는 `input.click()` 을 가로채 그 input 을 잡고, `file_upload` 도구로 1024px 로 줄인 사본(10MB 미만)을 넣는다 — 메모리 qna-chrome-gen 참고.
+  - **빠지기 쉬운 자리 (2026-10-25 사용자 재지시 — 글자 프롬프트만으로 그려서 그림체가 또 바뀌었다):**
+    1. **가족이 한 명이라도 나오는 그림은 전부** 그 사람의 `content/_common/art/<kid|dad|mom>/normal.png` 를 붙인다 — 포즈 · 컷인뿐 아니라 여럿이 나오는 장면(`full/…`), 상상 장면, 소품 속 인물까지. 나오는 사람이 셋이면 셋 다.
+    2. **이어 그리는 컷(시그니처 2~N 컷, "the image you just made")도 요청마다 다시 첨부한다** — 앵커 + 그 인물 normal + 바로 앞 컷. 대화 기억에만 기대면 컷이 갈수록 얼굴 · 색이 변한다.
+    3. 새 인물(편마다 나오는 제삼의 인물)은 `normal` 을 먼저 뽑아 확인한 뒤, 그 인물의 나머지 그림에 그 `normal` 을 붙인다.
+    4. 자동 큐(스크립트로 여러 장 돌릴 때)를 만들면 **보내기 전에 항목마다 첨부 목록을 출력해 빈 칸이 없는지 확인**하고, 결과에 "attached N" 이 기대 수와 같은지 본다. 첨부가 실패(ATTACHFAIL · NOINPUT)한 항목은 글자만으로 보내지 말고 멈춘다.
+    5. 뽑은 뒤에는 콘택트 시트에 그 인물의 `normal.png` 를 나란히 놓고 얼굴 · 머리 · 옷 · 피부 톤이 같은지 눈으로 확인한다. 다르면 쓰지 않고 다시 뽑는다.
+    6. **사람이 없는 소품(`prop/…`)에는 얼굴 앵커(`style-cutin.png`)를 붙이지 않는다.** 10화에서 앵커만 붙인 소품 4장(홉 · 화성 돌 · 비행기 · UFO 정체)이 앵커 속 주황 점퍼 인물 위에 물건을 덧그린 그림으로 나왔다 (Gemini 가 새 그림 대신 첨부 그림을 고친다). 소품은 **잘 나온 소품 한 장**(지금은 `content/_common/art/anchor/style-prop.png` — 10화 우주 탐사선 1024px 사본)을 붙이고, 프롬프트 첫머리의 얼굴 화풍 문단(huge open mouths …) 대신 "single object sticker, no human, no face" 를 쓴다.
+- **시그니처 당황 포즈**(공통 컷인): 아빠 `dad-sig-1~3`(네모 입막음 3컷) · 엄마 `mom-sig-1~4`(곧게 편 오른 검지로 입 둘레에 네모 — 왼쪽 세로 → 오른쪽 세로 → 위 가로 → 아래 가로) + `mom-sig-scream`(케빈처럼 양 볼 누르고 악!) · 아이 `kid-sig`. 여러 컷은 같은 대화에서 이어 그려 한 동작처럼 넘긴다. 인물마다 한 편에 한 번이 기본.
+- **분량 3분 안쪽** (2:40~3:00). 대사 45~55줄. 같은 그림이 4초 넘게 머물지 않는다.
+- 시나리오는 집 밖에서, 제삼의 인물과. 아이 눈높이 박자에는 농담 · 효과음 없음.
+- 오답 카운터(정색 나레이션 "오답, N." + 구석 正)와 "저는 모답맨입니다" · "역시, 모답맨" 은 매 편 고정.
+- 목소리: 아빠 · 나레이션 = Algenib, 아이 = Leda, 엄마 = Kore, 손님은 `video/src/voice.json` 의 역할(경찰관 Erinome, 이웃 아저씨 Alnilam …). 한 컷에 목소리는 둘까지.
 - 몸 · 성 관련 소재는 몸을 그리지 않는다 (4편: 닫힌 문 · 거품 모자이크 · 단면도). 민감한 단어는 대사에만, 썸네일 · 제목 · 화면 글자에는 쓰지 않는다.
-- 분량은 8분 안팎. `storyboard.html` 과 기획서 콘티표의 시간으로 확인한다.
-- 대본을 고치면 `.md` 기획서의 대본도 같이 고친다 (영상 대본이 원본이 된 뒤에는 `script.json` 기준).
+- 법 · 의료 · 제도는 끝 화면 주석("일반 설명, 개별 상담은 전문가에게")과 설명란 ※ 줄을 넣는다. 한 곳 보도뿐인 숫자는 쓰지 않는다.
+- 유튜브 영상을 **영구 삭제하지 않는다** (Claude 는 비공개로 내리기까지만, 삭제는 사람이 Studio 에서).
+- 대본을 고치면 `plan.md` 기획서의 대본도 같이 고친다 (영상 대본이 원본이 된 뒤에는 `script/script.json` 기준).

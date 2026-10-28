@@ -1,0 +1,226 @@
+{
+  "rawVoice": true,
+  "speed": 1.25,
+  "title": "내모남불 ④ 부동산편 · 호가 · 호재 · 영끌",
+  "bgm": "cheerful",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "콜드 오픈",
+      "lines": [
+        { "who": "dad", "text": "완전 거품이네. 집값은 떨어져야 돼.", "en": "Total bubble. Prices have to come down." }
+      ]
+    },
+    {
+      "id": "c00a",
+      "beat": "콜드 오픈",
+      "lines": [
+        { "who": "realtor", "text": "도장, 여기 찍으시면 됩니다.", "en": "Stamp right here, please." },
+        { "who": "dad", "text": "자, 이제 오를 일만 남았다!", "en": "There. Now it only goes up!" }
+      ]
+    },
+    {
+      "id": "c00b",
+      "beat": "콜드 오픈",
+      "lines": [
+        { "who": "narr", "text": "사기 전엔 거품, 사고 나면 바닥. 내모남불, 하나.", "en": "Before buying: a bubble. After buying: rock bottom. Double standard, number one." },
+        { "who": "dad", "text": "저는… 모답맨입니다.", "en": "I'm… Modapman." }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "사건 개요",
+      "lines": [
+        { "who": "narr", "text": "사건 개요. 토요일 오전, 동네 부동산. 전세 만기 두 달 전.", "en": "Case summary. Saturday morning, the neighborhood realtor. Two months before our jeonse lease ends." },
+        { "who": "mom", "text": "보러만 온다더니, 도장은 왜 찍었어?", "en": "You said we were just looking. Why did you stamp it?" },
+        { "who": "dad", "text": "사장님, 우리 집 이제 얼마예요?", "en": "So, how much is our place worth now?" }
+      ]
+    },
+    {
+      "id": "c01a",
+      "beat": "사건 개요",
+      "lines": [
+        { "who": "realtor", "text": "방금 사셨습니다.", "en": "You bought it one minute ago." }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "ROUND 1 호가",
+      "lines": [
+        { "who": "narr", "text": "딱 세 판만 하죠. 1라운드, 호가.", "tts": "딱 세 판만 하죠. 일 라운드, 호가.", "en": "Just three rounds. Round one: asking prices." },
+        { "who": "kid", "text": "아빠, 호가가 뭐야?", "en": "Dad, what's an asking price?" }
+      ]
+    },
+    {
+      "id": "c02a",
+      "beat": "ROUND 1 호가",
+      "lines": [
+        { "who": "dad", "text": "파는 사람 희망 사항이지. 거래가 돼야 시세야.", "en": "Just what the seller wishes for. It's only real once it sells." }
+      ]
+    },
+    {
+      "id": "c02b",
+      "beat": "ROUND 1 호가",
+      "lines": [
+        { "who": "dad", "text": "어? 옆 동이 이 가격에 내놨대!", "en": "Whoa, the next building just listed at this price!" },
+        { "who": "dad", "text": "그럼 우리 집도 이제 이 가격이야. 모 어때~", "en": "So that's our price now too. So what~" },
+        { "who": "narr", "text": "남의 호가는 희망 사항, 우리 호가는 시세. 내모남불, 둘.", "en": "Their asking price: wishful thinking. Ours: the market price. Double standard, number two." }
+      ]
+    },
+    {
+      "id": "c02c",
+      "beat": "ROUND 1 호가",
+      "lines": [
+        { "who": "narr", "text": "내 것이 더 비싸 보이는 것. 보유 효과라고 합니다.", "en": "When what's yours looks pricier. It's called the endowment effect." },
+        { "who": "kid", "text": "보유… 뭐?", "en": "Endow… what?" }
+      ]
+    },
+    {
+      "id": "c02d",
+      "beat": "ROUND 1 호가",
+      "lines": [
+        { "who": "dad", "text": "단톡방에서 이 가격 밑으론 내놓지 말재. 좋아요!", "en": "The complex group chat says nobody list below this. Like!" },
+        { "who": "realtor", "text": "그건 집값 담합입니다. 법으로 금지돼 있어요.", "en": "That's price-fixing. It's against the law." }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "ROUND 2 호재 · 현수막",
+      "lines": [
+        { "who": "narr", "text": "2라운드. 호재와 현수막.", "tts": "이 라운드. 호재와 현수막.", "en": "Round two: \"good news\" and banners." },
+        { "who": "dad", "text": "남의 동네에 역이 생긴다고? 그거 10년 걸려. 설레발이야.", "tts": "남의 동네에 역이 생긴다고? 그거 십 년 걸려. 설레발이야.", "en": "A new station in some other town? That takes ten years. All hype." }
+      ]
+    },
+    {
+      "id": "c03a",
+      "beat": "ROUND 2 호재 · 현수막",
+      "lines": [
+        { "who": "kid", "text": "아빠, 우리 동네에도 역 생긴대!", "en": "Dad, they say a station's coming to OUR town!" },
+        { "who": "dad", "text": "확정이야, 확정! 역 생기고, 백화점 생기고, 황금 집이다!", "en": "It's official! A station, a mall, our house turns to gold!" }
+      ]
+    },
+    {
+      "id": "c03b",
+      "beat": "ROUND 2 호재 · 현수막",
+      "lines": [
+        { "who": "realtor", "text": "현수막은, 확정이 아닙니다.", "en": "A banner is not a confirmation." },
+        { "who": "narr", "text": "보고 싶은 소식만 믿는 것, 확증 편향. 내모남불, 셋.", "en": "Believing only the news you want. Confirmation bias. Double standard, number three." }
+      ]
+    },
+    {
+      "id": "c03c",
+      "beat": "ROUND 2 호재 · 현수막",
+      "lines": [
+        { "who": "dad", "text": "옆 동네에 소각장? 꼭 필요한 시설이지. 반대하면 이기적이야.", "en": "An incinerator next town over? We need those. Opposing it is selfish." },
+        { "who": "mom", "text": "여보, 그거 우리 동네래.", "en": "Honey, it's in our town." }
+      ]
+    },
+    {
+      "id": "c03d",
+      "beat": "ROUND 2 호재 · 현수막",
+      "lines": [
+        { "who": "dad", "text": "결사반대! 우리 동네는 절대 안 돼!", "en": "Over my dead body! Not in our town!" },
+        { "who": "narr", "text": "내 뒷마당만은 안 된다, 님비. 내모남불, 넷.", "en": "Anywhere but my backyard: NIMBY. Double standard, number four." }
+      ]
+    },
+    {
+      "id": "c03e",
+      "beat": "ROUND 2 호재 · 현수막",
+      "lines": [
+        { "who": "realtor", "text": "다들 우리 동네는 안 된다시면… 어디에 짓죠?", "en": "If every town says \"not here\"… where do we build it?" }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "ROUND 3 영끌 · 이자",
+      "lines": [
+        { "who": "narr", "text": "3라운드. 영끌과 이자.", "tts": "삼 라운드. 영끌과 이자.", "en": "Round three: borrowing to the max, and interest." },
+        { "who": "buddy", "text": "야, 나도 집 샀다. 영끌로.", "en": "Dude, I bought a place too. Borrowed every last won." }
+      ]
+    },
+    {
+      "id": "c04a",
+      "beat": "ROUND 3 영끌 · 이자",
+      "lines": [
+        { "who": "dad", "text": "영끌? 무리했네. 이자 감당 되겠어?", "en": "Every last won? That's reckless. Can you handle the interest?" },
+        { "who": "mom", "text": "우리도 대출 끝까지 받았잖아.", "en": "We maxed out our loan too." }
+      ]
+    },
+    {
+      "id": "c04b",
+      "beat": "ROUND 3 영끌 · 이자",
+      "lines": [
+        { "who": "dad", "text": "우리 건 레버리지야. 전략이지. 모 어때~", "en": "Ours is leverage. Strategy. So what~" },
+        { "who": "kid", "text": "아빠, 전에 월세는 버리는 돈이랬잖아.", "en": "Dad, you said rent is money thrown away." }
+      ]
+    },
+    {
+      "id": "c04c",
+      "beat": "ROUND 3 영끌 · 이자",
+      "lines": [
+        { "who": "dad", "text": "이자는 달라! 이건… 투자 비용이야!", "en": "Interest is different! It's… an investment cost!" },
+        { "who": "narr", "text": "남이 하면 영끌, 내가 하면 레버리지. 내모남불, 다섯, 여섯.", "en": "When they do it, it's reckless. When I do it, it's leverage. Double standard, five and six." }
+      ]
+    },
+    {
+      "id": "c04d",
+      "beat": "ROUND 3 영끌 · 이자",
+      "lines": [
+        { "who": "realtor", "text": "나만은 괜찮을 거라는 믿음. 낙관 편향이라고 합니다.", "en": "\"I'll be the one who's fine.\" That's called optimism bias." },
+        { "who": "dad", "text": "…네?", "en": "…Huh?" }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "속사포 라운드",
+      "lines": [
+        { "who": "narr", "text": "보너스 라운드. 속사포 내모남불!", "en": "Bonus round. Rapid-fire double standards!" },
+        { "who": "dad", "text": "남의 단지는 복잡하고, 우리 단지는 대단지!", "en": "Their complex: too crowded. Ours: a grand complex!" },
+        { "who": "dad", "text": "남이 전세 올리면 너무하고, 내가 올리면 시세대로!", "en": "Their landlord raising the deposit: cruel. Me raising it: just the market rate!" },
+        { "who": "dad", "text": "남의 현수막은 흉하고, 우리 현수막은 단합!", "en": "Their banners: an eyesore. Ours: team spirit!" },
+        { "who": "narr", "text": "내모남불, 일곱, 여덟, 아홉!", "en": "Double standard: seven, eight, nine!" }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "아이 눈높이",
+      "lines": [
+        { "who": "kid", "text": "아빠, 우리 집 올랐어? 내렸어?", "en": "Dad, did our house go up or down?" },
+        { "who": "dad", "text": "…글쎄. 매일 보느라 바빴는데, 모르겠다.", "en": "…Good question. I checked it every day, and I still don't know." },
+        { "who": "kid", "text": "올라도 내려도, 내 방은 그대로야. 나는 이 놀이터가 좋아.", "en": "Up or down, my room's the same. And I like this playground." },
+        { "who": "dad", "text": "…그러네. 사는 집이지, 숫자가 아니지.", "en": "…You're right. It's a home, not a number." }
+      ]
+    },
+    {
+      "id": "c07",
+      "beat": "반전",
+      "lines": [
+        { "who": "dad", "text": "내가 딱 꼭대기에서 판 거야. 이제 폭락할 거야.", "en": "I sold right at the top. It's gonna crash now." },
+        { "who": "realtor", "text": "고객님 파신 집, 또 올랐습니다.", "en": "The house you sold just went up again." }
+      ]
+    },
+    {
+      "id": "c07a",
+      "beat": "반전",
+      "lines": [
+        { "who": "dad", "text": "…거품이야, 거품.", "en": "…Bubble. Total bubble." },
+        { "who": "narr", "text": "못 딴 포도는 시다. 신 포도. 내모남불, 열.", "en": "The grapes you can't reach are sour. Double standard, number ten." }
+      ]
+    },
+    {
+      "id": "c07b",
+      "beat": "반전",
+      "lines": [
+        { "who": "realtor", "text": "그 말씀, 일 년 전에도 하셨습니다.", "en": "You said the exact same thing a year ago." },
+        { "who": "narr", "text": "꼭대기가 아니었습니다. 이건 내모남불이 아닙니다. 그냥 오답.", "en": "It wasn't the top. That's not a double standard. Just a wrong answer." }
+      ]
+    },
+    {
+      "id": "c07c",
+      "beat": "반전",
+      "lines": [
+        { "who": "dad", "text": "…역시, 모답맨.", "en": "…Classic Modapman." }
+      ]
+    }
+  ]
+}

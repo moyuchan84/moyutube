@@ -1,0 +1,11 @@
+{
+  "note": "output/briefs/2026-10-22_billboard.md 사실 카드 B1~B5 (빌보드 발표를 인용한 언론 보도 기준, 단위: 앨범 환산 유닛)",
+  "rows": [
+    { "group": "방탄소년단", "album": "아리랑", "chart": "4.4", "units": 641000, "sales": 532000 },
+    { "group": "에이티즈", "album": "GOLDEN HOUR : Part.5", "chart": "7.11", "units": 228000, "sales": 223000 },
+    { "group": "스트레이 키즈", "album": "THIS & THAT", "chart": "8.22", "units": 369000, "sales": 357000 },
+    { "group": "캣츠아이", "album": "WILD", "chart": "8.29", "units": 170000, "sales": 145000 },
+    { "group": "엔하이픈", "album": "THE SIN : BLISS", "chart": "9.5", "units": 98000, "sales": 92000 }
+  ],
+  "btsWeek2": 187000
+}

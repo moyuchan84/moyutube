@@ -1,7 +1,7 @@
 // 한 편의 그림 · 음성 만들기를 다른 도구(Antigravity 같은 에이전트)에 넘길 때 쓰는 작업 지시서를 만든다.
-//   episodes/NN-…/ANTIGRAVITY.md      지시서 (사람도 읽는다)
-//   episodes/NN-…/jobs/images.json    그림 작업 목록 (프롬프트 · 첨부 · 저장 경로)
-//   episodes/NN-…/jobs/voice.json     음성 작업 목록 (컷별 목소리 · 대사 · 저장 경로)
+//   content/<편>/ANTIGRAVITY.md               지시서 (사람도 읽는다)
+//   content/<편>/prompts/jobs/images.json     그림 작업 목록 (프롬프트 · 첨부 · 저장 경로)
+//   content/<편>/prompts/jobs/voice.json      음성 작업 목록 (컷별 목소리 · 대사 · 저장 경로)
 // 사용: node scripts/handoff.mjs ep03
 import { execSync } from "node:child_process";
 import { readFileSync, writeFileSync } from "node:fs";
@@ -15,8 +15,8 @@ run(`node scripts/voice.mjs ${episode} jobs`);
 run(`node scripts/voice.mjs ${episode} studio`);
 
 const dir = episodeDir(episode);
-const images = JSON.parse(readFileSync(join(ROOT, dir, "jobs/images.json"), "utf8"));
-const voice = JSON.parse(readFileSync(join(ROOT, dir, "jobs/voice.json"), "utf8"));
+const images = JSON.parse(readFileSync(join(ROOT, dir, "prompts/jobs/images.json"), "utf8"));
+const voice = JSON.parse(readFileSync(join(ROOT, dir, "prompts/jobs/voice.json"), "utf8"));
 const KIND = { char: "인물", cutin: "컷인", prop: "소품", bg: "배경", full: "장면", stage: "무대", layer: "앞쪽 레이어", talk: "말하는 그림" };
 const todoImages = images.jobs.filter((j) => !j.done);
 const todoVoice = voice.jobs.filter((j) => !j.done);
@@ -37,7 +37,7 @@ const md = `# ${images.title} — 그림 · 음성 작업 지시서
 
 ## 1. 그림
 
-작업 목록: [\`jobs/images.json\`](jobs/images.json). 사람이 읽는 판은 [\`GEMINI_PROMPTS.md\`](GEMINI_PROMPTS.md).
+작업 목록: [\`prompts/jobs/images.json\`](prompts/jobs/images.json). 사람이 읽는 판은 [\`prompts/GEMINI_PROMPTS.md\`](prompts/GEMINI_PROMPTS.md).
 
 \`jobs\` 배열을 **위에서부터 차례대로** 처리한다. 한 건의 뜻:
 
@@ -67,7 +67,7 @@ ${images.jobs.map((j) => `| ${j.done ? "✅" : j.optional ? "➕" : "⬜"} | ${j
 
 ## 2. 음성
 
-작업 목록: [\`jobs/voice.json\`](jobs/voice.json). 사람이 붙여넣기 좋은 판은 \`video/out/${episode}/voice-studio.html\`.
+작업 목록: [\`prompts/jobs/voice.json\`](prompts/jobs/voice.json). 사람이 붙여넣기 좋은 판은 \`video/out/${episode}/voice-studio.html\`.
 
 - 도구: ${voice.engine}. 목소리는 고정이다 (\`video/VOICE.md\`): ${voices.map((sp) => `${sp.who} = **${sp.voice}**`).join(", ")}.
 - **컷 하나에 파일 하나.** 그 컷의 대사를 \`lines\` 순서대로 한 번에 읽힌다.
@@ -98,7 +98,7 @@ npm run make -- ${episode}            # 영상 + 한글 · 영어 자막 → vid
 
 ## 하지 말 것
 
-- \`video/src/${episode}/script.json\` 의 대사, \`video/src/voice.json\` 의 목소리, 프롬프트의 화풍 문장을 바꾸지 않는다.
+- \`${dir}/script/script.json\` 의 대사, \`video/src/voice.json\` 의 목소리, 프롬프트의 화풍 문장을 바꾸지 않는다.
 - 이미 있는 그림(✅)과 다른 편의 파일을 덮어쓰지 않는다.
 - 커밋 · 푸시 · 유튜브 업로드를 하지 않는다.
 - 끝나면 만든 파일 목록과, 못 만들었거나 마음에 걸리는 그림 · 컷을 알려 준다.

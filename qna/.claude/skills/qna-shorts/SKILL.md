@@ -11,7 +11,7 @@ description: 「여덟 살의 질문」 롱폼 한 편(epNN)을 본편 유입용
 | 단계 | 할 일 | 결과물 |
 |---|---|---|
 | 1 | 롱폼 대사 목록 보기 · 쇼츠 구성 고르기 | (머릿속 / 대화) |
-| 2 | 편집 계획 쓰기 | `video/src/shorts/<epNN>.json` |
+| 2 | 편집 계획 쓰기 | `content/<편>/script/shorts.json` |
 | 3 | `src/Root.tsx` 의 `EDITED_SHORTS` 에 등록 | |
 | 4 | `npm run short -- <epNN> --check` → 콘택트 시트를 **눈으로 확인**하고 고친다 | `video/out/shorts/<epNN>-check.png` |
 | 5 | `npm run short -- <epNN>` | `video/out/shorts/<epNN>-short.mp4`, `<epNN>-short.upload.md` |
@@ -22,10 +22,10 @@ description: 「여덟 살의 질문」 롱폼 한 편(epNN)을 본편 유입용
 
 대사 목록 보기:
 ```bash
-cd qna/video && node -e "const s=require('./src/epNN/script.json'),t=require('./src/epNN/timing.json');for(const c of s.cuts)c.lines.forEach((l,i)=>console.log(c.id+'-'+i,l.who,(t[c.id+'-'+i]||0).toFixed(1)+'s',l.text))"
+cd qna/video && node -e "const s=require('../content/<편>/script/script.json'),t=require('../content/<편>/script/timing.json');for(const c of s.cuts)c.lines.forEach((l,i)=>console.log(c.id+'-'+i,l.who,(t[c.id+'-'+i]||0).toFixed(1)+'s',l.text))"
 ```
 
-기준 예시는 `src/shorts/ep01.json`. 고르는 규칙:
+기준 예시는 `content/ep01-hotel-motel-hostel/script/shorts.json`. 고르는 규칙:
 1. **0초에 질문**: 아이의 질문 대사로 바로 시작 (인사 · 나레이션 도입 금지). 위에 `hook` 두 줄이 쾅 찍힌다 — "아빠도 대답 못 한 / 진짜 차이"처럼 **답이 있다는 약속**.
 2. **틀린 답 → 땡**: 아빠가 얼버무린 대사에 `stamp` (오답을 바로잡는 쾌감).
 3. **반전 한 줄**: "그런데 ~부터가 완전히 다릅니다" 류에 `pop: "?!"`.
@@ -35,7 +35,7 @@ cd qna/video && node -e "const s=require('./src/epNN/script.json'),t=require('./
 7. 6번 박자(아이 눈높이 설명)와 롱폼의 결론 문장은 쓰지 않는다 — 본편에서 볼 이유를 남긴다.
 8. 몸 · 성 소재 편(4편 등)은 민감한 단어를 `hook` · `stamp` · `end` · 제목에 쓰지 않는다 (qna/CLAUDE.md 고정 규칙).
 
-## 2. 편집 계획 형식 (`src/shorts/<epNN>.json`)
+## 2. 편집 계획 형식 (`content/<편>/script/shorts.json`)
 
 ```jsonc
 {
@@ -53,7 +53,7 @@ cd qna/video && node -e "const s=require('./src/epNN/script.json'),t=require('./
     { "line": "c07-0", "chapter": 2, "transition": "glitch", "hold": 4 }
   ],
   "end": { "title": ["독일의 한 선생님은", "왜 이걸 만들었을까?"], "sub": "본편에서 확인하세요" },
-  "upload": { "longTitle": "...", "title": "... #shorts", "description": "...", "tags": [], "playlist": "여덟 살 아들의 호기심" }
+  "upload": { "longTitle": "...", "title": "... #shorts", "description": "...", "tags": [], "playlist": "모(오)답맨 (여덟 살 아들의 호기심)" }
 }
 ```
 

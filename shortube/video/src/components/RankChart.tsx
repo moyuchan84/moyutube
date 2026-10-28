@@ -1,5 +1,5 @@
 import { Easing, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
-import { Series, SERIES, WEEKS } from "../data";
+import { Series, SERIES, WEEKS } from "../units/ranking/data";
 import { C, fontFamily, springs } from "../theme";
 
 const X = [200, 460, 720];

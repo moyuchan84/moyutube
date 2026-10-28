@@ -5,16 +5,16 @@
 import { execSync } from "node:child_process";
 import { existsSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
-import { VIDEO } from "./art-lib.mjs";
+import { VIDEO, argCode, scriptPath } from "./art-lib.mjs";
 
-const episode = process.argv[2] ?? "ep01";
+const episode = argCode(process.argv[2], "사용: node scripts/make.mjs");
 const run = (cmd) => {
   console.log(`\n▶ ${cmd}`);
   execSync(cmd, { cwd: VIDEO, stdio: "inherit" });
 };
 
-const script = join(VIDEO, "src", episode, "script.json");
-const timing = join(VIDEO, "src", episode, "timing.json");
+const script = scriptPath(episode, "script.json");
+const timing = scriptPath(episode, "timing.json");
 const stale = !existsSync(timing) || statSync(timing).mtimeMs < statSync(script).mtimeMs;
 
 run(`node scripts/prompts.mjs ${episode}`);
@@ -24,6 +24,7 @@ else if (process.argv.includes("--tts") || !existsSync(timing)) run(`npm run tts
 else if (stale) console.log("\n⚠ script.json 이 음성보다 새것이다. 대사를 고쳤다면 --voice(Gemini 음성)나 --tts(임시 음성)를 붙여 다시 실행한다 (연출만 고쳤으면 그대로 둬도 된다).");
 if (!existsSync(join(VIDEO, "public/sfx/rewind.wav"))) run("node scripts/sfx.mjs");
 if (!existsSync(join(VIDEO, "public/bgm/cheerful.wav"))) run("node scripts/bgm.mjs");
+run(`node scripts/sync.mjs ${episode}`);
 run(`node scripts/speed.mjs ${episode}`);
 const id = episode[0].toUpperCase() + episode.slice(1);
 run(`npx remotion render src/index.ts ${id} out/${episode}/${episode}.mp4`);

@@ -1,14 +1,14 @@
-// 대본(script.json) + 그림 목록(art.json) → 콘티 시트 한 장 (episodes/NN-…/storyboard.html)
+// 대본(script.json) + 그림 목록(art.json) → 콘티 시트 한 장 (content/<편>/storyboard.html)
 // 사용: node scripts/storyboard.mjs ep04
 // 그림이 이미 있으면(video/public/art 의 처리된 그림 → 없으면 원본) 그 그림으로, 없으면 얼굴 없는 실루엣 · 이름표로 그린다.
 // 컷마다 배경 · 인물 위치 · 소품 · 움직임(등장, 걸어가기, 배경 밀기) · 화면 글자 · 대사를 한눈에 본다.
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join, relative } from "node:path";
-import { ROOT, VIDEO, assetKey, common, episodeDir, findRaw, isCommon, loadEpisode } from "./art-lib.mjs";
+import { ROOT, VIDEO, assetKey, common, episodeDir, findRaw, isCommon, listEpisodes, loadEpisode, readScript } from "./art-lib.mjs";
 
 const ep = process.argv[2];
-if (!/^ep\d+$/.test(ep ?? "")) throw new Error("사용: node scripts/storyboard.mjs ep04");
-const script = JSON.parse(readFileSync(join(VIDEO, "src", ep, "script.json"), "utf8"));
+if (!listEpisodes().includes(ep)) throw new Error(`사용: node scripts/storyboard.mjs <${listEpisodes().join("|")}>`);
+const script = readScript(ep, "script.json");
 const art = loadEpisode(ep);
 const dir = join(ROOT, episodeDir(ep));
 const items = new Map([...common.items, ...art.items].map((i) => [i.id, i]));

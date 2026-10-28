@@ -107,6 +107,42 @@
     "w": 1254,
     "h": 1300
   },
+  "common/cutin/dad-sig-1": {
+    "w": 1300,
+    "h": 1210
+  },
+  "common/cutin/dad-sig-2": {
+    "w": 1500,
+    "h": 1395
+  },
+  "common/cutin/dad-sig-3": {
+    "w": 1500,
+    "h": 1471
+  },
+  "common/cutin/mom-sig-1": {
+    "w": 1275,
+    "h": 1300
+  },
+  "common/cutin/mom-sig-2": {
+    "w": 1471,
+    "h": 1500
+  },
+  "common/cutin/mom-sig-3": {
+    "w": 1471,
+    "h": 1500
+  },
+  "common/cutin/mom-sig-4": {
+    "w": 1471,
+    "h": 1500
+  },
+  "common/cutin/mom-sig-scream": {
+    "w": 1300,
+    "h": 1300
+  },
+  "common/cutin/kid-sig": {
+    "w": 1300,
+    "h": 1170
+  },
   "common/bg/living-room": {
     "w": 2560,
     "h": 1440
@@ -154,6 +190,62 @@
   "ep01/full/next-teaser": {
     "w": 2560,
     "h": 1440
+  },
+  "ep01/bg/hostel-lobby": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep01/bg/hill-parking": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep01/manager/normal": {
+    "w": 744,
+    "h": 1500
+  },
+  "ep01/manager/correct": {
+    "w": 872,
+    "h": 1500
+  },
+  "ep01/manager/key": {
+    "w": 1060,
+    "h": 1500
+  },
+  "ep01/manager/point": {
+    "w": 1031,
+    "h": 1500
+  },
+  "ep01/cutin/manager-correct": {
+    "w": 1277,
+    "h": 1300
+  },
+  "ep01/full/mo-motel-imagine": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep01/prop/hospice": {
+    "w": 1200,
+    "h": 1153
+  },
+  "ep01/prop/room-key": {
+    "w": 1200,
+    "h": 1044
+  },
+  "ep01/prop/suitcases": {
+    "w": 897,
+    "h": 1200
+  },
+  "ep01/prop/storm": {
+    "w": 1200,
+    "h": 1193
+  },
+  "ep01/cutin/dad-shy": {
+    "w": 1112,
+    "h": 1300
+  },
+  "ep01/prop/motel-shy": {
+    "w": 1200,
+    "h": 1158
   },
   "ep02/full/law-book": {
     "w": 2560,
@@ -386,6 +478,38 @@
   "ep04/full/next-teaser": {
     "w": 2560,
     "h": 1440
+  },
+  "ep04/cutin/barber-flat": {
+    "w": 1174,
+    "h": 1300
+  },
+  "ep04/prop/fur-blanket": {
+    "w": 1200,
+    "h": 1040
+  },
+  "ep04/prop/razor": {
+    "w": 917,
+    "h": 1200
+  },
+  "ep04/prop/hair-tips": {
+    "w": 901,
+    "h": 1200
+  },
+  "ep04/prop/bulb-brain": {
+    "w": 1200,
+    "h": 983
+  },
+  "ep04/prop/puberty-switch": {
+    "w": 1163,
+    "h": 1200
+  },
+  "ep04/prop/hair-movers": {
+    "w": 1200,
+    "h": 940
+  },
+  "ep04/prop/grandpa-photos": {
+    "w": 1200,
+    "h": 1067
   },
   "ep05/bg/pharmacy": {
     "w": 2560,
@@ -698,5 +822,721 @@
   "ep07/full/next-teaser": {
     "w": 2560,
     "h": 1440
+  },
+  "ep08/bg/empty-rack": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep08/bg/police-box": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep08/bg/whiteboard": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep08/police/normal": {
+    "w": 808,
+    "h": 1500
+  },
+  "ep08/police/correct": {
+    "w": 803,
+    "h": 1500
+  },
+  "ep08/police/draw": {
+    "w": 851,
+    "h": 1500
+  },
+  "ep08/police/monitor": {
+    "w": 996,
+    "h": 1500
+  },
+  "ep08/neighbor/normal": {
+    "w": 1146,
+    "h": 1500
+  },
+  "ep08/kid/bandage": {
+    "w": 721,
+    "h": 1500
+  },
+  "ep08/cutin/police-correct": {
+    "w": 1126,
+    "h": 1300
+  },
+  "ep08/cutin/neighbor": {
+    "w": 1292,
+    "h": 1300
+  },
+  "ep08/prop/report-form": {
+    "w": 1091,
+    "h": 1200
+  },
+  "ep08/prop/tv-news": {
+    "w": 1200,
+    "h": 1111
+  },
+  "ep08/prop/standee": {
+    "w": 788,
+    "h": 1200
+  },
+  "ep08/prop/tally": {
+    "w": 1200,
+    "h": 790
+  },
+  "ep08/prop/fork-road": {
+    "w": 1200,
+    "h": 474
+  },
+  "ep08/prop/board-path": {
+    "w": 1139,
+    "h": 1200
+  },
+  "ep08/prop/bike-piece": {
+    "w": 1200,
+    "h": 1177
+  },
+  "ep08/prop/magnifier": {
+    "w": 1160,
+    "h": 1200
+  },
+  "ep08/prop/warrant": {
+    "w": 992,
+    "h": 1200
+  },
+  "ep08/prop/two-doors": {
+    "w": 1200,
+    "h": 913
+  },
+  "ep08/prop/case-file": {
+    "w": 1033,
+    "h": 1200
+  },
+  "ep08/prop/scale-gavel": {
+    "w": 1192,
+    "h": 1200
+  },
+  "ep08/prop/court-stairs": {
+    "w": 1200,
+    "h": 742
+  },
+  "ep08/prop/iou": {
+    "w": 934,
+    "h": 1200
+  },
+  "ep08/prop/civil-path": {
+    "w": 1200,
+    "h": 660
+  },
+  "ep08/prop/role-cards": {
+    "w": 1200,
+    "h": 447
+  },
+  "ep08/prop/cctv-bike": {
+    "w": 1200,
+    "h": 1188
+  },
+  "ep08/full/courtroom": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep08/full/sign-change": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep08/full/next-teaser": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep09/bg/museum-hall": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep09/bg/space-earth": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep09/bg/museum-plaza-dusk": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep09/guide/normal": {
+    "w": 779,
+    "h": 1500
+  },
+  "ep09/guide/correct": {
+    "w": 781,
+    "h": 1500
+  },
+  "ep09/guide/point": {
+    "w": 915,
+    "h": 1500
+  },
+  "ep09/guide/model": {
+    "w": 945,
+    "h": 1500
+  },
+  "ep09/cutin/guide-correct": {
+    "w": 1300,
+    "h": 1300
+  },
+  "ep09/dad/v-sign": {
+    "w": 1105,
+    "h": 1500
+  },
+  "ep09/kid/wave-sky": {
+    "w": 899,
+    "h": 1500
+  },
+  "ep09/full/nuri-selfie-imagine": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep09/full/family-rocket-imagine": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep09/full/stage-drop": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep09/prop/nuri-rocket": {
+    "w": 378,
+    "h": 1200
+  },
+  "ep09/prop/rocket-truck": {
+    "w": 1200,
+    "h": 703
+  },
+  "ep09/prop/small-sats": {
+    "w": 1200,
+    "h": 878
+  },
+  "ep09/prop/aerial-photo": {
+    "w": 1200,
+    "h": 1107
+  },
+  "ep09/prop/earth-orbit": {
+    "w": 1190,
+    "h": 1200
+  },
+  "ep09/prop/moon": {
+    "w": 1200,
+    "h": 1199
+  },
+  "ep09/prop/crew-capsule": {
+    "w": 1105,
+    "h": 1200
+  },
+  "ep09/prop/rocket-inside": {
+    "w": 592,
+    "h": 1200
+  },
+  "ep10/bg/living-room-movie": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep10/bg/observatory-hall": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep10/bg/deep-space": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep10/bg/observatory-roof-night": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep10/astro/normal": {
+    "w": 594,
+    "h": 1500
+  },
+  "ep10/astro/correct": {
+    "w": 708,
+    "h": 1500
+  },
+  "ep10/astro/point": {
+    "w": 1070,
+    "h": 1500
+  },
+  "ep10/astro/listen": {
+    "w": 826,
+    "h": 1500
+  },
+  "ep10/cutin/astro-correct": {
+    "w": 1038,
+    "h": 1300
+  },
+  "ep10/full/sofa-movie": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep10/full/ufo-visit-imagine": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep10/full/octopus-alien-imagine": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep10/dad/point-sky": {
+    "w": 1011,
+    "h": 1500
+  },
+  "ep10/kid/ear-sky": {
+    "w": 724,
+    "h": 1500
+  },
+  "ep10/prop/hop-cone": {
+    "w": 1160,
+    "h": 1200
+  },
+  "ep10/prop/court-beer-hall": {
+    "w": 1200,
+    "h": 1129
+  },
+  "ep10/prop/ufo-unknowns": {
+    "w": 900,
+    "h": 1200
+  },
+  "ep10/prop/interstellar-comet": {
+    "w": 1200,
+    "h": 1156
+  },
+  "ep10/prop/mars-leopard-rock": {
+    "w": 1200,
+    "h": 1026
+  },
+  "ep10/prop/microbes": {
+    "w": 1188,
+    "h": 1200
+  },
+  "ep10/prop/radio-telescope": {
+    "w": 1006,
+    "h": 1200
+  },
+  "ep10/prop/space-probe": {
+    "w": 1200,
+    "h": 1099
+  },
+  "ep10/prop/blinking-plane": {
+    "w": 1200,
+    "h": 955
+  },
+  "ep10/full/hope-poster": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep11/butcher/normal": {
+    "w": 840,
+    "h": 1500
+  },
+  "ep11/butcher/correct": {
+    "w": 817,
+    "h": 1500
+  },
+  "ep11/butcher/explain": {
+    "w": 913,
+    "h": 1500
+  },
+  "ep11/butcher/smile": {
+    "w": 622,
+    "h": 1500
+  },
+  "ep11/cutin/butcher-flat": {
+    "w": 1062,
+    "h": 1300
+  },
+  "ep11/bg/meat-counter": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep11/bg/family-tree": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep11/bg/imagine-pink": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep11/full/turkey-tie-imagine": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep11/full/jump-kick-imagine": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep11/full/stamp-hunt": {
+    "w": 2560,
+    "h": 1440
+  },
+  "ep11/prop/turkey": {
+    "w": 1133,
+    "h": 1200
+  },
+  "ep11/prop/halal-stamp": {
+    "w": 1200,
+    "h": 975
+  },
+  "ep11/prop/kosher-stamp": {
+    "w": 1200,
+    "h": 1008
+  },
+  "ep11/prop/pig-no": {
+    "w": 1013,
+    "h": 1200
+  },
+  "ep11/prop/three-books": {
+    "w": 1200,
+    "h": 1040
+  },
+  "ep11/prop/calendar": {
+    "w": 1200,
+    "h": 1006
+  },
+  "ep11/prop/hammer-paper": {
+    "w": 811,
+    "h": 1200
+  },
+  "ep11/prop/toolbox": {
+    "w": 1200,
+    "h": 1108
+  },
+  "ep11/prop/round-table": {
+    "w": 1200,
+    "h": 863
+  },
+  "ep11/prop/high-chair": {
+    "w": 698,
+    "h": 1200
+  },
+  "ep11/prop/steamship": {
+    "w": 1200,
+    "h": 941
+  },
+  "ep11/prop/mo-stamp": {
+    "w": 1200,
+    "h": 1186
+  },
+  "ep11/prop/grad-cap": {
+    "w": 1200,
+    "h": 1111
+  },
+  "nm01/full/highway-cutin": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm01/full/car-interior": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm01/cutin/dad-rage-wheel": {
+    "w": 1300,
+    "h": 1262
+  },
+  "nm01/cutin/dad-chill": {
+    "w": 1211,
+    "h": 1300
+  },
+  "nm01/full/exit-queue": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm01/full/judge-imagine": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm01/full/dad-merge": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm01/traffic/normal": {
+    "w": 609,
+    "h": 1500
+  },
+  "nm01/traffic/point": {
+    "w": 824,
+    "h": 1500
+  },
+  "nm01/cutin/traffic-flat": {
+    "w": 1040,
+    "h": 1300
+  },
+  "nm01/traffic/shopping": {
+    "w": 756,
+    "h": 1500
+  },
+  "nm01/cutin/dad-heart": {
+    "w": 1188,
+    "h": 1300
+  },
+  "nm01/full/mart-hydrant": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm01/full/dad-hydrant": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm01/full/bench-sunset": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm01/full/blinker-home": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm02/manager/normal": {
+    "w": 574,
+    "h": 1500
+  },
+  "nm02/manager/radio": {
+    "w": 626,
+    "h": 1500
+  },
+  "nm02/cutin/manager-flat": {
+    "w": 1053,
+    "h": 1300
+  },
+  "nm02/bg/lobby": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm02/bg/elevator-inside": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm02/full/door-closing": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm02/cutin/dad-rage": {
+    "w": 1173,
+    "h": 1300
+  },
+  "nm02/prop/finger-mash": {
+    "w": 1200,
+    "h": 1076
+  },
+  "nm02/cutin/dad-whistle": {
+    "w": 1179,
+    "h": 1300
+  },
+  "nm02/full/family-hall": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm02/full/rocket-imagine": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm02/prop/panel-all-lit": {
+    "w": 619,
+    "h": 1200
+  },
+  "nm02/full/neighbor-buttons": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm02/full/dad-wrong-floor": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm02/full/loud-phone": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm02/full/dad-speaker": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm02/full/bench-dusk": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm02/full/mom-door": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm03/teller/normal": {
+    "w": 791,
+    "h": 1500
+  },
+  "nm03/teller/call": {
+    "w": 867,
+    "h": 1500
+  },
+  "nm03/teller/no-recommend": {
+    "w": 774,
+    "h": 1500
+  },
+  "nm03/cutin/teller-flat": {
+    "w": 1109,
+    "h": 1300
+  },
+  "nm03/buddy/normal": {
+    "w": 958,
+    "h": 1500
+  },
+  "nm03/buddy/cry": {
+    "w": 813,
+    "h": 1500
+  },
+  "nm03/bg/bank-lobby": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm03/bg/bank-dusk": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm03/full/waiting-phone": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm03/full/stock-god-imagine": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm03/cutin/dad-blue": {
+    "w": 1240,
+    "h": 1300
+  },
+  "nm03/full/dad-cheap": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm03/cutin/dad-bellyache": {
+    "w": 1233,
+    "h": 1300
+  },
+  "nm03/full/dad-crop": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm03/full/mom-reveal": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm03/full/bench-dusk": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm03/prop/phone-up": {
+    "w": 668,
+    "h": 1200
+  },
+  "nm03/prop/phone-down": {
+    "w": 717,
+    "h": 1200
+  },
+  "nm03/prop/number-ticket": {
+    "w": 1089,
+    "h": 1200
+  },
+  "nm03/prop/bankbook": {
+    "w": 1200,
+    "h": 1104
+  },
+  "nm04/realtor/normal": {
+    "w": 745,
+    "h": 1500
+  },
+  "nm04/realtor/stamp": {
+    "w": 892,
+    "h": 1500
+  },
+  "nm04/realtor/calculator": {
+    "w": 772,
+    "h": 1500
+  },
+  "nm04/cutin/realtor-flat": {
+    "w": 1147,
+    "h": 1300
+  },
+  "nm04/buddy/normal": {
+    "w": 958,
+    "h": 1500
+  },
+  "nm04/buddy/call-key": {
+    "w": 963,
+    "h": 1500
+  },
+  "nm04/bg/realtor-window": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm04/bg/realtor-office": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm04/bg/complex-gate": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm04/bg/playground-dusk": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm04/full/window-bubble": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm04/full/stamp-slam": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm04/cutin/dad-sparkle": {
+    "w": 1300,
+    "h": 1264
+  },
+  "nm04/full/station-imagine": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm04/full/banner-oppose": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm04/cutin/dad-interest": {
+    "w": 1170,
+    "h": 1300
+  },
+  "nm04/cutin/dad-sour": {
+    "w": 1300,
+    "h": 1288
+  },
+  "nm04/full/playground-dusk": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm04/prop/phone-up": {
+    "w": 668,
+    "h": 1200
+  },
+  "nm04/prop/listing-sheet": {
+    "w": 1164,
+    "h": 1200
+  },
+  "nm04/prop/station": {
+    "w": 1200,
+    "h": 1183
+  },
+  "nm04/prop/incinerator": {
+    "w": 999,
+    "h": 1200
+  },
+  "nm04/prop/big-complex": {
+    "w": 1200,
+    "h": 1011
+  },
+  "nm04/prop/house-key": {
+    "w": 1200,
+    "h": 1018
+  },
+  "nm04/prop/sour-grapes": {
+    "w": 993,
+    "h": 1200
   }
 }

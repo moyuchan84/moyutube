@@ -1,0 +1,22 @@
+{
+  "id": "{{code}}-Modapman",
+  "episode": "{{code}}",
+  "voice": "{{code}}",
+  "bgm": "cheerful",
+  "gap": 1,
+  "counter": "모답맨 오답",
+  "thumb": { "top": "", "bottom": "", "sub": "3분 정리", "dad": "common/cutin/dad-sig-3", "guest": "cutin/guest-correct", "count": 3 },
+  "beats": [
+    {
+      "line": "c00-0",
+      "shots": [
+        {
+          "bg": "bg/main",
+          "cast": [{ "art": "common/cutin/kid-ask", "x": 0.3, "h": 1, "enter": "pop", "talk": "kid" }],
+          "text": [{ "t": "질문", "style": "shake", "x": 0.74, "y": 0.84, "size": 100, "at": 0.3 }],
+          "sfx": [{ "name": "pop" }]
+        }
+      ]
+    }
+  ]
+}

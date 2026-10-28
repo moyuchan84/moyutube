@@ -1,0 +1,22 @@
+{
+  "code": "tax",
+  "title": "같은 7억 5천만 원 집, 취득세가 1,500만 원 vs 9,000만 원? 숫자로 보면",
+  "format": "short",
+  "category": "market",
+  "status": "uploaded",
+  "created": "2026-10-20",
+  "published": "2026-10-20",
+  "youtube": [
+    {
+      "id": "8AG48Y0-5T0",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "public"
+    }
+  ],
+  "tags": [],
+  "video": {
+    "composition": "TaxShort",
+    "bgm": "bgm/tax.mjs"
+  }
+}

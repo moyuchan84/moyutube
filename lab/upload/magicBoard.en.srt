@@ -1,0 +1,92 @@
+1
+00:00:00,000 --> 00:00:02,680
+I'm going to read your mind
+
+2
+00:00:02,730 --> 00:00:03,550
+Just follow along
+and do the math with me!
+
+3
+00:00:03,600 --> 00:00:07,920
+Think of any
+two-digit number
+
+4
+00:00:07,970 --> 00:00:12,290
+Add its
+two digits together
+
+5
+00:00:12,340 --> 00:00:18,170
+Subtract that sum
+from your number
+
+6
+00:00:18,220 --> 00:00:21,816
+Find your answer on the board
+and remember its symbol!
+
+7
+00:00:21,866 --> 00:00:25,596
+Need more time?
+Press and hold the screen to pause
+
+8
+00:00:26,946 --> 00:00:31,350
+Got it?
+Now I'll read your mind…
+
+9
+00:00:31,400 --> 00:00:33,370
+Your symbol is…
+the gold star!
+
+10
+00:00:33,420 --> 00:00:34,570
+If I got it right,
+comment "star"!
+
+11
+00:00:34,620 --> 00:00:35,890
+How did I know?
+
+12
+00:00:35,940 --> 00:00:39,470
+Your answer is always
+one of these nine squares
+
+13
+00:00:39,520 --> 00:00:41,540
+9 · 18 · 27 … 81 are all stars!
+The other stars are just decoys
+
+14
+00:00:41,590 --> 00:00:43,138
+37 = 3 bars of ten + 7 ones
+
+15
+00:00:43,188 --> 00:00:45,770
+Now take away 3 + 7 = 10 blocks
+
+16
+00:00:45,820 --> 00:00:47,240
+Each bar has 9 left: 9 × 3 = 27
+
+17
+00:00:47,290 --> 00:00:49,520
+Any number works: 9 left in every bar!
+
+18
+00:00:49,570 --> 00:00:51,890
+The answer is always a multiple of 9,
+so it's always the star!
+
+19
+00:00:51,940 --> 00:00:56,350
+Now you're the magician! Try it on Mom or Dad:
+the two digits of their answer always add up to 9
+
+20
+00:00:57,000 --> 00:00:59,350
+NEXT: Put in any number and you get 1089?

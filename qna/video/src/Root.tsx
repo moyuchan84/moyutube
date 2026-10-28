@@ -4,76 +4,24 @@ import { Episode, EpisodeCutStill } from "./Episode";
 import { type FaceText, Thumbnail } from "./Thumbnail";
 import { type ShortSpec, Short, buildShort } from "./shorts/Short";
 import { END_CARD, Teaser, teaserRange } from "./shorts/Teaser";
-import ep01Short from "./shorts/ep01.json";
-import ep02Short from "./shorts/ep02.json";
-import ep03Short from "./shorts/ep03.json";
-import ep04Short from "./shorts/ep04.json";
-import ep05Short from "./shorts/ep05.json";
-import ep06Short from "./shorts/ep06.json";
-import ep07Short from "./shorts/ep07.json";
 import { FPS, buildTimeline } from "./timeline.js";
-import ep01Script from "./ep01/script.json";
-import ep01Timing from "./ep01/timing.json";
-import ep02Script from "./ep02/script.json";
-import ep02Timing from "./ep02/timing.json";
-import ep03Script from "./ep03/script.json";
-import ep03Timing from "./ep03/timing.json";
-import ep04Script from "./ep04/script.json";
-import ep04Timing from "./ep04/timing.json";
-import ep05Script from "./ep05/script.json";
-import ep05Timing from "./ep05/timing.json";
-import ep06Script from "./ep06/script.json";
-import ep06Timing from "./ep06/timing.json";
-import ep07Script from "./ep07/script.json";
-import ep07Timing from "./ep07/timing.json";
+import { type MotionPlan, Motion, buildMotion } from "./motion/Motion";
+import { type MotionThumbSpec, MotionThumb } from "./motion/Thumb";
+import { ChannelBanner } from "./ChannelBanner";
+import { type MotionShortSpec, MotionShort, motionShortLength } from "./shorts/MotionShort";
+// 편 목록은 content/*/unit.json 에서 자동으로 만든다 (scripts/registry.mjs). 새 편을 여기 손으로 더하지 않는다.
+import { UNITS } from "./generated/units";
 
-// 새 편은 여기에 한 줄 추가한다 (face 는 얼굴 썸네일의 글자)
-const EPISODES: { id: string; episode: string; timeline: ReturnType<typeof buildTimeline>; face?: FaceText }[] = [
-  { id: "Ep01", episode: "ep01", timeline: buildTimeline(ep01Script, ep01Timing) },
-  {
-    id: "Ep02",
-    episode: "ep02",
-    timeline: buildTimeline(ep02Script, ep02Timing),
-    face: { tag: "여덟 살 아들의 질문", top: ["아파트? ", "빌라?"], bottom: ["아빠,", " 우리 집은 뭐예요?"], topic: ["ep02/prop/apartment", "ep02/prop/villa", "ep02/prop/officetel"] },
-  },
-  {
-    id: "Ep03",
-    episode: "ep03",
-    timeline: buildTimeline(ep03Script, ep03Timing),
-    face: { tag: "여덟 살 아들의 질문", top: ["마트? ", "시장?"],
-      bottom: ["아빠,", " 뭐가 달라요?"],
-      layout: "hang",
-      dad: "dad-shock",
-      // 앞의 3장(시장 좌판 · 마트 카트 · 백화점 쇼핑백)이 만들어지면 그것으로 바뀐다
-      topic: ["ep03/prop/icon-market", "ep03/prop/cart", "ep03/prop/shopping-bag", "ep03/prop/bean-sprouts", "ep03/prop/price-tag", "ep03/prop/ppeongtwigi"],
-    },
-  },
-  {
-    id: "Ep04",
-    episode: "ep04",
-    timeline: buildTimeline(ep04Script, ep04Timing),
-    // 민감한 단어는 썸네일에 쓰지 않는다 — '거기'라고만 (기획서 6장)
-    face: { tag: "여덟 살 아들의 질문", top: ["털? ", "털?"], bottom: ["아빠,", " 왜 거기에 나요?"], topic: ["ep04/prop/icon-guard", "ep04/prop/icon-wick", "ep04/prop/icon-trace"] },
-  },
-  {
-    id: "Ep05",
-    episode: "ep05",
-    timeline: buildTimeline(ep05Script, ep05Timing),
-    face: { tag: "여덟 살 아들의 질문", top: ["의사? ", "약사?"], bottom: ["아빠,", " 뭐가 달라요?"], topic: ["ep05/prop/stethoscope", "ep05/prop/medicine-box", "ep05/prop/nurse-modern"] },
-  },
-  {
-    id: "Ep06",
-    episode: "ep06",
-    timeline: buildTimeline(ep06Script, ep06Timing),
-    face: { tag: "여덟 살 아들의 질문", top: ["독감은 ", "독한 감기?"], bottom: ["아빠,", " 뭐가 달라요?"], layout: "trio", dad: "dad-shock", kid: "kid-ask", mom: "mom-smirk", vs: ["ep06/prop/cold-crowd", "ep06/prop/flu-one"] },
-  },
-  {
-    id: "Ep07",
-    episode: "ep07",
-    timeline: buildTimeline(ep07Script, ep07Timing),
-    face: { tag: "여덟 살 아들의 질문", top: ["내과? ", "외과?"], bottom: ["아빠,", " 어디로 가요?"], layout: "trio", dad: "dad-shock", kid: "kid-ask", mom: "mom-sigh", vs: ["ep07/prop/belly-map", "ep07/prop/skeleton"] },
-  },
-];
+// ep01 → Ep01 (롱폼 컴포지션 id)
+const compId = (code: string) => code[0].toUpperCase() + code.slice(1);
+
+// 롱폼(이전 포맷 · 1~8편): format "longform". 얼굴 썸네일 글자는 편 폴더 script/thumb.json
+const EPISODES: { id: string; episode: string; timeline: ReturnType<typeof buildTimeline>; face?: FaceText }[] = UNITS.filter((u) => u.format === "longform").map((u) => ({
+  id: compId(u.code),
+  episode: u.code,
+  timeline: buildTimeline(u.script, u.timing),
+  face: u.thumb?.face,
+}));
 
 // 쇼츠(9:16) 맛보기: 롱폼 구간을 잘라 본편으로 보낸다 (모라구 유입용)
 const ep03Timeline = EPISODES.find((e) => e.id === "Ep03")!.timeline;
@@ -91,12 +39,36 @@ const SHORTS = [
   },
 ];
 
-// 편집형 쇼츠: src/shorts/<epNN>.json (편집 계획) 하나 = 쇼츠 하나. 렌더는 npm run short -- epNN
-const EDITED_SHORTS = [ep01Short, ep02Short, ep03Short, ep04Short, ep05Short, ep06Short, ep07Short] as unknown as ShortSpec[];
+// 모답맨 (모션 편집판): 편 폴더 script/motion.json 하나 = 영상 하나. thumb 가 있으면 <id>-Thumb 스틸도 만든다.
+// episode 는 그림을 가진 편 (리메이크 ep01f · ep08f 는 원편 그림을 쓴다), 음성은 plan.voice 편
+const MOTIONS: { id: string; episode: string; timeline: ReturnType<typeof buildMotion>; thumb?: MotionThumbSpec }[] = UNITS.filter((u) => u.motion).map((u) => ({
+  id: u.motion.id,
+  episode: u.motion.episode ?? u.code,
+  timeline: buildMotion(u.motion as MotionPlan, u.script, u.timing),
+  thumb: u.motion.thumb,
+}));
+
+// 모답맨 쇼츠: 본편 몇 구간 + 훅 + 질문 카드 (편 폴더 script/motion-short.json — 하나 또는 배열)
+const MOTION_SHORTS: { spec: MotionShortSpec; motion: string }[] = UNITS.filter((u) => u.motion && u.motionShort).flatMap((u) =>
+  ([] as MotionShortSpec[]).concat(u.motionShort).map((spec) => ({ spec, motion: u.motion.id })),
+);
+
+// 편집형 쇼츠: 편 폴더 script/shorts.json 하나 = 쇼츠 하나. 렌더는 npm run short -- epNN
+const EDITED_SHORTS = UNITS.filter((u) => u.shorts).map((u) => u.shorts) as ShortSpec[];
 
 export const RemotionRoot = () => {
   return (
     <>
+      {MOTIONS.map(({ id, episode, timeline, thumb }) => (
+        <React.Fragment key={id}>
+          <Composition id={id} component={Motion} durationInFrames={timeline.durationInFrames} fps={FPS} width={1920} height={1080} defaultProps={{ timeline }} />
+          {thumb ? <Still id={`${id}-Thumb`} component={MotionThumb} width={1280} height={720} defaultProps={{ episode, spec: thumb }} /> : null}
+        </React.Fragment>
+      ))}
+      {MOTION_SHORTS.map(({ spec, motion }) => (
+        <Composition key={spec.id} id={spec.id} component={MotionShort} durationInFrames={motionShortLength(spec)} fps={FPS} width={1080} height={1920}
+          defaultProps={{ timeline: MOTIONS.find((m) => m.id === motion)!.timeline, spec }} />
+      ))}
       {EDITED_SHORTS.map((spec) => {
         const timeline = EPISODES.find((e) => e.episode === spec.episode)!.timeline;
         return (
@@ -139,6 +111,8 @@ export const RemotionRoot = () => {
           <Still id={`${id}-ThumbD`} component={Thumbnail} width={1280} height={720} defaultProps={{ variant: "d" as const, face }} />
         </React.Fragment>
       ))}
+      {/* 채널 배너 (모라구) — out/channel/ 로 렌더해 Studio 맞춤설정에 올린다 */}
+      <Still id="Channel-Banner" component={ChannelBanner} width={2560} height={1440} />
       <Still id="Ep01-ThumbA" component={Thumbnail} width={1280} height={720} defaultProps={{ variant: "a" as const }} />
       <Still id="Ep01-ThumbB" component={Thumbnail} width={1280} height={720} defaultProps={{ variant: "b" as const }} />
       <Still id="Ep01-ThumbC" component={Thumbnail} width={1280} height={720} defaultProps={{ variant: "c" as const }} />

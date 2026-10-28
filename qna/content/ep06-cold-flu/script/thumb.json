@@ -1,0 +1,21 @@
+{
+  "face": {
+    "tag": "여덟 살 아들의 질문",
+    "top": [
+      "독감은 ",
+      "독한 감기?"
+    ],
+    "bottom": [
+      "아빠,",
+      " 뭐가 달라요?"
+    ],
+    "layout": "trio",
+    "dad": "dad-shock",
+    "kid": "kid-ask",
+    "mom": "mom-smirk",
+    "vs": [
+      "ep06/prop/cold-crowd",
+      "ep06/prop/flu-one"
+    ]
+  }
+}

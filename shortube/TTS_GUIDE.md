@@ -1,6 +1,6 @@
 # shortube 내레이션 가이드 (Gemini TTS)
 
-> 대상: Remotion 모션그래픽 쇼츠(현재 차트형 템플릿 `video/`). 첫 적용: `output/briefs/2026-10-15_slot1.md`.
+> 대상: Remotion 모션그래픽 쇼츠(현재 차트형 템플릿 `video/`). 첫 적용: `content/ranking/plan.md`.
 > API 키: 저장소 루트 `.env` (D:\youtube\.env, 모든 프로젝트 공용)의 `GEMINI_API_KEY` (git 제외됨). 모델·파라미터는 바뀌므로 구현 전 [공식 문서](https://ai.google.dev/gemini-api/docs/speech-generation)를 다시 확인한다. (작성 기준 2026-10: `gemini-3.8-flash-tts`, 한국어 지원, 24kHz mono WAV)
 
 ---
@@ -70,7 +70,7 @@ TTS는 **자막 문장과 발음용 문장을 분리**한다. 자막은 읽기 �
 | 6 | 마무리 (4.5초) | 다음 주, 기안장이 3주 연속 1위를 지킬까요? | 다음 주, 기안장이 삼 주 연속 일 위를 지킬까요? | 18 | `light teasing question, rising intonation at the end, friendly` |
 
 - 총 210음절 ≈ 30초 분량 → 40초 영상에 여유 있게 들어감. 비는 구간은 BGM과 효과음이 채운다.
-- 기존 자막(`video/src/scenes/*`의 `*_LINES`)은 위 caption 열로 교체한다. "순위표 말고"는 시간 때문에 음성에서 뺐으니 화면 제목("그래프로 보면?")에만 남긴다.
+- 기존 자막(`video/src/units/ranking/scenes/*`의 `*_LINES`)은 위 caption 열로 교체한다. "순위표 말고"는 시간 때문에 음성에서 뺐으니 화면 제목("그래프로 보면?")에만 남긴다.
 - 출처 문구 "9월 마지막 주 기준, 넷플릭스 공식 집계"는 음성에서 빼고 마무리 화면 하단 고정 텍스트로만 둔다.
 
 ---
@@ -94,7 +94,7 @@ TTS는 **자막 문장과 발음용 문장을 분리**한다. 자막은 읽기 �
 3. 자막 줄 타이밍은 음성 길이를 **음절 수 비율로 분배**해서 계산 (Gemini는 단어 타임스탬프를 주지 않음). 어긋나면 이후 Whisper 정렬 도입 검토.
 4. 장면 음성이 너무 길면: 문장을 줄인다 → 그래도 길면 재생 속도 최대 1.1배까지만. 그 이상은 부자연스럽다.
 5. 음량: 내레이션 -14 LUFS 기준, BGM은 내레이션 구간에서 -20dB 덕킹.
-6. 파일: `output/audio/YYYY-MM-DD_slotN/scene{1..6}.wav` + 사용한 모델·보이스·style을 `tts.json`에 기록 (재현·검수용).
+6. 파일: `content/<code>/voice/scene{1..6}.wav` + 사용한 모델·보이스·style을 `tts.json`에 기록 (재현·검수용).
 
 ---
 

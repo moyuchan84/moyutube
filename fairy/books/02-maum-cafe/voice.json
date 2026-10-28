@@ -1,0 +1,14 @@
+{
+  "engine": "Google AI Studio · Gemini TTS (대화 · 화자 블록) — 제안 배역, 아직 만들어 듣고 확정하지 않음",
+  "note": "엄마가 읽어 주는 동화. 서술은 01-real-hero 와 같은 엄마 목소리, 바라는 느긋하고 인자한 어른 목소리, 손님 동물은 각자 다르게. 한 번(테이크)에 목소리는 둘까지: 바라 + 손님 한 명으로 나눈다.",
+  "roles": {
+    "narr": { "name": "엄마(서술)", "voice": "Sulafat", "style": "A Korean mom in her early thirties reading a picture book aloud to her child at bedtime: warm, soft, clear and gentle, unhurried storytelling pace, a loving smile in the voice, with natural expressive pauses" },
+    "바라": { "name": "바라(카피바라 사장님)", "voice": "Gacrux", "style": "Bara, a calm, kind capybara cafe owner: a mature, warm, slow and soothing Korean voice, always listening first, gently amused, like a comforting older sister or aunt" },
+    "나무늘보": { "name": "나무늘보", "voice": "Puck", "style": "A hyper, impatient kid-like sloth: fast, loud, frustrated, tumbling over words, then amazed and delighted at the end" },
+    "사자": { "name": "사자", "voice": "Achird", "style": "A big but very shy lion: tiny hesitant voice with long pauses and sniffles, slowly gaining confidence, finally warm and friendly" },
+    "고슴도치": { "name": "고슴도치(도치)", "voice": "Fenrir", "style": "A sulky, hurt young hedgehog: resentful and tearful at first, small and unsure when asking, then relaxed and soft" },
+    "카멜레온": { "name": "카멜레온", "voice": "Zephyr", "style": "A bright, nervous, flustered young voice, mixing excitement and fear, then delighted" },
+    "토끼": { "name": "토끼", "voice": "Leda", "style": "A young child rabbit: upset and about to cry, then brightening with grateful joy" },
+    "다람쥐": { "name": "다람쥐 1·2·3", "voice": "Autonoe", "style": "Tiny squirrel friends, quick and chirpy, trembling at first, then cheerful (differentiate 1, 2, 3 by pitch)" }
+  }
+}

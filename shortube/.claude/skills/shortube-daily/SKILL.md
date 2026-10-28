@@ -69,7 +69,7 @@ explain 슬롯은 shortlist 전체(같은 작품의 원작/몇 부작/공개일/
 
 ## 4. 브리프 작성
 
-파일: `output/briefs/YYYY-MM-DD_slot<N>.md` (폴더 없으면 생성). 아래 템플릿을 채운다.
+편 폴더부터 만든다: 저장소 루트에서 `npm run new -- shortube <주제영단어> --title "<제목 가안>"` → `shortube/content/<code>/plan.md` 에 아래 템플릿을 채운다 (code = 주제를 나타내는 영문 소문자 한 단어, 예: `bigarch`).
 
 ```markdown
 # [카테고리] 제목 가안
@@ -105,7 +105,7 @@ explain 슬롯은 shortlist 전체(같은 작품의 원작/몇 부작/공개일/
 
 브리프 저장 후 슬롯마다:
 ```bash
-.venv/Scripts/python.exe -m shortube log-topic "<대표 키워드>" --category <cat> [--entity "<작품>"] [--intent "<의도>"] --brief output/briefs/<파일>.md
+.venv/Scripts/python.exe -m shortube log-topic "<대표 키워드>" --category <cat> [--entity "<작품>"] [--intent "<의도>"] --brief content/<code>/plan.md
 ```
 기록해야 다음 날 로테이션·쿨다운에 반영된다.
 

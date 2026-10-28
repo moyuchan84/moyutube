@@ -1,0 +1,26 @@
+{
+  "code": "backtest",
+  "title": "RSI·골든크로스·볼린저, 코스피 10년 승률은? 필승은 아니었다",
+  "format": "short",
+  "category": "market",
+  "status": "uploaded",
+  "created": "2026-10-18",
+  "published": "2026-10-18",
+  "youtube": [
+    {
+      "id": "GiOFjhAEQ3U",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "public"
+    }
+  ],
+  "tags": [],
+  "video": {
+    "composition": "BacktestShort",
+    "bgm": "bgm/backtest.mjs",
+    "data": [
+      "data/fetch-kospi-long.mjs",
+      "data/backtest-indicators.mjs"
+    ]
+  }
+}

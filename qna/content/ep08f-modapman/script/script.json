@@ -1,0 +1,403 @@
+{
+  "rawVoice": true,
+  "speed": 1.2,
+  "title": "모답맨 · 도둑 잡히면 바로 감옥?",
+  "bgm": "cheerful",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "콜드 오픈",
+      "lines": [
+        {
+          "who": "kid",
+          "text": "아빠, 도둑 잡히면 바로 감옥 가요?",
+          "en": "Dad, if a thief gets caught, do they go straight to jail?"
+        },
+        {
+          "who": "dad",
+          "text": "당연하지! 경찰이 딱! 잡아서, 감옥에 쏙!",
+          "en": "Of course! The police grab them — snap! — and pop them in jail!"
+        }
+      ]
+    },
+    {
+      "id": "c00b",
+      "beat": "콜드 오픈",
+      "lines": [
+        {
+          "who": "police",
+          "text": "아버님. 감옥은 저희가 보내는 게 아니에요.",
+          "en": "Sir, we're not the ones who send people to jail."
+        },
+        {
+          "who": "dad",
+          "text": "…네?",
+          "en": "…Huh?"
+        }
+      ]
+    },
+    {
+      "id": "c00c",
+      "beat": "콜드 오픈",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "오답, 하나. 저는 모답맨입니다.",
+          "en": "Wrong answer number one. I'm Modapman."
+        }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "사건 개요",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "사건 개요. 아이 자전거 실종. 장소, 지구대.",
+          "en": "Case summary. Kid's bike: missing. Location: the police box."
+        },
+        {
+          "who": "neighbor",
+          "text": "돈 안 갚는 사람 잡아가요! 당장!",
+          "en": "He won't pay back my money! Arrest him! Right now!"
+        }
+      ]
+    },
+    {
+      "id": "c01b",
+      "beat": "사건 개요",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "옆 창구 아저씨, 오답 후보.",
+          "en": "The guy at the next counter: wrong-answer candidate."
+        }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "오답 퍼레이드",
+      "lines": [
+        {
+          "who": "mom",
+          "text": "구속영장 기각? 그럼 무죄네.",
+          "en": "Arrest warrant denied? So he's innocent."
+        },
+        {
+          "who": "police",
+          "text": "아니에요. 가둬 둘 필요까진 없다는 거예요. 수사도 재판도 계속해요.",
+          "en": "No. It just means there's no need to lock him up. The investigation and trial go on."
+        }
+      ]
+    },
+    {
+      "id": "c02b",
+      "beat": "오답 퍼레이드",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "오답, 둘.",
+          "en": "Wrong answer, two."
+        },
+        {
+          "who": "narr",
+          "text": "속보. 검찰청, 78년 만에 문 닫아.",
+          "tts": "속보. 검찰청, 칠십팔 년 만에 문 닫아.",
+          "en": "Breaking news: Prosecutors' Office shuts down after 78 years."
+        },
+        {
+          "who": "kid",
+          "text": "검찰 없어지면, 나쁜 사람은 누가 재판에 보내요?",
+          "en": "If the prosecutors are gone, who sends bad people to trial?"
+        }
+      ]
+    },
+    {
+      "id": "c02c",
+      "beat": "오답 퍼레이드",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "그건… 판사님이 망토 입고 직접 잡으러—",
+          "en": "Well… the judge puts on a cape and chases them down—"
+        },
+        {
+          "who": "police",
+          "text": "안 뛰세요.",
+          "en": "Judges don't run."
+        }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "정답 라운드",
+      "lines": [
+        {
+          "who": "police",
+          "text": "딱 세 판만 하죠.",
+          "en": "Let's just do three rounds."
+        },
+        {
+          "who": "dad",
+          "text": "판…?",
+          "en": "Rounds…?"
+        }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "1라운드 · 형사냐 민사냐",
+      "lines": [
+        {
+          "who": "police",
+          "text": "1라운드. 형사냐, 민사냐.",
+          "tts": "일 라운드. 형사냐, 민사냐.",
+          "en": "Round one. Criminal or civil?"
+        },
+        {
+          "who": "police",
+          "text": "형사는 나라가 벌을 묻는 일. 도둑질, 폭행, 사기.",
+          "en": "Criminal: the state asks for punishment. Theft, assault, fraud."
+        },
+        {
+          "who": "police",
+          "text": "민사는 사람끼리 돈이나 물건을 가리는 일. 경찰은 안 나와요.",
+          "en": "Civil: people settle money or property between themselves. No police involved."
+        },
+        {
+          "who": "neighbor",
+          "text": "그럼 내 돈은요?!",
+          "en": "Then what about my money?!"
+        }
+      ]
+    },
+    {
+      "id": "c04b",
+      "beat": "1라운드 · 형사냐 민사냐",
+      "lines": [
+        {
+          "who": "police",
+          "text": "처음부터 속여서 빌렸으면 사기, 형사. 그냥 못 갚는 거면 민사.",
+          "en": "If he lied from the start to borrow it, that's fraud — criminal. If he just can't pay, that's civil."
+        },
+        {
+          "who": "police",
+          "text": "돈을 돌려받는 건, 어차피 민사로 따로 하셔야 돼요.",
+          "en": "And to get your money back, you'll need a separate civil case anyway."
+        },
+        {
+          "who": "neighbor",
+          "text": "…법원 가야겠네.",
+          "en": "…Guess I'm going to court."
+        }
+      ]
+    },
+    {
+      "id": "c04c",
+      "beat": "1라운드 · 형사냐 민사냐",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "오답, 셋. 아저씨.",
+          "en": "Wrong answer, three. The neighbor."
+        }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "2라운드 · 바통 터치",
+      "lines": [
+        {
+          "who": "police",
+          "text": "2라운드. 자전거를 누가 가져갔다면 형사. 이건 이어달리기예요.",
+          "tts": "이 라운드. 자전거를 누가 가져갔다면 형사. 이건 이어달리기예요.",
+          "en": "Round two. If someone took the bike, it's criminal. Think of it as a relay race."
+        },
+        {
+          "who": "police",
+          "text": "첫 주자, 경찰. 찾고 조사해요. 이때는 범인 말고 피의자.",
+          "en": "First runner: the police. They find and investigate. At this point it's a suspect, not a criminal."
+        },
+        {
+          "who": "dad",
+          "text": "범인 아니에요?",
+          "en": "Not a criminal?"
+        },
+        {
+          "who": "police",
+          "text": "아직 아무것도 안 정해졌으니까요.",
+          "en": "Because nothing has been decided yet."
+        }
+      ]
+    },
+    {
+      "id": "c05b",
+      "beat": "2라운드 · 바통 터치",
+      "lines": [
+        {
+          "who": "police",
+          "text": "오래 가두려면 판사 허락, 영장. 된다, 발부. 필요 없다, 기각.",
+          "en": "To hold someone longer, you need a judge's permission: a warrant. Yes — issued. No need — denied."
+        },
+        {
+          "who": "police",
+          "text": "원칙은 불구속이에요.",
+          "en": "The rule is: no detention by default."
+        },
+        {
+          "who": "narr",
+          "text": "메모했습니다. 손바닥에.",
+          "en": "Noted. On my palm."
+        }
+      ]
+    },
+    {
+      "id": "c05c",
+      "beat": "2라운드 · 바통 터치",
+      "lines": [
+        {
+          "who": "police",
+          "text": "둘째 주자, 검사. 재판에 넘길지 정해요. 넘기면 피고인.",
+          "en": "Second runner: the prosecutor. Decides whether to take it to trial. Then they're called the defendant."
+        },
+        {
+          "who": "police",
+          "text": "마지막 주자, 판사. 검사가 몇 년 달라는 건 구형, 판사가 정하는 건 선고.",
+          "en": "Last runner: the judge. The prosecutor asking for years is a request. The judge deciding is the sentence."
+        },
+        {
+          "who": "dad",
+          "text": "그럼 감옥은…",
+          "en": "So jail is…"
+        },
+        {
+          "who": "police",
+          "text": "판사님이 정하세요. 확정 전까진 무죄로 보고요.",
+          "en": "The judge decides. Until it's final, they're presumed innocent."
+        }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "3라운드 · 새 판",
+      "lines": [
+        {
+          "who": "police",
+          "text": "3라운드. 이달 2일, 검찰청 간판이 내려갔어요.",
+          "tts": "삼 라운드. 이달 이 일, 검찰청 간판이 내려갔어요.",
+          "en": "Round three. On the 2nd of this month, the Prosecutors' Office sign came down."
+        },
+        {
+          "who": "police",
+          "text": "수사는 경찰. 부패 같은 큰 범죄 몇 가지는 중대범죄수사청.",
+          "en": "Police investigate. A few major crimes like corruption go to the Serious Crimes Investigation Agency."
+        },
+        {
+          "who": "police",
+          "text": "검사는 공소청에서, 영장을 청구하고 재판에 넘겨요. 직접 수사는 못 하고요.",
+          "en": "Prosecutors, now at the Public Prosecution Office, request warrants and bring cases to trial. They can't investigate directly."
+        },
+        {
+          "who": "kid",
+          "text": "아! 검사는 남았구나!",
+          "en": "Oh! So prosecutors are still here!"
+        }
+      ]
+    },
+    {
+      "id": "c06b",
+      "beat": "3라운드 · 새 판",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "판사는 그대로. 힘을 나눠서 좋다는 쪽, 빈틈이 걱정이라는 쪽. 지켜볼 일입니다.",
+          "en": "Judges stay the same. Some say splitting power is good, others worry about gaps. We'll see."
+        },
+        {
+          "who": "narr",
+          "text": "한 줄 정리. 형사는 나라가 벌을 묻는 길, 민사는 사람끼리 가리는 길.",
+          "en": "In one line: criminal is the state asking for punishment; civil is people settling things."
+        },
+        {
+          "who": "narr",
+          "text": "어느 길이든, 마지막에 정하는 사람은 판사.",
+          "en": "Either way, the judge decides in the end."
+        }
+      ]
+    },
+    {
+      "id": "c07",
+      "beat": "아이 눈높이",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "경찰은 찾는 사람. 검사는 판사님께 데려가는 사람. 판사는 정하는 사람.",
+          "en": "Police find. Prosecutors bring it to the judge. Judges decide."
+        },
+        {
+          "who": "dad",
+          "text": "그래서 판사님이 정하기 전엔, 누구도 도둑이라고 부르면 안 돼.",
+          "en": "So until a judge decides, nobody should call anyone a thief."
+        },
+        {
+          "who": "kid",
+          "text": "내 자전거 가져간 사람도요?",
+          "en": "Even the person who took my bike?"
+        },
+        {
+          "who": "dad",
+          "text": "응. 그 사람도.",
+          "en": "Yes. Even them."
+        }
+      ]
+    },
+    {
+      "id": "c07b",
+      "beat": "아이 눈높이",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "아이는 신고서의 '도둑'을 지우고, '가져간 사람'이라고 고쳐 썼습니다.",
+          "en": "My kid erased \"thief\" on the report and wrote \"the person who took it.\""
+        }
+      ]
+    },
+    {
+      "id": "c08",
+      "beat": "반전",
+      "lines": [
+        {
+          "who": "police",
+          "text": "아버님… 자전거, 공원 벤치 옆에 그대로 있네요.",
+          "en": "Sir… your bike is right there by the park bench."
+        },
+        {
+          "who": "dad",
+          "text": "…아.",
+          "en": "…Oh."
+        }
+      ]
+    },
+    {
+      "id": "c08b",
+      "beat": "반전",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "아침에 아이를 안고 병원으로 뛰느라, 제가 두고 온 거였습니다.",
+          "en": "Rushing my kid to the hospital that morning, I left it there myself."
+        },
+        {
+          "who": "kid",
+          "text": "가져간 사람, 아빠였어요.",
+          "en": "The person who took it was you, Dad."
+        },
+        {
+          "who": "narr",
+          "text": "오답, 넷. 역시, 모답맨.",
+          "en": "Wrong answer, four. Modapman strikes again."
+        }
+      ]
+    }
+  ]
+}

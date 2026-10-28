@@ -1,0 +1,173 @@
+{
+  "rawVoice": true,
+  "speed": 1.25,
+  "title": "내모남불 ② 엘리베이터편 · 닫힘 버튼 · 층 버튼 · 통화",
+  "bgm": "cheerful",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "콜드 오픈",
+      "lines": [
+        { "who": "dad", "text": "잠깐만요! 잠깐…!", "en": "Wait! Hold it…!" },
+        { "who": "dad", "text": "어떻게 사람을 두고 닫아?!", "en": "How can you close it on someone?!" }
+      ]
+    },
+    {
+      "id": "c00a",
+      "beat": "콜드 오픈",
+      "lines": [
+        { "who": "kid", "text": "아빠, 저기 누가 뛰어와.", "en": "Dad, someone's running over." },
+        { "who": "dad", "text": "다음 거 타면 되지. 모 어때~", "en": "They can take the next one. So what~" }
+      ]
+    },
+    {
+      "id": "c00b",
+      "beat": "콜드 오픈",
+      "lines": [
+        { "who": "narr", "text": "내가 하면 모 어때, 남이 하면 불법. 내모남불, 하나.", "en": "When I do it, so what. When you do it, illegal. Double standard, number one." },
+        { "who": "dad", "text": "저는… 모답맨입니다.", "en": "I'm… Modapman." }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "사건 개요",
+      "lines": [
+        { "who": "narr", "text": "사건 개요. 토요일 오전, 15층.", "tts": "사건 개요. 토요일 오전, 십오 층.", "en": "Case summary. Saturday morning, 15th floor." },
+        { "who": "mom", "text": "오늘은 엘리베이터에서 얌전히 해.", "en": "Behave in the elevator today." },
+        { "who": "dad", "text": "나만큼 매너 좋은 사람이 어딨어?", "en": "Who has better manners than me?" },
+        { "who": "narr", "text": "있습니다. 이 아파트에만 삼백 명.", "en": "There are. Three hundred in this building alone." }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "ROUND 1 닫힘 버튼",
+      "lines": [
+        { "who": "narr", "text": "딱 세 판만 하죠. 1라운드, 닫힘 버튼.", "tts": "딱 세 판만 하죠. 일 라운드, 닫힘 버튼.", "en": "Just three rounds. Round one: the close button." },
+        { "who": "kid", "text": "아빠도 아까 닫힘 눌렀잖아.", "en": "You pressed close too, just now." },
+        { "who": "dad", "text": "아빠는 바빠서 누른 거고,", "en": "I pressed it because I was busy," },
+        { "who": "dad", "text": "그 사람은 성격이 급한 거야.", "en": "he did it because he's impatient." },
+        { "who": "narr", "text": "내모남불, 둘.", "en": "Double standard, number two." }
+      ]
+    },
+    {
+      "id": "c02a",
+      "beat": "ROUND 1 닫힘 버튼",
+      "lines": [
+        { "who": "narr", "text": "이걸 행위자-관찰자 편향이라고 합니다.", "tts": "이걸 행위자 관찰자 편향이라고 합니다.", "en": "This is called the actor-observer bias." },
+        { "who": "kid", "text": "행위자… 뭐?", "en": "Actor… what?" }
+      ]
+    },
+    {
+      "id": "c02b",
+      "beat": "ROUND 1 닫힘 버튼",
+      "lines": [
+        { "who": "aptmgr", "text": "열 번 눌러도, 한 번 누른 겁니다.", "en": "Press it ten times, it counts as once." },
+        { "who": "dad", "text": "…언제부터 계셨어요?", "en": "…How long have you been there?" }
+      ]
+    },
+    {
+      "id": "c02c",
+      "beat": "ROUND 1 닫힘 버튼",
+      "lines": [
+        { "who": "dad", "text": "그래도 연타하면 빨라지잖아요!", "en": "But mashing it makes it faster!" },
+        { "who": "aptmgr", "text": "바로 안 닫히게 만든 게 많습니다.", "en": "Many are built not to close right away." }
+      ]
+    },
+    {
+      "id": "c02d",
+      "beat": "ROUND 1 닫힘 버튼",
+      "lines": [
+        { "who": "aptmgr", "text": "뒤에 오는 분께는, 열림 버튼입니다.", "en": "For whoever's behind you, it's the open button." },
+        { "who": "dad", "text": "…네?", "en": "…Huh?" }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "ROUND 2 층 버튼",
+      "lines": [
+        { "who": "narr", "text": "2라운드. 층 버튼.", "tts": "이 라운드. 층 버튼.", "en": "Round two: the floor buttons." },
+        { "who": "dad", "text": "14층, 13층, 12층… 다 눌렀어?!", "tts": "십사 층, 십삼 층, 십이 층… 다 눌렀어?!", "en": "14, 13, 12… every single floor?!" },
+        { "who": "dad", "text": "부모는 대체 뭐 하고!", "en": "Where are the parents?!" }
+      ]
+    },
+    {
+      "id": "c03a",
+      "beat": "ROUND 2 층 버튼",
+      "lines": [
+        { "who": "narr", "text": "그날 오후.", "en": "That afternoon." },
+        { "who": "mom", "text": "여보, 5층이랑 6층은 왜 눌렀어?", "tts": "여보, 오 층이랑 육 층은 왜 눌렀어?", "en": "Honey, why'd you press 5 and 6?" },
+        { "who": "dad", "text": "실수지 실수~ 모 어때.", "en": "Just a mistake~ So what." },
+        { "who": "narr", "text": "내모남불, 셋.", "en": "Double standard, number three." }
+      ]
+    },
+    {
+      "id": "c03b",
+      "beat": "ROUND 2 층 버튼",
+      "lines": [
+        { "who": "aptmgr", "text": "실수든 장난이든, 누른 층은 다 섭니다.", "en": "Mistake or prank, it stops at every floor you press." },
+        { "who": "mom", "text": "…아까 그 부모가 당신이네.", "en": "…Looks like you're \"the parents\" now." }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "ROUND 3 통화",
+      "lines": [
+        { "who": "narr", "text": "3라운드. 통화.", "tts": "삼 라운드. 통화.", "en": "Round three: phone calls." },
+        { "who": "dad", "text": "여기서 저렇게 크게 통화를 해? 민폐야.", "en": "Talking that loud in here? So rude." },
+        { "who": "kid", "text": "아빠 목소리도 커.", "en": "Your voice is loud too." }
+      ]
+    },
+    {
+      "id": "c04a",
+      "beat": "ROUND 3 통화",
+      "lines": [
+        { "who": "dad", "text": "네, 부장님! 스피커로 받을게요!", "en": "Yes, sir! I'll put you on speaker!" },
+        { "who": "dad", "text": "급한 전화잖아. 모 어때~", "en": "It's an urgent call. So what~" },
+        { "who": "narr", "text": "내모남불, 넷.", "en": "Double standard, number four." }
+      ]
+    },
+    {
+      "id": "c04b",
+      "beat": "ROUND 3 통화",
+      "lines": [
+        { "who": "aptmgr", "text": "이 상자는, 소리가 다 들립니다.", "en": "In this box, everyone hears everything." },
+        { "who": "aptmgr", "text": "통화는, 내리셔서 하시죠.", "en": "Take the call after you get off." },
+        { "who": "dad", "text": "…네?", "en": "…Huh?" }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "아이 눈높이",
+      "lines": [
+        { "who": "kid", "text": "아빠, 닫힘도, 버튼도, 통화도…", "en": "Dad, the close button, the buttons, the call…" },
+        { "who": "kid", "text": "남이 하면 잘 보이는데, 아빠가 하면 안 보여?", "en": "You see it when others do it, but not when you do?" },
+        { "who": "dad", "text": "…그러네. 아빠 눈엔 아빠가 안 보였네.", "en": "…Yeah. I couldn't see myself." },
+        { "who": "kid", "text": "뛰어오는 사람도, 누군가의 아빠야.", "en": "The one running over is someone's dad too." }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "반전",
+      "lines": [
+        { "who": "dad", "text": "늦었다, 늦었다!", "en": "I'm late, I'm late!" },
+        { "who": "kid", "text": "아빠, 누가 뛰어와!", "en": "Dad, someone's running!" }
+      ]
+    },
+    {
+      "id": "c06a",
+      "beat": "반전",
+      "lines": [
+        { "who": "mom", "text": "여보오오!!", "en": "HONEY!!" },
+        { "who": "narr", "text": "이건 내모남불이 아닙니다. 남이 아니라 아내니까. 그냥 오답.", "en": "That's not a double standard. She's not a stranger, she's his wife. Just a wrong answer." }
+      ]
+    },
+    {
+      "id": "c06b",
+      "beat": "반전",
+      "lines": [
+        { "who": "aptmgr", "text": "15층, 사모님 한 분 남으셨습니다.", "tts": "십오 층, 사모님 한 분 남으셨습니다.", "en": "15th floor. One wife left behind." },
+        { "who": "dad", "text": "…역시, 모답맨.", "en": "…Classic Modapman." }
+      ]
+    }
+  ]
+}

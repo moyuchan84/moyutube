@@ -1,0 +1,22 @@
+{
+  "code": "ranking",
+  "title": "넷플릭스 순위, 그래프로 보면 보이는 것",
+  "format": "short",
+  "category": "chart",
+  "status": "uploaded",
+  "created": "2026-10-15",
+  "published": "2026-10-15",
+  "youtube": [
+    {
+      "id": "85Uwl-xFmuk",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "public"
+    }
+  ],
+  "tags": [],
+  "video": {
+    "composition": "RankingShort",
+    "bgm": "bgm/ranking.mjs"
+  }
+}

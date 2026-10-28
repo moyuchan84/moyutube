@@ -1,0 +1,214 @@
+{
+  "rawVoice": true,
+  "speed": 1.25,
+  "title": "내모남불 ③ 주식편 · 오르면 · 내리면 · 단톡방",
+  "bgm": "cheerful",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "콜드 오픈",
+      "lines": [
+        { "who": "dad", "text": "올랐다! 역시 내 눈은 정확해.", "en": "It's up! My eye never misses." },
+        { "who": "kid", "text": "아빠, 친구 아저씨도 올랐대.", "en": "Dad, your friend's went up too." }
+      ]
+    },
+    {
+      "id": "c00a",
+      "beat": "콜드 오픈",
+      "lines": [
+        { "who": "dad", "text": "그건 운이지, 운. 아빠는 실력이고.", "en": "That's luck. Mine is skill." },
+        { "who": "narr", "text": "내가 오르면 실력, 남이 오르면 운. 내모남불, 하나.", "en": "Mine goes up: skill. Yours goes up: luck. Double standard, number one." }
+      ]
+    },
+    {
+      "id": "c00b",
+      "beat": "콜드 오픈",
+      "lines": [
+        { "who": "dad", "text": "저는… 모답맨입니다.", "en": "I'm… Modapman." }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "사건 개요",
+      "lines": [
+        { "who": "narr", "text": "사건 개요. 평일 오후, 동네 은행. 대기 번호 47번.", "tts": "사건 개요. 평일 오후, 동네 은행. 대기 번호 사십칠 번.", "en": "Case summary. Weekday afternoon, the local bank. Ticket number 47." },
+        { "who": "mom", "text": "오늘은 모라구 통장 만드는 날이야. 주식 얘기 금지.", "en": "Today's about opening Moragu's account. No stock talk." },
+        { "who": "dad", "text": "내 건 오르고, 남의 건 좀 내리고. 그게 공평하지.", "en": "Mine goes up, theirs dips a bit. That's fair." },
+        { "who": "narr", "text": "공평하지 않습니다.", "en": "That is not fair." }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "ROUND 1 오르면",
+      "lines": [
+        { "who": "narr", "text": "딱 세 판만 하죠. 1라운드, 오르면.", "tts": "딱 세 판만 하죠. 일 라운드, 오르면.", "en": "Just three rounds. Round one: when it goes up." },
+        { "who": "kid", "text": "아빠는 뭐 보고 샀어?", "en": "What did you look at before buying?" }
+      ]
+    },
+    {
+      "id": "c02a",
+      "beat": "ROUND 1 오르면",
+      "lines": [
+        { "who": "dad", "text": "아빠는 차트를 읽는 남자야.", "en": "Your dad reads charts." },
+        { "who": "mom", "text": "이름이 멋있어서 샀잖아.", "en": "You bought it because the name sounded cool." }
+      ]
+    },
+    {
+      "id": "c02b",
+      "beat": "ROUND 1 오르면",
+      "lines": [
+        { "who": "dad", "text": "…근데 아빠는 느낌이 왔어. 모 어때~", "en": "…But I had a feeling. So what~" },
+        { "who": "narr", "text": "내모남불, 둘.", "en": "Double standard, number two." },
+        { "who": "narr", "text": "이걸 자기 위주 편향이라고 합니다.", "en": "This is called the self-serving bias." }
+      ]
+    },
+    {
+      "id": "c02c",
+      "beat": "ROUND 1 오르면",
+      "lines": [
+        { "who": "kid", "text": "자기… 뭐?", "en": "Self… what?" }
+      ]
+    },
+    {
+      "id": "c02d",
+      "beat": "ROUND 1 오르면",
+      "lines": [
+        { "who": "teller", "text": "47번 고객님.", "tts": "사십칠 번 고객님.", "en": "Customer number 47." },
+        { "who": "dad", "text": "잠깐만요, 지금 중요해서요!", "en": "One sec, this is important!" }
+      ]
+    },
+    {
+      "id": "c02e",
+      "beat": "ROUND 1 오르면",
+      "lines": [
+        { "who": "teller", "text": "오르면 실력, 내리면 세력. 다들 그러십니다.", "en": "Up means skill, down means \"someone rigged it.\" Everyone says that." }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "ROUND 2 내리면",
+      "lines": [
+        { "who": "narr", "text": "2라운드. 내리면.", "tts": "이 라운드. 내리면.", "en": "Round two: when it goes down." },
+        { "who": "dad", "text": "어? 왜 파래? 왜 내려?!", "en": "Huh? Why's it blue? (Blue means down here.)" },
+        { "who": "dad", "text": "시장이 이상해. 세력이 있어, 세력이!", "en": "The market's rigged. Someone's behind this!" }
+      ]
+    },
+    {
+      "id": "c03a",
+      "beat": "ROUND 2 내리면",
+      "lines": [
+        { "who": "kid", "text": "아까 은행 누나가 말한 거다.", "en": "That's exactly what the bank lady said." }
+      ]
+    },
+    {
+      "id": "c03b",
+      "beat": "ROUND 2 내리면",
+      "lines": [
+        { "who": "buddy", "text": "야… 내 거 완전 파랗다…", "en": "Dude… mine's completely blue…" },
+        { "who": "dad", "text": "그러게 내가 뭐랬어~", "en": "Told you so~" }
+      ]
+    },
+    {
+      "id": "c03c",
+      "beat": "ROUND 2 내리면",
+      "lines": [
+        { "who": "dad", "text": "어? 근데 싸졌네? 나도 한번 사볼까?", "en": "Wait, it's cheap now? Should I buy some?" },
+        { "who": "mom", "text": "여보, 친구 지금 울고 있어.", "en": "Honey, your friend is literally crying." },
+        { "who": "narr", "text": "내모남불, 셋.", "en": "Double standard, number three." }
+      ]
+    },
+    {
+      "id": "c03d",
+      "beat": "ROUND 2 내리면",
+      "lines": [
+        { "who": "teller", "text": "잃은 아픔이, 얻은 기쁨보다 큽니다.", "en": "The pain of losing outweighs the joy of winning." },
+        { "who": "dad", "text": "그럼 지금 사요, 말아요?", "en": "So should I buy or not?" }
+      ]
+    },
+    {
+      "id": "c03e",
+      "beat": "ROUND 2 내리면",
+      "lines": [
+        { "who": "teller", "text": "저는 아무것도 추천하지 않습니다.", "en": "I recommend absolutely nothing." }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "ROUND 3 단톡방",
+      "lines": [
+        { "who": "narr", "text": "3라운드. 가족 단톡방.", "tts": "삼 라운드. 가족 단톡방.", "en": "Round three: the family group chat." },
+        { "who": "dad", "text": "사촌 형이 수익 인증을 올렸네.", "en": "My cousin posted his gains." },
+        { "who": "dad", "text": "아이고, 배야… 갑자기 배가 아파.", "en": "Ugh… my stomach suddenly hurts." },
+        { "who": "kid", "text": "아빠, 왜 배가 아파?", "en": "Dad, why does your tummy hurt?" }
+      ]
+    },
+    {
+      "id": "c04a",
+      "beat": "ROUND 3 단톡방",
+      "lines": [
+        { "who": "mom", "text": "사촌 형이 올라서 그래.", "en": "Because his cousin went up." },
+        { "who": "dad", "text": "저런 걸 왜 올려? 자랑이야, 자랑.", "en": "Why post that? He's just bragging." }
+      ]
+    },
+    {
+      "id": "c04b",
+      "beat": "ROUND 3 단톡방",
+      "lines": [
+        { "who": "dad", "text": "빨간 것만 잘라서… 이건 정보 공유야. 모 어때~", "en": "Crop out the blue… This is just sharing info. So what~" },
+        { "who": "narr", "text": "내모남불, 넷.", "en": "Double standard, number four." }
+      ]
+    },
+    {
+      "id": "c04c",
+      "beat": "ROUND 3 단톡방",
+      "lines": [
+        { "who": "teller", "text": "사촌분이 올랐다고, 고객님 것이 줄지는 않습니다.", "en": "Your cousin going up doesn't make yours any smaller." },
+        { "who": "teller", "text": "작아진 건, 마음입니다.", "en": "The only thing that shrank is your heart." },
+        { "who": "dad", "text": "…네?", "en": "…Huh?" }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "아이 눈높이",
+      "lines": [
+        { "who": "kid", "text": "아빠, 나 통장 생겼어. 엄마랑 만들었어.", "en": "Dad, I got my own bankbook. Mom and I made it." },
+        { "who": "kid", "text": "아빠는 친구 아저씨 거 내리면 좋아?", "en": "Are you happy when your friend's goes down?" },
+        { "who": "dad", "text": "…아니. 그건 아니지.", "en": "…No. Of course not." },
+        { "who": "kid", "text": "친구가 오르면, 친구 기분도 같이 오르잖아.", "en": "When your friend goes up, his mood goes up too." },
+        { "who": "dad", "text": "…그러네. 축하한다고 해야겠다.", "en": "…You're right. I should say congrats." }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "반전",
+      "lines": [
+        { "who": "dad", "text": "자, 아빠 실력을 다시 보자…", "en": "Now, let's check my skills again…" },
+        { "who": "dad", "text": "…다 파랗네?", "en": "…It's all blue?" }
+      ]
+    },
+    {
+      "id": "c06a",
+      "beat": "반전",
+      "lines": [
+        { "who": "mom", "text": "우리 집 계좌는 빨갛던데. 그거 내가 산 거야.", "en": "Our family account is red. I bought those." },
+        { "who": "dad", "text": "…언제?", "en": "…When?" },
+        { "who": "mom", "text": "당신이 이름 보고 살 때, 나는 공부했지.", "en": "While you picked by name, I did my homework." }
+      ]
+    },
+    {
+      "id": "c06b",
+      "beat": "반전",
+      "lines": [
+        { "who": "narr", "text": "이건 내모남불이 아닙니다. 그냥 오답. 모범답안은, 엄마.", "en": "That's not a double standard. Just a wrong answer. The model answer: Mom." }
+      ]
+    },
+    {
+      "id": "c06c",
+      "beat": "반전",
+      "lines": [
+        { "who": "teller", "text": "47번 고객님 업무는, 사모님이 끝내셨습니다.", "tts": "사십칠 번 고객님 업무는, 사모님이 끝내셨습니다.", "en": "Customer 47's business was handled by your wife." },
+        { "who": "dad", "text": "…역시, 모답맨.", "en": "…Classic Modapman." }
+      ]
+    }
+  ]
+}

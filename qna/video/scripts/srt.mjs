@@ -1,12 +1,14 @@
 // 영상과 같은 타임라인으로 유튜브 업로드용 SRT 자막을 만든다.
-// 사용: node scripts/srt.mjs ep01        한국어 → out/ep01/subtitles.srt
-//       node scripts/srt.mjs ep01 en     대사의 "en" 으로 영어 자막 → out/ep01/subtitles.en.srt
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+// 사용: node scripts/srt.mjs ep01        한국어 → 편 폴더 upload/ko.srt
+//       node scripts/srt.mjs ep01 en     대사의 "en" 으로 영어 자막 → 편 폴더 upload/en.srt
+import { mkdirSync, writeFileSync } from "node:fs";
+import { join } from "node:path";
 import { FPS, buildTimeline } from "../src/timeline.js";
+import { argCode, readScript, uploadDir } from "./art-lib.mjs";
 
-const episode = process.argv[2] ?? "ep01";
+const episode = argCode(process.argv[2], "사용: node scripts/srt.mjs");
 const lang = process.argv[3];
-const read = (p) => JSON.parse(readFileSync(new URL(`../src/${episode}/${p}`, import.meta.url), "utf8"));
+const read = (p) => readScript(episode, p);
 const { cuts } = buildTimeline(read("script.json"), read("timing.json"));
 
 const stamp = (frame) => {
@@ -25,7 +27,7 @@ const entries = cuts.flatMap((cut) =>
   }),
 );
 
-const outDir = new URL(`../out/${episode}/`, import.meta.url);
+const outDir = uploadDir(episode);
 mkdirSync(outDir, { recursive: true });
-writeFileSync(new URL(lang ? `subtitles.${lang}.srt` : "subtitles.srt", outDir), entries.map((e, i) => `${i + 1}\n${e}\n`).join("\n"));
+writeFileSync(join(outDir, lang ? `${lang}.srt` : "ko.srt"), entries.map((e, i) => `${i + 1}\n${e}\n`).join("\n"));
 console.log(`${entries.length} subtitles${lang ? ` (${lang})` : ""}`);

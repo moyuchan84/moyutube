@@ -1,0 +1,81 @@
+{
+  "title": "{{title}}",
+  "cast": {
+    "guest": "the <역할>: a Korean <man|woman> in <나이>, <머리 · 얼굴 특징 하나>, <옷 — 글자 · 로고 없는 명찰>; deadpan and polite when correcting grown-ups"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/panic",
+    "common/dad/explain",
+    "common/dad/proud",
+    "common/dad/shock",
+    "common/kid/normal",
+    "common/kid/ask",
+    "common/kid/wow",
+    "common/kid/doubt",
+    "common/mom/normal",
+    "common/mom/smirk",
+    "common/mom/explain",
+    "common/mom/shock",
+    "common/cutin/dad-shock",
+    "common/cutin/dad-proud",
+    "common/cutin/kid-ask",
+    "common/cutin/mom-smirk",
+    "common/cutin/dad-sig-1",
+    "common/cutin/dad-sig-2",
+    "common/cutin/dad-sig-3",
+    "common/cutin/mom-sig-1",
+    "common/cutin/mom-sig-2",
+    "common/cutin/mom-sig-3",
+    "common/cutin/mom-sig-4",
+    "common/cutin/mom-sig-scream",
+    "common/cutin/kid-sig"
+  ],
+  "items": [
+    {
+      "id": "bg/main",
+      "kind": "bg",
+      "title": "배경 — (집 밖 장소)",
+      "desc": "<place>, seen straight-on like a sitcom set, bright and clean."
+    },
+    {
+      "id": "guest/normal",
+      "kind": "char",
+      "who": "guest",
+      "ref": null,
+      "title": "손님 — 기본",
+      "note": "손님의 기준 그림. 이것부터 뽑아 확정한 뒤 나머지를 뽑는다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing upright and polite, a perfectly calm deadpan face with a tiny polite smile."
+    },
+    {
+      "id": "guest/correct",
+      "kind": "char",
+      "who": "guest",
+      "title": "손님 — 정정",
+      "desc": "3/4 view turned slightly to the RIGHT. One hand raised with the index finger up in a calm correcting gesture, deadpan face."
+    },
+    {
+      "id": "cutin/guest-correct",
+      "kind": "cutin",
+      "who": "guest",
+      "title": "컷인 — 손님 정색",
+      "desc": "Facing slightly to the RIGHT. Perfectly deadpan: half-closed unimpressed eyes, one eyebrow slightly raised, mouth a flat line."
+    },
+    {
+      "id": "full/dad-imagine",
+      "kind": "full",
+      "people": [
+        "dad",
+        "kid"
+      ],
+      "title": "아빠의 상상 — (틀린 설명 그대로)",
+      "desc": "A silly imagined scene: <the dad's wrong explanation drawn literally>, the dad <doing …>, the kid <reacting …>. Bright, absurd and cheerful."
+    },
+    {
+      "id": "prop/example",
+      "kind": "prop",
+      "title": "소품 — (라운드 카드 옆 물건)",
+      "desc": "<one object>, clean outline, bright colors."
+    }
+  ]
+}

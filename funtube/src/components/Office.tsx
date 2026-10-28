@@ -1,7 +1,8 @@
 import React from "react";
+import { Audio } from "@remotion/media";
 import { ThreeCanvas } from "@remotion/three";
 import { useThree } from "@react-three/fiber";
-import { AbsoluteFill, Sequence, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Sequence, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import * as THREE from "three";
 import { FPS, buildTimeline, activeBeat, type Beat } from "../timeline";
 import { type Dance, type Look } from "../toon3d/Char3D";
@@ -257,6 +258,11 @@ export const Office: React.FC = () => {
   return (
     <AbsoluteFill style={{ background: "#14141c", fontFamily: jua, overflow: "hidden" }}>
       <Voices beats={beats} />
+      {/* 배경음악: 말소리 아래로 깔린다. 대사 중에는 더 낮추고 대사 사이에만 살짝 올라온다 */}
+      <Audio
+        src={staticFile("bgm/office.wav")}
+        volume={(f) => (beats.some((b) => b.audio && f >= b.from - 3 && f <= b.from + b.speak + 3) ? 0.035 : 0.09)}
+      />
       {beats.filter((x) => x.sfx).map((x) => <Sfx key={x.index} at={x.from} name={x.sfx!} volume={x.sfx === "heart" ? 1 : 0.7} />)}
       <Sfx at={0} name="typing" volume={0.4} />
 

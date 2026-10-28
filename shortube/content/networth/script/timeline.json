@@ -1,0 +1,16 @@
+{
+  "fps": 30,
+  "bpm": 92,
+  "minorFrom": 1080,
+  "scenes": [
+    { "id": "hook", "from": 0, "dur": 150 },
+    { "id": "village", "from": 150, "dur": 330 },
+    { "id": "share", "from": 480, "dur": 300 },
+    { "id": "income", "from": 780, "dur": 300 },
+    { "id": "networth", "from": 1080, "dur": 300 },
+    { "id": "outro", "from": 1380, "dur": 210 }
+  ],
+  "total": 1590,
+  "hits": [70, 200, 280, 360, 530, 610, 690, 850, 940, 1150, 1240, 1310, 1420],
+  "risers": [150, 480, 780, 1080, 1380]
+}

@@ -1,0 +1,234 @@
+{
+  "id": "Ep11-Modapman",
+  "episode": "ep11",
+  "voice": "ep11",
+  "bgm": "cheerful",
+  "gap": 1,
+  "counter": "모답맨 오답",
+  "thumb": {
+    "top": "칠면조 먹으면",
+    "bottom": "교회 다녀요?",
+    "count": 5,
+    "layers": [
+      { "bg": "burst:#F08A24:#D8661B", "x": 520, "y": 420 },
+      { "fx": "lines", "x": 520, "y": 430 },
+      { "img": "prop/turkey", "sticker": true, "h": 420, "x": 560, "y": 470, "rot": -6 },
+      { "text": "저 그냥 새예요", "style": "bubble", "tail": "b", "size": 44, "x": 600, "y": 200, "rot": -4 },
+      { "img": "common/cutin/dad-proud", "h": 600, "x": 190, "y": 450, "rot": -4 },
+      { "text": "교회 전용 닭!", "style": "stamp", "size": 58, "x": 230, "y": 640, "rot": -9 },
+      { "img": "prop/three-books", "sticker": true, "h": 190, "x": 860, "y": 600, "rot": 7 },
+      { "img": "cutin/butcher-flat", "h": 380, "x": 1120, "y": 560, "rot": 4 },
+      { "text": "칠면조 먹으면", "size": 84, "x": 990, "y": 175, "rot": -3 },
+      { "text": "교회 가요?", "size": 104, "color": "#FFD23F", "x": 990, "y": 290, "rot": -3 },
+      { "text": "천주교·개신교·이슬람 3분", "size": 42, "x": 990, "y": 390, "rot": -3 }
+    ]
+  },
+  "beats": [
+    { "line": "c00-0", "shots": [
+      { "bg": "bg/meat-counter", "cast": [{ "art": "common/kid/ask", "x": 0.62, "h": 0.6, "talk": "kid" }], "cam": { "from": [0.6, 0.55, 1.3], "to": [0.6, 0.5, 1.45] }, "text": [{ "t": "추수감사절 장보기", "style": "news", "at": 0.05 }], "sfx": [{ "name": "tick" }] },
+      { "at": 0.5, "in": "slam", "bg": "burst:#FFD23F:#FFB627", "cast": [{ "art": "common/cutin/kid-ask", "x": 0.3, "h": 1, "enter": "pop", "talk": "kid" }], "props": [{ "art": "prop/turkey", "x": 0.74, "y": 0.44, "w": 0.3, "enter": "drop" }], "text": [{ "t": "칠면조 = 교회?", "style": "shake", "x": 0.74, "y": 0.84, "rot": 4, "size": 96, "at": 0.3 }], "sfx": [{ "name": "pop" }] }
+    ] },
+    { "line": "c00-1", "shots": [
+      { "in": "whip-r", "bg": "bg/meat-counter", "cast": [{ "art": "common/dad/proud", "x": 0.7, "h": 0.84, "talk": "dad" }], "cam": { "from": [0.7, 0.42, 1.7], "to": [0.7, 0.4, 1.95] }, "text": [{ "t": "당연하지!", "style": "slam", "x": 0.3, "y": 0.3, "size": 120 }], "sfx": [{ "name": "pang" }] },
+      { "at": 0.3, "in": "spin", "bg": "full/turkey-tie-imagine", "fx": ["imagine"], "cam": { "from": [0.5, 0.5, 1], "to": [0.5, 0.45, 1.12] }, "text": [{ "t": "교회의 추석!", "style": "shake", "x": 0.5, "y": 0.16, "size": 100, "color": "#FFD23F", "at": 0.15 }], "sfx": [{ "name": "boing" }] },
+      { "at": 0.66, "in": "whip-l", "bg": "burst:#FFD23F:#FFB627", "cast": [{ "art": "common/cutin/dad-proud", "x": 0.32, "h": 1, "enter": "spin" }], "props": [{ "art": "prop/turkey", "x": 0.76, "y": 0.42, "w": 0.28, "enter": "pop", "rot": 6 }], "text": [{ "t": "교회 전용 닭!", "style": "stamp", "x": 0.76, "y": 0.82, "size": 96, "color": "#B8352A", "at": 0.2 }], "sfx": [{ "name": "stamp", "at": 0.2 }] }
+    ] },
+    { "line": "c00b-0", "shots": [
+      { "in": "glitch", "bg": "bg/meat-counter", "cast": [{ "art": "butcher/correct", "x": 0.3, "h": 0.84, "talk": "butcher" }], "cam": { "from": [0.32, 0.42, 1.6], "to": [0.32, 0.4, 1.8] }, "text": [{ "t": "그냥 새", "style": "stamp", "x": 0.74, "y": 0.32, "size": 130, "at": 0.15 }], "sfx": [{ "name": "scratch" }, { "name": "stamp", "at": 0.15 }] },
+      { "at": 0.55, "in": "whip-r", "bg": "dots:#F6EEDF:#E8DCC4", "props": [{ "art": "prop/turkey", "x": 0.3, "y": 0.46, "w": 0.36, "enter": "r" }], "text": [{ "t": "아무나 먹어요", "style": "slam", "x": 0.72, "y": 0.44, "size": 100 }], "sfx": [{ "name": "ding" }] }
+    ] },
+    { "line": "c00b-1", "pad": 14, "shots": [
+      { "in": "smash", "bg": "#15303A", "cast": [{ "art": "common/cutin/dad-sig-1", "x": 0.5, "h": 1 }], "sfx": [{ "name": "boing" }], "cam": { "from": [0.5, 0.45, 1], "punch": [2, 6] } },
+      { "at": 0.3, "in": "cut", "bg": "#15303A", "cast": [{ "art": "common/cutin/dad-sig-2", "x": 0.5, "h": 1 }] },
+      { "at": 0.6, "in": "cut", "bg": "#15303A", "cast": [{ "art": "common/cutin/dad-sig-3", "x": 0.5, "h": 1 }], "fx": ["lines", "shake"] }
+    ] },
+    { "line": "c00c-0", "pad": 8, "count": 1, "countAt": 0.2, "shots": [
+      { "in": "smash", "bg": "dots:#F6EEDF:#E8DCC4", "tally": 1, "mark": { "kind": "x", "at": 2 }, "text": [{ "t": "모답맨", "style": "stamp", "x": 0.78, "y": 0.78, "size": 110, "at": 0.55 }], "sfx": [{ "name": "buzz", "at": 2 }, { "name": "stamp", "at": 0.55 }] }
+    ] },
+    { "hold": 48, "shots": [
+      { "in": "wipe", "bg": "stripes:#15303A:#1F4452", "props": [{ "art": "prop/three-books", "x": 0.86, "y": 0.68, "w": 0.16, "enter": "pop", "at": 14, "rot": 8 }, { "art": "prop/turkey", "x": 0.13, "y": 0.68, "w": 0.15, "enter": "pop", "at": 18, "rot": -8 }], "text": [{ "t": "여덟 살의 질문 × 모답맨", "style": "pop", "y": 0.16, "size": 56 }, { "t": "천주교 · 개신교 · 이슬람 · 유대교", "style": "slam", "y": 0.4, "size": 84, "at": 3 }, { "t": "뭐가 달라요?", "style": "shake", "y": 0.64, "size": 150, "color": "#FFD23F", "at": 12 }], "sfx": [{ "name": "stinger", "at": 3 }, { "name": "pang", "at": 12 }] }
+    ] },
+    { "line": "c01-0", "shots": [
+      { "in": "glitch", "bg": "bg/meat-counter", "fx": ["vhs"], "cam": { "from": [0.5, 0.5, 1.3], "to": [0.5, 0.5, 1.05] }, "text": [{ "t": "사건 개요 · 추수감사절 장보기", "style": "news", "at": 0.1 }], "sfx": [{ "name": "rewind" }] },
+      { "at": 0.5, "in": "whip-l", "bg": "bg/meat-counter", "cast": [{ "art": "butcher/normal", "x": 0.2, "h": 0.8 }, { "art": "common/mom/normal", "x": 0.52, "h": 0.74 }, { "art": "common/dad/normal", "x": 0.7, "h": 0.8 }, { "art": "common/kid/normal", "x": 0.86, "h": 0.55 }], "cam": { "from": [0.5, 0.5, 1], "to": [0.5, 0.5, 1.1] }, "text": [{ "t": "마트 정육 코너", "style": "pop", "y": 0.14, "size": 80 }], "tag": { "t": "정답 담당", "sub": "정육 코너 사장님", "x": 0.2, "y": 0.3, "at": 0.4 }, "sfx": [{ "name": "stamp", "at": 0.4 }] }
+    ] },
+    { "line": "c01-1", "pad": 6, "shots": [
+      { "in": "slam", "bg": "burst:#FFD23F:#FFB627", "cast": [{ "art": "common/cutin/kid-ask", "x": 0.32, "h": 1, "enter": "pop", "talk": "kid" }], "props": [{ "art": "prop/halal-stamp", "x": 0.76, "y": 0.42, "w": 0.34, "enter": "drop", "rot": 6 }], "text": [{ "t": "초록 도장?", "style": "shake", "x": 0.76, "y": 0.8, "size": 110, "at": 0.3 }], "sfx": [{ "name": "pop" }] }
+    ] },
+    { "line": "c01a-0", "shots": [
+      { "in": "whip-r", "bg": "bg/meat-counter", "cast": [{ "art": "butcher/explain", "x": 0.3, "h": 0.84, "talk": "butcher" }], "cam": { "from": [0.32, 0.42, 1.55], "to": [0.32, 0.4, 1.75] }, "text": [{ "t": "할랄", "style": "slam", "x": 0.74, "y": 0.28, "size": 150, "color": "#2E9E4F" }, { "t": "이슬람 규칙대로", "style": "pop", "x": 0.74, "y": 0.5, "size": 80, "at": 0.25 }], "sfx": [{ "name": "pang" }] },
+      { "at": 0.55, "in": "zoom", "bg": "dots:#F6EEDF:#E8DCC4", "props": [{ "art": "prop/halal-stamp", "x": 0.32, "y": 0.46, "w": 0.42, "enter": "pop" }], "text": [{ "t": "할랄 = 허용된 것", "style": "stamp", "x": 0.74, "y": 0.44, "size": 90, "color": "#2E9E4F" }], "sfx": [{ "name": "stamp" }] }
+    ] },
+    { "line": "c01a-1", "shots": [
+      { "in": "whip-l", "bg": "bg/meat-counter", "cast": [{ "art": "common/kid/ask-b", "x": 0.62, "h": 0.6, "talk": "kid" }], "cam": { "from": [0.62, 0.58, 1.8], "to": [0.62, 0.55, 2] } },
+      { "at": 0.45, "in": "zoom", "bg": "bg/family-tree", "cam": { "from": [0.5, 0.5, 1.05], "to": [0.5, 0.45, 1.15] }, "text": [{ "t": "할머니 → 성당", "style": "pop", "x": 0.3, "y": 0.3, "size": 90 }, { "t": "큰아빠 → 교회", "style": "pop", "x": 0.7, "y": 0.3, "size": 90, "at": 0.2 }, { "t": "다른 종교?", "style": "shake", "y": 0.8, "size": 120, "color": "#FFD23F", "at": 0.45 }], "sfx": [{ "name": "pop" }, { "name": "pop", "at": 0.2 }] }
+    ] },
+    { "line": "c01b-0", "shots": [
+      { "in": "glitch", "bg": "bg/meat-counter", "cast": [{ "art": "common/mom/explain", "x": 0.55, "h": 0.8, "talk": "mom" }], "cam": { "from": [0.55, 0.45, 1.6], "to": [0.55, 0.42, 1.8] }, "text": [{ "t": "성당 = 천주교", "style": "pop", "x": 0.22, "y": 0.28, "size": 84 }, { "t": "교회 = 기독교", "style": "pop", "x": 0.22, "y": 0.46, "size": 84, "at": 0.25 }], "sfx": [{ "name": "pop" }] },
+      { "at": 0.62, "in": "whip-r", "bg": "dots:#F6EEDF:#E8DCC4", "cast": [{ "art": "common/cutin/mom-smirk", "x": 0.34, "h": 1 }], "text": [{ "t": "완전 다르지", "style": "shake", "x": 0.76, "y": 0.4, "size": 110 }], "sfx": [{ "name": "boing" }] }
+    ] },
+    { "line": "c01b-1", "shots": [
+      { "in": "smash", "bg": "#F6EEDF", "cast": [{ "art": "cutin/butcher-flat", "x": 0.36, "h": 1 }], "text": [{ "t": "둘 다 기독교", "style": "stamp", "x": 0.76, "y": 0.36, "size": 100, "color": "#B8352A" }, { "t": "한집안 형제", "style": "pop", "x": 0.76, "y": 0.6, "size": 84, "at": 0.45 }], "sfx": [{ "name": "scratch" }, { "name": "stamp" }] }
+    ] },
+    { "line": "c01c-0", "pad": 6, "shots": [
+      { "in": "smash", "bg": "burst:#FF8FB1:#FF6F9C", "cast": [{ "art": "common/cutin/mom-sig-1", "x": 0.5, "h": 1 }], "text": [{ "t": "어?", "style": "pop", "x": 0.18, "y": 0.3, "size": 110 }], "sfx": [{ "name": "tick" }] },
+      { "at": 0.14, "in": "cut", "bg": "burst:#FF8FB1:#FF6F9C", "cast": [{ "art": "common/cutin/mom-sig-2", "x": 0.5, "h": 1 }], "text": [{ "t": "어?", "style": "pop", "x": 0.82, "y": 0.26, "size": 120 }], "sfx": [{ "name": "tick" }] },
+      { "at": 0.28, "in": "cut", "bg": "burst:#FF8FB1:#FF6F9C", "cast": [{ "art": "common/cutin/mom-sig-3", "x": 0.5, "h": 1 }], "text": [{ "t": "어?", "style": "pop", "x": 0.18, "y": 0.56, "size": 130 }], "sfx": [{ "name": "tick" }] },
+      { "at": 0.42, "in": "cut", "bg": "burst:#FF8FB1:#FF6F9C", "cast": [{ "art": "common/cutin/mom-sig-4", "x": 0.5, "h": 1 }], "text": [{ "t": "어…", "style": "pop", "x": 0.82, "y": 0.6, "size": 140 }], "sfx": [{ "name": "tick" }] },
+      { "at": 0.58, "in": "smash", "bg": "#15303A", "cast": [{ "art": "common/cutin/mom-sig-scream", "x": 0.5, "h": 1 }], "fx": ["lines", "shake"], "cam": { "from": [0.5, 0.45, 1], "punch": [2, 6] }, "text": [{ "t": "악!", "style": "shake", "x": 0.8, "y": 0.26, "size": 180, "color": "#FFD23F" }], "sfx": [{ "name": "crash" }] }
+    ] },
+    { "line": "c01c-1", "pad": 6, "count": 2, "countAt": 0.15, "shots": [
+      { "in": "smash", "bg": "bg/meat-counter", "cast": [{ "art": "common/mom/shock", "x": 0.55, "h": 0.82 }], "cam": { "from": [0.55, 0.38, 2.2], "ease": "snap", "roll": [6, 6] }, "freeze": 0.15, "mark": { "kind": "x", "at": 0.2 }, "tag": { "t": "모범답안", "sub": "장보기 10분 만에 탈락", "x": 0.26, "y": 0.3, "at": 0.45 }, "sfx": [{ "name": "buzz", "at": 0.2 }, { "name": "stamp", "at": 0.45 }] }
+    ] },
+    { "line": "c02-0", "shots": [
+      { "in": "whip-l", "bg": "bg/meat-counter", "cast": [{ "art": "common/kid/doubt", "x": 0.62, "h": 0.6, "talk": "kid" }], "cam": { "from": [0.62, 0.58, 1.8], "to": [0.62, 0.55, 2] }, "text": [{ "t": "큰아빠 왈: 이단", "style": "news", "at": 0.1 }] },
+      { "at": 0.55, "in": "slam", "bg": "burst:#FFD23F:#FFB627", "cast": [{ "art": "common/cutin/kid-doubt", "x": 0.32, "h": 1, "enter": "pop" }], "text": [{ "t": "이단이 뭐예요?", "style": "shake", "x": 0.74, "y": 0.4, "size": 100 }], "sfx": [{ "name": "pop" }] }
+    ] },
+    { "line": "c02-1", "shots": [
+      { "in": "zoom", "bg": "bg/meat-counter", "cast": [{ "art": "common/dad/explain", "x": 0.7, "h": 0.84, "talk": "dad" }], "cam": { "from": [0.7, 0.4, 1.8], "to": [0.7, 0.38, 2.2] }, "text": [{ "t": "이단 옆차기!", "style": "slam", "x": 0.3, "y": 0.3, "size": 110, "at": 0.1 }], "sfx": [{ "name": "pang", "at": 0.1 }] },
+      { "at": 0.42, "in": "spin", "bg": "full/jump-kick-imagine", "fx": ["imagine", "shake"], "cam": { "from": [0.6, 0.45, 1.3], "to": [0.55, 0.42, 1.05] }, "text": [{ "t": "한 번 뛰어 두 번 차기!", "style": "shake", "x": 0.5, "y": 0.86, "size": 90, "color": "#FFD23F", "at": 0.2 }], "sfx": [{ "name": "whoosh" }, { "name": "boing", "at": 0.2 }] }
+    ] },
+    { "line": "c02b-0", "shots": [
+      { "in": "glitch", "bg": "dots:#F6EEDF:#E8DCC4", "cast": [{ "art": "cutin/butcher-flat", "x": 0.32, "h": 1 }], "text": [{ "t": "異 다를 이", "style": "slam", "x": 0.74, "y": 0.26, "size": 100 }, { "t": "端 끝 단", "style": "slam", "x": 0.74, "y": 0.46, "size": 100, "at": 0.25 }, { "t": "끝이 다르다", "style": "stamp", "x": 0.74, "y": 0.72, "size": 96, "color": "#B8352A", "at": 0.6 }], "sfx": [{ "name": "scratch" }, { "name": "stamp", "at": 0.6 }] }
+    ] },
+    { "line": "c02b-1", "pad": 6, "count": 3, "countAt": 0.15, "shots": [
+      { "in": "smash", "bg": "full/jump-kick-imagine", "cam": { "from": [0.6, 0.4, 1.7], "ease": "snap", "roll": [-5, -5] }, "freeze": 0.15, "mark": { "kind": "x", "at": 0.2 }, "tag": { "t": "허공 발차기", "sub": "정육 코너 한복판", "x": 0.28, "y": 0.3, "at": 0.45 }, "sfx": [{ "name": "buzz", "at": 0.2 }, { "name": "stamp", "at": 0.45 }] }
+    ] },
+    { "line": "c03-0", "shots": [
+      { "in": "zoom", "bg": "bg/meat-counter", "cast": [{ "art": "butcher/smile", "x": 0.3, "h": 0.84, "talk": "butcher" }], "cam": { "from": [0.32, 0.42, 1.5], "to": [0.32, 0.4, 1.75] }, "text": [{ "t": "딱 세 판!", "style": "slam", "x": 0.72, "y": 0.36, "size": 130, "color": "#FFD23F" }], "sfx": [{ "name": "pang" }] }
+    ] },
+    { "line": "c03-1", "pad": 4, "shots": [
+      { "in": "whip-r", "bg": "dots:#F6EEDF:#E8DCC4", "cast": [{ "art": "common/cutin/dad-panic", "x": 0.34, "h": 1 }], "text": [{ "t": "고기는 '근'으로…", "style": "pop", "x": 0.76, "y": 0.4, "size": 84 }], "sfx": [{ "name": "boing" }] }
+    ] },
+    { "line": "c04-0", "shots": [
+      { "in": "zoom", "bg": "stripes:#15303A:#1F4452", "text": [{ "t": "ROUND 1", "style": "slam", "y": 0.22, "size": 110, "color": "#FFD23F" }, { "t": "예수님을", "style": "pop", "y": 0.44, "size": 120, "at": 0.2 }, { "t": "누구로 보나", "style": "stamp", "y": 0.66, "size": 110, "color": "#FFD23F", "at": 0.45 }], "sfx": [{ "name": "stinger" }, { "name": "stamp", "at": 0.45 }] },
+      { "at": 0.45, "in": "whip-l", "bg": "bg/family-tree", "cam": { "from": [0.5, 0.5, 1.1], "to": [0.5, 0.42, 1.2] }, "text": [{ "t": "조상 = 아브라함", "style": "slam", "y": 0.18, "size": 100, "color": "#FFD23F" }, { "t": "유대교 · 기독교 · 이슬람", "style": "pop", "y": 0.84, "size": 84, "at": 0.3 }], "sfx": [{ "name": "pop", "at": 0.3 }] }
+    ] },
+    { "line": "c04-1", "shots": [
+      { "in": "whip-r", "bg": "bg/meat-counter", "cast": [{ "art": "butcher/correct", "x": 0.3, "h": 0.84, "talk": "butcher" }], "cam": { "from": [0.32, 0.42, 1.55], "to": [0.32, 0.4, 1.75] }, "text": [{ "t": "갈리는 건 딱 하나", "style": "pop", "x": 0.72, "y": 0.3, "size": 80 }] },
+      { "at": 0.5, "in": "slam", "bg": "burst:#FFD23F:#FFB627", "text": [{ "t": "예수님은", "style": "slam", "y": 0.36, "size": 130 }, { "t": "누구?", "style": "shake", "y": 0.62, "size": 170, "color": "#B8352A", "at": 0.2 }], "sfx": [{ "name": "pang" }] }
+    ] },
+    { "line": "c04b-0", "shots": [
+      { "in": "zoom", "bg": "dots:#F6EEDF:#E8DCC4", "text": [{ "t": "유대교", "style": "slam", "y": 0.3, "size": 130 }, { "t": "구원자, 아직 안 오셨다", "style": "stamp", "y": 0.6, "size": 90, "color": "#3D6FB6", "at": 0.25 }], "sfx": [{ "name": "stamp", "at": 0.25 }] },
+      { "at": 0.5, "in": "whip-r", "bg": "dots:#F6EEDF:#E8DCC4", "text": [{ "t": "기독교", "style": "slam", "y": 0.3, "size": 130 }, { "t": "예수님 = 하나님의 아들", "style": "stamp", "y": 0.6, "size": 90, "color": "#B8352A", "at": 0.2 }], "sfx": [{ "name": "stamp", "at": 0.2 }] }
+    ] },
+    { "line": "c04b-1", "shots": [
+      { "in": "whip-l", "bg": "dots:#F6EEDF:#E8DCC4", "text": [{ "t": "이슬람", "style": "slam", "y": 0.3, "size": 130 }, { "t": "예수님 = 큰 예언자", "style": "stamp", "y": 0.6, "size": 90, "color": "#2E9E4F", "at": 0.25 }], "sfx": [{ "name": "stamp", "at": 0.25 }] },
+      { "at": 0.55, "in": "cut", "bg": "stripes:#15303A:#1F4452", "text": [{ "t": "마지막 예언자", "style": "pop", "y": 0.38, "size": 100 }, { "t": "무함마드", "style": "slam", "y": 0.6, "size": 130, "color": "#FFD23F", "at": 0.2 }], "sfx": [{ "name": "pang", "at": 0.2 }] }
+    ] },
+    { "line": "c04c-0", "shots": [
+      { "in": "zoom", "bg": "dots:#F6EEDF:#E8DCC4", "props": [{ "art": "prop/three-books", "x": 0.3, "y": 0.46, "w": 0.36, "enter": "pop" }], "text": [{ "t": "히브리 성경", "style": "pop", "x": 0.74, "y": 0.26, "size": 76 }, { "t": "성경", "style": "pop", "x": 0.74, "y": 0.44, "size": 76, "at": 0.12 }, { "t": "꾸란", "style": "pop", "x": 0.74, "y": 0.62, "size": 76, "at": 0.24 }], "sfx": [{ "name": "pop" }, { "name": "pop", "at": 0.12 }, { "name": "pop", "at": 0.24 }] },
+      { "at": 0.5, "in": "whip-l", "bg": "dots:#F6EEDF:#E8DCC4", "props": [{ "art": "prop/calendar", "x": 0.3, "y": 0.46, "w": 0.34, "enter": "drop" }], "text": [{ "t": "토 · 일 · 금", "style": "stamp", "x": 0.72, "y": 0.44, "size": 120, "color": "#B8352A", "at": 0.2 }], "sfx": [{ "name": "stamp", "at": 0.2 }] }
+    ] },
+    { "line": "c04c-1", "shots": [
+      { "in": "zoom", "bg": "bg/meat-counter", "cast": [{ "art": "common/dad/think", "x": 0.7, "h": 0.84, "talk": "dad" }], "cam": { "from": [0.7, 0.4, 1.8], "to": [0.7, 0.38, 2.1] }, "text": [{ "t": "셋 다 다니면…", "style": "type", "x": 0.3, "y": 0.3, "size": 80 }] },
+      { "at": 0.5, "in": "slam", "bg": "burst:#FFD23F:#FFB627", "cast": [{ "art": "common/cutin/dad-proud", "x": 0.32, "h": 1, "enter": "spin" }], "props": [{ "art": "prop/calendar", "x": 0.76, "y": 0.42, "w": 0.28, "enter": "pop", "rot": 8 }], "text": [{ "t": "주말이 사흘!", "style": "shake", "x": 0.76, "y": 0.82, "size": 100, "at": 0.15 }], "sfx": [{ "name": "boing" }] }
+    ] },
+    { "line": "c04d-0", "shots": [
+      { "in": "whip-r", "bg": "dots:#F6EEDF:#E8DCC4", "props": [{ "art": "prop/pig-no", "x": 0.3, "y": 0.46, "w": 0.36, "enter": "drop" }], "text": [{ "t": "유대교 · 이슬람", "style": "pop", "x": 0.72, "y": 0.3, "size": 76 }, { "t": "돼지고기 ✕", "style": "stamp", "x": 0.72, "y": 0.52, "size": 110, "color": "#B8352A", "at": 0.3 }], "sfx": [{ "name": "stamp", "at": 0.3 }] },
+      { "at": 0.52, "in": "zoom", "bg": "dots:#F6EEDF:#E8DCC4", "props": [{ "art": "prop/kosher-stamp", "x": 0.28, "y": 0.44, "w": 0.34, "enter": "l" }, { "art": "prop/halal-stamp", "x": 0.72, "y": 0.44, "w": 0.34, "enter": "r" }], "text": [{ "t": "코셔", "style": "slam", "x": 0.28, "y": 0.8, "size": 110, "color": "#3D6FB6", "at": 0.15 }, { "t": "할랄", "style": "slam", "x": 0.72, "y": 0.8, "size": 110, "color": "#2E9E4F", "at": 0.3 }], "sfx": [{ "name": "pop", "at": 0.15 }, { "name": "pop", "at": 0.3 }] }
+    ] },
+    { "line": "c04d-1", "pad": 4, "shots": [
+      { "in": "slam", "bg": "burst:#7DD87D:#4FBF5F", "cast": [{ "art": "common/kid/wow", "x": 0.34, "h": 0.8, "enter": "b", "talk": "kid" }], "props": [{ "art": "prop/halal-stamp", "x": 0.76, "y": 0.44, "w": 0.32, "enter": "drop", "rot": 6 }], "text": [{ "t": "초록 도장!", "style": "shake", "x": 0.76, "y": 0.82, "size": 100, "at": 0.25 }], "sfx": [{ "name": "ding" }] }
+    ] },
+    { "line": "c05-0", "shots": [
+      { "in": "zoom", "bg": "stripes:#15303A:#1F4452", "text": [{ "t": "ROUND 2", "style": "slam", "y": 0.22, "size": 110, "color": "#FFD23F" }, { "t": "무엇을", "style": "pop", "y": 0.44, "size": 120, "at": 0.2 }, { "t": "기준으로 삼나", "style": "stamp", "y": 0.66, "size": 110, "color": "#FFD23F", "at": 0.45 }], "sfx": [{ "name": "stinger" }, { "name": "stamp", "at": 0.45 }] },
+      { "at": 0.45, "in": "whip-l", "bg": "bg/family-tree", "cam": { "from": [0.5, 0.5, 1.1], "to": [0.5, 0.42, 1.2] }, "text": [{ "t": "기독교 큰집 셋", "style": "slam", "y": 0.18, "size": 100, "color": "#FFD23F" }, { "t": "천주교 · 정교회 · 개신교", "style": "pop", "y": 0.84, "size": 84, "at": 0.3 }], "sfx": [{ "name": "pop", "at": 0.3 }] }
+    ] },
+    { "line": "c05-1", "shots": [
+      { "in": "glitch", "bg": "dots:#F6EEDF:#E8DCC4", "fx": ["docu"], "props": [{ "art": "prop/hammer-paper", "x": 0.3, "y": 0.46, "w": 0.3, "enter": "drop" }], "text": [{ "t": "500년 전 · 루터", "style": "slam", "x": 0.72, "y": 0.32, "size": 100 }, { "t": "성경으로 돌아가자!", "style": "pop", "x": 0.72, "y": 0.54, "size": 80, "at": 0.35 }], "sfx": [{ "name": "rewind" }, { "name": "stamp", "at": 0.15 }] }
+    ] },
+    { "line": "c05a-0", "shots": [
+      { "in": "zoom", "bg": "bg/meat-counter", "cast": [{ "art": "common/dad/proud", "x": 0.7, "h": 0.84, "talk": "dad" }], "cam": { "from": [0.7, 0.42, 1.7], "to": [0.7, 0.4, 1.95] }, "text": [{ "t": "아, 리모델링!", "style": "slam", "x": 0.3, "y": 0.3, "size": 100 }], "sfx": [{ "name": "pang" }] },
+      { "at": 0.45, "in": "spin", "bg": "bg/imagine-pink", "fx": ["imagine"], "props": [{ "art": "prop/toolbox", "x": 0.5, "y": 0.46, "w": 0.4, "enter": "drop" }], "text": [{ "t": "천주교 리모델링 = 개신교", "style": "shake", "y": 0.86, "size": 84, "color": "#B8352A", "at": 0.2 }], "sfx": [{ "name": "boing" }] }
+    ] },
+    { "line": "c05a-1", "shots": [
+      { "in": "glitch", "bg": "#F6EEDF", "cast": [{ "art": "cutin/butcher-flat", "x": 0.36, "h": 1 }], "text": [{ "t": "…반은 맞아요", "style": "pop", "x": 0.76, "y": 0.4, "size": 90 }], "sfx": [{ "name": "scratch" }] },
+      { "at": 0.45, "in": "whip-r", "bg": "dots:#F6EEDF:#E8DCC4", "text": [{ "t": "改新", "style": "slam", "y": 0.34, "size": 170 }, { "t": "고쳐서 새롭게", "style": "stamp", "y": 0.66, "size": 100, "color": "#B8352A", "at": 0.25 }], "sfx": [{ "name": "stamp", "at": 0.25 }] }
+    ] },
+    { "line": "c05b-0", "pad": 8, "count": 4, "countAt": 0.2, "shots": [
+      { "in": "smash", "bg": "dots:#F6EEDF:#E8DCC4", "tally": 4, "mark": { "kind": "x", "at": 2 }, "text": [{ "t": "오답 ½ → 반올림", "style": "stamp", "x": 0.74, "y": 0.8, "size": 80, "at": 0.4 }], "sfx": [{ "name": "buzz", "at": 2 }, { "name": "stamp", "at": 0.4 }] }
+    ] },
+    { "line": "c05c-0", "shots": [
+      { "in": "whip-l", "bg": "dots:#F6EEDF:#E8DCC4", "props": [{ "art": "prop/three-books", "x": 0.26, "y": 0.46, "w": 0.28, "enter": "pop" }], "text": [{ "t": "천주교", "style": "slam", "x": 0.68, "y": 0.28, "size": 110 }, { "t": "성경 + 전통", "style": "stamp", "x": 0.68, "y": 0.54, "size": 100, "color": "#3D6FB6", "at": 0.3 }], "sfx": [{ "name": "stamp", "at": 0.3 }] },
+      { "at": 0.55, "in": "whip-r", "bg": "stripes:#15303A:#1F4452", "text": [{ "t": "개신교", "style": "slam", "y": 0.32, "size": 120 }, { "t": "오직 성경", "style": "stamp", "y": 0.6, "size": 130, "color": "#FFD23F", "at": 0.2 }], "sfx": [{ "name": "stamp", "at": 0.2 }] }
+    ] },
+    { "line": "c05d-0", "shots": [
+      { "in": "zoom", "bg": "bg/meat-counter", "cast": [{ "art": "butcher/explain", "x": 0.3, "h": 0.84, "talk": "butcher" }], "cam": { "from": [0.32, 0.42, 1.55], "to": [0.32, 0.4, 1.75] }, "text": [{ "t": "성당 → 신부님", "style": "pop", "x": 0.72, "y": 0.28, "size": 84 }, { "t": "교회 → 목사님", "style": "pop", "x": 0.72, "y": 0.46, "size": 84, "at": 0.25 }], "sfx": [{ "name": "pop" }, { "name": "pop", "at": 0.25 }] },
+      { "at": 0.6, "in": "cut", "bg": "dots:#F6EEDF:#E8DCC4", "text": [{ "t": "신부님", "style": "slam", "y": 0.34, "size": 120 }, { "t": "결혼 ✕", "style": "stamp", "y": 0.62, "size": 130, "color": "#B8352A", "at": 0.2 }], "sfx": [{ "name": "stamp", "at": 0.2 }] }
+    ] },
+    { "line": "c05d-1", "pad": 4, "shots": [
+      { "in": "slam", "bg": "burst:#FFD23F:#FFB627", "cast": [{ "art": "common/cutin/kid-ask", "x": 0.34, "h": 1, "enter": "pop" }], "text": [{ "t": "목사님은?", "style": "shake", "x": 0.76, "y": 0.4, "size": 110 }], "sfx": [{ "name": "pop" }] }
+    ] },
+    { "line": "c05d-2", "pad": 10, "shots": [
+      { "in": "smash", "bg": "#F6EEDF", "cast": [{ "art": "cutin/butcher-flat", "x": 0.36, "h": 1 }], "mark": { "kind": "o", "at": 4 }, "text": [{ "t": "결혼 OK", "style": "stamp", "x": 0.76, "y": 0.4, "size": 120, "color": "#2E9E4F", "at": 0.2 }], "sfx": [{ "name": "ding", "at": 4 }, { "name": "stamp", "at": 0.2 }] }
+    ] },
+    { "line": "c06-0", "shots": [
+      { "in": "zoom", "bg": "stripes:#15303A:#1F4452", "text": [{ "t": "ROUND 3", "style": "slam", "y": 0.22, "size": 110, "color": "#FFD23F" }, { "t": "교회를", "style": "pop", "y": 0.44, "size": 120, "at": 0.2 }, { "t": "어떻게 이끄나", "style": "stamp", "y": 0.66, "size": 110, "color": "#FFD23F", "at": 0.45 }], "sfx": [{ "name": "stinger" }, { "name": "stamp", "at": 0.45 }] },
+      { "at": 0.45, "in": "whip-l", "bg": "bg/family-tree", "cam": { "from": [0.5, 0.5, 1.1], "to": [0.5, 0.42, 1.2] }, "text": [{ "t": "개신교 집안 여럿", "style": "slam", "y": 0.18, "size": 100, "color": "#FFD23F" }, { "t": "장로교 · 감리교 · 침례교…", "style": "pop", "y": 0.84, "size": 84, "at": 0.3 }], "sfx": [{ "name": "pop", "at": 0.3 }] }
+    ] },
+    { "line": "c06-1", "shots": [
+      { "in": "zoom", "bg": "bg/meat-counter", "cast": [{ "art": "common/dad/explain-b", "x": 0.7, "h": 0.84, "talk": "dad" }], "cam": { "from": [0.7, 0.4, 1.8], "to": [0.7, 0.38, 2.1] }, "text": [{ "t": "우리 모 씨도!", "style": "slam", "x": 0.3, "y": 0.3, "size": 100 }], "sfx": [{ "name": "pang" }] },
+      { "at": 0.5, "in": "whip-r", "bg": "bg/family-tree", "props": [{ "art": "prop/mo-stamp", "x": 0.5, "y": 0.46, "w": 0.26, "enter": "drop" }], "text": [{ "t": "본관이 다르면 집안이 다르다", "style": "pop", "y": 0.86, "size": 76, "at": 0.2 }], "sfx": [{ "name": "stamp" }] }
+    ] },
+    { "line": "c06a-0", "shots": [
+      { "in": "glitch", "bg": "bg/meat-counter", "cast": [{ "art": "butcher/correct", "x": 0.3, "h": 0.84, "talk": "butcher" }], "cam": { "from": [0.32, 0.42, 1.55], "to": [0.32, 0.4, 1.75] }, "text": [{ "t": "그거예요", "style": "stamp", "x": 0.72, "y": 0.34, "size": 110, "color": "#2E9E4F" }], "sfx": [{ "name": "ding" }] },
+      { "at": 0.35, "in": "whip-l", "bg": "bg/family-tree", "cam": { "from": [0.5, 0.5, 1.05], "to": [0.5, 0.45, 1.15] }, "text": [{ "t": "장로교 ← 칼뱅", "style": "slam", "x": 0.28, "y": 0.3, "size": 84 }, { "t": "감리교 ← 웨슬리", "style": "slam", "x": 0.72, "y": 0.3, "size": 84, "at": 0.3 }], "sfx": [{ "name": "pop" }, { "name": "pop", "at": 0.3 }] }
+    ] },
+    { "line": "c06a-1", "shots": [
+      { "in": "zoom", "bg": "dots:#F6EEDF:#E8DCC4", "props": [{ "art": "prop/round-table", "x": 0.3, "y": 0.46, "w": 0.36, "enter": "pop" }], "text": [{ "t": "장로교", "style": "slam", "x": 0.72, "y": 0.3, "size": 110 }, { "t": "장로님들 회의", "style": "pop", "x": 0.72, "y": 0.52, "size": 84, "at": 0.25 }], "sfx": [{ "name": "pop" }] },
+      { "at": 0.5, "in": "whip-r", "bg": "dots:#F6EEDF:#E8DCC4", "props": [{ "art": "prop/high-chair", "x": 0.3, "y": 0.46, "w": 0.28, "enter": "drop" }], "text": [{ "t": "감리교", "style": "slam", "x": 0.72, "y": 0.3, "size": 110 }, { "t": "감독님", "style": "pop", "x": 0.72, "y": 0.52, "size": 84, "at": 0.2 }], "sfx": [{ "name": "stamp" }] }
+    ] },
+    { "line": "c06b-0", "shots": [
+      { "in": "zoom", "bg": "bg/meat-counter", "cast": [{ "art": "butcher/smile", "x": 0.3, "h": 0.84, "talk": "butcher" }], "cam": { "from": [0.32, 0.42, 1.55], "to": [0.32, 0.4, 1.75] }, "text": [{ "t": "Methodist", "style": "slam", "x": 0.72, "y": 0.28, "size": 96 }, { "t": "= 규칙쟁이 (별명)", "style": "pop", "x": 0.72, "y": 0.48, "size": 76, "at": 0.3 }], "sfx": [{ "name": "pang" }] }
+    ] },
+    { "line": "c06b-1", "shots": [
+      { "in": "whip-l", "bg": "bg/meat-counter", "cast": [{ "art": "common/mom/smirk", "x": 0.55, "h": 0.8, "talk": "mom" }], "cam": { "from": [0.55, 0.45, 1.6], "to": [0.55, 0.42, 1.8] } },
+      { "at": 0.5, "in": "slam", "bg": "burst:#FF8FB1:#FF6F9C", "cast": [{ "art": "common/cutin/mom-smirk", "x": 0.34, "h": 1, "enter": "pop" }], "text": [{ "t": "그건 내 담당", "style": "shake", "x": 0.76, "y": 0.4, "size": 100 }], "sfx": [{ "name": "boing" }] }
+    ] },
+    { "line": "c06c-0", "shots": [
+      { "in": "glitch", "bg": "dots:#F6EEDF:#E8DCC4", "fx": ["docu"], "props": [{ "art": "prop/steamship", "x": 0.3, "y": 0.46, "w": 0.4, "enter": "l" }], "text": [{ "t": "1885 · 부활절", "style": "slam", "x": 0.74, "y": 0.28, "size": 96 }, { "t": "아펜젤러 · 언더우드", "style": "pop", "x": 0.74, "y": 0.48, "size": 70, "at": 0.3 }, { "t": "같은 배로!", "style": "stamp", "x": 0.74, "y": 0.68, "size": 90, "color": "#B8352A", "at": 0.6 }], "sfx": [{ "name": "rewind" }, { "name": "stamp", "at": 0.6 }] }
+    ] },
+    { "line": "c06c-1", "pad": 4, "shots": [
+      { "in": "slam", "bg": "burst:#FFD23F:#FFB627", "cast": [{ "art": "common/cutin/kid-doubt", "x": 0.34, "h": 1, "enter": "pop" }], "text": [{ "t": "이단은요?", "style": "shake", "x": 0.76, "y": 0.4, "size": 110 }], "sfx": [{ "name": "pop" }] }
+    ] },
+    { "line": "c06d-0", "shots": [
+      { "in": "zoom", "bg": "bg/meat-counter", "cast": [{ "art": "butcher/explain", "x": 0.3, "h": 0.84, "talk": "butcher" }], "cam": { "from": [0.32, 0.42, 1.55], "to": [0.32, 0.4, 1.75] }, "text": [{ "t": "핵심이 다르다", "style": "pop", "x": 0.72, "y": 0.28, "size": 90 }] },
+      { "at": 0.5, "in": "cut", "bg": "stripes:#15303A:#1F4452", "text": [{ "t": "이단", "style": "slam", "y": 0.34, "size": 150, "color": "#FFD23F" }, { "t": "교단들이 정한 것", "style": "stamp", "y": 0.62, "size": 90, "at": 0.25 }], "sfx": [{ "name": "stamp", "at": 0.25 }] }
+    ] },
+    { "line": "c06d-1", "pad": 8, "shots": [
+      { "in": "wipe", "bg": "stripes:#15303A:#1F4452", "text": [{ "t": "한 줄 정리", "style": "news", "at": 0.02 }, { "t": "① 예수님을 보는 눈", "style": "slam", "y": 0.3, "size": 86, "at": 0.1 }, { "t": "② 성경을 보는 기준", "style": "slam", "y": 0.5, "size": 86, "color": "#FFD23F", "at": 0.38 }, { "t": "③ 교회를 이끄는 방식", "style": "slam", "y": 0.7, "size": 86, "at": 0.66 }], "sfx": [{ "name": "stamp", "at": 0.1 }, { "name": "stamp", "at": 0.38 }, { "name": "stamp", "at": 0.66 }] }
+    ] },
+    { "line": "c07-0", "calm": true, "shots": [
+      { "in": "iris", "bg": "bg/meat-counter", "cast": [{ "art": "common/kid/ask", "x": 0.6, "h": 0.6, "talk": "kid" }], "cam": { "from": [0.6, 0.55, 1.5], "to": [0.6, 0.53, 1.6] } }
+    ] },
+    { "line": "c07-1", "calm": true, "shots": [
+      { "in": "cut", "bg": "bg/meat-counter", "cast": [{ "art": "common/dad/normal", "x": 0.66, "h": 0.84, "talk": "dad" }], "cam": { "from": [0.66, 0.42, 1.5], "to": [0.66, 0.4, 1.62] } }
+    ] },
+    { "line": "c07-2", "calm": true, "shots": [
+      { "in": "cut", "bg": "bg/meat-counter", "cast": [{ "art": "common/dad/explain", "x": 0.62, "h": 0.84, "talk": "dad" }, { "art": "common/kid/normal", "x": 0.84, "h": 0.55 }], "cam": { "from": [0.7, 0.45, 1.2], "to": [0.7, 0.44, 1.3] } }
+    ] },
+    { "line": "c07-3", "calm": true, "shots": [
+      { "in": "cut", "bg": "bg/meat-counter", "cast": [{ "art": "common/kid/laugh", "x": 0.55, "h": 0.6, "talk": "kid" }], "props": [{ "art": "prop/halal-stamp", "x": 0.8, "y": 0.62, "w": 0.2 }], "cam": { "from": [0.62, 0.55, 1.3], "to": [0.62, 0.54, 1.4] } }
+    ] },
+    { "line": "c07b-0", "calm": true, "pad": 10, "shots": [
+      { "in": "cut", "bg": "full/stamp-hunt", "cam": { "from": [0.5, 0.5, 1.25], "to": [0.42, 0.55, 1.1] } }
+    ] },
+    { "line": "c08-0", "shots": [
+      { "in": "whip-l", "bg": "bg/meat-counter", "cast": [{ "art": "common/kid/ask-b", "x": 0.62, "h": 0.6, "talk": "kid" }], "cam": { "from": [0.62, 0.58, 1.8], "to": [0.62, 0.55, 2] }, "text": [{ "t": "우리 집은 무슨 교?", "style": "shake", "x": 0.3, "y": 0.3, "size": 90, "at": 0.3 }], "sfx": [{ "name": "pop", "at": 0.3 }] }
+    ] },
+    { "line": "c08-1", "shots": [
+      { "in": "zoom", "bg": "bg/meat-counter", "cast": [{ "art": "common/dad/proud", "x": 0.7, "h": 0.84, "talk": "dad" }], "cam": { "from": [0.7, 0.42, 1.7], "to": [0.7, 0.4, 1.95] }, "text": [{ "t": "모 씨니까…", "style": "type", "x": 0.3, "y": 0.3, "size": 90 }] },
+      { "at": 0.55, "in": "slam", "bg": "burst:#FFD23F:#FFB627", "props": [{ "art": "prop/mo-stamp", "x": 0.3, "y": 0.46, "w": 0.32, "enter": "drop" }], "text": [{ "t": "모교!", "style": "shake", "x": 0.72, "y": 0.44, "size": 180, "color": "#B8352A" }], "sfx": [{ "name": "pang" }] }
+    ] },
+    { "line": "c08b-0", "pad": 4, "shots": [
+      { "in": "smash", "bg": "#F6EEDF", "cast": [{ "art": "cutin/butcher-flat", "x": 0.34, "h": 1 }], "props": [{ "art": "prop/grad-cap", "x": 0.78, "y": 0.38, "w": 0.28, "enter": "drop" }], "text": [{ "t": "졸업한 학교", "style": "stamp", "x": 0.78, "y": 0.78, "size": 100, "color": "#B8352A", "at": 0.3 }], "sfx": [{ "name": "scratch" }, { "name": "stamp", "at": 0.3 }] }
+    ] },
+    { "line": "c08b-1", "pad": 30, "count": 5, "countAt": 0.15, "shots": [
+      { "in": "smash", "bg": "dots:#F6EEDF:#E8DCC4", "tally": 5, "mark": { "kind": "x", "at": 2 }, "text": [{ "t": "역시, 모답맨", "style": "stamp", "x": 0.5, "y": 0.84, "size": 100, "at": 0.55 }], "sfx": [{ "name": "buzz", "at": 2 }, { "name": "crash", "at": 0.55 }] }
+    ] },
+    { "hold": 75, "shots": [
+      { "in": "iris", "bg": "burst:#15303A:#1F4452", "cast": [{ "art": "common/cutin/dad-panic", "x": 0.5, "h": 0.8, "enter": "spin" }], "text": [{ "t": "모답맨", "style": "slam", "y": 0.2, "size": 120, "color": "#FFD23F" }, { "t": "다음 오답도 기대해 주세요", "style": "pop", "y": 0.86, "size": 64, "at": 14 }], "note": "※ 큰 줄기만 정리한 일반 설명이에요. 교단 · 종파마다 세부 내용은 달라요" }
+    ] }
+  ]
+}

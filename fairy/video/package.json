@@ -1,0 +1,24 @@
+{
+  "name": "fairy-video",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "prep": "node scripts/prep.mjs",
+    "studio": "remotion studio",
+    "render": "node scripts/prep.mjs && remotion render Book out/01-real-hero.mp4",
+    "render:maum": "node scripts/prep.mjs 02-maum-cafe && remotion render Book out/02-maum-cafe.mp4",
+    "short": "node scripts/shorts.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.529",
+    "@remotion/google-fonts": "4.0.529",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.529"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "typescript": "5.6.3"
+  }
+}

@@ -4,7 +4,11 @@
   "type": "module",
   "scripts": {
     "ingest": "node scripts/ingest.mjs",
-    "storyboard": "node scripts/storyboard.mjs"
+    "storyboard": "node scripts/storyboard.mjs",
+    "prompts": "node scripts/prompts.mjs",
+    "speed": "node scripts/speed.mjs",
+    "voice": "node scripts/voice.mjs",
+    "scenario": "node scripts/scenario.mjs"
   },
   "dependencies": {
     "pdfjs-dist": "4.10.38"

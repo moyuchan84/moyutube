@@ -1,0 +1,22 @@
+{
+  "code": "suneung",
+  "title": "수능 D-34, 55만 명 중 N수생이 23년 만에 최다",
+  "format": "short",
+  "category": "education",
+  "status": "uploaded",
+  "created": "2026-10-16",
+  "published": "2026-10-16",
+  "youtube": [
+    {
+      "id": "c20diqBpCUs",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "public"
+    }
+  ],
+  "tags": [],
+  "video": {
+    "composition": "SuneungShort",
+    "bgm": "bgm/suneung.mjs"
+  }
+}

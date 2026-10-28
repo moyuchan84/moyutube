@@ -1,23 +1,22 @@
-// 편집형 쇼츠 렌더: src/shorts/<epNN>.json → out/shorts/<epNN>-short.mp4 + 업로드 정보.
+// 편집형 쇼츠 렌더: 편 폴더 script/shorts.json → out/shorts/<epNN>-short.mp4 + 업로드 정보(편 폴더 upload/short.upload.md).
 // 사용: node scripts/short.mjs ep01           (영상 + 업로드 정보)
 //       node scripts/short.mjs ep01 --check   (영상 없이 조각마다 스틸 한 장 + 한 장짜리 콘택트 시트 — 편집 확인용)
 import { bundle } from "@remotion/bundler";
 import { renderMedia, renderStill, selectComposition } from "@remotion/renderer";
 import { execSync } from "node:child_process";
-import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 import { buildShort } from "../src/shorts/short-timeline.js";
 import { buildTimeline } from "../src/timeline.js";
+import { argCode, episodeDir, readScript, scriptPath, uploadDir } from "./art-lib.mjs";
 
-const episode = process.argv[2] ?? "ep01";
+const episode = argCode(process.argv[2], "사용: node scripts/short.mjs");
 const check = process.argv.includes("--check");
 const root = new URL("../", import.meta.url);
-const read = (path) => JSON.parse(readFileSync(new URL(path, root), "utf8"));
-const specPath = `src/shorts/${episode}.json`;
-if (!existsSync(new URL(specPath, root))) throw new Error(`편집 계획이 없습니다: ${specPath} (SKILL.md 2단계)`);
-const spec = read(specPath);
-const timeline = buildTimeline(read(`src/${episode}/script.json`), read(`src/${episode}/timing.json`));
+if (!existsSync(scriptPath(episode, "shorts.json"))) throw new Error(`편집 계획이 없습니다: qna/${episodeDir(episode)}/script/shorts.json (SKILL.md 2단계)`);
+const spec = readScript(episode, "shorts.json");
+const timeline = buildTimeline(readScript(episode, "script.json"), readScript(episode, "timing.json"));
 const { segments, body, durationInFrames } = buildShort(timeline, spec);
 const outDir = new URL(`out/shorts/`, root);
 mkdirSync(outDir, { recursive: true });
@@ -66,8 +65,9 @@ if (check) {
   ff(["-c:v", "libx264", "-preset", "slow", "-b:v", `${kbps}k`, "-pass", "2", "-c:a", "aac", "-b:a", "96k", "-movflags", "+faststart", upload]);
   for (const f of readdirSync(outDir)) if (f.startsWith("ffmpeg2pass")) rmSync(new URL(f, outDir));
   const u = spec.upload ?? {};
+  mkdirSync(uploadDir(episode), { recursive: true });
   writeFileSync(
-    out(`${episode}-short.upload.md`),
+    `${uploadDir(episode)}/short.upload.md`,
     [
       `# ${spec.id} 업로드 정보`,
       "",
@@ -88,5 +88,5 @@ if (check) {
       "",
     ].join("\n"),
   );
-  console.log(`\n\n완성: video/out/shorts/${episode}-short.mp4\n올리기용: video/out/shorts/${episode}-short.upload.mp4\n업로드 정보: video/out/shorts/${episode}-short.upload.md`);
+  console.log(`\n\n완성: video/out/shorts/${episode}-short.mp4\n올리기용: video/out/shorts/${episode}-short.upload.mp4\n업로드 정보: qna/${episodeDir(episode)}/upload/short.upload.md`);
 }

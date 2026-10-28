@@ -1,0 +1,11 @@
+{
+  "name": "moyutube",
+  "private": true,
+  "description": "다섯 채널(qna · shortube · funtube · lab · fairy)의 영상 제작 저장소. 규칙은 CLAUDE.md · docs/CONVENTIONS.md",
+  "type": "module",
+  "scripts": {
+    "new": "node shared/bin/moyu.mjs new",
+    "units": "node shared/bin/moyu.mjs units",
+    "verify": "node shared/bin/moyu.mjs verify"
+  }
+}

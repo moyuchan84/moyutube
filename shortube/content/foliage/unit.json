@@ -1,0 +1,22 @@
+{
+  "code": "foliage",
+  "title": "설악산 단풍 절정, 올해는 10월 16일 제때 왔다 · 5년 치 날짜와 9월 기온으로 보면",
+  "format": "short",
+  "category": "weather",
+  "status": "uploaded",
+  "created": "2026-10-24",
+  "published": "2026-10-24",
+  "youtube": [
+    {
+      "id": "Pz_CfPajYDI",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "public"
+    }
+  ],
+  "tags": [],
+  "video": {
+    "composition": "FoliageShort",
+    "bgm": "bgm/foliage.mjs"
+  }
+}

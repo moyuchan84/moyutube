@@ -1,0 +1,17 @@
+{
+  "code": "relay",
+  "title": "미국 반도체 -6.72% 다음 날, 코스피는 장중 -4.12% → +0.30% 마감 — 메타발 기술주 급락의 시차 릴레이",
+  "format": "short",
+  "status": "edit",
+  "created": "2026-10-23",
+  "youtube": [],
+  "tags": [],
+  "video": {
+    "composition": "RelayShort",
+    "bgm": "bgm/relay.mjs",
+    "data": [
+      "data/fetch-relay.mjs"
+    ]
+  },
+  "notes": "렌더는 했지만 업로드 장부(uploads.csv)에 기록이 없다"
+}

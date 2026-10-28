@@ -1,0 +1,25 @@
+{
+  "code": "burn",
+  "title": "치킨 한 마리, 걸어서 태우면 8시간 44분? 음식 칼로리를 운동 시간으로",
+  "format": "short",
+  "category": "health",
+  "status": "uploaded",
+  "created": "2026-10-23",
+  "published": "2026-10-23",
+  "youtube": [
+    {
+      "id": "h1CPSbOS7Io",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "public"
+    }
+  ],
+  "tags": [],
+  "video": {
+    "composition": "BurnShort",
+    "bgm": "bgm/burn.mjs",
+    "data": [
+      "data/burn-data.mjs"
+    ]
+  }
+}

@@ -179,7 +179,7 @@ footer{padding-block:56px 70px; color:var(--pencil); font-size:14px}
       <table>
         <tr><th>문서</th><th>내용</th><th>횟수</th></tr>
         <tr><td><a href="../art/common/GEMINI_PROMPTS.md">art/common/GEMINI_PROMPTS.md</a></td><td class="wrapok">아빠 · 아이 표정, 리액션 컷인, 거실 · 아이 방 배경 (18장)</td><td class="wrapok">한 번만. 모든 편이 같이 쓴다</td></tr>
-        <tr><td><a href="../episodes/01-hotel-motel-hostel/GEMINI_PROMPTS.md">episodes/01-…/GEMINI_PROMPTS.md</a></td><td class="wrapok">그 편에만 나오는 배경 · 인물 · 장면 · 소품 (1편은 9장)</td><td class="wrapok">편마다</td></tr>
+        <tr><td><a href="../content/ep01-hotel-motel-hostel/prompts/GEMINI_PROMPTS.md">content/ep01-…/GEMINI_PROMPTS.md</a></td><td class="wrapok">그 편에만 나오는 배경 · 인물 · 장면 · 소품 (1편은 9장)</td><td class="wrapok">편마다</td></tr>
       </table>
     </div>
     <div class="box tip"><p><b class="t">문구를 고치고 싶을 때.</b> 문서를 직접 고치지 않는다. <code>video/src/art-common.json</code>(공통)이나 <code>video/src/ep01/art.json</code>(편별)의 묘사를 고치고 <code>npm run prompts</code> 를 다시 실행한다.</p></div>
@@ -204,10 +204,10 @@ footer{padding-block:56px 70px; color:var(--pencil); font-size:14px}
         <tr><td>아빠 · 아이 전신</td><td><code>art/common/dad/panic.png</code></td><td class="wrapok">초록 배경, 2:3 세로</td></tr>
         <tr><td>리액션 컷인</td><td><code>art/common/cutin/dad-panic.png</code></td><td class="wrapok">초록 배경, 1:1, 가슴 위</td></tr>
         <tr><td>공통 배경</td><td><code>art/common/bg/living-room.png</code></td><td class="wrapok">사람 없음, 16:9</td></tr>
-        <tr><td>편별 배경</td><td><code>episodes/01-…/art/bg/motel-counter.png</code></td><td class="wrapok">사람 없음, 16:9</td></tr>
-        <tr><td>편별 인물</td><td><code>episodes/01-…/art/char/dad-young.png</code></td><td class="wrapok">초록 배경, 2:3 세로</td></tr>
-        <tr><td>한 장짜리 장면</td><td><code>episodes/01-…/art/full/hotel-mansion.png</code></td><td class="wrapok">완성된 그림, 16:9</td></tr>
-        <tr><td>소품</td><td><code>episodes/01-…/art/prop/hotel.png</code></td><td class="wrapok">초록 배경, 1:1</td></tr>
+        <tr><td>편별 배경</td><td><code>content/ep01-…/art/bg/motel-counter.png</code></td><td class="wrapok">사람 없음, 16:9</td></tr>
+        <tr><td>편별 인물</td><td><code>content/ep01-…/art/char/dad-young.png</code></td><td class="wrapok">초록 배경, 2:3 세로</td></tr>
+        <tr><td>한 장짜리 장면</td><td><code>content/ep01-…/art/full/hotel-mansion.png</code></td><td class="wrapok">완성된 그림, 16:9</td></tr>
+        <tr><td>소품</td><td><code>content/ep01-…/art/prop/hotel.png</code></td><td class="wrapok">초록 배경, 1:1</td></tr>
       </table>
     </div>
 
@@ -370,7 +370,7 @@ footer{padding-block:56px 70px; color:var(--pencil); font-size:14px}
     <div class="part-head"><span class="no">+</span><h2>새 편을 만들 때</h2></div>
     <p class="sub">공통 그림(가족 · 집)은 이미 있으니, 편마다 새로 필요한 것은 그 편의 그림 열 장 안팎과 파일 두 개다. 파일 두 개는 원고를 Claude에게 주고 "1편처럼 만들어 줘"라고 하면 된다.</p>
     <ul class="check">
-      <li><label><input type="checkbox"><span>원고가 있다 (<code>episodes/NN-…/….md</code>, 스킬 <code>eight-year-olds-question</code> 으로 작성)</span></label></li>
+      <li><label><input type="checkbox"><span>원고가 있다 (<code>content/epNN-…/plan.md</code>, 스킬 <code>eight-year-olds-question</code> 으로 작성)</span></label></li>
       <li><label><input type="checkbox"><span><code>video/src/epNN/script.json</code> — 컷 · 대사 · 연출</span></label></li>
       <li><label><input type="checkbox"><span><code>video/src/epNN/art.json</code> — 이 편에만 쓰는 그림 목록과 묘사</span></label></li>
       <li><label><input type="checkbox"><span><code>video/src/Root.tsx</code> 에 그 편을 등록 (1편 블록을 복사해 번호만 바꾼다)</span></label></li>
@@ -397,7 +397,7 @@ footer{padding-block:56px 70px; color:var(--pencil); font-size:14px}
         <tr><th>위치</th><th>무엇</th><th>누가 고치나</th></tr>
         <tr><td><code>art/anchor/style-cutin.png</code></td><td class="wrapok">화풍 앵커. 모든 프롬프트에 ①로 첨부</td><td class="wrapok">바꾸면 전체 화풍이 바뀐다</td></tr>
         <tr><td><code>art/common/</code></td><td class="wrapok">공통 그림 원본 (아빠 · 아이 · 컷인 · 집)</td><td class="wrapok">사람 (Gemini 결과 저장)</td></tr>
-        <tr><td><code>episodes/NN-…/art/</code></td><td class="wrapok">그 편의 그림 원본</td><td class="wrapok">사람 (Gemini 결과 저장)</td></tr>
+        <tr><td><code>content/epNN-…/art/</code></td><td class="wrapok">그 편의 그림 원본</td><td class="wrapok">사람 (Gemini 결과 저장)</td></tr>
         <tr><td><code>video/src/art-common.json</code></td><td class="wrapok">공통 그림 목록, 아빠 · 아이 생김새 묘사</td><td class="wrapok">생김새를 바꿀 때</td></tr>
         <tr><td><code>video/src/epNN/art.json</code></td><td class="wrapok">편별 그림 목록과 묘사</td><td class="wrapok">그림을 추가하거나 묘사를 고칠 때</td></tr>
         <tr><td><code>video/src/epNN/script.json</code></td><td class="wrapok">컷 · 대사 · 연출</td><td class="wrapok">대사나 연출을 고칠 때</td></tr>

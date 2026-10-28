@@ -1,0 +1,22 @@
+{
+  "code": "diet",
+  "title": "마운자로·위고비, 다이어트 주사를 숫자로 보면",
+  "format": "short",
+  "category": "health",
+  "status": "uploaded",
+  "created": "2026-10-15",
+  "published": "2026-10-15",
+  "youtube": [
+    {
+      "id": "MXAW9LN6MZw",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "public"
+    }
+  ],
+  "tags": [],
+  "video": {
+    "composition": "DietNumbers",
+    "bgm": "bgm/diet.mjs"
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "rawVoice": true,
+  "speed": 1.2,
+  "title": "모답맨 · 누리호는 지금 뭐 해요? 로켓 · 위성 · 우주선",
+  "bgm": "cheerful",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "콜드 오픈",
+      "lines": [
+        { "who": "kid", "text": "아빠, 누리호는 지금 뭐 해요?", "en": "Dad, what's Nuri doing right now?" },
+        { "who": "dad", "text": "우주에서 사진 찍고 있지! 브이도 하고!", "en": "Taking pictures in space! Throwing up a peace sign, too!" }
+      ]
+    },
+    {
+      "id": "c00b",
+      "beat": "콜드 오픈",
+      "lines": [
+        { "who": "guide", "text": "아버님, 누리호는 사진기가 아니에요. 택배 트럭이에요.", "en": "Sir, Nuri isn't a camera. It's a delivery truck." },
+        { "who": "dad", "text": "…네?", "en": "…Huh?" }
+      ]
+    },
+    {
+      "id": "c00c",
+      "beat": "콜드 오픈",
+      "lines": [
+        { "who": "narr", "text": "오답, 하나. 저는 모답맨입니다.", "en": "Wrong answer number one. I'm Modapman." }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "사건 개요",
+      "lines": [
+        { "who": "narr", "text": "사건 개요. 누리호 발사 뉴스가 나온 주말. 장소, 우주과학관.", "en": "Case summary. The weekend after the Nuri launch news. Location: a space science museum." }
+      ]
+    },
+    {
+      "id": "c01a",
+      "beat": "사건 개요",
+      "lines": [
+        { "who": "mom", "text": "위성은 무중력이라 우주에 둥둥 떠 있는 거잖아요.", "en": "Satellites just float up there, right? Zero gravity." },
+        { "who": "guide", "text": "둥둥 안 떠요. 지금도 떨어지는 중이에요.", "en": "They don't float. They're falling. Right now." }
+      ]
+    },
+    {
+      "id": "c01b",
+      "beat": "사건 개요",
+      "lines": [
+        { "who": "mom", "text": "어? 어? 어? 어… 아악!", "en": "Wha? Wha? Wha? Wha… AAAH!" },
+        { "who": "narr", "text": "오답, 둘. 엄마도 결국, 모 씨 집안 사람.", "en": "Wrong answer, two. Mom married into the Mo family after all." }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "오답 퍼레이드",
+      "lines": [
+        { "who": "kid", "text": "그럼 우주선은요? 위성이랑 뭐가 달라요?", "en": "Then what about spaceships? How are they different from satellites?" },
+        { "who": "dad", "text": "우주선은 큰 위성! 다음 휴가는 누리호 타고 우주 간다!", "en": "A spaceship's just a big satellite! Next vacation, we ride Nuri to space!" }
+      ]
+    },
+    {
+      "id": "c02b",
+      "beat": "오답 퍼레이드",
+      "lines": [
+        { "who": "guide", "text": "누리호엔 사람 자리가 없어요.", "en": "Nuri doesn't have seats for people." },
+        { "who": "narr", "text": "오답, 셋. 모 씨 일가, 우주 진출 실패.", "en": "Wrong answer, three. The Mo family's space program: cancelled." }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "1라운드 · 로켓은 택배 트럭",
+      "lines": [
+        { "who": "guide", "text": "그럼, 딱 세 판만 하죠.", "en": "Okay. Just three rounds." },
+        { "who": "dad", "text": "과학관에도 판이…?", "en": "The museum has rounds too…?" }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "1라운드 · 로켓은 택배 트럭",
+      "lines": [
+        { "who": "guide", "text": "1라운드. 누리호는 로켓, 정확히는 발사체예요.", "tts": "일 라운드. 누리호는 로켓, 정확히는 발사체예요.", "en": "Round one. Nuri is a rocket. A launch vehicle, to be exact." },
+        { "who": "guide", "text": "위성을 우주까지 실어다 주는 택배 트럭이죠.", "en": "A delivery truck that carries satellites up to space." },
+        { "who": "guide", "text": "연료 다 쓴 칸은 떼어 버려요. 1단, 2단은 바다로.", "tts": "연료 다 쓴 칸은 떼어 버려요. 일 단, 이 단은 바다로.", "en": "Each section drops off when its fuel runs out. Stages one and two fall into the sea." },
+        { "who": "kid", "text": "트럭이 떨어져요?!", "en": "The truck falls off?!" }
+      ]
+    },
+    {
+      "id": "c04b",
+      "beat": "1라운드 · 로켓은 택배 트럭",
+      "lines": [
+        { "who": "dad", "text": "그럼 사진은 누가 찍어요?", "en": "Then who's taking the pictures?" },
+        { "who": "guide", "text": "실려 간 위성이요. 이번엔 작은 위성 다섯 대.", "en": "The satellites it carried. This time, five little ones." },
+        { "who": "guide", "text": "발사하고 하루도 안 돼서 첫 사진을 보냈어요.", "en": "They sent back their first pictures in less than a day." }
+      ]
+    },
+    {
+      "id": "c04c",
+      "beat": "1라운드 · 로켓은 택배 트럭",
+      "lines": [
+        { "who": "dad", "text": "누리호는 트럭. 사진사는 위성. 메모.", "en": "Nuri is the truck. The satellite's the photographer. Noted." },
+        { "who": "narr", "text": "맞게 적었습니다. 처음으로.", "en": "Noted correctly. For the first time." }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "2라운드 · 떨어지는 중",
+      "lines": [
+        { "who": "guide", "text": "2라운드. 위성은 사실, 계속 떨어지고 있어요.", "tts": "이 라운드. 위성은 사실, 계속 떨어지고 있어요.", "en": "Round two. Satellites are actually falling. All the time." },
+        { "who": "guide", "text": "대신 옆으로 엄청 빨라요. 1초에 7킬로미터 넘게.", "tts": "대신 옆으로 엄청 빨라요. 일 초에 칠 킬로미터 넘게.", "en": "But they're zooming sideways. Over seven kilometers a second." },
+        { "who": "guide", "text": "떨어지는 만큼 땅이 둥글게 휘어 버려서, 바닥에 안 닿고 계속 돌아요.", "en": "As they fall, the round Earth curves away beneath them, so they never hit the ground. They just keep circling." }
+      ]
+    },
+    {
+      "id": "c05b",
+      "beat": "2라운드 · 떨어지는 중",
+      "lines": [
+        { "who": "mom", "text": "둥둥이 아니라… 계속 떨어지는 중.", "en": "Not floating… falling. Nonstop." },
+        { "who": "kid", "text": "엄청 빨리 떨어지면서 계속 빗나가는 거네요!", "en": "So it falls super fast and keeps missing!" }
+      ]
+    },
+    {
+      "id": "c05c",
+      "beat": "2라운드 · 떨어지는 중",
+      "lines": [
+        { "who": "guide", "text": "맞아요. 그래서 지구 한 바퀴에 한 시간 반쯤.", "en": "Exactly. That's why one lap around Earth takes about an hour and a half." },
+        { "who": "kid", "text": "학교 끝나기 전에 한 바퀴!", "en": "One lap before school's even out!" }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "3라운드 · 사람이 타면",
+      "lines": [
+        { "who": "guide", "text": "3라운드. 행성 둘레를 빙빙 도는 건, 다 위성이에요.", "tts": "삼 라운드. 행성 둘레를 빙빙 도는 건, 다 위성이에요.", "en": "Round three. Anything that circles a planet is a satellite." },
+        { "who": "kid", "text": "그럼 달도요?", "en": "Then the Moon too?" },
+        { "who": "guide", "text": "달도 위성이에요. 사람이 안 만든, 자연 위성.", "en": "The Moon's a satellite too. A natural one nobody built." },
+        { "who": "kid", "text": "달이 위성이었어요?!", "en": "The Moon was a satellite this whole time?!" }
+      ]
+    },
+    {
+      "id": "c06b",
+      "beat": "3라운드 · 사람이 타면",
+      "lines": [
+        { "who": "guide", "text": "사람이 만들어 쏘면 인공위성. 사람이 타고 가면 우주선.", "en": "Build one and launch it, it's an artificial satellite. People ride it, it's a spaceship." },
+        { "who": "guide", "text": "누리호는 짐만 싣는 로켓이라, 좌석이 없어요.", "en": "Nuri only carries cargo, so there are no seats." },
+        { "who": "dad", "text": "창가 자리도…?", "en": "Not even a window seat…?" },
+        { "who": "guide", "text": "창문도 없어요.", "en": "There aren't even windows." }
+      ]
+    },
+    {
+      "id": "c06c",
+      "beat": "3라운드 · 사람이 타면",
+      "lines": [
+        { "who": "narr", "text": "한 줄 정리. 로켓은 실어다 주고, 위성은 돌면서 일하고, 우주선은 사람을 태운다.", "en": "In one line: rockets deliver, satellites circle and work, spaceships carry people." },
+        { "who": "narr", "text": "누리호는 위성이 아니라, 위성을 올려 준 로켓.", "en": "Nuri isn't a satellite. It's the rocket that lifted the satellites up." }
+      ]
+    },
+    {
+      "id": "c07",
+      "beat": "아이 눈높이",
+      "lines": [
+        { "who": "dad", "text": "누리호는 위성을 업고, 하늘 끝까지 달려 준 거야.", "en": "Nuri carried the satellites on its back and ran all the way to the edge of the sky." },
+        { "who": "dad", "text": "그리고 한 칸씩 내려놓고, 바다로 돌아갔어.", "en": "Then it let go, one piece at a time, and went back down to the sea." },
+        { "who": "kid", "text": "끝까지 같이 못 가요?", "en": "It doesn't get to go all the way?" },
+        { "who": "dad", "text": "응. 대신 위성은 지금도 안 쉬고 돌면서, 우리 땅을 찍어.", "en": "Nope. But the satellites are still circling, never resting, taking pictures of our land." },
+        { "who": "kid", "text": "그럼 누리호는 데려다주는 사람이네요.", "en": "So Nuri is the one who drops them off." },
+        { "who": "dad", "text": "응. 그게 제일 어려운 일이야.", "en": "Yep. And that's the hardest job of all." }
+      ]
+    },
+    {
+      "id": "c07b",
+      "beat": "아이 눈높이",
+      "lines": [
+        { "who": "narr", "text": "아이는 하늘에 대고, 작게 손을 흔들었습니다.", "en": "My kid gave the sky a little wave." }
+      ]
+    },
+    {
+      "id": "c08",
+      "beat": "반전",
+      "lines": [
+        { "who": "dad", "text": "한 바퀴 한 시간 반이랬죠? 그럼 이따 우리 머리 위로 온다!", "en": "One lap's an hour and a half, right? Then it'll pass right over us soon!" },
+        { "who": "guide", "text": "그동안 지구도 돌아서, 딴 데로 지나가요.", "en": "The Earth turns in the meantime, so it'll pass somewhere else." },
+        { "who": "dad", "text": "…그래도 브이 하고 기다릴래요.", "en": "…I'll wait with a peace sign anyway." }
+      ]
+    },
+    {
+      "id": "c08b",
+      "beat": "반전",
+      "lines": [
+        { "who": "kid", "text": "아빠, 위성 첫 사진은 미국이었대요!", "en": "Dad, the satellites' first pictures were of America!" },
+        { "who": "narr", "text": "아빠는 주차장에서 한 시간 반 동안 브이를 했습니다.", "en": "Dad held a peace sign in the parking lot for an hour and a half." },
+        { "who": "narr", "text": "오답, 넷. 역시, 모답맨.", "en": "Wrong answer, four. Modapman strikes again." }
+      ]
+    }
+  ]
+}

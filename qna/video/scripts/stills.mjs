@@ -2,13 +2,13 @@
 // 사용: node scripts/stills.mjs ep01
 import { bundle } from "@remotion/bundler";
 import { renderStill, selectComposition } from "@remotion/renderer";
-import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
+import { argCode, readScript } from "./art-lib.mjs";
 
-const episode = process.argv[2] ?? "ep01";
+const episode = argCode(process.argv[2], "사용: node scripts/stills.mjs");
 const compositionId = `${episode[0].toUpperCase()}${episode.slice(1)}-Cut`;
 const root = new URL("../", import.meta.url);
-const script = JSON.parse(readFileSync(new URL(`src/${episode}/script.json`, root), "utf8"));
+const script = readScript(episode, "script.json");
 
 const serveUrl = await bundle({ entryPoint: fileURLToPath(new URL("src/index.ts", root)) });
 
