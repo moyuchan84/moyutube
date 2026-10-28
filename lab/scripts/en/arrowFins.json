@@ -1,0 +1,21 @@
+{
+  "TITLE": "The top line or the bottom line —\nwhich one is longer?",
+  "NEXT": "NEXT: Two circles in the middle — which one is bigger?",
+  "EN": {
+    "가운데 선만 보세요\n위와 아래, 어느 쪽이 길까요?": "Look only at the middle lines.\nTop or bottom — which is longer?",
+    "아래 선이 더 길어 보이죠?": "The bottom one looks longer, right?",
+    "위 선의 끝에서\n세로줄을 쭉 내려 볼게요": "Let's draw lines straight down\nfrom the ends of the top line",
+    "어? 아래 선 끝에\n딱 맞아요!": "Huh? They hit the ends\nof the bottom line exactly!",
+    "자를 대 볼까요?": "Let's measure them with a ruler",
+    "둘 다 똑같이 10칸!": "Both are exactly 10 marks long!",
+    "꺾쇠를 떼어 내면": "Take off the arrow ends…",
+    "그냥 같은 길이의 두 선": "…and they're just two lines of the same length",
+    "다시 붙이면…\n알고 봐도 또 아래가 길어 보여요!": "Put them back on…\neven now that you know, the bottom still looks longer!",
+    "뇌는 가운데 선만\n따로 재지 않아요": "Your brain doesn't measure\nthe middle line on its own",
+    "끝에 붙은 모양까지\n한 덩어리로 보고 길이를 짐작해요": "It takes in the shapes on the ends too,\nand guesses the length from the whole thing",
+    "벌어진 끝은 덩어리가 크니까\n선도 길다고 느껴요": "Ends that spread out make the whole thing bigger,\nso the line feels longer",
+    "정확히 왜 그런지는\n과학자들도 아직 연구 중이에요": "Exactly why this happens\nis something scientists are still studying",
+    "종이에 똑같이 그려서\n친구에게 물어보세요": "Draw it on paper\nand try it on a friend",
+    "같은 길이도 끝 모양에 따라\n다르게 보여요": "The same length can look different\ndepending on the ends"
+  }
+}

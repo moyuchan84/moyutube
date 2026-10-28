@@ -1,0 +1,21 @@
+{
+  "TITLE": "10 numbers in 3 seconds —\ncan you remember them?",
+  "NEXT": "NEXT: The picture is changing — why don't we notice?",
+  "EN": {
+    "숫자 10개가 딱 3초만 나와요\n사라지면 소리 내 말해 보세요": "10 digits will show for just 3 seconds.\nWhen they disappear, say them out loud",
+    "외워 보세요!": "Memorize them!",
+    "기억나는 만큼\n말해 보세요!": "Say as many\nas you can remember!",
+    "몇 개 맞았나요?\n뒤쪽은 가물가물하죠?": "How many did you get?\nThe last ones are fuzzy, right?",
+    "이번엔 다른 숫자\n세 묶음으로 나눠서 보여 줄게요": "Now different digits,\nsplit into three groups",
+    "이번에도\n말해 보세요!": "Say them\nout loud again!",
+    "어때요?\n아까보다 쉬웠죠?": "How was it?\nEasier than before, right?",
+    "머릿속엔 잠깐 기억해 두는\n칸이 몇 개 없어요": "Your brain has only a few slots\nfor holding things for a moment",
+    "숫자 하나에 한 칸씩 쓰면\n금방 꽉 차서 밀려나요": "One digit per slot fills them up fast,\nand the first ones get pushed out",
+    "세 개씩 묶으면\n한 칸에 한 묶음!": "Group them by three —\none group per slot!",
+    "숫자 10개가 칸 3개에 쏙\n한 칸이 아직 남았어요": "10 digits fit into 3 slots,\nwith one slot still free",
+    "이렇게 길게 붙어 있으면\n외우기 힘들죠?": "When it's all stuck together like this,\nit's hard to remember, right?",
+    "그래서 전화번호도\n끊어서 적고 외워요": "That's why we write and remember\nphone numbers in chunks",
+    "잘게 쪼개지 말고 묶어서!\n한 칸에 더 많이 담겨요": "Don't split it up — group it!\nEach slot holds more",
+    "": ""
+  }
+}

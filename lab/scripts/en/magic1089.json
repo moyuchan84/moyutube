@@ -1,0 +1,22 @@
+{
+  "NEXT": "NEXT: The number you think of vanishes, and only 4 is left?",
+  "EN": {
+    "네 답,|미리 써 놨어": "I've already written down your answer",
+    "정답은 벌써\n이 봉투 안에!": "The answer is already\nin this envelope!",
+    "세 자리 수를\n하나 생각해요": "Think of any\nthree-digit number\n(first and last digits at least 2 apart)",
+    "거꾸로 뒤집은 수와\n큰 수에서 작은 수를 빼요": "Reverse it, then subtract\nthe smaller number from the bigger one",
+    "그 답을 뒤집어서\n더해요": "Reverse that answer\nand add the two together",
+    "천천히 하고 싶으면\n화면을 꾹 눌러 멈춰요": "Need more time?\nPress and hold the screen to pause",
+    "다 했지?\n네 답은…": "Done?\nYour answer is…",
+    "네 답은…\n1089!": "Your answer is…\n1089!",
+    "맞았으면 댓글에\n\"1089\"!": "If I got it right,\ncomment \"1089\"!",
+    "어떻게 알았냐고?": "How did I know?",
+    "어떤 수로 해도…": "Whatever number you pick…",
+    "늘 1089!": "it's always 1089!",
+    "빼고 나온 답은\n딱 8 가지뿐": "After subtracting, there are\nonly 8 possible answers",
+    "가운데는 늘 9\n양 끝을 더해도 9": "The middle digit is always 9,\nand the two ends add up to 9",
+    "뒤집어 더하면\n자리마다…": "Add it to its reverse,\ncolumn by column…",
+    "양 끝 9 · 가운데 18\n그래서 언제나 1089!": "Ends make 9, the middle makes 18:\n900 + 180 + 9 = 1089, every time!",
+    "이제 네가 마술사!": "Now you're the magician! Secretly write 1089 on paper,\nhave someone do the steps, then unfold it!"
+  }
+}
