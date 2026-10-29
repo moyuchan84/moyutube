@@ -14,7 +14,7 @@
   (claude.ai 용 패키지는 `skill/modapman.skill` — 스킬을 고치면 이 폴더를 다시 압축한다)
 - **기준 예시는 8편 모답맨판** `content/ep08f-modapman/`: `script/script.json`(대본) · `script/motion.json`(샷 계획) · `upload/`(업로드 자료).
 - **내모남불**은 모라구 안의 다른 시리즈다. 같은 가족 · 같은 그림 · 같은 모션 엔진을 쓰고, 편 코드만 `nmNN` 이다 (`unit.json` 에 `"series": "naemonambul"`). 시리즈 규칙은 [docs/naemonambul.md](docs/naemonambul.md), 아이디어는 [docs/naemonambul-ideas.md](docs/naemonambul-ideas.md).
-- **새 시리즈 (기획 · 막 시작):** 「포모라구」(FOMO + 모라구, 유행 · 소비 심리) [docs/pomoragu.md](docs/pomoragu.md) · 「이게 모예요?」(물건 사전 쇼츠, 1편 공개) [docs/igemoyeyo.md](docs/igemoyeyo.md) · 「모 아니면 도」(두 갈래 결말 인터랙티브 시트콤) [docs/moanimyeondo.md](docs/moanimyeondo.md) · 「모덕후」 · 「조삼모사」 · 「모롱이」(어른 대상 쇼츠 세 갈래) [docs/modeokhu-josammosa-morongi.md](docs/modeokhu-josammosa-morongi.md).
+- **새 시리즈 (기획 · 막 시작):** 「포모라구」(FOMO + 모라구, 유행 · 소비 심리) [docs/pomoragu.md](docs/pomoragu.md) · 「이게 모예요?」(물건 사전 쇼츠, 1편 공개) [docs/igemoyeyo.md](docs/igemoyeyo.md) · 「모 아니면 도」(두 갈래 결말 인터랙티브 시트콤) [docs/moanimyeondo.md](docs/moanimyeondo.md) · 「모덕후」 · 「조삼모사」 · 「모롱이」(어른 대상 쇼츠 세 갈래) [docs/modeokhu-josammosa-morongi.md](docs/modeokhu-josammosa-morongi.md). 모든 카테고리의 기획 · 방향 · 의도를 한 문서로: [docs/morago-categories.md](docs/morago-categories.md).
 - 1~8편 롱폼(아빠의 회상 · 8분 · 7박자, 스킬 `eight-year-olds-question` · `skill/eight-year-olds-question.skill`)은 **이전 포맷**이다. 새 편에 쓰지 않는다.
 
 ## 폴더 — 무엇이 어디에 있나

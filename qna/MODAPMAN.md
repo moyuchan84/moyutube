@@ -16,7 +16,7 @@
 
 - **배너** (2026-10-23 적용): 빨간 도장 "모" + 라구, 나무 문패 "모 씨네", 세 식구 얼굴 + 노란 이름표. 코드로 만든다 → `video/src/ChannelBanner.tsx`, `npx remotion still src/index.ts Channel-Banner out/channel/banner-modapman.png`. 글자 · 인물은 가운데 1546×423 띠 안에만.
 - **채널 설명** (적용됨): "모 씨네 가족 채널, 모라구입니다." 로 시작해 세 식구를 소개하고 카테고리를 ▶ 로 나열. 원문은 `video/out/channel/description.md`, 바꾸기 전 설명은 아래 7절.
-- 모라구 안의 카테고리 (각자 규칙 문서가 따로 있다):
+- 모라구 안의 카테고리 (각자 규칙 문서가 따로 있다, 기획 · 방향 · 의도 한눈에 보기: [docs/morago-categories.md](docs/morago-categories.md)):
   - **모(오)답맨** — 이 문서. qna 폴더
   - **내모남불** — [docs/naemonambul.md](docs/naemonambul.md)
   - **포모라구** (기획 중) — [docs/pomoragu.md](docs/pomoragu.md)
