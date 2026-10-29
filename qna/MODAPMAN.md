@@ -20,7 +20,8 @@
   - **모(오)답맨** — 이 문서. qna 폴더
   - **내모남불** — [docs/naemonambul.md](docs/naemonambul.md)
   - **포모라구** (기획 중) — [docs/pomoragu.md](docs/pomoragu.md)
-  - **이게 모예요?** (기획 중, 쇼츠 전용) — [docs/igemoyeyo.md](docs/igemoyeyo.md)
+  - **이게 모예요?** (쇼츠, 1편 공개) — [docs/igemoyeyo.md](docs/igemoyeyo.md)
+  - **모 아니면 도** (기획 중, 두 갈래 결말 인터랙티브) — [docs/moanimyeondo.md](docs/moanimyeondo.md)
   - **보면 풀리는 수학 · 과학** — `lab/` ([lab/CLAUDE.md](../lab/CLAUDE.md))
   - **엄마가 만든 동화 / 상담심리사 엄마의 인성동화책** — `fairy/`
   - **아빠가 만든 앱** — 앱 소개 영상
