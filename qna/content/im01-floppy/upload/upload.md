@@ -65,3 +65,8 @@ It's the floppy disk Dad used to save his homework on!
   - 모라구(UCCIm8f5JE4b4PmSrPIJd7zQ) · 새 재생목록 「이게 모예요? · 모라구가 묻는 물건 사전」(공개) · 교육 · 한국어 · 아동용 아니요 · 변경된 콘텐츠 아니요 · 유료 프로모션 아니요 · 태그 15개
   - Studio 쇼츠 목록에서 공개 상태 다시 확인함. 자막 파일 · 영어 제목/설명은 아직 안 넣음 (화면에 자막이 박혀 있다)
   - 가로 본편(`video/out/im01/im01-igemoyeyo.mp4`)은 올리지 않음
+- 2026-10-29 **다시 업로드** (사용자 요청: 쇼츠에서 플로피 · 8인치 디스크 · USB · 휴대폰이 양옆에서 잘림, 아직 본 사람 없음)
+  - `motion-short.json` 에 `"crop": 1920` (본편을 자르지 않고 전부) → `video/out/im01/im01-short-floppy-v2.mp4`
+  - 새 쇼츠 공개 · 같은 재생목록 · 같은 제목 · 설명 · 태그 → ID 는 아래 줄에
+  - 이전 쇼츠 n3EkmVbSyHg 는 **비공개로 내림** (영구 삭제는 사람이 Studio 에서)
+  - 새 쇼츠: https://youtube.com/shorts/4rmNCgLGc64 (공개, Studio 쇼츠 목록에서 확인 — 이전 n3EkmVbSyHg 는 비공개로 확인)
