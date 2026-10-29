@@ -9,11 +9,14 @@ import { FONT, INK, PAPER, RED } from "../theme";
 
 const SRC_W = 1920;
 const SRC_H = 1080;
-const CROP_W = 1500; // 본편 좌우를 조금 잘라 크게 보인다
-const SCALE = 1080 / CROP_W;
-const VIEW_H = SRC_H * SCALE; // 778
-const VIEW_TOP = 500;
-const CAP_TOP = VIEW_TOP + VIEW_H + 40;
+// 본편을 가운데에 얼마나 넓게 보여 줄지. 기본 1500 = 좌우를 210px 씩 잘라 크게 (모답맨 · 내모남불)
+// spec.crop 1920 = 자르지 않고 전부 (「이게 모예요?」 — 물건 · 글자가 화면 끝까지 간다)
+const geom = (crop = 1500) => {
+  const scale = 1080 / crop;
+  const viewH = SRC_H * scale; // 1500 → 778, 1920 → 608
+  const viewTop = 500 + (778 - viewH) / 2; // 화면 높이가 줄어도 가운데 자리를 지킨다
+  return { crop, scale, viewH, viewTop, capTop: 500 + 778 + 40 };
+};
 const TRANS = 12; // 구간 사이 전환 길이(프레임)
 export const MOTION_END_CARD = 84;
 
@@ -24,6 +27,7 @@ export type MotionShortSpec = {
   title: string; // 훅이 줄어든 뒤 위에 남는 제목 바
   clips: { from: number; to: number }[]; // 본편 프레임 구간
   end: { title: [string, string]; sub: string };
+  crop?: number; // 본편 가로 몇 px 를 보여 줄지 (기본 1500, 자르지 않으려면 1920)
   narr?: string; // 나레이션 이름표 (없으면 "모답맨", 내모남불은 "내모남불")
 };
 
@@ -101,7 +105,7 @@ const Clip: React.FC<{ timeline: MotionTimeline; from: number; len: number; kind
 };
 
 // 단어 단위 큰 자막: 읽는 만큼 단어가 튀어나오고 지금 단어는 노랑
-const Caption: React.FC<{ timeline: MotionTimeline; src: number; narr?: string }> = ({ timeline, src, narr }) => {
+const Caption: React.FC<{ timeline: MotionTimeline; src: number; narr?: string; top: number }> = ({ timeline, src, narr, top }) => {
   const { fps } = useVideoConfig();
   const line = timeline.lines.find((l) => src >= l.from && src < l.from + l.dur + 6);
   if (!line) return null;
@@ -112,7 +116,7 @@ const Caption: React.FC<{ timeline: MotionTimeline; src: number; narr?: string }
   const [name, color] = line.who === "narr" && narr ? [narr, "#FFFFFF"] : (WHO[line.who] ?? ["", "#fff"]);
   const pop = spring({ frame: src - line.from, fps, config: { damping: 12, stiffness: 200 } });
   return (
-    <div style={{ position: "absolute", top: CAP_TOP, left: 50, right: 50, textAlign: "center" }}>
+    <div style={{ position: "absolute", top, left: 50, right: 50, textAlign: "center" }}>
       {name ? (
         <div style={{ display: "inline-block", marginBottom: 14, padding: "6px 22px", borderRadius: 999, background: color, color: INK, fontSize: 34, fontWeight: 900, transform: `scale(${pop})` }}>{name}</div>
       ) : null}
@@ -137,6 +141,7 @@ const Caption: React.FC<{ timeline: MotionTimeline; src: number; narr?: string }
 };
 
 export const MotionShort: React.FC<{ timeline: MotionTimeline; spec: MotionShortSpec }> = ({ timeline, spec }) => {
+  const g = geom(spec.crop);
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   const body = durationInFrames - MOTION_END_CARD;
@@ -178,10 +183,10 @@ export const MotionShort: React.FC<{ timeline: MotionTimeline; spec: MotionShort
       <div
         style={{
           position: "absolute",
-          top: VIEW_TOP,
+          top: g.viewTop,
           left: 0,
           width: 1080,
-          height: VIEW_H,
+          height: g.viewH,
           overflow: "hidden",
           transform: `translate(${shake}px, ${shake * 0.4}px)`,
           boxShadow: "0 20px 60px rgba(0,0,0,0.6)",
@@ -189,7 +194,7 @@ export const MotionShort: React.FC<{ timeline: MotionTimeline; spec: MotionShort
           borderBottom: "6px solid #FFD23F",
         }}
       >
-        <div style={{ width: SRC_W, height: SRC_H, transform: `translateX(${(-(SRC_W - CROP_W) / 2) * SCALE}px) scale(${SCALE})`, transformOrigin: "0 0" }}>
+        <div style={{ width: SRC_W, height: SRC_H, transform: `translateX(${(-(SRC_W - g.crop) / 2) * g.scale}px) scale(${g.scale})`, transformOrigin: "0 0" }}>
           {clips.map((c) => (
             <Sequence key={c.i} from={c.at} durationInFrames={c.len} layout="none">
               <Clip timeline={timeline} from={c.from} len={c.len} kind={c.kind} first={c.i === 0} />
@@ -200,7 +205,7 @@ export const MotionShort: React.FC<{ timeline: MotionTimeline; spec: MotionShort
       <AbsoluteFill style={{ background: "#fff", opacity: flash, pointerEvents: "none" }} />
 
       {/* 자막 */}
-      {loc ? <Caption timeline={timeline} src={loc.src} narr={spec.narr} /> : null}
+      {loc ? <Caption timeline={timeline} src={loc.src} narr={spec.narr} top={g.capTop} /> : null}
 
       {/* 위: 진행 막대 · 훅 → 제목 바 */}
       <div style={{ position: "absolute", top: 0, left: 0, height: 10, width: `${(Math.min(frame, body) / body) * 100}%`, background: "#FFD23F" }} />

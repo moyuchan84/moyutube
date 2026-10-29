@@ -155,6 +155,114 @@
     "w": 2560,
     "h": 1440
   },
+  "common/rig/dad-apose": {
+    "w": 962,
+    "h": 1500
+  },
+  "common/rig/dad-mouth-a": {
+    "w": 961,
+    "h": 1500
+  },
+  "common/rig/dad-mouth-o": {
+    "w": 962,
+    "h": 1500
+  },
+  "common/rig/dad-mouth-e": {
+    "w": 961,
+    "h": 1500
+  },
+  "common/rig/dad-blink": {
+    "w": 962,
+    "h": 1500
+  },
+  "common/rig/dad-shock": {
+    "w": 962,
+    "h": 1500
+  },
+  "common/rig/dad-laugh": {
+    "w": 961,
+    "h": 1500
+  },
+  "common/rig/dad-smug": {
+    "w": 961,
+    "h": 1500
+  },
+  "common/rig/dad-panic": {
+    "w": 962,
+    "h": 1500
+  },
+  "common/rig/mom-apose": {
+    "w": 747,
+    "h": 1500
+  },
+  "common/rig/mom-mouth-a": {
+    "w": 747,
+    "h": 1500
+  },
+  "common/rig/mom-mouth-o": {
+    "w": 747,
+    "h": 1500
+  },
+  "common/rig/mom-mouth-e": {
+    "w": 747,
+    "h": 1500
+  },
+  "common/rig/mom-blink": {
+    "w": 747,
+    "h": 1500
+  },
+  "common/rig/mom-shock": {
+    "w": 748,
+    "h": 1500
+  },
+  "common/rig/mom-laugh": {
+    "w": 747,
+    "h": 1500
+  },
+  "common/rig/mom-smirk": {
+    "w": 747,
+    "h": 1500
+  },
+  "common/rig/mom-sigh": {
+    "w": 747,
+    "h": 1500
+  },
+  "common/rig/kid-apose": {
+    "w": 826,
+    "h": 1500
+  },
+  "common/rig/kid-mouth-a": {
+    "w": 825,
+    "h": 1500
+  },
+  "common/rig/kid-mouth-o": {
+    "w": 826,
+    "h": 1500
+  },
+  "common/rig/kid-mouth-e": {
+    "w": 826,
+    "h": 1500
+  },
+  "common/rig/kid-blink": {
+    "w": 826,
+    "h": 1500
+  },
+  "common/rig/kid-shock": {
+    "w": 826,
+    "h": 1500
+  },
+  "common/rig/kid-laugh": {
+    "w": 826,
+    "h": 1500
+  },
+  "common/rig/kid-wow": {
+    "w": 853,
+    "h": 1500
+  },
+  "common/rig/kid-doubt": {
+    "w": 826,
+    "h": 1500
+  },
   "ep01/bg/motel-counter": {
     "w": 2560,
     "h": 1440
@@ -1222,6 +1330,42 @@
   "ep11/prop/grad-cap": {
     "w": 1200,
     "h": 1111
+  },
+  "im01/bg/attic": {
+    "w": 2560,
+    "h": 1440
+  },
+  "im01/full/attic-find": {
+    "w": 2560,
+    "h": 1440
+  },
+  "im01/dad/nostalgia": {
+    "w": 659,
+    "h": 1500
+  },
+  "im01/full/flashback-lab": {
+    "w": 2560,
+    "h": 1440
+  },
+  "im01/full/flashback-swap": {
+    "w": 2560,
+    "h": 1440
+  },
+  "im01/full/flashback-cry": {
+    "w": 2560,
+    "h": 1440
+  },
+  "im01/full/cloud-imagine": {
+    "w": 2560,
+    "h": 1440
+  },
+  "im01/bg/datacenter": {
+    "w": 2560,
+    "h": 1440
+  },
+  "im01/dad/wistful": {
+    "w": 628,
+    "h": 1500
   },
   "nm01/full/highway-cutin": {
     "w": 2560,

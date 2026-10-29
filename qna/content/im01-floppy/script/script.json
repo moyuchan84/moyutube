@@ -1,0 +1,118 @@
+{
+  "rawVoice": true,
+  "speed": 1.2,
+  "title": "이게 모예요? ① 플로피디스크",
+  "bgm": "cheerful",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "질문",
+      "lines": [
+        { "who": "kid", "text": "아빠, 이게 모예요?", "en": "Dad, what's this?" },
+        { "who": "dad", "text": "어? 이거… 아빠 거다!", "en": "Huh? This… is mine!" }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "추억",
+      "lines": [
+        { "who": "dad", "text": "아빠 초등학생 땐 숙제를 여기다 저장했어.", "en": "In grade school, I saved my homework on these." },
+        { "who": "dad", "text": "친구랑 게임도 바꿔 담고.", "en": "Swapped games with friends, too." },
+        { "who": "dad", "text": "가끔 날아가서 울기도 했지…", "en": "Sometimes it all vanished and I cried…" }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "정체",
+      "lines": [
+        { "who": "narr", "text": "플로피디스크. 컴퓨터 자료를 담던 디스크다.", "en": "The floppy disk. It stored computer data." },
+        { "who": "dad", "text": "그땐 이게 세상에서 제일 큰 저장 장치였지!", "en": "Back then this was the biggest storage in the world!" }
+      ]
+    },
+    {
+      "id": "c02a",
+      "beat": "정체",
+      "lines": [
+        { "who": "narr", "text": "오답, 하나. 그때도 컴퓨터 속 하드디스크가 훨씬 컸다.", "en": "Wrong answer, one. Even then, the hard disk inside the computer held far more." },
+        { "who": "narr", "text": "한 장에 1.44메가바이트. 요즘 사진 한 장도 빠듯하다.", "tts": "한 장에 일 점 사사 메가바이트. 요즘 사진 한 장도 빠듯하다.", "en": "1.44 megabytes per disk. Barely enough for one photo today." }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "재료",
+      "lines": [
+        { "who": "kid", "text": "안에 뭐가 들었어요?", "en": "What's inside?" },
+        { "who": "narr", "text": "딱딱한 플라스틱 껍데기,", "en": "A hard plastic shell," },
+        { "who": "narr", "text": "먼지를 막는 쇠 덧문,", "en": "a metal shutter that keeps out dust," },
+        { "who": "narr", "text": "원판을 닦아 주는 천,", "en": "soft cloth that wipes the disk," },
+        { "who": "narr", "text": "그리고 자석 가루를 바른 얇은 필름 원판.", "en": "and a thin film disk coated with magnetic powder." }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "원리",
+      "lines": [
+        { "who": "narr", "text": "기계가 원판을 돌리면,", "en": "The drive spins the disk," },
+        { "who": "narr", "text": "작은 자석 머리가 점마다 N과 S를 새긴다.", "tts": "작은 자석 머리가 점마다 엔과 에스를 새긴다.", "en": "and a tiny magnetic head marks each spot N or S." },
+        { "who": "narr", "text": "이 N과 S가 컴퓨터의 1과 0이다.", "tts": "이 엔과 에스가 컴퓨터의 일과 영이다.", "en": "Those N's and S's are the computer's 1's and 0's." }
+      ]
+    },
+    {
+      "id": "c04a",
+      "beat": "원리",
+      "lines": [
+        { "who": "kid", "text": "근데 딱딱한데 왜 플로피예요?", "en": "It's hard, so why is it called floppy?" },
+        { "who": "narr", "text": "1971년 처음 나온 큰 디스크는 진짜로 흐물흐물 휘었거든.", "tts": "천구백칠십일 년 처음 나온 큰 디스크는 진짜로 흐물흐물 휘었거든.", "en": "The first big ones, from 1971, really were floppy." }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "변천",
+      "lines": [
+        { "who": "kid", "text": "근데 요즘은 왜 없어요?", "en": "So why don't we use them now?" },
+        { "who": "dad", "text": "더 많이 담는 게 계속 나왔거든.", "en": "Bigger ones kept coming." }
+      ]
+    },
+    {
+      "id": "c05a",
+      "beat": "변천",
+      "lines": [
+        { "who": "narr", "text": "반짝이는 CD 한 장은 플로피 약 500장.", "tts": "반짝이는 씨디 한 장은 플로피 약 오백 장.", "en": "One shiny CD held about 500 floppies." },
+        { "who": "narr", "text": "손가락만 한 USB 메모리는 더 많이.", "tts": "손가락만 한 유에스비 메모리는 더 많이.", "en": "A finger-size USB stick held even more." }
+      ]
+    },
+    {
+      "id": "c05b",
+      "beat": "변천",
+      "lines": [
+        { "who": "dad", "text": "그리고 지금은 클라우드! 구름 위에 올려놓는 거야!", "en": "And now, the cloud! We put it up on the clouds!" },
+        { "who": "narr", "text": "오답, 둘.", "en": "Wrong answer, two." }
+      ]
+    },
+    {
+      "id": "c05c",
+      "beat": "변천",
+      "lines": [
+        { "who": "narr", "text": "클라우드는 인터넷 너머 커다란 컴퓨터 창고에 저장하는 것이다.", "en": "The cloud means storing it in huge computer warehouses across the internet." },
+        { "who": "narr", "text": "요즘 휴대폰 하나엔 플로피 8만 장이 넘게 들어간다.", "tts": "요즘 휴대폰 하나엔 플로피 팔만 장이 넘게 들어간다.", "en": "One phone today holds more than 80,000 floppies." }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "반전",
+      "lines": [
+        { "who": "kid", "text": "어? 이 그림, 여기 있는데?", "en": "Wait, this picture is right here!" },
+        { "who": "narr", "text": "디스크는 사라졌지만, 저장 그림으로 아직 남아 있다.", "en": "The disk is gone, but it lives on as the save icon." }
+      ]
+    },
+    {
+      "id": "c07",
+      "beat": "마무리",
+      "lines": [
+        { "who": "kid", "text": "그럼 아빠 숙제는 지금도 여기 있어요?", "en": "So is your homework still in here?" },
+        { "who": "dad", "text": "…열어 볼 기계가 없어.", "en": "…There's no machine left to open it." },
+        { "who": "dad", "text": "저는… 모답맨입니다.", "en": "I'm… Modapman." }
+      ]
+    }
+  ]
+}

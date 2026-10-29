@@ -7,6 +7,7 @@ import { FPS } from "../timeline.js";
 import { Missing, findArt } from "../Scene";
 import { SFX_VOLUME } from "../Episode";
 import { INK, PAPER, RED } from "../theme";
+import { ThreeLayer, type ThreeShot } from "../three/scenes";
 
 // 모션 편집판: 대사 한 줄에 샷 여러 개, 샷마다 전환 · 카메라 · 큰 글자 · 이름표를 붙인다 (애프터 이펙트 느낌)
 // 편집 계획은 src/motion/<epNN>.json. 음성 · 그림은 롱폼 것을 그대로 쓴다.
@@ -62,8 +63,9 @@ type Shot = {
   note?: string; // 위쪽 구석의 작은 주석 (※ …)
   chart?: Chart | Chart[]; // 여러 개면 나란히 (앞 샷의 그래프를 그대로 두고 하나 더)
   chat?: Chat;
+  three?: ThreeShot; // 「이게 모예요?」 물건 3D 장면 (src/three/scenes.tsx) — 배경 위, 효과 아래에 투명하게 얹는다
   // 애니 연출(내모남불): impact(임팩트 프레임) · focus(흰 집중선) · gaan(충격 세로줄) · aura(분노 오라) · kira(반짝이)
-  fx?: ("lines" | "shake" | "vhs" | "docu" | "mono" | "imagine" | "slowmo" | "impact" | "focus" | "gaan" | "aura" | "kira")[];
+  fx?: ("lines" | "shake" | "vhs" | "docu" | "mono" | "imagine" | "slowmo" | "impact" | "focus" | "gaan" | "aura" | "kira" | "sepia")[];
   sfx?: { name: string; at?: number; volume?: number }[];
 };
 // count: 이 박자에서 오답 카운터가 이 숫자가 된다 (countAt: 박자 안의 시점)
@@ -80,7 +82,7 @@ const CHOP_VARIANTS = [
 ];
 const chopShot = (shot: PlacedShot, chop: number): PlacedShot[] => {
   const n = Math.ceil(shot.dur / chop);
-  if (n < 2 || shot.text?.length || shot.tag || shot.freeze != null || shot.loading || shot.mark || shot.tally || shot.jail != null || shot.chart || shot.chat) return [shot];
+  if (n < 2 || shot.text?.length || shot.tag || shot.freeze != null || shot.loading || shot.mark || shot.tally || shot.jail != null || shot.chart || shot.chat || shot.three) return [shot];
   const from = shot.cam?.from ?? [0.5, 0.5, 1];
   const to = shot.cam?.to ?? [from[0], from[1], from[2] * 1.06];
   const step = Math.round(shot.dur / n);
@@ -248,6 +250,7 @@ const ShotView: React.FC<{ episode: string; shot: PlacedShot }> = ({ episode, sh
   const tone = [
     fx.includes("mono") || frozen ? "grayscale(0.9) contrast(1.25)" : "",
     fx.includes("docu") ? "sepia(0.35) saturate(0.7) contrast(1.1)" : "",
+    fx.includes("sepia") ? "sepia(0.6) saturate(0.75) contrast(1.05) brightness(1.03)" : "",
     fx.includes("imagine") ? "saturate(1.6) hue-rotate(-12deg) brightness(1.05)" : "",
     fx.includes("impact") && f < 5 ? "grayscale(1) invert(1) contrast(2.2)" : "",
     fx.includes("gaan") ? "saturate(0.5) brightness(0.85)" : "",
@@ -257,6 +260,7 @@ const ShotView: React.FC<{ episode: string; shot: PlacedShot }> = ({ episode, sh
     <AbsoluteFill style={{ ...tr, overflow: "hidden" }}>
       <AbsoluteFill style={{ transform: `translate(${shake}px, ${shakeY}px)`, filter: tone || undefined }}>
         <Stage episode={episode} shot={shot} t={t} />
+        {shot.three ? <ThreeLayer shot={shot.three} f={t} /> : null}
       </AbsoluteFill>
       {jailAt != null && f >= jailAt ? <Jail f={f - jailAt} /> : null}
       {frozen ? <Halftone since={f - freezeAt!} /> : null}
@@ -268,6 +272,7 @@ const ShotView: React.FC<{ episode: string; shot: PlacedShot }> = ({ episode, sh
       {fx.includes("impact") && f < 5 ? <ImpactFrame f={f} /> : null}
       {fx.includes("vhs") ? <Vhs f={f} /> : null}
       {fx.includes("docu") ? <Docu /> : null}
+      {fx.includes("sepia") ? <AbsoluteFill style={{ background: "radial-gradient(ellipse at center, transparent 55%, rgba(60,35,10,0.55) 100%)" }} /> : null}
       {fx.includes("imagine") ? <Imagine f={f} /> : null}
       {fx.includes("slowmo") ? <SlowMo f={f} /> : null}
       {shot.tally ? <Tally n={shot.tally} f={f} /> : null}

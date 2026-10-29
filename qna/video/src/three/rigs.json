@@ -1,0 +1,261 @@
+{
+  "dad": {
+    "width": 1120,
+    "height": 1500,
+    "faces": [
+      "apose",
+      "mouth-a",
+      "mouth-o",
+      "mouth-e",
+      "blink",
+      "shock",
+      "laugh",
+      "smug",
+      "panic"
+    ],
+    "parts": {
+      "legL": {
+        "box": [
+          300,
+          980,
+          260,
+          465
+        ],
+        "pivot": [
+          450,
+          1010
+        ],
+        "parent": "hip",
+        "z": 0
+      },
+      "legR": {
+        "box": [
+          540,
+          980,
+          235,
+          465
+        ],
+        "pivot": [
+          660,
+          1010
+        ],
+        "parent": "hip",
+        "z": 0
+      },
+      "torso": {
+        "box": [
+          330,
+          495,
+          470,
+          505
+        ],
+        "pivot": [
+          560,
+          990
+        ],
+        "parent": "hip",
+        "z": 1
+      },
+      "armL": {
+        "box": [
+          205,
+          545,
+          200,
+          260
+        ],
+        "pivot": [
+          360,
+          610
+        ],
+        "parent": "torso",
+        "z": 2
+      },
+      "foreL": {
+        "box": [
+          105,
+          725,
+          260,
+          280
+        ],
+        "pivot": [
+          268,
+          752
+        ],
+        "parent": "armL",
+        "z": 3
+      },
+      "armR": {
+        "box": [
+          700,
+          535,
+          235,
+          250
+        ],
+        "pivot": [
+          760,
+          600
+        ],
+        "parent": "torso",
+        "z": 2
+      },
+      "foreR": {
+        "box": [
+          815,
+          690,
+          230,
+          325
+        ],
+        "pivot": [
+          878,
+          722
+        ],
+        "parent": "armR",
+        "z": 3
+      },
+      "head": {
+        "box": [
+          340,
+          40,
+          465,
+          538
+        ],
+        "pivot": [
+          560,
+          545
+        ],
+        "parent": "torso",
+        "z": 4,
+        "face": true
+      }
+    }
+  },
+  "kid": {
+    "width": 1006,
+    "height": 1500,
+    "faces": [
+      "apose",
+      "mouth-a",
+      "mouth-o",
+      "mouth-e",
+      "blink",
+      "shock",
+      "laugh",
+      "doubt"
+    ],
+    "parts": {
+      "legL": {
+        "box": [
+          370,
+          1120,
+          157,
+          342
+        ],
+        "pivot": [
+          460,
+          1140
+        ],
+        "parent": "hip",
+        "z": 0
+      },
+      "legR": {
+        "box": [
+          518,
+          1120,
+          177,
+          270
+        ],
+        "pivot": [
+          600,
+          1140
+        ],
+        "parent": "hip",
+        "z": 0
+      },
+      "torso": {
+        "box": [
+          300,
+          520,
+          362,
+          635
+        ],
+        "pivot": [
+          515,
+          1130
+        ],
+        "parent": "hip",
+        "z": 1
+      },
+      "armL": {
+        "box": [
+          215,
+          605,
+          167,
+          257
+        ],
+        "pivot": [
+          340,
+          680
+        ],
+        "parent": "torso",
+        "z": 2
+      },
+      "foreL": {
+        "box": [
+          105,
+          765,
+          220,
+          280
+        ],
+        "pivot": [
+          255,
+          820
+        ],
+        "parent": "armL",
+        "z": 3
+      },
+      "armR": {
+        "box": [
+          578,
+          578,
+          187,
+          217
+        ],
+        "pivot": [
+          630,
+          640
+        ],
+        "parent": "torso",
+        "z": 2
+      },
+      "foreR": {
+        "box": [
+          655,
+          700,
+          240,
+          265
+        ],
+        "pivot": [
+          710,
+          745
+        ],
+        "parent": "armR",
+        "z": 3
+      },
+      "head": {
+        "box": [
+          200,
+          55,
+          522,
+          527
+        ],
+        "pivot": [
+          470,
+          560
+        ],
+        "parent": "torso",
+        "z": 4,
+        "face": true
+      }
+    }
+  }
+}

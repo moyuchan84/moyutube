@@ -1,0 +1,95 @@
+{
+  "title": "이게 모예요? ① 플로피디스크",
+  "cast": {},
+  "common": [
+    "common/dad/normal",
+    "common/dad/explain",
+    "common/dad/proud",
+    "common/dad/shock",
+    "common/dad/panic",
+    "common/kid/normal",
+    "common/kid/ask",
+    "common/kid/wow",
+    "common/kid/doubt",
+    "common/kid/laugh",
+    "common/cutin/dad-shock",
+    "common/cutin/dad-proud",
+    "common/cutin/kid-ask",
+    "common/cutin/kid-doubt",
+    "common/cutin/dad-sig-1",
+    "common/cutin/dad-sig-2",
+    "common/cutin/dad-sig-3"
+  ],
+  "items": [
+    {
+      "id": "bg/attic",
+      "kind": "bg",
+      "title": "배경 — 할머니 집 다락 (아빠 어릴 적 상자)",
+      "cuts": "c00, c01, c02, c03, c05, c06, c07",
+      "desc": "The cozy attic storage room of a Korean grandmother's house, seen straight-on like a sitcom set: a slanted wooden ceiling with one small round window letting in warm afternoon light and floating dust specks, stacked old cardboard boxes, one open cardboard box in the middle front with old school notebooks, a rolled-up childhood poster and a dusty toy robot peeking out, an old wooden chest, a folded children's desk. Warm, nostalgic, golden light. All boxes and papers completely blank, no writing."
+    },
+    {
+      "id": "full/attic-find",
+      "kind": "full",
+      "people": ["kid", "dad"],
+      "title": "장면 — 상자에서 파란 네모를 꺼내는 아이, 뒤에서 들여다보는 아빠",
+      "cuts": "c00",
+      "desc": "In a warm, dusty attic, the kid kneels by an open old cardboard box and lifts out a small blue square plastic computer diskette with a silver metal sliding shutter at the top, holding it up curiously with both hands. Behind him the dad leans in, his eyes going wide with sudden recognition. Golden afternoon light, dust specks sparkling. The diskette label and the box are completely blank, no writing, no logos."
+    },
+    {
+      "id": "dad/nostalgia",
+      "kind": "char",
+      "who": "dad",
+      "title": "아빠 — 디스크를 두 손으로 들고 추억에 잠김",
+      "cuts": "c00, c01",
+      "desc": "3/4 view turned slightly to the LEFT. Holding a small blue square computer diskette with a silver metal shutter up in front of his chest with both hands, gazing at it with misty, sparkling nostalgic eyes, a big soft trembling smile, cheeks flushed, a single happy tear in the corner of one eye. The diskette label is blank."
+    },
+    {
+      "id": "full/flashback-lab",
+      "kind": "full",
+      "people": ["dad"],
+      "title": "회상 — 1990년대 학교 컴퓨터실, 초등학생 옷의 아빠가 디스크를 쏙",
+      "cuts": "c01",
+      "desc": "A 1990s Korean elementary-school computer room in faded sepia tones like an old photograph: rows of chunky beige computers with boxy CRT monitors and beige keyboards on long tables. The dad, looking exactly as he does now (same adult face and thinning hair), is comically dressed as an elementary-school boy: a yellow kids' cap, a striped T-shirt, short pants and a small backpack, sitting on a tiny school chair far too small for him, proudly pushing a small blue square diskette into the slot of a beige computer with a big satisfied grin. All screens show only plain glowing blue color, no text, no letters, no logos."
+    },
+    {
+      "id": "full/flashback-swap",
+      "kind": "full",
+      "people": ["dad"],
+      "title": "회상 — 친구랑 게임 디스크 바꿔 담기",
+      "cuts": "c01",
+      "desc": "Sepia-toned 1990s flashback like an old photograph: a school hallway with lockers. The dad, looking exactly as he does now (same adult face and thinning hair) but comically dressed as an elementary-school boy in a yellow kids' cap, striped T-shirt, short pants and a small backpack, secretively holds out a fan of colorful square computer diskettes like playing cards, wiggling his eyebrows with a sly grin. Another small schoolboy, seen only from behind, reaches for one. All diskette labels completely blank, no writing."
+    },
+    {
+      "id": "full/flashback-cry",
+      "kind": "full",
+      "people": ["dad"],
+      "title": "회상 — 자료가 날아가 컴퓨터 앞에서 엉엉",
+      "cuts": "c01",
+      "desc": "Sepia-toned 1990s flashback like an old photograph: the dad, looking exactly as he does now (same adult face and thinning hair) but comically dressed as an elementary-school boy in a yellow kids' cap and striped T-shirt, sits in front of a chunky beige computer with a boxy CRT monitor, clutching his head with both hands and wailing with a huge open crying mouth, waterfall tears shooting sideways. The monitor shows only a small plain gray empty warning box with a single blank button, no text, no letters, no symbols."
+    },
+    {
+      "id": "full/cloud-imagine",
+      "kind": "full",
+      "people": ["dad"],
+      "title": "아빠의 상상 — 구름 위에 파일을 올려놓는 아빠",
+      "cuts": "c05b",
+      "desc": "A silly bright imagined scene high in a blue sky: the dad stands proudly on top of a fluffy white cloud like a shelf, stacking paper folders, photo albums and a teddy bear neatly on the cloud, then pointing at them with a satisfied smug grin. Other clouds around him are also piled with folders and photo frames. Bright, absurd and cheerful. All folders, papers and frames completely blank, no writing."
+    },
+    {
+      "id": "bg/datacenter",
+      "kind": "bg",
+      "title": "배경 — 커다란 컴퓨터 창고(데이터센터)",
+      "cuts": "c05c",
+      "desc": "The inside of a gigantic modern data center seen straight-on: endless tall rows of black server racks with tiny blinking blue and green lights stretching far into the distance, cool blue lighting, a clean polished floor, thick neatly bundled cables overhead. Absolutely no people. No text, no letters, no logos."
+    },
+    {
+      "id": "dad/wistful",
+      "kind": "char",
+      "who": "dad",
+      "title": "아빠 — 디스크를 꼭 쥐고 먼 산 (\"열어 볼 기계가 없어\")",
+      "cuts": "c07",
+      "desc": "3/4 view turned slightly to the LEFT. Clutching a small blue square diskette tightly against his chest with both hands, staring blankly into the far distance with a deadpan, melancholy face, eyes half-closed, a single comic sweat drop, shoulders drooping. The diskette label is blank."
+    }
+  ]
+}
