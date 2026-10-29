@@ -1,0 +1,176 @@
+{
+  "rawVoice": true,
+  "speed": 1.2,
+  "title": "모 아니면 도 ① 캠핑 vs 집콕 · 갈림길",
+  "bgm": "cheerful",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "콜드 오픈",
+      "lines": [
+        { "who": "narr", "text": "토요일 새벽 4시 37분.", "tts": "토요일 새벽 네 시 삼십칠 분.", "en": "Saturday, 4:37 a.m." },
+        { "who": "narr", "text": "이 남자는, 아직 가족에게 말하지 않았다.", "en": "This man has not told his family yet." }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "콜드 오픈",
+      "lines": [
+        { "who": "dad", "text": "말하면 재미없지. 서프라이즈는 원래 이래.", "en": "Telling them ruins it. That's how surprises work." },
+        { "who": "narr", "text": "택배 상자, 17개.", "tts": "택배 상자, 열일곱 개.", "en": "Delivery boxes: seventeen." },
+        { "who": "narr", "text": "영수증은 냉동실 만두 뒤에 숨겼다.", "en": "He hid the receipt behind the frozen dumplings." }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "타이틀",
+      "lines": [
+        { "who": "dad", "text": "모 아니면… 도!", "en": "All… or nothing!" }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "차 안",
+      "lines": [
+        { "who": "kid", "text": "아빠, 엉덩이가 나무야.", "en": "Dad, my butt is sitting on wood." },
+        { "who": "mom", "text": "우리… 어디 가?", "en": "Where… are we going?" }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "차 안",
+      "lines": [
+        { "who": "dad", "text": "어… 마트?", "en": "Uh… the mart?" },
+        { "who": "mom", "text": "마트를, 장작 들고 가?", "en": "To the mart, with firewood?" }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "영수증",
+      "lines": [
+        { "who": "mom", "text": "만두 뒤에서 이게 나왔어.", "en": "This came out from behind the dumplings." },
+        { "who": "mom", "text": "230만 원.", "tts": "이백삼십만 원.", "en": "Two point three million won." }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "영수증",
+      "lines": [
+        { "who": "dad", "text": "할부야. 열두 번 나누면 거의 공짜야.", "en": "It's installments. Split into twelve, it's basically free." },
+        { "who": "narr", "text": "할부는, 공짜가 아니다.", "en": "Installments are not free." }
+      ]
+    },
+    {
+      "id": "c07",
+      "beat": "각자의 주말",
+      "lines": [
+        { "who": "mom", "text": "나는 이번 주말에 눕고 싶어. 가로로.", "en": "This weekend I want to lie down. Horizontally." },
+        { "who": "dad", "text": "텐트에서도 가로로 누워!", "en": "You can lie horizontally in a tent too!" }
+      ]
+    },
+    {
+      "id": "c08",
+      "beat": "각자의 주말",
+      "lines": [
+        { "who": "mom", "text": "흙 위에서?", "en": "On dirt?" },
+        { "who": "kid", "text": "아빠, 캠핑장 화장실은 어디야?", "en": "Dad, where's the bathroom at the campsite?" }
+      ]
+    },
+    {
+      "id": "c09",
+      "beat": "각자의 주말",
+      "lines": [
+        { "who": "dad", "text": "자연이, 화장실이야.", "en": "Nature… is the bathroom." },
+        { "who": "kid", "text": "…자연?", "en": "…Nature?" }
+      ]
+    },
+    {
+      "id": "c10",
+      "beat": "내비",
+      "lines": [
+        { "who": "navi", "text": "전방 2킬로미터, 경로가 갈라집니다.", "tts": "전방 이 킬로미터, 경로가 갈라집니다.", "en": "In two kilometers, the route splits." },
+        { "who": "navi", "text": "왼쪽, 캠핑장. 87킬로미터.", "tts": "왼쪽, 캠핑장. 팔십칠 킬로미터.", "en": "Left: campsite. Eighty-seven kilometers." },
+        { "who": "navi", "text": "오른쪽, 우리 집. 3킬로미터.", "tts": "오른쪽, 우리 집. 삼 킬로미터.", "en": "Right: home. Three kilometers." }
+      ]
+    },
+    {
+      "id": "c11",
+      "beat": "내비",
+      "lines": [
+        { "who": "mom", "text": "삼.", "en": "Three." },
+        { "who": "navi", "text": "참고로, 캠핑장 강수확률 60퍼센트.", "tts": "참고로, 캠핑장 강수확률 육십 퍼센트.", "en": "Note: sixty percent chance of rain at the campsite." }
+      ]
+    },
+    {
+      "id": "c12",
+      "beat": "내비",
+      "lines": [
+        { "who": "dad", "text": "40퍼센트는 안 온다는 거잖아!", "tts": "사십 퍼센트는 안 온다는 거잖아!", "en": "So forty percent it won't rain!" },
+        { "who": "navi", "text": "…그렇게 들으셨군요.", "en": "…So that's how you heard it." }
+      ]
+    },
+    {
+      "id": "c13",
+      "beat": "캠핑장 전화",
+      "lines": [
+        { "who": "campowner", "text": "모 선생님? 예약하신 B-7 사이트요.", "tts": "모 선생님? 예약하신 비 칠 사이트요.", "en": "Mr. Mo? About your site, B-7." },
+        { "who": "campowner", "text": "어젯밤 비로, 지금 수영장이에요.", "en": "After last night's rain, it's a swimming pool now." },
+        { "who": "campowner", "text": "그래도 오세요. 개구리가 많아서 애들이 좋아해요.", "en": "Come anyway. Lots of frogs, kids love it." }
+      ]
+    },
+    {
+      "id": "c14",
+      "beat": "캠핑장 전화",
+      "lines": [
+        { "who": "kid", "text": "개구리?! 가자!", "en": "Frogs?! Let's go!" },
+        { "who": "mom", "text": "개구리?! 집에 가자!", "en": "Frogs?! Let's go home!" }
+      ]
+    },
+    {
+      "id": "c15",
+      "beat": "갈림길",
+      "lines": [
+        { "who": "navi", "text": "결정하세요. 1킬로미터.", "tts": "결정하세요. 일 킬로미터.", "en": "Decide. One kilometer." },
+        { "who": "dad", "text": "이럴 땐… 하늘에 맡긴다.", "en": "At times like this… leave it to fate." }
+      ]
+    },
+    {
+      "id": "c16",
+      "beat": "갈림길",
+      "lines": [
+        { "who": "dad", "text": "윷은… 캠핑 필수품이야.", "en": "Yut sticks… are camping essentials." },
+        { "who": "mom", "text": "그것도 샀어?", "en": "You bought those too?" }
+      ]
+    },
+    {
+      "id": "c17",
+      "beat": "갈림길",
+      "lines": [
+        { "who": "dad", "text": "모 나오면 캠핑. 도 나오면 집.", "en": "Mo, we camp. Do, we go home." },
+        { "who": "mom", "text": "둘 다 아니면?", "en": "And if it's neither?" }
+      ]
+    },
+    {
+      "id": "c18",
+      "beat": "갈림길",
+      "lines": [
+        { "who": "dad", "text": "그럼… 트렁크를 다시 못 닫아.", "en": "Then… I can never close the trunk again." }
+      ]
+    },
+    {
+      "id": "c19",
+      "beat": "선택",
+      "lines": [
+        { "who": "dad", "text": "모 아니면, 도!", "en": "Mo… or Do!" },
+        { "who": "narr", "text": "던지는 건, 여러분입니다.", "en": "You throw the sticks." }
+      ]
+    },
+    {
+      "id": "c20",
+      "beat": "선택",
+      "lines": [
+        { "who": "narr", "text": "모를 누르면 캠핑, 도를 누르면 집.", "en": "Press Mo for camping, Do for home." }
+      ]
+    }
+  ]
+}

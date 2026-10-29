@@ -1367,6 +1367,114 @@
     "w": 628,
     "h": 1500
   },
+  "md01/campowner/normal": {
+    "w": 868,
+    "h": 1500
+  },
+  "md01/full/trunk-tetris": {
+    "w": 2560,
+    "h": 1440
+  },
+  "md01/prop/freezer-receipt": {
+    "w": 1200,
+    "h": 1049
+  },
+  "md01/full/car-family": {
+    "w": 2560,
+    "h": 1440
+  },
+  "md01/full/mom-sofa-dream": {
+    "w": 2560,
+    "h": 1440
+  },
+  "md01/dad/catalog": {
+    "w": 914,
+    "h": 1500
+  },
+  "md01/dad/nature": {
+    "w": 1143,
+    "h": 1500
+  },
+  "md01/prop/navi": {
+    "w": 1200,
+    "h": 1099
+  },
+  "md01/bg/highway-fork": {
+    "w": 2560,
+    "h": 1440
+  },
+  "md01/full/b7-pond": {
+    "w": 2560,
+    "h": 1440
+  },
+  "md01/full/rest-stop-avalanche": {
+    "w": 2560,
+    "h": 1440
+  },
+  "md01/dad/yut-throw": {
+    "w": 816,
+    "h": 1500
+  },
+  "md01/full/tent-float": {
+    "w": 2560,
+    "h": 1440
+  },
+  "md01/full/mosquito-buffet": {
+    "w": 2560,
+    "h": 1440
+  },
+  "md01/full/car-sleep": {
+    "w": 2560,
+    "h": 1440
+  },
+  "md01/full/morning-cheer": {
+    "w": 2560,
+    "h": 1440
+  },
+  "md01/full/living-camp": {
+    "w": 2560,
+    "h": 1440
+  },
+  "md01/full/firewood-confiscate": {
+    "w": 2560,
+    "h": 1440
+  },
+  "md01/full/mom-tent": {
+    "w": 2560,
+    "h": 1440
+  },
+  "md01/dad/frog": {
+    "w": 859,
+    "h": 1500
+  },
+  "md01/full/shadow-play": {
+    "w": 2560,
+    "h": 1440
+  },
+  "md01/prop/phone-sunny": {
+    "w": 770,
+    "h": 1200
+  },
+  "md01/dad/wail": {
+    "w": 995,
+    "h": 1500
+  },
+  "md01/prop/phone-bill": {
+    "w": 1083,
+    "h": 1200
+  },
+  "md01/bg/choice": {
+    "w": 2560,
+    "h": 1440
+  },
+  "md01/bg/choice-to-do": {
+    "w": 2560,
+    "h": 1440
+  },
+  "md01/bg/choice-to-mo": {
+    "w": 2560,
+    "h": 1440
+  },
   "nm01/full/highway-cutin": {
     "w": 2560,
     "h": 1440

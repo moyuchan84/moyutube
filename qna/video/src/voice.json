@@ -181,6 +181,24 @@
         "realtor"
       ],
       "style": "A Korean neighborhood realtor woman in her late fifties who has run the same office for thirty years: calm, low, unhurried voice, perfectly polite and completely deadpan, has heard every excuse before, never says prices will go up or down, never angry"
+    },
+    {
+      "label": "Guest",
+      "name": "내비게이션",
+      "voice": "Despina",
+      "roles": [
+        "navi"
+      ],
+      "style": "A Korean car navigation voice: a calm, flat, perfectly polite synthetic-sounding woman announcer, deadpan and unbothered, every word evenly spaced, with the faintest dry sarcasm"
+    },
+    {
+      "label": "Guest",
+      "name": "캠핑장 사장님",
+      "voice": "Zubenelgenubi",
+      "roles": [
+        "campowner"
+      ],
+      "style": "A cheerful, laid-back Korean campsite owner in his fifties talking on the phone: easygoing, slightly rough country warmth, saying alarming things in a totally relaxed sunny tone, chuckling"
     }
   ],
   "direction": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud.",

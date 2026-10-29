@@ -144,10 +144,68 @@ const Lights: React.FC = () => (
   </>
 );
 
+// 「모 아니면 도」 윷가락 하나: 둥근 등(진한 나무) + 납작한 배(밝은 나무, X 표시). turn 0 = 등이 앞, π = 배가 앞
+const YUT_L = 7.2;
+const YUT_R = 0.75;
+const YutStick: React.FC<{ turn: number }> = ({ turn }) => (
+  <group rotation={[0, turn, 0]}>
+    <mesh>
+      <cylinderGeometry args={[YUT_R, YUT_R, YUT_L, 24, 1, false, -Math.PI / 2, Math.PI]} />
+      <Toon color="#B9773E" side={THREE.DoubleSide} />
+    </mesh>
+    <mesh>
+      <cylinderGeometry args={[YUT_R + 0.09, YUT_R + 0.09, YUT_L + 0.18, 24, 1, false, -Math.PI / 2, Math.PI]} />
+      <meshBasicMaterial color={INK} side={THREE.BackSide} />
+    </mesh>
+    <Box size={[YUT_R * 2, YUT_L, 0.06]} color="#F1D9A8" position={[0, 0, -0.03]} />
+    {[-1.6, 1.6].map((y) =>
+      [0.6, -0.6].map((r) => (
+        <mesh key={`${y}${r}`} position={[0, y, -0.08]} rotation={[0, 0, r]}>
+          <boxGeometry args={[0.12, 1.1, 0.02]} />
+          <meshBasicMaterial color={INK} />
+        </mesh>
+      )),
+    )}
+  </group>
+);
+
+// 윷 네 개를 던진다. step 0 = 하늘에서 빙글빙글 (선택 화면용, 결과 없음) · 1 = 모 (넷 다 등) · 2 = 도 (하나만 배)
+const Yut: React.FC<{ f: number; step: number }> = ({ f, step }) => {
+  const t = f / FPS;
+  const land = step ? ease(f, 10, 34) : 0;
+  return (
+    <group>
+      {[0, 1, 2, 3].map((i) => {
+        const x0 = (i - 1.5) * 2.2;
+        const fly = interpolate(f, [0, 14], [-14, 1.5], { ...clamp, easing: Easing.out(Easing.cubic) });
+        const hover = Math.sin(t * 2 + i) * 0.6;
+        const air = { x: x0 * 1.5 + Math.sin(t * 1.3 + i * 2) * 0.8, y: fly + hover + (i % 2 ? 1.2 : -0.6), rz: t * (2.2 + i * 0.4) * (i % 2 ? 1 : -1) + i, ry: t * (6 + i) };
+        const final = step === 2 && i === 2 ? Math.PI : 0;
+        const bounce = step ? Math.abs(Math.sin(interpolate(f, [34, 52], [0, Math.PI * 2], clamp))) * interpolate(f, [34, 52], [0.8, 0], clamp) : 0;
+        const x = air.x + (x0 - air.x) * land;
+        const y = air.y + (-1 + bounce - air.y) * land;
+        const rz = air.rz * (1 - land) + (i - 1.5) * 0.05 * land;
+        const ry = air.ry * (1 - land) + (final + Math.round(air.ry / (2 * Math.PI)) * 2 * Math.PI) * land;
+        return (
+          <group key={i} position={[x, y, 0]} rotation={[0, 0, rz]}>
+            <YutStick turn={ry} />
+          </group>
+        );
+      })}
+    </group>
+  );
+};
+
 const Scene: React.FC<{ shot: ThreeShot; f: number }> = ({ shot, f }) => {
   const t = f / FPS;
   const step = shot.step ?? 0;
   switch (shot.scene) {
+    case "yut":
+      return (
+        <group rotation={[-0.15, 0, 0]} scale={1.1}>
+          <Yut f={f} step={step} />
+        </group>
+      );
     // 주인공 디스크가 빙글 돌며 등장 → 천천히 흔들림. step 1 이면 덧문이 열린다
     case "floppy": {
       const k = pop(f);

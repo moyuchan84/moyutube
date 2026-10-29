@@ -1,0 +1,110 @@
+{
+  "rawVoice": true,
+  "speed": 1.2,
+  "title": "모 아니면 도 ① 모 결말 · 캠핑",
+  "bgm": "cheerful",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "모",
+      "lines": [
+        { "who": "narr", "text": "모. 캠핑.", "en": "Mo. Camping." },
+        { "who": "dad", "text": "가자아아아!", "en": "Let's gooo!" }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "도착",
+      "lines": [
+        { "who": "narr", "text": "오후 1시, 캠핑장 B-7.", "tts": "오후 한 시, 캠핑장 비 칠.", "en": "1 p.m., campsite B-7." },
+        { "who": "campowner", "text": "여기예요. 물만 빠지면 명당이에요.", "en": "Here it is. Prime spot, once the water drains." }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "도착",
+      "lines": [
+        { "who": "kid", "text": "아빠, 우리 자리 수영장이야!", "en": "Dad, our spot is a swimming pool!" },
+        { "who": "dad", "text": "괜찮아. 텐트는 방수야.", "en": "It's fine. The tent is waterproof." }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "수상 가옥",
+      "lines": [
+        { "who": "narr", "text": "3시간 뒤.", "tts": "세 시간 뒤.", "en": "Three hours later." },
+        { "who": "dad", "text": "봐라. 수상 가옥이다!", "en": "Behold. A house on the water!" }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "수상 가옥",
+      "lines": [
+        { "who": "mom", "text": "…우린 어떻게 들어가?", "en": "…And how do we get in?" },
+        { "who": "dad", "text": "헤엄쳐서.", "en": "We swim." }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "저녁",
+      "lines": [
+        { "who": "narr", "text": "저녁 6시. 삼겹살 5킬로그램.", "tts": "저녁 여섯 시. 삼겹살 오 킬로그램.", "en": "6 p.m. Five kilos of pork belly." },
+        { "who": "dad", "text": "숯이… 젖었다.", "en": "The charcoal… is wet." }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "저녁",
+      "lines": [
+        { "who": "kid", "text": "아빠, 모기가 줄 서 있어!", "en": "Dad, the mosquitoes are lining up!" },
+        { "who": "narr", "text": "모기 입장에서는, 뷔페가 열렸다.", "en": "For the mosquitoes, a buffet just opened." }
+      ]
+    },
+    {
+      "id": "c07",
+      "beat": "밤",
+      "lines": [
+        { "who": "narr", "text": "밤 11시. 개구리 합창단, 앙코르 공연.", "tts": "밤 열한 시. 개구리 합창단, 앙코르 공연.", "en": "11 p.m. The frog choir's encore." },
+        { "who": "mom", "text": "개구리야… 나도 집에 가고 싶어.", "en": "Frog… I want to go home too." }
+      ]
+    },
+    {
+      "id": "c08",
+      "beat": "밤",
+      "lines": [
+        { "who": "narr", "text": "결국 세 식구는 차에서 잤다.", "en": "In the end, the family slept in the car." },
+        { "who": "narr", "text": "장비 때문에, 아빠 자리는 트렁크였다.", "en": "Thanks to the gear, Dad's bed was the trunk." }
+      ]
+    },
+    {
+      "id": "c09",
+      "beat": "밤",
+      "lines": [
+        { "who": "dad", "text": "여기도… 가로로 누울 수 있어.", "en": "You can lie horizontally… here too." }
+      ]
+    },
+    {
+      "id": "c10",
+      "beat": "아침",
+      "lines": [
+        { "who": "kid", "text": "아빠! 역대급이야! 또 오자!", "en": "Dad! Best ever! Let's come again!" },
+        { "who": "mom", "text": "…다음엔 개구리 없는 데로.", "en": "…Next time, somewhere without frogs." }
+      ]
+    },
+    {
+      "id": "c11",
+      "beat": "엔딩",
+      "lines": [
+        { "who": "narr", "text": "띵. 할부 1회차 결제 완료.", "tts": "띵. 할부 일 회차 결제 완료.", "en": "Ding. Installment one of twelve, paid." },
+        { "who": "narr", "text": "남은 열한 번은, 다음 갈림길에서.", "en": "The other eleven, at the next fork in the road." }
+      ]
+    },
+    {
+      "id": "c12",
+      "beat": "엔딩",
+      "lines": [
+        { "who": "narr", "text": "다른 결말이 궁금하면, 도를 누르세요.", "en": "Curious about the other ending? Press Do." }
+      ]
+    }
+  ]
+}

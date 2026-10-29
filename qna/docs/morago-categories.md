@@ -21,7 +21,7 @@
 | 내모남불 | 내가 하면 모 어때, 남이 하면 불법 — 이중 잣대 코미디 | 3분 + 쇼츠 3 | 부모 | 공개 중 (1 · 3 · 4편) | [naemonambul.md](naemonambul.md) |
 | 포모라구 | 남들 다 하는데 나만 모라구? — 유행 · 소비 심리 | 3분 + 쇼츠 3 | 가족 | 기획 | [pomoragu.md](pomoragu.md) |
 | 이게 모예요? | 낯선 물건 하나의 역사 · 재료 · 원리 · 변천 | 쇼츠 75~90초 | 가족 | 1편 공개 (플로피) | [igemoyeyo.md](igemoyeyo.md) |
-| 모 아니면 도 | 시청자가 모 · 도를 골라 결말이 바뀌는 인터랙티브 시트콤 | 가로 3편 묶음 + 쇼츠 투표 | 가족 | 기획 | [moanimyeondo.md](moanimyeondo.md) |
+| 모 아니면 도 | 시청자가 모 · 도를 골라 결말이 바뀌는 인터랙티브 시트콤 | 가로 3편 묶음 + 최종 화면 | 가족 | 1편 공개 (캠핑 vs 집콕) | [moanimyeondo.md](moanimyeondo.md) |
 | 모덕후 | 좀 이상한 궁금증을 덕후처럼 진지하게 고찰 | 쇼츠 50~60초 | 어른 | 기획 | [modeokhu-josammosa-morongi.md](modeokhu-josammosa-morongi.md) |
 | 조삼모사 | 똑같은 상황, 관점에 따라 오르락내리락하는 하루 기분 | 쇼츠 40~50초 | 어른 | 기획 | [modeokhu-josammosa-morongi.md](modeokhu-josammosa-morongi.md) |
 | 모롱이 | 별것 아닌데 꺼드럭대는 걸 익살스럽게 놀림 | 쇼츠 30~45초 | 어른 | 기획 | [modeokhu-josammosa-morongi.md](modeokhu-josammosa-morongi.md) |

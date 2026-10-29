@@ -21,7 +21,7 @@
   - **내모남불** — [docs/naemonambul.md](docs/naemonambul.md)
   - **포모라구** (기획 중) — [docs/pomoragu.md](docs/pomoragu.md)
   - **이게 모예요?** (쇼츠, 1편 공개) — [docs/igemoyeyo.md](docs/igemoyeyo.md)
-  - **모 아니면 도** (기획 중, 두 갈래 결말 인터랙티브) — [docs/moanimyeondo.md](docs/moanimyeondo.md)
+  - **모 아니면 도** (1편 공개, 두 갈래 결말 인터랙티브) — [docs/moanimyeondo.md](docs/moanimyeondo.md)
   - **모덕후 · 조삼모사 · 모롱이** (기획 중, 어른 대상 쇼츠: 덕후식 고찰 · 같은 상황 다른 관점 · 꺼드럭 놀리기) — [docs/modeokhu-josammosa-morongi.md](docs/modeokhu-josammosa-morongi.md)
   - **보면 풀리는 수학 · 과학** — `lab/` ([lab/CLAUDE.md](../lab/CLAUDE.md))
   - **엄마가 만든 동화 / 상담심리사 엄마의 인성동화책** — `fairy/`
