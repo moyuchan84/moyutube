@@ -2098,5 +2098,101 @@
   "nm06/cutin/manager-flat": {
     "w": 1053,
     "h": 1300
+  },
+  "nm06/manager/pillar": {
+    "w": 849,
+    "h": 1500
+  },
+  "nm06/manager/box": {
+    "w": 1062,
+    "h": 1500
+  },
+  "nm06/granny/normal": {
+    "w": 859,
+    "h": 1500
+  },
+  "nm06/neighbor/normal": {
+    "w": 867,
+    "h": 1500
+  },
+  "nm06/bg/apt-night": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm06/bg/stairwell": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm06/bg/parking": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm06/bg/recycling": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm06/full/treadmill-night": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm06/cutin/dad-ceiling-cup": {
+    "w": 1284,
+    "h": 1300
+  },
+  "nm06/cutin/dad-giggle": {
+    "w": 1266,
+    "h": 1300
+  },
+  "nm06/cutin/dad-shrink": {
+    "w": 1263,
+    "h": 1300
+  },
+  "nm06/full/upstairs-door": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm06/full/dad-snap": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm06/full/dad-twospaces": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm06/full/box-tower": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm06/full/ceiling-night": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm06/full/letter-door": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm06/cutin/dad-read": {
+    "w": 1257,
+    "h": 1300
+  },
+  "nm06/prop/paper-cup": {
+    "w": 881,
+    "h": 1200
+  },
+  "nm06/prop/tangerines": {
+    "w": 968,
+    "h": 1200
+  },
+  "nm06/prop/letter": {
+    "w": 1200,
+    "h": 1135
+  },
+  "nm06/prop/phone": {
+    "w": 675,
+    "h": 1200
+  },
+  "nm06/prop/box": {
+    "w": 1200,
+    "h": 1148
   }
 }
