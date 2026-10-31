@@ -67,7 +67,7 @@
 - 전환: whip · zoom · spin · wipe · iris · glitch · slam · smash · flash. 카메라: roll · punch(크래시 줌) · snap.
 - 장치: freeze+tag(멈춤 이름표) · mark(O/X) · tally(正) · loading · jail · note(※) · 글자 slam/stamp/pop/type/shake/news · fx imagine/docu/vhs/slowmo/lines.
 - `count: n` 으로 오답 카운터, 맨 위 `"counter": "모답맨 오답"`, `"thumb"` 로 썸네일 문구.
-- 효과음은 전부 코드 합성 (`video/scripts/sfx.mjs`) — 저작권 걱정 없음. 배경음악 `public/bgm/cheerful.wav`.
+- 효과음은 전부 코드 합성 (`video/scripts/sfx.mjs`) — 저작권 걱정 없음. 배경음악도 코드 합성(`video/scripts/bgm.mjs`, 목록은 `--list`) — 편마다 `motion.json` 의 `"bgm"` 으로 분위기에 맞는 곡을 고른다 (기본 `cheerful`, 민망 · 로맨스 개그는 `sultry`). 기존 노래 · 음원은 Content ID 에 걸리니 쓰지 않고, 새 분위기는 `bgm.mjs` 에 곡을 하나 더 짓는다.
 
 ### 썸네일
 `MotionThumb` (`src/motion/Thumb.tsx`): 빨간 방사 배경 + 노란 X + 놀란 아빠 얼굴 + 위 두 줄(흰 · 노랑) + 작은 셋째 줄 + 정답 인물 얼굴 + "모답맨" 딱지 + 오답 카운터. 1280×720.

@@ -1,0 +1,225 @@
+{
+  "rawVoice": true,
+  "speed": 1.2,
+  "title": "모덕후 ③ 손잡기",
+  "bgm": "flutter",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "훅",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "이번 호 특집. 손잡기.",
+          "en": "This issue's special: holding hands."
+        },
+        {
+          "who": "modeokhu",
+          "text": "(꿀꺽) …잡는다.",
+          "tts": "…잡는다.",
+          "en": "(gulp) …Hold her hand."
+        },
+        {
+          "who": "dad",
+          "text": "형… 지금 자기 손 잡고 있어?",
+          "en": "Bro… are you holding your own hand?"
+        },
+        {
+          "who": "modeokhu",
+          "text": "실험 중이다. 결과, 아무 느낌 없음.",
+          "en": "It's an experiment. Result: nothing."
+        }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "질문",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "내 손도 똑같은 살인데,",
+          "en": "My hand is the same skin,"
+        },
+        {
+          "who": "modeokhu",
+          "text": "왜 남의 손만 설렐까? 지금부터 진지하다.",
+          "en": "so why does only someone else's hand feel special? Serious mode on."
+        }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "첫째 · 스포일러",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "첫째. 혼자 간지럼 태우면 안 간지럽지?",
+          "en": "One. You can't tickle yourself, right?"
+        },
+        {
+          "who": "modeokhu",
+          "text": "뇌가 내 손이 어디 닿을지 미리 알고, 느낌을 깎아버려.",
+          "en": "Your brain predicts where your hand will land and turns the feeling down."
+        },
+        {
+          "who": "dad",
+          "text": "아… 스포일러 당한 거네.",
+          "en": "Ah… so it's been spoiled."
+        },
+        {
+          "who": "modeokhu",
+          "text": "그래. 결말 아는 애니는 안 설렌다.",
+          "en": "Exactly. An anime you know the ending of never thrills."
+        }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "둘째 · 척수",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "둘째. 남이 만지면 뇌의 감정 쪽까지 켜지는데,",
+          "en": "Two. Someone else's touch lights up the brain's emotional areas,"
+        },
+        {
+          "who": "modeokhu",
+          "text": "내가 만지면 오히려 조용해져. 그 차이가 척수에서부터 보인대.",
+          "en": "but your own touch quiets them. The difference shows up as early as the spinal cord."
+        },
+        {
+          "who": "dad",
+          "text": "척수가 형보다 눈치 빠르네.",
+          "en": "Your spine's quicker on the uptake than you."
+        }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "셋째 · 느린 신경",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "셋째. 피부엔 천천히 쓰다듬을 때 제일 신나는 느린 신경이 있어.",
+          "en": "Three. Your skin has slow nerves that love being stroked gently."
+        },
+        {
+          "who": "modeokhu",
+          "text": "다정한 손길을 알아보는 신경이라는 해석이야.",
+          "en": "Scientists think they're built to recognize a caring touch."
+        },
+        {
+          "who": "dad",
+          "text": "형은 그거 어디다 써?",
+          "en": "And where do you use that?"
+        },
+        {
+          "who": "modeokhu",
+          "text": "…고양이. 근데 도망갔어.",
+          "en": "…On a cat. It ran away."
+        }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "넷째 · 작은 실험",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "넷째. 전기 충격을 기다리는 아내들한테",
+          "en": "Four. Wives waiting for an electric shock"
+        },
+        {
+          "who": "modeokhu",
+          "text": "남편 손을 잡게 했더니, 뇌가 덜 무서워했대.",
+          "en": "held their husband's hand, and their brains were less afraid."
+        },
+        {
+          "who": "modeokhu",
+          "text": "모르는 사람 손은 효과가 작았고, 사이가 좋을수록 더 컸어.",
+          "en": "A stranger's hand helped less, and happier couples got more."
+        },
+        {
+          "who": "dad",
+          "text": "역시, 내 손이지.",
+          "en": "See? It's gotta be my hand."
+        }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "다섯째 · 뇌파",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "다섯째. 아플 때 연인 손을 잡으면 두 사람 뇌파가 맞춰지고,",
+          "en": "Five. When partners hold hands through pain, their brainwaves sync,"
+        },
+        {
+          "who": "modeokhu",
+          "text": "잘 맞춰질수록 아픔이 덜했대.",
+          "en": "and the better they synced, the less it hurt."
+        },
+        {
+          "who": "dad",
+          "text": "형은 누구랑 맞춰 봤는데?",
+          "en": "And who have you synced with?"
+        },
+        {
+          "who": "modeokhu",
+          "text": "…와이파이랑.",
+          "en": "…My Wi-Fi."
+        }
+      ]
+    },
+    {
+      "id": "c07",
+      "beat": "결론",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "결론. 남의 손은, 내 뇌가 예측 못 하는 손이다.",
+          "en": "Conclusion: another person's hand is the one hand your brain can't predict."
+        },
+        {
+          "who": "modeokhu",
+          "text": "그러니 연구를 위해, 동생 손을 잠깐…",
+          "en": "So, for science, may I borrow your hand for a sec…"
+        },
+        {
+          "who": "dad",
+          "text": "싫어.",
+          "en": "No."
+        },
+        {
+          "who": "narr",
+          "text": "표본 확보 실패.",
+          "en": "Sample collection: failed."
+        }
+      ]
+    },
+    {
+      "id": "c08",
+      "beat": "엔딩",
+      "lines": [
+        {
+          "who": "mom",
+          "text": "여보, 산책 가자.",
+          "en": "Honey, let's go for a walk."
+        },
+        {
+          "who": "dad",
+          "text": "(손 잡으며) 응.",
+          "tts": "응.",
+          "en": "(taking her hand) Sure."
+        },
+        {
+          "who": "modeokhu",
+          "text": "(꿀꺽) …대조군 부족.",
+          "tts": "…대조군 부족.",
+          "en": "(gulp) …Insufficient control group."
+        }
+      ]
+    }
+  ]
+}

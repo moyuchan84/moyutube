@@ -29,6 +29,8 @@ export type MotionShortSpec = {
   end: { title: [string, string]; sub: string };
   crop?: number; // 본편 가로 몇 px 를 보여 줄지 (기본 1500, 자르지 않으려면 1920)
   narr?: string; // 나레이션 이름표 (없으면 "모답맨", 내모남불은 "내모남불")
+  // 있으면 이중 언어판(인스타 릴스용): 자막 · 훅 · 제목 · 끝 카드 밑에 영어 줄을 작게 단다
+  en?: { series: string; hook: [string, string]; title: string; end: { title: [string, string]; sub: string } };
 };
 
 const KINDS = ["whip", "zoom", "glitch", "flash"] as const;
@@ -105,7 +107,7 @@ const Clip: React.FC<{ timeline: MotionTimeline; from: number; len: number; kind
 };
 
 // 단어 단위 큰 자막: 읽는 만큼 단어가 튀어나오고 지금 단어는 노랑
-const Caption: React.FC<{ timeline: MotionTimeline; src: number; narr?: string; top: number }> = ({ timeline, src, narr, top }) => {
+const Caption: React.FC<{ timeline: MotionTimeline; src: number; narr?: string; top: number; en?: boolean }> = ({ timeline, src, narr, top, en }) => {
   const { fps } = useVideoConfig();
   const line = timeline.lines.find((l) => src >= l.from && src < l.from + l.dur + 6);
   if (!line) return null;
@@ -136,6 +138,9 @@ const Caption: React.FC<{ timeline: MotionTimeline; src: number; narr?: string; 
           );
         })}
       </div>
+      {en && line.en ? (
+        <div style={{ marginTop: 10, fontSize: 40, fontWeight: 800, lineHeight: 1.25, color: "#E8EEF2", WebkitTextStroke: "2px #000", paintOrder: "stroke fill", opacity: Math.min(1, p * 6) }}>{line.en}</div>
+      ) : null}
     </div>
   );
 };
@@ -205,7 +210,7 @@ export const MotionShort: React.FC<{ timeline: MotionTimeline; spec: MotionShort
       <AbsoluteFill style={{ background: "#fff", opacity: flash, pointerEvents: "none" }} />
 
       {/* 자막 */}
-      {loc ? <Caption timeline={timeline} src={loc.src} narr={spec.narr} top={g.capTop} /> : null}
+      {loc ? <Caption timeline={timeline} src={loc.src} narr={spec.narr} top={spec.en ? g.viewTop + g.viewH + 28 : g.capTop} en={!!spec.en} /> : null}
 
       {/* 위: 진행 막대 · 훅 → 제목 바 */}
       <div style={{ position: "absolute", top: 0, left: 0, height: 10, width: `${(Math.min(frame, body) / body) * 100}%`, background: "#FFD23F" }} />
@@ -213,10 +218,16 @@ export const MotionShort: React.FC<{ timeline: MotionTimeline; spec: MotionShort
         <div style={{ display: "inline-block", fontSize: 40, fontWeight: 900, color: INK, background: "#FFD23F", borderRadius: 999, padding: "10px 32px", transform: `rotate(${-2 + Math.sin(frame / 9) * 1.5}deg)` }}>
           {spec.series}
         </div>
+        {spec.en ? <div style={{ marginTop: 8, fontSize: 26, fontWeight: 800, color: "#FFD23F" }}>{spec.en.series}</div> : null}
         <div style={{ marginTop: 22, fontWeight: 900, lineHeight: 1.1, WebkitTextStroke: "4px #000", paintOrder: "stroke fill" }}>
           <div style={{ fontSize: 86, color: PAPER }}>{shrink > 0.5 ? spec.title : spec.hook[0]}</div>
           {shrink > 0.5 ? null : <div style={{ fontSize: 98, color: "#FFD23F" }}>{spec.hook[1]}</div>}
         </div>
+        {spec.en ? (
+          <div style={{ marginTop: 10, fontWeight: 900, lineHeight: 1.2, color: PAPER, WebkitTextStroke: "2px #000", paintOrder: "stroke fill", fontSize: shrink > 0.5 ? 46 : 40, whiteSpace: "nowrap" }}>
+            {shrink > 0.5 ? spec.en.title : `${spec.en.hook[0]} ${spec.en.hook[1]}`}
+          </div>
+        ) : null}
       </div>
 
       {/* 전환 효과음 */}
@@ -238,7 +249,9 @@ export const MotionShort: React.FC<{ timeline: MotionTimeline; spec: MotionShort
           <div style={{ position: "absolute", top: 560, left: 50, right: 50, textAlign: "center", transform: `scale(${0.5 + endIn * 0.5}) rotate(${(1 - endIn) * -8}deg)`, opacity: endIn }}>
             <div style={{ fontSize: 96, fontWeight: 900, color: PAPER, lineHeight: 1.15 }}>{spec.end.title[0]}</div>
             <div style={{ fontSize: 112, fontWeight: 900, color: "#FFD23F", lineHeight: 1.15 }}>{spec.end.title[1]}</div>
+            {spec.en ? <div style={{ marginTop: 14, fontSize: 56, fontWeight: 900, color: PAPER, lineHeight: 1.2 }}>{spec.en.end.title.join(" ")}</div> : null}
             <div style={{ marginTop: 60, display: "inline-block", fontSize: 50, fontWeight: 900, color: INK, background: PAPER, borderRadius: 999, padding: "16px 40px", border: `5px solid ${RED}` }}>{spec.end.sub}</div>
+            {spec.en ? <div style={{ marginTop: 16, fontSize: 38, fontWeight: 800, color: PAPER }}>{spec.en.end.sub}</div> : null}
             <div style={{ marginTop: 30, fontSize: 110, color: "#FFD23F", transform: `translateY(${Math.abs(Math.sin(frame / 5)) * 26}px)` }}>↓</div>
           </div>
         </AbsoluteFill>

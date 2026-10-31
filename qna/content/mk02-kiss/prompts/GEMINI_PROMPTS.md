@@ -1,0 +1,357 @@
+# Gemini 프롬프트 — 모덕후 ② 뽀뽀 — 잡지 화보 패러디
+
+> `video/scripts/prompts.mjs` 가 만든 파일이다. 직접 고치지 말고 `content/mk02-kiss/script/art.json` 을 고친 뒤 `npm run prompts` 를 다시 실행한다.
+> 이 편에만 쓰는 그림 17장. 진행: 4 / 17
+> 다 넣었으면 `video/` 에서 `npm run make -- mk02` → `video/out/mk02/mk02.mp4`
+
+## 사용법
+
+1. 위에서부터 **차례대로** 한 블록씩 Gemini에 붙여넣는다. 화풍 문장은 블록마다 이미 들어 있다.
+2. 블록의 **첨부** 이미지를 **빠짐없이, 적힌 순서대로** 같이 올린다 (프롬프트가 "attached image 2" 처럼 번호로 부른다). 첨부 목록은 `art-lib.mjs` 의 `attachPlan` 이 정한다 — 손으로 빼거나 바꾸지 않는다. 첨부가 하나라도 실패하면 글자만 보내지 말고 멈춘다. 규칙 전체는 `qna/ART_GUIDE.md`.
+   ⚠️ 줄이 있는 블록은 기준 그림이 빠졌거나 아직 없는 것이다 — 그것부터 고친다.
+3. 결과는 **저장** 경로와 이름 그대로 넣는다. 배경 제거·자르기·크기 조절은 하지 않는다 (`npm run art` 가 한다).
+4. 한 사람은 **한 대화창**에서 끝내고, 다음 사람·배경은 새 대화창에서 시작한다. 대화가 길어지면 화풍이 흐려진다.
+5. 글자는 그리지 않는다. 자막·간판·연도는 영상 코드가 얹는다.
+6. 제목 옆 ✅ 는 이미 파일이 있다는 뜻이다 (`npm run prompts` 를 다시 돌리면 갱신된다).
+7. **말하는 그림**(이름이 `-b` 로 끝나는 것)은 첫 번째 프레임을 ②로 첨부해 "입만 바꿔 다시 그리기"로 만든다. 두 장의 크기와 자리가 같아야 입만 움직여 보인다.
+
+### 다시 뽑을 때 이어서 보내는 문장
+
+| 문제 | 문장 |
+|---|---|
+| 배경이 단색 초록이 아님 | `Redo it with a perfectly flat pure green #00FF00 background, no shadow, no floor.` |
+| 몸이 잘림 | `Zoom out so the whole body fits with empty margin on every side.` |
+| 다른 사람처럼 나옴 | `Keep the exact same face, hair and clothes as attached image 2. Only change the pose.` |
+| 글자가 들어감 | `Remove all text and letters; leave signs blank.` |
+| 화풍이 순해짐 | `More grotesque gag-manga exaggeration, like the first attached image: bigger mouth, bulging eyes, more sweat.` |
+| 배경에 사람이 있음 | `Remove every person. Background only.` |
+| 말하는 그림의 몸이 달라짐 | `Too different. Copy attached image 2 exactly and change only the mouth.` |
+| 무대 장면에 주인공이 있음 | `Remove the main character and leave that spot empty; it is added later as a separate cutout.` |
+
+---
+
+## 0. 먼저 — 공통 그림 (가족 · 집)
+
+아래는 이 편이 쓰는 공통 그림이다. 프롬프트는 [_common/prompts/GEMINI_PROMPTS.md](../../_common/prompts/GEMINI_PROMPTS.md)에 있고, 다른 편에서 이미 만들었으면 건너뛴다.
+
+| | 그림 | 파일 |
+|---|---|---|
+| ✅ | 아빠 — 기본 | `content/_common/art/dad/normal.png` |
+| ✅ | 아빠 — 충격 | `content/_common/art/dad/shock.png` |
+| ✅ | 아빠 — 당황 | `content/_common/art/dad/panic.png` |
+| ✅ | 아빠 — 생각 | `content/_common/art/dad/think.png` |
+| ✅ | 엄마 — 기본 | `content/_common/art/mom/normal.png` |
+| ✅ | 컷인 — 아빠 충격 | `content/_common/art/cutin/dad-shock.png` |
+
+---
+
+## 1. 아직 없는 그림 — 13장 (이것만 Gemini 에서 만든다)
+
+#### 5. 삼촌 컷인 — 꿀꺽 (김 서린 안경 · 빨개진 볼)
+- 저장: `content/mk02-kiss/art/cutin/uncle-gulp.png`
+- 첨부 2장 (빠짐없이, 이 순서로): ① `content/_common/art/anchor/style-cutin.png` (화풍 앵커), ② `content/mk02-kiss/art/modeokhu/normal.png` (같은 사람 유지용 기준 그림)
+- 종류 · 비율: 리액션 컷인 (가슴 위, 초록 배경) · 1:1
+- 쓰이는 컷: c00, c08
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is a large close-up reaction shot for a comedy video: maximum facial detail, extreme exaggeration, dramatic lighting on the face.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+The character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.
+
+Character: the nerdy uncle: a Korean man in his late thirties with a round friendly face, a full head of messy black hair with a cowlick, thick round black-rimmed glasses that glint, a neatly tucked-in red-and-navy plaid flannel shirt buttoned to the top, khaki chinos, brown loafers and a small silver laser pointer clipped to the shirt pocket; an earnest, overly serious scholar look who has never dated; NO text, NO logos.
+
+Facing the viewer, dramatic close-up from the chest up. He swallows hard with a visible comic gulp at the throat, both lenses of his thick glasses fogged up solid white, cheeks and ears bright red, one big sweat drop on his temple, lips pressed tight in nervous longing, a faint warm TV glow on his face. Flustered and envious, not leering.
+
+Comic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.
+
+Chest-up close-up, the face fills most of the frame, centered, not cropped. Square 1:1 aspect ratio.
+
+Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
+```
+
+#### 6. 삼촌 — "…논문으로." 시선 피하며 안경 고쳐 쓰기
+- 저장: `content/mk02-kiss/art/modeokhu/fluster.png`
+- 첨부 2장 (빠짐없이, 이 순서로): ① `content/_common/art/anchor/style-cutin.png` (화풍 앵커), ② `content/mk02-kiss/art/modeokhu/normal.png` (같은 사람 유지용 기준 그림)
+- 종류 · 비율: 캐릭터 (전신, 초록 배경) · 2:3 세로
+- 쓰이는 컷: c02, c05
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is a character cutout for a 2D animated video: bold readable silhouette, oversized head and face, clear colors with soft shading.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+The character must be exactly the same person as in attached image 2: same face, hairstyle, hair color, clothes, colors and body shape. Only the pose and expression change.
+
+Character: the nerdy uncle: a Korean man in his late thirties with a round friendly face, a full head of messy black hair with a cowlick, thick round black-rimmed glasses that glint, a neatly tucked-in red-and-navy plaid flannel shirt buttoned to the top, khaki chinos, brown loafers and a small silver laser pointer clipped to the shirt pocket; an earnest, overly serious scholar look who has never dated; NO text, NO logos.
+
+3/4 view turned slightly to the RIGHT. Eyes darting sideways away from the viewer, one finger awkwardly pushing his glasses up, the other hand clutching a thick stack of research papers to his chest like a shield, ears and cheeks bright red, a tiny embarrassed sweat drop, mouth in a stiff wobbly line.
+
+Comic effect marks (sweat drops, shock lines, sparkles) may surround the character but must stay close to the body.
+
+The cutout will be animated (hopping, tilting, sliding across the screen), so draw one clear, strongly readable pose with the arms and anything held kept away from the torso, both feet on the same ground line, and nothing cropped.
+
+Full body, the entire character visible from head to toe with a small empty margin on every side, not cropped, centered. Portrait 2:3 aspect ratio.
+
+Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
+```
+
+#### 7. 배경 — 삼촌의 밤 원룸 (책 더미 · 피규어 · 컵라면 · TV 불빛)
+- 저장: `content/mk02-kiss/art/bg/oneroom.png`
+- 첨부 1장 (빠짐없이, 이 순서로): ① `content/_common/art/anchor/style-cutin.png` (화풍 앵커)
+- 종류 · 비율: 배경 (사람 없음) · 16:9
+- 쓰이는 컷: c00, c01
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+Background art only, absolutely no people and no characters. A flat, straight-on stage-like view (like a sitcom set), camera at chest height, no extreme perspective.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+A small cozy Korean studio apartment at night seen straight-on like a sitcom set: a low sofa facing a TV on the left, tall leaning stacks of thick books and research papers, a shelf of small robot and anime-style figurines, an empty cup-noodle bowl and a can on a low table, a single desk lamp and the cool blue glow of the TV filling the room. No people. TV screen blank glow, no writing anywhere.
+
+The camera will slowly pan and zoom across this picture, so paint about 8% extra scenery at every edge and keep nothing important within that margin.
+
+Keep the bottom third of the picture an open, uncluttered floor: characters will be placed there later. All signs, posters, screens and labels are blank shapes with no text. 16:9 landscape, highest resolution.
+```
+
+#### 8. 드라마 패러디 — 소파의 삼촌 뒷모습 너머 TV 속 노을 키스신 (실루엣 · 하트 모자이크)
+- 저장: `content/mk02-kiss/art/full/tv-drama.png`
+- 첨부 2장 (빠짐없이, 이 순서로): ① `content/_common/art/anchor/style-cutin.png` (화풍 앵커), ② `content/mk02-kiss/art/modeokhu/normal.png` (같이 나오는 사람 기준 그림 (normal))
+- 종류 · 비율: 한 장짜리 장면 (16:9 완성 그림) · 16:9
+- 쓰이는 컷: c00
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is one complete illustrated scene for an explainer video, composed like a single manga panel.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+Attached image 2 shows the nerdy uncle: draw this person with exactly the same face, hairstyle, hair color, clothes, colors and body shape.
+
+Also in the picture: the nerdy uncle: a Korean man in his late thirties with a round friendly face, a full head of messy black hair with a cowlick, thick round black-rimmed glasses that glint, a neatly tucked-in red-and-navy plaid flannel shirt buttoned to the top, khaki chinos, brown loafers and a small silver laser pointer clipped to the shirt pocket; an earnest, overly serious scholar look who has never dated; NO text, NO logos.
+
+Over-the-shoulder view from behind the uncle sitting stiffly upright on a low sofa in a dark studio apartment, hugging a cushion, the back of his messy head and glasses rim visible. On the big TV in front of him plays a romantic Korean drama scene: a glowing orange sunset by the sea, two characters shown only as dark solid silhouettes leaning toward each other, the spot where their faces meet completely covered by a big glowing pink heart-shaped mosaic. Soft blue TV light washing over the room. The uncle stays in the exact gag-manga cartoon style of the attached images. No text, no letters, no logos.
+
+The camera will slowly pan and zoom across this picture, so paint about 8% extra scenery at every edge and keep nothing important within that margin.
+
+Keep the main subject in the middle and leave the top-left corner calm (a caption is added there later). All signs and labels are blank shapes with no text. 16:9 landscape, highest resolution.
+```
+
+#### 9. 과학 잡지 표지 패러디 — 입술 · 손이 거대한 감각 호문쿨루스
+- 저장: `content/mk02-kiss/art/full/homunculus-cover.png`
+- 첨부 1장 (빠짐없이, 이 순서로): ① `content/_common/art/anchor/style-cutin.png` (화풍 앵커)
+- 종류 · 비율: 한 장짜리 장면 (16:9 완성 그림) · 16:9
+- 쓰이는 컷: c02
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is one complete illustrated scene for an explainer video, composed like a single manga panel.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+A glossy popular-science magazine cover photo: a smooth matte clay sculpture of the sensory homunculus — a small plain gray mannequin-like figure with comically enormous lips and gigantic hands, tiny legs and torso, sitting on a white pedestal against a deep navy studio backdrop with a dramatic rim light. Smooth featureless clay surface, no skin detail, no realistic face, eyes simple and closed. Leave the top quarter as empty backdrop for a title. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw the person from the attached image or any other people, spectators or faces. Absolutely no readable words, letters or numbers anywhere.
+
+The camera will slowly pan and zoom across this picture, so paint about 8% extra scenery at every edge and keep nothing important within that margin.
+
+Keep the main subject in the middle and leave the top-left corner calm (a caption is added there later). All signs and labels are blank shapes with no text. 16:9 landscape, highest resolution.
+```
+
+#### 10. 립스틱 광고 패러디 — 빨간 입술 모형 단면 도해 (얇은 겉층 · 비치는 모세혈관)
+- 저장: `content/mk02-kiss/art/full/lipstick-ad.png`
+- 첨부 1장 (빠짐없이, 이 순서로): ① `content/_common/art/anchor/style-cutin.png` (화풍 앵커)
+- 종류 · 비율: 한 장짜리 장면 (16:9 완성 그림) · 16:9
+- 쓰이는 컷: c03
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is one complete illustrated scene for an explainer video, composed like a single manga panel.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+A luxury lipstick advertisement photo on a glossy blush-pink background with sparkles and a golden lipstick tube lying beside it: a large smooth stylized lip-shaped sculpture (like a cosmetics display model, not a real face) cut open on one side like a science-museum cross-section, showing a very thin glossy outer layer and a network of tiny bright red capillary loops glowing just beneath it. Elegant beauty-ad lighting meets clean anatomy diagram. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw the person from the attached image or any other people or faces. Absolutely no readable words, letters or numbers anywhere.
+
+The camera will slowly pan and zoom across this picture, so paint about 8% extra scenery at every edge and keep nothing important within that margin.
+
+Keep the main subject in the middle and leave the top-left corner calm (a caption is added there later). All signs and labels are blank shapes with no text. 16:9 landscape, highest resolution.
+```
+
+#### 11. 학교 보건실 — 분위기 0점의 실험실
+- 저장: `content/mk02-kiss/art/full/health-room.png`
+- 첨부 1장 (빠짐없이, 이 순서로): ① `content/_common/art/anchor/style-cutin.png` (화풍 앵커)
+- 종류 · 비율: 한 장짜리 장면 (16:9 완성 그림) · 16:9
+- 쓰이는 컷: c04
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is one complete illustrated scene for an explainer video, composed like a single manga panel.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+A plain Korean university health-center room under harsh flat fluorescent light: a narrow examination bed with a crinkly paper sheet, a pale green privacy curtain on a rail, a medicine cabinet, a weight scale, a steel tray with a rack of empty saliva test tubes and a clipboard, a blood-pressure cuff on the wall. Sterile, bland and totally unromantic, with one sad little paper heart taped to the curtain. No people. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw the person from the attached image or any other people or faces. Absolutely no readable words, letters or numbers anywhere.
+
+The camera will slowly pan and zoom across this picture, so paint about 8% extra scenery at every edge and keep nothing important within that margin.
+
+Keep the main subject in the middle and leave the top-left corner calm (a caption is added there later). All signs and labels are blank shapes with no text. 16:9 landscape, highest resolution.
+```
+
+#### 12. 와인 시음 화보 패러디 — 소믈리에 삼촌이 잔마다 ✕
+- 저장: `content/mk02-kiss/art/full/sommelier.png`
+- 첨부 2장 (빠짐없이, 이 순서로): ① `content/_common/art/anchor/style-cutin.png` (화풍 앵커), ② `content/mk02-kiss/art/modeokhu/normal.png` (같이 나오는 사람 기준 그림 (normal))
+- 종류 · 비율: 한 장짜리 장면 (16:9 완성 그림) · 16:9
+- 쓰이는 컷: c05
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is one complete illustrated scene for an explainer video, composed like a single manga panel.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+Attached image 2 shows the nerdy uncle: draw this person with exactly the same face, hairstyle, hair color, clothes, colors and body shape.
+
+Also in the picture: the nerdy uncle: a Korean man in his late thirties with a round friendly face, a full head of messy black hair with a cowlick, thick round black-rimmed glasses that glint, a neatly tucked-in red-and-navy plaid flannel shirt buttoned to the top, khaki chinos, brown loafers and a small silver laser pointer clipped to the shirt pocket; an earnest, overly serious scholar look who has never dated; NO text, NO logos.
+
+A classy wine-magazine editorial photo in a dim cellar with warm candlelight and oak barrels: the uncle, wearing a black sommelier apron over his plaid shirt, holds a wine glass under his nose with his eyes closed and an extremely serious, snobbish expression, pinky raised. In front of him a long row of empty wine glasses each has a small red X-shaped tag hanging from its stem. The uncle stays in the exact gag-manga cartoon style of the attached images. No text, no letters, no logos.
+
+The camera will slowly pan and zoom across this picture, so paint about 8% extra scenery at every edge and keep nothing important within that margin.
+
+Keep the main subject in the middle and leave the top-left corner calm (a caption is added there later). All signs and labels are blank shapes with no text. 16:9 landscape, highest resolution.
+```
+
+#### 13. 박물관 계통도 패러디 — 가지마다 입 맞추는 유인원들
+- 저장: `content/mk02-kiss/art/full/ape-tree.png`
+- 첨부 1장 (빠짐없이, 이 순서로): ① `content/_common/art/anchor/style-cutin.png` (화풍 앵커)
+- 종류 · 비율: 한 장짜리 장면 (16:9 완성 그림) · 16:9
+- 쓰이는 컷: c05
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is one complete illustrated scene for an explainer video, composed like a single manga panel.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+A charming natural-history museum illustration plate on cream paper: a hand-painted family tree whose branches end in small cute pairs of apes — chimpanzees, bonobos and orangutans — each pair gently touching lips in a sweet friendly peck, with tiny pink hearts floating up. Fine scientific line work, soft watercolor shading, elegant vintage field-guide feel. No humans. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw the person from the attached image or any other people or faces. Absolutely no readable words, letters or numbers anywhere.
+
+The camera will slowly pan and zoom across this picture, so paint about 8% extra scenery at every edge and keep nothing important within that margin.
+
+Keep the main subject in the middle and leave the top-left corner calm (a caption is added there later). All signs and labels are blank shapes with no text. 16:9 landscape, highest resolution.
+```
+
+#### 14. 지도 화보 — 하트 핀 절반, 회색 핀 절반
+- 저장: `content/mk02-kiss/art/full/world-map.png`
+- 첨부 1장 (빠짐없이, 이 순서로): ① `content/_common/art/anchor/style-cutin.png` (화풍 앵커)
+- 종류 · 비율: 한 장짜리 장면 (16:9 완성 그림) · 16:9
+- 쓰이는 컷: c06
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is one complete illustrated scene for an explainer video, composed like a single manga panel.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+A stylish travel-magazine flat lay of a vintage world map on a wooden desk, with about thirty push pins stuck across all continents: roughly half are glossy red heart-shaped pins and the other half are plain gray round pins, mixed in every region. A brass compass and a magnifying glass rest at the edge. Warm soft daylight. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw the person from the attached image or any other people or faces. Absolutely no readable words, letters, numbers or place names anywhere.
+
+The camera will slowly pan and zoom across this picture, so paint about 8% extra scenery at every edge and keep nothing important within that margin.
+
+Keep the main subject in the middle and leave the top-left corner calm (a caption is added there later). All signs and labels are blank shapes with no text. 16:9 landscape, highest resolution.
+```
+
+#### 15. 현미경 화보 패러디 — 하트 다리를 건너 이사 가는 세균 떼
+- 저장: `content/mk02-kiss/art/full/microbe.png`
+- 첨부 1장 (빠짐없이, 이 순서로): ① `content/_common/art/anchor/style-cutin.png` (화풍 앵커)
+- 종류 · 비율: 한 장짜리 장면 (16:9 완성 그림) · 16:9
+- 쓰이는 컷: c07
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is one complete illustrated scene for an explainer video, composed like a single manga panel.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+A dramatic science-magazine microscope photo: a big round glowing microscope view on a black background, inside it a crowd of cute colorful round and rod-shaped cartoon bacteria with tiny dot eyes, carrying little suitcases and marching across a bridge shaped like a pink heart from one side to the other, some waving goodbye. Vivid lab lighting, bokeh sparkles. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw the person from the attached image or any other people or human faces. Absolutely no readable words, letters or numbers anywhere.
+
+The camera will slowly pan and zoom across this picture, so paint about 8% extra scenery at every edge and keep nothing important within that margin.
+
+Keep the main subject in the middle and leave the top-left corner calm (a caption is added there later). All signs and labels are blank shapes with no text. 16:9 landscape, highest resolution.
+```
+
+#### 16. 현관 — 엄마가 아빠 볼에 쪽, 문틈의 삼촌 꿀꺽
+- 저장: `content/mk02-kiss/art/full/cheek-kiss.png`
+- 첨부 4장 (빠짐없이, 이 순서로): ① `content/_common/art/anchor/style-cutin.png` (화풍 앵커), ② `content/_common/art/dad/normal.png` (같이 나오는 사람 기준 그림 (normal)), ③ `content/_common/art/mom/normal.png` (같이 나오는 사람 기준 그림 (normal)), ④ `content/mk02-kiss/art/modeokhu/normal.png` (같이 나오는 사람 기준 그림 (normal))
+- 종류 · 비율: 한 장짜리 장면 (16:9 완성 그림) · 16:9
+- 쓰이는 컷: c08
+
+```text
+Japanese gag-manga sticker illustration style. Grotesquely exaggerated comedic expressions, huge open mouths with detailed teeth and gums, bulging eyes, sweat drops, wrinkles. Semi-realistic airbrushed skin shading with glossy highlights. Big head, short stocky body (about 2.5 heads tall). Thin brown-black ink linework, saturated colors, clean edges. Korean setting, Korean people unless stated otherwise. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is one complete illustrated scene for an explainer video, composed like a single manga panel.
+
+Match the art style of the first attached image exactly: same line weight, same skin shading, same color saturation, same level of exaggeration.
+
+Attached image 2 shows the dad: draw this person with exactly the same face, hairstyle, hair color, clothes, colors and body shape.
+
+Attached image 3 shows the mom: draw this person with exactly the same face, hairstyle, hair color, clothes, colors and body shape.
+
+Attached image 4 shows the nerdy uncle: draw this person with exactly the same face, hairstyle, hair color, clothes, colors and body shape.
+
+Also in the picture: the dad: a Korean father in his late 30s, slightly chubby with a round face, short black hair that is clearly thinning on top, thick eyebrows, faint stubble, wearing a mustard-yellow knit cardigan over a white t-shirt, gray sweatpants and house slippers; a kind but easily flustered look.
+
+Also in the picture: the mom: a Korean mother in her late 30s, slim with a soft oval face and a fair complexion, a shoulder-length dark brown bob with a side part, one side tucked behind her ear and the ends curling slightly inward, thin silver round wire-frame glasses, calm almond-shaped eyes, wearing a sage-green crew-neck knit sweater, beige wide-leg pants and house slippers; calm, sharp and quietly amused, the one who usually already knows the answer.
+
+Also in the picture: the nerdy uncle: a Korean man in his late thirties with a round friendly face, a full head of messy black hair with a cowlick, thick round black-rimmed glasses that glint, a neatly tucked-in red-and-navy plaid flannel shirt buttoned to the top, khaki chinos, brown loafers and a small silver laser pointer clipped to the shirt pocket; an earnest, overly serious scholar look who has never dated; NO text, NO logos.
+
+The entrance hall of a Korean apartment in the morning: the mom, dressed to go out with a handbag on her shoulder, gives the dad a quick light peck on the cheek; the dad stands with a smug proud grin and a tiny sparkle, chest puffed out. In the background a door is open a crack and the uncle peeks through it, glasses fogged white, cheeks red, swallowing hard with a comic gulp. Warm morning light. All people stay in the exact gag-manga cartoon style of the attached images. No text, no letters, no logos.
+
+The camera will slowly pan and zoom across this picture, so paint about 8% extra scenery at every edge and keep nothing important within that margin.
+
+Keep the main subject in the middle and leave the top-left corner calm (a caption is added there later). All signs and labels are blank shapes with no text. 16:9 landscape, highest resolution.
+```
+
+#### 17. 소품 — 화보처럼 빛나는 빨간 입술 젤리
+- 저장: `content/mk02-kiss/art/prop/lips.png`
+- 첨부 1장 (빠짐없이, 이 순서로): ① `content/_common/art/anchor/style-prop.png` (소품 화풍 앵커 (사람 없는 소품))
+- 종류 · 비율: 소품 (초록 배경) · 1:1
+- 쓰이는 컷: c00, 썸네일
+
+```text
+Japanese gag-manga sticker illustration style. A single object sticker: no human, no face unless the description below asks for one. Semi-realistic airbrushed shading with glossy highlights. Thin brown-black ink linework, saturated colors, clean edges. No text, no letters, no numbers, no logos, no watermark, no signature.
+
+This is a single object cutout for a 2D animated video: bold readable shape, clear colors with soft shading, no people unless stated.
+
+Match the drawing style of the first attached image (line weight, shading, color saturation) but draw a completely NEW object as described below. Do not copy, edit or reuse the attached object.
+
+A single glossy red lip-shaped gummy candy, posed like a luxury beauty-product shot: translucent jelly with a sugar-sparkle surface, a dewy droplet, a soft studio rim light and star highlights.
+
+The cutout will be animated (popping in, swaying, sliding across the screen), so keep it as one compact connected shape with a clean outline and no loose parts floating apart from it.
+
+The whole subject visible with a small empty margin on every side, not cropped, centered.
+
+Solid flat pure green (#00FF00) background filling everything around the subject: no floor, no cast shadow, no gradient, no scenery, no effects or objects outside the subject.
+```
+
+---
+
+## 2. 이미 있는 그림 — 4장 (건너뛴다)
+
+다시 뽑고 싶으면 그 파일을 `_old/` 로 옮긴 뒤 `npm run prompts -- mk02` 를 다시 실행하면 위 목록으로 돌아온다.
+
+| # | 그림 | 파일 |
+|---|---|---|
+| 1 | 모덕후 삼촌 — 기본 (진지) (1편 그림 복사, 새로 안 뽑음) | `content/mk02-kiss/art/modeokhu/normal.png` |
+| 2 | 모덕후 삼촌 — 레이저 포인터로 가리키며 "자, 진지하다" (1편 그림 복사, 새로 안 뽑음) | `content/mk02-kiss/art/modeokhu/point.png` |
+| 3 | 모덕후 삼촌 — 결론, 팔짱 끼고 의기양양 (1편 그림 복사, 새로 안 뽑음) | `content/mk02-kiss/art/modeokhu/proud.png` |
+| 4 | 모덕후 삼촌 컷인 — 안경 번쩍 (1편 그림 복사, 새로 안 뽑음) | `content/mk02-kiss/art/cutin/uncle-glint.png` |

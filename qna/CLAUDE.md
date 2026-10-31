@@ -81,7 +81,7 @@ qna/
 | 6. 샷 계획 | `script/motion.json` (스킬의 "샷 계획" · `ep08f-modapman` 참고). **Root.tsx 는 고치지 않는다** — 편 목록은 자동 등록 | | 무료 |
 | 7. 확인 · 렌더 | 스틸 몇 장으로 화면 확인(`npm run still -- <id> out/x.png --frame=N`) → `npm run render -- <id> out/motion/<epNN>-modapman.mp4` (출력은 파일로 돌려 받는다 — 파이프에 물리면 `write EOF` 로 죽는다) → `npm run still -- <id>-Thumb ../content/<편>/upload/thumbnail.png` | mp4 는 `out/` | 무료 |
 | 8. 자막 · 챕터 | `npm run motion-srt -- epNN` | `upload/ko.srt` · `en.srt` · `chapters.txt` | 무료 |
-| 9. 제목 · 키워드 | `npm run keywords -- "검색어" …` (YouTube API, 루트 `.env` 의 `YOUTUBE_API_KEY`) → 지금 뜨거운 말을 제목 앞에, 끝에 `\| 모답맨` → `upload/upload.md` | | 무료 (할당량) |
+| 9. 제목 · 키워드 | **스킬 `yt-seo`** (저장소 루트 `.claude/skills/yt-seo`): 루트에서 `npm run seo -- qna epNN "검색어" …` (YouTube API 조회수 · 최근 60일 · 해시태그 · 태그 · 자동완성 → `upload/upload.md` 의 seo 칸) → 지금 뜨거운 말을 제목 앞에, 끝에 `\| 모답맨` → 제목 · 설명 · 해시태그 · 태그를 `upload/upload.md` 에. Studio 를 열거나 업로드를 요청하면 훅(루트 `.claude/settings.json` → `shared/bin/seo-check.mjs`)이 알린다 | | 무료 (할당량) |
 | 10. 업로드 | 크롬 Studio, 모라구(UCCIm8f5JE4b4PmSrPIJd7zQ): 제목 · 설명 · 썸네일 · 재생목록 "모(오)답맨 (여덟 살 아들의 호기심)" · 아동용 아니요 · AI 사용 아니요(만화 · 실존 인물 아님) · 태그 · 교육 · 한국어 자막 → 언어 탭에서 영어 제목/설명/자막 → **비공개** 저장 → 실제 상태 다시 읽기 | `upload/upload.md` 끝에 업로드 기록, `unit.json` 의 `status` · `youtube` | |
 | 11. 사이트 · 저장 | 홈 `index.html` 카드 갱신, 브랜치에서 커밋 → PR | | |
 | 12. 쇼츠 | 스킬 `qna-shorts` (이전 포맷 기준 — 모답맨 본편에서 자를 때도 비공개 업로드 규칙은 같다) | | 무료 |

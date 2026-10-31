@@ -1,0 +1,136 @@
+{
+  "title": "모덕후 ① 엉덩이 — 잡지 화보 패러디",
+  "cast": {
+    "modeokhu": "the nerdy uncle: a Korean man in his late thirties with a round friendly face, a full head of messy black hair with a cowlick, thick round black-rimmed glasses that glint, a neatly tucked-in red-and-navy plaid flannel shirt buttoned to the top, khaki chinos, brown loafers and a small silver laser pointer clipped to the shirt pocket; an earnest, overly serious scholar look; NO text, NO logos"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/shock",
+    "common/dad/panic",
+    "common/dad/think",
+    "common/mom/normal",
+    "common/mom/smirk",
+    "common/cutin/dad-shock",
+    "common/cutin/mom-smirk"
+  ],
+  "items": [
+    {
+      "id": "modeokhu/normal",
+      "kind": "char",
+      "who": "modeokhu",
+      "ref": null,
+      "title": "모덕후 삼촌 — 기본 (진지)",
+      "cuts": "c00, c02, c06",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing upright with perfect posture, one hand pushing his glasses up the bridge of his nose so the lenses flash white, the other hand holding a thick stack of research papers. Dead-serious face, tight lips, one eyebrow raised."
+    },
+    {
+      "id": "modeokhu/point",
+      "kind": "char",
+      "who": "modeokhu",
+      "title": "모덕후 삼촌 — 레이저 포인터로 가리키며 \"자, 진지하다\"",
+      "cuts": "c01, c03, c05",
+      "desc": "3/4 view turned slightly to the RIGHT. Thrusting a small silver laser pointer forward toward the right with one arm fully extended, a thin red beam shooting out, the other hand on his hip. Intense lecturing face, mouth wide open mid-word, eyes blazing behind glinting glasses, sweat of pure passion."
+    },
+    {
+      "id": "modeokhu/proud",
+      "kind": "char",
+      "who": "modeokhu",
+      "title": "모덕후 삼촌 — 결론, 팔짱 끼고 의기양양",
+      "cuts": "c07, c08",
+      "desc": "3/4 view turned slightly to the RIGHT. Arms crossed firmly, chin raised, a huge smug satisfied grin with all teeth showing, glasses flashing, tiny sparkles around his head like he just won a Nobel prize."
+    },
+    {
+      "id": "cutin/uncle-glint",
+      "kind": "cutin",
+      "who": "modeokhu",
+      "title": "모덕후 삼촌 컷인 — 안경 번쩍",
+      "cuts": "c01, c05",
+      "desc": "Facing the viewer, extreme dramatic close-up from the chest up. Both lenses of his thick glasses flash pure white with a lens-flare glint, a dead-serious frown, a single sweat drop rolling down his temple, dramatic shadow across the upper face like a manga detective revelation."
+    },
+    {
+      "id": "bg/lecture",
+      "kind": "bg",
+      "title": "배경 — 작은 세미나실 (화이트보드 · 프로젝터)",
+      "cuts": "c00, c01, c02, c08",
+      "desc": "A small cozy Korean seminar room seen straight-on like a sitcom set: a large blank whiteboard on the back wall, a pull-down projector screen glowing plain white, a wooden lectern on the right, a few stacked books and a coffee mug on a side table, warm evening fluorescent light. No people. Whiteboard and screen completely blank, no writing."
+    },
+    {
+      "id": "full/cover-shoot",
+      "kind": "full",
+      "people": [
+        "dad"
+      ],
+      "title": "잡지 표지 촬영 패러디 — 진지하게 포즈 잡은 아빠",
+      "cuts": "c00",
+      "desc": "A glossy high-fashion magazine cover photo shoot, styled like a luxury studio editorial: a seamless warm-pink paper backdrop, big white beauty-dish and umbrella studio lights, a softbox glow, a light fan blowing. In the center, the dad, fully dressed in his usual clothes, stands with his back half-turned to the camera and looks back over his shoulder at the viewer with an absurdly serious 'blue steel' model pout, one hand on his hip. The photo has crisp fashion-photography lighting, rich glossy color and a shallow-focus background, while the dad himself stays in the exact gag-manga cartoon style of the attached images. Leave the top quarter of the picture as empty backdrop for a magazine title. No text, no letters, no logos."
+    },
+    {
+      "id": "full/run-editorial",
+      "kind": "full",
+      "people": [
+        "dad"
+      ],
+      "title": "스포츠 잡지 화보 패러디 — 초원을 달리는 원시인 아빠",
+      "cuts": "c03",
+      "desc": "A dramatic sports-magazine advertising photo, like a premium running-shoe campaign: golden-hour African savanna, low-angle wide shot, lens flare, dust kicked up, cinematic contrast. The dad, comically dressed as a prehistoric caveman in a one-shoulder leopard-pattern fur tunic, sprints across the frame from left to right with a fiercely determined face, captured mid-stride from a distance so his whole body is small in the frame. A soft glowing red outline highlights the big muscle at the back of his hip like an anatomy diagram overlay. The dad stays in the exact gag-manga cartoon style of the attached images. No text, no letters, no logos."
+    },
+    {
+      "id": "full/chimp-human",
+      "kind": "full",
+      "people": [],
+      "title": "박물관 도록 패러디 — 침팬지와 사람 옆모습 해부도",
+      "cuts": "c03",
+      "desc": "A clean natural-history museum catalog plate photographed on cream paper with soft museum lighting: two side-view anatomical illustrations standing on the same ground line, on the left a chimpanzee standing upright with a small flat hip muscle shaded in red, on the right a plain gray human anatomy mannequin figure (smooth, featureless, no face, no skin details) with a much larger rounded hip muscle shaded in red. Fine scientific line work, gentle watercolor shading, elegant and educational. No text, no labels, no letters."
+    },
+    {
+      "id": "full/statue-curve",
+      "kind": "full",
+      "people": [],
+      "title": "미술관 도록 패러디 — 대리석 조각 등선 위의 45° 각도기",
+      "cuts": "c05",
+      "desc": "A luxurious art-museum catalog photo: a classical white marble statue of a robed figure seen from the side and slightly behind, fully draped in long flowing carved robes from shoulders to feet, standing on a dark plinth against a deep teal velvet gallery wall with a single warm spotlight. A giant shiny golden protractor floats beside the statue, its glowing arc showing the curve of the lower back under the robes as a clean angle. Elegant, high-end gallery photography. No text, no numbers, no letters. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw the person from the attached image or any other people, spectators or faces: the scene is completely empty of people. Absolutely no readable words, letters or numbers anywhere."
+    },
+    {
+      "id": "full/covers-wall",
+      "kind": "full",
+      "people": [],
+      "title": "잡지 표지 벽 — 시대별 · 나라별로 다른 '이상형' 몸매",
+      "cuts": "c06",
+      "desc": "A gallery wall of about twelve framed vintage and modern fashion magazine covers arranged in a neat grid, each in a different decade's design style (1920s art deco, 1950s pastel, 1970s disco, 1990s grunge, today's minimal), each showing a fully dressed fashion illustration figure in a different body shape and pose: slim, curvy, athletic, round, tall. Warm gallery lighting, slight angle, depth of field. All titles and cover lines completely blank colored bars, no readable text, no letters, no logos. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw the person from the attached image or any other people, spectators or faces: the scene is completely empty of people. Absolutely no readable words, letters or numbers anywhere."
+    },
+    {
+      "id": "full/jeans-ad",
+      "kind": "full",
+      "people": [
+        "dad",
+        "mom"
+      ],
+      "title": "청바지 광고 패러디 — 걸어가는 아빠 뒷모습, 몰래 보는 엄마",
+      "cuts": "c07",
+      "desc": "A retro denim advertising photo at golden hour on a quiet Korean apartment-complex walkway: the dad, wearing blue jeans and his cardigan, walks away from the camera in slow-motion style with a proud swagger, seen from behind at full body, wind in his thin hair. On the right, the mom peeks out from behind a tree with one eyebrow raised and a knowing smirk, and two neighborhood middle-aged women behind her lean out with heart-shaped sparkles in their eyes. Warm film grain, lens flare, glossy ad lighting, while all people stay in the exact gag-manga cartoon style of the attached images. No text, no letters, no logos."
+    },
+    {
+      "id": "dad/cover",
+      "kind": "char",
+      "who": "dad",
+      "title": "아빠 — 두 손으로 엉덩이 가리며 화들짝",
+      "cuts": "c07",
+      "desc": "3/4 view turned slightly to the LEFT, looking back over his shoulder in shock. Both hands clapped flat over his own backside through his sweatpants, knees knocked together, eyes bulging, mouth gaping in a scream, cheeks bright red, sweat flying."
+    },
+    {
+      "id": "dad/run",
+      "kind": "char",
+      "who": "dad",
+      "title": "아빠 — 결심하고 달려 나감",
+      "cuts": "c08",
+      "desc": "3/4 view turned slightly to the LEFT. Running full speed with fists pumping and knees high, a red sweatband tied around his forehead, a fiery determined face with gritted teeth, a tear of resolve flying back."
+    },
+    {
+      "id": "prop/peach",
+      "kind": "prop",
+      "title": "소품 — 화보처럼 빛나는 복숭아",
+      "cuts": "c00, 썸네일",
+      "desc": "A single perfect ripe peach with one green leaf, posed like a luxury beauty-product shot: glossy blush-pink skin with fine fuzz, a dewy water droplet, a soft studio rim light and sparkle highlights."
+    }
+  ]
+}

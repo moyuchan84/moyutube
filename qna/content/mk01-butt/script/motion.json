@@ -1,0 +1,1413 @@
+{
+  "id": "Mk01-Modeokhu",
+  "episode": "mk01",
+  "voice": "mk01",
+  "bgm": "cheerful",
+  "gap": 0,
+  "chop": 42,
+  "thumb": {
+    "badge": "모덕후 ① 엉덩이",
+    "layers": [
+      {
+        "bg": "burst:#F48FB1:#F06292"
+      },
+      {
+        "fx": "lines",
+        "x": 640,
+        "y": 380
+      },
+      {
+        "img": "full/cover-shoot",
+        "panel": [
+          0.5,
+          0.45,
+          1.5
+        ],
+        "x": 880,
+        "y": 400,
+        "w": 660,
+        "h": 470,
+        "rot": 3
+      },
+      {
+        "img": "cutin/uncle-glint",
+        "sticker": true,
+        "x": 250,
+        "y": 470,
+        "h": 560,
+        "rot": -4
+      },
+      {
+        "img": "prop/peach",
+        "sticker": true,
+        "x": 1150,
+        "y": 600,
+        "h": 220,
+        "rot": 12
+      },
+      {
+        "text": "엉덩이는 원래",
+        "x": 860,
+        "y": 105,
+        "size": 78,
+        "rot": -3
+      },
+      {
+        "text": "달리기 근육?!",
+        "style": "stamp",
+        "x": 880,
+        "y": 650,
+        "size": 112,
+        "rot": -6
+      },
+      {
+        "fx": "kira",
+        "x": 320,
+        "y": 220
+      }
+    ]
+  },
+  "beats": [
+    {
+      "line": "c00-0",
+      "shots": [
+        {
+          "in": "flash",
+          "bg": "full/cover-shoot",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.25
+            ],
+            "to": [
+              0.5,
+              0.48,
+              1.05
+            ],
+            "ease": "snap"
+          },
+          "text": [
+            {
+              "t": "BUTT · 뷰",
+              "y": 0.13,
+              "size": 170,
+              "color": "#FFFFFF",
+              "style": "slam"
+            },
+            {
+              "t": "이번 호 특집",
+              "x": 0.3,
+              "y": 0.3,
+              "size": 70,
+              "color": "#E63946",
+              "style": "stamp",
+              "at": 0.35
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "pang"
+            },
+            {
+              "name": "stamp",
+              "at": 0.35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00-1",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "bg/lecture",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.48,
+              1.15
+            ]
+          },
+          "cast": [
+            {
+              "art": "modeokhu/normal",
+              "x": 0.5,
+              "h": 0.95,
+              "enter": "pop",
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "남자도 ○",
+              "x": 0.22,
+              "y": 0.3,
+              "size": 100,
+              "style": "pop",
+              "at": 0.15
+            },
+            {
+              "t": "여자도 ○",
+              "x": 0.78,
+              "y": 0.3,
+              "size": 100,
+              "style": "pop",
+              "at": 0.5
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop",
+              "at": 0.15
+            },
+            {
+              "name": "pop",
+              "at": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00-2",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "burst:#F48FB1:#F06292",
+          "props": [
+            {
+              "art": "prop/peach",
+              "x": 0.5,
+              "y": 0.55,
+              "w": 0.3,
+              "enter": "drop"
+            }
+          ],
+          "text": [
+            {
+              "t": "그런데 왜",
+              "y": 0.16,
+              "size": 110,
+              "style": "slam"
+            },
+            {
+              "t": "남자는 여자 쪽을 볼까?",
+              "y": 0.72,
+              "size": 100,
+              "color": "#FFFFFF",
+              "style": "pop",
+              "at": 0.3
+            }
+          ],
+          "fx": [
+            "focus"
+          ],
+          "sfx": [
+            {
+              "name": "dudung"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hold": 50,
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "stripes:#1D3557:#274472",
+          "cast": [
+            {
+              "art": "modeokhu/point",
+              "x": 0.3,
+              "h": 0.9,
+              "enter": "l"
+            }
+          ],
+          "text": [
+            {
+              "t": "모덕후",
+              "x": 0.66,
+              "y": 0.4,
+              "size": 180,
+              "color": "#FFD23F",
+              "style": "slam"
+            },
+            {
+              "t": "① 이상하지만 진지한 고찰",
+              "x": 0.66,
+              "y": 0.62,
+              "size": 64,
+              "color": "#FFFFFF",
+              "style": "pop",
+              "at": 14
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "stinger"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c01-0",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "bg/lecture",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.1
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.2
+            ]
+          },
+          "cast": [
+            {
+              "art": "common/dad/think",
+              "x": 0.5,
+              "h": 0.95,
+              "enter": "pop",
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "형… 왜…?",
+              "x": 0.78,
+              "y": 0.22,
+              "size": 110,
+              "style": "shake"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c01-1",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "#101820",
+          "cast": [
+            {
+              "art": "cutin/uncle-glint",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "지금부터 진지하다",
+              "y": 0.72,
+              "size": 110,
+              "color": "#FFD23F",
+              "style": "stamp",
+              "at": 0.3
+            }
+          ],
+          "fx": [
+            "focus",
+            "gaan"
+          ],
+          "sfx": [
+            {
+              "name": "crash"
+            },
+            {
+              "name": "stamp",
+              "at": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-0",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "bg/lecture",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1
+            ],
+            "to": [
+              0.52,
+              0.48,
+              1.12
+            ]
+          },
+          "cast": [
+            {
+              "art": "modeokhu/point",
+              "x": 0.32,
+              "h": 0.92,
+              "enter": "l",
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "근육은 남 = 여",
+              "x": 0.68,
+              "y": 0.3,
+              "size": 110,
+              "style": "pop",
+              "at": 0.25
+            }
+          ],
+          "sfx": [
+            {
+              "name": "ding",
+              "at": 0.25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-1",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "dots:#FFD23F:#FFB627",
+          "text": [
+            {
+              "t": "큰볼기근",
+              "y": 0.42,
+              "size": 220,
+              "style": "slam"
+            },
+            {
+              "t": "gluteus maximus",
+              "y": 0.66,
+              "size": 70,
+              "color": "#15303A",
+              "style": "type",
+              "at": 10
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "stamp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-0",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "full/chimp-human",
+          "cam": {
+            "from": [
+              0.32,
+              0.5,
+              1.6
+            ],
+            "to": [
+              0.3,
+              0.55,
+              1.8
+            ],
+            "ease": "snap"
+          },
+          "text": [
+            {
+              "t": "침팬지: 납작",
+              "x": 0.3,
+              "y": 0.15,
+              "size": 90,
+              "style": "stamp",
+              "at": 0.4
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-1",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "full/chimp-human",
+          "cam": {
+            "from": [
+              0.68,
+              0.5,
+              1.6
+            ],
+            "to": [
+              0.7,
+              0.55,
+              1.75
+            ],
+            "punch": [
+              10
+            ]
+          },
+          "text": [
+            {
+              "t": "사람: 빵빵",
+              "x": 0.7,
+              "y": 0.15,
+              "size": 90,
+              "color": "#E63946",
+              "style": "stamp",
+              "at": 0.2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 0.2
+            }
+          ]
+        },
+        {
+          "at": 0.72,
+          "in": "zoom",
+          "bg": "full/chimp-human",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.1
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1
+            ]
+          },
+          "text": [
+            {
+              "t": "왜?",
+              "y": 0.5,
+              "size": 240,
+              "color": "#FFD23F",
+              "style": "slam"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-2",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "full/run-editorial",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.3
+            ],
+            "to": [
+              0.55,
+              0.5,
+              1.1
+            ],
+            "ease": "snap"
+          },
+          "text": [
+            {
+              "t": "달리려고!",
+              "y": 0.72,
+              "size": 170,
+              "color": "#FFD23F",
+              "style": "slam"
+            }
+          ],
+          "fx": [
+            "lines"
+          ],
+          "sfx": [
+            {
+              "name": "whoosh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-3",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "full/run-editorial",
+          "cam": {
+            "from": [
+              0.4,
+              0.5,
+              1.15
+            ],
+            "to": [
+              0.6,
+              0.5,
+              1.25
+            ]
+          },
+          "text": [
+            {
+              "t": "걸을 땐 쉬고",
+              "x": 0.3,
+              "y": 0.18,
+              "size": 90,
+              "style": "pop",
+              "at": 0.05
+            },
+            {
+              "t": "뛸 땐 일한다!",
+              "x": 0.7,
+              "y": 0.72,
+              "size": 110,
+              "color": "#E63946",
+              "style": "stamp",
+              "at": 0.5
+            }
+          ],
+          "note": "※ 큰볼기근은 걸을 때보다 달릴 때 훨씬 많이 쓰인다 — Lieberman 외 2006",
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-4",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "burst:#2F4F8F:#3E66B3",
+          "cast": [
+            {
+              "art": "common/cutin/dad-shock",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "운동화?!",
+              "x": 0.78,
+              "y": 0.25,
+              "size": 140,
+              "color": "#FFD23F",
+              "style": "shake",
+              "at": 0.4
+            }
+          ],
+          "fx": [
+            "shake"
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-0",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "bg/lecture",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.15
+            ]
+          },
+          "cast": [
+            {
+              "art": "modeokhu/point",
+              "x": 0.32,
+              "h": 0.92,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "근육 ✕",
+              "x": 0.7,
+              "y": 0.25,
+              "size": 100,
+              "style": "pop",
+              "at": 0.2
+            },
+            {
+              "t": "지방 ○",
+              "x": 0.7,
+              "y": 0.5,
+              "size": 120,
+              "color": "#E63946",
+              "style": "stamp",
+              "at": 0.55
+            }
+          ],
+          "sfx": [
+            {
+              "name": "buzz",
+              "at": 0.2
+            },
+            {
+              "name": "ding",
+              "at": 0.55
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-1",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "dots:#FCE4EC:#F8BBD0",
+          "cast": [
+            {
+              "art": "modeokhu/normal",
+              "x": 0.25,
+              "h": 0.9,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "엉덩이 · 허벅지에",
+              "x": 0.66,
+              "y": 0.35,
+              "size": 96,
+              "style": "pop"
+            },
+            {
+              "t": "지방을 더 저장",
+              "x": 0.66,
+              "y": 0.56,
+              "size": 110,
+              "color": "#C2185B",
+              "style": "stamp",
+              "at": 0.4
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            },
+            {
+              "name": "stamp",
+              "at": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-0",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "#101820",
+          "cast": [
+            {
+              "art": "cutin/uncle-glint",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "가설",
+              "x": 0.8,
+              "y": 0.3,
+              "size": 200,
+              "color": "#E63946",
+              "style": "stamp",
+              "rot": -10,
+              "at": 0.3
+            }
+          ],
+          "fx": [
+            "focus"
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-1",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "full/statue-curve",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.12
+            ]
+          },
+          "text": [
+            {
+              "t": "크기는 똑같이",
+              "y": 0.14,
+              "size": 100,
+              "style": "pop",
+              "at": 0.2
+            }
+          ],
+          "fx": [
+            "kira"
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-2",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "full/statue-curve",
+          "cam": {
+            "from": [
+              0.55,
+              0.55,
+              1.5
+            ],
+            "to": [
+              0.6,
+              0.55,
+              1.8
+            ],
+            "ease": "snap",
+            "punch": [
+              12
+            ]
+          },
+          "text": [
+            {
+              "t": "45°",
+              "y": 0.5,
+              "size": 280,
+              "color": "#FFD23F",
+              "style": "slam",
+              "at": 0.35
+            }
+          ],
+          "sfx": [
+            {
+              "name": "ding",
+              "at": 0.35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-3",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "full/statue-curve",
+          "cam": {
+            "from": [
+              0.45,
+              0.5,
+              1.2
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.05
+            ]
+          },
+          "text": [
+            {
+              "t": "아기를 품어도",
+              "y": 0.14,
+              "size": 90,
+              "style": "pop"
+            },
+            {
+              "t": "균형 잡기 좋은 몸?",
+              "y": 0.56,
+              "size": 100,
+              "color": "#FFD23F",
+              "style": "stamp",
+              "at": 0.45
+            }
+          ],
+          "note": "※ 연구자들의 가설 — Lewis · Russell · Al-Shawaf · Buss 2015",
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-4",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "bg/lecture",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.1
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.25
+            ],
+            "punch": [
+              6
+            ]
+          },
+          "cast": [
+            {
+              "art": "common/dad/shock",
+              "x": 0.5,
+              "h": 0.95,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "각도?!",
+              "x": 0.78,
+              "y": 0.22,
+              "size": 140,
+              "color": "#E63946",
+              "style": "shake",
+              "at": 0.5
+            }
+          ],
+          "fx": [
+            "shake"
+          ],
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06-0",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "full/covers-wall",
+          "cam": {
+            "from": [
+              0.3,
+              0.27,
+              2
+            ],
+            "to": [
+              0.7,
+              0.27,
+              2
+            ]
+          },
+          "text": [
+            {
+              "t": "나라마다",
+              "x": 0.3,
+              "y": 0.72,
+              "size": 90,
+              "style": "pop",
+              "at": 0.15
+            },
+            {
+              "t": "시대마다",
+              "x": 0.7,
+              "y": 0.72,
+              "size": 90,
+              "style": "pop",
+              "at": 0.55
+            }
+          ],
+          "sfx": [
+            {
+              "name": "slide"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06-1",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "full/covers-wall",
+          "cam": {
+            "from": [
+              0.5,
+              0.27,
+              2.3
+            ],
+            "to": [
+              0.5,
+              0.27,
+              2
+            ],
+            "ease": "snap"
+          },
+          "text": [
+            {
+              "t": "정답 없음",
+              "y": 0.5,
+              "size": 200,
+              "color": "#E63946",
+              "style": "stamp",
+              "rot": -6,
+              "at": 0.2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07-0",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "bg/lecture",
+          "cast": [
+            {
+              "art": "modeokhu/point",
+              "x": 0.5,
+              "h": 0.92,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "하나 더!",
+              "x": 0.78,
+              "y": 0.22,
+              "size": 110,
+              "style": "pop"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "ding"
+            }
+          ]
+        },
+        {
+          "at": 0.45,
+          "in": "smash",
+          "bg": "full/jeans-ad",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.2
+            ],
+            "to": [
+              0.55,
+              0.5,
+              1.05
+            ],
+            "ease": "snap"
+          },
+          "text": [
+            {
+              "t": "여자도 본다",
+              "y": 0.72,
+              "size": 150,
+              "color": "#FFD23F",
+              "style": "slam"
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "pang"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07-1",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "full/jeans-ad",
+          "cam": {
+            "from": [
+              0.6,
+              0.5,
+              1.4
+            ],
+            "to": [
+              0.68,
+              0.5,
+              1.55
+            ]
+          },
+          "text": [
+            {
+              "t": "2,000명 조사",
+              "x": 0.35,
+              "y": 0.18,
+              "size": 96,
+              "style": "pop"
+            },
+            {
+              "t": "남녀 취향 거의 같음",
+              "x": 0.5,
+              "y": 0.72,
+              "size": 100,
+              "color": "#FFD23F",
+              "style": "stamp",
+              "at": 0.5
+            }
+          ],
+          "note": "※ 미국 온라인 조사 2,095명 — Kollu 외 2023",
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07a-0",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "dots:#FCE4EC:#F8BBD0",
+          "cast": [
+            {
+              "art": "common/cutin/mom-smirk",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "mom"
+            }
+          ],
+          "text": [
+            {
+              "t": "봤어.",
+              "x": 0.8,
+              "y": 0.3,
+              "size": 130,
+              "color": "#C2185B",
+              "style": "stamp",
+              "at": 0.3
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07a-1",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "burst:#E63946:#FF6B6B",
+          "cast": [
+            {
+              "art": "dad/cover",
+              "x": 0.5,
+              "h": 0.95,
+              "enter": "pop",
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "등이 따갑더라!",
+              "x": 0.5,
+              "y": 0.13,
+              "size": 120,
+              "color": "#FFFFFF",
+              "style": "shake"
+            }
+          ],
+          "fx": [
+            "shake",
+            "lines"
+          ],
+          "sfx": [
+            {
+              "name": "crash"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c08-0",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "bg/lecture",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.15
+            ]
+          },
+          "cast": [
+            {
+              "art": "modeokhu/proud",
+              "x": 0.3,
+              "h": 0.92,
+              "enter": "l",
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "결론",
+              "x": 0.68,
+              "y": 0.2,
+              "size": 120,
+              "color": "#E63946",
+              "style": "stamp"
+            },
+            {
+              "t": "엉덩이 = 달리기 근육",
+              "x": 0.66,
+              "y": 0.45,
+              "size": 80,
+              "style": "pop",
+              "at": 0.35
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c08-1",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "bg/lecture",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.15
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.2
+            ]
+          },
+          "cast": [
+            {
+              "art": "modeokhu/proud",
+              "x": 0.3,
+              "h": 0.92,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "결론",
+              "x": 0.68,
+              "y": 0.2,
+              "size": 120,
+              "color": "#E63946"
+            },
+            {
+              "t": "엉덩이 = 달리기 근육",
+              "x": 0.66,
+              "y": 0.45,
+              "size": 80
+            },
+            {
+              "t": "끌림 = 아직 가설",
+              "x": 0.66,
+              "y": 0.66,
+              "size": 80,
+              "color": "#C2185B",
+              "style": "stamp",
+              "at": 0.2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c08-2",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "stripes:#FFD23F:#FFB627",
+          "cast": [
+            {
+              "art": "dad/run",
+              "x": 0.5,
+              "h": 0.95,
+              "enter": "r",
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "오늘부터 뛴다!",
+              "y": 0.13,
+              "size": 130,
+              "style": "slam",
+              "at": 0.3
+            }
+          ],
+          "fx": [
+            "lines"
+          ],
+          "sfx": [
+            {
+              "name": "whoosh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hold": 100,
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "burst:#1D3557:#274472",
+          "text": [
+            {
+              "t": "모덕후",
+              "y": 0.28,
+              "size": 170,
+              "color": "#FFD23F",
+              "style": "slam"
+            },
+            {
+              "t": "다음 이상한 질문은?",
+              "y": 0.5,
+              "size": 100,
+              "color": "#FFFFFF",
+              "style": "pop",
+              "at": 14
+            }
+          ],
+          "note": "※ 출처: Lieberman 외 2006 (J Exp Biol) · Lewis 외 2015 (Evol Hum Behav) · Kollu 외 2023 (Plast Reconstr Surg). 끌림에 관한 내용은 연구자들의 가설이며, 좋아하는 몸매는 사람 · 문화마다 다릅니다.",
+          "sfx": [
+            {
+              "name": "stinger"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

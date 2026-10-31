@@ -108,7 +108,7 @@ const chopShot = (shot: PlacedShot, chop: number): PlacedShot[] => {
 };
 
 type PlacedShot = Shot & { from: number; dur: number; out: Trans; who?: string; lineFrom: number; lineDur: number };
-type PlacedLine = { id: string; who: string; text: string; voice: string; from: number; dur: number };
+type PlacedLine = { id: string; who: string; text: string; en?: string; voice: string; from: number; dur: number };
 export type MotionTimeline = {
   shots: PlacedShot[];
   lines: PlacedLine[];
@@ -119,7 +119,7 @@ export type MotionTimeline = {
   counter?: string;
 };
 
-type ScriptLike = { speed?: number; cuts: { id: string; lines: { who: string; text: string; sub?: string }[] }[] };
+type ScriptLike = { speed?: number; cuts: { id: string; lines: { who: string; text: string; sub?: string; en?: string }[] }[] };
 
 const frameOf = (at: number | undefined, length: number) => (at == null ? 0 : at < 1 ? Math.round(at * length) : at);
 
@@ -139,7 +139,7 @@ export const buildMotion = (plan: MotionPlan, script: ScriptLike, timing: Record
       if (!src || timing[beat.line] == null) throw new Error(`모션 계획: ${beat.line} 대사가 없다`);
       const dur = Math.ceil((timing[beat.line] / speed) * FPS);
       who = src.who;
-      lines.push({ id: beat.line, who, text: src.sub ?? src.text, voice: `${plan.voice ?? plan.episode}/voice${speed === 1 ? "" : `-x${speed}`}/${beat.line}.wav`, from: cursor, dur });
+      lines.push({ id: beat.line, who, text: src.sub ?? src.text, en: src.en, voice: `${plan.voice ?? plan.episode}/voice${speed === 1 ? "" : `-x${speed}`}/${beat.line}.wav`, from: cursor, dur });
       length = dur + gap;
     }
     length += beat.pad ?? 0;

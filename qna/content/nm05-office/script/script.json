@@ -1,0 +1,416 @@
+{
+  "rawVoice": true,
+  "speed": 1.25,
+  "title": "내모남불 ⑤ 회사편 · 연차 · 퇴근 카톡 · 내 덕 남 탓",
+  "bgm": "cheerful",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "콜드 오픈",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "9시 1분? 시간 개념이 없네.",
+          "tts": "아홉 시 일 분? 시간 개념이 없네.",
+          "en": "9:01? No sense of time."
+        }
+      ]
+    },
+    {
+      "id": "c00a",
+      "beat": "콜드 오픈",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "엘리베이터가 안 와서! 이건 지각이 아니야, 모 어때~",
+          "en": "The elevator wouldn't come! This isn't late. So what~"
+        },
+        {
+          "who": "hr",
+          "text": "규정상, 출근 기록은 9시 5분. 그 커피는 아직 따뜻하네요.",
+          "tts": "규정상, 출근 기록은 아홉 시 오 분. 그 커피는 아직 따뜻하네요.",
+          "en": "Per policy, you clocked in at 9:05. And that coffee is still warm."
+        }
+      ]
+    },
+    {
+      "id": "c00b",
+      "beat": "콜드 오픈",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "남이 늦으면 시간 개념, 내가 늦으면 엘리베이터. 내모남불, 하나.",
+          "en": "They're late: no sense of time. I'm late: the elevator. Double standard, number one."
+        },
+        {
+          "who": "dad",
+          "text": "저는… 모답맨입니다.",
+          "en": "I'm… Modapman."
+        }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "사건 개요",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "사건 개요. 아빠 회사 가는 날. 장소, 아빠 사무실.",
+          "en": "Case summary. Take-your-kid-to-work day. Location: Dad's office."
+        },
+        {
+          "who": "kid",
+          "text": "아빠, 나 방문증 받았어! 아빠는 회사에서 뭐 해?",
+          "en": "Dad, I got a visitor badge! What do you do at work?"
+        },
+        {
+          "who": "dad",
+          "text": "아빠는 차장이야. 회사에서 꽤 중요한 사람이지.",
+          "en": "I'm a deputy manager. Pretty important around here."
+        }
+      ]
+    },
+    {
+      "id": "c01a",
+      "beat": "사건 개요",
+      "lines": [
+        {
+          "who": "hr",
+          "text": "인사팀입니다. 오늘 견학 안내를 맡았습니다.",
+          "en": "HR. I'll be your guide today."
+        },
+        {
+          "who": "dad",
+          "text": "과장님, 우리 애 앞에서 저 칭찬 좀…",
+          "en": "Psst, could you say something nice about me in front of my kid…"
+        },
+        {
+          "who": "hr",
+          "text": "규정상, 사실만 말합니다.",
+          "en": "Per policy, I only state facts."
+        }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "ROUND 1 연차",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "딱 세 판만 하죠. 1라운드, 연차.",
+          "tts": "딱 세 판만 하죠. 일 라운드, 연차.",
+          "en": "Just three rounds. Round one: annual leave."
+        },
+        {
+          "who": "dad",
+          "text": "김 대리 또 금요일 연차야? 주말 붙여서 쉬려는 꼼수지.",
+          "en": "Mr. Kim's off on a Friday again? Just tacking it onto the weekend."
+        }
+      ]
+    },
+    {
+      "id": "c02a",
+      "beat": "ROUND 1 연차",
+      "lines": [
+        {
+          "who": "kid",
+          "text": "아빠, 연차가 뭐야?",
+          "en": "Dad, what's annual leave?"
+        },
+        {
+          "who": "dad",
+          "text": "일한 사람이 쉬는 날이야. 아빠는 월요일에 쓸 거야.",
+          "en": "Paid days off for working hard. I'm taking Monday."
+        },
+        {
+          "who": "dad",
+          "text": "주말 이어서 푹 쉬어야 일이 잘되지. 모 어때~",
+          "en": "Gotta stretch the weekend to recharge. So what~"
+        }
+      ]
+    },
+    {
+      "id": "c02b",
+      "beat": "ROUND 1 연차",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "남이 붙이면 꼼수, 내가 붙이면 재충전. 내모남불, 둘.",
+          "en": "They stretch the weekend: a trick. I do it: recharging. Double standard, number two."
+        },
+        {
+          "who": "hr",
+          "text": "연차는 직원이 원하는 날에 쓰는 게 원칙입니다. 금요일도, 월요일도요.",
+          "en": "Leave is taken when the employee asks, in principle. Fridays, Mondays, either one."
+        }
+      ]
+    },
+    {
+      "id": "c02c",
+      "beat": "ROUND 1 연차",
+      "lines": [
+        {
+          "who": "kid",
+          "text": "그럼 김 대리님도 괜찮은 거네?",
+          "en": "So Mr. Kim's Friday is fine too?"
+        },
+        {
+          "who": "dad",
+          "text": "그럼 아빠는 금요일, 월요일 둘 다! 나흘 연휴다!",
+          "en": "Then I will take Friday AND Monday! A four-day weekend!"
+        }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "ROUND 2 퇴근 카톡",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "2라운드. 퇴근 뒤 카톡.",
+          "tts": "이 라운드. 퇴근 뒤 카톡.",
+          "en": "Round two: messages after work."
+        },
+        {
+          "who": "dad",
+          "text": "밤 11시에 카톡? 퇴근했는데 이건 아니지!",
+          "tts": "밤 열한 시에 카톡? 퇴근했는데 이건 아니지!",
+          "en": "A message at 11 p.m.? I'm off the clock! Not cool!"
+        }
+      ]
+    },
+    {
+      "id": "c03a",
+      "beat": "ROUND 2 퇴근 카톡",
+      "lines": [
+        {
+          "who": "mom",
+          "text": "여보, 방금 김 대리한테 보낸 건 뭐야?",
+          "en": "Honey, what did you just send to Mr. Kim?"
+        },
+        {
+          "who": "dad",
+          "text": "그건 내일 보라고 한 거야. 업무 공유지~",
+          "en": "That one says \"see it tomorrow.\" Just sharing info~"
+        },
+        {
+          "who": "dad",
+          "text": "…벌써 자? 11시에? 열정이 없네.",
+          "en": "…Asleep already? At 11? No passion at all.",
+          "tts": "…벌써 자? 열한 시에? 열정이 없네."
+        }
+      ]
+    },
+    {
+      "id": "c03b",
+      "beat": "ROUND 2 퇴근 카톡",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "남이 보내면 민폐, 내가 보내면 업무 공유. 내모남불, 셋.",
+          "en": "They text late: rude. I text late: sharing info. Double standard, number three."
+        },
+        {
+          "who": "junior",
+          "text": "차장님, 어젯밤 카톡 보고 잠을 못 잤어요.",
+          "en": "Sir, I couldn't sleep after your message last night."
+        }
+      ]
+    },
+    {
+      "id": "c03c",
+      "beat": "ROUND 2 퇴근 카톡",
+      "lines": [
+        {
+          "who": "hr",
+          "text": "남이 하면 성격 탓, 내가 하면 상황 탓. 행위자-관찰자 편향입니다.",
+          "tts": "남이 하면 성격 탓, 내가 하면 상황 탓. 행위자 관찰자 편향입니다.",
+          "en": "When others do it, it's their character. When you do it, it's the situation. Actor–observer bias."
+        },
+        {
+          "who": "kid",
+          "text": "행위자… 뭐?",
+          "en": "Actor… what?"
+        }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "ROUND 3 내 덕 · 남 탓",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "3라운드. 잘되면 내 덕, 안되면 남 탓.",
+          "tts": "삼 라운드. 잘되면 내 덕, 안되면 남 탓.",
+          "en": "Round three: success is mine, failure is yours."
+        },
+        {
+          "who": "dad",
+          "text": "이번 성과요? 제가 방향을 좀 잡았죠.",
+          "en": "This quarter's results? I set the direction, you know."
+        },
+        {
+          "who": "dad",
+          "text": "(가성) 차장님 덕분입니다~! 차장님 최고~!",
+          "en": "(in a fake crowd voice) All thanks to our deputy manager~! You are the best~!",
+          "tts": "차장님 덕분입니다~! 차장님 최고~!",
+          "style": "falsetto, pretending to be a cheering crowd"
+        }
+      ]
+    },
+    {
+      "id": "c04a",
+      "beat": "ROUND 3 내 덕 · 남 탓",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "이번엔… 팀이 따라와 주질 않아서.",
+          "en": "This time… the team just didn't keep up."
+        },
+        {
+          "who": "narr",
+          "text": "잘되면 내 덕, 안되면 남 탓. 내모남불, 넷.",
+          "en": "Success: me. Failure: them. Double standard, number four."
+        }
+      ]
+    },
+    {
+      "id": "c04b",
+      "beat": "ROUND 3 내 덕 · 남 탓",
+      "lines": [
+        {
+          "who": "hr",
+          "text": "잘되면 내 실력, 안되면 남 탓. 자기 위주 편향이라고 합니다.",
+          "en": "Wins are my skill, losses are someone else's fault. It's called self-serving bias."
+        },
+        {
+          "who": "hr",
+          "text": "참고로, 그 기획서 첫 장에 김 대리 이름이 있습니다.",
+          "en": "For the record, Mr. Kim's name is on page one of that proposal."
+        },
+        {
+          "who": "dad",
+          "text": "…네?",
+          "en": "…Huh?"
+        }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "속사포 라운드",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "보너스 라운드. 속사포 내모남불!",
+          "en": "Bonus round. Rapid-fire double standards!"
+        },
+        {
+          "who": "dad",
+          "text": "남이 회의에 늦으면 기본이 없고, 내가 늦으면 앞 회의가 길어서!",
+          "en": "Them late to a meeting: no manners. Me: the last meeting ran long!"
+        },
+        {
+          "who": "dad",
+          "text": "남이 점심 길면 땡땡이, 내가 길면 네트워킹!",
+          "en": "Their long lunch: slacking. Mine: networking!"
+        },
+        {
+          "who": "dad",
+          "text": "남이 답장 늦으면 일 안 하고, 내가 늦으면 신중한 검토!",
+          "en": "Their slow reply: lazy. Mine: careful review!"
+        },
+        {
+          "who": "narr",
+          "text": "내모남불, 다섯, 여섯, 일곱!",
+          "en": "Double standard: five, six, seven!"
+        }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "아이 눈높이",
+      "lines": [
+        {
+          "who": "kid",
+          "text": "아빠, 회사에 사람 진짜 많더라.",
+          "en": "Dad, there were so many people at your work."
+        },
+        {
+          "who": "dad",
+          "text": "그렇지. 다들 바빠.",
+          "en": "Yeah. Everyone's busy."
+        },
+        {
+          "who": "kid",
+          "text": "부장님도, 김 대리님도, 집에 가면 누구 아빠고 누구 엄마야.",
+          "en": "Your boss, Mr. Kim… at home, they're somebody's dad, somebody's mom."
+        },
+        {
+          "who": "dad",
+          "text": "…그러네. 김 대리한테 미안하다고 해야겠다.",
+          "en": "…You're right. I should say sorry to Mr. Kim."
+        }
+      ]
+    },
+    {
+      "id": "c07",
+      "beat": "반전",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "이름 없는 푸딩은 공용이지~ 모 어때.",
+          "en": "A pudding with no name? Community property~ So what."
+        },
+        {
+          "who": "hr",
+          "text": "…그거, 제 겁니다.",
+          "en": "…That's mine."
+        }
+      ]
+    },
+    {
+      "id": "c07a",
+      "beat": "반전",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "남이 먹으면 도둑, 내가 먹으면 공용. 내모남불, 여덟.",
+          "en": "Someone else eats it: theft. I eat it: shared. Double standard, number eight."
+        },
+        {
+          "who": "hr",
+          "text": "규정상… 그건 제 푸딩이라고요!!",
+          "en": "Per policy… that is MY pudding!!"
+        }
+      ]
+    },
+    {
+      "id": "c07b",
+      "beat": "반전",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "이름은 뚜껑 밑에 있었습니다. 그냥 오답.",
+          "en": "The name was under the lid. Just a wrong answer."
+        },
+        {
+          "who": "hr",
+          "text": "(정색) 규정상, 인사 평가에 반영하겠습니다.",
+          "tts": "규정상, 인사 평가에 반영하겠습니다.",
+          "en": "(instantly calm again) Per policy, this will be reflected in your performance review."
+        }
+      ]
+    },
+    {
+      "id": "c07c",
+      "beat": "반전",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "…역시, 모답맨.",
+          "en": "…Classic Modapman."
+        }
+      ]
+    }
+  ]
+}

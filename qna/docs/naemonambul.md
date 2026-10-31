@@ -51,5 +51,7 @@
 | 02 엘리베이터편 | 닫힘 버튼 · 층 버튼 · 통화 (IDEAS A-1) | 2026-10-26 시나리오 초안 — `content/nm02-elevator/plan.md` |
 | 03 주식편 | 오르면 · 내리면 · 단톡방 (IDEAS B-1 + 남 잘되면 배 아픈 아빠) | 2026-10-27 공개 — 본편 https://youtu.be/GgaDTLkde-o · 쇼츠 kmF04p6HQGY(오르면) · ze_i2WtPjQ4(내리면) · Sbtkwn6cDN8(단톡방) |
 | 04 부동산편 | 호가 · 호재/소각장 · 영끌/이자 + 속사포(세대수 · 전세 · 현수막) + 팔면 폭락 (IDEAS B-2 확장) | 2026-10-28 공개 — 본편 https://youtu.be/4BGGeubzpDA · 쇼츠 VH8U3GjtL9I(호가) · hGJB5oqtd48(호재 · 소각장) · CeweE4TBEIM(영끌 · 속사포) |
+| 05 회사편 | 출근 · 연차 · 퇴근 카톡 · 내 덕 남 탓 + 속사포 + 푸딩 반전 (IDEAS D-1, 아빠 회사 가는 날) | 2026-10-30 기획 · 대본(53줄) · 그림 목록(25장) — `content/nm05-office/plan.md`. 정답 인물 인사팀 과장님 `hr` Pulcherrima · 김 대리 `junior` Sadachbia |
+| 06 아파트편 | 층간소음(발망치 · 편지) · 주차 두 칸(정의의 주민) · 택배 박스 + 속사포 + 편지 부메랑 반전 (IDEAS A-4 v2, 찐따웃음) | 2026-10-31 기획 · 대본(63줄) · 그림 목록(26장) · 키워드 조사 · 제목 — `content/nm06-apartment/plan.md`. 관리소장 `aptmgr`(2편 그림 복사) · 윗집 할머니 `granny` · 아랫집 아저씨 `neighbor` |
 
-**다음 편 아이디어:** [IDEAS.md](IDEAS.md) — 공공장소편(엘리베이터 · 버스 · 식당 · 아파트), 돈편(주식 · 집값 · 더치페이), 우리 집편, 운전편 ②
+**다음 편 아이디어:** [naemonambul-ideas.md](naemonambul-ideas.md) — 공공장소편(엘리베이터 · 버스 · 식당 · 아파트), 돈편(주식 · 집값 · 더치페이), 우리 집편, 회사편(회식 · 점심, 라떼 vs 신입은 킵), 운전편 ②

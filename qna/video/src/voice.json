@@ -184,6 +184,24 @@
     },
     {
       "label": "Guest",
+      "name": "인사팀 과장님 (내모남불)",
+      "voice": "Pulcherrima",
+      "roles": [
+        "hr"
+      ],
+      "style": "A Korean HR manager woman in her mid-thirties: brisk, crisp and efficient, perfectly deadpan, starts every correction with 'per policy' like reading a rulebook, never angry — until the very last line, where she finally snaps over her pudding in a high, outraged burst"
+    },
+    {
+      "label": "Guest",
+      "name": "김 대리 (내모남불)",
+      "voice": "Sadachbia",
+      "roles": [
+        "junior"
+      ],
+      "style": "A Korean office worker man in his late twenties, the dad's junior teammate: gentle, polite and earnest, a little sleepy and worn out the morning after a late-night message, never complaining angrily"
+    },
+    {
+      "label": "Guest",
       "name": "내비게이션",
       "voice": "Despina",
       "roles": [
@@ -199,6 +217,15 @@
         "campowner"
       ],
       "style": "A cheerful, laid-back Korean campsite owner in his fifties talking on the phone: easygoing, slightly rough country warmth, saying alarming things in a totally relaxed sunny tone, chuckling"
+    },
+    {
+      "label": "Guest",
+      "name": "모덕후 삼촌",
+      "voice": "Achird",
+      "roles": [
+        "modeokhu"
+      ],
+      "style": "The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting"
     }
   ],
   "direction": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud.",

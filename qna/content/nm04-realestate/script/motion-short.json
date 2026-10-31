@@ -71,5 +71,48 @@
       ],
       "sub": "본편에서 확인하기"
     }
+  },
+  {
+    "id": "Nm04-Short-Insta",
+    "series": "내모남불 · 내가 하면 모 어때, 남이 하면 불법",
+    "narr": "내모남불",
+    "crop": 1920,
+    "hook": [
+      "사기 전엔 거품,",
+      "사고 나면?"
+    ],
+    "title": "부동산 내로남불",
+    "clips": [
+      {
+        "from": 0,
+        "to": 523
+      },
+      {
+        "from": 2721,
+        "to": 4076
+      }
+    ],
+    "end": {
+      "title": [
+        "호재 · 소각장 · 신 포도는",
+        "유튜브 본편에서"
+      ],
+      "sub": "YouTube 「모라구」 내모남불"
+    },
+    "en": {
+      "series": "Naemonambul · Double standards, Mo family style",
+      "hook": [
+        "\"Bubble\" before buying,",
+        "and after?"
+      ],
+      "title": "Housing Double Standards",
+      "end": {
+        "title": [
+          "The full episode",
+          "is on YouTube"
+        ],
+        "sub": "YouTube · Morago"
+      }
+    }
   }
 ]

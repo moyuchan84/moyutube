@@ -1,0 +1,170 @@
+{
+  "title": "모덕후 ③ 손잡기 — 게임 · 잡지 화보 패러디",
+  "cast": {
+    "modeokhu": "the nerdy uncle: a Korean man in his late thirties with a round friendly face, a full head of messy black hair with a cowlick, thick round black-rimmed glasses that glint, a neatly tucked-in red-and-navy plaid flannel shirt buttoned to the top, khaki chinos, brown loafers and a small silver laser pointer clipped to the shirt pocket; an earnest, overly serious scholar look who has never dated; NO text, NO logos"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/shock",
+    "common/dad/panic",
+    "common/dad/think",
+    "common/mom/normal",
+    "common/cutin/dad-shock"
+  ],
+  "items": [
+    {
+      "id": "modeokhu/normal",
+      "kind": "char",
+      "who": "modeokhu",
+      "ref": null,
+      "title": "모덕후 삼촌 — 기본 (진지) (앞 편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c00, c07",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing upright with perfect posture, one hand pushing his glasses up the bridge of his nose so the lenses flash white, the other hand holding a thick stack of research papers. Dead-serious face, tight lips, one eyebrow raised."
+    },
+    {
+      "id": "modeokhu/point",
+      "kind": "char",
+      "who": "modeokhu",
+      "title": "모덕후 삼촌 — 레이저 포인터로 가리키며 \"자, 진지하다\" (앞 편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c01, c02, c03, c04, c05, c06",
+      "desc": "3/4 view turned slightly to the RIGHT. Thrusting a small silver laser pointer forward toward the right with one arm fully extended, a thin red beam shooting out, the other hand on his hip. Intense lecturing face, mouth wide open mid-word, eyes blazing behind glinting glasses, sweat of pure passion."
+    },
+    {
+      "id": "modeokhu/proud",
+      "kind": "char",
+      "who": "modeokhu",
+      "title": "모덕후 삼촌 — 결론, 팔짱 끼고 의기양양 (앞 편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c02, c07",
+      "desc": "3/4 view turned slightly to the RIGHT. Arms crossed firmly, chin raised, a huge smug satisfied grin with all teeth showing, glasses flashing, tiny sparkles around his head like he just won a Nobel prize."
+    },
+    {
+      "id": "modeokhu/fluster",
+      "kind": "char",
+      "who": "modeokhu",
+      "title": "삼촌 — \"…논문으로.\" 시선 피하며 안경 고쳐 쓰기 (앞 편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c04, c06",
+      "desc": "3/4 view turned slightly to the RIGHT. Eyes darting sideways away from the viewer, one finger awkwardly pushing his glasses up, the other hand clutching a thick stack of research papers to his chest like a shield, ears and cheeks bright red, a tiny embarrassed sweat drop, mouth in a stiff wobbly line."
+    },
+    {
+      "id": "cutin/uncle-glint",
+      "kind": "cutin",
+      "who": "modeokhu",
+      "title": "모덕후 삼촌 컷인 — 안경 번쩍 (앞 편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c01",
+      "desc": "Facing the viewer, extreme dramatic close-up from the chest up. Both lenses of his thick glasses flash pure white with a lens-flare glint, a dead-serious frown, a single sweat drop rolling down his temple, dramatic shadow across the upper face like a manga detective revelation."
+    },
+    {
+      "id": "cutin/uncle-gulp",
+      "kind": "cutin",
+      "who": "modeokhu",
+      "title": "삼촌 컷인 — 꿀꺽 (김 서린 안경 · 빨개진 볼) (앞 편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c00, c08",
+      "desc": "Facing the viewer, dramatic close-up from the chest up. He swallows hard with a visible comic gulp at the throat, both lenses of his thick glasses fogged up solid white, cheeks and ears bright red, one big sweat drop on his temple, lips pressed tight in nervous longing, a faint warm TV glow on his face. Flustered and envious, not leering."
+    },
+    {
+      "id": "bg/oneroom",
+      "kind": "bg",
+      "title": "배경 — 삼촌의 밤 원룸 (책 더미 · 피규어 · 컵라면 · TV 불빛) (앞 편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c00, c01, c07",
+      "desc": "A small cozy Korean studio apartment at night seen straight-on like a sitcom set: a low sofa facing a TV on the left, tall leaning stacks of thick books and research papers, a shelf of small robot and anime-style figurines, an empty cup-noodle bowl and a can on a low table, a single desk lamp and the cool blue glow of the TV filling the room. No people. TV screen blank glow, no writing anywhere."
+    },
+    {
+      "id": "modeokhu/selfhold",
+      "kind": "char",
+      "who": "modeokhu",
+      "ref": "modeokhu/normal",
+      "title": "삼촌 — 자기 두 손 깍지 끼고 진지하게 바라봄 (무표정 · 땀 한 방울)",
+      "cuts": "c00",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing, holding his own two hands together in front of his chest with fingers interlaced, staring down at his clasped hands with a blank, dead-serious, slightly disappointed scientist face, glasses glinting, one small sweat drop on his temple, as if waiting for a feeling that never comes."
+    },
+    {
+      "id": "full/dating-sim",
+      "kind": "full",
+      "people": [
+        "modeokhu"
+      ],
+      "title": "미연시 화면 패러디 — 노을 공원, 내민 손 실루엣, 선택지 상자 (모니터 앞 삼촌 뒤통수)",
+      "cuts": "c00",
+      "desc": "Over-the-shoulder view from behind the uncle sitting stiffly upright at a desk in a dark studio apartment, the back of his messy head and glasses rim visible, a game controller clutched in both hands. His big monitor shows a pastel anime-style dating-simulation game screen: a park at a glowing pink-orange sunset with cherry blossom petals, a girl character shown only from behind as a soft simple silhouette holding one hand out toward the viewer, and at the bottom a translucent rounded choice box with two empty option bars, the top bar highlighted with a small heart cursor. Warm monitor glow on the dark room. The uncle stays in the exact gag-manga cartoon style of the attached images. No text, no letters, no logos. Option bars are blank, no writing."
+    },
+    {
+      "id": "full/spoiler-brain",
+      "kind": "full",
+      "people": [],
+      "title": "극장 패러디 — 객석의 뇌 캐릭터가 대본을 펼쳐 들고 하품",
+      "cuts": "c02",
+      "desc": "A cute cartoon movie theater: in a red velvet seat sits a round pink brain character with tiny arms, little legs and sleepy half-closed eyes, holding an open script booklet in one hand and yawning widely, a popcorn bucket untouched beside it. On the big screen is a giant cartoon hand slowly reaching toward the audience. Dim theater lighting, one beam from the projector. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw the person from the attached image or any other people or faces. Absolutely no readable words, letters or numbers anywhere."
+    },
+    {
+      "id": "full/spine-relay",
+      "kind": "full",
+      "people": [],
+      "title": "과학 잡지 도해 — 척수를 타고 오르는 두 신호 (남의 손 = 반짝 · 내 손 = 회색)",
+      "cuts": "c03",
+      "desc": "A glossy popular-science magazine infographic on a deep navy background: a smooth translucent blue mannequin-like human silhouette from the waist up (no face details, no skin detail) with its glowing spine and brain visible inside. Two little signal sparks race up the spine side by side: one is a bright golden sparkling star that has reached the brain and switched on a warm glowing room deep inside it, the other is a dull gray dot fading out halfway with a tiny zzz. A cartoon hand icon sits at the bottom of each path. Clean diagram style. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw the person from the attached image or any other people or faces. Absolutely no readable words, letters or numbers anywhere."
+    },
+    {
+      "id": "full/slow-nerve",
+      "kind": "full",
+      "people": [],
+      "title": "피부 단면 도감 — 깃털 붓에 환호하는 느린 신경 캐릭터들",
+      "cuts": "c04",
+      "desc": "A charming vintage field-guide style cross-section of skin like a cozy underground world: a soft pink surface with fine little hairs on top, and a feather brush gently sweeping across it from the left. Beneath the surface, little cute snail-like nerve characters with long thin tails and happy faces raise their tiny arms and cheer with sparkles and small hearts as the feather passes slowly over them. Soft watercolor shading, fine scientific linework. No humans. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw the person from the attached image or any other people or faces. Absolutely no readable words, letters or numbers anywhere."
+    },
+    {
+      "id": "full/cat-escape",
+      "kind": "full",
+      "people": [
+        "modeokhu"
+      ],
+      "title": "삼촌의 깃털 손길에 털 세우고 도망가는 고양이",
+      "cuts": "c04",
+      "desc": "Inside the uncle's cluttered studio apartment: the uncle kneels on the floor reaching out one hand with exaggerated slow tenderness, fingers spread like a feather, a hopeful earnest face with glasses glinting. A cute round orange tabby cat bolts away from him toward the right with its fur puffed up, tail bristled like a bottle brush, motion lines and a dust cloud behind it, a little sweat drop on the cat. The uncle stays in the exact gag-manga cartoon style of the attached images. No text, no letters, no logos."
+    },
+    {
+      "id": "full/shock-lab",
+      "kind": "full",
+      "people": [],
+      "title": "실험실 패러디 — 번개 버튼 앞 맞잡은 두 손 클로즈업, 뇌 모니터 빨강→파랑",
+      "cuts": "c05",
+      "desc": "A dramatic cartoon science-lab close-up: two hands firmly holding each other in the center (a woman's hand and a man's hand with a wedding ring, only hands and wrists, no faces or bodies), resting on a steel lab table. Behind them a big red button with a yellow lightning-bolt symbol and cables, and a monitor showing a simple cartoon brain icon whose color is changing from alarming red to calm blue with a little sparkle. Cool lab lighting. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw the person from the attached image or any other people or faces. Absolutely no readable words, letters or numbers anywhere."
+    },
+    {
+      "id": "full/brainwave",
+      "kind": "full",
+      "people": [],
+      "title": "두 사람 머리 위 뇌파 선이 같은 모양으로 겹침 (실루엣 · 맞잡은 손에서 빛)",
+      "cuts": "c06",
+      "desc": "A soft glowing science-magazine illustration on a twilight purple background: two simple dark silhouettes of a couple sitting side by side seen from the side, holding hands, a warm golden glow where the hands meet. Above each head floats a bright wavy brainwave line, one pink and one blue, and the two waves line up into the exact same shape and overlap in the middle with sparkles. Silhouettes only, no faces. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw the person from the attached image or any other people or faces. Absolutely no readable words, letters or numbers anywhere."
+    },
+    {
+      "id": "full/wifi-sync",
+      "kind": "full",
+      "people": [
+        "modeokhu"
+      ],
+      "title": "삼촌 머리 위 뇌파와 공유기 와이파이 신호가 맞춰짐",
+      "cuts": "c06",
+      "desc": "Night in the uncle's studio apartment: the uncle sits alone cross-legged on the floor, eyes closed with a blissful serene smile, gently holding a small white Wi-Fi router in both hands like a loved one's hand. A wavy glowing brainwave line rises from his head and lines up perfectly with the glowing Wi-Fi signal arcs coming from the router, with a little blinking heart on the router. A bit lonely but sweet and funny. The uncle stays in the exact gag-manga cartoon style of the attached images. No text, no letters, no logos."
+    },
+    {
+      "id": "full/walk-out",
+      "kind": "full",
+      "people": [
+        "dad",
+        "mom",
+        "modeokhu"
+      ],
+      "title": "현관 — 엄마 · 아빠 손잡고 산책 나가는 뒷모습, 문틈의 삼촌 꿀꺽",
+      "cuts": "c08",
+      "desc": "The entrance hall of a Korean apartment in warm late-afternoon light, the front door wide open to a golden outdoor path: the mom and the dad walk out side by side seen from behind and slightly to the side, holding hands, the dad turning his head back with a smug proud grin, a few small hearts floating above their joined hands. In the foreground on the right a room door is open a crack and the uncle peeks through it, glasses fogged white, cheeks red, swallowing hard with a comic gulp. All people stays in the exact gag-manga cartoon style of the attached images. No text, no letters, no logos."
+    },
+    {
+      "id": "prop/hands",
+      "kind": "prop",
+      "title": "소품 — 맞잡은 두 손 아이콘에 하트, 화보처럼 반짝",
+      "cuts": "c01, 썸네일",
+      "desc": "A single cute sticker of two cartoon hands clasped together in a gentle hold, with a small glossy pink heart floating just above them, soft studio rim light and star highlights."
+    }
+  ]
+}

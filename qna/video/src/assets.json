@@ -1475,6 +1475,202 @@
     "w": 2560,
     "h": 1440
   },
+  "mk01/modeokhu/normal": {
+    "w": 941,
+    "h": 1500
+  },
+  "mk01/modeokhu/point": {
+    "w": 988,
+    "h": 1500
+  },
+  "mk01/modeokhu/proud": {
+    "w": 874,
+    "h": 1500
+  },
+  "mk01/cutin/uncle-glint": {
+    "w": 1277,
+    "h": 1300
+  },
+  "mk01/bg/lecture": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk01/full/cover-shoot": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk01/full/run-editorial": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk01/full/chimp-human": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk01/full/statue-curve": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk01/full/covers-wall": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk01/full/jeans-ad": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk01/dad/cover": {
+    "w": 778,
+    "h": 1500
+  },
+  "mk01/dad/run": {
+    "w": 928,
+    "h": 1500
+  },
+  "mk01/prop/peach": {
+    "w": 1166,
+    "h": 1200
+  },
+  "mk02/modeokhu/normal": {
+    "w": 941,
+    "h": 1500
+  },
+  "mk02/modeokhu/point": {
+    "w": 988,
+    "h": 1500
+  },
+  "mk02/modeokhu/proud": {
+    "w": 874,
+    "h": 1500
+  },
+  "mk02/cutin/uncle-glint": {
+    "w": 1277,
+    "h": 1300
+  },
+  "mk02/cutin/uncle-gulp": {
+    "w": 1193,
+    "h": 1300
+  },
+  "mk02/modeokhu/fluster": {
+    "w": 942,
+    "h": 1500
+  },
+  "mk02/bg/oneroom": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk02/full/tv-drama": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk02/full/homunculus-cover": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk02/full/lipstick-ad": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk02/full/health-room": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk02/full/sommelier": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk02/full/ape-tree": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk02/full/world-map": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk02/full/microbe": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk02/full/cheek-kiss": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk02/prop/lips": {
+    "w": 1200,
+    "h": 1043
+  },
+  "mk03/modeokhu/normal": {
+    "w": 941,
+    "h": 1500
+  },
+  "mk03/modeokhu/point": {
+    "w": 988,
+    "h": 1500
+  },
+  "mk03/modeokhu/proud": {
+    "w": 874,
+    "h": 1500
+  },
+  "mk03/modeokhu/fluster": {
+    "w": 942,
+    "h": 1500
+  },
+  "mk03/cutin/uncle-glint": {
+    "w": 1277,
+    "h": 1300
+  },
+  "mk03/cutin/uncle-gulp": {
+    "w": 1193,
+    "h": 1300
+  },
+  "mk03/bg/oneroom": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk03/modeokhu/selfhold": {
+    "w": 757,
+    "h": 1500
+  },
+  "mk03/full/dating-sim": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk03/full/spoiler-brain": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk03/full/spine-relay": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk03/full/slow-nerve": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk03/full/cat-escape": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk03/full/shock-lab": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk03/full/brainwave": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk03/full/wifi-sync": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk03/full/walk-out": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk03/prop/hands": {
+    "w": 1196,
+    "h": 1200
+  },
   "nm01/full/highway-cutin": {
     "w": 2560,
     "h": 1440
@@ -1790,5 +1986,117 @@
   "nm04/prop/sour-grapes": {
     "w": 993,
     "h": 1200
+  },
+  "nm05/hr/normal": {
+    "w": 822,
+    "h": 1500
+  },
+  "nm05/hr/tablet": {
+    "w": 944,
+    "h": 1500
+  },
+  "nm05/cutin/hr-flat": {
+    "w": 1204,
+    "h": 1300
+  },
+  "nm05/cutin/hr-rage": {
+    "w": 1300,
+    "h": 1279
+  },
+  "nm05/junior/normal": {
+    "w": 841,
+    "h": 1500
+  },
+  "nm05/junior/tired": {
+    "w": 749,
+    "h": 1500
+  },
+  "nm05/kid/badge": {
+    "w": 735,
+    "h": 1500
+  },
+  "nm05/bg/office": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm05/bg/meeting-room": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm05/bg/pantry": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm05/full/late-dash": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm05/cutin/dad-monday": {
+    "w": 1300,
+    "h": 1300
+  },
+  "nm05/cutin/dad-bed-phone": {
+    "w": 1292,
+    "h": 1300
+  },
+  "nm05/cutin/dad-stare": {
+    "w": 1300,
+    "h": 1300
+  },
+  "nm05/full/meeting-up": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm05/full/trophy-imagine": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm05/cutin/dad-blame": {
+    "w": 1271,
+    "h": 1300
+  },
+  "nm05/full/office-dusk": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm05/full/pudding": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm05/prop/visitor-badge": {
+    "w": 1200,
+    "h": 1139
+  },
+  "nm05/prop/calendar": {
+    "w": 1189,
+    "h": 1200
+  },
+  "nm05/prop/tablet": {
+    "w": 1059,
+    "h": 1200
+  },
+  "nm05/prop/pudding": {
+    "w": 1200,
+    "h": 1175
+  },
+  "nm05/prop/coffee": {
+    "w": 1200,
+    "h": 1058
+  },
+  "nm05/prop/trophy": {
+    "w": 1173,
+    "h": 1200
+  },
+  "nm06/manager/normal": {
+    "w": 574,
+    "h": 1500
+  },
+  "nm06/manager/radio": {
+    "w": 626,
+    "h": 1500
+  },
+  "nm06/cutin/manager-flat": {
+    "w": 1053,
+    "h": 1300
   }
 }

@@ -1,0 +1,279 @@
+{
+  "title": "내모남불 ⑤ 회사편 · 연차 · 퇴근 카톡 · 내 덕 남 탓",
+  "cast": {
+    "hr": "the HR manager: a Korean woman in her mid-thirties, sleek black hair pulled back into a neat low bun, sharp straight eyebrows, a small neat face with no glasses; wearing a fitted navy blazer over a crisp white blouse and a lanyard with a plain blank white ID card on her chest, holding a slim tablet; absolutely NO text, NO letters and NO logos anywhere; brisk, efficient and perfectly deadpan",
+    "junior": "the dad's junior teammate Mr. Kim: a Korean man in his late twenties, soft round face, neat short black hair, round thin wire glasses; wearing a light sky-blue office shirt with rolled-up sleeves and a lanyard with a plain blank white ID card; absolutely NO text, NO letters and NO logos anywhere; gentle, earnest and a little tired"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/panic",
+    "common/dad/explain",
+    "common/dad/proud",
+    "common/dad/shock",
+    "common/kid/normal",
+    "common/kid/ask",
+    "common/kid/wow",
+    "common/kid/doubt",
+    "common/mom/normal",
+    "common/mom/smirk",
+    "common/cutin/dad-shock",
+    "common/cutin/dad-proud",
+    "common/cutin/dad-sig-1",
+    "common/cutin/dad-sig-2",
+    "common/cutin/dad-sig-3",
+    "common/cutin/kid-ask",
+    "common/cutin/kid-doubt",
+    "common/cutin/kid-sig",
+    "common/cutin/mom-smirk"
+  ],
+  "items": [
+    {
+      "id": "hr/normal",
+      "kind": "char",
+      "who": "hr",
+      "ref": null,
+      "title": "인사팀 과장님 — 기본",
+      "cuts": "c00a, c01a, c02b, c03c, c04b, c07, c07a",
+      "note": "과장님의 기준 그림. 이것부터 뽑아 확정한 뒤 나머지 과장님 그림에 ②로 첨부한다.",
+      "motion": "숨 쉬듯 살짝, 말할 때 태블릿을 톡.",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing very upright, holding the slim tablet against her chest with both hands, a perfectly flat professional face with a tiny polite smile."
+    },
+    {
+      "id": "hr/tablet",
+      "kind": "char",
+      "who": "hr",
+      "title": "과장님 — 태블릿을 내밀며 안내 · 정색",
+      "cuts": "c01a, c04b, c07",
+      "note": "태블릿 화면은 비워 둔다. 기획서 · 출근 기록은 코드로 얹는다.",
+      "motion": "태블릿을 앞으로 쓱.",
+      "desc": "3/4 view turned slightly to the RIGHT. Holding the slim tablet out toward the viewer in one hand with its blank glowing screen facing out, the other hand gesturing at it with an open palm, eyebrows level, perfectly deadpan. The tablet screen is completely blank."
+    },
+    {
+      "id": "cutin/hr-flat",
+      "kind": "cutin",
+      "who": "hr",
+      "ref": "hr/normal",
+      "title": "과장님 정색 (컷인) — 태블릿 화면 번쩍",
+      "cuts": "c00a, c01a, c02b, c03c, c04b",
+      "motion": "화면 옆에서 튀어나와 흔들린다.",
+      "desc": "Facing slightly to the RIGHT. Perfectly deadpan: holding the tablet up beside her face, half-closed unimpressed eyes, a small flat mouth, a cold white anime glint flashing across the blank tablet screen."
+    },
+    {
+      "id": "cutin/hr-rage",
+      "kind": "cutin",
+      "who": "hr",
+      "ref": "hr/normal",
+      "title": "과장님 폭발 (컷인) — \"그건 제 푸딩이라고요!!\"",
+      "cuts": "c07a",
+      "note": "세 라운드 내내 정색하던 사람이 처음 무너지는 반전. 무섭지 않게, 웃기게.",
+      "motion": "불꽃이 확 일고 화면이 흔들린다.",
+      "desc": "Facing slightly to the RIGHT. Comically losing her composure for the first time: a few hairs popping loose from her neat bun, eyes huge and teary, mouth wide open in an outraged shout, clutching the tablet so hard it bends, anime fire flames and speed lines bursting behind her. Funny, not scary."
+    },
+    {
+      "id": "junior/normal",
+      "kind": "char",
+      "who": "junior",
+      "ref": null,
+      "title": "김 대리 — 기본",
+      "cuts": "c03b",
+      "note": "김 대리의 기준 그림. 이것부터 뽑아 확정한 뒤 junior/tired 에 붙인다.",
+      "motion": "숨 쉬듯 살짝.",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing politely with a mug in one hand, a mild friendly smile."
+    },
+    {
+      "id": "junior/tired",
+      "kind": "char",
+      "who": "junior",
+      "title": "김 대리 — 다크서클로 휴대폰을 쥐고 꾸벅",
+      "cuts": "c03b",
+      "motion": "고개가 꾸벅, 휴대폰이 미끄러질 뻔.",
+      "desc": "3/4 view turned slightly to the RIGHT. Exhausted the next morning: big dark circles under his eyes, hair slightly messy, glasses a little crooked, clutching a smartphone with both hands against his chest, a weak apologetic smile, a tiny anime soul-wisp floating from his mouth. The phone screen is blank."
+    },
+    {
+      "id": "kid/badge",
+      "kind": "char",
+      "who": "kid",
+      "title": "모라구 — 방문증을 두 손으로 들고 신남",
+      "cuts": "c01",
+      "motion": "방문증을 위로 쑥, 반짝.",
+      "desc": "3/4 view turned slightly to the RIGHT. Holding up a lanyard visitor badge with both hands, a blank white card dangling from it, eyes sparkling, a huge open-mouth grin, standing on tiptoe. The badge is completely blank."
+    },
+    {
+      "id": "bg/office",
+      "kind": "bg",
+      "title": "배경 — 아빠 사무실",
+      "cuts": "c00, c00a, c01, c01a, c02, c02a, c02b, c02c, c03b, c03c",
+      "note": "주 무대. 인물은 초록 배경 그림을 위에 얹는다.",
+      "motion": "대사마다 인물 쪽으로 카메라가 옮겨 간다.",
+      "desc": "A bright modern open-plan office seen straight-on like a sitcom set: rows of desks with low partitions, blank dark computer monitors, office chairs, a few potted plants, big windows with daylight in the back, an entrance door on the left. No people, absolutely no text, no numbers, no logos, no signs."
+    },
+    {
+      "id": "bg/meeting-room",
+      "kind": "bg",
+      "title": "배경 — 회의실",
+      "cuts": "c04, c04a, c05",
+      "note": "스크린 · 화이트보드는 비워 두고 그래프는 코드로 얹는다.",
+      "motion": "스크린 쪽으로 쭉.",
+      "desc": "A glass-walled office meeting room seen straight-on: a long white table with chairs, a big blank projection screen on the back wall, a blank whiteboard on the side, a laptop on the table with its lid half closed. No people, absolutely no text, no numbers, no logos, no charts drawn."
+    },
+    {
+      "id": "bg/pantry",
+      "kind": "bg",
+      "title": "배경 — 탕비실",
+      "cuts": "c07, c07a",
+      "motion": "냉장고 쪽으로 휙.",
+      "desc": "A small cozy office pantry seen straight-on in the morning: a compact white fridge, a counter with a coffee machine, a row of mugs, a small sink and a snack basket, a doorway on the right. No people, absolutely no text, no labels, no logos."
+    },
+    {
+      "id": "full/late-dash",
+      "kind": "full",
+      "who": "dad",
+      "people": [
+        "kid"
+      ],
+      "title": "콜드 오픈 — 커피 들고 넥타이 휘날리며 뛰어 들어오는 아빠와 모라구",
+      "cuts": "c00a",
+      "motion": "옆에서 휙 미끄러져 들어온다.",
+      "desc": "The dad in a white shirt and a loose tie bursts through an office doorway at full sprint, tie flying over his shoulder, sweat drops flying, holding a takeaway coffee cup with a plain kraft sleeve high in one hand so it will not spill, an excuse face; with the other hand he pulls the kid, who wears a blank visitor badge and runs happily with his feet off the ground. Anime speed lines. No text."
+    },
+    {
+      "id": "cutin/dad-monday",
+      "kind": "cutin",
+      "who": "dad",
+      "title": "아빠의 상상 — 해먹 · 선글라스 · 주스 \"월요일 연차\"",
+      "cuts": "c02a",
+      "motion": "해먹이 살랑, 선글라스 반짝.",
+      "desc": "Facing slightly to the RIGHT. The dad lying back blissfully in a striped hammock, sunglasses pushed up, a tropical juice with a little umbrella in one hand, a smug relaxed grin, a sparkle on the sunglasses. No text."
+    },
+    {
+      "id": "cutin/dad-bed-phone",
+      "kind": "cutin",
+      "who": "dad",
+      "title": "아빠 — 밤 11시, 침대에서 휴대폰 빛에 얼굴 퍼렇게 분노",
+      "cuts": "c03",
+      "motion": "휴대폰 빛이 번쩍, 이마에 핏줄.",
+      "desc": "Facing slightly to the RIGHT. In pajamas lying in bed in the dark, his face lit pale blue by a smartphone held close, eyes wide and furious, a comic anger vein on his forehead, mouth open mid-complaint. The phone screen is blank. No text."
+    },
+    {
+      "id": "cutin/dad-stare",
+      "kind": "cutin",
+      "who": "dad",
+      "title": "아빠 — 휴대폰을 코앞에 대고 숫자 1을 뚫어지게",
+      "cuts": "c03a",
+      "motion": "눈이 점점 커지고 집중선.",
+      "desc": "Facing slightly to the RIGHT. Holding a smartphone right in front of his nose with both hands, squinting at it with intense bloodshot eyes, sweat drop, anime focus lines all around. The phone screen is blank. No text."
+    },
+    {
+      "id": "full/meeting-up",
+      "kind": "full",
+      "who": "dad",
+      "people": [],
+      "title": "회의실 — 오르는 그래프 앞에서 가슴 펴는 아빠",
+      "cuts": "c04",
+      "note": "스크린은 비워 두고 오르는 그래프는 코드로 얹는다.",
+      "motion": "아빠 쪽으로 쭉, 반짝.",
+      "desc": "In an office meeting room, the dad stands in front of a big blank projection screen, chest puffed out, one thumb pointing at himself, chin up with a proud grin, sparkles around him. Blank screen. No text."
+    },
+    {
+      "id": "full/trophy-imagine",
+      "kind": "full",
+      "who": "dad",
+      "people": [],
+      "title": "아빠의 상상 — 트로피 · 꽃가루 · 헹가래",
+      "cuts": "c04",
+      "note": "분홍 \"아빠의 상상\" 화면에 들어간다. 동료는 얼굴 없는 실루엣.",
+      "motion": "꽃가루가 쏟아지고 아빠가 붕 뜬다.",
+      "desc": "A silly imagined scene: the dad being tossed into the air by a crowd of faceless gray office-worker silhouettes, holding a giant gold trophy over his head, confetti and stars raining down, an over-the-top blissful face with tears of joy. Bright, absurd and cheerful. No text."
+    },
+    {
+      "id": "cutin/dad-blame",
+      "kind": "cutin",
+      "who": "dad",
+      "title": "아빠 — 손가락으로 옆을 가리키며 시선 피함 \"팀이…\"",
+      "cuts": "c04a",
+      "motion": "손가락이 옆으로 휙.",
+      "desc": "Facing slightly to the RIGHT. Pointing sideways off-frame with one finger while his eyes dart the other way, a sheepish, shifty grin, a big sweat drop on his temple. No text."
+    },
+    {
+      "id": "full/office-dusk",
+      "kind": "full",
+      "who": "kid",
+      "people": [
+        "dad"
+      ],
+      "title": "아이 눈높이 — 해질녘 회사 앞 횡단보도의 모라구와 아빠",
+      "cuts": "c06",
+      "note": "농담 없는 박자. 따뜻하고 조용하게.",
+      "motion": "아주 천천히 당겨진다.",
+      "desc": "At golden dusk in front of an office building, the kid and the dad stand side by side at a crosswalk waiting for the light, seen from slightly behind and to the side; the kid still wears the blank visitor badge and looks up at the people walking home, the dad holds his jacket over his shoulder and looks down at the kid with a soft, thoughtful face. Warm orange light, soft-focus silhouettes of commuters. No text, no signs, no logos."
+    },
+    {
+      "id": "full/pudding",
+      "kind": "full",
+      "who": "dad",
+      "people": [],
+      "title": "반전 — 탕비실 냉장고 앞에서 푸딩을 들고 신난 아빠",
+      "cuts": "c07",
+      "motion": "냉장고 문이 열리며 빛, 숟가락 반짝.",
+      "desc": "In a small office pantry, the dad stands at an open fridge glowing with light, holding up a small cup pudding in one hand and a spoon in the other like a treasure, eyes sparkling, a greedy happy grin. No labels, no text."
+    },
+    {
+      "id": "prop/visitor-badge",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 목걸이 방문증",
+      "cuts": "c01",
+      "note": "\"방문\" 글자는 코드로 얹는다.",
+      "motion": "툭 떨어져 흔들린다.",
+      "desc": "A lanyard visitor badge: a bright red lanyard strap and a clear plastic holder with a plain blank white card inside. No letters, no numbers, no logos."
+    },
+    {
+      "id": "prop/calendar",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 탁상 달력 (한 칸에 빨간 동그라미)",
+      "cuts": "c02a",
+      "note": "요일 · 날짜 · \"월\" 은 코드로 얹는다.",
+      "motion": "빨간 동그라미가 쓱 그려진다.",
+      "desc": "A small standing desk calendar with a ring binding showing a blank grid of empty squares, one square circled with a bold hand-drawn red marker circle. No numbers, no letters, no logos."
+    },
+    {
+      "id": "prop/tablet",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 태블릿 (빈 화면)",
+      "cuts": "c00a, c04b",
+      "note": "출근 기록 · 기획서는 코드로 화면에 얹는다.",
+      "motion": "화면이 번쩍.",
+      "desc": "A slim modern tablet seen straight-on, its screen blank and glowing softly white. No letters, no icons, no logos."
+    },
+    {
+      "id": "prop/pudding",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 컵 푸딩 + 숟가락",
+      "cuts": "c07, c07b",
+      "note": "뚜껑 안쪽 이름은 코드로 얹는다.",
+      "motion": "뚜껑이 뒤집힌다 (코드).",
+      "desc": "A small clear plastic cup of caramel custard pudding with a glossy brown top, its peeled-back foil lid curled beside it, a small plastic spoon. No labels, no letters, no logos."
+    },
+    {
+      "id": "prop/coffee",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 테이크아웃 커피 두 잔",
+      "cuts": "c05",
+      "motion": "툭 놓인다.",
+      "desc": "Two takeaway coffee cups with plain kraft paper sleeves and white lids, side by side. No letters, no logos."
+    },
+    {
+      "id": "prop/trophy",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 금 트로피",
+      "cuts": "c04",
+      "motion": "반짝, 빙글.",
+      "desc": "A big shiny gold trophy cup with two handles on a dark base, sparkles around it. No letters, no engraving, no logos."
+    }
+  ]
+}

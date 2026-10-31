@@ -98,3 +98,5 @@ Seeing others' actions as personality and your own as circumstance is called the
 - 쇼츠: 태그 8개 · 아동용 아니요 · AI 아니요 · 설명에 본편 링크 · 관련 동영상 = 본편
 - 본편 언어 탭에 영어 추가 (2026-10-26): 제목 "Elevator Double Standards: Mashing Close, Pressing Every Floor, Speakerphone Calls | Naemonambul" (100자 제한이라 위 영어 제목을 줄임) · 설명(위 영어 설명 + 영어 챕터) · 자막 `en.srt` 게시됨
 - 쇼츠 영어 제목은 아직 안 올림
+
+- 2026-10-30 채널 정리(분석 결과: 내모남불 쇼츠 15편 구독 0, 쇼츠→본편 유입 거의 없음): 쇼츠 **비공개** p5JUEiSrEA0 · gk6YnTNLgs0 (남김: BPMiE3ZSJ-w)

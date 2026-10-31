@@ -1,0 +1,221 @@
+{
+  "rawVoice": true,
+  "speed": 1.2,
+  "title": "모덕후 ② 뽀뽀",
+  "bgm": "sultry",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "훅",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "이번 호 특집. 뽀뽀.",
+          "en": "This issue's special: the kiss."
+        },
+        {
+          "who": "modeokhu",
+          "text": "(꿀꺽) …좋겠다.",
+          "tts": "…좋겠다.",
+          "en": "(gulp) …Lucky."
+        },
+        {
+          "who": "dad",
+          "text": "형… 방금 침 삼켰지?",
+          "en": "Bro… did you just gulp?"
+        },
+        {
+          "who": "modeokhu",
+          "text": "아니. 연구 중이었다.",
+          "en": "No. I was conducting research."
+        }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "질문",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "뽀뽀는 왜 기분이 좋을까?",
+          "en": "Why does a kiss feel so good?"
+        },
+        {
+          "who": "modeokhu",
+          "text": "자, 지금부터 진지하다.",
+          "en": "Okay. From now on, this is serious."
+        }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "입술",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "답은 입술에 있다.",
+          "en": "The answer is in the lips."
+        },
+        {
+          "who": "modeokhu",
+          "text": "뇌 속 몸 지도를 그리면, 입술이 다리보다 커.",
+          "en": "Draw the body map inside your brain, and the lips are bigger than the legs."
+        },
+        {
+          "who": "dad",
+          "text": "형이 그걸 어떻게 알아?",
+          "en": "How would you know?"
+        },
+        {
+          "who": "modeokhu",
+          "text": "…논문으로.",
+          "en": "…From papers."
+        }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "빨간 입술",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "게다가 입술 피부는 아주 얇아서,",
+          "en": "And lip skin is so thin"
+        },
+        {
+          "who": "modeokhu",
+          "text": "속 핏줄 색이 비쳐 빨간 거야.",
+          "en": "that the blood underneath shows through red."
+        }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "작은 실험",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "커플 열다섯 쌍한테 뽀뽀를 시켰더니,",
+          "en": "Fifteen couples were asked to kiss,"
+        },
+        {
+          "who": "modeokhu",
+          "text": "스트레스 호르몬이 내려갔대.",
+          "en": "and their stress hormone dropped."
+        },
+        {
+          "who": "modeokhu",
+          "text": "근데 애정 호르몬은 남자만 올랐어.",
+          "en": "But the bonding hormone rose only in men."
+        },
+        {
+          "who": "dad",
+          "text": "여자는?",
+          "en": "And the women?"
+        },
+        {
+          "who": "modeokhu",
+          "text": "내려갔어. 실험실이 학교 보건실이었거든.",
+          "en": "Down. The lab was the campus health center."
+        },
+        {
+          "who": "dad",
+          "text": "…분위기가 중요하구나.",
+          "en": "…So the mood matters."
+        }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "가설",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "여기서부터는 가설.",
+          "en": "From here on, it's a hypothesis."
+        },
+        {
+          "who": "modeokhu",
+          "text": "가까이서 냄새랑 맛으로 상대를 살피는 거래.",
+          "en": "Up close, you check the other person's smell and taste."
+        },
+        {
+          "who": "dad",
+          "text": "그럼 형이 아직 못 한 건…",
+          "en": "So the reason you still haven't…"
+        },
+        {
+          "who": "modeokhu",
+          "text": "내가 냄새로 다 거른 거다.",
+          "en": "I filtered everyone out by smell."
+        }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "반전",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "그리고 반전. 168개 문화를 조사했더니,",
+          "tts": "그리고 반전. 백육십팔 개 문화를 조사했더니,",
+          "en": "And the twist: in a study of 168 cultures,"
+        },
+        {
+          "who": "modeokhu",
+          "text": "연인끼리 뽀뽀하는 곳은 절반도 안 됐어.",
+          "en": "fewer than half had couples kissing."
+        },
+        {
+          "who": "modeokhu",
+          "text": "그러니까 나도 정상이야.",
+          "en": "So I'm totally normal."
+        }
+      ]
+    },
+    {
+      "id": "c07",
+      "beat": "결론",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "결론. 10초 뽀뽀에 세균 8천만 마리가 오간다는 계산도 있다.",
+          "tts": "결론. 십 초 뽀뽀에 세균 팔천만 마리가 오간다는 계산도 있다.",
+          "en": "Conclusion: one estimate says a 10-second kiss swaps 80 million bacteria."
+        },
+        {
+          "who": "modeokhu",
+          "text": "그래서 나는 위생 때문에 안 하는 거다.",
+          "en": "That's why I don't kiss. For hygiene."
+        },
+        {
+          "who": "dad",
+          "text": "못 하는 거잖아.",
+          "en": "You mean you can't."
+        },
+        {
+          "who": "narr",
+          "text": "모쏠 인증.",
+          "en": "Certified: never been kissed."
+        }
+      ]
+    },
+    {
+      "id": "c08",
+      "beat": "엔딩",
+      "lines": [
+        {
+          "who": "mom",
+          "text": "여보, 다녀올게.",
+          "en": "Honey, I'm heading out."
+        },
+        {
+          "who": "modeokhu",
+          "text": "(꿀꺽) …세균 팔천만.",
+          "tts": "…세균 팔천만.",
+          "en": "(gulp) …Eighty million bacteria."
+        }
+      ]
+    }
+  ]
+}

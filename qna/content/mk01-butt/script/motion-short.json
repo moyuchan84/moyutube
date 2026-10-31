@@ -1,0 +1,65 @@
+[
+  {
+    "id": "Mk01-Short-Butt",
+    "series": "모덕후 · 이상하지만 진지한 고찰",
+    "narr": "모덕후",
+    "crop": 1920,
+    "hook": [
+      "남자도 있는데",
+      "왜 여자 쪽을 볼까?"
+    ],
+    "title": "① 엉덩이",
+    "clips": [
+      {
+        "from": 0,
+        "to": 2026
+      }
+    ],
+    "end": {
+      "title": [
+        "다음 이상한 질문은",
+        "뭘까?"
+      ],
+      "sub": "모덕후 재생목록"
+    }
+  },
+  {
+    "id": "Mk01-Short-Butt-Insta",
+    "series": "모덕후 · 이상하지만 진지한 고찰",
+    "narr": "모덕후",
+    "crop": 1920,
+    "hook": [
+      "남자도 있는데",
+      "왜 여자 쪽을 볼까?"
+    ],
+    "title": "① 엉덩이",
+    "clips": [
+      {
+        "from": 0,
+        "to": 2026
+      }
+    ],
+    "end": {
+      "title": [
+        "다음 이상한 질문은",
+        "유튜브에서"
+      ],
+      "sub": "YouTube 「모라구」 모덕후"
+    },
+    "en": {
+      "series": "Modeokhu · Weird but serious research",
+      "hook": [
+        "Men have butts too,",
+        "so why look at women's?"
+      ],
+      "title": "#1 The Butt",
+      "end": {
+        "title": [
+          "Next weird question",
+          "on YouTube"
+        ],
+        "sub": "YouTube · Morago"
+      }
+    }
+  }
+]
