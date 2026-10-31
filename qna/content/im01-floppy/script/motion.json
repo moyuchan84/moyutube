@@ -1,0 +1,1457 @@
+{
+  "id": "Im01-Igemoyeyo",
+  "episode": "im01",
+  "voice": "im01",
+  "bgm": "cheerful",
+  "gap": 1,
+  "chop": 40,
+  "counter": "모답맨 오답",
+  "thumb": {
+    "badge": "이게 모예요? ① 플로피디스크",
+    "countLabel": "오답",
+    "count": 2,
+    "layers": [
+      {
+        "bg": "burst:#2F4F8F:#3E66B3"
+      },
+      {
+        "fx": "lines",
+        "x": 640,
+        "y": 380
+      },
+      {
+        "img": "full/flashback-lab",
+        "panel": [
+          0.5,
+          0.42,
+          1.6
+        ],
+        "x": 900,
+        "y": 420,
+        "w": 640,
+        "h": 460,
+        "rot": 3
+      },
+      {
+        "img": "dad/nostalgia",
+        "sticker": true,
+        "x": 260,
+        "y": 470,
+        "h": 560,
+        "rot": -5
+      },
+      {
+        "text": "저장 버튼이",
+        "x": 860,
+        "y": 110,
+        "size": 78,
+        "rot": -3
+      },
+      {
+        "text": "이거였다고?!",
+        "style": "stamp",
+        "x": 900,
+        "y": 640,
+        "size": 110,
+        "rot": -6
+      },
+      {
+        "fx": "kira",
+        "x": 300,
+        "y": 230
+      }
+    ]
+  },
+  "beats": [
+    {
+      "line": "c00-0",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "burst:#2F4F8F:#3E66B3",
+          "three": {
+            "scene": "floppy",
+            "x": 0.5,
+            "y": 0.47
+          },
+          "text": [
+            {
+              "t": "이게 모예요?",
+              "y": 0.14,
+              "size": 130,
+              "style": "slam",
+              "at": 6
+            }
+          ],
+          "fx": [
+            "focus"
+          ],
+          "sfx": [
+            {
+              "name": "pang"
+            }
+          ]
+        },
+        {
+          "at": 0.55,
+          "in": "zoom",
+          "bg": "full/attic-find",
+          "cam": {
+            "from": [
+              0.5,
+              0.55,
+              1.5
+            ],
+            "to": [
+              0.52,
+              0.52,
+              1.7
+            ],
+            "ease": "snap"
+          },
+          "fx": [
+            "kira"
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00-1",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "bg/attic",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.48,
+              1.18
+            ],
+            "punch": [
+              8
+            ]
+          },
+          "cast": [
+            {
+              "art": "dad/nostalgia",
+              "x": 0.5,
+              "h": 0.95,
+              "enter": "pop",
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "아빠 거다!!",
+              "x": 0.78,
+              "y": 0.22,
+              "size": 140,
+              "color": "#FFD23F",
+              "style": "pop",
+              "at": 8
+            }
+          ],
+          "fx": [
+            "kira",
+            "focus"
+          ],
+          "sfx": [
+            {
+              "name": "ding",
+              "at": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hold": 54,
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "burst:#FFD23F:#FFB627",
+          "three": {
+            "scene": "floppy",
+            "step": 1,
+            "x": 0.5,
+            "y": 0.42,
+            "scale": 0.9
+          },
+          "text": [
+            {
+              "t": "이게 모예요?",
+              "y": 0.78,
+              "size": 150,
+              "style": "slam"
+            },
+            {
+              "t": "① 플로피디스크",
+              "y": 0.92,
+              "size": 70,
+              "color": "#15303A",
+              "style": "pop",
+              "at": 14
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "stinger"
+            },
+            {
+              "name": "stamp",
+              "at": 14
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c01-0",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "full/flashback-lab",
+          "cam": {
+            "from": [
+              0.45,
+              0.5,
+              1.1
+            ],
+            "to": [
+              0.5,
+              0.45,
+              1.4
+            ]
+          },
+          "tag": {
+            "t": "1990년대",
+            "sub": "학교 컴퓨터실",
+            "x": 0.2,
+            "y": 0.2,
+            "at": 6
+          },
+          "fx": [
+            "sepia"
+          ],
+          "sfx": [
+            {
+              "name": "rewind"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c01-1",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "full/flashback-swap",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.15
+            ],
+            "to": [
+              0.45,
+              0.55,
+              1.45
+            ],
+            "ease": "push"
+          },
+          "text": [
+            {
+              "t": "게임 바꿔 담기",
+              "x": 0.25,
+              "y": 0.78,
+              "size": 90,
+              "style": "pop",
+              "at": 8
+            }
+          ],
+          "fx": [
+            "sepia",
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "slide"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c01-2",
+      "shots": [
+        {
+          "in": "glitch",
+          "bg": "full/flashback-cry",
+          "cam": {
+            "from": [
+              0.5,
+              0.45,
+              1.2
+            ],
+            "to": [
+              0.5,
+              0.4,
+              1.55
+            ],
+            "punch": [
+              10
+            ]
+          },
+          "text": [
+            {
+              "t": "자료 증발…",
+              "x": 0.25,
+              "y": 0.8,
+              "size": 110,
+              "color": "#E63946",
+              "style": "shake",
+              "at": 10
+            }
+          ],
+          "fx": [
+            "sepia",
+            "shake",
+            "gaan"
+          ],
+          "sfx": [
+            {
+              "name": "crash",
+              "at": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-0",
+      "shots": [
+        {
+          "in": "flash",
+          "bg": "dots:#7FC8F8:#B9E2FA",
+          "three": {
+            "scene": "floppy",
+            "step": 1,
+            "x": 0.34,
+            "y": 0.5
+          },
+          "text": [
+            {
+              "t": "플로피디스크",
+              "x": 0.72,
+              "y": 0.4,
+              "size": 130,
+              "style": "slam",
+              "at": 4
+            },
+            {
+              "t": "컴퓨터 자료를 담던 디스크",
+              "x": 0.72,
+              "y": 0.58,
+              "size": 58,
+              "color": "#15303A",
+              "style": "type",
+              "at": 16
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-1",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "stripes:#FFD23F:#FFE680",
+          "cast": [
+            {
+              "art": "common/cutin/dad-proud",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "세상에서 제일 큰\n저장 장치!",
+              "x": 0.8,
+              "y": 0.25,
+              "size": 76,
+              "style": "pop",
+              "at": 6
+            }
+          ],
+          "fx": [
+            "aura",
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02a-0",
+      "count": 1,
+      "countAt": 0.15,
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "#15303A",
+          "text": [
+            {
+              "t": "오답, 하나.",
+              "y": 0.42,
+              "size": 190,
+              "style": "slam"
+            }
+          ],
+          "mark": {
+            "kind": "x",
+            "at": 2
+          },
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "buzz"
+            }
+          ]
+        },
+        {
+          "at": 0.38,
+          "in": "whip-r",
+          "bg": "burst:#15303A:#22485A",
+          "text": [
+            {
+              "t": "그때도",
+              "y": 0.3,
+              "size": 90
+            },
+            {
+              "t": "하드디스크가 훨씬 컸다",
+              "y": 0.52,
+              "size": 110,
+              "color": "#FFD23F",
+              "style": "stamp",
+              "at": 8
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02a-1",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "burst:#2F4F8F:#3E66B3",
+          "three": {
+            "scene": "floppy",
+            "x": 0.22,
+            "y": 0.52,
+            "scale": 0.7
+          },
+          "text": [
+            {
+              "t": "1.44MB",
+              "x": 0.64,
+              "y": 0.4,
+              "size": 230,
+              "color": "#FFD23F",
+              "style": "slam",
+              "at": 2
+            },
+            {
+              "t": "요즘 사진 한 장도 빠듯",
+              "x": 0.64,
+              "y": 0.66,
+              "size": 74,
+              "style": "pop",
+              "at": 0.5
+            }
+          ],
+          "note": "※ 3.5인치 고밀도(HD) 디스크 기준",
+          "sfx": [
+            {
+              "name": "pang"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-0",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "bg/attic",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.15
+            ]
+          },
+          "cast": [
+            {
+              "art": "common/cutin/kid-ask",
+              "x": 0.5,
+              "h": 1,
+              "enter": "pop",
+              "talk": "kid"
+            }
+          ],
+          "text": [
+            {
+              "t": "안에 뭐가?",
+              "x": 0.8,
+              "y": 0.22,
+              "size": 110,
+              "style": "shake",
+              "at": 6
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-1",
+      "calm": true,
+      "shots": [
+        {
+          "in": "flash",
+          "bg": "dots:#EFE6D2:#E4D7BC",
+          "three": {
+            "scene": "explode",
+            "step": 1,
+            "x": 0.4,
+            "y": 0.5
+          },
+          "tag": {
+            "t": "껍데기",
+            "sub": "딱딱한 플라스틱",
+            "x": 0.82,
+            "y": 0.3,
+            "at": 12
+          },
+          "sfx": [
+            {
+              "name": "whoosh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-2",
+      "calm": true,
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "dots:#EFE6D2:#E4D7BC",
+          "three": {
+            "scene": "explode",
+            "step": 2,
+            "x": 0.4,
+            "y": 0.5
+          },
+          "tag": {
+            "t": "덧문",
+            "sub": "먼지 막는 쇠 문",
+            "x": 0.82,
+            "y": 0.3,
+            "at": 10
+          },
+          "sfx": [
+            {
+              "name": "slide"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-3",
+      "calm": true,
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "dots:#EFE6D2:#E4D7BC",
+          "three": {
+            "scene": "explode",
+            "step": 3,
+            "x": 0.4,
+            "y": 0.5
+          },
+          "tag": {
+            "t": "천",
+            "sub": "원판을 닦아 준다",
+            "x": 0.82,
+            "y": 0.3,
+            "at": 10
+          },
+          "sfx": [
+            {
+              "name": "whoosh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-4",
+      "calm": true,
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "dots:#EFE6D2:#E4D7BC",
+          "three": {
+            "scene": "explode",
+            "step": 4,
+            "x": 0.4,
+            "y": 0.5
+          },
+          "tag": {
+            "t": "필름 원판",
+            "sub": "자석 가루가 발려 있다",
+            "x": 0.8,
+            "y": 0.3,
+            "at": 10
+          },
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "ding",
+              "at": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-0",
+      "calm": true,
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "#15303A",
+          "three": {
+            "scene": "write",
+            "x": 0.5,
+            "y": 0.52
+          },
+          "text": [
+            {
+              "t": "빙글빙글",
+              "x": 0.18,
+              "y": 0.2,
+              "size": 90,
+              "color": "#7FC8F8",
+              "style": "pop",
+              "at": 4
+            }
+          ],
+          "sfx": [
+            {
+              "name": "whoosh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-1",
+      "calm": true,
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "#15303A",
+          "three": {
+            "scene": "write",
+            "x": 0.42,
+            "y": 0.52
+          },
+          "text": [
+            {
+              "t": "N",
+              "x": 0.82,
+              "y": 0.35,
+              "size": 220,
+              "color": "#E63946",
+              "style": "slam",
+              "at": 10
+            },
+            {
+              "t": "S",
+              "x": 0.82,
+              "y": 0.68,
+              "size": 220,
+              "color": "#2F80ED",
+              "style": "slam",
+              "at": 22
+            }
+          ],
+          "sfx": [
+            {
+              "name": "tick",
+              "at": 10
+            },
+            {
+              "name": "tick",
+              "at": 22
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-2",
+      "calm": true,
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "burst:#15303A:#22485A",
+          "three": {
+            "scene": "write",
+            "x": 0.25,
+            "y": 0.52,
+            "scale": 0.75
+          },
+          "text": [
+            {
+              "t": "N = 1",
+              "x": 0.68,
+              "y": 0.36,
+              "size": 170,
+              "color": "#E63946",
+              "style": "stamp",
+              "at": 6
+            },
+            {
+              "t": "S = 0",
+              "x": 0.68,
+              "y": 0.64,
+              "size": 170,
+              "color": "#7FC8F8",
+              "style": "stamp",
+              "at": 18
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 6
+            },
+            {
+              "name": "stamp",
+              "at": 18
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04a-0",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "bg/attic",
+          "cast": [
+            {
+              "art": "common/cutin/kid-doubt",
+              "x": 0.5,
+              "h": 1,
+              "enter": "pop",
+              "talk": "kid"
+            }
+          ],
+          "text": [
+            {
+              "t": "딱딱한데\n왜 플로피?",
+              "x": 0.8,
+              "y": 0.25,
+              "size": 90,
+              "style": "shake",
+              "at": 6
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04a-1",
+      "shots": [
+        {
+          "in": "flash",
+          "bg": "dots:#C9B6E4:#B39DDB",
+          "three": {
+            "scene": "bend8",
+            "x": 0.38,
+            "y": 0.5
+          },
+          "tag": {
+            "t": "1971년",
+            "sub": "8인치 · 흐물흐물",
+            "x": 0.8,
+            "y": 0.28,
+            "at": 8
+          },
+          "text": [
+            {
+              "t": "floppy = 흐물흐물",
+              "x": 0.76,
+              "y": 0.75,
+              "size": 70,
+              "style": "pop",
+              "at": 20
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 6
+            }
+          ]
+        },
+        {
+          "at": 0.55,
+          "in": "whip-l",
+          "bg": "dots:#C9B6E4:#B39DDB",
+          "three": {
+            "scene": "sizes",
+            "x": 0.5,
+            "y": 0.48
+          },
+          "text": [
+            {
+              "t": "8인치",
+              "x": 0.2,
+              "y": 0.14,
+              "size": 64,
+              "style": "pop",
+              "at": 4
+            },
+            {
+              "t": "5.25인치",
+              "x": 0.52,
+              "y": 0.14,
+              "size": 64,
+              "style": "pop",
+              "at": 14
+            },
+            {
+              "t": "3.5인치",
+              "x": 0.82,
+              "y": 0.14,
+              "size": 64,
+              "color": "#FFD23F",
+              "style": "pop",
+              "at": 26
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop",
+              "at": 4
+            },
+            {
+              "name": "pop",
+              "at": 14
+            },
+            {
+              "name": "pop",
+              "at": 26
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-0",
+      "shots": [
+        {
+          "in": "whip-u",
+          "bg": "bg/attic",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.12
+            ]
+          },
+          "cast": [
+            {
+              "art": "common/kid/doubt",
+              "x": 0.5,
+              "h": 0.92,
+              "enter": "pop",
+              "talk": "kid"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-1",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "bg/attic",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.48,
+              1.15
+            ]
+          },
+          "cast": [
+            {
+              "art": "common/dad/explain",
+              "x": 0.5,
+              "h": 0.95,
+              "enter": "pop",
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "더 많이 담는 게!",
+              "x": 0.78,
+              "y": 0.22,
+              "size": 90,
+              "style": "pop",
+              "at": 6
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05a-0",
+      "shots": [
+        {
+          "in": "spin",
+          "bg": "burst:#7FC8F8:#B9E2FA",
+          "three": {
+            "scene": "evolution",
+            "x": 0.5,
+            "y": 0.45
+          },
+          "text": [
+            {
+              "t": "CD 1장 ≈ 플로피 약 500장",
+              "y": 0.14,
+              "size": 84,
+              "style": "slam",
+              "at": 10
+            }
+          ],
+          "note": "※ CD 700MB ÷ 플로피 1.44MB",
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "ding",
+              "at": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05a-1",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "burst:#7FC8F8:#B9E2FA",
+          "three": {
+            "scene": "evolution",
+            "step": 1,
+            "x": 0.5,
+            "y": 0.45
+          },
+          "text": [
+            {
+              "t": "손가락만 한 USB 메모리",
+              "y": 0.14,
+              "size": 84,
+              "style": "slam",
+              "at": 6
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop",
+              "at": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05b-0",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "full/cloud-imagine",
+          "cam": {
+            "from": [
+              0.5,
+              0.45,
+              1.1
+            ],
+            "to": [
+              0.55,
+              0.4,
+              1.35
+            ]
+          },
+          "text": [
+            {
+              "t": "구름 위에 저장!",
+              "x": 0.25,
+              "y": 0.2,
+              "size": 110,
+              "style": "pop",
+              "at": 0.3
+            }
+          ],
+          "fx": [
+            "imagine",
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05b-1",
+      "count": 2,
+      "countAt": 0.1,
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "#15303A",
+          "text": [
+            {
+              "t": "오답, 둘.",
+              "y": 0.45,
+              "size": 200,
+              "style": "slam"
+            }
+          ],
+          "mark": {
+            "kind": "x",
+            "at": 2
+          },
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "buzz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05c-0",
+      "shots": [
+        {
+          "in": "whip-u",
+          "bg": "bg/datacenter",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.5
+            ],
+            "ease": "push"
+          },
+          "text": [
+            {
+              "t": "클라우드 =",
+              "y": 0.3,
+              "size": 100,
+              "at": 6
+            },
+            {
+              "t": "멀리 있는 컴퓨터 창고",
+              "y": 0.5,
+              "size": 120,
+              "color": "#7FC8F8",
+              "style": "stamp",
+              "at": 0.45
+            }
+          ],
+          "sfx": [
+            {
+              "name": "whoosh"
+            },
+            {
+              "name": "stamp",
+              "at": 0.45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05c-1",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "burst:#FFD23F:#FFB627",
+          "three": {
+            "scene": "tower",
+            "x": 0.52,
+            "y": 0.55
+          },
+          "text": [
+            {
+              "t": "휴대폰 하나 = 플로피 8만 장+",
+              "y": 0.14,
+              "size": 92,
+              "style": "slam",
+              "at": 0.45
+            }
+          ],
+          "note": "※ 128GB 휴대폰 기준 계산값",
+          "fx": [
+            "lines"
+          ],
+          "sfx": [
+            {
+              "name": "crash",
+              "at": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06-0",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "bg/attic",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.48,
+              1.18
+            ],
+            "punch": [
+              6
+            ]
+          },
+          "cast": [
+            {
+              "art": "common/kid/wow",
+              "x": 0.5,
+              "h": 0.92,
+              "enter": "pop",
+              "talk": "kid"
+            }
+          ],
+          "text": [
+            {
+              "t": "어?!",
+              "x": 0.75,
+              "y": 0.22,
+              "size": 150,
+              "style": "slam",
+              "at": 4
+            }
+          ],
+          "fx": [
+            "focus"
+          ],
+          "sfx": [
+            {
+              "name": "ding",
+              "at": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06-1",
+      "shots": [
+        {
+          "in": "flash",
+          "bg": "burst:#FFD23F:#FFB627",
+          "three": {
+            "scene": "save",
+            "x": 0.5,
+            "y": 0.45
+          },
+          "text": [
+            {
+              "t": "'저장' 그림으로 남았다",
+              "y": 0.14,
+              "size": 90,
+              "style": "slam",
+              "at": 32
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "whoosh"
+            },
+            {
+              "name": "stinger",
+              "at": 28
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07-0",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "bg/attic",
+          "cast": [
+            {
+              "art": "common/cutin/kid-ask",
+              "x": 0.5,
+              "h": 1,
+              "enter": "pop",
+              "talk": "kid"
+            }
+          ],
+          "text": [
+            {
+              "t": "아빠 숙제는?",
+              "x": 0.8,
+              "y": 0.22,
+              "size": 96,
+              "style": "pop",
+              "at": 8
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07-1",
+      "pad": 10,
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "bg/attic",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.42,
+              1.3
+            ]
+          },
+          "cast": [
+            {
+              "art": "dad/wistful",
+              "x": 0.5,
+              "h": 0.95,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "열어 볼 기계가 없다…",
+              "x": 0.5,
+              "y": 0.14,
+              "size": 90,
+              "color": "#7FC8F8",
+              "style": "type",
+              "at": 6
+            }
+          ],
+          "fx": [
+            "gaan"
+          ],
+          "sfx": [
+            {
+              "name": "dudung",
+              "at": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07-2",
+      "pad": 8,
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "burst:#FFD23F:#FFB627",
+          "cast": [
+            {
+              "art": "common/cutin/dad-sig-3",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "모답맨",
+              "x": 0.5,
+              "y": 0.14,
+              "size": 140,
+              "color": "#15303A",
+              "style": "pop",
+              "at": 0.4
+            }
+          ],
+          "fx": [
+            "kira",
+            "focus"
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hold": 66,
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "burst:#2F4F8F:#3E66B3",
+          "three": {
+            "scene": "floppy",
+            "x": 0.5,
+            "y": 0.4,
+            "scale": 0.8
+          },
+          "text": [
+            {
+              "t": "이게 모예요?",
+              "y": 0.76,
+              "size": 140,
+              "style": "slam"
+            },
+            {
+              "t": "다음 물건은 뭘까?",
+              "y": 0.9,
+              "size": 64,
+              "color": "#FFD23F",
+              "style": "pop",
+              "at": 18
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pang"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

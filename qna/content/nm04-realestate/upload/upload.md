@@ -114,3 +114,7 @@ Up or down, it's a home, not a number.
 - 커뮤니티 투표 게시물: "집 살 때 우리 아빠 마음은?" + 본편 링크 · 보기 4개 (거품파 / 바닥파 / 둘 다 나 / 내 방이 좋아)
 - 3편 주식편(GgaDTLkde-o): 설명란 넷째 줄에 "▶ 다음 편 · 부동산편" 링크 · 끝 화면(동영상 = 부동산편 본편 + 구독)
 - 4편 본편 끝 화면: 동영상(시청자 맞춤) + 재생목록 「내로남불 · 내모남불」 + 구독
+
+- 2026-10-30 채널 정리(분석 결과: 내모남불 쇼츠 15편 구독 0, 쇼츠→본편 유입 거의 없음): 쇼츠 **비공개** VH8U3GjtL9I · hGJB5oqtd48 (남김: CeweE4TBEIM)
+
+- 2026-10-30 인스타 @raumhero 이중 언어 하이라이트 릴스(65초, 거품·바닥 + 영끌): https://www.instagram.com/reel/DfHlPu6tNPj/ (컴포지션 `Nm04-Short-Insta`, 기록 raumhero-instagram/posts/2026-10-30-naemonambul-realestate)

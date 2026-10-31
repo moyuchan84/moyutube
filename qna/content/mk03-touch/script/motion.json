@@ -1,0 +1,1762 @@
+{
+  "id": "Mk03-Modeokhu",
+  "episode": "mk03",
+  "voice": "mk03",
+  "bgm": "flutter",
+  "gap": 0,
+  "chop": 42,
+  "thumb": {
+    "badge": "모덕후 ③ 손잡기",
+    "layers": [
+      {
+        "bg": "burst:#FFB74D:#FF8A65"
+      },
+      {
+        "fx": "lines",
+        "x": 640,
+        "y": 380
+      },
+      {
+        "img": "full/dating-sim",
+        "panel": [
+          0.45,
+          0.45,
+          1.4
+        ],
+        "x": 880,
+        "y": 400,
+        "w": 660,
+        "h": 470,
+        "rot": 3
+      },
+      {
+        "img": "modeokhu/selfhold",
+        "sticker": true,
+        "x": 250,
+        "y": 440,
+        "h": 620,
+        "rot": -4
+      },
+      {
+        "img": "prop/hands",
+        "sticker": true,
+        "x": 1150,
+        "y": 600,
+        "h": 230,
+        "rot": 12
+      },
+      {
+        "text": "내 손은 왜 안 설렐까",
+        "x": 860,
+        "y": 105,
+        "size": 72,
+        "rot": -3
+      },
+      {
+        "text": "남의 손만 설레?!",
+        "style": "stamp",
+        "x": 880,
+        "y": 650,
+        "size": 104,
+        "rot": -6
+      },
+      {
+        "fx": "kira",
+        "x": 320,
+        "y": 220
+      }
+    ]
+  },
+  "beats": [
+    {
+      "line": "c00-0",
+      "shots": [
+        {
+          "in": "flash",
+          "bg": "full/dating-sim",
+          "cam": {
+            "from": [
+              0.3,
+              0.4,
+              1.5
+            ],
+            "to": [
+              0.3,
+              0.4,
+              1.25
+            ],
+            "ease": "snap"
+          },
+          "text": [
+            {
+              "t": "HAND · 손잡기",
+              "y": 0.14,
+              "size": 160,
+              "color": "#FFFFFF",
+              "style": "slam"
+            },
+            {
+              "t": "이번 호 특집",
+              "x": 0.75,
+              "y": 0.32,
+              "size": 70,
+              "color": "#E63946",
+              "style": "stamp",
+              "at": 0.35
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "pang"
+            },
+            {
+              "name": "stamp",
+              "at": 0.35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00-1",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "full/dating-sim",
+          "cam": {
+            "from": [
+              0.33,
+              0.62,
+              2
+            ],
+            "to": [
+              0.33,
+              0.62,
+              2.2
+            ]
+          },
+          "text": [
+            {
+              "t": "▶ 손을 잡는다",
+              "y": 0.2,
+              "size": 110,
+              "color": "#FFFFFF",
+              "style": "pop"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "tick"
+            }
+          ]
+        },
+        {
+          "at": 0.45,
+          "in": "smash",
+          "bg": "burst:#F8BBD0:#F48FB1",
+          "cast": [
+            {
+              "art": "cutin/uncle-gulp",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "꿀꺽",
+              "x": 0.8,
+              "y": 0.25,
+              "size": 150,
+              "color": "#FFFFFF",
+              "style": "shake"
+            }
+          ],
+          "fx": [
+            "focus"
+          ],
+          "sfx": [
+            {
+              "name": "gulp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00-2",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "bg/oneroom",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.15
+            ]
+          },
+          "cast": [
+            {
+              "art": "common/dad/shock",
+              "x": 0.5,
+              "h": 0.95,
+              "enter": "pop",
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "자기 손 잡고 있어?",
+              "y": 0.13,
+              "size": 105,
+              "style": "shake"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00-3",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "bg/oneroom",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.1
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.2
+            ]
+          },
+          "cast": [
+            {
+              "art": "modeokhu/selfhold",
+              "x": 0.32,
+              "h": 0.95,
+              "enter": "pop",
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "실험 중이다",
+              "x": 0.7,
+              "y": 0.28,
+              "size": 110,
+              "color": "#FFD23F",
+              "style": "stamp",
+              "at": 0.15
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.15
+            }
+          ]
+        },
+        {
+          "at": 0.5,
+          "in": "cut",
+          "bg": "#2B2D42",
+          "cast": [
+            {
+              "art": "modeokhu/selfhold",
+              "x": 0.3,
+              "h": 0.95
+            }
+          ],
+          "text": [
+            {
+              "t": "결과:",
+              "x": 0.7,
+              "y": 0.32,
+              "size": 90,
+              "color": "#FFFFFF",
+              "style": "pop"
+            },
+            {
+              "t": "무반응",
+              "x": 0.7,
+              "y": 0.55,
+              "size": 160,
+              "color": "#E63946",
+              "style": "stamp",
+              "at": 0.3
+            }
+          ],
+          "sfx": [
+            {
+              "name": "buzz",
+              "at": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hold": 50,
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "stripes:#2A1A4A:#43306E",
+          "cast": [
+            {
+              "art": "modeokhu/point",
+              "x": 0.3,
+              "h": 0.9,
+              "enter": "l"
+            }
+          ],
+          "text": [
+            {
+              "t": "모덕후",
+              "x": 0.66,
+              "y": 0.4,
+              "size": 180,
+              "color": "#FFD23F",
+              "style": "slam"
+            },
+            {
+              "t": "③ 이상하지만 진지한 고찰",
+              "x": 0.66,
+              "y": 0.62,
+              "size": 64,
+              "color": "#FFFFFF",
+              "style": "pop",
+              "at": 14
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "stinger"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c01-0",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "dots:#FFF3E0:#FFE0B2",
+          "props": [
+            {
+              "art": "prop/hands",
+              "x": 0.5,
+              "y": 0.56,
+              "w": 0.3,
+              "enter": "drop"
+            }
+          ],
+          "text": [
+            {
+              "t": "내 손도 같은 살인데",
+              "y": 0.15,
+              "size": 110,
+              "style": "slam"
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "dudung"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c01-1",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "dots:#FFF3E0:#FFE0B2",
+          "props": [
+            {
+              "art": "prop/hands",
+              "x": 0.5,
+              "y": 0.56,
+              "w": 0.34
+            }
+          ],
+          "text": [
+            {
+              "t": "왜 남의 손만",
+              "y": 0.15,
+              "size": 110,
+              "style": "slam"
+            },
+            {
+              "t": "설렐까?",
+              "y": 0.85,
+              "size": 120,
+              "color": "#E8590C",
+              "style": "pop",
+              "at": 0.2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop",
+              "at": 0.2
+            }
+          ]
+        },
+        {
+          "at": 0.55,
+          "in": "smash",
+          "bg": "#101820",
+          "cast": [
+            {
+              "art": "cutin/uncle-glint",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "지금부터 진지하다",
+              "y": 0.72,
+              "size": 110,
+              "color": "#FFD23F",
+              "style": "stamp",
+              "at": 0.2
+            }
+          ],
+          "fx": [
+            "focus",
+            "gaan"
+          ],
+          "sfx": [
+            {
+              "name": "crash"
+            },
+            {
+              "name": "stamp",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-0",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "burst:#5C7CFA:#748FFC",
+          "cast": [
+            {
+              "art": "modeokhu/point",
+              "x": 0.32,
+              "h": 0.92,
+              "enter": "l",
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "① 간지럼",
+              "x": 0.7,
+              "y": 0.3,
+              "size": 120,
+              "color": "#FFFFFF",
+              "style": "slam"
+            },
+            {
+              "t": "혼자는 안 간지럽다",
+              "x": 0.7,
+              "y": 0.55,
+              "size": 80,
+              "color": "#FFD23F",
+              "style": "pop",
+              "at": 0.45
+            }
+          ],
+          "sfx": [
+            {
+              "name": "ding"
+            },
+            {
+              "name": "pop",
+              "at": 0.45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-1",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "full/spoiler-brain",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.2
+            ]
+          },
+          "text": [
+            {
+              "t": "뇌가 미리 안다",
+              "y": 0.13,
+              "size": 100,
+              "color": "#FFFFFF",
+              "style": "pop"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "whoosh"
+            }
+          ]
+        },
+        {
+          "at": 0.5,
+          "in": "zoom",
+          "bg": "full/spoiler-brain",
+          "cam": {
+            "from": [
+              0.5,
+              0.55,
+              1.6
+            ],
+            "to": [
+              0.5,
+              0.55,
+              1.8
+            ],
+            "ease": "snap"
+          },
+          "text": [
+            {
+              "t": "느낌 ↓ 깎음",
+              "y": 0.6,
+              "size": 130,
+              "color": "#FFD23F",
+              "style": "stamp"
+            }
+          ],
+          "note": "※ 자기 손길은 뇌가 미리 예측해 반응을 줄인다 — Blakemore · Wolpert · Frith 1998 (Nat Neurosci)",
+          "sfx": [
+            {
+              "name": "stamp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-2",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "dots:#E3F2FD:#BBDEFB",
+          "cast": [
+            {
+              "art": "common/dad/think",
+              "x": 0.5,
+              "h": 0.95,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "스포일러 당함",
+              "y": 0.13,
+              "size": 110,
+              "style": "shake",
+              "at": 0.2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-3",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "full/spoiler-brain",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.3
+            ],
+            "to": [
+              0.48,
+              0.5,
+              1.45
+            ]
+          },
+          "cast": [
+            {
+              "art": "modeokhu/proud",
+              "x": 0.2,
+              "h": 0.9,
+              "enter": "l",
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "결말 아는 애니",
+              "x": 0.64,
+              "y": 0.15,
+              "size": 100,
+              "color": "#FFFFFF",
+              "style": "pop"
+            },
+            {
+              "t": "= 안 설렘",
+              "x": 0.64,
+              "y": 0.78,
+              "size": 130,
+              "color": "#E63946",
+              "style": "stamp",
+              "at": 0.4
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-0",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "full/spine-relay",
+          "cam": {
+            "from": [
+              0.5,
+              0.45,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.3,
+              1.3
+            ]
+          },
+          "text": [
+            {
+              "t": "② 남의 손",
+              "x": 0.25,
+              "y": 0.15,
+              "size": 110,
+              "color": "#FFD23F",
+              "style": "slam"
+            },
+            {
+              "t": "감정 쪽까지 ON",
+              "y": 0.78,
+              "size": 110,
+              "color": "#FFFFFF",
+              "style": "pop",
+              "at": 0.4
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "pang"
+            },
+            {
+              "name": "ding",
+              "at": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-1",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "full/spine-relay",
+          "cam": {
+            "from": [
+              0.55,
+              0.65,
+              1.7
+            ],
+            "to": [
+              0.55,
+              0.65,
+              1.9
+            ]
+          },
+          "text": [
+            {
+              "t": "내 손 = 조용",
+              "y": 0.15,
+              "size": 120,
+              "color": "#B0BEC5",
+              "style": "slam"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "slide"
+            }
+          ]
+        },
+        {
+          "at": 0.5,
+          "in": "whip-r",
+          "bg": "full/spine-relay",
+          "cam": {
+            "from": [
+              0.5,
+              0.6,
+              1.2
+            ],
+            "to": [
+              0.5,
+              0.55,
+              1.35
+            ]
+          },
+          "text": [
+            {
+              "t": "차이는 척수에서부터",
+              "y": 0.6,
+              "size": 100,
+              "color": "#FFD23F",
+              "style": "stamp"
+            }
+          ],
+          "note": "※ 남이 만질 때와 내가 만질 때 뇌 반응이 다르다 — Boehme 외 2019 (PNAS)",
+          "sfx": [
+            {
+              "name": "stamp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-2",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "dots:#E3F2FD:#BBDEFB",
+          "cast": [
+            {
+              "art": "common/dad/think",
+              "x": 0.5,
+              "h": 0.95,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "척수 > 형 (눈치)",
+              "y": 0.13,
+              "size": 110,
+              "style": "shake",
+              "at": 0.2
+            }
+          ],
+          "fx": [
+            "lines"
+          ],
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-0",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "full/slow-nerve",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.45,
+              0.45,
+              1.2
+            ]
+          },
+          "text": [
+            {
+              "t": "③ 느린 신경",
+              "y": 0.13,
+              "size": 120,
+              "color": "#6D2E46",
+              "style": "slam"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "page"
+            }
+          ]
+        },
+        {
+          "at": 0.5,
+          "in": "zoom",
+          "bg": "full/slow-nerve",
+          "cam": {
+            "from": [
+              0.3,
+              0.3,
+              1.6
+            ],
+            "to": [
+              0.35,
+              0.3,
+              1.75
+            ]
+          },
+          "text": [
+            {
+              "t": "천천히 쓰다듬기 = 최애",
+              "y": 0.6,
+              "size": 100,
+              "color": "#C2185B",
+              "style": "stamp"
+            }
+          ],
+          "note": "※ C촉각 신경 — 부드럽게 천천히 쓰다듬을 때 가장 잘 반응 (Löken 외 2009, Nat Neurosci)",
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "stamp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-1",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "full/slow-nerve",
+          "cam": {
+            "from": [
+              0.65,
+              0.6,
+              1.5
+            ],
+            "to": [
+              0.65,
+              0.6,
+              1.7
+            ]
+          },
+          "text": [
+            {
+              "t": "다정한 손길 감지기?",
+              "y": 0.15,
+              "size": 100,
+              "color": "#6D2E46",
+              "style": "pop"
+            },
+            {
+              "t": "해석",
+              "x": 0.82,
+              "y": 0.75,
+              "size": 110,
+              "color": "#E63946",
+              "style": "stamp",
+              "rot": -10,
+              "at": 0.45
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-2",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "burst:#2F4F8F:#3E66B3",
+          "cast": [
+            {
+              "art": "common/dad/think",
+              "x": 0.5,
+              "h": 0.95,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "형은 어디다 써?",
+              "y": 0.13,
+              "size": 110,
+              "color": "#FFFFFF",
+              "style": "shake",
+              "at": 0.2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-3",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "full/cat-escape",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.15
+            ],
+            "to": [
+              0.6,
+              0.55,
+              1.3
+            ],
+            "punch": [
+              12
+            ]
+          },
+          "text": [
+            {
+              "t": "…고양이",
+              "x": 0.28,
+              "y": 0.12,
+              "size": 100,
+              "color": "#FFFFFF",
+              "style": "type"
+            },
+            {
+              "t": "도망",
+              "x": 0.8,
+              "y": 0.25,
+              "size": 150,
+              "color": "#E63946",
+              "style": "stamp",
+              "at": 0.45
+            }
+          ],
+          "sfx": [
+            {
+              "name": "scratch"
+            },
+            {
+              "name": "buzz",
+              "at": 0.45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-0",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "full/shock-lab",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.6,
+              0.45,
+              1.2
+            ]
+          },
+          "text": [
+            {
+              "t": "④ 전기 충격 대기 중",
+              "y": 0.13,
+              "size": 100,
+              "color": "#FFFFFF",
+              "style": "pop"
+            },
+            {
+              "t": "작은 실험",
+              "x": 0.8,
+              "y": 0.6,
+              "size": 90,
+              "color": "#E63946",
+              "style": "stamp",
+              "rot": -10,
+              "at": 0.5
+            }
+          ],
+          "note": "※ 기혼 여성 16명 실험 — Coan · Schaefer · Davidson 2006 (Psychol Sci)",
+          "sfx": [
+            {
+              "name": "crash"
+            },
+            {
+              "name": "stamp",
+              "at": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-1",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "full/shock-lab",
+          "cam": {
+            "from": [
+              0.72,
+              0.3,
+              1.7
+            ],
+            "to": [
+              0.72,
+              0.3,
+              1.9
+            ],
+            "ease": "snap"
+          },
+          "text": [
+            {
+              "t": "남편 손 → 뇌가 덜 무서워함",
+              "y": 0.82,
+              "size": 90,
+              "color": "#FFFFFF",
+              "style": "stamp",
+              "at": 0.35
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "ding",
+              "at": 0.35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-2",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "stripes:#1D3557:#274472",
+          "text": [
+            {
+              "t": "모르는 사람 손",
+              "y": 0.35,
+              "size": 110,
+              "color": "#FFFFFF",
+              "style": "slam"
+            },
+            {
+              "t": "효과 조금",
+              "y": 0.6,
+              "size": 120,
+              "color": "#7FDBFF",
+              "style": "pop",
+              "at": 0.3
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop",
+              "at": 0.3
+            }
+          ]
+        },
+        {
+          "at": 0.5,
+          "in": "whip-r",
+          "bg": "dots:#FCE4EC:#F8BBD0",
+          "text": [
+            {
+              "t": "사이 좋을수록",
+              "y": 0.35,
+              "size": 110,
+              "style": "slam"
+            },
+            {
+              "t": "효과 ↑",
+              "y": 0.6,
+              "size": 150,
+              "color": "#C2185B",
+              "style": "stamp",
+              "at": 0.3
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-3",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "burst:#FFD23F:#FFB627",
+          "cast": [
+            {
+              "art": "common/dad/normal",
+              "x": 0.5,
+              "h": 0.95,
+              "enter": "pop",
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "역시, 내 손",
+              "y": 0.13,
+              "size": 130,
+              "style": "slam",
+              "at": 0.15
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "pang",
+              "at": 0.15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06-0",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "full/brainwave",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.45,
+              1.15
+            ]
+          },
+          "text": [
+            {
+              "t": "⑤ 손잡으면",
+              "x": 0.22,
+              "y": 0.15,
+              "size": 100,
+              "color": "#FFFFFF",
+              "style": "slam"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "whoosh"
+            }
+          ]
+        },
+        {
+          "at": 0.5,
+          "in": "zoom",
+          "bg": "full/brainwave",
+          "cam": {
+            "from": [
+              0.5,
+              0.3,
+              1.5
+            ],
+            "to": [
+              0.5,
+              0.3,
+              1.7
+            ],
+            "ease": "snap"
+          },
+          "text": [
+            {
+              "t": "뇌파 싱크",
+              "y": 0.6,
+              "size": 150,
+              "color": "#FFD23F",
+              "style": "stamp"
+            }
+          ],
+          "note": "※ 연인 22쌍, 상관관계 — Goldstein 외 2018 (PNAS)",
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "stamp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06-1",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "full/brainwave",
+          "cam": {
+            "from": [
+              0.5,
+              0.82,
+              1.7
+            ],
+            "to": [
+              0.5,
+              0.82,
+              1.9
+            ]
+          },
+          "text": [
+            {
+              "t": "맞을수록 덜 아픔",
+              "y": 0.15,
+              "size": 110,
+              "color": "#FFFFFF",
+              "style": "pop",
+              "at": 0.2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "ding",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06-2",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "dots:#E3F2FD:#BBDEFB",
+          "cast": [
+            {
+              "art": "common/dad/think",
+              "x": 0.5,
+              "h": 0.95,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "누구랑 맞춰 봤는데?",
+              "y": 0.13,
+              "size": 105,
+              "style": "shake",
+              "at": 0.2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06-3",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "full/wifi-sync",
+          "cam": {
+            "from": [
+              0.5,
+              0.45,
+              1.1
+            ],
+            "to": [
+              0.5,
+              0.45,
+              1.25
+            ]
+          },
+          "text": [
+            {
+              "t": "…와이파이랑",
+              "y": 0.85,
+              "size": 120,
+              "color": "#FFFFFF",
+              "style": "stamp",
+              "at": 0.2
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "ding"
+            },
+            {
+              "name": "stamp",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07-0",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "bg/oneroom",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.15
+            ]
+          },
+          "cast": [
+            {
+              "art": "modeokhu/point",
+              "x": 0.3,
+              "h": 0.95,
+              "enter": "l",
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "결론",
+              "x": 0.7,
+              "y": 0.18,
+              "size": 110,
+              "color": "#E63946",
+              "style": "stamp"
+            },
+            {
+              "t": "남의 손 =",
+              "x": 0.7,
+              "y": 0.4,
+              "size": 100,
+              "color": "#FFFFFF",
+              "style": "pop",
+              "at": 0.3
+            },
+            {
+              "t": "예측 불가",
+              "x": 0.7,
+              "y": 0.6,
+              "size": 130,
+              "color": "#FFD23F",
+              "style": "slam",
+              "at": 0.5
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp"
+            },
+            {
+              "name": "pang",
+              "at": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07-1",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "bg/oneroom",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.1
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.2
+            ]
+          },
+          "cast": [
+            {
+              "art": "modeokhu/selfhold",
+              "x": 0.32,
+              "h": 0.95,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "연구를 위해…",
+              "x": 0.7,
+              "y": 0.25,
+              "size": 100,
+              "style": "type"
+            },
+            {
+              "t": "손 좀…",
+              "x": 0.7,
+              "y": 0.5,
+              "size": 120,
+              "color": "#F06292",
+              "style": "pop",
+              "at": 0.55
+            }
+          ],
+          "sfx": [
+            {
+              "name": "tick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07-2",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "burst:#2F4F8F:#3E66B3",
+          "cast": [
+            {
+              "art": "common/cutin/dad-shock",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "싫어.",
+              "x": 0.8,
+              "y": 0.25,
+              "size": 170,
+              "color": "#FFD23F",
+              "style": "shake"
+            }
+          ],
+          "fx": [
+            "lines"
+          ],
+          "sfx": [
+            {
+              "name": "buzz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07-3",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "#2B2D42",
+          "cast": [
+            {
+              "art": "modeokhu/fluster",
+              "x": 0.5,
+              "h": 0.95
+            }
+          ],
+          "text": [
+            {
+              "t": "표본 확보 실패",
+              "y": 0.5,
+              "size": 170,
+              "color": "#E63946",
+              "style": "stamp",
+              "rot": -10,
+              "at": 0.15
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c08-0",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "full/walk-out",
+          "cam": {
+            "from": [
+              0.4,
+              0.45,
+              1.3
+            ],
+            "to": [
+              0.38,
+              0.45,
+              1.45
+            ]
+          },
+          "text": [
+            {
+              "t": "산책 가자♡",
+              "x": 0.35,
+              "y": 0.15,
+              "size": 110,
+              "color": "#F06292",
+              "style": "pop",
+              "at": 0.3
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "pop",
+              "at": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c08-1",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "full/walk-out",
+          "cam": {
+            "from": [
+              0.37,
+              0.6,
+              2
+            ],
+            "to": [
+              0.37,
+              0.6,
+              2.2
+            ],
+            "ease": "snap"
+          },
+          "text": [
+            {
+              "t": "꼬옥♡",
+              "y": 0.2,
+              "size": 140,
+              "color": "#F06292",
+              "style": "slam"
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "chu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c08-2",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "full/walk-out",
+          "cam": {
+            "from": [
+              0.88,
+              0.45,
+              1.8
+            ],
+            "to": [
+              0.9,
+              0.45,
+              2
+            ],
+            "ease": "snap"
+          },
+          "text": [
+            {
+              "t": "꿀꺽",
+              "x": 0.3,
+              "y": 0.25,
+              "size": 140,
+              "color": "#FFFFFF",
+              "style": "shake"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "gulp"
+            }
+          ]
+        },
+        {
+          "at": 0.35,
+          "in": "cut",
+          "bg": "#2B2D42",
+          "cast": [
+            {
+              "art": "modeokhu/fluster",
+              "x": 0.32,
+              "h": 0.95,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "…대조군 부족",
+              "x": 0.7,
+              "y": 0.45,
+              "size": 110,
+              "color": "#FFFFFF",
+              "style": "type"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "slide"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hold": 110,
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "burst:#2A1A4A:#43306E",
+          "text": [
+            {
+              "t": "모덕후",
+              "y": 0.28,
+              "size": 170,
+              "color": "#FFD23F",
+              "style": "slam"
+            },
+            {
+              "t": "다음 이상한 질문은?",
+              "y": 0.5,
+              "size": 100,
+              "color": "#FFFFFF",
+              "style": "pop",
+              "at": 14
+            }
+          ],
+          "note": "※ 출처: Blakemore · Wolpert · Frith 1998 · Boehme 외 2019 (PNAS) · Löken 외 2009 (Nat Neurosci) · Coan 외 2006 (Psychol Sci) · Goldstein 외 2018 (PNAS). 해석이 갈리는 부분은 연구자들의 해석입니다.",
+          "sfx": [
+            {
+              "name": "stinger"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "id": "Mk02-Short-Kiss",
+    "series": "모덕후 · 이상하지만 진지한 고찰",
+    "narr": "모덕후",
+    "crop": 1920,
+    "hook": ["뽀뽀는 왜", "기분이 좋을까?"],
+    "title": "② 뽀뽀",
+    "clips": [{ "from": 0, "to": 2055 }],
+    "end": { "title": ["다음 이상한 질문은", "뭘까?"], "sub": "모덕후 재생목록" }
+  },
+  {
+    "id": "Mk02-Short-Kiss-Insta",
+    "series": "모덕후 · 이상하지만 진지한 고찰",
+    "narr": "모덕후",
+    "crop": 1920,
+    "hook": ["뽀뽀는 왜", "기분이 좋을까?"],
+    "title": "② 뽀뽀",
+    "clips": [{ "from": 0, "to": 2055 }],
+    "end": { "title": ["다음 이상한 질문은", "유튜브에서"], "sub": "YouTube 「모라구」 모덕후" },
+    "en": {
+      "series": "Modeokhu · Weird but serious research",
+      "hook": ["Why does a kiss", "feel so good?"],
+      "title": "#2 The Kiss",
+      "end": { "title": ["Next weird question", "on YouTube"], "sub": "YouTube · Morago" }
+    }
+  }
+]

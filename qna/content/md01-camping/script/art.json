@@ -1,0 +1,287 @@
+{
+  "title": "모 아니면 도 ① 캠핑 vs 집콕 (갈림길 · 모 결말 · 도 결말 공용)",
+  "cast": {
+    "campowner": "the campsite owner: a Korean man in his late fifties with a deep sun tan, a round cheerful face with crinkly laughing eyes, a short gray buzz cut, a towel draped around his neck; wearing a faded olive fishing vest over a white T-shirt, knee-length shorts and rubber rain boots; absolutely NO text, NO letters and NO logos anywhere; relaxed and sunny even when delivering bad news"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/panic",
+    "common/dad/proud",
+    "common/dad/shock",
+    "common/kid/normal",
+    "common/kid/wow",
+    "common/kid/doubt",
+    "common/kid/laugh",
+    "common/mom/normal",
+    "common/mom/sigh",
+    "common/mom/smirk",
+    "common/mom/shock",
+    "common/cutin/dad-shock",
+    "common/cutin/dad-proud",
+    "common/cutin/dad-panic",
+    "common/cutin/kid-ask",
+    "common/cutin/kid-doubt",
+    "common/cutin/mom-smirk",
+    "common/cutin/mom-sigh",
+    "common/cutin/mom-sig-scream"
+  ],
+  "items": [
+    {
+      "id": "campowner/normal",
+      "kind": "char",
+      "who": "campowner",
+      "ref": null,
+      "title": "캠핑장 사장님 — 전화 받으며 태평하게 웃음",
+      "cuts": "c13 · 모 c01",
+      "note": "사장님 기준 그림. 이것부터 뽑는다.",
+      "desc": "3/4 view turned slightly to the LEFT. Standing relaxed, holding a plain black smartphone to his ear with one hand and giving a cheerful thumbs-up with the other, a huge sunny grin, totally unbothered. His rubber boots are wet and muddy."
+    },
+    {
+      "id": "full/trunk-tetris",
+      "kind": "full",
+      "people": [
+        "dad"
+      ],
+      "title": "새벽 지하주차장 — 헤드랜턴 아빠가 트렁크에 장비 테트리스, 엉덩이로 눌러 닫기",
+      "cuts": "c00, c01",
+      "desc": "A dim underground apartment parking garage at 4 a.m., cold fluorescent lights, concrete pillars. The dad, wearing a bright headlamp on his forehead and a camping vest, is pressing his whole backside against the open hatchback trunk of a small family SUV to force it shut, face straining with effort and determination. The trunk is absurdly overstuffed like a tetris game: folded camping chairs, a rolled tent, stacked firewood, a cooler, lanterns, a hammock, a cast-iron pan sticking out, a sleeping bag bursting out of the gap. A tower of seventeen plain brown delivery boxes, flattened and stacked, stands beside the car. All boxes completely blank, no writing, no logos, no license plate text."
+    },
+    {
+      "id": "prop/freezer-receipt",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 냉동실 만두 봉지 뒤에 숨긴 영수증",
+      "cuts": "c01, c05",
+      "desc": "Inside an open home freezer drawer frosted with ice: bags of frozen dumplings, and one long curled paper receipt peeking out from behind the dumpling bags, half covered in frost, glowing suspiciously. The receipt shows only faint gray horizontal lines, no readable text, no numbers. Dumpling bags completely plain, no writing, no logos."
+    },
+    {
+      "id": "full/car-family",
+      "kind": "full",
+      "people": [
+        "dad",
+        "mom",
+        "kid"
+      ],
+      "title": "차 안 — 장작 위에 앉은 아이, 아이스박스 안은 엄마, 식은땀 운전 아빠",
+      "cuts": "c03, c04, c05, c06",
+      "desc": "Inside a small family car on a gray morning, seen from the front through the windshield like a sitcom shot. The dad drives with both hands gripping the wheel, sweating nervously, eyes darting sideways. The mom in the passenger seat sits stiffly with a big blue cooler box on her lap up to her chin, staring flatly at the dad. In the back seat, the kid sits awkwardly on top of a pile of firewood logs, holding three camping lanterns on his lap, with a rolled sleeping mat and a folded camping chair squeezed around him, his head touching the roof. Absolutely no text, no logos."
+    },
+    {
+      "id": "full/mom-sofa-dream",
+      "kind": "full",
+      "people": [
+        "mom"
+      ],
+      "title": "엄마의 상상 — 소파에 가로로 누워 후광",
+      "cuts": "c07",
+      "desc": "A dreamy imagination scene with soft pastel glow and floating sparkles: the mom lies perfectly horizontal on a big soft living-room sofa under a fluffy blanket, eyes closed in pure bliss, a heavenly golden halo of light around her, a cup of tea on the side table, a remote control resting on her stomach. Soft clouds frame the edges like a daydream bubble. Absolutely no text."
+    },
+    {
+      "id": "dad/catalog",
+      "kind": "char",
+      "who": "dad",
+      "title": "아빠 — 캠핑 카탈로그를 펼쳐 들고 눈이 반짝",
+      "cuts": "c07",
+      "desc": "3/4 view turned slightly to the RIGHT. Holding a big open camping-gear catalog spread wide toward the viewer with both hands, eyes sparkling like stars, a huge eager grin, leaning forward excitedly. The catalog pages show only simple drawings of tents and lanterns, no text."
+    },
+    {
+      "id": "dad/nature",
+      "kind": "char",
+      "who": "dad",
+      "title": "아빠 — 두 팔을 활짝 \"자연이 화장실이야\"",
+      "cuts": "c09",
+      "desc": "Front view. Spreading both arms wide open to the sides like presenting the whole world, chin raised, eyes closed with a serene, proud, almost spiritual smile, a few leaves and a little bird floating around him for comic effect."
+    },
+    {
+      "id": "prop/navi",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 내비 화면: 무표정 얼굴 아이콘 + 갈라지는 길",
+      "cuts": "c10, c11, c12, c15",
+      "desc": "A car dashboard navigation screen, front view, filling the frame: a simple map with one road splitting into a fork, one branch going left toward a little green tent icon, the other going right toward a little house icon. In the top corner of the screen, a small flat cartoon face icon with half-closed bored eyes and a perfectly straight line mouth, totally deadpan. Absolutely no text, no numbers, no letters."
+    },
+    {
+      "id": "bg/highway-fork",
+      "kind": "bg",
+      "people": [],
+      "title": "배경 — 고속도로 갈림길, 왼쪽 산 · 오른쪽 아파트, 빈 표지판",
+      "cuts": "c10, c15",
+      "desc": "A Korean highway seen from the driver's seat level on an overcast morning, the road splitting into two at a dramatic fork: the left lane curves toward distant green mountains with dark rain clouds over them, the right lane curves toward a cluster of apartment buildings under a soft clear sky. A big green overhead highway sign board with two arrows, the sign panels completely blank with no text. Cinematic, symmetrical composition."
+    },
+    {
+      "id": "full/b7-pond",
+      "kind": "full",
+      "people": [],
+      "title": "캠핑장 B-7 — 물에 잠긴 사이트, 개구리 떼",
+      "cuts": "c13 · 모 c01, c02",
+      "desc": "A small forest campsite plot completely flooded into a muddy pond after rain, a wooden site marker post sticking out of the water with a blank sign, a picnic table half submerged, rain puddles rippling, dozens of cheerful little green frogs sitting on the table, the post and lily-pad-like leaves, some jumping. Pine trees around, wet gray sky starting to clear. The site marker is blank, absolutely no text."
+    },
+    {
+      "id": "full/rest-stop-avalanche",
+      "kind": "full",
+      "people": [
+        "dad",
+        "mom",
+        "kid"
+      ],
+      "title": "졸음쉼터 — 트렁크를 열자 장비 폭발, 더미 위로 윷 쥔 손",
+      "cuts": "c16, c17, c18",
+      "desc": "A small Korean highway rest area with a parked family SUV, its hatchback trunk flung open and an enormous avalanche of camping gear exploding out of it onto the asphalt: folding chairs, a tent bag, firewood, lanterns, a cooler, a hammock, pans, sleeping bags, piled into a small mountain. The dad is buried in the pile with only his head and one raised arm sticking out of the top, his hand triumphantly holding up four traditional wooden yut sticks. The mom stands beside the car with arms crossed and a flat unimpressed face, the kid peeks out from the back seat window, delighted. Absolutely no text, no logos, no license plate text."
+    },
+    {
+      "id": "dad/yut-throw",
+      "kind": "char",
+      "who": "dad",
+      "title": "아빠 — 윷 네 개를 하늘로 던지는 비장한 자세",
+      "cuts": "c17, c19",
+      "desc": "Dynamic low-angle 3/4 view. Throwing four traditional Korean wooden yut sticks high up into the air with one arm stretched upward, the other fist clenched, legs in a wide heroic stance, eyes blazing with fierce determination, mouth wide open shouting, hair blown back. The four yut sticks are spinning in the air above his hand."
+    },
+    {
+      "id": "full/tent-float",
+      "kind": "full",
+      "people": [
+        "dad"
+      ],
+      "title": "모 결말 — 에어매트 위에 띄운 텐트, 그 위의 자랑스러운 아빠",
+      "cuts": "모 c03, c04",
+      "desc": "The flooded forest campsite pond in the afternoon: a dome tent sits on top of a big inflatable air mattress floating in the middle of the muddy water like a little houseboat, tied to a tree with a rope. The dad stands proudly on the edge of the floating mattress, soaking wet up to his knees, both fists on his hips, chest puffed out, beaming. Frogs sit on the tent roof. Absolutely no text."
+    },
+    {
+      "id": "full/mosquito-buffet",
+      "kind": "full",
+      "people": [
+        "dad",
+        "mom",
+        "kid"
+      ],
+      "title": "모 결말 — 젖은 숯 앞, 모기 떼에 둘러싸인 가족",
+      "cuts": "모 c05, c06",
+      "desc": "Dusk at a wet campsite: the dad crouches over a camping grill full of soggy black charcoal that only puffs a sad little smoke, holding a huge pile of raw pork belly on a tray. A thick cloud of cartoon mosquitoes swarms around the family, some mosquitoes lined up in an orderly queue in the air as if waiting at a buffet, one wearing a tiny napkin. The mom swats with a paper fan, the kid points at the queue with wide amazed eyes. Absolutely no text."
+    },
+    {
+      "id": "full/car-sleep",
+      "kind": "full",
+      "people": [
+        "dad",
+        "mom",
+        "kid"
+      ],
+      "title": "모 결말 — 차에서 자는 가족, 아빠는 트렁크 장비 사이에 끼어",
+      "cuts": "모 c08, c09",
+      "desc": "Night, inside a parked family SUV seen from the open back like a dollhouse cutaway, lit by one small lantern: the mom and kid sleep curled up on the reclined seats under sleeping bags, while the dad lies squeezed horizontally in the cramped trunk between firewood, chairs and a cooler, his feet sticking up against the window, eyes open, giving a weak brave thumbs-up. Rain drops and a few frogs on the outside of the windows. Absolutely no text."
+    },
+    {
+      "id": "full/morning-cheer",
+      "kind": "full",
+      "people": [
+        "mom",
+        "kid"
+      ],
+      "title": "모 결말 — 맑은 아침, 신난 아이와 머리에 개구리 얹은 지친 엄마",
+      "cuts": "모 c10",
+      "desc": "Bright sunny morning at the forest campsite after the rain, mist rising, sparkling light. The kid jumps in the air with both arms up, cheering with a huge happy open mouth. Next to him, the mom sits on a camping chair with messy hair and dark tired eyes, holding a cup of coffee, a small green frog sitting calmly on top of her head. Absolutely no text."
+    },
+    {
+      "id": "full/living-camp",
+      "kind": "full",
+      "people": [
+        "dad",
+        "kid"
+      ],
+      "title": "도 결말 — 거실이 캠핑장: 텐트 두 동, 해먹, 랜턴 열 개",
+      "cuts": "도 c01, c02",
+      "desc": "A cozy Korean apartment living room completely transformed into a campsite: two dome tents pitched on the floor, a hammock strung across a doorway, ten camping lanterns hanging and glowing everywhere, folding camping chairs, a fake campfire made of a red paper lantern inside a circle of firewood logs, potted plants pulled in like a forest. The kid stands in the middle with arms spread wide in amazement, the dad stands proudly beside him in a full camping outfit with a headlamp. Absolutely no text."
+    },
+    {
+      "id": "full/firewood-confiscate",
+      "kind": "full",
+      "people": [
+        "dad",
+        "mom"
+      ],
+      "title": "도 결말 — 장작 들고 신난 아빠, 말없이 뺏는 엄마",
+      "cuts": "도 c03, c04",
+      "desc": "In the living room turned campsite: the dad holds up a firewood log and a long lighter with an eager grin, about to start a fire, while the mom, with a perfectly calm flat face, has already taken the firewood log from his hand and holds it away behind her back, her other palm raised in a firm stop gesture. The lighter is not lit, no fire anywhere. Absolutely no text."
+    },
+    {
+      "id": "full/mom-tent",
+      "kind": "full",
+      "people": [
+        "mom"
+      ],
+      "title": "도 결말 — 거실 텐트 안에 가로로 누운 행복한 엄마",
+      "cuts": "도 c05",
+      "desc": "Inside a small dome tent pitched in a living room, seen through the open tent door: the mom lies perfectly horizontal on a puffy sleeping bag with a soft pillow, eyes closed in deep bliss, a gentle smile, tiny sparkles and a glowing halo above her, a warm lantern beside her, a cup of tea and a book within reach. Absolutely no text."
+    },
+    {
+      "id": "dad/frog",
+      "kind": "char",
+      "who": "dad",
+      "title": "아빠 — 개구리 흉내 (쪼그려 앉아 볼 부풀리기, 개구리 눈 머리띠)",
+      "cuts": "도 c06, c07",
+      "desc": "Front view. Squatting low like a frog with both hands on the floor between his knees, cheeks puffed out hugely, wearing a silly green headband with two big round frog eyes on top, a dead-serious committed face, a tiny cartoon 'ribbit' wave mark near his mouth without any letters. Absolutely no text."
+    },
+    {
+      "id": "full/shadow-play",
+      "kind": "full",
+      "people": [
+        "dad",
+        "kid"
+      ],
+      "title": "도 결말 — 밤, 손전등 그림자놀이 (공룡이 닭이 됨)",
+      "cuts": "도 c08",
+      "desc": "Night in the dark living room camp, lit by one flashlight held by the kid pointing at the wall. The dad makes a hand shadow puppet, and the big shadow on the wall is clearly a chicken instead of a dinosaur. The kid laughs with his mouth wide open, the dad stares at the shadow in confusion. Lanterns glow softly around them. Absolutely no text."
+    },
+    {
+      "id": "prop/phone-sunny",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 휴대폰 날씨: 쨍한 해",
+      "cuts": "도 c09",
+      "desc": "A plain black smartphone, front view, the screen showing a simple weather display: a huge bright smiling cartoon sun with sunglasses on a clear blue sky, a tiny tent icon below. Absolutely no text, no numbers."
+    },
+    {
+      "id": "dad/wail",
+      "kind": "char",
+      "who": "dad",
+      "title": "아빠 — 무릎 꿇고 하늘 향해 통곡 \"왜애애\"",
+      "cuts": "도 c09",
+      "desc": "3/4 view turned slightly to the LEFT. On his knees with both arms raised to the sky, head thrown back, mouth wide open wailing, comical waterfall tears streaming from both eyes, holding a smartphone in one hand."
+    },
+    {
+      "id": "prop/phone-bill",
+      "kind": "prop",
+      "people": [],
+      "title": "소품 — 휴대폰 알림: 결제 완료 (글자 없음)",
+      "cuts": "모 c11 · 도 c11",
+      "desc": "A plain black smartphone, front view, lying on a table, the screen lit with a single notification card showing a little credit card icon, a calendar icon and a row of twelve small circles with only the first circle filled in. A small cartoon 'ding' sparkle. Absolutely no text, no numbers, no letters."
+    },
+    {
+      "id": "bg/choice",
+      "kind": "bg",
+      "people": [],
+      "title": "선택 화면 — 왼쪽 모(빨강) · 오른쪽 도(파랑) 빈 액자 (코드로 그림, 최종 화면 자리)",
+      "cuts": "c19, c20 · 모 c12 · 도 c12",
+      "note": "Gemini 로 뽑지 않는다. sharp + SVG 로 만든 그림 (최종 화면 동영상 요소가 액자 위에 얹힌다).",
+      "desc": "Code-drawn choice screen with two dashed frames. Not generated."
+    },
+    {
+      "id": "bg/choice-to-do",
+      "kind": "bg",
+      "people": [],
+      "title": "모 결말 끝 — 왼쪽 도 결말(파랑) · 오른쪽 처음(노랑) 빈 액자 (코드로 그림)",
+      "cuts": "모 c12 · 도 c12",
+      "note": "Gemini 로 뽑지 않는다. sharp + SVG.",
+      "desc": "Code-drawn end screen frames. Not generated."
+    },
+    {
+      "id": "bg/choice-to-mo",
+      "kind": "bg",
+      "people": [],
+      "title": "도 결말 끝 — 왼쪽 모 결말(빨강) · 오른쪽 처음(노랑) 빈 액자 (코드로 그림)",
+      "cuts": "모 c12 · 도 c12",
+      "note": "Gemini 로 뽑지 않는다. sharp + SVG.",
+      "desc": "Code-drawn end screen frames. Not generated."
+    }
+  ]
+}

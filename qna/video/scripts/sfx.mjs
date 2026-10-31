@@ -213,3 +213,27 @@ writeWav(
 );
 
 console.log("sfx written");
+
+// ── 모덕후용 ──
+
+// 꿀꺽: 침 삼키는 소리 (낮게 꿀렁 내려갔다가 물방울처럼 똑)
+writeWav(
+  "gulp.wav",
+  render(0.42, (t) => {
+    const glug = t < 0.22 ? Math.sin(Math.PI * (t / 0.22)) : 0;
+    const drop = t > 0.24 ? Math.sin(2 * Math.PI * (500 + 1600 * (t - 0.24)) * (t - 0.24)) * Math.exp(-(t - 0.24) * 30) * 0.6 : 0;
+    return { freq: 240 - 420 * t + 30 * Math.sin(2 * Math.PI * 22 * t), amp: 0.55 * glug, extra: drop };
+  }),
+);
+
+// 쪽: 볼 뽀뽀 (짧은 입술 떼는 소리 + 위로 올라가는 짧은 음)
+{
+  let lp = 0;
+  writeWav(
+    "chu.wav",
+    render(0.25, (t) => {
+      lp += 0.35 * ((Math.random() * 2 - 1) - lp);
+      return { freq: 900 + 2600 * t, amp: 0.28 * Math.min(t / 0.004, 1) * Math.exp(-t * 26), extra: lp * Math.exp(-t * 70) * 0.9 };
+    }),
+  );
+}

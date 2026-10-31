@@ -7,6 +7,11 @@
 - 주제 조사 · 영상 제작 · 음악 · 업로드 · 채널 설정 등 shortube 관련 일을 시작하기 전에 **[shortube/CLAUDE.md](shortube/CLAUDE.md) 와 [shortube/COMPLIANCE_GUIDE.md](shortube/COMPLIANCE_GUIDE.md) 를 먼저 읽고 따른다.**
 - 특히 잊지 말 것: 요청 전제부터 사실 확인 · 숫자는 사실 카드에 있는 것만 · 주식/의료/미성년·인물 주제의 금지 사항 · 사진·로고·음원 없음 · 배경음악은 코드 합성 · 업로드는 바로 공개(2026-10-22 사용자 결정, 묻지 않음) · 저장 후 실제 공개 상태 재확인 · 같은 틀 반복 업로드 주의.
 
+## 유튜브에 올리기 전에 — 제목 · 해시태그 조사 (모든 채널)
+
+- 본편이든 쇼츠든 올리기 전에 **스킬 `yt-seo`** (`.claude/skills/yt-seo`) 를 먼저 쓴다: `npm run seo -- <project> <code> "검색어" …` → `upload/upload.md` 의 seo 칸 → 제목(한·영) · 설명 · 해시태그 · 태그.
+- 훅(`.claude/settings.json` → `shared/bin/seo-check.mjs`)이 Studio 를 열거나 업로드를 요청하면 알림을 붙인다. 빠진 편은 `npm run seo-check`.
+
 ## API 키 — 저장소 루트 `.env` 하나만 쓴다
 
 - Gemini 키는 **`D:\youtube\.env`** 에 있다: `GEMINI_API_KEY` (기본), `GEMINI_API_KEY2` (첫 키가 한도에 걸리면 번갈아 쓰는 예비).

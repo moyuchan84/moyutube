@@ -53,22 +53,53 @@ import u13_script from "../../../content/ep11-thanksgiving-religion/script/scrip
 import u13_timing from "../../../content/ep11-thanksgiving-religion/script/timing.json";
 import u13_motion from "../../../content/ep11-thanksgiving-religion/script/motion.json";
 import u13_motionShort from "../../../content/ep11-thanksgiving-religion/script/motion-short.json";
-import u14_script from "../../../content/nm01-car/script/script.json";
-import u14_timing from "../../../content/nm01-car/script/timing.json";
-import u14_motion from "../../../content/nm01-car/script/motion.json";
-import u14_motionShort from "../../../content/nm01-car/script/motion-short.json";
-import u15_script from "../../../content/nm02-elevator/script/script.json";
-import u15_timing from "../../../content/nm02-elevator/script/timing.json";
-import u15_motion from "../../../content/nm02-elevator/script/motion.json";
-import u15_motionShort from "../../../content/nm02-elevator/script/motion-short.json";
-import u16_script from "../../../content/nm03-stock/script/script.json";
-import u16_timing from "../../../content/nm03-stock/script/timing.json";
-import u16_motion from "../../../content/nm03-stock/script/motion.json";
-import u16_motionShort from "../../../content/nm03-stock/script/motion-short.json";
-import u17_script from "../../../content/nm04-realestate/script/script.json";
-import u17_timing from "../../../content/nm04-realestate/script/timing.json";
-import u17_motion from "../../../content/nm04-realestate/script/motion.json";
-import u17_motionShort from "../../../content/nm04-realestate/script/motion-short.json";
+import u14_script from "../../../content/im01-floppy/script/script.json";
+import u14_timing from "../../../content/im01-floppy/script/timing.json";
+import u14_motion from "../../../content/im01-floppy/script/motion.json";
+import u14_motionShort from "../../../content/im01-floppy/script/motion-short.json";
+import u15_script from "../../../content/md01-camping/script/script.json";
+import u15_timing from "../../../content/md01-camping/script/timing.json";
+import u15_motion from "../../../content/md01-camping/script/motion.json";
+import u16_script from "../../../content/md01d-camping-do/script/script.json";
+import u16_timing from "../../../content/md01d-camping-do/script/timing.json";
+import u16_motion from "../../../content/md01d-camping-do/script/motion.json";
+import u17_script from "../../../content/md01m-camping-mo/script/script.json";
+import u17_timing from "../../../content/md01m-camping-mo/script/timing.json";
+import u17_motion from "../../../content/md01m-camping-mo/script/motion.json";
+import u18_script from "../../../content/mk01-butt/script/script.json";
+import u18_timing from "../../../content/mk01-butt/script/timing.json";
+import u18_motion from "../../../content/mk01-butt/script/motion.json";
+import u18_motionShort from "../../../content/mk01-butt/script/motion-short.json";
+import u19_script from "../../../content/mk02-kiss/script/script.json";
+import u19_timing from "../../../content/mk02-kiss/script/timing.json";
+import u19_motion from "../../../content/mk02-kiss/script/motion.json";
+import u19_motionShort from "../../../content/mk02-kiss/script/motion-short.json";
+import u20_script from "../../../content/mk03-touch/script/script.json";
+import u20_timing from "../../../content/mk03-touch/script/timing.json";
+import u20_motion from "../../../content/mk03-touch/script/motion.json";
+import u20_motionShort from "../../../content/mk03-touch/script/motion-short.json";
+import u21_script from "../../../content/nm01-car/script/script.json";
+import u21_timing from "../../../content/nm01-car/script/timing.json";
+import u21_motion from "../../../content/nm01-car/script/motion.json";
+import u21_motionShort from "../../../content/nm01-car/script/motion-short.json";
+import u22_script from "../../../content/nm02-elevator/script/script.json";
+import u22_timing from "../../../content/nm02-elevator/script/timing.json";
+import u22_motion from "../../../content/nm02-elevator/script/motion.json";
+import u22_motionShort from "../../../content/nm02-elevator/script/motion-short.json";
+import u23_script from "../../../content/nm03-stock/script/script.json";
+import u23_timing from "../../../content/nm03-stock/script/timing.json";
+import u23_motion from "../../../content/nm03-stock/script/motion.json";
+import u23_motionShort from "../../../content/nm03-stock/script/motion-short.json";
+import u24_script from "../../../content/nm04-realestate/script/script.json";
+import u24_timing from "../../../content/nm04-realestate/script/timing.json";
+import u24_motion from "../../../content/nm04-realestate/script/motion.json";
+import u24_motionShort from "../../../content/nm04-realestate/script/motion-short.json";
+import u25_script from "../../../content/nm05-office/script/script.json";
+import u25_timing from "../../../content/nm05-office/script/timing.json";
+import u25_motion from "../../../content/nm05-office/script/motion.json";
+import u25_motionShort from "../../../content/nm05-office/script/motion-short.json";
+import u26_script from "../../../content/nm06-apartment/script/script.json";
+import u26_motion from "../../../content/nm06-apartment/script/motion.json";
 
 export type UnitData = {
   code: string;
@@ -98,8 +129,16 @@ export const UNITS: UnitData[] = [
   { "code": "ep09", "format": "modapman", script: u11_script, timing: u11_timing, motion: u11_motion, motionShort: u11_motionShort },
   { "code": "ep10", "format": "modapman", script: u12_script, timing: u12_timing, motion: u12_motion, motionShort: u12_motionShort },
   { "code": "ep11", "format": "modapman", script: u13_script, timing: u13_timing, motion: u13_motion, motionShort: u13_motionShort },
-  { "code": "nm01", "format": "modapman", "series": "naemonambul", script: u14_script, timing: u14_timing, motion: u14_motion, motionShort: u14_motionShort },
-  { "code": "nm02", "format": "modapman", "series": "naemonambul", script: u15_script, timing: u15_timing, motion: u15_motion, motionShort: u15_motionShort },
-  { "code": "nm03", "format": "modapman", "series": "naemonambul", script: u16_script, timing: u16_timing, motion: u16_motion, motionShort: u16_motionShort },
-  { "code": "nm04", "format": "modapman", "series": "naemonambul", script: u17_script, timing: u17_timing, motion: u17_motion, motionShort: u17_motionShort },
+  { "code": "im01", "format": "modapman", "series": "igemoyeyo", script: u14_script, timing: u14_timing, motion: u14_motion, motionShort: u14_motionShort },
+  { "code": "md01", "format": "modapman", "series": "moanimyeondo", script: u15_script, timing: u15_timing, motion: u15_motion },
+  { "code": "md01d", "format": "modapman", "series": "moanimyeondo", "variantOf": "md01", script: u16_script, timing: u16_timing, motion: u16_motion },
+  { "code": "md01m", "format": "modapman", "series": "moanimyeondo", "variantOf": "md01", script: u17_script, timing: u17_timing, motion: u17_motion },
+  { "code": "mk01", "format": "modapman", "series": "modeokhu", script: u18_script, timing: u18_timing, motion: u18_motion, motionShort: u18_motionShort },
+  { "code": "mk02", "format": "modapman", "series": "modeokhu", script: u19_script, timing: u19_timing, motion: u19_motion, motionShort: u19_motionShort },
+  { "code": "mk03", "format": "modapman", "series": "modeokhu", script: u20_script, timing: u20_timing, motion: u20_motion, motionShort: u20_motionShort },
+  { "code": "nm01", "format": "modapman", "series": "naemonambul", script: u21_script, timing: u21_timing, motion: u21_motion, motionShort: u21_motionShort },
+  { "code": "nm02", "format": "modapman", "series": "naemonambul", script: u22_script, timing: u22_timing, motion: u22_motion, motionShort: u22_motionShort },
+  { "code": "nm03", "format": "modapman", "series": "naemonambul", script: u23_script, timing: u23_timing, motion: u23_motion, motionShort: u23_motionShort },
+  { "code": "nm04", "format": "modapman", "series": "naemonambul", script: u24_script, timing: u24_timing, motion: u24_motion, motionShort: u24_motionShort },
+  { "code": "nm05", "format": "modapman", "series": "naemonambul", script: u25_script, timing: u25_timing, motion: u25_motion, motionShort: u25_motionShort },
 ];

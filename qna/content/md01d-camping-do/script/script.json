@@ -1,0 +1,110 @@
+{
+  "rawVoice": true,
+  "speed": 1.2,
+  "title": "모 아니면 도 ① 도 결말 · 집콕",
+  "bgm": "cheerful",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "도",
+      "lines": [
+        { "who": "narr", "text": "도. 집.", "en": "Do. Home." },
+        { "who": "dad", "text": "…집이다.", "en": "…Home it is." }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "거실",
+      "lines": [
+        { "who": "narr", "text": "오전 9시, 거실.", "tts": "오전 아홉 시, 거실.", "en": "9 a.m., the living room." },
+        { "who": "dad", "text": "괜찮아. 산 건 다 쓸 거야.", "en": "It's fine. I'm using everything I bought." }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "거실 캠핑",
+      "lines": [
+        { "who": "narr", "text": "랜턴 열 개, 해먹 하나, 텐트 두 동.", "en": "Ten lanterns, one hammock, two tents." },
+        { "who": "kid", "text": "아빠, 우리 집이 숲이 됐어!", "en": "Dad, our house turned into a forest!" }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "거실 캠핑",
+      "lines": [
+        { "who": "dad", "text": "자, 이제 불을 피워 볼까?", "en": "Now, shall we light a fire?" },
+        { "who": "mom", "text": "집에서는, 안 돼.", "en": "Not in the house." }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "거실 캠핑",
+      "lines": [
+        { "who": "narr", "text": "장작 압수. 대신 전기 그릴.", "en": "Firewood confiscated. Electric grill instead." },
+        { "who": "narr", "text": "삼겹살 5킬로그램 중, 400그램.", "tts": "삼겹살 오 킬로그램 중, 사백 그램.", "en": "Of five kilos of pork belly: four hundred grams." }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "엄마",
+      "lines": [
+        { "who": "mom", "text": "아… 가로로 눕는다는 게 이런 거구나.", "en": "Ah… so this is what lying horizontally feels like." },
+        { "who": "narr", "text": "엄마, 인생 최고의 주말.", "en": "Mom: best weekend of her life." }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "개구리",
+      "lines": [
+        { "who": "kid", "text": "근데 개구리는?", "en": "But what about the frogs?" },
+        { "who": "dad", "text": "개굴. 개굴개굴.", "en": "Ribbit. Ribbit ribbit." }
+      ]
+    },
+    {
+      "id": "c07",
+      "beat": "개구리",
+      "lines": [
+        { "who": "narr", "text": "아빠는 개구리가 되었다. 자발적으로.", "en": "Dad became a frog. Voluntarily." }
+      ]
+    },
+    {
+      "id": "c08",
+      "beat": "밤",
+      "lines": [
+        { "who": "kid", "text": "아빠, 그림자로 공룡 해 줘!", "en": "Dad, make a dinosaur shadow!" },
+        { "who": "dad", "text": "공룡이다! …아니, 이건 닭이다.", "en": "A dinosaur! …No, that's a chicken." }
+      ]
+    },
+    {
+      "id": "c09",
+      "beat": "반전",
+      "lines": [
+        { "who": "narr", "text": "다음 날 아침. 캠핑장 날씨, 맑음.", "en": "Next morning. Campsite weather: sunny." },
+        { "who": "dad", "text": "…왜애애애!", "en": "…Whyyyy!" }
+      ]
+    },
+    {
+      "id": "c10",
+      "beat": "반전",
+      "lines": [
+        { "who": "mom", "text": "다음 주에 가면 되지.", "en": "We can go next week." },
+        { "who": "kid", "text": "다음 주에도 거실 캠핑 해!", "en": "Living-room camping again next week!" }
+      ]
+    },
+    {
+      "id": "c11",
+      "beat": "엔딩",
+      "lines": [
+        { "who": "narr", "text": "띵. 할부 1회차 결제 완료.", "tts": "띵. 할부 일 회차 결제 완료.", "en": "Ding. Installment one of twelve, paid." },
+        { "who": "narr", "text": "남은 열한 번은, 다음 갈림길에서.", "en": "The other eleven, at the next fork in the road." }
+      ]
+    },
+    {
+      "id": "c12",
+      "beat": "엔딩",
+      "lines": [
+        { "who": "narr", "text": "다른 결말이 궁금하면, 모를 누르세요.", "en": "Curious about the other ending? Press Mo." }
+      ]
+    }
+  ]
+}

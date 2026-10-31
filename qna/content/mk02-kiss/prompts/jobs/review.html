@@ -1,0 +1,105 @@
+<!doctype html><meta charset=utf-8><title>mk02 그림 확인</title>
+<style>
+body{font:14px/1.5 system-ui,sans-serif;margin:16px;background:#f4f4f4;color:#222}
+section{background:#fff;border-radius:8px;padding:12px;margin:0 0 16px;border-left:6px solid #bbb}
+section.ok{border-color:#2a9d4b}section.redo{border-color:#d33}
+h2{font-size:15px;margin:0 0 8px}h2 em{font-style:normal;font-size:12px;color:#666;margin-left:8px}
+.row{display:flex;gap:10px;align-items:flex-start;overflow-x:auto}
+figure{margin:0;position:relative;flex:0 0 auto}figure span{position:absolute;left:4px;top:2px;font-weight:700;color:#fff;text-shadow:0 0 3px #000}
+img{height:220px;border:1px solid #ddd;border-radius:4px;background:#fff}figure.main img{height:320px}
+figcaption{font-size:11px;color:#555;max-width:240px}.missing{height:220px;width:160px;display:grid;place-items:center;background:#fee;color:#a00}
+</style>
+<h1>모덕후 ② 뽀뽀 — 잡지 화보 패러디 — 그림 확인 (23장)</h1>
+<p>결과(왼쪽)를 첨부한 기준 그림과 비교한다: 얼굴 · 머리 · 옷 · 피부 톤 · 선 굵기 · 과장 정도. 판정은 <code>content/mk02-kiss/prompts/jobs/review.json</code> 에 <code>"id": "ok"</code> 또는 <code>"redo: 이유"</code> 로 적는다.</p>
+<section class="">
+  <h2>아빠 — 기본 <code>common/dad/normal</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../../_common/art/dad/normal.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>아빠 — 충격 <code>common/dad/shock</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../../_common/art/dad/shock.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../../_common/art/dad/normal.png"><figcaption>같은 사람 유지용 기준 그림</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>아빠 — 당황 <code>common/dad/panic</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../../_common/art/dad/panic.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../../_common/art/dad/normal.png"><figcaption>같은 사람 유지용 기준 그림</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>아빠 — 생각 <code>common/dad/think</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../../_common/art/dad/think.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../../_common/art/dad/normal.png"><figcaption>같은 사람 유지용 기준 그림</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>엄마 — 기본 <code>common/mom/normal</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../../_common/art/mom/normal.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../../_common/art/channel/profile.png"><figcaption>채널 프로필 — 오른쪽 위 안경 쓴 여자가 엄마</figcaption></figure><figure><span>③</span><img loading="lazy" src="../../../_common/art/channel/banner.png"><figcaption>채널 배너 — 맨 오른쪽 팔짱 낀 여자가 엄마</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>컷인 — 아빠 충격 <code>common/cutin/dad-shock</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../../_common/art/cutin/dad-shock.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../../_common/art/dad/normal.png"><figcaption>같은 사람 유지용 기준 그림</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>모덕후 삼촌 — 기본 (진지) (1편 그림 복사, 새로 안 뽑음) <code>modeokhu/normal</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/modeokhu/normal.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>모덕후 삼촌 — 레이저 포인터로 가리키며 &quot;자, 진지하다&quot; (1편 그림 복사, 새로 안 뽑음) <code>modeokhu/point</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/modeokhu/point.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../art/modeokhu/normal.png"><figcaption>같은 사람 유지용 기준 그림</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>모덕후 삼촌 — 결론, 팔짱 끼고 의기양양 (1편 그림 복사, 새로 안 뽑음) <code>modeokhu/proud</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/modeokhu/proud.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../art/modeokhu/normal.png"><figcaption>같은 사람 유지용 기준 그림</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>모덕후 삼촌 컷인 — 안경 번쩍 (1편 그림 복사, 새로 안 뽑음) <code>cutin/uncle-glint</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/cutin/uncle-glint.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../art/modeokhu/normal.png"><figcaption>같은 사람 유지용 기준 그림</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>삼촌 컷인 — 꿀꺽 (김 서린 안경 · 빨개진 볼) <code>cutin/uncle-gulp</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/cutin/uncle-gulp.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../art/modeokhu/normal.png"><figcaption>같은 사람 유지용 기준 그림</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>삼촌 — &quot;…논문으로.&quot; 시선 피하며 안경 고쳐 쓰기 <code>modeokhu/fluster</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/modeokhu/fluster.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../art/modeokhu/normal.png"><figcaption>같은 사람 유지용 기준 그림</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>배경 — 삼촌의 밤 원룸 (책 더미 · 피규어 · 컵라면 · TV 불빛) <code>bg/oneroom</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/bg/oneroom.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>드라마 패러디 — 소파의 삼촌 뒷모습 너머 TV 속 노을 키스신 (실루엣 · 하트 모자이크) <code>full/tv-drama</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/full/tv-drama.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../art/modeokhu/normal.png"><figcaption>같이 나오는 사람 기준 그림 (normal)</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>과학 잡지 표지 패러디 — 입술 · 손이 거대한 감각 호문쿨루스 <code>full/homunculus-cover</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/full/homunculus-cover.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>립스틱 광고 패러디 — 빨간 입술 모형 단면 도해 (얇은 겉층 · 비치는 모세혈관) <code>full/lipstick-ad</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/full/lipstick-ad.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>학교 보건실 — 분위기 0점의 실험실 <code>full/health-room</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/full/health-room.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>와인 시음 화보 패러디 — 소믈리에 삼촌이 잔마다 ✕ <code>full/sommelier</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/full/sommelier.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../art/modeokhu/normal.png"><figcaption>같이 나오는 사람 기준 그림 (normal)</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>박물관 계통도 패러디 — 가지마다 입 맞추는 유인원들 <code>full/ape-tree</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/full/ape-tree.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>지도 화보 — 하트 핀 절반, 회색 핀 절반 <code>full/world-map</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/full/world-map.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>현미경 화보 패러디 — 하트 다리를 건너 이사 가는 세균 떼 <code>full/microbe</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/full/microbe.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>현관 — 엄마가 아빠 볼에 쪽, 문틈의 삼촌 꿀꺽 <code>full/cheek-kiss</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/full/cheek-kiss.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../../_common/art/dad/normal.png"><figcaption>같이 나오는 사람 기준 그림 (normal)</figcaption></figure><figure><span>③</span><img loading="lazy" src="../../../_common/art/mom/normal.png"><figcaption>같이 나오는 사람 기준 그림 (normal)</figcaption></figure><figure><span>④</span><img loading="lazy" src="../../art/modeokhu/normal.png"><figcaption>같이 나오는 사람 기준 그림 (normal)</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>소품 — 화보처럼 빛나는 빨간 입술 젤리 <code>prop/lips</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/prop/lips.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-prop.png"><figcaption>소품 화풍 앵커 (사람 없는 소품)</figcaption></figure></div>
+</section>

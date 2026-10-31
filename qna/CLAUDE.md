@@ -14,7 +14,7 @@
   (claude.ai 용 패키지는 `skill/modapman.skill` — 스킬을 고치면 이 폴더를 다시 압축한다)
 - **기준 예시는 8편 모답맨판** `content/ep08f-modapman/`: `script/script.json`(대본) · `script/motion.json`(샷 계획) · `upload/`(업로드 자료).
 - **내모남불**은 모라구 안의 다른 시리즈다. 같은 가족 · 같은 그림 · 같은 모션 엔진을 쓰고, 편 코드만 `nmNN` 이다 (`unit.json` 에 `"series": "naemonambul"`). 시리즈 규칙은 [docs/naemonambul.md](docs/naemonambul.md), 아이디어는 [docs/naemonambul-ideas.md](docs/naemonambul-ideas.md).
-- **기획 중인 시리즈 (아직 편 없음):** 「포모라구」(FOMO + 모라구, 유행 · 소비 심리) [docs/pomoragu.md](docs/pomoragu.md) · 「이게 모예요?」(쇼츠 전용 물건 · 표시 사전) [docs/igemoyeyo.md](docs/igemoyeyo.md).
+- **새 시리즈 (기획 · 막 시작):** 「포모라구」(FOMO + 모라구, 유행 · 소비 심리) [docs/pomoragu.md](docs/pomoragu.md) · 「이게 모예요?」(물건 사전 쇼츠, 1편 공개) [docs/igemoyeyo.md](docs/igemoyeyo.md) · 「모 아니면 도」(두 갈래 결말 인터랙티브 시트콤, 1편 공개 · 편 코드 mdNN, 결말 편 mdNNm · mdNNd) [docs/moanimyeondo.md](docs/moanimyeondo.md) · 「모덕후」 · 「조삼모사」 · 「모롱이」(어른 대상 쇼츠 세 갈래) [docs/modeokhu-josammosa-morongi.md](docs/modeokhu-josammosa-morongi.md). 모든 카테고리의 기획 · 방향 · 의도를 한 문서로: [docs/morago-categories.md](docs/morago-categories.md).
 - 1~8편 롱폼(아빠의 회상 · 8분 · 7박자, 스킬 `eight-year-olds-question` · `skill/eight-year-olds-question.skill`)은 **이전 포맷**이다. 새 편에 쓰지 않는다.
 
 ## 폴더 — 무엇이 어디에 있나
@@ -25,7 +25,7 @@
 qna/
 ├─ CLAUDE.md · ART_GUIDE.md · MODAPMAN.md   ← 작업 규칙 · 그림 가이드 · 채널 정리
 ├─ index.html · plan/ guide/ production/ auto/  ← 사이트 (편 목록 카드 · 채널 기획 · 튜토리얼 · 제작 노트 · 자동 제작 매뉴얼)
-├─ docs/                      ← 시리즈 문서 (naemonambul.md · naemonambul-ideas.md · pomoragu.md · igemoyeyo.md)
+├─ docs/                      ← 시리즈 문서 (naemonambul.md · naemonambul-ideas.md · pomoragu.md · igemoyeyo.md · moanimyeondo.md)
 ├─ skill/                     ← claude.ai 용 스킬 패키지 (modapman.skill = 지금 포맷, eight-year-olds-question.skill = 이전 포맷)
 ├─ .claude/skills/            ← modapman (편 만들기) · qna-shorts (쇼츠)
 ├─ content/                   ← 편 하나 = 폴더 하나 (아래 "편 폴더")
@@ -81,7 +81,7 @@ qna/
 | 6. 샷 계획 | `script/motion.json` (스킬의 "샷 계획" · `ep08f-modapman` 참고). **Root.tsx 는 고치지 않는다** — 편 목록은 자동 등록 | | 무료 |
 | 7. 확인 · 렌더 | 스틸 몇 장으로 화면 확인(`npm run still -- <id> out/x.png --frame=N`) → `npm run render -- <id> out/motion/<epNN>-modapman.mp4` (출력은 파일로 돌려 받는다 — 파이프에 물리면 `write EOF` 로 죽는다) → `npm run still -- <id>-Thumb ../content/<편>/upload/thumbnail.png` | mp4 는 `out/` | 무료 |
 | 8. 자막 · 챕터 | `npm run motion-srt -- epNN` | `upload/ko.srt` · `en.srt` · `chapters.txt` | 무료 |
-| 9. 제목 · 키워드 | `npm run keywords -- "검색어" …` (YouTube API, 루트 `.env` 의 `YOUTUBE_API_KEY`) → 지금 뜨거운 말을 제목 앞에, 끝에 `\| 모답맨` → `upload/upload.md` | | 무료 (할당량) |
+| 9. 제목 · 키워드 | **스킬 `yt-seo`** (저장소 루트 `.claude/skills/yt-seo`): 루트에서 `npm run seo -- qna epNN "검색어" …` (YouTube API 조회수 · 최근 60일 · 해시태그 · 태그 · 자동완성 → `upload/upload.md` 의 seo 칸) → 지금 뜨거운 말을 제목 앞에, 끝에 `\| 모답맨` → 제목 · 설명 · 해시태그 · 태그를 `upload/upload.md` 에. Studio 를 열거나 업로드를 요청하면 훅(루트 `.claude/settings.json` → `shared/bin/seo-check.mjs`)이 알린다 | | 무료 (할당량) |
 | 10. 업로드 | 크롬 Studio, 모라구(UCCIm8f5JE4b4PmSrPIJd7zQ): 제목 · 설명 · 썸네일 · 재생목록 "모(오)답맨 (여덟 살 아들의 호기심)" · 아동용 아니요 · AI 사용 아니요(만화 · 실존 인물 아님) · 태그 · 교육 · 한국어 자막 → 언어 탭에서 영어 제목/설명/자막 → **비공개** 저장 → 실제 상태 다시 읽기 | `upload/upload.md` 끝에 업로드 기록, `unit.json` 의 `status` · `youtube` | |
 | 11. 사이트 · 저장 | 홈 `index.html` 카드 갱신, 브랜치에서 커밋 → PR | | |
 | 12. 쇼츠 | 스킬 `qna-shorts` (이전 포맷 기준 — 모답맨 본편에서 자를 때도 비공개 업로드 규칙은 같다) | | 무료 |

@@ -6,6 +6,8 @@
   "scripts": {
     "new": "node shared/bin/moyu.mjs new",
     "units": "node shared/bin/moyu.mjs units",
-    "verify": "node shared/bin/moyu.mjs verify"
+    "verify": "node shared/bin/moyu.mjs verify",
+    "seo": "node shared/bin/seo.mjs",
+    "seo-check": "node shared/bin/seo-check.mjs"
   }
 }

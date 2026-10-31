@@ -16,11 +16,13 @@
 
 - **배너** (2026-10-23 적용): 빨간 도장 "모" + 라구, 나무 문패 "모 씨네", 세 식구 얼굴 + 노란 이름표. 코드로 만든다 → `video/src/ChannelBanner.tsx`, `npx remotion still src/index.ts Channel-Banner out/channel/banner-modapman.png`. 글자 · 인물은 가운데 1546×423 띠 안에만.
 - **채널 설명** (적용됨): "모 씨네 가족 채널, 모라구입니다." 로 시작해 세 식구를 소개하고 카테고리를 ▶ 로 나열. 원문은 `video/out/channel/description.md`, 바꾸기 전 설명은 아래 7절.
-- 모라구 안의 카테고리 (각자 규칙 문서가 따로 있다):
+- 모라구 안의 카테고리 (각자 규칙 문서가 따로 있다, 기획 · 방향 · 의도 한눈에 보기: [docs/morago-categories.md](docs/morago-categories.md)):
   - **모(오)답맨** — 이 문서. qna 폴더
   - **내모남불** — [docs/naemonambul.md](docs/naemonambul.md)
   - **포모라구** (기획 중) — [docs/pomoragu.md](docs/pomoragu.md)
-  - **이게 모예요?** (기획 중, 쇼츠 전용) — [docs/igemoyeyo.md](docs/igemoyeyo.md)
+  - **이게 모예요?** (쇼츠, 1편 공개) — [docs/igemoyeyo.md](docs/igemoyeyo.md)
+  - **모 아니면 도** (1편 공개, 두 갈래 결말 인터랙티브) — [docs/moanimyeondo.md](docs/moanimyeondo.md)
+  - **모덕후 · 조삼모사 · 모롱이** (기획 중, 어른 대상 쇼츠: 덕후식 고찰 · 같은 상황 다른 관점 · 꺼드럭 놀리기) — [docs/modeokhu-josammosa-morongi.md](docs/modeokhu-josammosa-morongi.md)
   - **보면 풀리는 수학 · 과학** — `lab/` ([lab/CLAUDE.md](../lab/CLAUDE.md))
   - **엄마가 만든 동화 / 상담심리사 엄마의 인성동화책** — `fairy/`
   - **아빠가 만든 앱** — 앱 소개 영상
@@ -65,7 +67,7 @@
 - 전환: whip · zoom · spin · wipe · iris · glitch · slam · smash · flash. 카메라: roll · punch(크래시 줌) · snap.
 - 장치: freeze+tag(멈춤 이름표) · mark(O/X) · tally(正) · loading · jail · note(※) · 글자 slam/stamp/pop/type/shake/news · fx imagine/docu/vhs/slowmo/lines.
 - `count: n` 으로 오답 카운터, 맨 위 `"counter": "모답맨 오답"`, `"thumb"` 로 썸네일 문구.
-- 효과음은 전부 코드 합성 (`video/scripts/sfx.mjs`) — 저작권 걱정 없음. 배경음악 `public/bgm/cheerful.wav`.
+- 효과음은 전부 코드 합성 (`video/scripts/sfx.mjs`) — 저작권 걱정 없음. 배경음악도 코드 합성(`video/scripts/bgm.mjs`, 목록은 `--list`) — 편마다 `motion.json` 의 `"bgm"` 으로 분위기에 맞는 곡을 고른다 (기본 `cheerful`, 민망 · 로맨스 개그는 `sultry`). 기존 노래 · 음원은 Content ID 에 걸리니 쓰지 않고, 새 분위기는 `bgm.mjs` 에 곡을 하나 더 짓는다.
 
 ### 썸네일
 `MotionThumb` (`src/motion/Thumb.tsx`): 빨간 방사 배경 + 노란 X + 놀란 아빠 얼굴 + 위 두 줄(흰 · 노랑) + 작은 셋째 줄 + 정답 인물 얼굴 + "모답맨" 딱지 + 오답 카운터. 1280×720.

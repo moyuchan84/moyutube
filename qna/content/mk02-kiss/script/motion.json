@@ -1,0 +1,1473 @@
+{
+  "id": "Mk02-Modeokhu",
+  "episode": "mk02",
+  "voice": "mk02",
+  "bgm": "sultry",
+  "gap": 0,
+  "chop": 42,
+  "thumb": {
+    "badge": "모덕후 ② 뽀뽀",
+    "layers": [
+      {
+        "bg": "burst:#F48FB1:#F06292"
+      },
+      {
+        "fx": "lines",
+        "x": 640,
+        "y": 380
+      },
+      {
+        "img": "full/tv-drama",
+        "panel": [
+          0.6,
+          0.35,
+          1.5
+        ],
+        "x": 880,
+        "y": 400,
+        "w": 660,
+        "h": 470,
+        "rot": 3
+      },
+      {
+        "img": "cutin/uncle-gulp",
+        "sticker": true,
+        "x": 250,
+        "y": 470,
+        "h": 560,
+        "rot": -4
+      },
+      {
+        "img": "prop/lips",
+        "sticker": true,
+        "x": 1150,
+        "y": 600,
+        "h": 220,
+        "rot": 12
+      },
+      {
+        "text": "입술엔 뭐가 있길래",
+        "x": 860,
+        "y": 105,
+        "size": 72,
+        "rot": -3
+      },
+      {
+        "text": "뽀뽀는 왜 좋아?!",
+        "style": "stamp",
+        "x": 880,
+        "y": 650,
+        "size": 104,
+        "rot": -6
+      },
+      {
+        "fx": "kira",
+        "x": 320,
+        "y": 220
+      }
+    ]
+  },
+  "beats": [
+    {
+      "line": "c00-0",
+      "shots": [
+        {
+          "in": "flash",
+          "bg": "full/tv-drama",
+          "cam": {
+            "from": [
+              0.62,
+              0.32,
+              1.6
+            ],
+            "to": [
+              0.62,
+              0.32,
+              1.3
+            ],
+            "ease": "snap"
+          },
+          "text": [
+            {
+              "t": "KISS · 뽀뽀",
+              "y": 0.14,
+              "size": 170,
+              "color": "#FFFFFF",
+              "style": "slam"
+            },
+            {
+              "t": "이번 호 특집",
+              "x": 0.28,
+              "y": 0.32,
+              "size": 70,
+              "color": "#E63946",
+              "style": "stamp",
+              "at": 0.35
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "pang"
+            },
+            {
+              "name": "stamp",
+              "at": 0.35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00-1",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "burst:#F48FB1:#F06292",
+          "cast": [
+            {
+              "art": "cutin/uncle-gulp",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "꿀꺽",
+              "x": 0.8,
+              "y": 0.25,
+              "size": 150,
+              "color": "#FFFFFF",
+              "style": "shake"
+            }
+          ],
+          "fx": [
+            "focus"
+          ],
+          "sfx": [
+            {
+              "name": "gulp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00-2",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "bg/oneroom",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.15
+            ]
+          },
+          "cast": [
+            {
+              "art": "common/dad/think",
+              "x": 0.5,
+              "h": 0.95,
+              "enter": "pop",
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "방금 침 삼켰지?",
+              "x": 0.5,
+              "y": 0.13,
+              "size": 110,
+              "style": "shake"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00-3",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "bg/oneroom",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.1
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.2
+            ]
+          },
+          "cast": [
+            {
+              "art": "modeokhu/normal",
+              "x": 0.32,
+              "h": 0.95,
+              "enter": "pop",
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "연구 중이었다",
+              "x": 0.7,
+              "y": 0.3,
+              "size": 110,
+              "color": "#FFD23F",
+              "style": "stamp",
+              "at": 0.3
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hold": 50,
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "stripes:#3A0F2E:#5C1A47",
+          "cast": [
+            {
+              "art": "modeokhu/point",
+              "x": 0.3,
+              "h": 0.9,
+              "enter": "l"
+            }
+          ],
+          "text": [
+            {
+              "t": "모덕후",
+              "x": 0.66,
+              "y": 0.4,
+              "size": 180,
+              "color": "#FFD23F",
+              "style": "slam"
+            },
+            {
+              "t": "② 이상하지만 진지한 고찰",
+              "x": 0.66,
+              "y": 0.62,
+              "size": 64,
+              "color": "#FFFFFF",
+              "style": "pop",
+              "at": 14
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "stinger"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c01-0",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "dots:#FCE4EC:#F8BBD0",
+          "props": [
+            {
+              "art": "prop/lips",
+              "x": 0.5,
+              "y": 0.55,
+              "w": 0.32,
+              "enter": "drop"
+            }
+          ],
+          "text": [
+            {
+              "t": "뽀뽀는 왜",
+              "y": 0.15,
+              "size": 120,
+              "style": "slam"
+            },
+            {
+              "t": "기분이 좋을까?",
+              "y": 0.72,
+              "size": 110,
+              "color": "#C2185B",
+              "style": "pop",
+              "at": 0.35
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "dudung"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c01-1",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "#101820",
+          "cast": [
+            {
+              "art": "cutin/uncle-glint",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "지금부터 진지하다",
+              "y": 0.72,
+              "size": 110,
+              "color": "#FFD23F",
+              "style": "stamp",
+              "at": 0.3
+            }
+          ],
+          "fx": [
+            "focus",
+            "gaan"
+          ],
+          "sfx": [
+            {
+              "name": "crash"
+            },
+            {
+              "name": "stamp",
+              "at": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-0",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "burst:#C2185B:#E91E63",
+          "cast": [
+            {
+              "art": "modeokhu/point",
+              "x": 0.32,
+              "h": 0.92,
+              "enter": "l",
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "답 = 입술",
+              "x": 0.7,
+              "y": 0.4,
+              "size": 140,
+              "color": "#FFFFFF",
+              "style": "slam",
+              "at": 0.3
+            }
+          ],
+          "sfx": [
+            {
+              "name": "ding",
+              "at": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-1",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "full/homunculus-cover",
+          "cam": {
+            "from": [
+              0.5,
+              0.55,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.3
+            ]
+          },
+          "text": [
+            {
+              "t": "뇌 속 몸 지도",
+              "y": 0.12,
+              "size": 90,
+              "color": "#FFFFFF",
+              "style": "pop"
+            },
+            {
+              "t": "입술 > 다리",
+              "y": 0.7,
+              "size": 130,
+              "color": "#FFD23F",
+              "style": "stamp",
+              "at": 0.5
+            }
+          ],
+          "note": "※ 감각 호문쿨루스 — 뇌의 촉각 지도(Penfield)를 몸 크기로 그린 것",
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-2",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "dots:#E3F2FD:#BBDEFB",
+          "cast": [
+            {
+              "art": "common/dad/think",
+              "x": 0.5,
+              "h": 0.95,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "형이 어떻게 알아?",
+              "y": 0.13,
+              "size": 110,
+              "style": "shake",
+              "at": 0.2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-3",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "#2B2D42",
+          "cast": [
+            {
+              "art": "modeokhu/fluster",
+              "x": 0.5,
+              "h": 0.95,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "…논문으로.",
+              "y": 0.14,
+              "size": 100,
+              "color": "#FFFFFF",
+              "style": "type"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "slide"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-0",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "full/lipstick-ad",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1
+            ],
+            "to": [
+              0.48,
+              0.5,
+              1.12
+            ]
+          },
+          "text": [
+            {
+              "t": "입술 피부는 아주 얇다",
+              "y": 0.14,
+              "size": 96,
+              "color": "#FFFFFF",
+              "style": "pop",
+              "at": 0.1
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "pop",
+              "at": 0.1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-1",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "full/lipstick-ad",
+          "cam": {
+            "from": [
+              0.55,
+              0.5,
+              1.5
+            ],
+            "to": [
+              0.58,
+              0.52,
+              1.75
+            ],
+            "ease": "snap",
+            "punch": [
+              10
+            ]
+          },
+          "text": [
+            {
+              "t": "핏줄 색이 비친다",
+              "y": 0.15,
+              "size": 96,
+              "color": "#FFFFFF",
+              "style": "pop"
+            },
+            {
+              "t": "그래서 빨강",
+              "y": 0.7,
+              "size": 130,
+              "color": "#E63946",
+              "style": "stamp",
+              "at": 0.45
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-0",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "full/health-room",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.1
+            ]
+          },
+          "text": [
+            {
+              "t": "커플 15쌍 실험",
+              "y": 0.14,
+              "size": 100,
+              "style": "pop"
+            },
+            {
+              "t": "작은 실험",
+              "x": 0.8,
+              "y": 0.75,
+              "size": 90,
+              "color": "#E63946",
+              "style": "stamp",
+              "rot": -10,
+              "at": 0.5
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-1",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "stripes:#1D3557:#274472",
+          "text": [
+            {
+              "t": "스트레스 호르몬",
+              "y": 0.38,
+              "size": 120,
+              "color": "#FFFFFF",
+              "style": "slam"
+            },
+            {
+              "t": "↓ 내려감",
+              "y": 0.62,
+              "size": 130,
+              "color": "#7FDBFF",
+              "style": "pop",
+              "at": 0.35
+            }
+          ],
+          "sfx": [
+            {
+              "name": "ding",
+              "at": 0.35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-2",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "dots:#FCE4EC:#F8BBD0",
+          "text": [
+            {
+              "t": "애정 호르몬",
+              "y": 0.3,
+              "size": 120,
+              "style": "slam"
+            },
+            {
+              "t": "남자만 ↑",
+              "y": 0.6,
+              "size": 150,
+              "color": "#C2185B",
+              "style": "stamp",
+              "at": 0.45
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-3",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "burst:#2F4F8F:#3E66B3",
+          "cast": [
+            {
+              "art": "common/cutin/dad-shock",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "여자는?",
+              "x": 0.8,
+              "y": 0.25,
+              "size": 140,
+              "color": "#FFD23F",
+              "style": "shake"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-4",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "#101820",
+          "text": [
+            {
+              "t": "여자 ↓",
+              "y": 0.5,
+              "size": 200,
+              "color": "#E63946",
+              "style": "slam"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "buzz"
+            }
+          ]
+        },
+        {
+          "at": 0.4,
+          "in": "zoom",
+          "bg": "full/health-room",
+          "cam": {
+            "from": [
+              0.68,
+              0.4,
+              1.6
+            ],
+            "to": [
+              0.7,
+              0.42,
+              1.85
+            ],
+            "ease": "snap"
+          },
+          "text": [
+            {
+              "t": "실험실 = 학교 보건실",
+              "y": 0.72,
+              "size": 100,
+              "color": "#FFFFFF",
+              "style": "stamp"
+            }
+          ],
+          "note": "※ 커플 15쌍 작은 실험 — Hill · Wilson, Lafayette College (2009 AAAS 발표)",
+          "sfx": [
+            {
+              "name": "stamp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-5",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "full/health-room",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.1
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1
+            ]
+          },
+          "cast": [
+            {
+              "art": "common/dad/think",
+              "x": 0.25,
+              "h": 0.9,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "분위기가 중요",
+              "x": 0.66,
+              "y": 0.2,
+              "size": 110,
+              "color": "#C2185B",
+              "style": "pop",
+              "at": 0.3
+            }
+          ],
+          "sfx": [
+            {
+              "name": "slide"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-0",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "#101820",
+          "cast": [
+            {
+              "art": "cutin/uncle-glint",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "가설",
+              "x": 0.8,
+              "y": 0.3,
+              "size": 200,
+              "color": "#E63946",
+              "style": "stamp",
+              "rot": -10,
+              "at": 0.3
+            }
+          ],
+          "fx": [
+            "focus"
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-1",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "full/sommelier",
+          "cam": {
+            "from": [
+              0.45,
+              0.45,
+              1.15
+            ],
+            "to": [
+              0.45,
+              0.42,
+              1.3
+            ]
+          },
+          "text": [
+            {
+              "t": "가까이서 냄새 · 맛으로",
+              "y": 0.13,
+              "size": 90,
+              "color": "#FFFFFF",
+              "style": "pop"
+            },
+            {
+              "t": "상대를 검사?",
+              "y": 0.7,
+              "size": 120,
+              "color": "#FFD23F",
+              "style": "stamp",
+              "at": 0.5
+            }
+          ],
+          "note": "※ 연구자들의 가설 — Wlodarski · Dunbar 2013 (Arch Sex Behav)",
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-2",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "dots:#E3F2FD:#BBDEFB",
+          "cast": [
+            {
+              "art": "common/dad/think",
+              "x": 0.5,
+              "h": 0.95,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "형이 아직 못 한 건…",
+              "y": 0.13,
+              "size": 100,
+              "style": "type"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "tick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-3",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "full/sommelier",
+          "cam": {
+            "from": [
+              0.6,
+              0.75,
+              1.6
+            ],
+            "to": [
+              0.66,
+              0.75,
+              1.4
+            ],
+            "ease": "snap"
+          },
+          "text": [
+            {
+              "t": "냄새로 다 거름",
+              "y": 0.2,
+              "size": 120,
+              "color": "#E63946",
+              "style": "stamp",
+              "at": 0.2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "buzz",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hold": 60,
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "full/ape-tree",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.25
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.05
+            ]
+          },
+          "text": [
+            {
+              "t": "입맞춤은 2천만 년 전",
+              "y": 0.13,
+              "size": 96,
+              "color": "#5C1A47",
+              "style": "pop"
+            },
+            {
+              "t": "유인원 조상부터?",
+              "y": 0.72,
+              "size": 110,
+              "color": "#C2185B",
+              "style": "stamp",
+              "at": 16
+            }
+          ],
+          "note": "※ 연구 추정 약 1,690만~2,150만 년 전 — Brindle 외 2025 (Evol Hum Behav)",
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "page"
+            },
+            {
+              "name": "stamp",
+              "at": 16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06-0",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "full/world-map",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.12
+            ]
+          },
+          "text": [
+            {
+              "t": "반전!",
+              "x": 0.2,
+              "y": 0.18,
+              "size": 150,
+              "color": "#E63946",
+              "style": "slam"
+            },
+            {
+              "t": "168개 문화 조사",
+              "y": 0.72,
+              "size": 100,
+              "color": "#FFFFFF",
+              "style": "pop",
+              "at": 0.4
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pang"
+            },
+            {
+              "name": "pop",
+              "at": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06-1",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "full/world-map",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.3
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.5
+            ],
+            "ease": "snap",
+            "punch": [
+              10
+            ]
+          },
+          "text": [
+            {
+              "t": "46%",
+              "y": 0.36,
+              "size": 300,
+              "color": "#FFD23F",
+              "style": "slam",
+              "at": 0.15
+            },
+            {
+              "t": "절반도 안 됨",
+              "x": 0.64,
+              "y": 0.7,
+              "size": 110,
+              "color": "#E63946",
+              "style": "stamp",
+              "at": 0.55
+            }
+          ],
+          "note": "※ 연인 입맞춤 기록 168개 중 77개 문화 — Jankowiak · Volsche · Garcia 2015",
+          "sfx": [
+            {
+              "name": "ding",
+              "at": 0.15
+            },
+            {
+              "name": "stamp",
+              "at": 0.55
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06-2",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "burst:#FFD23F:#FFB627",
+          "cast": [
+            {
+              "art": "modeokhu/proud",
+              "x": 0.5,
+              "h": 0.95,
+              "enter": "pop",
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "나도 정상!",
+              "y": 0.13,
+              "size": 140,
+              "style": "slam",
+              "at": 0.2
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "pang",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07-0",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "full/microbe",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.2
+            ]
+          },
+          "text": [
+            {
+              "t": "결론",
+              "x": 0.15,
+              "y": 0.15,
+              "size": 110,
+              "color": "#E63946",
+              "style": "stamp"
+            },
+            {
+              "t": "10초 = 세균 8천만",
+              "y": 0.72,
+              "size": 120,
+              "color": "#FFD23F",
+              "style": "slam",
+              "at": 0.45
+            }
+          ],
+          "note": "※ 추정 계산 — Kort 외 2014 (Microbiome)",
+          "sfx": [
+            {
+              "name": "stamp"
+            },
+            {
+              "name": "pang",
+              "at": 0.45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07-1",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "bg/oneroom",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.15
+            ]
+          },
+          "cast": [
+            {
+              "art": "modeokhu/proud",
+              "x": 0.32,
+              "h": 0.95,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "위생 때문에",
+              "x": 0.7,
+              "y": 0.25,
+              "size": 110,
+              "style": "pop"
+            },
+            {
+              "t": "안 한다",
+              "x": 0.7,
+              "y": 0.5,
+              "size": 130,
+              "color": "#FFD23F",
+              "style": "stamp",
+              "at": 0.4
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07-2",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "burst:#2F4F8F:#3E66B3",
+          "cast": [
+            {
+              "art": "common/dad/think",
+              "x": 0.5,
+              "h": 0.95,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "못 하는 거잖아",
+              "y": 0.13,
+              "size": 120,
+              "color": "#FFFFFF",
+              "style": "shake",
+              "at": 0.2
+            }
+          ],
+          "fx": [
+            "lines"
+          ],
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07-3",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "#2B2D42",
+          "cast": [
+            {
+              "art": "modeokhu/fluster",
+              "x": 0.5,
+              "h": 0.95
+            }
+          ],
+          "text": [
+            {
+              "t": "모쏠 인증",
+              "y": 0.5,
+              "size": 220,
+              "color": "#E63946",
+              "style": "stamp",
+              "rot": -10,
+              "at": 0.15
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c08-0",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "full/cheek-kiss",
+          "cam": {
+            "from": [
+              0.38,
+              0.45,
+              1.35
+            ],
+            "to": [
+              0.4,
+              0.45,
+              1.5
+            ]
+          },
+          "text": [
+            {
+              "t": "쪽♡",
+              "x": 0.32,
+              "y": 0.25,
+              "size": 130,
+              "color": "#F06292",
+              "style": "pop",
+              "at": 0.75
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "chu",
+              "at": 0.75
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c08-1",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "full/cheek-kiss",
+          "cam": {
+            "from": [
+              0.85,
+              0.45,
+              1.8
+            ],
+            "to": [
+              0.88,
+              0.45,
+              2
+            ],
+            "ease": "snap"
+          },
+          "text": [
+            {
+              "t": "…세균 팔천만",
+              "y": 0.72,
+              "size": 100,
+              "color": "#FFFFFF",
+              "style": "type",
+              "at": 0.3
+            }
+          ],
+          "sfx": [
+            {
+              "name": "gulp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hold": 110,
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "burst:#3A0F2E:#5C1A47",
+          "text": [
+            {
+              "t": "모덕후",
+              "y": 0.28,
+              "size": 170,
+              "color": "#FFD23F",
+              "style": "slam"
+            },
+            {
+              "t": "다음 이상한 질문은?",
+              "y": 0.5,
+              "size": 100,
+              "color": "#FFFFFF",
+              "style": "pop",
+              "at": 14
+            }
+          ],
+          "note": "※ 출처: Hill · Wilson 2009 (AAAS 발표) · Wlodarski · Dunbar 2013 · Jankowiak 외 2015 (Am Anthropol) · Kort 외 2014 (Microbiome) · Brindle 외 2025 (Evol Hum Behav). 기원에 관한 내용은 연구자들의 가설입니다.",
+          "sfx": [
+            {
+              "name": "stinger"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

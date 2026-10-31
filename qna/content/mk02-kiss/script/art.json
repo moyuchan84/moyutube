@@ -1,0 +1,159 @@
+{
+  "title": "모덕후 ② 뽀뽀 — 잡지 화보 패러디",
+  "cast": {
+    "modeokhu": "the nerdy uncle: a Korean man in his late thirties with a round friendly face, a full head of messy black hair with a cowlick, thick round black-rimmed glasses that glint, a neatly tucked-in red-and-navy plaid flannel shirt buttoned to the top, khaki chinos, brown loafers and a small silver laser pointer clipped to the shirt pocket; an earnest, overly serious scholar look who has never dated; NO text, NO logos"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/shock",
+    "common/dad/panic",
+    "common/dad/think",
+    "common/mom/normal",
+    "common/cutin/dad-shock"
+  ],
+  "items": [
+    {
+      "id": "modeokhu/normal",
+      "kind": "char",
+      "who": "modeokhu",
+      "ref": null,
+      "title": "모덕후 삼촌 — 기본 (진지) (1편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c00, c02, c06",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing upright with perfect posture, one hand pushing his glasses up the bridge of his nose so the lenses flash white, the other hand holding a thick stack of research papers. Dead-serious face, tight lips, one eyebrow raised."
+    },
+    {
+      "id": "modeokhu/point",
+      "kind": "char",
+      "who": "modeokhu",
+      "title": "모덕후 삼촌 — 레이저 포인터로 가리키며 \"자, 진지하다\" (1편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c01, c03, c05",
+      "desc": "3/4 view turned slightly to the RIGHT. Thrusting a small silver laser pointer forward toward the right with one arm fully extended, a thin red beam shooting out, the other hand on his hip. Intense lecturing face, mouth wide open mid-word, eyes blazing behind glinting glasses, sweat of pure passion."
+    },
+    {
+      "id": "modeokhu/proud",
+      "kind": "char",
+      "who": "modeokhu",
+      "title": "모덕후 삼촌 — 결론, 팔짱 끼고 의기양양 (1편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c07, c08",
+      "desc": "3/4 view turned slightly to the RIGHT. Arms crossed firmly, chin raised, a huge smug satisfied grin with all teeth showing, glasses flashing, tiny sparkles around his head like he just won a Nobel prize."
+    },
+    {
+      "id": "cutin/uncle-glint",
+      "kind": "cutin",
+      "who": "modeokhu",
+      "title": "모덕후 삼촌 컷인 — 안경 번쩍 (1편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c01, c05",
+      "desc": "Facing the viewer, extreme dramatic close-up from the chest up. Both lenses of his thick glasses flash pure white with a lens-flare glint, a dead-serious frown, a single sweat drop rolling down his temple, dramatic shadow across the upper face like a manga detective revelation."
+    },
+    {
+      "id": "cutin/uncle-gulp",
+      "kind": "cutin",
+      "who": "modeokhu",
+      "title": "삼촌 컷인 — 꿀꺽 (김 서린 안경 · 빨개진 볼)",
+      "cuts": "c00, c08",
+      "desc": "Facing the viewer, dramatic close-up from the chest up. He swallows hard with a visible comic gulp at the throat, both lenses of his thick glasses fogged up solid white, cheeks and ears bright red, one big sweat drop on his temple, lips pressed tight in nervous longing, a faint warm TV glow on his face. Flustered and envious, not leering."
+    },
+    {
+      "id": "modeokhu/fluster",
+      "kind": "char",
+      "who": "modeokhu",
+      "title": "삼촌 — \"…논문으로.\" 시선 피하며 안경 고쳐 쓰기",
+      "cuts": "c02, c05",
+      "desc": "3/4 view turned slightly to the RIGHT. Eyes darting sideways away from the viewer, one finger awkwardly pushing his glasses up, the other hand clutching a thick stack of research papers to his chest like a shield, ears and cheeks bright red, a tiny embarrassed sweat drop, mouth in a stiff wobbly line."
+    },
+    {
+      "id": "bg/oneroom",
+      "kind": "bg",
+      "title": "배경 — 삼촌의 밤 원룸 (책 더미 · 피규어 · 컵라면 · TV 불빛)",
+      "cuts": "c00, c01",
+      "desc": "A small cozy Korean studio apartment at night seen straight-on like a sitcom set: a low sofa facing a TV on the left, tall leaning stacks of thick books and research papers, a shelf of small robot and anime-style figurines, an empty cup-noodle bowl and a can on a low table, a single desk lamp and the cool blue glow of the TV filling the room. No people. TV screen blank glow, no writing anywhere."
+    },
+    {
+      "id": "full/tv-drama",
+      "kind": "full",
+      "people": [
+        "modeokhu"
+      ],
+      "title": "드라마 패러디 — 소파의 삼촌 뒷모습 너머 TV 속 노을 키스신 (실루엣 · 하트 모자이크)",
+      "cuts": "c00",
+      "desc": "Over-the-shoulder view from behind the uncle sitting stiffly upright on a low sofa in a dark studio apartment, hugging a cushion, the back of his messy head and glasses rim visible. On the big TV in front of him plays a romantic Korean drama scene: a glowing orange sunset by the sea, two characters shown only as dark solid silhouettes leaning toward each other, the spot where their faces meet completely covered by a big glowing pink heart-shaped mosaic. Soft blue TV light washing over the room. The uncle stays in the exact gag-manga cartoon style of the attached images. No text, no letters, no logos."
+    },
+    {
+      "id": "full/homunculus-cover",
+      "kind": "full",
+      "people": [],
+      "title": "과학 잡지 표지 패러디 — 입술 · 손이 거대한 감각 호문쿨루스",
+      "cuts": "c02",
+      "desc": "A glossy popular-science magazine cover photo: a smooth matte clay sculpture of the sensory homunculus — a small plain gray mannequin-like figure with comically enormous lips and gigantic hands, tiny legs and torso, sitting on a white pedestal against a deep navy studio backdrop with a dramatic rim light. Smooth featureless clay surface, no skin detail, no realistic face, eyes simple and closed. Leave the top quarter as empty backdrop for a title. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw the person from the attached image or any other people, spectators or faces. Absolutely no readable words, letters or numbers anywhere."
+    },
+    {
+      "id": "full/lipstick-ad",
+      "kind": "full",
+      "people": [],
+      "title": "립스틱 광고 패러디 — 빨간 입술 모형 단면 도해 (얇은 겉층 · 비치는 모세혈관)",
+      "cuts": "c03",
+      "desc": "A luxury lipstick advertisement photo on a glossy blush-pink background with sparkles and a golden lipstick tube lying beside it: a large smooth stylized lip-shaped sculpture (like a cosmetics display model, not a real face) cut open on one side like a science-museum cross-section, showing a very thin glossy outer layer and a network of tiny bright red capillary loops glowing just beneath it. Elegant beauty-ad lighting meets clean anatomy diagram. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw the person from the attached image or any other people or faces. Absolutely no readable words, letters or numbers anywhere."
+    },
+    {
+      "id": "full/health-room",
+      "kind": "full",
+      "people": [],
+      "title": "학교 보건실 — 분위기 0점의 실험실",
+      "cuts": "c04",
+      "desc": "A plain Korean university health-center room under harsh flat fluorescent light: a narrow examination bed with a crinkly paper sheet, a pale green privacy curtain on a rail, a medicine cabinet, a weight scale, a steel tray with a rack of empty saliva test tubes and a clipboard, a blood-pressure cuff on the wall. Sterile, bland and totally unromantic, with one sad little paper heart taped to the curtain. No people. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw the person from the attached image or any other people or faces. Absolutely no readable words, letters or numbers anywhere."
+    },
+    {
+      "id": "full/sommelier",
+      "kind": "full",
+      "people": [
+        "modeokhu"
+      ],
+      "title": "와인 시음 화보 패러디 — 소믈리에 삼촌이 잔마다 ✕",
+      "cuts": "c05",
+      "desc": "A classy wine-magazine editorial photo in a dim cellar with warm candlelight and oak barrels: the uncle, wearing a black sommelier apron over his plaid shirt, holds a wine glass under his nose with his eyes closed and an extremely serious, snobbish expression, pinky raised. In front of him a long row of empty wine glasses each has a small red X-shaped tag hanging from its stem. The uncle stays in the exact gag-manga cartoon style of the attached images. No text, no letters, no logos."
+    },
+    {
+      "id": "full/ape-tree",
+      "kind": "full",
+      "people": [],
+      "title": "박물관 계통도 패러디 — 가지마다 입 맞추는 유인원들",
+      "cuts": "c05",
+      "desc": "A charming natural-history museum illustration plate on cream paper: a hand-painted family tree whose branches end in small cute pairs of apes — chimpanzees, bonobos and orangutans — each pair gently touching lips in a sweet friendly peck, with tiny pink hearts floating up. Fine scientific line work, soft watercolor shading, elegant vintage field-guide feel. No humans. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw the person from the attached image or any other people or faces. Absolutely no readable words, letters or numbers anywhere."
+    },
+    {
+      "id": "full/world-map",
+      "kind": "full",
+      "people": [],
+      "title": "지도 화보 — 하트 핀 절반, 회색 핀 절반",
+      "cuts": "c06",
+      "desc": "A stylish travel-magazine flat lay of a vintage world map on a wooden desk, with about thirty push pins stuck across all continents: roughly half are glossy red heart-shaped pins and the other half are plain gray round pins, mixed in every region. A brass compass and a magnifying glass rest at the edge. Warm soft daylight. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw the person from the attached image or any other people or faces. Absolutely no readable words, letters, numbers or place names anywhere."
+    },
+    {
+      "id": "full/microbe",
+      "kind": "full",
+      "people": [],
+      "title": "현미경 화보 패러디 — 하트 다리를 건너 이사 가는 세균 떼",
+      "cuts": "c07",
+      "desc": "A dramatic science-magazine microscope photo: a big round glowing microscope view on a black background, inside it a crowd of cute colorful round and rod-shaped cartoon bacteria with tiny dot eyes, carrying little suitcases and marching across a bridge shaped like a pink heart from one side to the other, some waving goodbye. Vivid lab lighting, bokeh sparkles. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw the person from the attached image or any other people or human faces. Absolutely no readable words, letters or numbers anywhere."
+    },
+    {
+      "id": "full/cheek-kiss",
+      "kind": "full",
+      "people": [
+        "dad",
+        "mom",
+        "modeokhu"
+      ],
+      "title": "현관 — 엄마가 아빠 볼에 쪽, 문틈의 삼촌 꿀꺽",
+      "cuts": "c08",
+      "desc": "The entrance hall of a Korean apartment in the morning: the mom, dressed to go out with a handbag on her shoulder, gives the dad a quick light peck on the cheek; the dad stands with a smug proud grin and a tiny sparkle, chest puffed out. In the background a door is open a crack and the uncle peeks through it, glasses fogged white, cheeks red, swallowing hard with a comic gulp. Warm morning light. All people stay in the exact gag-manga cartoon style of the attached images. No text, no letters, no logos."
+    },
+    {
+      "id": "prop/lips",
+      "kind": "prop",
+      "title": "소품 — 화보처럼 빛나는 빨간 입술 젤리",
+      "cuts": "c00, 썸네일",
+      "desc": "A single glossy red lip-shaped gummy candy, posed like a luxury beauty-product shot: translucent jelly with a sugar-sparkle surface, a dewy droplet, a soft studio rim light and star highlights."
+    }
+  ]
+}

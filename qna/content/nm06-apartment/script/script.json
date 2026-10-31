@@ -1,0 +1,239 @@
+{
+  "rawVoice": true,
+  "speed": 1.25,
+  "title": "내모남불 ⑥ 아파트편 · 층간소음 · 주차 두 칸 · 택배 박스",
+  "bgm": "cheerful",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "콜드 오픈",
+      "lines": [
+        { "who": "dad", "text": "또 쿵쿵이야? 신고해, 신고!", "en": "Thumping again?! Report them! Report them!" },
+        { "who": "dad", "text": "운동은 밤에 해야 살이 빠지지~ 모 어때!", "en": "Workouts burn more at night~ So what!", "style": "out of breath, jogging on a treadmill, cheerfully humming" }
+      ]
+    },
+    {
+      "id": "c00a",
+      "beat": "콜드 오픈",
+      "lines": [
+        { "who": "aptmgr", "text": "밤 10시부터는, 기준이 더 엄격합니다.", "tts": "밤 열 시부터는, 기준이 더 엄격합니다.", "en": "After 10 p.m., the standard is stricter." },
+        { "who": "dad", "text": "소장님, 언제 들어오셨어요?!", "en": "Sir, when did you get in here?!" },
+        { "who": "aptmgr", "text": "관리소입니다.", "en": "Management office." }
+      ]
+    },
+    {
+      "id": "c00b",
+      "beat": "콜드 오픈",
+      "lines": [
+        { "who": "narr", "text": "남이 뛰면 신고, 내가 뛰면 운동. 내모남불, 하나.", "en": "They stomp: report them. I stomp: a workout. Double standard, number one." },
+        { "who": "dad", "text": "저는… 모답맨입니다.", "en": "I'm… Modapman." }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "사건 개요",
+      "lines": [
+        { "who": "narr", "text": "사건 개요. 밤 11시 4분, 12층.", "tts": "사건 개요. 밤 열한 시 사 분, 십이 층.", "en": "Case summary. 11:04 p.m., 12th floor." },
+        { "who": "kid", "text": "아빠, 층간소음이 뭐야?", "en": "Dad, what's floor noise?" },
+        { "who": "dad", "text": "윗집이 우리 머리 위에서 볼링 치는 거.", "en": "When upstairs bowls on top of our heads." }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "ROUND 1 층간소음",
+      "lines": [
+        { "who": "narr", "text": "딱 세 판만 하죠. 1라운드, 층간소음.", "tts": "딱 세 판만 하죠. 일 라운드, 층간소음.", "en": "Just three rounds. Round one: floor noise." },
+        { "who": "docu", "text": "용의자는 오늘도… 발망치를 휘둘렀다.", "en": "Tonight again… the suspect swung the heel hammer.", "style": "hard-boiled noir detective monologue, low and dramatic" }
+      ]
+    },
+    {
+      "id": "c02a",
+      "beat": "ROUND 1 층간소음",
+      "lines": [
+        { "who": "kid", "text": "발망치가 뭐야?", "en": "What's a heel hammer?" },
+        { "who": "dad", "text": "뒤꿈치로 쿵쿵 걷는 거. 아빠 건 생활 소음이고.", "en": "Stomping on your heels. Mine's just everyday living noise." }
+      ]
+    },
+    {
+      "id": "c02b",
+      "beat": "ROUND 1 층간소음",
+      "lines": [
+        { "who": "dad", "text": "'혹시 집에서 볼링 치십니까?' 크크… 문장력 봐.", "en": "\"Do you, perhaps, bowl at home?\" Heh heh… what a writer.", "style": "giggling to himself, a nerdy wheezy snicker" },
+        { "who": "dad", "text": "단톡방에도 양식 공유해야지. 퍼가세요~", "en": "Let me share the template in the building group chat. Help yourselves~" }
+      ]
+    },
+    {
+      "id": "c02c",
+      "beat": "ROUND 1 층간소음",
+      "lines": [
+        { "who": "narr", "text": "남이 걸으면 발망치, 내가 걸으면 생활 소음. 내모남불, 둘.", "en": "They walk: a heel hammer. I walk: everyday noise. Double standard, number two." },
+        { "who": "dad", "text": "오늘은 꼭 말한다.", "en": "Tonight, I'm telling them.", "style": "heroic, determined, like a movie hero" }
+      ]
+    },
+    {
+      "id": "c02d",
+      "beat": "ROUND 1 층간소음",
+      "lines": [
+        { "who": "granny", "text": "아이고, 아랫집 아빠구나. 귤 좀 가져가.", "en": "Oh my, it's the dad from downstairs. Take some tangerines." },
+        { "who": "dad", "text": "아… 네… 귤… 감사합니다… 맛있겠다…", "en": "Oh… yes… tangerines… thank you… looks delicious…", "style": "shrinking, tiny timid voice, all courage gone" }
+      ]
+    },
+    {
+      "id": "c02e",
+      "beat": "ROUND 1 층간소음",
+      "lines": [
+        { "who": "kid", "text": "아빠, 편지는?", "en": "Dad, what about the letter?" },
+        { "who": "dad", "text": "…이건 감사 편지야.", "en": "…It's a thank-you letter." }
+      ]
+    },
+    {
+      "id": "c02f",
+      "beat": "ROUND 1 층간소음",
+      "lines": [
+        { "who": "aptmgr", "text": "직접 올라가시기보다, 관리소에 먼저 말씀하세요.", "en": "Rather than going up yourself, tell the management office first." },
+        { "who": "dad", "text": "언제 오셨어요?!", "en": "When did you get here?!" },
+        { "who": "aptmgr", "text": "관리소입니다.", "en": "Management office." }
+      ]
+    },
+    {
+      "id": "c02g",
+      "beat": "ROUND 1 층간소음",
+      "lines": [
+        { "who": "aptmgr", "text": "뛰는 소리, 걷는 소리, 다 층간소음입니다. 밤엔 더 엄격하고요.", "en": "Running, walking, it's all floor noise. And it's stricter at night." },
+        { "who": "aptmgr", "text": "내 소리는 내가 끌 수 있어서, 덜 거슬립니다.", "en": "Your own noise bothers you less, because you can stop it." }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "ROUND 2 주차 두 칸",
+      "lines": [
+        { "who": "narr", "text": "2라운드. 주차 두 칸.", "tts": "이 라운드. 주차 두 칸.", "en": "Round two: parking across two spaces." },
+        { "who": "dad", "text": "두 칸 주차? 양심 어디 갔어. 찰칵!", "en": "Two spaces? Where's your conscience? Click!" }
+      ]
+    },
+    {
+      "id": "c03a",
+      "beat": "ROUND 2 주차 두 칸",
+      "lines": [
+        { "who": "dad", "text": "정의의 주민, 오늘도 정의 구현~", "en": "The Justice Neighbor strikes again~", "style": "smug nerdy whisper to himself" },
+        { "who": "kid", "text": "아빠 차도 두 칸인데?", "en": "But your car's in two spaces too." }
+      ]
+    },
+    {
+      "id": "c03b",
+      "beat": "ROUND 2 주차 두 칸",
+      "lines": [
+        { "who": "dad", "text": "아빠는 문콕 무서워서 그래. 다들 이렇게 대잖아~ 모 어때.", "en": "I'm scared of door dings. Everyone parks like this~ So what." },
+        { "who": "dad", "text": "…누가 찍었어?!", "en": "…Who took this?!", "style": "sudden panic, voice cracking" }
+      ]
+    },
+    {
+      "id": "c03c",
+      "beat": "ROUND 2 주차 두 칸",
+      "lines": [
+        { "who": "narr", "text": "남이 대면 박제, 내가 대면 문콕 예방. 내모남불, 셋.", "en": "They do it: posted online. I do it: preventing door dings. Double standard, number three." },
+        { "who": "aptmgr", "text": "문콕이 무서우시면, 한 칸 안에 반듯이 대시면 됩니다.", "en": "If you're scared of door dings, park straight inside one space." }
+      ]
+    },
+    {
+      "id": "c03d",
+      "beat": "ROUND 2 주차 두 칸",
+      "lines": [
+        { "who": "aptmgr", "text": "다들 이렇게 한다고 믿는 거, 허위 합의 효과입니다.", "en": "Believing everyone does it too is called the false consensus effect." },
+        { "who": "kid", "text": "허위… 뭐?", "en": "False… what?" }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "ROUND 3 택배 박스",
+      "lines": [
+        { "who": "narr", "text": "3라운드. 택배 상자.", "tts": "삼 라운드. 택배 상자.", "en": "Round three: delivery boxes." },
+        { "who": "dad", "text": "테이프도 안 떼고! 양심을 같이 버렸네.", "en": "Tape still on! They threw out their conscience too." }
+      ]
+    },
+    {
+      "id": "c04a",
+      "beat": "ROUND 3 택배 박스",
+      "lines": [
+        { "who": "dad", "text": "이건 박스 탑이야. 아파트 예술 작품이지~", "en": "This is a box tower. Apartment art~" },
+        { "who": "mom", "text": "여보, 거기 당신 이름 대문짝만 하게 있어.", "en": "Honey, your name is on there in giant letters." }
+      ]
+    },
+    {
+      "id": "c04b",
+      "beat": "ROUND 3 택배 박스",
+      "lines": [
+        { "who": "dad", "text": "크크… 이건… 사인회야.", "en": "Heh heh… it's… an autograph session.", "style": "awkward nerdy snicker, covering the label with his hand" },
+        { "who": "narr", "text": "남이 버리면 양심 불량, 내가 버리면 예술. 내모남불, 넷.", "en": "They do it: no conscience. I do it: art. Double standard, number four." }
+      ]
+    },
+    {
+      "id": "c04c",
+      "beat": "ROUND 3 택배 박스",
+      "lines": [
+        { "who": "aptmgr", "text": "택배 상자는 테이프랑 송장 떼고, 접어서 종이로.", "en": "Delivery boxes: peel off the tape and the label, fold, then paper bin." },
+        { "who": "dad", "text": "거기서 나오시면…!", "en": "You came out of THERE…?!" },
+        { "who": "aptmgr", "text": "관리소입니다.", "en": "Management office." }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "속사포",
+      "lines": [
+        { "who": "narr", "text": "보너스 라운드. 속사포 내모남불!", "en": "Bonus round. Rapid-fire double standards!" },
+        { "who": "dad", "text": "남이 복도에 두면 통행 방해, 내가 두면 잠깐 둔 거!", "en": "Their stuff in the hallway: blocking. Mine: just for a sec!" }
+      ]
+    },
+    {
+      "id": "c05a",
+      "beat": "속사포",
+      "lines": [
+        { "who": "dad", "text": "남이 구우면 냄새 테러, 내가 구우면 행복한 냄새!", "en": "Their grilling: a smell attack. Mine: the smell of happiness!" },
+        { "who": "dad", "text": "남이 박으면 공사, 내가 박으면 액자 하나!", "en": "Their hammering: construction. Mine: one little picture frame!" },
+        { "who": "narr", "text": "내모남불, 다섯, 여섯, 일곱!", "en": "Double standard: five, six, seven!" }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "아이 눈높이",
+      "lines": [
+        { "who": "kid", "text": "아빠, 우리 집 천장은 윗집 바닥이지?", "en": "Dad, our ceiling is upstairs' floor, right?" },
+        { "who": "dad", "text": "그렇지.", "en": "Right." },
+        { "who": "kid", "text": "그럼 우리 집 바닥은, 아랫집 천장이야.", "en": "Then our floor is downstairs' ceiling." },
+        { "who": "dad", "text": "…내일 아랫집에 귤 갖다 드리자.", "en": "…Let's bring tangerines downstairs tomorrow." }
+      ]
+    },
+    {
+      "id": "c07",
+      "beat": "반전",
+      "lines": [
+        { "who": "neighbor", "text": "이거, 읽어 보세요.", "en": "Here. Read this." },
+        { "who": "dad", "text": "'혹시 집에서 볼링 치십니까?' …이런 무례한!", "en": "\"Do you, perhaps, bowl at home?\" …How RUDE!" }
+      ]
+    },
+    {
+      "id": "c07a",
+      "beat": "반전",
+      "lines": [
+        { "who": "mom", "text": "여보… 그거 당신이 단톡방에 올린 양식이잖아.", "en": "Honey… that's the template YOU posted in the group chat." },
+        { "who": "dad", "text": "…문장력, 좋으시네요.", "en": "…Lovely writing, sir.", "style": "tiny, crushed, forced polite smile" }
+      ]
+    },
+    {
+      "id": "c07b",
+      "beat": "반전",
+      "lines": [
+        { "who": "narr", "text": "남이 쓰면 무례, 내가 쓰면 명문. 내모남불, 여덟.", "en": "They write it: rude. I write it: a masterpiece. Double standard, number eight." },
+        { "who": "aptmgr", "text": "1203호, 본인 편지 반송 완료.", "tts": "천이백삼 호, 본인 편지 반송 완료.", "en": "Unit 1203, your own letter has been returned to sender.", "style": "flat walkie-talkie report" }
+      ]
+    },
+    {
+      "id": "c07c",
+      "beat": "반전",
+      "lines": [
+        { "who": "narr", "text": "그 편지는, 아빠가 쓴 것이었습니다. 그냥 오답.", "en": "That letter was written by Dad himself. Just a wrong answer." },
+        { "who": "dad", "text": "…역시, 모답맨.", "en": "…Classic Modapman." }
+      ]
+    }
+  ]
+}

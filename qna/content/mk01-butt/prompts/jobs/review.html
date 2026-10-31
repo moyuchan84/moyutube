@@ -1,0 +1,101 @@
+<!doctype html><meta charset=utf-8><title>mk01 그림 확인</title>
+<style>
+body{font:14px/1.5 system-ui,sans-serif;margin:16px;background:#f4f4f4;color:#222}
+section{background:#fff;border-radius:8px;padding:12px;margin:0 0 16px;border-left:6px solid #bbb}
+section.ok{border-color:#2a9d4b}section.redo{border-color:#d33}
+h2{font-size:15px;margin:0 0 8px}h2 em{font-style:normal;font-size:12px;color:#666;margin-left:8px}
+.row{display:flex;gap:10px;align-items:flex-start;overflow-x:auto}
+figure{margin:0;position:relative;flex:0 0 auto}figure span{position:absolute;left:4px;top:2px;font-weight:700;color:#fff;text-shadow:0 0 3px #000}
+img{height:220px;border:1px solid #ddd;border-radius:4px;background:#fff}figure.main img{height:320px}
+figcaption{font-size:11px;color:#555;max-width:240px}.missing{height:220px;width:160px;display:grid;place-items:center;background:#fee;color:#a00}
+</style>
+<h1>모덕후 ① 엉덩이 — 잡지 화보 패러디 — 그림 확인 (22장)</h1>
+<p>결과(왼쪽)를 첨부한 기준 그림과 비교한다: 얼굴 · 머리 · 옷 · 피부 톤 · 선 굵기 · 과장 정도. 판정은 <code>content/mk01-butt/prompts/jobs/review.json</code> 에 <code>"id": "ok"</code> 또는 <code>"redo: 이유"</code> 로 적는다.</p>
+<section class="">
+  <h2>아빠 — 기본 <code>common/dad/normal</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../../_common/art/dad/normal.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>아빠 — 충격 <code>common/dad/shock</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../../_common/art/dad/shock.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../../_common/art/dad/normal.png"><figcaption>같은 사람 유지용 기준 그림</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>아빠 — 당황 <code>common/dad/panic</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../../_common/art/dad/panic.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../../_common/art/dad/normal.png"><figcaption>같은 사람 유지용 기준 그림</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>아빠 — 생각 <code>common/dad/think</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../../_common/art/dad/think.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../../_common/art/dad/normal.png"><figcaption>같은 사람 유지용 기준 그림</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>엄마 — 기본 <code>common/mom/normal</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../../_common/art/mom/normal.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../../_common/art/channel/profile.png"><figcaption>채널 프로필 — 오른쪽 위 안경 쓴 여자가 엄마</figcaption></figure><figure><span>③</span><img loading="lazy" src="../../../_common/art/channel/banner.png"><figcaption>채널 배너 — 맨 오른쪽 팔짱 낀 여자가 엄마</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>엄마 — 다 안다는 미소 <code>common/mom/smirk</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../../_common/art/mom/smirk.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../../_common/art/mom/normal.png"><figcaption>같은 사람 유지용 기준 그림</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>컷인 — 아빠 충격 <code>common/cutin/dad-shock</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../../_common/art/cutin/dad-shock.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../../_common/art/dad/normal.png"><figcaption>같은 사람 유지용 기준 그림</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>컷인 — 엄마 다 안다는 미소 <code>common/cutin/mom-smirk</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../../_common/art/cutin/mom-smirk.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../../_common/art/mom/normal.png"><figcaption>같은 사람 유지용 기준 그림</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>모덕후 삼촌 — 기본 (진지) <code>modeokhu/normal</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/modeokhu/normal.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>모덕후 삼촌 — 레이저 포인터로 가리키며 &quot;자, 진지하다&quot; <code>modeokhu/point</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/modeokhu/point.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../art/modeokhu/normal.png"><figcaption>같은 사람 유지용 기준 그림</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>모덕후 삼촌 — 결론, 팔짱 끼고 의기양양 <code>modeokhu/proud</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/modeokhu/proud.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../art/modeokhu/normal.png"><figcaption>같은 사람 유지용 기준 그림</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>모덕후 삼촌 컷인 — 안경 번쩍 <code>cutin/uncle-glint</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/cutin/uncle-glint.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../art/modeokhu/normal.png"><figcaption>같은 사람 유지용 기준 그림</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>배경 — 작은 세미나실 (화이트보드 · 프로젝터) <code>bg/lecture</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/bg/lecture.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>잡지 표지 촬영 패러디 — 진지하게 포즈 잡은 아빠 <code>full/cover-shoot</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/full/cover-shoot.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../../_common/art/dad/normal.png"><figcaption>같이 나오는 사람 기준 그림 (normal)</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>스포츠 잡지 화보 패러디 — 초원을 달리는 원시인 아빠 <code>full/run-editorial</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/full/run-editorial.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../../_common/art/dad/normal.png"><figcaption>같이 나오는 사람 기준 그림 (normal)</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>박물관 도록 패러디 — 침팬지와 사람 옆모습 해부도 <code>full/chimp-human</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/full/chimp-human.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>미술관 도록 패러디 — 대리석 조각 등선 위의 45° 각도기 <code>full/statue-curve</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/full/statue-curve.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>잡지 표지 벽 — 시대별 · 나라별로 다른 '이상형' 몸매 <code>full/covers-wall</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/full/covers-wall.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>청바지 광고 패러디 — 걸어가는 아빠 뒷모습, 몰래 보는 엄마 <code>full/jeans-ad</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/full/jeans-ad.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../../_common/art/dad/normal.png"><figcaption>같이 나오는 사람 기준 그림 (normal)</figcaption></figure><figure><span>③</span><img loading="lazy" src="../../../_common/art/mom/normal.png"><figcaption>같이 나오는 사람 기준 그림 (normal)</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>아빠 — 두 손으로 엉덩이 가리며 화들짝 <code>dad/cover</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/dad/cover.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../../_common/art/dad/normal.png"><figcaption>같은 사람 유지용 기준 그림</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>아빠 — 결심하고 달려 나감 <code>dad/run</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/dad/run.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-cutin.png"><figcaption>화풍 앵커</figcaption></figure><figure><span>②</span><img loading="lazy" src="../../../_common/art/dad/normal.png"><figcaption>같은 사람 유지용 기준 그림</figcaption></figure></div>
+</section>
+<section class="">
+  <h2>소품 — 화보처럼 빛나는 복숭아 <code>prop/peach</code> <em>확인 전</em></h2>
+  <div class=row><figure class=main><img loading="lazy" src="../../art/prop/peach.png"><figcaption>결과</figcaption></figure><figure><span>①</span><img loading="lazy" src="../../../_common/art/anchor/style-prop.png"><figcaption>소품 화풍 앵커 (사람 없는 소품)</figcaption></figure></div>
+</section>

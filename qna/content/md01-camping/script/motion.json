@@ -1,0 +1,151 @@
+{
+  "id": "Md01-Moanimyeondo",
+  "episode": "md01",
+  "voice": "md01",
+  "bgm": "cheerful",
+  "gap": 1,
+  "chop": 45,
+  "thumb": {
+    "badge": "모 아니면 도 ① 캠핑 vs 집콕",
+    "layers": [
+      { "bg": "burst:#3B2A6B:#5B3FA0" },
+      { "fx": "lines", "x": 640, "y": 380 },
+      { "img": "full/rest-stop-avalanche", "panel": [0.5, 0.45, 1.25], "x": 870, "y": 420, "w": 700, "h": 470, "rot": 3 },
+      { "img": "dad/yut-throw", "sticker": true, "x": 250, "y": 450, "h": 600, "rot": -6 },
+      { "text": "캠핑? 집콕?", "x": 880, "y": 110, "size": 84, "rot": -3 },
+      { "text": "네가 던져!", "style": "stamp", "x": 900, "y": 640, "size": 120, "rot": -6 },
+      { "fx": "kira", "x": 300, "y": 220 }
+    ]
+  },
+  "beats": [
+    { "line": "c00-0", "shots": [
+      { "in": "smash", "bg": "full/trunk-tetris", "cam": { "from": [0.62, 0.45, 2.2], "to": [0.6, 0.45, 2.4] }, "text": [{ "t": "토요일 새벽 4:37", "y": 0.14, "size": 96, "style": "type" }], "fx": ["vhs"] }
+    ] },
+    { "line": "c00-1", "shots": [
+      { "in": "zoom", "bg": "full/trunk-tetris", "cam": { "from": [0.5, 0.5, 1.1], "to": [0.55, 0.5, 1.25] }, "tag": { "t": "아빠", "sub": "아직 아무한테도 말 안 함", "x": 0.6, "y": 0.3, "at": 0.4 }, "freeze": 0.4, "sfx": [{ "name": "scratch", "at": 0.4 }] }
+    ] },
+    { "line": "c01-0", "shots": [
+      { "in": "whip-r", "bg": "full/trunk-tetris", "cam": { "from": [0.6, 0.55, 1.6], "to": [0.62, 0.6, 1.9], "punch": [20] }, "text": [{ "t": "서프라이즈!", "x": 0.3, "y": 0.2, "size": 120, "color": "#FFD23F", "style": "pop", "at": 0.5 }], "fx": ["focus"] }
+    ] },
+    { "line": "c01-1", "shots": [
+      { "in": "slam", "bg": "full/trunk-tetris", "cam": { "from": [0.25, 0.55, 2.0], "to": [0.25, 0.5, 2.2] }, "text": [{ "t": "택배 17개", "x": 0.5, "y": 0.74, "size": 140, "style": "slam" }], "sfx": [{ "name": "dudung" }] }
+    ] },
+    { "line": "c01-2", "shots": [
+      { "in": "iris", "bg": "#BFE6F7", "props": [{ "art": "prop/freezer-receipt", "x": 0.5, "y": 0.52, "w": 0.5, "enter": "pop" }], "text": [{ "t": "영수증 은닉 장소", "y": 0.12, "size": 80, "color": "#15303A", "style": "pop" }], "fx": ["kira"], "sfx": [{ "name": "ding", "at": 0.3 }] }
+    ] },
+    { "line": "c02-0", "pad": 20, "shots": [
+      { "in": "slam", "bg": "burst:#3B2A6B:#5B3FA0", "three": { "scene": "yut", "step": 0, "x": 0.5, "y": 0.4, "scale": 0.8 }, "text": [{ "t": "모 아니면 도", "y": 0.66, "size": 170, "style": "slam" }, { "t": "① 캠핑 vs 집콕", "y": 0.79, "size": 64, "color": "#FFD23F", "style": "pop", "at": 14 }], "fx": ["impact"], "sfx": [{ "name": "stinger" }] }
+    ] },
+    { "line": "c03-0", "shots": [
+      { "in": "whip-l", "bg": "full/car-family", "cam": { "from": [0.5, 0.5, 1.05], "to": [0.5, 0.55, 1.15] } },
+      { "at": 0.35, "in": "zoom", "bg": "full/car-family", "cam": { "from": [0.52, 0.62, 2.0], "to": [0.52, 0.66, 2.2] }, "text": [{ "t": "장작 좌석", "x": 0.75, "y": 0.2, "size": 90, "style": "stamp", "rot": 6 }], "sfx": [{ "name": "boing" }] }
+    ] },
+    { "line": "c03-1", "shots": [
+      { "in": "cut", "bg": "full/car-family", "cam": { "from": [0.78, 0.55, 1.9], "to": [0.78, 0.5, 2.0] } }
+    ] },
+    { "line": "c04-0", "shots": [
+      { "in": "whip-r", "bg": "full/car-family", "cam": { "from": [0.22, 0.45, 2.0], "to": [0.2, 0.42, 2.3], "punch": [12] }, "fx": ["shake"], "text": [{ "t": "…마트?", "x": 0.7, "y": 0.2, "size": 110, "style": "shake" }] }
+    ] },
+    { "line": "c04-1", "shots": [
+      { "in": "zoom", "bg": "dots:#F6E7C1:#EBD39A", "cast": [{ "art": "common/cutin/mom-smirk", "x": 0.5, "h": 1, "enter": "pop", "talk": "mom" }], "text": [{ "t": "장작 들고?", "x": 0.8, "y": 0.25, "size": 110, "style": "pop", "at": 0.4 }] }
+    ] },
+    { "line": "c05-0", "shots": [
+      { "in": "slam", "bg": "#BFE6F7", "props": [{ "art": "prop/freezer-receipt", "x": 0.5, "y": 0.55, "w": 0.55, "enter": "drop" }], "text": [{ "t": "들켰다", "y": 0.13, "size": 110, "style": "stamp", "color": "#D7263D" }], "fx": ["gaan"], "sfx": [{ "name": "crash" }] }
+    ] },
+    { "line": "c05-1", "shots": [
+      { "in": "smash", "bg": "stripes:#D7263D:#B01E31", "text": [{ "t": "2,300,000원", "y": 0.5, "size": 220, "style": "slam" }], "fx": ["impact", "shake"], "sfx": [{ "name": "dudung" }] }
+    ] },
+    { "line": "c06-0", "shots": [
+      { "in": "whip-l", "bg": "dots:#FFF3C4:#FFE38A", "cast": [{ "art": "common/dad/proud", "x": 0.5, "h": 0.95, "enter": "pop", "talk": "dad" }], "text": [{ "t": "÷ 12 = 거의 공짜", "x": 0.5, "y": 0.15, "size": 110, "style": "pop", "at": 0.4 }], "fx": ["kira"] }
+    ] },
+    { "line": "c06-1", "shots": [
+      { "in": "cut", "bg": "dots:#FFF3C4:#FFE38A", "cast": [{ "art": "common/dad/proud", "x": 0.5, "h": 0.95 }], "freeze": 0.05, "tag": { "t": "할부", "sub": "공짜 아님", "x": 0.3, "y": 0.3, "at": 0.05 }, "mark": { "kind": "x", "at": 0.5 }, "sfx": [{ "name": "buzz", "at": 0.5 }] }
+    ] },
+    { "line": "c07-0", "shots": [
+      { "in": "iris", "bg": "full/mom-sofa-dream", "cam": { "from": [0.5, 0.5, 1.0], "to": [0.5, 0.52, 1.12] }, "text": [{ "t": "가로로.", "x": 0.75, "y": 0.74, "size": 120, "style": "pop", "at": 0.7 }], "fx": ["imagine", "kira"] }
+    ] },
+    { "line": "c07-1", "shots": [
+      { "in": "whip-r", "bg": "burst:#2F7D4F:#3E9C63", "cast": [{ "art": "dad/catalog", "x": 0.5, "h": 0.95, "enter": "pop", "talk": "dad" }], "fx": ["focus"], "sfx": [{ "name": "pang" }] }
+    ] },
+    { "line": "c08-0", "shots": [
+      { "in": "cut", "bg": "dots:#F6E7C1:#EBD39A", "cast": [{ "art": "common/cutin/mom-sigh", "x": 0.5, "h": 1, "talk": "mom" }], "text": [{ "t": "흙.", "x": 0.78, "y": 0.25, "size": 140, "style": "stamp" }] }
+    ] },
+    { "line": "c08-1", "shots": [
+      { "in": "whip-l", "bg": "dots:#D9F0FF:#BCE3FA", "cast": [{ "art": "common/cutin/kid-ask", "x": 0.5, "h": 1, "enter": "pop", "talk": "kid" }], "text": [{ "t": "화장실은?", "x": 0.78, "y": 0.22, "size": 110, "style": "pop", "at": 0.4 }] }
+    ] },
+    { "line": "c09-0", "shots": [
+      { "in": "zoom", "bg": "burst:#7CC47F:#A6DB8F", "cast": [{ "art": "dad/nature", "x": 0.5, "h": 0.98, "enter": "drop", "talk": "dad" }], "text": [{ "t": "대자연", "y": 0.13, "size": 130, "style": "slam", "at": 0.3 }], "fx": ["kira", "aura"] }
+    ] },
+    { "line": "c09-1", "shots": [
+      { "in": "smash", "bg": "#15303A", "cast": [{ "art": "common/cutin/kid-doubt", "x": 0.5, "h": 1 }], "cam": { "from": [0.5, 0.4, 1.4], "to": [0.5, 0.38, 1.8], "ease": "snap" }, "fx": ["gaan", "mono"], "sfx": [{ "name": "scratch" }] }
+    ] },
+    { "line": "c10-0", "shots": [
+      { "in": "glitch", "bg": "#1B2B34", "props": [{ "art": "prop/navi", "x": 0.5, "y": 0.5, "w": 0.6, "enter": "pop" }], "tag": { "t": "모비게이션", "sub": "감정 없음", "x": 0.75, "y": 0.18, "at": 0.3 }, "sfx": [{ "name": "beep" }] }
+    ] },
+    { "line": "c10-1", "shots": [
+      { "in": "whip-l", "bg": "bg/highway-fork", "cam": { "from": [0.5, 0.5, 1.0], "to": [0.3, 0.45, 1.5] }, "text": [{ "t": "← 캠핑장 87km", "x": 0.3, "y": 0.2, "size": 100, "style": "pop", "at": 0.2 }] }
+    ] },
+    { "line": "c10-2", "shots": [
+      { "in": "whip-r", "bg": "bg/highway-fork", "cam": { "from": [0.5, 0.5, 1.0], "to": [0.7, 0.45, 1.5] }, "text": [{ "t": "우리 집 3km →", "x": 0.7, "y": 0.2, "size": 100, "style": "pop", "at": 0.2 }] }
+    ] },
+    { "line": "c11-0", "shots": [
+      { "in": "smash", "bg": "dots:#F6E7C1:#EBD39A", "cast": [{ "art": "common/cutin/mom-smirk", "x": 0.5, "h": 1, "talk": "mom" }], "text": [{ "t": "3", "x": 0.8, "y": 0.45, "size": 360, "style": "slam" }], "fx": ["focus"], "sfx": [{ "name": "stamp" }] }
+    ] },
+    { "line": "c11-1", "shots": [
+      { "in": "glitch", "bg": "#1B2B34", "props": [{ "art": "prop/navi", "x": 0.5, "y": 0.5, "w": 0.6 }], "text": [{ "t": "☔ 강수확률 60%", "y": 0.74, "size": 110, "style": "news" }], "sfx": [{ "name": "beep" }] }
+    ] },
+    { "line": "c12-0", "shots": [
+      { "in": "whip-r", "bg": "burst:#FFD23F:#FFB627", "cast": [{ "art": "common/dad/panic", "x": 0.5, "h": 0.95, "talk": "dad" }], "text": [{ "t": "40%는 안 온다!", "y": 0.14, "size": 110, "style": "shake", "at": 0.3 }], "fx": ["shake"] }
+    ] },
+    { "line": "c12-1", "shots": [
+      { "in": "cut", "bg": "#1B2B34", "props": [{ "art": "prop/navi", "x": 0.5, "y": 0.5, "w": 0.7 }], "cam": { "from": [0.66, 0.4, 2.2], "to": [0.66, 0.4, 2.3] }, "sfx": [{ "name": "tick" }] }
+    ] },
+    { "line": "c13-0", "shots": [
+      { "in": "slam", "bg": "burst:#2F7D4F:#3E9C63", "cast": [{ "art": "campowner/normal", "x": 0.5, "h": 0.95, "enter": "pop", "talk": "campowner" }], "tag": { "t": "캠핑장 사장님", "sub": "늘 태평", "x": 0.25, "y": 0.25, "at": 0.3 }, "sfx": [{ "name": "ding" }] }
+    ] },
+    { "line": "c13-1", "shots": [
+      { "in": "zoom", "bg": "full/b7-pond", "cam": { "from": [0.35, 0.45, 1.6], "to": [0.5, 0.5, 1.05] }, "text": [{ "t": "B-7 = 수영장", "y": 0.14, "size": 120, "style": "stamp", "at": 0.4 }], "sfx": [{ "name": "boing", "at": 0.4 }] }
+    ] },
+    { "line": "c13-2", "shots": [
+      { "in": "cut", "bg": "full/b7-pond", "cam": { "from": [0.55, 0.55, 1.3], "to": [0.6, 0.5, 1.6] }, "text": [{ "t": "개구리 보너스", "x": 0.7, "y": 0.74, "size": 100, "color": "#7CC47F", "style": "pop", "at": 0.5 }], "fx": ["kira"] }
+    ] },
+    { "line": "c14-0", "shots": [
+      { "in": "whip-l", "bg": "burst:#7CC47F:#A6DB8F", "cast": [{ "art": "common/kid/wow", "x": 0.5, "h": 0.95, "enter": "pop", "talk": "kid" }], "text": [{ "t": "가자!", "y": 0.15, "size": 150, "style": "pop" }], "fx": ["kira"] }
+    ] },
+    { "line": "c14-1", "shots": [
+      { "in": "whip-r", "bg": "stripes:#3FA9F5:#2B8AD6", "cast": [{ "art": "common/cutin/mom-sig-scream", "x": 0.5, "h": 1, "talk": "mom" }], "text": [{ "t": "집에 가자!", "y": 0.15, "size": 150, "style": "shake" }], "fx": ["gaan", "shake"], "sfx": [{ "name": "crash" }] }
+    ] },
+    { "line": "c15-0", "shots": [
+      { "in": "glitch", "bg": "bg/highway-fork", "cam": { "from": [0.5, 0.45, 1.3], "to": [0.5, 0.45, 1.7] }, "text": [{ "t": "1km", "y": 0.5, "size": 260, "style": "slam" }], "fx": ["vhs"], "sfx": [{ "name": "tick" }, { "name": "tick", "at": 0.5 }] }
+    ] },
+    { "line": "c15-1", "shots": [
+      { "in": "zoom", "bg": "burst:#3B2A6B:#5B3FA0", "cast": [{ "art": "common/cutin/dad-shock", "x": 0.5, "h": 1, "talk": "dad" }], "text": [{ "t": "하늘에 맡긴다", "y": 0.14, "size": 110, "style": "pop", "at": 0.4 }], "fx": ["aura"] }
+    ] },
+    { "line": "c16-0", "shots": [
+      { "in": "smash", "bg": "full/rest-stop-avalanche", "cam": { "from": [0.5, 0.5, 1.0], "to": [0.5, 0.5, 1.08] }, "fx": ["shake", "impact"], "sfx": [{ "name": "crash" }] },
+      { "at": 0.45, "in": "zoom", "bg": "full/rest-stop-avalanche", "cam": { "from": [0.45, 0.25, 2.4], "to": [0.45, 0.22, 2.6] }, "text": [{ "t": "필수품", "x": 0.75, "y": 0.2, "size": 110, "style": "stamp", "rot": 8 }] }
+    ] },
+    { "line": "c16-1", "shots": [
+      { "in": "cut", "bg": "full/rest-stop-avalanche", "cam": { "from": [0.15, 0.55, 2.0], "to": [0.15, 0.5, 2.2] } }
+    ] },
+    { "line": "c17-0", "shots": [
+      { "in": "whip-r", "bg": "#15303A", "text": [{ "t": "모 → 캠핑", "x": 0.3, "y": 0.45, "size": 120, "color": "#FF4D6D", "style": "pop" }, { "t": "도 → 집", "x": 0.72, "y": 0.6, "size": 120, "color": "#3FA9F5", "style": "pop", "at": 0.5 }], "sfx": [{ "name": "pop" }, { "name": "pop", "at": 0.5 }] }
+    ] },
+    { "line": "c17-1", "shots": [
+      { "in": "zoom", "bg": "dots:#F6E7C1:#EBD39A", "cast": [{ "art": "common/cutin/mom-smirk", "x": 0.5, "h": 1, "talk": "mom" }], "text": [{ "t": "둘 다 아니면?", "x": 0.75, "y": 0.22, "size": 100, "style": "pop", "at": 0.3 }] }
+    ] },
+    { "line": "c18-0", "shots": [
+      { "in": "slam", "bg": "full/rest-stop-avalanche", "cam": { "from": [0.6, 0.5, 1.3], "to": [0.6, 0.5, 1.5] }, "text": [{ "t": "영원히 열린 트렁크", "y": 0.74, "size": 100, "style": "news" }], "fx": ["mono"], "sfx": [{ "name": "scratch" }] }
+    ] },
+    { "line": "c19-0", "shots": [
+      { "in": "smash", "bg": "burst:#FF4D6D:#3FA9F5", "cast": [{ "art": "dad/yut-throw", "x": 0.5, "h": 1, "enter": "b", "talk": "dad" }], "cam": { "from": [0.5, 0.5, 1.0], "to": [0.5, 0.4, 1.25], "ease": "snap" }, "fx": ["impact", "focus"], "sfx": [{ "name": "whoosh" }] },
+      { "at": 0.6, "in": "whip-u", "bg": "burst:#3B2A6B:#5B3FA0", "three": { "scene": "yut", "step": 0, "x": 0.5, "y": 0.45, "scale": 1 }, "fx": ["slowmo"] }
+    ] },
+    { "line": "c19-1", "shots": [
+      { "in": "cut", "bg": "burst:#3B2A6B:#5B3FA0", "three": { "scene": "yut", "step": 0, "x": 0.5, "y": 0.45, "scale": 1 }, "freeze": 0.1, "text": [{ "t": "던지는 건, 여러분!", "y": 0.74, "size": 120, "style": "slam", "at": 0.2 }], "sfx": [{ "name": "stamp", "at": 0.1 }] }
+    ] },
+    { "line": "c20-0", "pad": 570, "calm": true, "shots": [
+      { "in": "flash", "bg": "bg/choice", "three": { "scene": "yut", "step": 0, "x": 0.5, "y": 0.52, "scale": 0.32 }, "text": [{ "t": "모 · 캠핑 간다", "x": 0.25, "y": 0.24, "size": 90, "color": "#FF4D6D", "style": "pop" }, { "t": "도 · 집에 간다", "x": 0.75, "y": 0.24, "size": 90, "color": "#3FA9F5", "style": "pop", "at": 8 }, { "t": "골라서 누르세요", "y": 0.74, "size": 80, "style": "type", "at": 20 }], "sfx": [{ "name": "stinger" }] }
+    ] }
+  ]
+}

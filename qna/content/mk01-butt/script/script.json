@@ -1,0 +1,210 @@
+{
+  "rawVoice": true,
+  "speed": 1.2,
+  "title": "모덕후 ① 엉덩이",
+  "bgm": "cheerful",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "질문",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "이번 호 특집. 엉덩이.",
+          "en": "This issue's special: the butt."
+        },
+        {
+          "who": "modeokhu",
+          "text": "남자도 있고 여자도 있는데,",
+          "en": "Men have one. Women have one."
+        },
+        {
+          "who": "modeokhu",
+          "text": "왜 남자는 여자 엉덩이를 볼까?",
+          "en": "So why do men look at women's?"
+        }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "질문",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "형… 그걸 왜 궁금해해.",
+          "en": "Bro… why would you even wonder that?"
+        },
+        {
+          "who": "modeokhu",
+          "text": "자, 지금부터 진지하다.",
+          "en": "Okay. From now on, this is serious."
+        }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "반문",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "엉덩이 근육은 남녀가 똑같아.",
+          "en": "The butt muscle is the same in men and women."
+        },
+        {
+          "who": "modeokhu",
+          "text": "이름하여 큰볼기근.",
+          "en": "It's called the gluteus maximus."
+        }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "가설 1",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "그런데 침팬지 엉덩이는 납작해.",
+          "en": "But a chimp's butt is flat."
+        },
+        {
+          "who": "modeokhu",
+          "text": "사람만 이렇게 빵빵하지. 왜?",
+          "en": "Only humans got this round. Why?"
+        },
+        {
+          "who": "modeokhu",
+          "text": "달리려고!",
+          "en": "To run!"
+        },
+        {
+          "who": "modeokhu",
+          "text": "걸을 땐 쉬다가, 뛸 때 확 일하는 근육이거든.",
+          "en": "It rests when you walk and kicks in when you run."
+        },
+        {
+          "who": "dad",
+          "text": "엉덩이가… 운동화였어?",
+          "en": "So the butt is… a sneaker?"
+        }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "차이",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "남녀 차이는 근육이 아니라 지방.",
+          "en": "The difference isn't muscle. It's fat."
+        },
+        {
+          "who": "modeokhu",
+          "text": "여자 몸은 엉덩이와 허벅지에 지방을 더 모아 둬.",
+          "en": "Women's bodies store more of it on the hips and thighs."
+        }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "가설 2",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "여기서부터는 가설.",
+          "en": "From here on, it's a hypothesis."
+        },
+        {
+          "who": "modeokhu",
+          "text": "엉덩이 크기를 똑같이 맞춘 그림을 보여 줬더니,",
+          "en": "Researchers showed men pictures with the exact same butt size,"
+        },
+        {
+          "who": "modeokhu",
+          "text": "허리 곡선이 45도쯤인 걸 골랐대.",
+          "tts": "허리 곡선이 사십오 도쯤인 걸 골랐대.",
+          "en": "and they picked a lower-back curve of about 45 degrees."
+        },
+        {
+          "who": "modeokhu",
+          "text": "아기를 품어도 균형 잡기 좋은 몸이라는 신호일 수 있다는 거지.",
+          "en": "Maybe it signals a body that keeps its balance while carrying a baby."
+        },
+        {
+          "who": "dad",
+          "text": "크기가 아니라… 각도였어?",
+          "en": "Not size… but angle?"
+        }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "가설 3",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "근데 좋아하는 몸매는 나라마다, 시대마다 달라.",
+          "en": "But the ideal body changes by country and by century."
+        },
+        {
+          "who": "modeokhu",
+          "text": "정답은 없어.",
+          "en": "There's no single answer."
+        }
+      ]
+    },
+    {
+      "id": "c07",
+      "beat": "반전",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "그리고 하나 더. 여자도 남자 엉덩이 본다.",
+          "en": "And one more thing. Women look at men's butts too."
+        },
+        {
+          "who": "modeokhu",
+          "text": "2천 명한테 물었더니 남녀 취향이 거의 같았어.",
+          "tts": "이천 명한테 물었더니 남녀 취향이 거의 같았어.",
+          "en": "In a survey of 2,000 people, men and women ranked them almost the same."
+        }
+      ]
+    },
+    {
+      "id": "c07a",
+      "beat": "반전",
+      "lines": [
+        {
+          "who": "mom",
+          "text": "응. 봤어.",
+          "en": "Yep. I've looked."
+        },
+        {
+          "who": "dad",
+          "text": "어쩐지 등이 따갑더라!",
+          "en": "So that's why my back always felt hot!"
+        }
+      ]
+    },
+    {
+      "id": "c08",
+      "beat": "결론",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "결론. 엉덩이는 원래 달리기 근육.",
+          "en": "Conclusion: the butt is a running muscle."
+        },
+        {
+          "who": "modeokhu",
+          "text": "끌림은 아직 가설.",
+          "en": "Attraction? Still a hypothesis."
+        },
+        {
+          "who": "dad",
+          "text": "그럼 난 오늘부터 뛴다!",
+          "en": "Then I'm running, starting today!"
+        }
+      ]
+    }
+  ]
+}

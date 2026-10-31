@@ -1,0 +1,292 @@
+{
+  "title": "내모남불 ⑥ 아파트편 · 층간소음 · 주차 두 칸 · 택배 박스",
+  "cast": {
+    "manager": "the apartment manager: a Korean man in his early sixties, short neat gray hair combed to the side, rimless rectangular glasses, a long expressionless face with faint smile lines, thin straight mouth; wearing a navy work vest over a light-blue collared shirt, dark gray slacks, black shoes, a blank name badge with absolutely no writing, a black walkie-talkie clipped to his belt; absolutely NO text, NO letters and NO logos anywhere; perfectly deadpan and polite",
+    "granny": "the upstairs grandma: a small, round Korean grandmother in her late seventies, short permed silver hair, rosy cheeks, kind crescent-moon eyes behind small round glasses, a soft warm smile; wearing a floral-print cardigan over a plain lilac blouse, comfy gray pants and house slippers; absolutely NO text and NO logos; warm, gentle and completely unaware of any complaint",
+    "neighbor": "the downstairs neighbor: a tall, sleepy-looking Korean man in his early forties with messy bed-head black hair, dark tired circles under his eyes, stubble; wearing a faded gray hoodie and plaid pajama pants with slippers; absolutely NO text and NO logos; calm, polite and exhausted, never scary"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/panic",
+    "common/dad/proud",
+    "common/dad/shock",
+    "common/kid/normal",
+    "common/kid/ask",
+    "common/kid/doubt",
+    "common/mom/normal",
+    "common/mom/smirk",
+    "common/mom/sigh",
+    "common/bg/living-room",
+    "common/cutin/dad-shock",
+    "common/cutin/dad-proud",
+    "common/cutin/dad-panic",
+    "common/cutin/kid-ask",
+    "common/cutin/kid-doubt",
+    "common/cutin/mom-smirk",
+    "common/cutin/mom-sigh",
+    "common/cutin/dad-sig-1",
+    "common/cutin/dad-sig-2",
+    "common/cutin/dad-sig-3"
+  ],
+  "items": [
+    {
+      "id": "manager/normal",
+      "kind": "char",
+      "who": "manager",
+      "ref": null,
+      "title": "관리소장 — 기본 (2편 nm02 그림 복사)",
+      "cuts": "c00a, c02f, c02g, c03c, c03d, c04c",
+      "note": "새로 뽑지 않는다. content/nm02-elevator/art/manager/normal.png 를 그대로 복사해 쓴다 (같은 인물 · 같은 목소리 aptmgr).",
+      "motion": "숨 쉬듯 살짝, 말할 때 까딱.",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing perfectly upright with his hands clasped neatly in front of him, a completely deadpan expressionless face, eyes calm behind the rimless glasses."
+    },
+    {
+      "id": "manager/radio",
+      "kind": "char",
+      "who": "manager",
+      "title": "관리소장 — 무전기 보고 (2편 nm02 그림 복사)",
+      "cuts": "c07b",
+      "note": "nm02-elevator/art/manager/radio.png 복사.",
+      "motion": "무전기를 입에 대고 까딱.",
+      "desc": "3/4 view turned slightly to the RIGHT. Holding the black walkie-talkie up to his mouth with one hand, pressing the talk button, the other hand behind his back, the same deadpan face, eyes looking sideways at the viewer, one tiny glint on his glasses."
+    },
+    {
+      "id": "cutin/manager-flat",
+      "kind": "cutin",
+      "who": "manager",
+      "ref": "manager/normal",
+      "title": "관리소장 정색 컷인 (2편 nm02 그림 복사)",
+      "cuts": "c00a, c02g, c03c, c04c",
+      "note": "nm02-elevator/art/cutin/manager-flat.png 복사.",
+      "motion": "화면 옆에서 튀어나와 흔들린다.",
+      "desc": "Facing slightly to the RIGHT. Perfectly deadpan: half-closed unimpressed eyes, a cold white anime glint across the rimless glasses, one eyebrow raised a millimeter, mouth a small flat line, one index finger raised calmly beside his face."
+    },
+    {
+      "id": "manager/pillar",
+      "kind": "char",
+      "who": "manager",
+      "title": "관리소장 — 주차장 기둥 뒤에서 반만 나온 얼굴",
+      "cuts": "c03c",
+      "note": "반복 개그 \"언제 오셨어요 → 관리소입니다\". 기둥은 초록 배경 위에 같이 그린다.",
+      "motion": "기둥 옆으로 스르륵 반쯤 나온다.",
+      "desc": "Peeking out from behind a thick gray concrete parking-garage pillar: only half of his body and face visible on the RIGHT side of the pillar, perfectly deadpan, glasses glinting, one hand resting flat on the pillar. The pillar is plain concrete with no markings."
+    },
+    {
+      "id": "manager/box",
+      "kind": "char",
+      "who": "manager",
+      "title": "관리소장 — 택배 박스 더미 속에서 얼굴만 쏙",
+      "cuts": "c04c",
+      "note": "가장 말이 안 되는 등장 = 반복 개그 마지막. 박스에 글자 없음.",
+      "motion": "박스 더미 가운데서 얼굴이 쏙 올라온다.",
+      "desc": "Only his head and shoulders poking straight up out of the middle of a messy pile of brown cardboard delivery boxes, a flattened box resting on top of his head like a hat, perfectly deadpan face, glasses glinting. The boxes have plain brown surfaces with no text, no labels, no logos."
+    },
+    {
+      "id": "granny/normal",
+      "kind": "char",
+      "who": "granny",
+      "ref": null,
+      "title": "윗집 할머니 — 기본 (먼저 확정)",
+      "cuts": "c02d",
+      "note": "새 인물 기준 그림. 이것부터 뽑아 확정한 뒤 full/upstairs-door 에 붙인다.",
+      "motion": "숨 쉬듯 살짝, 웃으며 까딱.",
+      "desc": "3/4 view turned slightly to the LEFT. Standing in a small cozy pose, holding a mesh bag of bright orange tangerines out in front of her with both hands, a big warm crescent-eyed smile."
+    },
+    {
+      "id": "neighbor/normal",
+      "kind": "char",
+      "who": "neighbor",
+      "ref": null,
+      "title": "아랫집 아저씨 — 기본 (먼저 확정)",
+      "cuts": "c07",
+      "note": "새 인물 기준 그림. 무섭지 않게, 그냥 잠 못 잔 사람.",
+      "motion": "숨 쉬듯 살짝, 편지를 내민다.",
+      "desc": "3/4 view turned slightly to the LEFT. Standing tiredly, holding a folded white letter out toward the viewer with one hand, half-closed sleepy eyes, a polite but exhausted flat expression."
+    },
+    {
+      "id": "bg/apt-night",
+      "kind": "bg",
+      "title": "배경 — 밤 아파트 거실 (러닝머신 · 천장)",
+      "cuts": "c00, c00a, c01, c02, c02a, c02b",
+      "motion": "천장 쪽으로 카메라가 천천히 올라간다.",
+      "desc": "A Korean apartment living room at night seen straight-on like a sitcom set: a dark-blue window with city lights, a sofa on the LEFT, a home treadmill against the RIGHT wall, a plain white ceiling with a round ceiling light taking up the top third of the frame, a framed picture on the wall with an abstract blue painting, warm lamp light. No people, no text."
+    },
+    {
+      "id": "bg/stairwell",
+      "kind": "bg",
+      "title": "배경 — 윗집 현관 앞 복도",
+      "cuts": "c02c, c02d, c02e, c02f",
+      "motion": "계단을 오르듯 아래에서 위로.",
+      "desc": "A quiet Korean apartment-building hallway at night seen straight-on: a dark-brown steel front door in the center with a small doorbell and a digital keypad lock (no numbers shown), a stairwell going up on the LEFT, a motion-sensor ceiling light glowing, a pair of shoes and a small potted plant beside the door. No people, no text, no unit numbers."
+    },
+    {
+      "id": "bg/parking",
+      "kind": "bg",
+      "title": "배경 — 지하 주차장",
+      "cuts": "c03, c03a, c03b, c03c, c03d",
+      "motion": "옆으로 휙.",
+      "desc": "A Korean apartment underground parking garage seen straight-on: rows of parking spaces marked with white lines on gray concrete floor, thick square concrete pillars, fluorescent ceiling lights, plain painted walls. No cars, no people, no text, no numbers, no signs."
+    },
+    {
+      "id": "bg/recycling",
+      "kind": "bg",
+      "title": "배경 — 아파트 분리수거장",
+      "cuts": "c04, c04a, c04b, c04c",
+      "motion": "옆으로 휙.",
+      "desc": "A Korean apartment recycling area outdoors in the evening seen straight-on: a row of large colored recycling bins and mesh bag stands under a small roof, a separate area for flattened cardboard, clean paved ground, apartment building wall behind. No people, no text, no labels, no signs."
+    },
+    {
+      "id": "full/treadmill-night",
+      "kind": "full",
+      "who": "dad",
+      "title": "콜드 오픈 — 밤 11시 반 러닝머신 위 트로트 아빠",
+      "cuts": "c00",
+      "note": "바닥에 쿵쿵 파동 · 액자 흔들림은 코드로 더한다.",
+      "motion": "화면 전체가 쿵쿵 박자로 흔들린다.",
+      "desc": "Night living room: the dad jogging hard on a home treadmill with heavy stomping steps, wearing earphones, a headband and a sweaty tank top, eyes closed in bliss, mouth wide open singing loudly, one fist raised like a microphone, sweat drops flying, comic impact marks under his feet. Bright anime energy."
+    },
+    {
+      "id": "cutin/dad-ceiling-cup",
+      "kind": "cutin",
+      "who": "dad",
+      "title": "아빠 컷인 — 종이컵 청진기를 천장에 대고 형사 놀이",
+      "cuts": "c02",
+      "note": "누아르 흑백 필터는 코드(fx mono).",
+      "motion": "느리게 줌 인.",
+      "desc": "Facing slightly to the RIGHT. Standing on tiptoe, pressing a white paper cup against the ceiling with one ear glued to it, eyes narrowed like a hard-boiled detective, a pencil tucked behind his ear and a small notebook in the other hand, one eyebrow raised dramatically."
+    },
+    {
+      "id": "cutin/dad-giggle",
+      "kind": "cutin",
+      "who": "dad",
+      "title": "아빠 컷인 — 편지 쓰며 혼자 크크크 (찐따웃음)",
+      "cuts": "c02b, c04b",
+      "note": "이번 편 웃음의 얼굴. 너무 못생기게 말고, 귀엽게 찌질하게.",
+      "motion": "어깨가 들썩들썩.",
+      "desc": "Facing slightly to the RIGHT. Hunched over, covering his mouth with one hand while giggling, shoulders bunched up, eyes squeezed into smug little upside-down U shapes, cheeks pink, a single sweat drop, the other hand holding a pen. A nerdy, self-satisfied snicker."
+    },
+    {
+      "id": "cutin/dad-shrink",
+      "kind": "cutin",
+      "who": "dad",
+      "title": "아빠 컷인 — 할머니 앞에서 쪼그라든 아빠",
+      "cuts": "c02d, c02e",
+      "note": "몸이 반으로 줄어드는 연출은 코드(scale). 그림은 겁먹은 얼굴만.",
+      "motion": "점점 작아진다.",
+      "desc": "Facing slightly to the LEFT. Shoulders hunched all the way up to his ears, hiding a folded letter behind his back, a tiny wobbly forced smile, eyes darting sideways, beads of sweat, both knees pressed together. Timid and small."
+    },
+    {
+      "id": "full/upstairs-door",
+      "kind": "full",
+      "who": "dad",
+      "people": ["granny", "kid"],
+      "title": "R1 — 문이 열리자 귤을 내미는 윗집 할머니 · 쪼그라든 아빠",
+      "cuts": "c02d",
+      "motion": "문이 열리며 빛이 확.",
+      "desc": "An apartment hallway: the front door open on the RIGHT, the upstairs grandma standing in the warm light of the doorway, beaming and holding out a mesh bag of tangerines; on the LEFT the dad bowing stiffly with a frozen awkward smile, hiding a letter behind his back; the kid standing beside the dad looking up at him."
+    },
+    {
+      "id": "full/dad-snap",
+      "kind": "full",
+      "who": "dad",
+      "title": "R2 — 남의 두 칸 주차를 찍는 아빠 (플래시)",
+      "cuts": "c03",
+      "motion": "플래시 번쩍.",
+      "desc": "Underground parking garage: the dad crouching dramatically like a paparazzi, holding up his phone with a bright camera flash burst, aiming at a plain white car parked crookedly across two parking spaces, a smug righteous grin. The car has no logos and no license plate text."
+    },
+    {
+      "id": "full/dad-twospaces",
+      "kind": "full",
+      "who": "dad",
+      "people": ["kid"],
+      "title": "R2 — 사선으로 두 칸 차지한 아빠 차 · 뿌듯한 아빠",
+      "cuts": "c03a, c03b",
+      "motion": "줌 아웃으로 두 칸이 드러난다.",
+      "desc": "Underground parking garage: a small family car parked diagonally across two parking spaces next to a pillar; the dad standing proudly in front of it with his hands on his hips, chin up; the kid beside him pointing at the two white lines under the car with a doubtful face. The car has no logos and no license plate text."
+    },
+    {
+      "id": "full/box-tower",
+      "kind": "full",
+      "who": "dad",
+      "people": ["mom"],
+      "title": "R3 — 테이프 칭칭 박스 탑 앞에서 뿌듯한 아빠 · 엄마",
+      "cuts": "c04a, c04b",
+      "note": "송장의 이름은 코드로 얹는다. 박스에는 글자 없이 흰 송장 종이만.",
+      "motion": "아래에서 위로 탑을 훑는다.",
+      "desc": "Apartment recycling area: a wobbly tower of unfolded brown cardboard boxes stacked taller than the dad, wrapped in lots of shiny packing tape, a plain white shipping label (blank, no writing) stuck on the top box; the dad presenting it with both arms open like an artist; the mom standing beside him with her arms crossed and a flat stare. No text anywhere."
+    },
+    {
+      "id": "full/ceiling-night",
+      "kind": "full",
+      "who": "kid",
+      "people": ["dad"],
+      "title": "아이 눈높이 — 거실 바닥에 나란히 누워 천장을 보는 부자",
+      "cuts": "c06",
+      "note": "농담 · 효과음 없는 자리. 따뜻하고 조용하게.",
+      "motion": "천천히 아래로 내려간다.",
+      "desc": "Seen from directly above: the kid and the dad lying side by side on their backs on a soft play mat on the living-room floor at night, looking up at the ceiling, the kid pointing up with one finger, the dad's hand resting behind his head, soft warm lamp light, a bag of tangerines beside them. Calm, gentle mood."
+    },
+    {
+      "id": "full/letter-door",
+      "kind": "full",
+      "who": "dad",
+      "people": ["neighbor"],
+      "title": "반전 — 귤 봉지 든 아빠에게 편지를 내미는 아랫집 아저씨",
+      "cuts": "c07",
+      "motion": "문이 열리고 정적.",
+      "desc": "Morning, the dad's front door open: the dad on the LEFT holding a mesh bag of tangerines with a bright friendly smile; the downstairs neighbor on the RIGHT in the hallway holding out a folded white letter toward him, sleepy and expressionless. The letter shows no writing."
+    },
+    {
+      "id": "cutin/dad-read",
+      "kind": "cutin",
+      "who": "dad",
+      "title": "아빠 컷인 — 편지를 읽다 빨개지는 아빠",
+      "cuts": "c07, c07a",
+      "note": "편지 글은 코드로 얹는다.",
+      "motion": "얼굴이 점점 빨개진다 (코드 색 보정).",
+      "desc": "Facing slightly to the RIGHT. Holding a white letter up close to his face with both hands, eyes bulging, face turning red, steam puffing from his ears, mouth open mid-shout in outrage. The letter has no visible writing."
+    },
+    {
+      "id": "prop/paper-cup",
+      "kind": "prop",
+      "title": "소품 — 종이컵",
+      "cuts": "c02",
+      "motion": "툭 떨어진다.",
+      "desc": "A single plain white paper cup, slightly crumpled at the rim."
+    },
+    {
+      "id": "prop/tangerines",
+      "kind": "prop",
+      "title": "소품 — 귤 한 봉지",
+      "cuts": "c02d, c06, c07",
+      "motion": "통통 튄다.",
+      "desc": "A red mesh bag full of bright shiny orange tangerines with little green leaves."
+    },
+    {
+      "id": "prop/letter",
+      "kind": "prop",
+      "title": "소품 — 접힌 편지",
+      "cuts": "c02b, c07",
+      "note": "편지 글은 코드로.",
+      "motion": "펄럭 펼쳐진다.",
+      "desc": "A folded white letter paper, half open, with faint blank lines and no writing."
+    },
+    {
+      "id": "prop/phone",
+      "kind": "prop",
+      "title": "소품 — 빈 화면 휴대폰",
+      "cuts": "c02b, c03a, c03b, c07a",
+      "note": "단톡방 말풍선 · 사진은 코드로.",
+      "motion": "진동하며 흔들린다.",
+      "desc": "A modern smartphone seen from the front with a completely blank bright white screen, no apps, no text."
+    },
+    {
+      "id": "prop/box",
+      "kind": "prop",
+      "title": "소품 — 테이프 붙은 택배 상자",
+      "cuts": "c04, c04c",
+      "motion": "툭.",
+      "desc": "A brown cardboard delivery box with lots of shiny packing tape still stuck on it and a blank white shipping label, no writing, no logos."
+    }
+  ]
+}
