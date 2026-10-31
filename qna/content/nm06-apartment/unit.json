@@ -4,8 +4,13 @@
   "title": "내모남불 ⑥ 아파트편 · 층간소음 · 주차 두 칸 · 택배 박스",
   "series": "naemonambul",
   "format": "modapman",
-  "status": "script",
+  "status": "uploaded",
   "created": "2026-10-31",
-  "youtube": [],
+  "youtube": [
+    {
+      "id": "rqLMQ4rIX1I",
+      "kind": "long"
+    }
+  ],
   "tags": []
 }
