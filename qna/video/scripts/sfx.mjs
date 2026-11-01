@@ -237,3 +237,58 @@ writeWav(
     }),
   );
 }
+
+// ── 방귀 (모덕후 방귀 3부작) ──
+// 괄약근이 떨리는 소리를 흉내 낸다: 주기마다 열렸다 닫히는 펄스(떨림 · 세기 흔들림) + 닫힐 때 축축한 잡음
+// → 공명 저역 필터(엉덩이 방 울림) → 직류 제거. 끝에서 펄스가 드문드문 끊기면 "푸드득".
+const fart = ({ dur, f0, f1, wobble = 0.12, jitter = 0.08, wet = 0.25, bright = 700, q = 2.5, sputter = 0, attack = 0.012, seed = 1 }) => {
+  let s = seed * 9301 + 49297;
+  const rnd = () => ((s = (s * 9301 + 49297) % 233280) / 233280);
+  const n = Math.round(dur * RATE);
+  const raw = new Float32Array(n);
+  let i = 0;
+  while (i < n) {
+    const t = i / RATE;
+    const u = t / dur;
+    const f = (f0 + (f1 - f0) * u) * (1 + wobble * Math.sin(2 * Math.PI * 6.5 * t + 1.3 * Math.sin(2 * Math.PI * 1.7 * t))) * (1 + jitter * (rnd() * 2 - 1));
+    const period = Math.max(8, Math.round(RATE / f));
+    const env = Math.min(1, t / attack) * Math.min(1, (dur - t) / 0.06) * (0.75 + 0.25 * Math.sin(Math.PI * Math.min(1, u * 1.4)));
+    // 끝으로 갈수록 펄스가 빠진다 (푸드득)
+    const skip = sputter > 0 && u > 1 - sputter && rnd() < ((u - (1 - sputter)) / sputter) * 0.7;
+    const amp = skip ? 0 : env * (0.7 + 0.6 * rnd());
+    const open = Math.round(period * (0.35 + 0.2 * rnd()));
+    for (let k = 0; k < period && i + k < n; k++) {
+      const flap = k < open ? Math.sin((Math.PI * k) / open) ** 2 : 0;
+      const splat = k >= open && k < open + 40 ? (rnd() * 2 - 1) * wet * Math.exp(-(k - open) / 12) : 0;
+      raw[i + k] = amp * (flap + splat + (rnd() * 2 - 1) * 0.04);
+    }
+    i += period;
+  }
+  // 공명 저역 필터 (biquad) + 직류 제거
+  const w = (2 * Math.PI * bright) / RATE;
+  const alpha = Math.sin(w) / (2 * q);
+  const cw = Math.cos(w);
+  const b0 = (1 - cw) / 2 / (1 + alpha), b1 = (1 - cw) / (1 + alpha), b2 = b0, a1 = (-2 * cw) / (1 + alpha), a2 = (1 - alpha) / (1 + alpha);
+  const out = new Float32Array(n);
+  let x1 = 0, x2 = 0, y1 = 0, y2 = 0, dcx = 0, dcy = 0, peak = 0;
+  for (let k = 0; k < n; k++) {
+    const y = b0 * raw[k] + b1 * x1 + b2 * x2 - a1 * y1 - a2 * y2;
+    x2 = x1; x1 = raw[k]; y2 = y1; y1 = y;
+    dcy = y - dcx + 0.995 * dcy; dcx = y;
+    out[k] = dcy;
+    peak = Math.max(peak, Math.abs(dcy));
+  }
+  for (let k = 0; k < n; k++) out[k] *= 0.85 / peak;
+  return out;
+};
+
+// 뿡: 짧고 귀여운 한 방 (엄마 · 화면 전환)
+writeWav("fart-short.wav", fart({ dur: 0.36, f0: 175, f1: 135, wobble: 0.08, jitter: 0.05, wet: 0.15, bright: 950, q: 3, seed: 3 }));
+// 뿌우우웅: 길게 떨리다 끝에 푸드득 (삼촌)
+writeWav("fart-long.wav", fart({ dur: 1.7, f0: 112, f1: 68, wobble: 0.18, jitter: 0.1, wet: 0.3, bright: 620, q: 2.2, sputter: 0.3, seed: 7 }));
+// 삐익: 참다가 새어 나오는 높은 소리 (몰래 · 들킴)
+writeWav("fart-squeak.wav", fart({ dur: 0.62, f0: 330, f1: 430, wobble: 0.06, jitter: 0.03, wet: 0.05, bright: 1700, q: 4, attack: 0.04, seed: 11 }));
+// 부륵: 아주 짧은 한 방 (황 가스 악당이 튀어나올 때)
+writeWav("fart-pop.wav", fart({ dur: 0.17, f0: 150, f1: 120, wobble: 0.05, jitter: 0.12, wet: 0.35, bright: 800, q: 2, seed: 5 }));
+// 푸드드득: 축축하게 끊기는 소리 (고기 많이 먹은 날)
+writeWav("fart-wet.wav", fart({ dur: 0.95, f0: 95, f1: 80, wobble: 0.25, jitter: 0.2, wet: 0.7, bright: 520, q: 1.6, sputter: 0.6, seed: 13 }));

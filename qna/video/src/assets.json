@@ -1671,6 +1671,70 @@
     "w": 1196,
     "h": 1200
   },
+  "mk04/modeokhu/normal": {
+    "w": 941,
+    "h": 1500
+  },
+  "mk04/modeokhu/point": {
+    "w": 988,
+    "h": 1500
+  },
+  "mk04/modeokhu/proud": {
+    "w": 874,
+    "h": 1500
+  },
+  "mk04/modeokhu/fluster": {
+    "w": 942,
+    "h": 1500
+  },
+  "mk04/cutin/uncle-glint": {
+    "w": 1277,
+    "h": 1300
+  },
+  "mk04/cutin/uncle-gulp": {
+    "w": 1193,
+    "h": 1300
+  },
+  "mk04/bg/oneroom": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk04/full/gas-pie": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk04/full/goddess-cover": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk04/full/ten-a-day": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk04/full/judges": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk04/full/meat-plate": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk04/full/halo-brain": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk04/full/sofa-couple": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk04/modeokhu/rose": {
+    "w": 1012,
+    "h": 1500
+  },
+  "mk04/prop/rose-cloud": {
+    "w": 1200,
+    "h": 984
+  },
   "nm01/full/highway-cutin": {
     "w": 2560,
     "h": 1440

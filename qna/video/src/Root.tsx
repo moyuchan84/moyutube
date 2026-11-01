@@ -6,7 +6,7 @@ import { type ShortSpec, Short, buildShort } from "./shorts/Short";
 import { END_CARD, Teaser, teaserRange } from "./shorts/Teaser";
 import { FPS, buildTimeline } from "./timeline.js";
 import { type MotionPlan, Motion, buildMotion } from "./motion/Motion";
-import { type MotionThumbSpec, MotionThumb } from "./motion/Thumb";
+import { type MotionThumbSpec, MotionThumb, MotionThumbV } from "./motion/Thumb";
 import { ChannelBanner } from "./ChannelBanner";
 import { type MotionShortSpec, MotionShort, motionShortLength } from "./shorts/MotionShort";
 // 편 목록은 content/*/unit.json 에서 자동으로 만든다 (scripts/registry.mjs). 새 편을 여기 손으로 더하지 않는다.
@@ -63,6 +63,7 @@ export const RemotionRoot = () => {
         <React.Fragment key={id}>
           <Composition id={id} component={Motion} durationInFrames={timeline.durationInFrames} fps={FPS} width={1920} height={1080} defaultProps={{ timeline }} />
           {thumb ? <Still id={`${id}-Thumb`} component={MotionThumb} width={1280} height={720} defaultProps={{ episode, spec: thumb }} /> : null}
+          {thumb?.vertical ? <Still id={`${id}-ThumbV`} component={MotionThumbV} width={1080} height={1920} defaultProps={{ episode, spec: thumb }} /> : null}
         </React.Fragment>
       ))}
       {MOTION_SHORTS.map(({ spec, motion }) => (

@@ -29,7 +29,8 @@
     "motion-srt": "node scripts/motion-srt.mjs",
     "keywords": "node scripts/keywords.mjs",
     "artreview": "node scripts/artreview.mjs",
-    "artrefs": "node scripts/artrefs.mjs"
+    "artrefs": "node scripts/artrefs.mjs",
+    "thumb-short": "node scripts/thumb-short.mjs"
   },
   "dependencies": {
     "@react-three/fiber": "^9.8.2",

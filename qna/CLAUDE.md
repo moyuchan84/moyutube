@@ -61,7 +61,7 @@ qna/
 | `prompts/GEMINI_PROMPTS.md` · `prompts/jobs/` | `npm run prompts -- <편>` 등 | 그림 프롬프트 · 작업 목록 · 비교 시트 (자동) |
 | `art/<id>.png` | 사람 · 크롬 Gemini | 그림 원본. id 는 `art.json` 의 id 그대로 (`bg/…`, `full/…`, `<인물>/…`, `cutin/…`, `prop/…`) |
 | `voice/<컷>-<줄>.wav` · `voice/studio/` · `voice/raw/` | 음성 도구 · 사람 | 최종 음성 · AI Studio 컷별 원본 · 받은 원본 |
-| `upload/` | 도구 · 사람 | `upload.md`(제목 · 설명 · 태그 · 업로드 기록) · `ko.srt` · `en.srt` · `chapters.txt` · `thumbnail.png` · 사이트 카드 `thumb.svg` |
+| `upload/` | 도구 · 사람 | `upload.md`(제목 · 설명 · 태그 · 업로드 기록) · `ko.srt` · `en.srt` · `chapters.txt` · `thumbnail.png`(롱폼 가로) · `thumbnail-short.png`(쇼츠 세로, `npm run thumb-short`) · 사이트 카드 `thumb.svg` |
 | `storyboard.html` | 이전 포맷 도구 | 1~8편에만 있다. 모답맨은 샷 계획 + 스틸 확인으로 대신한다 |
 | `_old/` | 사람 · Claude | 바뀌기 전 구성 · 버린 그림. 지우지 말고 여기로 옮긴다 (`_old/plan-v1-<한 단어>.md` 처럼 이름 뒤에 버전) |
 
@@ -79,7 +79,7 @@ qna/
 | 4. 음성 | 크롬 AI Studio 에서 **줄 단위**로 생성(절차 · 함정은 메모리 qna-chrome-gen) → 편 폴더 `voice/<컷>-<줄>.wav`, 또는 `npm run voice -- epNN gen` | | **gen 은 유료 — 물어보고** |
 | 5. 음성 다듬기 | `npm run trim-voice -- epNN` (앞뒤 무음 자르기) → `npm run voice -- epNN` (timing.json) → `npm run speed -- epNN` (1.2배속) | `script/timing.json` | 무료 |
 | 6. 샷 계획 | `script/motion.json` (스킬의 "샷 계획" · `ep08f-modapman` 참고). **Root.tsx 는 고치지 않는다** — 편 목록은 자동 등록 | | 무료 |
-| 7. 확인 · 렌더 | 스틸 몇 장으로 화면 확인(`npm run still -- <id> out/x.png --frame=N`) → `npm run render -- <id> out/motion/<epNN>-modapman.mp4` (출력은 파일로 돌려 받는다 — 파이프에 물리면 `write EOF` 로 죽는다) → `npm run still -- <id>-Thumb ../content/<편>/upload/thumbnail.png` | mp4 는 `out/` | 무료 |
+| 7. 확인 · 렌더 | 스틸 몇 장으로 화면 확인(`npm run still -- <id> out/x.png --frame=N`) → `npm run render -- <id> out/motion/<epNN>-modapman.mp4` (출력은 파일로 돌려 받는다 — 파이프에 물리면 `write EOF` 로 죽는다) → `npm run still -- <id>-Thumb ../content/<편>/upload/thumbnail.png` (롱폼) · 쇼츠는 **세로** `npm run thumb-short -- <편>` ([docs/shorts-thumbnail.md](docs/shorts-thumbnail.md)) | mp4 는 `out/` | 무료 |
 | 8. 자막 · 챕터 | `npm run motion-srt -- epNN` | `upload/ko.srt` · `en.srt` · `chapters.txt` | 무료 |
 | 9. 제목 · 키워드 | **스킬 `yt-seo`** (저장소 루트 `.claude/skills/yt-seo`): 루트에서 `npm run seo -- qna epNN "검색어" …` (YouTube API 조회수 · 최근 60일 · 해시태그 · 태그 · 자동완성 → `upload/upload.md` 의 seo 칸) → 지금 뜨거운 말을 제목 앞에, 끝에 `\| 모답맨` → 제목 · 설명 · 해시태그 · 태그를 `upload/upload.md` 에. Studio 를 열거나 업로드를 요청하면 훅(루트 `.claude/settings.json` → `shared/bin/seo-check.mjs`)이 알린다 | | 무료 (할당량) |
 | 10. 업로드 | 크롬 Studio, 모라구(UCCIm8f5JE4b4PmSrPIJd7zQ): 제목 · 설명 · 썸네일 · 재생목록 "모(오)답맨 (여덟 살 아들의 호기심)" · 아동용 아니요 · AI 사용 아니요(만화 · 실존 인물 아님) · 태그 · 교육 · 한국어 자막 → 언어 탭에서 영어 제목/설명/자막 → **비공개** 저장 → 실제 상태 다시 읽기 | `upload/upload.md` 끝에 업로드 기록, `unit.json` 의 `status` · `youtube` | |
@@ -87,6 +87,7 @@ qna/
 | 12. 쇼츠 | 스킬 `qna-shorts` (이전 포맷 기준 — 모답맨 본편에서 자를 때도 비공개 업로드 규칙은 같다) | | 무료 |
 
 ### 고정 규칙
+- **쇼츠 썸네일은 세로 1080×1920** — 가로 썸네일을 쇼츠에 올리면 유튜브 Shorts 탭이 가운데만 잘라 글자 · 얼굴이 안 보인다 (모덕후 ①~④). 규칙 · 틀은 [docs/shorts-thumbnail.md](docs/shorts-thumbnail.md), 만들기는 `npm run thumb-short -- <편>` → 180px 미리보기로 확인.
 - **그림 규칙 전체는 [ART_GUIDE.md](ART_GUIDE.md)** — 화풍, 기준 그림 지도, 첨부 규칙(코드 `attachPlan` 이 자동으로 정함), art.json 쓰는 법, 뽑는 순서, 비교 확인. 아래는 그 규칙이 생긴 사연이다.
 - **그림은 항상 기준 그림을 첨부해서 뽑는다** (2026-10-24 사용자 지시). 크롬 Gemini 든 artgen 이든 `GEMINI_PROMPTS.md` 블록의 **첨부 ①(화풍 앵커 `content/_common/art/anchor/style-cutin.png`) · ②(그 인물의 기준 그림)** 을 빼지 않는다. 가족(아빠 · 아이 · 엄마)은 `content/_common/art/<인물>/normal.png`, 가슴 위 컷인이면 같은 인물의 기존 컷인(예: `content/_common/art/cutin/dad-shock.png`)도 붙인다. 프롬프트 글자만으로 그리면 얼굴 · 화풍이 달라진다 (9화 시그니처 포즈에서 실제로 달라졌다). 크롬에서 첨부하는 법: "업로드 및 도구 → 파일 업로드" 가 부르는 `input.click()` 을 가로채 그 input 을 잡고, `file_upload` 도구로 1024px 로 줄인 사본(10MB 미만)을 넣는다 — 메모리 qna-chrome-gen 참고.
   - **빠지기 쉬운 자리 (2026-10-25 사용자 재지시 — 글자 프롬프트만으로 그려서 그림체가 또 바뀌었다):**

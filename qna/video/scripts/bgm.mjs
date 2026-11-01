@@ -136,6 +136,68 @@ const triangle = (freq, seconds) => {
   return out;
 };
 
+// ── 지저분한 소리들 (grimy) ──
+// 두 겹 저역 필터 톱니파 공용
+const brass = (freq, seconds, { scoop = 0.05, scoopSemis = -1, glide = 0, cut = 0.03, blat = 0.3, vib = 0, detune = 0 } = {}) => {
+  const out = new Float32Array(Math.round(seconds * RATE));
+  let phase = 0, lp1 = 0, lp2 = 0;
+  const det = 2 ** (detune / 1200);
+  for (let i = 0; i < out.length; i++) {
+    const t = i / RATE;
+    const bend = t < scoop ? scoopSemis * (1 - t / scoop) : 0;
+    const f = freq * det * 2 ** ((bend + glide * (t / seconds)) / 12) * (1 + vib * Math.sin(2 * Math.PI * 5.5 * t));
+    phase = (phase + f / RATE) % 1;
+    const env = Math.min(1, t / 0.02) * Math.min(1, (seconds - t) / 0.06);
+    const src = phase * 2 - 1 + (Math.random() * 2 - 1) * blat * Math.exp(-t * 40);
+    const c = cut * (1 + 1.5 * Math.exp(-t * 12));
+    lp1 += (src - lp1) * c;
+    lp2 += (lp1 - lp2) * c;
+    out[i] = lp2 * env;
+  }
+  return out;
+};
+// 음 나간 튜바: 반음 아래서 꾸물 올라붙고, 처음에 부왁 하는 숨
+const tuba = (freq, seconds) => brass(freq, seconds, { scoop: 0.06, cut: 0.025, blat: 0.5, detune: -14 + Math.random() * 10 });
+// 트롬본 뿌왑: 길게 아래로 미끄러진다
+const bwamp = (freq, seconds) => brass(freq, seconds, { scoop: 0.02, glide: -5, cut: 0.05, blat: 0.4, vib: 0.012 });
+// 조율 안 된 술집 피아노: 줄 두 개가 서로 어긋난다
+const honky = (freq, seconds) => {
+  const a = pluck(freq * 1.008, seconds, 0.62);
+  const b = pluck(freq * 0.993, seconds, 0.62);
+  for (let i = 0; i < a.length; i++) a[i] = (a[i] + b[i]) * 0.5;
+  return a;
+};
+// 축축한 카주: 좁은 네모파 + 붕붕 떨리는 잡음, 아래서 쭉 끌어올리고 일찍 떨린다
+const kazoo = (freq, seconds) => {
+  const out = new Float32Array(Math.round(seconds * RATE));
+  let phase = 0, lp = 0;
+  const det = 2 ** ((Math.random() * 30 - 10) / 1200);
+  for (let i = 0; i < out.length; i++) {
+    const t = i / RATE;
+    const bend = t < 0.08 ? -2 * (1 - t / 0.08) : 0;
+    const f = freq * det * 2 ** (bend / 12) * (1 + 0.014 * Math.sin(2 * Math.PI * 5.8 * t) * Math.min(1, t / 0.1));
+    phase = (phase + f / RATE) % 1;
+    const pulse = phase < 0.16 ? 1 : -0.19;
+    const buzz = (Math.random() * 2 - 1) * (phase < 0.3 ? 0.5 : 0.1);
+    lp += (pulse + buzz - lp) * 0.28;
+    const env = Math.min(1, t / 0.03) * Math.min(1, (seconds - t) / 0.05);
+    out[i] = lp * env;
+  }
+  return out;
+};
+// 쓰레기통 뚜껑 스네어: 낮게 걸린 소음 + 덜그럭
+const trashLid = () => {
+  const out = new Float32Array(Math.round(0.22 * RATE));
+  let lp = 0;
+  for (let i = 0; i < out.length; i++) {
+    const t = i / RATE;
+    lp += ((Math.random() * 2 - 1) - lp) * 0.45;
+    const clank = [410, 690, 1130].reduce((a, f) => a + Math.sin(2 * Math.PI * f * t), 0) * 0.12;
+    out[i] = (lp + clank) * Math.exp(-t * 18);
+  }
+  return out;
+};
+
 // ── 곡 ──────────────────────────────────────────────────
 // 곡마다 { desc, bpm, bars, render(add, at) } — at(마디, 박) 은 그 박의 샘플 위치
 
@@ -260,6 +322,55 @@ const SONGS = {
         [7, 0, "G5", 1.5], [7, 2, "E5", 0.5], [7, 2.5, "G5", 0.5], [7, 3, "Bb5", 1],
       ];
       for (const [bar, b, n, len] of TUNE) add(at(bar, b), square(N(n), len * beat - 0.03, 0.5, 2), 0.09);
+    },
+  },
+
+  grimy: {
+    desc: "지저분하고 꾸리꾸리한 붕짝 — 음 나간 튜바 · 조율 안 된 술집 피아노 · 축축한 카주 가락 · 쓰레기통 뚜껑 스네어 · 트롬본 뿌왑 (모덕후 방귀 3부작)",
+    bpm: 88,
+    bars: 8,
+    swing: 0.2, // 술 취한 듯 늘어진 엇박
+    render(add, at, beat) {
+      const N = NOTE;
+      // Dm | Dm(베이스 C) | B♭7 | A7 | Dm | G7 | E♭7 | A7 — 반음씩 미끄러지는 지저분한 진행
+      const CHORDS = [
+        { bass: ["D2", "A1"], pah: ["F3", "A3", "D4"] },
+        { bass: ["C2", "A1"], pah: ["F3", "A3", "D4"] },
+        { bass: ["Bb1", "F2"], pah: ["D3", "Ab3", "D4"] },
+        { bass: ["A1", "E2"], pah: ["C#3", "G3", "C#4"] },
+        { bass: ["D2", "A1"], pah: ["F3", "A3", "D4"] },
+        { bass: ["G1", "D2"], pah: ["F3", "B3", "D4"] },
+        { bass: ["Eb2", "Bb1"], pah: ["G3", "Db4", "Eb4"] },
+        { bass: ["A1", "E2"], pah: ["C#3", "G3", "C#4"] },
+      ];
+      CHORDS.forEach((chord, bar) => {
+        // 붕(튜바) — 짝(피아노) — 붕 — 짝
+        add(at(bar, 0), tuba(N(chord.bass[0]), beat * 0.9), 0.5);
+        add(at(bar, 2), tuba(N(chord.bass[1]), beat * 0.9), 0.45);
+        for (const b of [1, 3]) chord.pah.forEach((n, i) => add(at(bar, b) + Math.round(i * 0.01 * RATE), honky(N(n), beat * 0.6), 0.13));
+        if (bar % 2) add(at(bar, 3.5), tuba(N(chord.bass[0]) * 2 ** (1 / 12), beat * 0.4), 0.25); // 반음 위로 꾸물
+        // 드럼: 쿵은 둔하게, 뚜껑 스네어는 2 · 4박, 가끔 엇박 덜그럭
+        add(at(bar, 0), kick(), 0.4);
+        add(at(bar, 2), kick(), 0.3);
+        add(at(bar, 1), trashLid(), 0.22);
+        add(at(bar, 3), trashLid(), 0.22);
+        if (bar % 4 === 3) add(at(bar, 3.5), trashLid(), 0.12);
+        for (let k = 0; k < 8; k++) add(at(bar, k / 2), shaker(0.06, 50), k % 2 ? 0.05 : 0.025);
+      });
+      // 꾸물거리는 카주 가락 (새로 지은 것). [마디, 박, 음, 길이(박)]
+      const TUNE = [
+        [0, 0.5, "A4", 0.5], [0, 1, "D5", 0.5], [0, 1.5, "F5", 0.5], [0, 2, "E5", 1.2], [0, 3.5, "D5", 0.5],
+        [1, 0, "C#5", 1.4], [1, 2, "A4", 0.5], [1, 2.5, "Bb4", 0.5], [1, 3, "A4", 0.9],
+        [2, 0.5, "D5", 0.5], [2, 1, "F5", 0.5], [2, 1.5, "Ab5", 1.2], [2, 3, "G5", 0.5], [2, 3.5, "F5", 0.5],
+        [3, 0, "E5", 0.9], [3, 1, "C#5", 0.5], [3, 1.5, "E5", 0.5], [3, 2, "G5", 1.6],
+        [4, 0.5, "F5", 0.5], [4, 1, "E5", 0.5], [4, 1.5, "D5", 0.5], [4, 2, "A4", 1.5],
+        [5, 0, "B4", 0.5], [5, 0.5, "D5", 0.5], [5, 1, "F5", 1.2], [5, 2.5, "E5", 0.5], [5, 3, "D5", 0.9],
+        [6, 0, "G5", 0.9], [6, 1, "F5", 0.5], [6, 1.5, "Eb5", 0.5], [6, 2, "Db5", 1.6],
+        [7, 0, "C#5", 0.5], [7, 0.5, "E5", 0.5], [7, 1, "A5", 0.6],
+      ];
+      for (const [bar, b, n, len] of TUNE) add(at(bar, b), kazoo(N(n), len * beat), 0.12);
+      // 끝에 트롬본 뿌왑 — 처음으로 다시 붙는다
+      add(at(7, 2), bwamp(N("A3"), beat * 1.9), 0.35);
     },
   },
 };
