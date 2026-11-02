@@ -1,6 +1,6 @@
 import { loadFont } from "@remotion/google-fonts/BlackHanSans";
 import React from "react";
-import { AbsoluteFill, Img } from "remotion";
+import { AbsoluteFill, Img, useVideoConfig } from "remotion";
 import { findArt } from "../Scene";
 import { INK, RED } from "../theme";
 
@@ -10,7 +10,7 @@ const { fontFamily: DISPLAY } = loadFont("normal", { weights: ["400"], ignoreToo
 const YELLOW = "#FFD23F";
 
 // poster: 오른쪽 위에 기울여 붙이는 영화 포스터 느낌 카드 (그림 키) · posterTitle: 카드 아래 큰 제목 · textLeft: 문구 시작 x (기본 440)
-export type MotionThumbSpec = { top: string; bottom: string; sub?: string; dad?: string; guest?: string; count?: number; poster?: string; posterTitle?: string; textLeft?: number; badge?: string; countLabel?: string; layers?: Layer[] }; // badge · countLabel: 내모남불처럼 다른 시리즈 이름
+export type MotionThumbSpec = { top: string; bottom: string; sub?: string; dad?: string; guest?: string; count?: number; poster?: string; posterTitle?: string; textLeft?: number; badge?: string; countLabel?: string; layers?: Layer[]; vertical?: VerticalThumb }; // badge · countLabel: 내모남불처럼 다른 시리즈 이름
 
 const BURST = Array.from({ length: 20 }, (_, i) => {
   const a0 = (i / 20) * Math.PI * 2;
@@ -114,9 +114,13 @@ export type Layer = {
   rot?: number;
 };
 
+// 쇼츠용 세로 썸네일 (1080×1920, <id>-ThumbV) — 규칙은 qna/docs/shorts-thumbnail.md
+export type VerticalThumb = { layers: Layer[]; badge?: string };
+
 const LayerView: React.FC<{ episode: string; l: Layer; i: number }> = ({ episode, l, i }) => {
-  const x = l.x ?? 640;
-  const y = l.y ?? 360;
+  const { width: W, height: H } = useVideoConfig();
+  const x = l.x ?? W / 2;
+  const y = l.y ?? H / 2;
   const rot = l.rot ?? 0;
   if (l.bg) {
     if (l.bg.startsWith("#")) return <AbsoluteFill style={{ backgroundColor: l.bg }} />;
@@ -125,12 +129,12 @@ const LayerView: React.FC<{ episode: string; l: Layer; i: number }> = ({ episode
       return (
         <AbsoluteFill>
           <AbsoluteFill style={{ backgroundColor: c1 }} />
-          <AbsoluteFill style={{ backgroundColor: c2, clipPath: `polygon(${(x / 1280) * 100 + 8}% 0, 100% 0, 100% 100%, ${(x / 1280) * 100 - 8}% 100%)` }} />
+          <AbsoluteFill style={{ backgroundColor: c2, clipPath: `polygon(${(x / W) * 100 + 8}% 0, 100% 0, 100% 100%, ${(x / W) * 100 - 8}% 100%)` }} />
         </AbsoluteFill>
       );
     return (
       <AbsoluteFill style={{ backgroundColor: c1 }}>
-        <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" style={{ transform: "scale(1.6)", transformOrigin: `${(x / 1280) * 100}% ${(y / 720) * 100}%` }}>
+        <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" style={{ transform: "scale(1.6)", transformOrigin: `${(x / W) * 100}% ${(y / H) * 100}%` }}>
           <path d={BURST} fill={c2} />
         </svg>
       </AbsoluteFill>
@@ -139,11 +143,11 @@ const LayerView: React.FC<{ episode: string; l: Layer; i: number }> = ({ episode
   if (l.fx === "lines")
     return (
       <AbsoluteFill>
-        <svg viewBox="0 0 1280 720" width="100%" height="100%">
+        <svg viewBox={`0 0 ${W} ${H}`} width="100%" height="100%">
           {Array.from({ length: 70 }, (_, k) => {
             const a = (k / 70) * Math.PI * 2;
             const inner = 230 + ((k * 53) % 120);
-            return <line key={k} x1={x + Math.cos(a) * inner} y1={y + Math.sin(a) * inner * 0.7} x2={x + Math.cos(a) * 1100} y2={y + Math.sin(a) * 1100} stroke="#fff" strokeWidth={k % 3 ? 3 : 8} opacity={0.75} />;
+            return <line key={k} x1={x + Math.cos(a) * inner} y1={y + Math.sin(a) * inner * 0.7} x2={x + Math.cos(a) * 2200} y2={y + Math.sin(a) * 2200} stroke="#fff" strokeWidth={k % 3 ? 3 : 8} opacity={0.75} />;
           })}
         </svg>
       </AbsoluteFill>
@@ -241,3 +245,16 @@ const LayeredThumb: React.FC<{ episode: string; spec: MotionThumbSpec }> = ({ ep
     ) : null}
   </AbsoluteFill>
 );
+
+// 세로판: 배지는 위 가운데, 오답 카운터는 쓰지 않는다 (쇼츠 카드에서는 너무 작아 안 읽힌다)
+export const MotionThumbV: React.FC<{ episode: string; spec: MotionThumbSpec }> = ({ episode, spec }) => {
+  const v = spec.vertical!;
+  return (
+    <AbsoluteFill style={{ backgroundColor: RED, overflow: "hidden" }}>
+      {v.layers.map((l, i) => (
+        <LayerView key={i} episode={episode} l={l} i={i} />
+      ))}
+      <div style={{ position: "absolute", left: "50%", top: 70, transform: "translateX(-50%) rotate(-3deg)", fontFamily: DISPLAY, fontSize: 74, color: INK, backgroundColor: YELLOW, padding: "4px 30px", border: `8px solid ${INK}`, boxShadow: `10px 10px 0 ${INK}`, whiteSpace: "nowrap" }}>{v.badge ?? spec.badge ?? "모답맨"}</div>
+    </AbsoluteFill>
+  );
+};

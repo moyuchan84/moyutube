@@ -57,3 +57,5 @@ A never-been-kissed geek uncle gulps at a TV kiss scene, then insists he was "do
   - 재생목록 「오덕후 · 모덕후」에 들어감 (재생목록 항목 PAM_21id8cw · GnflovDuup0 확인) · 썸네일 · 아동용 아니요 · AI 아니요 · 교육 · 한국어 · 태그 11개 · 저작권 검사 문제 없음
   - 영어 제목 · 설명은 아직 못 넣음: 언어 탭의 영어(미국) 줄이 자동 더빙 "처리 중"이라 편집 칸이 안 열렸다 → 처리 끝난 뒤 위 영어 제목 · 설명을 넣는다
 - 제작: 그림 13장 크롬 Gemini(u/0, 첨부 기준 그림 포함, 한도 없음) · 음성 31줄 크롬 AI Studio(u/1 mojjijji, gemini-3.8-flash-tts, 한도 없이 끝 — API 안 씀) · 배경음악 `sultry` · 새 효과음 `gulp` · `chu`
+
+- 2026-11-01 쇼츠 썸네일을 세로판 `upload/thumbnail-short.png` (1080×1920, `npm run thumb-short`) 으로 교체 — Studio 세부정보에서 썸네일만 바꿈, 영상 · 조회수 그대로. 이전 가로 `thumbnail.png` 는 Shorts 탭에서 가운데만 잘려 보였다 (docs/shorts-thumbnail.md)

@@ -1,0 +1,1809 @@
+{
+  "id": "Mk04-Modeokhu",
+  "episode": "mk04",
+  "voice": "mk04",
+  "bgm": "grimy",
+  "gap": 0,
+  "chop": 42,
+  "thumb": {
+    "badge": "모덕후 ④ 방귀",
+    "layers": [
+      {
+        "bg": "burst:#FFEE58:#F9A825"
+      },
+      {
+        "fx": "lines",
+        "x": 640,
+        "y": 380
+      },
+      {
+        "img": "full/goddess-cover",
+        "panel": [
+          0.5,
+          0.5,
+          1.3
+        ],
+        "x": 880,
+        "y": 400,
+        "w": 660,
+        "h": 470,
+        "rot": 3
+      },
+      {
+        "img": "modeokhu/rose",
+        "sticker": true,
+        "x": 250,
+        "y": 440,
+        "h": 620,
+        "rot": -4
+      },
+      {
+        "img": "prop/rose-cloud",
+        "sticker": true,
+        "x": 1150,
+        "y": 600,
+        "h": 240,
+        "rot": 12
+      },
+      {
+        "text": "예쁜 사람 방귀는",
+        "x": 860,
+        "y": 105,
+        "size": 72,
+        "rot": -3
+      },
+      {
+        "text": "덜 지독할까?!",
+        "style": "stamp",
+        "x": 880,
+        "y": 650,
+        "size": 104,
+        "rot": -6
+      },
+      {
+        "fx": "kira",
+        "x": 320,
+        "y": 220
+      }
+    ],
+    "vertical": {
+      "layers": [
+        {
+          "bg": "burst:#FFEE58:#F9A825",
+          "x": 540,
+          "y": 1050
+        },
+        {
+          "fx": "lines",
+          "x": 540,
+          "y": 1100
+        },
+        {
+          "text": "예쁜 사람",
+          "x": 540,
+          "y": 345,
+          "size": 170,
+          "rot": -3
+        },
+        {
+          "text": "방귀는",
+          "x": 540,
+          "y": 520,
+          "size": 170,
+          "rot": -3
+        },
+        {
+          "img": "modeokhu/rose",
+          "sticker": true,
+          "x": 470,
+          "y": 1310,
+          "h": 860,
+          "rot": -4
+        },
+        {
+          "img": "prop/rose-cloud",
+          "sticker": true,
+          "x": 830,
+          "y": 1330,
+          "h": 340,
+          "rot": 12
+        },
+        {
+          "text": "덜 지독?!",
+          "style": "stamp",
+          "x": 540,
+          "y": 715,
+          "size": 165,
+          "rot": -6
+        },
+        {
+          "fx": "kira",
+          "x": 420,
+          "y": 1000
+        }
+      ]
+    }
+  },
+  "beats": [
+    {
+      "line": "c00-0",
+      "shots": [
+        {
+          "in": "flash",
+          "bg": "full/goddess-cover",
+          "cam": {
+            "from": [
+              0.62,
+              0.62,
+              1.5
+            ],
+            "to": [
+              0.62,
+              0.6,
+              1.2
+            ],
+            "ease": "snap"
+          },
+          "text": [
+            {
+              "t": "GODDESS · 여신 화보",
+              "y": 0.13,
+              "size": 140,
+              "color": "#FFFFFF",
+              "style": "slam"
+            },
+            {
+              "t": "이번 호 특집",
+              "x": 0.25,
+              "y": 0.32,
+              "size": 70,
+              "color": "#E63946",
+              "style": "stamp",
+              "at": 0.35
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "pang"
+            },
+            {
+              "name": "stamp",
+              "at": 0.35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00-1",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "full/goddess-cover",
+          "cam": {
+            "from": [
+              0.62,
+              0.3,
+              1.9
+            ],
+            "to": [
+              0.62,
+              0.3,
+              2.1
+            ]
+          },
+          "text": [
+            {
+              "t": "방귀도 장미 향일 거다…",
+              "y": 0.85,
+              "size": 100,
+              "color": "#F06292",
+              "style": "pop"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "tick"
+            }
+          ]
+        },
+        {
+          "at": 0.5,
+          "in": "smash",
+          "bg": "burst:#F8BBD0:#F48FB1",
+          "cast": [
+            {
+              "art": "cutin/uncle-gulp",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "꿀꺽",
+              "x": 0.8,
+              "y": 0.25,
+              "size": 150,
+              "color": "#FFFFFF",
+              "style": "shake"
+            }
+          ],
+          "fx": [
+            "focus"
+          ],
+          "sfx": [
+            {
+              "name": "gulp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00-2",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "bg/oneroom",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.15
+            ]
+          },
+          "cast": [
+            {
+              "art": "common/dad/shock",
+              "x": 0.5,
+              "h": 0.95,
+              "talk": "dad",
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "그분도 사람이야",
+              "y": 0.13,
+              "size": 110,
+              "style": "shake"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00-3",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "bg/oneroom",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.1
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.2
+            ]
+          },
+          "cast": [
+            {
+              "art": "modeokhu/normal",
+              "x": 0.3,
+              "h": 0.92,
+              "talk": "modeokhu",
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "확인한다",
+              "x": 0.7,
+              "y": 0.3,
+              "size": 120,
+              "color": "#FFD23F",
+              "style": "stamp",
+              "at": 0.15
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.15
+            }
+          ]
+        },
+        {
+          "at": 0.5,
+          "in": "smash",
+          "bg": "#101820",
+          "cast": [
+            {
+              "art": "cutin/uncle-glint",
+              "x": 0.5,
+              "h": 1.02,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "지금부터 진지하다",
+              "y": 0.72,
+              "size": 110,
+              "color": "#FFD23F",
+              "style": "stamp",
+              "at": 0.2
+            }
+          ],
+          "fx": [
+            "focus",
+            "gaan"
+          ],
+          "sfx": [
+            {
+              "name": "crash"
+            },
+            {
+              "name": "stamp",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hold": 50,
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "stripes:#3E2F1C:#5A4426",
+          "cast": [
+            {
+              "art": "modeokhu/point",
+              "x": 0.3,
+              "h": 0.9,
+              "enter": "l"
+            }
+          ],
+          "text": [
+            {
+              "t": "모덕후",
+              "x": 0.66,
+              "y": 0.38,
+              "size": 180,
+              "color": "#FFD23F",
+              "style": "slam"
+            },
+            {
+              "t": "④ 방귀 3부작 ①",
+              "x": 0.66,
+              "y": 0.62,
+              "size": 70,
+              "color": "#FFFFFF",
+              "style": "pop",
+              "at": 14
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "stinger"
+            },
+            {
+              "name": "fart-pop",
+              "at": 14
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c01-0",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "dots:#FFF3E0:#FFE0B2",
+          "props": [
+            {
+              "art": "prop/rose-cloud",
+              "x": 0.5,
+              "y": 0.56,
+              "w": 0.36,
+              "enter": "drop"
+            }
+          ],
+          "text": [
+            {
+              "t": "오늘은 방귀다",
+              "y": 0.15,
+              "size": 120,
+              "style": "slam"
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "dudung"
+            }
+          ]
+        },
+        {
+          "at": 0.5,
+          "in": "zoom",
+          "bg": "dots:#FFF3E0:#FFE0B2",
+          "props": [
+            {
+              "art": "prop/rose-cloud",
+              "x": 0.5,
+              "y": 0.56,
+              "w": 0.4
+            }
+          ],
+          "text": [
+            {
+              "t": "예쁜 사람은",
+              "y": 0.13,
+              "size": 100,
+              "style": "pop"
+            },
+            {
+              "t": "덜 지독할까?",
+              "y": 0.86,
+              "size": 120,
+              "color": "#E8590C",
+              "style": "stamp",
+              "at": 0.2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-0",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "full/gas-pie",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.48,
+              0.5,
+              1.2
+            ]
+          },
+          "text": [
+            {
+              "t": "① 성분",
+              "x": 0.22,
+              "y": 0.14,
+              "size": 120,
+              "color": "#5C7CFA",
+              "style": "slam"
+            },
+            {
+              "t": "대부분 = 냄새 없음",
+              "y": 0.86,
+              "size": 100,
+              "color": "#37474F",
+              "style": "pop",
+              "at": 0.4
+            }
+          ],
+          "sfx": [
+            {
+              "name": "ding"
+            },
+            {
+              "name": "pop",
+              "at": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-1",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "full/gas-pie",
+          "cam": {
+            "from": [
+              0.83,
+              0.42,
+              2.2
+            ],
+            "to": [
+              0.83,
+              0.42,
+              2.5
+            ],
+            "ease": "snap"
+          },
+          "text": [
+            {
+              "t": "범인: 황 가스",
+              "y": 0.15,
+              "size": 120,
+              "color": "#F59F00",
+              "style": "stamp"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "fart-pop"
+            },
+            {
+              "name": "stamp",
+              "at": 6
+            }
+          ]
+        },
+        {
+          "at": 0.55,
+          "in": "whip-l",
+          "bg": "full/gas-pie",
+          "cam": {
+            "from": [
+              0.7,
+              0.45,
+              1.5
+            ],
+            "to": [
+              0.7,
+              0.45,
+              1.65
+            ]
+          },
+          "text": [
+            {
+              "t": "= 썩은 달걀 냄새",
+              "y": 0.85,
+              "size": 110,
+              "color": "#8D6E00",
+              "style": "shake"
+            }
+          ],
+          "note": "※ 방귀 냄새는 주로 황 들어간 기체(황화수소 등) — Suarez · Springfield · Levitt 1998 (Gut)",
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-2",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "dots:#E3F2FD:#BBDEFB",
+          "cast": [
+            {
+              "art": "common/dad/think",
+              "x": 0.5,
+              "h": 0.95,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "얼굴은?",
+              "y": 0.13,
+              "size": 120,
+              "style": "shake",
+              "at": 0.2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-3",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "full/gas-pie",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.2
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.3
+            ]
+          },
+          "cast": [
+            {
+              "art": "modeokhu/proud",
+              "x": 0.2,
+              "h": 0.92,
+              "talk": "modeokhu",
+              "enter": "l"
+            }
+          ],
+          "text": [
+            {
+              "t": "성분표에",
+              "x": 0.64,
+              "y": 0.15,
+              "size": 100,
+              "color": "#FFFFFF",
+              "style": "pop"
+            },
+            {
+              "t": "얼굴 ✕",
+              "x": 0.64,
+              "y": 0.78,
+              "size": 150,
+              "color": "#E63946",
+              "style": "stamp",
+              "at": 0.35
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-0",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "full/ten-a-day",
+          "cam": {
+            "from": [
+              0.5,
+              0.4,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.35,
+              1.25
+            ]
+          },
+          "text": [
+            {
+              "t": "② 하루 10번",
+              "y": 0.12,
+              "size": 130,
+              "color": "#FFFFFF",
+              "style": "slam"
+            }
+          ],
+          "note": "※ 건강한 25명 · 일주일 기록, 하루 약 10번 — Furne · Levitt 1996 (Dig Dis Sci)",
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "ding"
+            },
+            {
+              "name": "fart-pop",
+              "at": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-1",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "full/ten-a-day",
+          "cam": {
+            "from": [
+              0.5,
+              0.78,
+              1.6
+            ],
+            "to": [
+              0.5,
+              0.78,
+              1.75
+            ]
+          },
+          "text": [
+            {
+              "t": "남녀노소 차이 없음",
+              "y": 0.18,
+              "size": 110,
+              "color": "#FFD23F",
+              "style": "stamp"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-2",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "dots:#FCE4EC:#F8BBD0",
+          "cast": [
+            {
+              "art": "common/dad/panic",
+              "x": 0.5,
+              "h": 0.95,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "그럼 그분도…?",
+              "y": 0.13,
+              "size": 110,
+              "style": "shake",
+              "at": 0.2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-3",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "full/goddess-cover",
+          "cam": {
+            "from": [
+              0.6,
+              0.68,
+              1.7
+            ],
+            "to": [
+              0.6,
+              0.68,
+              1.9
+            ]
+          },
+          "text": [
+            {
+              "t": "하루 10번",
+              "y": 0.15,
+              "size": 130,
+              "color": "#E63946",
+              "style": "stamp"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp"
+            }
+          ]
+        },
+        {
+          "at": 0.5,
+          "in": "smash",
+          "bg": "full/goddess-cover",
+          "cam": {
+            "from": [
+              0.6,
+              0.6,
+              1.3
+            ],
+            "to": [
+              0.6,
+              0.6,
+              1.4
+            ],
+            "ease": "snap"
+          },
+          "text": [
+            {
+              "t": "오늘도 벌써…",
+              "y": 0.85,
+              "size": 110,
+              "color": "#FFFFFF",
+              "style": "pop"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "fart-squeak"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-0",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "full/judges",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.48,
+              1.2
+            ]
+          },
+          "text": [
+            {
+              "t": "③ 냄새 심사위원",
+              "y": 0.12,
+              "size": 120,
+              "color": "#FFFFFF",
+              "style": "slam"
+            }
+          ],
+          "note": "※ 16명 · 작은 실험, 심사위원 2명 채점 — Suarez · Springfield · Levitt 1998 (Gut)",
+          "fx": [
+            "lines"
+          ],
+          "sfx": [
+            {
+              "name": "pang"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-1",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "full/judges",
+          "cam": {
+            "from": [
+              0.35,
+              0.6,
+              1.9
+            ],
+            "to": [
+              0.35,
+              0.6,
+              2.05
+            ]
+          },
+          "text": [
+            {
+              "t": "여자: 더 진함",
+              "y": 0.15,
+              "size": 110,
+              "color": "#F59F00",
+              "style": "pop"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        },
+        {
+          "at": 0.5,
+          "in": "whip-r",
+          "bg": "full/judges",
+          "cam": {
+            "from": [
+              0.66,
+              0.6,
+              1.7
+            ],
+            "to": [
+              0.66,
+              0.6,
+              1.85
+            ]
+          },
+          "text": [
+            {
+              "t": "남자: 양이 많음",
+              "y": 0.15,
+              "size": 110,
+              "color": "#F59F00",
+              "style": "pop"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-2",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "full/judges",
+          "cam": {
+            "from": [
+              0.5,
+              0.35,
+              1.3
+            ],
+            "to": [
+              0.5,
+              0.35,
+              1.45
+            ],
+            "ease": "snap"
+          },
+          "text": [
+            {
+              "t": "총량 = 무승부",
+              "y": 0.8,
+              "size": 150,
+              "color": "#FFD23F",
+              "style": "stamp",
+              "at": 0.3
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "dudung"
+            },
+            {
+              "name": "stamp",
+              "at": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-3",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "full/judges",
+          "cam": {
+            "from": [
+              0.15,
+              0.5,
+              1.6
+            ],
+            "to": [
+              0.15,
+              0.5,
+              1.75
+            ]
+          },
+          "cast": [
+            {
+              "art": "common/dad/shock",
+              "x": 0.7,
+              "h": 0.95,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "무슨 죄야",
+              "x": 0.7,
+              "y": 0.13,
+              "size": 120,
+              "style": "shake"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-4",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "#2B2D42",
+          "cast": [
+            {
+              "art": "modeokhu/fluster",
+              "x": 0.32,
+              "h": 0.92,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "…존경한다",
+              "x": 0.7,
+              "y": 0.45,
+              "size": 120,
+              "color": "#FFFFFF",
+              "style": "type"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "slide"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-0",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "full/meat-plate",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.45,
+              1.2
+            ]
+          },
+          "text": [
+            {
+              "t": "④ 접시가 정한다",
+              "y": 0.12,
+              "size": 120,
+              "color": "#FFFFFF",
+              "style": "slam"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pang"
+            },
+            {
+              "name": "fart-pop",
+              "at": 0.35
+            },
+            {
+              "name": "fart-pop",
+              "at": 0.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-1",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "full/meat-plate",
+          "cam": {
+            "from": [
+              0.55,
+              0.4,
+              1.6
+            ],
+            "to": [
+              0.55,
+              0.4,
+              1.8
+            ],
+            "ease": "snap"
+          },
+          "text": [
+            {
+              "t": "고기 ↑ = 황 ↑",
+              "y": 0.85,
+              "size": 140,
+              "color": "#FFD23F",
+              "style": "stamp",
+              "at": 0.25
+            }
+          ],
+          "note": "※ 남성 5명 · 작은 실험, 고기 많을수록 장 속 황화물 증가 — Magee 외 2000 (Am J Clin Nutr)",
+          "sfx": [
+            {
+              "name": "fart-wet"
+            },
+            {
+              "name": "stamp",
+              "at": 0.25
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-2",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "dots:#FFF8E1:#FFECB3",
+          "cast": [
+            {
+              "art": "common/dad/think",
+              "x": 0.5,
+              "h": 0.95,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "삼겹살 2인분",
+              "y": 0.13,
+              "size": 120,
+              "color": "#BF360C",
+              "style": "shake",
+              "at": 0.2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-3",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "#2B2D42",
+          "cast": [
+            {
+              "art": "modeokhu/fluster",
+              "x": 0.32,
+              "h": 0.92,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "…1인분은 연구용",
+              "x": 0.7,
+              "y": 0.45,
+              "size": 100,
+              "color": "#FFFFFF",
+              "style": "type"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "slide"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06-0",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "full/halo-brain",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.52,
+              0.48,
+              1.2
+            ]
+          },
+          "text": [
+            {
+              "t": "⑤ 후광 효과",
+              "y": 0.12,
+              "size": 130,
+              "color": "#FFB300",
+              "style": "slam"
+            }
+          ],
+          "note": "※ 매력적인 사람을 다른 면까지 좋게 짐작하는 경향 — Dion · Berscheid · Walster 1972",
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "ding"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06-1",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "full/halo-brain",
+          "cam": {
+            "from": [
+              0.3,
+              0.42,
+              1.7
+            ],
+            "to": [
+              0.3,
+              0.42,
+              1.9
+            ]
+          },
+          "text": [
+            {
+              "t": "장미 향 = 뇌가 보정",
+              "y": 0.85,
+              "size": 110,
+              "color": "#FFD23F",
+              "style": "stamp",
+              "at": 0.3
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06-2",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "dots:#F3E5F5:#E1BEE7",
+          "cast": [
+            {
+              "art": "common/dad/think",
+              "x": 0.5,
+              "h": 0.95,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "뇌 = 향수 가게",
+              "y": 0.13,
+              "size": 110,
+              "style": "shake",
+              "at": 0.2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07-0",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "burst:#5C4033:#8D6E63",
+          "cast": [
+            {
+              "art": "modeokhu/proud",
+              "x": 0.3,
+              "h": 0.92,
+              "talk": "modeokhu",
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "결론",
+              "x": 0.7,
+              "y": 0.25,
+              "size": 130,
+              "color": "#FFD23F",
+              "style": "slam"
+            },
+            {
+              "t": "예쁜 사람도 뀐다",
+              "x": 0.68,
+              "y": 0.6,
+              "size": 95,
+              "color": "#FFFFFF",
+              "style": "stamp",
+              "at": 0.35
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "dudung"
+            },
+            {
+              "name": "stamp",
+              "at": 0.35
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07-1",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "dots:#E8F5E9:#C8E6C9",
+          "cast": [
+            {
+              "art": "modeokhu/point",
+              "x": 0.28,
+              "h": 0.92,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "내 냄새 · 연인 냄새",
+              "x": 0.68,
+              "y": 0.3,
+              "size": 90,
+              "color": "#2E7D32",
+              "style": "pop"
+            },
+            {
+              "t": "= 덜 역함",
+              "x": 0.68,
+              "y": 0.55,
+              "size": 130,
+              "color": "#E63946",
+              "style": "stamp",
+              "at": 0.45
+            }
+          ],
+          "note": "※ 몸 냄새 연구: 남의 것보다 내 것 · 연인 것을 덜 불쾌하게 — Stevenson · Repacholi 2005 · Shell 외 2022",
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07-2",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "burst:#F8BBD0:#F48FB1",
+          "props": [
+            {
+              "art": "prop/rose-cloud",
+              "x": 0.5,
+              "y": 0.55,
+              "w": 0.38,
+              "enter": "drop"
+            }
+          ],
+          "text": [
+            {
+              "t": "안 역하면",
+              "y": 0.13,
+              "size": 110,
+              "color": "#FFFFFF",
+              "style": "pop"
+            },
+            {
+              "t": "= 사랑♡",
+              "y": 0.87,
+              "size": 150,
+              "color": "#E63946",
+              "style": "stamp",
+              "at": 0.4
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.4
+            },
+            {
+              "name": "ding",
+              "at": 0.45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hold": 22,
+      "shots": [
+        {
+          "in": "flash",
+          "bg": "full/sofa-couple",
+          "cam": {
+            "from": [
+              0.25,
+              0.45,
+              1.6
+            ],
+            "to": [
+              0.25,
+              0.45,
+              1.7
+            ],
+            "ease": "snap"
+          },
+          "text": [
+            {
+              "t": "뿡",
+              "x": 0.25,
+              "y": 0.3,
+              "size": 180,
+              "color": "#FFFFFF",
+              "style": "slam"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "fart-short"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c08-0",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "full/sofa-couple",
+          "cam": {
+            "from": [
+              0.33,
+              0.42,
+              1.6
+            ],
+            "to": [
+              0.33,
+              0.42,
+              1.75
+            ]
+          },
+          "text": [
+            {
+              "t": "어머, 미안",
+              "y": 0.15,
+              "size": 100,
+              "color": "#F06292",
+              "style": "pop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c08-1",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "full/sofa-couple",
+          "cam": {
+            "from": [
+              0.55,
+              0.4,
+              1.6
+            ],
+            "to": [
+              0.55,
+              0.4,
+              1.75
+            ]
+          },
+          "text": [
+            {
+              "t": "하나도 안 나♡",
+              "y": 0.15,
+              "size": 110,
+              "color": "#F06292",
+              "style": "pop",
+              "at": 0.2
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "chu",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c09-0",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "full/sofa-couple",
+          "cam": {
+            "from": [
+              0.88,
+              0.42,
+              2
+            ],
+            "to": [
+              0.88,
+              0.42,
+              2.2
+            ],
+            "ease": "snap"
+          },
+          "text": [
+            {
+              "t": "꿀꺽",
+              "x": 0.35,
+              "y": 0.25,
+              "size": 140,
+              "color": "#FFFFFF",
+              "style": "shake"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "gulp"
+            }
+          ]
+        },
+        {
+          "at": 0.4,
+          "in": "cut",
+          "bg": "#2B2D42",
+          "cast": [
+            {
+              "art": "modeokhu/fluster",
+              "x": 0.32,
+              "h": 0.92,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "저게 사랑이구나",
+              "x": 0.7,
+              "y": 0.45,
+              "size": 100,
+              "color": "#FFFFFF",
+              "style": "type"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hold": 45,
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "burst:#FFF59D:#FFEE58",
+          "cast": [
+            {
+              "art": "modeokhu/rose",
+              "x": 0.5,
+              "h": 0.95,
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "뿌우우웅",
+              "y": 0.13,
+              "size": 150,
+              "color": "#6D4C41",
+              "style": "shake"
+            }
+          ],
+          "fx": [
+            "lines"
+          ],
+          "sfx": [
+            {
+              "name": "fart-long"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c09-1",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "dots:#FCE4EC:#F8BBD0",
+          "cast": [
+            {
+              "art": "modeokhu/rose",
+              "x": 0.32,
+              "h": 0.92,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "내 건 장미 향?",
+              "x": 0.7,
+              "y": 0.4,
+              "size": 110,
+              "color": "#E63946",
+              "style": "pop"
+            }
+          ],
+          "fx": [
+            "kira"
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c09-2",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "#2B2D42",
+          "cast": [
+            {
+              "art": "modeokhu/rose",
+              "x": 0.3,
+              "h": 0.92,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "자기 냄새 보정",
+              "x": 0.7,
+              "y": 0.35,
+              "size": 90,
+              "color": "#FFFFFF",
+              "style": "pop"
+            },
+            {
+              "t": "확인 ✔",
+              "x": 0.7,
+              "y": 0.6,
+              "size": 150,
+              "color": "#9CCC65",
+              "style": "stamp",
+              "at": 0.4
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "hold": 110,
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "burst:#3E2F1C:#5A4426",
+          "text": [
+            {
+              "t": "모덕후",
+              "y": 0.26,
+              "size": 170,
+              "color": "#FFD23F",
+              "style": "slam"
+            },
+            {
+              "t": "연인 앞 방귀, 몇 년 차에 텄나요?",
+              "y": 0.5,
+              "size": 76,
+              "color": "#FFFFFF",
+              "style": "pop",
+              "at": 14
+            },
+            {
+              "t": "방귀 3부작 ② 들켰다 편 — 구독하고 이어 보기",
+              "y": 0.68,
+              "size": 52,
+              "color": "#FFE0B2",
+              "style": "pop",
+              "at": 30
+            }
+          ],
+          "note": "※ 출처: Suarez · Springfield · Levitt 1998 (Gut) · Furne · Levitt 1996 (Dig Dis Sci) · Magee 외 2000 (Am J Clin Nutr) · Dion 외 1972 · Stevenson · Repacholi 2005 · Shell 외 2022. 작은 실험은 표본이 적습니다.",
+          "sfx": [
+            {
+              "name": "stinger"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

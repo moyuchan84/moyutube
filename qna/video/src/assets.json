@@ -1671,6 +1671,138 @@
     "w": 1196,
     "h": 1200
   },
+  "mk04/modeokhu/normal": {
+    "w": 941,
+    "h": 1500
+  },
+  "mk04/modeokhu/point": {
+    "w": 988,
+    "h": 1500
+  },
+  "mk04/modeokhu/proud": {
+    "w": 874,
+    "h": 1500
+  },
+  "mk04/modeokhu/fluster": {
+    "w": 942,
+    "h": 1500
+  },
+  "mk04/cutin/uncle-glint": {
+    "w": 1277,
+    "h": 1300
+  },
+  "mk04/cutin/uncle-gulp": {
+    "w": 1193,
+    "h": 1300
+  },
+  "mk04/bg/oneroom": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk04/full/gas-pie": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk04/full/goddess-cover": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk04/full/ten-a-day": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk04/full/judges": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk04/full/meat-plate": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk04/full/halo-brain": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk04/full/sofa-couple": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk04/modeokhu/rose": {
+    "w": 1012,
+    "h": 1500
+  },
+  "mk04/prop/rose-cloud": {
+    "w": 1200,
+    "h": 984
+  },
+  "mk05/modeokhu/normal": {
+    "w": 941,
+    "h": 1500
+  },
+  "mk05/modeokhu/point": {
+    "w": 988,
+    "h": 1500
+  },
+  "mk05/modeokhu/proud": {
+    "w": 874,
+    "h": 1500
+  },
+  "mk05/modeokhu/fluster": {
+    "w": 942,
+    "h": 1500
+  },
+  "mk05/cutin/uncle-gulp": {
+    "w": 1193,
+    "h": 1300
+  },
+  "mk05/bg/oneroom": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk05/modeokhu/sage": {
+    "w": 1047,
+    "h": 1500
+  },
+  "mk05/full/doorway": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk05/full/fireworks": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk05/full/package": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk05/full/brake-lab": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk05/full/case-board": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk05/full/hot-cold": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk05/full/mess-list": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk05/full/blue-cloud": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk05/full/sofa-tv": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk05/full/checkout": {
+    "w": 2560,
+    "h": 1440
+  },
   "nm01/full/highway-cutin": {
     "w": 2560,
     "h": 1440
@@ -2194,5 +2326,225 @@
   "nm06/prop/box": {
     "w": 1200,
     "h": 1148
+  },
+  "nm07/cousin/normal": {
+    "w": 724,
+    "h": 1500
+  },
+  "nm07/dadyoung/normal": {
+    "w": 711,
+    "h": 1500
+  },
+  "nm07/dadyoung/sergeant": {
+    "w": 972,
+    "h": 1500
+  },
+  "nm07/dadyoung/finger": {
+    "w": 790,
+    "h": 1500
+  },
+  "nm07/dadyoung/march": {
+    "w": 1085,
+    "h": 1500
+  },
+  "nm07/oldsgt/normal": {
+    "w": 981,
+    "h": 1500
+  },
+  "nm07/rookie/normal": {
+    "w": 705,
+    "h": 1500
+  },
+  "nm07/cousin/grill": {
+    "w": 915,
+    "h": 1500
+  },
+  "nm07/bg/bbq": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm07/bg/barracks-old": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm07/bg/field-sun": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm07/bg/march-road": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm07/bg/barracks-now": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm07/cutin/dad-latte": {
+    "w": 1277,
+    "h": 1300
+  },
+  "nm07/cutin/cousin-flat": {
+    "w": 1245,
+    "h": 1300
+  },
+  "nm07/cutin/dadyoung-whisper": {
+    "w": 1300,
+    "h": 1226
+  },
+  "nm07/cutin/dadyoung-smug": {
+    "w": 1244,
+    "h": 1300
+  },
+  "nm07/full/shovel-shade": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm07/full/sgt-dad-shade": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm07/full/finger-dust": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm07/full/locker-ramen": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm07/full/leave-calendar": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm07/full/march-packs": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm07/full/bbq-tongs": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm07/prop/latte": {
+    "w": 959,
+    "h": 1200
+  },
+  "nm07/prop/shovel": {
+    "w": 1200,
+    "h": 1180
+  },
+  "nm07/prop/fan": {
+    "w": 1113,
+    "h": 1200
+  },
+  "nm07/prop/socks": {
+    "w": 1200,
+    "h": 1065
+  },
+  "nm07/prop/tongs": {
+    "w": 1200,
+    "h": 1143
+  },
+  "nm07/prop/phone": {
+    "w": 977,
+    "h": 1200
+  },
+  "nm07/prop/backpack": {
+    "w": 1063,
+    "h": 1200
+  },
+  "nm08/staff/normal": {
+    "w": 839,
+    "h": 1500
+  },
+  "nm08/staff/radio": {
+    "w": 839,
+    "h": 1500
+  },
+  "nm08/granny/normal": {
+    "w": 859,
+    "h": 1500
+  },
+  "nm08/driver/normal": {
+    "w": 856,
+    "h": 1500
+  },
+  "nm08/driver/stop": {
+    "w": 913,
+    "h": 1500
+  },
+  "nm08/cutin/staff-flat": {
+    "w": 1143,
+    "h": 1300
+  },
+  "nm08/cutin/driver-flat": {
+    "w": 1266,
+    "h": 1300
+  },
+  "nm08/bg/gate": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm08/bg/subway-car": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm08/bg/bus-stop": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm08/bg/bus-night": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm08/full/seat-dive": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm08/full/bag-seat": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm08/full/fake-sleep": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm08/full/wake-up": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm08/full/loud-call": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm08/full/coffee-stop": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm08/full/coffee-chug": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm08/full/dad-asleep-combo": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm08/prop/bag": {
+    "w": 1200,
+    "h": 1133
+  },
+  "nm08/prop/iced-coffee": {
+    "w": 657,
+    "h": 1200
+  },
+  "nm08/prop/tumbler": {
+    "w": 1200,
+    "h": 1052
+  },
+  "nm08/prop/backpack-big": {
+    "w": 1074,
+    "h": 1200
+  },
+  "nm08/prop/phone-speaker": {
+    "w": 1150,
+    "h": 1200
   }
 }

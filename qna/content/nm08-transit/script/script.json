@@ -1,0 +1,544 @@
+{
+  "rawVoice": true,
+  "speed": 1.25,
+  "title": "내모남불 ⑧ 대중교통편 · 자리 · 자는 척 · 통화 · 커피",
+  "bgm": "commute",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "콜드 오픈",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "월요일 아침 8시, 개찰구.",
+          "en": "Monday, 8 a.m. The ticket gates.",
+          "tts": "월요일 아침 여덟 시, 개찰구."
+        },
+        {
+          "who": "dad",
+          "text": "어허! 저거 30배야, 30배! 양심 어디 갔어!",
+          "en": "Whoa! That's a 30x fine! Where's your conscience?!",
+          "tts": "어허! 저거 삼십 배야, 삼십 배! 양심 어디 갔어!",
+          "style": "loud, self-righteous, scolding a stranger from a distance"
+        }
+      ]
+    },
+    {
+      "id": "c00a",
+      "beat": "콜드 오픈",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "모라구, 숙여. 넌 아직 아기야.",
+          "en": "Moragu, duck. You're still a baby.",
+          "style": "sneaky whisper, crouching, trying not to be noticed"
+        },
+        {
+          "who": "kid",
+          "text": "아빠, 나 여덟 살이야.",
+          "en": "Dad, I'm eight.",
+          "style": "flat, matter-of-fact, unimpressed"
+        }
+      ]
+    },
+    {
+      "id": "c00b",
+      "beat": "콜드 오픈",
+      "lines": [
+        {
+          "who": "staff",
+          "text": "고객님, 안내 말씀 드립니다. 공짜는 여섯 살 전까지입니다.",
+          "en": "Passenger, an announcement: it's only free until age six."
+        },
+        {
+          "who": "dad",
+          "text": "…네.",
+          "en": "…Yes, ma'am.",
+          "style": "caught, tiny shrinking voice"
+        }
+      ]
+    },
+    {
+      "id": "c00c",
+      "beat": "콜드 오픈",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "남이 넘으면 범죄, 내 아들은 아직 아기. 내모남불, 하나.",
+          "en": "Others sneak through: a crime. My son: still a baby. Double standard, number one."
+        },
+        {
+          "who": "dad",
+          "text": "저는… 모답맨입니다.",
+          "en": "I'm… Modapman."
+        }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "타이틀",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "내가 하면 모 어때, 남이 하면 불— 쾌! 대중교통 편.",
+          "en": "If I do it, so what. If you do it: rude! The public transit edition.",
+          "tts": "내가 하면 모 어때, 남이 하면 불, 쾌! 대중교통 편."
+        },
+        {
+          "who": "narr",
+          "text": "이번 역은… 내로남불역입니다. 내리실 문은 양심 쪽입니다.",
+          "en": "This stop is… Double Standard Station. Doors open on the conscience side.",
+          "style": "smooth, polite subway announcement voice"
+        }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "R1 자리",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "1라운드. 자리.",
+          "en": "Round one: seats.",
+          "tts": "일 라운드. 자리."
+        },
+        {
+          "who": "dad",
+          "text": "저 아주머니 봐. 가방으로 자리 맡았어. 자리 사유화야!",
+          "en": "Look at her. Saving a seat with her bag. That's privatizing a seat!",
+          "style": "indignant, muttering judgment"
+        }
+      ]
+    },
+    {
+      "id": "c02a",
+      "beat": "R1 자리",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "아, 빈자리! 모 선수, 3미터 도움닫기! 공중 반 바퀴 비틀어… 착석!",
+          "en": "An empty seat! Mo takes a 3-meter run-up! Half twist in the air… and he's seated!",
+          "tts": "아, 빈자리! 모 선수, 삼 미터 도움닫기! 공중 반 바퀴 비틀어… 착석!",
+          "style": "super excited Olympic sportscaster, building up to a shout"
+        },
+        {
+          "who": "dad",
+          "text": "여긴 우리 아들 자리. 모 어때~",
+          "en": "This one's my son's. So what~",
+          "style": "smug, satisfied, sing-song"
+        }
+      ]
+    },
+    {
+      "id": "c02b",
+      "beat": "R1 자리",
+      "lines": [
+        {
+          "who": "kid",
+          "text": "아빠, 나 서 있어도 돼. 저 할아버지 앉으시라고 해.",
+          "en": "Dad, I can stand. Let that grandpa sit.",
+          "style": "kind and simple"
+        },
+        {
+          "who": "narr",
+          "text": "남의 가방은 자리 사유화, 내 가방은 가족 예약석. 내모남불, 둘.",
+          "en": "Their bag: seat privatization. My bag: a family reservation. Double standard, number two."
+        }
+      ]
+    },
+    {
+      "id": "c02c",
+      "beat": "R1 자리",
+      "lines": [
+        {
+          "who": "staff",
+          "text": "고객님. 가방 하나만 놔도 사람들은 그 자리를 피한답니다. 영역 표시래요.",
+          "en": "Passenger. Just one bag and people avoid that seat. It's called territorial marking."
+        },
+        {
+          "who": "dad",
+          "text": "…여기도 계세요?",
+          "en": "…You're on the train too?",
+          "style": "startled, confused"
+        }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "R2 자는 척",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "2라운드. 자는 척.",
+          "en": "Round two: fake sleeping.",
+          "tts": "이 라운드. 자는 척."
+        },
+        {
+          "who": "dad",
+          "text": "저 사람 봐, 할머니 타시니까 바로 눈 감네. 연기대상감이야.",
+          "en": "Look, the moment grandma got on, he shut his eyes. Award-winning acting.",
+          "style": "sarcastic, judging"
+        }
+      ]
+    },
+    {
+      "id": "c03a",
+      "beat": "R2 자는 척",
+      "lines": [
+        {
+          "who": "granny",
+          "text": "아이고, 다리야…",
+          "en": "Oh, my legs…",
+          "style": "tired, gentle sigh, not complaining at anyone"
+        },
+        {
+          "who": "dad",
+          "text": "나는 지금 깊은 잠에 빠졌다… 쿨…",
+          "en": "I am in a deep sleep… zzz…",
+          "style": "inner voice, whispering to himself with eyes shut, fake snore at the end"
+        }
+      ]
+    },
+    {
+      "id": "c03b",
+      "beat": "R2 자는 척",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "다음 역에서 할머니가 내리자—",
+          "en": "When grandma gets off at the next stop—"
+        },
+        {
+          "who": "dad",
+          "text": "어? 잘 잤다~ 모 어때~",
+          "en": "Oh? What a nap~ So what~",
+          "style": "suddenly wide awake and chirpy, stretching"
+        }
+      ]
+    },
+    {
+      "id": "c03c",
+      "beat": "R2 자는 척",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "남이 자면 연기대상, 내가 자면 진짜 기절. 내모남불, 셋.",
+          "en": "They sleep: best actor. I sleep: a real blackout. Double standard, number three."
+        },
+        {
+          "who": "staff",
+          "text": "고객님. 노약자, 임산부, 아이 동반은 법이 정한 교통약자입니다. 양보하는 자리예요.",
+          "en": "Passenger. Seniors, pregnant women, people with small kids: the law calls them mobility-impaired. That's the seat you give up."
+        }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "R3 통화",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "3라운드. 통화.",
+          "en": "Round three: phone calls.",
+          "tts": "삼 라운드. 통화."
+        },
+        {
+          "who": "dad",
+          "text": "저 아저씨 통화 소리 좀 봐. 칸 전체가 다 듣네. 소음 공해야.",
+          "en": "Listen to him on the phone. The whole car can hear. Noise pollution.",
+          "style": "annoyed, complaining"
+        }
+      ]
+    },
+    {
+      "id": "c04a",
+      "beat": "R3 통화",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "네! 부장님! 네네! 그 엑셀 파일이요! 네!",
+          "en": "Yes! Sir! Yes, yes! That Excel file! Yes!",
+          "style": "very loud office phone voice, eager and oblivious"
+        },
+        {
+          "who": "narr",
+          "text": "칸 전체가… 엑셀 파일을 기다리고 있다.",
+          "en": "The entire car… is now waiting for that Excel file.",
+          "style": "quiet, deadpan documentary whisper"
+        }
+      ]
+    },
+    {
+      "id": "c04b",
+      "beat": "R3 통화",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "업무 통화는 어쩔 수 없잖아. 모 어때~",
+          "en": "Work calls can't be helped. So what~",
+          "style": "smug excuse"
+        },
+        {
+          "who": "narr",
+          "text": "남의 통화는 소음 공해, 내 통화는 업무. 내모남불, 넷.",
+          "en": "Their call: noise pollution. My call: business. Double standard, number four."
+        }
+      ]
+    },
+    {
+      "id": "c04c",
+      "beat": "R3 통화",
+      "lines": [
+        {
+          "who": "staff",
+          "text": "고객님. 한쪽만 들리는 통화가, 둘이 하는 대화보다 더 신경 쓰인답니다. 반쪽 대화래요.",
+          "en": "Passenger. Hearing one side of a call is more distracting than a whole conversation. It's called a halfalogue."
+        },
+        {
+          "who": "kid",
+          "text": "다음 말을 모르니까 귀가 자꾸 가는구나!",
+          "en": "You can't guess what comes next, so your ears keep listening!",
+          "style": "bright, just figured it out"
+        }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "R4 커피",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "4라운드. 갈아탄 버스, 그리고 커피.",
+          "en": "Round four: the transfer bus, and coffee.",
+          "tts": "사 라운드. 갈아탄 버스, 그리고 커피."
+        },
+        {
+          "who": "dad",
+          "text": "어제 버스에서 누가 라떼 쏟아서 내 바지 다 젖었잖아. 컵 들고 타는 건 테러야.",
+          "en": "Yesterday someone spilled a latte on the bus and soaked my pants. Boarding with a cup is terrorism.",
+          "style": "outraged, holding a grudge"
+        }
+      ]
+    },
+    {
+      "id": "c05a",
+      "beat": "R4 커피",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "근데 이건 출근 필수품이지. 모 어때~",
+          "en": "But this is a work essential. So what~",
+          "style": "cheerful, sipping a straw"
+        },
+        {
+          "who": "driver",
+          "text": "고객님, 그 컵은 못 타십니다.",
+          "en": "Passenger, that cup can't ride."
+        }
+      ]
+    },
+    {
+      "id": "c05b",
+      "beat": "R4 커피",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "…여기도 계세요?!",
+          "en": "…You're here TOO?!",
+          "style": "shocked, voice cracking"
+        },
+        {
+          "who": "driver",
+          "text": "동생입니다.",
+          "en": "I'm her younger sister."
+        }
+      ]
+    },
+    {
+      "id": "c05c",
+      "beat": "R4 커피",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "남의 컵은 테러, 내 컵은 필수품. 내모남불, 다섯.",
+          "en": "Their cup: terrorism. My cup: an essential. Double standard, number five."
+        },
+        {
+          "who": "driver",
+          "text": "서울 시내버스는 음식물이 든 일회용 컵 승차를 거절할 수 있습니다. 뚜껑 닫힌 텀블러는 됩니다.",
+          "en": "Seoul city buses can refuse disposable cups with drinks in them. A sealed tumbler is fine."
+        }
+      ]
+    },
+    {
+      "id": "c05d",
+      "beat": "R4 커피",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "…머리가 띵해.",
+          "en": "…Brain freeze.",
+          "style": "groaning after chugging an iced drink"
+        }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "속사포",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "보너스 라운드. 속사포 내모남불!",
+          "en": "Bonus round. Rapid-fire double standards!",
+          "style": "hyped game-show host"
+        },
+        {
+          "who": "dad",
+          "text": "남의 백팩은 흉기, 내 백팩은 등산 감성!",
+          "en": "Their backpack: a weapon. Mine: hiking vibes!",
+          "style": "fast, punchy, proud"
+        }
+      ]
+    },
+    {
+      "id": "c06a",
+      "beat": "속사포",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "남이 떠들면 시장통, 내 동창들은 추억 소환!",
+          "en": "They're loud: a fish market. My old classmates: reliving memories!",
+          "style": "fast, punchy, proud"
+        },
+        {
+          "who": "dad",
+          "text": "남이 영상 소리 틀면 민폐, 나는 이어폰이 방전돼서!",
+          "en": "They play videos out loud: rude. Me: my earbuds died!",
+          "style": "fast, punchy, proud"
+        },
+        {
+          "who": "narr",
+          "text": "내모남불, 여섯, 일곱, 여덟!",
+          "en": "Double standard: six, seven, eight!"
+        }
+      ]
+    },
+    {
+      "id": "c07",
+      "beat": "아이 눈높이",
+      "lines": [
+        {
+          "who": "kid",
+          "text": "아빠, 아까 그 할머니 다리 아프셨대.",
+          "en": "Dad, that grandma said her legs hurt.",
+          "style": "quiet, gentle"
+        },
+        {
+          "who": "dad",
+          "text": "…응.",
+          "en": "…Yeah.",
+          "style": "quiet, a little ashamed"
+        }
+      ]
+    },
+    {
+      "id": "c07a",
+      "beat": "아이 눈높이",
+      "lines": [
+        {
+          "who": "kid",
+          "text": "지하철은 다 같이 타는 거실이야. 아빠도 할아버지 되면 앉고 싶을걸?",
+          "en": "The subway is a living room we all share. You'll want a seat too when you're a grandpa.",
+          "style": "gentle and wise, soft"
+        },
+        {
+          "who": "dad",
+          "text": "…그래. 내일부턴 아빠가 서서 간다.",
+          "en": "…Okay. Starting tomorrow, I'll stand.",
+          "style": "soft, sincere"
+        }
+      ]
+    },
+    {
+      "id": "c08",
+      "beat": "반전",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "그날 저녁, 퇴근 버스.",
+          "en": "That evening, the bus home."
+        },
+        {
+          "who": "narr",
+          "text": "지친 모 선수, 착석 3초 만에 기절.",
+          "en": "An exhausted Mo, out cold three seconds after sitting down.",
+          "tts": "지친 모 선수, 착석 삼 초 만에 기절.",
+          "style": "sportscaster, slow and dramatic"
+        }
+      ]
+    },
+    {
+      "id": "c08a",
+      "beat": "반전",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "쩍벌 하나. 백팩 둘. 커피 셋. 영상 소리 넷. 코골이 다섯.",
+          "en": "Manspreading, one. Backpack, two. Coffee, three. Video sound, four. Snoring, five.",
+          "style": "counting slowly like a referee"
+        },
+        {
+          "who": "driver",
+          "text": "고객님, 안내 말씀 드립니다. 오늘의 민폐 종합 세트입니다.",
+          "en": "Passenger, an announcement: today's all-in-one nuisance combo."
+        }
+      ]
+    },
+    {
+      "id": "c08b",
+      "beat": "반전",
+      "lines": [
+        {
+          "who": "mom",
+          "text": "여보! 어디야! 저녁 다 식었어!",
+          "en": "Honey! Where are you?! Dinner's cold!",
+          "style": "loud on a phone speaker, exasperated but not angry"
+        },
+        {
+          "who": "dad",
+          "text": "…피곤해서 그래. 모 어때.",
+          "en": "…I'm just tired. So what.",
+          "style": "groggy, just woke up"
+        }
+      ]
+    },
+    {
+      "id": "c08c",
+      "beat": "반전",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "남이 하면 민폐, 내가 하면 피곤해서. 내모남불, 아홉, 열.",
+          "en": "Others do it: a nuisance. I do it: I'm tired. Double standard, nine and ten."
+        },
+        {
+          "who": "narr",
+          "text": "이번 역은 종점, 양심역입니다. 그냥 오답.",
+          "en": "This stop is the last stop: Conscience Station. Just a wrong answer.",
+          "style": "smooth subway announcement voice, then deadpan"
+        }
+      ]
+    },
+    {
+      "id": "c08d",
+      "beat": "반전",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "…역시, 모답맨.",
+          "en": "…Classic Modapman."
+        }
+      ]
+    }
+  ]
+}

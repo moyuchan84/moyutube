@@ -226,6 +226,51 @@
         "modeokhu"
       ],
       "style": "The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting"
+    },
+    {
+      "label": "Guest",
+      "name": "사촌 형 · 휴가 나온 일병 (내모남불)",
+      "voice": "Enceladus",
+      "roles": [
+        "cousin"
+      ],
+      "style": "A polite, calm 21-year-old Korean soldier home on leave: soft, clear young male voice, deadpan and matter-of-fact, gently correcting his uncle without any attitude, never sarcastic"
+    },
+    {
+      "label": "Guest",
+      "name": "왕고참 병장 (내모남불 회상)",
+      "voice": "Algieba",
+      "roles": [
+        "oldsgt"
+      ],
+      "style": "A lazy, smug Korean army sergeant in his early twenties: slow, drawling, relaxed young male voice, fanning himself in the shade, teasing but never angry or scary"
+    },
+    {
+      "label": "Guest",
+      "name": "신병 (내모남불 회상)",
+      "voice": "Fenrir",
+      "roles": [
+        "rookie"
+      ],
+      "style": "A timid, skinny Korean army rookie around twenty: thin, nervous, earnest young male voice, speaking quietly and carefully to a senior"
+    },
+    {
+      "label": "Guest",
+      "name": "역무원 언니 (내모남불 ⑧)",
+      "voice": "Laomedeia",
+      "roles": [
+        "staff"
+      ],
+      "style": "A Korean subway station attendant woman in her early thirties: calm, clear, perfectly polite announcement voice, completely deadpan, speaking like a train PA announcement, never angry"
+    },
+    {
+      "label": "Guest",
+      "name": "버스 기사님 · 역무원 쌍둥이 동생 (내모남불 ⑧)",
+      "voice": "Laomedeia",
+      "roles": [
+        "driver"
+      ],
+      "style": "The station attendant's identical twin sister, a Korean bus driver in her early thirties: the exact same calm, clear, polite announcement voice, completely deadpan, never angry"
     }
   ],
   "direction": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud.",

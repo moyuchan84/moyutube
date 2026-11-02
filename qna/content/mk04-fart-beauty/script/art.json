@@ -1,0 +1,168 @@
+{
+  "title": "모덕후 ④ 방귀 · 예쁜 사람도 지독할까 — 잡지 화보 패러디",
+  "cast": {
+    "modeokhu": "the nerdy uncle: a Korean man in his late thirties with a round friendly face, a full head of messy black hair with a cowlick, thick round black-rimmed glasses that glint, a neatly tucked-in red-and-navy plaid flannel shirt buttoned to the top, khaki chinos, brown loafers and a small silver laser pointer clipped to the shirt pocket; an earnest, overly serious scholar look who has never dated; NO text, NO logos"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/shock",
+    "common/dad/panic",
+    "common/dad/think",
+    "common/mom/normal",
+    "common/cutin/dad-shock"
+  ],
+  "items": [
+    {
+      "id": "modeokhu/normal",
+      "kind": "char",
+      "who": "modeokhu",
+      "ref": null,
+      "title": "모덕후 삼촌 — 기본 (진지) (앞 편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c00, c07",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing upright with perfect posture, one hand pushing his glasses up the bridge of his nose so the lenses flash white, the other hand holding a thick stack of research papers. Dead-serious face, tight lips, one eyebrow raised."
+    },
+    {
+      "id": "modeokhu/point",
+      "kind": "char",
+      "who": "modeokhu",
+      "title": "모덕후 삼촌 — 레이저 포인터로 가리키며 \"자, 진지하다\" (앞 편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c01, c02, c03, c04, c05, c06",
+      "desc": "3/4 view turned slightly to the RIGHT. Thrusting a small silver laser pointer forward toward the right with one arm fully extended, a thin red beam shooting out, the other hand on his hip. Intense lecturing face, mouth wide open mid-word, eyes blazing behind glinting glasses, sweat of pure passion."
+    },
+    {
+      "id": "modeokhu/proud",
+      "kind": "char",
+      "who": "modeokhu",
+      "title": "모덕후 삼촌 — 결론, 팔짱 끼고 의기양양 (앞 편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c02, c07",
+      "desc": "3/4 view turned slightly to the RIGHT. Arms crossed firmly, chin raised, a huge smug satisfied grin with all teeth showing, glasses flashing, tiny sparkles around his head like he just won a Nobel prize."
+    },
+    {
+      "id": "modeokhu/fluster",
+      "kind": "char",
+      "who": "modeokhu",
+      "title": "삼촌 — \"…논문으로.\" 시선 피하며 안경 고쳐 쓰기 (앞 편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c04, c06",
+      "desc": "3/4 view turned slightly to the RIGHT. Eyes darting sideways away from the viewer, one finger awkwardly pushing his glasses up, the other hand clutching a thick stack of research papers to his chest like a shield, ears and cheeks bright red, a tiny embarrassed sweat drop, mouth in a stiff wobbly line."
+    },
+    {
+      "id": "cutin/uncle-glint",
+      "kind": "cutin",
+      "who": "modeokhu",
+      "title": "모덕후 삼촌 컷인 — 안경 번쩍 (앞 편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c01",
+      "desc": "Facing the viewer, extreme dramatic close-up from the chest up. Both lenses of his thick glasses flash pure white with a lens-flare glint, a dead-serious frown, a single sweat drop rolling down his temple, dramatic shadow across the upper face like a manga detective revelation."
+    },
+    {
+      "id": "cutin/uncle-gulp",
+      "kind": "cutin",
+      "who": "modeokhu",
+      "title": "삼촌 컷인 — 꿀꺽 (김 서린 안경 · 빨개진 볼) (앞 편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c00, c08",
+      "desc": "Facing the viewer, dramatic close-up from the chest up. He swallows hard with a visible comic gulp at the throat, both lenses of his thick glasses fogged up solid white, cheeks and ears bright red, one big sweat drop on his temple, lips pressed tight in nervous longing, a faint warm TV glow on his face. Flustered and envious, not leering."
+    },
+    {
+      "id": "bg/oneroom",
+      "kind": "bg",
+      "title": "배경 — 삼촌의 밤 원룸 (책 더미 · 피규어 · 컵라면 · TV 불빛) (앞 편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c00, c01, c07",
+      "desc": "A small cozy Korean studio apartment at night seen straight-on like a sitcom set: a low sofa facing a TV on the left, tall leaning stacks of thick books and research papers, a shelf of small robot and anime-style figurines, an empty cup-noodle bowl and a can on a low table, a single desk lamp and the cool blue glow of the TV filling the room. No people. TV screen blank glow, no writing anywhere."
+    },
+    {
+      "id": "full/gas-pie",
+      "kind": "full",
+      "people": [],
+      "title": "성분 원그래프 도감 — 졸린 회색 무취 구름들 + 아주 작은 조각의 노란 황 가스 악당",
+      "cuts": "c02",
+      "desc": "A cute science-encyclopedia style illustration: a big round pie chart floating on a pale background. Almost the whole pie is made of fluffy soft grey and pale blue cloud characters with closed sleepy eyes and peaceful smiles, dozing together. One tiny thin slice of the pie is bright yellow and in it stands a small cute yellow sulfur-gas villain: a little round yellow puff with a cracked white eggshell cap on its head, tiny arms on its hips, a mischievous toothy grin and faint wavy stink lines rising from it. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw the person from the attached image or any other people or faces. Absolutely no readable words, letters or numbers anywhere."
+    },
+    {
+      "id": "full/goddess-cover",
+      "kind": "full",
+      "people": [
+        "modeokhu"
+      ],
+      "title": "화보 잡지 표지 패러디 — 장미 · 후광 속 얼굴 없는 여신 뒷모습, 표지를 든 삼촌",
+      "cuts": "c00, c03",
+      "desc": "Close view of a glossy fashion magazine held up in both hands by the uncle, whose fogged-up white glasses and red cheeks peek over the top edge of the magazine. The cover shows an elegant woman seen ONLY from behind as a soft simple silhouette with long flowing hair and a long gown, surrounded by drifting red rose petals, sparkles and a golden halo glow, dreamy pink studio light. Her face is never shown. The magazine has no readable title or text. The uncle stays in the exact gag-manga cartoon style of the attached images."
+    },
+    {
+      "id": "full/ten-a-day",
+      "kind": "full",
+      "people": [],
+      "title": "하루 시계 둘레 작은 방귀 구름 10개 + 남녀노소 실루엣 네 명이 같은 팻말",
+      "cuts": "c03",
+      "desc": "A cheerful infographic illustration: a big round wall clock in the center with ten small fluffy cartoon gas clouds evenly spaced around its rim like hour marks, each with a tiny cute face. Below it stand four simple flat dark silhouettes side by side in a row: a man, a woman, an old man with a cane and an old woman, each holding up an identical blank round sign. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw the person from the attached image; the four silhouettes are plain flat shapes with no faces. Absolutely no readable words, letters or numbers anywhere."
+    },
+    {
+      "id": "full/judges",
+      "kind": "full",
+      "people": [],
+      "attach": [
+        {
+          "path": "content/mk04-fart-beauty/art/full/gas-pie.png",
+          "label": "황 가스 악당 기준 (gas-pie)"
+        }
+      ],
+      "title": "오디션 심사석 패러디 — 코 집게 심사위원 둘, 저울 위 유리병 둘 수평, 무승부 깃발",
+      "cuts": "c04",
+      "desc": "A comic TV-audition style scene: behind a long judges table sit two judges drawn as simple round-headed cartoon figures in suits with big wooden clothespins clamped on their noses, eyes watering, each holding up a blank scorecard. On the stage in front of them is a big brass balance scale perfectly level; on one pan a small glass jar with a dense dark-yellow little cloud inside, on the other pan a large glass jar with a big pale-yellow cloud inside, and a tiny checkered flag planted between them. the same small cute yellow sulfur-gas villain character as in the attached gas-pie picture (a little round yellow puff with a cracked white eggshell cap and a mischievous grin) peeks out of each jar. Same line weight and coloring as the attached images. Do NOT copy any person from the attached images. Absolutely no readable words, letters or numbers anywhere."
+    },
+    {
+      "id": "full/meat-plate",
+      "kind": "full",
+      "people": [],
+      "attach": [
+        {
+          "path": "content/mk04-fart-beauty/art/full/gas-pie.png",
+          "label": "황 가스 악당 기준 (gas-pie)"
+        }
+      ],
+      "title": "고기 산더미 접시에서 황 가스 악당들이 줄줄이 튀어나옴 + 영수증",
+      "cuts": "c05",
+      "desc": "A big white plate piled high with sizzling grilled Korean pork belly slices, steam rising. Out of the meat pile pop a whole line of copies of the same small cute yellow sulfur-gas villain character as in the attached gas-pie picture (a little round yellow puff with a cracked white eggshell cap and a mischievous grin), multiplying, cheering and jumping off the plate one after another. Beside the plate lies a long crumpled restaurant receipt with blank lines. Do NOT draw any people or human faces. Absolutely no readable words, letters or numbers anywhere."
+    },
+    {
+      "id": "full/halo-brain",
+      "kind": "full",
+      "people": [],
+      "title": "뇌 보정실 — 뇌 캐릭터가 화보에 후광 · 장미 · 반짝이를 덧칠",
+      "cuts": "c06",
+      "desc": "A cute cartoon photo-retouching studio: a round pink brain character with tiny arms and legs, wearing a beret and an apron, stands on a step stool in front of a big easel holding a plain grey framed picture of a simple faceless dark silhouette of a woman seen from behind. The brain eagerly paints a golden halo, red roses and sparkles over the picture with a big brush in one hand and a glitter spray can in the other, perfume bottles lined up on a shelf behind it. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw the person from the attached image; the silhouette in the frame is a plain flat shape with no face. Absolutely no readable words, letters or numbers anywhere."
+    },
+    {
+      "id": "full/sofa-couple",
+      "kind": "full",
+      "people": [
+        "dad",
+        "mom",
+        "modeokhu"
+      ],
+      "title": "엔딩 — 소파의 엄마 · 아빠, 엄마 옆 작은 구름, 아빠 평온한 미소, 문틈의 삼촌 꿀꺽",
+      "cuts": "c08",
+      "desc": "A warm Korean apartment living room in the evening: the mom and the dad sit side by side on a sofa. Next to the mom floats one small cute pale cartoon gas cloud with a tiny face; the mom covers her mouth with one hand, embarrassed and giggling. The dad smiles calmly and lovingly at her with gentle eyes as if nothing happened, a few small hearts above them. In the background a room door is open a crack and the uncle peeks through it, glasses fogged white, cheeks red, swallowing hard with a comic gulp. All people stay in the exact gag-manga cartoon style of the attached images. No text, no letters, no logos."
+    },
+    {
+      "id": "modeokhu/rose",
+      "kind": "char",
+      "who": "modeokhu",
+      "ref": "modeokhu/normal",
+      "title": "삼촌 — 자기 방귀 구름을 장미 꽃잎으로 둘러싸고 흐뭇하게 킁킁",
+      "cuts": "c08",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing, with a small fluffy pale cartoon gas cloud floating behind him at waist height, ringed with red rose petals and sparkles. He leans back toward it, eyes closed in bliss, nose up sniffing deeply with a dreamy proud smile, one hand fanning the air toward his nose, glasses glinting. Silly and self-satisfied, fully clothed."
+    },
+    {
+      "id": "prop/rose-cloud",
+      "kind": "prop",
+      "attach": [
+        {
+          "path": "content/mk04-fart-beauty/art/full/gas-pie.png",
+          "label": "황 가스 악당 기준 (gas-pie)"
+        }
+      ],
+      "title": "소품 — 장미 꽃잎이 둘린 방귀 구름, 반짝, 뒤에서 황 가스 악당이 빼꼼 (썸네일)",
+      "cuts": "c00, 썸네일",
+      "desc": "A single cute sticker of a fluffy pale pink cartoon gas cloud with a sweet innocent face, ringed with glossy red rose petals and star sparkles like a beauty magazine glamour shot, while from behind the cloud the same small cute yellow sulfur-gas villain character as in the attached gas-pie picture (a little round yellow puff with a cracked white eggshell cap and a mischievous grin) peeks out with a sneaky grin."
+    }
+  ]
+}

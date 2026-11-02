@@ -61,3 +61,5 @@ Our geek uncle digs in like he's presenting a research paper.
 - 가로판은 올리지 않음 (사용자 결정)
 - 같은 날 채널 설명에 「오덕후 · 모덕후」 · 「이게 모예요?」 · 「모 아니면 도」 줄과 #오덕후 추가, 내로남불 줄을 운전 · 주식 · 부동산 · 회사로 넓힘
 - 2026-10-30 인스타 @raumhero 이중 언어 릴스로 교차 홍보: https://www.instagram.com/reel/DfHhROEuhtl/ (인스타 판 컴포지션 `Mk01-Short-Butt-Insta`, 기록은 raumhero-instagram/posts/2026-10-30-modeokhu)
+
+- 2026-11-01 쇼츠 썸네일을 세로판 `upload/thumbnail-short.png` (1080×1920, `npm run thumb-short`) 으로 교체 — Studio 세부정보에서 썸네일만 바꿈, 영상 · 조회수 그대로. 이전 가로 `thumbnail.png` 는 Shorts 탭에서 가운데만 잘려 보였다 (docs/shorts-thumbnail.md)

@@ -1,0 +1,101 @@
+{
+  "rawVoice": true,
+  "speed": 1.2,
+  "title": "모덕후 ④ 방귀 · 예쁜 사람도 지독할까",
+  "bgm": "grimy",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "훅",
+      "lines": [
+        { "who": "narr", "text": "이번 호 특집. 여신 화보.", "en": "This issue's special: goddess pictorial." },
+        { "who": "modeokhu", "text": "(꿀꺽) …이분은 방귀도 장미 향일 거다.", "tts": "…이분은 방귀도 장미 향일 거다.", "en": "(gulp) …I bet even her farts smell like roses." },
+        { "who": "dad", "text": "형… 그분도 사람이야.", "en": "Bro… she's a human being." },
+        { "who": "modeokhu", "text": "그러니까 확인한다. 자, 지금부터 진지하다.", "en": "Then let's verify. Serious mode on." }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "질문",
+      "lines": [
+        { "who": "modeokhu", "text": "오늘은 방귀다. 예쁜 사람 방귀는, 덜 지독할까?", "en": "Today: farts. Are pretty people's farts any less awful?" }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "첫째 · 성분",
+      "lines": [
+        { "who": "modeokhu", "text": "첫째. 방귀는 대부분 냄새 없는 기체야.", "en": "One. Most of a fart is odorless gas." },
+        { "who": "modeokhu", "text": "고약한 건 아주 조금 섞인 황 가스. 썩은 달걀 냄새, 그거.", "en": "The stink is a tiny bit of sulfur gas. That rotten-egg smell." },
+        { "who": "dad", "text": "얼굴은 상관없어?", "en": "So the face doesn't matter?" },
+        { "who": "modeokhu", "text": "성분표에 얼굴은 없다.", "en": "There's no \"face\" on the ingredient list." }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "둘째 · 하루 열 번",
+      "lines": [
+        { "who": "modeokhu", "text": "둘째. 건강한 사람은 하루 열 번쯤 뀐대.", "en": "Two. A healthy person farts about ten times a day." },
+        { "who": "modeokhu", "text": "남자 여자, 나이 차이도 없었어.", "en": "No difference between men and women, or by age." },
+        { "who": "dad", "text": "그럼 화보 속 그분도…", "en": "So the lady in the magazine…" },
+        { "who": "modeokhu", "text": "…하루 열 번. 오늘도 벌써 몇 번.", "en": "…Ten a day. A few already today." }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "셋째 · 심사위원",
+      "lines": [
+        { "who": "modeokhu", "text": "셋째. 방귀를 모아서 심사위원 둘이 냄새를 채점한 실험이 있어.", "en": "Three. In one study, two judges scored the smell of collected farts." },
+        { "who": "modeokhu", "text": "여자 쪽이 더 진했는데, 남자는 한 번에 양이 많았대.", "en": "Women's were more concentrated, but men's came out in bigger volumes." },
+        { "who": "modeokhu", "text": "그래서 나오는 냄새 총량은, 무승부.", "en": "So the total stink per fart: a tie." },
+        { "who": "dad", "text": "그 심사위원은 무슨 죄야.", "en": "What did those judges ever do wrong?" },
+        { "who": "modeokhu", "text": "…존경한다.", "en": "…I salute them." }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "넷째 · 접시",
+      "lines": [
+        { "who": "modeokhu", "text": "넷째. 냄새는 얼굴이 아니라 접시가 정해.", "en": "Four. It's not the face that decides the smell, it's the plate." },
+        { "who": "modeokhu", "text": "고기를 많이 먹을수록, 장 속 황 성분이 확 늘었대.", "en": "The more meat people ate, the more sulfur showed up in their gut." },
+        { "who": "dad", "text": "형 어제 삼겹살 2인분 먹었지.", "tts": "형 어제 삼겹살 이인분 먹었지.", "en": "You had two servings of pork belly yesterday." },
+        { "who": "modeokhu", "text": "…1인분은 연구용이었다.", "tts": "…일인분은 연구용이었다.", "en": "…One of them was for research." }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "다섯째 · 후광",
+      "lines": [
+        { "who": "modeokhu", "text": "다섯째. 예쁘면 다 좋을 거라고 믿는 착각, 후광 효과.", "en": "Five. Believing beautiful means good at everything: the halo effect." },
+        { "who": "modeokhu", "text": "장미 향은 코가 아니라, 내 뇌가 만든 거야.", "en": "The rose scent wasn't made by her. It was made by my brain." },
+        { "who": "dad", "text": "형 뇌는 향수 가게네.", "en": "Your brain's a perfume shop." }
+      ]
+    },
+    {
+      "id": "c07",
+      "beat": "결론",
+      "lines": [
+        { "who": "modeokhu", "text": "결론. 예쁜 사람도, 똑같이 뀐다.", "en": "Conclusion: pretty people fart just the same." },
+        { "who": "modeokhu", "text": "대신 몸 냄새는, 남의 것보다 내 것, 연인 것을 덜 역하게 느낀대.", "en": "But with body odor, we find our own, and our partner's, less gross than a stranger's." },
+        { "who": "modeokhu", "text": "그러니까 안 역하면, 그게 사랑이다.", "en": "So if it doesn't gross you out, that's love." }
+      ]
+    },
+    {
+      "id": "c08",
+      "beat": "엔딩",
+      "lines": [
+        { "who": "mom", "text": "(뿡) 어머, 미안.", "tts": "어머, 미안.", "en": "(toot) Oops, sorry." },
+        { "who": "dad", "text": "괜찮아. 하나도 안 나.", "en": "It's fine. I can't smell a thing." }
+      ]
+    },
+    {
+      "id": "c09",
+      "beat": "엔딩 · 삼촌",
+      "lines": [
+        { "who": "modeokhu", "text": "(꿀꺽) …저게 사랑이구나.", "tts": "…저게 사랑이구나.", "en": "(gulp) …So that's what love looks like." },
+        { "who": "modeokhu", "text": "(뿡) …음? 내 건 장미 향인데?", "tts": "…음? 내 건 장미 향인데?", "en": "(toot) …Hm? Mine smells like roses." },
+        { "who": "narr", "text": "자기 냄새 보정, 확인.", "en": "Self-odor bias: confirmed." }
+      ]
+    }
+  ]
+}

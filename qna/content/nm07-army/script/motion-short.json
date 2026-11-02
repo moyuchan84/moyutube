@@ -1,0 +1,69 @@
+[
+  {
+    "id": "Nm07-Short-March",
+    "series": "내모남불 · 내가 하면 모 어때, 남이 하면 불법",
+    "narr": "내모남불",
+    "crop": 1920,
+    "hook": [
+      "이등병 땐 갑질,",
+      "병장 되니 불법?!"
+    ],
+    "title": "군대 내로남불 · 행군",
+    "clips": [
+      {
+        "from": 3521,
+        "to": 4245
+      }
+    ],
+    "end": {
+      "title": [
+        "억울했던 군대 썰,",
+        "댓글로!"
+      ],
+      "sub": "구독하고 군대편 본편 이어 보기 ↓"
+    }
+  },
+  {
+    "id": "Nm07-Short-Insta",
+    "series": "내모남불 · 내가 하면 모 어때, 남이 하면 불법",
+    "narr": "내모남불",
+    "crop": 1920,
+    "hook": [
+      "이등병 땐 갑질,",
+      "병장 되니 불법?!"
+    ],
+    "title": "군대 내로남불",
+    "clips": [
+      {
+        "from": 0,
+        "to": 705
+      },
+      {
+        "from": 3521,
+        "to": 4245
+      }
+    ],
+    "end": {
+      "title": [
+        "요즘 군대 반전은",
+        "유튜브 본편에서"
+      ],
+      "sub": "YouTube 「모라구」 내모남불"
+    },
+    "en": {
+      "series": "Naemonambul · Double standards, Mo family style",
+      "hook": [
+        "Private: \"That is bullying.\"",
+        "Sergeant: \"Training!\""
+      ],
+      "title": "Army Double Standards",
+      "end": {
+        "title": [
+          "The modern-army twist",
+          "is on YouTube"
+        ],
+        "sub": "YouTube · Morago"
+      }
+    }
+  }
+]

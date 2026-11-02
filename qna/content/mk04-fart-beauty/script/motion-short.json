@@ -1,0 +1,65 @@
+[
+  {
+    "id": "Mk04-Short-Fart",
+    "series": "모덕후 · 이상하지만 진지한 고찰",
+    "narr": "모덕후",
+    "crop": 1920,
+    "hook": [
+      "예쁜 사람 방귀는",
+      "덜 지독할까?"
+    ],
+    "title": "④ 방귀",
+    "clips": [
+      {
+        "from": 0,
+        "to": 2693
+      }
+    ],
+    "end": {
+      "title": [
+        "연인 앞 방귀,",
+        "몇 년 차에 텄나요?"
+      ],
+      "sub": "구독하고 방귀 3부작 ② 이어 보기"
+    }
+  },
+  {
+    "id": "Mk04-Short-Fart-Insta",
+    "series": "모덕후 · 이상하지만 진지한 고찰",
+    "narr": "모덕후",
+    "crop": 1920,
+    "hook": [
+      "예쁜 사람 방귀는",
+      "덜 지독할까?"
+    ],
+    "title": "④ 방귀",
+    "clips": [
+      {
+        "from": 0,
+        "to": 2693
+      }
+    ],
+    "end": {
+      "title": [
+        "연인 앞 방귀,",
+        "몇 년 차에 텄나요?"
+      ],
+      "sub": "YouTube 「모라구」 모덕후"
+    },
+    "en": {
+      "series": "Modeokhu · Weird but serious research",
+      "hook": [
+        "Do pretty people's farts",
+        "smell any less?"
+      ],
+      "title": "#4 Farts",
+      "end": {
+        "title": [
+          "Farting in front of your partner:",
+          "how many years in?"
+        ],
+        "sub": "YouTube · Morago"
+      }
+    }
+  }
+]

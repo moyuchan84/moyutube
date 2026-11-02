@@ -12,6 +12,18 @@
 - 본편이든 쇼츠든 올리기 전에 **스킬 `yt-seo`** (`.claude/skills/yt-seo`) 를 먼저 쓴다: `npm run seo -- <project> <code> "검색어" …` → `upload/upload.md` 의 seo 칸 → 제목(한·영) · 설명 · 해시태그 · 태그.
 - 훅(`.claude/settings.json` → `shared/bin/seo-check.mjs`)이 Studio 를 열거나 업로드를 요청하면 알림을 붙인다. 빠진 편은 `npm run seo-check`.
 
+## 영상 편집 · 자막 — 모든 채널
+
+- 영상 편집(녹화 컷 편집 · 받아쓰기 · 자막 · 효과음)을 할 때는 **[docs/video-editing-guide.md](docs/video-editing-guide.md)** 를 먼저 읽고 따른다.
+- 한국어 자막(srt)은 **넷플릭스 한국어 자막 지침**대로 쓴다: 한 줄 16자 · 최대 두 줄 · 줄 끝 마침표 · 쉼표 없음 · `…` 한 글자 · 아래 줄이 긴 피라미드. 자동 처리는 `shared/srt-ko.mjs` (qna `motion-srt` 가 사용).
+- 직접 녹화한 영상: 말이 꼬이면 한 템포 쉬고 다시 말하기 → whisper large-v3-turbo 받아쓰기 → 무음 자르기 + 반복은 뒤 테이크 살리기 (자를 목록을 먼저 보여 주고 렌더).
+- 엔진은 Remotion 을 그대로 쓴다. HyperFrames · earshot 은 새 프로젝트에서 시험할 때만, 사용자에게 묻고 쓴다.
+
+## 영상 끝 · 참여 유도 — 모라구 모든 영상
+
+- 새 영상을 만들 때 **[qna/docs/morago-growth.md](qna/docs/morago-growth.md) 1절 · 6절**을 따른다. 6절은 잘 나가는 쇼츠의 공통점이다: 첫 1초에 상황 · 15–35초 · 한 편 완결 · 번호 붙은 시리즈 · 그림은 1–2초마다 움직임. 1절은 "두 번 누르면 원리 공개" 같은 거짓 약속 · 따로 붙이는 구독 장면 금지, 끝 카드에 이유가 붙은 구독 한 줄 + 댓글로 답할 질문 하나.
+- 채널 방향(무엇을 더 · 덜 만들지)과 다음 분석 날짜도 같은 문서에 있다.
+
 ## API 키 — 저장소 루트 `.env` 하나만 쓴다
 
 - Gemini 키는 **`D:\youtube\.env`** 에 있다: `GEMINI_API_KEY` (기본), `GEMINI_API_KEY2` (첫 키가 한도에 걸리면 번갈아 쓰는 예비).

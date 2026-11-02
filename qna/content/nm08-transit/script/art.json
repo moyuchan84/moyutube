@@ -1,0 +1,271 @@
+{
+  "title": "내모남불 ⑧ 대중교통편 · 자리 · 자는 척 · 통화 · 커피",
+  "cast": {
+    "staff": "the station attendant: a Korean woman in her early thirties, neat low bun of black hair, a calm oval face with straight eyebrows and composed narrow eyes, thin lips; wearing a tidy navy-blue station staff uniform jacket with a white shirt collar, a navy skirt-length vest, white gloves, a small black walkie-talkie clipped at her shoulder and a plain navy cap; absolutely NO text, NO letters, NO name tags, NO badges and NO logos anywhere; perfectly polite, completely deadpan",
+    "driver": "the bus driver: the IDENTICAL TWIN sister of the station attendant — exactly the same face, same low bun of black hair, same straight eyebrows and composed narrow eyes; wearing a light sky-blue bus driver uniform shirt with a navy tie and white gloves; absolutely NO text, NO letters, NO name tags, NO badges and NO logos anywhere; perfectly polite, completely deadpan",
+    "granny": "the grandma: a small, round Korean grandmother in her late seventies, short permed silver hair, rosy cheeks, kind crescent-moon eyes behind small round glasses, a soft warm smile; wearing a floral-print cardigan over a plain lilac blouse, comfy gray pants; absolutely NO text and NO logos; warm and gentle"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/panic",
+    "common/dad/proud",
+    "common/dad/shock",
+    "common/kid/normal",
+    "common/kid/ask",
+    "common/kid/doubt",
+    "common/mom/normal",
+    "common/mom/smirk",
+    "common/cutin/dad-shock",
+    "common/cutin/dad-proud",
+    "common/cutin/dad-panic",
+    "common/cutin/kid-ask",
+    "common/cutin/mom-smirk",
+    "common/cutin/dad-sig-1",
+    "common/cutin/dad-sig-2",
+    "common/cutin/dad-sig-3"
+  ],
+  "items": [
+    {
+      "id": "staff/normal",
+      "kind": "char",
+      "who": "staff",
+      "ref": null,
+      "people": [],
+      "title": "역무원 언니 — 기본 (정색, 손 앞으로 모음)",
+      "cuts": "c00b, c02c, c03c, c04c",
+      "motion": "꼿꼿, 말할 때 고개만 까딱.",
+      "desc": "3/4 view turned slightly to the LEFT. Standing perfectly upright with both white-gloved hands neatly folded in front of her, chin level, a completely flat polite expression, eyes looking straight at the viewer."
+    },
+    {
+      "id": "staff/radio",
+      "kind": "char",
+      "who": "staff",
+      "people": [],
+      "title": "역무원 언니 — 무전기 들고 안내 방송",
+      "cuts": "c00b, c03c",
+      "motion": "무전기를 입에 댄다.",
+      "desc": "3/4 view turned slightly to the LEFT. Holding the small black walkie-talkie up near her mouth with one white-gloved hand as if making an announcement, the other hand raised with an open palm toward the viewer in a polite stop gesture, deadpan face."
+    },
+    {
+      "id": "granny/normal",
+      "kind": "char",
+      "who": "granny",
+      "ref": null,
+      "people": [],
+      "title": "할머니 — 기본 (6편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c03a",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing with a gentle smile."
+    },
+    {
+      "id": "driver/normal",
+      "kind": "char",
+      "who": "driver",
+      "ref": null,
+      "people": [],
+      "attach": [
+        {
+          "path": "content/nm08-transit/art/staff/normal.png",
+          "label": "역무원 언니 — 쌍둥이라 같은 얼굴"
+        }
+      ],
+      "title": "버스 기사님 — 기본 (쌍둥이 동생)",
+      "cuts": "c05a, c05b, c05c, c08a",
+      "note": "staff/normal 과 얼굴이 같은지 나란히 비교한다.",
+      "motion": "꼿꼿, 고개만 까딱.",
+      "desc": "3/4 view turned slightly to the LEFT. Standing perfectly upright with both white-gloved hands neatly folded in front of her, a completely flat polite expression. EXACTLY the same face and hairstyle as the attached station attendant, only the uniform is the light sky-blue bus driver shirt with a navy tie."
+    },
+    {
+      "id": "driver/stop",
+      "kind": "char",
+      "who": "driver",
+      "people": [],
+      "title": "버스 기사님 — 흰 장갑 손바닥 \"정지\"",
+      "cuts": "c05a, c05c",
+      "motion": "손바닥을 쭉 내민다.",
+      "desc": "3/4 view turned slightly to the LEFT. One white-gloved arm stretched straight forward with the palm facing the viewer in a firm polite STOP gesture, the other hand on her hip, deadpan face, eyes half-lidded."
+    },
+    {
+      "id": "cutin/staff-flat",
+      "kind": "cutin",
+      "who": "staff",
+      "people": [],
+      "title": "역무원 언니 컷인 — 안내 방송 정색",
+      "cuts": "c00b, c02c, c04c",
+      "motion": "천천히 줌 인.",
+      "desc": "Facing the viewer, dramatic close-up from the chest up. A perfectly flat deadpan stare, one white-gloved finger raised like making a point, the walkie-talkie at her shoulder, a single small sweat-free calm expression, soft blue station light behind her."
+    },
+    {
+      "id": "cutin/driver-flat",
+      "kind": "cutin",
+      "who": "driver",
+      "people": [],
+      "title": "버스 기사님 컷인 — \"동생입니다.\"",
+      "cuts": "c05b, c08a",
+      "motion": "천천히 줌 인.",
+      "desc": "Facing the viewer, dramatic close-up from the chest up, seen from the bus aisle beside the driver seat. The same perfectly flat deadpan stare as her twin, white-gloved hands on a big steering wheel, a slight polite nod."
+    },
+    {
+      "id": "bg/gate",
+      "kind": "bg",
+      "title": "배경 — 지하철 개찰구 (아침)",
+      "cuts": "c00, c00a, c00b",
+      "motion": "사람 실루엣이 지나간다.",
+      "desc": "A bright, clean Korean subway station concourse in the morning seen straight-on like a sitcom set: a row of silver ticket gates with small glowing card readers, a tiled floor, a big blank route map board on the wall made only of colored lines and dots, ceiling lights. No people. Absolutely no readable words, letters, numbers, route numbers, station names or logos anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "bg/subway-car",
+      "kind": "bg",
+      "title": "배경 — 지하철 칸 안 (좌석 줄 · 손잡이)",
+      "cuts": "c01, c02, c02b, c03, c04, c04b, c06, c07",
+      "motion": "손잡이가 흔들린다.",
+      "desc": "The inside of a Korean subway car seen straight-on from the aisle like a sitcom set: a long row of light-green bench seats, a few seats in a different color for priority seating marked only by a simple wheelchair-and-elder pictogram, hanging hand straps, silver poles, windows showing a dark tunnel with motion streaks, a blank electronic display strip above the doors. No people. Absolutely no readable words, letters, numbers, route numbers, station names or logos anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "bg/bus-stop",
+      "kind": "bg",
+      "title": "배경 — 아침 버스 정류장",
+      "cuts": "c05, c05d",
+      "motion": "나뭇잎이 살랑.",
+      "desc": "A Korean city bus stop on a sunny morning seen straight-on: a glass bus shelter with a bench, a blank route sign made of plain colored bars, a street with trees and apartment buildings in the background. No people, no bus. Absolutely no readable words, letters, numbers, route numbers, station names or logos anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "bg/bus-night",
+      "kind": "bg",
+      "title": "배경 — 퇴근 버스 안 (밤)",
+      "cuts": "c08, c08b, c08c, c08d",
+      "motion": "창밖 불빛이 흐른다.",
+      "desc": "The inside of a Korean city bus at night seen from the aisle: rows of blue fabric seats, yellow hand rails and stop buttons, dim warm interior lights, windows showing streaking orange city lights, the empty driver seat area at the front. No people. Absolutely no readable words, letters, numbers, route numbers, station names or logos anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/seat-dive",
+      "kind": "full",
+      "people": [
+        "dad"
+      ],
+      "title": "올림픽 중계 — 빈자리로 공중 다이빙하는 아빠",
+      "cuts": "c02a",
+      "motion": "슬로모션으로 날아든다.",
+      "desc": "Inside a subway car, the dad is frozen in mid-air in a heroic slow-motion dive toward a single empty seat, body twisting like an Olympic gymnast, arms stretched forward, briefcase flying behind him, cheeks flapping, eyes blazing with determination, motion lines and sparkles around him. Standing passengers around are plain flat grey silhouettes with no faces, all turning to look. The dad stays in the exact gag-manga cartoon style of the attached images. Absolutely no readable words, letters, numbers, route numbers, station names or logos anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/bag-seat",
+      "kind": "full",
+      "people": [
+        "dad",
+        "kid"
+      ],
+      "title": "아빠 옆자리에 아빠 가방 — 모라구는 서서 손잡이",
+      "cuts": "c02a, c02b",
+      "motion": "가방이 반짝.",
+      "desc": "Inside a subway car: the dad sits smugly with legs crossed, his brown briefcase placed proudly on the empty seat next to him with a little sparkle, one hand patting the bag. His young son stands beside him holding a hand strap and looking up at him with a flat unimpressed face. A plain flat grey silhouette of an elderly man with a cane stands nearby. Both family members stay in the exact gag-manga cartoon style of the attached images. Absolutely no readable words, letters, numbers, route numbers, station names or logos anywhere; no caption boxes, no speech bubbles, no frame border. Other passengers are drawn ONLY as plain flat grey silhouettes with no faces."
+    },
+    {
+      "id": "full/fake-sleep",
+      "kind": "full",
+      "people": [
+        "dad",
+        "granny"
+      ],
+      "title": "자는 척 — 눈 꼭 감은 아빠 + 앞에 선 할머니 + 실눈 한쪽",
+      "cuts": "c03a",
+      "motion": "실눈이 움찔.",
+      "desc": "Inside a subway car: the dad sits on a bench seat with his eyes squeezed tightly shut and his head tilted back, a fake bubble of drool, but one eye is secretly peeking open a tiny slit, a big sweat drop on his temple. Directly in front of him the small grandma stands holding a hand strap with a tired gentle face, one hand on her aching knee. Both stay in the exact gag-manga cartoon style of the attached images. Absolutely no readable words, letters, numbers, route numbers, station names or logos anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/wake-up",
+      "kind": "full",
+      "people": [
+        "dad"
+      ],
+      "title": "할머니 내리자 번쩍 눈뜬 아빠 — 기적의 기상",
+      "cuts": "c03b",
+      "motion": "반짝이 터진다.",
+      "desc": "Inside a subway car with the doors just closing in the background: the dad suddenly wide awake, eyes wide open and sparkling, stretching both arms up with a huge refreshed grin as if it were a miracle, holy light rays and sparkles bursting behind him like a church window. The dad stays in the exact gag-manga cartoon style of the attached images. Absolutely no readable words, letters, numbers, route numbers, station names or logos anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/loud-call",
+      "kind": "full",
+      "people": [
+        "dad"
+      ],
+      "title": "큰 소리로 통화하는 아빠 + 고개 돌린 실루엣 승객 전원",
+      "cuts": "c04a",
+      "motion": "소리 파동이 퍼진다.",
+      "desc": "Inside a subway car: the dad stands holding a smartphone to his ear, mouth wide open shouting cheerfully, bowing repeatedly as if talking to his boss, huge comic sound-wave rings spreading out from his mouth across the whole car. Every other passenger in the car is a plain flat grey silhouette with no face, and all of them have turned their heads toward him at the same time. The dad stays in the exact gag-manga cartoon style of the attached images. Absolutely no readable words, letters, numbers, route numbers, station names or logos anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/coffee-stop",
+      "kind": "full",
+      "people": [
+        "dad",
+        "driver"
+      ],
+      "title": "아이스 커피 들고 버스 계단에 발 올린 아빠 + 기사님 흰 장갑 손바닥",
+      "cuts": "c05a",
+      "motion": "손바닥이 쑥.",
+      "desc": "At the front door of a city bus, seen from inside: the dad has one foot on the bus step, happily holding a big take-out iced coffee cup with a straw and ice, mid-sip. From the driver seat the bus driver holds out one white-gloved hand with the palm toward him in a firm polite STOP gesture, perfectly deadpan. Both stay in the exact gag-manga cartoon style of the attached images. Absolutely no readable words, letters, numbers, route numbers, station names or logos anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/coffee-chug",
+      "kind": "full",
+      "people": [
+        "dad"
+      ],
+      "title": "정류장에서 아이스 커피 원샷 — 머리 띵",
+      "cuts": "c05d",
+      "motion": "얼음 쨍.",
+      "desc": "At a sunny bus stop: the dad tilts his head all the way back chugging a big take-out iced coffee in one go, ice cubes tumbling, then clutching his forehead with his free hand, eyes crossed and watering, a comic blue ice-cold shiver effect and little ice crystals around his head (brain freeze). The dad stays in the exact gag-manga cartoon style of the attached images. Absolutely no readable words, letters, numbers, route numbers, station names or logos anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/dad-asleep-combo",
+      "kind": "full",
+      "people": [
+        "dad"
+      ],
+      "title": "반전 — 퇴근 버스 민폐 종합 세트 (쩍벌 · 백팩 · 커피 · 영상 · 코골이)",
+      "cuts": "c08, c08a",
+      "motion": "코골이 풍선이 부푼다.",
+      "desc": "Inside a city bus at night: the exhausted dad is fast asleep sprawled across the seat, legs spread wide taking up two seats, a huge hiking backpack still on his back poking into the aisle, an iced coffee cup tilting in one hand, his smartphone in the other hand playing a loud video with comic music notes and sound waves coming out, mouth wide open snoring with a big snot bubble and floating Z letters. All the other passengers are plain flat grey silhouettes with no faces, all staring at him. The dad stays in the exact gag-manga cartoon style of the attached images. Absolutely no readable words, letters, numbers, route numbers, station names or logos anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "prop/bag",
+      "kind": "prop",
+      "title": "소품 — 아빠 서류 가방 (자리 맡기)",
+      "cuts": "c02a",
+      "motion": "툭 떨어진다.",
+      "desc": "A single slightly worn brown leather briefcase with a small sparkle, as if proudly reserving a seat. No logos, no text."
+    },
+    {
+      "id": "prop/iced-coffee",
+      "kind": "prop",
+      "title": "소품 — 빨대 꽂힌 아이스 커피 컵",
+      "cuts": "c05, c05a, c05c",
+      "motion": "얼음이 달그락.",
+      "desc": "A single tall clear take-out cup of iced coffee with ice cubes, a domed lid and a striped straw, condensation drops. No logos, no text."
+    },
+    {
+      "id": "prop/tumbler",
+      "kind": "prop",
+      "title": "소품 — 뚜껑 닫힌 텀블러 (허용)",
+      "cuts": "c05c",
+      "motion": "반짝.",
+      "desc": "A single sleek stainless steel tumbler with a tightly closed lid, a small green check-mark-like sparkle beside it. No logos, no text."
+    },
+    {
+      "id": "prop/backpack-big",
+      "kind": "prop",
+      "title": "소품 — 커다란 등산 백팩",
+      "cuts": "c06",
+      "motion": "툭 튀어나온다.",
+      "desc": "A single huge overstuffed hiking backpack with straps, a rolled sleeping mat and a dangling cup, bulging comically. No logos, no text."
+    },
+    {
+      "id": "prop/phone-speaker",
+      "kind": "prop",
+      "title": "소품 — 소리 나는 휴대폰",
+      "cuts": "c06a, c08b",
+      "motion": "소리 파동.",
+      "desc": "A single smartphone with comic loud sound waves and music notes bursting out of its speaker, the screen showing only a blank bright glow. No logos, no text."
+    }
+  ]
+}

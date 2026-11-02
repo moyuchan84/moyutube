@@ -103,3 +103,5 @@ A never-dated geek uncle gets caught holding his own hand at night. "It's an exp
   - 영어 제목 · 설명은 아직 안 넣음 (2편처럼 언어 탭 자동 더빙 처리가 끝난 뒤 넣는다)
 - 제작: 그림 11장 크롬 Gemini(u/0) · 음성 32줄 크롬 AI Studio flash-tts(u/1 20줄 → 한도 → u/0 12줄) · 배경음악 `flutter`(새로 지음) · 효과음 gulp
 - 2026-10-31 인스타 @raumhero 이중 언어 릴스 https://www.instagram.com/reel/DfJAYs4Pq1o/ (캡션 한·영에 쇼츠 링크, 기록은 raumhero-instagram/posts/2026-10-31-modeokhu-touch)
+
+- 2026-11-01 쇼츠 썸네일을 세로판 `upload/thumbnail-short.png` (1080×1920, `npm run thumb-short`) 으로 교체 — Studio 세부정보에서 썸네일만 바꿈, 영상 · 조회수 그대로. 이전 가로 `thumbnail.png` 는 Shorts 탭에서 가운데만 잘려 보였다 (docs/shorts-thumbnail.md)

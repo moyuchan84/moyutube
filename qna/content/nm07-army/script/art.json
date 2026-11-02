@@ -1,0 +1,372 @@
+{
+  "title": "내모남불 ⑦ 군대편 · 작업 · 청소 · 휴가 · 행군",
+  "cast": {
+    "cousin": "the cousin: a 21-year-old Korean young man, very short neat buzz-cut black hair, clean-shaven smooth face, calm narrow eyes, slim build; wearing a neat modern pixel-pattern camouflage army uniform with the sleeves rolled down, two simple short horizontal stripes on the chest as a rank mark, black combat boots; absolutely NO text, NO letters, NO name tapes, NO patches, NO flags and NO logos anywhere; NO weapons; polite, calm and completely deadpan",
+    "dadyoung": "the young private: the SAME man as the dad in the attached reference photo, but about twenty years younger, around 21 years old — same round face shape, same nose, same eyes and same eyebrows, chubby cheeks, a full head of very short buzz-cut black hair (not balding at all), no wrinkles, no beard; wearing a slightly baggy old-style olive-green woodland camouflage army uniform and a matching soft patrol cap; absolutely NO text, NO letters, NO name tapes, NO patches, NO flags and NO logos anywhere; NO weapons",
+    "oldsgt": "the old sergeant: a big, heavy-set Korean young man about 22 years old, buzz-cut hair under a soft cap pushed back, sleepy half-closed eyes, a smug lazy grin; wearing a slightly baggy old-style olive-green woodland camouflage army uniform and a matching soft patrol cap with the sleeves rolled up and four simple short stripes on the chest; absolutely NO text, NO letters, NO name tapes, NO patches, NO flags and NO logos anywhere; NO weapons; lazy and smug, never scary, never violent",
+    "rookie": "the rookie: a skinny Korean young man about 20 years old, buzz-cut hair, huge nervous round eyes, big ears, a thin neck; wearing an oversized old-style olive-green woodland camouflage army uniform and a matching soft patrol cap with one simple short stripe on the chest; absolutely NO text, NO letters, NO name tapes, NO patches, NO flags and NO logos anywhere; NO weapons; earnest, timid and polite"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/panic",
+    "common/dad/proud",
+    "common/dad/shock",
+    "common/kid/normal",
+    "common/kid/ask",
+    "common/kid/doubt",
+    "common/mom/normal",
+    "common/mom/smirk",
+    "common/mom/sigh",
+    "common/cutin/dad-shock",
+    "common/cutin/dad-proud",
+    "common/cutin/dad-panic",
+    "common/cutin/kid-ask",
+    "common/cutin/kid-doubt",
+    "common/cutin/mom-smirk",
+    "common/cutin/mom-sigh",
+    "common/cutin/dad-sig-1",
+    "common/cutin/dad-sig-2",
+    "common/cutin/dad-sig-3"
+  ],
+  "items": [
+    {
+      "id": "cousin/normal",
+      "kind": "char",
+      "who": "cousin",
+      "ref": null,
+      "people": [],
+      "title": "사촌 형 — 기본 (휴가 나온 일병)",
+      "cuts": "c00, c00b, c02c, c03c, c04b, c05c, c07, c09",
+      "motion": "숨 쉬듯 살짝, 말할 때 까딱.",
+      "desc": "3/4 view turned slightly to the LEFT. Standing upright and relaxed with his hands loosely at his sides, a calm polite expression, the faintest small smile, eyes looking at the viewer."
+    },
+    {
+      "id": "dadyoung/normal",
+      "kind": "char",
+      "who": "dadyoung",
+      "ref": null,
+      "people": [],
+      "attach": [
+        {
+          "path": "content/_common/art/dad/normal.png",
+          "label": "지금 아빠 — 같은 사람을 20년 젊게"
+        }
+      ],
+      "title": "이등병 아빠 — 기본 (20년 전, 겁먹은 신병)",
+      "cuts": "c00a, c02, c03, c04",
+      "note": "지금 아빠와 같은 얼굴인지 dad/normal 과 나란히 비교한다.",
+      "motion": "움찔움찔 떤다.",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing stiffly at nervous attention, shoulders hunched, big worried puppy eyes, a tiny wobbly frown, one bead of sweat on his temple. One simple short stripe on the chest (lowest rank)."
+    },
+    {
+      "id": "dadyoung/sergeant",
+      "kind": "char",
+      "who": "dadyoung",
+      "people": [],
+      "title": "병장 아빠 — 기본 (2년 뒤, 느긋한 고참)",
+      "cuts": "c00a, c02b, c03a, c03b, c04a, c05a, c05b",
+      "motion": "부채를 천천히 부친다.",
+      "desc": "3/4 view turned slightly to the LEFT. As a SERGEANT now: soft cap tilted back at a cocky angle, sleeves rolled up, four simple short stripes on the chest, a relaxed slouch and a smug half-lidded grin, leaning back with one hand on his hip and the other lazily waving a round paper hand fan, eyebrows raised as if giving a lecture. The SAME face as the attached young private, just more confident."
+    },
+    {
+      "id": "dadyoung/finger",
+      "kind": "char",
+      "who": "dadyoung",
+      "ref": "dadyoung/sergeant",
+      "people": [],
+      "title": "병장 아빠 — 창틀 손가락 검사",
+      "cuts": "c03a",
+      "motion": "손가락을 쓱 들어 올린다.",
+      "desc": "Facing slightly to the RIGHT. As a SERGEANT now: soft cap tilted back at a cocky angle, sleeves rolled up, four simple short stripes on the chest, a relaxed slouch and a smug half-lidded grin. Holding up one index finger right in front of his face with a tiny gray smudge of dust on the fingertip, squinting at it with exaggerated disappointment, the other hand behind his back."
+    },
+    {
+      "id": "dadyoung/march",
+      "kind": "char",
+      "who": "dadyoung",
+      "people": [],
+      "title": "이등병 아빠 — 군장 두 개 메고 헉헉",
+      "cuts": "c05",
+      "motion": "비틀비틀 걷는다.",
+      "desc": "Side 3/4 view walking to the RIGHT. Bent forward under TWO huge stacked olive army backpacks, a helmet slightly crooked on his head, red puffing cheeks, sweat flying, eyes spiraling with exhaustion, mouth muttering. One simple short stripe on the chest. No weapons."
+    },
+    {
+      "id": "oldsgt/normal",
+      "kind": "char",
+      "who": "oldsgt",
+      "ref": null,
+      "people": [],
+      "title": "왕고참 — 기본 (그늘에서 부채질)",
+      "cuts": "c02a, c03a",
+      "motion": "부채질하며 하품.",
+      "desc": "3/4 view turned slightly to the LEFT. Sitting back lazily on an upturned wooden crate, legs spread, waving a round paper hand fan at his own face, a smug sleepy grin, one eye half-open."
+    },
+    {
+      "id": "rookie/normal",
+      "kind": "char",
+      "who": "rookie",
+      "ref": null,
+      "people": [],
+      "title": "신병 — 기본 (조심조심)",
+      "cuts": "c03b, c04a, c05a",
+      "motion": "작게 움찔.",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing very straight with his hands pressed to his sides, huge nervous round eyes, lips pressed together, one sweat drop, leaning slightly forward as if about to ask something very carefully."
+    },
+    {
+      "id": "cousin/grill",
+      "kind": "char",
+      "who": "cousin",
+      "people": [],
+      "title": "사촌 형 — 집게로 고기 굽기",
+      "cuts": "c01, c03d, c07a",
+      "note": "배경 bg/bbq 위에 얹는다. 아빠가 떠드는 동안 내내 이 사람이 굽는다.",
+      "motion": "고기를 뒤집는다.",
+      "desc": "Waist-up, 3/4 view turned slightly to the LEFT. Seated, holding metal tongs in one hand and flipping a strip of pork belly on a small round grill in front of him, calm focused face, sleeves neat. Steam rising from the grill."
+    },
+    {
+      "id": "bg/bbq",
+      "kind": "bg",
+      "title": "배경 — 토요일 저녁 고깃집 테이블",
+      "cuts": "c00, c00b, c01, c02c, c03c, c03d, c04b, c05c, c06, c07, c07a, c08, c09",
+      "motion": "불판 연기가 피어오른다.",
+      "desc": "A cozy Korean barbecue restaurant at night seen straight-on like a sitcom set: a low wooden table in the center with a round charcoal grill, small side-dish plates, lettuce baskets, steel cups, a silver exhaust hood hanging above the grill, warm orange lights, a few blurred other tables in the background. No people, no text, no signs."
+    },
+    {
+      "id": "bg/barracks-old",
+      "kind": "bg",
+      "title": "배경 — 옛 침상형 생활관 (20년 전)",
+      "cuts": "c00a, c03, c03a, c03b, c07",
+      "motion": "살짝 바랜 색, 천천히 옆으로.",
+      "desc": "An old-fashioned Korean army barracks room from about twenty years ago: a long raised wooden sleeping platform along the LEFT wall with neatly folded olive blankets in a row, gray metal lockers along the back wall, a wide window frame on the RIGHT, a fluorescent tube light on the ceiling, slightly faded warm colors. No people, no text, no flags, no weapons."
+    },
+    {
+      "id": "bg/field-sun",
+      "kind": "bg",
+      "title": "배경 — 땡볕 작업장 (그늘 나무 하나)",
+      "cuts": "c02, c02a, c02b",
+      "motion": "아지랑이가 흔들린다.",
+      "desc": "A dusty army work site under a blazing summer sun: dry dirt ground with a half-dug shallow trench in the center, a few shovels stuck in a dirt pile, one big leafy tree on the RIGHT casting a cool shady spot, heat haze shimmering, bright blue sky. No people, no text, no weapons."
+    },
+    {
+      "id": "bg/march-road",
+      "kind": "bg",
+      "title": "배경 — 흙길 행군",
+      "cuts": "c05, c05a, c05b",
+      "motion": "길이 앞으로 흘러간다.",
+      "desc": "A long dirt country road winding through green hills at late afternoon, rice fields on one side, a line of tall grass, dust in the air, orange evening sky. No people, no text, no vehicles, no weapons."
+    },
+    {
+      "id": "bg/barracks-now",
+      "kind": "bg",
+      "title": "배경 — 요즘 침대형 동기 생활관",
+      "cuts": "c07, c07a",
+      "motion": "밝게 반짝.",
+      "desc": "A bright modern Korean army barracks room: four neat single beds with gray blankets, a personal locker next to each bed, a small desk with a lamp, clean white walls, soft daylight from a window, tidy and calm. No people, no text, no flags, no weapons."
+    },
+    {
+      "id": "cutin/dad-latte",
+      "kind": "cutin",
+      "who": "dad",
+      "people": [],
+      "title": "아빠 컷인 — 라떼는 말이야 (먼 산 보며 회상)",
+      "cuts": "c00, c07",
+      "motion": "눈이 반짝이며 줌 인.",
+      "desc": "Facing slightly to the RIGHT. Gazing dreamily up into the distance with sparkling nostalgic eyes, chin raised proudly, one hand raised as if telling an epic story, a big self-satisfied smile, a few nostalgic sparkles around his head."
+    },
+    {
+      "id": "cutin/cousin-flat",
+      "kind": "cutin",
+      "who": "cousin",
+      "ref": "cousin/normal",
+      "people": [],
+      "title": "사촌 형 정색 컷인 (집게 든 채)",
+      "cuts": "c00b, c02c, c02d, c03c, c04b, c04c, c05c, c07, c07a, c09",
+      "motion": "옆에서 쓱 들어와 멈춘다.",
+      "desc": "Facing slightly to the LEFT. Perfectly deadpan: half-closed calm eyes, eyebrows level, mouth a small flat line, holding metal barbecue tongs upright beside his face like a pointer, one tiny anime glint in his eye."
+    },
+    {
+      "id": "cutin/dadyoung-whisper",
+      "kind": "cutin",
+      "who": "dadyoung",
+      "people": [],
+      "title": "이등병 아빠 컷인 — 이불 속 속삭임",
+      "cuts": "c00a, c02a, c04",
+      "motion": "이불 속에서 떤다.",
+      "desc": "Facing slightly to the RIGHT. Hiding under an olive army blanket pulled up to his nose at night, only his worried eyes and buzz-cut head showing, eyes darting sideways, a tiny cold sweat drop, dim blue night light."
+    },
+    {
+      "id": "cutin/dadyoung-smug",
+      "kind": "cutin",
+      "who": "dadyoung",
+      "ref": "dadyoung/sergeant",
+      "people": [],
+      "title": "병장 아빠 컷인 — 느긋한 웃음",
+      "cuts": "c00a, c02b, c04a, c05b",
+      "motion": "고개를 까딱.",
+      "desc": "Facing slightly to the LEFT. As a SERGEANT now: soft cap tilted back at a cocky angle, sleeves rolled up, four simple short stripes on the chest, a relaxed slouch and a smug half-lidded grin. Chin up, eyes half-closed in total smug satisfaction, one corner of the mouth lifted, a round paper hand fan resting on his shoulder."
+    },
+    {
+      "id": "full/shovel-shade",
+      "kind": "full",
+      "who": "dadyoung",
+      "people": [
+        "oldsgt"
+      ],
+      "title": "R1 — 땡볕 삽질 이등병 아빠 + 그늘 왕고참",
+      "cuts": "c02, c02a",
+      "motion": "왼쪽 땡볕 → 오른쪽 그늘로 카메라가 흐른다.",
+      "desc": "Wide scene at a sun-baked dirt work site: on the LEFT the young private digging a trench with a shovel under the blazing sun, drenched in sweat, steam rising off his head; on the RIGHT in the cool shade of a big tree the old sergeant lounging on a wooden crate fanning himself with a round paper fan and pointing lazily at the private. Heat haze, comic sweat drops. No weapons, no text."
+    },
+    {
+      "id": "full/sgt-dad-shade",
+      "kind": "full",
+      "who": "dadyoung",
+      "ref": "dadyoung/sergeant",
+      "people": [
+        "rookie"
+      ],
+      "title": "R1 — 같은 구도, 이번엔 그늘에 병장 아빠",
+      "cuts": "c02b",
+      "note": "full/shovel-shade 와 같은 구도로 — 반반 화면으로 나란히 붙인다.",
+      "motion": "같은 카메라 움직임.",
+      "desc": "The SAME composition as a sun-baked work site: on the LEFT the rookie digging a trench under the blazing sun, drenched in sweat; on the RIGHT in the cool shade of a big tree the sergeant (the young man from the attached image, now a cocky sergeant) lounging on a wooden crate fanning himself with a round paper fan, pointing lazily. Heat haze, comic sweat drops. No weapons, no text."
+    },
+    {
+      "id": "full/finger-dust",
+      "kind": "full",
+      "who": "oldsgt",
+      "people": [
+        "dadyoung"
+      ],
+      "title": "R2 — 창틀 손가락 검사 (왕고참 + 이등병 아빠)",
+      "cuts": "c03, c03a",
+      "motion": "손가락에 줌.",
+      "desc": "Inside an old army barracks by a window: the old sergeant running one finger along the window frame and holding it up with a tiny gray smudge of dust, eyebrows raised; beside him the young private standing stiffly at attention with a cleaning rag in hand, face frozen in horror. Comic shock lines. No weapons, no text."
+    },
+    {
+      "id": "full/locker-ramen",
+      "kind": "full",
+      "who": "rookie",
+      "people": [
+        "dadyoung"
+      ],
+      "attach": [
+        {
+          "path": "content/nm07-army/art/dadyoung/sergeant.png",
+          "label": "병장 아빠 (이 모습 그대로)"
+        }
+      ],
+      "title": "R2 — 병장 아빠 관물대 라면 국물 (신병 당황)",
+      "cuts": "c03b",
+      "motion": "관물대 문이 끼익 열린다.",
+      "desc": "Inside an old army barracks: an open gray metal locker overflowing with a messy pile of instant-noodle cups, a dried orange ramen-soup stain dripping down the shelf; the rookie pointing at it with wide nervous eyes; next to him the sergeant (the young man from the attached sergeant image) calmly waving it off with a hand fan and a dreamy nostalgic smile. No weapons, no text, no brand names."
+    },
+    {
+      "id": "full/leave-calendar",
+      "kind": "full",
+      "who": "rookie",
+      "people": [
+        "dadyoung"
+      ],
+      "attach": [
+        {
+          "path": "content/nm07-army/art/dadyoung/sergeant.png",
+          "label": "병장 아빠 (이 모습 그대로)"
+        }
+      ],
+      "title": "R3 — 휴가 달력 앞 (신병 눈치 · 병장 아빠 벌써?!)",
+      "cuts": "c04a",
+      "note": "달력 숫자 · 표시는 코드로 그린다.",
+      "motion": "달력에 줌.",
+      "desc": "Inside an old army barracks in front of a big blank wall calendar with empty squares: the rookie holding up a small blank request form timidly with both hands; the sergeant (the young man from the attached sergeant image) recoiling dramatically with his mouth wide open in shock, hand fan dropping. Comic shock lines. The calendar has absolutely no numbers or writing. No weapons, no text."
+    },
+    {
+      "id": "full/march-packs",
+      "kind": "full",
+      "who": "rookie",
+      "people": [
+        "dadyoung"
+      ],
+      "attach": [
+        {
+          "path": "content/nm07-army/art/dadyoung/sergeant.png",
+          "label": "병장 아빠 (이 모습 그대로)"
+        }
+      ],
+      "title": "R4 — 군장 두 개 멘 신병 + 빈손 병장 아빠",
+      "cuts": "c05a, c05b",
+      "motion": "둘이 걸어가고, 신병만 비틀.",
+      "desc": "On a dusty country road at sunset: the rookie staggering under TWO huge stacked olive army backpacks, sweating, muttering; walking beside him the sergeant (the young man from the attached sergeant image) carrying nothing at all, hands clasped behind his head, whistling happily with a smug grin. Helmets only, absolutely no weapons, no text."
+    },
+    {
+      "id": "full/bbq-tongs",
+      "kind": "full",
+      "who": "dad",
+      "people": [
+        "kid",
+        "cousin",
+        "mom"
+      ],
+      "title": "반전 — 집게 든 아빠, 쌈 든 모라구, 정색 사촌 형, 엄마",
+      "cuts": "c09, c09a",
+      "motion": "아빠 쪽으로 펀치 줌.",
+      "desc": "At a cozy Korean barbecue restaurant table at night: the dad standing proudly holding metal tongs up like a commander's baton and pointing at the kid; the kid holding a lettuce wrap with both hands, looking puzzled; the cousin in uniform sitting with a perfectly deadpan face; the mom covering her mouth, eyes half-closed in disbelief. Grill smoke, warm light. No text."
+    },
+    {
+      "id": "prop/latte",
+      "kind": "prop",
+      "title": "소품 — 라떼 컵 (라떼는… 반복 개그)",
+      "cuts": "c00, c07",
+      "motion": "구석에 뿅.",
+      "desc": "A single cute take-out latte cup with a white lid and a small heart drawn in foam peeking through, a wisp of steam. No logos, no text."
+    },
+    {
+      "id": "prop/shovel",
+      "kind": "prop",
+      "title": "소품 — 삽",
+      "cuts": "c02",
+      "motion": "툭 꽂힌다.",
+      "desc": "A single old army-style shovel with a wooden handle and a dusty steel blade, a clump of dirt on it."
+    },
+    {
+      "id": "prop/fan",
+      "kind": "prop",
+      "title": "소품 — 둥근 부채",
+      "cuts": "c02a, c02b",
+      "motion": "살랑살랑.",
+      "desc": "A single round paper hand fan with a bamboo handle, plain pale yellow paper. No text."
+    },
+    {
+      "id": "prop/socks",
+      "kind": "prop",
+      "title": "소품 — 구겨진 군용 양말",
+      "cuts": "c00a",
+      "motion": "툭 던져진다.",
+      "desc": "A crumpled pair of plain dark olive army socks, slightly stinky with tiny comic stink lines."
+    },
+    {
+      "id": "prop/tongs",
+      "kind": "prop",
+      "title": "소품 — 고기 집게",
+      "cuts": "c08, c09",
+      "motion": "번쩍 들어 올린다.",
+      "desc": "A single pair of shiny stainless-steel barbecue tongs."
+    },
+    {
+      "id": "prop/phone",
+      "kind": "prop",
+      "title": "소품 — 휴대폰",
+      "cuts": "c07a",
+      "note": "화면은 비워 둔다.",
+      "motion": "띵 진동.",
+      "desc": "A single plain black smartphone with a blank glowing screen. No logos, no text, no apps."
+    },
+    {
+      "id": "prop/backpack",
+      "kind": "prop",
+      "title": "소품 — 군장 배낭",
+      "cuts": "c05",
+      "motion": "쿵 떨어진다.",
+      "desc": "A single big olive-green army rucksack with straps and a rolled sleeping mat on top. No patches, no text."
+    }
+  ]
+}
