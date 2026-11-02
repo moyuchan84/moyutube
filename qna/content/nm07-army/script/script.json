@@ -1,0 +1,574 @@
+{
+  "rawVoice": true,
+  "speed": 1.25,
+  "title": "내모남불 ⑦ 군대편 · 작업 · 청소 · 휴가 · 행군",
+  "bgm": "cheerful",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "콜드 오픈",
+      "lines": [
+        {
+          "who": "cousin",
+          "text": "삼촌, 저 휴가 나왔습니다!",
+          "en": "Uncle, I'm home on leave!",
+          "style": "cheerful, polite young soldier arriving at a restaurant"
+        },
+        {
+          "who": "dad",
+          "text": "오, 일병! 군대는 말이야, 라떼는…",
+          "en": "Oh, Private First Class! Let me tell you, back in my day…",
+          "style": "proud, nostalgic, starting a long old-army story"
+        }
+      ]
+    },
+    {
+      "id": "c00a",
+      "beat": "콜드 오픈",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "고참이 시키는 건… 다 갑질이야…",
+          "en": "Whatever the seniors make us do… it's all bullying…",
+          "style": "a young private in his early twenties, timid and whispering, scared but complaining under his breath"
+        },
+        {
+          "who": "dad",
+          "text": "야, 막내! 양말 좀 개 봐. 이건 교육이야~",
+          "en": "Hey, rookie! Fold my socks. It's for your training~",
+          "style": "the same man two years later as a lazy, smug sergeant, drawling and self-satisfied"
+        }
+      ]
+    },
+    {
+      "id": "c00b",
+      "beat": "콜드 오픈",
+      "lines": [
+        {
+          "who": "cousin",
+          "text": "삼촌, 요즘 그거 규정 위반이에요.",
+          "en": "Uncle, that's against regulations now."
+        },
+        {
+          "who": "dad",
+          "text": "…네?",
+          "en": "…Huh?",
+          "style": "stunned, caught off guard"
+        }
+      ]
+    },
+    {
+      "id": "c00c",
+      "beat": "콜드 오픈",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "이등병 땐 갑질, 병장 땐 교육. 내모남불, 하나.",
+          "en": "As a private: bullying. As a sergeant: training. Double standard, number one."
+        },
+        {
+          "who": "dad",
+          "text": "저는… 모답맨입니다.",
+          "en": "I'm… Modapman."
+        }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "사건 개요",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "사건 개요. 토요일 저녁, 고깃집. 조카 휴가 기념.",
+          "en": "Case summary. Saturday night, Korean BBQ. Celebrating a nephew's leave."
+        },
+        {
+          "who": "kid",
+          "text": "아빠, 짬이 뭐야?",
+          "en": "Dad, what's \"jjam\"?"
+        },
+        {
+          "who": "dad",
+          "text": "군대에서 먹은 밥그릇 수. 많을수록 세지.",
+          "en": "How many army meals you've eaten. The more, the stronger."
+        }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "ROUND 1 작업",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "딱 네 판만 하죠. 1라운드, 작업.",
+          "en": "Just four rounds. Round one: work detail.",
+          "tts": "딱 네 판만 하죠. 일 라운드, 작업."
+        },
+        {
+          "who": "dad",
+          "text": "땡볕에 삽질하는데, 병장님은 그늘에서 감독만…",
+          "en": "We're digging in the blazing sun, and the sergeant just \"supervises\" from the shade…",
+          "style": "a young private in his early twenties, timid and whispering, scared but complaining under his breath"
+        }
+      ]
+    },
+    {
+      "id": "c02a",
+      "beat": "ROUND 1 작업",
+      "lines": [
+        {
+          "who": "oldsgt",
+          "text": "어이, 거기 삽 각도 좋다~",
+          "en": "Hey, nice shovel angle there~"
+        },
+        {
+          "who": "dad",
+          "text": "저게 무슨 작업이야!",
+          "en": "How is that work?!",
+          "style": "a young private grumbling furiously inside his head, hushed"
+        }
+      ]
+    },
+    {
+      "id": "c02b",
+      "beat": "ROUND 1 작업",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "난 경험으로 지휘하는 거야~ 모 어때.",
+          "en": "I lead with experience~ So what.",
+          "style": "the same man two years later as a lazy, smug sergeant, drawling and self-satisfied"
+        },
+        {
+          "who": "kid",
+          "text": "아빠도 그늘에 있었네?",
+          "en": "So you were in the shade too?"
+        }
+      ]
+    },
+    {
+      "id": "c02c",
+      "beat": "ROUND 1 작업",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "남이 쉬면 농땡이, 내가 쉬면 지휘. 내모남불, 둘.",
+          "en": "They rest: slacking. I rest: leadership. Double standard, number two."
+        },
+        {
+          "who": "cousin",
+          "text": "남이 쉬면 게을러서, 내가 쉬면 사정이 있어서.",
+          "en": "When others rest, they're lazy. When I rest, I have my reasons."
+        }
+      ]
+    },
+    {
+      "id": "c02d",
+      "beat": "ROUND 1 작업",
+      "lines": [
+        {
+          "who": "cousin",
+          "text": "행위자-관찰자 편향이래요.",
+          "en": "It's called the actor-observer bias.",
+          "tts": "행위자 관찰자 편향이래요."
+        }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "ROUND 2 청소",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "2라운드. 청소.",
+          "en": "Round two: cleaning.",
+          "tts": "이 라운드. 청소."
+        },
+        {
+          "who": "dad",
+          "text": "창틀까지 반짝반짝, 다 닦았습니다!",
+          "en": "Everything's spotless, even the window frames!",
+          "style": "a young private reporting loudly and nervously, eager to please"
+        }
+      ]
+    },
+    {
+      "id": "c03a",
+      "beat": "ROUND 2 청소",
+      "lines": [
+        {
+          "who": "oldsgt",
+          "text": "먼지. 다시.",
+          "en": "Dust. Again."
+        },
+        {
+          "who": "dad",
+          "text": "먼지. 다시~",
+          "en": "Dust. Again~",
+          "style": "the same man two years later as a lazy, smug sergeant, drawling and self-satisfied"
+        }
+      ]
+    },
+    {
+      "id": "c03b",
+      "beat": "ROUND 2 청소",
+      "lines": [
+        {
+          "who": "rookie",
+          "text": "병장님 관물대에… 라면 국물이…",
+          "en": "Sergeant, your locker… there's ramen soup…"
+        },
+        {
+          "who": "dad",
+          "text": "그건 먼지가 아니라, 추억이야.",
+          "en": "That's not dirt. That's a memory.",
+          "style": "the same man two years later as a lazy, smug sergeant, drawling and self-satisfied"
+        }
+      ]
+    },
+    {
+      "id": "c03c",
+      "beat": "ROUND 2 청소",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "남의 먼지는 불량, 내 먼지는 추억. 내모남불, 셋.",
+          "en": "Their dust: a violation. My dust: a memory. Double standard, number three."
+        },
+        {
+          "who": "cousin",
+          "text": "남의 허점은 잘 보이고 내 건 안 보이는 거, 편향 맹점이래요.",
+          "en": "Seeing others' flaws but not your own — that's the bias blind spot."
+        }
+      ]
+    },
+    {
+      "id": "c03d",
+      "beat": "ROUND 2 청소",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "…고기 탄다, 뒤집어.",
+          "en": "…The meat's burning. Flip it.",
+          "style": "embarrassed, quickly changing the subject"
+        }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "ROUND 3 휴가",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "3라운드. 휴가.",
+          "en": "Round three: leave.",
+          "tts": "삼 라운드. 휴가."
+        },
+        {
+          "who": "dad",
+          "text": "좋은 날짜는 고참들이 다 가져가고, 전 남은 날만…",
+          "en": "The seniors take all the good dates, and I get the leftovers…",
+          "style": "a young private in his early twenties, timid and whispering, scared but complaining under his breath"
+        }
+      ]
+    },
+    {
+      "id": "c04a",
+      "beat": "ROUND 3 휴가",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "휴가는 짬 순서지. 당연한 거야.",
+          "en": "Leave goes by seniority. Obviously.",
+          "style": "the same man two years later as a lazy, smug sergeant, drawling and self-satisfied"
+        },
+        {
+          "who": "rookie",
+          "text": "저… 다음 달 휴가 신청…",
+          "en": "Um… I'd like to request leave next month…"
+        },
+        {
+          "who": "dad",
+          "text": "벌써?!",
+          "en": "Already?!",
+          "style": "a smug sergeant, shocked and offended"
+        }
+      ]
+    },
+    {
+      "id": "c04b",
+      "beat": "ROUND 3 휴가",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "남이 가면 벌써, 내가 가면 당연. 내모남불, 넷.",
+          "en": "They go: already? I go: obviously. Double standard, number four."
+        },
+        {
+          "who": "cousin",
+          "text": "삼촌, 휴가는 짬이 아니라 법으로 보장돼요.",
+          "en": "Uncle, leave isn't about seniority. It's guaranteed by law."
+        }
+      ]
+    },
+    {
+      "id": "c04c",
+      "beat": "ROUND 3 휴가",
+      "lines": [
+        {
+          "who": "cousin",
+          "text": "군인은 휴가, 외출, 외박을 보장받는다.",
+          "en": "\"Service members are guaranteed leave, passes, and overnights.\"",
+          "style": "reading a rule out loud, flat and precise"
+        },
+        {
+          "who": "dad",
+          "text": "법에 있어?!",
+          "en": "That's in the LAW?!",
+          "style": "genuinely shocked"
+        }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "ROUND 4 행군",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "마지막 4라운드. 행군.",
+          "en": "Final round four: the march.",
+          "tts": "마지막 사 라운드. 행군."
+        },
+        {
+          "who": "dad",
+          "text": "고참 짐까지 메고… 이거 갑질 아닙니까…",
+          "en": "Carrying the seniors' packs too… isn't this bullying…",
+          "style": "a young private panting under heavy packs, muttering very quietly"
+        }
+      ]
+    },
+    {
+      "id": "c05a",
+      "beat": "ROUND 4 행군",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "나 전역 D-30이야. 민간인한테 짐 지우면, 그게 불법이지!",
+          "en": "I'm 30 days from discharge. Making a civilian carry stuff? Now THAT'S illegal!",
+          "tts": "나 전역 디 마이너스 삼십이야. 민간인한테 짐 지우면, 그게 불법이지!",
+          "style": "the same man two years later as a lazy, smug sergeant, drawling and self-satisfied"
+        },
+        {
+          "who": "rookie",
+          "text": "이거 갑질 아닙니까…",
+          "en": "Isn't this bullying…",
+          "style": "panting under two heavy packs, muttering very quietly"
+        }
+      ]
+    },
+    {
+      "id": "c05b",
+      "beat": "ROUND 4 행군",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "요즘 애들은 말이 너무 세~",
+          "en": "Kids these days, so mouthy~",
+          "style": "the same man two years later as a lazy, smug sergeant, drawling and self-satisfied"
+        },
+        {
+          "who": "narr",
+          "text": "내가 하면 할 말, 남이 하면 말대꾸. 내모남불, 다섯.",
+          "en": "When I say it: speaking up. When they say it: talking back. Double standard, number five."
+        }
+      ]
+    },
+    {
+      "id": "c05c",
+      "beat": "ROUND 4 행군",
+      "lines": [
+        {
+          "who": "cousin",
+          "text": "삼촌, D-30도 군인이에요.",
+          "en": "Uncle, 30 days left is still a soldier.",
+          "tts": "삼촌, 디 마이너스 삼십도 군인이에요."
+        },
+        {
+          "who": "cousin",
+          "text": "지금 안 힘들면, 힘든 사람 아픔을 작게 본대요. 공감 격차.",
+          "en": "When you're not hurting, you underestimate someone else's pain. The empathy gap."
+        }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "속사포",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "보너스 라운드. 속사포 내모남불!",
+          "en": "Bonus round. Rapid-fire double standards!"
+        },
+        {
+          "who": "dad",
+          "text": "남이 채널 잡으면 독재, 내가 잡으면 짬!",
+          "en": "They hog the remote: dictatorship. I do: seniority!",
+          "style": "fast, punchy, rapid-fire comedy"
+        }
+      ]
+    },
+    {
+      "id": "c06a",
+      "beat": "속사포",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "남이 먼저 씻으면 새치기, 내가 먼저 씻으면 서열!",
+          "en": "They shower first: cutting in line. I do: rank!",
+          "style": "fast, punchy, rapid-fire comedy"
+        },
+        {
+          "who": "dad",
+          "text": "남이 고기 두 점이면 욕심, 내가 두 점이면 체력 관리!",
+          "en": "They take two pieces: greedy. I do: fitness management!",
+          "style": "fast, punchy, rapid-fire comedy"
+        },
+        {
+          "who": "narr",
+          "text": "내모남불, 여섯, 일곱, 여덟!",
+          "en": "Double standard: six, seven, eight!"
+        }
+      ]
+    },
+    {
+      "id": "c07",
+      "beat": "요즘 군대",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "그래도 라떼는 낭만이 있었지. 요즘 군대는 편하지?",
+          "en": "Still, back in my day there was romance. The army's easy these days, right?",
+          "style": "nostalgic and a little smug"
+        },
+        {
+          "who": "cousin",
+          "text": "편한 게 아니라, 시키는 사람이 없어요.",
+          "en": "It's not easy. There's just nobody bossing you around."
+        }
+      ]
+    },
+    {
+      "id": "c07a",
+      "beat": "요즘 군대",
+      "lines": [
+        {
+          "who": "cousin",
+          "text": "동기끼리 방 쓰는 데가 많고, 일과 끝나면 폰도 해요.",
+          "en": "A lot of units room you with your own intake, and after hours we can use our phones."
+        },
+        {
+          "who": "dad",
+          "text": "…그럼 막내는 누가 시켜?",
+          "en": "…Then who bosses the rookie around?",
+          "style": "confused, genuinely lost"
+        },
+        {
+          "who": "cousin",
+          "text": "아무도요.",
+          "en": "Nobody."
+        }
+      ]
+    },
+    {
+      "id": "c08",
+      "beat": "아이 눈높이",
+      "lines": [
+        {
+          "who": "kid",
+          "text": "아빠, 이등병 때 힘들었어?",
+          "en": "Dad, was it hard being a private?",
+          "style": "soft, gentle, sincere"
+        },
+        {
+          "who": "dad",
+          "text": "응. 많이.",
+          "en": "Yeah. Really hard.",
+          "style": "quiet, honest, warm"
+        },
+        {
+          "who": "kid",
+          "text": "그럼 형도 지금 힘들겠다. 오늘은 아빠가 구워 줘.",
+          "en": "Then it must be hard for him now too. You grill today, Dad.",
+          "style": "soft, gentle, sincere"
+        },
+        {
+          "who": "dad",
+          "text": "…그래. 오늘은 삼촌이 굽는다.",
+          "en": "…Okay. Tonight, your uncle grills.",
+          "style": "touched, warm, a small smile"
+        }
+      ]
+    },
+    {
+      "id": "c09",
+      "beat": "반전",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "자, 막내! 쌈 싸서 아빠 입에~",
+          "en": "Alright, rookie! Wrap one up and feed it to Daddy~",
+          "style": "cheerfully bossy, holding tongs like a sergeant"
+        },
+        {
+          "who": "cousin",
+          "text": "삼촌, 그거 요즘 규정 위반이에요.",
+          "en": "Uncle, that's against regulations now."
+        }
+      ]
+    },
+    {
+      "id": "c09a",
+      "beat": "반전",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "여긴 고깃집이야!",
+          "en": "This is a BBQ restaurant!",
+          "style": "flustered, protesting"
+        },
+        {
+          "who": "mom",
+          "text": "여보, 당신 전역한 지 이십 년이야.",
+          "en": "Honey, you were discharged twenty years ago."
+        }
+      ]
+    },
+    {
+      "id": "c09b",
+      "beat": "반전",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "남이 시키면 갑질, 내가 시키면 가족 사랑. 내모남불, 아홉.",
+          "en": "They give orders: bullying. I give orders: family love. Double standard, number nine."
+        },
+        {
+          "who": "narr",
+          "text": "집게는 바뀌었지만, 짬은 그대로였습니다. 그냥 오답.",
+          "en": "The tongs changed hands, but the seniority stayed. Just a wrong answer."
+        }
+      ]
+    },
+    {
+      "id": "c09c",
+      "beat": "반전",
+      "lines": [
+        {
+          "who": "dad",
+          "text": "…역시, 모답맨.",
+          "en": "…Classic Modapman."
+        }
+      ]
+    }
+  ]
+}

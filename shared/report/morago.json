@@ -1,0 +1,19 @@
+{
+  "name": "모라구",
+  "channel": "UCCIm8f5JE4b4PmSrPIJd7zQ",
+  "out": "reports/morago",
+  "matureDays": 3,
+  "noDemand": 50,
+  "series": [
+    { "key": "sci", "label": "보면 풀리는 과학", "match": "보면 풀리는 과학", "audience": "초등 · 가족" },
+    { "key": "math", "label": "보면 풀리는 수학", "match": "보면 풀리는 수학", "audience": "초등 · 가족" },
+    { "key": "magic", "label": "마술의 비밀", "match": "마술의 비밀", "audience": "가족" },
+    { "key": "nm", "label": "내모남불", "match": "내모남불|내로남불", "audience": "어른" },
+    { "key": "mk", "label": "모덕후", "match": "모덕후", "audience": "어른" },
+    { "key": "md", "label": "모 아니면 도", "match": "모 아니면 도", "audience": "가족" },
+    { "key": "im", "label": "이게 모예요?", "match": "이게 모예요", "audience": "가족" },
+    { "key": "fairy", "label": "엄마가 만든 동화", "match": "동화", "audience": "아이" },
+    { "key": "app", "label": "아빠가 만든 앱", "match": "BeatLit|Booktoonia|북투니아|RAUMICUTE|Kkwang|Cutory|Coffee Together|MathMyth", "audience": "일반" },
+    { "key": "qna", "label": "모답맨 · 아빠 오답", "match": "모답맨|여덟 살|바로잡혔|아빠|차이", "audience": "가족" }
+  ]
+}

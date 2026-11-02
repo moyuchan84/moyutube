@@ -1,0 +1,117 @@
+[
+  {
+    "id": "Nm08-Short-Seat",
+    "series": "내모남불 · 내가 하면 모 어때, 남이 하면 불법",
+    "narr": "내모남불",
+    "crop": 1920,
+    "hook": [
+      "빈자리 나면",
+      "올림픽 착석?!"
+    ],
+    "title": "지하철 내로남불 · 자리",
+    "clips": [
+      {
+        "from": 900,
+        "to": 1840
+      }
+    ],
+    "end": {
+      "title": [
+        "지하철 자리 빌런,",
+        "본 적 있나요?"
+      ],
+      "sub": "구독하고 대중교통편 본편 이어 보기 ↓"
+    }
+  },
+  {
+    "id": "Nm08-Short-Sleep",
+    "series": "내모남불 · 내가 하면 모 어때, 남이 하면 불법",
+    "narr": "내모남불",
+    "crop": 1920,
+    "hook": [
+      "할머니 타면",
+      "갑자기 꿀잠?!"
+    ],
+    "title": "지하철 내로남불 · 자는 척",
+    "clips": [
+      {
+        "from": 1840,
+        "to": 2684
+      }
+    ],
+    "end": {
+      "title": [
+        "자는 척 빌런,",
+        "댓글로!"
+      ],
+      "sub": "구독하고 대중교통편 본편 이어 보기 ↓"
+    }
+  },
+  {
+    "id": "Nm08-Short-Coffee",
+    "series": "내모남불 · 내가 하면 모 어때, 남이 하면 불법",
+    "narr": "내모남불",
+    "crop": 1920,
+    "hook": [
+      "버스에 커피 들고",
+      "타도 될까?"
+    ],
+    "title": "버스 내로남불 · 커피",
+    "clips": [
+      {
+        "from": 3565,
+        "to": 4555
+      }
+    ],
+    "end": {
+      "title": [
+        "버스에서 본",
+        "최악의 민폐는?"
+      ],
+      "sub": "구독하고 대중교통편 본편 이어 보기 ↓"
+    }
+  },
+  {
+    "id": "Nm08-Short-Insta",
+    "series": "내모남불 · 내가 하면 모 어때, 남이 하면 불법",
+    "narr": "내모남불",
+    "crop": 1920,
+    "hook": [
+      "남이 하면 민폐,",
+      "내가 하면 모 어때?!"
+    ],
+    "title": "대중교통 내로남불",
+    "clips": [
+      {
+        "from": 0,
+        "to": 660
+      },
+      {
+        "from": 3565,
+        "to": 4555
+      }
+    ],
+    "end": {
+      "title": [
+        "민폐 종합 세트 반전은",
+        "유튜브 본편에서"
+      ],
+      "sub": "YouTube 「모라구」 내모남불"
+    },
+    "en": {
+      "series": "Naemonambul · Double standards",
+      "hook": [
+        "Others do it: rude.",
+        "I do it: so what?!"
+      ],
+      "title": "Transit Double Standards",
+      "end": {
+        "title": [
+          "The twist is in",
+          "the full episode"
+        ],
+        "sub": "YouTube · Morago"
+      }
+    }
+  }
+]

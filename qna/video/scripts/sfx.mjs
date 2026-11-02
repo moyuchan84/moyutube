@@ -292,3 +292,85 @@ writeWav("fart-squeak.wav", fart({ dur: 0.62, f0: 330, f1: 430, wobble: 0.06, ji
 writeWav("fart-pop.wav", fart({ dur: 0.17, f0: 150, f1: 120, wobble: 0.05, jitter: 0.12, wet: 0.35, bright: 800, q: 2, seed: 5 }));
 // 푸드드득: 축축하게 끊기는 소리 (고기 많이 먹은 날)
 writeWav("fart-wet.wav", fart({ dur: 0.95, f0: 95, f1: 80, wobble: 0.25, jitter: 0.2, wet: 0.7, bright: 520, q: 1.6, sputter: 0.6, seed: 13 }));
+
+// ── 현자타임 (모덕후 ⑤) ──
+// 띵~: 싱잉볼 (배음이 어긋난 세 겹, 길게 맥놀이) — 현자 모드 등장
+writeWav(
+  "bowl.wav",
+  render(3.2, (t) =>
+    ({ extra: [[1, 1, 0.9, 1.6], [2.76, 0.5, 1.4, 2.3], [5.4, 0.2, 2.6, 3.1]].reduce(
+      (acc, [m, a, d, b]) => acc + a * Math.sin(2 * Math.PI * 293.66 * m * t) * Math.exp(-t * d) * (0.75 + 0.25 * Math.cos(2 * Math.PI * b * t)), 0,
+    ) * 0.4 * Math.min(t / 0.004, 1) * Math.min((3.2 - t) / 0.3, 1) })),
+);
+// 피식: 불꽃이 꺼지는 소리 (짧아지는 쉬익 + 마지막 톡)
+{
+  let lp = 0;
+  writeWav(
+    "fizzle.wav",
+    render(0.9, (t) => {
+      lp += (0.5 - 0.42 * Math.min(t / 0.8, 1)) * ((Math.random() * 2 - 1) - lp);
+      const pop = t > 0.78 ? Math.sin(2 * Math.PI * 180 * (t - 0.78)) * Math.exp(-(t - 0.78) * 40) * 0.5 : 0;
+      return { extra: lp * 0.7 * Math.exp(-t * 3.2) * Math.min(t / 0.01, 1) + pop };
+    }),
+  );
+}
+// 끼이익: 브레이크 (높은 소리가 떨리며 내려간다)
+writeWav(
+  "screech.wav",
+  render(0.8, (t) => ({
+    freq: 2300 - 900 * t + 120 * Math.sin(2 * Math.PI * 31 * t),
+    amp: 0.22 * Math.min(t / 0.02, 1) * Math.min((0.8 - t) / 0.1, 1),
+    extra: (Math.random() * 2 - 1) * 0.06 * Math.min((0.8 - t) / 0.1, 1),
+  })),
+);
+// 띠링: 결제 완료 (두 음 차임)
+writeWav(
+  "kaching.wav",
+  render(1.0, (t) => ({
+    extra: [[1318.5, 0], [1760, 0.12]].reduce((acc, [f, s]) => (t < s ? acc : acc + (Math.sin(2 * Math.PI * f * (t - s)) + 0.3 * Math.sin(2 * Math.PI * f * 2 * (t - s))) * Math.exp(-(t - s) * 5)), 0) * 0.3,
+  })),
+);
+
+// ── 대중교통 (내모남불 ⑧) ──
+// 딩동: 안내 방송 차임 (두 음, 부드러운 종)
+writeWav(
+  "chime.wav",
+  render(1.4, (t) => ({
+    extra: [[880, 0], [698.46, 0.32]].reduce((acc, [f, s]) => (t < s ? acc : acc + (Math.sin(2 * Math.PI * f * (t - s)) + 0.25 * Math.sin(2 * Math.PI * f * 3 * (t - s))) * Math.exp(-(t - s) * 3.2)), 0) * 0.3,
+  })),
+);
+// 와아아: 관중 함성 (여러 겹 걸러진 잡음이 부풀었다 가라앉음)
+{
+  let a = 0, b = 0;
+  writeWav(
+    "crowd.wav",
+    render(2.2, (t) => {
+      const n = Math.random() * 2 - 1;
+      a += 0.12 * (n - a);
+      b += 0.03 * (a - b);
+      const env = Math.min(t / 0.25, 1) * Math.min((2.2 - t) / 0.8, 1);
+      return { extra: (a - b) * 2.2 * env * (0.8 + 0.2 * Math.sin(2 * Math.PI * 3 * t)) };
+    }),
+  );
+}
+// 푸슉: 지하철 문 닫힘 (공기 빠지는 쉭 + 끝에 쿵)
+{
+  let lp = 0;
+  writeWav(
+    "doors.wav",
+    render(0.9, (t) => {
+      lp += 0.4 * ((Math.random() * 2 - 1) - lp);
+      const thud = t > 0.7 ? Math.sin(2 * Math.PI * 70 * (t - 0.7)) * Math.exp(-(t - 0.7) * 25) * 0.6 : 0;
+      return { extra: lp * 0.55 * Math.exp(-t * 3.5) * Math.min(t / 0.02, 1) + thud };
+    }),
+  );
+}
+// 드르렁: 코골이 (낮게 떨리는 숨 두 번)
+writeWav(
+  "snore.wav",
+  render(1.6, (t) => {
+    const u = t % 0.8;
+    const env = Math.sin(Math.PI * Math.min(u / 0.55, 1)) * (u < 0.55 ? 1 : 0);
+    return { freq: 70 + 20 * Math.sin(2 * Math.PI * 1.5 * u), amp: 0.35 * env * (0.6 + 0.4 * Math.sin(2 * Math.PI * 28 * t)), extra: (Math.random() * 2 - 1) * 0.05 * env };
+  }),
+);

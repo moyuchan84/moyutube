@@ -3,6 +3,7 @@
 // 결과: 편 폴더 upload/ko.srt · en.srt · chapters.txt (박자가 바뀌는 곳)
 import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { splitKo, fastCues } from "../../../shared/srt-ko.mjs";
 import { argCode, episodeDir, readScript, scriptPath, uploadDir } from "./art-lib.mjs";
 
 const FPS = 30;
@@ -39,12 +40,17 @@ const stamp = (frames) => {
   return `${p(Math.floor(ms / 3600000))}:${p(Math.floor(ms / 60000) % 60)}:${p(Math.floor(ms / 1000) % 60)},${p(ms % 1000, 3)}`;
 };
 // 끝은 6프레임 여유를 두되 다음 자막과 겹치지 않게
-const srt = (key) => lines.map((l, i) => `${i + 1}\n${stamp(l.from)} --> ${stamp(Math.min(l.from + l.dur + 6, lines[i + 1]?.from ?? Infinity))}\n${l[key]}\n`).join("\n");
+const srtOf = (cues) => cues.map((l, i) => `${i + 1}\n${stamp(l.from)} --> ${stamp(Math.min(l.from + l.dur + 6, cues[i + 1]?.from ?? Infinity))}\n${l.text}\n`).join("\n");
+// 한국어는 넷플릭스 한국어 자막 지침(16자 · 두 줄 · 줄 끝 마침표 없음)으로 나눈다 — shared/srt-ko.mjs, docs/video-editing-guide.md
+const koCues = lines.flatMap((l) => splitKo(l.ko, l.from, l.dur));
+const enCues = lines.map((l) => ({ from: l.from, dur: l.dur, text: l.en }));
 const clock = (frames) => `${Math.floor(frames / FPS / 60)}:${String(Math.floor(frames / FPS) % 60).padStart(2, "0")}`;
 
 const outDir = uploadDir(episode);
 mkdirSync(outDir, { recursive: true });
-writeFileSync(join(outDir, "ko.srt"), srt("ko"));
-if (lines.every((l) => l.en)) writeFileSync(join(outDir, "en.srt"), srt("en"));
+writeFileSync(join(outDir, "ko.srt"), srtOf(koCues));
+if (lines.every((l) => l.en)) writeFileSync(join(outDir, "en.srt"), srtOf(enCues));
 writeFileSync(join(outDir, "chapters.txt"), chapters.map((c) => `${clock(c.from)} ${c.title}`).join("\n") + "\n");
-console.log(`${planFile.id}: 자막 ${lines.length}줄 · ${(cursor / FPS).toFixed(1)}초 · 챕터 ${chapters.length}개 → qna/${episodeDir(episode)}/upload/`);
+console.log(`${planFile.id}: 자막 ${lines.length}줄(한국어 ${koCues.length}개) · ${(cursor / FPS).toFixed(1)}초 · 챕터 ${chapters.length}개 → qna/${episodeDir(episode)}/upload/`);
+const fast = fastCues(koCues, FPS);
+if (fast.length) console.log(`  읽기 속도 초당 12자 넘는 한국어 자막 ${fast.length}개 (음성 속도라 경고만): ${fast.slice(0, 3).map((c) => c.text.replace("\n", " ")).join(" / ")}`);

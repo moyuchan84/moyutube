@@ -1,0 +1,65 @@
+[
+  {
+    "id": "Mk05-Short-Sage",
+    "series": "모덕후 · 이상하지만 진지한 고찰",
+    "narr": "모덕후",
+    "crop": 1920,
+    "hook": [
+      "몇 초를 위해",
+      "왜 그 난리를?"
+    ],
+    "title": "⑤ 현자타임",
+    "clips": [
+      {
+        "from": 0,
+        "to": 2797
+      }
+    ],
+    "end": {
+      "title": [
+        "현자타임에 취소한",
+        "장바구니는?"
+      ],
+      "sub": "구독하고 방귀 3부작 ② 이어 보기"
+    }
+  },
+  {
+    "id": "Mk05-Short-Sage-Insta",
+    "series": "모덕후 · 이상하지만 진지한 고찰",
+    "narr": "모덕후",
+    "crop": 1920,
+    "hook": [
+      "몇 초를 위해",
+      "왜 그 난리를?"
+    ],
+    "title": "⑤ 현자타임",
+    "clips": [
+      {
+        "from": 0,
+        "to": 2797
+      }
+    ],
+    "end": {
+      "title": [
+        "현자타임에 취소한",
+        "장바구니는?"
+      ],
+      "sub": "YouTube 「모라구」 모덕후"
+    },
+    "en": {
+      "series": "Modeokhu · Weird but serious research",
+      "hook": [
+        "A few seconds of bliss,",
+        "why all the chaos?"
+      ],
+      "title": "#5 Sage Mode",
+      "end": {
+        "title": [
+          "What did you cancel",
+          "from your cart in sage mode?"
+        ],
+        "sub": "YouTube · Morago"
+      }
+    }
+  }
+]

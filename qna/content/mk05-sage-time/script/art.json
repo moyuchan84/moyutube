@@ -1,0 +1,168 @@
+{
+  "title": "모덕후 ⑤ 현자타임 — 명상 화보 · 수사극 패러디",
+  "cast": {
+    "modeokhu": "the nerdy uncle: a Korean man in his late thirties with a round friendly face, a full head of messy black hair with a cowlick, thick round black-rimmed glasses that glint, a neatly tucked-in red-and-navy plaid flannel shirt buttoned to the top, khaki chinos, brown loafers and a small silver laser pointer clipped to the shirt pocket; an earnest, overly serious scholar look who has never dated; NO text, NO logos"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/shock",
+    "common/dad/think",
+    "common/mom/normal",
+    "common/cutin/dad-shock"
+  ],
+  "items": [
+    {
+      "id": "modeokhu/normal",
+      "kind": "char",
+      "who": "modeokhu",
+      "ref": null,
+      "title": "모덕후 삼촌 — 기본 (진지) (4편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c00, c07",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing upright with perfect posture, one hand pushing his glasses up the bridge of his nose so the lenses flash white, the other hand holding a thick stack of research papers. Dead-serious face, tight lips, one eyebrow raised."
+    },
+    {
+      "id": "modeokhu/point",
+      "kind": "char",
+      "who": "modeokhu",
+      "title": "모덕후 삼촌 — 레이저 포인터로 가리키며 \"자, 진지하다\" (4편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c01, c02, c03, c04, c05, c06",
+      "desc": "3/4 view turned slightly to the RIGHT. Thrusting a small silver laser pointer forward toward the right with one arm fully extended, a thin red beam shooting out, the other hand on his hip. Intense lecturing face, mouth wide open mid-word, eyes blazing behind glinting glasses, sweat of pure passion."
+    },
+    {
+      "id": "modeokhu/proud",
+      "kind": "char",
+      "who": "modeokhu",
+      "title": "모덕후 삼촌 — 결론, 팔짱 끼고 의기양양 (4편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c02, c07",
+      "desc": "3/4 view turned slightly to the RIGHT. Arms crossed firmly, chin raised, a huge smug satisfied grin with all teeth showing, glasses flashing, tiny sparkles around his head like he just won a Nobel prize."
+    },
+    {
+      "id": "modeokhu/fluster",
+      "kind": "char",
+      "who": "modeokhu",
+      "title": "삼촌 — \"…논문으로.\" 시선 피하며 안경 고쳐 쓰기 (4편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c04, c06",
+      "desc": "3/4 view turned slightly to the RIGHT. Eyes darting sideways away from the viewer, one finger awkwardly pushing his glasses up, the other hand clutching a thick stack of research papers to his chest like a shield, ears and cheeks bright red, a tiny embarrassed sweat drop, mouth in a stiff wobbly line."
+    },
+    {
+      "id": "cutin/uncle-gulp",
+      "kind": "cutin",
+      "who": "modeokhu",
+      "title": "삼촌 컷인 — 꿀꺽 (김 서린 안경 · 빨개진 볼) (4편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c00, c08",
+      "desc": "Facing the viewer, dramatic close-up from the chest up. He swallows hard with a visible comic gulp at the throat, both lenses of his thick glasses fogged up solid white, cheeks and ears bright red, one big sweat drop on his temple, lips pressed tight in nervous longing, a faint warm TV glow on his face. Flustered and envious, not leering."
+    },
+    {
+      "id": "bg/oneroom",
+      "kind": "bg",
+      "title": "배경 — 삼촌의 밤 원룸 (책 더미 · 피규어 · 컵라면 · TV 불빛) (4편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c00, c01, c07",
+      "desc": "A small cozy Korean studio apartment at night seen straight-on like a sitcom set: a low sofa facing a TV on the left, tall leaning stacks of thick books and research papers, a shelf of small robot and anime-style figurines, an empty cup-noodle bowl and a can on a low table, a single desk lamp and the cool blue glow of the TV filling the room. No people. TV screen blank glow, no writing anywhere."
+    },
+    {
+      "id": "modeokhu/sage",
+      "kind": "char",
+      "who": "modeokhu",
+      "ref": "modeokhu/normal",
+      "title": "현자 삼촌 — 흰 도포 · 가부좌 · 후광 · 연꽃 (썸네일 겸용)",
+      "cuts": "c00, c06, 썸네일",
+      "desc": "Facing the viewer. Sitting cross-legged in a calm meditation pose on a big pink lotus flower, wearing a loose plain white monk-like robe over his plaid shirt collar, hands resting on knees in a meditation mudra. A big round golden halo glows behind his head with soft rays. Eyes half-closed in total serene enlightenment, a tiny peaceful smile, his thick glasses still on and calmly glinting, one small sweat drop of exhaustion on his temple. Fully clothed, nothing suggestive."
+    },
+    {
+      "id": "full/doorway",
+      "kind": "full",
+      "people": [
+        "dad",
+        "modeokhu"
+      ],
+      "title": "문틈 — 놀란 아빠 + 방 안 현자 삼촌, 시계 2:03",
+      "cuts": "c00",
+      "desc": "Night scene inside a small Korean studio apartment lit only by the cool blue glow of a switched-off computer monitor. In the foreground on the right, the dad peeks in through a door opened a crack, eyes bulging in shock, mouth hanging open. In the middle of the room the uncle sits cross-legged on the floor in a meditation pose, wearing a plain white robe over his clothes, a soft golden halo glowing behind his head, eyes half-closed and serene. A small digital desk clock glows on a shelf. Both people stay in the exact gag-manga cartoon style of the attached images. Nothing suggestive. Absolutely no readable words, letters or numbers anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/fireworks",
+      "kind": "full",
+      "people": [
+        "modeokhu"
+      ],
+      "title": "두 칸 만화 — 불꽃놀이로 달려가는 삼촌 / 다 탄 막대 하나 든 삼촌",
+      "cuts": "c02",
+      "desc": "A two-part comic illustration split left and right by a simple diagonal. LEFT: under a dark night sky exploding with huge colorful fireworks, the uncle sprints toward the fireworks with arms stretched out, cheeks bright red, eyes sparkling with excitement, glasses glinting. RIGHT: the same uncle stands alone in a dark empty field holding one burnt-out sparkler stick with a tiny wisp of grey smoke, shoulders slumped, eyes blank and empty, a single tumbleweed rolling past. The uncle stays in the exact gag-manga cartoon style of the attached images. Absolutely no readable words, letters or numbers anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/package",
+      "kind": "full",
+      "people": [],
+      "title": "택배 뜯기 전(반짝 · 하트) vs 뜯은 뒤(빈 뽁뽁이)",
+      "cuts": "c02",
+      "desc": "A cute two-part before-and-after illustration split left and right. LEFT: a closed brown cardboard delivery box glowing with golden light, sparkles, little pink hearts and stars bursting out around it like a treasure chest. RIGHT: the same box torn open and empty, only a crumpled sheet of bubble wrap and a few packing peanuts inside, a grey sad little cloud above it. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw the person from the attached image or any people or faces. Absolutely no readable words, letters or numbers anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/brake-lab",
+      "kind": "full",
+      "people": [],
+      "title": "뇌 캐릭터가 브레이크 페달 밟기 + 실험대의 흰 쥐 두 마리",
+      "cuts": "c03",
+      "desc": "A cute cartoon science illustration: a round pink brain character with tiny arms and legs sits in the driver seat of a small toy car, stomping hard on a big red brake pedal with a determined face, skid lines behind the wheels. The brake pedal has a small blank tag hanging from it. To the right, on a white lab bench, two small cute white lab mice stand on their hind legs holding up a blank sign, shaking their heads with a smug no-no expression. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw the person from the attached image or any people. Absolutely no readable words, letters or numbers anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/case-board",
+      "kind": "full",
+      "people": [
+        "modeokhu"
+      ],
+      "title": "수사극 패러디 — 미제 사건 게시판, 탐정 모자 삼촌",
+      "cuts": "c03",
+      "desc": "A detective-drama parody: a big cork evidence board covered with pinned photos and red strings connecting them; in the center a pinned photo of a cute little round orange hormone-blob character with a big question mark drawn over it, a red rubber-stamp mark slapped across the board. In front of the board stands the uncle wearing a brown deerstalker detective hat and holding a big magnifying glass to one eye, frowning seriously, glasses glinting. Dim desk lamp light. The uncle stays in the exact gag-manga cartoon style of the attached images. Absolutely no readable words, letters or numbers anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/hot-cold",
+      "kind": "full",
+      "people": [
+        "modeokhu"
+      ],
+      "title": "빨간 삼촌(뜨거운 나) vs 파란 삼촌(식은 나)",
+      "cuts": "c04",
+      "desc": "A split-screen illustration of the SAME uncle shown twice, left and right. LEFT half: a hot red-orange background with flames; the uncle is flushed bright red, sweating, grinning wildly, eyes spinning, gripping a smartphone and typing furiously with both thumbs. RIGHT half: an icy pale-blue background with falling snow; the same uncle is pale blue, sitting slumped, one hand on his forehead in regret, staring at his phone and holding a long shopping receipt in his other hand, a big sweat drop. Both figures keep the exact face, glasses, hair and plaid shirt of the attached images. Absolutely no readable words, letters or numbers anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/mess-list",
+      "kind": "full",
+      "people": [
+        "modeokhu"
+      ],
+      "title": "파란 삼촌의 수습 목록 두루마리 — 새벽 문자 · 장바구니 · 택배 탑",
+      "cuts": "c04",
+      "desc": "The uncle, looking pale and regretful with a sweat drop, unrolls a very long paper scroll that tumbles all the way down to the floor. Instead of writing, the scroll shows a column of simple cute icons: a smartphone with a chat bubble and a crescent moon, a shopping cart overflowing with boxes, a teetering tower of delivery boxes, a credit card with little wings flying away. A small night window behind him. The uncle stays in the exact gag-manga cartoon style of the attached images. Absolutely no readable words, letters or numbers anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/blue-cloud",
+      "kind": "full",
+      "people": [],
+      "title": "남녀 실루엣 열 명 중 넷 위에 작은 비구름",
+      "cuts": "c05",
+      "desc": "A gentle infographic illustration: ten simple flat colored silhouettes of adults standing in a neat row on a soft pastel background, a mix of men and women of different heights. Above the heads of four of them float small cute grey rain clouds with tiny drizzle and sleepy sad little faces; the other six have small sun icons. Calm and kind mood, not dramatic. Use the attached image ONLY as a reference for line weight and coloring. The silhouettes are plain flat shapes with no faces; do NOT draw the person from the attached image. Absolutely no readable words, letters or numbers anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/sofa-tv",
+      "kind": "full",
+      "people": [
+        "dad",
+        "mom"
+      ],
+      "title": "엔딩 — 소파, TV 홈쇼핑 안마의자, 엄마 휴대폰 · 아빠 평온한 손바닥",
+      "cuts": "c07",
+      "desc": "A warm Korean apartment living room in the evening. The mom and the dad sit side by side on a sofa facing a TV that shows a big shiny massage chair with sparkles (no words on screen). The mom holds up her smartphone toward the dad with an eager hopeful face. The dad, eyes half-closed with a calm serene sage-like smile and a faint golden halo glow behind his head, raises one open palm in a gentle wait gesture. Both people stay in the exact gag-manga cartoon style of the attached images. Absolutely no readable words, letters or numbers anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/checkout",
+      "kind": "full",
+      "people": [
+        "modeokhu"
+      ],
+      "title": "한정판 피규어 결제 버튼 위에서 멈춘 손가락 + 모래시계",
+      "cuts": "c08",
+      "desc": "Night, the uncle at his desk in his studio apartment, face lit by a computer monitor. On the monitor a shiny limited-edition robot figure is displayed with sparkles and a big glowing blank button under it. His index finger hovers just above the mouse, trembling, glasses fogged up, cheeks red, a sweat drop, lips pressed tight in restraint. Beside the keyboard stands a small hourglass with sand running. The uncle stays in the exact gag-manga cartoon style of the attached images. Absolutely no readable words, letters or numbers anywhere; no caption boxes, no speech bubbles, no frame border."
+    }
+  ]
+}
