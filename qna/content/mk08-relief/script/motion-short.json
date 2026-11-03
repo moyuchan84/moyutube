@@ -1,0 +1,65 @@
+[
+  {
+    "id": "Mk08-Short-Relief",
+    "series": "모덕후 · 이상하지만 진지한 고찰",
+    "narr": "모덕후",
+    "crop": 1920,
+    "hook": [
+      "휴게소까지 30km,",
+      "참는 덕후의 과학"
+    ],
+    "title": "⑧ 참았다 푸는 쾌감",
+    "clips": [
+      {
+        "from": 0,
+        "to": 2372
+      }
+    ],
+    "end": {
+      "title": [
+        "여러분은 몇 킬로까지",
+        "참아 봤나요?"
+      ],
+      "sub": "구독하고 방귀 3부작 ② 이어 보기"
+    }
+  },
+  {
+    "id": "Mk08-Short-Relief-Insta",
+    "series": "모덕후 · 이상하지만 진지한 고찰",
+    "narr": "모덕후",
+    "crop": 1920,
+    "hook": [
+      "휴게소까지 30km,",
+      "참는 덕후의 과학"
+    ],
+    "title": "⑧ 참았다 푸는 쾌감",
+    "clips": [
+      {
+        "from": 0,
+        "to": 2372
+      }
+    ],
+    "end": {
+      "title": [
+        "여러분은 몇 킬로까지",
+        "참아 봤나요?"
+      ],
+      "sub": "YouTube 「모라구」 모덕후"
+    },
+    "en": {
+      "series": "Modeokhu · Weird but serious research",
+      "hook": [
+        "30 km to the rest stop,",
+        "the science of holding it"
+      ],
+      "title": "#8 The Relief of Letting Go",
+      "end": {
+        "title": [
+          "How many kilometers",
+          "have you held out?"
+        ],
+        "sub": "YouTube · Morago"
+      }
+    }
+  }
+]

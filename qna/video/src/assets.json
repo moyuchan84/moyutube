@@ -1803,6 +1803,50 @@
     "w": 2560,
     "h": 1440
   },
+  "mk08/modeokhu/normal": {
+    "w": 941,
+    "h": 1500
+  },
+  "mk08/modeokhu/point": {
+    "w": 988,
+    "h": 1500
+  },
+  "mk08/modeokhu/fluster": {
+    "w": 942,
+    "h": 1500
+  },
+  "mk08/cutin/uncle-gulp": {
+    "w": 1193,
+    "h": 1300
+  },
+  "mk08/modeokhu/sweat": {
+    "w": 947,
+    "h": 1500
+  },
+  "mk08/full/car-front": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk08/full/brain-switch": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk08/full/mammal-21s": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk08/full/balloon-cloud": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk08/full/faint-door": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk08/full/rest-line": {
+    "w": 2560,
+    "h": 1440
+  },
   "nm01/full/highway-cutin": {
     "w": 2560,
     "h": 1440
