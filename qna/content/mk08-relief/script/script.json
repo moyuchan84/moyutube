@@ -1,0 +1,196 @@
+{
+  "rawVoice": true,
+  "speed": 1.2,
+  "title": "모덕후 ⑧ 참았다 푸는 쾌감 · 휴게소 30km 앞 덕후의 과학",
+  "bgm": "relief",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "훅",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "고속도로, 휴게소까지 30킬로.",
+          "en": "Highway. Thirty kilometers to the rest stop.",
+          "tts": "고속도로, 휴게소까지 삼십 킬로."
+        },
+        {
+          "who": "modeokhu",
+          "text": "형. 나, 지금… 참는 덕후야.",
+          "en": "Bro. Right now, I'm a holding-it-in geek."
+        },
+        {
+          "who": "dad",
+          "text": "그냥 말을 하지 그랬어.",
+          "en": "You could've just said so."
+        },
+        {
+          "who": "modeokhu",
+          "text": "아니. 이 시간, 연구에 쓴다.",
+          "en": "No. I'm using this time for research."
+        }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "질문",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "질문. 참았다 풀면, 왜 그렇게 좋을까?",
+          "en": "Question: why does it feel so good to hold it, then let go?"
+        }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "첫째 · 스위치",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "첫째. 참는 건 근육이 아니라, 뇌가 하는 일이야.",
+          "en": "One. Holding it isn't muscle. It's your brain."
+        },
+        {
+          "who": "modeokhu",
+          "text": "방광이 차면 신호가 뇌로 올라가고, 뇌 속 배뇨 스위치, 바링턴핵이 기다려.",
+          "en": "A full bladder sends signals up to a switch in the brainstem, called Barrington's nucleus."
+        },
+        {
+          "who": "modeokhu",
+          "text": "평소엔 앞쪽 뇌가 \"아직 안 돼\" 하고 눌러 주고.",
+          "en": "Normally the front of your brain keeps saying \"not yet.\""
+        },
+        {
+          "who": "dad",
+          "text": "지금 형 앞쪽 뇌, 야근 중이네.",
+          "en": "So your frontal lobe is working overtime right now."
+        }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "둘째 · 21초",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "둘째. 3킬로 넘는 포유류는, 크기와 상관없이 평균 21초래.",
+          "en": "Two. Mammals over three kilograms take about twenty-one seconds, whatever their size.",
+          "tts": "둘째. 삼 킬로 넘는 포유류는, 크기와 상관없이 평균 이십일 초래."
+        },
+        {
+          "who": "modeokhu",
+          "text": "큰 동물은 요도가 길어서, 중력이 도와주거든.",
+          "en": "Bigger animals have longer urethras, so gravity helps."
+        },
+        {
+          "who": "mom",
+          "text": "어머, 크기가 달라도 시간은 비슷하네.",
+          "en": "Oh, different sizes, same time."
+        },
+        {
+          "who": "modeokhu",
+          "text": "평균이야. 편차는 커. 참고만 해.",
+          "en": "It's an average. Big variation. Just for reference."
+        }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "셋째 · 방귀",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "셋째. 방귀. 하루에 열 번 안팎, 합쳐서 0.5리터에서 2리터.",
+          "en": "Three. Farts. About ten a day, half a liter to two liters total.",
+          "tts": "셋째. 방귀. 하루에 열 번 안팎, 합쳐서 반 리터에서 이 리터."
+        },
+        {
+          "who": "dad",
+          "text": "풍선 하나는 불겠다.",
+          "en": "Enough to blow up a balloon."
+        },
+        {
+          "who": "modeokhu",
+          "text": "연구마다 횟수는 달라. 8번에서 14번.",
+          "en": "The count varies by study. Eight to fourteen.",
+          "tts": "연구마다 횟수는 달라. 팔 번에서 열네 번."
+        }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "넷째 · 실신",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "넷째. 화장실에서 기절하는 사람도 있어.",
+          "en": "Four. Some people actually faint in the bathroom."
+        },
+        {
+          "who": "modeokhu",
+          "text": "힘을 주면 미주신경이 반응해서, 심장이 느려지고 혈압이 떨어지는 거야.",
+          "en": "Straining can trigger the vagus nerve, slowing the heart and dropping blood pressure."
+        },
+        {
+          "who": "modeokhu",
+          "text": "직장 쪽 반응은 쥐 실험이 근거라, 사람은 아직 가설이 섞여 있어.",
+          "en": "The rectal part rests on rat studies, so in people it's partly a hypothesis."
+        }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "결론",
+      "lines": [
+        {
+          "who": "modeokhu",
+          "text": "결론. 쾌감은 좋은 게 와서가 아니야.",
+          "en": "Conclusion: the pleasure isn't something good arriving."
+        },
+        {
+          "who": "modeokhu",
+          "text": "내 해석은, 나쁜 게 사라져서야.",
+          "en": "My interpretation: it's something bad disappearing."
+        },
+        {
+          "who": "modeokhu",
+          "text": "그러니 참을수록 낙차가 커.",
+          "en": "So the longer you hold, the bigger the drop."
+        },
+        {
+          "who": "dad",
+          "text": "그래서 참자는 얘기는 아니지?",
+          "en": "That's not an argument for holding it, right?"
+        },
+        {
+          "who": "modeokhu",
+          "text": "아니지. 오래 참으면 몸에 안 좋아. 마려우면 가자.",
+          "en": "No. Holding it too long is bad for you. If you need to go, go."
+        }
+      ]
+    },
+    {
+      "id": "c07",
+      "beat": "엔딩",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "휴게소 도착. 줄은 끝이 없다.",
+          "en": "Rest stop reached. The line goes on forever."
+        },
+        {
+          "who": "modeokhu",
+          "text": "(꿀꺽) 21초면 되는데…",
+          "en": "(gulp) It only takes twenty-one seconds…",
+          "tts": "이십일 초면 되는데…"
+        },
+        {
+          "who": "narr",
+          "text": "여러분은 몇 킬로까지 참아 봤나요?",
+          "en": "How many kilometers have you held out?"
+        }
+      ]
+    }
+  ]
+}

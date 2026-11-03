@@ -1,0 +1,108 @@
+{
+  "title": "모덕후 ⑧ 참았다 푸는 쾌감 — 휴게소 30km 앞",
+  "cast": {
+    "modeokhu": "the nerdy uncle: a Korean man in his late thirties with a round friendly face, a full head of messy black hair with a cowlick, thick round black-rimmed glasses that glint, a neatly tucked-in red-and-navy plaid flannel shirt buttoned to the top, khaki chinos, brown loafers and a small silver laser pointer clipped to the shirt pocket; an earnest, overly serious scholar look who has never dated; NO text, NO logos"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/shock",
+    "common/dad/think",
+    "common/mom/normal",
+    "common/cutin/dad-shock"
+  ],
+  "items": [
+    {
+      "id": "modeokhu/normal",
+      "kind": "char",
+      "who": "modeokhu",
+      "ref": null,
+      "title": "모덕후 삼촌 — 기본 (진지) (mk05 그림 복사, 새로 안 뽑음)",
+      "cuts": "c00, c07",
+      "desc": "3/4 view turned slightly to the RIGHT. Standing upright with perfect posture, one hand pushing his glasses up the bridge of his nose so the lenses flash white, the other hand holding a thick stack of research papers. Dead-serious face, tight lips, one eyebrow raised."
+    },
+    {
+      "id": "modeokhu/point",
+      "kind": "char",
+      "who": "modeokhu",
+      "title": "모덕후 삼촌 — 레이저 포인터로 가리키며 \"자, 진지하다\" (mk05 그림 복사, 새로 안 뽑음)",
+      "cuts": "c01, c02, c03, c04, c05, c06",
+      "desc": "3/4 view turned slightly to the RIGHT. Thrusting a small silver laser pointer forward toward the right with one arm fully extended, a thin red beam shooting out, the other hand on his hip. Intense lecturing face, mouth wide open mid-word, eyes blazing behind glinting glasses, sweat of pure passion."
+    },
+    {
+      "id": "modeokhu/fluster",
+      "kind": "char",
+      "who": "modeokhu",
+      "title": "삼촌 — \"…논문으로.\" 시선 피하며 안경 고쳐 쓰기 (mk05 그림 복사, 새로 안 뽑음)",
+      "cuts": "c04, c06",
+      "desc": "3/4 view turned slightly to the RIGHT. Eyes darting sideways away from the viewer, one finger awkwardly pushing his glasses up, the other hand clutching a thick stack of research papers to his chest like a shield, ears and cheeks bright red, a tiny embarrassed sweat drop, mouth in a stiff wobbly line."
+    },
+    {
+      "id": "cutin/uncle-gulp",
+      "kind": "cutin",
+      "who": "modeokhu",
+      "title": "삼촌 컷인 — 꿀꺽 (김 서린 안경 · 빨개진 볼) (mk05 그림 복사, 새로 안 뽑음)",
+      "cuts": "c00, c08",
+      "desc": "Facing the viewer, dramatic close-up from the chest up. He swallows hard with a visible comic gulp at the throat, both lenses of his thick glasses fogged up solid white, cheeks and ears bright red, one big sweat drop on his temple, lips pressed tight in nervous longing, a faint warm TV glow on his face. Flustered and envious, not leering."
+    },
+    {
+      "id": "modeokhu/sweat",
+      "kind": "char",
+      "who": "modeokhu",
+      "ref": "modeokhu/normal",
+      "title": "식은땀 삼촌 — 조수석에서 허벅지 쥐고 버티기 (썸네일 겸용)",
+      "cuts": "c00, c06, 썸네일",
+      "desc": "Facing the viewer, seated in a car passenger seat seen from the front, both hands gripping his own knees, knees pressed tightly together, shoulders hunched up. Eyes squeezed shut, thick glasses sliding down his nose, big cold-sweat drops flying off his forehead, face turning pale blue-green, mouth a wobbly zigzag line, tiny shaking lines around him. Seat belt on, plaid shirt as always. Comic desperation only, fully clothed, nothing crude."
+    },
+    {
+      "id": "full/car-front",
+      "kind": "full",
+      "people": [
+        "dad",
+        "modeokhu"
+      ],
+      "title": "차 안 — 운전하는 아빠 + 식은땀 조수석 삼촌, 앞 유리 밖 고속도로, 표지판 '휴게소 30km'",
+      "cuts": "c00",
+      "desc": "Interior of a family car on a highway seen from the back seat looking forward through the windshield. Left: the dad driving, calm and a little puzzled, gripping the steering wheel. Right: the uncle in the passenger seat gripping his knees, cold sweat flying, eyes squeezed shut, face pale blue-green. Through the windshield a long straight highway at dusk and a big green blank road sign (no words, no numbers) with only a small fork-and-cup rest-stop icon. Both people stay in the exact gag-manga cartoon style of the attached images. Nothing crude. Absolutely no readable words, letters or numbers anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/brain-switch",
+      "kind": "full",
+      "people": [],
+      "title": "뇌 도해 — 방광 풍선 아이콘에서 올라오는 신호선, 뇌 속 작은 스위치 '바링턴핵', 앞쪽 뇌 캐릭터가 '아직 안 돼' 팻말",
+      "cuts": "c02",
+      "desc": "A cute cartoon cross-section diagram, NOT realistic anatomy: on the left a plain round water-balloon icon (stands for a bladder) with a tiny gauge on it, from which a glowing wavy signal line travels upward along a thin spine-line into a big friendly cartoon brain drawn as a side-view silhouette. Inside the brain deep in the middle sits a small red toggle switch with a little tag, and at the front of the brain a tiny chibi mascot with arms holds up a hand-made sign showing a big red stop hand symbol (no words) to hold the switch down, sweating with effort. Pastel blue and yellow diagram background with soft grid. Use the attached image ONLY as a reference for the art style; there are no people and no faces except the cute brain mascot. Absolutely no readable words, letters or numbers anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/mammal-21s",
+      "kind": "full",
+      "people": [],
+      "title": "동물 4컷 — 크기 다른 동물 실루엣 옆에 똑같은 21초 타이머",
+      "cuts": "c03",
+      "desc": "A 2x2 grid of four panels on a pale yellow background, each panel with a different animal silhouette in flat cartoon style, sizes clearly different: an elephant, a cow, a goat, a dog. Under each animal an identical round stopwatch icon with its hand pointing at the same position, all four stopwatches exactly the same. A thin dotted arch connects the four stopwatches to show they are equal. Cheerful educational infographic mood. Use the attached image ONLY as a reference for the art style; there are no people. Absolutely no readable words, letters or numbers anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/balloon-cloud",
+      "kind": "full",
+      "people": [],
+      "title": "풍선 + 구름 아이콘 — 하루 방귀 총량 비유",
+      "cuts": "c04",
+      "desc": "One huge round red party balloon floating in the middle of a plain pale-blue sky background, with a small round smiling yellow-green cloud puff mascot (a cute gas cloud with tiny eyes) floating beside it, another three small cloud puffs trailing behind like a dotted line to suggest a day's worth. Comic, friendly, completely clean and non-gross. Use the attached image ONLY as a reference for the art style; there are no people. Absolutely no readable words, letters or numbers anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/faint-door",
+      "kind": "full",
+      "people": [],
+      "title": "닫힌 화장실 문 + 느려지는 심박 그래프 + 별 도는 아이콘",
+      "cuts": "c05",
+      "desc": "A plain closed bathroom door with a simple round generic toilet-sign icon on it (a neutral circular pictogram, no gendered figure), seen straight-on in a clean hallway. Floating beside the door a big cartoon heart icon with a heartbeat line graph whose peaks get wider and flatter from left to right, a downward arrow next to it, and above the door a ring of cartoon stars spinning like someone is about to faint. A tiny round badge in a corner showing a cute cartoon lab mouse face. Flat pastel colors. Use the attached image ONLY as a reference for the art style; there are no people. Absolutely no readable words, letters or numbers anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/rest-line",
+      "kind": "full",
+      "people": [],
+      "title": "휴게소 화장실 줄 — 얼굴 없는 실루엣이 끝없이 이어짐, 맨 끝에 작은 삼촌",
+      "cuts": "c07",
+      "desc": "A bright daytime highway rest-stop building seen from the front with a simple restroom door at the far left, and a very long snaking line of featureless dark-grey cartoon silhouettes (no faces, no details) shifting their weight impatiently, the line curling around the building. At the very end of the line, tiny but recognizable, the nerdy uncle with thick round glasses and a plaid shirt standing with knees pressed together, a small cold-sweat drop. Cheerful gag-manga mood, nothing crude. Use the attached image ONLY as a reference for the art style of the small uncle; keep every other figure a faceless silhouette. Absolutely no readable words, letters or numbers anywhere; no caption boxes, no speech bubbles, no frame border."
+    }
+  ]
+}
