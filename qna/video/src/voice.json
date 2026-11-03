@@ -271,6 +271,24 @@
         "driver"
       ],
       "style": "The station attendant's identical twin sister, a Korean bus driver in her early thirties: the exact same calm, clear, polite announcement voice, completely deadpan, never angry"
+    },
+    {
+      "label": "Guest",
+      "name": "마음 문화센터 심리학 강사님 (내모남불 ⑨)",
+      "voice": "Achernar",
+      "roles": [
+        "teacher"
+      ],
+      "style": "A calm, warm Korean psychology lecturer woman in her forties: gentle, clear, kindly deadpan, explaining a study with a soft knowing smile, never scolding"
+    },
+    {
+      "label": "Guest",
+      "name": "단톡방 다른 부모 (내모남불 ⑨)",
+      "voice": "Charon",
+      "roles": [
+        "parent"
+      ],
+      "style": "A polite but slightly stiff Korean parent reading a group-chat message aloud in a flat, overly friendly tone"
     }
   ],
   "direction": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud.",
