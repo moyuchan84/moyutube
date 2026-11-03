@@ -1,0 +1,117 @@
+[
+  {
+    "id": "Nm09-Short-Chat",
+    "series": "내모남불 · 내가 하면 모 어때, 남이 하면 불법",
+    "narr": "내모남불",
+    "crop": 1920,
+    "hook": [
+      "남이 올리면 자랑대회,",
+      "내가 올리면 기념?!"
+    ],
+    "title": "자식 자랑 내로남불 · 단톡방",
+    "clips": [
+      {
+        "from": 0,
+        "to": 1001
+      }
+    ],
+    "end": {
+      "title": [
+        "단톡방 자랑,",
+        "어디까지 괜찮나요?"
+      ],
+      "sub": "구독하고 자식 자랑편 본편 이어 보기 ↓"
+    }
+  },
+  {
+    "id": "Nm09-Short-Humble",
+    "series": "내모남불 · 내가 하면 모 어때, 남이 하면 불법",
+    "narr": "내모남불",
+    "crop": 1920,
+    "hook": [
+      "겸손한 척 자랑,",
+      "번역하면?"
+    ],
+    "title": "자식 자랑 내로남불 · 위장 자랑",
+    "clips": [
+      {
+        "from": 1888,
+        "to": 2843
+      }
+    ],
+    "end": {
+      "title": [
+        "위장 자랑,",
+        "당해 본 적 있나요?"
+      ],
+      "sub": "구독하고 자식 자랑편 본편 이어 보기 ↓"
+    }
+  },
+  {
+    "id": "Nm09-Short-Twist",
+    "series": "내모남불 · 내가 하면 모 어때, 남이 하면 불법",
+    "narr": "내모남불",
+    "crop": 1920,
+    "hook": [
+      "방이 좁아질까",
+      "걱정이라더니…"
+    ],
+    "title": "자식 자랑 내로남불 · 반전",
+    "clips": [
+      {
+        "from": 4807,
+        "to": 5790
+      }
+    ],
+    "end": {
+      "title": [
+        "참가자 전원 상장,",
+        "어떻게 생각하세요?"
+      ],
+      "sub": "구독하고 자식 자랑편 본편 이어 보기 ↓"
+    }
+  },
+  {
+    "id": "Nm09-Short-Insta",
+    "series": "내모남불 · 내가 하면 모 어때, 남이 하면 불법",
+    "narr": "내모남불",
+    "crop": 1920,
+    "hook": [
+      "남이 올리면 자랑대회,",
+      "내가 올리면 기념?!"
+    ],
+    "title": "자식 자랑 내로남불",
+    "clips": [
+      {
+        "from": 0,
+        "to": 872
+      },
+      {
+        "from": 4807,
+        "to": 5790
+      }
+    ],
+    "end": {
+      "title": [
+        "참가자 전원 상장 반전은",
+        "유튜브 본편에서"
+      ],
+      "sub": "YouTube 「모라구」 내모남불"
+    },
+    "en": {
+      "series": "Naemonambul · Double standards",
+      "hook": [
+        "Others post: a bragging contest.",
+        "I post: a keepsake?!"
+      ],
+      "title": "Bragging About Kids Double Standards",
+      "end": {
+        "title": [
+          "The every-participant twist is in",
+          "the full episode"
+        ],
+        "sub": "YouTube · Morago"
+      }
+    }
+  }
+]

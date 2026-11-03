@@ -2590,5 +2590,65 @@
   "nm08/prop/phone-speaker": {
     "w": 1150,
     "h": 1200
+  },
+  "nm09/teacher/normal": {
+    "w": 993,
+    "h": 1500
+  },
+  "nm09/teacher/tablet": {
+    "w": 993,
+    "h": 1500
+  },
+  "nm09/cutin/teacher-flat": {
+    "w": 1240,
+    "h": 1300
+  },
+  "nm09/bg/lobby": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm09/bg/room-night": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm09/full/kakao-rage": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm09/full/reunion": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm09/full/proud-typing": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm09/full/room-vs-real": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm09/full/academy-boast": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm09/full/birthday-boast": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm09/full/group-night": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm09/prop/phone": {
+    "w": 1028,
+    "h": 1200
+  },
+  "nm09/prop/certificate": {
+    "w": 1156,
+    "h": 1200
+  },
+  "nm09/prop/cert-stack": {
+    "w": 890,
+    "h": 1200
   }
 }

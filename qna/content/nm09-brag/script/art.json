@@ -1,0 +1,176 @@
+{
+  "title": "내모남불 ⑨ 자식 자랑편 · 단톡방 · 명절",
+  "cast": {
+    "teacher": "the psychology lecturer: a Korean woman in her forties, neat chin-length black bob, round gold-rimmed glasses, a gentle oval face with kind narrow eyes and a calm knowing smile; wearing a beige knit cardigan over a white blouse and dark slacks, holding a small tablet against her chest; absolutely NO text, NO letters, NO name tags and NO logos anywhere; warm, composed and kindly deadpan"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/panic",
+    "common/dad/proud",
+    "common/dad/shock",
+    "common/kid/normal",
+    "common/kid/ask",
+    "common/kid/doubt",
+    "common/mom/normal",
+    "common/mom/smirk",
+    "common/cutin/dad-shock",
+    "common/cutin/dad-proud",
+    "common/cutin/dad-panic",
+    "common/cutin/kid-ask",
+    "common/cutin/mom-smirk",
+    "common/cutin/dad-sig-1",
+    "common/cutin/dad-sig-2",
+    "common/cutin/dad-sig-3"
+  ],
+  "items": [
+    {
+      "id": "teacher/normal",
+      "kind": "char",
+      "who": "teacher",
+      "ref": null,
+      "people": [],
+      "title": "심리학 강사님 — 기본",
+      "cuts": "c00b, c02c, c03b, c04b, c06b",
+      "motion": "고개만 까딱, 말할 때 태블릿을 살짝 들어 올린다.",
+      "desc": "3/4 view turned slightly to the LEFT. Standing upright with the small tablet held against her chest in both arms, chin level, a calm knowing smile, eyes looking straight at the viewer."
+    },
+    {
+      "id": "teacher/tablet",
+      "kind": "char",
+      "who": "teacher",
+      "people": [],
+      "title": "심리학 강사님 — 태블릿으로 설명",
+      "cuts": "c02c, c03b",
+      "motion": "태블릿을 가리킨다.",
+      "desc": "3/4 view turned slightly to the LEFT. One hand holding the tablet out toward the viewer while the other index finger points at it like explaining a study, gentle smile, eyebrows slightly raised."
+    },
+    {
+      "id": "cutin/teacher-flat",
+      "kind": "cutin",
+      "who": "teacher",
+      "people": [],
+      "title": "강사님 컷인 — 정색 한마디",
+      "cuts": "c00b, c04c",
+      "motion": "천천히 줌 인.",
+      "desc": "Facing the viewer, dramatic close-up from the chest up. A kind but perfectly deadpan stare over the top of her round glasses, one index finger raised as if making a point, soft warm light behind her."
+    },
+    {
+      "id": "bg/lobby",
+      "kind": "bg",
+      "title": "배경 — 문화센터 로비 (토요일 오후)",
+      "cuts": "c00, c00a, c00b, c02, c03, c04, c05, c06",
+      "motion": "느린 팬.",
+      "desc": "A bright, cozy Korean community culture-center lobby on a Saturday afternoon seen straight-on like a sitcom set: a long wooden bench in the foreground, a front desk with a plant, a blank corkboard with only colored paper shapes, big windows with warm sunlight, a few classroom doors in the back. No people. No readable words, letters or logos anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "bg/room-night",
+      "kind": "bg",
+      "title": "배경 — 밤 거실이 아닌 아빠 서재 방",
+      "cuts": "c07, c07a, c07b, c07c, c07d",
+      "motion": "천천히 줌.",
+      "desc": "A small cozy Korean bedroom-study at night seen straight-on like a sitcom set: a desk with a warm lamp, a plain bed with a blanket, a bookshelf, dark blue window with a few city lights, soft warm lamp glow. No people. No readable words, letters or logos anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/kakao-rage",
+      "kind": "full",
+      "people": [
+        "dad",
+        "kid"
+      ],
+      "title": "벤치에서 폰 보며 얼굴 찌푸린 아빠 + 옆의 모라구",
+      "cuts": "c00, c00a",
+      "motion": "분노 선이 번쩍.",
+      "desc": "In a culture-center lobby, the dad sits on a bench glaring at his smartphone with a scrunched indignant face, veins popping comically, small anger lines around his head, while the kid sits next to him holding a jump rope and looking up at him flatly. The dad stays in the exact gag-manga cartoon style of the attached images. Absolutely no readable words, letters, numbers, logos or app icons anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/reunion",
+      "kind": "full",
+      "people": [
+        "dad"
+      ],
+      "title": "명절 상 앞에서 조카에게 캐묻는 아빠 (회상)",
+      "cuts": "c02a, c02b",
+      "motion": "아빠가 몸을 쑥 내민다.",
+      "desc": "A holiday family gathering: the dad leans far forward over a low table with a huge fake-friendly smile and wide eyes toward a plain flat grey faceless silhouette teenager who leans back away from him, shrinking in his seat, plates of holiday food on the table, a warm yellowish memory-flashback glow. The dad stays in the exact gag-manga cartoon style of the attached images. Absolutely no readable words, letters, numbers, logos or app icons anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/proud-typing",
+      "kind": "full",
+      "people": [
+        "dad"
+      ],
+      "title": "뿌듯하게 폰에 타자 치는 아빠",
+      "cuts": "c03a, c04a, c07a",
+      "motion": "반짝이가 튄다.",
+      "desc": "The dad sits on a bench typing on his smartphone with both thumbs, a fake-modest face with eyes half-closed and a barely hidden proud grin, sparkles popping around his phone and head. The dad stays in the exact gag-manga cartoon style of the attached images. Absolutely no readable words, letters, numbers, logos or app icons anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/room-vs-real",
+      "kind": "full",
+      "people": [],
+      "title": "상상: 상장이 천장까지 쌓인 방 vs 현실: 상장 한 장",
+      "cuts": "c03a",
+      "motion": "좌우로 갈라진다.",
+      "desc": "A split picture. LEFT half: a tiny bedroom crammed floor to ceiling with endless blank certificates, trophies and ribbons, bursting through the walls in a comical exaggeration. RIGHT half: the same bedroom calm and spacious with a single blank certificate pinned on the wall. No people. No readable words, letters or logos anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/academy-boast",
+      "kind": "full",
+      "people": [
+        "dad"
+      ],
+      "title": "학원 광고 전단지를 든 아빠",
+      "cuts": "c04, c04a",
+      "motion": "전단지를 휘두른다.",
+      "desc": "The dad holds up a big bright colorful flyer made only of stars, rockets and smiling shapes (no words), grinning proudly and sweetly like a salesman, sparkles around the flyer. The dad stays in the exact gag-manga cartoon style of the attached images. Absolutely no readable words, letters, numbers, logos or app icons anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/birthday-boast",
+      "kind": "full",
+      "people": [
+        "dad"
+      ],
+      "title": "돌잔치 풍선 아래 의기양양한 아빠",
+      "cuts": "c05a",
+      "motion": "풍선이 흔들린다.",
+      "desc": "The dad stands proudly with his arms spread under a huge arch of balloons beside a giant tiered cake, confetti flying, an over-the-top smug proud face. The dad stays in the exact gag-manga cartoon style of the attached images. Absolutely no readable words, letters, numbers, logos or app icons anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/group-night",
+      "kind": "full",
+      "people": [
+        "dad",
+        "mom",
+        "kid"
+      ],
+      "title": "밤, 셋이 폰을 같이 들여다봄",
+      "cuts": "c07b, c07c, c07d",
+      "motion": "엄마가 고개를 갸웃.",
+      "desc": "At night in a cozy room, the dad holds a smartphone at the center, the mom on his left looking at the screen with a flat deadpan unimpressed face, the kid on his right looking at the screen with a flat matter-of-fact face, the dad in the middle sweating with a defensive grin. The dad stays in the exact gag-manga cartoon style of the attached images. Absolutely no readable words, letters, numbers, logos or app icons anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "prop/phone",
+      "kind": "prop",
+      "title": "소품 — 휴대폰 (알림이 쏟아짐)",
+      "cuts": "c00, c07",
+      "motion": "진동한다.",
+      "desc": "A single smartphone buzzing with comic vibration lines and tiny speech-bubble shapes popping out of the screen, the screen showing only a blank bright glow. No logos, no text."
+    },
+    {
+      "id": "prop/certificate",
+      "kind": "prop",
+      "title": "소품 — 줄넘기 상장",
+      "cuts": "c00a, c06",
+      "motion": "반짝.",
+      "desc": "A single paper award certificate with a gold ribbon seal and a tiny sparkle, decorated only with a simple jump-rope doodle shape, no letters. No logos, no text."
+    },
+    {
+      "id": "prop/cert-stack",
+      "kind": "prop",
+      "title": "소품 — 상장 더미 (상상)",
+      "cuts": "c03a",
+      "motion": "쌓여 간다.",
+      "desc": "A tall comically leaning stack of blank certificates, golden trophies and ribbons piled up high, sparkles around it. No logos, no text."
+    }
+  ]
+}
