@@ -1,0 +1,289 @@
+{
+  "title": "내모남불 ⑩ 연애 탐색편",
+  "cast": {
+    "modeokhu": "the nerdy uncle: a Korean man in his late thirties with a round friendly face, a full head of messy black hair with a cowlick, thick round black-rimmed glasses that glint, a neatly tucked-in red-and-navy plaid flannel shirt buttoned to the top, khaki chinos, brown loafers and a small silver laser pointer clipped to the shirt pocket; an earnest, overly serious scholar look who has never dated; NO text, NO logos",
+    "matchmaker": "the matchmaker: a Korean woman in her fifties with a neat shoulder-length wavy dark brown hairdo, rectangular glasses on a thin gold chain, a gentle oval face with calm eyes and a polite knowing smile; wearing a tidy navy blazer over a cream blouse and a pearl-colored brooch, carrying a large leather document briefcase; absolutely NO text, NO letters, NO name tags and NO logos; composed and kindly deadpan",
+    "dadofdate": "the date's father: a hearty Korean man in his late fifties with short graying hair and a warm square face, wearing a navy suit jacket over a light shirt with no tie; a booming friendly presence that turns firm and protective; absolutely NO text and NO logos"
+  },
+  "common": [
+    "common/bg/living-room",
+    "common/dad/normal",
+    "common/dad/panic",
+    "common/dad/explain",
+    "common/dad/proud",
+    "common/dad/shock",
+    "common/kid/normal",
+    "common/kid/ask",
+    "common/kid/wow",
+    "common/kid/doubt",
+    "common/mom/normal",
+    "common/mom/smirk",
+    "common/mom/explain",
+    "common/mom/shock",
+    "common/cutin/dad-shock",
+    "common/cutin/dad-panic",
+    "common/cutin/kid-ask",
+    "common/cutin/mom-smirk"
+  ],
+  "items": [
+    {
+      "id": "modeokhu/normal",
+      "kind": "char",
+      "who": "modeokhu",
+      "ref": null,
+      "people": [],
+      "title": "모덕후 삼촌 — 기본 (모덕후 1편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c00, c00c, c02, c03, c05a",
+      "motion": "고개 까딱.",
+      "desc": "(복사 — 새로 뽑지 않음) 3/4 view turned slightly to the RIGHT. Standing upright, one hand pushing his glasses up, the other holding a stack of papers."
+    },
+    {
+      "id": "modeokhu/point",
+      "kind": "char",
+      "who": "modeokhu",
+      "people": [],
+      "title": "모덕후 삼촌 — 레이저 포인터 (모덕후 1편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c00, c04a, c04b",
+      "motion": "포인터를 앞으로 쭉.",
+      "desc": "(복사 — 새로 뽑지 않음) pointing a silver laser pointer, intense lecturing face."
+    },
+    {
+      "id": "modeokhu/proud",
+      "kind": "char",
+      "who": "modeokhu",
+      "people": [],
+      "title": "모덕후 삼촌 — 뿌듯 (모덕후 1편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c00a, c02c, c03, c04c",
+      "motion": "반짝이가 튄다.",
+      "desc": "(복사 — 새로 뽑지 않음) arms crossed, smug grin, sparkles."
+    },
+    {
+      "id": "modeokhu/fluster",
+      "kind": "char",
+      "who": "modeokhu",
+      "people": [],
+      "title": "모덕후 삼촌 — 당황 (모덕후 1편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c00c, c03a, c03b, c03e, c05a",
+      "motion": "땀 한 방울.",
+      "desc": "(복사 — 새로 뽑지 않음) eyes darting sideways, ears and cheeks red, sweat drop."
+    },
+    {
+      "id": "cutin/uncle-glint",
+      "kind": "cutin",
+      "who": "modeokhu",
+      "title": "모덕후 삼촌 컷인 — 안경 번쩍 (모덕후 1편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c00d, c02d",
+      "desc": "(복사 — 새로 뽑지 않음) glasses flash white, manga-detective revelation."
+    },
+    {
+      "id": "cutin/uncle-gulp",
+      "kind": "cutin",
+      "who": "modeokhu",
+      "title": "모덕후 삼촌 컷인 — 꿀꺽 (모덕후 1편 그림 복사, 새로 안 뽑음)",
+      "cuts": "c02, c02a",
+      "desc": "(복사 — 새로 뽑지 않음) steamy glasses, red cheeks, a bead of sweat, throat gulping."
+    },
+    {
+      "id": "matchmaker/normal",
+      "kind": "char",
+      "who": "matchmaker",
+      "ref": null,
+      "people": [],
+      "title": "커플 매니저 이모님 — 기본",
+      "cuts": "c00b, c00c, c03d, c04d",
+      "motion": "고개만 까딱, 서류 가방을 고쳐 든다.",
+      "desc": "3/4 view turned slightly to the LEFT. Standing upright with a large document briefcase held in front of her with both hands, glasses on a thin chain, a composed polite smile, eyes looking straight at the viewer."
+    },
+    {
+      "id": "matchmaker/point",
+      "kind": "char",
+      "who": "matchmaker",
+      "people": [],
+      "title": "커플 매니저 이모님 — 한 손가락으로 짚기",
+      "cuts": "c02e, c03d",
+      "motion": "검지를 천천히 든다.",
+      "desc": "3/4 view turned slightly to the LEFT. One index finger raised to make a point, the other hand holding the briefcase, eyebrows slightly raised, a small knowing smile."
+    },
+    {
+      "id": "cutin/matchmaker-flat",
+      "kind": "cutin",
+      "who": "matchmaker",
+      "people": [],
+      "title": "커플 매니저 컷인 — 정색 한마디",
+      "cuts": "c00b, c00c, c02e, c03d, c04d",
+      "motion": "천천히 줌 인.",
+      "desc": "Facing the viewer, dramatic close-up from the chest up. A perfectly deadpan stare over the top of her chained glasses, one index finger raised, soft warm light behind her."
+    },
+    {
+      "id": "dadofdate/normal",
+      "kind": "char",
+      "who": "dadofdate",
+      "ref": null,
+      "people": [],
+      "title": "소개팅 상대의 아버지 — 반가움",
+      "cuts": "c05",
+      "motion": "팔을 번쩍.",
+      "desc": "3/4 view turned slightly to the RIGHT. A hearty Korean man in his late fifties with short graying hair and a warm square face, wearing a navy suit jacket over a light shirt, both arms flung wide in a delighted greeting, a booming open-mouthed grin."
+    },
+    {
+      "id": "dadofdate/stern",
+      "kind": "char",
+      "who": "dadofdate",
+      "people": [],
+      "title": "소개팅 상대의 아버지 — 단호",
+      "cuts": "c05a",
+      "motion": "팔짱을 끼고 한 발 앞으로.",
+      "desc": "3/4 view turned slightly to the RIGHT. Arms crossed firmly, jaw set, one eyebrow raised, a protective stern look, still the same navy suit and graying hair."
+    },
+    {
+      "id": "cutin/dadofdate-firm",
+      "kind": "cutin",
+      "who": "dadofdate",
+      "people": [],
+      "title": "상대 아버지 컷인 — 안 돼",
+      "cuts": "c05a",
+      "motion": "줌 인 + 흔들림.",
+      "desc": "Facing the viewer, extreme close-up from the chest up. A firm wagging finger, furrowed brows, comically intense protective glare, dramatic shadow."
+    },
+    {
+      "id": "cutin/uncle-zoom",
+      "kind": "cutin",
+      "who": "modeokhu",
+      "people": [],
+      "title": "삼촌 컷인 — 폰 사진 확대",
+      "cuts": "c02, c02a, c02b",
+      "motion": "눈이 점점 커진다.",
+      "desc": "Facing the viewer, close-up from the chest up. He squints at a smartphone held near his face with two fingers spreading as if zooming in, glasses reflecting a glowing screen, sparkly hearts in his pupils, a hopeful goofy grin."
+    },
+    {
+      "id": "prop/checklist-his",
+      "kind": "prop",
+      "title": "상대 조건표 — 길고 빽빽한 종이",
+      "cuts": "c00, c00a",
+      "motion": "아래로 주르륵 펼쳐진다.",
+      "desc": "single object sticker, no human, no face. A very long paper scroll hanging down to the floor, filled with rows of blank checkboxes and abstract squiggle lines instead of words, a red pen clipped to the top."
+    },
+    {
+      "id": "prop/checklist-mine",
+      "kind": "prop",
+      "title": "내 조건표 — 투명하게 비어 있는 종이",
+      "cuts": "c00c",
+      "motion": "종이가 팔랑.",
+      "desc": "single object sticker, no human, no face. A tiny, almost see-through sheet of paper with a single blank checkbox and a lonely crumb of eraser dust, drooping slightly, a faint light shining through it."
+    },
+    {
+      "id": "prop/mirror",
+      "kind": "prop",
+      "title": "손거울",
+      "cuts": "c02d",
+      "motion": "반짝.",
+      "desc": "single object sticker, no human, no face. A small round hand mirror with a pink handle, its glass shining with a gentle sparkle."
+    },
+    {
+      "id": "prop/ladder",
+      "kind": "prop",
+      "title": "끝없이 높아지는 눈높이 사다리",
+      "cuts": "c03c, c03e",
+      "motion": "위로 쭉 늘어난다.",
+      "desc": "single object sticker, no human, no face. A very tall wooden ladder rising straight up out of the frame into pastel clouds, one rung near the top marked by a glowing gold star."
+    },
+    {
+      "id": "full/profile-photo",
+      "kind": "full",
+      "who": "modeokhu",
+      "people": [],
+      "title": "십 년 전 프사 (보정 반짝)",
+      "cuts": "c02c",
+      "motion": "반짝이가 튄다.",
+      "desc": "A smartphone screen held up toward the viewer showing a heavily glowing, soft-focus portrait of the nerdy uncle with a fuller head of hair and impossibly smooth glowing skin, sparkles and a dreamy light haze, a thumb in the corner of the frame. Absolutely no readable words, letters, numbers, logos or app icons anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/mirror-uncle",
+      "kind": "full",
+      "who": "modeokhu",
+      "people": [
+        "dad"
+      ],
+      "title": "거울 앞 삼촌 (이마가 반짝)",
+      "cuts": "c02d, c02e",
+      "motion": "이마 반짝.",
+      "desc": "The nerdy uncle stands with his chest puffed out, looking into a hand mirror held by the dad whose face is deadpan; in the mirror the uncle's reflection has a shiny forehead and a sweat drop, a tiny comical sparkle on the forehead. The dad stays in the exact gag-manga cartoon style of the attached images. Absolutely no readable words, letters, numbers, logos or app icons anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/dating-app",
+      "kind": "full",
+      "who": "modeokhu",
+      "people": [],
+      "title": "소개팅 앱 화면 (코드 + 그림)",
+      "cuts": "c03, c03a",
+      "motion": "카드를 휙 넘긴다.",
+      "desc": "A generic dating-app profile screen on a smartphone: a plain grey faceless silhouette portrait on a big card, two soft colored buttons below it, abstract placeholder bars instead of any text, a thumb mid-swipe; the nerdy uncle's squinting glasses reflect the screen in the corner. Absolutely no readable words, letters, numbers, logos or app icons anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/ladder-uncle",
+      "kind": "full",
+      "who": "modeokhu",
+      "people": [
+        "dad"
+      ],
+      "title": "사다리에 오르려는 삼촌 · 밑을 누르는 아빠",
+      "cuts": "c03c, c03e",
+      "motion": "아빠가 사다리를 슬쩍 눌러 삼촌이 주저앉는다.",
+      "desc": "The nerdy uncle stands on tiptoe reaching for the top rung of a super tall ladder that disappears into the clouds, while the dad stands calmly below holding the base of the ladder with one hand and pressing it slightly down with a deadpan face. The dad stays in the exact gag-manga cartoon style of the attached images. Absolutely no readable words, letters, numbers, logos or app icons anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/traffic-jam",
+      "kind": "full",
+      "who": "modeokhu",
+      "people": [],
+      "title": "교통 체증 핑계 (삼촌이 차 안에서 휘파람)",
+      "cuts": "c04b, c04c",
+      "motion": "삼촌이 휘파람을 분다.",
+      "desc": "The nerdy uncle sits relaxed in a small car in a jam of tiny cartoon cars with a distant comically fast empty road beside it, whistling innocently with sparkles around his head while leaning an elbow on the open window. Absolutely no readable words, letters, numbers, logos or app icons anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/read-no-reply",
+      "kind": "full",
+      "who": "modeokhu",
+      "people": [],
+      "title": "읽씹 · 바쁨 (폰 두 개)",
+      "cuts": "c04d, c04e",
+      "motion": "폰이 번갈아 깜빡.",
+      "desc": "Split picture. LEFT: a smartphone with a plain grey silhouette chat bubble and a tiny sad cloud over it. RIGHT: the nerdy uncle holding the same phone, thumbs hovering, reclining with a smug yawn and a lunch tray beside him. A thin dividing line in the middle. Absolutely no readable words, letters, numbers, logos or app icons anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/doorbell",
+      "kind": "full",
+      "who": "dadofdate",
+      "people": [
+        "dad"
+      ],
+      "title": "초인종 — 현관에 선 상대 아버지",
+      "cuts": "c05, c05a",
+      "motion": "문이 활짝 열린다.",
+      "desc": "A bright Korean apartment entrance seen straight-on: the front door flung open and the hearty late-fifties man in a navy suit stands there with arms wide; behind in the room the dad looks over with startled eyes, and the nerdy uncle freezes on the sofa clutching his phone. The dad stays in the exact gag-manga cartoon style of the attached images. Absolutely no readable words, letters, numbers, logos or app icons anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/boomerang",
+      "kind": "full",
+      "who": "modeokhu",
+      "people": [],
+      "title": "부메랑이 삼촌 머리로 돌아온다",
+      "cuts": "c05b, c05c",
+      "motion": "부메랑이 휙 날아와 쾅.",
+      "desc": "Comedic action frame: a big wooden boomerang with the faint motion arc of its flight swoops back around and bonks the nerdy uncle on the head, stars spinning around his head, glasses flying off. Absolutely no readable words, letters, numbers, logos or app icons anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/mom-sweet",
+      "kind": "full",
+      "people": [
+        "mom",
+        "dad"
+      ],
+      "title": "엄마의 다정한 미소 · 땀 흘리는 아빠",
+      "cuts": "c05d, c06",
+      "motion": "엄마가 천천히 고개를 기울인다.",
+      "desc": "The mom stands with arms crossed and a sweet, perfectly polite smile with calm eyes tilting her head; next to her the dad sweats buckets with a stiff wobbly smile, his hands raised in a defensive gesture. The dad stays in the exact gag-manga cartoon style of the attached images. Absolutely no readable words, letters, numbers, logos or app icons anywhere; no caption boxes, no speech bubbles, no frame border."
+    }
+  ]
+}

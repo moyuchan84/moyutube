@@ -2682,5 +2682,109 @@
   "nm09/prop/cert-stack": {
     "w": 890,
     "h": 1200
+  },
+  "nm10/modeokhu/normal": {
+    "w": 941,
+    "h": 1500
+  },
+  "nm10/modeokhu/point": {
+    "w": 988,
+    "h": 1500
+  },
+  "nm10/modeokhu/proud": {
+    "w": 874,
+    "h": 1500
+  },
+  "nm10/modeokhu/fluster": {
+    "w": 942,
+    "h": 1500
+  },
+  "nm10/cutin/uncle-glint": {
+    "w": 1277,
+    "h": 1300
+  },
+  "nm10/cutin/uncle-gulp": {
+    "w": 1193,
+    "h": 1300
+  },
+  "nm10/matchmaker/normal": {
+    "w": 976,
+    "h": 1500
+  },
+  "nm10/matchmaker/point": {
+    "w": 987,
+    "h": 1500
+  },
+  "nm10/cutin/matchmaker-flat": {
+    "w": 1213,
+    "h": 1300
+  },
+  "nm10/dadofdate/normal": {
+    "w": 1126,
+    "h": 1500
+  },
+  "nm10/dadofdate/stern": {
+    "w": 795,
+    "h": 1500
+  },
+  "nm10/cutin/dadofdate-firm": {
+    "w": 1300,
+    "h": 1285
+  },
+  "nm10/cutin/uncle-zoom": {
+    "w": 1010,
+    "h": 1009
+  },
+  "nm10/prop/checklist-his": {
+    "w": 1057,
+    "h": 1200
+  },
+  "nm10/prop/checklist-mine": {
+    "w": 1042,
+    "h": 1200
+  },
+  "nm10/prop/mirror": {
+    "w": 1200,
+    "h": 1121
+  },
+  "nm10/prop/ladder": {
+    "w": 792,
+    "h": 1200
+  },
+  "nm10/full/profile-photo": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm10/full/mirror-uncle": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm10/full/dating-app": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm10/full/ladder-uncle": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm10/full/traffic-jam": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm10/full/read-no-reply": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm10/full/doorbell": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm10/full/boomerang": {
+    "w": 2560,
+    "h": 1440
+  },
+  "nm10/full/mom-sweet": {
+    "w": 2560,
+    "h": 1440
   }
 }

@@ -130,6 +130,10 @@ import u33_script from "../../../content/nm09-brag/script/script.json";
 import u33_timing from "../../../content/nm09-brag/script/timing.json";
 import u33_motion from "../../../content/nm09-brag/script/motion.json";
 import u33_motionShort from "../../../content/nm09-brag/script/motion-short.json";
+import u34_script from "../../../content/nm10-dating/script/script.json";
+import u34_timing from "../../../content/nm10-dating/script/timing.json";
+import u34_motion from "../../../content/nm10-dating/script/motion.json";
+import u34_motionShort from "../../../content/nm10-dating/script/motion-short.json";
 
 export type UnitData = {
   code: string;
@@ -179,4 +183,5 @@ export const UNITS: UnitData[] = [
   { "code": "nm07", "format": "modapman", "series": "naemonambul", script: u31_script, timing: u31_timing, motion: u31_motion, motionShort: u31_motionShort },
   { "code": "nm08", "format": "modapman", "series": "naemonambul", script: u32_script, timing: u32_timing, motion: u32_motion, motionShort: u32_motionShort },
   { "code": "nm09", "format": "modapman", "series": "naemonambul", script: u33_script, timing: u33_timing, motion: u33_motion, motionShort: u33_motionShort },
+  { "code": "nm10", "format": "modapman", "series": "naemonambul", script: u34_script, timing: u34_timing, motion: u34_motion, motionShort: u34_motionShort },
 ];
