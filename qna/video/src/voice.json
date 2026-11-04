@@ -289,6 +289,24 @@
         "parent"
       ],
       "style": "A polite but slightly stiff Korean parent reading a group-chat message aloud in a flat, overly friendly tone"
+    },
+    {
+      "label": "Guest",
+      "name": "커플 매니저 이모님 (내모남불 ⑩)",
+      "voice": "Callirrhoe",
+      "roles": [
+        "matchmaker"
+      ],
+      "style": "A composed Korean matchmaker woman in her fifties: warm, even, professional voice with a perfectly deadpan politeness, calmly pointing out an inconvenient truth with a small knowing smile, never scolding"
+    },
+    {
+      "label": "Guest",
+      "name": "소개팅 상대의 아버지 (내모남불 ⑩)",
+      "voice": "Rasalgethi",
+      "roles": [
+        "dadofdate"
+      ],
+      "style": "A hearty Korean man in his late fifties, the uncle's old university senior: booming friendly voice that suddenly turns firm and protective, a little flustered but fully serious about his daughter"
     }
   ],
   "direction": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud.",

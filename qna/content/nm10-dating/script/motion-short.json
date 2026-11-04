@@ -1,0 +1,39 @@
+[
+  {
+    "id": "Nm10-Short-Date",
+    "series": "내모남불 · 내가 하면 모 어때, 남이 하면 불편",
+    "narr": "내모남불",
+    "crop": 1920,
+    "hook": [
+      "내 이상형은 간단해,",
+      "내 조건표는…?"
+    ],
+    "title": "소개팅 내로남불 · 눈높이",
+    "clips": [
+      { "from": 135, "to": 978 },
+      { "from": 4701, "to": 5432 }
+    ],
+    "end": {
+      "title": [
+        "내 기준,",
+        "남에게도 똑같을까요?"
+      ],
+      "sub": "구독하고 연애 탐색편 본편 이어 보기 ↓"
+    },
+    "en": {
+      "series": "Naemonambul · Double standards",
+      "hook": [
+        "My type is simple,",
+        "my own checklist is…?"
+      ],
+      "title": "Dating Double Standards",
+      "end": {
+        "title": [
+          "Do you hold yourself",
+          "to your own standard?"
+        ],
+        "sub": "YouTube · Morago"
+      }
+    }
+  }
+]

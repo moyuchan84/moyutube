@@ -623,6 +623,34 @@ const SONGS = {
       for (const [bar, b, n] of TUNE) add(at(bar, b), pluck(N(n), 0.6, 0.7), 0.18);
     },
   },
+
+  datewalk: {
+    desc: "설레는 산책 — 걸어가는 베이스 위에 전자 피아노 코드가 통통 튀는 소개팅 가는 길 (내모남불 ⑩ 연애 탐색편)",
+    bpm: 112,
+    bars: 8,
+    swing: 0.1,
+    render(add, at, beat) {
+      const N = NOTE;
+      // C · Am · F · G 를 두 번
+      const PROG = [
+        ["C", ["C3", "E3", "G3", "A3"], ["E4", "G4", "C5"]],
+        ["A", ["A2", "C3", "E3", "G3"], ["E4", "A4", "C5"]],
+        ["F", ["F2", "A2", "C3", "D3"], ["F4", "A4", "C5"]],
+        ["G", ["G2", "B2", "D3", "E3"], ["D4", "G4", "B4"]],
+      ];
+      for (let bar = 0; bar < 8; bar++) {
+        const [, walk, chord] = PROG[bar % 4];
+        // 한 박에 한 걸음씩 걷는 베이스
+        walk.forEach((n, k) => add(at(bar, k), pluck(N(n), 0.5, 0.35), k === 0 ? 0.5 : 0.34));
+        // 뒷박에 통통 튀는 코드
+        for (const b of [0.5, 1.5, 2.5, 3.5]) chord.forEach((n) => add(at(bar, b), epiano(N(n), beat * 0.6), 0.07));
+        for (let k = 0; k < 4; k++) add(at(bar, k + 0.5), shaker(0.05, 90), 0.06);
+      }
+      // 고개를 갸웃하는 짧은 가락 [마디, 박, 음, 길이]
+      const TUNE = [[0, 0, "E5", 1], [0, 1.5, "G5", 0.5], [1, 0, "A5", 1.5], [2, 0, "C6", 1], [2, 1.5, "A5", 0.5], [3, 0, "G5", 2], [4, 0, "E5", 1], [4, 1.5, "G5", 0.5], [5, 0, "A5", 1.5], [6, 0, "F5", 1], [6, 1.5, "D5", 0.5], [7, 0, "C5", 2]];
+      for (const [bar, b, n, len] of TUNE) add(at(bar, b), epiano(N(n), len * beat), 0.12);
+    },
+  },
 };
 
 // ── 만들기 ──────────────────────────────────────────────

@@ -1,0 +1,2686 @@
+{
+  "id": "Nm10-Naemonambul",
+  "episode": "nm10",
+  "voice": "nm10",
+  "bgm": "datewalk",
+  "gap": 0,
+  "chop": 42,
+  "counter": "내모남불",
+  "thumb": {
+    "badge": "내모남불 ⑩ 연애 탐색편",
+    "count": 10,
+    "countLabel": "내모남불",
+    "layers": [
+      {
+        "bg": "split:#FFB3C8:#C2185B",
+        "x": 640
+      },
+      {
+        "img": "full/mirror-uncle",
+        "panel": [
+          0.5,
+          0.45,
+          1.25
+        ],
+        "x": 640,
+        "y": 455,
+        "w": 660,
+        "h": 380,
+        "rot": -2
+      },
+      {
+        "text": "남의 조건은 높은 눈!",
+        "x": 330,
+        "y": 195,
+        "size": 72,
+        "rot": -4
+      },
+      {
+        "text": "내 조건은 기본~",
+        "x": 960,
+        "y": 195,
+        "size": 80,
+        "color": "#E4FF3A",
+        "rot": 3
+      },
+      {
+        "img": "cutin/matchmaker-flat",
+        "sticker": true,
+        "x": 1120,
+        "y": 560,
+        "h": 240,
+        "rot": 4
+      },
+      {
+        "text": "편!",
+        "style": "stamp",
+        "x": 250,
+        "y": 610,
+        "size": 120,
+        "rot": -8
+      }
+    ],
+    "vertical": {
+      "layers": [
+        {
+          "bg": "burst:#E4FF3A:#C2185B",
+          "x": 540,
+          "y": 1050
+        },
+        {
+          "fx": "lines",
+          "x": 540,
+          "y": 1100
+        },
+        {
+          "text": "남의 조건은",
+          "x": 540,
+          "y": 330,
+          "size": 150,
+          "rot": -3
+        },
+        {
+          "text": "눈 높다!",
+          "x": 540,
+          "y": 500,
+          "size": 190,
+          "color": "#E63946",
+          "rot": -3
+        },
+        {
+          "img": "full/mirror-uncle",
+          "panel": [
+            0.5,
+            0.45,
+            1.6
+          ],
+          "x": 540,
+          "y": 1180,
+          "w": 1000,
+          "h": 700,
+          "rot": -2
+        },
+        {
+          "text": "내 조건은 기본~",
+          "style": "stamp",
+          "x": 540,
+          "y": 690,
+          "size": 105,
+          "rot": -5
+        },
+        {
+          "text": "편!",
+          "style": "stamp",
+          "x": 800,
+          "y": 1620,
+          "size": 130,
+          "rot": 8
+        }
+      ]
+    }
+  },
+  "beats": [
+    {
+      "line": "c00-0",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "common/bg/living-room",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.47,
+              1.2
+            ]
+          },
+          "text": [
+            {
+              "t": "일요일 낮 · 모 씨네 거실",
+              "y": 0.5,
+              "size": 90,
+              "style": "news"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "doors"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00-1",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "common/bg/living-room",
+          "cam": {
+            "from": [
+              0.35,
+              0.5,
+              1.15
+            ],
+            "to": [
+              0.35,
+              0.48,
+              1.3
+            ]
+          },
+          "cast": [
+            {
+              "art": "modeokhu/proud",
+              "x": 0.28,
+              "h": 0.95,
+              "talk": "modeokhu"
+            }
+          ],
+          "props": [
+            {
+              "art": "prop/checklist-his",
+              "x": 0.78,
+              "y": 0.55,
+              "w": 0.3,
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "내 이상형은 간단해",
+              "y": 0.14,
+              "size": 90,
+              "x": 0.65,
+              "color": "#FFD23F",
+              "style": "type"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "tick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00a-0",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "common/bg/living-room",
+          "cast": [
+            {
+              "art": "common/dad/normal",
+              "x": 0.3,
+              "h": 0.92,
+              "talk": "dad"
+            },
+            {
+              "art": "modeokhu/normal",
+              "x": 0.74,
+              "h": 0.88
+            }
+          ],
+          "text": [
+            {
+              "t": "눈이 너무 높은 거 아냐?",
+              "y": 0.13,
+              "size": 85,
+              "color": "#FFD23F",
+              "style": "type"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "tick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00a-1",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "dots:#FFB3C8:#FF8FB1",
+          "cast": [
+            {
+              "art": "modeokhu/proud",
+              "x": 0.5,
+              "h": 1,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "이 정도는 기본!",
+              "y": 0.18,
+              "size": 100,
+              "x": 0.72,
+              "style": "stamp",
+              "at": 0.3
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00b-0",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "common/bg/living-room",
+          "cast": [
+            {
+              "art": "matchmaker/normal",
+              "x": 0.3,
+              "h": 0.95,
+              "talk": "matchmaker"
+            }
+          ],
+          "text": [
+            {
+              "t": "소개팅 전에 하나만 확인",
+              "y": 0.14,
+              "size": 80,
+              "x": 0.68,
+              "color": "#FFD23F",
+              "style": "type"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "ding"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00b-1",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "common/bg/living-room",
+          "cast": [
+            {
+              "art": "common/dad/panic",
+              "x": 0.32,
+              "h": 0.95,
+              "talk": "dad"
+            },
+            {
+              "art": "matchmaker/normal",
+              "x": 0.78,
+              "h": 0.7
+            }
+          ],
+          "text": [
+            {
+              "t": "언제 오셨어요?!",
+              "y": 0.2,
+              "size": 105,
+              "x": 0.7,
+              "color": "#E63946",
+              "style": "shake"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00c-0",
+      "shots": [
+        {
+          "in": "glitch",
+          "bg": "#F6EEDF",
+          "cast": [
+            {
+              "art": "cutin/matchmaker-flat",
+              "x": 0.28,
+              "h": 1,
+              "talk": "matchmaker"
+            }
+          ],
+          "props": [
+            {
+              "art": "prop/checklist-mine",
+              "x": 0.78,
+              "y": 0.62,
+              "w": 0.22,
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "삼촌님, 본인 조건표는요?",
+              "y": 0.16,
+              "size": 78,
+              "x": 0.68,
+              "style": "pop"
+            }
+          ],
+          "fx": [
+            "gaan"
+          ],
+          "sfx": [
+            {
+              "name": "chime"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00c-1",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "common/bg/living-room",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.3
+            ],
+            "to": [
+              0.5,
+              0.47,
+              1.6
+            ],
+            "ease": "snap"
+          },
+          "cast": [
+            {
+              "art": "modeokhu/fluster",
+              "x": 0.5,
+              "h": 0.98,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "내 건… 따로 안 써 봤는데",
+              "y": 0.12,
+              "size": 75,
+              "color": "#7FC8F8",
+              "style": "pop"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00d-0",
+      "count": 1,
+      "countAt": 0.78,
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "#15203A",
+          "text": [
+            {
+              "t": "남의 조건은",
+              "y": 0.3,
+              "size": 90,
+              "x": 0.27
+            },
+            {
+              "t": "눈이 높다",
+              "y": 0.52,
+              "size": 100,
+              "x": 0.27,
+              "color": "#7FC8F8",
+              "style": "slam",
+              "at": 0.1
+            },
+            {
+              "t": "내 조건은",
+              "y": 0.3,
+              "size": 90,
+              "x": 0.73,
+              "at": 0.3
+            },
+            {
+              "t": "기본",
+              "y": 0.52,
+              "size": 100,
+              "x": 0.73,
+              "color": "#E4FF3A",
+              "style": "stamp",
+              "at": 0.4
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.4
+            }
+          ]
+        },
+        {
+          "at": 0.72,
+          "in": "slam",
+          "bg": "burst:#1E8E4E:#146B39",
+          "text": [
+            {
+              "t": "내모남불, 하나.",
+              "y": 0.45,
+              "size": 170,
+              "color": "#E4FF3A",
+              "style": "slam"
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "buzz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00d-1",
+      "pad": 6,
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "common/bg/living-room",
+          "cam": {
+            "from": [
+              0.5,
+              0.45,
+              1.5
+            ],
+            "to": [
+              0.5,
+              0.42,
+              1.9
+            ],
+            "ease": "snap"
+          },
+          "cast": [
+            {
+              "art": "common/dad/proud",
+              "x": 0.5,
+              "h": 0.95,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "모답맨",
+              "y": 0.82,
+              "size": 120,
+              "color": "#E4FF3A",
+              "style": "pop",
+              "at": 0.4
+            }
+          ],
+          "fx": [
+            "focus",
+            "kira"
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c01-0",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "burst:#FF8FB1:#C2185B",
+          "text": [
+            {
+              "t": "내가 하면 모 어때",
+              "y": 0.22,
+              "size": 120,
+              "style": "slam"
+            },
+            {
+              "t": "남이 하면 불—",
+              "y": 0.46,
+              "size": 140,
+              "x": 0.43,
+              "style": "pop",
+              "at": 0.35
+            },
+            {
+              "t": "편!",
+              "y": 0.46,
+              "size": 200,
+              "x": 0.8,
+              "color": "#E63946",
+              "style": "stamp",
+              "at": 0.55
+            },
+            {
+              "t": "내모남불 ⑩ 연애 탐색편",
+              "y": 0.74,
+              "size": 84,
+              "color": "#E4FF3A",
+              "style": "pop",
+              "at": 0.75
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "pang"
+            },
+            {
+              "name": "stamp",
+              "at": 0.55
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-0",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "#15203A",
+          "text": [
+            {
+              "t": "ROUND 1",
+              "y": 0.3,
+              "size": 80,
+              "color": "#FF8FB1"
+            },
+            {
+              "t": "외모",
+              "y": 0.55,
+              "size": 220,
+              "color": "#FFFFFF",
+              "style": "slam",
+              "at": 0.2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-1",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "dots:#FFE3EC:#FFB3C8",
+          "cast": [
+            {
+              "art": "modeokhu/normal",
+              "x": 0.5,
+              "h": 1,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "난 외모 안 봐. 마음이 중요하지",
+              "y": 0.12,
+              "size": 70,
+              "style": "pop"
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "ding"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02a-0",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "common/bg/living-room",
+          "cast": [
+            {
+              "art": "common/dad/normal",
+              "x": 0.28,
+              "h": 0.9,
+              "talk": "dad"
+            },
+            {
+              "art": "cutin/uncle-zoom",
+              "x": 0.74,
+              "h": 0.85
+            }
+          ],
+          "text": [
+            {
+              "t": "근데 왜 그렇게 확대해?",
+              "y": 0.12,
+              "size": 78,
+              "color": "#FFD23F",
+              "style": "type"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "tick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02a-1",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "burst:#FF8FB1:#C2185B",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.1
+            ],
+            "to": [
+              0.5,
+              0.47,
+              1.35
+            ]
+          },
+          "cast": [
+            {
+              "art": "cutin/uncle-zoom",
+              "x": 0.4,
+              "h": 1.05,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "정보 수집이야",
+              "y": 0.2,
+              "size": 105,
+              "x": 0.74,
+              "style": "stamp",
+              "at": 0.4
+            },
+            {
+              "t": "(첫인상)",
+              "y": 0.38,
+              "size": 60,
+              "x": 0.74,
+              "at": 0.6
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02b-0",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "common/bg/living-room",
+          "cast": [
+            {
+              "art": "common/kid/doubt",
+              "x": 0.3,
+              "h": 0.9,
+              "talk": "kid"
+            },
+            {
+              "art": "cutin/uncle-zoom",
+              "x": 0.76,
+              "h": 0.8
+            }
+          ],
+          "text": [
+            {
+              "t": "눈동자까지 보고 있어",
+              "y": 0.13,
+              "size": 80,
+              "x": 0.65,
+              "color": "#7FC8F8",
+              "style": "pop"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02b-1",
+      "count": 2,
+      "countAt": 0.78,
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "#15203A",
+          "text": [
+            {
+              "t": "남이 보면",
+              "y": 0.3,
+              "size": 90,
+              "x": 0.27
+            },
+            {
+              "t": "얼굴만 보는 사람",
+              "y": 0.52,
+              "size": 100,
+              "x": 0.27,
+              "color": "#7FC8F8",
+              "style": "slam",
+              "at": 0.1
+            },
+            {
+              "t": "내가 보면",
+              "y": 0.3,
+              "size": 90,
+              "x": 0.73,
+              "at": 0.3
+            },
+            {
+              "t": "정보 수집",
+              "y": 0.52,
+              "size": 100,
+              "x": 0.73,
+              "color": "#E4FF3A",
+              "style": "stamp",
+              "at": 0.4
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.4
+            }
+          ]
+        },
+        {
+          "at": 0.72,
+          "in": "slam",
+          "bg": "burst:#1E8E4E:#146B39",
+          "text": [
+            {
+              "t": "내모남불, 둘.",
+              "y": 0.45,
+              "size": 170,
+              "color": "#E4FF3A",
+              "style": "slam"
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "buzz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02c-0",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "common/bg/living-room",
+          "cast": [
+            {
+              "art": "common/dad/normal",
+              "x": 0.25,
+              "h": 0.92,
+              "talk": "dad"
+            }
+          ],
+          "props": [
+            {
+              "art": "prop/mirror",
+              "x": 0.76,
+              "y": 0.6,
+              "w": 0.2,
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "삼촌 프사는 언제 사진이야?",
+              "y": 0.13,
+              "size": 72,
+              "x": 0.58,
+              "style": "type"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "tick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02c-1",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "full/profile-photo",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.1
+            ],
+            "to": [
+              0.5,
+              0.48,
+              1.35
+            ]
+          },
+          "cast": [
+            {
+              "art": "modeokhu/proud",
+              "x": 0.82,
+              "h": 0.62,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "10년 전 · 분위기는 그대로",
+              "y": 0.12,
+              "size": 78,
+              "x": 0.4,
+              "color": "#FFD23F",
+              "style": "pop"
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "ding"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02d-0",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "common/bg/living-room",
+          "cast": [
+            {
+              "art": "common/dad/normal",
+              "x": 0.3,
+              "h": 0.92,
+              "talk": "dad"
+            }
+          ],
+          "props": [
+            {
+              "art": "prop/mirror",
+              "x": 0.72,
+              "y": 0.55,
+              "w": 0.3,
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "자, 거울.",
+              "y": 0.14,
+              "size": 120,
+              "x": 0.65,
+              "style": "pop",
+              "at": 0.2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02d-1",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "full/mirror-uncle",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.15
+            ],
+            "to": [
+              0.5,
+              0.46,
+              1.4
+            ]
+          },
+          "text": [
+            {
+              "t": "나는… 분위기가 있잖아",
+              "y": 0.12,
+              "size": 74,
+              "color": "#FFD23F",
+              "style": "pop"
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02d-2",
+      "count": 3,
+      "countAt": 0.78,
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "#15203A",
+          "text": [
+            {
+              "t": "상대 얼굴은",
+              "y": 0.3,
+              "size": 90,
+              "x": 0.27
+            },
+            {
+              "t": "확대",
+              "y": 0.52,
+              "size": 100,
+              "x": 0.27,
+              "color": "#7FC8F8",
+              "style": "slam",
+              "at": 0.1
+            },
+            {
+              "t": "내 거울은",
+              "y": 0.3,
+              "size": 90,
+              "x": 0.73,
+              "at": 0.3
+            },
+            {
+              "t": "안 봄",
+              "y": 0.52,
+              "size": 100,
+              "x": 0.73,
+              "color": "#E4FF3A",
+              "style": "stamp",
+              "at": 0.4
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.4
+            }
+          ]
+        },
+        {
+          "at": 0.72,
+          "in": "slam",
+          "bg": "burst:#1E8E4E:#146B39",
+          "text": [
+            {
+              "t": "내모남불, 셋.",
+              "y": 0.45,
+              "size": 170,
+              "color": "#E4FF3A",
+              "style": "slam"
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "buzz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02e-0",
+      "shots": [
+        {
+          "in": "glitch",
+          "bg": "#F6EEDF",
+          "cast": [
+            {
+              "art": "cutin/matchmaker-flat",
+              "x": 0.28,
+              "h": 1,
+              "talk": "matchmaker"
+            }
+          ],
+          "text": [
+            {
+              "t": "심리학 카드",
+              "y": 0.14,
+              "size": 62,
+              "x": 0.7
+            },
+            {
+              "t": "평균 이상 효과",
+              "y": 0.34,
+              "size": 104,
+              "x": 0.7,
+              "color": "#E63946",
+              "style": "slam",
+              "at": 0.3
+            },
+            {
+              "t": "나는 평균보다 낫다는 믿음",
+              "y": 0.56,
+              "size": 54,
+              "x": 0.7,
+              "style": "stamp",
+              "at": 0.6
+            }
+          ],
+          "note": "※ 자기를 평균보다 낫게 보는 경향 · 일반 설명",
+          "fx": [
+            "gaan"
+          ],
+          "sfx": [
+            {
+              "name": "chime"
+            },
+            {
+              "name": "stamp",
+              "at": 0.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02e-1",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "common/bg/living-room",
+          "cast": [
+            {
+              "art": "common/kid/wow",
+              "x": 0.3,
+              "h": 0.95,
+              "talk": "kid"
+            },
+            {
+              "art": "modeokhu/fluster",
+              "x": 0.76,
+              "h": 0.85
+            }
+          ],
+          "text": [
+            {
+              "t": "삼촌 거울이 후하네!",
+              "y": 0.13,
+              "size": 92,
+              "x": 0.62,
+              "color": "#E4FF3A",
+              "style": "pop"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-0",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "#15203A",
+          "text": [
+            {
+              "t": "ROUND 2",
+              "y": 0.3,
+              "size": 80,
+              "color": "#FF8FB1"
+            },
+            {
+              "t": "나이",
+              "y": 0.55,
+              "size": 220,
+              "color": "#FFFFFF",
+              "style": "slam",
+              "at": 0.2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-1",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "full/dating-app",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.1
+            ],
+            "to": [
+              0.5,
+              0.48,
+              1.25
+            ]
+          },
+          "cast": [
+            {
+              "art": "modeokhu/point",
+              "x": 0.2,
+              "h": 0.62,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "상대 25~33세",
+              "y": 0.12,
+              "size": 84,
+              "x": 0.6,
+              "color": "#FFD23F",
+              "style": "pop"
+            },
+            {
+              "t": "나는 39살, 나이는 숫자!",
+              "y": 0.88,
+              "size": 78,
+              "x": 0.55,
+              "color": "#E4FF3A",
+              "style": "stamp",
+              "at": 0.6
+            }
+          ],
+          "sfx": [
+            {
+              "name": "tick"
+            },
+            {
+              "name": "stamp",
+              "at": 0.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03a-0",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "common/bg/living-room",
+          "cast": [
+            {
+              "art": "common/dad/normal",
+              "x": 0.3,
+              "h": 0.92,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "이분 37살인데?",
+              "y": 0.13,
+              "size": 100,
+              "x": 0.68,
+              "color": "#FFD23F",
+              "style": "type"
+            },
+            {
+              "t": "삼촌이랑 비슷하잖아",
+              "y": 0.3,
+              "size": 70,
+              "x": 0.68,
+              "at": 0.5
+            }
+          ],
+          "sfx": [
+            {
+              "name": "tick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03a-1",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "common/bg/living-room",
+          "cast": [
+            {
+              "art": "modeokhu/fluster",
+              "x": 0.5,
+              "h": 0.98,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "37? 그건 좀 나이 많은데…",
+              "y": 0.12,
+              "size": 74,
+              "color": "#E63946",
+              "style": "shake"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "buzz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03b-0",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "common/bg/living-room",
+          "cast": [
+            {
+              "art": "common/kid/ask",
+              "x": 0.3,
+              "h": 0.95,
+              "talk": "kid"
+            },
+            {
+              "art": "modeokhu/normal",
+              "x": 0.76,
+              "h": 0.85
+            }
+          ],
+          "text": [
+            {
+              "t": "그럼 39살은?",
+              "y": 0.14,
+              "size": 110,
+              "x": 0.65,
+              "color": "#7FC8F8",
+              "style": "pop"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03b-1",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "common/bg/living-room",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.2
+            ],
+            "to": [
+              0.5,
+              0.47,
+              1.45
+            ]
+          },
+          "cast": [
+            {
+              "art": "modeokhu/fluster",
+              "x": 0.5,
+              "h": 0.98,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "…내 나이는 몰라도 돼",
+              "y": 0.12,
+              "size": 74,
+              "style": "shake"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03c-0",
+      "count": 4,
+      "countAt": 0.78,
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "#15203A",
+          "text": [
+            {
+              "t": "또래는",
+              "y": 0.3,
+              "size": 90,
+              "x": 0.27
+            },
+            {
+              "t": "나이 많고",
+              "y": 0.52,
+              "size": 100,
+              "x": 0.27,
+              "color": "#7FC8F8",
+              "style": "slam",
+              "at": 0.1
+            },
+            {
+              "t": "어린 사람은",
+              "y": 0.3,
+              "size": 90,
+              "x": 0.73,
+              "at": 0.3
+            },
+            {
+              "t": "나이는 숫자",
+              "y": 0.52,
+              "size": 100,
+              "x": 0.73,
+              "color": "#E4FF3A",
+              "style": "stamp",
+              "at": 0.4
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.4
+            }
+          ]
+        },
+        {
+          "at": 0.72,
+          "in": "slam",
+          "bg": "burst:#1E8E4E:#146B39",
+          "text": [
+            {
+              "t": "내모남불, 넷.",
+              "y": 0.45,
+              "size": 170,
+              "color": "#E4FF3A",
+              "style": "slam"
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "buzz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03c-1",
+      "shots": [
+        {
+          "in": "whip-u",
+          "bg": "full/ladder-uncle",
+          "cam": {
+            "from": [
+              0.5,
+              0.65,
+              1.2
+            ],
+            "to": [
+              0.5,
+              0.35,
+              1.2
+            ]
+          },
+          "text": [
+            {
+              "t": "눈높이가 사다리처럼",
+              "y": 0.13,
+              "size": 78,
+              "color": "#FFD23F",
+              "style": "pop"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "whoosh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03d-0",
+      "shots": [
+        {
+          "in": "glitch",
+          "bg": "#F6EEDF",
+          "cast": [
+            {
+              "art": "cutin/matchmaker-flat",
+              "x": 0.28,
+              "h": 1,
+              "talk": "matchmaker"
+            }
+          ],
+          "text": [
+            {
+              "t": "연구 한 줄",
+              "y": 0.14,
+              "size": 62,
+              "x": 0.7
+            },
+            {
+              "t": "만나 본 뒤의 호감",
+              "y": 0.34,
+              "size": 90,
+              "x": 0.7,
+              "color": "#E63946",
+              "style": "slam",
+              "at": 0.3
+            },
+            {
+              "t": "사전 조건표보다 더 잘 맞췄다",
+              "y": 0.56,
+              "size": 50,
+              "x": 0.7,
+              "style": "stamp",
+              "at": 0.6
+            }
+          ],
+          "note": "※ 사전에 말한 이상형과 실제 호감이 어긋난 연구 (Eastwick & Finkel, 2008) · 일반 설명",
+          "fx": [
+            "gaan"
+          ],
+          "sfx": [
+            {
+              "name": "chime"
+            },
+            {
+              "name": "stamp",
+              "at": 0.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03d-1",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "common/bg/living-room",
+          "cast": [
+            {
+              "art": "modeokhu/proud",
+              "x": 0.5,
+              "h": 0.98,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "그럼 표는 참고용이야?",
+              "y": 0.12,
+              "size": 74,
+              "color": "#E4FF3A",
+              "style": "pop"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03e-0",
+      "count": 5,
+      "countAt": 0.78,
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "#15203A",
+          "text": [
+            {
+              "t": "내 나이는",
+              "y": 0.3,
+              "size": 90,
+              "x": 0.27
+            },
+            {
+              "t": "숫자",
+              "y": 0.52,
+              "size": 100,
+              "x": 0.27,
+              "color": "#7FC8F8",
+              "style": "slam",
+              "at": 0.1
+            },
+            {
+              "t": "상대 나이는",
+              "y": 0.3,
+              "size": 90,
+              "x": 0.73,
+              "at": 0.3
+            },
+            {
+              "t": "상한선",
+              "y": 0.52,
+              "size": 100,
+              "x": 0.73,
+              "color": "#E4FF3A",
+              "style": "stamp",
+              "at": 0.4
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.4
+            }
+          ]
+        },
+        {
+          "at": 0.72,
+          "in": "slam",
+          "bg": "burst:#1E8E4E:#146B39",
+          "text": [
+            {
+              "t": "내모남불, 다섯.",
+              "y": 0.45,
+              "size": 170,
+              "color": "#E4FF3A",
+              "style": "slam"
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "buzz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03e-1",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "common/bg/living-room",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.3
+            ],
+            "to": [
+              0.5,
+              0.47,
+              1.55
+            ]
+          },
+          "cast": [
+            {
+              "art": "cutin/uncle-gulp",
+              "x": 0.5,
+              "h": 1,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "…그렇게 들리나?",
+              "y": 0.12,
+              "size": 80,
+              "style": "pop"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-0",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "#15203A",
+          "text": [
+            {
+              "t": "ROUND 3",
+              "y": 0.25,
+              "size": 80,
+              "color": "#FF8FB1"
+            },
+            {
+              "t": "소개팅 매너",
+              "y": 0.48,
+              "size": 130,
+              "color": "#FFFFFF",
+              "style": "slam",
+              "at": 0.2
+            },
+            {
+              "t": "속사포!",
+              "y": 0.75,
+              "size": 150,
+              "color": "#E4FF3A",
+              "style": "stamp",
+              "at": 0.6
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04a-0",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "common/bg/living-room",
+          "cast": [
+            {
+              "art": "cutin/uncle-glint",
+              "x": 0.3,
+              "h": 1,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "상대 사진은 무보정!",
+              "y": 0.14,
+              "size": 80,
+              "x": 0.7,
+              "color": "#FFD23F",
+              "style": "pop"
+            },
+            {
+              "t": "내 사진은 빛 조정~",
+              "y": 0.34,
+              "size": 80,
+              "x": 0.7,
+              "color": "#E4FF3A",
+              "style": "stamp",
+              "at": 0.5
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04a-1",
+      "count": 6,
+      "countAt": 0.78,
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "#15203A",
+          "text": [
+            {
+              "t": "남이 보정하면",
+              "y": 0.3,
+              "size": 90,
+              "x": 0.27
+            },
+            {
+              "t": "속임수",
+              "y": 0.52,
+              "size": 100,
+              "x": 0.27,
+              "color": "#7FC8F8",
+              "style": "slam",
+              "at": 0.1
+            },
+            {
+              "t": "내가 보정하면",
+              "y": 0.3,
+              "size": 90,
+              "x": 0.73,
+              "at": 0.3
+            },
+            {
+              "t": "빛 조정",
+              "y": 0.52,
+              "size": 100,
+              "x": 0.73,
+              "color": "#E4FF3A",
+              "style": "stamp",
+              "at": 0.4
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.4
+            }
+          ]
+        },
+        {
+          "at": 0.72,
+          "in": "slam",
+          "bg": "burst:#1E8E4E:#146B39",
+          "text": [
+            {
+              "t": "내모남불, 여섯.",
+              "y": 0.45,
+              "size": 170,
+              "color": "#E4FF3A",
+              "style": "slam"
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "buzz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04b-0",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "common/bg/living-room",
+          "cast": [
+            {
+              "art": "modeokhu/point",
+              "x": 0.5,
+              "h": 0.98,
+              "talk": "modeokhu"
+            }
+          ],
+          "text": [
+            {
+              "t": "15분 늦으면 존중 없음!",
+              "y": 0.12,
+              "size": 78,
+              "color": "#E63946",
+              "style": "shake"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "buzz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04b-1",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "common/bg/living-room",
+          "cast": [
+            {
+              "art": "common/dad/normal",
+              "x": 0.3,
+              "h": 0.92,
+              "talk": "dad"
+            },
+            {
+              "art": "modeokhu/normal",
+              "x": 0.76,
+              "h": 0.85
+            }
+          ],
+          "text": [
+            {
+              "t": "삼촌이 20분 늦으면?",
+              "y": 0.13,
+              "size": 84,
+              "x": 0.65,
+              "color": "#FFD23F",
+              "style": "pop"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "tick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04c-0",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "full/traffic-jam",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.1
+            ],
+            "to": [
+              0.5,
+              0.48,
+              1.3
+            ]
+          },
+          "text": [
+            {
+              "t": "길이 막힌 거지~",
+              "y": 0.14,
+              "size": 96,
+              "color": "#E4FF3A",
+              "style": "pop"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04c-1",
+      "count": 7,
+      "countAt": 0.78,
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "#15203A",
+          "text": [
+            {
+              "t": "남이 늦으면",
+              "y": 0.3,
+              "size": 90,
+              "x": 0.27
+            },
+            {
+              "t": "무례",
+              "y": 0.52,
+              "size": 100,
+              "x": 0.27,
+              "color": "#7FC8F8",
+              "style": "slam",
+              "at": 0.1
+            },
+            {
+              "t": "내가 늦으면",
+              "y": 0.3,
+              "size": 90,
+              "x": 0.73,
+              "at": 0.3
+            },
+            {
+              "t": "교통 체증",
+              "y": 0.52,
+              "size": 100,
+              "x": 0.73,
+              "color": "#E4FF3A",
+              "style": "stamp",
+              "at": 0.4
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.4
+            }
+          ]
+        },
+        {
+          "at": 0.72,
+          "in": "slam",
+          "bg": "burst:#1E8E4E:#146B39",
+          "text": [
+            {
+              "t": "내모남불, 일곱.",
+              "y": 0.45,
+              "size": 170,
+              "color": "#E4FF3A",
+              "style": "slam"
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "buzz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04d-0",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "full/read-no-reply",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.1
+            ],
+            "to": [
+              0.5,
+              0.47,
+              1.3
+            ]
+          },
+          "text": [
+            {
+              "t": "답 늦게 오면 읽씹",
+              "y": 0.13,
+              "size": 80,
+              "color": "#E63946",
+              "style": "shake"
+            },
+            {
+              "t": "내가 늦으면 바쁨",
+              "y": 0.86,
+              "size": 80,
+              "color": "#E4FF3A",
+              "style": "stamp",
+              "at": 0.5
+            }
+          ],
+          "sfx": [
+            {
+              "name": "buzz"
+            },
+            {
+              "name": "stamp",
+              "at": 0.5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04d-1",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "#F6EEDF",
+          "cast": [
+            {
+              "art": "matchmaker/point",
+              "x": 0.5,
+              "h": 0.98,
+              "talk": "matchmaker"
+            }
+          ],
+          "text": [
+            {
+              "t": "폰은 같은 폰입니다",
+              "y": 0.12,
+              "size": 80,
+              "style": "stamp",
+              "at": 0.2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04e-0",
+      "count": 8,
+      "countAt": 0.78,
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "#15203A",
+          "text": [
+            {
+              "t": "남이 늦게 답하면",
+              "y": 0.3,
+              "size": 90,
+              "x": 0.27
+            },
+            {
+              "t": "읽씹",
+              "y": 0.52,
+              "size": 100,
+              "x": 0.27,
+              "color": "#7FC8F8",
+              "style": "slam",
+              "at": 0.1
+            },
+            {
+              "t": "내가 늦게 답하면",
+              "y": 0.3,
+              "size": 90,
+              "x": 0.73,
+              "at": 0.3
+            },
+            {
+              "t": "바쁨",
+              "y": 0.52,
+              "size": 100,
+              "x": 0.73,
+              "color": "#E4FF3A",
+              "style": "stamp",
+              "at": 0.4
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.4
+            }
+          ]
+        },
+        {
+          "at": 0.72,
+          "in": "slam",
+          "bg": "burst:#1E8E4E:#146B39",
+          "text": [
+            {
+              "t": "내모남불, 여덟.",
+              "y": 0.45,
+              "size": 170,
+              "color": "#E4FF3A",
+              "style": "slam"
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "buzz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-0",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "full/doorbell",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.15
+            ],
+            "to": [
+              0.5,
+              0.47,
+              1.35
+            ]
+          },
+          "cast": [
+            {
+              "art": "dadofdate/normal",
+              "x": 0.78,
+              "h": 0.9,
+              "talk": "dadofdate"
+            }
+          ],
+          "text": [
+            {
+              "t": "야, 후배!",
+              "y": 0.14,
+              "size": 120,
+              "x": 0.35,
+              "color": "#FFD23F",
+              "style": "shake"
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "ding"
+            },
+            {
+              "name": "pang"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05a-0",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "common/bg/living-room",
+          "cast": [
+            {
+              "art": "modeokhu/fluster",
+              "x": 0.3,
+              "h": 0.98,
+              "talk": "modeokhu"
+            },
+            {
+              "art": "dadofdate/normal",
+              "x": 0.78,
+              "h": 0.9
+            }
+          ],
+          "text": [
+            {
+              "t": "나이는 숫자잖아요!",
+              "y": 0.12,
+              "size": 84,
+              "x": 0.55,
+              "color": "#E63946",
+              "style": "shake"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05a-1",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "burst:#E63946:#8E1B26",
+          "cast": [
+            {
+              "art": "cutin/dadofdate-firm",
+              "x": 0.5,
+              "h": 1.05,
+              "talk": "dadofdate"
+            }
+          ],
+          "text": [
+            {
+              "t": "나이는 숫자가 아니야!",
+              "y": 0.14,
+              "size": 90,
+              "x": 0.5,
+              "color": "#FFFFFF",
+              "style": "stamp",
+              "at": 0.3
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05b-0",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "full/boomerang",
+          "cast": [
+            {
+              "art": "common/mom/smirk",
+              "x": 0.78,
+              "h": 0.8,
+              "talk": "mom"
+            }
+          ],
+          "text": [
+            {
+              "t": "부메랑이네요",
+              "y": 0.14,
+              "size": 110,
+              "x": 0.38,
+              "color": "#FFD23F",
+              "style": "pop",
+              "at": 0.2
+            }
+          ],
+          "sfx": [
+            {
+              "name": "whoosh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05b-1",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "common/bg/living-room",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.2
+            ],
+            "to": [
+              0.5,
+              0.47,
+              1.45
+            ]
+          },
+          "cast": [
+            {
+              "art": "common/dad/panic",
+              "x": 0.5,
+              "h": 0.98,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "만약 우리 집이라면…",
+              "y": 0.12,
+              "size": 78,
+              "style": "shake"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05c-0",
+      "count": 10,
+      "countAt": 0.8,
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "#15203A",
+          "text": [
+            {
+              "t": "남의 딸 · 나이는 숫자",
+              "y": 0.3,
+              "size": 84
+            },
+            {
+              "t": "내 딸 · 숫자 아님!",
+              "y": 0.55,
+              "size": 100,
+              "color": "#E4FF3A",
+              "style": "stamp",
+              "at": 0.3
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp",
+              "at": 0.3
+            }
+          ]
+        },
+        {
+          "at": 0.7,
+          "in": "slam",
+          "bg": "burst:#1E8E4E:#146B39",
+          "text": [
+            {
+              "t": "내모남불,",
+              "y": 0.3,
+              "size": 120,
+              "color": "#E4FF3A",
+              "style": "slam"
+            },
+            {
+              "t": "9 · 10!",
+              "y": 0.58,
+              "size": 200,
+              "color": "#FFD23F",
+              "style": "stamp",
+              "at": 0.25
+            }
+          ],
+          "fx": [
+            "impact"
+          ],
+          "sfx": [
+            {
+              "name": "buzz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05d-0",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "common/bg/living-room",
+          "cast": [
+            {
+              "art": "common/dad/panic",
+              "x": 0.5,
+              "h": 0.98,
+              "talk": "dad"
+            }
+          ],
+          "text": [
+            {
+              "t": "…여보, 오해야",
+              "y": 0.12,
+              "size": 84,
+              "style": "pop"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05d-1",
+      "shots": [
+        {
+          "in": "zoom",
+          "bg": "full/mom-sweet",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.1
+            ],
+            "to": [
+              0.5,
+              0.47,
+              1.3
+            ]
+          },
+          "text": [
+            {
+              "t": "아직 아무 말도 안 했는데요",
+              "y": 0.12,
+              "size": 70,
+              "color": "#FFD23F",
+              "style": "pop"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "chime"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06-0",
+      "calm": true,
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "common/bg/living-room",
+          "cam": {
+            "from": [
+              0.45,
+              0.5,
+              1.1
+            ],
+            "to": [
+              0.45,
+              0.47,
+              1.16
+            ]
+          },
+          "cast": [
+            {
+              "art": "common/dad/normal",
+              "x": 0.3,
+              "h": 0.9
+            },
+            {
+              "art": "common/kid/normal",
+              "x": 0.62,
+              "h": 0.9
+            },
+            {
+              "art": "modeokhu/fluster",
+              "x": 0.85,
+              "h": 0.8
+            }
+          ],
+          "text": [],
+          "sfx": [],
+          "fx": []
+        }
+      ]
+    },
+    {
+      "line": "c06-1",
+      "calm": true,
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "common/bg/living-room",
+          "cam": {
+            "from": [
+              0.45,
+              0.5,
+              1.1
+            ],
+            "to": [
+              0.45,
+              0.47,
+              1.16
+            ]
+          },
+          "cast": [
+            {
+              "art": "common/dad/normal",
+              "x": 0.35,
+              "h": 0.9,
+              "talk": "dad"
+            },
+            {
+              "art": "common/kid/normal",
+              "x": 0.7,
+              "h": 0.9
+            }
+          ],
+          "text": [],
+          "sfx": [],
+          "fx": []
+        }
+      ]
+    },
+    {
+      "hold": 160,
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "burst:#1E8E4E:#146B39",
+          "cast": [
+            {
+              "art": "matchmaker/normal",
+              "x": 0.85,
+              "h": 0.6
+            }
+          ],
+          "text": [
+            {
+              "t": "남의 조건은 높아 보이고",
+              "y": 0.16,
+              "size": 84,
+              "style": "slam"
+            },
+            {
+              "t": "내 조건은 기본이고",
+              "y": 0.31,
+              "size": 90,
+              "color": "#E4FF3A",
+              "style": "pop",
+              "at": 10
+            },
+            {
+              "t": "내 기준, 남에게도 똑같을까요? 댓글로!",
+              "y": 0.49,
+              "size": 66,
+              "color": "#FFD23F",
+              "style": "stamp",
+              "at": 22
+            },
+            {
+              "t": "구독하면 다음 편에서 아빠가 또 틀립니다",
+              "y": 0.64,
+              "size": 56,
+              "style": "pop",
+              "at": 34
+            }
+          ],
+          "note": "※ 등장하는 인물 · 상황은 꾸민 것입니다. 심리학 내용은 연구 요지를 줄인 일반 설명이며, 모든 사람에게 같게 나타나는 것은 아닙니다.",
+          "sfx": [
+            {
+              "name": "stinger"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
