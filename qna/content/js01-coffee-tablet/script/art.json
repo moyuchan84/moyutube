@@ -1,0 +1,87 @@
+{
+  "title": "조삼모사 ① 커피 한 잔 vs 태블릿 — 가전 매장 · 카페 · 계산기 · 원숭이",
+  "cast": {
+    "monkey": "the acorn monkey: a small cartoon brown monkey with big round ears, a cream-colored face and belly, narrow squinting eyes like a deadpan accountant, a long curly tail; NO text, NO logos"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/shock",
+    "common/dad/panic",
+    "common/dad/proud",
+    "common/dad/think",
+    "common/mom/normal",
+    "common/mom/shock",
+    "common/mom/smirk",
+    "common/mom/explain",
+    "common/mom/sigh",
+    "common/cutin/dad-shock",
+    "common/cutin/dad-proud",
+    "common/cutin/mom-smirk",
+    "common/cutin/mom-sigh"
+  ],
+  "items": [
+    {
+      "id": "bg/appliance-shop",
+      "kind": "bg",
+      "title": "배경 — 가전 매장 진열대 (태블릿 코너)",
+      "cuts": "c00",
+      "desc": "The tablet corner of a bright Korean electronics store seen straight-on like a sitcom set: a long clean white display table with several slim tablets standing on stands, one big empty white price-tag card on a stand in the middle foreground, shelves of gadgets behind, bright store lighting. No people. Every screen and price card is completely blank; no writing anywhere."
+    },
+    {
+      "id": "bg/cafe-counter",
+      "kind": "bg",
+      "title": "배경 — 카페 카운터",
+      "cuts": "c00, c01",
+      "desc": "A cozy modern Korean cafe counter seen straight-on like a sitcom set: a wooden counter with an espresso machine, a cash register with a blank screen, a glass pastry case, a chalkboard menu left completely blank, warm pendant lights. No people, no hands. No writing anywhere."
+    },
+    {
+      "id": "prop/tablet",
+      "kind": "prop",
+      "title": "소품 — 신형 태블릿 (브랜드 없음)",
+      "cuts": "c00, c03, c04",
+      "people": [],
+      "desc": "A slim modern tablet computer standing slightly angled, thin silver body, big blank glowing blue-white screen with no icons and no writing, no logo on the back or anywhere."
+    },
+    {
+      "id": "prop/coffee-cup",
+      "kind": "prop",
+      "title": "소품 — 아이스 아메리카노",
+      "cuts": "c00, c02, c03, c04",
+      "people": [],
+      "desc": "A clear plastic takeaway cup of iced americano with ice cubes, a black straw and a plain brown cup sleeve, condensation drops on the cup. No logo, no writing."
+    },
+    {
+      "id": "prop/calculator",
+      "kind": "prop",
+      "title": "소품 — 계산기",
+      "cuts": "c02, c03, c04",
+      "people": [],
+      "desc": "A chunky cartoon pocket calculator seen slightly from above, big rounded buttons all left blank, and a wide empty gray display with no digits and no writing."
+    },
+    {
+      "id": "prop/acorn",
+      "kind": "prop",
+      "title": "소품 — 도토리",
+      "cuts": "c07",
+      "people": [],
+      "desc": "One shiny round brown acorn with a textured light-brown cap, a tiny stem, a glossy highlight."
+    },
+    {
+      "id": "monkey/normal",
+      "kind": "char",
+      "who": "monkey",
+      "ref": null,
+      "title": "원숭이 — 기본 (실눈, 도토리 한 알)",
+      "cuts": "c07",
+      "desc": "3/4 view turned slightly to the LEFT. Standing upright like a serious accountant, one hand holding a single acorn up between two fingers, the other hand on his hip, narrow deadpan squinting eyes, mouth a small flat line."
+    },
+    {
+      "id": "monkey/count",
+      "kind": "char",
+      "who": "monkey",
+      "title": "원숭이 — 도토리 세기 (양손에 셋 · 넷)",
+      "cuts": "c07",
+      "desc": "3/4 view turned slightly to the LEFT. Holding three acorns in his left hand and four acorns in his right hand, held out to both sides like a balance scale, eyes half-closed and calm, a tiny satisfied smirk."
+    }
+  ]
+}

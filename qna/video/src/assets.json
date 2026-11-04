@@ -1367,6 +1367,38 @@
     "w": 628,
     "h": 1500
   },
+  "js01/bg/appliance-shop": {
+    "w": 2560,
+    "h": 1440
+  },
+  "js01/bg/cafe-counter": {
+    "w": 2560,
+    "h": 1440
+  },
+  "js01/prop/tablet": {
+    "w": 1053,
+    "h": 1200
+  },
+  "js01/prop/coffee-cup": {
+    "w": 692,
+    "h": 1200
+  },
+  "js01/prop/calculator": {
+    "w": 872,
+    "h": 836
+  },
+  "js01/prop/acorn": {
+    "w": 938,
+    "h": 1200
+  },
+  "js01/monkey/normal": {
+    "w": 1081,
+    "h": 1500
+  },
+  "js01/monkey/count": {
+    "w": 1185,
+    "h": 1500
+  },
   "md01/campowner/normal": {
     "w": 868,
     "h": 1500

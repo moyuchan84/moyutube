@@ -1,0 +1,186 @@
+{
+  "rawVoice": true,
+  "speed": 1.2,
+  "title": "조삼모사 ① 커피 한 잔 vs 태블릿 · 같은 돈인데 왜 다르게 느껴질까",
+  "bgm": "seesaw",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "훅",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "부부가 신형 태블릿 가격표를 봤다.",
+          "en": "A couple looked at the price tag on a new tablet."
+        },
+        {
+          "who": "dad",
+          "text": "백오십만 원? 미쳤네. 이걸 어떻게 사.",
+          "en": "One point five million won? Insane. How could anyone buy this?"
+        },
+        {
+          "who": "mom",
+          "text": "그러게. 너무 비싸다.",
+          "en": "Right? Way too expensive."
+        },
+        {
+          "who": "narr",
+          "text": "5분 뒤, 카페.",
+          "tts": "오 분 뒤, 카페.",
+          "en": "Five minutes later, at a café."
+        },
+        {
+          "who": "dad",
+          "text": "아이스 아메리카노 한 잔요!",
+          "en": "One iced americano, please!"
+        },
+        {
+          "who": "mom",
+          "text": "…또 커피야?",
+          "en": "…Coffee again?"
+        }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "질문",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "같은 부부, 같은 지갑, 같은 돈.",
+          "en": "Same couple, same wallet, same money."
+        },
+        {
+          "who": "narr",
+          "text": "오늘의 조삼모사.",
+          "en": "Today's \"Three in the Morning, Four at Night.\""
+        }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "반반 화면",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "왼쪽. 아침의 아빠.",
+          "en": "Left. Morning Dad."
+        },
+        {
+          "who": "dad",
+          "text": "한 번에 백오십만 원이라니! 내 월급이!",
+          "en": "One point five million at once?! My paycheck!"
+        },
+        {
+          "who": "narr",
+          "text": "오른쪽. 저녁의 아빠.",
+          "en": "Right. Evening Dad."
+        },
+        {
+          "who": "dad",
+          "text": "하루 사천오백 원인데 뭘. 기분이다!",
+          "en": "It's only forty-five hundred a day. Treat yourself!"
+        }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "엄마가 곱한다",
+      "lines": [
+        {
+          "who": "mom",
+          "text": "잠깐. 내가 곱해 볼게.",
+          "en": "Wait. Let me multiply."
+        },
+        {
+          "who": "mom",
+          "text": "하루 4,500원. 일주일 31,500원. 한 달 135,000원.",
+          "tts": "하루 사천오백 원. 일주일 삼만 천오백 원. 한 달 십삼만 오천 원.",
+          "en": "4,500 a day. 31,500 a week. 135,000 a month."
+        },
+        {
+          "who": "mom",
+          "text": "그리고 1년… 1,642,500원.",
+          "tts": "그리고 일 년… 백육십사만 이천오백 원.",
+          "en": "And a year… 1,642,500 won."
+        },
+        {
+          "who": "dad",
+          "text": "…어? 태블릿보다 비싸네?",
+          "en": "…Huh? That's more than the tablet?"
+        }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "거꾸로 쪼개기",
+      "lines": [
+        {
+          "who": "mom",
+          "text": "반대로 태블릿을 3년 쓰면? 150만 원 나누기 1,095일.",
+          "tts": "반대로 태블릿을 삼 년 쓰면? 백오십만 원 나누기 천구십오 일.",
+          "en": "Flip it. Use the tablet for three years? 1.5 million divided by 1,095 days."
+        },
+        {
+          "who": "dad",
+          "text": "하루 천삼백칠십 원…?",
+          "en": "About 1,370 won a day…?"
+        },
+        {
+          "who": "mom",
+          "text": "커피 한 잔의, 삼분의 일이네.",
+          "en": "A third of one coffee."
+        }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "남는 것",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "같은 돈도 한 번에 말하면 커 보이고, 하루치로 말하면 작아 보인다.",
+          "en": "The same money looks big said all at once, small said by the day."
+        },
+        {
+          "who": "narr",
+          "text": "아끼라는 말이 아니다. 말에 속지 말라는 말이다.",
+          "en": "This isn't \"spend less.\" It's \"don't be fooled by wording.\""
+        }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "엔딩",
+      "lines": [
+        {
+          "who": "mom",
+          "text": "그럼 12개월 무이자 할부로 사요. 한 달에 125,000원이면 되네!",
+          "tts": "그럼 십이 개월 무이자 할부로 사요. 한 달에 십이만 오천 원이면 되네!",
+          "en": "Then 12 interest-free installments. Just 125,000 a month!"
+        },
+        {
+          "who": "dad",
+          "text": "여보… 그것도 쪼갠 거야.",
+          "en": "Honey… that's just slicing it too."
+        },
+        {
+          "who": "mom",
+          "text": "…방금 말 취소.",
+          "en": "…Forget I said that."
+        }
+      ]
+    },
+    {
+      "id": "c07",
+      "beat": "원숭이 카드",
+      "lines": [
+        {
+          "who": "narr",
+          "text": "아침에 셋, 저녁에 넷. 아침에 넷, 저녁에 셋. 도토리는, 일곱 개 그대로.",
+          "en": "Three in the morning, four at night. Four in the morning, three at night. Seven acorns, either way."
+        }
+      ]
+    }
+  ]
+}

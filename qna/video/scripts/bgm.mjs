@@ -598,6 +598,31 @@ const SONGS = {
       add(at(0, 0), bowl(N("A3"), beat * 6), 0.2);
     },
   },
+
+  seesaw: {
+    desc: "시소 — 한 마디는 가라앉는 단조, 한 마디는 떠오르는 장조가 번갈아 오가는 말랑한 마림바풍 (조삼모사 ① 커피 vs 태블릿)",
+    bpm: 100,
+    bars: 8,
+    swing: 0.1,
+    render(add, at, beat) {
+      const N = NOTE;
+      // 짝수 마디는 아래로 (Am · G · F · E), 홀수 마디는 위로 (C · D · G · C) — 두 칸을 오가는 시소
+      const DOWN = [["A2", ["A3", "C4", "E4"]], ["G2", ["G3", "B3", "D4"]], ["F2", ["F3", "A3", "C4"]], ["E2", ["E3", "G#3", "B3"]]];
+      const UP = [["C3", ["E4", "G4", "C5"]], ["D3", ["F#4", "A4", "D5"]], ["G3", ["B4", "D5", "G5"]], ["C3", ["E4", "G4", "C5"]]];
+      for (let bar = 0; bar < 8; bar++) {
+        const [root, notes] = (bar % 2 ? UP : DOWN)[Math.floor(bar / 2)];
+        add(at(bar, 0), pluck(N(root), 0.8, 0.3), 0.5);
+        add(at(bar, 2), pluck(N(root) * 1.5 > 400 ? N(root) : N(root) * 1.5, 0.6, 0.3), 0.32);
+        // 마림바 쪼개기: 내려가는 마디는 느리게, 올라가는 마디는 빠르게
+        const grid = bar % 2 ? [0.5, 1, 1.5, 2, 2.5, 3, 3.5] : [1, 3];
+        grid.forEach((b, i) => add(at(bar, b), triangle(N(notes[i % 3]), beat * 0.45), bar % 2 ? 0.2 : 0.16));
+        for (let k = 0; k < 4; k++) add(at(bar, k + 0.5), shaker(0.05, 90), 0.06);
+      }
+      // 짧은 가락 [마디, 박, 음]
+      const TUNE = [[0, 3, "E5"], [1, 0, "G5"], [2, 3, "C5"], [3, 0, "E5"], [4, 3, "A4"], [5, 0, "D5"], [6, 3, "G4"], [7, 0, "C5"]];
+      for (const [bar, b, n] of TUNE) add(at(bar, b), pluck(N(n), 0.6, 0.7), 0.18);
+    },
+  },
 };
 
 // ── 만들기 ──────────────────────────────────────────────
