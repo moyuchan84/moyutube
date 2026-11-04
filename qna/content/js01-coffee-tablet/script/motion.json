@@ -1,0 +1,1944 @@
+{
+  "id": "Js01-Josammosa",
+  "episode": "js01",
+  "voice": "js01",
+  "bgm": "seesaw",
+  "gap": 0,
+  "chop": 42,
+  "thumb": {
+    "badge": "조삼모사 ①",
+    "layers": [
+      {
+        "bg": "burst:#FFF8E1:#FFD54F"
+      },
+      {
+        "fx": "lines",
+        "x": 640,
+        "y": 380
+      },
+      {
+        "img": "common/dad/shock",
+        "sticker": true,
+        "x": 300,
+        "y": 440,
+        "h": 640,
+        "rot": -3
+      },
+      {
+        "img": "prop/coffee-cup",
+        "sticker": true,
+        "x": 900,
+        "y": 420,
+        "h": 520,
+        "rot": 6
+      },
+      {
+        "text": "150만 원은 비싸고",
+        "x": 880,
+        "y": 110,
+        "size": 70,
+        "rot": -3
+      },
+      {
+        "text": "커피는 싸다?",
+        "style": "stamp",
+        "x": 900,
+        "y": 650,
+        "size": 100,
+        "rot": -6
+      }
+    ],
+    "vertical": {
+      "layers": [
+        {
+          "bg": "burst:#FFF8E1:#FFD54F",
+          "x": 540,
+          "y": 1050
+        },
+        {
+          "fx": "lines",
+          "x": 540,
+          "y": 1100
+        },
+        {
+          "text": "150만 원은",
+          "x": 540,
+          "y": 330,
+          "size": 170,
+          "rot": -3
+        },
+        {
+          "text": "비싸다더니?",
+          "style": "stamp",
+          "x": 540,
+          "y": 540,
+          "size": 170,
+          "rot": -5
+        },
+        {
+          "img": "prop/tablet",
+          "sticker": true,
+          "x": 270,
+          "y": 1250,
+          "h": 620,
+          "rot": -6
+        },
+        {
+          "img": "prop/coffee-cup",
+          "sticker": true,
+          "x": 800,
+          "y": 1280,
+          "h": 700,
+          "rot": 6
+        },
+        {
+          "text": "= 커피값 1년",
+          "style": "stamp",
+          "x": 540,
+          "y": 1700,
+          "size": 130,
+          "rot": -3
+        },
+        {
+          "fx": "kira",
+          "x": 300,
+          "y": 900
+        }
+      ]
+    }
+  },
+  "beats": [
+    {
+      "line": "c00-0",
+      "shots": [
+        {
+          "in": "flash",
+          "bg": "bg/appliance-shop",
+          "cam": {
+            "from": [
+              0.5,
+              0.55,
+              1.5
+            ],
+            "to": [
+              0.5,
+              0.55,
+              1.25
+            ],
+            "ease": "snap"
+          },
+          "props": [
+            {
+              "art": "prop/tablet",
+              "x": 0.5,
+              "y": 0.56,
+              "w": 0.22,
+              "enter": "pop",
+              "rot": -6
+            }
+          ],
+          "text": [
+            {
+              "t": "1,500,000원",
+              "y": 0.12,
+              "size": 150,
+              "color": "#FFFFFF",
+              "style": "slam"
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "stamp"
+            }
+          ]
+        },
+        {
+          "at": 0.5,
+          "in": "whip-r",
+          "bg": "bg/appliance-shop",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.05
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.15
+            ]
+          },
+          "cast": [
+            {
+              "art": "common/mom/normal",
+              "x": 0.3,
+              "h": 0.95,
+              "talk": "mom",
+              "enter": "pop",
+              "flip": true
+            },
+            {
+              "art": "common/dad/normal",
+              "x": 0.7,
+              "h": 0.95,
+              "talk": "dad",
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "신형 태블릿",
+              "y": 0.13,
+              "size": 110,
+              "color": "#FFD23F",
+              "style": "stamp"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "whoosh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00-1",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "bg/appliance-shop",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.1
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.3
+            ],
+            "ease": "snap"
+          },
+          "cast": [
+            {
+              "art": "common/dad/shock",
+              "x": 0.5,
+              "h": 0.95,
+              "talk": "dad",
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "미쳤네",
+              "y": 0.14,
+              "size": 150,
+              "color": "#E63946",
+              "style": "shake"
+            }
+          ],
+          "fx": [
+            "lines"
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        },
+        {
+          "at": 0.55,
+          "in": "zoom",
+          "bg": "bg/appliance-shop",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.3
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.5
+            ]
+          },
+          "cast": [
+            {
+              "art": "common/dad/panic",
+              "x": 0.5,
+              "h": 0.95,
+              "talk": "dad",
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "이걸 어떻게 사?",
+              "y": 0.86,
+              "size": 100,
+              "color": "#FFFFFF",
+              "style": "pop"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00-2",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "bg/appliance-shop",
+          "cast": [
+            {
+              "art": "common/mom/normal",
+              "x": 0.5,
+              "h": 0.95,
+              "talk": "mom",
+              "enter": "pop",
+              "flip": false
+            }
+          ],
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.1
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.25
+            ]
+          },
+          "text": [
+            {
+              "t": "너무 비싸다",
+              "y": 0.13,
+              "size": 110,
+              "color": "#FFFFFF",
+              "style": "pop"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00-3",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "#15303A",
+          "text": [
+            {
+              "t": "5분 뒤",
+              "y": 0.5,
+              "size": 200,
+              "color": "#FFD23F",
+              "style": "slam"
+            },
+            {
+              "t": "카페",
+              "y": 0.78,
+              "size": 110,
+              "color": "#FFFFFF",
+              "style": "pop",
+              "at": 0.4
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00-4",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "bg/cafe-counter",
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.1
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.25
+            ]
+          },
+          "cast": [
+            {
+              "art": "common/dad/proud",
+              "x": 0.6,
+              "h": 0.95,
+              "talk": "dad",
+              "enter": "pop"
+            }
+          ],
+          "props": [
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.25,
+              "y": 0.6,
+              "w": 0.2,
+              "enter": "pop",
+              "rot": -8,
+              "at": 3
+            }
+          ],
+          "text": [
+            {
+              "t": "한 잔요!",
+              "y": 0.13,
+              "size": 130,
+              "color": "#FFD23F",
+              "style": "stamp"
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c00-5",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "bg/cafe-counter",
+          "cast": [
+            {
+              "art": "common/cutin/mom-smirk",
+              "x": 0.5,
+              "h": 1,
+              "talk": "mom",
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "…또 커피야?",
+              "y": 0.86,
+              "size": 110,
+              "color": "#FFFFFF",
+              "style": "shake"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "scratch"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c01-0",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "burst:#FFD23F:#FFB627",
+          "cast": [
+            {
+              "art": "common/mom/normal",
+              "x": 0.28,
+              "h": 0.95,
+              "talk": "mom",
+              "enter": "pop",
+              "flip": true
+            },
+            {
+              "art": "common/dad/normal",
+              "x": 0.72,
+              "h": 0.95,
+              "talk": "dad",
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "같은 부부",
+              "y": 0.12,
+              "size": 100,
+              "color": "#15303A",
+              "style": "pop"
+            },
+            {
+              "t": "같은 지갑 · 같은 돈",
+              "y": 0.88,
+              "size": 100,
+              "color": "#E8590C",
+              "style": "stamp",
+              "at": 0.45
+            }
+          ],
+          "fx": [
+            "lines"
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            },
+            {
+              "name": "stamp",
+              "at": 0.45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c01-1",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "#15303A",
+          "text": [
+            {
+              "t": "조삼모사 ①",
+              "y": 0.45,
+              "size": 190,
+              "color": "#FFD23F",
+              "style": "stamp"
+            },
+            {
+              "t": "朝三暮四",
+              "y": 0.72,
+              "size": 110,
+              "color": "#FFFFFF",
+              "style": "pop",
+              "at": 0.4
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "stamp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-0",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "stripes:#1F5FA8:#2A6FBF",
+          "text": [
+            {
+              "t": "왼쪽",
+              "y": 0.35,
+              "size": 180,
+              "color": "#FFFFFF",
+              "style": "slam"
+            },
+            {
+              "t": "아침의 아빠",
+              "y": 0.68,
+              "size": 120,
+              "color": "#FFD23F",
+              "style": "pop",
+              "at": 0.4
+            }
+          ],
+          "sfx": [
+            {
+              "name": "whoosh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-1",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "stripes:#1F5FA8:#2A6FBF",
+          "cast": [
+            {
+              "art": "common/dad/shock",
+              "x": 0.5,
+              "h": 0.95,
+              "talk": "dad",
+              "enter": "pop"
+            }
+          ],
+          "props": [
+            {
+              "art": "prop/tablet",
+              "x": 0.82,
+              "y": 0.55,
+              "w": 0.2,
+              "enter": "pop",
+              "rot": 8
+            }
+          ],
+          "text": [
+            {
+              "t": "한 번에 1,500,000원",
+              "y": 0.12,
+              "size": 110,
+              "color": "#FFFFFF",
+              "style": "shake"
+            }
+          ],
+          "fx": [
+            "lines"
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        },
+        {
+          "at": 0.6,
+          "in": "zoom",
+          "bg": "stripes:#1F5FA8:#2A6FBF",
+          "cast": [
+            {
+              "art": "common/dad/panic",
+              "x": 0.5,
+              "h": 0.95,
+              "talk": "dad",
+              "enter": "pop"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.1
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.35
+            ]
+          },
+          "text": [
+            {
+              "t": "내 월급이!",
+              "y": 0.14,
+              "size": 140,
+              "color": "#FFD23F",
+              "style": "slam"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "buzz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-2",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "stripes:#E8789C:#F08AAA",
+          "text": [
+            {
+              "t": "오른쪽",
+              "y": 0.35,
+              "size": 180,
+              "color": "#FFFFFF",
+              "style": "slam"
+            },
+            {
+              "t": "저녁의 아빠",
+              "y": 0.68,
+              "size": 120,
+              "color": "#15303A",
+              "style": "pop",
+              "at": 0.4
+            }
+          ],
+          "sfx": [
+            {
+              "name": "whoosh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c02-3",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "stripes:#E8789C:#F08AAA",
+          "cast": [
+            {
+              "art": "common/dad/proud",
+              "x": 0.5,
+              "h": 0.95,
+              "talk": "dad",
+              "enter": "pop"
+            }
+          ],
+          "props": [
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.8,
+              "y": 0.55,
+              "w": 0.2,
+              "enter": "pop",
+              "rot": -8
+            }
+          ],
+          "text": [
+            {
+              "t": "하루 4,500원",
+              "y": 0.12,
+              "size": 120,
+              "color": "#FFFFFF",
+              "style": "stamp"
+            },
+            {
+              "t": "기분이다!",
+              "y": 0.88,
+              "size": 120,
+              "color": "#15303A",
+              "style": "pop",
+              "at": 0.5
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "ding"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-0",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "dots:#F6EEDF:#E8DCC4",
+          "cast": [
+            {
+              "art": "common/mom/explain",
+              "x": 0.3,
+              "h": 0.95,
+              "talk": "mom",
+              "enter": "pop",
+              "flip": true
+            }
+          ],
+          "props": [
+            {
+              "art": "prop/calculator",
+              "x": 0.72,
+              "y": 0.55,
+              "w": 0.34,
+              "enter": "pop",
+              "rot": 6
+            }
+          ],
+          "text": [
+            {
+              "t": "내가 곱해 볼게",
+              "y": 0.12,
+              "size": 100,
+              "color": "#15303A",
+              "style": "pop"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-1",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "dots:#F6EEDF:#E8DCC4",
+          "cast": [
+            {
+              "art": "common/mom/explain",
+              "x": 0.25,
+              "h": 0.95,
+              "talk": "mom",
+              "enter": "pop",
+              "flip": true
+            }
+          ],
+          "props": [
+            {
+              "art": "prop/calculator",
+              "x": 0.7,
+              "y": 0.55,
+              "w": 0.3,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.9,
+              "y": 0.2,
+              "w": 0.1,
+              "enter": "pop",
+              "at": 6
+            }
+          ],
+          "text": [
+            {
+              "t": "하루 4,500원",
+              "y": 0.12,
+              "size": 120,
+              "color": "#15303A",
+              "style": "stamp"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "tick"
+            }
+          ]
+        },
+        {
+          "at": 0.32,
+          "in": "whip-r",
+          "bg": "dots:#F6EEDF:#E8DCC4",
+          "cast": [
+            {
+              "art": "common/mom/explain",
+              "x": 0.25,
+              "h": 0.95,
+              "talk": "mom",
+              "enter": "pop",
+              "flip": true
+            }
+          ],
+          "props": [
+            {
+              "art": "prop/calculator",
+              "x": 0.7,
+              "y": 0.55,
+              "w": 0.3,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.5,
+              "y": 0.18,
+              "w": 0.09,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.58,
+              "y": 0.18,
+              "w": 0.09,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.66,
+              "y": 0.18,
+              "w": 0.09,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.74,
+              "y": 0.18,
+              "w": 0.09,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.82,
+              "y": 0.18,
+              "w": 0.09,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.9,
+              "y": 0.18,
+              "w": 0.09,
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "일주일 31,500원",
+              "y": 0.12,
+              "size": 110,
+              "color": "#E8590C",
+              "style": "stamp"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "tick"
+            }
+          ]
+        },
+        {
+          "at": 0.66,
+          "in": "whip-r",
+          "bg": "dots:#F6EEDF:#E8DCC4",
+          "cast": [
+            {
+              "art": "common/mom/explain",
+              "x": 0.25,
+              "h": 0.95,
+              "talk": "mom",
+              "enter": "pop",
+              "flip": true
+            }
+          ],
+          "props": [
+            {
+              "art": "prop/calculator",
+              "x": 0.7,
+              "y": 0.55,
+              "w": 0.3,
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "한 달 135,000원",
+              "y": 0.12,
+              "size": 110,
+              "color": "#E63946",
+              "style": "stamp"
+            }
+          ],
+          "fx": [
+            "shake"
+          ],
+          "sfx": [
+            {
+              "name": "tick"
+            },
+            {
+              "name": "pang",
+              "at": 0.3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-2",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "#15303A",
+          "text": [
+            {
+              "t": "그리고 1년…",
+              "y": 0.5,
+              "size": 150,
+              "color": "#FFFFFF",
+              "style": "type"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "tick"
+            }
+          ]
+        },
+        {
+          "at": 0.42,
+          "in": "flash",
+          "bg": "burst:#FFD23F:#FFB627",
+          "props": [
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.14,
+              "y": 0.78,
+              "w": 0.11,
+              "enter": "pop",
+              "at": 2
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.245,
+              "y": 0.78,
+              "w": 0.11,
+              "enter": "pop",
+              "at": 3
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.35,
+              "y": 0.78,
+              "w": 0.11,
+              "enter": "pop",
+              "at": 4
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.455,
+              "y": 0.78,
+              "w": 0.11,
+              "enter": "pop",
+              "at": 5
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.56,
+              "y": 0.78,
+              "w": 0.11,
+              "enter": "pop",
+              "at": 6
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.665,
+              "y": 0.78,
+              "w": 0.11,
+              "enter": "pop",
+              "at": 7
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.77,
+              "y": 0.78,
+              "w": 0.11,
+              "enter": "pop",
+              "at": 8
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.875,
+              "y": 0.78,
+              "w": 0.11,
+              "enter": "pop",
+              "at": 9
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.19,
+              "y": 0.5800000000000001,
+              "w": 0.11,
+              "enter": "pop",
+              "at": 5
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.295,
+              "y": 0.5800000000000001,
+              "w": 0.11,
+              "enter": "pop",
+              "at": 6
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.39999999999999997,
+              "y": 0.5800000000000001,
+              "w": 0.11,
+              "enter": "pop",
+              "at": 7
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.505,
+              "y": 0.5800000000000001,
+              "w": 0.11,
+              "enter": "pop",
+              "at": 8
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.6100000000000001,
+              "y": 0.5800000000000001,
+              "w": 0.11,
+              "enter": "pop",
+              "at": 9
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.7150000000000001,
+              "y": 0.5800000000000001,
+              "w": 0.11,
+              "enter": "pop",
+              "at": 10
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.8200000000000001,
+              "y": 0.5800000000000001,
+              "w": 0.11,
+              "enter": "pop",
+              "at": 11
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.925,
+              "y": 0.5800000000000001,
+              "w": 0.11,
+              "enter": "pop",
+              "at": 12
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.14,
+              "y": 0.38,
+              "w": 0.11,
+              "enter": "pop",
+              "at": 8
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.245,
+              "y": 0.38,
+              "w": 0.11,
+              "enter": "pop",
+              "at": 9
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.35,
+              "y": 0.38,
+              "w": 0.11,
+              "enter": "pop",
+              "at": 10
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.455,
+              "y": 0.38,
+              "w": 0.11,
+              "enter": "pop",
+              "at": 11
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.56,
+              "y": 0.38,
+              "w": 0.11,
+              "enter": "pop",
+              "at": 12
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.665,
+              "y": 0.38,
+              "w": 0.11,
+              "enter": "pop",
+              "at": 13
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.77,
+              "y": 0.38,
+              "w": 0.11,
+              "enter": "pop",
+              "at": 14
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.875,
+              "y": 0.38,
+              "w": 0.11,
+              "enter": "pop",
+              "at": 15
+            }
+          ],
+          "text": [
+            {
+              "t": "1,642,500원",
+              "y": 0.2,
+              "size": 170,
+              "color": "#E63946",
+              "style": "slam",
+              "at": 0.1
+            }
+          ],
+          "fx": [
+            "shake",
+            "lines"
+          ],
+          "sfx": [
+            {
+              "name": "crash"
+            },
+            {
+              "name": "stamp",
+              "at": 0.1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c03-3",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "burst:#FFD23F:#FFB627",
+          "cast": [
+            {
+              "art": "common/dad/shock",
+              "x": 0.3,
+              "h": 0.95,
+              "talk": "dad",
+              "enter": "pop"
+            }
+          ],
+          "props": [
+            {
+              "art": "prop/tablet",
+              "x": 0.8,
+              "y": 0.6,
+              "w": 0.16,
+              "enter": "pop",
+              "rot": 8
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.62,
+              "y": 0.62,
+              "w": 0.1,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.68,
+              "y": 0.45,
+              "w": 0.1,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.74,
+              "y": 0.28,
+              "w": 0.1,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.86,
+              "y": 0.3,
+              "w": 0.1,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.92,
+              "y": 0.5,
+              "w": 0.1,
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "태블릿보다 비싸?",
+              "y": 0.12,
+              "size": 100,
+              "color": "#15303A",
+              "style": "shake"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-0",
+      "shots": [
+        {
+          "in": "whip-l",
+          "bg": "dots:#F6EEDF:#E8DCC4",
+          "cast": [
+            {
+              "art": "common/mom/explain",
+              "x": 0.28,
+              "h": 0.95,
+              "talk": "mom",
+              "enter": "pop",
+              "flip": true
+            }
+          ],
+          "props": [
+            {
+              "art": "prop/tablet",
+              "x": 0.72,
+              "y": 0.55,
+              "w": 0.25,
+              "enter": "pop",
+              "rot": 6
+            }
+          ],
+          "text": [
+            {
+              "t": "반대로 태블릿을 3년 쓰면?",
+              "y": 0.12,
+              "size": 90,
+              "color": "#15303A",
+              "style": "pop"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        },
+        {
+          "at": 0.45,
+          "in": "cut",
+          "bg": "#15303A",
+          "props": [
+            {
+              "art": "prop/calculator",
+              "x": 0.5,
+              "y": 0.72,
+              "w": 0.2,
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "1,500,000 ÷ 1,095",
+              "y": 0.4,
+              "size": 120,
+              "color": "#FFFFFF",
+              "style": "type"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "tick"
+            }
+          ]
+        },
+        {
+          "at": 0.8,
+          "in": "zoom",
+          "bg": "#15303A",
+          "text": [
+            {
+              "t": "= ?",
+              "y": 0.5,
+              "size": 200,
+              "color": "#FFD23F",
+              "style": "pop"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-1",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "burst:#FFD23F:#FFB627",
+          "cast": [
+            {
+              "art": "common/dad/think",
+              "x": 0.5,
+              "h": 0.95,
+              "talk": "dad",
+              "enter": "pop"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.1
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.3
+            ]
+          },
+          "text": [
+            {
+              "t": "하루 1,370원?",
+              "y": 0.12,
+              "size": 130,
+              "color": "#15303A",
+              "style": "stamp"
+            }
+          ],
+          "fx": [
+            "lines"
+          ],
+          "sfx": [
+            {
+              "name": "ding"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c04-2",
+      "shots": [
+        {
+          "in": "whip-r",
+          "bg": "dots:#F6EEDF:#E8DCC4",
+          "cast": [
+            {
+              "art": "common/mom/smirk",
+              "x": 0.3,
+              "h": 0.95,
+              "talk": "mom",
+              "enter": "pop",
+              "flip": true
+            }
+          ],
+          "props": [
+            {
+              "art": "prop/coffee-cup",
+              "x": 0.72,
+              "y": 0.55,
+              "w": 0.26,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/tablet",
+              "x": 0.9,
+              "y": 0.75,
+              "w": 0.12,
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "커피 한 잔의 1/3",
+              "y": 0.12,
+              "size": 110,
+              "color": "#15303A",
+              "style": "stamp"
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "ding"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-0",
+      "shots": [
+        {
+          "in": "wipe",
+          "bg": "#15303A",
+          "text": [
+            {
+              "t": "한 번에 = 커 보임",
+              "y": 0.4,
+              "size": 110,
+              "color": "#E63946",
+              "style": "stamp"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp"
+            }
+          ]
+        },
+        {
+          "at": 0.5,
+          "in": "cut",
+          "bg": "#15303A",
+          "text": [
+            {
+              "t": "한 번에 = 커 보임",
+              "y": 0.3,
+              "size": 100,
+              "color": "#E63946",
+              "style": "pop"
+            },
+            {
+              "t": "하루치 = 작아 보임",
+              "y": 0.62,
+              "size": 110,
+              "color": "#FFD23F",
+              "style": "stamp",
+              "at": 0.15
+            }
+          ],
+          "sfx": [
+            {
+              "name": "stamp"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c05-1",
+      "shots": [
+        {
+          "in": "cut",
+          "bg": "#15303A",
+          "text": [
+            {
+              "t": "아끼라는 말 ✕",
+              "y": 0.4,
+              "size": 130,
+              "color": "#E63946",
+              "style": "stamp"
+            }
+          ],
+          "mark": {
+            "kind": "x",
+            "at": 6
+          },
+          "sfx": [
+            {
+              "name": "buzz"
+            }
+          ]
+        },
+        {
+          "at": 0.5,
+          "in": "cut",
+          "bg": "#15303A",
+          "text": [
+            {
+              "t": "말에 속지 말라 ○",
+              "y": 0.5,
+              "size": 120,
+              "color": "#FFD23F",
+              "style": "stamp"
+            }
+          ],
+          "mark": {
+            "kind": "o",
+            "at": 4
+          },
+          "sfx": [
+            {
+              "name": "ding"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06-0",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "burst:#FFD23F:#FFB627",
+          "cast": [
+            {
+              "art": "common/mom/explain",
+              "x": 0.3,
+              "h": 0.95,
+              "talk": "mom",
+              "enter": "pop",
+              "flip": true
+            }
+          ],
+          "props": [
+            {
+              "art": "prop/tablet",
+              "x": 0.78,
+              "y": 0.55,
+              "w": 0.2,
+              "enter": "pop",
+              "rot": 6
+            }
+          ],
+          "text": [
+            {
+              "t": "12개월 무이자!",
+              "y": 0.12,
+              "size": 110,
+              "color": "#15303A",
+              "style": "stamp"
+            }
+          ],
+          "fx": [
+            "kira"
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        },
+        {
+          "at": 0.55,
+          "in": "cut",
+          "bg": "burst:#FFD23F:#FFB627",
+          "cast": [
+            {
+              "art": "common/mom/explain",
+              "x": 0.3,
+              "h": 0.95,
+              "talk": "mom",
+              "enter": "pop",
+              "flip": true
+            }
+          ],
+          "text": [
+            {
+              "t": "월 125,000원이면 되네!",
+              "y": 0.14,
+              "size": 100,
+              "color": "#E8590C",
+              "style": "pop"
+            },
+            {
+              "t": "= 총 1,500,000원",
+              "y": 0.88,
+              "size": 100,
+              "color": "#15303A",
+              "style": "stamp",
+              "at": 0.5
+            }
+          ],
+          "sfx": [
+            {
+              "name": "ding"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06-1",
+      "shots": [
+        {
+          "in": "slam",
+          "bg": "#15303A",
+          "cast": [
+            {
+              "art": "common/dad/shock",
+              "x": 0.5,
+              "h": 0.95,
+              "talk": "dad",
+              "enter": "pop"
+            }
+          ],
+          "cam": {
+            "from": [
+              0.5,
+              0.5,
+              1.1
+            ],
+            "to": [
+              0.5,
+              0.5,
+              1.3
+            ]
+          },
+          "text": [
+            {
+              "t": "그것도 쪼갠 거야",
+              "y": 0.12,
+              "size": 110,
+              "color": "#FFD23F",
+              "style": "shake"
+            }
+          ],
+          "fx": [
+            "lines"
+          ],
+          "sfx": [
+            {
+              "name": "boing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c06-2",
+      "shots": [
+        {
+          "in": "smash",
+          "bg": "#15303A",
+          "cast": [
+            {
+              "art": "common/cutin/mom-sigh",
+              "x": 0.5,
+              "h": 1,
+              "talk": "mom",
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "취소",
+              "y": 0.14,
+              "size": 170,
+              "color": "#E63946",
+              "style": "stamp"
+            }
+          ],
+          "mark": {
+            "kind": "x",
+            "at": 4
+          },
+          "sfx": [
+            {
+              "name": "buzz"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "line": "c07-0",
+      "shots": [
+        {
+          "in": "iris",
+          "bg": "dots:#E8D8B0:#DCC89A",
+          "cast": [
+            {
+              "art": "monkey/normal",
+              "x": 0.3,
+              "h": 0.95,
+              "enter": "pop"
+            }
+          ],
+          "props": [
+            {
+              "art": "prop/acorn",
+              "x": 0.78,
+              "y": 0.5,
+              "w": 0.14,
+              "enter": "pop",
+              "rot": -10
+            }
+          ],
+          "text": [
+            {
+              "t": "조삼모사",
+              "y": 0.1,
+              "size": 100,
+              "color": "#15303A",
+              "style": "pop"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "bowl"
+            }
+          ]
+        },
+        {
+          "at": 0.35,
+          "in": "cut",
+          "bg": "dots:#E8D8B0:#DCC89A",
+          "cast": [
+            {
+              "art": "monkey/count",
+              "x": 0.3,
+              "h": 0.95,
+              "enter": "pop"
+            }
+          ],
+          "props": [
+            {
+              "art": "prop/acorn",
+              "x": 0.7,
+              "y": 0.45,
+              "w": 0.1,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/acorn",
+              "x": 0.78,
+              "y": 0.45,
+              "w": 0.1,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/acorn",
+              "x": 0.86,
+              "y": 0.45,
+              "w": 0.1,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/acorn",
+              "x": 0.7,
+              "y": 0.7,
+              "w": 0.1,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/acorn",
+              "x": 0.78,
+              "y": 0.7,
+              "w": 0.1,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/acorn",
+              "x": 0.86,
+              "y": 0.7,
+              "w": 0.1,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/acorn",
+              "x": 0.94,
+              "y": 0.7,
+              "w": 0.1,
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "아침 3 + 저녁 4",
+              "y": 0.1,
+              "size": 100,
+              "color": "#15303A",
+              "style": "pop"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "pop"
+            }
+          ]
+        },
+        {
+          "at": 0.7,
+          "in": "cut",
+          "bg": "dots:#E8D8B0:#DCC89A",
+          "cast": [
+            {
+              "art": "monkey/count",
+              "x": 0.3,
+              "h": 0.95,
+              "flip": true
+            }
+          ],
+          "props": [
+            {
+              "art": "prop/acorn",
+              "x": 0.7,
+              "y": 0.45,
+              "w": 0.1,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/acorn",
+              "x": 0.78,
+              "y": 0.45,
+              "w": 0.1,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/acorn",
+              "x": 0.86,
+              "y": 0.45,
+              "w": 0.1,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/acorn",
+              "x": 0.94,
+              "y": 0.45,
+              "w": 0.1,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/acorn",
+              "x": 0.7,
+              "y": 0.7,
+              "w": 0.1,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/acorn",
+              "x": 0.78,
+              "y": 0.7,
+              "w": 0.1,
+              "enter": "pop"
+            },
+            {
+              "art": "prop/acorn",
+              "x": 0.86,
+              "y": 0.7,
+              "w": 0.1,
+              "enter": "pop"
+            }
+          ],
+          "text": [
+            {
+              "t": "도토리는 7개, 그대로",
+              "y": 0.12,
+              "size": 100,
+              "color": "#E8590C",
+              "style": "stamp"
+            }
+          ],
+          "sfx": [
+            {
+              "name": "ding"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

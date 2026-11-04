@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>조삼모사 ① 커피 한 잔 vs 태블릿</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐒</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<style>
+:root{
+  --paper:#E9EDE8; --surface:#F6F8F4; --surface-2:#DFE6DE;
+  --ink:#1B2A26; --pencil:#66756E; --rule:#C4D0C6;
+  --red:#B8352A; --red-soft:#E8CFCB; --maxw:860px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:'Pretendard Variable',Pretendard,-apple-system,sans-serif;
+  font-size:16px;line-height:1.75;letter-spacing:-0.01em}
+h1,h2,h3{font-family:'Gowun Batang',serif;font-weight:700;line-height:1.35;margin:0}
+p{margin:0 0 0.9em}
+.page{max-width:var(--maxw);margin:0 auto;padding:0 20px 80px}
+.hero{padding:64px 0 40px;
+  background-image:repeating-linear-gradient(to bottom,transparent 0 37px,var(--rule) 37px 38px);
+  background-position:0 8px}
+.home{display:inline-block;font-size:13px;color:var(--pencil);text-decoration:none;border-bottom:1px solid var(--rule);margin-bottom:20px}
+.home:hover{color:var(--red);border-color:var(--red)}
+.eyebrow{font-size:13px;color:var(--pencil);margin:0 0 22px}
+.q-mark{font-family:'Nanum Pen Script',cursive;font-size:clamp(28px,5vw,40px);color:var(--red);display:block;margin-bottom:6px}
+.q-text{font-family:'Nanum Pen Script',cursive;font-size:clamp(30px,5.5vw,48px);line-height:1.45;margin:0 0 22px}
+.thesis{font-family:'Gowun Batang',serif;font-size:clamp(19px,3vw,26px);line-height:1.6;margin:0 0 8px}
+.thesis b{color:var(--red)}
+.q-text,.thesis{word-break:keep-all}
+section.block{margin:44px 0;max-width:800px}
+section.block.wide{max-width:none}
+section.block h3{font-size:18px;margin-bottom:14px;padding-left:13px;border-left:3px solid var(--red)}
+.body{font-size:15.5px}
+.body ul{padding-left:19px;margin:0 0 1em}
+.body li{margin-bottom:.45em}
+.beats{border-top:1px solid var(--rule)}
+.beat{display:grid;grid-template-columns:100px 1fr;gap:20px;padding:16px 0;border-bottom:1px solid var(--rule)}
+.beat-time{font-size:13px;color:var(--pencil);padding-top:3px;font-variant-numeric:tabular-nums}
+.beat-name{font-family:'Gowun Batang',serif;font-weight:700;font-size:16.5px;margin-bottom:5px}
+.beat-desc{font-size:14.5px;color:var(--pencil);white-space:pre-line}
+.beat.key .beat-name{color:var(--red)}
+.tbl{width:100%;border-collapse:collapse;font-size:14.5px;margin-bottom:14px}
+.tbl th,.tbl td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--rule);vertical-align:top}
+.tbl th{font-weight:600;font-size:13px;color:var(--pencil);border-bottom:1.5px solid var(--ink)}
+.wrap-x{overflow-x:auto}
+.cuts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.cut{margin:0;background:var(--surface);border:1px solid var(--rule);border-radius:2px;overflow:hidden}
+.cut svg{display:block;width:100%;height:auto;border-bottom:1px solid var(--rule)}
+.cut figcaption{padding:12px 16px 16px}
+.cut-no{display:block;font-family:'Gowun Batang',serif;font-weight:700;font-size:18px;color:var(--red);line-height:1.4}
+.cut-angle{display:inline-block;font-size:12px;color:var(--pencil);border:1px solid var(--rule);border-radius:2px;padding:0 7px;margin-top:6px}
+.cut-cap{display:block;font-size:16px;margin:8px 0 4px;line-height:1.55}
+.cut-desc{display:block;font-size:14px;color:var(--pencil);line-height:1.6}
+.thumb-label{font-size:13px;color:var(--pencil);margin:18px 0 8px}
+.thumb-list{display:flex;flex-direction:column;gap:8px;font-size:15px;padding-left:0;margin:0;list-style:none}
+.thumb-list li{background:var(--surface);border:1px solid var(--rule);padding:10px 14px;border-radius:2px}
+.summary-line{font-family:'Gowun Batang',serif;font-size:clamp(18px,2.6vw,22px);
+  background:var(--surface);border:1px solid var(--rule);padding:18px 22px;border-radius:2px}
+footer{border-top:1px solid var(--rule);margin-top:50px;padding-top:20px;font-size:13px;color:var(--pencil)}
+footer a{color:var(--red)}
+@media(max-width:640px){.beat{grid-template-columns:1fr;gap:4px}.beat-time{padding-top:0}}
+@media(max-width:600px){.cuts{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="page">
+  <a class="home" href="../../">← 여덟 살의 질문 홈</a>
+  <p class="eyebrow">모라구 · 조삼모사 1편 · 쇼츠 77초 · 2026.11</p>
+  <span class="q-mark">같은 돈, 다른 기분</span>
+  <p class="q-text">“150만 원 태블릿은 미쳤다면서,<br>하루 4,500원 커피는 왜 괜찮지?”</p>
+  <p class="thesis">같은 돈도 <b>한 번에</b> 말하면 커 보이고,<br><b>하루치</b>로 말하면 작아 보입니다.</p>
+</div></header>
+
+<main class="page">
+
+<section class="block">
+  <h3>이번 편의 구성</h3>
+  <div class="body"><ul>
+    <li><b>엄마가 계산기를 든다.</b> 부부가 태블릿 가격표 앞에서 “미쳤네”, 5분 뒤 카페에서 “아이스 아메리카노 한 잔요!”. 엄마가 하루 4,500원을 곱해 1년 1,642,500원, 태블릿보다 크다는 걸 보여 준다.</li>
+    <li><b>거꾸로 쪼개기.</b> 태블릿을 3년 쓰면 하루 약 1,370원, 커피 한 잔의 1/3. 아끼라는 말이 아니라 같은 단위로 맞춰 보자는 이야기.</li>
+    <li><b>엄마도 걸린다.</b> 엔딩에서 엄마가 “12개월 무이자 할부면 한 달 125,000원!” 하자 아빠가 “그것도 쪼갠 거야”. 화면에 총액 1,500,000원을 같이 깐다.</li>
+    <li><b>끝 카드는 원숭이.</b> 아침에 셋 저녁에 넷, 아침에 넷 저녁에 셋 — 도토리는 일곱 개 그대로.</li>
+    <li><b>선.</b> 브랜드 이름 없음, 투자 · 대출 조언 없음, 가격은 예시 값. 외부 통계는 쓰지 않고 직접 곱하고 나눈 값만 쓴다.</li>
+  </ul></div>
+</section>
+
+<section class="block">
+  <h3>계산 (직접 곱하고 나눈 값, 가격은 예시)</h3>
+  <div class="wrap-x"><table class="tbl">
+    <tr><th>식</th><th>값</th></tr>
+    <tr><td>4,500 × 7 / × 30 / × 365</td><td>31,500원 / 135,000원 / 1,642,500원</td></tr>
+    <tr><td>1,500,000 ÷ (365 × 3)</td><td>약 1,370원 (커피 한 잔의 1/3)</td></tr>
+    <tr><td>1,500,000 ÷ 12</td><td>125,000원 (엄마의 할부 — 총액은 그대로)</td></tr>
+  </table></div>
+</section>
+
+<section class="block wide">
+  <h3>대본 (한국어 · English)</h3>
+  <div class="beats">
+<div class="beat"><div class="beat-time">c00 · 훅</div><div><div class="beat-desc"><b>나레이션</b> 부부가 신형 태블릿 가격표를 봤다.<br><span style="color:#8a958f">A couple looked at the price tag on a new tablet.</span><br><b>아빠</b> 백오십만 원? 미쳤네. 이걸 어떻게 사.<br><span style="color:#8a958f">One point five million won? Insane. How could anyone buy this?</span><br><b>엄마</b> 그러게. 너무 비싸다.<br><span style="color:#8a958f">Right? Way too expensive.</span><br><b>나레이션</b> 5분 뒤, 카페.<br><span style="color:#8a958f">Five minutes later, at a café.</span><br><b>아빠</b> 아이스 아메리카노 한 잔요!<br><span style="color:#8a958f">One iced americano, please!</span><br><b>엄마</b> …또 커피야?<br><span style="color:#8a958f">…Coffee again?</span></div></div></div>
+<div class="beat"><div class="beat-time">c01 · 질문</div><div><div class="beat-desc"><b>나레이션</b> 같은 부부, 같은 지갑, 같은 돈.<br><span style="color:#8a958f">Same couple, same wallet, same money.</span><br><b>나레이션</b> 오늘의 조삼모사.<br><span style="color:#8a958f">Today's "Three in the Morning, Four at Night."</span></div></div></div>
+<div class="beat"><div class="beat-time">c02 · 반반 화면</div><div><div class="beat-desc"><b>나레이션</b> 왼쪽. 아침의 아빠.<br><span style="color:#8a958f">Left. Morning Dad.</span><br><b>아빠</b> 한 번에 백오십만 원이라니! 내 월급이!<br><span style="color:#8a958f">One point five million at once?! My paycheck!</span><br><b>나레이션</b> 오른쪽. 저녁의 아빠.<br><span style="color:#8a958f">Right. Evening Dad.</span><br><b>아빠</b> 하루 사천오백 원인데 뭘. 기분이다!<br><span style="color:#8a958f">It's only forty-five hundred a day. Treat yourself!</span></div></div></div>
+<div class="beat"><div class="beat-time">c03 · 엄마가 곱한다</div><div><div class="beat-desc"><b>엄마</b> 잠깐. 내가 곱해 볼게.<br><span style="color:#8a958f">Wait. Let me multiply.</span><br><b>엄마</b> 하루 4,500원. 일주일 31,500원. 한 달 135,000원.<br><span style="color:#8a958f">4,500 a day. 31,500 a week. 135,000 a month.</span><br><b>엄마</b> 그리고 1년… 1,642,500원.<br><span style="color:#8a958f">And a year… 1,642,500 won.</span><br><b>아빠</b> …어? 태블릿보다 비싸네?<br><span style="color:#8a958f">…Huh? That's more than the tablet?</span></div></div></div>
+<div class="beat"><div class="beat-time">c04 · 거꾸로 쪼개기</div><div><div class="beat-desc"><b>엄마</b> 반대로 태블릿을 3년 쓰면? 150만 원 나누기 1,095일.<br><span style="color:#8a958f">Flip it. Use the tablet for three years? 1.5 million divided by 1,095 days.</span><br><b>아빠</b> 하루 천삼백칠십 원…?<br><span style="color:#8a958f">About 1,370 won a day…?</span><br><b>엄마</b> 커피 한 잔의, 삼분의 일이네.<br><span style="color:#8a958f">A third of one coffee.</span></div></div></div>
+<div class="beat"><div class="beat-time">c05 · 남는 것</div><div><div class="beat-desc"><b>나레이션</b> 같은 돈도 한 번에 말하면 커 보이고, 하루치로 말하면 작아 보인다.<br><span style="color:#8a958f">The same money looks big said all at once, small said by the day.</span><br><b>나레이션</b> 아끼라는 말이 아니다. 말에 속지 말라는 말이다.<br><span style="color:#8a958f">This isn't "spend less." It's "don't be fooled by wording."</span></div></div></div>
+<div class="beat"><div class="beat-time">c06 · 엔딩</div><div><div class="beat-desc"><b>엄마</b> 그럼 12개월 무이자 할부로 사요. 한 달에 125,000원이면 되네!<br><span style="color:#8a958f">Then 12 interest-free installments. Just 125,000 a month!</span><br><b>아빠</b> 여보… 그것도 쪼갠 거야.<br><span style="color:#8a958f">Honey… that's just slicing it too.</span><br><b>엄마</b> …방금 말 취소.<br><span style="color:#8a958f">…Forget I said that.</span></div></div></div>
+<div class="beat"><div class="beat-time">c07 · 원숭이 카드</div><div><div class="beat-desc"><b>나레이션</b> 아침에 셋, 저녁에 넷. 아침에 넷, 저녁에 셋. 도토리는, 일곱 개 그대로.<br><span style="color:#8a958f">Three in the morning, four at night. Four in the morning, three at night. Seven acorns, either way.</span></div></div></div>
+  </div>
+</section>
+
+<section class="block">
+  <h3>공개한 곳</h3>
+  <div class="body"><ul>
+    <li><a href="https://youtube.com/shorts/LAXiOT4FNmI">유튜브 모라구 쇼츠</a> · 재생목록 「조삼모사 (아침엔 셋, 모 씨네는 넷)」</li>
+    <li><a href="https://www.instagram.com/reel/DfTOsdxM_BC/">인스타 릴스</a> · <a href="https://www.threads.com/@raumhero/post/DfTPHH4ACKm">Threads</a></li>
+  </ul></div>
+  <p class="summary-line">한 문장: 같은 돈도 “한 번에”로 말하면 크고 “하루치”로 말하면 작아 보이니, 사기 전에 같은 단위로 맞춰 보자.</p>
+</section>
+
+<footer><p>모답맨 포맷 쇼츠 · <a href="plan.md">마크다운 기획서</a> · 가격은 예시 값이며 일반적인 설명입니다. 개별 재무 상담이 아닙니다.</p></footer>
+</main>
+</body>
+</html>

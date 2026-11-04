@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 364 199" width="728" height="398">
+<rect width="364" height="199" fill="#FFD54F"/>
+<g stroke="#FFF8E1" stroke-width="3" opacity=".7"><path d="M182 100L0 20M182 100L0 100M182 100L0 180M182 100L364 20M182 100L364 100M182 100L364 180M182 100L120 0M182 100L250 0M182 100L120 199M182 100L250 199"/></g>
+<g transform="rotate(-8 100 100)"><rect x="55" y="40" width="90" height="120" rx="10" fill="#9AA5AE" stroke="#1B2A26" stroke-width="3"/><rect x="63" y="50" width="74" height="98" rx="4" fill="#BFE6FA"/></g>
+<g transform="rotate(7 270 100)"><path d="M232 50h76l-8 100h-60z" fill="#6B4226" stroke="#1B2A26" stroke-width="3"/><rect x="236" y="42" width="68" height="12" rx="5" fill="#E8F4F8" stroke="#1B2A26" stroke-width="3"/><path d="M285 42l14-26" stroke="#1B2A26" stroke-width="5" stroke-linecap="round"/><rect x="238" y="80" width="64" height="34" fill="#C8A27A"/></g>
+<text x="182" y="188" font-size="20" font-weight="700" text-anchor="middle" fill="#B8352A" font-family="sans-serif">조삼모사 ①  150만 원 vs 커피값 1년</text>
+</svg>

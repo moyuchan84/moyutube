@@ -1,0 +1,65 @@
+[
+  {
+    "id": "Js01-Short-Coffee",
+    "series": "조삼모사 · 같은 상황 다른 기분",
+    "narr": "조삼모사",
+    "crop": 1920,
+    "hook": [
+      "150만 원은 비싸고",
+      "커피는 싸다?"
+    ],
+    "title": "① 커피 vs 태블릿",
+    "clips": [
+      {
+        "from": 0,
+        "to": 2223
+      }
+    ],
+    "end": {
+      "title": [
+        "우리 집 하루 커피값",
+        "× 365는 얼마?"
+      ],
+      "sub": "구독하고 다음 편 시험 80점 보기"
+    }
+  },
+  {
+    "id": "Js01-Short-Coffee-Insta",
+    "series": "조삼모사 · 같은 상황 다른 기분",
+    "narr": "조삼모사",
+    "crop": 1920,
+    "hook": [
+      "150만 원은 비싸고",
+      "커피는 싸다?"
+    ],
+    "title": "① 커피 vs 태블릿",
+    "clips": [
+      {
+        "from": 0,
+        "to": 2223
+      }
+    ],
+    "end": {
+      "title": [
+        "우리 집 하루 커피값",
+        "× 365는 얼마?"
+      ],
+      "sub": "YouTube 「모라구」 조삼모사"
+    },
+    "en": {
+      "series": "Josammosa · same facts, different mood",
+      "hook": [
+        "A tablet feels pricey,",
+        "coffee feels cheap?"
+      ],
+      "title": "#1 Coffee vs Tablet",
+      "end": {
+        "title": [
+          "What is your daily",
+          "coffee x 365?"
+        ],
+        "sub": "YouTube · Morago"
+      }
+    }
+  }
+]
