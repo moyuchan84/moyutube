@@ -1,6 +1,6 @@
 # youtube — 저장소 전체 규칙
 
-이 저장소에는 네 프로젝트가 있다: `lab/`(모라구 안의 수학·과학 설명 카테고리 — 규칙은 [lab/CLAUDE.md](lab/CLAUDE.md)), `qna/`(여덟 살의 질문 · 새 편은 3분 「모답맨」 포맷 — 규칙은 [qna/CLAUDE.md](qna/CLAUDE.md), 채널 · 포맷 전체 정리는 [qna/MODAPMAN.md](qna/MODAPMAN.md)), `shortube/`(쇼츠 자동 제작 — [shortube/SPEC.md](shortube/SPEC.md)), `funtube/`.
+이 저장소에는 다섯 프로젝트가 있다: `lab/`(모라구 안의 수학·과학 설명 카테고리 — 규칙은 [lab/CLAUDE.md](lab/CLAUDE.md)), `qna/`(여덟 살의 질문 · 새 편은 3분 「모답맨」 포맷 — 규칙은 [qna/CLAUDE.md](qna/CLAUDE.md), 채널 · 포맷 전체 정리는 [qna/MODAPMAN.md](qna/MODAPMAN.md)), `shortube/`(쇼츠 자동 제작 — [shortube/SPEC.md](shortube/SPEC.md)), `funtube/`, `comics/`(연재 모션 코믹 「색이 번지는 날」 — [comics/README.md](comics/README.md)).
 
 ## 쇼츠(shortube · 숫자로 보는 요즘) 작업 전에 반드시
 

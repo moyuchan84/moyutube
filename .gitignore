@@ -32,3 +32,7 @@ lab/audio/*.wav
 
 # fairy: 장면 음성을 이어 붙인 전체본 (scripts/voice.mjs 로 다시 만든다)
 fairy/books/*/voice/all.wav
+
+# comics: 생성 그림 · 영상 사본 · 합성 소리 (art/ref 시트와 콘티는 올린다)
+comics/video/public/
+comics/art/ep*/
