@@ -504,10 +504,19 @@ export function addEnd(view: View2D) {
       />
     </Node>,
   );
-  function* show(lab: string, text: string) {
+  // 구독 한 줄 (qna/docs/morago-growth.md 1절: 끝 카드에 이유가 붙은 구독 한 줄, 화면 글자로만)
+  const sub = createRef<Txt>();
+  root().add(
+    <Txt ref={sub} y={300} fontFamily={FONT} fontSize={38} fontWeight={800} fill={C.teal} textAlign="center" opacity={0} />,
+  );
+  function* show(lab: string, text: string, subLine?: string) {
     capLog('end', text);
     label().text(lab);
     title().text(text);
+    if (subLine) {
+      sub().text(subLine);
+      sub().opacity(0);
+    }
     title().filters.blur(16);
     title().y(110);
     root().opacity(1);
@@ -516,6 +525,7 @@ export function addEnd(view: View2D) {
       line().width(420, 0.8, easeOutExpo),
       title().y(60, 0.8, easeOutExpo),
       title().filters.blur(0, 0.6),
+      subLine ? delay(0.5, sub().opacity(1, 0.5)) : waitFor(0),
     );
   }
   return {show, root};

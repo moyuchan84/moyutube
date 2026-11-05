@@ -1,0 +1,24 @@
+{
+  "TITLE": "The 9 times table\nwith 10 fingers!",
+  "NEXT": "NEXT: Times 11 —\nsplit and add!",
+  "EN": {
+    "두 손을 손바닥이 보이게 쫙!": "Hold up both hands, palms facing you!",
+    "왼쪽 새끼손가락부터\n1, 2, 3 … 10": "Starting from the left pinky:\n1, 2, 3 … 10",
+    "9 × 3 이면\n3번 손가락을 접어요": "For 9 × 3,\nfold finger number 3",
+    "3번 손가락을 접으면": "Fold finger number 3",
+    "접은 손가락 왼쪽은 2개\n→ 십의 자리 2": "2 fingers left of the fold\n→ tens digit 2",
+    "오른쪽은 7개\n→ 일의 자리 7": "7 on the right\n→ ones digit 7",
+    "9 × 3 = 27 정답!": "9 × 3 = 27, correct!",
+    "이번엔 직접! 9 × 7 은?": "Your turn! What is 9 × 7?",
+    "몇 번 손가락을 접을까요?": "Which finger do you fold?",
+    "왼쪽 6개, 오른쪽 3개 → 63!": "6 on the left, 3 on the right → 63!",
+    "9 × 4 는? 9 × 9 는?": "9 × 4? 9 × 9?",
+    "9는 10보다 1 작아요": "9 is 1 less than 10",
+    "10개짜리 줄 3개 = 30": "3 rows of 10 = 30",
+    "여기서 3개를 빼면 9 × 3": "Take away 3 and you get 9 × 3",
+    "꽉 찬 줄 2개 → 십의 자리 2\n(접은 손가락 왼쪽)": "2 full rows → tens digit 2\n(fingers left of the fold)",
+    "마지막 줄엔 10 − 3 = 7\n(접은 손가락 오른쪽)": "The last row has 10 − 3 = 7\n(fingers right of the fold)",
+    "그래서 손가락이 답을 알아요": "That's why your fingers know the answer",
+    "9 × 1 부터 9 × 10 까지 다 돼요!": "Works for 9 × 1 through 9 × 10!"
+  }
+}

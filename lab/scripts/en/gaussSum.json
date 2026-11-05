@@ -1,0 +1,22 @@
+{
+  "TITLE": "Add 1 to 100\nin 3 seconds?",
+  "NEXT": "NEXT: The 9 times table\nwith 10 fingers!",
+  "EN": {
+    "먼저 도전! 1부터 10까지\n8초 안에 더해 봐요": "Challenge first! Add 1 through 10\nin 8 seconds",
+    "하나씩 더하면… 바빠요!": "One by one… that's busy!",
+    "정답은 55!": "The answer is 55!",
+    "그럼 100까지는? 비법이 있어요": "What about up to 100? There's a trick",
+    "맨 앞과 맨 뒤를 짝지어 봐요": "Pair the first and the last",
+    "1 + 10 = 11, 2 + 9 = 11…\n전부 11!": "1 + 10 = 11, 2 + 9 = 11…\nAll 11!",
+    "11이 다섯 쌍 → 55": "Five pairs of 11 → 55",
+    "100까지도 똑같아요": "Same thing up to 100",
+    "전부 101, 짝은 50쌍!": "All 101, and 50 pairs!",
+    "101 × 50 = 5050, 3초 컷!": "101 × 50 = 5050, done in 3 seconds!",
+    "1부터 10까지를 점 계단으로": "Make 1 through 10 into a staircase of dots",
+    "똑같은 계단을 거꾸로 뒤집어\n위에 붙이면?": "Flip the same staircase upside down\nand put it on top?",
+    "가로 10, 세로 11\n딱 맞는 직사각형!": "10 wide, 11 tall —\na perfect rectangle!",
+    "계단 하나는 그 반이에요": "One staircase is half of it",
+    "옛날 수학자 가우스도 어릴 때\n이렇게 풀었다는 이야기가 있어요": "There's a story that the mathematician Gauss\nsolved it this way as a child",
+    "1부터 20까지는 얼마일까요?": "What is 1 through 20?"
+  }
+}

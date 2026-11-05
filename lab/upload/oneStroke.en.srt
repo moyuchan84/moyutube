@@ -1,0 +1,66 @@
+1
+00:00:00,000 --> 00:00:02,365
+Can you draw this house
+without lifting your pen?
+
+2
+00:00:02,415 --> 00:00:08,135
+Trace it with your finger —
+no line twice!
+
+3
+00:00:08,185 --> 00:00:10,905
+If you start at the top…
+
+4
+00:00:10,955 --> 00:00:12,475
+Oops, 3 lines left over!
+
+5
+00:00:12,525 --> 00:00:16,245
+What if you start at the bottom-left corner?
+
+6
+00:00:16,295 --> 00:00:17,615
+Success! The secret is where you start
+
+7
+00:00:17,665 --> 00:00:19,885
+Count the lines that meet at each dot
+
+8
+00:00:19,935 --> 00:00:23,255
+Only 2 dots have an odd number of lines —
+start at one, finish at the other!
+
+9
+00:00:23,305 --> 00:00:25,775
+At a dot you pass through, lines are used in pairs
+
+10
+00:00:25,825 --> 00:00:29,945
+An odd dot has one line left over,
+so it can only be the start or the finish
+
+11
+00:00:29,995 --> 00:00:34,465
+So, can you draw this envelope?
+
+12
+00:00:34,515 --> 00:00:37,635
+4 odd dots → impossible!
+
+13
+00:00:37,685 --> 00:00:39,905
+The mathematician Euler found this rule
+about 290 years ago
+
+14
+00:00:39,955 --> 00:00:42,055
+Can you draw a star in one stroke?
+Tell us in the comments!
+
+15
+00:00:42,105 --> 00:00:45,655
+NEXT: What happens when you cut
+a paper strip down the middle

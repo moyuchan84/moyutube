@@ -1,0 +1,19 @@
+{
+  "TITLE": "Can you draw this house\nwithout lifting your pen?",
+  "NEXT": "NEXT: What happens when you cut\na paper strip down the middle",
+  "EN": {
+    "손가락으로 따라 그려 봐요\n같은 선 두 번은 안 돼요!": "Trace it with your finger —\nno line twice!",
+    "꼭대기에서 시작하면…": "If you start at the top…",
+    "앗, 선이 3개 남았다!": "Oops, 3 lines left over!",
+    "왼쪽 아래 모서리에서 시작하면?": "What if you start at the bottom-left corner?",
+    "성공! 출발점이 비밀이에요": "Success! The secret is where you start",
+    "점마다 모이는 선을 세어 봐요": "Count the lines that meet at each dot",
+    "선이 홀수 개인 점은 딱 2개\n여기서 출발 → 저기서 도착!": "Only 2 dots have an odd number of lines —\nstart at one, finish at the other!",
+    "지나가는 점은 선이 2개씩 짝지어 쓰여요": "At a dot you pass through, lines are used in pairs",
+    "홀수 점은 짝이 하나 남아서\n출발점이나 도착점만 될 수 있어요": "An odd dot has one line left over,\nso it can only be the start or the finish",
+    "그럼 이 봉투는 될까요?": "So, can you draw this envelope?",
+    "홀수 점이 4개 → 절대 안 돼요!": "4 odd dots → impossible!",
+    "약 290년 전 수학자 오일러가\n찾은 규칙이에요": "The mathematician Euler found this rule\nabout 290 years ago",
+    "별 모양은 한 번에 될까요?\n댓글로 알려 주세요!": "Can you draw a star in one stroke?\nTell us in the comments!"
+  }
+}

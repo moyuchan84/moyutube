@@ -84,6 +84,18 @@ const projects = [
   'chunkMemo',
   'slowChange',
   'passCount',
+  'crossFinger',
+  'twoPoint',
+  'warmWater',
+  'gaussSum',
+  'nineFinger',
+  'elevenMul',
+  'arrowFlip',
+  'paperCup',
+  'pepperSoap',
+  'oneStroke',
+  'mobius',
+  'paperFold',
 ];
 
 export default defineConfig({
