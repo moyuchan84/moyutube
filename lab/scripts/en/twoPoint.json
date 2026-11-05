@@ -1,0 +1,21 @@
+{
+  "TITLE": "Two pencils\nfeel like one point?",
+  "NEXT": "NEXT: The same water\nfeels cold AND warm?",
+  "EN": {
+    "연필 두 자루를 나란히 붙여\n뭉툭한 쪽을 아래로": "Hold two pencils side by side,\nblunt ends down",
+    "친구는 눈을 감아요": "Your friend closes their eyes",
+    "살짝 누르고 물어봐요\n\"하나? 둘?\"": "Press lightly and ask\n\"One or two?\"",
+    "뾰족한 쪽은 절대 쓰지 마세요!": "Never use the sharp ends!",
+    "먼저 손끝을 살짝": "First, lightly on a fingertip",
+    "\"둘!\" 두 점이 느껴져요": "\"Two!\" Two points are felt",
+    "이번엔 팔뚝을 똑같이": "Now the forearm, the same way",
+    "어? 하나뿐인 것 같아요!": "Huh? It feels like just one!",
+    "똑같은 연필 두 자루인데!": "Same two pencils!",
+    "피부에는 닿는 걸 느끼는\n세포가 구역을 나눠 맡아요": "Touch-sensing cells in your skin\neach take care of their own patch",
+    "손끝은 빽빽해서\n두 점이 다른 세포에 닿아요": "Fingertips are packed tight,\nso the two points hit different cells",
+    "팔뚝은 듬성듬성해서\n두 점이 한 세포에 같이 닿아요": "The forearm is sparse,\nso both points land on one cell",
+    "한 세포가 보낸 신호는 하나\n→ 뇌는 \"한 점\"이라고 느껴요": "One cell sends one signal\n→ the brain feels \"one point\"",
+    "그래서 손끝으로\n작은 점자도 읽을 수 있어요": "That's why fingertips\ncan read tiny braille dots",
+    "손등 · 볼 · 발바닥은 어떨까요?": "What about the back of the hand, cheek, or sole?"
+  }
+}

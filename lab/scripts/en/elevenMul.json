@@ -1,0 +1,21 @@
+{
+  "TITLE": "Times 11?\nSplit and add!",
+  "NEXT": "3 tricks —\nwho will you try them on?",
+  "EN": {
+    "23 × 11 은?\n6초 안에 암산!": "What is 23 × 11?\nIn your head, in 6 seconds!",
+    "세로셈 없이 할 수 있을까?": "Can you do it without writing it out?",
+    "두 숫자를 양쪽으로 벌려요": "Split the two digits apart",
+    "가운데엔 두 숫자의 합\n2 + 3 = 5": "In the middle goes their sum:\n2 + 3 = 5",
+    "23 × 11 = 253!": "23 × 11 = 253!",
+    "이번엔 직접! 62 × 11 은?": "Your turn! What is 62 × 11?",
+    "6 | 6+2 | 2 → 682!": "6 | 6+2 | 2 → 682!",
+    "11은 10 + 1 이니까": "Because 11 is 10 + 1",
+    "23 × 10 = 230": "23 × 10 = 230",
+    "23 × 1 = 23 을 한 칸 밀려서": "23 × 1 = 23, shifted over one place",
+    "세로로 더하면…": "Add them in columns…",
+    "가운데 자리만 2 + 3!\n그래서 벌리고 더하기예요": "Only the middle place is 2 + 3!\nThat's why it's split and add",
+    "57 × 11 처럼 합이 10을 넘으면?": "What if the sum is over 10, like 57 × 11?",
+    "1을 앞으로 올려요 → 627": "Carry the 1 to the front → 627",
+    "엄마 아빠한테 문제를 내 봐요!": "Quiz your mom and dad!"
+  }
+}

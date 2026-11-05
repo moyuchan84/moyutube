@@ -1,0 +1,78 @@
+1
+00:00:00,000 --> 00:00:03,570
+Add 1 to 100
+in 3 seconds?
+
+2
+00:00:03,620 --> 00:00:07,390
+Challenge first! Add 1 through 10
+in 8 seconds
+
+3
+00:00:07,440 --> 00:00:12,390
+One by one… that's busy!
+
+4
+00:00:12,440 --> 00:00:14,160
+The answer is 55!
+
+5
+00:00:14,210 --> 00:00:17,330
+What about up to 100? There's a trick
+
+6
+00:00:17,380 --> 00:00:19,400
+Pair the first and the last
+
+7
+00:00:19,450 --> 00:00:22,370
+1 + 10 = 11, 2 + 9 = 11…
+All 11!
+
+8
+00:00:22,420 --> 00:00:25,740
+Five pairs of 11 → 55
+
+9
+00:00:25,790 --> 00:00:28,010
+Same thing up to 100
+
+10
+00:00:28,060 --> 00:00:30,080
+All 101, and 50 pairs!
+
+11
+00:00:30,130 --> 00:00:33,650
+101 × 50 = 5050, done in 3 seconds!
+
+12
+00:00:33,700 --> 00:00:36,020
+Make 1 through 10 into a staircase of dots
+
+13
+00:00:36,070 --> 00:00:37,820
+Flip the same staircase upside down
+and put it on top?
+
+14
+00:00:37,870 --> 00:00:40,190
+10 wide, 11 tall —
+a perfect rectangle!
+
+15
+00:00:40,240 --> 00:00:42,760
+One staircase is half of it
+
+16
+00:00:42,810 --> 00:00:46,730
+There's a story that the mathematician Gauss
+solved it this way as a child
+
+17
+00:00:46,780 --> 00:00:49,380
+What is 1 through 20?
+
+18
+00:00:49,430 --> 00:00:51,880
+NEXT: The 9 times table
+with 10 fingers!

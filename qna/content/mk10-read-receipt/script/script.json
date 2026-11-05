@@ -1,0 +1,78 @@
+{
+  "rawVoice": true,
+  "speed": 1.2,
+  "title": "모덕후 ⑩ 읽씹 · 답장 없으면 뇌가 하는 짓",
+  "bgm": "seen",
+  "cuts": [
+    {
+      "id": "c00",
+      "beat": "훅",
+      "lines": [
+        { "who": "narr", "text": "새벽 1시. 한 남자가, 숫자 하나를 노려본다.", "tts": "새벽 한 시. 한 남자가, 숫자 하나를 노려본다.", "en": "1 a.m. A man stares at a single number." },
+        { "who": "dad", "text": "형, 그 \"1\" 몇 시간째 보는 거야?", "tts": "형, 그 일 몇 시간째 보는 거야?", "en": "Bro, how long have you been staring at that \"1\"?" },
+        { "who": "modeokhu", "text": "3시간 12분. 이건 연구다.", "tts": "세 시간 십이 분. 이건 연구다.", "en": "Three hours, twelve minutes. This is research." }
+      ]
+    },
+    {
+      "id": "c01",
+      "beat": "질문",
+      "lines": [
+        { "who": "modeokhu", "text": "오늘은 읽씹이다. 답이 없으면, 뇌는 무슨 짓을 할까?", "en": "Today: being left on read. What does your brain do with silence?" }
+      ]
+    },
+    {
+      "id": "c02",
+      "beat": "첫째 · 8분",
+      "lines": [
+        { "who": "modeokhu", "text": "첫째. 문자로 8분만 무시당해도, 마음의 기본 욕구가 흔들렸대.", "tts": "첫째. 문자로 팔 분만 무시당해도, 마음의 기본 욕구가 흔들렸대.", "en": "One. Eight minutes of ignored texts shook people's basic needs." },
+        { "who": "dad", "text": "8분? 나는 8초도 못 참는데.", "tts": "팔 분? 나는 팔 초도 못 참는데.", "en": "Eight minutes? I can't last eight seconds." },
+        { "who": "modeokhu", "text": "고장 탓으로 돌릴 수도 있었는데, 소용없었어.", "en": "They could've blamed a glitch. It didn't help." }
+      ]
+    },
+    {
+      "id": "c03",
+      "beat": "둘째 · 뇌",
+      "lines": [
+        { "who": "modeokhu", "text": "둘째. 공 던지기 게임에서 따돌림당할 때, 괴로움에 맞춰 뇌가 켜졌다는 스캔이 있어.", "en": "Two. A brain scan showed activity tracking distress when players were left out of a ball game." },
+        { "who": "modeokhu", "text": "근데 정확히 어느 부위인지는, 학자들끼리 아직 싸우는 중이야.", "en": "But exactly where? Scientists are still arguing." },
+        { "who": "dad", "text": "뇌도 정리를 못 했네.", "en": "Even the brain hasn't sorted it out." }
+      ]
+    },
+    {
+      "id": "c04",
+      "beat": "셋째 · 읽음",
+      "lines": [
+        { "who": "modeokhu", "text": "셋째. 읽음 표시가 뜨면, 불안이 더 빨리 온대.", "en": "Three. When the \"read\" mark shows, anxiety kicks in sooner." },
+        { "who": "modeokhu", "text": "안 읽은 것보다, 읽고도 답이 없는 게 더 무서운 거지.", "en": "Unread is bearable. Read and silent is scary." }
+      ]
+    },
+    {
+      "id": "c05",
+      "beat": "넷째 · 확인",
+      "lines": [
+        { "who": "modeokhu", "text": "넷째. 읽음 표시는, 폰을 더 자주 열게 되는 것과 이어졌대.", "en": "Four. Read receipts were linked to checking the phone more often." },
+        { "who": "dad", "text": "형, 방금 몇 번째 열었어?", "en": "Bro, how many times just now?" },
+        { "who": "modeokhu", "text": "말 걸지 마. 지금 세는 중이야.", "en": "Don't talk to me. I'm counting." }
+      ]
+    },
+    {
+      "id": "c06",
+      "beat": "결론",
+      "lines": [
+        { "who": "modeokhu", "text": "결론. 뇌는 침묵을 보면, 일단 내 탓으로 번역해.", "en": "Conclusion: faced with silence, the brain translates it as \"my fault.\"" },
+        { "who": "modeokhu", "text": "근데 상대 사정은, 대개 모르면서. 이건 삼촌 의견이다.", "en": "But we rarely know their side. That's just my opinion." }
+      ]
+    },
+    {
+      "id": "c07",
+      "beat": "엔딩",
+      "lines": [
+        { "who": "narr", "text": "삼촌이 한정판 피규어 판매자에게 보낸 문자. \"재고 있나요?\"", "en": "Uncle's message to a limited-edition figure seller: \"Is it in stock?\"" },
+        { "who": "modeokhu", "text": "(꿀꺽) 아직도 \"1\"이다…", "tts": "아직도 일이다…", "en": "(gulp) Still a \"1\"…" },
+        { "who": "narr", "text": "3시간 뒤. 띠링.", "tts": "세 시간 뒤. 띠링.", "en": "Three hours later. Ding." },
+        { "who": "narr", "text": "\"품절입니다.\"", "en": "\"Sold out.\"" },
+        { "who": "modeokhu", "text": "…차라리 읽씹이 나았다.", "en": "…I preferred being left on read." }
+      ]
+    }
+  ]
+}

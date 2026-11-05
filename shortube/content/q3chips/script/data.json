@@ -1,0 +1,71 @@
+{
+  "asOf": "2026.10.29 발표 실적 기준",
+  "days": 92,
+  "samsung": {
+    "name": "삼성전자",
+    "rev": 195.3,
+    "op": 107.4,
+    "margin": 55,
+    "opPrev": 12.2,
+    "growthPct": 783,
+    "ds": {
+      "rev": 147.1,
+      "op": 106.5,
+      "margin": 72
+    },
+    "dx": {
+      "rev": 52.1,
+      "op": -0.8
+    },
+    "date": "10월 29일 · 확정 실적"
+  },
+  "hynix": {
+    "name": "SK하이닉스",
+    "rev": 104.6,
+    "op": 83.3,
+    "margin": 80,
+    "growthPct": 632,
+    "date": "10월 28일 · 잠정(감사 전)"
+  },
+  "google": {
+    "name": "알파벳(구글)",
+    "rev": 1276,
+    "revPct": 25,
+    "op": 406,
+    "opPct": 30,
+    "margin": 32,
+    "cloudRev": 307,
+    "cloudRevPct": 103,
+    "cloudOp": 111,
+    "cloudOpPrev": 36,
+    "cloudMargin": 36,
+    "net": 265,
+    "netPct": -24,
+    "equityLoss": 87,
+    "capex": 514,
+    "capexPrev": 240,
+    "date": "10월 28일(미국)"
+  },
+  "margins": [
+    {
+      "k": "SK하이닉스",
+      "v": 80
+    },
+    {
+      "k": "삼성 반도체(DS)",
+      "v": 72
+    },
+    {
+      "k": "삼성전자 전체",
+      "v": 55
+    },
+    {
+      "k": "구글 클라우드",
+      "v": 36
+    },
+    {
+      "k": "알파벳 전체",
+      "v": 32
+    }
+  ]
+}

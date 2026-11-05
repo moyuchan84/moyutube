@@ -1,0 +1,178 @@
+{
+  "id": "Mk10-Modeokhu",
+  "episode": "mk10",
+  "voice": "mk10",
+  "bgm": "seen",
+  "gap": 0,
+  "chop": 42,
+  "thumb": {
+    "badge": "모덕후 ⑩ 읽씹",
+    "layers": [
+      { "bg": "burst:#E3F2FD:#90CAF9" },
+      { "fx": "lines", "x": 640, "y": 380 },
+      { "img": "full/read-vs-unread", "panel": [0.5, 0.5, 1.2], "x": 900, "y": 420, "w": 640, "h": 440, "rot": 3 },
+      { "img": "modeokhu/fluster", "sticker": true, "x": 270, "y": 440, "h": 640, "rot": -3 },
+      { "text": "답장이 없으면", "x": 880, "y": 110, "size": 72, "rot": -3 },
+      { "text": "뇌가 하는 짓?!", "style": "stamp", "x": 900, "y": 650, "size": 100, "rot": -6 },
+      { "fx": "kira", "x": 320, "y": 200 }
+    ],
+    "vertical": {
+      "layers": [
+        { "bg": "burst:#E3F2FD:#90CAF9", "x": 540, "y": 1050 },
+        { "fx": "lines", "x": 540, "y": 1100 },
+        { "text": "읽씹당하면", "x": 540, "y": 330, "size": 170, "rot": -3 },
+        { "text": "뇌는?!", "style": "stamp", "x": 540, "y": 540, "size": 190, "rot": -6 },
+        { "img": "modeokhu/fluster", "sticker": true, "x": 540, "y": 1300, "h": 980, "rot": -2 },
+        { "fx": "kira", "x": 300, "y": 900 }
+      ]
+    }
+  },
+  "beats": [
+    {
+      "line": "c00-0",
+      "shots": [
+        { "in": "flash", "bg": "full/one-glare", "cam": { "from": [0.5, 0.55, 1.6], "to": [0.5, 0.5, 1.3], "ease": "snap" }, "text": [{ "t": "새벽 1:12", "x": 0.25, "y": 0.13, "size": 130, "color": "#FFFFFF", "style": "slam" }], "fx": ["kira"], "sfx": [{ "name": "crash" }] },
+        { "at": 0.5, "in": "zoom", "bg": "full/one-glare", "cam": { "from": [0.5, 0.5, 1.3], "to": [0.5, 0.45, 1.8] }, "text": [{ "t": "3시간째", "y": 0.86, "size": 130, "color": "#E63946", "style": "stamp", "at": 0.2 }], "sfx": [{ "name": "stamp", "at": 0.2 }] }
+      ]
+    },
+    {
+      "line": "c00-1",
+      "shots": [
+        { "in": "whip-r", "bg": "full/doorway-dad", "cam": { "from": [0.75, 0.5, 1.5], "to": [0.75, 0.5, 1.7] }, "text": [{ "t": "그 \"1\" 몇 시간째?", "y": 0.13, "size": 110, "style": "shake" }], "sfx": [{ "name": "boing" }] }
+      ]
+    },
+    {
+      "line": "c00-2",
+      "shots": [
+        { "in": "slam", "bg": "bg/oneroom", "cam": { "from": [0.5, 0.5, 1.05], "to": [0.5, 0.5, 1.15] }, "cast": [{ "art": "modeokhu/fluster", "x": 0.5, "h": 0.95, "talk": "modeokhu", "enter": "pop" }], "text": [{ "t": "3시간 12분", "x": 0.2, "y": 0.2, "size": 100, "color": "#FFD23F", "style": "pop" }, { "t": "이건 연구다", "x": 0.78, "y": 0.8, "size": 120, "color": "#FFFFFF", "style": "stamp", "at": 0.4 }], "sfx": [{ "name": "stamp", "at": 0.4 }] }
+      ]
+    },
+    {
+      "line": "c01-0",
+      "shots": [
+        { "in": "slam", "bg": "dots:#E3F2FD:#BBDEFB", "cast": [{ "art": "modeokhu/point", "x": 0.3, "h": 0.92, "talk": "modeokhu", "enter": "drop" }], "text": [{ "t": "오늘은 읽씹", "x": 0.68, "y": 0.2, "size": 130, "color": "#0D47A1", "style": "slam" }], "fx": ["kira"], "sfx": [{ "name": "dudung" }] },
+        { "at": 0.5, "in": "smash", "bg": "burst:#E3F2FD:#64B5F6", "cast": [{ "art": "modeokhu/point", "x": 0.3, "h": 0.92, "talk": "modeokhu" }], "text": [{ "t": "침묵을 만난", "x": 0.68, "y": 0.45, "size": 100, "color": "#0D47A1", "style": "pop" }, { "t": "뇌는 뭘 할까?", "x": 0.68, "y": 0.68, "size": 120, "color": "#B71C1C", "style": "stamp", "at": 0.2 }], "sfx": [{ "name": "stamp", "at": 0.2 }] }
+      ]
+    },
+    {
+      "line": "c02-0",
+      "shots": [
+        { "in": "wipe", "bg": "full/eight-min", "cam": { "from": [0.3, 0.5, 1.5], "to": [0.3, 0.5, 1.7] }, "text": [{ "t": "① 문자 8분 무시", "x": 0.3, "y": 0.13, "size": 115, "color": "#0D47A1", "style": "slam" }], "fx": ["kira"], "sfx": [{ "name": "ding" }] },
+        { "at": 0.55, "in": "zoom", "bg": "full/eight-min", "cam": { "from": [0.7, 0.5, 1.6], "to": [0.7, 0.5, 1.8] }, "text": [{ "t": "기본 욕구가 흔들", "y": 0.86, "size": 100, "color": "#FFFFFF", "style": "pop" }], "note": "※ 실험 · 대학생 40명 · 문자 8분 무시 — Smith · Williams 2004 (Group Dynamics)", "sfx": [{ "name": "pop" }] }
+      ]
+    },
+    {
+      "line": "c02-1",
+      "shots": [
+        { "in": "slam", "bg": "dots:#ECEFF1:#CFD8DC", "cast": [{ "art": "common/dad/panic", "x": 0.5, "h": 0.95, "talk": "dad", "enter": "pop" }], "text": [{ "t": "8초도 못 참는데", "y": 0.13, "size": 115, "color": "#B71C1C", "style": "shake" }], "sfx": [{ "name": "boing" }] }
+      ]
+    },
+    {
+      "line": "c02-2",
+      "shots": [
+        { "in": "whip-l", "bg": "full/eight-min", "cam": { "from": [0.2, 0.5, 1.7], "to": [0.2, 0.5, 1.9] }, "text": [{ "t": "고장 탓도 가능했는데", "y": 0.13, "size": 95, "color": "#FFFFFF", "style": "pop" }, { "t": "소용없음", "y": 0.86, "size": 130, "color": "#E63946", "style": "stamp", "at": 0.5 }], "sfx": [{ "name": "buzz", "at": 0.5 }, { "name": "stamp", "at": 0.5 }] }
+      ]
+    },
+    {
+      "line": "c03-0",
+      "shots": [
+        { "in": "wipe", "bg": "full/ball-game", "cam": { "from": [0.3, 0.55, 1.4], "to": [0.3, 0.5, 1.7] }, "text": [{ "t": "② 공 던지기 게임", "x": 0.3, "y": 0.13, "size": 110, "color": "#0D47A1", "style": "slam" }], "note": "※ 뇌 스캔 · 대학생 13명 — Eisenberger · Lieberman · Williams 2003 (Science)", "sfx": [{ "name": "ding" }] },
+        { "at": 0.55, "in": "zoom", "bg": "full/ball-game", "cam": { "from": [0.2, 0.6, 1.8], "to": [0.2, 0.6, 2.0] }, "text": [{ "t": "괴로움 ↑ 뇌도 ↑", "y": 0.86, "size": 100, "color": "#FFD23F", "style": "stamp", "at": 0.2 }], "sfx": [{ "name": "stamp", "at": 0.2 }] }
+      ]
+    },
+    {
+      "line": "c03-1",
+      "shots": [
+        { "in": "smash", "bg": "full/brain-argue", "cam": { "from": [0.5, 0.5, 1.2], "to": [0.5, 0.5, 1.4], "ease": "snap" }, "text": [{ "t": "어느 부위?", "x": 0.5, "y": 0.13, "size": 130, "color": "#FFFFFF", "style": "slam" }, { "t": "아직 논쟁 중", "y": 0.86, "size": 120, "color": "#FFD23F", "style": "stamp", "at": 0.4 }], "note": "※ 이후 메타분석에서 결과가 엇갈림 — Cacioppo 외 2013 · Rotge 외 2015 · 2021 NeuroImage", "fx": ["impact"], "sfx": [{ "name": "dudung" }, { "name": "stamp", "at": 0.4 }] }
+      ]
+    },
+    {
+      "line": "c03-2",
+      "shots": [
+        { "in": "cut", "bg": "dots:#E3F2FD:#BBDEFB", "cast": [{ "art": "common/dad/think", "x": 0.5, "h": 0.95, "talk": "dad" }], "text": [{ "t": "뇌도 정리를 못 했네", "y": 0.13, "size": 105, "color": "#37474F", "style": "type" }], "sfx": [{ "name": "slide" }] }
+      ]
+    },
+    {
+      "line": "c04-0",
+      "shots": [
+        { "in": "wipe", "bg": "full/read-vs-unread", "cam": { "from": [0.27, 0.5, 1.6], "to": [0.27, 0.5, 1.8] }, "text": [{ "t": "③ 읽음 표시", "x": 0.3, "y": 0.13, "size": 120, "color": "#FFFFFF", "style": "slam" }], "note": "※ 설문 · 일본 여대생 213명 — Kato · Kato · Ozawa 2020 (IJTHI)", "sfx": [{ "name": "ding" }] },
+        { "at": 0.5, "in": "whip-r", "bg": "full/read-vs-unread", "cam": { "from": [0.75, 0.5, 1.7], "to": [0.75, 0.5, 1.9] }, "text": [{ "t": "불안이 더 빨리", "y": 0.86, "size": 115, "color": "#E63946", "style": "stamp", "at": 0.2 }], "sfx": [{ "name": "stamp", "at": 0.2 }] }
+      ]
+    },
+    {
+      "line": "c04-1",
+      "shots": [
+        { "in": "slam", "bg": "full/read-vs-unread", "cam": { "from": [0.27, 0.5, 1.5], "to": [0.27, 0.5, 1.6] }, "text": [{ "t": "안 읽음: 견딘다", "x": 0.27, "y": 0.86, "size": 80, "color": "#BBDEFB", "style": "pop" }], "sfx": [{ "name": "pop" }] },
+        { "at": 0.5, "in": "cut", "bg": "full/read-vs-unread", "cam": { "from": [0.75, 0.5, 1.5], "to": [0.75, 0.5, 1.6] }, "text": [{ "t": "읽고 침묵: 무섭다", "x": 0.73, "y": 0.86, "size": 80, "color": "#FFCDD2", "style": "pop" }], "sfx": [{ "name": "buzz" }] }
+      ]
+    },
+    {
+      "line": "c05-0",
+      "shots": [
+        { "in": "wipe", "bg": "full/check-counter", "cam": { "from": [0.5, 0.5, 1.05], "to": [0.5, 0.45, 1.25] }, "text": [{ "t": "④ 폰 확인 횟수", "x": 0.3, "y": 0.13, "size": 115, "color": "#37474F", "style": "slam" }], "note": "※ 혼합 연구 — Lynden · Rasmussen 2017 (읽음 표시와 확인 빈도 · 회피 · 불안이 연관)", "sfx": [{ "name": "ding" }] },
+        { "at": 0.55, "in": "zoom", "bg": "full/check-counter", "cam": { "from": [0.5, 0.45, 1.25], "to": [0.5, 0.45, 1.4] }, "text": [{ "t": "자꾸 연다", "y": 0.86, "size": 130, "color": "#1565C0", "style": "stamp", "at": 0.2 }], "sfx": [{ "name": "tick" }, { "name": "stamp", "at": 0.2 }] }
+      ]
+    },
+    {
+      "line": "c05-1",
+      "shots": [
+        { "in": "whip-l", "bg": "dots:#ECEFF1:#CFD8DC", "cast": [{ "art": "common/dad/shock", "x": 0.5, "h": 0.95, "talk": "dad", "enter": "pop" }], "text": [{ "t": "방금 몇 번째?", "y": 0.13, "size": 115, "style": "shake" }], "sfx": [{ "name": "boing" }] }
+      ]
+    },
+    {
+      "line": "c05-2",
+      "shots": [
+        { "in": "slam", "bg": "full/check-counter", "cam": { "from": [0.5, 0.5, 1.1], "to": [0.5, 0.5, 1.25], "ease": "snap" }, "cast": [{ "art": "modeokhu/fluster", "x": 0.82, "h": 0.8, "talk": "modeokhu", "enter": "pop" }], "text": [{ "t": "지금 세는 중", "x": 0.25, "y": 0.13, "size": 110, "color": "#FFD23F", "style": "stamp", "at": 0.2 }], "sfx": [{ "name": "stamp", "at": 0.2 }, { "name": "tick", "at": 0.6 }] }
+      ]
+    },
+    {
+      "line": "c06-0",
+      "shots": [
+        { "in": "slam", "bg": "full/blame-translate", "cam": { "from": [0.5, 0.5, 1.15], "to": [0.5, 0.5, 1.35], "ease": "snap" }, "text": [{ "t": "결론", "x": 0.15, "y": 0.13, "size": 120, "color": "#FFD23F", "style": "slam" }, { "t": "침묵 → 내 탓", "y": 0.86, "size": 130, "color": "#FFFFFF", "style": "stamp", "at": 0.4 }], "fx": ["gaan"], "sfx": [{ "name": "crash" }, { "name": "stamp", "at": 0.4 }] }
+      ]
+    },
+    {
+      "line": "c06-1",
+      "shots": [
+        { "in": "smash", "bg": "#101820", "cast": [{ "art": "modeokhu/proud", "x": 0.3, "h": 0.92, "talk": "modeokhu" }], "text": [{ "t": "상대 사정은", "x": 0.68, "y": 0.3, "size": 110, "color": "#FFFFFF", "style": "pop" }, { "t": "모르면서", "x": 0.68, "y": 0.52, "size": 130, "color": "#FFD23F", "style": "stamp", "at": 0.3 }, { "t": "※ 삼촌 의견", "x": 0.68, "y": 0.78, "size": 60, "color": "#B0BEC5", "style": "type", "at": 0.7 }], "fx": ["focus"], "sfx": [{ "name": "stamp", "at": 0.3 }] }
+      ]
+    },
+    {
+      "line": "c07-0",
+      "shots": [
+        { "in": "wipe", "bg": "full/seller-dm", "cam": { "from": [0.5, 0.5, 1.2], "to": [0.5, 0.5, 1.45] }, "text": [{ "t": "재고 있나요?", "y": 0.13, "size": 120, "color": "#FFFFFF", "style": "pop" }], "sfx": [{ "name": "tick" }] }
+      ]
+    },
+    {
+      "line": "c07-1",
+      "shots": [
+        { "in": "slam", "bg": "full/seller-dm", "cam": { "from": [0.6, 0.4, 1.6], "to": [0.6, 0.4, 1.8] }, "text": [{ "t": "아직도 1", "y": 0.14, "size": 120, "color": "#FFD23F", "style": "pop" }], "sfx": [{ "name": "tick" }] },
+        { "at": 0.5, "in": "smash", "bg": "burst:#BBDEFB:#64B5F6", "cast": [{ "art": "cutin/uncle-gulp", "x": 0.5, "h": 1.02, "talk": "modeokhu" }], "text": [{ "t": "꿀꺽", "x": 0.8, "y": 0.25, "size": 150, "color": "#FFFFFF", "style": "shake" }], "fx": ["focus"], "sfx": [{ "name": "gulp" }] }
+      ]
+    },
+    {
+      "line": "c07-2",
+      "shots": [
+        { "in": "flash", "bg": "#101820", "text": [{ "t": "3시간 뒤", "y": 0.45, "size": 170, "color": "#FFFFFF", "style": "type" }], "sfx": [{ "name": "rewind" }, { "name": "chime", "at": 0.8 }] }
+      ]
+    },
+    {
+      "line": "c07-3",
+      "shots": [
+        { "in": "slam", "bg": "full/soldout", "cam": { "from": [0.5, 0.6, 1.3], "to": [0.5, 0.6, 1.5], "ease": "snap" }, "text": [{ "t": "품절", "x": 0.75, "y": 0.2, "size": 190, "color": "#E63946", "style": "stamp", "at": 0.2 }], "fx": ["impact"], "sfx": [{ "name": "crash" }, { "name": "stamp", "at": 0.2 }] }
+      ]
+    },
+    {
+      "line": "c07-4",
+      "shots": [
+        { "in": "smash", "bg": "full/soldout", "cam": { "from": [0.4, 0.6, 1.5], "to": [0.4, 0.6, 1.65] }, "text": [{ "t": "차라리", "x": 0.72, "y": 0.35, "size": 110, "color": "#FFFFFF", "style": "pop" }, { "t": "읽씹이 나았다", "x": 0.72, "y": 0.6, "size": 110, "color": "#FFD23F", "style": "stamp", "at": 0.4 }], "sfx": [{ "name": "stamp", "at": 0.4 }] }
+      ]
+    },
+    {
+      "hold": 110,
+      "shots": [
+        { "in": "slam", "bg": "burst:#0D47A1:#1976D2", "text": [{ "t": "모덕후", "y": 0.26, "size": 170, "color": "#FFD23F", "style": "slam" }, { "t": "읽씹당했을 때 몇 분까지 참아 봤나요?", "y": 0.5, "size": 64, "color": "#FFFFFF", "style": "pop", "at": 14 }, { "t": "다음 편 놓치지 않게 — 구독하고 이어 보기", "y": 0.68, "size": 50, "color": "#BBDEFB", "style": "pop", "at": 30 }], "note": "※ 출처: Smith · Williams 2004 · Eisenberger 외 2003 · Rotge 외 2015 · Kato · Kato · Ozawa 2020 · Lynden · Rasmussen 2017. 실험 · 설문 연구이며 개인차가 있습니다.", "sfx": [{ "name": "stinger" }] }
+      ]
+    }
+  ]
+}

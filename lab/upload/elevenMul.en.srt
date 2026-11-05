@@ -1,0 +1,72 @@
+1
+00:00:00,000 --> 00:00:03,700
+Times 11?
+Split and add!
+
+2
+00:00:03,750 --> 00:00:06,470
+What is 23 × 11?
+In your head, in 6 seconds!
+
+3
+00:00:06,520 --> 00:00:10,470
+Can you do it without writing it out?
+
+4
+00:00:10,520 --> 00:00:12,440
+Split the two digits apart
+
+5
+00:00:12,490 --> 00:00:14,410
+In the middle goes their sum:
+2 + 3 = 5
+
+6
+00:00:14,460 --> 00:00:16,630
+23 × 11 = 253!
+
+7
+00:00:16,680 --> 00:00:22,400
+Your turn! What is 62 × 11?
+
+8
+00:00:22,450 --> 00:00:25,770
+6 | 6+2 | 2 → 682!
+
+9
+00:00:25,820 --> 00:00:27,940
+Because 11 is 10 + 1
+
+10
+00:00:27,990 --> 00:00:29,710
+23 × 10 = 230
+
+11
+00:00:29,760 --> 00:00:31,680
+23 × 1 = 23, shifted over one place
+
+12
+00:00:31,730 --> 00:00:33,500
+Add them in columns…
+
+13
+00:00:33,550 --> 00:00:37,470
+Only the middle place is 2 + 3!
+That's why it's split and add
+
+14
+00:00:37,520 --> 00:00:40,010
+What if the sum is over 10, like 57 × 11?
+
+15
+00:00:40,060 --> 00:00:44,280
+Carry the 1 to the front → 627
+
+16
+00:00:44,330 --> 00:00:46,930
+Quiz your mom and dad!
+
+17
+00:00:46,980 --> 00:00:49,630
+3 tricks —
+who will you try them on?

@@ -1,0 +1,299 @@
+{
+  "episode": "mk10",
+  "title": "모덕후 ⑩ 읽씹 · 답장 없으면 뇌가 하는 짓",
+  "engine": "Google AI Studio · Gemini Flash TTS (여러 화자)",
+  "format": "WAV, 24 kHz, 16-bit, mono. One file per cut, all lines of the cut in order.",
+  "direction": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud.",
+  "jobs": [
+    {
+      "cut": "c00",
+      "save": "qna/content/mk10-read-receipt/voice/studio/c00.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Achird",
+          "who": "모덕후 삼촌",
+          "style": "The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "새벽 한 시. 한 남자가, 숫자 하나를 노려본다.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "형, 그 일 몇 시간째 보는 거야?",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "modeokhu",
+          "text": "세 시간 십이 분. 이건 연구다.",
+          "style": "The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting.\nThe line \"형, 그 일 몇 시간째 보는 거야?\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 1: 새벽 한 시. 한 남자가, 숫자 하나를 노려본다.\nSpeaker 1: 형, 그 일 몇 시간째 보는 거야?\nSpeaker 2: 세 시간 십이 분. 이건 연구다."
+    },
+    {
+      "cut": "c01",
+      "save": "qna/content/mk10-read-receipt/voice/studio/c01.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Achird",
+          "who": "모덕후 삼촌",
+          "style": "The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "modeokhu",
+          "text": "오늘은 읽씹이다. 답이 없으면, 뇌는 무슨 짓을 할까?",
+          "style": "The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting.\n\nSpeaker 1: 오늘은 읽씹이다. 답이 없으면, 뇌는 무슨 짓을 할까?"
+    },
+    {
+      "cut": "c02",
+      "save": "qna/content/mk10-read-receipt/voice/studio/c02.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Achird",
+          "who": "모덕후 삼촌",
+          "style": "The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "modeokhu",
+          "text": "첫째. 문자로 팔 분만 무시당해도, 마음의 기본 욕구가 흔들렸대.",
+          "style": "The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "팔 분? 나는 팔 초도 못 참는데.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "modeokhu",
+          "text": "고장 탓으로 돌릴 수도 있었는데, 소용없었어.",
+          "style": "The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting.\nThe line \"팔 분? 나는 팔 초도 못 참는데.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 2: 첫째. 문자로 팔 분만 무시당해도, 마음의 기본 욕구가 흔들렸대.\nSpeaker 1: 팔 분? 나는 팔 초도 못 참는데.\nSpeaker 2: 고장 탓으로 돌릴 수도 있었는데, 소용없었어."
+    },
+    {
+      "cut": "c03",
+      "save": "qna/content/mk10-read-receipt/voice/studio/c03.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Achird",
+          "who": "모덕후 삼촌",
+          "style": "The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "modeokhu",
+          "text": "둘째. 공 던지기 게임에서 따돌림당할 때, 괴로움에 맞춰 뇌가 켜졌다는 스캔이 있어.",
+          "style": "The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "modeokhu",
+          "text": "근데 정확히 어느 부위인지는, 학자들끼리 아직 싸우는 중이야.",
+          "style": "The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "뇌도 정리를 못 했네.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting.\nThe line \"뇌도 정리를 못 했네.\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 2: 둘째. 공 던지기 게임에서 따돌림당할 때, 괴로움에 맞춰 뇌가 켜졌다는 스캔이 있어.\nSpeaker 2: 근데 정확히 어느 부위인지는, 학자들끼리 아직 싸우는 중이야.\nSpeaker 1: 뇌도 정리를 못 했네."
+    },
+    {
+      "cut": "c04",
+      "save": "qna/content/mk10-read-receipt/voice/studio/c04.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Achird",
+          "who": "모덕후 삼촌",
+          "style": "The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "modeokhu",
+          "text": "셋째. 읽음 표시가 뜨면, 불안이 더 빨리 온대.",
+          "style": "The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "modeokhu",
+          "text": "안 읽은 것보다, 읽고도 답이 없는 게 더 무서운 거지.",
+          "style": "The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting.\n\nSpeaker 1: 셋째. 읽음 표시가 뜨면, 불안이 더 빨리 온대.\nSpeaker 1: 안 읽은 것보다, 읽고도 답이 없는 게 더 무서운 거지."
+    },
+    {
+      "cut": "c05",
+      "save": "qna/content/mk10-read-receipt/voice/studio/c05.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Achird",
+          "who": "모덕후 삼촌",
+          "style": "The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 2",
+          "who": "modeokhu",
+          "text": "넷째. 읽음 표시는, 폰을 더 자주 열게 되는 것과 이어졌대.",
+          "style": "The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "dad",
+          "text": "형, 방금 몇 번째 열었어?",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. This line is the dad speaking inside the scene, acted out, not narration"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "modeokhu",
+          "text": "말 걸지 마. 지금 세는 중이야.",
+          "style": "The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting.\nThe line \"형, 방금 몇 번째 열었어?\" is the dad speaking inside the scene, acted out, not narration.\n\nSpeaker 2: 넷째. 읽음 표시는, 폰을 더 자주 열게 되는 것과 이어졌대.\nSpeaker 1: 형, 방금 몇 번째 열었어?\nSpeaker 2: 말 걸지 마. 지금 세는 중이야."
+    },
+    {
+      "cut": "c06",
+      "save": "qna/content/mk10-read-receipt/voice/studio/c06.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Achird",
+          "who": "모덕후 삼촌",
+          "style": "The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "modeokhu",
+          "text": "결론. 뇌는 침묵을 보면, 일단 내 탓으로 번역해.",
+          "style": "The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "modeokhu",
+          "text": "근데 상대 사정은, 대개 모르면서. 이건 삼촌 의견이다.",
+          "style": "The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting.\n\nSpeaker 1: 결론. 뇌는 침묵을 보면, 일단 내 탓으로 번역해.\nSpeaker 1: 근데 상대 사정은, 대개 모르면서. 이건 삼촌 의견이다."
+    },
+    {
+      "cut": "c07",
+      "save": "qna/content/mk10-read-receipt/voice/studio/c07.wav",
+      "done": false,
+      "speakers": [
+        {
+          "speaker": "Speaker 1",
+          "voice": "Algenib",
+          "who": "narr/dad/docu",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "voice": "Achird",
+          "who": "모덕후 삼촌",
+          "style": "The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "삼촌이 한정판 피규어 판매자에게 보낸 문자. \"재고 있나요?\"",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "modeokhu",
+          "text": "아직도 일이다…",
+          "style": "The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "세 시간 뒤. 띠링.",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 1",
+          "who": "narr",
+          "text": "\"품절입니다.\"",
+          "style": "A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid"
+        },
+        {
+          "speaker": "Speaker 2",
+          "who": "modeokhu",
+          "text": "…차라리 읽씹이 나았다.",
+          "style": "The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting"
+        }
+      ],
+      "prompt": "Korean family YouTube video. Speak natural conversational Korean at a brisk, lively pace, like an upbeat YouTube video, never slow or drawn out. Leave a clear pause of about one second between every line, and no long pause inside a line. Never read the speaker labels aloud. Speaker 1: A balding Korean dad in his mid-forties: thick, deep, slightly husky ajusshi voice, relaxed and good-humored, telling a story about his kid. Speaker 2: The dad's nerdy younger brother in his late thirties: crisp, earnest lecture voice, speaking dead seriously like presenting a research paper, precise and a little too excited about odd facts, never shouting.\n\nSpeaker 1: 삼촌이 한정판 피규어 판매자에게 보낸 문자. \"재고 있나요?\"\nSpeaker 2: 아직도 일이다…\nSpeaker 1: 세 시간 뒤. 띠링.\nSpeaker 1: \"품절입니다.\"\nSpeaker 2: …차라리 읽씹이 나았다."
+    }
+  ]
+}

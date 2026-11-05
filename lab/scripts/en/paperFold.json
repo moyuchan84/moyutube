@@ -1,0 +1,18 @@
+{
+  "TITLE": "How many folds would it take\nto reach the Moon?",
+  "NEXT": "Which of the three\ndid you try?",
+  "EN": {
+    "몇 번 접으면 달까지 닿을까요?": "How many folds to reach the Moon?",
+    "한 번 접어 볼게요": "Let's start folding",
+    "접을 때마다 두께가 두 배!": "Every fold doubles the thickness!",
+    "5번 접어도 3.2mm…\n아직 얇아요": "5 folds: only 3.2 mm…\nstill thin",
+    "이대로 계속 접는다면?": "What if we keep going?",
+    "14번이면 어른 키만큼": "14 folds: as tall as a grown-up",
+    "27번이면 에베레스트보다 높아요": "27 folds: taller than Mount Everest",
+    "정답은 A! 42번이면\n달까지(약 38만km) 도착": "The answer is A! 42 folds\nreach the Moon (about 384,000 km)",
+    "1번 접을 때마다 2배씩 곱해져요": "Each fold multiplies by 2",
+    "42번 두 배 = 약 4조 4천억 배": "Doubling 42 times = about 4.4 trillion times",
+    "하지만 진짜 종이는\n7~8번쯤에서 더 안 접혀요": "But real paper usually stops folding\nat about 7 or 8 times",
+    "직접 접어 보세요!\n몇 번까지 됐는지 댓글로!": "Try it yourself!\nTell us how many folds you got!"
+  }
+}

@@ -1,0 +1,87 @@
+1
+00:00:00,000 --> 00:00:04,620
+The 9 times table
+with 10 fingers!
+
+2
+00:00:04,670 --> 00:00:06,490
+Hold up both hands, palms facing you!
+
+3
+00:00:06,540 --> 00:00:08,640
+Starting from the left pinky:
+1, 2, 3 … 10
+
+4
+00:00:08,690 --> 00:00:12,190
+For 9 × 3,
+fold finger number 3
+
+5
+00:00:12,240 --> 00:00:14,160
+Fold finger number 3
+
+6
+00:00:14,210 --> 00:00:15,930
+2 fingers left of the fold
+→ tens digit 2
+
+7
+00:00:15,980 --> 00:00:17,700
+7 on the right
+→ ones digit 7
+
+8
+00:00:17,750 --> 00:00:19,770
+9 × 3 = 27, correct!
+
+9
+00:00:19,820 --> 00:00:21,740
+Your turn! What is 9 × 7?
+
+10
+00:00:21,790 --> 00:00:27,740
+Which finger do you fold?
+
+11
+00:00:27,790 --> 00:00:29,710
+6 on the left, 3 on the right → 63!
+
+12
+00:00:29,760 --> 00:00:34,880
+9 × 4? 9 × 9?
+
+13
+00:00:34,930 --> 00:00:37,050
+9 is 1 less than 10
+
+14
+00:00:37,100 --> 00:00:38,680
+3 rows of 10 = 30
+
+15
+00:00:38,730 --> 00:00:41,050
+Take away 3 and you get 9 × 3
+
+16
+00:00:41,100 --> 00:00:43,420
+2 full rows → tens digit 2
+(fingers left of the fold)
+
+17
+00:00:43,470 --> 00:00:45,790
+The last row has 10 − 3 = 7
+(fingers right of the fold)
+
+18
+00:00:45,840 --> 00:00:49,360
+That's why your fingers know the answer
+
+19
+00:00:49,410 --> 00:00:52,010
+Works for 9 × 1 through 9 × 10!
+
+20
+00:00:52,060 --> 00:00:54,510
+NEXT: Times 11 —
+split and add!

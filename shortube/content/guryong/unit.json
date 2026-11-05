@@ -1,0 +1,22 @@
+{
+  "code": "guryong",
+  "title": "강남 구룡마을 불, 다 꺼지기까지 12시간 50분 · 축구장 4개 넓이 숫자로 보면",
+  "format": "short",
+  "status": "uploaded",
+  "created": "2026-10-29",
+  "youtube": [
+    {
+      "id": "l1P7u6FXPMs",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "public"
+    }
+  ],
+  "tags": [],
+  "category": "society",
+  "video": {
+    "composition": "GuryongShort",
+    "bgm": "bgm/guryong.mjs"
+  },
+  "published": "2026-10-29"
+}

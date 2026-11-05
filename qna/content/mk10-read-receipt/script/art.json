@@ -1,0 +1,80 @@
+{
+  "title": "모덕후 ⑩ 읽씹 — 메신저 화면 · 도해 패러디 (로고 · 노란색 없음)",
+  "cast": {
+    "modeokhu": "the nerdy uncle: a Korean man in his late thirties with a round friendly face, a full head of messy black hair with a cowlick, thick round black-rimmed glasses that glint, a neatly tucked-in red-and-navy plaid flannel shirt buttoned to the top, khaki chinos, brown loafers and a small silver laser pointer clipped to the shirt pocket; an earnest, overly serious scholar look who has never dated; NO text, NO logos"
+  },
+  "common": [
+    "common/dad/normal",
+    "common/dad/shock",
+    "common/dad/think",
+    "common/dad/panic"
+  ],
+  "items": [
+    { "id": "modeokhu/normal", "kind": "char", "who": "modeokhu", "ref": null, "title": "모덕후 삼촌 — 기본 (진지) (mk05 그림 복사, 새로 안 뽑음)", "cuts": "여러 컷", "desc": "3/4 view turned slightly to the RIGHT. Standing upright with perfect posture, one hand pushing his glasses up the bridge of his nose so the lenses flash white, the other hand holding a thick stack of research papers. Dead-serious face, tight lips, one eyebrow raised." },
+    { "id": "modeokhu/point", "kind": "char", "who": "modeokhu", "title": "모덕후 삼촌 — 레이저 포인터로 가리킴 (mk05 그림 복사)", "cuts": "c01, c02, c03, c04, c05, c06", "desc": "3/4 view turned slightly to the RIGHT, pointing a small laser pointer at an unseen board with a lecturing look, glasses glinting." },
+    { "id": "modeokhu/proud", "kind": "char", "who": "modeokhu", "title": "모덕후 삼촌 — 으쓱 (mk05 그림 복사)", "cuts": "c06", "desc": "Facing the viewer, chest puffed, proud smug scholar smile, arms crossed." },
+    { "id": "modeokhu/fluster", "kind": "char", "who": "modeokhu", "title": "모덕후 삼촌 — 당황 (mk05 그림 복사)", "cuts": "c05, c07", "desc": "Facing the viewer, flustered, red cheeks, sweat drops, hands up." },
+    { "id": "cutin/uncle-gulp", "kind": "cutin", "who": "modeokhu", "title": "삼촌 컷인 — 꿀꺽 (mk05 그림 복사)", "cuts": "c07", "desc": "Facing the viewer, dramatic close-up from the chest up. He swallows hard with a visible comic gulp, both lenses of his thick glasses fogged up white, cheeks and ears bright red, one big sweat drop on his temple. Flustered, not leering." },
+    { "id": "bg/oneroom", "kind": "bg", "title": "배경 — 삼촌의 밤 원룸 (mk05 그림 복사)", "cuts": "c00, c06", "desc": "A small cozy Korean studio apartment at night seen straight-on like a sitcom set: low sofa, TV, stacks of books, a shelf of figurines, a cup-noodle bowl, a desk lamp and blue glow. No people. No writing anywhere." },
+    {
+      "id": "full/one-glare", "kind": "full", "people": ["modeokhu"],
+      "title": "어두운 방 — 폰 불빛에 비친 삼촌 얼굴, 화면 속 거대한 \"1\", 벽시계",
+      "cuts": "c00",
+      "desc": "Dark Korean studio apartment at night. The uncle sits on the floor hugging his knees, staring with wide unblinking eyes at a smartphone held in both hands, the cold phone light glowing on his glasses and face. Floating huge in front of the phone is a giant glossy white speech bubble with a big bold single digit 1 next to it, like a looming monster with tiny anxious eyes. A round wall clock in the background shows a little past one o'clock. Plain generic grey and white chat bubbles only; NO yellow, NO real app logo, NO brand. The only readable character anywhere is the single digit 1. No caption boxes, no frame border."
+    },
+    {
+      "id": "full/doorway-dad", "kind": "full", "people": ["dad", "modeokhu"],
+      "title": "문틈으로 보는 아빠(어이없음) + 폰을 두 손으로 쥔 삼촌 등",
+      "cuts": "c00",
+      "desc": "Night scene in a small Korean studio apartment lit by blue phone light. In the foreground right, the dad peeks through a door opened a crack, deadpan unimpressed with a half-lidded stare. In the middle of the room the uncle sits hunched with his back to us, gripping a smartphone with both hands, a faint glow on the wall around him. Several crumpled snack wrappers on the floor to show hours have passed. Both people stay in the exact gag-manga cartoon style of the attached images. Absolutely no readable words, letters or numbers anywhere; no caption boxes, no speech bubbles, no frame border."
+    },
+    {
+      "id": "full/eight-min", "kind": "full", "people": [],
+      "title": "8분 모래시계 + 허공으로 사라지는 말풍선 8개 + 침묵하는 폰",
+      "cuts": "c02",
+      "desc": "A clean cute illustration: in the center a big hourglass with sand running down; a line of eight small blank grey speech bubbles floats up out of a smartphone on the left and fades into nothing as they drift right, getting fainter one by one. A small sad grey cloud hangs over the phone. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw the person from the attached image or any people or faces. Plain generic grey and white; no yellow, no brand logo. Absolutely no readable words, letters or numbers anywhere; no caption boxes, no frame border."
+    },
+    {
+      "id": "full/ball-game", "kind": "full", "people": [],
+      "title": "공 던지기 게임 — 두 실루엣이 공을 주고받고 한 명은 혼자 서 있음",
+      "cuts": "c03",
+      "desc": "A simple diagram-style cartoon on a plain pale background: two faceless rounded cartoon figures in blue and green toss a small red ball between them, while a third smaller faceless figure in grey stands alone on the left with arms hanging down and a little rain cloud over its head. Flat colors with the same bold outline as the attached reference. Use the attached image ONLY as a reference for line weight and coloring. Do NOT copy any real person or face. Absolutely no readable words, letters or numbers anywhere; no caption boxes, no frame border."
+    },
+    {
+      "id": "full/brain-argue", "kind": "full", "people": [],
+      "title": "큰 뇌 캐릭터 + 물음표, 양쪽 학자가 서로 다른 부위를 가리킴",
+      "cuts": "c03",
+      "desc": "A large cute cartoon brain in the center with a big question mark above it and a puzzled little face. On the left a bearded professor in a lab coat with a pointer stick jabs at the front of the brain; on the right a bespectacled female researcher in a lab coat jabs her pointer at the back of the brain; both look cross and are mid-argument with small anger marks. Use the attached image ONLY as a reference for line weight and coloring. Do NOT copy the person from the attached image. Absolutely no readable words, letters or numbers anywhere; no caption boxes, no frame border."
+    },
+    {
+      "id": "full/read-vs-unread", "kind": "full", "people": ["modeokhu"],
+      "title": "두 칸: 안 읽음 삼촌 느긋 / 읽음 삼촌 식은땀",
+      "cuts": "c04",
+      "desc": "Two-panel comic strip split left and right with the same smartphone shown in each. LEFT panel: the uncle relaxed, lounging, smiling loosely at the phone, a small calm blue aura. RIGHT panel: the same uncle rigid with wide shaking eyes, big sweat drops flying off his face, a nervous red aura, the phone screen showing a tiny check mark. Generic grey and white chat bubbles only; NO yellow, NO real app logo. Absolutely no readable words or letters anywhere; no caption boxes, no frame border."
+    },
+    {
+      "id": "full/check-counter", "kind": "full", "people": ["modeokhu"],
+      "title": "삼촌이 폰을 열었다 닫았다 — 4컷 연속, 머리 위 카운터",
+      "cuts": "c05",
+      "desc": "A 2x2 grid comic of four identical small panels: in each panel the uncle sits on the floor opening his smartphone with a hopeful face then slumping, and above his head floats a growing stack of tally marks that gets bigger panel by panel (one, two, three, four groups of tally strokes drawn as plain lines, not numerals). Generic grey phone; no yellow, no app logo. Absolutely no readable words, letters or numerals anywhere; no caption boxes, no speech bubbles."
+    },
+    {
+      "id": "full/blame-translate", "kind": "full", "people": [],
+      "title": "뇌 캐릭터가 침묵 말풍선 \"…\"을 번역기에 넣으면 \"내 탓\" 도장이 찍혀 나옴",
+      "cuts": "c06",
+      "desc": "A funny machine diagram: on the left a cute cartoon brain character feeds a grey speech bubble containing only three dots into a boxy retro translator machine in the center; on the right a paper slip comes out stamped with a big red round stamp mark shaped like a crossed-out smiley (no letters). A small brass sign on the machine is left blank. Use the attached image ONLY as a reference for line weight and coloring. Do NOT copy any person. Absolutely no readable words or letters anywhere; no caption boxes, no frame border."
+    },
+    {
+      "id": "full/seller-dm", "kind": "full", "people": [],
+      "title": "삼촌 폰 화면 — 보낸 말풍선 + 읽음 표시, 곁에 로봇 장난감 박스",
+      "cuts": "c07",
+      "desc": "A close-up of a smartphone screen in a clean flat illustration: a single outgoing plain white speech bubble on the right side containing a tiny question-mark icon, a small check mark beside it showing it was seen, an empty chat area below, and next to the phone a boxed giant-robot toy figure in a window box. Plain generic grey and white interface; NO yellow, NO real app logo. Use the attached image ONLY as a reference for line weight and coloring. Do NOT draw any people. Absolutely no readable words or letters anywhere; no caption boxes, no frame border."
+    },
+    {
+      "id": "full/soldout", "kind": "full", "people": ["modeokhu"],
+      "title": "폰에 답장 도착, 삼촌은 책상에 엎어짐",
+      "cuts": "c07",
+      "desc": "The uncle slumped face-down over a desk with his arms limp, the glasses askew, a thin gloomy cloud above him, his smartphone lying in front of him lit up with a new incoming plain white message bubble that holds only a bold red X mark icon. Beside the desk an empty giant-robot toy display box. Generic grey and white interface, no yellow, no app logo. Absolutely no readable words or letters anywhere; no caption boxes, no frame border."
+    }
+  ]
+}

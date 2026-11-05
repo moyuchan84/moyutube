@@ -1,0 +1,59 @@
+[
+  {
+    "id": "Mk10-Short-ReadReceipt",
+    "series": "모덕후 · 이상하지만 진지한 고찰",
+    "narr": "모덕후",
+    "crop": 1920,
+    "hook": [
+      "답장이 없으면",
+      "뇌가 하는 짓?"
+    ],
+    "title": "⑩ 읽씹",
+    "clips": [
+      { "from": 0, "to": 1966 }
+    ],
+    "end": {
+      "title": [
+        "읽씹당했을 때",
+        "몇 분까지 참아 봤나요?"
+      ],
+      "sub": "구독하고 다음 편 이어 보기"
+    }
+  },
+  {
+    "id": "Mk10-Short-ReadReceipt-Insta",
+    "series": "모덕후 · 이상하지만 진지한 고찰",
+    "narr": "모덕후",
+    "crop": 1920,
+    "hook": [
+      "답장이 없으면",
+      "뇌가 하는 짓?"
+    ],
+    "title": "⑩ 읽씹",
+    "clips": [
+      { "from": 0, "to": 1966 }
+    ],
+    "end": {
+      "title": [
+        "읽씹당했을 때",
+        "몇 분까지 참아 봤나요?"
+      ],
+      "sub": "YouTube 「모라구」 모덕후"
+    },
+    "en": {
+      "series": "Modeokhu · Weird but serious research",
+      "hook": [
+        "No reply?",
+        "What your brain does"
+      ],
+      "title": "#10 Left on Read",
+      "end": {
+        "title": [
+          "How many minutes did you",
+          "last when left on read?"
+        ],
+        "sub": "YouTube · Morago"
+      }
+    }
+  }
+]
