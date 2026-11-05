@@ -1,0 +1,12 @@
+{
+  "name": "comics-video",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render": "remotion render src/index.ts",
+    "still": "remotion still src/index.ts",
+    "audio": "node scripts/audio.mjs",
+    "art": "node scripts/art.mjs"
+  }
+}
