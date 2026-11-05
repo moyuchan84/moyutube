@@ -1879,6 +1879,70 @@
     "w": 2560,
     "h": 1440
   },
+  "mk10/modeokhu/normal": {
+    "w": 941,
+    "h": 1500
+  },
+  "mk10/modeokhu/point": {
+    "w": 988,
+    "h": 1500
+  },
+  "mk10/modeokhu/proud": {
+    "w": 874,
+    "h": 1500
+  },
+  "mk10/modeokhu/fluster": {
+    "w": 942,
+    "h": 1500
+  },
+  "mk10/cutin/uncle-gulp": {
+    "w": 1193,
+    "h": 1300
+  },
+  "mk10/bg/oneroom": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk10/full/one-glare": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk10/full/doorway-dad": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk10/full/eight-min": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk10/full/ball-game": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk10/full/brain-argue": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk10/full/read-vs-unread": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk10/full/check-counter": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk10/full/blame-translate": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk10/full/seller-dm": {
+    "w": 2560,
+    "h": 1440
+  },
+  "mk10/full/soldout": {
+    "w": 2560,
+    "h": 1440
+  },
   "nm01/full/highway-cutin": {
     "w": 2560,
     "h": 1440
