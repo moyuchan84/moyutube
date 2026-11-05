@@ -12,11 +12,13 @@ import * as english from "../units/english";
 import * as foliage from "../units/foliage";
 import * as france from "../units/france";
 import * as gta from "../units/gta";
+import * as guryong from "../units/guryong";
 import * as heat from "../units/heat";
 import * as kpop from "../units/kpop";
 import * as market from "../units/market";
 import * as mvrace from "../units/mvrace";
 import * as networth from "../units/networth";
+import * as q3chips from "../units/q3chips";
 import * as ranking from "../units/ranking";
 import * as relay from "../units/relay";
 import * as seoulsupply from "../units/seoulsupply";
@@ -42,11 +44,13 @@ export const UNITS = [
   { code: "foliage", id: "FoliageShort", ...foliage },
   { code: "france", id: "FranceShort", ...france },
   { code: "gta", id: "GtaShort", ...gta },
+  { code: "guryong", id: "GuryongShort", ...guryong },
   { code: "heat", id: "HeatShort", ...heat },
   { code: "kpop", id: "KpopNumbers", ...kpop },
   { code: "market", id: "MarketShort", ...market },
   { code: "mvrace", id: "MvraceShort", ...mvrace },
   { code: "networth", id: "NetWorthShort", ...networth },
+  { code: "q3chips", id: "Q3chipsShort", ...q3chips },
   { code: "ranking", id: "RankingShort", ...ranking },
   { code: "relay", id: "RelayShort", ...relay },
   { code: "seoulsupply", id: "SeoulSupplyShort", ...seoulsupply },

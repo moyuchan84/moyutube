@@ -1,0 +1,15 @@
+{
+  "fps": 30,
+  "bpm": 72,
+  "scenes": [
+    { "id": "hook", "from": 0, "dur": 150 },
+    { "id": "clock", "from": 150, "dur": 270 },
+    { "id": "scale", "from": 420, "dur": 270 },
+    { "id": "count", "from": 690, "dur": 270 },
+    { "id": "why", "from": 960, "dur": 180 },
+    { "id": "outro", "from": 1140, "dur": 120 }
+  ],
+  "total": 1260,
+  "hits": [60, 330, 520, 600, 780, 860, 1050],
+  "wipes": [150, 420, 690, 960, 1140]
+}

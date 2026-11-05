@@ -1,0 +1,22 @@
+{
+  "code": "q3chips",
+  "title": "삼성전자 영업이익 107조 · 하이닉스 이익률 80% · 구글 클라우드 2배, 3분기 실적 숫자로 보면",
+  "format": "short",
+  "status": "uploaded",
+  "created": "2026-10-29",
+  "youtube": [
+    {
+      "id": "FUIM5F0wIDw",
+      "kind": "short",
+      "lang": "ko",
+      "visibility": "public"
+    }
+  ],
+  "tags": [],
+  "category": "market",
+  "video": {
+    "composition": "Q3chipsShort",
+    "bgm": "bgm/q3chips.mjs"
+  },
+  "published": "2026-10-29"
+}
