@@ -1,0 +1,18 @@
+{
+  "TITLE": "Finding prime numbers\non a 100-square grid",
+  "NEXT": "More math secrets, explained with pictures",
+  "EN": {
+    "1과 자기 자신으로만 나눠지는 수\n= 소수! 여기엔 몇 개 있을까요?": "A number divisible only by 1 and itself\nis a prime! How many are here?",
+    "1은 소수가 아니라서 먼저 지워요": "1 is not a prime, so cross it out first",
+    "2는 남기고\n2의 배수를 모두 지워요": "Keep 2,\nthen cross out all multiples of 2",
+    "다음으로 남은 3!\n3의 배수도 지워요": "Next one left: 3!\nCross out its multiples too",
+    "4는 이미 지웠으니\n5의 배수 차례": "4 is already gone,\nso it's 5's turn",
+    "마지막으로 7의 배수": "Last, the multiples of 7",
+    "다음은 11, 11 × 11 = 121\n100을 넘으니 여기서 끝!": "Next is 11, and 11 × 11 = 121\nPast 100, so we stop here!",
+    "지워지지 않고 남은 수가 소수예요!": "The numbers left standing are the primes!",
+    "정답은 25개!\n맞혔나요?": "The answer is 25!\nDid you get it?",
+    "그리스 수학자 에라토스테네스가\n이 방법을 썼어요": "The Greek mathematician Eratosthenes\nused this method",
+    "21~30 사이 소수는 몇 개일까요?\n댓글로 알려 주세요!": "How many primes are between 21 and 30?\nTell us in the comments!",
+    "다음 수학 비밀도\n그림으로 풀어요": "More math secrets,\nexplained with pictures"
+  }
+}
