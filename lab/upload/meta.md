@@ -916,3 +916,21 @@ EN 제목: A Paper Strip With Only One Side? Cutting a Möbius Strip | Math You 
 EN 제목: Fold Paper 42 Times and Reach the Moon? The Power of Doubling | Math You Can See #Shorts
 
 업로드 기록 (2026-11-02): 종이 한 장 수학 1편 https://youtube.com/shorts/TuAJznzK1m4 · 2편 https://youtube.com/shorts/fi2ACOnSt_g · 3편 https://youtube.com/shorts/QdgNeLe6mpY — 사용자 요청으로 바로 **공개** 게시(Studio Shorts 목록에서 세 편 모두 "공개" 재확인), 재생목록 "보면 풀리는 수학", 아동용 아니요, AI 사용(변형 콘텐츠) 아니요, 카테고리 교육, 태그 10개, 영어 자막 수동 게시. 영어 제목 · 설명은 아직 안 넣음. 업로드는 페이지 JS 한 번(파일 · 제목 · 설명 · 재생목록 · 라디오 · 태그 · 다음 3번 · PUBLIC) → 링크 확인 → #done-button. Studio 는 Trusted Types 로 eval 이 막혀 스크립트를 매번 그대로 붙인다.
+
+## 소수 찾기 — sieve.mp4 (0:42)
+<!-- 키워드 조사 2026-11-09: 소수 구하는 법(중앙값 110,846, 제목) · 소수 찾기 3,793 · 소수란 17,592 · 초등 소수 46,754 · 에라토스테네스의 체 768 · 자동완성 "소수 찾는법" "소수 세기" -->
+제목: 소수 구하는 법! 100칸 표에서 소수 25개 찾기 | 보면 풀리는 수학 #Shorts
+설명:
+먼저 도전! 1부터 100까지 소수는 몇 개일까요? 소수는 1과 자기 자신으로만 나눠지는 수예요.
+비법은 지우기! 1은 소수가 아니니 먼저 지우고, 2는 남기고 2의 배수를 모두 지워요. 다음에 남은 3의 배수, 5의 배수, 7의 배수도 차례로 지워요.
+왜 7까지만 지울까요? 다음은 11인데 11 × 11 = 121 이라 100을 넘거든요. 지워지지 않고 남은 수가 소수, 모두 25개예요!
+약 2200년 전 그리스 수학자 에라토스테네스가 이 방법을 썼어요. 21부터 30 사이 소수는 몇 개일까요? 댓글로 알려 주세요!
+
+더 많은 수학 주제를 만나고 싶다면 구독! 
+
+#소수 #소수구하는법 #에라토스테네스의체 #초등수학 #보면풀리는수학 #모라구
+태그: 소수 구하는 법, 소수 찾기, 소수란, 초등 소수, 소수 100까지, 에라토스테네스의 체, 소수 찾는법, 초등 수학, 신기한 수학, 보면 풀리는 수학
+EN 제목: How to Find Prime Numbers: The Sieve of Eratosthenes #Shorts
+EN 설명: Which numbers from 1 to 100 are prime? Cross out 1, then the multiples of 2, 3, 5 and 7 — you can stop at 7 because 11 × 11 = 121 is past 100. The 25 numbers left standing are the primes! The Greek mathematician Eratosthenes used this method about 2,200 years ago. How many primes are between 21 and 30? Tell us in the comments! Want more math topics? Subscribe!
+
+업로드 기록 (2026-11-09): 소수 찾기(sieve) https://youtube.com/shorts/y3BPpobdXYY — 사용자 요청으로 바로 **공개** 게시(Studio Shorts 목록에서 "공개" 재확인), 재생목록 "보면 풀리는 수학", 아동용 아니요, AI 사용 아니요, 태그 10개, 영어 자막 게시 완료. 영어 제목·설명도 게시 완료(2026-11-09 재시도: 언어 표의 영어 줄 이름 버튼을 눌러 열리는 "영어" 창의 제목·설명 칸에 입력 → 업데이트).
