@@ -1,0 +1,356 @@
+{
+  "fps": 30,
+  "bpm": 60,
+  "no": "UNEXPLAINED ①",
+  "series": {
+    "n": 1,
+    "total": 5
+  },
+  "bgm": "bgm/hellgate.wav",
+  "lang": "en",
+  "accent": "#FF6A1A",
+  "transition": "glitch",
+  "endBg": "radial-gradient(ellipse at 50% 40%, #2A0A02 0%, #050101 75%)",
+  "thumb": {
+    "image": "wikimedia-4f949497.jpg",
+    "focus": [
+      0.57,
+      0.4
+    ],
+    "zoom": 1.1,
+    "big": "WHO?",
+    "unit": "",
+    "ko": "수십 년째 타는 구멍\n누가 불을 붙였나",
+    "en": "Burning for decades.\nWho lit it?",
+    "tag": "Photo: John Pavelka (CC BY 2.0)"
+  },
+  "end": {
+    "ko": "설명이 안 되는 곳 5곳\n구독하면 이어서 보여요",
+    "en": "5 places no one\ncan fully explain.\nSubscribe for the next.",
+    "askKo": "불을 꺼야 할까,\n그대로 둬야 할까?",
+    "askEn": "Put it out,\nor let it burn?",
+    "next": {
+      "image": "wikimedia-940d5cfb.jpg",
+      "ko": "② 해골 호수",
+      "en": "② Skeleton Lake"
+    }
+  },
+  "shots": [
+    {
+      "type": "photo",
+      "from": 0,
+      "dur": 2.2,
+      "image": "wikimedia-9b2b2566.jpg",
+      "zoom": [
+        1.7,
+        2
+      ],
+      "focus": [
+        0.48,
+        0.52
+      ],
+      "tint": 0.1,
+      "credit": "Photo: Darvaza gas crater, John Pavelka (CC BY 2.0)",
+      "texts": [
+        {
+          "at": 0.15,
+          "to": 2.15,
+          "ko": "사막 한가운데\n뚫린 구멍",
+          "en": "A hole in the\nmiddle of a desert",
+          "big": true
+        }
+      ]
+    },
+    {
+      "type": "black",
+      "from": 2.2,
+      "dur": 0.4
+    },
+    {
+      "type": "photo",
+      "from": 2.6,
+      "dur": 2.6,
+      "image": "wikimedia-4f949497.jpg",
+      "zoom": [
+        1.05,
+        1.2
+      ],
+      "focus": [
+        0.57,
+        0.4
+      ],
+      "tint": 0.35,
+      "credit": "Photo: Darvaza gas crater, John Pavelka (CC BY 2.0)",
+      "hits": [
+        {
+          "at": 0,
+          "kind": "flash"
+        },
+        {
+          "at": 1.05,
+          "kind": "shake"
+        }
+      ],
+      "texts": [
+        {
+          "at": 0.1,
+          "to": 1,
+          "ko": "밤이 되면…",
+          "en": "At night…",
+          "big": true
+        },
+        {
+          "at": 1.05,
+          "to": 2.55,
+          "ko": "수십 년째\n꺼지지 않는 불",
+          "en": "It has been\nburning for\ndecades",
+          "big": true
+        }
+      ]
+    },
+    {
+      "type": "photo",
+      "from": 5.2,
+      "dur": 3,
+      "image": "wikimedia-55455c5d.jpg",
+      "zoom": [
+        1.3,
+        1.45
+      ],
+      "focus": [
+        0.57,
+        0.66
+      ],
+      "credit": "Photo: Darvaza gas crater, John Pavelka (CC BY 2.0)",
+      "counter": {
+        "to": 70,
+        "unit": " m wide",
+        "start": 0.1,
+        "dur": 1
+      },
+      "texts": [
+        {
+          "at": 1.2,
+          "to": 2.95,
+          "ko": "깊이 약 30 m",
+          "en": "About 30 m deep"
+        }
+      ]
+    },
+    {
+      "type": "card",
+      "from": 8.2,
+      "dur": 2.4,
+      "bg": "radial-gradient(ellipse at 50% 60%, #3A1404 0%, #0A0201 75%)",
+      "hits": [
+        {
+          "at": 0.1,
+          "kind": "red"
+        }
+      ],
+      "texts": [
+        {
+          "at": 0.3,
+          "to": 2.35,
+          "ko": "사람들은 이곳을\n'지옥의 문'이라 부른다",
+          "en": "People call it\n\"The Door to Hell\"",
+          "big": true
+        }
+      ]
+    },
+    {
+      "type": "photo",
+      "from": 10.6,
+      "dur": 3.6,
+      "video": "pixabay-721daa9c.mp4",
+      "rate": 0.6,
+      "illustrative": true,
+      "zoom": [
+        1.15,
+        1.3
+      ],
+      "tint": 0.3,
+      "texts": [
+        {
+          "at": 0.1,
+          "to": 1.8,
+          "ko": "흔한 이야기: 1971년\n소련 시추 중 땅이 꺼졌다",
+          "en": "The story:\n1971, a Soviet drill\nhits a gas cave"
+        },
+        {
+          "at": 1.85,
+          "to": 3.55,
+          "ko": "가스를 태워 없애려 불을 붙였다\n곧 꺼질 줄 알고",
+          "en": "They lit it,\nexpecting it to\nburn out fast"
+        }
+      ]
+    },
+    {
+      "type": "card",
+      "from": 14.2,
+      "dur": 3.2,
+      "bg": "radial-gradient(ellipse at 50% 45%, #2A0A02 0%, #050101 75%)",
+      "stamp": {
+        "text": "1971?",
+        "at": 0.1
+      },
+      "hits": [
+        {
+          "at": 0.1,
+          "kind": "glitch"
+        }
+      ],
+      "texts": [
+        {
+          "at": 0.55,
+          "to": 1.9,
+          "ko": "그런데 이 이야기엔\n공식 기록이 없다",
+          "en": "But there's\nno official record",
+          "big": true
+        },
+        {
+          "at": 1.95,
+          "to": 3.15,
+          "ko": "1960년대에 꺼지고 1980년대에\n불 붙었다는 주장도 있다",
+          "en": "Some say: collapsed\nin the '60s,\nlit in the '80s"
+        }
+      ]
+    },
+    {
+      "type": "photo",
+      "from": 17.4,
+      "dur": 2.8,
+      "image": "wikimedia-02b5b67a.jpg",
+      "zoom": [
+        1.3,
+        1.45
+      ],
+      "focus": [
+        0.33,
+        0.6
+      ],
+      "tint": 0.15,
+      "credit": "Photo: Darvaza gas crater, John Pavelka (CC BY 2.0)",
+      "hits": [
+        {
+          "at": 0,
+          "kind": "shake"
+        }
+      ],
+      "texts": [
+        {
+          "at": 0.1,
+          "to": 2.75,
+          "ko": "누가, 언제 붙였는지\n아직 확실히 모른다",
+          "en": "Who lit it? When?\nNo one knows\nfor sure.",
+          "big": true
+        }
+      ]
+    },
+    {
+      "type": "photo",
+      "from": 20.2,
+      "dur": 3,
+      "image": "wikimedia-d842375b.jpg",
+      "zoom": [
+        1.6,
+        1.75
+      ],
+      "focus": [
+        0.6,
+        0.86
+      ],
+      "credit": "Photo: Darvaza gas crater, John Pavelka (CC BY 2.0)",
+      "texts": [
+        {
+          "at": 0.1,
+          "to": 2.95,
+          "ko": "땅속 가스가\n계속 새어 올라와 탄다",
+          "en": "Gas keeps seeping\nup from below,\nfeeding the fire"
+        }
+      ]
+    },
+    {
+      "type": "card",
+      "from": 23.2,
+      "dur": 3.6,
+      "bg": "linear-gradient(180deg, #2A1206 0%, #070201 100%)",
+      "bars": [
+        {
+          "label": "Before",
+          "text": "100%",
+          "value": 3,
+          "max": 3.3,
+          "at": 1.9,
+          "color": "#FF6A1A"
+        },
+        {
+          "label": "2025",
+          "text": "≈ 1/3",
+          "value": 1,
+          "max": 3.3,
+          "at": 2.3,
+          "color": "#8FA3BF"
+        }
+      ],
+      "texts": [
+        {
+          "at": 0.1,
+          "to": 1.8,
+          "ko": "2022년\n'불을 끄라'는 명령",
+          "en": "2022: an order\nto put it out",
+          "big": true
+        },
+        {
+          "at": 1.85,
+          "to": 3.55,
+          "ko": "2025년 공식 발표\n불길이 약 3분의 1로",
+          "en": "2025: officials say\nthe fire shrank\nnearly threefold"
+        }
+      ]
+    },
+    {
+      "type": "photo",
+      "from": 26.8,
+      "dur": 3,
+      "image": "wikimedia-6b97531b.jpg",
+      "zoom": [
+        1.6,
+        1.2
+      ],
+      "focus": [
+        0.5,
+        0.55
+      ],
+      "tint": 0.35,
+      "credit": "Photo: Darvaza gas crater, John Pavelka (CC BY 2.0)",
+      "hits": [
+        {
+          "at": 0,
+          "kind": "flash"
+        }
+      ],
+      "texts": [
+        {
+          "at": 0.15,
+          "to": 1.45,
+          "ko": "지옥의 문이\n닫히고 있다",
+          "en": "The Door to Hell\nis closing",
+          "big": true
+        },
+        {
+          "at": 1.5,
+          "to": 2.95,
+          "ko": "누가 열었는지도\n모른 채로",
+          "en": "And we still don't\nknow who opened it",
+          "big": true
+        }
+      ]
+    },
+    {
+      "type": "end",
+      "from": 29.8,
+      "dur": 3
+    }
+  ]
+}

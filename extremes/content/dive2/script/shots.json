@@ -1,0 +1,120 @@
+{
+  "fps": 30,
+  "bpm": 92,
+  "no": "DIVE ②",
+  "series": { "n": 2, "total": 3 },
+  "bgm": "bgm/dive2.wav",
+  "lang": "en",
+  "accent": "#FF8A3D",
+  "transition": "dive",
+  "dive": { "max": 6371000, "scale": "log", "km": 20000, "center": 6371000 },
+  "endBg": "radial-gradient(ellipse at 50% 35%, #3A1606 0%, #0A0301 75%)",
+  "thumb": {
+    "image": "wikimedia-4e23b884.jpg",
+    "focus": [0.5, 0.5],
+    "zoom": 1.1,
+    "big": "DIVE",
+    "unit": "",
+    "ko": "땅속으로\n끝까지 파 보면?",
+    "en": "How deep\ncan we dig?",
+    "tag": "Photo: David Ratledge (CC BY 4.0)"
+  },
+  "end": {
+    "ko": "끝까지 가 보기 3편\n구독하면 이어서 보여요",
+    "en": "All the way.\n3 dives.\nSubscribe for the next.",
+    "askKo": "어디까지 내려가 보고 싶어요?",
+    "askEn": "How far down\nwould you go?",
+    "next": { "image": "wikimedia-a4a0ba26.jpg", "ko": "③ 하늘 위로 끝까지", "en": "③ Up into the sky" }
+  },
+  "shots": [
+    {
+      "type": "photo", "from": 0, "dur": 2.2, "depth": 0,
+      "video": "pixabay-e589f1cb.mp4", "videoStart": 1, "rate": 1,
+      "illustrative": true,
+      "zoom": [1.05, 1.3], "focus": [0.5, 0.6], "tint": 0,
+      "credit": "Footage: videohive / Pixabay",
+      "texts": [
+        { "at": 0.1, "to": 2.15, "ko": "땅속으로 어디까지 갈 수 있을까?", "en": "How deep\ncan we dig?", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 2.2, "dur": 2.4, "depth": 1200,
+      "image": "wikimedia-4e23b884.jpg",
+      "zoom": [1.15, 1.35], "focus": [0.5, 0.55], "tint": 0,
+      "credit": "Photo: Bingham Canyon Mine, Utah · David Ratledge (CC BY 4.0)",
+      "texts": [
+        { "at": 0.45, "to": 2.35, "ko": "가장 깊은 노천 광산 · 미국 빙엄", "en": "Deepest\nopen-pit mine", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 4.6, "dur": 2.4, "depth": 2224,
+      "video": "pixabay-958db069.mp4", "videoStart": 4, "rate": 0.6,
+      "illustrative": true,
+      "zoom": [1.05, 1.25], "focus": [0.5, 0.5], "tint": 0.05,
+      "credit": "Footage: danydory / Pixabay (not Krubera)",
+      "texts": [
+        { "at": 0.45, "to": 2.35, "ko": "가장 깊은 동굴 · 크루베라", "en": "Deepest\nknown cave", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 7.0, "dur": 2.4, "depth": 4000,
+      "image": "pixabay-4e8080b7.jpg",
+      "illustrative": true,
+      "zoom": [1.1, 1.3], "focus": [0.5, 0.4], "tint": 0.05,
+      "credit": "Photo: mine headframe · DavidReed / Pixabay (not Mponeng)",
+      "texts": [
+        { "at": 0.45, "to": 2.35, "ko": "가장 깊은 광산 · 남아공 음포넹 금광", "en": "Deepest mine.\nFor gold.", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 9.4, "dur": 3.0, "depth": 12262,
+      "image": "wikimedia-55d1f8f2.jpg",
+      "zoom": [1.1, 1.3], "focus": [0.5, 0.5], "tint": 0.1,
+      "credit": "Photo: Kola Superdeep Borehole section, museum display · А. Сигачёв (CC0)",
+      "hits": [{ "at": 1.75, "kind": "shake" }],
+      "texts": [
+        { "at": 0.45, "to": 1.7, "ko": "사람이 판 가장 깊은 구멍 · 콜라 1989", "en": "Deepest hole\never dug", "big": true },
+        { "at": 1.75, "to": 2.95, "ko": "사람은 여기서 멈췄다", "en": "Humans\nstopped here.", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 12.4, "dur": 2.4, "depth": 40000,
+      "image": "wikimedia-4c193754.jpg",
+      "zoom": [1.0, 1.15], "focus": [0.6, 0.5], "tint": 0.05,
+      "credit": "Photo: mantle rock (peridotite) brought up by a volcano · James St. John (CC BY 2.0)",
+      "texts": [
+        { "at": 0.45, "to": 2.35, "ko": "맨틀 시작 · 대륙 평균 약 40 km", "en": "The mantle.", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 14.8, "dur": 2.6, "depth": 2890000,
+      "image": "wikimedia-4362758c.jpg",
+      "zoom": [1.3, 1.6], "focus": [0.5, 0.45], "tint": 0.05,
+      "credit": "Photo: iron meteorite slice — core-like iron-nickel (illustrative) · Daderot (CC0)",
+      "texts": [
+        { "at": 0.45, "to": 2.55, "ko": "외핵 · 녹은 쇳물의 바다", "en": "An ocean of\nliquid iron", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 17.4, "dur": 2.6, "depth": 5150000,
+      "image": "wikimedia-88eb3815.jpg",
+      "zoom": [1.0, 1.15], "focus": [0.5, 0.5], "tint": 0,
+      "credit": "Photo: the Sun · NASA/SDO (AIA) (Public domain)",
+      "texts": [
+        { "at": 0.45, "to": 2.55, "ko": "내핵 · 약 6,000 °C, 태양 표면만큼", "en": "As hot as\nthe Sun's surface", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 20.0, "dur": 3.6, "depth": 6371000,
+      "image": "wikimedia-82cb3638.jpg",
+      "zoom": [2.2, 1.05], "focus": [0.5, 0.5], "tint": 0.1,
+      "credit": "Photo: Earth from Apollo 17, 1972 · NASA (Public domain)",
+      "hits": [{ "at": 0.8, "kind": "shake" }],
+      "texts": [
+        { "at": 0.45, "to": 1.9, "ko": "지구 중심", "en": "The center.", "big": true },
+        { "at": 1.95, "to": 3.55, "ko": "사람이 파 내려간 건 0.19% 뿐", "en": "We've dug\n0.19% of the way." }
+      ]
+    },
+    { "type": "end", "from": 23.6, "dur": 3.6 }
+  ]
+}

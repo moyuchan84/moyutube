@@ -1,0 +1,20 @@
+{
+  "style": "Flat editorial illustration, muted warm palette (ink black, aged paper beige, vermilion red accent), soft paper texture, clean shapes, cinematic wide 16:9 composition. Absolutely no text, no letters, no numbers, no logos, no human faces (people only as faceless silhouettes seen from behind or far away), no caption boxes, no frame border.",
+  "images": [
+    { "id": "hook-split", "use": "챕터1 훅", "prompt": "A single exam paper split down the middle: the left half an ancient scroll with brush ink, the right half a modern printed answer sheet, a faint clock behind, dramatic lighting." },
+    { "id": "cells-aerial", "use": "챕터2 칸", "prompt": "Aerial view of endless long rows of tiny narrow brick exam cells in a walled imperial Chinese examination compound, tiny faceless figures seated inside, golden hour light." },
+    { "id": "search-gate", "use": "챕터2 몸수색", "prompt": "Faceless silhouette of an imperial Chinese guard from behind checking the long sleeve of a scholar at a stone gate, lanterns, evening, no faces." },
+    { "id": "red-copy", "use": "챕터2 붉은 사본", "prompt": "Close-up of hands (no faces) writing with a brush and vermilion red ink, copying text onto a sheet from a stack of papers on a wooden desk, candlelight." },
+    { "id": "sealed-names", "use": "챕터2~3 이름 봉함", "prompt": "Close-up of a folded and sealed strip at the top of an old paper answer sheet, a red wax-like seal, brush writing blurred below, no readable text." },
+    { "id": "joseon-clerks", "use": "챕터3 서기", "prompt": "Traditional Korean Joseon-era scribes seen from behind sitting in rows on a wooden floor, each writing quickly with a brush on long papers, soft light through paper doors, no faces." },
+    { "id": "modern-desk", "use": "챕터4 고사장", "prompt": "An empty modern high school exam room, rows of desks with test booklets and pencils, bright morning light through windows, calm and tense atmosphere, no people." },
+    { "id": "admission-ticket", "use": "챕터4 사진 등록", "prompt": "A test admission ticket on a desk with a blank rectangular photo box and a pencil beside it, shallow depth of field, no text, no face." },
+    { "id": "text-chain", "use": "챕터5 문자", "prompt": "Stylized illustration of a large school building at night with glowing speech-bubble icons flying out of windows and back in, toward and from small distant glowing phones, no text or numbers." },
+    { "id": "answer-sheet-erase", "use": "챕터6 애틀랜타", "prompt": "Extreme close-up of a bubble answer sheet with several marks being erased by a pink eraser, eraser crumbs, dramatic side light, no text." },
+    { "id": "takehome-laptop", "use": "챕터6 하버드", "prompt": "A dorm desk at night with an open laptop and scattered papers, a mug, lamp glow, empty chair, no people, no logo on the laptop." },
+    { "id": "gate-scanner", "use": "챕터7 신호 차단", "prompt": "Faceless silhouettes of students from behind queueing at an exam site entrance with a walk-through metal detector gate, early morning, dramatic fog, no faces." },
+    { "id": "phone-paused", "use": "챕터7 챗봇 중단", "prompt": "A smartphone on a desk showing a generic chat interface with a large pause symbol overlay, dim light, no text, no app logo." },
+    { "id": "glasses-tray", "use": "챕터7 수능 기기 금지", "prompt": "A tray on a table holding a pair of generic smart glasses, a smartwatch, wireless earbuds and a phone, neat flat lay, no logos, no text." },
+    { "id": "outro-hourglass", "use": "챕터8 마무리", "prompt": "A giant hourglass with sand of ancient scrolls on one side and glowing digital particles on the other, sitting over a row of exam desks, cinematic, no text." }
+  ]
+}

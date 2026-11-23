@@ -1,0 +1,115 @@
+{
+  "fps": 30,
+  "bpm": 88,
+  "no": "EARTH'S MOST ③",
+  "series": { "n": 3, "total": 5 },
+  "bgm": "bgm/big5.wav",
+  "lang": "en",
+  "accent": "#7CE06A",
+  "transition": "blinds",
+  "progress": 5,
+  "title": { "en": "5 BIGGEST LIVING THINGS", "ko": "지구에서 가장 큰 생물 TOP 5" },
+  "endBg": "radial-gradient(ellipse at 50% 40%, #0B2A10 0%, #020A03 75%)",
+  "thumb": {
+    "image": "wikimedia-a6d74b84.jpg",
+    "focus": [0.5, 0.35],
+    "zoom": 1.1,
+    "big": "TOP 5",
+    "unit": "",
+    "ko": "지구에서 가장 큰 생물\n코끼리는 5위 안에도 못 든다",
+    "en": "Biggest living things.\nThe elephant isn't\neven top 5.",
+    "tag": "Photo: General Sherman tree · Jim Bahn (CC BY 2.0)"
+  },
+  "end": {
+    "ko": "세계에서 가장 ___ 5편\n구독하면 이어서 보여요",
+    "en": "Earth's most extreme,\n5 at a time.\nSubscribe for the next.",
+    "askKo": "이 중에서 가장\n보고 싶은 건?",
+    "askEn": "Which one would\nYOU go see?",
+    "next": { "image": "wikimedia-5dc8dc8f.jpg", "ko": "④ 지구에서 가장 희귀한 것", "en": "④ The rarest" }
+  },
+  "shots": [
+    {
+      "type": "photo", "from": 0, "dur": 2.6,
+      "image": "pixabay-cedba37f.jpg",
+      "zoom": [1.0, 1.25], "focus": [0.5, 0.4], "tint": 0.1,
+      "credit": "Photo: African elephant · Amandad / Pixabay",
+      "counter": { "to": 10, "prefix": "~", "unit": "t", "start": 0.1, "dur": 1 },
+      "texts": [
+        { "at": 0.1, "to": 1.3, "ko": "가장 큰 육지 동물 · 최대 약 10 t", "en": "Biggest land animal.\nUp to ~10 tons.", "big": true },
+        { "at": 1.35, "to": 2.55, "ko": "5위 안에도 못 든다", "en": "Not even\ntop 5.", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 2.6, "dur": 4.6, "rank": 5,
+      "image": "wikimedia-051e9bfc.jpg",
+      "zoom": [1.2, 1.5], "focus": [0.5, 0.62], "tint": 0.1,
+      "credit": "Photo: blue whale · Shulman (Public domain) · Record: Guinness",
+      "counter": { "from": 10, "to": 190, "unit": "t", "start": 0.6, "dur": 1.4 },
+      "texts": [
+        { "at": 0.5, "to": 2.3, "ko": "가장 큰 동물 · 대왕고래", "en": "Biggest animal ever\nBlue whale" },
+        { "at": 2.4, "to": 4.5, "ko": "기록 190 t (1947)\n그래도 5위", "en": "190 tons on record.\nStill only #5.", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 7.2, "dur": 4.6, "rank": 4,
+      "image": "wikimedia-a6d74b84.jpg",
+      "zoom": [1.0, 1.25], "focus": [0.5, 0.85], "focusTo": [0.5, 0.25], "tint": 0.05,
+      "credit": "Photo: General Sherman tree · Jim Bahn (CC BY 2.0) · Data: US National Park Service",
+      "counter": { "from": 0, "to": 1487, "unit": "m³", "start": 0.6, "dur": 1.4 },
+      "texts": [
+        { "at": 0.5, "to": 2.3, "ko": "가장 큰 나무 · 제너럴 셔먼", "en": "Biggest tree\nGeneral Sherman, USA" },
+        { "at": 2.4, "to": 4.5, "ko": "나무 몸통만 1,487 m³\n높이 83.8 m", "en": "1,487 m³ of wood.\n84 m tall.", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 11.8, "dur": 4.6, "rank": 3,
+      "image": "wikimedia-c7feb645.jpg",
+      "zoom": [1.0, 1.3], "focus": [0.55, 0.9], "focusTo": [0.55, 0.3], "tint": 0.05,
+      "credit": "Photo: Pando, Utah · Intermountain Forest Service (Public domain)",
+      "counter": { "from": 0, "to": 47, "prefix": "~", "unit": "k", "start": 0.6, "dur": 1.4 },
+      "texts": [
+        { "at": 0.5, "to": 2.3, "ko": "숲처럼 보이는 나무 한 그루 · 판도", "en": "A forest that is\nONE tree · Pando, USA" },
+        { "at": 2.4, "to": 4.5, "ko": "뿌리 하나로 이어진 약 47,000그루\n약 6,000 t", "en": "~47,000 trunks.\nOne root. ~6,000 tons.", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 16.4, "dur": 4.6, "rank": 2,
+      "image": "wikimedia-1e78d3e8.jpg",
+      "illustrative": true,
+      "zoom": [1.1, 1.4], "focus": [0.5, 0.5], "tint": 0.2,
+      "credit": "Photo: Armillaria ostoyae mushrooms · Holger Krisp (CC BY 3.0) · not the Oregon individual · Area: Guinness",
+      "counter": { "from": 43, "to": 965, "unit": "ha", "start": 0.6, "dur": 1.4 },
+      "texts": [
+        { "at": 0.5, "to": 2.3, "ko": "땅속 균류 · 오리건", "en": "A fungus underground\nOregon, USA" },
+        { "at": 2.4, "to": 4.5, "ko": "축구장 1,350개 넓이\n버섯은 겨우 꼭대기", "en": "965 hectares.\nMushrooms are just the tip.", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 21, "dur": 4.4, "rank": 1,
+      "image": "wikimedia-503d0f78.jpg",
+      "zoom": [1.1, 1.4], "focus": [0.5, 0.55], "focusTo": [0.5, 0.35], "tint": 0.05,
+      "credit": "Photo: Shark Bay, Australia · NASA (Public domain) · Study: Edgeloe et al. 2022",
+      "counter": { "from": 0, "to": 180, "unit": "km", "start": 0.6, "dur": 2.2 },
+      "hits": [{ "at": 2.8, "kind": "shake" }],
+      "texts": [
+        { "at": 0.5, "to": 2.3, "ko": "바다 속 해초 · 호주 샤크 베이", "en": "Seagrass\nShark Bay, Australia" },
+        { "at": 2.4, "to": 4.3, "ko": "씨앗 하나가 180 km 로 퍼졌다\n약 4,500살", "en": "ONE plant. 180 km wide.\n~4,500 years old.", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 25.4, "dur": 3.6,
+      "image": "wikimedia-5dc8dc8f.jpg",
+      "zoom": [1.1, 1.3], "focus": [0.7, 0.8], "tint": 0.6, "blur": 6,
+      "credit": "Photo: Shark Bay · NASA (Public domain) · Areas: Wikipedia, Guinness, UWA",
+      "bars": [
+        { "label": "Pando (tree)", "text": "0.4 km²", "value": 0.44, "max": 200, "at": 0.2, "color": "#7CE06A" },
+        { "label": "Oregon fungus", "text": "9.7 km²", "value": 9.65, "max": 200, "at": 0.6, "color": "#C9A25A" },
+        { "label": "Shark Bay seagrass", "text": "~200 km²", "value": 200, "max": 200, "at": 1.0, "color": "#3FE6FF" }
+      ],
+      "texts": [
+        { "at": 0.2, "to": 3.5, "ko": "가장 큰 생물은 동물도 나무도 아니다", "en": "Biggest living thing?\nNot an animal.\nA meadow.", "big": true }
+      ]
+    },
+    { "type": "end", "from": 29, "dur": 4 }
+  ]
+}

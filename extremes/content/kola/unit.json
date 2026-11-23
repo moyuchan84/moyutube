@@ -1,0 +1,13 @@
+{
+  "code": "kola",
+  "title": "Kola Superdeep Borehole 12,262 m",
+  "format": "short",
+  "status": "idea",
+  "created": "2026-11-10",
+  "youtube": [],
+  "tags": [],
+  "video": {
+    "composition": "Kola",
+    "bgm": "bgm/kola.wav"
+  }
+}

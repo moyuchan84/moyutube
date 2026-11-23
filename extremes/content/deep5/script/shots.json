@@ -1,0 +1,123 @@
+{
+  "fps": 30,
+  "bpm": 60,
+  "no": "EARTH'S MOST ①",
+  "series": { "n": 1, "total": 5 },
+  "bgm": "bgm/deep5.wav",
+  "lang": "en",
+  "accent": "#3FE6FF",
+  "transition": "blinds",
+  "progress": 5,
+  "title": { "en": "5 DEEPEST HOLES ON EARTH", "ko": "지구에서 가장 깊은 구멍 TOP 5" },
+  "endBg": "radial-gradient(ellipse at 50% 40%, #04263A 0%, #01060C 75%)",
+  "thumb": {
+    "image": "wikimedia-10c71d13.jpg",
+    "focus": [0.5, 0.45],
+    "zoom": 1.15,
+    "big": "TOP 5",
+    "unit": "",
+    "ko": "지구에서 가장 깊은 구멍\n이건 5위 안에도 못 든다",
+    "en": "Deepest holes on Earth.\nThis one isn't\neven top 5.",
+    "tag": "Photo: The TerraMar Project (CC BY 2.0)"
+  },
+  "end": {
+    "ko": "세계에서 가장 ___ 5편\n구독하면 이어서 보여요",
+    "en": "Earth's most extreme,\n5 at a time.\nSubscribe for the next.",
+    "askKo": "당신은 몇 위까지\n내려가 볼래요?",
+    "askEn": "How deep would\nYOU go?",
+    "next": { "image": "wikimedia-529775dc.jpg", "ko": "② 1 g 에 가장 비싼 것", "en": "② Priciest per gram" }
+  },
+  "shots": [
+    {
+      "type": "photo", "from": 0, "dur": 2.6,
+      "image": "wikimedia-10c71d13.jpg",
+      "zoom": [1.0, 1.35], "focus": [0.5, 0.42], "tint": 0.15,
+      "credit": "Photo: Great Blue Hole, Belize · The TerraMar Project (CC BY 2.0)",
+      "gauge": { "from": 0, "to": 124, "max": 12500 },
+      "counter": { "to": 124, "unit": "m", "start": 0.1, "dur": 1.0 },
+      "texts": [
+        { "at": 0.1, "to": 1.3, "ko": "유명한 그 구멍, 124 m", "en": "Famous.\n124 m deep.", "big": true },
+        { "at": 1.35, "to": 2.55, "ko": "5위 안에도 못 든다", "en": "Not even\ntop 5.", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 2.6, "dur": 4.6, "rank": 5,
+      "image": "wikimedia-ed4ba5b6.jpg",
+      "fit": "contain", "zoom": [1.0, 1.12], "focus": [0.5, 0.45], "tint": 0,
+      "credit": "Figure: Taam Ja' Blue Hole depth survey · Alcérreca-Huerta et al. (CC BY 4.0)",
+      "gauge": { "from": 124, "to": 420, "max": 12500 },
+      "counter": { "from": 124, "to": 420, "unit": "m+", "start": 0.6, "dur": 1.4 },
+      "texts": [
+        { "at": 0.5, "to": 2.3, "ko": "가장 깊은 블루홀 · 멕시코 탐자", "en": "Deepest blue hole\nTaam Ja', Mexico" },
+        { "at": 2.4, "to": 4.5, "ko": "420 m 넘게 내려갔는데\n바닥을 아직 못 찾았다", "en": "Past 420 m…\nstill no bottom", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 7.2, "dur": 4.6, "rank": 4,
+      "image": "wikimedia-4e23b884.jpg",
+      "zoom": [1.15, 1.35], "focus": [0.45, 0.25], "focusTo": [0.45, 0.7], "tint": 0.2,
+      "credit": "Photo: Bingham Canyon Mine, Utah · David Ratledge (CC BY 4.0)",
+      "gauge": { "from": 420, "to": 1200, "max": 12500 },
+      "counter": { "from": 420, "to": 1200, "unit": "m", "start": 0.6, "dur": 1.4 },
+      "texts": [
+        { "at": 0.5, "to": 2.3, "ko": "가장 깊은 노천 광산 · 미국", "en": "Deepest open-pit mine\nBingham Canyon, USA" },
+        { "at": 2.4, "to": 4.5, "ko": "깊이 1.2 km · 폭 4 km", "en": "1.2 km deep.\n4 km wide.", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 11.8, "dur": 4.6, "rank": 3,
+      "video": "pixabay-958db069.mp4", "videoStart": 4, "rate": 0.6,
+      "illustrative": true,
+      "zoom": [1.1, 1.3], "focus": [0.5, 0.5], "tint": 0.35,
+      "credit": "Footage: danydory / Pixabay (illustrative, not Krubera)",
+      "gauge": { "from": 1200, "to": 2224, "max": 12500 },
+      "counter": { "from": 1200, "to": 2224, "unit": "m", "start": 0.6, "dur": 1.4 },
+      "texts": [
+        { "at": 0.5, "to": 2.3, "ko": "가장 깊은 동굴 · 크루베라", "en": "Deepest known cave\nKrubera, W. Caucasus" },
+        { "at": 2.4, "to": 4.5, "ko": "약 2.2 km 아래 (측정마다 순위가 바뀜)", "en": "~2.2 km down.\nRankings vary.", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 16.4, "dur": 4.6, "rank": 2,
+      "image": "pixabay-4e8080b7.jpg",
+      "illustrative": true,
+      "zoom": [1.1, 1.3], "focus": [0.5, 0.1], "focusTo": [0.5, 0.85], "tint": 0.3,
+      "credit": "Photo: mine headframe · DavidReed / Pixabay (illustrative, not Mponeng)",
+      "gauge": { "from": 2224, "to": 4000, "max": 12500 },
+      "counter": { "from": 2224, "to": 4000, "unit": "m", "start": 0.6, "dur": 1.4 },
+      "texts": [
+        { "at": 0.5, "to": 2.3, "ko": "가장 깊은 광산 · 남아공 음포넹", "en": "Deepest mine\nMponeng, South Africa" },
+        { "at": 2.4, "to": 4.5, "ko": "약 4 km 아래로 · 금을 캐러", "en": "~4 km down.\nFor gold.", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 21.0, "dur": 4.4, "rank": 1,
+      "image": "pixabay-5f2ef874.jpg",
+      "illustrative": true,
+      "zoom": [1.05, 1.3], "focus": [0.5, 0.15], "focusTo": [0.5, 0.6], "tint": 0.35,
+      "credit": "Photo: drilling rig · DrillingEngineer / Pixabay (illustrative, not Kola)",
+      "gauge": { "from": 4000, "to": 12262, "max": 12500 },
+      "counter": { "from": 4000, "to": 12262, "unit": "m", "start": 0.6, "dur": 2.2 },
+      "hits": [ { "at": 2.8, "kind": "shake" } ],
+      "texts": [
+        { "at": 0.5, "to": 2.3, "ko": "사람이 판 가장 깊은 구멍 · 러시아 콜라", "en": "Deepest hole ever dug\nKola, Russia · 1989" },
+        { "at": 2.4, "to": 4.3, "ko": "에베레스트 높이보다 깊다", "en": "Deeper than\nEverest is tall.", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 25.4, "dur": 3.6,
+      "image": "wikimedia-55d1f8f2.jpg",
+      "zoom": [1.2, 1.4], "focus": [0.8, 0.1], "focusTo": [0.8, 0.5], "tint": 0.6, "blur": 6,
+      "credit": "Photo: Kola borehole core section, museum display (CC0)",
+      "gauge": { "from": 12262, "to": 12262, "max": 12500 },
+      "bars": [
+        { "label": "To Earth's center", "text": "6,371 km", "value": 6371, "max": 6371, "at": 0.2, "color": "#1B6CA8" },
+        { "label": "Kola borehole", "text": "12.3 km · 0.19%", "value": 12.262, "max": 6371, "at": 1.0, "color": "#3FE6FF" }
+      ],
+      "texts": [
+        { "at": 0.2, "to": 3.5, "ko": "그래도 지구 중심까지는 0.19%", "en": "And that's only\n0.19% of the way\nto the center.", "big": true }
+      ]
+    },
+    { "type": "end", "from": 29.0, "dur": 4 }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "fps": 30,
+  "bpm": 76,
+  "no": "DIVE ①",
+  "series": { "n": 1, "total": 3 },
+  "bgm": "bgm/dive.wav",
+  "lang": "en",
+  "accent": "#6FF2C4",
+  "transition": "dive",
+  "dive": { "max": 11000, "atm": true },
+  "endBg": "radial-gradient(ellipse at 50% 35%, #06302A 0%, #010806 75%)",
+  "thumb": {
+    "image": "wikimedia-4b0eb7d5.jpg",
+    "focus": [0.55, 0.5],
+    "zoom": 1.1,
+    "big": "DIVE",
+    "unit": "",
+    "ko": "어디까지\n내려갈 수 있을까?",
+    "en": "How deep\ncan you go?",
+    "tag": "Photo: NOAA/IFE/URI (Public domain)"
+  },
+  "end": {
+    "ko": "끝까지 내려가 보기 3편\n구독하면 이어서 보여요",
+    "en": "All the way down.\n3 dives.\nSubscribe for the next.",
+    "askKo": "어디서부터 무서울 것 같아요?",
+    "askEn": "Which depth would\nscare you most?",
+    "next": { "image": "wikimedia-4e23b884.jpg", "ko": "② 땅속으로 끝까지", "en": "② Into the Earth" }
+  },
+  "shots": [
+    {
+      "type": "photo", "from": 0, "dur": 2.2, "depth": 0,
+      "video": "pixabay-c18a2a75.mp4", "videoStart": 2, "rate": 1,
+      "zoom": [1.05, 1.3], "focus": [0.68, 0.62], "tint": 0,
+      "credit": "Footage: Oleh_1977 / Pixabay",
+      "texts": [
+        { "at": 0.1, "to": 2.15, "ko": "어디까지 내려갈 수 있을까?", "en": "How deep\ncan you go?", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 2.2, "dur": 2.4, "depth": 40,
+      "video": "pixabay-16ed700a.mp4", "videoStart": 2, "rate": 0.8,
+      "illustrative": true,
+      "zoom": [1.05, 1.2], "focus": [0.48, 0.5], "tint": 0.05,
+      "credit": "Footage: Vimeo-Free-Videos / Pixabay",
+      "texts": [
+        { "at": 0.45, "to": 2.35, "ko": "스쿠버 다이빙 한계", "en": "Scuba limit", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 4.6, "dur": 2.4, "depth": 200,
+      "video": "pixabay-c3d2b730.mp4", "videoStart": 3, "rate": 0.7,
+      "illustrative": true,
+      "zoom": [1.0, 1.25], "focus": [0.48, 0.5], "tint": 0.1,
+      "credit": "Footage: ChristianBodhi / Pixabay",
+      "texts": [
+        { "at": 0.45, "to": 2.35, "ko": "햇빛이 사라진다", "en": "Sunlight\nfades out", "big": true }
+      ]
+    },
+    {
+      "type": "card", "from": 7.0, "dur": 2.2, "depth": 1000,
+      "bg": "radial-gradient(ellipse at 50% 50%, #021410 0%, #000 65%)",
+      "texts": [
+        { "at": 0.45, "to": 2.15, "ko": "햇빛 0. 완전한 어둠", "en": "No sunlight.\nAt all.", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 9.2, "dur": 2.6, "depth": 2992,
+      "image": "wikimedia-9f75754b.jpg",
+      "zoom": [1.35, 1.45], "focus": [0.5, 0.8], "panY": [-12, -12], "tint": 0.05,
+      "credit": "Photo: Cuvier's beaked whale, Ligurian Sea · Francesca Grossi (CC BY 4.0)",
+      "texts": [
+        { "at": 0.45, "to": 2.55, "ko": "고래 잠수 최고 기록", "en": "Deepest whale\ndive ever recorded", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 11.8, "dur": 2.8, "depth": 3800,
+      "image": "wikimedia-4b0eb7d5.jpg",
+      "zoom": [1.0, 1.18], "focus": [0.58, 0.5], "focusTo": [0.62, 0.55], "tint": 0,
+      "credit": "Photo: RMS Titanic bow, 2004 · NOAA/IFE/URI (Public domain)",
+      "texts": [
+        { "at": 0.45, "to": 2.75, "ko": "타이타닉이 잠든 곳", "en": "Titanic", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 14.6, "dur": 2.4, "depth": 4000,
+      "image": "wikimedia-a856285b.jpg",
+      "zoom": [1.12, 1.2], "focus": [0.5, 0.25], "panY": [12, 10], "tint": 0,
+      "credit": "Photo: Dumbo octopus (Grimpoteuthis) · NOAA Okeanos Explorer (PD)",
+      "texts": [
+        { "at": 0.45, "to": 2.35, "ko": "덤보 문어는 여기서도 산다", "en": "Dumbo octopus\nlives here", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 17.0, "dur": 2.8, "depth": 8336,
+      "image": "wikimedia-15d1e3aa-crop.jpg",
+      "zoom": [1.0, 1.12], "focus": [0.18, 0.5], "tint": 0.05,
+      "credit": "Photo: Mariana snailfish, a close relative · Gerringer et al. 2017 (CC BY 3.0, cropped)",
+      "texts": [
+        { "at": 0.45, "to": 2.75, "ko": "카메라에 찍힌 가장 깊은 물고기", "en": "Deepest fish\never filmed", "big": true }
+      ]
+    },
+    {
+      "type": "photo", "from": 19.8, "dur": 3.6, "depth": 10935,
+      "image": "wikimedia-27ad968e.jpg",
+      "zoom": [1.15, 1.35], "focus": [0.5, 0.52], "tint": 0.15,
+      "credit": "Photo: Bathyscaphe Trieste, 23 Jan 1960 · U.S. Navy (Public domain)",
+      "hits": [{ "at": 0.8, "kind": "shake" }],
+      "texts": [
+        { "at": 0.45, "to": 1.9, "ko": "바닥. 챌린저 해연", "en": "The bottom.", "big": true },
+        { "at": 1.95, "to": 3.55, "ko": "1960년, 사람이 처음 닿았다", "en": "First reached\nin 1960" }
+      ]
+    },
+    { "type": "end", "from": 23.4, "dur": 3.6 }
+  ]
+}

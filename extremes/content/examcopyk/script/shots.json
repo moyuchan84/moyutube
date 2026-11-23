@@ -1,0 +1,198 @@
+{
+  "fps": 30,
+  "bpm": 84,
+  "no": "HISTORY",
+  "bgm": "bgm/examcopyk.wav",
+  "lang": "en",
+  "accent": "#F2B84B",
+  "transition": "fade",
+  "endBg": "radial-gradient(ellipse at 50% 40%, #2A1A0E 0%, #0A0807 75%)",
+  "shots": [
+    {
+      "type": "photo",
+      "from": 0,
+      "dur": 3.4,
+      "image": "pixabay-82166b0a.jpg",
+      "zoom": [
+        1.05,
+        1.3
+      ],
+      "focus": [
+        0.5,
+        0.6
+      ],
+      "illustrative": true,
+      "texts": [
+        {
+          "at": 0.15,
+          "to": 3.3,
+          "ko": "옛 시험은 컨닝을\n어떻게 막았을까?",
+          "en": "How did old exams\nstop cheating?",
+          "big": false
+        }
+      ]
+    },
+    {
+      "type": "paper",
+      "from": 3.4,
+      "dur": 3,
+      "paper": {
+        "mode": "cells",
+        "a": "One candidate. One cell."
+      },
+      "texts": [
+        {
+          "at": 0.15,
+          "to": 2.9,
+          "ko": "응시자는 각자\n칸 안에 홀로 앉았다",
+          "en": "Each candidate sat\nalone in a cell.",
+          "big": false
+        }
+      ]
+    },
+    {
+      "type": "photo",
+      "from": 6.4,
+      "dur": 3.2,
+      "video": "pixabay-78c10cde.mp4",
+      "videoStart": 1.5,
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "zoom": [
+        1.05,
+        1.2
+      ],
+      "illustrative": true,
+      "texts": [
+        {
+          "at": 0.15,
+          "to": 3.1,
+          "ko": "필체만 봐도\n누구 답안인지 안다",
+          "en": "Handwriting\ngives you away.",
+          "big": false
+        }
+      ]
+    },
+    {
+      "type": "paper",
+      "from": 9.6,
+      "dur": 6,
+      "paper": {
+        "mode": "recopy",
+        "a": "Original",
+        "b": "Red copy"
+      },
+      "texts": [
+        {
+          "at": 0.2,
+          "to": 6.5,
+          "ko": "그래서 서기가\n붉은 글씨로 다시 베꼈다",
+          "en": "So clerks recopied\nevery paper in red.",
+          "big": false
+        }
+      ]
+    },
+    {
+      "type": "photo",
+      "from": 15.6,
+      "dur": 3.6,
+      "image": "kogl-hamhung-gwageo.jpg",
+      "zoom": [
+        1,
+        1.25
+      ],
+      "focus": [
+        0.45,
+        0.62
+      ],
+      "focusTo": [
+        0.8,
+        0.58
+      ],
+      "credit": "Painting: National Museum of Korea · KOGL Type 1",
+      "texts": [
+        {
+          "at": 0.2,
+          "to": 3.7,
+          "ko": "조선에서도\n같은 시험을 치렀다",
+          "en": "Joseon Korea held\nthe same kind of exam.",
+          "big": false
+        }
+      ]
+    },
+    {
+      "type": "paper",
+      "from": 19.2,
+      "dur": 4.2,
+      "paper": {
+        "mode": "seal",
+        "a": "Joseon Korea · name sealed"
+      },
+      "texts": [
+        {
+          "at": 0.2,
+          "to": 5.1,
+          "ko": "조선도 이름을\n접어 봉했다",
+          "en": "Joseon Korea\nsealed names too.",
+          "big": false
+        }
+      ]
+    },
+    {
+      "type": "photo",
+      "from": 23.4,
+      "dur": 3.4,
+      "image": "kogl-shimsanggi-answer.jpg",
+      "zoom": [
+        1,
+        1.2
+      ],
+      "focus": [
+        0.2,
+        0.5
+      ],
+      "focusTo": [
+        0.32,
+        0.55
+      ],
+      "credit": "Answer sheet: National Museum of Korea · KOGL Type 1",
+      "texts": [
+        {
+          "at": 0.2,
+          "to": 3.7,
+          "ko": "조선 시대\n실제 답안지",
+          "en": "A real answer sheet\nfrom Joseon Korea.",
+          "big": false
+        }
+      ]
+    },
+    {
+      "type": "card",
+      "from": 26.8,
+      "dur": 3,
+      "bg": "linear-gradient(180deg, #17120E 0%, #0A0807 100%)",
+      "texts": [
+        {
+          "at": 0.2,
+          "to": 3.5,
+          "ko": "채점관은\n붉은 사본만 읽었다",
+          "en": "Graders read\nonly the red copy.",
+          "big": false
+        }
+      ]
+    },
+    {
+      "type": "end",
+      "from": 29.8,
+      "dur": 4
+    }
+  ],
+  "end": {
+    "ko": "컨닝과 방지의 역사\n구독하면 이어서 보여요",
+    "en": "The history of cheating\nand how it was stopped.\nSubscribe for the next.",
+    "askKo": "AI 답안은\n어떻게 막을 수 있을까요?",
+    "askEn": "If answers come from AI,\nhow would you stop it?"
+  }
+}

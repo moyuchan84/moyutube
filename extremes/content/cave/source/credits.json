@@ -1,0 +1,28 @@
+[
+  {
+    "file": "wikimedia-cf70ba86.jpg",
+    "source": "wikimedia",
+    "id": "File:Cristales cueva de Naica.JPG",
+    "title": "Cristales cueva de Naica.JPG",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Cristales_cueva_de_Naica.JPG/3840px-Cristales_cueva_de_Naica.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Cristales_cueva_de_Naica.JPG",
+    "author": "Alexander Van Driessche",
+    "license": "CC BY 3.0",
+    "attribution": true,
+    "query": "Naica crystal cave",
+    "fetched": "2026-11-10"
+  },
+  {
+    "file": "wikimedia-55d1f8f2.jpg",
+    "source": "wikimedia",
+    "id": "File:Museum of the History of the Mirozdanie - geological section of the Kola Superdeep Borehole - 2026-03 - p05.jpg",
+    "title": "Museum of the History of the Mirozdanie - geological section of the Kola Superdeep Borehole - 2026-03 - p05.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/37/Museum_of_the_History_of_the_Mirozdanie_-_geological_section_of_the_Kola_Superdeep_Borehole_-_2026-03_-_p05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Museum_of_the_History_of_the_Mirozdanie_-_geological_section_of_the_Kola_Superdeep_Borehole_-_2026-03_-_p05.jpg",
+    "author": "Александр Сигачёв",
+    "license": "CC0",
+    "attribution": false,
+    "query": "Kola Superdeep Borehole",
+    "fetched": "2026-11-10"
+  }
+]

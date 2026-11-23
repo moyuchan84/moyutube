@@ -1,0 +1,111 @@
+{
+  "fps": 30,
+  "bpm": 84,
+  "no": "HISTORY",
+  "bgm": "bgm/examcopy.wav",
+  "lang": "en",
+  "accent": "#F2B84B",
+  "transition": "fade",
+  "endBg": "radial-gradient(ellipse at 50% 40%, #2A1A0E 0%, #0A0807 75%)",
+  "shots": [
+    {
+      "type": "paper",
+      "from": 0,
+      "dur": 3.4,
+      "paper": {
+        "mode": "cells",
+        "a": "One candidate. One cell."
+      },
+      "texts": [
+        {
+          "at": 0.15,
+          "to": 3.3,
+          "ko": "옛 시험은 컨닝을\n어떻게 막았을까?",
+          "en": "How did old exams\nstop cheating?",
+          "big": false
+        }
+      ]
+    },
+    {
+      "type": "paper",
+      "from": 3.4,
+      "dur": 5.2,
+      "paper": {
+        "mode": "hand",
+        "a": "Your handwriting gives you away"
+      },
+      "texts": [
+        {
+          "at": 0.2,
+          "to": 5.1,
+          "ko": "필체만 봐도\n누구 답안인지 안다",
+          "en": "Handwriting\ngives you away.",
+          "big": false
+        }
+      ]
+    },
+    {
+      "type": "paper",
+      "from": 8.6,
+      "dur": 6.6,
+      "paper": {
+        "mode": "recopy",
+        "a": "Original",
+        "b": "Red copy"
+      },
+      "texts": [
+        {
+          "at": 0.2,
+          "to": 6.5,
+          "ko": "그래서 서기가\n붉은 글씨로 다시 베꼈다",
+          "en": "So clerks recopied\nevery paper in red.",
+          "big": false
+        }
+      ]
+    },
+    {
+      "type": "paper",
+      "from": 15.2,
+      "dur": 5.2,
+      "paper": {
+        "mode": "seal",
+        "a": "Joseon Korea · name sealed"
+      },
+      "texts": [
+        {
+          "at": 0.2,
+          "to": 5.1,
+          "ko": "조선도 이름을\n접어 봉했다",
+          "en": "Joseon Korea\nsealed names too.",
+          "big": false
+        }
+      ]
+    },
+    {
+      "type": "card",
+      "from": 20.4,
+      "dur": 3.6,
+      "bg": "linear-gradient(180deg, #17120E 0%, #0A0807 100%)",
+      "texts": [
+        {
+          "at": 0.2,
+          "to": 3.5,
+          "ko": "채점관은\n붉은 사본만 읽었다",
+          "en": "Graders read\nonly the red copy.",
+          "big": false
+        }
+      ]
+    },
+    {
+      "type": "end",
+      "from": 24,
+      "dur": 4
+    }
+  ],
+  "end": {
+    "ko": "컨닝과 방지의 역사\n구독하면 이어서 보여요",
+    "en": "The history of cheating\nand how it was stopped.\nSubscribe for the next.",
+    "askKo": "AI 답안은\n어떻게 막을 수 있을까요?",
+    "askEn": "If answers come from AI,\nhow would you stop it?"
+  }
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "file": "wikimedia-50e25275.jpg",
+    "source": "wikimedia",
+    "id": "File:A view of Antarctica’s ice sheet and mountains.jpeg",
+    "title": "A view of Antarctica’s ice sheet and mountains.jpeg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/06/A_view_of_Antarctica%E2%80%99s_ice_sheet_and_mountains.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:A_view_of_Antarctica%E2%80%99s_ice_sheet_and_mountains.jpeg",
+    "author": "NASA/Christy Hansen",
+    "license": "Public domain",
+    "attribution": false,
+    "query": "Antarctica ice sheet",
+    "fetched": "2026-11-21"
+  },
+  {
+    "file": "wikimedia-7f03f279.jpg",
+    "source": "wikimedia",
+    "id": "File:Larsen B Ice Shelf (Remnants, 8-January 2016), Antarctica (34644973002).jpg",
+    "title": "Larsen B Ice Shelf (Remnants, 8-January 2016), Antarctica (34644973002).jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Larsen_B_Ice_Shelf_%28Remnants%2C_8-January_2016%29%2C_Antarctica_%2834644973002%29.jpg/3840px-Larsen_B_Ice_Shelf_%28Remnants%2C_8-January_2016%29%2C_Antarctica_%2834644973002%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Larsen_B_Ice_Shelf_(Remnants,_8-January_2016),_Antarctica_(34644973002).jpg",
+    "author": "O.V.E.R.V.I.E.W.",
+    "license": "CC BY 2.0",
+    "attribution": true,
+    "query": "Antarctica ice sheet",
+    "fetched": "2026-11-21"
+  },
+  {
+    "file": "wikimedia-38e0a035.png",
+    "source": "wikimedia",
+    "id": "File:Ice Breaking Up Near Antarctica (CIRA 2023-11-06).png",
+    "title": "Ice Breaking Up Near Antarctica (CIRA 2023-11-06).png",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Ice_Breaking_Up_Near_Antarctica_%28CIRA_2023-11-06%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "page": "https://commons.wikimedia.org/wiki/File:Ice_Breaking_Up_Near_Antarctica_(CIRA_2023-11-06).png",
+    "author": "JPSS imagery: CSU/CIRA &amp; NOAA/NESDIS",
+    "license": "Public domain",
+    "attribution": false,
+    "query": "Antarctica ice sheet",
+    "fetched": "2026-11-21"
+  },
+  {
+    "file": "wikimedia-2bfe8c2f.jpg",
+    "source": "wikimedia",
+    "id": "File:Major Greenland Glacier Is Growing.jpeg",
+    "title": "Major Greenland Glacier Is Growing.jpeg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Major_Greenland_Glacier_Is_Growing.jpeg/3840px-Major_Greenland_Glacier_Is_Growing.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Major_Greenland_Glacier_Is_Growing.jpeg",
+    "author": "NASA Earth Observatory images by Joshua Stevens, using Landsat data from the U.S. Geological Survey, and data courtesy of Josh Willis/NASA JPL and the Oceans Melting Greenland (OMG) Program. Story by Kathryn Hansen.",
+    "license": "Public domain",
+    "attribution": false,
+    "query": "Greenland glacier",
+    "fetched": "2026-11-21"
+  },
+  {
+    "file": "wikimedia-6eb03e97.jpg",
+    "source": "wikimedia",
+    "id": "File:Glaciers of Scoresby Sund, Greenland (51966500298).jpg",
+    "title": "Glaciers of Scoresby Sund, Greenland (51966500298).jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Glaciers_of_Scoresby_Sund%2C_Greenland_%2851966500298%29.jpg/3840px-Glaciers_of_Scoresby_Sund%2C_Greenland_%2851966500298%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Glaciers_of_Scoresby_Sund,_Greenland_(51966500298).jpg",
+    "author": "European Space Agency, Monja Šebela, Sentinel-2",
+    "license": "CC BY 2.0",
+    "attribution": true,
+    "query": "Greenland glacier",
+    "fetched": "2026-11-21"
+  },
+  {
+    "file": "wikimedia-2b45a64b.jpg",
+    "source": "wikimedia",
+    "id": "File:Borgjokulen glacier, Greenland (51969302160).jpg",
+    "title": "Borgjokulen glacier, Greenland (51969302160).jpg",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Borgjokulen_glacier%2C_Greenland_%2851969302160%29.jpg/3840px-Borgjokulen_glacier%2C_Greenland_%2851969302160%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "page": "https://commons.wikimedia.org/wiki/File:Borgjokulen_glacier,_Greenland_(51969302160).jpg",
+    "author": "Sentinel Hub",
+    "license": "CC BY 2.0",
+    "attribution": true,
+    "query": "Greenland glacier",
+    "fetched": "2026-11-21"
+  }
+]

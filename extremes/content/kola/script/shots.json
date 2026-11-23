@@ -1,0 +1,109 @@
+{
+  "fps": 30,
+  "bpm": 60,
+  "no": "No.2",
+  "bgm": "bgm/kola.wav",
+  "thumb": {
+    "image": "wikimedia-d3fbc57b.jpg",
+    "focus": [0.5, 0.5],
+    "zoom": 1.1,
+    "big": "12,262",
+    "unit": "m",
+    "ko": "내려갈수록\n교과서가 틀렸다",
+    "en": "The deeper they dug, the weirder it got",
+    "tag": "Photo: Artem Abdukakharov, CC BY 4.0 · Kola Peninsula tundra (illustrative)"
+  },
+  "shots": [
+    {
+      "type": "photo",
+      "from": 0,
+      "dur": 3.8,
+      "image": "wikimedia-d3fbc57b.jpg",
+      "zoom": [1.05, 1.25],
+      "focus": [0.5, 0.55],
+      "pan": [0, 0],
+      "tint": 0.35,
+      "credit": "Photo: Artem Abdukakharov, CC BY 4.0 · Kola Peninsula tundra (illustrative)",
+      "gauge": { "from": 0, "to": 12262, "max": 12500 },
+      "counter": { "to": 12262, "unit": "m", "start": 0.1, "dur": 1.8 },
+      "texts": [
+        { "at": 0.2, "to": 2.0, "ko": "'지옥의 소리'가\n녹음됐다던 구멍", "en": "The hole with the 'screams'", "big": true },
+        { "at": 2.1, "to": 3.7, "ko": "소리는 가짜.\n진짜가 더 섬뜩했다", "en": "The tape was fake. The truth was creepier.", "big": true }
+      ]
+    },
+    {
+      "type": "card",
+      "from": 3.8,
+      "dur": 3.6,
+      "ring": true,
+      "gauge": { "from": 0, "to": 4500, "max": 12500 },
+      "counter": { "to": 4500, "unit": "m", "start": 0.1, "dur": 1.2 },
+      "texts": [
+        { "at": 0.4, "to": 1.9, "ko": "4.5 km 아래부터", "en": "Below 4.5 km" },
+        { "at": 2.0, "to": 3.5, "ko": "바위가 이상해졌다\n깊을수록 성겨졌다", "en": "Rock got looser, not denser", "big": true }
+      ]
+    },
+    {
+      "type": "card",
+      "from": 7.4,
+      "dur": 3.4,
+      "bg": "radial-gradient(ellipse at 50% 45%, #1A0A1E 0%, #02060F 72%)",
+      "gauge": { "from": 4500, "to": 6000, "max": 12500 },
+      "counter": { "from": 4500, "to": 6000, "unit": "m", "start": 0.1, "dur": 1.0 },
+      "texts": [
+        { "at": 0.3, "to": 1.9, "ko": "있어야 할\n현무암 층은", "en": "The basalt layer they expected…" },
+        { "at": 2.0, "to": 3.3, "ko": "끝내 없었다", "en": "never appeared", "big": true }
+      ]
+    },
+    {
+      "type": "photo",
+      "from": 10.8,
+      "dur": 4,
+      "image": "wikimedia-55d1f8f2.jpg",
+      "zoom": [1.2, 1.45],
+      "focus": [0.8, 0.08],
+      "focusTo": [0.8, 0.45],
+      "tint": 0.45,
+      "credit": "Photo: Kola borehole geological section, museum display (CC0)",
+      "gauge": { "from": 6000, "to": 7000, "max": 12500 },
+      "texts": [
+        { "at": 0.2, "to": 2.0, "ko": "그리고 그 깊이에서\n물이 나왔다", "en": "Then, water. Far deeper than expected.", "big": true },
+        { "at": 2.1, "to": 3.9, "ko": "약 6 km 아래엔\n미생물 화석도", "en": "And microfossils ~6 km down (reported)" }
+      ]
+    },
+    {
+      "type": "card",
+      "from": 14.8,
+      "dur": 5,
+      "bg": "radial-gradient(ellipse at 50% 45%, #3A0A12 0%, #05020A 72%)",
+      "gauge": { "from": 7000, "to": 12262, "max": 12500 },
+      "bars": [
+        { "label": "예상 온도 · Expected", "text": "100 °C", "value": 100, "max": 200, "at": 0.3, "color": "#5BB8FF" },
+        { "label": "보고된 바닥 온도 · Reported", "text": "~180 °C", "value": 180, "max": 200, "at": 1.3, "color": "#FF6B6B" }
+      ],
+      "texts": [
+        { "at": 0.3, "to": 4.9, "ko": "바닥은 뜨거웠고\n바위는 물렁해졌다", "en": "Rock flowed like plastic (temps vary by source)" }
+      ]
+    },
+    {
+      "type": "card",
+      "from": 19.8,
+      "dur": 5,
+      "bars": [
+        { "label": "지구 중심까지 · To the center", "text": "6,371 km", "value": 6371, "max": 6371, "at": 0.3, "color": "#1B6CA8" },
+        { "label": "콜라 시추공 · Kola borehole", "text": "12.3 km · 0.19%", "value": 12.262, "max": 6371, "at": 1.5, "color": "#FFC93C" }
+      ],
+      "texts": [
+        { "at": 0.3, "to": 2.9, "ko": "그들은 멈췄다", "en": "They stopped." },
+        { "at": 3.0, "to": 4.9, "ko": "나머지 99.8%는\n아직 아무도 못 봤다", "en": "The other 99.8%? Nobody has seen it.", "big": true }
+      ]
+    },
+    { "type": "end", "from": 24.8, "dur": 4 }
+  ],
+  "end": {
+    "ko": "세상의 극단을 하나씩\n구독하고 이어서 보기",
+    "en": "One extreme at a time\nSubscribe to follow along",
+    "askKo": "더 팠다면 뭐가 나왔을까요?\n댓글로 알려 주세요",
+    "askEn": "What would we have found? Comment below."
+  }
+}

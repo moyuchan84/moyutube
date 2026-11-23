@@ -1,0 +1,496 @@
+{
+  "kind": "long",
+  "fps": 30,
+  "bgm": "bgm/cheathistory.wav",
+  "voice": {
+    "name": "Charon",
+    "dir": "cheathistory"
+  },
+  "no": "HISTORY ①",
+  "title": {
+    "en": "THE HISTORY OF CHEATING",
+    "ko": "컨닝의 역사"
+  },
+  "accent": "#F2B84B",
+  "lines": {
+    "L1": {
+      "en": "November 2004. South Korea. The day of the national college entrance exam.",
+      "ko": "2004년 11월, 한국. 대학수학능력시험 날입니다."
+    },
+    "L2": {
+      "en": "Police said the answers were texted out of the exam rooms. And texted back in, by people outside.",
+      "ko": "경찰은 답이 시험장 밖으로 문자로 나갔고, 밖의 사람들이 다시 안으로 보냈다고 밝혔습니다."
+    },
+    "L3": {
+      "en": "Their starting point: one day of phone records. About three hundred million text messages. Find the cheaters.",
+      "ko": "수사의 출발점은 하루치 통신 기록, 약 3억 건의 문자였습니다. 이 속에서 부정행위자를 찾아야 했습니다."
+    },
+    "L4": {
+      "en": "But cheating is much older than text messages. And so are the locks built against it.",
+      "ko": "하지만 컨닝은 문자보다 훨씬 오래됐고, 그것을 막는 자물쇠도 그만큼 오래됐습니다."
+    },
+    "L5": {
+      "en": "Imperial China ran one of the most guarded exams ever built. Rows of tiny numbered cells. Every candidate searched. Everyone alone.",
+      "ko": "중국 과거제는 역사상 가장 철저하게 지킨 시험 중 하나였습니다. 번호 붙은 작은 칸, 몸수색, 혼자 앉는 응시자."
+    },
+    "L6": {
+      "en": "First trick: the examiner could see your name. The lock: erase it, and use a number.",
+      "ko": "첫 번째 속임수는 채점관이 이름을 볼 수 있다는 것이었습니다. 자물쇠는 이름을 지우고 번호를 쓰는 것이었습니다."
+    },
+    "L7": {
+      "en": "Second trick: he could recognize your handwriting. The lock: clerks copy every answer again, in red ink.",
+      "ko": "두 번째는 필체였습니다. 자물쇠는 서기가 모든 답안을 붉은 글씨로 다시 베끼는 것이었습니다."
+    },
+    "L8": {
+      "en": "It still failed. In 1858, a scandal at a provincial exam ended with the chief examiner executed. Historians still argue why.",
+      "ko": "그래도 뚫렸습니다. 1858년 향시 비리 사건에서는 수석 시험관이 처형됐고, 이유는 지금도 논쟁 중입니다."
+    },
+    "L9": {
+      "en": "Korea's Joseon dynasty ran the same exam. And candidates showed up with a team.",
+      "ko": "조선도 같은 시험을 치렀습니다. 그리고 응시자들은 팀을 데려왔습니다."
+    },
+    "L10": {
+      "en": "One person to compose the essay. Another to write it out, fast and neat.",
+      "ko": "글을 짓는 사람 하나, 빨리 깨끗하게 베껴 쓰는 사람 하나였습니다."
+    },
+    "L11": {
+      "en": "The state answered with the same tools. Names folded and sealed. Answers recopied in red.",
+      "ko": "나라는 같은 도구로 맞섰습니다. 이름은 접어 봉하고, 답안은 붉은 글씨로 다시 베꼈습니다."
+    },
+    "L12": {
+      "en": "Now, 2011. Long Island, New York. A college student was accused of taking the SAT for paying high schoolers. Seven arrests.",
+      "ko": "이제 2011년, 뉴욕 롱아일랜드입니다. 대학생이 돈을 받고 고등학생 대신 SAT를 본 혐의로 7명이 체포됐습니다."
+    },
+    "L13": {
+      "en": "How was it caught? School staff noticed that some students' grades and SAT scores did not match.",
+      "ko": "어떻게 잡혔을까요? 학교 직원이 일부 학생의 성적과 SAT 점수가 맞지 않는 것을 알아챘습니다."
+    },
+    "L14": {
+      "en": "Within months, twenty people were charged. And, according to reports, every registration now needed a photo, printed on the ticket.",
+      "ko": "몇 달 만에 20명이 기소됐습니다. 보도에 따르면 이후 등록 때 사진을 내고 수험표에 인쇄하게 바뀌었습니다."
+    },
+    "L15": {
+      "en": "Sometimes the cheaters are the adults. In Atlanta, a state investigation found cheating in forty-four of fifty-six schools, and named a hundred seventy-eight educators. In 2015, eleven were convicted.",
+      "ko": "때로는 어른들이 부정을 저지릅니다. 애틀랜타 주 조사는 56개 학교 중 44곳의 부정을 확인하고 교육자 178명을 지목했습니다. 2015년 11명이 유죄 판결을 받았습니다."
+    },
+    "L16": {
+      "en": "At Harvard in 2012, a take-home final for 279 students. The professor noticed answers that looked alike. About 125 cases, and roughly 70 students forced to withdraw.",
+      "ko": "2012년 하버드에서는 279명이 듣는 수업의 집에서 푸는 기말시험에서 비슷한 답안이 발견됐습니다. 약 125건이 조사됐고 약 70명이 휴학했습니다."
+    },
+    "L17": {
+      "en": "Now the newest trick is a chatbot in your pocket.",
+      "ko": "이제 가장 새로운 속임수는 주머니 속 챗봇입니다."
+    },
+    "L18": {
+      "en": "In 2025, about 13.4 million students sat China's gaokao. Radio signals were blocked at exam sites. And some AI apps switched off photo recognition during exam hours.",
+      "ko": "2025년 중국 가오카오에는 약 1,340만 명이 응시했습니다. 시험장에서는 전파가 차단됐고, 일부 AI 앱은 시험 시간에 사진 인식을 중단했습니다."
+    },
+    "L19": {
+      "en": "South Korea banned smart glasses, smartwatches, phones and earbuds from this year's exam. Wear AI glasses, and you lose next year's eligibility.",
+      "ko": "한국은 올해 수능에 스마트 안경, 스마트워치, 휴대폰, 이어폰 반입을 금지했습니다. 시험 중 AI 안경을 쓰면 다음 해 응시 자격을 잃습니다."
+    },
+    "L20": {
+      "en": "Back to 2004. How do you find answers hiding in three hundred million texts?",
+      "ko": "다시 2004년입니다. 3억 건의 문자 속에 숨은 답을 어떻게 찾을까요?"
+    },
+    "L21": {
+      "en": "Think about what a multiple-choice answer looks like. Only digits, one to five.",
+      "ko": "객관식 답이 어떻게 생겼는지 생각해 보세요. 1부터 5까지의 숫자뿐입니다."
+    },
+    "L22": {
+      "en": "That filter left about two hundred eighty thousand messages. Eighteen days later, a hundred eighty-two test-takers were indicted.",
+      "ko": "그렇게 거르자 약 28만 건이 남았습니다. 18일 뒤 응시자 182명이 기소됐습니다."
+    },
+    "L23": {
+      "en": "Every trick leaves a trail.",
+      "ko": "모든 속임수는 흔적을 남깁니다."
+    },
+    "L24": {
+      "en": "If AI can answer in a second, how would you build an exam that cannot be beaten? Tell me in the comments.",
+      "ko": "AI가 1초 만에 답한다면, 속일 수 없는 시험을 어떻게 만들겠어요? 댓글로 알려 주세요."
+    }
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "photo",
+      "lines": [
+        "L1",
+        "L2",
+        "L3"
+      ],
+      "exact": true,
+      "clips": [
+        "flow-school-texts.mp4",
+        "gemini-phone-glow-night.png#0.5,0.38,1.12,1.3",
+        "gemini-text-chain.png#0.3,0.5,1.0,1.2",
+        "gemini-phone-glow-night.png#0.3,0.75,1.3,1.45",
+        "gemini-text-chain.png#0.78,0.4,1.25,1.42"
+      ],
+      "tint": -0.15,
+      "facts": [
+        {
+          "big": "2004",
+          "sub": "South Korea · 수능 날",
+          "at": 0.02
+        },
+        {
+          "big": "300,000,000",
+          "sub": "text messages, one day · 하루치 문자 약 3억 건",
+          "at": 0.5
+        }
+      ]
+    },
+    {
+      "id": "bridge",
+      "type": "photo",
+      "lines": [
+        "L4"
+      ],
+      "exact": true,
+      "clips": [
+        "flow-hook-split.mp4",
+        "flow-fog-compound.mp4"
+      ],
+      "tint": 0.1
+    },
+    {
+      "id": "keju",
+      "type": "photo",
+      "lines": [
+        "L5"
+      ],
+      "exact": true,
+      "clips": [
+        "flow-cells-aerial.mp4",
+        "gemini-search-gate.png#0.5,0.5,1.0,1.12",
+        "flow-cell-candle.mp4",
+        "gemini-cells-aerial.png#0.5,0.5,1.3,1.5"
+      ],
+      "tint": 0.1
+    },
+    {
+      "id": "erase",
+      "type": "photo",
+      "lines": [
+        "L6"
+      ],
+      "exact": true,
+      "clips": [
+        "gemini-sealed-names.png#0.5,0.5,1.0,1.12",
+        "gemini-sealed-names.png#0.35,0.3,1.4,1.6"
+      ],
+      "tint": 0.15,
+      "big": {
+        "text": "NAME → NUMBER",
+        "sub": "이름을 지우고 번호로",
+        "size": 120
+      }
+    },
+    {
+      "id": "recopy",
+      "type": "photo",
+      "lines": [
+        "L7"
+      ],
+      "exact": true,
+      "clips": [
+        "gemini-handwriting-pair.png",
+        "flow-red-copy.mp4",
+        "gemini-red-copy.png#0.5,0.5,1.0,1.18"
+      ],
+      "tint": 0.15,
+      "big": {
+        "text": "RED COPY",
+        "sub": "붉은 사본 — 채점관은 이것만",
+        "size": 120
+      }
+    },
+    {
+      "id": "y1858",
+      "type": "photo",
+      "lines": [
+        "L8"
+      ],
+      "exact": true,
+      "clips": [
+        "gemini-compound-gate.png#0.5,0.55,1.0,1.15",
+        {
+          "f": "pixabay-82166b0a.jpg",
+          "ill": true
+        },
+        "gemini-compound-gate.png#0.72,0.5,1.4,1.6"
+      ],
+      "tint": 0.2,
+      "big": {
+        "text": "1858",
+        "sub": "수석 시험관 처형",
+        "size": 190
+      }
+    },
+    {
+      "id": "joseon",
+      "type": "photo",
+      "lines": [
+        "L9",
+        "L10"
+      ],
+      "exact": true,
+      "clips": [
+        "kogl-hamhung-gwageo.jpg#0.5,0.5,1.0,1.12,1",
+        "gemini-candidate-team.png",
+        "gemini-joseon-clerks.png#0.5,0.5,1.0,1.12",
+        "kogl-hamhung-gwageo.jpg#0.28,0.35,1.5,1.7,0.8"
+      ],
+      "tint": 0.15,
+      "credit": "Painting & answer sheet: National Museum of Korea · KOGL Type 1"
+    },
+    {
+      "id": "joseon2",
+      "type": "photo",
+      "lines": [
+        "L11"
+      ],
+      "exact": true,
+      "clips": [
+        "kogl-shimsanggi-answer.jpg#0.5,0.5,1.0,1.1",
+        "gemini-sealed-names.png#0.75,0.6,1.3,1.5",
+        "kogl-shimsanggi-answer.jpg#0.5,0.3,1.4,1.6"
+      ],
+      "tint": 0.15,
+      "credit": "Answer sheet: National Museum of Korea · KOGL Type 1"
+    },
+    {
+      "id": "sat",
+      "type": "photo",
+      "lines": [
+        "L12",
+        "L13",
+        "L14"
+      ],
+      "exact": true,
+      "clips": [
+        "gemini-suburb-dawn.png",
+        "gemini-modern-desk.png#0.5,0.5,1.0,1.12",
+        "gemini-gradebook.png",
+        "gemini-gradebook.png#0.35,0.45,1.3,1.5",
+        "gemini-admission-ticket.png#0.5,0.5,1.0,1.12",
+        "gemini-admission-ticket.png#0.45,0.4,1.4,1.6"
+      ],
+      "tint": 0.25,
+      "facts": [
+        {
+          "big": "7",
+          "sub": "arrests · 체포 · 2011",
+          "at": 0.1
+        },
+        {
+          "big": "20",
+          "sub": "charged within months · 몇 달 만에 기소",
+          "at": 0.62
+        },
+        {
+          "big": "PHOTO",
+          "sub": "now required at registration (reported) · 사진 등록",
+          "at": 0.82
+        }
+      ]
+    },
+    {
+      "id": "atlanta",
+      "type": "photo",
+      "lines": [
+        "L15"
+      ],
+      "exact": true,
+      "clips": [
+        "gemini-trophy-hall.png",
+        "gemini-answer-sheet-erase.png#0.5,0.5,1.0,1.12",
+        "gemini-trophy-hall.png#0.7,0.5,1.35,1.5",
+        "gemini-answer-sheet-erase.png#0.3,0.35,1.4,1.6"
+      ],
+      "tint": 0.28,
+      "facts": [
+        {
+          "big": "44 / 56",
+          "sub": "schools with cheating found · 부정 확인 학교 · 2011",
+          "at": 0.22
+        },
+        {
+          "big": "178",
+          "sub": "educators named by investigators · 지목된 교육자",
+          "at": 0.5
+        },
+        {
+          "big": "11",
+          "sub": "convicted · 유죄 · 2015",
+          "at": 0.8
+        }
+      ]
+    },
+    {
+      "id": "harvard",
+      "type": "photo",
+      "lines": [
+        "L16"
+      ],
+      "exact": true,
+      "clips": [
+        "gemini-takehome-laptop.png#0.5,0.5,1.0,1.1",
+        "gemini-twin-sheets.png",
+        "gemini-twin-sheets.png#0.5,0.5,1.0,1.12",
+        "gemini-takehome-laptop.png#0.7,0.45,1.4,1.55"
+      ],
+      "tint": 0.28,
+      "facts": [
+        {
+          "big": "279",
+          "sub": "students in the class · 수강생 · 2012",
+          "at": 0.1
+        },
+        {
+          "big": "~125",
+          "sub": "cases investigated · 조사된 사건",
+          "at": 0.45
+        },
+        {
+          "big": "~70",
+          "sub": "forced to withdraw · 휴학 처분",
+          "at": 0.78
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "type": "photo",
+      "lines": [
+        "L17",
+        "L18"
+      ],
+      "exact": true,
+      "clips": [
+        "gemini-phone-paused.png#0.5,0.5,1.0,1.12,0.8",
+        "flow-gate-fog.mp4#0.5,0.5,1.22,1.32",
+        "gemini-gate-scanner.png#0.6,0.5,1.0,1.15",
+        "gemini-phone-paused.png#0.55,0.45,1.4,1.6"
+      ],
+      "tint": 0.22,
+      "facts": [
+        {
+          "big": "13.4M",
+          "sub": "candidates · gaokao 2025 · 응시자",
+          "at": 0.25
+        },
+        {
+          "big": "PAUSED",
+          "sub": "photo recognition during exam hours · 사진 인식 중단",
+          "at": 0.72
+        }
+      ]
+    },
+    {
+      "id": "suneung",
+      "type": "photo",
+      "lines": [
+        "L19"
+      ],
+      "exact": true,
+      "clips": [
+        "gemini-glasses-tray.png#0.5,0.5,1.0,1.1",
+        "gemini-glasses-tray.png#0.3,0.4,1.45,1.6",
+        "gemini-glasses-tray.png#0.75,0.6,1.45,1.6"
+      ],
+      "tint": 0.15,
+      "big": {
+        "text": "NO DEVICES",
+        "sub": "수능 기기 반입 금지",
+        "size": 150
+      }
+    },
+    {
+      "id": "back",
+      "type": "photo",
+      "lines": [
+        "L20"
+      ],
+      "exact": true,
+      "clips": [
+        "gemini-carrier-records.png",
+        "gemini-carrier-records.png#0.7,0.5,1.4,1.55"
+      ],
+      "tint": 0.2,
+      "big": {
+        "text": "300,000,000 ?",
+        "sub": "문자 3억 건 속에서",
+        "size": 130
+      }
+    },
+    {
+      "id": "funnel",
+      "type": "funnel",
+      "lines": [
+        "L21",
+        "L22"
+      ],
+      "steps": [
+        {
+          "n": "~300,000,000",
+          "l": "text messages that day · 시험 당일 문자",
+          "c": "#8EA3B8"
+        },
+        {
+          "n": "~280,000",
+          "l": "digits 1–5 only · 1~5 숫자로만 된 문자",
+          "c": "#F2B84B"
+        },
+        {
+          "n": "182",
+          "l": "test-takers indicted · 기소된 응시자",
+          "c": "#E8613C"
+        }
+      ]
+    },
+    {
+      "id": "trail",
+      "type": "photo",
+      "lines": [
+        "L23"
+      ],
+      "exact": true,
+      "clips": [
+        "flow-hourglass.mp4"
+      ],
+      "tint": 0.3,
+      "big": {
+        "text": "EVERY TRICK\nLEAVES A TRAIL",
+        "sub": "모든 속임수는 흔적을 남긴다",
+        "size": 110
+      }
+    },
+    {
+      "id": "end",
+      "type": "end",
+      "lines": [
+        "L24"
+      ],
+      "endBg": "radial-gradient(ellipse at 50% 40%, #2A1A0E 0%, #0A0807 75%)",
+      "askEn": "How would you design\nan exam that can't be beaten?",
+      "askKo": "속일 수 없는 시험, 어떻게 설계할까요?",
+      "sub": {
+        "en": "Subscribe for more real stories",
+        "ko": "실제 이야기가 더 궁금하다면 구독"
+      }
+    }
+  ],
+  "thumb": {
+    "image": "gemini-hook-split.png",
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "zoom": 1.1,
+    "en": "THE HISTORY\nOF CHEATING",
+    "ko": "컨닝의 역사 · 과거제부터 AI까지",
+    "tag": ""
+  }
+}
