@@ -1,0 +1,15 @@
+{
+  "code": "price5",
+  "title": "Priciest per Gram TOP 5",
+  "format": "short",
+  "status": "idea",
+  "created": "2026-11-13",
+  "youtube": [],
+  "tags": [],
+  "video": {
+    "composition": "Price5",
+    "bgm": "bgm/price5.wav"
+  },
+  "series": "earthsmost",
+  "no": 2
+}

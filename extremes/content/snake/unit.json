@@ -1,0 +1,15 @@
+{
+  "code": "snake",
+  "title": "Snake Island (No Entry 3)",
+  "format": "short",
+  "status": "idea",
+  "created": "2026-11-12",
+  "youtube": [],
+  "tags": [],
+  "video": {
+    "composition": "Snake",
+    "bgm": "bgm/snake.wav"
+  },
+  "series": "noentry",
+  "no": 3
+}

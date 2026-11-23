@@ -1,0 +1,15 @@
+{
+  "code": "sentinel",
+  "title": "North Sentinel Island (No Entry 1)",
+  "format": "short",
+  "status": "idea",
+  "created": "2026-11-11",
+  "youtube": [],
+  "tags": [],
+  "video": {
+    "composition": "Sentinel",
+    "bgm": "bgm/sentinel.wav"
+  },
+  "series": "noentry",
+  "no": 1
+}

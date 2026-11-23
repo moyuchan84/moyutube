@@ -1,0 +1,358 @@
+{
+  "fps": 30,
+  "bpm": 60,
+  "no": "NO ENTRY ①",
+  "series": {
+    "n": 1,
+    "total": 5
+  },
+  "bgm": "bgm/sentinel.wav",
+  "lang": "en",
+  "accent": "#FF3B4E",
+  "transition": "glitch",
+  "endBg": "radial-gradient(ellipse at 50% 40%, #2A0508 0%, #070102 75%)",
+  "thumb": {
+    "image": "wikimedia-northsentinel.jpg",
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "zoom": 1,
+    "big": "WHY?",
+    "unit": "",
+    "ko": "다가가기만 해도\n불법인 섬",
+    "en": "Illegal to\neven approach",
+    "tag": "Photo: NASA Earth Observatory (public domain)"
+  },
+  "end": {
+    "ko": "5곳의 진짜 이유, 하나씩\n구독하면 이어서 보여요",
+    "en": "5 places you can't go.\nOne real reason each.\nSubscribe for the next.",
+    "askKo": "이 섬, 계속 그대로\n두는 게 맞을까?",
+    "askEn": "Should the world\nleave them alone?",
+    "next": {
+      "image": "wikimedia-25b75ed7.jpg",
+      "focus": [
+        0.47,
+        0.16
+      ],
+      "ko": "② 에어리어 51",
+      "en": "② Area 51"
+    }
+  },
+  "shots": [
+    {
+      "type": "photo",
+      "from": 0,
+      "dur": 2.4,
+      "image": "wikimedia-northsentinel.jpg",
+      "fit": "contain",
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "zoom": [
+        1,
+        1.12
+      ],
+      "credit": "Photo: NASA Earth Observatory / Jesse Allen (public domain)",
+      "zone": {
+        "x": 540,
+        "y": 918,
+        "r": 470,
+        "at": 0.25,
+        "ko": "접근 금지",
+        "en": "NO ENTRY"
+      },
+      "hits": [
+        {
+          "at": 0,
+          "kind": "flash"
+        },
+        {
+          "at": 1.35,
+          "kind": "shake"
+        }
+      ],
+      "texts": [
+        {
+          "at": 0.3,
+          "to": 1.3,
+          "ko": "다가가기만 해도\n불법인 섬",
+          "en": "Even getting close\nis a crime",
+          "big": true
+        },
+        {
+          "at": 1.35,
+          "to": 2.35,
+          "ko": "도대체 왜?",
+          "en": "So… why?",
+          "big": true
+        }
+      ]
+    },
+    {
+      "type": "photo",
+      "from": 2.4,
+      "dur": 2.2,
+      "video": "pixabay-76854806.mp4",
+      "rate": 0.7,
+      "illustrative": true,
+      "zoom": [
+        1.1,
+        1.25
+      ],
+      "tint": 0.15,
+      "texts": [
+        {
+          "at": 0.1,
+          "to": 2.15,
+          "ko": "섬사람들이 외부인을\n공격해서?",
+          "en": "Because they\nattack outsiders?",
+          "big": true
+        }
+      ]
+    },
+    {
+      "type": "card",
+      "from": 4.6,
+      "dur": 1.8,
+      "bg": "radial-gradient(ellipse at 50% 45%, #3A0008 0%, #070102 75%)",
+      "stamp": {
+        "text": "NO",
+        "at": 0.1
+      },
+      "hits": [
+        {
+          "at": 0.1,
+          "kind": "glitch"
+        }
+      ],
+      "texts": [
+        {
+          "at": 0.6,
+          "to": 1.75,
+          "ko": "그것만이 아니다",
+          "en": "That's not\nthe whole story",
+          "big": true
+        }
+      ]
+    },
+    {
+      "type": "photo",
+      "from": 6.4,
+      "dur": 3.2,
+      "video": "pixabay-cd753901.mp4",
+      "rate": 0.6,
+      "illustrative": true,
+      "zoom": [
+        1.1,
+        1.3
+      ],
+      "tint": 0.1,
+      "texts": [
+        {
+          "at": 0.1,
+          "to": 1.5,
+          "ko": "진짜 이유는\n섬사람들을 지키려고",
+          "en": "The real reason:\nto protect THEM",
+          "big": true
+        },
+        {
+          "at": 1.55,
+          "to": 3.15,
+          "ko": "바깥 병균에\n면역이 없을 수 있다",
+          "en": "They may have\nno immunity\nto our germs"
+        }
+      ]
+    },
+    {
+      "type": "card",
+      "from": 9.6,
+      "dur": 4.4,
+      "bg": "linear-gradient(180deg, #3B2A18 0%, #120B05 100%)",
+      "stamp": {
+        "text": "1880",
+        "at": 0.1
+      },
+      "hits": [
+        {
+          "at": 2.15,
+          "kind": "red"
+        }
+      ],
+      "texts": [
+        {
+          "at": 0.3,
+          "to": 2.1,
+          "ko": "영국 탐험대가 섬에서\n6명을 데려갔다",
+          "en": "In 1880, British\nexplorers took\nsix islanders"
+        },
+        {
+          "at": 2.15,
+          "to": 4.35,
+          "ko": "노부부는 곧 병들어\n숨졌다",
+          "en": "The old couple\nsoon got sick\nand died",
+          "big": true
+        }
+      ]
+    },
+    {
+      "type": "photo",
+      "from": 14,
+      "dur": 3.6,
+      "image": "wikimedia-andaman-modis.jpg",
+      "focus": [
+        0.26,
+        0.6
+      ],
+      "zoom": [
+        1,
+        1.12
+      ],
+      "panY": [
+        -13,
+        -13
+      ],
+      "credit": "Photo: NASA MODIS / LANCE (public domain)",
+      "zone": {
+        "x": 281,
+        "y": 900,
+        "r": 80,
+        "at": 0.2,
+        "ko": "북센티널섬",
+        "en": "HERE"
+      },
+      "hits": [
+        {
+          "at": 1.75,
+          "kind": "red"
+        }
+      ],
+      "texts": [
+        {
+          "at": 0.1,
+          "to": 1.7,
+          "ko": "이웃 섬 원주민들은",
+          "en": "Their neighbors…",
+          "big": true
+        },
+        {
+          "at": 1.75,
+          "to": 3.55,
+          "ko": "접촉 뒤 전염병으로\n대부분 사라졌다",
+          "en": "After contact,\ndisease wiped out\nmost of them"
+        }
+      ]
+    },
+    {
+      "type": "photo",
+      "from": 17.6,
+      "dur": 3,
+      "video": "pixabay-9d206891.mp4",
+      "rate": 0.8,
+      "illustrative": true,
+      "zoom": [
+        1.1,
+        1.25
+      ],
+      "tint": 0.15,
+      "hits": [
+        {
+          "at": 0.1,
+          "kind": "shake"
+        }
+      ],
+      "texts": [
+        {
+          "at": 0.1,
+          "to": 1.4,
+          "ko": "2004년\n인도양 쓰나미",
+          "en": "2004: a massive\ntsunami hits"
+        },
+        {
+          "at": 1.45,
+          "to": 2.95,
+          "ko": "섬사람들은\n모두 사라졌을까?",
+          "en": "Were they\nall gone?",
+          "big": true
+        }
+      ]
+    },
+    {
+      "type": "photo",
+      "from": 20.6,
+      "dur": 4.2,
+      "video": "pixabay-2acd8465.mp4",
+      "rate": 0.8,
+      "illustrative": true,
+      "zoom": [
+        1.15,
+        1.3
+      ],
+      "focus": [
+        0.48,
+        0.45
+      ],
+      "tint": 0.1,
+      "hits": [
+        {
+          "at": 2.05,
+          "kind": "flash"
+        }
+      ],
+      "texts": [
+        {
+          "at": 0.1,
+          "to": 2,
+          "ko": "확인하러 간 헬기에\n한 남자가 활을 겨눴다",
+          "en": "A man aimed\nhis bow at\nthe helicopter"
+        },
+        {
+          "at": 2.05,
+          "to": 4.15,
+          "ko": "살아남았다\n그리고 또 거절했다",
+          "en": "Alive.\nAnd still\nsaying no.",
+          "big": true
+        }
+      ]
+    },
+    {
+      "type": "photo",
+      "from": 24.8,
+      "dur": 3,
+      "image": "wikimedia-northsentinel.jpg",
+      "fit": "contain",
+      "focus": [
+        0.5,
+        0.45
+      ],
+      "zoom": [
+        1.08,
+        1.18
+      ],
+      "tint": 0.35,
+      "credit": "Photo: NASA Earth Observatory / Jesse Allen (public domain)",
+      "texts": [
+        {
+          "at": 0.1,
+          "to": 1.3,
+          "ko": "인도 정부의 원칙",
+          "en": "India's rule",
+          "big": true
+        },
+        {
+          "at": 1.35,
+          "to": 2.95,
+          "ko": "지켜보되\n건드리지 않는다",
+          "en": "Watch.\nDon't touch.",
+          "big": true
+        }
+      ]
+    },
+    {
+      "type": "end",
+      "from": 27.8,
+      "dur": 3
+    }
+  ]
+}

@@ -13,6 +13,7 @@ export const PROJECTS = {
   funtube: { title: "일상 오류 신고센터", engine: "remotion", video: "funtube/video" },
   lab: { title: "모라구 · 보면 풀리는 수학 · 과학", engine: "motion-canvas", video: "lab" },
   fairy: { title: "그림책 동화", engine: "remotion", video: "fairy/video" },
+  extremes: { title: "Extremes · 세상에서 가장 ~한 곳 (쇼츠)", engine: "remotion", video: "extremes/video" },
 };
 
 export const STATUS = ["idea", "script", "art", "voice", "edit", "uploaded", "archived"];

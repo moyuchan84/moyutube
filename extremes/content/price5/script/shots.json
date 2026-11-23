@@ -1,0 +1,355 @@
+{
+  "fps": 30,
+  "bpm": 120,
+  "no": "EARTH'S MOST ②",
+  "series": {
+    "n": 2,
+    "total": 5
+  },
+  "bgm": "bgm/price5.wav",
+  "lang": "en",
+  "accent": "#FFD24A",
+  "transition": "blinds",
+  "progress": 5,
+  "title": {
+    "en": "5 PRICIEST THINGS PER GRAM",
+    "ko": "1 g 에 가장 비싼 것 TOP 5"
+  },
+  "endBg": "radial-gradient(ellipse at 50% 40%, #3A2A04 0%, #0C0801 75%)",
+  "thumb": {
+    "image": "wikimedia-c0c570fb.jpg",
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "zoom": 1.25,
+    "big": "TOP 5",
+    "unit": "",
+    "ko": "1 g 에 가장 비싼 것\n금은 5위 안에도 못 든다",
+    "en": "Priciest per gram.\nGold isn't\neven top 5.",
+    "tag": "Photo: Gold bullion · Szaaman (Public domain)"
+  },
+  "end": {
+    "ko": "세계에서 가장 ___ 5편\n구독하면 이어서 보여요",
+    "en": "Earth's most extreme,\n5 at a time.\nSubscribe for the next.",
+    "askKo": "1 g 만 가질 수 있다면\n뭘 고를래요?",
+    "askEn": "You get ONE gram.\nWhich one?",
+    "next": {
+      "image": "wikimedia-a6d74b84.jpg",
+      "ko": "③ 지구에서 가장 큰 것",
+      "en": "③ The biggest"
+    }
+  },
+  "shots": [
+    {
+      "type": "photo",
+      "from": 0,
+      "dur": 2.6,
+      "image": "wikimedia-c0c570fb.jpg",
+      "zoom": [
+        1,
+        1.3
+      ],
+      "focus": [
+        0.45,
+        0.5
+      ],
+      "tint": 0.15,
+      "credit": "Photo: Gold bullion · Szaaman (Public domain)",
+      "counter": {
+        "to": 132,
+        "prefix": "$",
+        "unit": "/g",
+        "start": 0.1,
+        "dur": 1
+      },
+      "texts": [
+        {
+          "at": 0.1,
+          "to": 1.3,
+          "ko": "금 1 g = 약 132달러",
+          "en": "Gold.\n$132 a gram.",
+          "big": true
+        },
+        {
+          "at": 1.35,
+          "to": 2.55,
+          "ko": "5위 안에도 못 든다",
+          "en": "Not even\ntop 5.",
+          "big": true
+        }
+      ]
+    },
+    {
+      "type": "photo",
+      "from": 2.6,
+      "dur": 4.6,
+      "rank": 5,
+      "image": "wikimedia-05047702.jpg",
+      "illustrative": true,
+      "zoom": [
+        1.1,
+        1.35
+      ],
+      "focus": [
+        0.4,
+        0.5
+      ],
+      "focusTo": [
+        0.6,
+        0.5
+      ],
+      "tint": 0.2,
+      "credit": "Photo: rough diamonds · Jerry Cone (PD) · not red · Price est.: BBC Science Focus",
+      "counter": {
+        "from": 0.1,
+        "to": 4.7,
+        "dp": 1,
+        "prefix": "$",
+        "unit": "M",
+        "start": 0.6,
+        "dur": 1.4
+      },
+      "texts": [
+        {
+          "at": 0.5,
+          "to": 2.3,
+          "ko": "붉은 다이아몬드",
+          "en": "Red diamonds"
+        },
+        {
+          "at": 2.4,
+          "to": 4.5,
+          "ko": "알려진 건 30개도 안 된다",
+          "en": "Fewer than 30\nknown on Earth.",
+          "big": true
+        }
+      ]
+    },
+    {
+      "type": "photo",
+      "from": 7.2,
+      "dur": 4.6,
+      "rank": 4,
+      "image": "nasa-80c3b2e3.jpg",
+      "zoom": [
+        1.15,
+        1.4
+      ],
+      "focus": [
+        0.4,
+        0.75
+      ],
+      "focusTo": [
+        0.4,
+        0.55
+      ],
+      "tint": 0.2,
+      "credit": "Photo: Bennu sample vial · NASA/GSFC (Public domain) · Price est.: BBC Science Focus",
+      "counter": {
+        "from": 4.7,
+        "to": 9.6,
+        "dp": 1,
+        "prefix": "$",
+        "unit": "M",
+        "start": 0.6,
+        "dur": 1.4
+      },
+      "texts": [
+        {
+          "at": 0.5,
+          "to": 2.3,
+          "ko": "소행성 베누의 흙 · NASA 2023",
+          "en": "Asteroid dust\nBennu · NASA, 2023"
+        },
+        {
+          "at": 2.4,
+          "to": 4.5,
+          "ko": "약 10억 달러짜리 임무로\n121.6 g 가져왔다",
+          "en": "~$1B mission.\nOnly 121.6 g.",
+          "big": true
+        }
+      ]
+    },
+    {
+      "type": "photo",
+      "from": 11.8,
+      "dur": 4.6,
+      "rank": 3,
+      "image": "wikimedia-0d95f95b.jpg",
+      "zoom": [
+        1.3,
+        1.6
+      ],
+      "focus": [
+        0.5,
+        0.42
+      ],
+      "tint": 0.25,
+      "credit": "Photo: californium display · James St. John (CC BY 2.0) · Price: BBC Science Focus est.",
+      "counter": {
+        "from": 9.6,
+        "to": 25.6,
+        "dp": 1,
+        "prefix": "$",
+        "unit": "M",
+        "start": 0.6,
+        "dur": 1.4
+      },
+      "texts": [
+        {
+          "at": 0.5,
+          "to": 2.3,
+          "ko": "칼리포늄-252",
+          "en": "Californium-252"
+        },
+        {
+          "at": 2.4,
+          "to": 4.5,
+          "ko": "원자로에서 만든다\n1년에 1 g 도 안 나온다",
+          "en": "Made in a reactor.\nUnder 1 g a year.",
+          "big": true
+        }
+      ]
+    },
+    {
+      "type": "photo",
+      "from": 16.4,
+      "dur": 4.6,
+      "rank": 2,
+      "image": "wikimedia-19e294a0.jpg",
+      "zoom": [
+        1.1,
+        1.35
+      ],
+      "focus": [
+        0.45,
+        0.45
+      ],
+      "tint": 0.2,
+      "credit": "Photo: C60 model · Wing-Chi Poon (PD) · Price: BBC Science Focus est.",
+      "counter": {
+        "from": 25,
+        "to": 100,
+        "prefix": "$",
+        "unit": "M+",
+        "start": 0.6,
+        "dur": 1.4
+      },
+      "texts": [
+        {
+          "at": 0.5,
+          "to": 2.3,
+          "ko": "탄소 우리 안에 질소 원자 하나",
+          "en": "One nitrogen atom\nin a carbon cage"
+        },
+        {
+          "at": 2.4,
+          "to": 4.5,
+          "ko": "0.0002 g 이 3만 2천 달러에 팔렸다",
+          "en": "0.0002 g sold\nfor $32,000.",
+          "big": true
+        }
+      ]
+    },
+    {
+      "type": "photo",
+      "from": 21,
+      "dur": 4.4,
+      "rank": 1,
+      "image": "wikimedia-e728154a.jpg",
+      "zoom": [
+        1.5,
+        1.75
+      ],
+      "focus": [
+        0.35,
+        0.8
+      ],
+      "focusTo": [
+        0.5,
+        0.75
+      ],
+      "tint": 0.3,
+      "credit": "Photo: ALPHA experiment, CERN · SimonWaldherr (CC BY 4.0) · Price: Guinness est.",
+      "counter": {
+        "from": 0,
+        "to": 60,
+        "prefix": "$",
+        "unit": "T",
+        "start": 0.6,
+        "dur": 2.2
+      },
+      "hits": [
+        {
+          "at": 2.8,
+          "kind": "shake"
+        }
+      ],
+      "texts": [
+        {
+          "at": 0.5,
+          "to": 2.3,
+          "ko": "반물질 · 1 g 약 60조 달러 (추정)",
+          "en": "Antimatter\n~$60 TRILLION a gram"
+        },
+        {
+          "at": 2.4,
+          "to": 4.3,
+          "ko": "지금까지 만든 걸 다 모아도\n1 g 에 한참 못 미친다",
+          "en": "Every bit ever made:\nnowhere near 1 g.",
+          "big": true
+        }
+      ]
+    },
+    {
+      "type": "photo",
+      "from": 25.4,
+      "dur": 3.6,
+      "image": "wikimedia-529775dc.jpg",
+      "zoom": [
+        1.2,
+        1.4
+      ],
+      "focus": [
+        0.5,
+        0.5
+      ],
+      "tint": 0.6,
+      "blur": 6,
+      "credit": "Photo: Gold ingots · Szaaman (Public domain) · Gold stock: World Gold Council",
+      "bars": [
+        {
+          "label": "All gold ever mined",
+          "text": "~$30 T",
+          "value": 29.7,
+          "max": 60,
+          "at": 0.2,
+          "color": "#B8860B"
+        },
+        {
+          "label": "1 g of antimatter",
+          "text": "~$60 T",
+          "value": 59.8,
+          "max": 60,
+          "at": 1,
+          "color": "#FFD24A"
+        }
+      ],
+      "texts": [
+        {
+          "at": 0.2,
+          "to": 3.5,
+          "ko": "1 g 이 지금까지 캔\n모든 금의 2배",
+          "en": "One gram =\n2× all the gold\never mined.",
+          "big": true
+        }
+      ]
+    },
+    {
+      "type": "end",
+      "from": 29,
+      "dur": 4
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "description": "Extremes 쇼츠 한 편 (15~35초, 1080×1920, 무음 + 화면 글자 한·영 + 합성 BGM)",
+  "next": [
+    "extremes/CLAUDE.md 를 먼저 읽는다 (사실 카드에 있는 숫자만, 라이선스 확인된 사진만, 인물 사진 없음)",
+    "plan.md 를 채운다 — 출처 · 사실 카드 · 샷 계획 · 연출 카드 · 제목(한·영) · 검수",
+    "사진은 npm run collect -- {{code}} \"검색어\" 로 받는다 (art/ 와 source/credits.json 에 라이선스가 남는다)",
+    "yt-seo 로 제목 · 태그 → 업로드 후 unit.json youtube 에 기록"
+  ]
+}

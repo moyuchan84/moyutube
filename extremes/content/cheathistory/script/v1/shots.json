@@ -1,0 +1,502 @@
+{
+  "kind": "long",
+  "fps": 30,
+  "bgm": "bgm/cheathistory.wav",
+  "voice": {
+    "name": "Charon",
+    "dir": "cheathistory"
+  },
+  "no": "HISTORY ①",
+  "title": {
+    "en": "THE HISTORY OF CHEATING",
+    "ko": "컨닝의 역사"
+  },
+  "accent": "#F2B84B",
+  "lines": {
+    "L1": {
+      "en": "Wherever there is a test, someone has tried to beat it. And wherever someone beats it, someone builds a better lock.",
+      "ko": "시험이 있는 곳에는 늘 속임수가 있었고, 속임수가 있으면 더 나은 방어가 생겼습니다."
+    },
+    "L2": {
+      "en": "This is the story of that race. From imperial China, to a text message sent across a whole country, to chatbots that switch themselves off on exam day.",
+      "ko": "그 경쟁의 역사입니다. 옛 중국부터 한 나라를 가로지른 문자 메시지, 시험 날 스스로 꺼지는 챗봇까지."
+    },
+    "L3": {
+      "en": "For over a thousand years, China's imperial exams grew into one of the most guarded tests ever made.",
+      "ko": "천 년 넘게 이어진 중국 과거 시험은 역사상 가장 철저하게 지킨 시험 중 하나였습니다."
+    },
+    "L4": {
+      "en": "Guards searched candidates for hidden texts. Each one sat alone in a numbered cell, and talking to anyone outside was forbidden.",
+      "ko": "감독관이 숨긴 글을 찾으려 몸을 수색했고, 응시자는 번호 붙은 칸에 혼자 앉아 밖과 소통할 수 없었습니다."
+    },
+    "L5": {
+      "en": "Then came the clever part. The name on each paper was removed and replaced with a number, so the examiners could not tell whose it was.",
+      "ko": "영리한 부분은 여기부터입니다. 답안지의 이름을 지우고 번호만 남겨 채점관이 누구 것인지 모르게 했습니다."
+    },
+    "L6": {
+      "en": "But handwriting can give you away. So clerks copied every answer again, in red ink, and the examiners read only the copy.",
+      "ko": "그래도 필체가 들통납니다. 그래서 서기가 모든 답안을 붉은 글씨로 다시 베꼈고 채점관은 사본만 읽었습니다."
+    },
+    "L7": {
+      "en": "That is the pattern you will see again and again. Every defense is built around a specific trick.",
+      "ko": "이 방식은 앞으로 계속 보게 될 패턴입니다. 모든 방어는 특정한 속임수에 맞서 만들어졌습니다."
+    },
+    "L8": {
+      "en": "And it did not always work. In 1858, a scandal in the capital's provincial exam ended with the chief examiner himself being executed. Historians still argue about whether it was corruption, politics, or both.",
+      "ko": "그래도 항상 통하지는 않았습니다. 1858년 수도 향시 비리 사건에서는 수석 시험관이 처형됐습니다. 부패인지 정치인지 지금도 논쟁이 있습니다."
+    },
+    "L9": {
+      "en": "Korea's Joseon dynasty ran the same kind of exam. And it had the same problem.",
+      "ko": "조선도 같은 시험을 치렀고 같은 문제를 겪었습니다."
+    },
+    "L10": {
+      "en": "Records describe candidates bringing helpers. One was skilled at composing the essay. Another was skilled at writing it out fast, in clean handwriting.",
+      "ko": "기록에는 도우미를 데려가는 응시자가 나옵니다. 글을 잘 짓는 사람과 글씨를 빨리 쓰는 사람입니다."
+    },
+    "L11": {
+      "en": "The state answered with the same tools: names folded and sealed, and answers recopied in red ink before grading.",
+      "ko": "나라는 같은 도구로 맞섰습니다. 이름을 접어 봉하고 붉은 글씨로 다시 베낀 뒤 채점했습니다."
+    },
+    "L12": {
+      "en": "Punishments were harsh. A hundred strokes and three years of hard labor, or a ban from the exam for years.",
+      "ko": "처벌은 엄했습니다. 곤장 100대와 3년 노역, 또는 수년간의 응시 금지였습니다."
+    },
+    "L13": {
+      "en": "Out of roughly eight hundred civil exams, only two became full-blown scandals, both under one king, in 1699 and 1712.",
+      "ko": "약 800번의 문과 시험 가운데 대형 사건은 숙종 때인 1699년과 1712년 두 번이었습니다."
+    },
+    "L14": {
+      "en": "Jump ahead to 2011, a wealthy suburb on Long Island, New York. Prosecutors announced seven arrests. A college student was accused of taking the SAT for paying high school students.",
+      "ko": "2011년으로 오면, 미국 뉴욕 롱아일랜드의 한 부유한 지역입니다. 검찰은 7명을 체포했다고 발표했습니다. 대학생이 돈을 받고 고등학생 대신 SAT를 본 혐의였습니다."
+    },
+    "L15": {
+      "en": "How was it caught? School staff noticed that some students' grades and their SAT scores did not match.",
+      "ko": "어떻게 잡혔을까요? 학교 직원이 일부 학생의 성적과 SAT 점수가 맞지 않는 것을 알아챘습니다."
+    },
+    "L16": {
+      "en": "Within months, twenty people were charged across several schools. And according to reports, the exam organizers responded by requiring a photo at registration, printed on the ticket, starting in the fall of 2012.",
+      "ko": "몇 달 만에 여러 학교에서 20명이 기소됐습니다. 보도에 따르면 시험 주관 기관은 등록 때 사진을 내게 하고 수험표에 인쇄하도록 바꿨습니다. 2012년 가을부터였습니다."
+    },
+    "L17": {
+      "en": "In 2004, South Korea's national college entrance exam was hit by a very different kind of scheme. Police said answers were sent out by text message, and others outside the building sent them back in.",
+      "ko": "2004년 한국의 수능은 전혀 다른 방식의 부정을 겪었습니다. 경찰은 답이 문자로 밖에 나가고 건물 밖의 사람들이 다시 안으로 보냈다고 밝혔습니다."
+    },
+    "L18": {
+      "en": "So how do you find that?",
+      "ko": "이걸 어떻게 찾았을까요?"
+    },
+    "L19": {
+      "en": "Investigators took the carrier records for the exam day. About three hundred million text messages. And they filtered for one pattern: messages made only of the digits one to five, which is exactly how multiple-choice answers look.",
+      "ko": "수사팀은 시험 당일 통신사 기록, 약 3억 건의 문자를 확보했습니다. 그리고 1~5 숫자로만 된 문자를 골랐습니다. 객관식 답이 바로 그렇게 생겼기 때문입니다."
+    },
+    "L20": {
+      "en": "That left about two hundred eighty thousand messages. An eighteen-day investigation ended with a hundred eighty-two test-takers indicted.",
+      "ko": "약 28만 건이 남았고, 18일 수사 끝에 응시자 182명이 기소됐습니다."
+    },
+    "L21": {
+      "en": "Over the years 2002 to 2005, the ministry invalidated four hundred seventy-two scores. Eighty-seven percent involved text messages.",
+      "ko": "2002~2005년 교육부가 무효 처리한 점수는 472건이었고, 그중 87%가 문자 메시지였습니다."
+    },
+    "L22": {
+      "en": "The lesson: the trick left a digital trail.",
+      "ko": "교훈은 이 속임수가 디지털 흔적을 남겼다는 것입니다."
+    },
+    "L23": {
+      "en": "Cheating is not always about students. In Atlanta, the story was about the adults. A state investigation in 2011 found cheating in forty-four of the fifty-six schools it examined, and named a hundred seventy-eight educators as involved. In 2015, eleven were convicted under a racketeering law.",
+      "ko": "컨닝은 늘 학생 이야기가 아닙니다. 애틀랜타에서는 어른들의 이야기였습니다. 2011년 주 조사는 조사한 56개 학교 가운데 44곳에서 부정을 확인하고 교육자 178명을 연루자로 지목했습니다. 2015년 11명이 조직범죄법으로 유죄 판결을 받았습니다."
+    },
+    "L24": {
+      "en": "At Harvard in 2012, a take-home final exam for a class of 279 students raised suspicion. The professor noticed answers that looked alike.",
+      "ko": "2012년 하버드에서는 279명이 듣는 수업의 집에서 푸는 기말시험이 의심을 샀습니다. 교수가 비슷한 답안을 알아챘습니다."
+    },
+    "L25": {
+      "en": "About 125 cases were investigated. Roughly 70 students were forced to withdraw for a time. The dean's response was short: we all can do better.",
+      "ko": "약 125건이 조사됐고 약 70명이 일정 기간 휴학 처분을 받았습니다. 학장의 말은 짧았습니다. 우리 모두 더 나아질 수 있다."
+    },
+    "L26": {
+      "en": "Now the newest chapter. In 2025, about 13.4 million students sat China's gaokao. Radio signals were blocked at exam sites, and in some provinces, AI watched for abnormal behavior. Human invigilators made the final call.",
+      "ko": "이제 가장 최근 장입니다. 2025년 중국 가오카오에는 약 1,340만 명이 응시했습니다. 시험장에서는 전파가 차단됐고, 일부 지역에서는 AI가 이상 행동을 감시했으며, 최종 판단은 사람 감독관이 내렸습니다."
+    },
+    "L27": {
+      "en": "Even the chatbots took part. During the exam hours, several Chinese AI apps paused their photo-recognition features. One reply read: to ensure fairness, this function cannot be used during the test period.",
+      "ko": "챗봇들도 동참했습니다. 시험 시간 동안 중국의 AI 앱 여러 곳이 사진 인식 기능을 중단했습니다. 한 답변은 이랬습니다. 공정성을 위해 시험 기간에는 이 기능을 쓸 수 없습니다."
+    },
+    "L28": {
+      "en": "In South Korea, the education ministry banned smart glasses, phones, smartwatches, and Bluetooth earphones from the test site. Wearing AI glasses during the exam means losing eligibility for the next year's test.",
+      "ko": "한국 교육부는 스마트 안경과 휴대폰, 스마트워치, 블루투스 이어폰을 시험장에 반입하지 못하게 했습니다. 시험 중 AI 안경을 쓰면 다음 해 응시 자격을 잃습니다."
+    },
+    "L29": {
+      "en": "A thousand years, the same race. A new trick, a new lock. Cheating changes shape, but so do the tests.",
+      "ko": "천 년 동안 같은 경주였습니다. 새 속임수에 새 자물쇠. 컨닝은 모습을 바꾸지만 시험도 함께 바뀝니다."
+    },
+    "L30": {
+      "en": "If answers can come from AI in a split second, how would you design an exam that cannot be beaten? Tell me in the comments.",
+      "ko": "AI가 순식간에 답을 줄 수 있다면, 속일 수 없는 시험을 어떻게 설계하시겠어요? 댓글로 알려 주세요."
+    },
+    "L31": {
+      "en": "If you like real stories about how people and systems race each other, subscribe.",
+      "ko": "사람과 제도가 서로 경주해 온 실제 이야기가 재미있다면 구독해 주세요."
+    }
+  },
+  "scenes": [
+    {
+      "id": "hook",
+      "type": "photo",
+      "lines": [
+        "L1",
+        "L2"
+      ],
+      "clips": [
+        "flow-hook-split.mp4",
+        "gemini-hook-split.png",
+        "gemini-modern-desk.png"
+      ],
+      "zoom": [
+        1,
+        1.15
+      ],
+      "tint": 0.1,
+      "big": {
+        "text": "THE HISTORY OF CHEATING",
+        "sub": "컨닝의 역사",
+        "size": 104
+      }
+    },
+    {
+      "id": "keju",
+      "type": "photo",
+      "lines": [
+        "L3",
+        "L4"
+      ],
+      "clips": [
+        "flow-cells-aerial.mp4",
+        "gemini-search-gate.png",
+        "gemini-cells-aerial.png"
+      ],
+      "tint": 0.1
+    },
+    {
+      "id": "recopy",
+      "type": "recopy",
+      "lines": [
+        "L5",
+        "L6"
+      ]
+    },
+    {
+      "id": "pattern",
+      "type": "photo",
+      "lines": [
+        "L7"
+      ],
+      "clips": [
+        "gemini-red-copy.png",
+        "flow-red-copy.mp4",
+        {
+          "f": "pixabay-78c10cde.mp4",
+          "vs": 1,
+          "ill": true
+        }
+      ],
+      "tint": 0.1
+    },
+    {
+      "id": "y1858",
+      "type": "photo",
+      "lines": [
+        "L8"
+      ],
+      "clips": [
+        "gemini-search-gate.png",
+        {
+          "f": "pixabay-82166b0a.jpg",
+          "ill": true
+        }
+      ],
+      "tint": 0.2,
+      "big": {
+        "text": "1858",
+        "sub": "수석 시험관 처형"
+      }
+    },
+    {
+      "id": "joseon",
+      "type": "photo",
+      "credit": "Painting & answer sheet: National Museum of Korea · KOGL Type 1",
+      "lines": [
+        "L9",
+        "L10"
+      ],
+      "clips": [
+        "kogl-hamhung-gwageo.jpg",
+        "gemini-joseon-clerks.png",
+        "kogl-shimsanggi-answer.jpg"
+      ],
+      "tint": 0.15
+    },
+    {
+      "id": "joseon2",
+      "type": "photo",
+      "lines": [
+        "L11",
+        "L12",
+        "L13"
+      ],
+      "clips": [
+        "gemini-sealed-names.png",
+        "gemini-joseon-clerks.png"
+      ],
+      "tint": 0.25,
+      "facts": [
+        {
+          "big": "100",
+          "sub": "strokes + 3 years labor · 곤장 100 + 노역 3년",
+          "at": 0.3
+        },
+        {
+          "big": "2 / ~800",
+          "sub": "big scandals · 대형 사건 · 1699, 1712",
+          "at": 0.65
+        }
+      ]
+    },
+    {
+      "id": "sat",
+      "type": "photo",
+      "lines": [
+        "L14",
+        "L15",
+        "L16"
+      ],
+      "clips": [
+        "gemini-admission-ticket.png",
+        "gemini-modern-desk.png"
+      ],
+      "tint": 0.25,
+      "facts": [
+        {
+          "big": "7 → 20",
+          "sub": "arrests, then charged · 체포에서 기소로 · 2011",
+          "at": 0.05
+        },
+        {
+          "big": "PHOTO",
+          "sub": "required at registration · 사진 등록 의무 · 2012 (reported)",
+          "at": 0.7
+        }
+      ]
+    },
+    {
+      "id": "korea04",
+      "type": "photo",
+      "lines": [
+        "L17",
+        "L18"
+      ],
+      "clips": [
+        "gemini-text-chain.png"
+      ],
+      "tint": 0.1,
+      "big": {
+        "text": "2004",
+        "sub": "수능 문자 메시지 사건"
+      }
+    },
+    {
+      "id": "funnel",
+      "type": "funnel",
+      "lines": [
+        "L19",
+        "L20"
+      ],
+      "steps": [
+        {
+          "n": "~300,000,000",
+          "l": "text messages that day · 시험 당일 문자",
+          "c": "#8EA3B8"
+        },
+        {
+          "n": "~280,000",
+          "l": "digits 1–5 only · 1~5 숫자로만 된 문자",
+          "c": "#F2B84B"
+        },
+        {
+          "n": "182",
+          "l": "test-takers indicted · 기소된 응시자",
+          "c": "#E8613C"
+        }
+      ]
+    },
+    {
+      "id": "bars04",
+      "type": "bars",
+      "lines": [
+        "L21",
+        "L22"
+      ],
+      "bars": [
+        {
+          "label": "…involving text messages · 문자 메시지",
+          "text": "412 (87%)",
+          "value": 412,
+          "color": "#F2B84B"
+        },
+        {
+          "label": "Scores invalidated, 2002–2005 · 무효 처리 점수",
+          "text": "472",
+          "value": 472,
+          "color": "#8EA3B8"
+        }
+      ],
+      "big": {
+        "text": "87%",
+        "sub": "문자 메시지"
+      }
+    },
+    {
+      "id": "two",
+      "type": "compare2",
+      "lines": [
+        "L23",
+        "L24",
+        "L25"
+      ],
+      "left": {
+        "img": "gemini-answer-sheet-erase.png",
+        "title": "ATLANTA SCHOOLS · 2011–2015",
+        "ko": "애틀랜타 학교",
+        "rows": [
+          [
+            "44 of 56",
+            "schools with cheating found · 부정 확인 학교"
+          ],
+          [
+            "178",
+            "educators named by investigators · 조사관이 지목한 교육자"
+          ],
+          [
+            "11",
+            "convicted in 2015 · 2015년 유죄"
+          ]
+        ],
+        "line": "L23"
+      },
+      "right": {
+        "img": "gemini-takehome-laptop.png",
+        "title": "HARVARD · 2012",
+        "ko": "하버드 대학",
+        "rows": [
+          [
+            "279",
+            "students in the class · 수강생"
+          ],
+          [
+            "~125",
+            "cases investigated · 조사 건수"
+          ],
+          [
+            "~70",
+            "forced to withdraw · 휴학 처분"
+          ]
+        ],
+        "line": "L24"
+      }
+    },
+    {
+      "id": "china",
+      "type": "photo",
+      "lines": [
+        "L26",
+        "L27"
+      ],
+      "clips": [
+        "gemini-gate-scanner.png",
+        "gemini-phone-paused.png"
+      ],
+      "tint": 0.2,
+      "facts": [
+        {
+          "big": "13.4M",
+          "sub": "candidates · gaokao 2025 · 응시자",
+          "at": 0.05
+        },
+        {
+          "big": "PAUSED",
+          "sub": "photo recognition during exam hours · 사진 인식 중단",
+          "at": 0.6
+        }
+      ]
+    },
+    {
+      "id": "suneung",
+      "type": "photo",
+      "lines": [
+        "L28"
+      ],
+      "clips": [
+        "gemini-glasses-tray.png"
+      ],
+      "tint": 0.15,
+      "big": {
+        "text": "NO DEVICES",
+        "sub": "수능 기기 반입 금지"
+      }
+    },
+    {
+      "id": "timeline",
+      "type": "timeline",
+      "lines": [
+        "L29"
+      ],
+      "points": [
+        {
+          "y": "Imperial China",
+          "s": "names hidden · red copies"
+        },
+        {
+          "y": "Joseon Korea",
+          "s": "sealed names · bans"
+        },
+        {
+          "y": "2004 Korea",
+          "s": "text-message trail"
+        },
+        {
+          "y": "2011 USA",
+          "s": "photo registration"
+        },
+        {
+          "y": "2025 China",
+          "s": "signal blocking · AI limits"
+        }
+      ]
+    },
+    {
+      "id": "end",
+      "type": "end",
+      "lines": [
+        "L30",
+        "L31"
+      ],
+      "endBg": "radial-gradient(ellipse at 50% 40%, #2A1A0E 0%, #0A0807 75%)",
+      "askEn": "How would you design\nan exam that can't be beaten?",
+      "askKo": "속일 수 없는 시험, 어떻게 설계할까요?",
+      "sub": {
+        "en": "Subscribe for more real stories",
+        "ko": "실제 이야기가 더 궁금하다면 구독"
+      }
+    }
+  ],
+  "thumb": {
+    "image": "gemini-hook-split.png",
+    "focus": [
+      0.5,
+      0.5
+    ],
+    "zoom": 1.1,
+    "en": "THE HISTORY\nOF CHEATING",
+    "ko": "컨닝의 역사 · 1000년의 경주",
+    "tag": ""
+  }
+}

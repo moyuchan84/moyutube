@@ -8,6 +8,8 @@
     "units": "node shared/bin/moyu.mjs units",
     "verify": "node shared/bin/moyu.mjs verify",
     "seo": "node shared/bin/seo.mjs",
+    "trends": "node shared/bin/trends.mjs",
+    "collect": "node extremes/scripts/collect.mjs",
     "seo-check": "node shared/bin/seo-check.mjs"
   }
 }

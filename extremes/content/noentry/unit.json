@@ -1,0 +1,13 @@
+{
+  "code": "noentry",
+  "title": "No Entry TOP 5",
+  "format": "short",
+  "status": "idea",
+  "created": "2026-11-11",
+  "youtube": [],
+  "tags": [],
+  "video": {
+    "composition": "NoEntry",
+    "bgm": "bgm/noentry.wav"
+  }
+}

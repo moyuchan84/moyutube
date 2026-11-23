@@ -1,0 +1,257 @@
+{
+  "fps": 30,
+  "bpm": 60,
+  "bgm": "bgm/mariana.wav",
+  "thumb": {
+    "image": "wikimedia-fab091e7.jpg",
+    "focus": [
+      0.74,
+      0.5
+    ],
+    "zoom": 1.12,
+    "big": "8,336",
+    "unit": "m",
+    "ko": "여기서\n물고기가 끝난다",
+    "en": "Where fish stop",
+    "tag": "Photo: dumbo octopus, NOAA Okeanos Explorer (public domain)"
+  },
+  "shots": [
+    {
+      "type": "photo",
+      "from": 0,
+      "dur": 3.6,
+      "image": "wikimedia-fab091e7.jpg",
+      "zoom": [
+        1.02,
+        1.2
+      ],
+      "focus": [
+        0.74,
+        0.5
+      ],
+      "pan": [
+        0,
+        0
+      ],
+      "credit": "Photo: dumbo octopus, NOAA Okeanos Explorer (public domain)",
+      "counter": {
+        "to": 8336,
+        "unit": "m",
+        "start": 0.1,
+        "dur": 1.5
+      },
+      "texts": [
+        {
+          "at": 0.2,
+          "to": 2.1,
+          "ko": "물고기가 사라지는\n깊이",
+          "en": "The depth where fish stop",
+          "big": true
+        },
+        {
+          "at": 2.2,
+          "to": 3.5,
+          "ko": "그 아래엔\n뭐가 있을까?",
+          "en": "What lives below?",
+          "big": true
+        }
+      ]
+    },
+    {
+      "type": "photo",
+      "from": 3.6,
+      "dur": 3.4,
+      "image": "wikimedia-8e53ddb2.jpg",
+      "zoom": [
+        1.1,
+        1.3
+      ],
+      "focus": [
+        0.45,
+        0.55
+      ],
+      "pan": [
+        -2,
+        1
+      ],
+      "credit": "Photo: giant isopod, NOAA Okeanos Explorer (public domain)",
+      "gauge": {
+        "from": 0,
+        "to": 2300
+      },
+      "counter": {
+        "to": 2300,
+        "unit": "m",
+        "start": 0.1,
+        "dur": 1
+      },
+      "texts": [
+        {
+          "at": 0.3,
+          "to": 3.3,
+          "ko": "대왕등각류\n여기까지 산다",
+          "en": "Giant isopod · down to ~2,300 m"
+        }
+      ]
+    },
+    {
+      "type": "photo",
+      "from": 7,
+      "dur": 3.2,
+      "image": "wikimedia-0ca40852.jpg",
+      "zoom": [
+        1,
+        1.18
+      ],
+      "focus": [
+        0.2,
+        0.5
+      ],
+      "pan": [
+        0,
+        0
+      ],
+      "credit": "Photo: humpback anglerfish, NOAA (public domain)",
+      "gauge": {
+        "from": 2300,
+        "to": 3600
+      },
+      "counter": {
+        "from": 2300,
+        "to": 3600,
+        "unit": "m",
+        "start": 0.1,
+        "dur": 1
+      },
+      "texts": [
+        {
+          "at": 0.3,
+          "to": 3.1,
+          "ko": "심해아귀\n빛 없는 곳의 사냥꾼",
+          "en": "Anglerfish · down to ~3,600 m"
+        }
+      ]
+    },
+    {
+      "type": "photo",
+      "from": 10.2,
+      "dur": 3.4,
+      "image": "wikimedia-fab091e7.jpg",
+      "zoom": [
+        1.3,
+        1.6
+      ],
+      "focus": [
+        0.82,
+        0.3
+      ],
+      "pan": [
+        -3,
+        0
+      ],
+      "credit": "Photo: dumbo octopus, NOAA Okeanos Explorer (public domain)",
+      "gauge": {
+        "from": 3600,
+        "to": 6957
+      },
+      "counter": {
+        "from": 3600,
+        "to": 6957,
+        "unit": "m",
+        "start": 0.1,
+        "dur": 1.2
+      },
+      "texts": [
+        {
+          "at": 0.3,
+          "to": 3.3,
+          "ko": "가장 깊이 찍힌 문어\n(덤보문어)",
+          "en": "Deepest octopus ever filmed"
+        }
+      ]
+    },
+    {
+      "type": "card",
+      "from": 13.6,
+      "dur": 4.2,
+      "ring": true,
+      "gauge": {
+        "from": 6957,
+        "to": 8336
+      },
+      "counter": {
+        "from": 6957,
+        "to": 8336,
+        "unit": "m",
+        "start": 0.1,
+        "dur": 1.2
+      },
+      "texts": [
+        {
+          "at": 0.3,
+          "to": 2.4,
+          "ko": "마지막 물고기",
+          "en": "The deepest fish ever filmed",
+          "big": true
+        },
+        {
+          "at": 2.5,
+          "to": 4.1,
+          "ko": "2023년 일본 앞바다\n연구진: 한계에 가까운 깊이",
+          "en": "Izu-Ogasawara Trench · near the limit for any fish"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "from": 17.8,
+      "dur": 4.6,
+      "texts": [
+        {
+          "at": 0.3,
+          "to": 4.5,
+          "ko": "챌린저 해연 10,935 m\n수압은 해수면의 약 1,000배",
+          "en": "No fish recorded in the last 2,600 m"
+        }
+      ]
+    },
+    {
+      "type": "card",
+      "from": 22.4,
+      "dur": 5.6,
+      "bag": true,
+      "gauge": {
+        "from": 10935,
+        "to": 10935
+      },
+      "texts": [
+        {
+          "at": 0.3,
+          "to": 2.7,
+          "ko": "2019년\n유인 잠수정이 바닥에서 본 것",
+          "en": "2019 crewed dive to the bottom"
+        },
+        {
+          "at": 2.9,
+          "to": 5.4,
+          "ko": "비닐봉지",
+          "en": "A plastic bag. And candy wrappers.",
+          "big": true
+        }
+      ]
+    },
+    {
+      "type": "end",
+      "from": 28,
+      "dur": 4,
+      "image": "wikimedia-fab091e7.jpg"
+    }
+  ],
+  "end": {
+    "ko": "세상의 극단을 하나씩\n구독하고 이어서 보기",
+    "en": "One extreme at a time\nSubscribe to follow along",
+    "askKo": "바닥에서 본 것 중\n가장 소름 돋은 건? 댓글로!",
+    "askEn": "What gave you chills the most? Comment below."
+  },
+  "no": "No.1"
+}
