@@ -62,12 +62,12 @@ In 2004, police had one day of phone records: about 300 million text messages. S
 ✔ 2025 gaokao (~13.4 million candidates) · 2026 Korean exam device ban
 
 0:00 2004: 300 million text messages
-0:23 Imperial China: the most guarded exam
-1:07 Joseon Korea: same exam, same problem
-1:29 2011: the SAT impersonation case
-1:53 Atlanta schools & Harvard
-2:21 The AI era
-2:49 The answer: how 300 million texts were searched
+0:22 Imperial China: the most guarded exam
+1:06 Joseon Korea: same exam, same problem
+1:27 2011: the SAT impersonation case
+1:51 Atlanta schools & Harvard
+2:18 The AI era
+2:45 The answer: how 300 million texts were searched
 
 ※ Facts are based on press reports, court records and official statements (as of 2026-11-23). Atlanta: "named by state investigators"; 11 were convicted in 2015. Photo-registration change for the SAT is as reported. Numbers are approximate where marked "about".
 ※ Illustrations and video clips were generated with AI (Google Gemini / Flow) and are marked on screen. They are dramatizations, not footage or photos of the events.
@@ -83,7 +83,8 @@ In 2004, police had one day of phone records: about 300 million text messages. S
 
 - 영어 설명: 위 설명의 영어 부분이 본문(영어 중심 채널). 한국어는 2번째 줄과 ※ 줄.
 - 썸네일: `upload/thumbnail.png` (1280×720, "THE HISTORY OF CHEATING" · 컨닝의 역사 · 과거제부터 AI까지)
-- 영상 파일: `extremes/output/videos/2026-11-22_cheathistory.mp4` (3분 27초, 1920×1080)
+- 영상 파일: `extremes/output/videos/2026-11-22_cheathistory.mp4` (3분 24초, 1920×1080)
+- **2026-11-23 재렌더 (음성 끝 "칙" 잡음 제거)**: 처음 올린 판(3:27)은 L1~L20 대사 끝마다 TTS 잡음이 ~160ms 붙어 있었다. `video/scripts/voice-tail.mjs` 로 잘라낸 판이 3:24 · 챕터 시간이 위처럼 바뀜. 올라간 영상(gz0sFKMuSgU)은 아직 옛 판 → 교체 여부는 사용자 결정.
 
 ### Studio 입력 체크리스트
 - [ ] 제목 · 설명 · 태그 · 썸네일

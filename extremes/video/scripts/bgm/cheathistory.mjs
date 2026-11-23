@@ -4,7 +4,7 @@
 // 사용: node scripts/bgm/cheathistory.mjs → content/cheathistory/music/cheathistory.wav
 import { readFileSync } from "node:fs";
 import { RATE, writeWav } from "./_synth.mjs";
-import { bass, epiano, hat, pad, pluck, softKick, space } from "./_music.mjs";
+import { bass, epiano, pad, pluck, softKick, space } from "./_music.mjs";
 
 const here = (p) => new URL(`../../../content/cheathistory/${p}`, import.meta.url);
 const D = JSON.parse(readFileSync(here("script/shots.json"), "utf8"));
@@ -25,11 +25,12 @@ const add = (t, buf, g) => { const s = Math.round(t * RATE); for (let i = 0; i <
 const BEAT = 60 / 76, BAR = BEAT * 4;
 const CHORDS = [[33, [57, 60, 64, 67]], [41, [57, 60, 64, 65]], [36, [55, 60, 64, 67]], [31, [55, 59, 62, 64]]];
 const MELODY = [[[0, 76, 1], [1.5, 72, 0.5], [2, 69, 1.5]], [[0, 72, 1], [2, 76, 1], [3, 79, 1]], [[0.5, 74, 1], [2, 71, 1], [3, 74, 1]], [[0, 71, 1.5], [2, 67, 1], [3, 69, 1]]];
+// v2 장면: hook bridge | keju … harvard (groove) | ai suneung (open) | back funnel (tense) | trail end (close)
 const mode = (t) => {
   if (t < S.keju.from) return "intro";
-  if (t >= S.funnel.from - 0.1 && t < S.two.from) return "tense";
-  if (t >= S.china.from - 0.1 && t < S.timeline.from) return "open";
-  if (t >= S.timeline.from) return "close";
+  if (t >= S.trail.from) return "close";
+  if (t >= S.back.from - 0.1) return "tense";
+  if (t >= S.ai.from - 0.1) return "open";
   return "groove";
 };
 for (let bar = 0; bar * BAR < SEC - 1; bar++) {
@@ -44,8 +45,7 @@ for (let bar = 0; bar * BAR < SEC - 1; bar++) {
   if (m === "groove" || m === "tense") {
     add(t0, softKick(), m === "tense" ? 0.2 : 0.16);
     add(t0 + BEAT * 2.5, softKick(), 0.11);
-    const steps = m === "tense" ? 16 : 8;
-    for (let k = 0; k < steps; k++) add(t0 + (k * BAR) / steps, hat(), k % 2 ? 0.028 : 0.014);
+    // 하이햇(흰 잡음) 은 쓰지 않는다 — 8분음표마다 "칙 칙" 기계음으로 들린다 (2026-11-23 사용자 피드백)
     if (m === "groove") for (const [p, n, d] of MELODY[bar % 4]) add(t0 + p * BEAT, pluck(n, d * BEAT + 0.5, 0.5), 0.06);
   }
 }
