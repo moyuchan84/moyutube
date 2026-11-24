@@ -96,6 +96,7 @@ const projects = [
   'oneStroke',
   'mobius',
   'paperFold',
+  'sieve',
 ];
 
 export default defineConfig({

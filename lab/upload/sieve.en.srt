@@ -1,0 +1,60 @@
+1
+00:00:00,000 --> 00:00:02,225
+Finding prime numbers
+on a 100-square grid
+
+2
+00:00:02,275 --> 00:00:06,995
+A number divisible only by 1 and itself
+is a prime! How many are here?
+
+3
+00:00:07,045 --> 00:00:08,565
+1 is not a prime, so cross it out first
+
+4
+00:00:08,615 --> 00:00:12,765
+Keep 2,
+then cross out all multiples of 2
+
+5
+00:00:12,815 --> 00:00:16,735
+Next one left: 3!
+Cross out its multiples too
+
+6
+00:00:16,785 --> 00:00:20,155
+4 is already gone,
+so it's 5's turn
+
+7
+00:00:20,205 --> 00:00:23,595
+Last, the multiples of 7
+
+8
+00:00:23,645 --> 00:00:26,565
+Next is 11, and 11 × 11 = 121
+Past 100, so we stop here!
+
+9
+00:00:26,615 --> 00:00:30,165
+The numbers left standing are the primes!
+
+10
+00:00:30,215 --> 00:00:32,535
+The answer is 25!
+Did you get it?
+
+11
+00:00:32,585 --> 00:00:35,305
+The Greek mathematician Eratosthenes
+used this method
+
+12
+00:00:35,355 --> 00:00:37,855
+How many primes are between 21 and 30?
+Tell us in the comments!
+
+13
+00:00:38,305 --> 00:00:42,255
+More math secrets, explained with pictures
